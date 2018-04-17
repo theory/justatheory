@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Just a Theory"
+license = "MIT"
+licenselink = "https://github.com/theory/justatheory/blob/master/LICENSE.md"
+description = "Hugo theme for Just a Theory."
+homepage = "https://justatheory.com/"
+tags = ["blog", "tags", "categories"]
+features = ["blog"]
+min_version = "0.38"
+
+[author]
+name = "David E. Wheeler"
+homepage = "https://justatheory.com/"

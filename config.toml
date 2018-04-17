@@ -1,0 +1,9 @@
+title = "❖ Just a Theory"
+baseURL = "https://justatheory.com/"
+languageCode = "en-us"
+theme = "justatheory"
+
+[params]
+  favicon = ""
+  description = "Theory waxes practical."
+  author = "David E. Wheeler"

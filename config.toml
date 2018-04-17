@@ -7,3 +7,6 @@ theme = "justatheory"
   favicon = ""
   description = "Theory waxes practical."
   author = "David E. Wheeler"
+
+[permalinks]
+  blog = "/:year/:month/:slug/"

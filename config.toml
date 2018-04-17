@@ -1,4 +1,4 @@
-title = "❖ Just a Theory"
+title = "Just a Theory"
 baseURL = "https://justatheory.com/"
 languageCode = "en-us"
 theme = "justatheory"
@@ -7,6 +7,7 @@ theme = "justatheory"
   favicon = ""
   description = "Theory waxes practical."
   author = "David E. Wheeler"
+  bug = "❖"
 
 [permalinks]
   blog = "/:year/:month/:slug/"

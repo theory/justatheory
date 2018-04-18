@@ -11,7 +11,7 @@
             <span><a rel="bookmark" href="{{ .doc.Permalink }}">§</a></span>
         </header>
         <div class="text">
-            {{ .Content }}
+            {{ .doc.Content }}
         </div>
 		{{- partial "tags.html" .doc }}
     </article>

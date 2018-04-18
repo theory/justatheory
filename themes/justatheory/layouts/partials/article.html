@@ -1,11 +1,17 @@
-<article class="{{ .Type }}">
+<article class="{{ .doc.Type }}">
         <header>
-            <h1>{{ .Title }}</h1>
-            <time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-            <span><a rel="bookmark" href="{{ .Permalink }}">§</a></span>
+            {{- if .doc.Params.link }}
+            <h1 class="link"><a href="{{ .doc.Params.link }}">{{ .doc.Title }}</a> →</h1>
+            {{- else if .list }}
+            <h1 class="post"><a href="{{ .doc.RelPermalink }}">{{ .doc.Title }}</a></h1>
+            {{- else }}
+            <h1 class="title">{{ .doc.Title }}</h1>
+            {{- end }}
+            <time datetime="{{ .doc.Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .doc.Date.Format "Jan 2, 2006" }}</time>
+            <span><a rel="bookmark" href="{{ .doc.Permalink }}">§</a></span>
         </header>
         <div class="text">
             {{ .Content }}
         </div>
-		{{- partial "tags.html" . }}
+		{{- partial "tags.html" .doc }}
     </article>

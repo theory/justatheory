@@ -1,27 +1,32 @@
 {{ partial "header.html" . }}
-	<main id="archive">
+	<main id="{{ .Type }}">
 		<header>
 			<h1>{{ .Title }}</h1>			
 		</header>
-		{{ $.Scratch.Set "year" 0 }}
-		{{ range .Data.Pages }}
-		{{ if ne ($.Scratch.Get "year") .Date.Year}}
-		{{ if ne ($.Scratch.Get "year") 0 }}
+		{{- $.Scratch.Set "year" 0 }}
+		{{- range .Data.Pages }}
+		{{- if ne ($.Scratch.Get "year") .Date.Year}}
+		{{- if ne ($.Scratch.Get "year") 0 }}
 		</section>
-		{{ end }}
-		{{ $.Scratch.Set "year" (.Date.Year) }}
+		{{- end }}
+		{{- $.Scratch.Set "year" (.Date.Year) }}
 		<section>
 			<h2>{{ .Date.Year }}</h2>
-		{{ end }}
+		{{- end }}
 			<article class="{{ .Type }}">
-				<h1><a href="{{ .Permalink }}"></a>{{ .Title }}</a></h1>
-				<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}" pubdate>{{ .Date.Format "Jan 2" }}</time>
+				<header>
+					<h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>
+				</header>
+				{{- if .Summary }}
+				<blockquote>{{ .Summary }}</blockquote>
+				{{- end }}
 				<footer>
 					<a rel="bookmark" href="{{ .Permalink }}">§</a>
-					• <span class="categories">posted in <a class="category" href="{{ "blah" }}">blah</a></span>
+					{{- partial "tags.html" . }}
 				</footer>
 			</article>
-		{{ end }}
+		{{- end }}
 		</section>
 	</main>
 {{ partial "footer.html" . }}

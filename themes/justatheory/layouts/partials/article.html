@@ -7,13 +7,5 @@
         <div class="text">
             {{ .Content }}
         </div>
-        {{ if .Params.tags }}
-        <div class="tags">
-            <ul>
-                {{ range .Params.tags }}
-                <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-                {{ end }}
-            </ul>
-        </div>
-        {{ end }}
+		{{- partial "tags.html" . }}
     </article>

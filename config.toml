@@ -10,4 +10,4 @@ theme = "justatheory"
   bug = "❖"
 
 [permalinks]
-  blog = "/:year/:month/:slug/"
+  archive = "/:year/:month/:slug/"

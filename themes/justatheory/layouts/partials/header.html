@@ -13,10 +13,15 @@
 </head>
 <body>
 	<header>
-		<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-		<h2>By {{ .Site.Params.author }}</h2>
+		<hgroup class="top">
+			<h1 class="bug"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Bug }}</a></h1>
+			<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+			<h2>By {{ .Site.Params.author }}</h2>
+		</hgroup>
 		<nav>
 			<ul>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/archive/">Archives</a></li>
 				{{ range .Site.Menus.main }}
 				<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
 				{{ end }}

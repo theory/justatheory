@@ -281,19 +281,12 @@ a:focus {
 }
 
 a:hover {
-    color: #300303
+    color: #300303;
+    text-decoration: underline;
 }
 
 a:active {
     color: #ba5e5e
-}
-
-a:hover {
-    background-color: #fcc
-}
-
-a:hover * {
-    background-color: #fcc
 }
 
 .entry-content a, .entry-content a * {
@@ -312,35 +305,6 @@ a:hover * {
     text-shadow: none
 }
 
-aside.sidebar a {
-    color: #c00
-}
-
-aside.sidebar a:focus {
-    color: #300303
-}
-
-aside.sidebar a:hover {
-    color: #300303
-}
-
-aside.sidebar a:active {
-    color: #ba5e5e
-}
-
-a {
-    -webkit-transition: color, border, background 0.3s;
-    -moz-transition: color, border, background 0.3s;
-    -o-transition: color, border, background 0.3s;
-    transition: color, border, background 0.3s
-}
-
-a * {
-    -webkit-transition: border, background 0.3s;
-    -moz-transition: border, background 0.3s;
-    -o-transition: border, background 0.3s;
-    transition: border, background 0.3s
-}
 
 html {
     background: #fff
@@ -350,13 +314,8 @@ body > div {
     background: transparent
 }
 
-body > div > div {
-    background: transparent;
-    border-right: 1px solid #212121
-}
-
 .heading, h1, h2, h3, h4, h5, h6 {
-    font-family: "SourceSans", "Futura", "Helvetica", sans-serif
+    font-family: "SourceSans", "Proxima Nova", "Helvetica", sans-serif
 }
 
 .sans, body, body > nav form .search, article header p.meta, article > footer,
@@ -373,22 +332,10 @@ body > footer {
     font-family: "SourceCode", "Courier", monospace
 }
 
-body > header h1 {
-    font-size: .875em !important;
-    font-family: "SourceSans", "Futura", "Helvetica", sans-serif;
-    font-weight: normal;
-    line-height: .6em
-}
-
-body > header h2 {
-    font-size: 5.875em !important;
-    font-family: "SourceSans", "Futura", "Helvetica", sans-serif
-}
-
 body {
     font-size: 1.125em;
     line-height: 1.5em;
-    color: #333
+    color: #333;
 }
 
 h1 {
@@ -398,20 +345,22 @@ h1 {
 
 @media only screen and (min-width: 768px) {
     h1 {
-        font-size: 2.6em;
+        font-size: 2em;
         line-height: 1.2em
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-weight: 200 !important;
     text-rendering: optimizelegibility;
     margin-bottom: .25em;
     font-weight: 600;
     color: #111
 }
 
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-    color: red !important
+h1 a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #111 !important;
+    text-decoration: none !important;
 }
 
 h2, section h1 {
@@ -605,41 +554,40 @@ blockquote cite:before {
 }
 
 .group, body > header, body > nav, body > footer, body #content > article,
-body #content > div > article, body #content > div > section, body div.pagination,
-aside.sidebar {
+body #content > div > article, body #content > div > section, body div.pagination {
     * zoom: 1
 }
 
 .group:after, body > header:after, body > nav:after, body > footer:after,
-body #content > article:after, body #content > div > section:after, body div.pagination:after,
-aside.sidebar:after {
+body #content > article:after, body #content > div > section:after, body div.pagination:after {
     content: "";
     display: table;
     clear: both
 }
 
-body {
+body > main, body > header > hgroup.top > *, body > header nav {
     -webkit-text-size-adjust: none;
-    max-width: 676px;
     position: relative;
-    margin: 0 auto
+    margin: 0 auto;
+    max-width: 676px;
+    padding: 0 18px;
 }
 
-body > header, body > nav, body > footer, body #content > article, body #content > div > article,
+body > header > hgroup.top, body > main, body > nav, body > footer, body #content > article, body #content > div > article,
 body #content > div > section {
     padding-left: 18px;
     padding-right: 18px
 }
 
 @media only screen and (min-width: 480px) {
-    body > header, body > nav, body > footer, body #content > article, body #content > div > article,
+    body > header > hgroup.top, body > nav, body > footer, body #content > article, body #content > div > article,
     body #content > div > section {
         padding-right: 18px
     }
 }
 
 @media only screen and (min-width: 768px) {
-    body > header, body > nav, body > footer, body #content > article, body #content > div > article,
+    body > header > hgroup.top, body > nav, body > footer, body #content > article, body #content > div > article,
     body #content > div > section {
         padding-left: 18px;
         padding-right: 18px
@@ -647,7 +595,7 @@ body #content > div > section {
 }
 
 @media only screen and (min-width: 992px) {
-    body > header, body > nav, body > footer, body #content > article, body #content > div > article,
+    body > header > hgroup.top, body > nav, body > footer, body #content > article, body #content > div > article,
     body #content > div > section {
         padding-left: 18px;
         padding-right: 18px
@@ -680,19 +628,15 @@ body div.pagination {
     }
 }
 
-body > header {
-    font-size: 1em;
-    padding-top: 1.5em;
-    padding-bottom: 0.75em
+body > header > hgroup.top  {
+    background-color: #2d2d2d;
+    color: #ccc;
+    padding: 10px 0;
+    border-bottom: 6px solid black;
 }
 
 #content > div, #content > article {
     width: 100%
-}
-
-aside.sidebar {
-    float: none;
-    padding: 0 18px 1px
 }
 
 .flex-content, table, article img, article video, article .flash-video {
@@ -724,51 +668,6 @@ article video.right, article .right.flash-video {
     margin-bottom: .8em
 }
 
-.toggle-sidebar, .no-sidebar .toggle-sidebar {
-    display: none
-}
-
-@media only screen and (min-width: 750px) {
-    body.sidebar-footer aside.sidebar {
-        float: none;
-        width: auto;
-        clear: left;
-        margin: 0;
-        padding: 0 18px 1px
-    }
-
-    body.sidebar-footer aside.sidebar section.odd, body.sidebar-footer aside.sidebar section.even {
-        float: left;
-        width: 48%
-    }
-
-    body.sidebar-footer aside.sidebar section.odd {
-        margin-left: 0
-    }
-
-    body.sidebar-footer aside.sidebar section.even {
-        margin-left: 4%
-    }
-
-    body.sidebar-footer aside.sidebar.thirds section {
-        width: 30%;
-        margin-left: 5%
-    }
-
-    body.sidebar-footer aside.sidebar.thirds section.first {
-        margin-left: 0;
-        clear: both
-    }
-}
-
-body.sidebar-footer #content {
-    margin-right: 0px
-}
-
-body.sidebar-footer .toggle-sidebar {
-    display: none
-}
-
 #content {
     border-right: none
 }
@@ -776,39 +675,6 @@ body.sidebar-footer .toggle-sidebar {
 @media only screen and (min-width: 550px) {
     body > header {
         font-size: 1em
-    }
-}
-
-@media only screen and (min-width: 750px) {
-    aside.sidebar {
-        float: none;
-        width: auto;
-        clear: left;
-        margin: 0;
-        padding: 0 18px 1px
-    }
-
-    aside.sidebar section.odd, aside.sidebar section.even {
-        float: left;
-        width: 48%
-    }
-
-    aside.sidebar section.odd {
-        margin-left: 0
-    }
-
-    aside.sidebar section.even {
-        margin-left: 4%
-    }
-
-    aside.sidebar.thirds section {
-        width: 30%;
-        margin-left: 5%
-    }
-
-    aside.sidebar.thirds section.first {
-        margin-left: 0;
-        clear: both
     }
 }
 
@@ -845,77 +711,12 @@ body.sidebar-footer .toggle-sidebar {
         clear: both
     }
 
-    .no-sidebar #content {
-        margin-right: 0;
-        border-right: 0
-    }
-
-    .collapse-sidebar #content {
-        margin-right: 20px
-    }
-
     #content > div, #content > article {
         padding-top: 9px;
         padding-bottom: 9px;
         float: left
     }
 
-    aside.sidebar {
-        * zoom: 1;
-        width: 210px;
-        padding: 0 15px 15px;
-        clear: none;
-        float: left;
-        margin: 0 -100% 0 0
-    }
-
-    aside.sidebar:after {
-        content: "";
-        display: table;
-        clear: both
-    }
-
-    aside.sidebar section {
-        width: auto;
-        margin-left: 0
-    }
-
-    aside.sidebar section.odd, aside.sidebar section.even {
-        float: none;
-        width: auto;
-        margin-left: 0
-    }
-
-    .collapse-sidebar aside.sidebar {
-        float: none;
-        width: auto;
-        clear: left;
-        margin: 0;
-        padding: 0 18px 1px
-    }
-
-    .collapse-sidebar aside.sidebar section.odd, .collapse-sidebar aside.sidebar section.even {
-        float: left;
-        width: 48%
-    }
-
-    .collapse-sidebar aside.sidebar section.odd {
-        margin-left: 0
-    }
-
-    .collapse-sidebar aside.sidebar section.even {
-        margin-left: 4%
-    }
-
-    .collapse-sidebar aside.sidebar.thirds section {
-        width: 30%;
-        margin-left: 5%
-    }
-
-    .collapse-sidebar aside.sidebar.thirds section.first {
-        margin-left: 0;
-        clear: both
-    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -930,23 +731,6 @@ body.sidebar-footer .toggle-sidebar {
     #content > div, #content > article {
         padding-top: 9px;
         padding-bottom: 9px
-    }
-
-    aside.sidebar {
-        width: 260px;
-        padding: 1.2em 20px 20px
-    }
-
-    .collapse-sidebar aside.sidebar {
-        padding-left: 18px;
-        padding-right: 18px;
-        * zoom: 1
-    }
-
-    .collapse-sidebar aside.sidebar:after {
-        content: "";
-        display: table;
-        clear: both
     }
 }
 
@@ -997,57 +781,57 @@ table th, table td {
     border-bottom: 1px solid #eee
 }
 
-body > header {
-    float: left;
-    border-right: 4px solid #000;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    text-align: center
+body > header h1 {
+    font-size: 2 !important;
 }
 
-body > header h1 {
-    font-weight: bold
+body > header h1.bug {
+    float: left;
+}
+
+body > header h2 {
+    font-size: .75em !important;
+    font-weight: normal;
 }
 
 body > header h1 a, body > header h1 a:link, body > header h1 a:visited, body > header h1 a:hover {
-    color: #000 !important;
+    color: #ccc !important;
     text-decoration: none;
     background-color: transparent;
     border: none
 }
 
 body > header img, body > header h1 {
-    width: 90px
+    /* width: 90px */
 }
 
 @media only screen and (min-width: 480px) {
     body > header img, body > header h1 {
-        width: 90px
+        /* width: 90px */
     }
 }
 
 @media only screen and (min-width: 750px) {
     body > header img, body > header h1 {
-        width: 90px
+        /* width: 90px */
     }
 }
 
 @media only screen and (min-width: 768px) {
     body > header img, body > header h1 {
-        width: 120px
+        /* width: 120px */
     }
 }
 
 body > header h2 {
-    color: #000;
+    color: #ccc !important;
     font-weight: bold;
-    margin-top: 0.12em;
     margin-bottom: 0;
     font-weight: bold
 }
 
 body > header h2 a, body > header h2 a:visited {
-    color: #000;
+    color: #ccc !important;
     text-decoration: none;
     border: none
 }
@@ -1132,7 +916,7 @@ body > nav ul li {
 
 body > nav a {
     color: #333;
-    font-family: "SourceSans", "Futura", "Helvetica", sans-serif;
+    font-family: "SourceSans", "Proxima Nova", "Helvetica", sans-serif;
     float: left;
     text-decoration: none;
     font-size: 1em;

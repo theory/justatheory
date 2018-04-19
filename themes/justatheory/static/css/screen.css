@@ -238,6 +238,22 @@ table {
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/fonts/fa-brands.woff2') format('woff2'),
+         url('/fonts/fa-brands.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/fonts/fa-solid.woff2') format('woff2'),
+         url('/fonts/fa-solid.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
 caption, th, td {
     text-align: left;
     font-weight: normal;
@@ -669,6 +685,32 @@ body > header > nav li.icon {
     padding-left: 10px;
 }
 
+.fa {
+    font-family: FontAwesome;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-twitter:hover {
+    color: #55acee !important;
+}
+  
+.fa-rss:before {
+    content: "\f09e";
+}  
+  
+.fa-rss:hover {
+    color: #ff6600 !important
+}
 #content > div, #content > article {
     width: 100%
 }

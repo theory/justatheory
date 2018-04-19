@@ -23,7 +23,12 @@
 				<li><a href="/about/">About</a></li>
 				<li><a href="/archive/">Archives</a></li>
 				<li><a href="/tags/">Tags</a></li>
+				{{- if .Site.Params.twitter }}
 				<li class="icon"><a href="//twitter.com/{{ .Site.Params.twitter }}"><i class="fa fa-twitter"></i></a></li>
+				{{- end }}
+				{{- if .Site.Params.github }}
+				<li class="icon"><a href="//github.com/{{ .Site.Params.github }}"><i class="fa fa-github"></i></a></li>
+				{{- end }}
 				<li class="icon"><a href="{{ .RSSLink }}"><i class="fa fa-rss"></i></a></li>
 			</ul>
 		</nav>

@@ -9,6 +9,7 @@ theme = "justatheory"
   author = "David E. Wheeler"
   bug = "❖"
   twitter = "theory"
+  github = "theory"
 
 [permalinks]
   posts = "/:year/:month/:slug/"

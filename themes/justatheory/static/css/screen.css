@@ -703,6 +703,14 @@ body > header > nav li.icon {
 .fa-twitter:hover {
     color: #55acee !important;
 }
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-github:hover {
+    color: #75177d !important;
+}
   
 .fa-rss:before {
     content: "\f09e";
@@ -2100,8 +2108,7 @@ body > footer {
     color: #ccc;
     border-top: 6px solid black;
     width: 100%;
-    padding-top: .5em;
-    padding-bottom: 1em;
+    padding: .5em 0 1em 0;
     bottom: 0;
     position: absolute;
     text-align: center

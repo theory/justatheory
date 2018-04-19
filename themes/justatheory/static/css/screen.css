@@ -17,7 +17,7 @@ summary, time, mark, audio, video {
 }
 
 html {
-    line-height: 1
+    line-height: 1;
 }
 
 ol, ul {
@@ -307,6 +307,7 @@ a:active {
 
 
 html {
+    height: 100%;
     background: #fff
 }
 
@@ -333,9 +334,19 @@ body > footer {
 }
 
 body {
+    position: relative;
+    margin: 0;
     font-size: 1.125em;
     line-height: 1.5em;
     color: #333;
+    min-height: 100%;
+    height:auto;
+    padding-bottom: 50px;
+}
+
+main {
+    min-height:100%;
+    height:auto;
 }
 
 h1 {
@@ -2020,27 +2031,28 @@ figure.code figcaption a:hover {
 }
 
 body > footer {
-    color: #272727;
-    position: relative;
+    background-color: #2d2d2d;
+    color: #ccc;
+    border-top: 6px solid black;
+    width: 100%;
     padding-top: .5em;
     padding-bottom: 1em;
-    margin-bottom: 20em;
-    z-index: 1;
-    border-top: 4px solid #e6e6e6;
+    bottom: 0;
+    position: absolute;
     text-align: center
 }
 
 body > footer a {
-    color: #272727;
-    border: none
+    color: #ccc;
+    border: none;
 }
 
 body > footer a:visited {
-    color: #272727
+    color: #ccc
 }
 
 body > footer a:hover {
-    color: #626262
+    text-decoration: none;
 }
 
 body > footer p:last-child {

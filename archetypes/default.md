@@ -1,8 +1,8 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-deck: ""
 tags: []
+link: ""
 draft: true
 ---
 

@@ -6,8 +6,7 @@ url: /2015/02/11/please-test-pod-simple-3-dot-29-3/
 categories: []
 ---
 
-
-![Pod Book](/images/cpan.png "Pod Book")
+![Pod Book](cpan.png "Pod Book")
 
 I've just pushed [Pod-Simple] 3.29_v3 to CPAN. [Karl Williamson] did a lot of
 hacking on this release, finally adding support for EBCDIC. But as part of

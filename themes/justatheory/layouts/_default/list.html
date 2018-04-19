@@ -26,7 +26,7 @@
 				<blockquote>{{ .Summary }}</blockquote>
 				{{- end }}
 				<footer>
-					<a rel="bookmark" href="{{ .Permalink }}">§</a>
+					<a rel="bookmark" href="{{ .Permalink }}">{{ .Site.Params.bug }}</a>
 					{{- partial "tags.html" . }}
 				</footer>
 			</article>

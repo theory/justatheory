@@ -369,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #111
 }
 
-h1 a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+h1 a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, body > header > nav a, body > header > nav:hover {
     color: #111 !important;
     text-decoration: none !important;
 }
@@ -644,6 +644,29 @@ body > header > hgroup.top  {
     color: #ccc;
     padding: 10px 0;
     border-bottom: 6px solid black;
+}
+
+body > header > nav {
+    white-space: nowrap;
+    list-style-type: none;
+    margin-top: 5px;
+    font-weight: 200;
+    font-size: .8em;
+    text-align: right;
+}
+
+body > header > nav ul {
+    margin: 0;
+}
+
+body > header > nav li {
+    display: inline;
+    padding-right: 20px;
+}
+
+body > header > nav li.icon {
+    padding-right: 0;
+    padding-left: 10px;
 }
 
 #content > div, #content > article {

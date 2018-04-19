@@ -22,9 +22,9 @@
 			<ul>
 				<li><a href="/about/">About</a></li>
 				<li><a href="/archive/">Archives</a></li>
-				{{ range .Site.Menus.main }}
-				<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-				{{ end }}
+				<li><a href="/tags/">Tags</a></li>
+				<li class="icon"><a href="//twitter.com/{{ .Site.Params.twitter }}">T</a></li>
+				<li class="icon"><a href="{{ .RSSLink }}">R</a></li>
 			</ul>
 		</nav>
 	</header>

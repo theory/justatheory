@@ -8,6 +8,7 @@ theme = "justatheory"
   description = "Theory waxes practical."
   author = "David E. Wheeler"
   bug = "❖"
+  twitter = "theory"
 
 [permalinks]
   posts = "/:year/:month/:slug/"

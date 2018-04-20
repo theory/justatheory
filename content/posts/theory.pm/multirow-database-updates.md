@@ -3,7 +3,7 @@ date: 2013-09-09T17:47:00Z
 link: http://techblog.net-a-porter.com/2013/08/dbixmultirow-updating-multiple-database-rows-quickly-and-easily/
 title: Multirow Database Updates
 url: /sql/2013/09/09/multirow-database-updates/
-tags: [sql, William Blunn, PostgreSQL, SQLite, Oracle, MySQL]
+tags: [SQL, William Blunn]
 ---
 
 William Blunn:

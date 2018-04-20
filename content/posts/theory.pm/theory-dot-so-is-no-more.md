@@ -2,7 +2,7 @@
 date: 2015-10-03T13:14:00Z
 title: theory.so is No More
 url: /blog/2015/10/03/theory-dot-so-is-no-more/
-tags: [blog, theory.pm, theory.so, meta]
+tags: [blog]
 ---
 
 Until last week, I had two newish blogs. This one, [theory.pm](/), was to be my Perl blog. The other one, theory.so, was my database blog. I thought it would be a good idea to have separate blogs for separate audiences, but it turns out I don't post enough to make much difference. And now, as of last week, I let the theory.so domain expire. Control the [.so](https://en.wikipedia.org/wiki/.so) domain was turned over to Somalia a few months ago, and domain renwal fees went *way* up. Since I had so few posts over there (14 since August, 2013), I decided it was a good time to just merge it with theory.pm and be done with it.

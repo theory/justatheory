@@ -2,7 +2,7 @@
 date: 2014-09-06T18:10:00Z
 title: Localize Your Perl Apps with this One Weird Trick
 url: /l10n/2014/09/06/localize-your-perl-apps-with-this-one-weird-trick/
-tags: [l10n, perl, Perl Advent Calendar, locale, gettext, i18n, dzil]
+tags: [localization, internationalization, perl]
 ---
 
 Nota Bene: This is a republication of a [post that originally appeared in the

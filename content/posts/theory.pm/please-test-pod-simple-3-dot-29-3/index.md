@@ -2,11 +2,10 @@
 date: 2015-02-11T10:53:00Z
 title: Please Test Pod::Simple 3.29_3
 url: /2015/02/11/please-test-pod-simple-3-dot-29-3/
-
-categories: []
+tags: []
 ---
 
-![Pod Book](/2015/02/11/please-test-pod-simple-3-dot-29-3/cpan.png "Pod Book")
+{{% figure src="cpan.png" class="left" width="250" alt="Pod Book" %}}
 
 I've just pushed [Pod-Simple] 3.29_v3 to CPAN. [Karl Williamson] did a lot of
 hacking on this release, finally adding support for EBCDIC. But as part of

@@ -301,6 +301,14 @@ a:hover {
     text-decoration: underline;
 }
 
+figure a:hover {
+    text-decoration: none !important;
+}
+
+figure a:hover img {
+    background-color: #fcc
+}
+
 a:active {
     color: #ba5e5e
 }
@@ -727,26 +735,26 @@ body > header > nav li.icon {
     height: auto
 }
 
-.basic-alignment.left, table.left, article img.left, article video.left,
+.basic-alignment.left, table.left, article figure.left, article video.left,
 article .left.flash-video {
     float: left;
     margin-right: 1.5em
 }
 
-.basic-alignment.right, table.right, article img.right, article video.right,
+.basic-alignment.right, table.right, article figure.right, article video.right,
 article .right.flash-video {
     float: right;
     margin-left: 1.5em
 }
 
-.basic-alignment.center, table.center, article img.center, article video.center,
+.basic-alignment.center, table.center, article figure, article figure.center, article video.center,
 article .center.flash-video {
     display: block;
     margin: 0 auto 1.5em
 }
 
-.basic-alignment.left, table.left, article img.left, article video.left,
-article .left.flash-video, .basic-alignment.right, table.right, article img.right,
+.basic-alignment.left, table.left, article figure.left, article video.left,
+article .left.flash-video, .basic-alignment.right, table.right, article figure.right,
 article video.right, article .right.flash-video {
     margin-bottom: .8em
 }

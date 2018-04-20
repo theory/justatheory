@@ -3,7 +3,7 @@ title: About Just a Theory
 type: about
 ---
 
-![David E. “Theory” Wheeler](/img/theory.jpg "David E. “Theory” Wheeler")
+{{% figure src="/img/theory.jpg" alt="David E. “Theory” Wheeler" %}}
 
 Just a Theory is written by David. E. Wheeler.
 

@@ -2,8 +2,7 @@
 date: 2014-09-21T14:45:00Z
 title: Build Modern Perl RPMs with rpmcpan
 url: /rpm/2014/09/21/build-modern-perl-rpms-with-rpmcpan/
-
-categories: [rpm]
+tags: [rpm]
 ---
 
 {{% figure src="/rpm/2014/09/21/build-modern-perl-rpms-with-rpmcpan/ioperllove.png" alt="iovation + Perl = Love"  %}}

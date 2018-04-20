@@ -3,8 +3,7 @@ date: 2016-02-29T11:34:00Z
 link: http://arstechnica.com/tech-policy/2016/02/privacy-shield-doomed-from-get-go-nsa-bulk-surveillance-waved-through/
 title: A Porous “Privacy Shield”
 url: /privacy/2016/02/29/privacy-shield/
-
-categories: [privacy]
+tags: [privacy]
 ---
 
 Glyn Moody, in *Ars Technica,* on the proposed replacement for the recently

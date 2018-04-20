@@ -3,8 +3,7 @@ date: 2013-09-29T14:29:00Z
 link: http://blog.cloudera.com/blog/2013/09/whats-next-for-impala-after-release-1-1/
 title: Whither Impala Fault Tolerance?
 url: /impala/2013/09/29/whither-impala-fault-tolerance/
-
-categories: [impala]
+tags: [impala]
 ---
 
 Justin Erickson on the [Cloudera Blog]

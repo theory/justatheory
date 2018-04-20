@@ -2,16 +2,16 @@
 date: 2015-02-11T10:53:00Z
 title: Please Test Pod::Simple 3.29_3
 url: /2015/02/11/please-test-pod-simple-3-dot-29-3/
-tags: []
+tags: [perl, encoding, Sean Burke, Karl Williamson]
 ---
 
 {{% figure src="cpan.png" class="left" width="250" alt="Pod Book" %}}
 
 I've just pushed [Pod-Simple] 3.29_v3 to CPAN. [Karl Williamson] did a lot of
 hacking on this release, finally adding support for EBCDIC. But as part of
-that work, and in coordination with Pod::Simple's original author, [Sean
-Burke], as well as [pod-people], we have switched the default encoding from
-[Latin-1] to [CP-1252].
+that work, and in coordination with Pod::Simple's original author,
+[Sean Burke], as well as [pod-people], we have switched the default encoding
+from [Latin-1] to [CP-1252].
 
 On the surface, that might sound like a big change, but in truth, it's pretty
 straight-forward. CP-1252 is effectively a superset of Latin-1, repurposing

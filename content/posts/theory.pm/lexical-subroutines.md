@@ -3,8 +3,7 @@ date: 2013-09-25T20:12:00Z
 link: http://rjbs.manxome.org/rubric/entry/2016
 title: Lexical Subroutines
 url: /syntax/2013/09/25/lexical-subroutines/
-
-categories: [syntax]
+tags: [syntax]
 ---
 
 Ricardo Signes:

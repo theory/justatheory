@@ -2,8 +2,7 @@
 date: 2013-07-22T11:31:00Z
 title: Try Me
 url: /syntax/2013/07/22/try-me/
-
-categories: [syntax]
+tags: [syntax]
 ---
 
 Context

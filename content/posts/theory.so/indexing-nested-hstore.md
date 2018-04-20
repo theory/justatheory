@@ -2,8 +2,7 @@
 date: 2013-10-25T14:36:00Z
 title: Indexing Nested hstore
 url: /pg/2013/10/25/indexing-nested-hstore/
-
-categories: [pg]
+tags: [pg]
 ---
 
 In my first [Nested hstore] post yesterday, I ran a query against unindexed

@@ -2,8 +2,7 @@
 date: 2014-01-13T14:11:00Z
 title: Templating Tests with Sqitch
 url: /sqitch/2014/01/13/templating-tests-with-sqitch/
-
-categories: [sqitch]
+tags: [sqitch]
 ---
 
 Back in September, [I described] how to create custom deploy, revert, and

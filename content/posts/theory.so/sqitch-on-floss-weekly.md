@@ -3,8 +3,7 @@ date: 2014-09-17T20:42:00Z
 link: https://twit.tv/shows/floss-weekly/episodes/309
 title: Sqitch on FLOSS Weekly
 url: /podcast/2014/09/17/sqitch-on-floss-weekly/
-
-categories: [podcast]
+tags: [podcast]
 ---
 
 Yours truly was feature in this week's episode of [FLOSS Weekly], talking

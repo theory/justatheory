@@ -1,7 +1,0 @@
-{{ partial "header.html" . }}
-	<main>
-		{{ range first 10 .Data.Pages }}
-		{{ partial "article.html" (dict "doc" . "list" true) }}
-		{{ end }}
-	</main>
-{{ partial "footer.html" . }}

@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+	<main id="{{ .Type }}">
+		<header>
+			<h1>{{ .Title }}</h1>			
+		</header>
+		{{- $.Scratch.Set "year" 0 }}
+		{{- range .Data.Pages }}
+		{{- if ne ($.Scratch.Get "year") .Date.Year}}
+		{{- if ne ($.Scratch.Get "year") 0 }}
+		</section>
+		{{- end }}
+		{{- $.Scratch.Set "year" (.Date.Year) }}
+		<section>
+			<h2>{{ .Date.Year }}</h2>
+		{{- end }}
+			<article class="{{ .Type }}">
+				<header>
+					{{- if .Params.link }}
+					<h1 class="link"><a href="{{ .Params.link }}">{{ .Title }}</a> →</h1>
+					{{- else }}
+					<h1 class="post"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+					{{- end }}
+					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>
+				</header>
+				{{- if .Summary }}
+				<blockquote>{{ .Summary }}</blockquote>
+				{{- end }}
+				<footer>
+					<a rel="bookmark" href="{{ .Permalink }}">{{ .Site.Params.bug }}</a>
+{{ partial "tags.html" . }}
+				</footer>
+			</article>
+		{{- end }}
+		</section>
+	</main>
+{{ partial "footer.html" . }}

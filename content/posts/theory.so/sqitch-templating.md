@@ -2,7 +2,7 @@
 date: 2013-09-06T13:44:00Z
 title: Sqitch Templating
 url: /sqitch/2013/09/06/sqitch-templating/
-tags: [sqitch]
+tags: [Sqitch]
 ---
 
 Last week saw the v.980 release of [Sqitch], a database change management

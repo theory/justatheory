@@ -2,7 +2,7 @@
 date: 2015-02-11T10:53:00Z
 title: Please Test Pod::Simple 3.29_3
 url: /2015/02/11/please-test-pod-simple-3-dot-29-3/
-tags: [perl, encoding, Sean Burke, Karl Williamson]
+tags: [Perl, Sean Burke, Karl Williamson]
 ---
 
 {{% figure src="cpan.png" class="left" width="250" alt="Pod Book" %}}

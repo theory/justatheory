@@ -3,7 +3,7 @@ date: 2013-09-29T14:50:00Z
 link: http://www.openscg.com/2013/09/the-power-of-enums/
 title: The Power of Enums
 url: /pg/2013/09/29/the-power-of-enums/
-tags: [postgres, Jim Mlodgenski]
+tags: [Postgres, Jim Mlodgenski]
 ---
 
 Jim Mlodgenski on using [Enums] in place of references to small lookup tables:

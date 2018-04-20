@@ -378,15 +378,20 @@ main#tags > header {
 }
 
 .tags li {
-    display: inline;
+    white-space: pre-line;
+    display: inline-block;
 }
 
-.tags li:first-child:before {
+.tags li:last-child:after {
     content: '';
 }
 
-.tags li:before {
-   content: ' • '
+.tags li:after {
+   content: ' / '
+}
+
+.tags h5 {
+    margin-bottom: 0;
 }
 
 h1 {
@@ -1124,7 +1129,7 @@ body > nav fieldset[role=search] {
     padding-top: 2em
 }
 
-article, .tags {
+article, .tags:first-child {
     padding-top: 1em
 }
 

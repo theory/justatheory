@@ -6,11 +6,13 @@
 		<div id="tags">
 			{{- $.Scratch.Set "char" '0' }}
 			{{- range .Data.Pages }}
-			{{- if ne ($.Scratch.Get "char") (index .Title 0) }}
+			{{- $char = upper (index .Title 0) }}
+			{{- if ne ($.Scratch.Get "char") $car }}
 			{{- if ne ($.Scratch.Get "char") '0' }}
 			</ul>
 			{{- end }}
-			{{- $.Scratch.Set "char" (index .Title 0) }}
+			{{- $.Scratch.Set "char" $char }}
+			<h5>{{ printf "%c" $char }}</h5>
 			<ul class="tags {{ index .Title 0 }}">
 			{{- end }}
 				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

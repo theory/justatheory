@@ -3,7 +3,7 @@ date: 2016-02-29T11:34:00Z
 link: http://arstechnica.com/tech-policy/2016/02/privacy-shield-doomed-from-get-go-nsa-bulk-surveillance-waved-through/
 title: A Porous “Privacy Shield”
 url: /privacy/2016/02/29/privacy-shield/
-tags: [privacy]
+tags: [privacy, Privacy Shield, Glyn Moody, Safe Harbor, NSA]
 ---
 
 Glyn Moody, in *Ars Technica,* on the proposed replacement for the recently
@@ -27,7 +27,7 @@ So let me get this straight. Under this proposal:
 
 * The NSA can continue to bulk collect EU citizen data.
 * That data may be shared with other agencies in the US government.
-* Said collection must fall under six allowed case, one of wich is
+* Said collection must fall under six allowed case, one of which is
   undefined "counter-terrorism" purposes. No one ever abused *that* kind of
   thing before.
 * The US claims there is no more bulk surveillance, except that there is under those six cases.

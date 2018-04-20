@@ -3,7 +3,7 @@ date: 2013-08-28T17:25:00Z
 link: http://tapoueh.org/blog/2013/08/20-Window-Functions
 title: Understanding Window Functions
 url: /pg/windows/2013/08/28/understanding-window-functions/
-tags: [pg, windows]
+tags: [postges, windows, Dimitri Fontaine]
 ---
 
 Dimitri Fontaine:

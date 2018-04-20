@@ -2,7 +2,7 @@
 date: 2013-08-28T17:09:00Z
 title: Data Deployment with Sqitch
 url: /sqitch/data/2013/08/28/data-deployment-with-sqitch/
-tags: [sqitch, data]
+tags: [sqitch, database, dml]
 ---
 
 I've been thinking about data migrations. I love how well [Sqitch] works for
@@ -53,7 +53,7 @@ Changes for Static Data Maintenance
 -----------------------------------
 
 For data that must be tied to the deployment process, there are two
-complications that have prevetned me from simply managing them in normal
+complications that have prevented me from simply managing them in normal
 Sqitch changes:
 
 1. There might be side-effects to the deployment. For example, a foreign key

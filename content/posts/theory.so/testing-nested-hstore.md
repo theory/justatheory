@@ -2,7 +2,7 @@
 date: 2013-10-23T10:26:00Z
 title: Testing Nested hstore
 url: /pg/2013/10/23/testing-nested-hstore/
-tags: [pg]
+tags: [postgres, hstore]
 ---
 
 I've been helping Oleg Bartunov and Teodor Sigaev with documentation for the

@@ -3,7 +3,7 @@ date: 2016-02-19T15:26:00Z
 link: https://securosis.com/blog/do-we-have-a-right-to-security
 title: Do We Have Right to Security?
 url: /security/2016/02/19/right-to-security/
-tags: [security]
+tags: [security, Rich Mogull, Ron Wyden]
 ---
 
 Rich Mogull:

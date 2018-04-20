@@ -5,6 +5,7 @@ theme = "justatheory"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
+PreserveTaxonomyNames = true
 
 [params]
   favicon = ""

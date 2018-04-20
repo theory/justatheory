@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+	<main id="{{ .Type }}">
+		<header>
+			<h2>Posts about {{ .Title }}</h2>
+		</header>
+		{{ range .Data.Pages }}
+		{{ partial "article.html" (dict "doc" . "list" true) }}
+		{{ end }}
+	</main>
+{{ partial "footer.html" . }}

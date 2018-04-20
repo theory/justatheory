@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+	<main id="{{ .Type }}">
+		<header>
+			<h1 class="title">{{ .Title }}</h1>
+		</header>
+		<div id="tags">
+			{{- $.Scratch.Set "char" '0' }}
+			{{- range .Data.Pages }}
+			{{- if ne ($.Scratch.Get "char") (index .Title 0) }}
+			{{- if ne ($.Scratch.Get "char") '0' }}
+			</ul>
+			{{- end }}
+			{{- $.Scratch.Set "char" (index .Title 0) }}
+			<ul class="{{ index .Title 0 }}">
+			{{- end }}
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			{{- end }}
+			</ul>
+		</div>
+	</main>
+{{ partial "footer.html" . }}

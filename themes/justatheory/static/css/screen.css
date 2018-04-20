@@ -372,6 +372,11 @@ main {
     padding-bottom: 80px !important;
 }
 
+main#tags > header {
+    margin: 20px 0;
+    border-bottom: 1px solid black;
+}
+
 h1 {
     font-size: 2.2em;
     line-height: 1.2em
@@ -1111,7 +1116,7 @@ body > nav fieldset[role=search] {
     padding-top: 2em
 }
 
-article {
+article, #tags {
     padding-top: 1em
 }
 

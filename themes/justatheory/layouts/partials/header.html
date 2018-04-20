@@ -19,7 +19,7 @@
 			<h2>By {{ .Site.Params.author }}</h2>
 		</hgroup>
 		<nav>
-			<ul>
+			<menu>
 				<li><a href="/about/">About</a></li>
 				<li><a href="/archive/">Archives</a></li>
 				<li><a href="/tags/">Tags</a></li>
@@ -30,6 +30,6 @@
 				<li class="icon"><a href="//github.com/{{ .Site.Params.github }}"><i class="fa fa-github"></i></a></li>
 				{{- end }}
 				<li class="icon"><a href="{{ .RSSLink }}"><i class="fa fa-rss"></i></a></li>
-			</ul>
+			</menu>
 		</nav>
 	</header>

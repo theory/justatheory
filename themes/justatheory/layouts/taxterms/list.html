@@ -11,7 +11,7 @@
 			</ul>
 			{{- end }}
 			{{- $.Scratch.Set "char" (index .Title 0) }}
-			<ul class="{{ index .Title 0 }}">
+			<ul class="tags {{ index .Title 0 }}">
 			{{- end }}
 				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 			{{- end }}

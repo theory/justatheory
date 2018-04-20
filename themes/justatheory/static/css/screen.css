@@ -377,6 +377,18 @@ main#tags > header {
     border-bottom: 1px solid black;
 }
 
+.tags li {
+    display: inline;
+}
+
+.tags li:first-child:before {
+    content: '';
+}
+
+.tags li:before {
+   content: ' • '
+}
+
 h1 {
     font-size: 2.2em;
     line-height: 1.2em
@@ -456,10 +468,6 @@ ol ol {
 ol ol ol {
     list-style-type: lower-roman;
     margin-bottom: 0px
-}
-
-ul, ul ul, ul ol, ol, ol ul, ol ol {
-    margin-left: 1.3em
 }
 
 strong {
@@ -1116,7 +1124,7 @@ body > nav fieldset[role=search] {
     padding-top: 2em
 }
 
-article, #tags {
+article, .tags {
     padding-top: 1em
 }
 

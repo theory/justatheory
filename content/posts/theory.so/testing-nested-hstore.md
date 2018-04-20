@@ -20,7 +20,7 @@ were kind enough to show off their [json_fdw] with some Amazon review data in
 a [blog post] a few months back; it even includes an interesting query against
 the data. Let's see what we can do with it. First, load it:
 
-``` bash Load Amazon Reviews as hstore
+``` bash
 > createdb reviews
 > psql -d reviews -c '
     CREATE EXTENSION HSTORE;
@@ -37,7 +37,7 @@ COPY 589859
 13 seconds to load 589,859 records from a file -- a little over 45k records
 per second. Not bad. Let's see what the storage looks like:
 
-``` bash How Big is the hstore Data?
+``` bash
 > psql -d reviews -c 'SELECT pg_size_pretty(pg_database_size(current_database()));'
  pg_size_pretty 
 ----------------
@@ -47,7 +47,7 @@ per second. Not bad. Let's see what the storage looks like:
 The original, uncompressed data is 208 MB on disk, so roughly a third bigger
 given the overhead of the database. Just for fun, let's compare it to JSON:
 
-``` bash Load Amazon Reviews as JSON
+``` bash
 > createdb reviews_js
 > psql -d reviews_js -c 'CREATE TABLE reviews(review json);'
 CREATE TABLE
@@ -72,7 +72,7 @@ post] and ran it on my 2013 MacBook Air (1.7 GHz Intel Core i7) with iTunes
 and a bunch of other apps running in the background [yeah, I'm lazy]). Check
 out those operators, by the way! Given a path, `#^>` returns a numeric value:
 
-``` sql Query the hstore-encoded reviews
+``` postgres
 reviews=# SELECT
     width_bucket(length(review #> '{product,title}'), 1, 50, 5) title_length_bucket,
     round(avg(review #^> '{review,rating}'), 2) AS review_average,
@@ -104,7 +104,7 @@ several times, and the time was always between 2.3 and 2.4 seconds. The Citus
 well the JSON type does (pity there is no operator to fetch a value as
 numeric; we have to cast from text):
 
-``` sql Query the JSON-encoded reviews
+``` postgres
 reviews_js=# SELECT
     width_bucket(length(review #>> '{product,title}'), 1, 50, 5) title_length_bucket,
     round(avg((review #>> '{review,rating}')::numeric), 2) AS review_average,

@@ -61,25 +61,31 @@ manage changes.
 If you're using Vertica, peruse [the tutorial] to get a feel for what it's
 all about. If you want to install it, you can get it from CPAN:
 
-    cpan install App::Sqitch BDD::ODBC
+``` sh
+cpan install App::Sqitch BDD::ODBC
+```
 
 Or, if you're on Homebrew:
 
-    brew tap theory/sqitch
-    brew install sqitch_vertica
+``` sh
+brew tap theory/sqitch
+brew install sqitch_vertica
+```
 
 Be warned that there's a minor bug in v0.996, though. Apply this diff to fix
 it:
 
-    @@ -16,7 +16,7 @@ our $VERSION = '0.996';
+``` diff
+ @@ -16,7 +16,7 @@ our $VERSION = '0.996';
  
-     sub key    { 'vertica' }
-     sub name   { 'Vertica' }
-    -sub driver { 'DBD::Pg 2.0' }
-    +sub driver { 'DBD::ODBC 1.43' }
-     sub default_client { 'vsql' }
+ sub key    { 'vertica' }
+ sub name   { 'Vertica' }
+-sub driver { 'DBD::Pg 2.0' }
++sub driver { 'DBD::ODBC 1.43' }
+ sub default_client { 'vsql' }
  
-     has '+destination' => (
+ has '+destination' => (
+```
 
 That fix will be in the next release, of course, as will [support for Vertica 6].
 
@@ -106,5 +112,3 @@ to get that done by early October.
 [rationalizing configuration hierarchies]: https://github.com/theory/sqitch/issues/153
 [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial-vertica.pod
 [support for Vertica 6]: https://github.com/theory/sqitch/commit/4f8dbaa236a04f6dd1ec762250ffd8481078691a
-
-

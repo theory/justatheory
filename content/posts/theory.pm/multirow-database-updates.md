@@ -29,7 +29,7 @@ William Blunn:
 Or you could just use one statement. Here's how to do it with a [CTE] on
 PostgreSQL 9.2 and higher:
 
-``` sql PostgreSQL Multirow Upate with CTE
+``` postgres
 WITH up(name, salary) AS ( VALUES
      ('Jane',  1200),
      ('Frank', 1100),
@@ -45,7 +45,7 @@ UPDATE staff
 Still on PostgreSQL 9.1 or lower? Use a subselect in the `FROM` clause
 instead:
 
-``` sql PostgreSQL Multirow Update with Subselect
+``` postgres
 UPDATE staff
    SET salary = up.salary
    FROM (VALUES
@@ -59,7 +59,7 @@ UPDATE staff
 
 Stuck with MySQL or Oracle? Use a `UNION` query in a second table:
 
-``` sql MySQL & Oracle Multirow Update
+``` postgres
 UPDATE staff, (
          SELECT 'Jane' AS name, 1200 AS salary
    UNION SELECT 'Frank',        1100
@@ -73,7 +73,7 @@ UPDATE staff, (
 Using SQLite? Might make sense to use a temporary table for thousands or
 millions of rows. But for just a few, use a `CASE` expression:
 
-``` sql SQLite Multirow Update
+``` postgres
 UPDATE staff
    SET salary = CASE name
        WHEN 'Jane'  THEN 1200
@@ -91,4 +91,3 @@ to get to know your database well.
 
 [CTE]: http://www.postgresql.org/docs/current/static/queries-with.html "PostgreSQL Documentation: WITH Queries (Common Table Expressions)"
 [DBIx::MultiRow]: https://github.com/hochgurgler/DBIx-MultiRow "DBIx::MultiRow on GitHub"
-

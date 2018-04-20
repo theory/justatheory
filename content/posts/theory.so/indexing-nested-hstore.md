@@ -11,7 +11,7 @@ hstore data, which required a table scan. But hstore is able to take
 advantage of [GIN indexes]. So let's see what that looks like. Connecting to
 the same database, I indexed the `review` column:
 
-``` sql Indexing reviews
+``` postgres
 reviews=# CREATE INDEX idx_reviews_gin ON reviews USING GIN(review);
 CREATE INDEX
 Time: 360448.426 ms
@@ -28,19 +28,19 @@ operator. In practice, that means we can specify the full path to a nested
 value as an hstore expression. In our case, to query only for Books, instead
 of using this expression:
 
-``` sql
+``` postgres
 WHERE review #> '{product,group}' = 'Book'
 ```
 
 We can use an hstore value with the entire path, including the value:
 
-``` sql
+``` postgres
 WHERE review @> '{product => {group => Book}}'
 ```
 
 Awesome, right? Let's give it a try:
 
-``` sql Query Book Reviews
+``` postgres
 reviews=# SELECT
     width_bucket(length(review #> '{product,title}'), 1, 50, 5) title_length_bucket,
     round(avg(review #^> '{review,rating}'), 2) AS review_average,
@@ -76,7 +76,7 @@ probably isn't very selective. I don't blame the planner for deciding that a
 table scan is cheaper than an index scan. But what if we try a more selective
 value, say "DVD"?
 
-``` sql Query DVD Reivews
+``` postgres
 reviews=# SELECT
     width_bucket(length(review #> '{product,title}'), 1, 50, 5) title_length_bucket,
     round(avg(review #^> '{review,rating}'), 2) AS review_average,

@@ -30,11 +30,15 @@ whenever the [`rpmcpan` Git repository] updates. It uses the [MetaCPAN] API
 to build the latest versions of everything we need. Here's how to get it to
 build the latest version of Perl, 5.20.1:
 
-    ./bin/rpmcpan --version 5.20.1
+``` sh
+./bin/rpmcpan --version 5.20.1
+```
 
 That will get you a nice, modern Perl RPM, named `perl520`, completely encapsulated in `/usr/local/perl520`. Want 5.18 instead: Just change the version:
 
-    ./bin/rpmcpan --version 5.18.2
+``` sh
+./bin/rpmcpan --version 5.18.2
+```
 
 That will give you `perl518`. But that's not all. You want to build CPAN
 distributions against that version. Easy. Just edit the [`dists.json` file].
@@ -42,7 +46,11 @@ Its contents are a JSON object where the keys name CPAN distributions (not
 modules), and the values are objects that customize our RPMs get built. Most
 of the time, the objects can be empty:
 
-    "Try-Tiny": {},
+``` json
+{
+    "Try-Tiny": {}
+}
+```
 
 This results in an RPM named `perl520-Try-Tiny` (or `perl518-Try-Tiny`,
 etc.). Sometimes you might need additional information to customize the CPAN
@@ -50,15 +58,23 @@ spec file generated to build the distribution. For example, since this is
 Linux, we need to exclude a Win32 dependency in the [Encode-Locale]
 distribution:
 
-    "Encode-Locale": { "exclude_requires": ["Win32::Console"] },
+``` json
+{
+    "Encode-Locale": { "exclude_requires": ["Win32::Console"] }
+}
+```
 
 Other distributions might require additional RPMs or environment variables,
 like [DBD-Pg], which requires the [PostgreSQL RPMs]:
 
+``` json
+{
     "DBD-Pg": {
         "build_requires": ["postgresql93-devel", "postgresql93"],
         "environment": { "POSTGRES_HOME": "/usr/pgsql-9.3" }
-    },
+    }
+}
+```
 
 See the [README] for a complete list of customization options. Or just get
 started with our [`dists.json` file], which so far builds the bare minimum we
@@ -79,4 +95,3 @@ and leave the sad RPM past behind.
 [pull request]: https://github.com/iovation/rpmcpan/pulls
 [MetaCPAN]: https://metacpan.org/
 [DBD-Pg]: http://search.cpan/org/dist/DBD-Pg/ "DBD-Pg on CPAN"
-

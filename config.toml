@@ -2,6 +2,9 @@ title = "Just a Theory"
 baseURL = "https://justatheory.com/"
 languageCode = "en-us"
 theme = "justatheory"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
 
 [params]
   favicon = ""

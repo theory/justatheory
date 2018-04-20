@@ -30,12 +30,16 @@ is always a good idea. But it is a pretty significant change, including a
 change to [the Pod spec]. Hence the test release. Please make sure it works
 well with your code by installing it today:
 
-    cpan D/DW/DWHEELER/Pod-Simple-3.29_3.tar.gz
-    cpanm DWHEELER/Pod-Simple-3.29_3.tar.gz
+``` sh
+cpan D/DW/DWHEELER/Pod-Simple-3.29_3.tar.gz
+cpanm DWHEELER/Pod-Simple-3.29_3.tar.gz
+```
 
 Oh, and one last thing: If Pod::Simple fails to properly recognize the encoding in your Pod file, you can always use the `=encoding` command early in your Pod file to make it explicit:
 
-    =encoding CP1254
+``` perl
+=encoding CP1254
+```
 
 [Pod-Simple]: https://metacpan.org/release/Pod-Simple/
 [Karl Williamson]: https://metacpan.org/author/KHW

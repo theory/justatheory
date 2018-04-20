@@ -46,7 +46,7 @@ create the template files. Custom templates can live in <code>\`sqitch
 latter. Each template goes into a directory for the type of script, so we'll
 create them:
 
-``` sh Create template directories
+``` sh
 mkdir -p ~/.sqitch/templates/deploy
 mkdir -p ~/.sqitch/templates/revert 
 mkdir -p ~/.sqitch/templates/verify
@@ -55,7 +55,7 @@ mkdir -p ~/.sqitch/templates/verify
 Copy the default templates for your preferred database engine; here I copy the
 Postgres templates:
 
-``` sh Copy default templates
+``` sh
 tmpldir=`sqitch --etc-path`/templates
 cp $tmpldir/deploy/pg.tmpl ~/.sqitch/templates/deploy/createtable.tmpl
 cp $tmpldir/revert/pg.tmpl ~/.sqitch/templates/revert/createtable.tmpl
@@ -65,7 +65,7 @@ chmod -R +w ~/.sqitch/templates
 
 Here's what the default deploy template looks like:
 
-``` sql Default deploy template
+``` postgres
 -- Deploy [% change %]
 [% FOREACH item IN requires -%]
 -- requires: [% item %]
@@ -88,7 +88,7 @@ statement. Start simple: just use the change name for the table name. In
 `~/.sqitch/templates/deploy/createtable.tmpl`, replace the comment with these
 lines:
 
-``` sql Add CREATE TABLE statement to deploy template
+``` postgres
 CREATE TABLE [% change %] (
     -- Add columns here.
 );
@@ -97,7 +97,7 @@ CREATE TABLE [% change %] (
 In the revert template, `~/.sqitch/templates/deploy/createtable.tmpl`, replace
 the comment with a `DROP TABLE` statement:
 
-``` sql Add DROP TABLE statement to revert template
+``` postgres
 DROP TABLE [% change %];
 ```
 
@@ -106,7 +106,7 @@ And finally, in the verify template,
 simple `SELECT` statement, which is just enough to verify the creation of a
 table:
 
-``` sql Add SELECT statement to verify template
+``` postgres
 SELECT * FROM [% change %];
 ```
 
@@ -114,7 +114,7 @@ Great, we've created a set of simple customized templates for adding a
 `CREATE TABLE` change to a Sqitch project. To use them, just pass the
 `--template` option to [`sqitch add`], like so:
 
-``` sh Use the createtable template
+``` sh
 > sqitch add widgets --template createtable -n 'Add widgets table.'
 Created deploy/widgets.sql
 Created revert/widgets.sql
@@ -124,7 +124,7 @@ Added "widgets" to sqitch.plan
 
 Now have a look at `deploy/widgets.sql`:
 
-``` sql Widgets Deploy Script
+``` postgres
 -- Deploy widgets
 
 BEGIN;
@@ -139,7 +139,7 @@ COMMIT;
 Cool! The revert template should also have done its job. Here's
 `revert/widgets.sql`:
 
-``` sql Widgets Revert Script
+``` postgres
 -- Revert widgets
 
 BEGIN;
@@ -151,7 +151,7 @@ COMMIT;
 
 And the verify script, `verify/widgets.sql`:
 
-``` sql Widgets Verify Script
+``` postgres
 -- Verify widgets
 
 BEGIN;
@@ -172,7 +172,7 @@ dead simple default [templating language], [Template::Tiny], features `if`
 statements. Try using them with custom variables for the schema and table
 names:
 
-``` sql Deploy table with schema and table
+``` postgres
 SET search_path TO [% IF schema ][% schema %],[% END %]public;
 
 CREATE TABLE [% IF table %][% table %][% ELSE %][% change %][% END %] (
@@ -190,21 +190,21 @@ change name, as before.
 
 The revert script needs the same treatment:
 
-``` sql Revert table with schema and table
+``` postgres
 SET search_path TO [% IF schema ][% schema %],[% END %]public;
 DROP TABLE [% IF table %][% table %][% ELSE %][% change %][% END %];
 ```
 
 As does the verify script:
 
-``` sql Verify table with schema and table
+``` postgres
 SET search_path TO [% IF schema ][% schema %],[% END %]public;
 SELECT * FROM [% IF table %][% table %][% ELSE %][% change %][% END %];
 ```
 
 Take it for a spin:
 
-``` sh Add table to schema
+``` sh
 > sqitch add corp_widgets --template createtable \
   --set schema=corp --set table=widgets \
   -n 'Add corp.widgets table.'
@@ -216,7 +216,7 @@ Added "corp_widgets" to sqitch.plan
 
 The resulting deploy script will create `corp.widgets`:
 
-``` sql Deploy table to schema
+``` postgres
 -- Deploy corp_widgets
 
 BEGIN;
@@ -233,7 +233,7 @@ COMMIT;
 Cool, right? The revert and verify scripts of course yield similar results.
 Omitting the `--set` option, the template falls back on the change name:
 
-``` sql Deploy a table to public
+``` postgres
 -- Deploy widgets
 
 BEGIN;
@@ -259,7 +259,7 @@ for custom variables, too. For the purposes of our `CREATE TABLE` template,
 let's add columns. Replace the `-- Add columns here` comment in the deploy
 simple with these three lines:
 
-``` sql Deploy script with columns
+``` postgres
 [% FOREACH col IN column -%]
     [% col %] TEXT NOT NULL,
 [% END -%]
@@ -267,7 +267,7 @@ simple with these three lines:
 
 We can similarly improve the verify script: change its `SELECT` statement to:
 
-``` sql Verify script with columns
+``` postgres
 SELECT [% FOREACH col IN column %][% col %], [% END %]
   FROM [% IF table %][% table %][% ELSE %][% change %][% END %];
 ```
@@ -275,7 +275,7 @@ SELECT [% FOREACH col IN column %][% col %], [% END %]
 Just pass multiple `--set` (or `-s`) options to `sqitch add` to add as many
 columns as you like:
 
-``` sh Add table with columns
+``` sh
 > sqitch add corp_widgets --template createtable \
   -s schema=corp -s table=widgets \
   -s column=id -s column=name -s column=quantity \
@@ -284,7 +284,7 @@ columns as you like:
 
 Behold the resulting deploy script!
 
-``` sql Deploy table with columns
+``` postgres
 -- Deploy corp_widgets
 
 BEGIN;
@@ -305,7 +305,7 @@ allowed in the `name` column. And I suspect that `quantity` ought be an
 integer. There's that pesky trailing comma to remove, too. The verify script
 suffers the same deficiency:
 
-``` sql Verify each column
+``` postgres
 -- Verify corp_widgets
 
 BEGIN;
@@ -335,7 +335,7 @@ We can resolve the trailing comma issue thanks to Template Toolkit's `loop`
 variable, which is implicitly created in the `FOREACH` loop. Simply replace
 the comma in the template with the expression `[% loop.last ? '' : ',' %]`:
 
-``` sql Use the loop variable
+``` postgres
 [% FOREACH col IN column -%]
     [% col %] TEXT NOT NULL[% loop.last ? '' : ',' %]
 [% END -%]
@@ -345,7 +345,7 @@ Now the comma will be omitted for the last iteration of the loop. The fix for
 the verify script is even simpler: use `join()` [VMethod] instead of a
 `FOREACH` loop to emit all the columns in a single expression:
 
-``` sql Join verify columns
+``` postgres
 SELECT [% column.join(', ') %]
   FROM [% IF table %][% table %][% ELSE %][% change %][% END %];
 ```
@@ -355,7 +355,7 @@ Really simplifies things, doesn't it?
 Better still, going back to the deploy template, we can add data types for
 each column. Try this on for size:
 
-``` sh Deploy with typed columns
+``` sh
 [% FOREACH col IN column -%]
     [% col %] [% type.item( loop.index ) or 'TEXT' %] NOT NULL[% loop.last ? '' : ',' %]
 [% END -%]
@@ -366,7 +366,7 @@ As we iterate over the list of columns, simply pass `loop.index` to the
 `item()` [VMethod] on the `type` variable to get the corresponding type.
 Then specify a type for each column when you create the change:
 
-``` sh Create table with typed columns
+``` sh
 > sqitch add corp_widgets --template createtable \
   -s schema=corp -s table=widgets \
   -s column=id -s type=SERIAL \
@@ -377,7 +377,7 @@ Then specify a type for each column when you create the change:
 
 This yields a much more comprehensive deploy script:
 
-``` sql Deploy table with typed columns
+``` postgres
 -- Deploy corp_widgets
 
 BEGIN;

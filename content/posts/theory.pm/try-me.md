@@ -12,7 +12,7 @@ Context
 Exception handling is a bit of a pain in Perl. Traditionally, we use
 `eval {}`:
 
-``` perl Perl eval
+``` perl
 eval {
     foo();
 }
@@ -29,7 +29,7 @@ shortcomings:
 [^1]: In fairness much of the `$@` pain has been addressed [in Perl 5.14](https://metacpan.org/module/JESSE/perl-5.14.0/pod/perldelta.pod#Exception-Handling).
 [Try::Tiny]: https://metacpan.org/module/Try::Tiny
 
-``` perl Try::Tiny
+``` perl
 try {
     foo();
 } catch {
@@ -42,7 +42,7 @@ it uses subroutine references rather than blocks, which prevents `returning`
 from the calling context. One must work around this deficiency by [checking
 return values](http://stackoverflow.com/a/10366209/79202):
 
-``` perl Return from Try::Tiny http://stackoverflow.com/a/10366209/79202
+``` perl
 my $rv = try {
    f();
 } catch {
@@ -66,7 +66,7 @@ requires one to be very careful when handling exceptions:
 [Exception::Class]: https://metacpan.org/module/Exception::Class
 [Throwable]: https://metacpan.org/module/Throwable
 
-``` perl Exception Determination
+``` perl
 if (my $err = $@) {
     if (ref $err) {
         if (eval { $err->isa('Exception::Class') }) {
@@ -102,7 +102,7 @@ out of a string error. Here's an example from [PGXN::Manager]:
 
 [PGXN::Manager]: https://github.com/pgxn/pgxn-manager/
 
-``` perl Exception Parsing https://github.com/pgxn/pgxn-manager/blob/master/lib/PGXN/Manager/Distribution.pm#L123 Source
+``` perl
 try {
     $self->distmeta(decode_json scalar $member->contents );
 } catch {
@@ -178,7 +178,7 @@ all in-core exceptions to use them, perhaps inspired by [autodie::exception].
 
 [autodie::exception]: https://metacpan.org/module/autodie::exception
 
-``` perl No Exception Parsing
+``` perl
 try {
     $self->distmeta(decode_json scalar $member->contents );
     return $self;
@@ -192,4 +192,3 @@ try {
     }
 }
 ```
-

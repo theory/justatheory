@@ -19,7 +19,7 @@ have to create template files. Templates can go into `~/.sqitch/templates`
 everyone on a system). The latter is where templates are installed by
 default. Here's what it looks like:
 
-``` sh List Default Templates
+``` sh
 > ls $(sqitch --etc-path)/templates
 deploy  revert  verify
 > ls $(sqitch --etc-path)/templates/deploy
@@ -32,7 +32,7 @@ engine.
 
 To create a default test template, all we have to do is create a template for our preferred engine in a directory named `test`. So I created `~/.sqitch/templates/test/pg.tmpl`. Here it is:
 
-``` sql Default pgTAP template
+``` postgres
 SET client_min_messages TO warning;
 CREATE EXTENSION IF NOT EXISTS pgtap;
 RESET client_min_messages;
@@ -51,7 +51,7 @@ This is my standard boilerplate for tests, more or less. It just loads
 [pgTAP], sets the plan, runs the tests, finishes and rolls back. See this
 template in action:
 
-``` sh Add a change.
+``` sh
 > sqitch add whatever -n 'Adds whatever.'
 Created deploy/whatever.sql
 Created revert/whatever.sql
@@ -62,7 +62,7 @@ Added "whatever" to sqitch.plan
 
 Cool, it added the test script. Here’s what it looks like:
 
-``` sql Generated test script
+``` postgres
 SET client_min_messages TO warning;
 CREATE EXTENSION IF NOT EXISTS pgtap;
 RESET client_min_messages;
@@ -82,7 +82,7 @@ ready to start writing tests! Nice, right? If we don't want the test script
 created -- for example when adding a column to a table for which a test
 already exists -- we use the `--without` option to omit it:
 
-``` sh Add change without test
+``` sh
 > sqitch add add_timestamp_column --without test -n 'Adds whatever.'
 Created deploy/add_timestamp_column.sql
 Created revert/add_timestamp_column.sql
@@ -98,7 +98,7 @@ of the advanced features of [Template Toolkit]. We name it
 `~/.sqitch/templates/test/createtable.tmpl` to complement the deploy,
 revert, and verify scripts created previously:
 
-``` sql CREATE TABLE test template
+``` postgres
 -- Test [% change %]
 SET client_min_messages TO warning;
 CREATE EXTENSION IF NOT EXISTS pgtap;
@@ -126,7 +126,7 @@ ROLLBACK;
 
 As [before], we tell the [`add` command] to use the `createtable` templates:
 
-``` sh Create table with typed columns
+``` sh
 > sqitch add corp_widgets --template createtable \
   -s schema=corp -s table=widgets \
   -s column=id -s type=SERIAL \
@@ -137,7 +137,7 @@ As [before], we tell the [`add` command] to use the `createtable` templates:
 
 This yields a very nice test script to get you going:
 
-``` sql Generated Table Test
+``` postgres
 -- Test corp_widgets
 SET client_min_messages TO warning;
 CREATE EXTENSION IF NOT EXISTS pgtap;

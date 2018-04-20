@@ -24,7 +24,7 @@ module, Awesome::Module. These CPAN distribution will be named
 `Awesome-Module`, so that's the "domain" to use for its localizations. Just let
 Locale::TextDomain know:
 
-``` perl Establish Dominion
+``` perl
 use Locale::TextDomain 'Awesome-Module';
 ```
 
@@ -35,13 +35,13 @@ Locale::TextDomain's [comprehensive documentation], you'll find it second nature
 to internationalize your modules in no time. For example, simple strings are
 denoted with `__`:
 
-``` perl Trekkie Greetings
+``` perl
 say __ 'Greetings puny human!';
 ```
 
 If you need to specify variables, use `__x`:
 
-``` perl Animal Thanks
+``` perl
 say __x(
    'Thank you {sir}, may I have another?',
    sir => $username,
@@ -50,7 +50,7 @@ say __x(
 
 Need to manage plurals? Use `__n`:
 
-``` perl Obligatory Python Reference
+``` perl
 say __n(
     'I will not buy this record, it is scratched.',
     'I will not buy these records, they are scratched.',
@@ -63,7 +63,7 @@ If `$num_records` is 1, the first phrase will be used. Otherwise the second.
 Sometimes you gotta do both, mix variables and plurals. `__nx` has got you
 covered there:
 
-``` perl Deeper Understanding
+``` perl
 say __nx(
     'One item has been grokked.',
     '{count} items have been grokked.',
@@ -93,7 +93,7 @@ environment variable to "UTF-8" and then bind a filter. Don't know what that
 means? Me neither. Just put this code somewhere in your distribution where it
 will always run early, before anything gets localized:
 
-``` perl Control Decode
+``` perl
 use Locale::Messages qw(bind_textdomain_filter);
 use Encode;
 BEGIN {
@@ -118,7 +118,7 @@ in it (or set the `$PERL_UNICODE` environment variable to `AS`). Then use the
 [POSIX `setlocale`] function to the appropriate locale for the runtime
 environment. How? Like this:
 
-``` perl Localization Boilerplate
+``` perl
 #!/usr/bin/perl -CAS
 
 use v5.12;
@@ -169,7 +169,7 @@ utiltiies. Here's how it works.
 First, configuring Dist::Zilla to compile localization catalogs for
 distribution: add these lines to your `dist.ini` file:
 
-``` ini LocaleTextDomain is your dist.ini
+``` ini
 [ShareDir]
 [LocaleTextDomain]
 ```
@@ -179,14 +179,14 @@ where to find the PO files and where to put the compiled MO files. In case you
 didn't use your distribution name as your localization domain in your modules,
 for example:
 
-``` perl Go with a Java-y Domain
+``` perl
 use Locale::TextDomain 'com.example.perl-libawesome';
 ```
 
 Then you'd set the `textdomain` attribute so that the `LocaleTextDomain` plugin
 can find the translation catalogs:
 
-``` ini The Domain in DNS
+``` ini
 [LocaleTextDomain]
 textdomain = com.example.perl-libawesome
 ```
@@ -196,7 +196,7 @@ Check out the [configuration docs] for details on all available attributes.
 At this point, the plugin doesn't do much, because there are no translation
 catalogs yet. You might see this line from `dzil build`, though:
 
-``` sh Nothing to See Here
+``` sh
 [LocaleTextDomain] Skipping language compilation: directory po does not exist
 ```
 
@@ -206,7 +206,7 @@ Let's give it something to do!
 
 To add a French translation file, use the [`msg-init`] command[^2]:
 
-``` sh French Neuveau
+``` sh
 % dzil msg-init fr
 Created po/fr.po.
 ```
@@ -217,7 +217,7 @@ ready translation! Commit it into your source code repository so your
 agile-minded French-speaking friends can find it. Use `msg-init` to create as
 many language files as you like:
 
-``` sh Multilingualism
+``` sh
 % dzil msg-init de ja.JIS en_US.UTF-8 en_UK.UTF-8
 Created po/de.po.
 Created po/ja.po.
@@ -231,7 +231,7 @@ the changes should be committed to the repository, like code. This allows the
 latest translations to always be available for compilation and distribution.
 The output from `dzil build` now looks something like:
 
-``` sh Catalogs Plugged
+``` sh
 po/fr.po: 10 translated messages, 1 fuzzy translation, 0 untranslated messages.
 po/ja.po: 10 translated messages, 1 fuzzy translation, 0 untranslated messages.
 po/en_US.po: 10 translated messages, 1 fuzzy translation, 0 untranslated messages.
@@ -240,7 +240,7 @@ po/en_UK.po: 10 translated messages, 1 fuzzy translation, 0 untranslated message
 
 The resulting MO files will be in the shared directory of your distribution:
 
-``` sh She Want Mo Mo Mo
+``` sh
 % find Awesome-Module-0.01/share -type f
 Awesome-Module-0.01/share/LocaleData/de/LC_MESSAGES/Awesome-Module.mo
 Awesome-Module-0.01/share/LocaleData/en_UK/LC_MESSAGES/Awesome-Module.mo
@@ -255,7 +255,7 @@ might as well exclude them from the distribution. Add this line to your
 `MANIFEST.SKIP` to prevent the `po` directory and its contents from being
 included in the distribution:
 
-``` perl No PO
+``` perl
 ^po/
 ```
 
@@ -267,7 +267,7 @@ You'll need to periodically merge these changes into all of your translation
 catalogs so that your translators can make the corresponding updates. That's
 what the the [`msg-merge`] command is for:
 
-``` sh Merge Management 
+``` sh
 % dzil msg-merge
 extracting gettext strings
 Merging gettext strings into po/de.po
@@ -292,7 +292,7 @@ But projects commonly maintain a permanent template file, stored in the source
 code repository along with the translation catalogs. For this purpose, we have
 the [`msg-scan`] command. Use it to create or update the template, or POT file:
 
-``` sh Scanners
+``` sh
 % dzil msg-scan
 extracting gettext strings into po/Awesome-Module.pot
 ```
@@ -302,7 +302,7 @@ that, if you do maintain a POT file, future merges will be a two-step process:
 First run `msg-scan` to update the POT file, then `msg-merge` to merge its
 changes into the PO files:
 
-``` sh 
+``` sh
 % dzil msg-scan
 extracting gettext strings into po/Awesome-Module.pot
 % dzil msg-merge
@@ -319,7 +319,7 @@ One more thing, a note for translators. They can, of course, also use
 do they test their translations? Easy: use the [`msg-compile`] command to
 compile a single catalog:
 
-``` sh Translation Comilation
+``` sh
 % dzil msg-compile po/fr.po
 [LocaleTextDomain] po/fr.po: 195 translated messages.
 ```
@@ -330,7 +330,7 @@ Just be sure to tell Perl to include the current directory in the search path,
 and set the `$LANGUAGE` environment variable for your language. For example,
 here's how I test the [Sqitch] French catalog:
 
-``` 
+``` sh
 % dzil msg-compile po/fr.po              
 [LocaleTextDomain] po/fr.po: 148 translated messages, 36 fuzzy translations, 27 untranslated messages.
 % LANGUAGE=fr perl -Ilib -CAS -I. bin/sqitch foo

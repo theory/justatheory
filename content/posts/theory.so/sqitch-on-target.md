@@ -29,7 +29,7 @@ a bit. Here's how it works. Say you have a PostgreSQL Sqitch project called
 deploy to. There is also a QA database and a production database. Use the
 [`target`] command to set them up:
 
-``` sh Sqitch Targeting
+``` sh
 sqitch target add dev db:pg:flipr
 sqitch target add qa db:pg://sqitch@qa.example.com/flipr
 sqitch target add prod db:pg://sqitch@db.example.com/flipr
@@ -38,20 +38,20 @@ sqitch target add prod db:pg://sqitch@db.example.com/flipr
 Like [Git remotes], we just have names and URIs. To [`deploy`] to a database,
 just name it:
 
-``` sh Deploy to Dev
+``` sh
 sqitch deploy dev
 ```
 
 Want to deploy to QA? Name it:
 
-``` sh Deploy to QA
+``` sh
 sqitch deploy qa
 ```
 
 This works with any of the commands that connect to a database, including
 [`revert`] and [`status`]:
 
-``` sh Targeted revert, Status
+``` sh
 sqitch revert --to @HEAD^^ dev
 sqitch status prod
 ```
@@ -64,21 +64,21 @@ Targets don't always have to be configured in advance, of course. The names
 essentially stand in for the URIs, so you can connect to an unnamed target
 just by using a URI:
 
-``` sh URI Targeting
+``` sh
 sqitch log db:postgres://db1.example.net/flipr_export
 ```
 
 Of course there are still defaults specific to each engine. I generally like
 to set the "dev" target as the default deploy target, like so:
 
-``` sh Configure Default Target
+``` sh
 sqitch config core.pg.target dev
 ```
 
 This sets the "dev" target as the default for the PostgreSQL engine. So now I
 can do stuff with the "dev" target without mentioning it at all:
 
-``` sh Rebase Dev Target
+``` sh
 sqitch rebase --onto HEAD^4
 ```
 

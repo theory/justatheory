@@ -9,7 +9,7 @@ categories: [exceptions]
 Exception handling is a bit of a pain in Perl. Traditionally, we use
 `eval {}`:
 
-``` perl Perl eval
+``` perl
 eval {
     foo();
 }
@@ -23,7 +23,7 @@ The use of the `if` block is a bit unfortunate; worse is the use of the global
 years[^1]. Many Perl hackers put [Try::Tiny] to work to circumvent these
 shortcomings:
 
-``` perl Try::Tiny
+``` perl
 try {
     foo();
 } catch {
@@ -36,7 +36,7 @@ subroutine references rather than blocks. While a necessity of a pure-Perl
 implementation, it prevents `return`ing from the calling context. One must
 work around this deficiency by [checking return values]:
 
-``` perl Return from Try::Tiny http://stackoverflow.com/a/10366209/79202 More Gotchas
+``` perl
 my $rv = try {
    f();
 } catch {
@@ -59,7 +59,7 @@ be an [Exception::Class] object, or a [Throwable] object, or a simple array
 reference. Or any other value a Perl scalar can hold. This lack of specificity
 requires careful handling of exceptions:
 
-``` perl Exceptional Conditions
+``` perl
 if (my $err = $@) {
     if (ref $err) {
         if (eval { $err->isa('Exception::Class') }) {
@@ -93,7 +93,7 @@ condition as users report new, unexpected errors.
 That's not all. My code frequently requires parsing information out of a
 string error. Here's an example from [PGXN::Manager]:
 
-``` perl Exception Parsing https://github.com/pgxn/pgxn-manager/blob/master/lib/PGXN/Manager/Distribution.pm#L123 Source
+``` perl
 try {
     $self->distmeta(decode_json scalar $member->contents );
 } catch {
@@ -131,5 +131,3 @@ objects and an official `try`/`catch` syntax.
 [PGXN::Manager]: https://github.com/pgxn/pgxn-manager/
 [JSON]: https://metacpan.org/module/JSON
 [in Perl 5.14]: https://metacpan.org/module/JESSE/perl-5.14.0/pod/perldelta.pod#Exception-Handling
-
-

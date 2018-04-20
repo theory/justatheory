@@ -16,13 +16,17 @@ Before implementing it, though, I started casting about for a standard
 there is none! The closest thing to a standard is [JDBC URLs]. Formally, their
 format is simply:
 
-    jdbc:<jdbc-specific-stuff>
+``` html
+jdbc:<jdbc-specific-stuff>
+```
 
 Turns out that JDBC URLs are [barely URLs at all]. I mean, fine, according to
 [RFC 3986] they start with the `jdbc:` scheme followed by whatever. According
 to the [JDBC docs], what comes after the scheme is defined as follows:
 
-    jdbc:<subprotocol>:<subname>
+``` html
+jdbc:<subprotocol>:<subname>
+```
 
 The "subprotocol" is simply a driver name, while the the format of the "subname
 can vary, depending on the subprotocol, and it can have any internal syntax the
@@ -68,8 +72,10 @@ Here's [my proposal]. Formally, it's an opaque URI like JDBC. All database URIs
 start with the scheme `db:`. But in this case, the opaque part is an embedded
 URI that may be in one of two formats:
 
-    engine://[username[:password]@]host[:port][/dbname][?params]
-    engine:[dbname][?params]
+``` bnf
+engine://[username[:password]@]host[:port][/dbname][?params]
+engine:[dbname][?params]
+```
 
 In other words, a pretty typical http- or mailto-style URI format. We embed it
 in a `db:` URI in order to identify the URI as a database URI, and to have a
@@ -154,7 +160,9 @@ socket connections. While [RFC 3986] requires the host name, its predecessor,
 [RFC 2396], does not. Furthermore, as a precedent, neither do [file URIs]. So
 I'm thinking of allowing something like this to connect to a PostgreSQL database
 
-    db:pg://postgres:secr3t@/
+``` html
+db:pg://postgres:secr3t@/
+```
 
 In short, it makes sense to allow the user information without a host name.
 

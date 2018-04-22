@@ -12,8 +12,8 @@
 			</ul>
 			{{- end }}
 			{{- $.Scratch.Set "char" $char }}
-			<h5>{{ upper printf "%c" $char }}</h5>
-			<ul class="tags {{ upper index .Title 0 }}">
+			<h5>{{ upper (printf "%c" $char) }}</h5>
+			<ul class="tags {{ upper $char }}">
 			{{- end }}
 				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 			{{- end }}

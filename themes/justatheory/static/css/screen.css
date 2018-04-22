@@ -377,7 +377,7 @@ main#tags > header {
     border-bottom: 1px solid black;
 }
 
-.tags li {
+.tags li, .pagination li {
     white-space: pre-line;
     display: inline-block;
 }
@@ -392,6 +392,13 @@ main#tags > header {
 
 .tags h5 {
     margin-bottom: 0;
+}
+
+.pagination {
+    text-align: right;
+}
+.pagination li {
+    padding-left: 1em;
 }
 
 h1 {

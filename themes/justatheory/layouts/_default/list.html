@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 	<main id="{{ .Type }}">
-		{{ range first 10 .Data.Pages }}
+		{{ range .Data.Pages }}
 		{{ partial "article.html" (dict "doc" . "list" true) }}
 		{{ end }}
 	</main>

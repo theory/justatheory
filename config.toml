@@ -6,6 +6,8 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 PreserveTaxonomyNames = true
+Paginate = 1
+PaginatePath = "p"
 
 [params]
   favicon = ""

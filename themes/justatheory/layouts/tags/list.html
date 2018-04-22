@@ -3,8 +3,9 @@
 		<header>
 			<h2>Posts about {{ .Title }}</h2>
 		</header>
-		{{ range .Data.Pages }}
+		{{ range .Paginator.Pages }}
 		{{ partial "article.html" (dict "doc" . "list" true) }}
 		{{ end }}
+		{{ template "_internal/pagination.html" . }}
 	</main>
 {{ partial "footer.html" . }}

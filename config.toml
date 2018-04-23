@@ -23,3 +23,8 @@ PaginatePath = "p"
 
 [permalinks]
   posts = "/:year/:month/:slug/"
+
+[outputFormats]
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "feed"

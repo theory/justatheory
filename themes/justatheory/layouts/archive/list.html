@@ -21,7 +21,7 @@
 					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>
 					<a rel="bookmark" href="{{ .Permalink }}">{{ .Site.Params.bug }}</a>
 					{{- if .Params.categories }}
-					<p>Posted in</p>
+					<p>Filed under</p>
 					<ul class="cats">
 						{{- range .Params.categories}}
 						<li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>

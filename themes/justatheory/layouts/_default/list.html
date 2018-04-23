@@ -1,7 +1,17 @@
 {{ partial "header.html" . }}
 	<main id="{{ .Type }}">
-		{{ range .Data.Pages }}
+		<header>
+			{{- if eq .Type "tags" }}
+			<h2>Posts about {{ .Title }}</h2>
+			{{- else if eq .Type "categories" }}
+			<h2>Filed under {{ .Title }}</h2>
+			{{- else }}
+			<h2>{{ .Title }}</h2>
+			{{- end}}
+		</header>
+		{{ range .Paginator.Pages }}
 		{{ partial "article.html" (dict "doc" . "list" true) }}
 		{{ end }}
+		{{ template "_internal/pagination.html" . }}
 	</main>
 {{ partial "footer.html" . }}

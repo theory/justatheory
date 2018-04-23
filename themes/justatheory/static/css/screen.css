@@ -372,16 +372,16 @@ main {
     padding-bottom: 80px !important;
 }
 
-#tags > header {
+#tags > header, #categories > header {
     margin: 20px 0;
     border-bottom: 1px dashed #ccc;
 }
 
-#tags article, #home article {
+#tags article, #home article, #categories article, #home article {
     border-bottom: 1px dashed #ccc;
 }
 
-#tags article:last-child, #home article:last-child {
+#home article:last-child, #tags article:last-child, #categories article:last-child {
     border: none;
 }
 
@@ -1513,7 +1513,7 @@ pre, .highlight code {
 
 #archive article {
     padding: 1em 0 1em;
-    position: relative
+    position: relative;
 }
 
 #archive article footer {
@@ -1535,12 +1535,7 @@ pre, .highlight code {
     line-height: 1.2em
 }
 
-#archive article footer a, #archive article footer p {
-    float: left;
-    padding-right: .25rem;
-}
-
-#archive article footer li {
+#archive article footer a, #archive article footer p,  #archive article footer ul, #archive article footer li {
     display: inline;
 }
 

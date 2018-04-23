@@ -24,7 +24,7 @@
 					<p>Posted in</p>
 					<ul class="cats">
 						{{- range .Params.categories}}
-						<li>{{ . }}</li>
+						<li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
 						{{- end }}
 					</ul>
 					{{- end }}

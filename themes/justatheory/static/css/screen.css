@@ -264,7 +264,7 @@ q, blockquote {
     quotes: none
 }
 
-q:before, q:after, blockquote:before, blockquote:after {
+q:before, q:after {
     content: "";
     content: none
 }
@@ -583,9 +583,9 @@ big {
 }
 
 blockquote {
-    font-style: italic;
-    padding-left: 1em;
-    border-left: 4px solid rgba(136, 136, 136, 0.5)
+    padding: 0 2rem 0 1.5rem;
+    margin-left: 5px;
+    border-left: 1px dashed lightgrey;
 }
 
 blockquote cite {
@@ -602,13 +602,6 @@ blockquote cite:before {
     padding-right: .3em;
     padding-left: .3em;
     color: #888
-}
-
-@media only screen and (min-width: 992px) {
-    blockquote {
-        padding-left: 1.5em;
-        border-left-width: 4px
-    }
 }
 
 .pullquote-right:before, .pullquote-left:before {

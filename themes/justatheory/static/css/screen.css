@@ -333,6 +333,7 @@ a:active {
 html {
     height: 100%;
     background: #fff
+    font-family: "SourceSans", "Helvetica", sans-serif
 }
 
 body > div {
@@ -343,8 +344,7 @@ body > div {
     font-family: "SourceSans", "Proxima Nova", "Helvetica", sans-serif
 }
 
-.sans, body, body > nav form .search, article header p.meta, article > footer,
-html #blog-archives a.category, #blog-archives time, body > footer {
+body {
     font-family: "SourceSans", "Helvetica", sans-serif
 }
 
@@ -372,7 +372,7 @@ main {
     padding-bottom: 80px !important;
 }
 
-main#tags > header {
+#tags > header {
     margin: 20px 0;
     border-bottom: 1px dashed #ccc;
 }
@@ -1396,11 +1396,6 @@ article > footer .comments:before, article > footer .byline ~ .categories:before
     color: #300303
 }
 
-#content div.pagination a[href * =archive]:before, #content div.pagination a[href * =archive]:after {
-    content: '\2014';
-    padding: 0 .3em
-}
-
 .profile-image {
     width: 256px;
     height: 256px;
@@ -1508,102 +1503,41 @@ pre, .highlight code {
     line-height: 1.45em;
 }
 
-#archive #content > div, #archive #content > div > article {
-    padding-top: 0
+#archive > header {
+    margin: 20px 0;
 }
 
-#blog-archives {
-    color: #888
-}
-
-#blog-archives article {
+#archive article {
     padding: 1em 0 1em;
     position: relative
 }
 
-#blog-archives article:last-child {
-    background: none
-}
-
-#blog-archives article footer {
+#archive article footer {
     padding: 0;
     margin: 0;
-    font-size: .75em;
     line-height: 1em
 }
 
-#blog-archives h2 {
-    display: none
-}
-
-#blog-archives .entry-title {
+#archive > section h1 {
     color: #333;
     margin-bottom: 0;
     font-size: 1.3em;
-    font-size: 1.5em
 }
 
-#blog-archives .entry-title a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: normal;
-    display: inline-block
-}
-
-#blog-archives .entry-title a:hover {
-    text-decoration: underline
-}
-
-#blog-archives .entry-title a:hover {
-    color: #300303
-}
-
-#blog-archives article[data-linklog] .entry-title {
-    font-size: 1em
-}
-
-#blog-archives article[data-linklog] .entry-title a {
-    margin: 0.3em;
-    padding-bottom: 0.15em
-}
-
-#blog-archives article[data-linklog] .entry-title a:hover {
-    text-decoration: none
-}
-
-#blog-archives a.category, #blog-archives time {
-    color: #888
-}
-
-#blog-archives .entry-content {
-    display: none
-}
-
-#blog-archives time {
+#archive time {
+    color: #888;
     font-size: .875em;
     line-height: 1.2em
 }
 
-#blog-archives time .month, #blog-archives time .day {
-    display: inline-block
-}
-
-#blog-archives p {
-    margin-bottom: 1em
-}
-
-#blog-archives a:hover {
-    color: #300303
-}
-
 @media only screen and (min-width: 550px) {
-    #blog-archives article {
+    #archive article {
         padding-left: 4.5em;
         padding-bottom: .7em;
         margin-left: 5em
     }
 
-    #blog-archives h2 {
+    #archive h2 {
         margin-bottom: .3em;
         font-weight: normal;
         display: inline-block;
@@ -1612,23 +1546,15 @@ pre, .highlight code {
         float: left
     }
 
-    #blog-archives h2:first-child {
+    #archive h2:first-child {
         padding-top: .75em
     }
 
-    #blog-archives time {
+    #archive time {
         position: absolute;
         text-align: right;
         left: 0em;
-        top: 1.8em
-    }
-
-    #blog-archives .year {
-        display: none
-    }
-
-    #blog-archives a.category {
-        line-height: 1.1em
+        top: 1.5em
     }
 }
 

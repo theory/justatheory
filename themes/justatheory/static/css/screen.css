@@ -416,14 +416,15 @@ main {
 
 .pagination .disabled a {
     color: lightgrey;
-    /* XXX Disable link. */
+    pointer-events: none;
 }
 
 .pagination .active a {
     color: #333;
     background: lightgrey;
+    display: inline-block;  /* For IE11/ MS Edge bug */
     padding: 10pt;
-    /* XXX Disable link. */
+    pointer-events: none;
 }
 
 h1 {
@@ -571,7 +572,9 @@ sub, sup {
 }
 
 hr {
-    margin-bottom: 0.2em
+    margin: 1em 0;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
 }
 
 small {

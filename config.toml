@@ -1,6 +1,7 @@
 title = "Just a Theory"
 baseURL = "https://justatheory.com/"
 languageCode = "en-us"
+copyright = "© David E. Wheeler. This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 theme = "justatheory"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
@@ -8,6 +9,9 @@ pygmentsStyle = "monokai"
 PreserveTaxonomyNames = true
 Paginate = 16
 PaginatePath = "p"
+
+[author]
+    name = "David E. Wheeler"
 
 [params]
   favicon = ""

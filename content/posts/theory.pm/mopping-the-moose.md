@@ -4,6 +4,7 @@ link: http://blogs.perl.org/users/stevan_little/2013/08/mapping-the-mop-to-moose
 title: Mopping the Moose
 url: /mop/2013/08/15/mopping-the-moose/
 tags: [MOP, Moose, Stevan Little]
+categories: [Perl]
 ---
 
 Stevan Little:

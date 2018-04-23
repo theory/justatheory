@@ -4,6 +4,7 @@ link: https://www.apple.com/customer-letter/
 title: Apple Challenges FBI Decryption Demand
 url: /encryption/2016/02/17/apple-encryption-stand/
 tags: [Encryption, Apple, Tim Cook]
+categories: [Encryption]
 ---
 
 Incredible post from Apple, signed by Tim Cook:

@@ -4,6 +4,7 @@ link: http://blog.cloudera.com/blog/2013/09/whats-next-for-impala-after-release-
 title: Whither Impala Fault Tolerance?
 url: /impala/2013/09/29/whither-impala-fault-tolerance/
 tags: [Impala, Justin Erickson, Hadoop, CitusDB]
+categories: [Databases]
 ---
 
 Justin Erickson on the [Cloudera Blog]

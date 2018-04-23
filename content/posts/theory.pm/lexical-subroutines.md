@@ -4,6 +4,7 @@ link: http://rjbs.manxome.org/rubric/entry/2016
 title: Lexical Subroutines
 url: /syntax/2013/09/25/lexical-subroutines/
 tags: [Perl, Ricardo Signes]
+categories: [Perl]
 ---
 
 Ricardo Signes:

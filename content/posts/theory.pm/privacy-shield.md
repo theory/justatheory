@@ -4,6 +4,7 @@ link: http://arstechnica.com/tech-policy/2016/02/privacy-shield-doomed-from-get-
 title: A Porous “Privacy Shield”
 url: /privacy/2016/02/29/privacy-shield/
 tags: [Privacy Shield, Glyn Moody, Safe Harbor]
+categories: [Privacy]
 ---
 
 Glyn Moody, in *Ars Technica,* on the proposed replacement for the recently

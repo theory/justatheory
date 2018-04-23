@@ -3,6 +3,7 @@ date: 2016-07-11T13:22:00Z
 title: "Wanted: New SVN::Notify Maintainer"
 url: /2016/07/11/svn-notify-maintainer-wanted/
 tags: [Perl, Subversion, Help wanted]
+categories: [Perl]
 ---
 
 I've used Subversion very occasionally [since 2009], and [SVN::Notify] at

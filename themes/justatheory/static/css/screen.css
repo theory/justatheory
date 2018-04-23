@@ -1519,7 +1519,9 @@ pre, .highlight code {
 #archive article footer {
     padding: 0;
     margin: 0;
-    line-height: 1em
+    line-height: 1em;
+    color: #666;
+    font-size: 90%;
 }
 
 #archive > section h1 {
@@ -1529,9 +1531,25 @@ pre, .highlight code {
 }
 
 #archive time {
-    color: #333;
     font-size: .875em;
     line-height: 1.2em
+}
+
+#archive article footer a, #archive article footer p {
+    float: left;
+    padding-right: .25rem;
+}
+
+#archive article footer li {
+    display: inline;
+}
+
+#archive article footer li:after {
+    content: ","
+}
+
+#archive article footer li:last-child:after {
+    content: ""
 }
 
 @media only screen and (min-width: 550px) {

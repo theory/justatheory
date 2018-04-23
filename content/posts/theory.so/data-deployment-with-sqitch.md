@@ -3,6 +3,7 @@ date: 2013-08-28T17:09:00Z
 title: Data Deployment with Sqitch
 url: /sqitch/data/2013/08/28/data-deployment-with-sqitch/
 tags: [Sqitch]
+categories: [Sqitch]
 ---
 
 I've been thinking about data migrations. I love how well [Sqitch] works for

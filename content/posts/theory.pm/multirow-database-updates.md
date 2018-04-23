@@ -4,6 +4,7 @@ link: http://techblog.net-a-porter.com/2013/08/dbixmultirow-updating-multiple-da
 title: Multirow Database Updates
 url: /sql/2013/09/09/multirow-database-updates/
 tags: [SQL, William Blunn]
+categories: [Databases]
 ---
 
 William Blunn:

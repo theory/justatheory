@@ -4,6 +4,7 @@ link: http://techcrunch.com/2016/05/11/the-blockchain-is-the-new-google/
 title: The Blockchain Hype Cycle
 url: /security/2016/05/12/the-blockchain-hype-cycle/
 tags: [Blockchain, William Mougayar]
+categories: [Security]
 ---
 
 Excerpt from William Mougayar's new book on TechCrunch:

@@ -4,6 +4,7 @@ link: http://www.modernperlbooks.com/mt/2014/02/managing-sqitch-with-make.html
 title: Managing Sqitch with Make
 url: /sqitch/2014/02/09/managing-sqitch-with-make/
 tags: [Sqitch, Makefile, chromatic]
+categories: [Sqitch]
 ---
 
 chromatic:

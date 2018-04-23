@@ -9,6 +9,8 @@ pygmentsStyle = "monokai"
 PreserveTaxonomyNames = true
 Paginate = 16
 PaginatePath = "p"
+footnoteReturnLinkContents = "↩"
+
 
 [author]
     name = "David E. Wheeler"

@@ -776,9 +776,8 @@ article {
     width: 100%;
 }
 
-article .footnotes hr {
-    /* XXX Fix footnotes break line. */
-    display: none;
+article .footnotes li {
+    margin-bottom: 1em;
 }
 
 .flex-content, table, article img, article video, article .flash-video {

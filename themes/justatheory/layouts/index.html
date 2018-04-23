@@ -1,0 +1,8 @@
+{{ partial "header.html" . }}
+	<main id="home">
+		{{ range .Paginator.Pages }}
+		{{ partial "article.html" (dict "doc" . "list" true) }}
+		{{ end }}
+		{{ template "_internal/pagination.html" . }}
+	</main>
+{{ partial "footer.html" . }}

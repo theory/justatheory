@@ -374,7 +374,15 @@ main {
 
 main#tags > header {
     margin: 20px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px dashed #ccc;
+}
+
+#tags article, #home article {
+    border-bottom: 1px dashed #ccc;
+}
+
+#tags article:last-child, #home article:last-child {
+    border: none;
 }
 
 .tags li, .pagination li {
@@ -397,8 +405,25 @@ main#tags > header {
 .pagination {
     text-align: right;
 }
+
 .pagination li {
     padding-left: 1em;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+.pagination .disabled a {
+    color: lightgrey;
+    /* XXX Disable link. */
+}
+
+.pagination .active a {
+    color: #333;
+    background: lightgrey;
+    padding: 10pt;
+    /* XXX Disable link. */
 }
 
 h1 {
@@ -751,8 +776,13 @@ body > header > nav li.icon {
 .fa-rss:hover {
     color: #ff6600 !important
 }
-#content > div, #content > article {
-    width: 100%
+article {
+    width: 100%;
+}
+
+article .footnotes hr {
+    /* XXX Fix footnotes break line. */
+    display: none;
 }
 
 .flex-content, table, article img, article video, article .flash-video {

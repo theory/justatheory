@@ -6,7 +6,7 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 PreserveTaxonomyNames = true
-Paginate = 1
+Paginate = 16
 PaginatePath = "p"
 
 [params]

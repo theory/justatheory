@@ -7,7 +7,7 @@
             {{- else }}
             <h1 class="title">{{ .doc.Title }}</h1>
             {{- end }}
-            <span><a rel="bookmark" href="{{ .doc.Permalink }}">{{ .doc.Site.Params.bug }}</a></span>
+            <a rel="bookmark" href="{{ .doc.Permalink }}"></a>
             <time datetime="{{ .doc.Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .doc.Date.Format "Jan 2, 2006" }}</time>
         </header>
         <div class="text">

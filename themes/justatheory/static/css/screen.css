@@ -597,9 +597,19 @@ big {
 }
 
 blockquote {
-    padding: 0 2rem 0 1.5rem;
+    padding: 0 2rem 0 1.7rem;
     margin-left: 5px;
-    border-left: 1px dashed lightgrey;
+    font-style: italic;
+    color: #555;
+    font-size: 95%;
+}
+
+blockquote:before {
+    font-family: FontAwesome;
+    color: #bbb;
+    position: absolute;
+    content: '\f10d';
+    margin-left: -2rem;
 }
 
 blockquote cite {

@@ -15,11 +15,11 @@
 		{{- end }}
 			<article class="{{ .Type }}">
 				<header>
-					<h1 class="link"><a href="{{ .Params.link }}">{{ .Title }}</a>{{- if .Params.link }} →{{ end }}</h1>
+					<h1 class="link"><a href="{{ .Params.link }}">{{ .Title }}</a></h1>
 				</header>
 				<footer>
 					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>
-					<a rel="bookmark" href="{{ .Permalink }}">{{ .Site.Params.bug }}</a>
+					<a rel="bookmark" href="{{ .Permalink }}"></a>
 					{{- if .Params.categories }}
 					<p>Filed under</p>
 					<ul class="cats">

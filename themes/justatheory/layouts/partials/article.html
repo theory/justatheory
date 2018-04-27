@@ -1,7 +1,7 @@
     <article class="{{ .doc.Type }}">
         <header>
             {{- if .doc.Params.link }}
-            <h1 class="link"><a href="{{ .doc.Params.link }}">{{ .doc.Title }}</a> →</h1>
+            <h1 class="link"><a href="{{ .doc.Params.link }}">{{ .doc.Title }}</a></h1>
             {{- else if .list }}
             <h1 class="post"><a href="{{ .doc.RelPermalink }}">{{ .doc.Title }}</a></h1>
             {{- else }}

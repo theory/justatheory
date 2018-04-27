@@ -432,6 +432,12 @@ h1 {
     line-height: 1.2em
 }
 
+h1.link a:after {
+    color: #666;
+    font-size: 80%;
+    content: ' →'
+}
+
 @media only screen and (min-width: 768px) {
     h1 {
         font-size: 2em;

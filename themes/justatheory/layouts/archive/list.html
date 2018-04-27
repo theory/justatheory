@@ -15,7 +15,11 @@
 		{{- end }}
 			<article class="{{ .Type }}">
 				<header>
+					{{- if .Params.link }}
 					<h1 class="link"><a href="{{ .Params.link }}">{{ .Title }}</a></h1>
+					{{- else }}
+					<h1 class="post"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+					{{- end }}
 				</header>
 				<footer>
 					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>

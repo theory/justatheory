@@ -239,7 +239,7 @@ table {
 }
 
 @font-face {
-    font-family: 'FontAwesome';
+    font-family: 'FAB';
     src: url('/fonts/fa-brands.woff2') format('woff2'),
          url('/fonts/fa-brands.woff') format('woff');
     font-weight: normal;
@@ -247,10 +247,18 @@ table {
 }
 
 @font-face {
-    font-family: 'FontAwesome';
+    font-family: 'FAS';
     src: url('/fonts/fa-solid.woff2') format('woff2'),
          url('/fonts/fa-solid.woff') format('woff');
-    font-weight: 900;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FAR';
+    src: url('/fonts/fa-reg.woff2') format('woff2'),
+         url('/fonts/fa-reg.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -605,7 +613,7 @@ blockquote {
 }
 
 blockquote:before {
-    font-family: FontAwesome;
+    font-family: FAS;
     color: #bbb;
     position: absolute;
     content: '\f10d';
@@ -760,7 +768,6 @@ body > header > nav li.icon {
 }
 
 .fa {
-    font-family: FontAwesome;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -771,6 +778,7 @@ body > header > nav li.icon {
 }
 
 .fa-twitter:before {
+    font-family: FAB;
     content: "\f099";
 }
 
@@ -779,6 +787,7 @@ body > header > nav li.icon {
 }
 
 .fa-github:before {
+    font-family: FAB;
     content: "\f09b";
 }
 
@@ -787,6 +796,7 @@ body > header > nav li.icon {
 }
   
 .fa-rss:before {
+    font-family: FAS;
     content: "\f09e";
 }  
   
@@ -1236,13 +1246,19 @@ article .entry-title a {
 }
 
 article a[rel=bookmark] {
-    text-decoration: none
+    text-decoration: none;
+    color: #333;
+}
+
+article a[rel=bookmark]:hover {
+    color: #c00
 }
 
 article a[rel=bookmark]:after {
-    font-family: FontAwesome;
-    font-size: 80%;
+    font-family: FAR;
+    font-size: 75%;
     content: ' \f02e';
+    font-weight:normal;
 }
 
 article h2 {

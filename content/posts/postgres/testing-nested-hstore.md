@@ -151,4 +151,3 @@ watch this spot for more!
 [json_fdw]: https://github.com/citusdata/json_fdw
 [blog post]: http://citusdata.com/blog/65-run-sql-on-json-files-without-any-data-loads
 [TOAST storage]: http://www.postgresql.org/docs/current/static/storage-toast.html
-

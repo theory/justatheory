@@ -48,5 +48,3 @@ Oh, and one last thing: If Pod::Simple fails to properly recognize the encoding 
 [Latin-1]: http://en.wikipedia.org/wiki/ISO/IEC_8859-1
 [CP-1252]: http://en.wikipedia.org/wiki/Windows-1252
 [the Pod spec]: https://metacpan.org/pod/distribution/perl/pod/perlpodspec.pod
-
-

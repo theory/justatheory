@@ -50,4 +50,3 @@ figured out. I'm disappointed it's not on the road map.
 [CitusDB]: http://citusdata.com/docs/sql-on-hadoop "CitusDB SQL on Hadoop"
 [ORC]: http://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.0.0.2/ds_Hive/orcfile.html "ORC File Format"
 [Parquet]: http://parquet.io/ "Parquet is a columnar storage format for Hadoop."
-

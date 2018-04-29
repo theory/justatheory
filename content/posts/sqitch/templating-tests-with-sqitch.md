@@ -182,4 +182,3 @@ I don't know about you, but I'll be using this functionality *a lot.*
 [previous templating post]: /sqitch/2013/09/06/sqitch-templating/
 [Template Toolkit]: http://tt2.org/
 [before]: /sqitch/2013/09/06/sqitch-templating/
-

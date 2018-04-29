@@ -27,5 +27,3 @@ step they can to protect it. Failure to do so harms their users, exposing
 them to increased risk of identity theft, fraud, surveillance, and abuse. It's
 reasonable to expect that firms not be insulated from litigation for failing
 to protect user data.
-
-

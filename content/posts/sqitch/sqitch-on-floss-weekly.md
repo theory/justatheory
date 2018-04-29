@@ -26,4 +26,3 @@ using working through one of the tutorials:
 
 [FLOSS Weekly]: http://twit.tv/floss
 [installing it]: http://sqitch.org/
-

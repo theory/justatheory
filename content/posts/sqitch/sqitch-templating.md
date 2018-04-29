@@ -411,5 +411,3 @@ Maybe folks will even start sharing templates! You should subscribe to the
 [mail list] to find out. See you there?
 
 [mail list]: https://groups.google.com/forum/#!forum/sqitch-users
-
-

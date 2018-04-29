@@ -39,4 +39,3 @@ from blockchains for a couple of years, once the practicalities have been worked
 out and the nonsense has subsided. We should learn and contribute to those
 practicalities, but as for the
 [hype cycle](https://en.wikipedia.org/wiki/Hype_cycle), for now I just hold my nose.
-

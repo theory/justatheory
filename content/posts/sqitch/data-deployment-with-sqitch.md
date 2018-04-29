@@ -117,4 +117,3 @@ applications to change the data. Otherwise, how static is it, really?
 [deploy hooks]: https://github.com/theory/sqitch/issues/96
 [Git hooks]: http://git-scm.com/docs/githooks
 [non-SQL scripts]: https://github.com/theory/sqitch/issues/1
-

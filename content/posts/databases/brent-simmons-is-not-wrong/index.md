@@ -71,4 +71,3 @@ So you go, Brent, you're doing it exactly right.
 [array]: http://www.postgresql.org/docs/current/static/arrays.html
 [XML]: http://www.postgresql.org/docs/current/static/datatype-xml.html
 [JSON]: http://www.postgresql.org/docs/current/static/datatype-json.html
-

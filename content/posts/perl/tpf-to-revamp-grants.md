@@ -21,4 +21,3 @@ Alberto Simões:
 This is great news. I would love to see more and more ambitious grant
 proposals, as well as awards people an subsist on. I look forward to seeing
 the new rules.
-

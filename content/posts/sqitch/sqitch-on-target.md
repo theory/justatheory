@@ -106,4 +106,3 @@ Sqitch.
 [`status`]: https://metacpan.org/pod/sqitch-status
 [Setting other attributes]: https://github.com/theory/sqitch/issues/143
 [Allowing multiple URIs]: https://github.com/theory/sqitch/issues/135
-

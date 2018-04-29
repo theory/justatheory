@@ -2,7 +2,7 @@
 date: 2014-09-06T18:10:00Z
 title: Localize Your Perl Apps with this One Weird Trick
 aliases: [/l10n/2014/09/06/localize-your-perl-apps-with-this-one-weird-trick/]
-tags: [localization, internationalization, Perl]
+tags: [localization, internationalization, Perl, Perl Advent Calendar]
 categories: [Perl]
 ---
 
@@ -378,4 +378,3 @@ The [Dist::Zilla::LocaleTextDomain] plugin will do the rest.
 [`msg-compile`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_compile "dzil msg-compile documentation on CPAN"
 [Module::Build]: https://metacpan.org/module/Module::Build "Module::Build on CPAN"
 [ExtUtils::MakeMaker]: https://metacpan.org/module/ExtUtils::MakeMaker "ExtUtils::MakeMaker on CPAN"
-

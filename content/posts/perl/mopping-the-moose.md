@@ -22,4 +22,3 @@ Stevan Little:
 [Bread::Board]: https://metacpan.org/module/Bread::Board
 
 I'm so happy to see Stevan making progress on the Perl 5 MOP again.
-

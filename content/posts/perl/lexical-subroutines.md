@@ -3,7 +3,7 @@ date: 2013-09-25T20:12:00Z
 link: http://rjbs.manxome.org/rubric/entry/2016
 title: Lexical Subroutines
 aliases: [/syntax/2013/09/25/lexical-subroutines/]
-tags: [Perl, Ricardo Signes]
+tags: [Perl, Ricardo Signes, chromatic]
 categories: [Perl]
 ---
 
@@ -34,7 +34,3 @@ subs, as [chromatic complained about just yesterday]. Probably doesn't solve
 the problem for imported subs, though.
 
 [chromatic complained about just yesterday]: http://www.modernperlbooks.com/mt/2013/09/functions-shouldnt-be-methods-yet-another-reminder.html
-
-
-
-

@@ -22,5 +22,3 @@ with a vested interest in its continued use. Is that you? Do you need to keep SV
 [hosted on GitHub]: https://github.com/theory/svn-notify/ "svn-notify Project on GitHub"
 [since 2011]: https://github.com/theory/svn-notify/commit/32347ad "SVN-Notify Commit: “Note move to GitHub.”"
 [TUITs]: https://en.wiktionary.org/wiki/tuit "Wictionary: “tuit”"
-
-

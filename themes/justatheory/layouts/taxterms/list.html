@@ -4,20 +4,22 @@
 			<h1 class="title">{{ .Title }}</h1>
 		</header>
 		<div id="tags">
-			{{- $.Scratch.Set "char" '0' }}
+			{{-  $.Scratch.Set "chars" (slice) }}
 			{{- range .Data.Pages }}
-			{{- $char := index .Title 0 }}
-			{{- if ne ($.Scratch.Get "char") $char }}
-			{{- if ne ($.Scratch.Get "char") '0' }}
-			</ul>
+				{{- $.Scratch.Add "chars" (upper (printf "%c" (index .Title 0))) }}
 			{{- end }}
-			{{- $.Scratch.Set "char" $char }}
-			<h5>{{ upper (printf "%c" $char) }}</h5>
-			<ul class="tags {{ upper $char }}">
-			{{- end }}
+			{{- $data := .Data }}
+			{{- range uniq ($.Scratch.Get "chars") -}}
+				{{- $char := . }}
+			<h5>{{ $char }}</h5>
+			<ul class="tags {{ $char }}">
+				{{- range $data.Pages }}
+					{{- if eq $char (upper (printf "%c" (index .Title 0))) }}
 				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-			{{- end }}
+					{{- end }}
+				{{- end }}
 			</ul>
+			{{- end }}
 		</div>
 	</main>
 {{ partial "footer.html" . }}

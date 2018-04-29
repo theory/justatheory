@@ -6,7 +6,7 @@ tags: [Perl, Sean Burke, Karl Williamson, Pod]
 categories: [Perl]
 ---
 
-{{% figure src="/2015/02/11/please-test-pod-simple-3-dot-29-3/cpan.png" class="left" width="250" alt="Pod Book" %}}
+{{% figure src="/2015/02/please-test-podsimple-3.29_3/cpan.png" class="left" width="250" alt="Pod Book" %}}
 
 I've just pushed [Pod-Simple] 3.29_v3 to CPAN. [Karl Williamson] did a lot of
 hacking on this release, finally adding support for EBCDIC. But as part of

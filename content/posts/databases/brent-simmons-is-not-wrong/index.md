@@ -27,7 +27,7 @@ Some database folks might be gasping for air, but not those of us steeped in
 relational theory. In *[Database in Depth]*, relational theorist [C.J. Date]
 poses a question:
 
-{{% figure src="/theory/2014/01/10/brent-simmons-is-not-wrong/database-in-depth.jpg" class="right" width="300" alt="“Database in Depth,” by C.J. Date" link="http://www.amazon.com/Database-Depth-Relational-Theory-Practitioners/dp/0596100124/justatheory-20" %}}
+{{% figure src="/2014/01/brent-simmons-is-not-wrong/database-in-depth.jpg" class="right" width="300" alt="“Database in Depth,” by C.J. Date" link="http://www.amazon.com/Database-Depth-Relational-Theory-Practitioners/dp/0596100124/justatheory-20" %}}
 
 > In Chapter 1, I said that 1NF meant that every tuple in every relation
 > contains just a single value (of the appropriate type, of course) in every

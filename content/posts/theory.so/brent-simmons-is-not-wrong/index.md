@@ -2,7 +2,7 @@
 date: 2014-01-10T11:02:00Z
 link: http://inessential.com/2014/01/02/vesper_sync_diary_7_audibles
 title: Brent Simmons is Not Wrong
-url: /theory/2014/01/10/brent-simmons-is-not-wrong/
+aliases: [/theory/2014/01/10/brent-simmons-is-not-wrong/]
 tags: [Brent Simmons, Database in Depth, C.J. Date]
 categories: [Relational Theory]
 ---

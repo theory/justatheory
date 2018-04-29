@@ -1,7 +1,7 @@
 --- 
 date: 2013-07-26T18:08:00Z
 title: A Perl Blog
-url: /blog/2013/07/26/a-perl-blog/
+aliases: [/blog/2013/07/26/a-perl-blog/]
 tags: [Just a Theory, Perl]
 categories: [Meta]
 ---

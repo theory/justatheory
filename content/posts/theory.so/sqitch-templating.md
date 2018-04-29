@@ -1,7 +1,7 @@
 --- 
 date: 2013-09-06T13:44:00Z
 title: Sqitch Templating
-url: /sqitch/2013/09/06/sqitch-templating/
+aliases: [/sqitch/2013/09/06/sqitch-templating/]
 tags: [Sqitch]
 categories: [Sqitch]
 ---

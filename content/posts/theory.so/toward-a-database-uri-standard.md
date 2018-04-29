@@ -1,7 +1,7 @@
 --- 
 date: 2013-11-26T20:14:00Z
 title: Toward A Database URI Standard
-url: /rfc/2013/11/26/toward-a-database-uri-standard/
+aliases: [/rfc/2013/11/26/toward-a-database-uri-standard/]
 tags: [RFC, Database URLs]
 categories: [Databases, Standards]
 ---

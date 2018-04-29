@@ -1,7 +1,7 @@
 --- 
 date: 2015-02-11T10:53:00Z
 title: Please Test Pod::Simple 3.29_3
-url: /2015/02/11/please-test-pod-simple-3-dot-29-3/
+aliases: [/2015/02/11/please-test-pod-simple-3-dot-29-3/]
 tags: [Perl, Sean Burke, Karl Williamson]
 categories: [Perl]
 ---

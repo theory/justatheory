@@ -1,7 +1,7 @@
 --- 
 date: 2014-01-09T15:27:00Z
 title: Sqitch on Target
-url: /sqitch/2014/01/09/sqitch-on-target/
+aliases: [/sqitch/2014/01/09/sqitch-on-target/]
 tags: [Sqitch]
 categories: [Sqitch]
 ---

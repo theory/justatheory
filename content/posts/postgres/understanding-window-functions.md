@@ -3,7 +3,7 @@ date: 2013-08-28T17:25:00Z
 link: http://tapoueh.org/blog/2013/08/20-Window-Functions
 title: Understanding Window Functions
 aliases: [/pg/windows/2013/08/28/understanding-window-functions/]
-tags: [Postgres, Windows, Dimitri Fontaine]
+tags: [Postgres, SQL, Dimitri Fontaine]
 categories: [Postgres]
 ---
 

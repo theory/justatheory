@@ -2,7 +2,7 @@
 date: 2013-08-28T17:09:00Z
 title: Data Deployment with Sqitch
 aliases: [/sqitch/data/2013/08/28/data-deployment-with-sqitch/]
-tags: [Sqitch]
+tags: [Sqitch, databases]
 categories: [Sqitch]
 ---
 

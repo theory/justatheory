@@ -2,7 +2,7 @@
 date: 2014-09-21T14:45:00Z
 title: Build Modern Perl RPMs with rpmcpan
 aliases: [/rpm/2014/09/21/build-modern-perl-rpms-with-rpmcpan/]
-tags: [RPM, Perl, CPAN]
+tags: [RPM, Perl, CPAN, rpmcpan]
 categories: [Perl]
 ---
 

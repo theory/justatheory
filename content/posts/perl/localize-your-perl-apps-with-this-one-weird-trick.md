@@ -2,7 +2,7 @@
 date: 2014-09-06T18:10:00Z
 title: Localize Your Perl Apps with this One Weird Trick
 aliases: [/l10n/2014/09/06/localize-your-perl-apps-with-this-one-weird-trick/]
-tags: [Localization, Internationalization, Perl]
+tags: [localization, internationalization, Perl]
 categories: [Perl]
 ---
 

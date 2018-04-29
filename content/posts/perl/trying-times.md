@@ -2,7 +2,7 @@
 date: 2013-07-26T15:20:00Z
 title: Trying Times
 aliases: [/exceptions/2013/07/26/trying-times/]
-tags: [Perl]
+tags: [Perl, exceptions]
 categories: [Perl]
 ---
 

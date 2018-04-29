@@ -2,7 +2,7 @@
 date: 2013-10-23T10:26:00Z
 title: Testing Nested hstore
 aliases: [/pg/2013/10/23/testing-nested-hstore/]
-tags: [Postgres, HSTORE]
+tags: [Postgres, hstore]
 categories: [Postgres]
 ---
 

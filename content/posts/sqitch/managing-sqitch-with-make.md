@@ -3,7 +3,7 @@ date: 2014-02-09T13:58:00Z
 link: http://www.modernperlbooks.com/mt/2014/02/managing-sqitch-with-make.html
 title: Managing Sqitch with Make
 aliases: [/sqitch/2014/02/09/managing-sqitch-with-make/]
-tags: [Sqitch, Makefile, chromatic]
+tags: [Sqitch, make, chromatic]
 categories: [Sqitch]
 ---
 

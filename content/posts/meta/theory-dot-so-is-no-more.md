@@ -2,7 +2,7 @@
 date: 2015-10-03T13:14:00Z
 title: theory.so is No More
 aliases: [/blog/2015/10/03/theory-dot-so-is-no-more/]
-tags: [Just a Theory]
+tags: [Just a Theory, blogging, theory.so]
 categories: [Meta]
 ---
 

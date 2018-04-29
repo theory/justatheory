@@ -2,7 +2,7 @@
 date: 2014-09-05T17:46:00Z
 title: Sqitch Goes Vertical
 aliases: [/2014/09/05/sqitch-goes-vertical/]
-tags: [Sqitch MySQL Vertica]
+tags: [Sqitch, MySQL, Vertica]
 categories: [Sqitch]
 ---
 

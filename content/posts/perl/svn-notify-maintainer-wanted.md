@@ -2,7 +2,7 @@
 date: 2016-07-11T13:22:00Z
 title: "Wanted: New SVN::Notify Maintainer"
 aliases: [/2016/07/11/svn-notify-maintainer-wanted/]
-tags: [Perl, Subversion, Help wanted]
+tags: [Perl, Subversion, help wanted, CPAN]
 categories: [Perl]
 ---
 

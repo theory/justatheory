@@ -2,9 +2,9 @@
 	<main id="{{ .Type }}">
 		<header>
 			{{- if eq .Type "tags" }}
-			<h2>Posts about {{ .Title }}</h2>
+			<h2>Posts about {{ .Data.Term }}</h2>
 			{{- else if eq .Type "categories" }}
-			<h2>Filed under {{ .Title }}</h2>
+			<h2>Filed under {{ .Data.Term }}</h2>
 			{{- else }}
 			<h2>{{ .Title }}</h2>
 			{{- end}}

@@ -3,7 +3,7 @@ date: 2013-11-26T20:14:00Z
 title: Toward A Database URI Standard
 aliases: [/rfc/2013/11/26/toward-a-database-uri-standard/]
 tags: [RFC, databases, URLs, standards]
-categories: [Databases]
+categories: [Database]
 ---
 
 As part of my effort to improve [Sqitch], I plan to add support for [specifying

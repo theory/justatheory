@@ -4,7 +4,7 @@ link: https://www.apple.com/customer-letter/
 title: Apple Challenges FBI Decryption Demand
 aliases: [/encryption/2016/02/17/apple-encryption-stand/]
 tags: [Encryption, Apple, Tim Cook]
-categories: [Encryption]
+categories: [Privacy]
 ---
 
 Incredible post from Apple, signed by Tim Cook:
@@ -29,4 +29,3 @@ and access their personal information. It's in the interest of the government
 to ensure that private data remain private. Forcing Apple to crack its own
 encryption sets a dangerous precedent likely to be exploited by
 cybercriminals for decades to come. Shame on the FBI.
-

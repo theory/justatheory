@@ -18,5 +18,3 @@ Dimitri Fontaine:
 > where you want to be using *window functions.*
 
 Great intro to a powerful feature.
-
-

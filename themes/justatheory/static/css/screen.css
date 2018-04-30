@@ -561,10 +561,6 @@ sub {
     bottom: -.5em
 }
 
-q {
-    font-style: italic
-}
-
 q:before {
     content: "\201C"
 }
@@ -625,7 +621,7 @@ blockquote:before {
 }
 
 blockquote cite {
-    font-style: italic
+    font-style: normal
 }
 
 blockquote cite a {
@@ -1313,6 +1309,18 @@ article > footer {
     margin-top: 2em
 }
 
+p.past {
+    color: #888;
+    padding: .3rem 1rem;
+    background-color: #eee;
+}
+
+p.past small:before {
+    font-size: .8em;
+    font-family: FAS;
+    content: "\f466  ";
+}
+
 .blog-index article > footer {
     margin-top: 1em
 }
@@ -1523,7 +1531,6 @@ p code, li code {
     font-size: .9em;
     line-height: 1.5em;
     color: #626262;
-    background: #eaeaea;
     margin: -1px 0;
     padding-left: .25em;
     padding-right: .25em;

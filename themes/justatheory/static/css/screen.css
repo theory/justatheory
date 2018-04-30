@@ -393,6 +393,10 @@ main {
     border: none;
 }
 
+.tags {
+    clear: both;
+}
+
 .tags li, .pagination li {
     white-space: pre-line;
     display: inline-block;
@@ -816,26 +820,26 @@ article .footnotes li {
     height: auto
 }
 
-.basic-alignment.left, table.left, article figure.left, article video.left,
+.basic-alignment.left, table.left, article figure.left, article a.left, article img.left, article video.left,
 article .left.flash-video {
     float: left;
     margin-right: 1.5em
 }
 
-.basic-alignment.right, table.right, article figure.right, article video.right,
+.basic-alignment.right, table.right, article figure.right, article a.right, article img.right, article video.right,
 article .right.flash-video {
     float: right;
     margin-left: 1.5em
 }
 
-.basic-alignment.center, table.center, article figure, article figure.center, article video.center,
+.basic-alignment.center, table.center, article figure, article figure.center, article a.center, article img.center, article video.center,
 article .center.flash-video {
     display: block;
     margin: 0 auto 1.5em
 }
 
-.basic-alignment.left, table.left, article figure.left, article video.left,
-article .left.flash-video, .basic-alignment.right, table.right, article figure.right,
+.basic-alignment.left, table.left, article figure.left, article a.left, article img.left, article video.left,
+article .left.flash-video, .basic-alignment.right, table.right, article figure.right, article a.right, article img.right,
 article video.right, article .right.flash-video {
     margin-bottom: .8em
 }

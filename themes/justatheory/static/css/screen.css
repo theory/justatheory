@@ -813,7 +813,7 @@ article .footnotes li {
 
 .flex-content, table, article img, article video, article .flash-video {
     max-width: 100%;
-    height: auto
+    /* height: auto */
 }
 
 .basic-alignment.left, table.left, article figure.left, article video.left,

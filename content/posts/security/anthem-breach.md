@@ -4,7 +4,7 @@ link: https://digitalguardian.com/blog/judge-anthem-case-rules-breach-harmed-pat
 title: Anthem Breach Harms Consumers
 aliases: [/security/2016/02/19/anthem-breach/]
 tags: [security, Paul Roberts, Anthem, breach]
-categories: [Privacy & Security]
+topics: [Privacy & Security]
 ---
 
 Paul Roberts in Digital Guardian:

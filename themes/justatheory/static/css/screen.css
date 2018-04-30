@@ -380,16 +380,16 @@ main {
     padding-bottom: 80px !important;
 }
 
-#tags > header, #categories > header {
+#tags > header, #topics > header {
     margin: 20px 0;
     border-bottom: 1px dashed #ccc;
 }
 
-#tags article, #home article, #categories article, #home article {
+#tags article, #home article, #topics article, #home article {
     border-bottom: 1px dashed #ccc;
 }
 
-#home article:last-child, #tags article:last-child, #categories article:last-child {
+#home article:last-child, #tags article:last-child, #topics article:last-child {
     border: none;
 }
 
@@ -1404,7 +1404,7 @@ article .flash-video > div embed {
 }
 
 .separator, article > footer .byline + time:before, article > footer time + time:before,
-article > footer .comments:before, article > footer .byline ~ .categories:before {
+article > footer .comments:before, article > footer .byline ~ .topics:before {
     content: "—";
     padding: 0 .4em 0 .2em;
     display: inline-block
@@ -1617,12 +1617,12 @@ pre, .highlight code {
     }
 }
 
-#content > .category article {
+#content > .topic article {
     margin-left: 0;
     padding-left: 6.8em
 }
 
-#content > .category .year {
+#content > .topic .year {
     display: inline
 }
 

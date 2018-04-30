@@ -3,7 +3,7 @@
 		<header>
 			{{- if eq .Type "tags" }}
 			<h2>Posts about {{ .Data.Term }}</h2>
-			{{- else if eq .Type "categories" }}
+			{{- else if eq .Type "topics" }}
 			<h2>Filed under {{ .Data.Term }}</h2>
 			{{- else }}
 			<h2>{{ .Title }}</h2>

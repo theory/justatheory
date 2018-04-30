@@ -3,7 +3,7 @@ date: 2013-07-26T15:20:00Z
 title: Trying Times
 aliases: [/exceptions/2013/07/26/trying-times/]
 tags: [Perl, exceptions]
-categories: [Perl]
+topics: [Perl]
 ---
 
 Exception handling is a bit of a pain in Perl. Traditionally, we use

@@ -30,3 +30,7 @@ footnoteReturnLinkContents = "↩"
 [outputFormats.RSS]
   mediatype = "application/rss"
   baseName = "feed"
+
+[taxonomies]
+  tag = "tags"
+  topic = "topics"

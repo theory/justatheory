@@ -4,7 +4,7 @@ link: https://twit.tv/shows/floss-weekly/episodes/309
 title: Sqitch on FLOSS Weekly
 aliases: [/podcast/2014/09/17/sqitch-on-floss-weekly/]
 tags: [FLOSS Weekly, Sqitch]
-categories: [Sqitch]
+topics: [Sqitch]
 ---
 
 Yours truly was feature in this week's episode of [FLOSS Weekly], talking

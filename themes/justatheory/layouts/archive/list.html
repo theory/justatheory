@@ -24,11 +24,11 @@
 				<footer>
 					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>
 					<a rel="bookmark" href="{{ .Permalink }}"></a>
-					{{- if .Params.categories }}
+					{{- if .Params.topics }}
 					<p>Filed under</p>
 					<ul class="cats">
-						{{- range .Params.categories}}
-						<li><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+						{{- range .Params.topics}}
+						<li><a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
 						{{- end }}
 					</ul>
 					{{- end }}

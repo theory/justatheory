@@ -6,10 +6,14 @@ license = "MIT"
 licenselink = "https://github.com/theory/justatheory/blob/master/LICENSE.md"
 description = "Hugo theme for Just a Theory."
 homepage = "https://justatheory.com/"
-tags = ["blog", "tags", "categories"]
+tags = ["blog", "tags", "topics"]
 features = ["blog"]
 min_version = "0.38"
 
 [author]
 name = "David E. Wheeler"
 homepage = "https://justatheory.com/"
+
+[taxonomies]
+  tag = "tags"
+  topic = "topics"

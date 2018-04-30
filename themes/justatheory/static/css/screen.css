@@ -811,9 +811,9 @@ article .footnotes li {
     margin-bottom: 1em;
 }
 
-.flex-content, table, article img, article video, article .flash-video {
+.flex-content, table, article img {
     max-width: 100%;
-    /* height: auto */
+    height: auto
 }
 
 .basic-alignment.left, table.left, article figure.left, article video.left,
@@ -1359,11 +1359,6 @@ article .no-border {
 
 article video, article .flash-video {
     margin: 0 auto 1.5em
-}
-
-article video {
-    display: block;
-    width: 100%
 }
 
 article .flash-video > div {

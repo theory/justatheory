@@ -1201,7 +1201,7 @@ article header {
 }
 
 @media only screen and (min-width: 768px) {
-    article header {
+    article header, #archive div > header {
         margin-bottom: 0.5em
     }
 }
@@ -1245,16 +1245,16 @@ article .entry-title a {
     color: #300303
 }
 
-article a[rel=bookmark] {
+a[rel=bookmark] {
     text-decoration: none;
     color: #333;
 }
 
-article a[rel=bookmark]:hover {
+a[rel=bookmark]:hover {
     color: #c00
 }
 
-article a[rel=bookmark]:after {
+a[rel=bookmark]:after {
     font-family: FAR;
     font-size: 75%;
     content: ' \f02e';
@@ -1562,12 +1562,12 @@ pre, .highlight code {
     margin: 20px 0;
 }
 
-#archive article {
+#archive section > div {
     padding: 1em 0 1em;
     position: relative;
 }
 
-#archive article footer {
+#archive section > div footer {
     padding: 0;
     margin: 0;
     line-height: 1em;
@@ -1586,20 +1586,20 @@ pre, .highlight code {
     line-height: 1.2em
 }
 
-#archive article footer a, #archive article footer p,  #archive article footer ul, #archive article footer li {
+#archive section > div footer a, #archive section > div footer p,  #archive section > div footer ul, #archive section > div footer li {
     display: inline;
 }
 
-#archive article footer li:after {
+#archive section > div footer li:after {
     content: ","
 }
 
-#archive article footer li:last-child:after {
+#archive section > div footer li:last-child:after {
     content: ""
 }
 
 @media only screen and (min-width: 550px) {
-    #archive article {
+    #archive section > div {
         padding-left: 4.5em;
         padding-bottom: .7em;
         margin-left: 5em

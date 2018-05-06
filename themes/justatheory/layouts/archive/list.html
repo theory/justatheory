@@ -13,7 +13,7 @@
 		<section>
 			<h2 class="year">{{ .Date.Year }}</h2>
 		{{- end }}
-			<article class="{{ .Type }}">
+			<div>
 				<header>
 					{{- if .Params.link }}
 					<h1 class="link"><a href="{{ .Params.link }}">{{ .Title }}</a></h1>
@@ -29,7 +29,7 @@
 					<p>Filed under <a href="{{ "/tags/" | relLangURL }}{{ index (.Params.tags) 0 | urlize }}">{{ index (.Params.tags) 0 }}</a></p>
 					{{- end }}
 				</footer>
-			</article>
+			</div>
 		{{- end }}
 		</section>
 	</main>

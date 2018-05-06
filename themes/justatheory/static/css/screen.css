@@ -605,19 +605,11 @@ big {
 }
 
 blockquote {
-    padding: 0 2rem 0 1.7rem;
-    margin-left: 5px;
+    padding: 0 2rem 0 1rem;
+    border-left: 1px solid #bbb;
     font-style: italic;
     color: #555;
     font-size: 95%;
-}
-
-blockquote:before {
-    font-family: FAS;
-    color: #bbb;
-    position: absolute;
-    content: '\f10d';
-    margin-left: -2rem;
 }
 
 blockquote cite {

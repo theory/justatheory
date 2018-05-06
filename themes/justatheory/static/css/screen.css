@@ -605,7 +605,8 @@ big {
 }
 
 blockquote {
-    padding: 0 2rem 0 1rem;
+    padding: 0 2rem 0 0.7rem;
+    margin-left: 1px;
     border-left: 1px solid #bbb;
     font-style: italic;
     color: #555;
@@ -1193,7 +1194,7 @@ article header {
 }
 
 @media only screen and (min-width: 768px) {
-    article header, #archive div > header {
+    article header {
         margin-bottom: 0.5em
     }
 }
@@ -1559,11 +1560,17 @@ pre, .highlight code {
     position: relative;
 }
 
+#archive section > div > p {
+    font-size: 90%;
+    margin-bottom: 0;
+}
+
 #archive section > div footer {
     padding: 0;
-    margin: 0;
+    margin: 0.5em 0 0 0;
     line-height: 1em;
     color: #666;
+    font-weight: 200;
     font-size: 90%;
 }
 
@@ -1611,7 +1618,7 @@ pre, .highlight code {
         position: absolute;
         text-align: right;
         left: 0em;
-        top: 1.5em
+        top: 1.7em
     }
 }
 

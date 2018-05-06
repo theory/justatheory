@@ -321,23 +321,6 @@ a:active {
     color: #ba5e5e
 }
 
-.entry-content a, .entry-content a * {
-    position: relative;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2px, #ffcccc 2px, #ffcccc 3px, rgba(0, 0, 0, 0) 3px)
-}
-
-.entry-content a:hover, .entry-content a * :hover {
-    background-image: none;
-    text-shadow: none
-}
-
-.entry-content a:hover * , .entry-content a * :hover * {
-    background-image: none;
-    text-shadow: none
-}
-
-
 html {
     height: 100%;
     background: #fff
@@ -353,10 +336,6 @@ body > div {
 }
 
 body {
-    font-family: "SourceSans", "Helvetica", sans-serif
-}
-
-.serif, #content .blog-index a[rel=full-article] {
     font-family: "SourceSans", "Helvetica", sans-serif
 }
 
@@ -447,7 +426,7 @@ h1 {
 h1.link a:after {
     color: #666;
     font-size: 80%;
-    content: ' →'
+    content: ' →' /* XXX use fontawesome external link icon */
 }
 
 @media only screen and (min-width: 768px) {
@@ -531,14 +510,6 @@ ol ol ol {
     margin-bottom: 0px
 }
 
-strong {
-    font-weight: bold
-}
-
-em {
-    font-style: italic
-}
-
 mark {
     color: #626262;
     background-color: transparent;
@@ -551,6 +522,7 @@ sup, sub {
     font-size: 0.8em;
     position: relative;
     display: inline-block
+    line-height: 0
 }
 
 sup {
@@ -584,10 +556,6 @@ del, s {
 abbr, acronym {
     border-bottom: 1px dotted;
     cursor: help
-}
-
-sub, sup {
-    line-height: 0
 }
 
 hr {
@@ -629,7 +597,7 @@ blockquote cite:before {
     color: #888
 }
 
-.pullquote-right:before, .pullquote-left:before {
+aside.right:before, .aside.left:before {
     padding: 0;
     border: none;
     content: attr(data-pullquote);
@@ -642,21 +610,9 @@ blockquote cite:before {
     line-height: 1.45em
 }
 
-.pullquote-left:before {
+aside.left:before {
     float: left;
     margin: .5em 1.5em 1em 0
-}
-
-.group, body > header, body > nav, body > footer, body #content > article,
-body #content > div > article, body #content > div > section, body div.pagination {
-    * zoom: 1
-}
-
-.group:after, body > header:after, body > nav:after, body > footer:after,
-body #content > article:after, body #content > div > section:after, body div.pagination:after {
-    content: "";
-    display: table;
-    clear: both
 }
 
 body > main, body > header > hgroup.top > *, body > header nav {
@@ -667,59 +623,9 @@ body > main, body > header > hgroup.top > *, body > header nav {
     padding: 0 18px;
 }
 
-body > header > hgroup.top, body > main, body > nav, body > footer, body #content > article, body #content > div > article,
-body #content > div > section {
+body > header > hgroup.top, body > main, body > nav, body > footer {
     padding-left: 18px;
     padding-right: 18px
-}
-
-@media only screen and (min-width: 480px) {
-    body > header > hgroup.top, body > nav, body > footer, body #content > article, body #content > div > article,
-    body #content > div > section {
-        padding-right: 18px
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    body > header > hgroup.top, body > nav, body > footer, body #content > article, body #content > div > article,
-    body #content > div > section {
-        padding-left: 18px;
-        padding-right: 18px
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    body > header > hgroup.top, body > nav, body > footer, body #content > article, body #content > div > article,
-    body #content > div > section {
-        padding-left: 18px;
-        padding-right: 18px
-    }
-}
-
-body div.pagination {
-    margin-left: 18px;
-    margin-right: 18px
-}
-
-@media only screen and (min-width: 480px) {
-    body div.pagination {
-        margin-left: 18px;
-        margin-right: 18px
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    body div.pagination {
-        margin-left: 18px;
-        margin-right: 18px
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    body div.pagination {
-        margin-left: 18px;
-        margin-right: 18px
-    }
 }
 
 body > header > hgroup.top  {
@@ -796,38 +702,32 @@ article .footnotes li {
     margin-bottom: 1em;
 }
 
-.flex-content, table, article img {
+table, article img {
     max-width: 100%;
     height: auto
 }
 
-.basic-alignment.left, table.left, article figure.left, article a.left, article img.left, article video.left,
-article .left.flash-video {
+table.left, article figure.left, article a.left, article img.left, article video.left {
     float: left;
     margin-right: 1.5em
 }
 
-.basic-alignment.right, table.right, article figure.right, article a.right, article img.right, article video.right,
-article .right.flash-video {
+table.right, article figure.right, article a.right, article img.right, article video.right {
     float: right;
     margin-left: 1.5em
 }
 
-.basic-alignment.center, table.center, article figure, article figure.center, article a.center, article img.center, article video.center,
-article .center.flash-video {
+table.center, article figure, article figure.center, article a.center, article img.center, article video.center {
     display: block;
     margin: 0 auto 1.5em
 }
 
-.basic-alignment.left, table.left, article figure.left, article a.left, article img.left, article video.left,
-article .left.flash-video, .basic-alignment.right, table.right, article figure.right, article a.right, article img.right,
-article video.right, article .right.flash-video {
+table.left,  article figure.left,  article a.left,  article img.left, article video.left,
+table.right, article figure.right, article a.right, article img.right, article video.right {
     margin-bottom: .8em
 }
 
-#content {
-    border-right: none
-}
+/* XXX Continue removing stuff here */
 
 @media only screen and (min-width: 550px) {
     body > header {

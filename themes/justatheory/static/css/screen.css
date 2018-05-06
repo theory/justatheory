@@ -1562,6 +1562,7 @@ pre, .highlight code {
 
 #archive section > div > p {
     font-size: 90%;
+    font-weight: 300;
     margin-bottom: 0;
 }
 

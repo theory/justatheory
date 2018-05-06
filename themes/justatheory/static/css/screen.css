@@ -647,14 +647,6 @@ blockquote cite:before {
     margin: .5em 1.5em 1em 0
 }
 
-.force-wrap, article a {
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    white-space: pre-wrap;
-    word-wrap: break-word
-}
-
 .group, body > header, body > nav, body > footer, body #content > article,
 body #content > div > article, body #content > div > section, body div.pagination {
     * zoom: 1
@@ -1252,7 +1244,6 @@ a[rel=bookmark]:after {
     font-size: 75%;
     content: ' \f02e';
     font-weight:normal;
-    margin-left: -3px;
 }
 
 article h2 {

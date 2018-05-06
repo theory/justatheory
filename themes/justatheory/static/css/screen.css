@@ -1610,7 +1610,6 @@ pre, .highlight code {
         font-weight: normal;
         display: inline-block;
         position: relative;
-        top: -1px;
         float: left;
         padding-top: .75em
     }

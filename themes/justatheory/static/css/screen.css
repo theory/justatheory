@@ -729,11 +729,7 @@ table.right, article figure.right, article a.right, article img.right, article v
 
 /* XXX Continue removing stuff here */
 
-@media only screen and (min-width: 550px) {
-    body > header {
-        font-size: 1em
-    }
-}
+
 
 @media only screen and (min-width: 768px) {
     body {
@@ -856,28 +852,6 @@ body > header h1 a, body > header h1 a:link, body > header h1 a:visited, body > 
     text-decoration: none;
     background-color: transparent;
     border: none
-}
-
-body > header img, body > header h1 {
-    /* width: 90px */
-}
-
-@media only screen and (min-width: 480px) {
-    body > header img, body > header h1 {
-        /* width: 90px */
-    }
-}
-
-@media only screen and (min-width: 750px) {
-    body > header img, body > header h1 {
-        /* width: 90px */
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    body > header img, body > header h1 {
-        /* width: 120px */
-    }
 }
 
 body > header h2 {
@@ -1014,12 +988,6 @@ body > nav form .search {
     line-height: 1.2em
 }
 
-@media only screen and (max-width: 500px) {
-    body > nav form {
-        width: 60px
-    }
-}
-
 body > nav ul[data-subscription$=email] + form {
     width: 131px
 }
@@ -1037,44 +1005,9 @@ body > nav fieldset[role=search] {
 }
 
 @media only screen and (min-width: 992px) {
-    body > nav form {
-        width: -12px
-    }
-
     body > nav ul[data-subscription$=email] + form {
         width: 184px
     }
-}
-
-@media only screen and (min-width: 550px) {
-    .maskImage body > nav ul[data-subscription$=email] + form {
-        width: 157px
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .maskImage body > nav ul[data-subscription$=email] + form {
-        width: 210px
-    }
-}
-
-.maskImage ul.subscription {
-    position: relative;
-    top: .2em
-}
-
-.maskImage ul.subscription li, .maskImage ul.subscription a {
-    border: 0;
-    padding: 0
-}
-
-#content .blog-index {
-    padding-top: 0;
-    padding-bottom: 0
-}
-
-#content .blog-index article {
-    padding-top: 2em
 }
 
 article, .tags:first-child {
@@ -1163,12 +1096,6 @@ article[data-linklog] .entry-title a {
     border: 1px solid #000;
     border-width: 0 0 1px 0;
     margin-bottom: 1em
-}
-
-@media only screen and (min-width: 768px) {
-    article[data-linklog] .entry-title a {
-        padding-bottom: 0.05em
-    }
 }
 
 article[data-linklog] .entry-title a:hover {
@@ -1344,18 +1271,6 @@ article > footer .comments:before, article > footer .byline ~ .topics:before {
     margin-bottom: -1.5em;
     background-repeat: no-repeat;
     background-size: 200px 200px
-}
-
-@media only screen and (min-width: 550px) {
-    .profile-image {
-        float: none
-    }
-}
-
-@media only screen and (min-width: 751px) {
-    .profile-image {
-        float: right
-    }
 }
 
 .get-vcard {

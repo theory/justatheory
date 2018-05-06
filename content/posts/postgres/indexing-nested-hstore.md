@@ -3,7 +3,6 @@ date: 2013-10-25T14:36:00Z
 title: Indexing Nested hstore
 aliases: [/pg/2013/10/25/indexing-nested-hstore/]
 tags: [Postgres, hstore]
-topics: [Postgres]
 ---
 
 In my first [Nested hstore] post yesterday, I ran a query against unindexed

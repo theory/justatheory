@@ -4,7 +4,6 @@ link: http://news.perlfoundation.org/2013/08/2013q3-grant-proposals.html
 title: TPF To Revamp Grants
 aliases: [/tpf/2013/08/23/tpf-to-revamp-grants/]
 tags: [Perl, Alberto Simões, TPF]
-topics: [Perl]
 ---
 
 Alberto Simões:

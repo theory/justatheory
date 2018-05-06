@@ -3,7 +3,6 @@ date: 2013-08-28T17:09:00Z
 title: Data Deployment with Sqitch
 aliases: [/sqitch/data/2013/08/28/data-deployment-with-sqitch/]
 tags: [Sqitch, databases]
-topics: [Sqitch]
 ---
 
 I've been thinking about data migrations. I love how well [Sqitch] works for

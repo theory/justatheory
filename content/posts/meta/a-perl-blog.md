@@ -2,8 +2,7 @@
 date: 2013-07-26T18:08:00Z
 title: A Perl Blog
 aliases: [/blog/2013/07/26/a-perl-blog/]
-tags: [Just a Theory, Perl, theory.pm, blogging]
-topics: [Meta]
+tags: [Meta, Perl, theory.pm, blogging]
 ---
 
 I have been unsatisfied with [Just a Theory] for some time. I started that

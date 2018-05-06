@@ -3,8 +3,7 @@ date: 2013-08-15T13:44:00Z
 link: http://blogs.perl.org/users/stevan_little/2013/08/mapping-the-mop-to-moose.html
 title: Mopping the Moose
 aliases: [/mop/2013/08/15/mopping-the-moose/]
-tags: [MOP, Moose, Stevan Little]
-topics: [Perl]
+tags: [Perl, MOP, Moose, Stevan Little]
 ---
 
 Stevan Little:

@@ -3,7 +3,6 @@ date: 2015-02-11T10:53:00Z
 title: Please Test Pod::Simple 3.29_3
 aliases: [/2015/02/11/please-test-pod-simple-3-dot-29-3/]
 tags: [Perl, Sean Burke, Karl Williamson, Pod]
-topics: [Perl]
 ---
 
 {{% figure src="/2015/02/please-test-podsimple-3.29_3/cpan.png" class="left" width="250" alt="Pod Book" %}}

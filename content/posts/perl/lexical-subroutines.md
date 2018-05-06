@@ -4,7 +4,6 @@ link: http://rjbs.manxome.org/rubric/entry/2016
 title: Lexical Subroutines
 aliases: [/syntax/2013/09/25/lexical-subroutines/]
 tags: [Perl, Ricardo Signes, chromatic]
-topics: [Perl]
 ---
 
 Ricardo Signes:

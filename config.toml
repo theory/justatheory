@@ -11,7 +11,6 @@ Paginate = 16
 PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
 
-
 [author]
     name = "David E. Wheeler"
 
@@ -30,3 +29,6 @@ footnoteReturnLinkContents = "↩"
 [outputFormats.RSS]
   mediatype = "application/rss"
   baseName = "feed"
+
+[taxonomies]
+    tag = "tags"

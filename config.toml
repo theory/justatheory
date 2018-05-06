@@ -10,6 +10,7 @@ PreserveTaxonomyNames = true
 Paginate = 16
 PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
+enableRobotsTXT = true
 
 [author]
     name = "David E. Wheeler"

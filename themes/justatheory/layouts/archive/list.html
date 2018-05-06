@@ -21,16 +21,12 @@
 					<h1 class="post"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
 					{{- end }}
 				</header>
+				{{ if .Description }}<blockquote>{{ .Description }}</blockquote>{{ end }}
 				<footer>
 					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>
 					<a rel="bookmark" href="{{ .Permalink }}"></a>
-					{{- if .Params.topics }}
-					<p>Filed under</p>
-					<ul class="cats">
-						{{- range .Params.topics}}
-						<li><a href="{{ "/topics/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-						{{- end }}
-					</ul>
+					{{- if .Params.tags }}
+					<p>Filed under <a href="{{ "/tags/" | relLangURL }}{{ index (.Params.tags) 0 | urlize }}">{{ index (.Params.tags) 0 }}</a></p>
 					{{- end }}
 				</footer>
 			</article>

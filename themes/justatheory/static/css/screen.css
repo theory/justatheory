@@ -380,16 +380,16 @@ main {
     padding-bottom: 80px !important;
 }
 
-#tags > header, #topics > header {
+#tags > header {
     margin: 20px 0;
     border-bottom: 1px dashed #ccc;
 }
 
-#tags article, #home article, #topics article, #home article {
+#tags article, #home article {
     border-bottom: 1px dashed #ccc;
 }
 
-#home article:last-child, #tags article:last-child, #topics article:last-child {
+#home article:last-child, #tags article:last-child {
     border: none;
 }
 

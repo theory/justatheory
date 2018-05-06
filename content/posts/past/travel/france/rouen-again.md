@@ -1,7 +1,7 @@
 --- 
 date: 2012-04-27T04:07:56Z
 slug: rouen-again
-title: ≈Rouen Again
+title: Rouen Again
 aliases: [/travel/france/2012/rouen-again.html]
 tags: [France, travel, Rouen, Normandy]
 ---

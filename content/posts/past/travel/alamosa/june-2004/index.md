@@ -6,7 +6,7 @@ aliases: [/travel/alamosa/june_2004.html]
 tags: [Alamosa, Colorado, Kineticode, consulting, business, Adams State College, Milagro’s Coffeehouse, Great Lakes Airlines]
 ---
 
-<img src="/travel/alamosa/milagros_coffeehouse.jpg" alt="Milagro's Coffeehouse" />
+<img src="/2004/06/june-2004/milagros_coffeehouse.jpg" alt="Milagro's Coffeehouse" class="right" />
 
 <p>Last week, I went on a brief business trip for <a
 href="http://www.kineticode.com/" title="Kineticode Web site">Kineticode</a>
@@ -28,7 +28,7 @@ Coffeehouse home page">Milagro's Coffeehouse</a>, but to judge by their sign,
 I wasn't sure I wanted what they were selling.</p>
 
 
-<img src="/travel/alamosa/prop_engine.jpg" alt="The flight home" class="left" />
+<img src="/2004/06/june-2004/prop_engine.jpg" alt="The flight home" class="left" />
 
 <p>Alamosa has a very small airport. When I flew in on the little prop plane
 from Great Lakes Airlines, I was one of two passengers. On the way out (I flew

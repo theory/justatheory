@@ -1,0 +1,18 @@
+<head>
+  <script type="text/javascript" src="../lib/Test/Builder.js"></script>
+</head>
+<pre id="test"><script type="text/javascript">
+var TB = new Test.Builder();
+TB.plan({tests: 2});
+if (Test.PLATFORM == 'browser') {
+	document.write("ok 1\n");
+	document.write("ok 2\n");
+} else if (Test.PLATFORM == 'director') {
+    trace("ok 1");
+    trace("ok 2");
+} else {
+    // What?
+}
+TB.currentTest(2);
+</script></pre>
+</body>

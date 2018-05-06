@@ -1,0 +1,34 @@
+<head>
+  <script type="text/javascript" src="../lib/Test/Builder.js"></script>
+  <script type="text/javascript" src="../lib/Test/More.js"></script>
+</head>
+<pre id="test"><script type="text/javascript">
+var output = [];
+function overwrite () {
+    for (var i = 0; i < arguments.length; i++) output.push(arguments[i]);
+};
+
+plan({tests: 6});
+var more_tb = Test.More.builder();
+var new_tb  = Test.Builder.create();
+if (/Safari/.test(navigator.userAgent)) {
+    skip("http://bugzilla.opendarwin.org/show_bug.cgi?id=3537", 2);
+} else {
+    isaOK(new_tb,  'Test.Builder');
+    isaOK(more_tb, 'Test.Builder');
+}
+
+isnt(more_tb, new_tb, 'Test.Builder.create() makes a new object');
+
+is(more_tb, Test.More.builder(), 'create does not interfere with .builder()');
+is(more_tb, new Test.Builder(),  'create does not interfere with .new()');
+
+new_tb.output(overwrite);
+new_tb.endOutput(overwrite);
+new_tb.failureOutput(overwrite);
+new_tb.plan({tests: 1});
+new_tb.ok(1);
+new_tb._ending(); // Trigger the ending.
+is(output.splice(0, output.length).join(''), "1..1\n" + "ok 1\n", "Check output");
+</script></pre>
+</body>

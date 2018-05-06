@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Testcase for WebKit Bug # 3748</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var build = document.createElement('script');
+      build.setAttribute("type", "text/javascript");
+      build.setAttribute("src", "try.js");
+      document.body.appendChild(build);
+    </script>
+    <p>If no alert pops up and says <q>hello</q>, then your browser has <a href="http://bugzilla.opendarwin.org/show_bug.cgi?id=3748">the bug</a>.</p>
+  </body>
+</html>

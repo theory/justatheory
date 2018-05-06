@@ -1,0 +1,16 @@
+--- src/Configure~	Sun Nov 24 12:11:39 2002
++++ src/Configure	Sun Nov 24 12:15:36 2002
+@@ -532,11 +532,13 @@
+ 	OS='Mac OS X Server'
+ 	CFLAGS="$CFLAGS -DDARWIN -DMAC_OS_X_SERVER"
+ 	DEF_WANTHSREGEX=yes
++	DBM_LIB="-lSystem"
+ 	;;
+     *-apple-darwin*)
+ 	OS='Darwin'
+ 	CFLAGS="$CFLAGS -DDARWIN"
+ 	DEF_WANTHSREGEX=yes
++	DBM_LIB="-lSystem"
+ 	;;
+     *-dec-osf*)
+ 	OS='DEC OSF/1'

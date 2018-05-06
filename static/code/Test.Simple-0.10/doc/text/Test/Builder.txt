@@ -1,0 +1,506 @@
+Name
+
+    Test.Builder - Back end for building test libraries
+
+Synopsis
+
+      var Test = new Test.Builder();
+    
+      function ok (test, description) {
+          Test.ok(test, description);
+      }
+
+Description
+
+    Test.Builder provides the buildings block upon which to write test
+    libraries like Test.Simple and Test.More that can work together. All
+    tests are expected to use a plan and to be run in an HTML element with
+    its "id" attribute set to "test". See Test.Simple and Test.More for
+    details. Users of this class, however, are expected to be folks who
+    want to write test functions that interoperate with Test.Simple and
+    Test.More.
+
+ Construction
+
+    Test.Builder
+
+        var Test = new Test.Builder();
+
+      Returns a Test.Builder object representing the current state of the
+      test.
+
+      Since you only run one test per program, there is one and only one
+      Test.Builder object. No matter how many times you call new
+      Test.Builder(), you'll get the same object. (This is called a
+      singleton).
+
+    create
+
+        var Test = Test.Builder.create();
+
+      OK, so there can be more than one Test.Builder object and this is how
+      you get it. You might use this instead of new Test.Builder() if
+      you're testing a Test.Builder-based module.
+
+    reset
+
+        Test.reset();
+
+      Reinitializes the Test.Builder singleton to its original state.
+      Mostly useful for tests run in persistent environments where the same
+      test might be run multiple times in the same process.
+
+ Setting up tests
+
+    These methods are for setting up tests and declaring how many there
+    are. You usually only want to call one of these methods.
+
+    plan
+
+        Test.plan({ noPlan:  true     });
+        Test.plan({ skipAll: reason   });
+        Test.plan({ tests:   numTests });
+
+      A convenient way to set up your tests. Call this method and
+      Test.Builder will print the appropriate headers and take the
+      appropriate actions.
+
+      If you call plan(), don't call any of the other test setup methods.
+
+    expectedTests
+
+          var max = Test.expectedTests();
+          Test.expectedTests(max);
+
+      Gets/sets the number of tests we expect this test to run and prints
+      out the appropriate headers.
+
+    noPlan
+
+        Test.noPlan();
+
+      Declares that this test will run an indeterminate number tests.
+
+    hasPlan
+
+        var plan = Test.hasPlan();
+
+      Find out whether a plan has been defined. plan is either null (no
+      plan has been set) "noPlan" (indeterminate number of tests) or an
+      integer (the number of expected tests).
+
+    skipAll
+
+        Test.skipAll();
+        Test.skipAll(reason);
+
+      Skips all the tests in the test file, using the given reason.
+
+ Running tests
+
+    These methods actually run the tests. The description argument is
+    always optional.
+
+    ok
+
+        Test.ok(test, description);
+
+      Your basic test. Pass if test is true, fail if test is false. Returns
+      a boolean indicating passage or failure.
+
+    isEq
+
+        Test.isEq(got, expect, description);
+
+      Tests to see whether got is equivalent to expect.
+
+    isNum
+
+        Test.isNum(got, expect, description);
+
+      Tests to see whether the numeric form of got is equivalent to the
+      numeric form of expect as converted by Number().
+
+    isntEq
+
+        Test.isntEq(got, dontExpect, description);
+
+      The opposite of isEq(). Tests to see whether got is not equivalent to
+      dontExpect.
+
+    isntNum
+
+        Test.isntNum(got, dontExpect, description);
+
+      The opposite of isNum(). Tests to see whether the numeric form of got
+      is not equivalent to the numeric form of dontExpect as converted by
+      Number().
+
+    like
+
+        Test.like(got, /regex/, description);
+        Test.like(got, 'regex', description);
+
+      Tests to see whether got matches the regular expression in regex. If
+      a string is passed for the regex argument, it will be converted to a
+      regular expression object for testing. If <got> is not a string, the
+      test will fail.
+
+    unlike
+
+        Test.unlike(got, /regex/, description);
+        Test.unlike(got, 'regex', description);
+
+      The opposite of unlike(). Tests to see whether got does not match the
+      regular expression in regex. If a string is passed for the regex
+      argument, it will be converted to a regular expression object for
+      testing. If <got> is not a string, the test will pass.
+
+    cmpOK
+
+        Test.cmpOK(got, op, expect, description);
+
+      Performs a comparison of two values, got and expect. Specify any
+      binary comparison operator as a string via the op argument. In
+      addition to the usual JavaScript operators, cmpOK() also supports the
+      Perl-style string comparison operators:
+
+      eq - String equal
+
+      ne - String not equal
+
+      lt - String less than
+
+      gt - String greater than
+
+      le - String less than or equal
+
+      ge - String greater than or equal
+
+    BAILOUT
+
+          Test.BAILOUT(reason);
+
+      Indicates to the Test.Harness that things are going so badly all
+      testing should terminate. This includes running any additional test
+      files.
+
+    skip
+
+          Test.skip();
+          Test.skip(why);
+
+      Skips the current test, reporting why.
+
+    todoSkip
+
+        Test.todoSkip();
+        Test.todoSkip(why);
+
+      Like skip(), only it will declare the test as failing and TODO.
+
+    skipRest
+
+        Test.skipRest();
+        Test.skipRest(reason);
+
+      Like skip(), only it skips all the rest of the tests you plan to run
+      and terminates the test.
+
+      If you're running under "noPlan", it skips once and terminates the
+      test.
+
+ Test style
+
+    useNumbers
+
+          Test.useNumbers(onOrOff);
+
+      Whether or not the test should output numbers. That is, this if true:
+
+        ok 1
+        ok 2
+        ok 3
+
+      or this if false
+
+        ok
+        ok
+        ok
+
+      Most useful when you can't depend on the test output order.
+      Test.Harness will accept either, but avoid mixing the two styles.
+      Defaults to true.
+
+    noHeader
+
+          Test.noHeader(noHeader);
+
+      If set to true, no "1..N" header will be printed.
+
+    noEnding
+
+          Test.noEnding(noEnding);
+
+      Normally, Test.Builder does some extra diagnostics when the test
+      ends. It also changes the exit code as described below. If this is
+      true, none of that will be done.
+
+ Output
+
+    Controlling where the test output goes. It's ok for your test to change
+    where document.write points to; Test.Builder's default output settings
+    will not be affected.
+
+    diag
+
+          Test.diag(msg);
+          Test.diag(msg, msg2, msg3);
+
+      Prints out all of its arguments. All arguments are simply appended
+      together for output.
+
+      Normally, it uses the failureOutput() handle, but if this is for a
+      TODO test, the todoOutput() handle is used.
+
+      Output will be indented and marked with a "#" so as not to interfere
+      with test output. A newline will be put on the end if there isn't one
+      already.
+
+      We encourage using this method rather than outputting diagnostics
+      directly.
+
+      Returns false. Why? Because diag() is often used in conjunction with
+      a failing test (ok() || diag()) it "passes through" the failure.
+
+          return ok(...) || diag(...);
+
+ Output
+
+    These methods specify where test output and diagnostics will be sent.
+    By default, in a browser they all default to appending to the element
+    with the "test" ID or, failing that, to using document.write. In
+    Macromedia Director, they use trace for their output. If you wish to
+    specify other functions that lack the apply() method, you'll need to
+    supply them instead as custom anonymous functions that take a single
+    argument (multiple arguments will be concatenated before being passed
+    to the output function):
+
+      Test.output(function (msg) { foo(msg) });
+
+    output
+
+          Test.output(function);
+
+      Function to call with normal "ok/not ok" test output.
+
+    failureOutput
+
+          Test.failureOutput(function);
+
+      Function to call with diagnostic output on test failures and diag.
+
+    todoOutput
+
+          Test.todoOutput(function);
+
+      Function to call with diagnostic about todo test failures and diag.
+
+    warnOutput
+
+          Test.warnOutput(function);
+
+      Function to call with warnings.
+
+    endOutput
+
+          Test.endOutput(function);
+
+      Function to which to pass any end messages (such as "Looks like you
+      planed 8 tests but ran 2 extra").
+
+ Test Status and Info
+
+    currentTest
+
+          var currTest = Test.currentTest();
+          Test.currentTest(num);
+
+      Gets/sets the current test number we're on. You usually shouldn't
+      have to set this property.
+
+      If set forward, the details of the missing tests are filled in as
+      "unknown". if set backward, the details of the intervening tests are
+      deleted. You can erase history if you really want to.
+
+    summary
+
+          my @tests = Test.summary();
+
+      A simple summary of the tests so far returned as an array or boolean
+      values, true for pass, false for fail. This is a logical pass/fail,
+      so todos are passes.
+
+      Of course, test #1 is tests[0], etc...
+
+    details
+
+          my @tests = Test.details();
+
+      Like summary(), but with a lot more detail.
+
+        tests[testNum - 1] = {
+            ok:        is the test considered a pass?
+            actual_ok: did it literally say 'ok'?
+            desc:      description of the test (if any)
+            type:      type of test (if any, see below).
+            reason:    reason for the above (if any)
+        };
+
+	* "ok" is true if Test.Harness will consider the test to be a pass.
+
+	* "actual_ok" is a reflection of whether or not the test literally
+	printed "ok" or "not ok". This is for examining the result of
+	"todo" tests.
+
+	* "description is the description of the test.
+
+	* "type" indicates if it was a special test. Normal tests have a
+	type of "". Type can be one of the following:
+
+	skip see skip()
+
+	todo see todo()
+
+	todo_skip see todoSkip()
+
+	unknown see below
+
+      Sometimes the Test.Builder test counter is incremented without it
+      printing any test output, for example, when currentTest() is changed.
+      In these cases, Test.Builder doesn't know the result of the test, so
+      it's type is "unknown". The details for these tests are filled in.
+      They are considered ok, but the name and actual_ok is left null.
+
+      For example "not ok 23 - hole count # TODO insufficient donuts" would
+      result in this structure:
+
+        tests[22] = {          // 23 - 1, since arrays start from 0.
+            ok:        1,      // logically, the test passed since it's todo
+            actual_ok: 0,      // in absolute terms, it failed
+            desc:      'hole count',
+            type:      'todo',
+            reason:    'insufficient donuts'
+        };
+
+    todo
+
+          TODO: {
+              Test.todo(why, howMany);
+              ...normal testing code goes here...
+          }
+
+      Declares a series of tests that you expect to fail and why. Perhaps
+      it's because you haven't fixed a bug or haven't finished a new
+      feature. The next howMany tests will be expected to fail and thus
+      marked as "TODO" tests.
+
+    caller
+
+          var package = Test.caller();
+          my(pack, file, line) = Test.caller();
+          my(pack, file, line) = Test.caller(height);
+
+      Like the normal caller(), except it reports according to your
+      level().
+
+    beginAsync
+
+    endAsync
+
+        var timeout = 3000;
+        var asyncID = Test.beginAsync(timeout);
+        window.setTimeout(
+            function () {
+                Test.ok(true, "Pass after 2 seconds");
+                Test.endAsync(asyncID);
+            }, timeout - 1000
+        );
+
+      Sometimes you may need to run tests in an asynchronous process. Such
+      processes can be started using window.setTimeout() or
+      window.setInterva() in a browser, or by making an XMLHttpRequest
+      call. In such cases, the tests might normally run after the test
+      script has completed, and thus the summary message at the end of the
+      test script will be incorrect--and the test results will appear after
+      the summary.
+
+      To get around this problem, tell the Test.Builder object that you're
+      running asyncronous tests by calling beginAsync(). The test script
+      will not finish until you pass the ID returned by beginAsync() to
+      endAsync(). If you've called beginAsync() with the optional timout
+      argument, then the test will finish if endAsync() has not been called
+      with the appropriate ID before the timeout has elapsed. The timeout
+      can be specified in milliseconds.
+
+Examples
+
+    CPAN can provide the best examples. Test.Simple and Test.More both use
+    Test.Builder.
+
+See Also
+
+    Test.Simple
+
+      Simple testing with a single testing function, ok(). Built with
+      Test.Builder.
+
+    Test.More
+
+      Offers a panoply of test functions for your testing pleasure. Also
+      built with Test.Builder.
+
+    http://www.edwardh.com/jsunit/
+
+      JSUnit: elaborate xUnit-style testing framework. Completely unrelated
+      to Test.Builder.
+
+ToDo
+
+      * Finish porting tests from Test::Simple.
+
+Authors
+
+    Original Perl code by chromatic and maintained by Michael G Schwern
+    <schwern@pobox.com>. Ported to JavaScript by David Wheeler
+    <david@kineticode.com>.
+
+Copyright
+
+    Copyright 2002, 2004 by chromatic <chromatic@wgz.org> and Michael G
+    Schwern <schwern@pobox.com>, 2005 by David Wheeler
+    <david@kineticode.com>.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the Perl Artistic License or the GNU GPL.
+
+    See http://www.perl.com/perl/misc/Artistic.html and
+    http://www.gnu.org/copyleft/gpl.html.
+
+POD ERRORS
+
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 367:
+
+      You forgot a '=back' before '=head2'
+
+    Around line 379:
+
+      '=item' outside of any '=over'
+
+    Around line 594:
+
+      '=item' outside of any '=over'
+

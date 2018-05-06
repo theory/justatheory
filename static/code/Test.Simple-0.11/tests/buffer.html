@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script type="text/javascript" src="../lib/Test/Builder.js"></script>
+  <script type="text/javascript" src="../lib/Test/More.js"></script>
+</head>
+<body>
+<pre id="test"><script type="text/javascript">
+// Ensure that intermixed prints to document.write and tests come out in the
+// right order (ie. no buffering problems).
+plan({tests: 20});
+var T = new Test.Builder();
+//T.noEnding(true); // Dunno why Test::Simple has this set.
+
+var sendOut = Test.PLATFORM == 'browser'
+  ? function (msg) { document.write(msg); }
+  : Test.PLATFORM == 'director'
+    ? function (msg) { trace(msg); }
+    : function () {}; // What are you?
+
+var nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (var i in nums) {
+    var tnum = nums[i] * 2;
+    Test.More.pass("I'm ok");
+    T.currentTest(tnum);
+    sendOut("ok " + tnum + " - You're ok\n");
+}
+</script></pre>
+</body>
+</html>

@@ -1,0 +1,161 @@
+Name
+
+    Test.Harness.Browser - Run TAP standard JavaScript test scripts with
+    statistics in a Browser
+
+Synopsis
+
+      <html>
+      <head>
+        <script type="text/javascript" src="../lib/Test/Harness.js"></script>
+        <script type="text/javascript" src="../lib/Test/Harness/Browser.js"></script>
+      </head>
+      <body>
+        <script type="text/javascript">
+          Test.Harness.Browser.runTests(
+              'async.html',
+              'bad_plan.html',
+              'buffer.html',
+              'builder.html'
+          );
+        </script>
+      </body>
+      </html>
+
+Description
+
+    STOP! If all you want to do is write a test script, consider using
+    Test.Simple. Test.Harness is the module that reads the output from
+    Test.Simple, Test.More and other modules based on Test.Builder. You
+    don't need to know about Test.Harness to use those modules.
+
+    Test.Harness.Browser runs JavaScript tests in a browser and expects to
+    get the results from the TestResults attribute of the Test.Builder
+    object constructed by each test script. These results conform to a
+    format called TAP, the Test Anything Protocol. It is defined in
+    http://search.cpan.org/dist/Test-Harness/lib/Test/Harness/TAP.pod. See
+    Test.Harness for details on the output.
+
+ Class Methods
+
+      Test.Harness.Browser.runTests('testone.html', 'testtwo.html');
+
+    Constructs a new Test.Harness.Browser object and calls its runTests()
+    instance method, passing all arguments along.
+
+ Constructors
+
+      var harness = new Test.Harness.Browser();
+
+    Constructs a new Test.Harness.Browser object.
+
+ Instance Methods
+
+    runTests
+
+        harness.runTests('testone.html', 'testtwo.html');
+
+      This method runs all the given test files and divines whether they
+      passed or failed based on the contents of the TestRusults attribute
+      of their global Test.Builder.Test object. It prints out each
+      individual test that failed along with a summary report and a how
+      long it all took. When all tests have been run, a diagnostic message
+      will be output. See Test.Harness for details on the output.
+
+ GET Options
+
+    An HTML file that uses Test.Harness.Browser will automatically process
+    the GET its arguments, and these can be used to affect the behavior of
+    the harness.
+
+    verbose
+
+        index.html?verbose=1
+
+      Set the verbose option to a true value to have all of the output of
+      all of the tests in the harness output to the browser window. By
+      default, only failing tests display their output.
+
+    file
+
+        index.html?file=foo.html,file=bar.html
+
+      Set the file option to override the list of files passed to
+      runTest(). This option may be specified multiple times, and each file
+      specified will be passed to runTest().
+
+Bugs
+
+    Safari (and maybe KHTML?) has a number of bugs that affect how
+    Test.Harness.Browser works. The most obvious is that it cannot run
+    tests on a local disk. The harness only works in Safari if the tests
+    are served by a Web server. The WebKit team is aware of the issue;
+    expect it to be fixed in a future version.
+
+    Other Safari bugs I repoted while writing this module:
+
+    iFrame Doesn't seem to Respect a local "file://" src
+
+      http://bugzilla.opendarwin.org/show_bug.cgi?id=3593
+
+    Function.toString() Doesn't Stringify Constructors as Attributes
+
+      Some tests are skipped in tests/create.html, tests/harness.html, and
+      tests/more.html to work around this bug.
+
+      http://bugzilla.opendarwin.org/show_bug.cgi?id=3537
+
+    WebKit JavaScript Does not Properly Support Circular References
+
+      One test is skipped in tests/circular_data.html to work around this
+      bug.
+
+      http://bugzilla.opendarwin.org/show_bug.cgi?id=3539
+
+    iFrames Appear to be Cached
+
+      http://bugzilla.opendarwin.org/show_bug.cgi?id=3580
+
+    iFrames set to display:none are Missing from frames array
+
+      So the iframe used to run tests isn't hidden in Safari. Instead, it
+      is set to "height: 0; widht: 0".
+
+      http://bugzilla.opendarwin.org/show_bug.cgi?id=3581
+
+    Add Support for the watch() method of Object
+
+      This would just be nice to have, so that we wouldn't have to set
+      timeouts to check for test completion.
+
+      http://bugzilla.opendarwin.org/show_bug.cgi?id=3659
+
+See Also
+
+    Test.Harness, the base class for this class.
+
+    Test.Simple and Test.More, modules with which to write tests.
+
+Authors
+
+    David Wheeler <david@kineticode.com>.
+
+Copyright
+
+    Copyright 2005 by David Wheeler <david@kineticode.com>
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the Perl Artistic License or the GNU GPL.
+
+    See http://www.perl.com/perl/misc/Artistic.html and
+    http://www.gnu.org/copyleft/gpl.html.
+
+POD ERRORS
+
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 68:
+
+      You forgot a '=back' before '=head2'
+

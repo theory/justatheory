@@ -1252,6 +1252,7 @@ a[rel=bookmark]:after {
     font-size: 75%;
     content: ' \f02e';
     font-weight:normal;
+    margin-left: -3px;
 }
 
 article h2 {

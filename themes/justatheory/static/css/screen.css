@@ -623,6 +623,10 @@ body > main, body > header > hgroup.top > *, body > header nav {
     padding: 0 18px;
 }
 
+body > header {
+    font-size: 1.3em
+}
+
 body > header > hgroup.top, body > main, body > nav, body > footer {
     padding-left: 18px;
     padding-right: 18px
@@ -736,10 +740,6 @@ table.right, article figure.right, article a.right, article img.right, article v
         -webkit-text-size-adjust: auto
     }
 
-    body > header {
-        font-size: 1.3em
-    }
-
     #main {
         * zoom: 1;
         padding: 0;
@@ -773,10 +773,6 @@ table.right, article figure.right, article a.right, article img.right, article v
 }
 
 @media only screen and (min-width: 992px) {
-    body > header {
-        font-size: 1.3em
-    }
-
     #content {
         margin-right: 300px
     }

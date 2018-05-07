@@ -323,7 +323,7 @@ a:active {
 
 html {
     height: 100%;
-    background: #fff
+    background: #fff;
     font-family: "SourceSans", "Helvetica", sans-serif
 }
 
@@ -618,6 +618,11 @@ body > main, body > header > hgroup.top > *, body > header nav {
 
 body > header {
     font-size: 1.3em
+}
+
+body > header .bug {
+    font-size: 4em !important;
+    line-height: 1em !important;
 }
 
 body > header > hgroup.top, body > main, body > nav, body > footer {

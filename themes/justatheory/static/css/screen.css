@@ -729,7 +729,6 @@ table.right, article figure.right, article a.right, article img.right, article v
     margin-bottom: .8em
 }
 
-/* XXX Continue removing stuff here */
 dl {
     margin-bottom: 0
 }
@@ -771,10 +770,6 @@ table th, table td {
     border-bottom: 1px solid #eee
 }
 
-body > header h1 {
-    font-size: 2 !important;
-}
-
 body > header h1.bug {
     float: left;
 }
@@ -808,131 +803,12 @@ body > header h2 a:hover, body > header h2 a:hover * {
     background-color: transparent
 }
 
-body > nav {
-    background-color: transparent;
-    background: transparent, transparent;
-    border: none
-}
-
-body > nav form {
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    margin: 0;
-    padding: 0
-}
-
-body > nav form .search {
-    padding: .3em .5em .3em;
-    font-size: .85em;
-    line-height: 1.1em;
-    width: 95%;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    -ms-border-radius: 0.5em;
-    -o-border-radius: 0.5em;
-    border-radius: 0.5em;
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    border: 1px solid #e9e9e9;
-    color: #888
-}
-
-body > nav form .search:focus {
-    color: #444;
-    border-color: #80b1df;
-    -webkit-box-shadow: #80b1df 0 0 4px, #80b1df 0 0 3px inset;
-    -moz-box-shadow: #80b1df 0 0 4px, #80b1df 0 0 3px inset;
-    box-shadow: #80b1df 0 0 4px, #80b1df 0 0 3px inset;
-    background-color: #fff;
-    outline: none
-}
-
-body > nav fieldset[role=search] {
-    float: right;
-    width: 48%
-}
-
-body > nav fieldset.mobile-nav {
-    float: left;
-    width: 48%
-}
-
-body > nav fieldset.mobile-nav select {
-    width: 100%;
-    font-size: .8em;
-    border: 1px solid #888
-}
-
-body > nav ul {
-    display: none
-}
-
 body > nav ul {
     list-style: none;
     float: left;
     display: block;
     margin-left: 1em;
     padding-top: 1em
-}
-
-body > nav ul li {
-    text-transform: uppercase;
-    margin: 0
-}
-
-body > nav a {
-    color: #333;
-    font-family: "SourceSans", "Proxima Nova", "Helvetica", sans-serif;
-    float: left;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 0;
-    line-height: 1.55em;
-    font-weight: bold;
-    border: none
-}
-
-body > nav a:visited {
-    color: #333
-}
-
-body > nav a:hover {
-    color: #c00
-}
-
-body > nav a:hover {
-    background-color: transparent
-}
-
-body > nav form {
-    float: right;
-    text-align: left;
-    padding-left: .8em;
-    width: 209px
-}
-
-body > nav form .search {
-    width: 93%;
-    font-size: .95em;
-    line-height: 1.2em
-}
-
-body > nav ul[data-subscription$=email] + form {
-    width: 131px
-}
-
-body > nav ul[data-subscription$=email] + form .search {
-    width: 91%
-}
-
-body > nav fieldset.mobile-nav {
-    display: none
-}
-
-body > nav fieldset[role=search] {
-    width: 99%
 }
 
 article, .tags:first-child {
@@ -947,11 +823,6 @@ time {
     font-weight: 200;
 }
 
-.blog-index article header {
-    background: none;
-    padding-bottom: 0
-}
-
 article header p {
     font-size: .9em;
     margin: 0;
@@ -960,26 +831,6 @@ article header p {
 
 article header p.meta {
     padding-top: 0.5em
-}
-
-article .entry-title {
-    margin: 0
-}
-
-article .entry-title a {
-    border-color: transparent
-}
-
-.blog-index article .entry-title {
-    font-size: 2.2em
-}
-
-.blog-index article .entry-title a {
-    color: inherit
-}
-
-.blog-index article .entry-title a:hover {
-    color: #300303
 }
 
 a[rel=bookmark] {
@@ -1000,38 +851,6 @@ a[rel=bookmark]:after {
 
 article h2 {
     padding-top: 0.8em
-}
-
-article h2:first-child, article header + h2 {
-    background: none
-}
-
-article[data-linklog] .entry-title {
-    font-size: 2.2em
-}
-
-article[data-linklog] .entry-title a {
-    color: inherit;
-    border: 1px solid #000;
-    border-width: 0 0 1px 0;
-    margin-bottom: 1em
-}
-
-article[data-linklog] .entry-title a:hover {
-    text-decoration: none;
-    border-color: red
-}
-
-.blog-index article[data-linklog] .entry-title {
-    font-size: 1.5em
-}
-
-article .linklog-marker {
-    color: #888;
-    font-size: .8em;
-    line-height: 1em;
-    position: relative;
-    top: -.15em
 }
 
 article > footer {
@@ -1064,17 +883,7 @@ article > footer .meta {
     overflow: hidden
 }
 
-article .feature {
-    padding-top: .5em;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-    background: #666 bottom left repeat-x;
-    font-size: 2.0em;
-    font-style: italic;
-    line-height: 1.3em
-}
-
-article img, article video, article .flash-video {
+article img, article video {
     -webkit-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     -ms-border-radius: 0.3em;
@@ -1091,139 +900,8 @@ article img, article video, article .flash-video {
     background-color: #fff
 }
 
-article .no-border {
-    border: none;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-    padding: 0
-}
-
-article video, article .flash-video {
+article video {
     margin: 0 auto 1.5em
-}
-
-article .flash-video > div {
-    position: relative;
-    display: block;
-    padding-bottom: 56.25%;
-    padding-top: 1px;
-    height: 0;
-    overflow: hidden
-}
-
-article .flash-video > div iframe, article .flash-video > div object,
-article .flash-video > div embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%
-}
-
-#content .blog-index a[rel=full-article] {
-    display: inline-block;
-    padding: .4em .8em;
-    margin-right: .5em;
-    text-decoration: none;
-    -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
-    transition: background-color 0.5s
-}
-
-#content .blog-index a[rel=full-article]:hover {
-    text-shadow: none
-}
-
-.blog-index #content .blog-index + article {
-    background: #666 top left repeat-x
-}
-
-.separator, article > footer .byline + time:before, article > footer time + time:before,
-article > footer .comments:before, article > footer .byline ~ .topics:before {
-    content: "—";
-    padding: 0 .4em 0 .2em;
-    display: inline-block
-}
-
-#content div.pagination {
-    * zoom: 1;
-    text-align: center;
-    font-size: .95em;
-    position: relative;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    border-top: 1px solid #fff
-}
-
-#content div.pagination:after {
-    content: "";
-    display: table;
-    clear: both
-}
-
-#content div.pagination a {
-    text-decoration: none;
-    color: #888
-}
-
-#content div.pagination a.prev {
-    position: absolute;
-    left: 0
-}
-
-#content div.pagination a.next {
-    position: absolute;
-    right: 0
-}
-
-#content div.pagination a:hover {
-    color: #300303
-}
-
-.profile-image {
-    width: 256px;
-    height: 256px;
-    margin: 0 auto;
-    margin-bottom: -1.5em;
-    background-repeat: no-repeat;
-    background-size: 200px 200px
-}
-
-.get-vcard {
-    margin-top: 1em;
-    font-size: .875em
-}
-
-.vcard dt {
-    float: left;
-    padding-right: .5em;
-    text-align: right;
-    width: 5em
-}
-
-.vcard dd {
-    margin-left: 5em
-}
-
-.vcard dt, .vcard dd {
-    padding-bottom: .25em
-}
-
-p.meta + .sharing {
-    padding-top: 1em;
-    padding-left: 0
-}
-
-.sharing .adn-post {
-    padding-left: 30px
-}
-
-figure .gutter {
-    padding: 0;
-    border: 0
 }
 
 pre {
@@ -1233,15 +911,6 @@ pre {
     margin-bottom: 2.1em;
     padding: .8em 1em;
     overflow: auto
-}
-
-h3.filename + pre {
-    -moz-border-radius-topleft: 0px;
-    -webkit-border-top-left-radius: 0px;
-    border-top-left-radius: 0px;
-    -moz-border-radius-topright: 0px;
-    -webkit-border-top-right-radius: 0px;
-    border-top-right-radius: 0px
 }
 
 p code, li code {
@@ -1256,18 +925,13 @@ p code, li code {
     border: none
 }
 
-p .meta code, li .meta code {
-    color: #888;
-    font-style: normal
-}
-
 p pre code, li pre code {
     font-size: 1em !important;
     background: none;
     border: none
 }
 
-pre, .highlight code {
+pre {
     font-family: "SourceCode", "Courier", monospace !important;
     overflow: scroll;
     overflow-y: hidden;
@@ -1324,15 +988,6 @@ pre, .highlight code {
     content: ""
 }
 
-#content > .topic article {
-    margin-left: 0;
-    padding-left: 6.8em
-}
-
-#content > .topic .year {
-    display: inline
-}
-
 body > footer {
     background-color: #2d2d2d;
     color: #ccc;
@@ -1385,9 +1040,6 @@ body > footer ul li:last-child {
 }
 
 @media only screen and (min-width: 550px) {
-    dt {
-        float: none
-    }
     #archive section > div {
         padding-left: 4.5em;
         padding-bottom: .7em;
@@ -1418,18 +1070,6 @@ body > footer ul li:last-child {
     
     body {
         -webkit-text-size-adjust: auto
-    }
-
-    #main {
-        * zoom: 1;
-        padding: 0;
-        margin: 0 auto
-    }
-
-    #main:after {
-        content: "";
-        display: table;
-        clear: both
     }
 
     article header {

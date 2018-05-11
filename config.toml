@@ -11,6 +11,7 @@ Paginate = 16
 PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
 enableRobotsTXT = true
+disableKinds = ["section"]
 
 [author]
     name = "David E. Wheeler"

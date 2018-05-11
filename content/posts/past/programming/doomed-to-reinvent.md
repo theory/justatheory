@@ -7,7 +7,7 @@ tags: [Programming, doom, SQL, LISP, HTML, Drupal, PHP]
 ---
 
 <p>There's an old saying, “Whoever doesn't understand <em>X</em> is doomed to reinvent it.”<em>X</em> can stand for any number of things. The other day, I was pointing out that
-  such is the case for <a href="/computers/databases/celko-at-yapc.html" title="Learn Mad Database Skillz at YAPC::NA 2009">ORM developers</a>. Take <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html" title="Rails API: ActiveRecord::Base">ActiveRecord</a>, for example. As I demonstrated in a <a href="http://www.vimeo.com/4098876" title="Ruby on Rails for PostgreSQL Enthusiasts">2007 Presentation</a>, because ActiveRecord doesn't support simple things like aggregates or querying against functions or changing how objects are identified, you have to fall back on using its <code>find_by_sql()</code> method to actually run the SQL, or using <a href="/computers/programming/methodology/fuck-typing.html" title="Fuck Typing">fuck typing</a> to force ActiveRecord to do what you want. There are only two ways to get around this: Abandon the ORM and just use SQL, or keep improving the ORM until it has, in effect, reinvented SQL. Which would you choose?</p>
+  such is the case for <a href="/computers/databases/celko-at-yapc.html" title="Learn Mad Database Skillz at YAPC::NA 2009">ORM developers</a>. Take <a href="http://api.rubyonrails.org/classes/ActiveRecord/Base.html" title="Rails API: ActiveRecord::Base">ActiveRecord</a>, for example. As I demonstrated in a <a href="https://www.vimeo.com/4098876" title="Ruby on Rails for PostgreSQL Enthusiasts">2007 Presentation</a>, because ActiveRecord doesn't support simple things like aggregates or querying against functions or changing how objects are identified, you have to fall back on using its <code>find_by_sql()</code> method to actually run the SQL, or using <a href="/computers/programming/methodology/fuck-typing.html" title="Fuck Typing">fuck typing</a> to force ActiveRecord to do what you want. There are only two ways to get around this: Abandon the ORM and just use SQL, or keep improving the ORM until it has, in effect, reinvented SQL. Which would you choose?</p>
 
 <p>I was thinking about this as I was hacking on a Drupal installation for a client. The design spec called for the comment form to be styled in a very specific way, with image submit buttons. Drupal has this <a href="http://api.drupal.org/api/file/developer/topics/forms_api.html/5" title="Forms API Quickstart Guide">baroque interface</a> for building forms: essentially an array of arrays. Each element of the array is a form element, unless it's markup. Or something. I can't really make heads or tails of it. What's important is that there are a limited number of form elements you can create, and as of Drupal 5, <strong><em>image</em> isn't fucking one of them!</strong>.</p>
 
@@ -37,6 +37,6 @@ $form[&#x0027;submit_stuff&#x0027;] = array(
 
 <p>&lt;/rant&gt;</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/methodology/doomed-to-reinvent.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/methodology/doomed-to-reinvent.html">old layout</a>.</small></p>
 
 

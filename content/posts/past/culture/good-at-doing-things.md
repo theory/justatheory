@@ -48,7 +48,7 @@ specialist, and pediatric neuropsychologist.</p>
 <h3> Brain Development</h3>
 
 <ul>
-<li>Brain that is <a href="http://en.wikipedia.org/wiki/Myelin" title="Wikipedia: Myelin">myelinated</a> is functional</li>
+<li>Brain that is <a href="https://en.wikipedia.org/wiki/Myelin" title="Wikipedia: Myelin">myelinated</a> is functional</li>
 <li>Injured brains don’t develop well</li>
 <li>Rats with non-stimulating environment have smaller brains with fewer connections and lower IQ.</li>
 <li>Rats raised in stimulating environment are heavier and more complex</li>
@@ -272,7 +272,7 @@ People learn better by doing the things they're interested in. Montessori
 teacher knows there are things to discover, and helps the child to get the
 tools to figure it out.</p>
 
-<p>Other places to have experimental interactions with the environment? <a href="http://en.wikipedia.org/wiki/SimCity">Sim
+<p>Other places to have experimental interactions with the environment? <a href="https://en.wikipedia.org/wiki/SimCity">Sim
 City</a>! Get to analyze the problems of
 city planning. Inventor of Sim City was Montessori educated, through 6th
 grade, later realized it was the high point of his education. Started making
@@ -514,6 +514,6 @@ future.</p>
 <p>Slides on <a href="http://goodatdoingthings.com/">goodatdoingthings.com</a>. Will see
 about getting a video posted, as well.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/education/good-at-doing-things.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/education/good-at-doing-things.html">old layout</a>.</small></p>
 
 

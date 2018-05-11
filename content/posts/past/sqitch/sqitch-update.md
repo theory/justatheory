@@ -6,7 +6,7 @@ aliases: [/computers/databases/sqitch-update.html]
 tags: [Sqitch, SQL, change management]
 ---
 
-<p>A quick update on <a href="https://github.com/theory/sqitch/">Sqitch</a>. I started implementation about a couple of weeks ago. It’s coming a long a bit more slowly than I'd like, given that I need to give <a href="http://www.pgcon.org/2012/schedule/events/479.en.html">a presentation</a> on it soon. But I did things a little differently than I usually do with project like this: I wrote documentation first. In addition to the basic docs I <a href="/computers/databases/sqitch-draft.html">posted</a> a couple weeks back, I’ve written <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">a tutorial</a>. I put quite a lot of time into it, studying the <a href="http://git-scm.com/">Git</a> interface as I did so, to try to develop useful workflows. The nice thing about this it that it will not only serve as the foundation for my presentation (<em>PHEW!</em> Half the work done already!), but it also serves as a design specification.</p>
+<p>A quick update on <a href="https://github.com/theory/sqitch/">Sqitch</a>. I started implementation about a couple of weeks ago. It’s coming a long a bit more slowly than I'd like, given that I need to give <a href="https://www.pgcon.org/2012/schedule/events/479.en.html">a presentation</a> on it soon. But I did things a little differently than I usually do with project like this: I wrote documentation first. In addition to the basic docs I <a href="/computers/databases/sqitch-draft.html">posted</a> a couple weeks back, I’ve written <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">a tutorial</a>. I put quite a lot of time into it, studying the <a href="http://git-scm.com/">Git</a> interface as I did so, to try to develop useful workflows. The nice thing about this it that it will not only serve as the foundation for my presentation (<em>PHEW!</em> Half the work done already!), but it also serves as a design specification.</p>
 
 <p>So I've been diligently plugging away on it, and have uploaded a couple of trial releases <a href="http://search.cpan.org/dist/App-Sqitch/">to CPAN</a>. So far, we have decent support for:</p>
 
@@ -34,6 +34,6 @@ tags: [Sqitch, SQL, change management]
 
 <p>Got something to add? <a href="https://github.com/theory/sqitch">Fork it!</a></p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-update.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-update.html">old layout</a>.</small></p>
 
 

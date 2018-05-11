@@ -187,6 +187,6 @@ It’d be much better if the lexer could see something like</p>
 <p>And then the parsing would be quite straight-forward. Because otherwise my
 parser is just going to get more complex and harder to maintain.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/hop-markdown-followup.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/hop-markdown-followup.html">old layout</a>.</small></p>
 
 

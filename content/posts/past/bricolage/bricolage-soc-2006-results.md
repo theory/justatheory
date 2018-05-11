@@ -127,6 +127,6 @@ to support the features they've added, but to work with other members of the
 community to add new features, help newbies, and generally to spread the
 word.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/soc_2006_results.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/soc_2006_results.html">old layout</a>.</small></p>
 
 

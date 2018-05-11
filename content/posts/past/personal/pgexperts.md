@@ -31,11 +31,11 @@ prefer. If it's related to PostgreSQL, it's what we do.</p>
 
 <p>So <a href="http://pgexperts.com/contact.html" title="PostgreSQL Experts, Inc. -- Contact Us">get in
 touch</a> or meet us at
-<a href="http://www.pgcon.org/2009/" title="PGCon 2009">PGCon</a> (we're
+<a href="https://www.pgcon.org/2009/" title="PGCon 2009">PGCon</a> (we're
 sponsoring!) or at <a href="http://en.oreilly.com/oscon2009">OSCON 2009</a>.
 I'm really excited about our company, and looking forward to growing it as
 PostgreSQL adoption grows.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/autobiographical/pgexperts.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/autobiographical/pgexperts.html">old layout</a>.</small></p>
 
 

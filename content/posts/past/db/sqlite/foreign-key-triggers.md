@@ -137,6 +137,6 @@ END;
 own referential integrity checks. Hopefully, these examples will get you
 started down the path of creating your own.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqlite/foreign_key_triggers.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqlite/foreign_key_triggers.html">old layout</a>.</small></p>
 
 

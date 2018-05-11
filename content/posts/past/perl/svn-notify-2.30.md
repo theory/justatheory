@@ -12,7 +12,7 @@ tags: [Perl, SVN::Notify, CVSspam, Request Tracker, Bugzilla, Subversion, email,
 
 <p>This functionality has been extended to the old <code>--viewcvs-url</code> option, to. For the sake of consistency, it now also requires a URL of the same form (although if SVN::Notify doesn't see <code>%s</code> in the string, it will append a default and emit a warning), and will be used to create links for strings like <q>Revision 654</q> in the log message.</p>
 
-<p>SVN::Notify::HTML has an additional new option, <code>--linkize</code>, that will force any email addresses or URLs it finds in the log message to be turned into links. Again, this works like it does for CVSspam; I'm grateful to Jeffrey Friedl's <cite><a href="http://www.amazon.com/exec/obidos/ASIN/0596002890/justatheory-20" title="Buy &#x201c;Mastering Regular Expressions, Second Edition&#x201d; on Amazon.com">Mastering Regular Expressions, Second Edition</a></cite> for the excellent regular expressions for matching URLs and email addresses.</p>
+<p>SVN::Notify::HTML has an additional new option, <code>--linkize</code>, that will force any email addresses or URLs it finds in the log message to be turned into links. Again, this works like it does for CVSspam; I'm grateful to Jeffrey Friedl's <cite><a href="https://www.amazon.com/exec/obidos/ASIN/0596002890/justatheory-20" title="Buy &#x201c;Mastering Regular Expressions, Second Edition&#x201d; on Amazon.com">Mastering Regular Expressions, Second Edition</a></cite> for the excellent regular expressions for matching URLs and email addresses.</p>
 
 <p>All of this was made possible by moving the processing of options from <em>svnnotify</em> to <code>SVN::Notify->get_options</code> and adding a new class method, <code>SVN::Notify->register_attributes</code>. This second method allows Bricolage subclasses to easily add new attributes; <code>register_attributes()</code> will create accessor methods and add command-line option processing for each new attribute required by a subclass. Then, when you execute <code>svnnotify --handler HTML</code>, <code>SVN::Notify->get_options</code> processes the default options, loads the SVN::Notify::Handler subclass, and then processes any options specified by the subclass. The short story is that all of this is the detail-oriented way of saying that it is easier to subclass SVN::Notify and be able to automatically load the necessary options and attributes via the same executable, <em>svnnotify</em>.</p>
 
@@ -20,6 +20,6 @@ tags: [Perl, SVN::Notify, CVSspam, Request Tracker, Bugzilla, Subversion, email,
 
 <p>I'll try to get a nice example of all this functionality up in the next few days; if anyone else creates one first, send it to me! But in the meantime, enjoy!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/modules/svn_notify_2.30.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svn_notify_2.30.html">old layout</a>.</small></p>
 
 

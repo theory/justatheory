@@ -6,7 +6,7 @@ aliases: [/travel/france/2008/arrival.html]
 tags: [France, Paris, Rouen, Lufthansa, travel, Eiffel Tower, jet lag]
 ---
 
-<object width="500" height="375"> <param name="flashvars" value="&offsite=true&amp;lang=en-us&page_show_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2Fshow%2F&page_show_back_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2F&set_id=72157610395807045&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=67348"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=67348" allowFullScreen="true" flashvars="&offsite=true&amp;lang=en-us&page_show_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2Fshow%2F&page_show_back_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2F&set_id=72157610395807045&jump_to=" width="500" height="375"></embed></object>
+<object width="500" height="375"> <param name="flashvars" value="&offsite=true&amp;lang=en-us&page_show_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2Fshow%2F&page_show_back_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2F&set_id=72157610395807045&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=67348"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=67348" allowFullScreen="true" flashvars="&offsite=true&amp;lang=en-us&page_show_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2Fshow%2F&page_show_back_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2F&set_id=72157610395807045&jump_to=" width="500" height="375"></embed></object>
 
 <p>Well, we made it. Things went pretty smoothly, all told. The flight was fairly empty, so Anna, at least, was able to lie across two seats and get a few hours of sleep. Julie and I enjoyed the free cognac and dark chocolate. Those European airlines sure know how to take care of their passengers.</p>
 
@@ -32,6 +32,6 @@ tags: [France, Paris, Rouen, Lufthansa, travel, Eiffel Tower, jet lag]
 
 <p>Meanwhile, up next: A visit to Paris Tuesday to Wednesday this week, and planning another visit for December 10th, around a possible visit to the <a href="http://paris.mongueurs.net/" title="Paris Perl Mongueu(r|se)s">Paris Perl Mongers</a>.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/travel/france/2008/arrival.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/arrival.html">old layout</a>.</small></p>
 
 

@@ -169,6 +169,6 @@ export from Subversion to Git, and I'm having to do it over and over again as
 I figure stuff out. But it will be done, and you'll hear more about it
 here.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/vcs/git/bricolage-cvs-to-git.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/vcs/git/bricolage-cvs-to-git.html">old layout</a>.</small></p>
 
 

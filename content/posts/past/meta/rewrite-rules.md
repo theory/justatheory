@@ -27,6 +27,6 @@ tags: [Meta, Blosxom, mod_rewrite]
 
 <p>And all is well. Now, if only I could get the <code>meta</code> plugin working properly...</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/internet/weblogs/blosxom/rewrite_rules.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/blosxom/rewrite_rules.html">old layout</a>.</small></p>
 
 

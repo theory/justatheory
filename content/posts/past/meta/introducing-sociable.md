@@ -12,6 +12,6 @@ tags: [Meta, Blosxom, plugins, Sociable, WordPress, social networworking, bookma
 
 <p>And of course, also starting today, you can see the links right here on my site. So, yeah, go ahead and link me up!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/internet/weblogs/blosxom/sociable/introducing-sociable.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/blosxom/sociable/introducing-sociable.html">old layout</a>.</small></p>
 
 

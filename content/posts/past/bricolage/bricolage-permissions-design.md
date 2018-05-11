@@ -37,6 +37,6 @@ sub can_do {
 
 <p>So anyway, I'm soliciting feedback. Are discreet permissions better than cumulative permissions? And if so, are bit-wise <code>OR</code>ed numbers the best way to represent an object ACLs?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/permissions_design.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/permissions_design.html">old layout</a>.</small></p>
 
 

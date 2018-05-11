@@ -6,9 +6,9 @@ aliases: [/computers/apps/medium-in-the-large.html]
 tags: [Medium, publishing, blogging]
 ---
 
-<p>I’ve been reading novels the last few months, taking advantage of our time in Europe to just veg out on <a href="http://en.wikipedia.org/wiki/A_Song_of_Ice_and_Fire">epic fantasy</a> when not working or doing family stuff. A such, I had less time to clear out my Instapaper queue or to read <em>The New Yorker.</em> But now I’ve finished the series and turned back to <em>The New Yorker,</em> downloading the latest issue to my iPad the other night and greedily reading the back story on <a href="http://www.newyorker.com/reporting/2012/09/10/120910fa_fact_lizza">the Clinton-Obama reconciliation</a>. I was immediately reminded of all the reasons why <a href="http://www.justatheory.com/computers/apps/conde-nast-ipad.html">The <em>The New Yorker</em> app sucks</a>. It has not improved at all. This naturally got me thinking again about the future of publishing and looking around for new ideas.</p>
+<p>I’ve been reading novels the last few months, taking advantage of our time in Europe to just veg out on <a href="https://en.wikipedia.org/wiki/A_Song_of_Ice_and_Fire">epic fantasy</a> when not working or doing family stuff. A such, I had less time to clear out my Instapaper queue or to read <em>The New Yorker.</em> But now I’ve finished the series and turned back to <em>The New Yorker,</em> downloading the latest issue to my iPad the other night and greedily reading the back story on <a href="http://www.newyorker.com/reporting/2012/09/10/120910fa_fact_lizza">the Clinton-Obama reconciliation</a>. I was immediately reminded of all the reasons why <a href="http://www.justatheory.com/computers/apps/conde-nast-ipad.html">The <em>The New Yorker</em> app sucks</a>. It has not improved at all. This naturally got me thinking again about the future of publishing and looking around for new ideas.</p>
 
-<p><a href="https://medium.com/">Medium</a>, the new publishing platform from <a href="http://obvious.com/">Obvious Corporation</a> (whose founders were the creative force behind <a href="http://blogger.com/">Blogger</a> and <a href="http://twitter.com/">Twitter</a>), made a bit of a splash last month with its soft launch. In his <a href="https://medium.com/p/9e53ca408c48">post</a> introducing the service, Ev Williams writes:</p>
+<p><a href="https://medium.com/">Medium</a>, the new publishing platform from <a href="http://obvious.com/">Obvious Corporation</a> (whose founders were the creative force behind <a href="http://blogger.com/">Blogger</a> and <a href="https://twitter.com/">Twitter</a>), made a bit of a splash last month with its soft launch. In his <a href="https://medium.com/p/9e53ca408c48">post</a> introducing the service, Ev Williams writes:</p>
 
 <blockquote>
   <p>So, we’re re-imagining publishing in an attempt to make an evolutionary leap, based on everything we’ve learned in the last 13 years and the needs of today’s world.</p>
@@ -24,7 +24,7 @@ tags: [Medium, publishing, blogging]
 
 <p>Let’s say you’re interested in writing about baseball. You get a Medium account and start publishing pieces in an open sports collection. You’re doing a good job, calling out the subtleties of the latest game that others have missed, and readers start hitting the “this is good” badge on your post and writing their own posts in response. Soon, someone who edits a respected, moderated baseball collection invites you to contribute there. You get even more exposure, because the collection’s editorial oversight ensures consistent quality. Readers pay more attention to that quality, as well as its timely delivery throughout the week or month.</p>
 
-<p>After a while, you start helping out with the editing, finding other folks to to contribute and providing editorial feedback. Eventually you might create your own collection, perhaps expanding into other sports, or covering the vicissitudes of the sports apparel industry. Today you are your own <a href="http://en.wikipedia.org/wiki/Roger_Angell">Roger Angell</a>, and tomorrow, perhaps, you’re <a href="http://en.wikipedia.org/wiki/David_Remnick">David Remnick</a>.</p>
+<p>After a while, you start helping out with the editing, finding other folks to to contribute and providing editorial feedback. Eventually you might create your own collection, perhaps expanding into other sports, or covering the vicissitudes of the sports apparel industry. Today you are your own <a href="https://en.wikipedia.org/wiki/Roger_Angell">Roger Angell</a>, and tomorrow, perhaps, you’re <a href="https://en.wikipedia.org/wiki/David_Remnick">David Remnick</a>.</p>
 
 <p>Medium provides a growth path for writers to develop their craft, to collaborate, to build editorial credibility within particular topics, and perhaps create a brand. This is more than just individual publishing, where you’re just some guy with a baseball blog. In the collaborative community of Medium, you can work with others to build something greater than any of you could on your own.</p>
 
@@ -59,6 +59,6 @@ tags: [Medium, publishing, blogging]
 </ol>
 </div>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/apps/medium-in-the-large.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/apps/medium-in-the-large.html">old layout</a>.</small></p>
 
 

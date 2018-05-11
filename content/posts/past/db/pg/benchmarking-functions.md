@@ -141,6 +141,6 @@ CONTEXT:  PL/pgSQL function &quot;benchmark&quot; line 49 at for over select row
 <p>I have no idea why. So I just leave the function and let the
 <code>CREATE OR REPLACE</code> take care of it.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/benchmarking_functions.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/benchmarking_functions.html">old layout</a>.</small></p>
 
 

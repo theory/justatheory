@@ -171,12 +171,12 @@ not a “natural” way to write definitions because it’s not a natural choice
 a bullet. The tilde, however, is perfectly comfortable hanging out at the
 beginning of a line as a bullet, resembling as it does the dash, already used
 for unordered lists in Markdown. Furthermore, it’s already used in
-dictionaries. According to <a href="http://en.wikipedia.org/wiki/Tilde" title="Wikipedia:
-“Tilde”">Wikipedia</a>, <q cite="http://en.wikipedia.org/wiki/Tilde">The swung dash is often used in dictionaries to represent a word that was mentioned
+dictionaries. According to <a href="https://en.wikipedia.org/wiki/Tilde" title="Wikipedia:
+“Tilde”">Wikipedia</a>, <q cite="https://en.wikipedia.org/wiki/Tilde">The swung dash is often used in dictionaries to represent a word that was mentioned
 before and is understood, to save space.</q> Not an exact parallel, but at
 least the tilde’s cousin the swung dash has to do with definitions! Not only
 that, but in mathematics, according to Wikipedia again, the
-tilde <q cite="http://en.wikipedia.org/wiki/Tilde">is often used to denote an
+tilde <q cite="https://en.wikipedia.org/wiki/Tilde">is often used to denote an
 equivalence relation between two objects.</q> That works: a definition is a
 series of words that define a term; that is, they are a kind of
 equivalent!</p>
@@ -185,6 +185,6 @@ equivalent!</p>
 PHP Markdown Extra definition list syntax be adopted as a standard with this
 one change. What do you think?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/markup/modest-markdown-proposal.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/markup/modest-markdown-proposal.html">old layout</a>.</small></p>
 
 

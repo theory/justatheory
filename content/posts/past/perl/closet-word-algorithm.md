@@ -6,9 +6,9 @@ aliases: [/computers/programming/perl/closet_word_algorithm.html]
 tags: [Perl, grep, Levenshtein, Perl Best Practices]
 ---
 
-<a href="http://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com"><img class="left" src="http://images.amazon.com/images/P/0596001738.01._AA240_SCLZZZZZZZ_.jpg" alt="&#x201c;Perl Best Practices&#x201d; cover" /></a>
+<a href="https://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com"><img class="left" src="https://images-na.ssl-images-amazon.com/images/P/0596001738.01._AA240_SCLZZZZZZZ_.jpg" alt="&#x201c;Perl Best Practices&#x201d; cover" /></a>
 
-<p>I've been reading <a href="http://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com">Perl Best Practices</a> and have been making use of <a href="http://search.cpan.org/dist/List-Util/" title="List::Util on CPAN">List::Util</a> and <a href="http://search.cpan.org/dist/List-MoreUtils/" title="List::MoreUtils on CPAN">List::MoreUtils</a> as a result. I'm amazed that I never knew about these modules before. I mean, I kinda knew there were there, but hadn't paid much attention before or bothered to find out how useful they are!</p>
+<p>I've been reading <a href="https://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com">Perl Best Practices</a> and have been making use of <a href="http://search.cpan.org/dist/List-Util/" title="List::Util on CPAN">List::Util</a> and <a href="http://search.cpan.org/dist/List-MoreUtils/" title="List::MoreUtils on CPAN">List::MoreUtils</a> as a result. I'm amazed that I never knew about these modules before. I mean, I kinda knew there were there, but hadn't paid much attention before or bothered to find out how useful they are!</p>
 
 <p>Anyway, a problem I'm currently working on is finding a word in a list of words that's the closest match to another word. <a href="http://search.cpan.org/dist/Text-Levenshtein/" title="Text::Levenshtein on CPAN">Text::Levenshtein</a> appears to be a good method to determine relative closeness, but try as I might, I couldn't make it work using <code>first</code> or <code>min</code> or <code>apply</code> or any of the utility list methods. I finally settled on this subroutine:</p>
 
@@ -28,6 +28,6 @@ sub _find_closest_word {
 
 <p>Am I missing something, or is this really the most obvious and efficient way to do it?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/closet_word_algorithm.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/closet_word_algorithm.html">old layout</a>.</small></p>
 
 

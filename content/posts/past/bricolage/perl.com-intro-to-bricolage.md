@@ -27,6 +27,6 @@ Subsequent articles will cover document analysis and modeling, <a
 href="http://www.masonhq.com/" title="Mason HQ">Mason</a> templating,
 and fun with the SOAP server. Enjoy!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/writing/perl.com_intro_to_bricolage.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/writing/perl.com_intro_to_bricolage.html">old layout</a>.</small></p>
 
 

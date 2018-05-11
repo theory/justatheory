@@ -10,7 +10,7 @@ tags: [JavaScript, namespaces]
 
 <p>For example, say that you wanted to create a class for managing music on you CDs. Normally in JavaScript, you'd create a class named <code>CDMusic</code>. This is all well and fine, but if everyone creates classes with a single name, a <a href="http://use.perl.org/~schwern/journal/24112" title="JSAN: A HOWTO Guide">JSAN</a> repository would end with an awfully crowded list of classes. It allows for no effective hierarchical organization of code.</p>
 
-<p>But if you use objects to represent namespaces, you can define a class something like this, instead (1990s-era example borrowed from Damian Conway's <a href="http://www.amazon.com/exec/obidos/ASIN/1884777791/justatheory-20" title="Buy Object Oriented Perl on Amazon. Go Get it!"><cite>Object Oriented Perl</cite></a>):</p>
+<p>But if you use objects to represent namespaces, you can define a class something like this, instead (1990s-era example borrowed from Damian Conway's <a href="https://www.amazon.com/exec/obidos/ASIN/1884777791/justatheory-20" title="Buy Object Oriented Perl on Amazon. Go Get it!"><cite>Object Oriented Perl</cite></a>):</p>
 
 <pre>
 if (CD == undefined) var CD = {}; // Make sure the base namespace exists.
@@ -71,6 +71,6 @@ CD.Music.Classical.prototype.soloist   = null;
 
 <p>So what do you think? Is this something that makes sense to you? Would you do it to better organize your JavaScript classes and modules (and yes, I am thinking that you could group functional libraries this way, too, and then implement an <code>import()</code> function to export functions to another <q>namespace</q> or the global object)? Leave your opinions in a comment. Thanks!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/javascript/emulating_namespaces.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/emulating_namespaces.html">old layout</a>.</small></p>
 
 

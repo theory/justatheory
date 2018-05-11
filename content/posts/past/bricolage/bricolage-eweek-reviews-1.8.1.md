@@ -18,6 +18,6 @@ tags: [Bricolage, eWeek, Jim Rapoza, CrownPeak, Advantage CMS, Ektron, CMS300, I
 
 <p>I'm pretty stoked about this review, as you might imagine. <cite>eWeek</cite> is now officially my favorite trade magazine!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/coverage/eweek_reviews_1.8.1.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/coverage/eweek_reviews_1.8.1.html">old layout</a>.</small></p>
 
 

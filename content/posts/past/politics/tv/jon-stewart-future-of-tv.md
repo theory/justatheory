@@ -10,6 +10,6 @@ tags: [Poltics, Jon Stewart, TV, Wired, Internet, Crossfire]
 
 <p>()Via <a href="http://radar.oreilly.com/nat/" title="Nat's Radar">gnat</a>)</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/tv/jon_stewart_future_of_tv.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/tv/jon_stewart_future_of_tv.html">old layout</a>.</small></p>
 
 

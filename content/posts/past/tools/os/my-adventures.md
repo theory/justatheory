@@ -476,6 +476,6 @@ make install</pre>
     reliable, and elegant UI, and all the Unix power tools I can stand! I hope
     you do, too.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/os/macosx/my_adventures.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/macosx/my_adventures.html">old layout</a>.</small></p>
 
 

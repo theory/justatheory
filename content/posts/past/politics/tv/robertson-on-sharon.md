@@ -14,6 +14,6 @@ tags: [Poltics]
 
 </blockquote>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/tv/robertson_on_sharon.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/tv/robertson_on_sharon.html">old layout</a>.</small></p>
 
 

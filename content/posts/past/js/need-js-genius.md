@@ -38,6 +38,6 @@ tags: [JavaScript, DOM]
 <p>So, are you a JavaScript genius? Do you know how the browser, DOM, and frames work and interact better than you know your own family? If so, please, <em>please</em> give me a hint as to what I can do to fix this problem so that I can get a new version of <code>Test.Simple</code> out ASAP. Thanks!</p>
 
 <p><strong>Update:</strong> I forgot to mention that the in-progress source code for <code>Test.Simple</code> with support for <em>.js</em> test files can be <a href="/code/Test.Simple-0.11_1.tar.gz" title="Download Test.Simple 0.11_1">downloaded here</a>, so that you can play with it on your own system. Thanks!</p>
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/javascript/need_js_genius.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/need_js_genius.html">old layout</a>.</small></p>
 
 

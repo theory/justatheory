@@ -131,6 +131,6 @@ svnnotify --repos-path &quot;$1&quot; --revision &quot;$2&quot; \
 
 <p>Enjoy!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/modules/svnnotify_2.56.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svnnotify_2.56.html">old layout</a>.</small></p>
 
 

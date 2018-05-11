@@ -26,6 +26,6 @@ el.innerHTML = &quot;window.onload(null, Test);&quot;;
 
 <p>Anyone have any idea how I can dynamically write to a script element that I've created via the DOM?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/javascript/ie_dom_help.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/ie_dom_help.html">old layout</a>.</small></p>
 
 

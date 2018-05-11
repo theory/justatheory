@@ -280,6 +280,6 @@ release tags, and branch tracking. Now all I have to do is stitch it together
 with the repository <a href="/computers/vcs/git/bricolage-cvs-to-git.html" title="Migrating Bricolage CVS to Git">based on CVS</a> and I'll be ready
 to put this sucker on GitHub! More on that in my next post.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/vcs/git/bricolage-svn-to-git.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/vcs/git/bricolage-svn-to-git.html">old layout</a>.</small></p>
 
 

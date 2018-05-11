@@ -8,7 +8,7 @@ tags: [Perl, Unicode, Regular Expressions, pattern matching]
 
 <p>I've created a new module, <a href="http://search.cpan.org/dist/Text-WordDiff/" title="Text::WordDiff on CPAN">Text::WordDiff</a>, now on its way to CPAN, to show the differences between two documents using words as tokens, rather than lines as <a href="http://search.cpan.org/dist/Text-Diff/" title="Text::Diff on CPAN">Text::Diff</a> does. I plan to use it in Bricolage to give people a change tracking-type view (as seen in word processors) comparing two versions of a document. Fortunately, <a href="http://search.cpan.org/dist/Algorithm-Diff/" title="Algorithm::Diff on CPAN">Algorithm::Diff</a> makes this extremely easy to do. My only real problem was figuring out how to tokenize a string into words</p>
 
-<p>After looking at discussions in <a href="http://www.amazon.com/exec/obidos/ASIN/0596003137/justatheory-20" title="Buy &#x201c;The Perl Cookbook&#x201d; on Amazon.com"><cite>The Perl Cookbook</cite></a> and <a href="http://www.amazon.com/exec/obidos/ASIN/0596002890/justatheory-20" title="Buy &#x201c;Mastering Regular Expressions&#x201d; on Amazon.com"><cite>Mastering Regular Expressions</cite></a>, I settled on using Friedl's pattern for identifying the starting boundary of words, which is <code>qr/(?&lt;!\w)(?=\w)/msx</code>. This pattern will turn the string, <q>this is O&#x0027;Reilly&#x0027;s string</q> into the following tokens:</p>
+<p>After looking at discussions in <a href="https://www.amazon.com/exec/obidos/ASIN/0596003137/justatheory-20" title="Buy &#x201c;The Perl Cookbook&#x201d; on Amazon.com"><cite>The Perl Cookbook</cite></a> and <a href="https://www.amazon.com/exec/obidos/ASIN/0596002890/justatheory-20" title="Buy &#x201c;Mastering Regular Expressions&#x201d; on Amazon.com"><cite>Mastering Regular Expressions</cite></a>, I settled on using Friedl's pattern for identifying the starting boundary of words, which is <code>qr/(?&lt;!\w)(?=\w)/msx</code>. This pattern will turn the string, <q>this is O&#x0027;Reilly&#x0027;s string</q> into the following tokens:</p>
 
 <pre>
 [
@@ -27,6 +27,6 @@ tags: [Perl, Unicode, Regular Expressions, pattern matching]
 
 <p>So what do you think? Does <a href="http://search.cpan.org/dist/Text-WordDiff/" title="Text::WordDiff on CPAN">Text::WordDiff</a> work for your text? Is there a better and more general solution for tokenizing the words in a string?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/split_words.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/split_words.html">old layout</a>.</small></p>
 
 

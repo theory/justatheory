@@ -14,6 +14,6 @@ xxxxc xcxv cw   ffnygzh    vn6yJy              b         ]cve23ewr gd v gggggggb
 <br />
 <p>The cool thing is that, if it were properly indented, it would probably run as Python code. ;-)</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/family/anna/first_program.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/family/anna/first_program.html">old layout</a>.</small></p>
 
 

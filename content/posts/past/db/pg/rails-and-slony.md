@@ -13,6 +13,6 @@ tags: [Postgres, Ruby on Rails, Slony, migrations]
 <p>For that matter, people running Slony for their Bricolage databases must have the same issue, because the Bricolage upgrade scripts are just Perl using the DBI, not SQL files. Can anyone shed a little light on this for me?</p>
 
 <p>Oh, and one last question: Why is this such a PITA? Can't we have decent replication that replicates <em>everything</em>, including schema changes? <em>Please?</em></p>
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/rails_and_slony.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/rails_and_slony.html">old layout</a>.</small></p>
 
 

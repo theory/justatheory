@@ -41,21 +41,21 @@ database administrators that testing is an essential tool in their kits, and the
 way to do that is to show them <em>why</em> it’s essential.</p>
 
 <p>With this in mind, I
-asked, <a href="http://twitter.com/Theory/status/1307497041">via Twitter</a>,
+asked, <a href="https://twitter.com/Theory/status/1307497041">via Twitter</a>,
 why should database people test their databases? I got some great answers
 (and, frankly, the 140 character limit of Twitter made them admirably pithy, which
 is a huge help):</p>
 
 <ul>
-  <li><a href="http://twitter.com/chromatic_x" title="chromatic">chromatic_x</a>: @theory, because accidents that happen during tests are much easier to recover from than accidents that happen live.</li>
-  <li><a href="http://twitter.com/caseywest" title="caseywest">caseywest</a>: @Theory When you write code that’s testable you tend to write better code: cleaner interfaces, reusable components, composable pieces.</li>
-  <li><a href="http://twitter.com/depesz_com" title="depsz">depesz_com</a>: @Theory testing prevents repeating mistakes.</li>
-  <li><a href="http://twitter.com/rjbs" title="Ricardo Signes">rjbs</a>: @Theory The best ROI for me is “never ship the same bug twice.”</li>
-  <li><a href="http://twitter.com/elein" title="elein">elein</a>: @Theory trust but verify</li>
-  <li><a href="http://twitter.com/cwinters" title="Chris Winters">cwinters</a>: @Theory so they can change the system without feeling like they’re on a suicide mission</li>
-  <li><a href="http://twitter.com/caseywest" title="caseywest">caseywest</a>: @Theory So they can document how the system actually works.</li>
-  <li><a href="http://twitter.com/hanekomu" title="Marcel Grünauer">hanekomu</a>: @Theory Regression tests - to see whether, after having changed something here, something else over there falls over.</li>
-  <li><a href="http://twitter.com/robrwo" title="Robert Rothenberg">robrwo</a>: @Theory Show them a case where bad data is inserted into/deleted from database because constraints weren’t set up.</li>
+  <li><a href="https://twitter.com/chromatic_x" title="chromatic">chromatic_x</a>: @theory, because accidents that happen during tests are much easier to recover from than accidents that happen live.</li>
+  <li><a href="https://twitter.com/caseywest" title="caseywest">caseywest</a>: @Theory When you write code that’s testable you tend to write better code: cleaner interfaces, reusable components, composable pieces.</li>
+  <li><a href="https://twitter.com/depesz_com" title="depsz">depesz_com</a>: @Theory testing prevents repeating mistakes.</li>
+  <li><a href="https://twitter.com/rjbs" title="Ricardo Signes">rjbs</a>: @Theory The best ROI for me is “never ship the same bug twice.”</li>
+  <li><a href="https://twitter.com/elein" title="elein">elein</a>: @Theory trust but verify</li>
+  <li><a href="https://twitter.com/cwinters" title="Chris Winters">cwinters</a>: @Theory so they can change the system without feeling like they’re on a suicide mission</li>
+  <li><a href="https://twitter.com/caseywest" title="caseywest">caseywest</a>: @Theory So they can document how the system actually works.</li>
+  <li><a href="https://twitter.com/hanekomu" title="Marcel Grünauer">hanekomu</a>: @Theory Regression tests - to see whether, after having changed something here, something else over there falls over.</li>
+  <li><a href="https://twitter.com/robrwo" title="Robert Rothenberg">robrwo</a>: @Theory Show them a case where bad data is inserted into/deleted from database because constraints weren’t set up.</li>
 </ul>
 
 <p>Terrific ideas there. I thank you, Tweeps. But I ask here, too: Why should we write tests against our databases? Leave a comment with your (brief!) thoughts.</p>
@@ -64,6 +64,6 @@ is a huge help):</p>
 
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/why-test-databases.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/why-test-databases.html">old layout</a>.</small></p>
 
 

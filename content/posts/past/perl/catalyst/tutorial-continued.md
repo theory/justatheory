@@ -10,7 +10,7 @@ tags: [Perl, Catalyst, DBIx::Connector, Template::Declare, Postgres]
 
 <h3>Create the Database</h3>
 
-<p>Picking up with the <a href="http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_SQLITE_DATABASE" title="Create a SQLite Database">database creation</a> section of the tutorial, the first change I'd like to make is to use a <a href="http://en.wikipedia.org/wiki/Natural_key" title="Wikipedia: âNatural Keyâ">natural key</a> for the books table. All books have unique identifiers, known as ISBNs, so creating a <a href="http://en.wikipedia.org/wiki/Surrogate_key" title="Wikipedia: âSurrogate Keyâ">surrogate key</a> (the typical <code>id</code> column in ORM-managed applications) is redundant. One of the nice things about PostgreSQL is that it ships with a contributed library, <a href="http://www.postgresql.org/docs/current/static/isn.html" title="PostgreSQL Documentation: âisnâ">isn</a>, which validates ISBN and other international identifiers. So we use this contrib module (usually included in package-installed PostgreSQL servers) for the primary key for books. If you need to install it from source, it’s pretty easy:</p>
+<p>Picking up with the <a href="http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_SQLITE_DATABASE" title="Create a SQLite Database">database creation</a> section of the tutorial, the first change I'd like to make is to use a <a href="https://en.wikipedia.org/wiki/Natural_key" title="Wikipedia: âNatural Keyâ">natural key</a> for the books table. All books have unique identifiers, known as ISBNs, so creating a <a href="https://en.wikipedia.org/wiki/Surrogate_key" title="Wikipedia: âSurrogate Keyâ">surrogate key</a> (the typical <code>id</code> column in ORM-managed applications) is redundant. One of the nice things about PostgreSQL is that it ships with a contributed library, <a href="http://www.postgresql.org/docs/current/static/isn.html" title="PostgreSQL Documentation: âisnâ">isn</a>, which validates ISBN and other international identifiers. So we use this contrib module (usually included in package-installed PostgreSQL servers) for the primary key for books. If you need to install it from source, it’s pretty easy:</p>
 
 <pre>
 cd postgresql-8.4.1/contrib/isn
@@ -181,10 +181,10 @@ template list =&gt; sub {
 
 <h3>Takeaway</h3>
 
-<p>The takeaway from this post: Use PostgreSQL’s support for custom data types to create validated natural keys for your data, and use a stable, persistent database connection to talk directly to the database. No need for an ORM here, as the <a href="http://search.cpan.org/perldoc?DBI" title="The DBI on CPAN">DBI</a> provides a very Perlish access to a very capable <a href="http://en.wikipedia.org/wiki/Domain-specific_language" title="Wikipedia: âDomain-Specific Languageâ">DSL</a> for models called SQL.</p>
+<p>The takeaway from this post: Use PostgreSQL’s support for custom data types to create validated natural keys for your data, and use a stable, persistent database connection to talk directly to the database. No need for an ORM here, as the <a href="http://search.cpan.org/perldoc?DBI" title="The DBI on CPAN">DBI</a> provides a very Perlish access to a very capable <a href="https://en.wikipedia.org/wiki/Domain-specific_language" title="Wikipedia: âDomain-Specific Languageâ">DSL</a> for models called SQL.</p>
 
 <p>More soon.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/catalyst/tutorial-continued.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/tutorial-continued.html">old layout</a>.</small></p>
 
 

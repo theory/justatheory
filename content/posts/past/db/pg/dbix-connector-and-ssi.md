@@ -108,6 +108,6 @@ will have been integrated by then, too.</p>
 <p>In a future post I’ll likely chew over whether or not to add an API to set the
 transaction isolation level within a call to <code>txn()</code> and friends.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/dbix-connector-and-ssi.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/dbix-connector-and-ssi.html">old layout</a>.</small></p>
 
 

@@ -12,6 +12,6 @@ getting a lot more email about it lately, and a fair bit of it should be shared 
 generally. So if you’re interested in Sqitch, sign up! (Don’t like web forums? Me neither.
 Feel free to <a href="mailto:sqitch-users+subscribe@googlegroups.com">subscribe by email</a>, instead.)</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-list.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-list.html">old layout</a>.</small></p>
 
 

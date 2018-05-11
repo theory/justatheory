@@ -309,6 +309,6 @@ $_-&gt;ok(&#x27;./tr[2]&#x27;, sub {
 
 <p>Next up, I think I'll hit controller tests. So come on back!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/catalyst/testing-td-views.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/testing-td-views.html">old layout</a>.</small></p>
 
 

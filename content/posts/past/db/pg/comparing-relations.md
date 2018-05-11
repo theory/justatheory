@@ -208,7 +208,7 @@ PL/pgSQL function &quot;test_fooies&quot; line 2 at PERFORM
 </code></pre>
 
 <p>A bit hard to read with all of the SQL exception information, but at least the
-information is there. At <a href="http://www.pgcon.org/2009/" title="The PostgreSQL Conference 2009">PGCon</a>, Bob told me that passing strings of SQL
+information is there. At <a href="https://www.pgcon.org/2009/" title="The PostgreSQL Conference 2009">PGCon</a>, Bob told me that passing strings of SQL
 code made things a lot easier to implement in Epic, and I can certainly see
 how that could be (pgTAP uses SQL code strings too, with its <code>throws_ok()</code>,
 <code>lives_ok()</code>, and <code>performs_ok()</code> assertions). But it just doesn’t feel
@@ -376,6 +376,6 @@ SELECT results_are(
 <p>Thoughts? I'm not going to get to it this week, so feedback would be greatly
 appreciated.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/comparing-relations.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/comparing-relations.html">old layout</a>.</small></p>
 
 

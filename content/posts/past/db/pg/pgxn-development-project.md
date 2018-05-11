@@ -21,6 +21,6 @@ tags: [Postgres, PGXN, CPAN, fundraising]
 
 <p>If you'd like to contribute, first: <strong>Thank You!</strong>. The <a href="http://pgxn.org/" title="PGXN">PGXN site</a> has a Google Checkout widget that makes it easy to make a donation. If you'd rather pay by some other means (checks are great for us!), <a href="mailto:pgxn@pgexpergts.com">drop me a line</a> and we'll work something out. We have a few levels of <a href="http://pgxn.org/contributors.html" title="PGXN Contributors">contribution</a> as well, including permanent linkage on the PGXN site for your organization, as well as the usual t-shirts launch party invitations.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/pgxn-development-project.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgxn-development-project.html">old layout</a>.</small></p>
 
 

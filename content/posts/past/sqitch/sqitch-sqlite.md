@@ -44,8 +44,8 @@ ae1263 deploy appschema
 
 <p>I personally will be using this a lot, Yep, scratching my own itch here. What itch do you have to scratch with Sqitch?</p>
 
-<p>In related news, I’ll be giving a tutorial at <a href="http://pgcon.org/2013/">PGCon</a> next month, entitled “<a href="http://www.pgcon.org/2013/schedule/events/615.en.html">Agile Database Development</a>”. We’ll be developing a database for a web application using <a href="http://git-scm.com/">Git</a> for source code management, <a href="http://sqitch.org/">Sqitch</a> for database change management, and <a href="http://pgtap.org/">pgTAP</a> for unit testing. This is the stuff I do all day long at work, so you can also think of it as “Theory’s Pragmatic approach to Database Development.” See you there?</p>
+<p>In related news, I’ll be giving a tutorial at <a href="http://pgcon.org/2013/">PGCon</a> next month, entitled “<a href="https://www.pgcon.org/2013/schedule/events/615.en.html">Agile Database Development</a>”. We’ll be developing a database for a web application using <a href="http://git-scm.com/">Git</a> for source code management, <a href="http://sqitch.org/">Sqitch</a> for database change management, and <a href="http://pgtap.org/">pgTAP</a> for unit testing. This is the stuff I do all day long at work, so you can also think of it as “Theory’s Pragmatic approach to Database Development.” See you there?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-sqlite.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-sqlite.html">old layout</a>.</small></p>
 
 

@@ -14,6 +14,6 @@ tags: [Meta, RSS, Atom, feeds]
 <p>Any questions or problems? Leave a comment. Thanks!</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/internet/weblogs/teasers_atom_feed.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/teasers_atom_feed.html">old layout</a>.</small></p>
 
 

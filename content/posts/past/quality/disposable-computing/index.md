@@ -24,8 +24,8 @@ tags: [Quality, Kindle, iPad, junk, disposability, minimalism, build quality]
 
 <p>I’m over junk culture. I hate wasteful packaging, but even worse is wasteful products. I don’t want a cheap, crappy Kindle, because in a year it will just be more trash — either additional household clutter or landfill. We already generate way too much waste, especially in the US. I think it’s a much better investment to buy a product with good build quality, that’s built to last. Not only will my iPad last me for years, but it will still have value years from now. It’s far more likely that it will still be functional in two years than the $79 Kindle will be, or even two or three Kindles.</p>
 
-<p>The iPad is a <a href="http://www.amazon.com/dp/B001RMGVU8/">Contigo thermal mug</a>; the Kindle is a <a href="http://www.dixie.com/prdct-cups.html">Dixie cup</a>. I’ll take the quality and durability every time. Longer term, it likely won’t cost me any more — and certainly costs the planet less.</p>
+<p>The iPad is a <a href="https://www.amazon.com/dp/B001RMGVU8/">Contigo thermal mug</a>; the Kindle is a <a href="http://www.dixie.com/prdct-cups.html">Dixie cup</a>. I’ll take the quality and durability every time. Longer term, it likely won’t cost me any more — and certainly costs the planet less.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/devices/disposable-computing.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/devices/disposable-computing.html">old layout</a>.</small></p>
 
 

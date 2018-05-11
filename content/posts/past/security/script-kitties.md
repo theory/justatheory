@@ -10,6 +10,6 @@ tags: [security, script kiddies, Julie Wheeler, Humor]
 
 <p>Fear the feline crackers.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/security/script_kitties.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/security/script_kitties.html">old layout</a>.</small></p>
 
 

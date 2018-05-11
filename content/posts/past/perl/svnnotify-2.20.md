@@ -11,6 +11,6 @@ tags: [Perl, Subversion, CVSspam, SVN::Notify, diffs, color, HTML]
 <p>Enjoy!</p>
 
 <p><strong>Update:</strong> And now I've released SVN::Notify 2.21 with a few minor fixes, including XHTML 1.1 compliance.</p>
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/modules/svnnotify_2.20.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svnnotify_2.20.html">old layout</a>.</small></p>
 
 

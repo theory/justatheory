@@ -89,6 +89,6 @@ changes, roughly analogous to Git commits. Tags are simply pointers to specific 
 
 <p>Please do install the v0.51 developer release from the CPAN (run <code>cpan D/DW/DWHEELER/App-Sqitch-0.51-TRIAL.tar.gz</code>) and kick the tires a bit. Follow along <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">the tutorial</a> to get a feel for it, or even just review the tutorial example’s <a href="https://github.com/theory/sqitch-intro/commits/master">Git history</a> to get a feel for it. And if there is something you want out of Sqitch that you don’t see, please feel free to <a href="https://github.com/theory/sqitch/issues">file an issue</a> with your suggestion.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-almost-usable.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-almost-usable.html">old layout</a>.</small></p>
 
 

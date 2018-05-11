@@ -35,6 +35,6 @@ Gierth for help fixing the query.</li>
 
 <p>Good luck with your mission.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/pgtap-0.20.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-0.20.html">old layout</a>.</small></p>
 
 

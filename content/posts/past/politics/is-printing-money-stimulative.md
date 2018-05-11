@@ -56,6 +56,6 @@ tags: [Economics, economy, stimulus, macroeconomics, microeconomics, UK, printin
 
 <p><strong>Update 2010-2-15:</strong> Krugman has <a href="http://krugman.blogs.nytimes.com/2010/12/15/what-is-money/" title="The Conscience of a Liberal: “What Is Money?”">blogged about this</a>.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/politics/economy/is-printing-mony-stimulative.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/economy/is-printing-mony-stimulative.html">old layout</a>.</small></p>
 
 

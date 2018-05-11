@@ -14,6 +14,6 @@ tags: [FreeBSD, NTP, Red Hat, Linux]
 
 <p>And finally, <a href="http://freeunix.dyndns.org:8088/site2/howto/NTP3.shtml" title="Using NTP">this DynDNS page</a> gave me the instruction I needed to get <code>ntpd</code> running on FreeBSD. All I had to do was add <code>xntpd_enable=&quot;YES&quot;</code> to <em>/etc/rc.conf</em>. I restarted my box, and now I'm in business!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/os/freebsd/ntpd_configuration.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/freebsd/ntpd_configuration.html">old layout</a>.</small></p>
 
 

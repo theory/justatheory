@@ -52,9 +52,9 @@ stuff.</p>
 <p>But do watch for more blog posts in the coming months, too. There are a few
 interesting things I want to write about, and I've got some serious
 catching-up to do. Interested in following along on my
-adventures? <a href="http://twitter.com/Theory" title="My Twitter page">Follow
+adventures? <a href="https://twitter.com/Theory" title="My Twitter page">Follow
 me</a> via Twitter.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/autobiographical/im_back.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/autobiographical/im_back.html">old layout</a>.</small></p>
 
 

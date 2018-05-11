@@ -32,6 +32,6 @@ tags: [Bricolage, Jeffrey Veen, Content Management, open source, jargon, XHTML, 
 
 <p>But that's just my opinion.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/competition/making_a_better_cms.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/competition/making_a_better_cms.html">old layout</a>.</small></p>
 
 

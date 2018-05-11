@@ -11,7 +11,7 @@ tags: [Personal, autobiography, kibbutz, Dafna, Archaeology, CSUS, University of
 <h3>1. I Lived on a Kibbutz</h3>
 <p>From August 1988 until March 1989, I lived as a volunteer at Kibbutz Dafna in Galilee Elian (upper Gallilee). This was one of the most memorable experiences of my life, and I've actually been meaning to blog about it for a while now. I arrived at the Kibbutz with only a few bucks in my pocket, but with a note saying that I'd been accepted as a volunteer. I moved into a small room in <q>Death Row</q> with another American who's name I've long since forgotten.</p>
 
-<p>Within a few weeks, I'd been selected by the barman, Johnny Howarth, to be his co-barman (not what I was called, but that's memory for you). We ran a small bar just for the volunteers and interested Kibbutzniks in a small bomb shelter just across the roads from Death Row. Yes, really. We served <a href="http://en.wikipedia.org/wiki/Goldstar_beer" title="Wikipedia describes Goldstar beer">Goldstar</a> beer very cheaply (The kibbutz got it wholesale and we charged slightly more just to drink for free ourselves) and really bad vodka and rum to the few who wanted it. Most of the volunteers were English or Scandinavian, with a sprinkle of Americans and other sorts thrown in (we also had 10 Thais living with us for several weeks), and nearly all of us were 18-28 year-olds who liked to drink as much as possible and get laid. I wasn't quite the hero that <a href="http://www.chaddickerson.com/blog/2006/12/19/five-things-you-didnt-know-about-me" title="Five things you didn't know about Chad Dickerson">Chad was</a> in my brief time running an establishment, but, <em>ah</em>, what a life!</p>
+<p>Within a few weeks, I'd been selected by the barman, Johnny Howarth, to be his co-barman (not what I was called, but that's memory for you). We ran a small bar just for the volunteers and interested Kibbutzniks in a small bomb shelter just across the roads from Death Row. Yes, really. We served <a href="https://en.wikipedia.org/wiki/Goldstar_beer" title="Wikipedia describes Goldstar beer">Goldstar</a> beer very cheaply (The kibbutz got it wholesale and we charged slightly more just to drink for free ourselves) and really bad vodka and rum to the few who wanted it. Most of the volunteers were English or Scandinavian, with a sprinkle of Americans and other sorts thrown in (we also had 10 Thais living with us for several weeks), and nearly all of us were 18-28 year-olds who liked to drink as much as possible and get laid. I wasn't quite the hero that <a href="http://www.chaddickerson.com/blog/2006/12/19/five-things-you-didnt-know-about-me" title="Five things you didn't know about Chad Dickerson">Chad was</a> in my brief time running an establishment, but, <em>ah</em>, what a life!</p>
   
 <p>About the same time I started tending bar, I also got a larger room that for all but three months I had all to myself. For those three months, I shared it with an Aussie, Andrew Jeffreys, with whom I became very good friends. He later (1990ish) came and stayed with me at my Mom's house in Sacramento for several months.</p>
 
@@ -44,7 +44,7 @@ Archaeologist. The summer before I went to Dafna, I worked for six weeks at <a h
 
 <h3>4. Anna</h3>
   
-<img src="http://farm1.static.flickr.com/67/202287377_402f407e8e.jpg?v=0"  alt="Anna Flies"/>
+<img src="https://farm1.static.flickr.com/67/202287377_402f407e8e.jpg?v=0"  alt="Anna Flies"/>
   
 <p>Just a few months after our move to Portland, Julie got pregnant, and our daughter, Anna was born on May 13, 2005. She's nearly two now, and she's the light of our life. What a joy this kid is! She's smart, has a great sense of humor (<em>yes,</em> an 18-month-old can be funny!), and keeps us on our toes. I couldn't be happier; we lucked out and got a real gem of a daughter. We expect to have fun with her for the rest of our lives.</p>
 
@@ -54,7 +54,7 @@ Archaeologist. The summer before I went to Dafna, I worked for six weeks at <a h
 
 <p>So, Ruby, eh? And Ruby on Rails? Yes. Rael chose to use these technologies before I started working with him, and they were the right choices. And have I found the Ruby religion? Well, no, not really. There are quite a number of things I like better than in Perl, but none better than what will be in Perl 6 (someday, <em>sigh</em>). What I miss most from Perl are sane Unicode support, fantastic regular expression support, and lists (yes, <em>lists</em>—as opposed to arrays).</p>
 
-<p>And what of Ruby on Rails, you ask? It seems like a fine Web application development environment. The controllers and views are nice. But I'll say no more. You'll have to buy me an awful lot of beer for that. I'll take <a href="http://en.wikipedia.org/wiki/Goldstar_beer" title="Wikipedia describes Goldstar beer">Goldstar</a>.</p>
+<p>And what of Ruby on Rails, you ask? It seems like a fine Web application development environment. The controllers and views are nice. But I'll say no more. You'll have to buy me an awful lot of beer for that. I'll take <a href="https://en.wikipedia.org/wiki/Goldstar_beer" title="Wikipedia describes Goldstar beer">Goldstar</a>.</p>
 
 <p>I now tag:</p>
 
@@ -65,6 +65,6 @@ Archaeologist. The summer before I went to Dafna, I worked for six weeks at <a h
   <li><a href="http://blogs.ittoolbox.com/database/soup/">Josh Berkus</a></li>
   <li><a href="http://www.askbjoernhansen.com/">Ask Bjørn Hansen</a></li>
 </ul>
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/autobiographical/five_things.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/autobiographical/five_things.html">old layout</a>.</small></p>
 
 

@@ -103,6 +103,6 @@ for my $regex (qw( ^b a w?oop?)) {
 
 <p>Pretty slick, no? I wonder if it'd make sense for DBD::SQLite to add the <code>regexp()</code> function itself, in C, using the Perl API, so that it's just <em>always</em> available to DBD::SQLite apps?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqlite/add_regexen.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqlite/add_regexen.html">old layout</a>.</small></p>
 
 

@@ -6,7 +6,7 @@ aliases: [/computers/databases/sqitch-plan.html]
 tags: [Sqitch, SQL, database, VCS, Git]
 ---
 
-<p>I gave my first presentation on Sqitch at <a href="http://pgcon.org/">PGCon</a> last week. The slides are <a href="http://www.slideshare.net/justatheory/sqitch-pgconsimple-sql-change-management-with-sqitch">on Slideshare</a> and <a href="http://www.pgcon.org/2012/schedule/events/479.en.html">the PGCon site</a>. It came together at the last minute, naturally. I was not able to pay as close attention to PGCon sessions as I would have liked, as I was doing last minute hacking to get the <code>deploy</code> command working on PostgreSQL, and then writing the slides (which are based on <a href="http://search.cpan.org/dist/App-Sqitch/lib/sqitchtutorial.pod">the tutorial</a>). I was pleased with the response, given that this is very much a project that is still under heavy development and available only as a very very early alpha. There was great discussion and feedback afterward, which I appreciate.</p>
+<p>I gave my first presentation on Sqitch at <a href="http://pgcon.org/">PGCon</a> last week. The slides are <a href="https://www.slideshare.net/justatheory/sqitch-pgconsimple-sql-change-management-with-sqitch">on Slideshare</a> and <a href="https://www.pgcon.org/2012/schedule/events/479.en.html">the PGCon site</a>. It came together at the last minute, naturally. I was not able to pay as close attention to PGCon sessions as I would have liked, as I was doing last minute hacking to get the <code>deploy</code> command working on PostgreSQL, and then writing the slides (which are based on <a href="http://search.cpan.org/dist/App-Sqitch/lib/sqitchtutorial.pod">the tutorial</a>). I was pleased with the response, given that this is very much a project that is still under heavy development and available only as a very very early alpha. There was great discussion and feedback afterward, which I appreciate.</p>
 
 <p>A number of folks offered to help, too. For that I am grateful. I’ve started a list of <a href="https://github.com/theory/sqitch/issues?labels=todo&amp;page=1&amp;state=open">to-dos</a> to give folks a starting point. Please fork and hack! Find me on #sqitch on Freenode for questions/comments/discussion.</p>
 
@@ -55,7 +55,7 @@ insert_widget
 
 <p>I like this because it feels a bit more VCS-y. It also makes it easier to add steps to the plan without worrying about tagging before one  was ready. And adding steps and tags can be automated by a <code>sqitch plan</code> command pretty easily.</p>
 
-<p>So the plan file becomes the canonical source for deployment planning, and is required. What we’ve lost, however, is the ability to use the same step name at different points in the plan, and to get the proper revision of the step by traveling back in VCS history for it. (Examples of what I mean are covered in <a href="/computers/databases/sql-change-management-sans-redundancy.html">a previous post</a>, as well as the aforementioned <a href="http://www.pgcon.org/2012/schedule/events/479.en.html">presentation</a>.) However, I think that we can still do that by <em>complementing</em> the plan with VCS history.</p>
+<p>So the plan file becomes the canonical source for deployment planning, and is required. What we’ve lost, however, is the ability to use the same step name at different points in the plan, and to get the proper revision of the step by traveling back in VCS history for it. (Examples of what I mean are covered in <a href="/computers/databases/sql-change-management-sans-redundancy.html">a previous post</a>, as well as the aforementioned <a href="https://www.pgcon.org/2012/schedule/events/479.en.html">presentation</a>.) However, I think that we can still do that by <em>complementing</em> the plan with VCS history.</p>
 
 <p>For example, take this plan:</p>
 
@@ -90,6 +90,6 @@ update_user
 
 <p>But I could be off my rocker entirely. What do <em>you</em> think? I want to get this right, please, if you have an opinion here, let me have it!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-plan.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-plan.html">old layout</a>.</small></p>
 
 

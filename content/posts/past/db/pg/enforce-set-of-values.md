@@ -320,6 +320,6 @@ INSERT INTO faces (name, eye_color) VALUES (&#x27;Kat&#x27;, &#x27;hazel&#x27; )
 
 <p>What do you use to constrain a column to a defined set of unordered values?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/enforce-set-of-values.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/enforce-set-of-values.html">old layout</a>.</small></p>
 
 

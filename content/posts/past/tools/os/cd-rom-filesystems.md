@@ -25,6 +25,6 @@ just Leopard. It seems to me that Mac OS X should always default to building a
 hybrid CD that's then readable by Windows, Linux, and everything else. Why
 doesn't it?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/os/macosx/cd_rom_filesystems.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/macosx/cd_rom_filesystems.html">old layout</a>.</small></p>
 
 

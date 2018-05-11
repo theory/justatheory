@@ -107,6 +107,6 @@ repository. A comprehensive, actively-developed open source CMS, Bricolage has
 been hailed as <q>quite possibly the most capable enterprise-class open-source
 application available</q> by <i>eWEEK</i>.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/1.8.6.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/1.8.6.html">old layout</a>.</small></p>
 
 

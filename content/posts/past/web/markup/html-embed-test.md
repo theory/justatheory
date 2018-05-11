@@ -54,6 +54,6 @@ but for me at least, it has no effect.</p>
 title="tests: object tag">seems to work well</a> in a lot of browsers. Would
 you use it? What are the downsides?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/internet/html/embed-test.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/html/embed-test.html">old layout</a>.</small></p>
 
 

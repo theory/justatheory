@@ -8,7 +8,7 @@ tags: [Postgres, PL/pgSQL, Higher Order Perl, recursion, Fibonacci Sequence, alg
 
 <p>Well, it's not <em>really</em> higher order PL/pgSQL, since the language
 doesn't
-support <a href="http://en.wikipedia.org/wiki/Closure_%28computer_science%29"
+support <a href="https://en.wikipedia.org/wiki/Closure_%28computer_science%29"
 title="Wikipedia: Closure (computer science)">closures</a>, as far as I know.
 But I have been working on a series of articles
 for <a href="http://www.onlamp.com/onlamp/general/database.csp"
@@ -203,6 +203,6 @@ me all the same.</p>
 
 <p>Look for the first of my articles to be published 2006-5-10.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/higher_order_plpgsql.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/higher_order_plpgsql.html">old layout</a>.</small></p>
 
 

@@ -30,6 +30,6 @@ $$ LANGUAGE plpgsql;
 <p>Anyway, I just wanted to share this tidbit, in case there were other PostgreSQL pros who missed it. I don't know when the feature was added, but it works fine for me in 8.1.</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/plpgsql_declare.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/plpgsql_declare.html">old layout</a>.</small></p>
 
 

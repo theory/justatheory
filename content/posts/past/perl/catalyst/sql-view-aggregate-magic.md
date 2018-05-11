@@ -6,9 +6,9 @@ aliases: [/computers/programming/perl/catalyst/sql-view-aggregate-magic.html]
 tags: [Perl, Catalyst, Template::Declare, database, DBI, Postgres, SQL]
 ---
 
-<p>Another post in my ongoing <a href="/computers/programming/perl/catalyst%20title=" title="Just a Theory: “Catalyst”">series</a> of posts on using Catalyst with Template::Declare and DBIx::Connector. This will be the last post covering material from <a href="http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics" title="Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics">chapter 3</a>, I promise. This is a fun one, though, because we continue to use this really nice <a href="http://en.wikipedia.org/wiki/Domain-specific_language" title="Wikipedia: “Domain-Specific Language”">DSL</a> called “SQL,” which I think is more expressive than an ORM would be.</p>
+<p>Another post in my ongoing <a href="/computers/programming/perl/catalyst%20title=" title="Just a Theory: “Catalyst”">series</a> of posts on using Catalyst with Template::Declare and DBIx::Connector. This will be the last post covering material from <a href="http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics" title="Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics">chapter 3</a>, I promise. This is a fun one, though, because we continue to use this really nice <a href="https://en.wikipedia.org/wiki/Domain-specific_language" title="Wikipedia: “Domain-Specific Language”">DSL</a> called “SQL,” which I think is more expressive than an ORM would be.</p>
 
-<p>To whit, the next task is to add the missing list of authors to the book list. The thing is, the more I work with databases, the more I'm inclined to think about them not only as the “M” in “<a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" title="Wikipedia: “Model-view-controller”">MVC</a>”, but also the “V”. I'll show you what I mean.</p>
+<p>To whit, the next task is to add the missing list of authors to the book list. The thing is, the more I work with databases, the more I'm inclined to think about them not only as the “M” in “<a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" title="Wikipedia: “Model-view-controller”">MVC</a>”, but also the “V”. I'll show you what I mean.</p>
 
 <h3>A Quick Fix</h3>
 
@@ -162,6 +162,6 @@ SELECT b.isbn, b.title, b.rating,
 
 <p>Either way, I find this to be a lot less work than using an ORM or other abstraction layer between my app and the database. Frankly, SQL provides just the right level of abstraction.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/catalyst/sql-view-aggregate-magic.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/sql-view-aggregate-magic.html">old layout</a>.</small></p>
 
 

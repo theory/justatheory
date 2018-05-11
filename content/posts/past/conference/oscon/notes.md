@@ -123,6 +123,6 @@ title=" Introducing SQLite version 3.0 ">SQLite</a></dt>
 food, good friends, and, well, I just had a great time. I can't wait until
 next year's OSCon!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/conferences/oscon2004/notes.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/conferences/oscon2004/notes.html">old layout</a>.</small></p>
 
 

@@ -74,7 +74,7 @@ tags: [Sqitch, SQL, change management, VCS, database]
 
 <p>As to the first, I could not think of a reason why that would be necessary. If I’m bootstrapping a new database, and the changes in that file are idempotent, is it really necessary to run the earlier version of the file at all? Maybe it is, but I could not think of one.</p>
 
-<p>The second item is the bit I wanted, and I realized (thanks in part to prompt from <a href="http://www.pgcon.org/2012/schedule/speakers/244.en.html">Peter van Hardenberg</a> while at PGCon) that I don’t need a VCS to get the script as it was at the time it was deployed. Instead, all I have to do is <em>store the script in the database as it was at the time it was run.</em> Boom, reversion time travel without a VCS.</p>
+<p>The second item is the bit I wanted, and I realized (thanks in part to prompt from <a href="https://www.pgcon.org/2012/schedule/speakers/244.en.html">Peter van Hardenberg</a> while at PGCon) that I don’t need a VCS to get the script as it was at the time it was deployed. Instead, all I have to do is <em>store the script in the database as it was at the time it was run.</em> Boom, reversion time travel without a VCS.</p>
 
 <p>As an example, take the plan above. Say we have a database that has been deployed all the way to <code>@beta</code>. Let’s add the <code>add_user</code> step again:</p>
 
@@ -122,6 +122,6 @@ tags: [Sqitch, SQL, change management, VCS, database]
 
 <p>So, I think this will work. But I’m sure I must have missed something. If you notice it please enlighten me in the comments. And thanks for reading this far!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/evolving-sqitch-plan.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/evolving-sqitch-plan.html">old layout</a>.</small></p>
 
 

@@ -135,6 +135,6 @@ complex POD tags anyway. At least I hope so. I'm currently working up a patch
 for blead that updates Pod::Simple in core, so it will be interesting to see
 if it breaks anyone's POD. Here's to hoping it doesn't!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/modules/new-pod-simple.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/new-pod-simple.html">old layout</a>.</small></p>
 
 

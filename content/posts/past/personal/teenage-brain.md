@@ -12,6 +12,6 @@ tags: [Personal, teenagers, brain development, New York Times]
 
 <p><strong>Julie:</strong> <em>What, you mean they <strong>found</strong> one?</em></p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/overheard/teenage_brain.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/overheard/teenage_brain.html">old layout</a>.</small></p>
 
 

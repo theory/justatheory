@@ -10,6 +10,6 @@ tags: [Politics, Hurricane Katrina, energy policy, congress, New York Times, Sal
 
 <p><a href="http://www.nrdcactionfund.org/ctt.asp?u=2066706&amp;l=1409" title="NRDC: &#x201c;Take Action Against Two Dangerous Energy Bills&#x201d;">Tell them no</a>.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/politics/katrina_legislation.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/katrina_legislation.html">old layout</a>.</small></p>
 
 

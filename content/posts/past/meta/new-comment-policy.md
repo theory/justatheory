@@ -14,6 +14,6 @@ tags: [Meta, comments, spam, junk]
 
 <p>Thanks for understanding. I really appreciate getting this time back every day. And, of course, if you'd like to respond to this new policy in any way, well, you have two weeks to leave a comment on this post. ;-)</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/internet/weblogs/new_comment_policy.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/new_comment_policy.html">old layout</a>.</small></p>
 
 

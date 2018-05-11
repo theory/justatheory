@@ -54,6 +54,6 @@ die $rollback_exception;
 
 <p>What would you do?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/handling-multiple-exceptions.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/handling-multiple-exceptions.html">old layout</a>.</small></p>
 
 

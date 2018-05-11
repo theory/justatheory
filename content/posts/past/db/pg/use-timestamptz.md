@@ -21,6 +21,6 @@ tags: [Postgres, time zones, database, best practices, recommendations]
 
 <p>So in <strong>this one case</strong> and <strong>only in this one case</strong>, use a <code>timestamp without time zone</code> column, but <em>always insert data in UTC</em>. This will keep things consistent with the <code>timestamptz</code> columns you have everywhere else in your database. Unless your app changes the value of the <a href="http://www.postgresql.org/docs/9.1/static/runtime-config-client.html#GUC-TIMEZONE"><code>timestamp</code> GUC</a> when it connects, it can just assume that everything is always UTC, and should always send updates as UTC.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/use-timestamptz.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/use-timestamptz.html">old layout</a>.</small></p>
 
 

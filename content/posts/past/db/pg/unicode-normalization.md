@@ -42,7 +42,7 @@ and then another does a search with canonical characters, the search will
 fail. This won't do at all.</p>
 
 <p>The solution is to
-<a href="http://en.wikipedia.org/wiki/Unicode_normalization" title="Wikipedia:
+<a href="https://en.wikipedia.org/wiki/Unicode_normalization" title="Wikipedia:
 “Unicode equivalence”">normalize</a> your Unicode data. In Perl, you can use
 <a href="http://search.cpan.org/perldoc?Unicode::Normalize"
 title="Unicode::Normalize on CPAN">Unicode::Normalize</a>, a C/XS module that
@@ -179,6 +179,6 @@ try=# select to_tsvector(U&amp;&#x0027;\00E9clair&#x0027;) @@ to_tsquery(normali
 
 <p>So yes, this really can be an issue in your applications.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/unicode-normalization.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/unicode-normalization.html">old layout</a>.</small></p>
 
 

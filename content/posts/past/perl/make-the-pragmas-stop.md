@@ -66,6 +66,6 @@ use 5.12;
 
 <p>I think that declaring the semantics of a particular version of Perl is where the Perl 5 Porters are headed. I just hope that includes handling all of the likely pragmas too, so that I don’t have to.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/make-the-pragmas-stop.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/make-the-pragmas-stop.html">old layout</a>.</small></p>
 
 

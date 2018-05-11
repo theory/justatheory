@@ -7,7 +7,7 @@ aliases: [/computers/databases/mysql/introducing_mysql.html]
 tags: [MySQL, myTAP, pgTAP, testing, unit testing, Postgres, database, test-driven database development, test-driven database design]
 ---
 
-<p>I gave my <a href="http://www.oscon.com/oscon2010/public/schedule/detail/14168" title="Test Driven Database Development">OSCON tutorial</a> (<a href="http://www.slideshare.net/justatheory/test-drivern-database-development" title="slides on SlideShare">slides</a>) last week. It went okay. I spent <em>way</em> too much time helping to get everyone set up with <a href="http://pgtap.org/">pgTAP</a>, and then didn't have time to have the attendees do the exercises, and I had to rush through 2.5 hours of material in 1.5 hours. Yikes! At least the video will be better when it's released (more when that happens).</p>
+<p>I gave my <a href="http://www.oscon.com/oscon2010/public/schedule/detail/14168" title="Test Driven Database Development">OSCON tutorial</a> (<a href="https://www.slideshare.net/justatheory/test-drivern-database-development" title="slides on SlideShare">slides</a>) last week. It went okay. I spent <em>way</em> too much time helping to get everyone set up with <a href="http://pgtap.org/">pgTAP</a>, and then didn't have time to have the attendees do the exercises, and I had to rush through 2.5 hours of material in 1.5 hours. Yikes! At least the video will be better when it's released (more when that happens).</p>
 
 <p>But as often happens, I was asked whether something like pgTAP exists for <a href="http://www.mysql.com/">MySQL</a>. But this time I was asked by MySQL Community Manager <a href="http://datacharmer.blogspot.com/">Giuseppe Maxia</a>, who also said that he'd tried to create a test framework himself (a fellow Perl hacker!), but that it wasn't as nice as pgTAP. Well, since I was at OSCON and tend to like to hack on side projects while at conferences, and since I hoped that Giuseppe will happily take it over once I've implemented the core, I started hacking on it myself. And today, I'm pleased to announce the release of <a href="http://github.com/theory/mytap/">MyTAP</a> 0.01 (<a href="http://github.com/theory/mytap/downloads">downloads</a>).</p>
 
@@ -77,6 +77,6 @@ Result: PASS
 
 <p>Hope you find it useful.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/mysql/introducing_mysql.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/mysql/introducing_mysql.html">old layout</a>.</small></p>
 
 

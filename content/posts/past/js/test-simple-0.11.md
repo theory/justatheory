@@ -33,6 +33,6 @@ tags: [JavaScript, testing, TAP]
 
 <p>I've been getting more and more excited about <a href="http://ww.caseywest.com" title="Casey West's Blog">Casey West</a>'s work on <a href="http://www.openjsan.org/" title="JSAN">JSAN</a>. It gets better every day, and I hope that it attracts a lot of hackers who want to distribute open source JavaScript modules. You should check it out! I've been working on a Perl module to simplify the creation of JSAN distributions. Look for it on CPAN soonish.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/javascript/test_simple-0.11.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/test_simple-0.11.html">old layout</a>.</small></p>
 
 

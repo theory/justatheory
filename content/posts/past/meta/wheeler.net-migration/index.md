@@ -20,6 +20,6 @@ be automatically redirected to <a href="/computers/os/macosx/my_adventures.html"
 
 <p>If you happen to notice that I missed anything, comment on this blog entry to let me know.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/internet/weblogs/wheeler.net_migration.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/wheeler.net_migration.html">old layout</a>.</small></p>
 
 

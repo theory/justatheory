@@ -81,6 +81,6 @@ Nothing to deploy (up-to-date)
 
 <p>Now I’m off to add the <code>log</code> command, which shows a history of all deploys and reverts.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-status-status.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-status-status.html">old layout</a>.</small></p>
 
 

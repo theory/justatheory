@@ -45,6 +45,6 @@ tags: [Bricolage]
 
 <p>I am stunned and amazed by the sheer number of proposals the project received. There are quite a few good ones, too. I've told Google that I can handle five or six projects, but it might end up being a lot! I'll have to really pare them down this weekend. So fare I've eliminated a dozen or so that are simple one-liners (such as, <q>Port Bricolage to mySQL[sic]</q>), but now the real work of comparing and contrasting begins&#x2014;especially for all of those MySQL proposals!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/summer_of_code_applications.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/summer_of_code_applications.html">old layout</a>.</small></p>
 
 

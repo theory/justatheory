@@ -195,6 +195,6 @@ read-only next, and then writing some documentation for my fellow Bricoleurs
 on how to work with Git. For those of you who already
 know, <a href="http://github.com/bricoleurs/bricolage/fork" title="Fork Bricolage Now!">fork</a> and enjoy!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/vcs/git/bricolage-to-git.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/vcs/git/bricolage-to-git.html">old layout</a>.</small></p>
 
 

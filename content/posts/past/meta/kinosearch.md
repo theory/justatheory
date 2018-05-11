@@ -12,6 +12,6 @@ tags: [Meta, Kinosearch, Google, Lucene, Doug Cutting, Marvin Humphries]
 
 <p>So give it a try. Search for <a href="/search.cgi?q=iraq" title="Search for &#x201c;iraq&#x201d;"><q>iraq</q></a> or <a href="/search.cgi?q=svn" title="Search for &#x201c;svn&#x201d;"><q>svn</q></a> to see how it works. And check out those <a href="http://www.rectangular.com/kinosearch/benchmarks.html" title="">KinoSearch benchmarks</a>, too. This thing is fast!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/blog/kinosearch.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/blog/kinosearch.html">old layout</a>.</small></p>
 
 

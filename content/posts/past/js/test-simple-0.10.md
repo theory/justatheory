@@ -73,6 +73,6 @@ tags: [JavaScript, Perl, Testing, TAP, Test Anything Protocol]
 
 <p>Next up, I'll finish porting the test from Test::Harness (really!) and add support for JSAN (look for a JSAN announcement soon). But in the meantime, feedback, bug reports, kudos, complaints, etc.warmly welcomed!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/javascript/test_simple-0.10.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/test_simple-0.10.html">old layout</a>.</small></p>
 
 

@@ -51,6 +51,6 @@ sudo env ARCHFLAGS=&#x0027;-arch i386&#x0027; gem install postgres
 <p>And away we go!</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/ruby/postgres_gem_on_leopard.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/ruby/postgres_gem_on_leopard.html">old layout</a>.</small></p>
 
 

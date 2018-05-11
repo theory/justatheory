@@ -8,6 +8,6 @@ tags: [Perl, Advent Calendar, DBIx::Connector]
 
 <p>Hey look everybody, I wrote today's Perl Advent Calendar post, <a href="http://perladvent.org/2011/2011-12-22.html">Less Tedium, More Transactions</a>. Go read it!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/perl-advent.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/perl-advent.html">old layout</a>.</small></p>
 
 

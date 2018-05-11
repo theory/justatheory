@@ -57,6 +57,6 @@ free to chime in here with any gotchas you've noticed, and then I won't have
 to work so hard to figure them out on my own in the future (and neither will
 you)!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/javascript/ie_gotchas.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/ie_gotchas.html">old layout</a>.</small></p>
 
 

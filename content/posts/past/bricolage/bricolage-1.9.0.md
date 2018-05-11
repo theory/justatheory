@@ -165,6 +165,6 @@ $burner-&gt;display_pages(&quot;_page_&quot;);
 
 <p>In truth, all four are capable and have access to the entire Bricolage API so that they can output anything. So what are you waiting for? <a href="http://www.bricolage.cc/downloads/bricolage-1.9.0.tar.gz" title="Download Bricolage 1.9.0">Download Bricolage</a> and give it a try!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/1.9.0.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/1.9.0.html">old layout</a>.</small></p>
 
 

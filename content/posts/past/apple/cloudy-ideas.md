@@ -9,7 +9,7 @@ tags: [Apple, iCloud, cloud computing]
 
 <p>I had an interesting Twitter Discussion last week with cloud guru <a href="https://twitter.com/swardley">Simon Wardley</a> and “cloud entrepreneur” <a href="https://twitter.com/Memset_kate/">Kate Craig-Wood</a> about Apple, iCloud, and Android. It started in response to this tweet from Kate:</p>
 
-<p><!-- https://twitter.com/memset_kate/status/106817356889735168 --> <style type="text/css">.bbpBox106817356889735168 {background:#EDECE9;padding:20px;} p.bbpTweet{background:#fff;padding:10px 12px 10px 12px !important;margin:0 !important;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px} p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6} p.bbpTweet span.metadata span.author{line-height:19px} p.bbpTweet span.metadata span.author img{float:left !important;margin:0 7px 0 0px!important;width:38px;height:38px} p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block} span.timestamp img{float:none !important; margin:0 !important;border:none !important;}</style> <div class="bbpBox106817356889735168"><p class="bbpTweet">My blog post earlier this week, on why Apple should make iCloud open (<a href="http://v.gd/icloud)" rel="nofollow">http://v.gd/icloud)</a> now looks rather prescient (see last paragraph).<span class="timestamp"><a title="Thu Aug 25 19:56:57 +0000 2011" href="https://twitter.com/memset_kate/status/106817356889735168">On August 25, 2011</a> via <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a></span><span class="metadata"><span class="author"><a href="http://twitter.com/Memset_Kate"><img src="https://pbs.twimg.com/profile_images/989116279121481728/AwfU-t8C_normal.jpg" /></a><strong><a href="http://twitter.com/Memset_Kate">Kate Craig-Wood</a></strong><br/>Memset_Kate</span></span></p></div> <!-- end of tweet --></p>
+<p><!-- https://twitter.com/memset_kate/status/106817356889735168 --> <style type="text/css">.bbpBox106817356889735168 {background:#EDECE9;padding:20px;} p.bbpTweet{background:#fff;padding:10px 12px 10px 12px !important;margin:0 !important;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px} p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6} p.bbpTweet span.metadata span.author{line-height:19px} p.bbpTweet span.metadata span.author img{float:left !important;margin:0 7px 0 0px!important;width:38px;height:38px} p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block} span.timestamp img{float:none !important; margin:0 !important;border:none !important;}</style> <div class="bbpBox106817356889735168"><p class="bbpTweet">My blog post earlier this week, on why Apple should make iCloud open (<a href="http://v.gd/icloud)" rel="nofollow">http://v.gd/icloud)</a> now looks rather prescient (see last paragraph).<span class="timestamp"><a title="Thu Aug 25 19:56:57 +0000 2011" href="https://twitter.com/memset_kate/status/106817356889735168">On August 25, 2011</a> via <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a></span><span class="metadata"><span class="author"><a href="https://twitter.com/Memset_Kate"><img src="https://pbs.twimg.com/profile_images/989116279121481728/AwfU-t8C_normal.jpg" /></a><strong><a href="https://twitter.com/Memset_Kate">Kate Craig-Wood</a></strong><br/>Memset_Kate</span></span></p></div> <!-- end of tweet --></p>
 
 <p><a href="http://www.katescomment.com/open-apple-icloud/">The post</a>, which was published about a week before Steve Jobs’s resignation as CEO of Apple, is worth a read. A number of points came up in the Twitter discussion, but 140 characters prevented me, at least, from being as thoughtful as I’d like. So I’m trying again here.</p>
 
@@ -35,7 +35,7 @@ tags: [Apple, iCloud, cloud computing]
 
 <p>Again, Apple is not really entering the cloud business. Rather, they’re creating a cloud service to bolster their existing business. Another way to say it is that Apple is not selling cloud services. Apple sells devices that use cloud services. And as a consequence of that, they don’t care about other devices. The point is not the cloud, <em>it’s the devices.</em></p>
 
-<p>In that vein, via Twitter <a href="http://twitter.com/swardley/status/106828452748988416">Simon said</a>:</p>
+<p>In that vein, via Twitter <a href="https://twitter.com/swardley/status/106828452748988416">Simon said</a>:</p>
 
 <blockquote><p>@theory : Modern devices are a combo of activities, some innovative, most commodity. Android &amp; its ecosystem is commoditising the space.</p></blockquote>
 
@@ -47,7 +47,7 @@ tags: [Apple, iCloud, cloud computing]
 
 <p>In short, Google is in the business of selling eyeballs to advertisers. Apple is in the business of selling devices to consumers. Both are valid business models, but given existing revenues, I think it’s difficult to argue which seems to be the more successful model.</p>
 
-<p><a href="http://twitter.com/Memset_Kate/status/106826660283826176">Kate added</a>:</p>
+<p><a href="https://twitter.com/Memset_Kate/status/106826660283826176">Kate added</a>:</p>
 
 <blockquote><p>@swardley but my point stands; in consumer space too they are losing ground, fast. Shiny toys are easy to duplicate – Nokia’s doom.</p></blockquote>
 
@@ -71,7 +71,7 @@ tags: [Apple, iCloud, cloud computing]
 
 <h3>Innovation</h3>
 
-<p>Following up on his tweet about commoditization, <a href="http://twitter.com/swardley/status/106828832283168770">Simon wrote</a>:</p>
+<p>Following up on his tweet about commoditization, <a href="https://twitter.com/swardley/status/106828832283168770">Simon wrote</a>:</p>
 
 <blockquote><p>Combine this with ability of ecosystems to innovate, then Android is likely to be fairly lethal over time.</p></blockquote>
 
@@ -109,6 +109,6 @@ tags: [Apple, iCloud, cloud computing]
 
 <p>Apple is not in the cloud business. It’s not in the enterprise computing business. It’s not interested providing utility services. And it’s unlikely ever to be.  Apple’s actual business is far more successful, interesting, and profitable to them. So the question of whether or not iCloud should be “open” is unlikely to even be on Apple’s radar. What’s on their radar is not “being open,” but selling great products.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/apple/cloudy-ideas.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/apple/cloudy-ideas.html">old layout</a>.</small></p>
 
 

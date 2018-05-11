@@ -218,6 +218,6 @@ CREATE FUNCTION insert_extend() RETURNS trigger AS &#x0027;
 
 <p>Hrm. That just might be the best way to go, period. Thoughts? Have I missed some other obvious solution?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/insert_execution_order_problem.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/insert_execution_order_problem.html">old layout</a>.</small></p>
 
 

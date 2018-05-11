@@ -14,6 +14,6 @@ tags: [Politics, President, elections, George W. Bush, John Kerry]
 
 <p>My favorite phrase from the Salon.com article: the <q>Milli Vanilli president.</q></p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/politics/election_2004/the_bulge.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/the_bulge.html">old layout</a>.</small></p>
 
 

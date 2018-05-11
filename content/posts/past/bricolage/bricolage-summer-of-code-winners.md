@@ -79,6 +79,6 @@ scores for them in a spreadsheet. As it was, things were still really close; yes
 <p>But in truth, I would have been happy with any one of those four applicants. I was only sorry I had to choose only one! If Google does this again, I think I'll list many more project ideas on the Bricolage Web site, and try to steer people to the mail lists to discuss their ideas before sending them in. Then I might end up with 11 great applications!</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/summer_of_code_winners.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/summer_of_code_winners.html">old layout</a>.</small></p>
 
 

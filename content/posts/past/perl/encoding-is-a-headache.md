@@ -17,12 +17,12 @@ tags: [Perl, Unicode, UTF-8, Markdown, HTML]
 
 <p>But wait a minute! Some markup languages, like <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, don’t have XML declarations or headers. They’re HTML fragments. So there’s no wait to tell the encoding of the resulting HTML unless it’s decoded. So maybe it <em>should</em> be decoded. Or perhaps it should be decoded, and then given an XML declaration that declares the encoding as UTF-8 and encoded it as UTF-8 before returning it.</p>
 
-<p>But, hold the phone! When reading in a markup file, should it be decoded before it’s passed to the parser? Does <a href="http://search.cpan.org/perldoc?Text::Markdown">Text::Markdown</a> know or care about encodings? And if it should be decoded, what encoding should one assume the source file uses? Unless it uses a <a href="http://en.wikipedia.org/wiki/Byte_order_mark">BOM</a>, how do you know what its encoding is?</p>
+<p>But, hold the phone! When reading in a markup file, should it be decoded before it’s passed to the parser? Does <a href="http://search.cpan.org/perldoc?Text::Markdown">Text::Markdown</a> know or care about encodings? And if it should be decoded, what encoding should one assume the source file uses? Unless it uses a <a href="https://en.wikipedia.org/wiki/Byte_order_mark">BOM</a>, how do you know what its encoding is?</p>
 
 <p>Text::Markup is a dead simple idea, but virtually all of my time is going into thinking about this stuff. It drives me nuts. When will the world cease to be this way?</p>
 
 <p>Oh, and you have answers to any of these questions, please do feel free to leave a comment. I hate having to spend so much time on this, but I’d much rather do so and get things right (or close to right) than wrong.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/encoding-is-a-headache.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/encoding-is-a-headache.html">old layout</a>.</small></p>
 
 

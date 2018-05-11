@@ -46,6 +46,6 @@ my $process = Background->new(
 
 <p>Anyone know how to get it to do that? If so, please leave a comment!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/perltidy_method_blocks.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/perltidy_method_blocks.html">old layout</a>.</small></p>
 
 

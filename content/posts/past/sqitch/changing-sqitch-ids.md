@@ -47,6 +47,6 @@ Adds the users table to the database.
 
 <p>This will break existing installations, so I’d need to add a way to update them, but otherwise, I think it might be a win overall. Thoughts?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/changing-sqitch_ids.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/changing-sqitch_ids.html">old layout</a>.</small></p>
 
 

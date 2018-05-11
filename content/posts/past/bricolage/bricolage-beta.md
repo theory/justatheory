@@ -28,6 +28,6 @@ the new site. I'm not providing a direct link to it here because it's going to
 go away on Wednesday and I don't want to get any 404s. Feel free to send me
 feedback on the new site--anything about it: design, layout, XHTML, CSS, etc.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/site/beta.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/site/beta.html">old layout</a>.</small></p>
 
 

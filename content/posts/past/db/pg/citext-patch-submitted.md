@@ -61,6 +61,6 @@ CHECK ( is_timezone( value ) );
 
 <p>I'm hoping that this is accepted during the <a href="http://wiki.postgresql.org/index.php?title=CommitFest:2008-07" title="PostgreSQL CommitFest:2008-07">July CommitFest</a>. Of course I will welcome suggestions for how to improve it. Since I sent the patch, for example, I've been thinking that I should suggest in the documentation that it is best used for short text entries (say, up to 256 characters), rather than longer entries (like email bodies or journal articles), and that for longer entries, one should really make use of <a href="http://www.postgresql.org/docs/current/static/textsearch.html" title="PostgreSQL Documentation: Chapter 12. Full Text Search">tsearch2</a>, instead. There are other notes and caveats in the <a href="http://archives.postgresql.org/message-id/4013F1AE-FE1B-427B-8C23-1A5681DA297E@kineticode.com" title="PATCH: CITEXT 2.0">patch submission</a>. Please do let me know what you think.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/citext-patch-submitted.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/citext-patch-submitted.html">old layout</a>.</small></p>
 
 

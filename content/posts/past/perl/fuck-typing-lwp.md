@@ -69,6 +69,6 @@ sub host_wait {
 
 <p>This just reinforces <a href="http://www.modernperlbooks.com/mt/2010/05/are-objects-black-blocks-or-toolkits.html">chromatic’s message</a> in my mind. I'd sure love to see LWP reworked to use <a href="http://search.cpan.org/~rgarcia/perl-5.10.0/lib/UNIVERSAL.pm#$obj-%3EDOES(_ROLE_">roles</a>!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/fuck-typing-lwp.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/fuck-typing-lwp.html">old layout</a>.</small></p>
 
 

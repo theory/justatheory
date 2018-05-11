@@ -10,6 +10,6 @@ tags: [Bricolage, Subversion]
 
 <p>So for my fellow Bricolage developers who thought that the auth system was down: Sorry, it's back now. And the trunk is fully updated with all of the changes to rev_1_8, which means that new development in the trunk can begin again in earnest.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/svn/perl_org_auth_woes.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/svn/perl_org_auth_woes.html">old layout</a>.</small></p>
 
 

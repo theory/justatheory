@@ -12,6 +12,6 @@ tags: [OSCON, Bricolage, Discovering Bricolage, David Wheeler]
 
 <p>I exported the presentation to PDF, and added the movie that runs at the beginning as a set of slides ahead of the main presentation content. You can <a href="http://www.kineticode.com/docs/discovering_bricolage.pdf" title="Download discovering_bricolage.pdf">download</a> the presentation from the <a href="http://www.kineticode.com/" title="Kineticode Website">Kineticode</a> Website.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/conferences/oscon2004/discovering_bricolage.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/conferences/oscon2004/discovering_bricolage.html">old layout</a>.</small></p>
 
 

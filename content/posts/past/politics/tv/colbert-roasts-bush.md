@@ -14,6 +14,6 @@ tags: [Poltics, George W. Bush, President, Stephen Colbert, White House Correspo
 
 <p>()Via <a href="http://www.arachna.com/roller/page/spidaman/Weblog" title="Ian Kallen's Blog">Ian Kallen</a>)</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/tv/colbert_roasts_bush.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/tv/colbert_roasts_bush.html">old layout</a>.</small></p>
 
 

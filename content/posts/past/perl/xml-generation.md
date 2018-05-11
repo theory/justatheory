@@ -12,7 +12,7 @@ feed, turn individual stories into Bricolage SOAP XML, and import them into
 Bricolage. I'm using the amazing--if hideously
 documented--<a href="http://search.cpan.org/perldoc?XML::LibXML" title="XML::LibXML on CPAN">XML::LibXML</a> to do the parsing of the incoming
 NewsML, taking advantage of the power of XPath to pull out the bits I need.
-But then came the <a href="http://twitter.com/Theory/status/2085796847" title="My Twery">question</a>: what should I use to generate the XML for
+But then came the <a href="https://twitter.com/Theory/status/2085796847" title="My Twery">question</a>: what should I use to generate the XML for
 Bricolage?</p>
 
 <p>Based on feedback from various Tweeps, I tried a few different approaches:
@@ -204,6 +204,6 @@ elements you need, it's certainly the nicest to use.</p>
 use <a href="http://search.cpan.org/perldoc?Template::Declare::Bricolage" title="Template::Declare::Bricolage on CPAN">Template::Declare::Bricolage</a>
 to deaden the pain.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/xml-generation.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/xml-generation.html">old layout</a>.</small></p>
 
 

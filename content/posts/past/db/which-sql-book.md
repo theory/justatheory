@@ -13,6 +13,6 @@ tags: [databases, SQL, Advanced SQL, stored procedures, database triggers, Postg
 <p>So what's the best choice? Leave me a comment with your opinion. Thanks!</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/which_sql_book.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/which_sql_book.html">old layout</a>.</small></p>
 
 

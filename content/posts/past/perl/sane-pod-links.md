@@ -26,6 +26,6 @@ documentation|http://pgtap.projects.postgresql.org/documentation.html&gt;.
 
 <p>And as of yesterday, the last piece to allow this went into place. <a href="http://petdance.com/" title="Andy Lester">Andy</a> gave me maintenance of <a href="http://search.cpan.org/perldoc?Test::Pod" title="Test::Pod on CPAN">Test::Pod</a>, and I immediately released a new version to allow the new syntax. So update your <code>t/pod.t</code> file to require Test::Pod 1.41, update your links, and celebrate the arrival of sane links in Pod documentation.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/sane-pod-links.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/sane-pod-links.html">old layout</a>.</small></p>
 
 

@@ -49,6 +49,6 @@ postfix reload
 Googling for a solution and get the help they need, too. No doubt I'll be
 looking for it again in a year or so, the way things go.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/mail/postfix-and-comcast.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/mail/postfix-and-comcast.html">old layout</a>.</small></p>
 
 

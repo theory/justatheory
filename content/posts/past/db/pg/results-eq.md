@@ -70,7 +70,7 @@ select * from people order by name;
 <p>Because I ordered only on “name,” the database was free to sort records
 with the same name in an undefined way. Meaning that the rows could be in
 different orders. This is known, if I understand correctly, as a
-“<a href="http://en.wikipedia.org/wiki/Partially_ordered_set" title="Wikipedia: Partially ordered set">Partially ordered set</a>,” or
+“<a href="https://en.wikipedia.org/wiki/Partially_ordered_set" title="Wikipedia: Partially ordered set">Partially ordered set</a>,” or
 “poset.” Which is all well and good, but from my point of view makes it damn
 near impossible to be able to do a row-by-row comparison and ignore dupes,
 because they could be in different orders!</p>
@@ -200,6 +200,6 @@ functions for a test drive on 8.3 or 8.4. Let me know what you think!</p>
 <code>row_eq()</code>, so I may skip that one for now.</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/results_eq.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/results_eq.html">old layout</a>.</small></p>
 
 

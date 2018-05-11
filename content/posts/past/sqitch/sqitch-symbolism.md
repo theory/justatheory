@@ -43,7 +43,7 @@ tags: [Sqitch, SQL, change management, localization, internationalization]
 <pre><code>sqitch deploy --to @LAST~~
 </code></pre>
 
-<p>Nice, right? One thing to bear in mind, as I was reminded while giving a <a href="http://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch">Sqitch presentation</a> to <a href="http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/">PDXPUG</a>: Changes are deployed in a sequence. You can think of them as a linked list. So this command:</p>
+<p>Nice, right? One thing to bear in mind, as I was reminded while giving a <a href="https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch">Sqitch presentation</a> to <a href="http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/">PDXPUG</a>: Changes are deployed in a sequence. You can think of them as a linked list. So this command:</p>
 
 <pre><code>sqitch revert @LAST^^
 </code></pre>
@@ -60,11 +60,11 @@ tags: [Sqitch, SQL, change management, localization, internationalization]
 
 <p>Oh, and that <a href="http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/">PDXPUG presentation</a>? Here are the slides. Enjoy!</p>
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/14459486" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/14459486" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
 
 
-<p> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch" title="Sane SQL Change Management with Sqitch" target="_blank">Sane SQL Change Management with Sqitch</a> </strong> from <strong><a href="http://www.slideshare.net/justatheory" target="_blank">David E. Wheeler</a></strong> </div></p>
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch" title="Sane SQL Change Management with Sqitch" target="_blank">Sane SQL Change Management with Sqitch</a> </strong> from <strong><a href="https://www.slideshare.net/justatheory" target="_blank">David E. Wheeler</a></strong> </div></p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-symbolism.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-symbolism.html">old layout</a>.</small></p>
 
 

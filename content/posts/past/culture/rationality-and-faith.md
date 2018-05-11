@@ -10,6 +10,6 @@ tags: [Culture, Medium, philosophy, religion, faith, rationality, Anthropology]
 
 <p>It remains to be seen whether or not I write more stuff like that. It’s rewarding, but time-consuming.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/rationality-and-faith.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/rationality-and-faith.html">old layout</a>.</small></p>
 
 

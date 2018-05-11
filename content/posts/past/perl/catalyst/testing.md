@@ -171,6 +171,6 @@ Result: PASS
 
 <p>All done? Great! I had actually planned to start testing the view next, but I think this is enough for today. Stay tuned for more testing goodness.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/catalyst/testing.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/testing.html">old layout</a>.</small></p>
 
 

@@ -14,8 +14,8 @@ tags: [Condé Nast, The New Yorker, Vogue, iPad, Retina Display, Suck]
 <p>Still, I was excited to try it on the new iPad's retina display. Well, "excited" is not quite the right word. More like "dreading." Because Condé iPad magazines actually use images for most of their articles, rather than text. The underlying technology is the charmingly named <a href="http://www.adobe.com/products/digital-publishing-suite-family.html">Adobe Digital Publishing Suite family</a>, which, at root, is basically an image reader. Way back in September, 2010, <a href="http://allthingsd.com/20100928/conde-nasts-ipad-apps-are-too-portly-blame-adobe/">Condé told All Things D</a>: "The goal is to be all HTML, and we will be." Alas, that day has yet to come, as I confirmed when I loaded the latest issue of <em>The New Yorker</em> on my new iPad and immediately saw fuzzy text. Sure, the text-based articles, such as the comment, display beautifully. But longer articles, which are carefully laid out and rendered as images, do not. They look worse than on the old iPad, because the anti-aliasing is even easier to see.</p>
 
 <div class="box">
-<a href="http://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/" title="The New Yorker on the 1st gen iPad"><img src="http://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg" alt="The New Yorker on the 1st gen iPad" /></a>
-<a href="http://www.flickr.com/photos/theory/7007813821/sizes/o/in/set-72157629648560359/" alt="The New Yorker on the 3rd gen iPad with retina display"><img src="http://farm8.staticflickr.com/7110/7007813821_6293e374eb_z.jpg" alt="The New Yorker on the 3rd gen iPad with retina display" /></a>
+<a href="https://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/" title="The New Yorker on the 1st gen iPad"><img src="https://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg" alt="The New Yorker on the 1st gen iPad" /></a>
+<a href="https://www.flickr.com/photos/theory/7007813821/sizes/o/in/set-72157629648560359/" alt="The New Yorker on the 3rd gen iPad with retina display"><img src="https://farm8.staticflickr.com/7110/7007813821_6293e374eb_z.jpg" alt="The New Yorker on the 3rd gen iPad with retina display" /></a>
 <p class="caption">Text content from <em>The New Yorker</em> on the first generation iPad (top) and the third generation iPad with retina display (bottom). Looks great because it's text. Click for larger images.</p>
 </div>
 
@@ -27,12 +27,12 @@ tags: [Condé Nast, The New Yorker, Vogue, iPad, Retina Display, Suck]
 
 <p>I suspect that the reality of the overlap of <em>The New Yorker</em> and <em>Vogue</em> readers resembles the Venn diagram to the right. But I want to see <em>The New Yorker</em> rock on the iPad, so I put aside some time to download the new <em>Vogue</em> app and take it for a spin.</p>
 
-<p><img src="http://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png" style="width:307pt" alt="The New Yorker &amp; Condé Nast Venn Diagram" title=" The New Yorker &amp; Condé Nast Venn Diagram" /></p>
+<p><img src="https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png" style="width:307pt" alt="The New Yorker &amp; Condé Nast Venn Diagram" title=" The New Yorker &amp; Condé Nast Venn Diagram" /></p>
 
 <p>First, the good news. I got a free month's subscription and downloaded the latest issue of <em>Vogue</em>, which does indeed have hi-res images. The articles look great. Ads are still low-res, but some might consider that a feature (not, I daresay, the advertisers). Alas, that's where the good news ends. Overall, this app is almost exactly like the <em>The New Yorker</em> app. I find this a little odd, since in print the magazines could not be much less different: <em>The New Yorker</em> is a slim, staple-bound, mostly-text weekly. <em>Vogue</em> is a phone book-sized perfect bound, glossy fashion magazine. Quite different beasts. Business-wise, I can understand why they would be the same: It's less expensive to have a single "media player" for all of your company's periodical properties, and the tablet form factor allows you to eliminate some of the differences. After all, bits don't weigh anything.</p>
 
 <div class="box">
-<a href="http://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/"><img src="http://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg" alt="Vogue on the new iPad" /></a>
+<a href="https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/"><img src="https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg" alt="Vogue on the new iPad" /></a>
 <p class="caption">Image content from <em>Vogue</em> on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image. Click for larger images.</p>
 </div>
 
@@ -83,6 +83,6 @@ tags: [Condé Nast, The New Yorker, Vogue, iPad, Retina Display, Suck]
 
 <p>Look, I write this out of love. <em>The New Yorker</em> is my favorite magazine, bar none, and I want it to succeed. Print is dying, but there is <em>so</em> much opportunity on devices like the iPad. Continue to create the best content, and provide it in a form factor and experience that takes advantage of the features and limitations of your targeted platforms, to allow readers to <em>enjoy</em> reading, and success will be assured.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/apps/conde-nast-ipad.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/apps/conde-nast-ipad.html">old layout</a>.</small></p>
 
 

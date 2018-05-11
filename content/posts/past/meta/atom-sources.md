@@ -24,6 +24,6 @@ tags: [Meta, Atom, RSS, RSS2, source code, XML, feeds]
 
 <p>Is there any way to do this in an Atom feed?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/internet/weblogs/atom-sources.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/atom-sources.html">old layout</a>.</small></p>
 
 

@@ -29,6 +29,6 @@ tags: [Sqitch, Windows, Perl, ActivePerl, ActiveState]
 
 <p>This makes it easy to get started with Sqitch on any of those platforms without having to become a Perl expert. So go for it, and then get started with <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">the tutorial</a>!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-on-windows.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-on-windows.html">old layout</a>.</small></p>
 
 

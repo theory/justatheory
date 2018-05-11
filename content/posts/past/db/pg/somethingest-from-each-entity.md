@@ -169,6 +169,6 @@ WITH t AS (
 
 <p>Easy! How have you handled a situation like this in your database hacking?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/somethingest-from-each-entity.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/somethingest-from-each-entity.html">old layout</a>.</small></p>
 
 

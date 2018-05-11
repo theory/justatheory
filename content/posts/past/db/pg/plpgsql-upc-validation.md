@@ -7,7 +7,7 @@ tags: [Postgres, UPCs, EAN, PL/pgSQL]
 ---
 
 <p>So I wanted to write a PL/pgSQL function to
-validate <a href="http://en.wikipedia.org/wiki/UPC_code" title="Wikipedia: UPC">UPC codes</a>. The rules for validation are:</p>
+validate <a href="https://en.wikipedia.org/wiki/UPC_code" title="Wikipedia: UPC">UPC codes</a>. The rules for validation are:</p>
 
 <ul>
   <li>The UPC must consist of 12 or 13 numerals</li>
@@ -94,6 +94,6 @@ $$ LANGUAGE plpgsql;
 <p>This works, and seems pretty fast, but I'm wondering if there isn't an
 easier way to do this in PL/pgSQL. Do you know of one? Leave me a comment.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/plpgsql_upc_validation.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/plpgsql_upc_validation.html">old layout</a>.</small></p>
 
 

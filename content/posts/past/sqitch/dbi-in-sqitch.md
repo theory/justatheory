@@ -14,6 +14,6 @@ tags: [Sqitch, Perl, DBI, IPC]
 
 <p>That is still my goal, but at this point the IPC requirements for controlling the clients is driving me a little crazy. Should I just give up and use the DBI (at least for now)? Or persevere with the IPC stuff and get it to work? Opinions wanted!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/dbi-in-sqitch.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/dbi-in-sqitch.html">old layout</a>.</small></p>
 
 

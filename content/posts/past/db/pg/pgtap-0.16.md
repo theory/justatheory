@@ -24,6 +24,6 @@ tags: [Postgres, PL/pgSQL, TAP, pgTAP, SQL, testing]
 
 <p>As usual, you can <a href="http://pgfoundry.org/frs/?group_id=1000389" title="Download pgTAP">download</a> the latest release from pgFoundry. Visit the <a href="http://pgtap.projects.postgresql.org/" title="pgTAP: Unit Testing for PostgreSQL">pgTAP site</a> for more information and for documentation.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/pgtap-0.16.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-0.16.html">old layout</a>.</small></p>
 
 

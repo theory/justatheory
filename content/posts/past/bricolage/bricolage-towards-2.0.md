@@ -47,6 +47,6 @@ list of all that I've done in the last two weeks:</p>
 
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/towards_2.0.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/towards_2.0.html">old layout</a>.</small></p>
 
 

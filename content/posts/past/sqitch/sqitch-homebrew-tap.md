@@ -31,10 +31,10 @@ Homebrew core PostgreSQL server:</p>
 <pre><code>brew install sqitch_pg
 </code></pre>
 
-<p>Sqitch hasn’t been ported to other database engines yet, but once it is, expect other formulas to follow. But if you use PostgreSQL (or just want to experiment with it), you’re ready to rock! I suggest following along <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">the tutorial</a> or taking in <a href="https://speakerdeck.com/theory/sane-database-change-management-with-sqitch">the latest iteration of the introductory presentation</a> (video of an older version <a href="http://vimeo.com/50104469">here</a>).</p>
+<p>Sqitch hasn’t been ported to other database engines yet, but once it is, expect other formulas to follow. But if you use PostgreSQL (or just want to experiment with it), you’re ready to rock! I suggest following along <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">the tutorial</a> or taking in <a href="https://speakerdeck.com/theory/sane-database-change-management-with-sqitch">the latest iteration of the introductory presentation</a> (video of an older version <a href="https://vimeo.com/50104469">here</a>).</p>
 
 <p>My thanks to IRC user “mistym” for the help and suggestions in getting this going. My Ruby is pretty much rusted through, soI could not have done it without the incredibly responsive help!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-homebrew-tap.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-homebrew-tap.html">old layout</a>.</small></p>
 
 

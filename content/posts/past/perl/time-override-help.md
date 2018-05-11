@@ -32,6 +32,6 @@ sub try {
 
 <p>Anyone got any bright ideas? This is a <a href="http://use.perl.org/~geoff/journal/20660" title="">reasonably well-known technique</a>, so I'm sure that I must be overlooking something obvious.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/time_override_help.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/time_override_help.html">old layout</a>.</small></p>
 
 

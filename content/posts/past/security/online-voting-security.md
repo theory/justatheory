@@ -12,7 +12,7 @@ tags: [security, voting, elections, ballot box stuffing]
   <li>Require site registration. You must be a registered user of the site in order to vote in an election, and of course, you can vote only once.</li>
   <li>Ignore votes when cookies are disabled, although make it look like a successful submission.</li>
   <li>Update result statistics periodically, rather than after every vote. This will make it difficult for an exploiter to tell if his votes are being counted.</li>
-  <li>Use a <a href="http://en.wikipedia.org/wiki/Captcha" title="Wikipedia explains CAPTCHA">CAPTCHA</a> to prevent scripted voting.</li>
+  <li>Use a <a href="https://en.wikipedia.org/wiki/Captcha" title="Wikipedia explains CAPTCHA">CAPTCHA</a> to prevent scripted voting.</li>
   <li>Send a new digest hidden in every request that must be sent back and checked against a server-side session in order to prevent <q>curl</q> attacks.</li>
   <li>Log IP addresses for all votes. These can be checked later if ballot box stuffing is suspected (though we'll have to ignore it if many users are behind a proxy server).</li>
 </ul>
@@ -21,6 +21,6 @@ tags: [security, voting, elections, ballot box stuffing]
 
 <p>Leave a comment to let me know.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/security/online_voting_security.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/security/online_voting_security.html">old layout</a>.</small></p>
 
 

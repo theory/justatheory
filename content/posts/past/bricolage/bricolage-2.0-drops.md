@@ -35,7 +35,7 @@ tags: [Bricolage, Apache, MySQL, Ajax, Google Summer Of Code]
 
 <ul>
 <li>The <a href="http://code.google.com/soc/">Google Summer of Code</a>, especially the 2006 projects (yes, we finally shipped them!).</li>
-<li><a href="">Phillip Smith</a>, who spearheaded the terrific new <a href="http://www.bricolagecms.org/">bricolagecms.org</a> design, updated the Bricolage 2.0 context-sensitive help, and generally pushed forward the Bricolage marketing and social media agenda (follow <a href="http://twitter.com/bricolagecms">@bricolagecms</a>!).</li>
+<li><a href="">Phillip Smith</a>, who spearheaded the terrific new <a href="http://www.bricolagecms.org/">bricolagecms.org</a> design, updated the Bricolage 2.0 context-sensitive help, and generally pushed forward the Bricolage marketing and social media agenda (follow <a href="https://twitter.com/bricolagecms">@bricolagecms</a>!).</li>
 <li><a href="http://pectopah.com/">Bret Dawson</a>, who has been writing release announcements and put together the <a href="http://bricolagecms.org/news/announce/changes/bricolage-2.0.0/">awesomely human version of the Bricolage 2.0 change log</a>, as well as the <a href="http://bricolagecms.org/news/announce/2010/04/12/bricolage-2.0.0/">public announcement</a>.</li>
 <li><a href="http://mattrolf.com/">Matt Rolf</a>, who wrote the <a href="http://bricolagecms.org/news/pr/2010/04/12/2.0-presskit/">Bricolage 2.0 press release</a> and provided a huge load of various HTML and CSS fixes to Bricolage 2.0.</li>
 <li><a href="http://mroch.com/">Marshall Roch</a>, who started hacking on Bricolage in high school, worked through two summers of code, and made the UI what it is today.</li>
@@ -44,6 +44,6 @@ tags: [Bricolage, Apache, MySQL, Ajax, Google Summer Of Code]
 
 <p>Many others provided feedback, patches, and bug reports, and I appreciate all the help. I hope to see you all for Bricolage 2.2!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/bricolage-2.0-drops.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/bricolage-2.0-drops.html">old layout</a>.</small></p>
 
 

@@ -47,6 +47,6 @@ Remote host said: 550-5.7.1 reject content [xbl]
 
 <p>None of these answers is satisfactory. I guess I'll have to set up an authenticating SMTP server and a VPN for Kineticode once port 587 starts getting blocked. Anyone else got any brilliant solutions to this problem?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/policy/windows_virus_hell.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/policy/windows_virus_hell.html">old layout</a>.</small></p>
 
 

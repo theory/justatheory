@@ -25,6 +25,6 @@ tags: [Postgres, pgTAP, testing, unit testing, TAP, Test Anything Protocol]
 
 <p>I think I'll also spend some time in the next few weeks on an article explaining exactly what pgTAP is and why you'd want to use it. Provided, of course, I can find the tuits for that.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/pgtap-0.12.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-0.12.html">old layout</a>.</small></p>
 
 

@@ -10,6 +10,6 @@ tags: [Steve Jobs, Apple, Thanks]
 
 <p>A sad day. You will be missed. I feel like a part of the whole world offering my heartfelt condolences to his family, his friends, and his coworkers.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/thank-you-steve.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/thank-you-steve.html">old layout</a>.</small></p>
 
 

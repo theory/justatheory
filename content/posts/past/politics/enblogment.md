@@ -6,7 +6,7 @@ aliases: [/politics/election_2008/enblogment.html]
 tags: [Politics, John McCain, Barack Obama, endorsement, President]
 ---
 
-<p>Following up on my <a href="/politics/election_2004/enblogment.html" title="Enblbgment: For Kerry">enblogment of Kerry</a> four years ago, and with a tip of the hat to <a href="http://www.lessig.org/blog/archives/002264.shtml" title="Lawrence Lessig: enblogment: For Kerry">Lawrence Lessig</a>, I am thrilled to endorse <a href="http://www.barackobama.com/" title="Barack Obama for America">Barack Obama</a> for President of the United States of America. I voted last night (gotta love <a href="http://en.wikipedia.org/wiki/Postal_voting" title="Wikipedia: Postal voting">Oregon vote by mail</a>!).</p>
+<p>Following up on my <a href="/politics/election_2004/enblogment.html" title="Enblbgment: For Kerry">enblogment of Kerry</a> four years ago, and with a tip of the hat to <a href="http://www.lessig.org/blog/archives/002264.shtml" title="Lawrence Lessig: enblogment: For Kerry">Lawrence Lessig</a>, I am thrilled to endorse <a href="http://www.barackobama.com/" title="Barack Obama for America">Barack Obama</a> for President of the United States of America. I voted last night (gotta love <a href="https://en.wikipedia.org/wiki/Postal_voting" title="Wikipedia: Postal voting">Oregon vote by mail</a>!).</p>
 
 <p>The single best thing you can read for reasons why I endorse Obama is <a href="http://www.newyorker.com/talk/comment/2008/10/13/081013taco_talk_editors" title="New Yorker October 13, 2008: “The Choice”"><cite>The New Yorker's</cite> endorsement</a>. But in case you're not an elitist liberal like me, perhaps the endorsement of one of these other fine sources might help to sway you:</p>
   
@@ -30,6 +30,6 @@ tags: [Politics, John McCain, Barack Obama, endorsement, President]
 
 <p>Barack Obama for President. He's the right man for the job at the right time.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/politics/election_2008/enblogment.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2008/enblogment.html">old layout</a>.</small></p>
 
 

@@ -25,6 +25,6 @@ tags: [Perl, Subversion, SVN::Notify, Windows]
 
 <p>Enjoy!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/modules/svnnotify-2.57.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svnnotify-2.57.html">old layout</a>.</small></p>
 
 

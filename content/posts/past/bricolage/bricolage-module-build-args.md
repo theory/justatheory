@@ -100,6 +100,6 @@ ideas from <code>Getopt::Simple</code>. But either way, I think that better
 argument processing is on the way for <code>Module::Build</code>.</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/dev/module_build_args.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/dev/module_build_args.html">old layout</a>.</small></p>
 
 

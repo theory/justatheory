@@ -21,7 +21,7 @@ food you want there, as long as it's Mexican food, and the high altitude
 
 <p>Mostly I just worked with our clients, but I did manage to take a couple of
 photos, but I did manage to get a couple of photographs with my <a
-href="http://www.amazon.com/exec/obidos/redirect?tag=justatheory-20&path=tg/detail/-/B00022NE6I/qid%3D1088445154/sr%3D8-4"
+href="https://www.amazon.com/exec/obidos/redirect?tag=justatheory-20&path=tg/detail/-/B00022NE6I/qid%3D1088445154/sr%3D8-4"
 title="Buy the Nokia 6600 at Amazon.com">Nokia 6600</a>. The <q>cool</q> coffeehouse in Alamosa is <a
 href="http://www.lapuente.net/programs/milagros.htm" title="Milagro's
 Coffeehouse home page">Milagro's Coffeehouse</a>, but to judge by their sign,
@@ -38,6 +38,6 @@ my window, so I turned on my phone (bad David!) and snapped another shot.</p>
 <p>Looks like I might be returning to Alamosa soon to do some training. Maybe I'll be
 able to get some more pictures; the sunsets are quite lovely there.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/travel/alamosa/june_2004.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/alamosa/june_2004.html">old layout</a>.</small></p>
 
 

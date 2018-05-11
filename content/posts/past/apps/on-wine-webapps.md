@@ -83,6 +83,6 @@ a year ago and made it happen, so that I could get the benefits of Cork'd
 I'm just sending feature requests to Cork'd and watching to see how things
 develop.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/culture/wine/on_wine_webapps.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/wine/on_wine_webapps.html">old layout</a>.</small></p>
 
 

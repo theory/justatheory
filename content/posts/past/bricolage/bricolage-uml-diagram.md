@@ -14,6 +14,6 @@ tags: [Bricolage, UML, OmniGraffle, PDF, design]
 
 <p>In the meantime, it's time to get back to hacking!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/design/uml_diagram.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/design/uml_diagram.html">old layout</a>.</small></p>
 
 

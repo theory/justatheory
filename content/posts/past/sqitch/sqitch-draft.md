@@ -12,7 +12,7 @@ tags: [Sqitch, SQL, migrations, database, VCS, Git]
 
 <p>This week, I <a href="https://github.com/theory/sqitch">started work on it</a>. My first task is to outline a draft for the interface. Sqitch will be a command-line tool, primarily. The remainder of this post contains the documentation for the draft interface. Thoughts and feedback would be greatly appreciated, especially if you think I've overlooked anything! I do want to keep features pretty minimal for now, though, to build up a solid core to be built on later. But other than that, your criticism is greatly desired.</p>
 
-<p>Next up, I will probably write a tutorial, just so I can make my way through some real-life(ish) examples and notice if I missed anything else. Besides, <a href="http://www.pgcon.org/2012/schedule/events/479.en.html">I'm going to need the tutorial myself</a>! Watch for that next week.</p>
+<p>Next up, I will probably write a tutorial, just so I can make my way through some real-life(ish) examples and notice if I missed anything else. Besides, <a href="https://www.pgcon.org/2012/schedule/events/479.en.html">I'm going to need the tutorial myself</a>! Watch for that next week.</p>
 
 <p>Thanks!</p>
 
@@ -72,7 +72,7 @@ tags: [Sqitch, SQL, migrations, database, VCS, Git]
 <dt>Reduced Duplication</dt>
 <dd>
 
-<p>If you&#39;re using a VCS to track your changes, you don&#39;t have to duplicate entire change scripts for simple changes. As long as the changes are <a href="http://en.wikipedia.org/wiki/Idempotence">idempotent</a>, you can change your code directly, and Sqitch will know it needs to be updated.</p>
+<p>If you&#39;re using a VCS to track your changes, you don&#39;t have to duplicate entire change scripts for simple changes. As long as the changes are <a href="https://en.wikipedia.org/wiki/Idempotence">idempotent</a>, you can change your code directly, and Sqitch will know it needs to be updated.</p>
 
 </dd>
 </dl>
@@ -685,7 +685,7 @@ widgets_created_at
 [HEAD epsilon master]
 add_widget</code></pre>
 
-<p>This example is derived from a Git log history. Note that the &quot;add_widget&quot; step is repeated under the state tagged &quot;beta&quot; and under the last state. Sqitch will notice the repetition when it parses this file, and then, if it is applying all changes, will fetch the version of the file as of the &quot;beta&quot; tag and apply it at that step, and then, when it gets to the last tag, retrieve the deployment file as of its tags and apply it. This works in reverse, as well, as long as the changes in this file are always <a href="http://en.wikipedia.org/wiki/Idempotence">idempotent</a>.</p>
+<p>This example is derived from a Git log history. Note that the &quot;add_widget&quot; step is repeated under the state tagged &quot;beta&quot; and under the last state. Sqitch will notice the repetition when it parses this file, and then, if it is applying all changes, will fetch the version of the file as of the &quot;beta&quot; tag and apply it at that step, and then, when it gets to the last tag, retrieve the deployment file as of its tags and apply it. This works in reverse, as well, as long as the changes in this file are always <a href="https://en.wikipedia.org/wiki/Idempotence">idempotent</a>.</p>
 
 <h4 id="Grammar">Grammar</h4>
 
@@ -771,6 +771,6 @@ string      = ? non-EOL characters ? ;</code></pre>
 <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-draft.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-draft.html">old layout</a>.</small></p>
 
 

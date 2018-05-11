@@ -18,6 +18,6 @@ tags: [databases, SQL On Rails, April Fool’s Day]
 
 <p>Hope this helps other folks out!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqlonrails_macosx.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqlonrails_macosx.html">old layout</a>.</small></p>
 
 

@@ -72,6 +72,6 @@ tags: [Sqitch]
 
 <p>So, what do you think? Are these worthwhile changes to make now? I’m reasonably convinced that they are, but I hate operating in a vacuum, and have received great feedback to my proposals in the past. So I welcome your feedback now.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-user-info.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-user-info.html">old layout</a>.</small></p>
 
 

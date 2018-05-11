@@ -180,6 +180,6 @@ too). I'm just curious what other approaches folks have taken to database
 change management. Let me know.</p>
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/change-management.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/change-management.html">old layout</a>.</small></p>
 
 

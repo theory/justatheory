@@ -18,6 +18,6 @@ tags: [Politics, George W. Bush, John Kerry, President, elections, Howard Finema
 
 <p>I am so sick of this hypocrisy! I keep telling people, I <em>can't wait</em> to be disappointed in Kerry's presidency, as I was with Clinton's. I'll take disappointment over being offended by the President and his apologists any day!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/politics/election_2004/fineman_analysis.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/fineman_analysis.html">old layout</a>.</small></p>
 
 

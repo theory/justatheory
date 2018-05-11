@@ -17,6 +17,6 @@ learn more about PL/pgSQL along the way.</p>
 <p>So what are you waiting for? <a href="http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html"
 title="Ready &#x201c;Managing Many-to-Many Relationships with PL/pgSQL&#x201d;">Check it out</a>!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/many_to_many_plpgsql.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/many_to_many_plpgsql.html">old layout</a>.</small></p>
 
 

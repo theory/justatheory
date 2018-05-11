@@ -335,7 +335,7 @@ simply modify the deploy script in-place.</li>
 </ul>
 
 
-<p>That’s about it. The <a href="http://en.wikipedia.org/wiki/Idempotence">idempotence</a>
+<p>That’s about it. The <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a>
 of the deploy script is important for ensuring consistency, and applies very
 well to features such as
 <a href="http://www.postgresql.org/docs/current/static/xfunc.html">user-defined functions</a>.
@@ -350,6 +350,6 @@ going to write an app to do this stuff, and want to get it <em>right</em>.</p>
 <p>Thanks for sticking with me through all the thought experiments. For my next
 post on this topic, I expect to have an interface spec for the new app.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sql-change-management-sans-redundancy.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sql-change-management-sans-redundancy.html">old layout</a>.</small></p>
 
 

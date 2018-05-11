@@ -77,6 +77,6 @@ tags: [iOS, TestFlight, SDK, beta, shipping, Xcode, HOWTO]
 
 <p>Now, when you build or archive with the "Beta" target, the TestFlight SDK will be included and log sessions. But when you build with the "Release" target, TestFlight will neither be bundled or referenced in the app. You can include it anywhere, though, and use any of its features, as long as you do so only within a <code>#ifdef CONFIGURATION_Beta</code> block. Check out the <a href="https://testflightapp.com/sdk/doc/">complete SDK docs</a> for details. Then, get your beta on!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/os/ios/integrate-testflight-sdk.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/ios/integrate-testflight-sdk.html">old layout</a>.</small></p>
 
 

@@ -9,7 +9,7 @@ tags: [Programming, duck typing, fuck typing, Vinnie Goombatz]
 <p>chromatic's <a href="http://www.modernperlbooks.com/mt/2009/04/the-why-of-perl-roles.html" title="Modern Perl Books: “The Why of Perl Roles”">post on Perl Roles</a>
 reminded me that I've wanted for some time to blog about another kind of
 composition. I call it “fuck typing.” It's kind of
-like <a href="http://en.wikipedia.org/wiki/Duck_typing" title="Wikipedia: “Duck Typing”">duck typing</a>, only not really. I would
+like <a href="https://en.wikipedia.org/wiki/Duck_typing" title="Wikipedia: “Duck Typing”">duck typing</a>, only not really. I would
 explain, but I think that my good friend, Mr. Vinnie Goombatz, will do a much
 better job. Although if you're squeamish or easily offended, you might want to
 skip it.</p>
@@ -42,6 +42,6 @@ skip it.</p>
 some <a href="http://www.juixe.com/techknow/index.php/2007/01/17/reopening-ruby-classes-2/" title="Reopening Ruby Classes">communities</a>. Oh, well, there are all kinds,
 I guess.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/methodology/fuck-typing.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/methodology/fuck-typing.html">old layout</a>.</small></p>
 
 

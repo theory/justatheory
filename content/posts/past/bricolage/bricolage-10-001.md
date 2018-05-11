@@ -17,6 +17,6 @@ Files=1, Tests=10001, 247 wallclock secs (110.30 cusr +  8.90 csys = 119.20 CPU)
 
 <p>How 'bout <em>them</em> apples?</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/bricolage/10_001.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/10_001.html">old layout</a>.</small></p>
 
 

@@ -55,6 +55,6 @@ right. “Returns” implies that I would be passing a query and a data structur
   <li><code>row_is()</code>, although I have no idea how I'd be able to support passing a row expression to a function, since PostgreSQL doesn't allow <code>RECORD</code>s to be passed to functions.</li>
 </ul>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/result-testing-function-names.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/result-testing-function-names.html">old layout</a>.</small></p>
 
 

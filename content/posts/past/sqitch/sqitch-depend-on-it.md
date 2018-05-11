@@ -59,6 +59,6 @@ sqitch revert HEAD^3
 
 <p>Or just give it a try! You can install it from CPAN with <code>cpan App::Sqitch</code>. Read <a href="https://metacpan.org/module/sqitchtutorial">the tutorial</a> for an overview of what Sqitch is and how it works. Thanks!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-depend-on-it.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-depend-on-it.html">old layout</a>.</small></p>
 
 

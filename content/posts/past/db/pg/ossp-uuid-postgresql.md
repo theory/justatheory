@@ -58,6 +58,6 @@ be out of the way of your APR build (assuming you
 delete <code>/usr/local/include/uuid.h</code>
 or <code>/usr/include/uuid.h</code>).</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/postgresql/ossp-uuid-postgresql.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/ossp-uuid-postgresql.html">old layout</a>.</small></p>
 
 

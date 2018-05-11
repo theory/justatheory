@@ -63,6 +63,6 @@ on 2012-07-07 at 1:26 PM
 
 <p>I’m pretty happy with this. Not sure how much it will be used, but it works great!</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/databases/sqitch-log.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-log.html">old layout</a>.</small></p>
 
 

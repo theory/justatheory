@@ -32,6 +32,6 @@ released to CPAN. My <a href="http://search.cpan.org/dist/MasonX-Interp-WithCall
 module will debut with a new <code>Apache::TestMB</code>-powered <em>Build.PL</em>
 soon afterward.</p>
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/mod_perl/apache_testmb.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/mod_perl/apache_testmb.html">old layout</a>.</small></p>
 
 

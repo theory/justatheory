@@ -75,7 +75,7 @@ execution of the code reference.</p>
 
 <p>And finally, thanks to some pushback from mst,
 <a href="http://rabbit.us/">ribasushi</a>, and others, I added
-<a href="http://en.wikipedia.org/wiki/Savepoint" title="Wikipedia: “Savepoint”">savepoint</a> support. It's a little different than that provided
+<a href="https://en.wikipedia.org/wiki/Savepoint" title="Wikipedia: “Savepoint”">savepoint</a> support. It's a little different than that provided
 by DBIx::Class; instead of relying on a magical <code>auto_savepoint</code>
 attribute that subtly changes the behavior of <code>txn_do()</code>, you just
 use the <code>svp_do()</code> method from within <code>txn_do()</code>. The
@@ -128,6 +128,6 @@ views with it. More on that soon.</p>
 
 
 
-<p class="past"><small>Missing something? Try the <a rel="nofollow" href="http://past.justatheory.com/computers/programming/perl/modules/dbix-connector.html">old layout</a>.</small></p>
+<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/dbix-connector.html">old layout</a>.</small></p>
 
 

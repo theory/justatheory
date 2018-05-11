@@ -6,9 +6,10 @@ aliases: [/travel/france/2013/more-sun.html]
 tags: [France, travel, summer, Arles, Provence]
 ---
 
-<div class="box" style="float:none"><a href="https://www.flickr.com/photos/decar66/8583754790/" title="Arles from the Arena"><img style="float:none" src="https://farm9.staticflickr.com/8102/8583754790_3297ccf5f7_c.jpg" alt="Arles from the Arena" /></a>
-<p class="caption" style="text-align:left !important">Arles from the Arena by <a href="https://www.flickr.com/photos/decar66/">Salva Barbera</a> (<a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)</p>
-</div>
+<figure>
+    <a href="https://www.flickr.com/photos/decar66/8583754790/" title="Arles from the Arena"><img src="https://farm9.staticflickr.com/8102/8583754790_3297ccf5f7_c.jpg" alt="Arles from the Arena" /></a>
+    <figcaption>Arles from the Arena by <a href="https://www.flickr.com/photos/decar66/">Salva Barbera</a> (<a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)</figcaption>
+</figure>
 
 <p>We spent seven weeks last summer <a href="http://www.justatheory.com/travel/france/2012/a-rouen.html">in Northern France</a>. Man it was an awesome time. None of us wanted to leave! Well, almost true. The thing about Normandy is that the weather is very much like Portland—except that <a href="http://www.urbandictionary.com/define.php?term=Juneuary">Juneuary</a> lasts through July and August. We were so desperate for sun that we spent a week <a href="https://www.flickr.com/photos/theory/sets/72157630781097042/">in Barcelona</a>.</p>
 
@@ -17,5 +18,3 @@ tags: [France, travel, summer, Arles, Provence]
 <p>We can’t wait.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2013/more-sun.html">old layout</a>.</small></p>
-
-

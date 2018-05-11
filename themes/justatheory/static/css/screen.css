@@ -158,11 +158,6 @@ menu, nav, section, summary {
     display: block
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup,
-menu, nav, section, summary {
-    display: block
-}
-
 a {
     color: #c00;
     text-decoration: none
@@ -183,10 +178,6 @@ a:hover {
 
 figure a:hover {
     text-decoration: none !important;
-}
-
-figure a:hover img {
-    background-color: #fcc
 }
 
 a:active {
@@ -582,6 +573,32 @@ article .footnotes li {
     margin-bottom: 1em;
 }
 
+figure {
+    background-color: #2d2d2d;
+    padding: 1rem 1rem 0 1rem;
+}
+
+figure img {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+figure a {
+    margin:0;
+}
+
+figcaption {
+    font-size: 80%;
+    text-align: left;
+    color: #ccc;
+    padding-bottom: 1rem;
+}
+
+figcaption > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 table, article img {
     max-width: 100%;
     height: auto
@@ -589,22 +606,27 @@ table, article img {
 
 table.left, article figure.left, article a.left, article img.left, article video.left {
     float: left;
-    margin-right: 1.5em
+    margin-right: 1em
 }
 
 table.right, article figure.right, article a.right, article img.right, article video.right {
     float: right;
-    margin-left: 1.5em
+    margin-left: 1em
 }
 
 table.center, article figure, article figure.center, article a.center, article img.center, article video.center {
     display: block;
-    margin: 0 auto 1.5em
+    margin: 0 auto 1em;
+}
+
+figure.center, figure img, p img {
+    width: 100%;
 }
 
 table.left,  article figure.left,  article a.left,  article img.left, article video.left,
 table.right, article figure.right, article a.right, article img.right, article video.right {
-    margin-bottom: .8em
+    margin-bottom: .8em;
+    max-width: 40%;
 }
 
 dl {
@@ -616,18 +638,7 @@ dt {
 }
 
 table {
-    -webkit-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;
-    -ms-border-radius: 0.3em;
-    -o-border-radius: 0.3em;
-    border-radius: 0.3em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 2px 10px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 2px 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: #aaa 1px solid;
+    /* border: #aaa 1px solid; */
     padding: .25em .25em;
     background-color: #eaeaea;
     margin-bottom: 1.2em
@@ -643,9 +654,10 @@ table thead {
 }
 
 table th, table td {
+    vertical-align: top;
     padding: .25em .5em;
-    border-left: 1px solid #eee;
-    border-bottom: 1px solid #eee
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd
 }
 
 body > header h1.bug {
@@ -737,6 +749,7 @@ article > footer {
 }
 
 p.past {
+    clear: both;
     color: #888;
     padding: .3rem 1rem;
     background-color: #eee;
@@ -758,23 +771,6 @@ article > footer .meta {
     font-size: .85em;
     clear: both;
     overflow: hidden
-}
-
-article img, article video {
-    -webkit-border-radius: 0.3em;
-    -moz-border-radius: 0.3em;
-    -ms-border-radius: 0.3em;
-    -o-border-radius: 0.3em;
-    border-radius: 0.3em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 2px 10px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 2px 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: #aaa 1px solid;
-    padding: .25em;
-    background-color: #fff
 }
 
 article video {

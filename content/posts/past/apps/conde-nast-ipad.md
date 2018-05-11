@@ -7,17 +7,18 @@ aliases: [/computers/apps/conde-nast-ipad.html]
 tags: [Condé Nast, The New Yorker, Vogue, iPad, Retina Display, Suck]
 ---
 
+
 <p>I've been a <a href="http://www.newyorker.com/"><em>The New Yorker</em></a> reader for nearly two decades. I'm a huge fan of the magazine, which in my humble has the best reportage anywhere. So I was thrilled last year when the magazine's publisher, <a href="http://www.condenast.com/">Condé Nast</a>, decided to make all issues available to paper subscribers for no extra charge. Ever since, I have loved getting the latest issue late on Sunday nights, rather than on the following Friday or Saturday. It has also made it easier for <a href="http://blog.strongrrl.com/">Strongrrl</a> and me to share the magazine: I usually read the iPad version and she reads the paper version.</p>
 
 <p>That's not to say that it has all been happiness and joy, mind. <em>The New Yorker</em> app is terrible. Issues are <em>huge</em> (typically around 120 MB). Downloads cannot be performed in the background (except by Newsstand, which may not notice a new issue for days). You can't even read other issues while waiting for one to download; the download pauses. Sometimes I have difficulty getting it to start downloading again. And the navigation, while unique and kind of interesting, really does not work for me.</p>
 
 <p>Still, I was excited to try it on the new iPad's retina display. Well, "excited" is not quite the right word. More like "dreading." Because Condé iPad magazines actually use images for most of their articles, rather than text. The underlying technology is the charmingly named <a href="http://www.adobe.com/products/digital-publishing-suite-family.html">Adobe Digital Publishing Suite family</a>, which, at root, is basically an image reader. Way back in September, 2010, <a href="http://allthingsd.com/20100928/conde-nasts-ipad-apps-are-too-portly-blame-adobe/">Condé told All Things D</a>: "The goal is to be all HTML, and we will be." Alas, that day has yet to come, as I confirmed when I loaded the latest issue of <em>The New Yorker</em> on my new iPad and immediately saw fuzzy text. Sure, the text-based articles, such as the comment, display beautifully. But longer articles, which are carefully laid out and rendered as images, do not. They look worse than on the old iPad, because the anti-aliasing is even easier to see.</p>
 
-<div class="box">
+<figure>
 <a href="https://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/" title="The New Yorker on the 1st gen iPad"><img src="https://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg" alt="The New Yorker on the 1st gen iPad" /></a>
 <a href="https://www.flickr.com/photos/theory/7007813821/sizes/o/in/set-72157629648560359/" alt="The New Yorker on the 3rd gen iPad with retina display"><img src="https://farm8.staticflickr.com/7110/7007813821_6293e374eb_z.jpg" alt="The New Yorker on the 3rd gen iPad with retina display" /></a>
-<p class="caption">Text content from <em>The New Yorker</em> on the first generation iPad (top) and the third generation iPad with retina display (bottom). Looks great because it's text. Click for larger images.</p>
-</div>
+<figcaption><p>Text content from <em>The New Yorker</em> on the first generation iPad (top) and the third generation iPad with retina display (bottom). Looks great because it's text. Click for larger images.</p></figcaption>
+</figure>
 
 <p>I <a href="https://twitter.com/#!/theory/status/180846743775232000">complained</a> about this on Twitter, <a href="https://twitter.com/#!/blam/status/180856508479848448">Brian Lam chimed in</a>, and <a href="https://twitter.com/sdadich">Scott Dadich</a>, Condé's Vice President of Content Innovation, was kind enough to respond:</p>
 
@@ -27,14 +28,14 @@ tags: [Condé Nast, The New Yorker, Vogue, iPad, Retina Display, Suck]
 
 <p>I suspect that the reality of the overlap of <em>The New Yorker</em> and <em>Vogue</em> readers resembles the Venn diagram to the right. But I want to see <em>The New Yorker</em> rock on the iPad, so I put aside some time to download the new <em>Vogue</em> app and take it for a spin.</p>
 
-<p><img src="https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png" style="width:307pt" alt="The New Yorker &amp; Condé Nast Venn Diagram" title=" The New Yorker &amp; Condé Nast Venn Diagram" /></p>
+<figure class="right" style="background-color:#fff"><img src="https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png" style="width:307pt;" alt="The New Yorker &amp; Condé Nast Venn Diagram" title=" The New Yorker &amp; Condé Nast Venn Diagram" /></figure>
 
 <p>First, the good news. I got a free month's subscription and downloaded the latest issue of <em>Vogue</em>, which does indeed have hi-res images. The articles look great. Ads are still low-res, but some might consider that a feature (not, I daresay, the advertisers). Alas, that's where the good news ends. Overall, this app is almost exactly like the <em>The New Yorker</em> app. I find this a little odd, since in print the magazines could not be much less different: <em>The New Yorker</em> is a slim, staple-bound, mostly-text weekly. <em>Vogue</em> is a phone book-sized perfect bound, glossy fashion magazine. Quite different beasts. Business-wise, I can understand why they would be the same: It's less expensive to have a single "media player" for all of your company's periodical properties, and the tablet form factor allows you to eliminate some of the differences. After all, bits don't weigh anything.</p>
 
-<div class="box">
+<figure>
 <a href="https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/"><img src="https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg" alt="Vogue on the new iPad" /></a>
-<p class="caption">Image content from <em>Vogue</em> on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image. Click for larger images.</p>
-</div>
+<figcaption>Image content from <em>Vogue</em> on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image. Click for larger images.</figcaption>
+</figure>
 
 <p>Except that they do. The <em>Vogue</em> April 2012 issue weighs in at a whopping 408 MB. A special "exclusive download" covering The Met Gala demands 530 MB of disk space. The latter I can kinda/sorta understand, as it contains a bunch of videos (all low-res text and image content, though). The fact that the new issue is so huge tells me that one of two things, or perhaps both, is going on here:</p>
 

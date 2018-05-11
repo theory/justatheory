@@ -6,7 +6,7 @@ aliases: [/travel/france/2008/musee-du-quai-branly.html]
 tags: [France, photography, Paris, Musée Du Quai Branly]
 ---
 
-<a href="https://www.flickr.com/photos/theory/sets/72157615217912698/"><img src="https://farm4.static.flickr.com/3653/3352365419_b20debecd3.jpg" alt="Musée du quai Branly" /></a>
+<a href="https://www.flickr.com/photos/theory/sets/72157615217912698/"><img src="https://farm4.static.flickr.com/3653/3352365419_b20debecd3.jpg" alt="Musée du quai Branly" class="center" /></a>
 
 <p>I’ve just <a href="https://www.flickr.com/photos/theory/sets/72157615217912698/" title="Musée du quai Branly">posted</a>
 a new set of photos from our trip to

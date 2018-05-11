@@ -10,7 +10,7 @@ tags: [France, Rouen, Paris, Anna]
 
 <p>It seems that quite a bit of time went by since my last blog entry before the server downtime. I hadn't realized. Since then, I've posted a bunch more photos from our trip to France. First up, I posted photos from our Christmas in Rouen. Anna was especially happy with the dangly earrings. Click the photo to see the complete set.</p>
 
-<a href="https://www.flickr.com/photos/theory/sets/72157612369764118/" title="Notre Dame de Paris"><img src="https://farm4.static.flickr.com/3377/3183440970_846dbd4454_m.jpg" alt="Rose Window" /></a>
+<a href="https://www.flickr.com/photos/theory/sets/72157612369764118/" title="Notre Dame de Paris"><img src="https://farm4.static.flickr.com/3377/3183440970_846dbd4454_m.jpg" alt="Rose Window" class="right" /></a>
 
 <p>Then I went back in time a bit and posted photos from our second stay in Paris. First up was a set from Notre Dame de Paris. I was fortunate to be there on a cloudy day, so that the light coming in the stained glass windows didn't overwhelm the interior light, so that you can actually see some of the interior. I'm especially proud of this photo, it just came together perfectly. Click for the complete set.</p>
 
@@ -18,7 +18,7 @@ tags: [France, Rouen, Paris, Anna]
 
 <p>The day after Notre Dame, Anna and I went to <a href="http://www.cite-sciences.fr/" title="Sciences - D&eacute;couvrez la science &agrave; la Cit&eacute; des&nbsp;Sciences et de l'Industrie&nbsp;&agrave; Paris">Cité des sciences &amp; de l’industrie</a>, a fantastic science and industry museum, featuring <a href="http://www.cite-sciences.fr/francais/ala_cite/expositions/cite-des-enfants/" title="Cit&eacute; des Enfants — Jeux et animations pour les enfants">Cité des Enfants</a>, a hands-on children's museum with interactive, hands-on exhibits. Anna loved it so much that she wanted to go back, which we did in January. Maybe I'll get to <em>those</em> photos sometime in March. ;-)</p>
 
-<a href="https://www.flickr.com/photos/theory/sets/72157612692473962/" title="Centre Georges Pompidou"><img src="https://farm4.static.flickr.com/3395/3205258896_caa9381ece_m.jpg" alt="L’Amour (les Lèvres), Fontaine Stravinsky" /></a>
+<a href="https://www.flickr.com/photos/theory/sets/72157612692473962/" title="Centre Georges Pompidou"><img src="https://farm4.static.flickr.com/3395/3205258896_caa9381ece_m.jpg" alt="L’Amour (les Lèvres), Fontaine Stravinsky" class="right" /></a>
 
 <p>And finally, there are these shots from Centre Georges Pompidou. It was rainy and wet when we were there (immediately after Notre Dame, in fact), but the weather kind of lended itself to the mood at La Fontaine Stravinsky. And of course, I have more photos of Anna playing in the children's exhibit there.</p>
 

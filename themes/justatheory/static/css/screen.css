@@ -667,7 +667,7 @@ body > header h1 a, body > header h1 a:link, body > header h1 a:visited, body > 
 body > header h2 {
     color: #ccc !important;
     margin-bottom: 0;
-    font-weight: bold
+    font-weight: 200;
 }
 
 body > header h2 a, body > header h2 a:visited {

@@ -11,9 +11,9 @@ simplify the specification of databases to update --- especially when stored as
 named targets in the configuration file.
 
 Before implementing it, though, I started casting about for a standard
-[URI Scheme] for database connections. Imagine my surprise[^1] to find that
-there is none! The closest thing to a standard is [JDBC URLs]. Formally, their
-format is simply:
+[URI Scheme] for database connections. Imagine my surprise[^db-uri:surprise] to
+find that there is none! The closest thing to a standard is [JDBC URLs].
+Formally, their format is simply:
 
 ``` html
 jdbc:<jdbc-specific-stuff>
@@ -30,7 +30,7 @@ jdbc:<subprotocol>:<subname>
 The "subprotocol" is simply a driver name, while the the format of the "subname
 can vary, depending on the subprotocol, and it can have any internal syntax the
 driver writer chooses, including a subsubname." In other words, it can be
-anything at all. Not very satisfying, or particularly "standard."[^2]
+anything at all. Not very satisfying, or particularly "standard."[^db-uri:dsn]
 
 In poking around the net, however, I found a fair number of database URI
 formats defined by various projects:
@@ -200,8 +200,8 @@ The [uri-db project] is the canonical home for the proposal for now, so check
 there for updates. And your feedback would be appreciated! What other issues
 have I overlooked? What have I got wrong? Let me know!
 
-[^1]: As in not surprised at all. Though I was hoping!
-[^2]: DSNs for Perl's [DBI](https://metacpan.org/module/DBI "MetaCPAN: DBI") aren't much better: `dbi:<driver>:<driver-specific-stuff>`.
+[^db-uri:surprise]: As in not surprised at all. Though I was hoping!
+[^db-uri:dsn]: DSNs for Perl's [DBI](https://metacpan.org/module/DBI "MetaCPAN: DBI") aren't much better: `dbi:<driver>:<driver-specific-stuff>`.
 
 [Sqitch]: http://sqitch.org/ "Sane database change management"
 [specifying deployment targets via URIs]: https://github.com/theory/sqitch/issues/100 "Issue #100: “Add target command to configure target databases”"

@@ -19,7 +19,7 @@ if (my $err = $@) {
 
 The use of the `if` block is a bit unfortunate; worse is the use of the global
 `$@` variable, which has inflicted unwarranted pain on developers over the
-years[^1]. Many Perl hackers put [Try::Tiny] to work to circumvent these
+years[^try-fix]. Many Perl hackers put [Try::Tiny] to work to circumvent these
 shortcomings:
 
 ``` perl
@@ -122,7 +122,7 @@ objects and an official `try`/`catch` syntax.
 
 <!-- notes -->
 
-[^1]: In fairness much of the `$@` pain has been addressed [in Perl 5.14].
+[^try-fix]: In fairness much of the `$@` pain has been addressed [in Perl 5.14].
 [Try::Tiny]: https://metacpan.org/module/Try::Tiny
 [checking return values]: http://stackoverflow.com/a/10366209/79202
 [Exception::Class]: https://metacpan.org/module/Exception::Class

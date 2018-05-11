@@ -14,7 +14,7 @@ These days, [gettext] is far and away the most widely-used localization
 ([l10n]) and internationalization ([i18n]) library for open-source software. So
 far, it has not been widely used in the Perl community, even though it's the
 most flexible, capable, and easy-to use solution, thanks to
-[Locale::TextDomain].[^1] How easy? Let's get started!
+[Locale::TextDomain].[^1l10n:maketext] How easy? Let's get started!
 
 ### Module Internationale ###
 
@@ -203,7 +203,7 @@ Let's give it something to do!
 
 ### Locale Motion ###
 
-To add a French translation file, use the [`msg-init`] command[^2]:
+To add a French translation file, use the [`msg-init`] command[^l10n:gettext]:
 
 ``` sh
 % dzil msg-init fr
@@ -353,9 +353,9 @@ are just a few habits to get into:
 
 The [Dist::Zilla::LocaleTextDomain] plugin will do the rest.
 
-[^1]: What about [Locale::Maketext](https://metacpan.org/module/Locale::Maketext), you ask? It has not, alas, withsthood the test of time. For details, see Nikolai Prokoschenko's epic 2009 polemic, "[On the state of i18n in Perl](http://rassie.org/archives/247)." See also Steffen Winkler's presentation, [Internationalisierungs-Framework auswählen](http://download.steffen-winkler.de/dpws2010/I18N_STEFFENW.pod) (and the [English translation](https://gist.github.com/ap/909197) by [Aristotle Pagaltzis](http://blogs.perl.org/users/aristotle/2011/04/stop-using-maketext.html)), from [German Perl Workshop 2010](http://conferences.yapceurope.org/gpw2010/).
+[^1l10n:maketext]: What about [Locale::Maketext](https://metacpan.org/module/Locale::Maketext), you ask? It has not, alas, withsthood the test of time. For details, see Nikolai Prokoschenko's epic 2009 polemic, "[On the state of i18n in Perl](http://rassie.org/archives/247)." See also Steffen Winkler's presentation, [Internationalisierungs-Framework auswählen](http://download.steffen-winkler.de/dpws2010/I18N_STEFFENW.pod) (and the [English translation](https://gist.github.com/ap/909197) by [Aristotle Pagaltzis](http://blogs.perl.org/users/aristotle/2011/04/stop-using-maketext.html)), from [German Perl Workshop 2010](http://conferences.yapceurope.org/gpw2010/).
 
-[^2]: The `msg-init` function --- like all of the `dzil msg-*` commands -- uses the [GNU gettext](https://www.gnu.org/software/gettext/) utilities under the hood. You'll need a reasonably modern version in your path, or else it won't work.
+[^l10n:gettext]: The `msg-init` function --- like all of the `dzil msg-*` commands -- uses the [GNU gettext](https://www.gnu.org/software/gettext/) utilities under the hood. You'll need a reasonably modern version in your path, or else it won't work.
 
 [gettext]: http://en.wikipedia.org/wiki/Gettext "Wikipedia: “gettext”"
 [l10n]: http://en.wikipedia.org/wiki/Language_localisation "Wikipedia: “Localization”"

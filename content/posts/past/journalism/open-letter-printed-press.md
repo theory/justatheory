@@ -14,7 +14,7 @@ tags: [Journalism, publishing, periodicals, Newspapers, iPad, tablets, jobs to b
 
 <p>Now, tell me, where in this characterization do you see any mention of forests of paper, barrels of inks, and warehouses of printing presses?</p>
 
-<p>The printed press has struggled with the change to internet distribution over the last 15 years with very good reason: It’s difficult to make money. It didn’t help that so many of them gave away their content. But that change is nothing compared to the revolution that is the tablet computer, and especially the new iPad. This is a device you can take <em>anywhere,</em> and unlike your phone, is a pleasure to <em>read.</em> It’s as easy to take with you as a newspaper or magazine, but offers so much more. It’s here to stay. And it’s going to kill the printing press.<a href="#fn:niche" id="fnref:niche" class="footnote">1</a></p>
+<p>The printed press has struggled with the change to internet distribution over the last 15 years with very good reason: It’s difficult to make money. It didn’t help that so many of them gave away their content. But that change is nothing compared to the revolution that is the tablet computer, and especially the new iPad. This is a device you can take <em>anywhere,</em> and unlike your phone, is a pleasure to <em>read.</em> It’s as easy to take with you as a newspaper or magazine, but offers so much more. It’s here to stay. And it’s going to kill the printing press.<sup class="footnote-ref" id="pressref:niche"><a href="#press:niche">1</a></p>
 
 <p>Some disagree. An iPad does not offer the same pleasures as a newspaper: the texture of the pages, the scanability of the front page, the smell of the ink and the smudges it leaves on your fingers. No, there is nothing like a Sunday <em>Times,</em> a bagel, and a cup of coffee to laze away the morning. And when you’re done with the paper, the way it’s strewn about, the poorly refolded pages and crumpled edges of the most interesting sections offer satisfying remains of the experience. And then you recycle it.</p>
 
@@ -32,7 +32,7 @@ tags: [Journalism, publishing, periodicals, Newspapers, iPad, tablets, jobs to b
 <hr />
 <ol>
 
-<li id="fn:niche"><p>Okay, not kill it, exactly, but turn printing into a niche business, suitable for coffee table books, wedding invitations and book arts.<a href="#fnref:niche" class="reversefootnote">&#160;&#8617;</a></p></li>
+<li id="letter:niche"><p>Okay, not kill it, exactly, but turn printing into a niche business, suitable for coffee table books, wedding invitations and book arts.<a href="#pressref:niche" class="reversefootnote">&#160;&#8617;</a></p></li>
 
 </ol>
 </div>

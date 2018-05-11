@@ -46,7 +46,7 @@ tags: [Medium, publishing, blogging]
 
 <p>The point is, just as App Store developers can choose to sell their apps, release them with ads or in-app purchase options, or make them free, perhaps Medium editors could choose whether their collections include ads, require subscription payments, or are free. It’s the App Store Publishing model.</p>
 
-<p>Again, this is purely speculation, but I'd love it if something like this was in the works, because I can imagine no other viable model that doesn’t sell users to advertisers and turn editors into digital sharecroppers<a href="#fn:1" id="fnref:1" class="footnote">1</a>. And god knows the traditional topical publishers are in deep trouble. If Medium empowers the people who edit great collections to get revenue the way they want, then everyone wins.</p>
+<p>Again, this is purely speculation, but I'd love it if something like this was in the works, because I can imagine no other viable model that doesn’t sell users to advertisers and turn editors into digital sharecroppers<sup class="footnote-ref" id="mediumref:duncan"><a href="#medium:duncan">1</a>. And god knows the traditional topical publishers are in deep trouble. If Medium empowers the people who edit great collections to get revenue the way they want, then everyone wins.</p>
 
 <p>And if Medium does not plan to do this, well then <em>someone</em> should.</p>
 
@@ -54,7 +54,7 @@ tags: [Medium, publishing, blogging]
 <hr />
 <ol>
 
-<li id="fn:1"><p>Thanks to <a href="http://duncandavidson.com/">Duncan Davidson</a> for this term, which perfectly encapsulates the problem in a single word.<a href="#fnref:1" class="reversefootnote">&#160;&#8617;</a></p></li>
+<li id="medium:duncan"><p>Thanks to <a href="http://duncandavidson.com/">Duncan Davidson</a> for this term, which perfectly encapsulates the problem in a single word.<a href="#mediumref:duncan" class="reversefootnote">&#160;&#8617;</a></p></li>
 
 </ol>
 </div>

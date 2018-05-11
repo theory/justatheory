@@ -31,23 +31,7 @@ table {
 
 /* Configure Source Sans Pro and Source Sans Pro fonts. */
 @font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-blk.woff2') format('woff2'),
-         url('/fonts/srccode-blk.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-blkit.woff2') format('woff2'),
-         url('/fonts/srccode-blkit.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SourceCode';
+    font-family: 'Source Code Pro';
     src: url('/fonts/srccode-bld.woff2') format('woff2'),
          url('/fonts/srccode-bld.woff') format('woff');
     font-weight: bold;
@@ -55,7 +39,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceCode';
+    font-family: 'Source Code Pro';
     src: url('/fonts/srccode-bldit.woff2') format('woff2'),
          url('/fonts/srccode-bldit.woff') format('woff');
     font-weight: bold;
@@ -63,23 +47,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-xlt.woff2') format('woff2'),
-         url('/fonts/srccode-xlt.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-xltit.woff2') format('woff2'),
-         url('/fonts/srccode-xltit.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SourceCode';
+    font-family: 'Source Code Pro';
     src: url('/fonts/srccode-it.woff2') format('woff2'),
          url('/fonts/srccode-it.woff') format('woff');
     font-weight: normal;
@@ -87,39 +55,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-lt.woff2') format('woff2'),
-         url('/fonts/srccode-lt.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-ltit.woff2') format('woff2'),
-         url('/fonts/srccode-ltit.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-med.woff2') format('woff2'),
-         url('/fonts/srccode-med.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-medit.woff2') format('woff2'),
-         url('/fonts/srccode-medit.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SourceCode';
+    font-family: 'Source Code Pro';
     src: url('/fonts/srccode-reg.woff2') format('woff2'),
          url('/fonts/srccode-reg.woff') format('woff');
     font-weight: normal;
@@ -127,39 +63,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-sbld.woff2') format('woff2'),
-         url('/fonts/srccode-sbld.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceCode';
-    src: url('/fonts/srccode-sbldit.woff2') format('woff2'),
-         url('/fonts/srccode-sbldit.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SourceSans';
-    src: url('/fonts/srcsans-blk.woff2') format('woff2'),
-         url('/fonts/srcsans-blk.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceSans';
-    src: url('/fonts/srcsans-blkit.woff2') format('woff2'),
-         url('/fonts/srcsans-blkit.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SourceSans';
+    font-family: 'Source Sans Pro';
     src: url('/fonts/srcsans-bld.woff2') format('woff2'),
          url('/fonts/srcsans-bld.woff') format('woff');
     font-weight: bold;
@@ -167,7 +71,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceSans';
+    font-family: 'Source Sans Pro';
     src: url('/fonts/srcsans-bldit.woff2') format('woff2'),
          url('/fonts/srcsans-bldit.woff') format('woff');
     font-weight: bold;
@@ -175,23 +79,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceSans';
-    src: url('/fonts/srcsans-xlt.woff2') format('woff2'),
-         url('/fonts/srcsans-xlt.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceSans';
-    src: url('/fonts/srcsans-xltit.woff2') format('woff2'),
-         url('/fonts/srcsans-xltit.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'SourceSans';
+    font-family: 'Source Sans Pro';
     src: url('/fonts/srcsans-it.woff2') format('woff2'),
          url('/fonts/srcsans-it.woff') format('woff');
     font-weight: normal;
@@ -199,7 +87,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceSans';
+    font-family: 'Source Sans Pro';
     src: url('/fonts/srcsans-lt.woff2') format('woff2'),
          url('/fonts/srcsans-lt.woff') format('woff');
     font-weight: 200;
@@ -207,7 +95,7 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceSans';
+    font-family: 'Source Sans Pro';
     src: url('/fonts/srcsans-ltit.woff2') format('woff2'),
          url('/fonts/srcsans-ltit.woff') format('woff');
     font-weight: 200;
@@ -215,27 +103,11 @@ table {
 }
 
 @font-face {
-    font-family: 'SourceSans';
+    font-family: 'Source Sans Pro';
     src: url('/fonts/srcsans-reg.woff2') format('woff2'),
          url('/fonts/srcsans-reg.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceSans';
-    src: url('/fonts/srcsans-sbld.woff2') format('woff2'),
-         url('/fonts/srcsans-sbld.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SourceSans';
-    src: url('/fonts/srcsans-sbldit.woff2') format('woff2'),
-         url('/fonts/srcsans-sbldit.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
 }
 
 @font-face {
@@ -324,7 +196,7 @@ a:active {
 html {
     height: 100%;
     background: #fff;
-    font-family: "SourceSans", "Helvetica", sans-serif
+    font-family: "Source Sans Pro", "Helvetica", sans-serif
 }
 
 body > div {
@@ -332,15 +204,15 @@ body > div {
 }
 
 .heading, h1, h2, h3, h4, h5, h6 {
-    font-family: "SourceSans", "Proxima Nova", "Helvetica", sans-serif
+    font-family: "Source Sans Pro", "Proxima Nova", "Helvetica", sans-serif
 }
 
 body {
-    font-family: "SourceSans", "Helvetica", sans-serif
+    font-family: "Source Sans Pro", "Helvetica", sans-serif
 }
 
 .mono, pre, code, tt, p code, li code {
-    font-family: "SourceCode", "Courier", monospace
+    font-family: "Source Code Pro", "Courier", monospace
 }
 
 body {
@@ -424,16 +296,17 @@ h1 {
 }
 
 h1.link a:after {
-    color: #666;
-    font-size: 80%;
-    content: ' →' /* XXX use fontawesome external link icon */
+    color: #999;
+    font-family: FAS; /* XXX get light version? */
+    font-size: 40%;
+    content: " \f35d";
+    vertical-align: top;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 200 !important;
+    font-weight: 200;
     text-rendering: optimizelegibility;
     margin-bottom: .25em;
-    font-weight: 600;
     color: #111
 }
 
@@ -508,7 +381,7 @@ mark {
     background-color: transparent;
     font-weight: normal;
     font-style: italic;
-    font-family: "SourceSans", "Helvetica", sans-serif
+    font-family: "Source Sans Pro", "Helvetica", sans-serif
 }
 
 sup, sub {
@@ -793,7 +666,6 @@ body > header h1 a, body > header h1 a:link, body > header h1 a:visited, body > 
 
 body > header h2 {
     color: #ccc !important;
-    font-weight: bold;
     margin-bottom: 0;
     font-weight: bold
 }
@@ -937,7 +809,7 @@ p pre code, li pre code {
 }
 
 pre {
-    font-family: "SourceCode", "Courier", monospace !important;
+    font-family: "Source Code Pro", "Courier", monospace !important;
     overflow: scroll;
     overflow-y: hidden;
     display: block;
@@ -957,7 +829,7 @@ pre {
 
 #archive section > div > p {
     font-size: 90%;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 0;
 }
 

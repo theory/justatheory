@@ -4,7 +4,7 @@
 			<h1 class="title">{{ .Title }}</h1>
 		</header>
 		<div id="tags">
-			<p>Most {{ .Site.Title }} posts have been “tagged” with keywords. If you're interested in only a subset of posts, just use a tag page as your entry to {{ .Site.Title }}. You can even subscribe to a tag — just point your feed reader at it. Here are the top ten tags:</p>
+			<p>Most {{ .Site.Title }} posts have been “tagged” with keywords. If you’re interested in only a subset of posts, just read the relevant tag pages. You can even subscribe to a tag — just point your feed reader at it. Here are the top ten tags:</p>
 			<ul class="tags rec">
 				{{- $.Scratch.Set "limit" 0 }}
 				{{- range $key, $value := .Data.Terms.ByCount }}

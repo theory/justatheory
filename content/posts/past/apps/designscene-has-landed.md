@@ -39,9 +39,6 @@ tags: [DesignScene, design, iPad, Objective-C, Cocoa programming, MVC, Roger Won
 <li><a href="http://macmagazine.com.br/?p=125141" title="Precisando de inspiração? Você pode encontrá-la no seu iPad, com o DesignScene">MacMagazine</a> (Portuguese)</li>
 </ul>
 
-
 <p>And we’re not sitting still. I’m working through a short list of burrs and spurs that need to be polished off, and then moving on to some other great features we have planned. Stay tuned!</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/apps/designscene-has-landed.html">old layout</a>.</small></p>
-
-

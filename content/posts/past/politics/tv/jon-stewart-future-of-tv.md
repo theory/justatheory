@@ -8,8 +8,6 @@ tags: [Poltics, Jon Stewart, TV, Wired, Internet, Crossfire]
 
 <p><a href="http://www.wired.com/wired/archive/13.09/stewart.html" title="Reinventing Television">Jon Stewart and the Future of Television</a>.</p>
 
-<p>()Via <a href="http://radar.oreilly.com/nat/" title="Nat's Radar">gnat</a>)</p>
+<p>(Via <a href="http://radar.oreilly.com/nat/" title="Nat's Radar">gnat</a>)</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/tv/jon_stewart_future_of_tv.html">old layout</a>.</small></p>
-
-

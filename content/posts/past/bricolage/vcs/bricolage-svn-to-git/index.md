@@ -139,7 +139,7 @@ screen shot of the results and cancelled the merge. Then I just opened the
 screenshot in Preview, looked at the records there, then found them in GitX.
 This made things go quite a bit faster.</p>
 
-<img src="/computers/vcs/git/merges.gif" alt="Commits that mention merging in GitX" style="float: none" />
+<figure><img src="/2009/04/bricolage-svn-to-git/merges.gif" alt="Commits that mention merging in GitX" /></figure>
 
 <p>As a result, I added a migration function to properly tag merges. It looked
 like this:</p>
@@ -281,5 +281,3 @@ with the repository <a href="/computers/vcs/git/bricolage-cvs-to-git.html" title
 to put this sucker on GitHub! More on that in my next post.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/vcs/git/bricolage-svn-to-git.html">old layout</a>.</small></p>
-
-

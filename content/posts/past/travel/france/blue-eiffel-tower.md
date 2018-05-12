@@ -13,5 +13,3 @@ tags: [France, Eiffel Tower, photography]
 <p>Overall, I’m pretty happy with the results of this shoot. I shot all of the photos with my 50mm F/1.8 “Nifty Fifty,” just because I wanted the speed and sharpness that my 28-105mm zoom just can’t deliver. Shooting at F/1.8, I was able to get about 1/60 shutter speed most of the time, which allowed me to shoot the whole thing hand-held. But this was at the expense of some detail, I’m sure, not to mention sharpness. Next time, I’d like to have a tripod and a wide-angle prime lens. Alas, I’m not likely to acquire them during this visit. But maybe next time the Eiffel Tower will be red!</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/blue-eiffel-tower.html">old layout</a>.</small></p>
-
-

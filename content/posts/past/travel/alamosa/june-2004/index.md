@@ -18,7 +18,6 @@ situated in the largest valley in the world, I'm told. You can get any kind of
 food you want there, as long as it's Mexican food, and the high altitude
 (ca. 2300 m) makes the tequila work wonders on one's equilibrium.</p>
 
-
 <p>Mostly I just worked with our clients, but I did manage to take a couple of
 photos, but I did manage to get a couple of photographs with my <a
 href="https://www.amazon.com/exec/obidos/redirect?tag=justatheory-20&path=tg/detail/-/B00022NE6I/qid%3D1088445154/sr%3D8-4"
@@ -26,7 +25,6 @@ title="Buy the Nokia 6600 at Amazon.com">Nokia 6600</a>. The <q>cool</q> coffeeh
 href="http://www.lapuente.net/programs/milagros.htm" title="Milagro's
 Coffeehouse home page">Milagro's Coffeehouse</a>, but to judge by their sign,
 I wasn't sure I wanted what they were selling.</p>
-
 
 <img src="/2004/06/june-2004/prop_engine.jpg" alt="The flight home" class="left" />
 
@@ -39,5 +37,3 @@ my window, so I turned on my phone (bad David!) and snapped another shot.</p>
 able to get some more pictures; the sunsets are quite lovely there.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/alamosa/june_2004.html">old layout</a>.</small></p>
-
-

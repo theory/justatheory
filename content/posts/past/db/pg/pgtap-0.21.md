@@ -6,7 +6,7 @@ aliases: [/computers/databases/postgresql/pgtap-0.21.html]
 tags: [Postgres, pgTAP, testing, unit testing, TAP, PL/pgSQL, SQL]
 ---
 
-<a href="http://pgtap.org/" title="pgTAP: Unit Testing for PostgreSQL"><img src="http://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" /></a>
+<a href="http://pgtap.org/" title="pgTAP: Unit Testing for PostgreSQL"><img src="http://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" /></a>
 
 <p>I just dropped a new version of <a href="http://pgtap.org/" title="pgTAP: Unit Testing for PostgreSQL">pgTAP</a>, following a few marathon hack sessions since <a href="https://www.pgcon.org/2009/schedule/events/165.en.html" title="PGCon: “Unit Test Your Database!”">my talk at PGCon</a> (<a href="http://hosting3.epresence.tv/fosslc/1/watch/129.aspx" title="Unit Test Your Database—The Movie">movie here</a>, BTW). Actually, the new <a href="http://pgtap.org/documentation.html#`performs_ok+(+sql,+milliseconds,+description+)`" title="pgTAP Documentation: `performs_ok()`"><code>performs_ok()</code></a> function came about as I wrote the presentation, but all the rest came on the flight home and in the few days since. Not sure when I'll hack on it this much again (it's getting a bit big at 5,758 lines of PL/pgSQL and SQL).</p>
 
@@ -18,7 +18,4 @@ tags: [Postgres, pgTAP, testing, unit testing, TAP, PL/pgSQL, SQL]
 
 <p>With these changes, I've finished nearly everything I've thought of for pgTAP. There are only a few sequence-testing functions left on the To Do list, as well as a <a href="http://archives.postgresql.org/pgsql-hackers/2009-05/msg01318.php" title="pgsql-hackers: Re: plperl error format vs plpgsql error format vs pgTAP">call to add a <code>throws_like()</code></a> function, which I'll throw in soon if no one else steps up. Beyond these changes, I have a few ideas of where to take it next, but so far I'm kind of stumped. Mainly what I think should be done is to add an interface that makes it easier to compare relations (or result sets, if you prefer). <a href="http://epictest.org/" title="Epic, more full of fail than any other testing tool">Epic</a> does this by allowing query strings to be passed to a function, but I'd really like to keep queries in SQL rather than in SQL strings. I'll be giving it some more thought and will post about it soon.</p>
 
-
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-0.21.html">old layout</a>.</small></p>
-
-

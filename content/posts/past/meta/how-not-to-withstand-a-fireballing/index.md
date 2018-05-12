@@ -6,7 +6,7 @@ aliases: [/computers/blog/how-not-to-withstand-a-fireballing.html]
 tags: [Meta, Daring Fireball, aaaaauuugh]
 ---
 
-<img src="/2012/04/how-not-to-withstand-a-fireballing/fireballed.png" alt="Fireballed!" title="Yeah, hovering along at 50-200 hits a day, and then, BAM!" style="float:none" />
+<figure><img src="/2012/04/how-not-to-withstand-a-fireballing/fireballed.png" alt="Fireballed!" title="Yeah, hovering along at 50-200 hits a day, and then, BAM!" /></figure>
 
 <ul>
 <li>Set up a simple <a href="http://blosxom.sourceforge.net/">Blosxom</a>-powered blog on the advice of a <a href="http://raelity.org/">friend who wrote it</a></li>
@@ -23,5 +23,3 @@ tags: [Meta, Daring Fireball, aaaaauuugh]
 <p>I have more to say on the topic of iPad magazines, but I'm using the meager tuits I have to first make some infrastructural changes.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/blog/how-not-to-withstand-a-fireballing.html">old layout</a>.</small></p>
-
-

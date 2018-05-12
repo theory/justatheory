@@ -6,7 +6,7 @@ aliases: [/computers/programming/perl/fsa_rules_graph_improved.html]
 tags: [Perl, FSA::Rules, GraphViz, PNG, state machines]
 ---
 
-<img src="/2006/07/fsa-rules-graph-improved/fsa_rules_sample.png" alt="FSA::Rules sample graph output" />
+<figure><img src="/2006/07/fsa-rules-graph-improved/fsa_rules_sample.png" alt="FSA::Rules sample graph output" /></figure>
 
 <p>I just released <a href="http://search.cpan.org/dist/FSA-Rules/" title="FSA::Rules on CPAN">FSA::Rules</a> 0.25. This version came about as I
 returned to the module to handle setting up a PostgreSQL database and found
@@ -30,5 +30,3 @@ savings. There is now a lot more control over the format of graphs, too.
 Enjoy!</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/fsa_rules_graph_improved.html">old layout</a>.</small></p>
-
-

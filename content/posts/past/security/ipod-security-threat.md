@@ -6,7 +6,7 @@ aliases: [/computers/policy/ipod_security_threat.html]
 tags: [Security, iPod, Apple, Gartner, Information Technology, guns, NRA, design, music]
 ---
 
-<a href="https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1" title="Buy an iPod from Amazon.com!"><img src="https://images-na.ssl-images-amazon.com/images/P/B0000CEORU.01.MZZZZZZZ.jpg" alt="20 GB iPod" /></a>
+<a href="https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1" title="Buy an iPod from Amazon.com!"><img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" /></a>
 
 <p>Well, this is entertaining. It seems that the Gartner Group has decided that <a href="http://www.infoworld.com/article/04/07/06/HNipodsrisk_1.html">iPods</a> are a significant security threat. I think it's great that a company like that makes its money by telling people that, yes, you <em>can</em> copy files between your PC and your iPod, and that poses a serious security threat. <em>Please.</em></p>
 
@@ -17,5 +17,3 @@ tags: [Security, iPod, Apple, Gartner, Information Technology, guns, NRA, design
 <p>So the mantra holds: iPods aren't security threats; <em>employees</em> are security threats. But guns, yeah, they're pretty much designed for killing.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/policy/ipod_security_threat.html">old layout</a>.</small></p>
-
-

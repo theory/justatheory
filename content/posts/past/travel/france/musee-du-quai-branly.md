@@ -27,5 +27,3 @@ it’s just reviewing, tweaking, and posting. With luck, I’ll have them all po
 by Christmas!</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/musee-du-quai-branly.html">old layout</a>.</small></p>
-
-

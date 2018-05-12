@@ -6,7 +6,7 @@ aliases: [/computers/internet/weblogs/blog-restored.html]
 tags: [Meta, failure, Blosxom, Google Analytics, FeedBurner, Linux, Debian]
 ---
 
-<a href="https://www.flickr.com/photos/theory/3236480663/" title="My “Server Room”"><img src="https://farm4.static.flickr.com/3504/3236480663_b2d1fd08be.jpg" alt="My “Server Room”" /></a>
+<figure><a href="https://www.flickr.com/photos/theory/3236480663/" title="My “Server Room”"><img src="https://farm4.static.flickr.com/3504/3236480663_b2d1fd08be.jpg" alt="My “Server Room”" /></a></figure>
 
 <p>Some of you no doubt noticed that this site was down for several days, starting last Friday and lasting until yesterday. Sorry about that. I had a hard disk failure of some kind on the ca. 1999 OptiPlex I was using. I've had a newer box (ca. 2005) to move to for a while, but lacked the tuits. With this change, I was forced to make the switch. Fortunately, a Debian install CD let me login to the OptiPlex and access all my files, so I was able to recover everything. I even managed to keep the file modification times the same, so feeds won't show everything as unread (which I've seen many times when other bloggers I've known have switched providers or recovered from some catastrophe). Unless you tried to hit this site over the weekend or on Monday or Tuesday, you should notice no changes at all (except speed, the new box is a <em>lot</em> faster!).</p>
 
@@ -19,5 +19,3 @@ tags: [Meta, failure, Blosxom, Google Analytics, FeedBurner, Linux, Debian]
 <p>In the future, I'd like to switch from <a href="http://www.blosxom.com">Blosxom</a> to some other tool. Maybe <a href="http://www.movabletype.org/opensource/" title="Movable Type Open Source Project">Movable Type</a>, now that it's open source. It's pretty well-regarded and written in Perl, so I could hack it pretty easily. What I should do is avoid writing my own Blog engine. Right? <strong>Right?!</strong>. In the meantime, I have other priorities, so I'll be sticking to Bloxsom for a while.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/blog-restored.html">old layout</a>.</small></p>
-
-

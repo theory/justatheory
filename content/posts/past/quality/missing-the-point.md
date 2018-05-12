@@ -17,7 +17,6 @@ tags: [Quality, Kindle, iPad, junk, disposability, minimalism, build quality, St
 <li>The difference in quality between E-ink and LCD displays</li>
 </ul>
 
-
 <p>Here’s what the post was about:</p>
 
 <ul>
@@ -35,10 +34,6 @@ tags: [Quality, Kindle, iPad, junk, disposability, minimalism, build quality, St
 
 <p>Perhaps my analogy of the $79 Kindle to a Dixie cup was a wee bit overwrought. Sorry about that; it occurred to me as I was writing the piece and I felt that it captured what I wanted to day. Because, you know, I’d rather drink my coffee out of a Contigo thermal mug than out of a Starbucks paper cup. Maybe that’s not fair.</p>
 
-<p><a href="https://www.starbucksstore.com/Starbucks%C2%AE-Lenticular-Tumbler%2C-16-fl-oz/011014926,default,pd.html?start=4&amp;cgid=tumblers-and-travel-mugs"><img src="https://demandware.edgesuite.net/sits_na/dw/image/v2/AAFV_PRD/on/demandware.static/Sites-Starbucks-Site/Sites-starbucks-master-catalog/default/v1320967227199/images/knockouts/starbucks_lenticular_tumbler_16_oz_KO.jpg?sw=165&amp;sh=165" alt="Starbucks plastic mug" /></a></p>
-
 <p>So how about this? The $79 Kindle is a <a href="https://www.starbucksstore.com/Starbucks%C2%AE-Lenticular-Tumbler%2C-16-fl-oz/011014926,default,pd.html?start=4&amp;cgid=tumblers-and-travel-mugs">Starbucks plastic mug</a>. Not quite Dixie-cup disposable, and the advertising helps keep the price down.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/devices/missing-the-point.html">old layout</a>.</small></p>
-
-

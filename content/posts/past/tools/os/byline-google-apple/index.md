@@ -8,7 +8,7 @@ tags: [iOS, Byline, Google, Google Reader, Apple, Philosophy, UI, UX]
 
 <p>My favorite iPhone feed reading app is <a href="http://www.phantomfish.com/byline.html" title="Phantom Fish - Byline - Google Reader on the go.">Byline</a> by <a href="http://www.phantomfish.com/">Phantom Fish</a>. It syncs really well with Google Reader, so that things stay more-or-less in sync with <a href="http://netnewswireapp.com/mac/">NetNewsWire</a> on my Mac. Unlike NetNewsWire, which added Google Reader syncing <a href="http://www.macworld.com/article/142009/2009/07/netnewswire_32_beta_arrives_with_google_reader_syncing.html" title="Macworld: “NetNewsWire 3.2 beta arrives with Google Reader syncing”">in 2009</a>, Byline was built with Google Reader syncing from the beginning. Version 3.0 is <a href="http://www.macworld.com/appguide/app.html?id=87018">especially good</a>; I love the ability to swipe between posts. And the killer feature is the archiving of all content after a sync, so that everything loads fast — or on cross-country flights. News junkie that I am, Byline is one of my most-used apps.</p>
 
-<p><img class="left" src="/2011/01/byline-google-apple/edit_mode.png" alt="Byline Edit Mode" /></p>
+<figure class="left"><img src="/2011/01/byline-google-apple/edit_mode.png" alt="Byline Edit Mode" /></figure>
 
 <p>Another great feature is Byline’s edit mode. When looking at a long list of
 new posts in a particular feed (for me it most often happens with the <a href="http://search.cpan.org/uploads.rdf">CPAN
@@ -29,7 +29,7 @@ If you’ve elected to include unread items in Byline (it’s a setting), you ca
 
 <p>In fairness, it’s not entirely Byline’s fault. One of its design philosophies is to use the Google API eagerly. So as soon as you’re done reading something, it’s marked as read, whether or not the app is actively syncing to Google Reader. This is handy because it means as soon as I’ve read something, if I sync NetNewsWire on my desktop, it’s marked as read there, too. It minimizes the appearance of duplication.</p>
 
-<p><a href="https://twitter.com/#!/phfish/status/17540435819896832"><img src="/2011/01/byline-google-apple/phfish_tweet.png" alt="@phfish: “@theory I think they do it for performance reasons. It is a bit of an irritation, though.”" /></a></p>
+<figure><a href="https://twitter.com/#!/phfish/status/17540435819896832"><img src="/2011/01/byline-google-apple/phfish_tweet.png" alt="@phfish: “@theory I think they do it for performance reasons. It is a bit of an irritation, though.”" /></a></figure>
 
 <p>One of the APIs it calls ASAP is Google Reader’s “Mark All as Read API call”, and as Phantom Fish <a href="https://twitter.com/#!/phfish/status/17147289806045184">has said</a>, Google provides no way to un-do that call. The result, for me at least, and certainly <a href="https://twitter.com/#!/flynjets/status/17112345658527744" title="@flynjets: ”@phfish Bug: Mark all as read, then edit - mark item as unread, then sync. Unread items disappear every time.”">other users</a>, is the loss of unread items.</p>
 
@@ -42,5 +42,3 @@ If you’ve elected to include unread items in Byline (it’s a setting), you ca
 <p>Anyway, I expect that Phantom Fish will work out some way to deal with this issue. (Frankly, I’d welcome the ability to exclude certain feeds from Byine, as NetNewsWire for iOS does, so that I don’t have to bother with some feeds on my iPhone, but that’s a different feature request.) But I thought it was interesting, in discussing the issue, how UI philosophical interests can conflict. Frankly, I think that iOS apps should be more iOSy in this respect (in all other ways Byline is <em>very</em> iOSy), but others disagree, and it makes for an interesting conversation.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/ios/byline-google-apple.html">old layout</a>.</small></p>
-
-

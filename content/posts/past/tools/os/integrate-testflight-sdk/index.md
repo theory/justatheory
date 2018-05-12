@@ -37,7 +37,7 @@ tags: [iOS, TestFlight, SDK, beta, shipping, Xcode, HOWTO]
 <p><img style="float:none;" src="/2011/12/integrate-testflight-sdk/configurations.png" alt="Configurations" /></p>
 </li>
 
-<li><p>Create configuration marcos:</p>
+<li><p>Create configuration macros:</p>
 
 <p><img style="float:none;" src="/2011/12/integrate-testflight-sdk/config_config.png" alt="Configurations" /></p>
 

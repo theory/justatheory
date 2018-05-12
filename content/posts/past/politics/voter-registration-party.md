@@ -55,5 +55,3 @@ make a difference in the outcome in November. And that's what we're really
 hoping to achieve.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/voter_registration_party.html">old layout</a>.</small></p>
-
-

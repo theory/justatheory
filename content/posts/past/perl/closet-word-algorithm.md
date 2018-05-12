@@ -6,7 +6,7 @@ aliases: [/computers/programming/perl/closet_word_algorithm.html]
 tags: [Perl, grep, Levenshtein, Perl Best Practices]
 ---
 
-<a href="https://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com"><img class="left" src="https://images-na.ssl-images-amazon.com/images/P/0596001738.01._AA240_SCLZZZZZZZ_.jpg" alt="&#x201c;Perl Best Practices&#x201d; cover" /></a>
+<figure class="left"><a href="https://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com"><img src="https://images-na.ssl-images-amazon.com/images/I/81Rh6gbV-ZL.jpg" alt="&#x201c;Perl Best Practices&#x201d; cover" /></a></figure>
 
 <p>I've been reading <a href="https://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com">Perl Best Practices</a> and have been making use of <a href="http://search.cpan.org/dist/List-Util/" title="List::Util on CPAN">List::Util</a> and <a href="http://search.cpan.org/dist/List-MoreUtils/" title="List::MoreUtils on CPAN">List::MoreUtils</a> as a result. I'm amazed that I never knew about these modules before. I mean, I kinda knew there were there, but hadn't paid much attention before or bothered to find out how useful they are!</p>
 
@@ -29,5 +29,3 @@ sub _find_closest_word {
 <p>Am I missing something, or is this really the most obvious and efficient way to do it?</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/closet_word_algorithm.html">old layout</a>.</small></p>
-
-

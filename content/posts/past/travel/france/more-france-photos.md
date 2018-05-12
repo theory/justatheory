@@ -29,5 +29,3 @@ tags: [France, Rouen, Paris, Anna]
 <p>I have a lot more photos from France to process, still. I'll post here as I get them on Flickr. It takes a while because Aperture is pretty slow at importing RAW photos from my Canon Rebel XSi, and even slower when I start to make changes to the photos. So it's dragging on, but I'll keep slogging at it. The trick will be for me to try to stay ahead of the curve on photos taken since the trip. I've only got 600 of those. Yikes! Wish me luck!</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/more-france-photos.html">old layout</a>.</small></p>
-
-

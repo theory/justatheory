@@ -6,8 +6,6 @@ aliases: [/politics/election_2004/portland_ralley.html]
 tags: [Politics, John Kerry, President, President Of The United States, elections, Portland, Oregon, August]
 ---
 
-<a href="http://www.johnkerry.com/" title="JonKerry.com"><img src="http://blog.johnkerry.com/blog/archives/portland2.jpg" alt="Portland Kerry Rally" /></a>
-
 <p>Julie and I just got back from the Kerry rally at the Tom McCall Waterfront
 Park in Portland, OR. According to the <a href="http://blog.johnkerry.com/" title="Kerry Blog">Kerry Blog</a>, there were ca. 60,000 people at the rally.
 Julie and I waited till the last minute to go, and for a while there thought
@@ -57,5 +55,3 @@ as a highly preferable alternative to the current state of complete
 mortification.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/portland_ralley.html">old layout</a>.</small></p>
-
-

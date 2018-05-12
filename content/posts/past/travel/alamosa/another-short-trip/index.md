@@ -6,7 +6,7 @@ aliases: [/travel/alamosa/another_short_trip.html]
 tags: [Alamosa, Colorado, Adams State College, photos, photographs, flying, pictures, cloud computing, crop circles]
 ---
 
-<img src="/2004/08/another-short-trip/stellar_clouds.jpg" alt="Stellar clouds" class="center" />
+<figure><img src="/2004/08/another-short-trip/stellar_clouds.jpg" alt="Stellar clouds" class="center" /></figure>
 
 <p>I made another brief trip to Alamosa last week. This is the first chance
 I've had to writ anything about it! I was doing two days of training for
@@ -16,15 +16,14 @@ because of the neat photos I took. Most of them I took from the plane on
 the way in to Alamosa. But the photo of the lobby of the Clarion hotel I stayed
 in is, um, <em>interesting</em> as well. Enjoy!</p>
 
+<figure>
 <img src="/2004/08/another-short-trip/over_engine.jpg" alt="Shot over the prop engine" />
 <img src="/2004/08/another-short-trip/angry_clouds.jpg" alt="Big, angry clouds" />
 <img src="/2004/08/another-short-trip/crop_circles.jpg" alt="Crop circles" />
 <img src="/2004/08/another-short-trip/road_wing.jpg" alt="Roads or dry creeks?" />
-<img src="/2004/08/another-short-trip/under_wing.jpg" alt="Shot under the wing"/>
+<img src="/2004/08/another-short-trip/under_wing.jpg" alt="Shot under the wing" />
 <img src="/2004/08/another-short-trip/wing_clouds.jpg" alt="Clouds over the wing" />
 <img src="/2004/08/another-short-trip/lobby.jpg" alt="The Clarion's lobby" />
-
+</figure>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/alamosa/another_short_trip.html">old layout</a>.</small></p>
-
-

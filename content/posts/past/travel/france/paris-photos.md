@@ -14,5 +14,3 @@ tags: [France, Paris, Musée D’Orsay, Eiffel Tower]
 <p>In the meantime, for much more active blogging of our trip, be sure to visit <a href="http://strongrrl.blogspot.com/" title="Six Semaines en France">Julie’s blog</a>.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/paris-photos.html">old layout</a>.</small></p>
-
-

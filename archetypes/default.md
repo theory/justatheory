@@ -3,7 +3,7 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 description: ""
 tags: []
-topics: []
+type: post
 link: ""
 draft: true
 ---

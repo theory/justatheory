@@ -17,3 +17,6 @@ deploy: ${BUILD_DIR}
 
 clean:
 	rm -rf ${BUILD_DIR}
+
+server:
+	hugo server -D --bind 0.0.0.0

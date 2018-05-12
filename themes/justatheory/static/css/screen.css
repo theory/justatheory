@@ -761,10 +761,6 @@ p.past small:before {
     content: "\f466  ";
 }
 
-.blog-index article > footer {
-    margin-top: 1em
-}
-
 article > footer .meta {
     margin-top: .75em;
     margin-bottom: .75em;
@@ -864,6 +860,8 @@ pre {
 body > footer {
     background-color: #2d2d2d;
     color: #ccc;
+    font-size: 85%;
+    font-weight: 200;
     border-top: 6px solid black;
     width: 100%;
     padding: .5em 0 1em 0;

@@ -1,6 +1,6 @@
 --- 
 date: 2004-08-24T01:46:04Z
-slug: another-short-trip
+slug: another-short-alamosa-trip
 title: Another Short Visit to Alamosa
 aliases: [/travel/alamosa/another_short_trip.html]
 tags: [Alamosa, Colorado, Adams State College, photos, photographs, flying, pictures, cloud computing, crop circles]

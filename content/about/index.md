@@ -5,14 +5,14 @@ type: about
 
 {{% figure src="/img/theory.jpg" alt="David E. “Theory” Wheeler" %}}
 
-Just a Theory is an periodically irregular technology and culture blog by David
+*Just a Theory* is an periodically irregular technology and culture blog by David
 E. Wheeler. If you'd like to get in touch, catch me on [Twitter] or send email
 to `david` at this domain.
 
 Colophon
 --------
 
-Just a Theory is written in [Markdown], built and published with [Hugo], and
+*Just a Theory* is written in [Markdown], built and published with [Hugo], and
 hosted on [AWS]. Its set in [Source Sans Pro], with fixed-width type set in
 [Source Code Pro]. The icons are by [Font Awesome].
 

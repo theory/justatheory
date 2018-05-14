@@ -195,7 +195,7 @@ body > div {
 }
 
 .heading, h1, h2, h3, h4, h5, h6 {
-    font-family: "Source Sans Pro", "Proxima Nova", "Helvetica", sans-serif
+    font-family: "Source Sans Pro", "Helvetica", sans-serif
 }
 
 body {
@@ -477,7 +477,6 @@ aside.left:before {
 
 body > main, body > header > hgroup.top > *, body > header nav {
     -webkit-text-size-adjust: none;
-    position: relative;
     margin: 0 auto;
     max-width: 676px;
     padding: 0 18px;
@@ -924,7 +923,7 @@ body > footer ul li:last-child {
 }
 
 /* Make the logo bug bigger on Safari & Chrome only. */
-@media only screen and (-webkit-min-device-pixel-ratio:0) {
+@media only screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio:0) {
     body > header .bug  {
         font-size: 4em !important;
         line-height: 0.9em !important;

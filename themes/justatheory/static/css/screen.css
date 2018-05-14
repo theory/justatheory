@@ -489,8 +489,8 @@ body > header {
 
 body > header .bug {
     float: left;
-    font-size: 4em !important;
-    line-height: 1em !important;
+    font-size: 3em !important;
+    line-height: 1.4em !important;
 }
 
 body > header > hgroup.top, body > main, body > nav, body > footer {
@@ -505,8 +505,7 @@ body > header > hgroup.top {
 }
 
 body > header > hgroup.top h1 {
-    font-size: 2em;
-    line-height: 1.2em
+    font-size: 1.5em;
 }
 
 body > header > hgroup.top h2 {
@@ -883,9 +882,8 @@ body > footer ul li:last-child {
         font-size: 70%;
         padding-bottom: 0;
     }
-    body > header .bug {
-        font-size: 3em !important;
-        
+    body > header > hgroup.top h1 {
+        font-size: 2em;
     }
 }
 
@@ -911,6 +909,9 @@ body > footer ul li:last-child {
         left: 0em;
         top: 1.7em
     }
+    body > header .bug {
+        line-height: 1.3em !important;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -924,6 +925,13 @@ body > footer ul li:last-child {
 
     article header {
         margin-bottom: 0.5em
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body > header .bug {
+        font-size: 4em !important;
+        line-height: 0.9em !important;
     }
 }
 

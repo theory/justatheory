@@ -10,7 +10,7 @@
 				{{- range $key, $value := .Data.Terms.ByCount }}
 					{{- $.Scratch.Set "limit" (add ($.Scratch.Get "limit") 1) }}
 					{{- if le ($.Scratch.Get "limit") 10 }}
-				<li><a href="/tags/{{ $value.Name | urlize }}">{{ $value.Name }}</a></li>
+				<li><a href="/tags/{{ $value.Name | urlize }}/">{{ $value.Name }}</a></li>
 					{{- end }}
 				{{- end }}
 			</ul>
@@ -26,7 +26,7 @@
 			<ul class="tags {{ $char }}">
 				{{- range $data.Pages }}
 					{{- if eq $char (upper (printf "%c" (index .Title 0))) }}
-				<li><a href="{{ .RelPermalink }}">{{ .Data.Term }}</a></li>
+				<li><a href="{{ .RelPermalink }}/">{{ .Data.Term }}</a></li>
 					{{- end }}
 				{{- end }}
 			</ul>

@@ -26,7 +26,7 @@
 					<time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .Date.Format "Jan 2" }}</time>
 					<a rel="bookmark" href="{{ .Permalink }}"></a>
 					{{- if .Params.tags }}
-					<p>Filed under <a href="{{ "/tags/" | relLangURL }}{{ index (.Params.tags) 0 | urlize }}">{{ index (.Params.tags) 0 }}</a></p>
+					<p>Filed under <a href="{{ "/tags/" }}{{ index (.Params.tags) 0 | urlize }}/">{{ index (.Params.tags) 0 }}</a></p>
 					{{- end }}
 				</footer>
 			</div>

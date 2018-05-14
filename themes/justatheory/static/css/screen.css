@@ -222,7 +222,7 @@ main {
     padding-bottom: 80px !important;
 }
 
-#tags > header, #taxterms > header {
+#tags > header, #taxterms > header, #archive > header {
     margin: 20px 0;
     border-bottom: 1px dashed #ccc;
 }

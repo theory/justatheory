@@ -510,7 +510,7 @@ body > header > hgroup.top h1 {
 
 body > header > hgroup.top h2 {
     color: #ccc;
-    font-size: 0.9em;
+    font-size: 1em;
     margin-bottom: 0;
     font-weight: 200;
 }
@@ -888,6 +888,10 @@ body > footer ul li:last-child {
 }
 
 @media only screen and (min-width: 550px) {
+    body > header > hgroup.top h2 {
+        font-size: 0.75em;
+    }
+
     #archive section > div {
         padding-left: 4.5em;
         padding-bottom: .7em;

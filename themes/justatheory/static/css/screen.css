@@ -923,8 +923,9 @@ body > footer ul li:last-child {
     }
 }
 
-@media only screen and (min-width: 900px) {
-    body > header .bug {
+/* Make the logo bug bigger on Safari & Chrome only. */
+@media only screen and (-webkit-min-device-pixel-ratio:0) {
+    body > header .bug  {
         font-size: 4em !important;
         line-height: 0.9em !important;
     }

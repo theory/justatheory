@@ -756,13 +756,15 @@ pre {
     font-size: 0.7em;
     margin-bottom: 2.1em;
     padding: .8em 1em;
-    overflow: auto
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 p code, li code {
     display: inline-block;
     white-space: no-wrap;
-    font-size: .85em;
+    font-size: .9em;
     line-height: 1.5em;
     color: #626262;
     margin: -1px 0;
@@ -772,19 +774,9 @@ p code, li code {
 }
 
 p pre code, li pre code {
-    font-size: 0.85em !important;
+    font-size: 0.9em !important;
     background: none;
     border: none
-}
-
-pre {
-    font-family: "Source Code Pro", "Courier", monospace !important;
-    overflow: scroll;
-    overflow-y: hidden;
-    display: block;
-    padding: .8em !important;
-    overflow-x: auto;
-    line-height: 1.45em;
 }
 
 #archive {

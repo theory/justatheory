@@ -289,8 +289,8 @@ h1 {
 h1.link a:after {
     color: #999;
     font-family: FAS; /* XXX get light version? */
-    font-size: 40%;
-    content: " \f35d";
+    font-size: 45%;
+    content: "\00a0\f35d";
     vertical-align: top;
 }
 
@@ -719,7 +719,7 @@ a[rel=bookmark]:hover {
 a[rel=bookmark]:after {
     font-family: FAR;
     font-size: 75%;
-    content: ' \f02e';
+    content: '\00a0\f02e';
     font-weight:normal;
 }
 
@@ -743,7 +743,7 @@ p.past {
 p.past small:before {
     font-size: .8em;
     font-family: FAS;
-    content: "\f466  ";
+    content: "\f466\00a0";
 }
 
 article video {

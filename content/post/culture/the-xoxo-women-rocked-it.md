@@ -2,7 +2,7 @@
 title: The Women at XOXO Rocked It
 date: 2013-09-30T09:00:00Z
 description: ""
-tags: [XOXO, representation, Erika Moen, Vi Hart, Molly Crabapple, Julie Uhrman, Christina Xu]
+tags: [XOXO, representation, Erika Moen, Vi Hart, Molly Crabapple, Julie Uhrman, Christina Xu, love]
 type: post
 ---
 

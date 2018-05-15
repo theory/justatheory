@@ -6,12 +6,12 @@ tags: [Meta, blogging]
 type: post
 ---
 
-Back in 2013, a slew of new top-level domains became available, and I pounced a
-number of them, thinking it'd be a good time to make make a shorter domain my
-own. My favorite was theory.pm. In the early years of *Just a Theory,* I wrote
-mostly about [Perl] and related topics like [Bricolage]. I thought naming a Perl
-blog like a Perl module would be appropriate. By that time I often also wrote
-about [Postgres], and didn't want to mix topics. So alongside theory.pm, I also
+Back in 2013, a slew of new top-level domains became available, and I pounced on
+a number of them, thinking it'd be good to make a shorter domain my own. My
+favorite was theory.pm. In the early years of *Just a Theory,* I wrote mostly
+about [Perl] and related topics like [Bricolage]. I thought naming a Perl blog
+like a Perl module would be appropriate. By that time I wrote a lot about
+[Postgres], and didn't want to mix topics. So alongside theory.pm, I also
 launched theory.so --- as in "stored objects". Both used a new static design
 built on [Octopress] hosted on [GitHub Pages].
 

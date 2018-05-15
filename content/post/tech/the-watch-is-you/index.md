@@ -73,9 +73,12 @@ your presence in the universe.
 
 Effectively, the Watch is you.
 
+<small>This post [originally appeared] on *Medium.*</small>
+
 [factors of authentication]: https://en.wikipedia.org/wiki/Authentication#Factors_and_identity "Wikipedia: Authentication Factors and identity"
 [notoriously difficult]: http://www.macrumors.com/2013/10/04/security-researchers-detail-new-combination-of-touch-id-and-ios-7-security-feature-bypasses/ "MacRumors: Security Researchers Detail New Combination of Touch ID and iOS 7 Security Feature Bypasses"
 [driving license]: https://bgr.com/2014/12/12/iphone-and-android-drivers-license-app/ "BGR: “iPhone and Android are about to take another huge step toward replacing your wallet”"
 [replace your car keys]: https://www.telegraph.co.uk/technology/apple/watch/11439847/Apple-Watch-will-replace-your-car-keys-says-Tim-Cook.html "The Telegraph: “Apple Watch will replace your car keys, says Tim Cook”"
 [Apple demonstrated]: https://www.recode.net/2015/3/9/11559942/the-apple-watch-is-here-you-have-10000-or-349 "Recode: “The Apple Watch Is Here. You Have $17,000?”"
 [universe of things]: https://glog.glennf.com/blog/2015/2/18/iwatch-ihub "Glenn Fleishman: “iWatch, iHub”"
+[originally appeared]: https://medium.com/@theory/the-watch-is-you-ef0e416ce0f9

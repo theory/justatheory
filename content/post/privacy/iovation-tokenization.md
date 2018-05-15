@@ -5,7 +5,6 @@ description: First in a series of posts on tokenization and the GDPR for iovatio
 tags: [Tokenization, Privacy GDPR, Security, Pseudonymization, iovation, Safe Harbor]
 type: post
 link: https://www.iovation.com/blog/thinking-through-personal-data-protection
-draft: true
 ---
 
 C'est mois, in the first of a series for the [iovation blog](https://www.iovation.com/blog):

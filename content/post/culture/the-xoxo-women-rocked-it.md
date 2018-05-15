@@ -41,7 +41,7 @@ with it. It's moving simply to be amazing.
 Alas, XOXO is the outlier here. But it points to the future, and I'm excited to
 help push it forward.
 
-<small>This post [originally appeared] on *Svbtle*.</small>
+<small>This post [originally appeared] on *Svbtle.*</small>
 
 [XOXO]: http://xoxofest.com/
 [Frank Chimero]: http://www.instapaper.com/read/415951464

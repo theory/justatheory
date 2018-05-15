@@ -15,6 +15,10 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 	<meta name="msapplication-TileColor" content="#da532c" />
 	<meta name="theme-color" content="#ffffff" />
+	{{- if .Page.IsHome }}
+	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
+	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/318f92e8-c739-46a8-8bf5-4fa37c711a4e">
+	{{- end }}
 	{{ range .AlternativeOutputFormats -}}
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}" />
 	{{ end }}

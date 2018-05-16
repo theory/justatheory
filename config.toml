@@ -16,7 +16,6 @@ disableKinds = ["section"]
 
 [author]
     name = "David E. Wheeler"
-    email = "david@justatheory.com"
 
 [params]
   favicon = ""

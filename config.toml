@@ -19,7 +19,7 @@ disableKinds = ["section"]
 
 [params]
   favicon = ""
-  description = "Theory waxes practical."
+  description = "Irregular fine blogging since 2002."
   author = "David E. Wheeler"
   bug = "❖"
   twitter = "theory"

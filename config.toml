@@ -7,7 +7,7 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 PreserveTaxonomyNames = true
-rssLimit = 16
+# rssLimit = 16
 Paginate = 16
 PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
@@ -18,12 +18,12 @@ disableKinds = ["section"]
     name = "David E. Wheeler"
 
 [params]
-  favicon = ""
   description = "Irregular fine blogging since 2002."
   author = "David E. Wheeler"
   bug = "❖"
   twitter = "theory"
   github = "theory"
+  listTypes = ["post"]
 
 [permalinks]
   post = "/:year/:month/:slug/"

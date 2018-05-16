@@ -4,7 +4,7 @@
 			<h1>{{ .Title }}</h1>
 		</header>
 		{{- $.Scratch.Set "year" 0 }}
-		{{- range where .Site.Pages "Type" "in" (slice "post") }}
+		{{- range where .Site.Pages "Type" "in" .Site.Params.listTypes }}
 		{{- if ne ($.Scratch.Get "year") .Date.Year}}
 		{{- if ne ($.Scratch.Get "year") 0 }}
 		</section>

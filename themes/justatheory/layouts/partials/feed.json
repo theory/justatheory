@@ -13,10 +13,13 @@
 	  {{- if $index }}, {{ end }}
 	  {
 		"id": {{ .Permalink | jsonify }},
-		"url": {{ .Permalink | jsonify }},
-		"title": {{ .Title | jsonify }},
+		"url": {{ .Permalink | jsonify }},{{ with .Params.link }}
+		"external_url": {{ . | jsonify }},{{ end }}
+		"title": {{ .Title | jsonify }},{{ with (or .Description .Summary )}}
+		"summary": {{ . | jsonify }},{{ end }}
 		"date_published": {{ .Date.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},
-		"content_html": {{ .Content | jsonify }}
+		"content_html": {{ trim .Content " \t\n\r" | jsonify }},
+		"content_text": {{ trim .Plain " \t\n\r" | jsonify }}
 	  }
 	  {{- end }}
 	]

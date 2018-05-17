@@ -32,6 +32,16 @@ disableKinds = ["section"]
 [outputFormats.RSS]
   mediatype = "application/rss"
   baseName = "feed"
+[outputFormats.json]
+  mediatype = "application/json"
+  baseName = "feed"
+  isPlainText = true
+
+[outputs]
+  home = ["html", "json", "rss"]
+  section = ["html", "json", "rss"]
+  taxonomy = ["html", "json", "rss"]
+  taxonomyTerm = ["html", "json", "rss"]
 
 [taxonomies]
     tag = "tags"

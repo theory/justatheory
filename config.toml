@@ -29,9 +29,13 @@ disableKinds = ["section"]
 [permalinks]
   post = "/:year/:month/:slug/"
 
+[mediaTypes]
+[mediaTypes."application/atom"]
+  suffix = "xml"
+
 [outputFormats]
-[outputFormats.RSS]
-  mediatype = "application/rss"
+[outputFormats.atom]
+  mediatype = "application/atom"
   baseName = "feed"
 [outputFormats.json]
   mediatype = "application/json"
@@ -39,10 +43,10 @@ disableKinds = ["section"]
   isPlainText = true
 
 [outputs]
-  home = ["html", "json", "rss"]
-  section = ["html", "json", "rss"]
-  taxonomy = ["html", "json", "rss"]
-  taxonomyTerm = ["html", "json", "rss"]
+  home = ["html", "json", "atom"]
+  section = ["html", "json", "atom"]
+  taxonomy = ["html", "json", "atom"]
+  taxonomyTerm = ["html", "json", "atom"]
 
 [taxonomies]
     tag = "tags"

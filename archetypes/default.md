@@ -5,6 +5,7 @@ description: ""
 tags: []
 type: post
 link: ""
+# author: {name: "David E. Wheeler", email: david@justatheory.com }
 draft: true
 ---
 

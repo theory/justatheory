@@ -15,6 +15,7 @@ disableKinds = ["section"]
 
 [author]
     name = "David E. Wheeler"
+    email = "david@justatheory.com"
 
 [params]
   description = "Irregular fine blogging since 2002."

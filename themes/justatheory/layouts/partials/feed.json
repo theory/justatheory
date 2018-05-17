@@ -2,25 +2,26 @@
 	"version": "https://jsonfeed.org/version/1",
 	"title": {{ .Title | jsonify }},
 	"description": {{ or .Description .doc.Description .doc.Summary | jsonify }},
-	"home_page_url": {{ .doc.Permalink | jsonify }},
-	"feed_url": {{ with .doc.OutputFormats.Get "json" -}}
-	  {{- .Permalink | jsonify -}}
-	{{- end }},{{ with .Site.Params.icon }}
-	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Author.name }}
-	"author": { "name": {{ . | jsonify }} },{{ end }}
+	"home_page_url": {{ .doc.Permalink | jsonify }},{{ with .doc.OutputFormats.Get "json" }}
+	"feed_url": {{ .Permalink | jsonify -}},{{ end }}{{ with .Site.Params.icon }}
+	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Author }}
+	"author": { "name": {{ .name | jsonify }}{{ with .email }}, "email": {{ . | jsonify }}{{ end }} },{{ end }}
 	"items": [
-	  {{- range $index, $entry := .Pages }}
-	  {{- if $index }}, {{ end }}
-	  {
-		"id": {{ .Permalink | jsonify }},
-		"url": {{ .Permalink | jsonify }},{{ with .Params.link }}
-		"external_url": {{ . | jsonify }},{{ end }}
-		"title": {{ .Title | jsonify }},{{ with (or .Description .Summary )}}
-		"summary": {{ . | jsonify }},{{ end }}
-		"date_published": {{ .Date.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},
-		"content_html": {{ trim .Content " \t\n\r" | jsonify }},
-		"content_text": {{ trim .Plain " \t\n\r" | jsonify }}
-	  }
-	  {{- end }}
+	{{- range $index, $entry := .Pages }}
+	{{- if $index }}, {{ end }}
+		{
+			"id": {{ .Permalink | jsonify }},
+			"url": {{ .Permalink | jsonify }},{{ with .Params.link }}
+			"external_url": {{ . | jsonify }},{{ end }}
+			"title": {{ .Title | jsonify }},{{ with (or .Description .Summary )}}
+			"summary": {{ . | jsonify }},{{ end }}
+			"date_published": {{ .Date.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ if ne .Date .Lastmod }}
+			"date_modified": {{ .UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ end }}{{ with (or .Params.author .Site.Author) }}
+			"author": { "name": {{ .name | jsonify }}{{ with .email }}, "email": {{ . | jsonify }}{{ end }} },{{ end }}{{ with .Params.tags }}
+			"tags": {{ . | jsonify }}{{ end }},
+			"content_html": {{ trim .Content " \t\n\r" | jsonify }},
+			"content_text": {{ trim .RawContent " \t\n\r" | jsonify }}
+		}
+	{{- end }}
 	]
 }

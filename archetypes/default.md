@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
+lastMod: {{ .Date }}
 description: ""
 tags: []
 type: post

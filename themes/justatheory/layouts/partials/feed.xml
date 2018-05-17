@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>{{ .Title }}</title>
+		<link>{{ .doc.Permalink }}</link>{{ with (or .Description .doc.Description .doc.Summary )}}
+		<description>{{ . }}</description>{{ end }}{{ with .Site.Author }}
+		<atom:author>{{ with .name }}
+			<atom:name>{{ . }}</atom:name>{{ end }}{{ with .email }}
+			<atom:email>{{ . }}</atom:email>{{ end }}{{ with .url }}
+			<atom:url>{{ . }}</atom:url>{{ end }}
+		</atom:author>{{ end }}
+		<generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+		<language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
+		<managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
+		<webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
+		<copyright>{{.}}</copyright>{{end}}{{ if not .doc.Date.IsZero }}
+		<lastBuildDate>{{ .doc.Date.UTC.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+		{{- with .doc.OutputFormats.Get "RSS" }}
+		{{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+		{{- end }}
+		{{- range .Pages }}
+		<item>
+			<title>{{ .Title }}</title>
+			<link>{{ .Permalink }}</link>
+			<pubDate>{{ .Date.UTC.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+			{{- with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+			<guid>{{ .Permalink }}</guid>{{ with (or .Params.author .Site.Author) }}
+			<atom:author>{{ with .name }}
+				<atom:name>{{ . }}</atom:name>{{ end }}{{ with .email }}
+				<atom:email>{{ . }}</atom:email>{{ end }}{{ with .url }}
+				<atom:url>{{ . }}</atom:url>{{ end }}
+			</atom:author>{{ end }}
+			<description>{{ (or .Description .Summary) }}{{ . | html }}</description>
+			<content:encoded>{{ trim .Content " \t\n\r" | html }}</content:encoded>
+		</item>
+	{{- end }}
+	</channel>
+</rss>

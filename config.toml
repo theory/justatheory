@@ -7,7 +7,6 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 PreserveTaxonomyNames = true
-rssLimit = 32
 Paginate = 16
 PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
@@ -24,6 +23,7 @@ disableKinds = ["section"]
   twitter = "theory"
   github = "theory"
   listTypes = ["post"]
+  feedLimit = 32
 
 [permalinks]
   post = "/:year/:month/:slug/"

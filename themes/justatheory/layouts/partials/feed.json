@@ -1,7 +1,7 @@
 {
 	"version": "https://jsonfeed.org/version/1",
-	"title": {{ .Title | jsonify }},
-	"description": {{ or .Description .doc.Description .doc.Summary | jsonify }},
+	"title": {{ .Title | jsonify }},{{ with (or .Description .doc.Description .doc.Summary )}}
+	"description": {{ . | jsonify }},{{ end }}
 	"home_page_url": {{ .doc.Permalink | jsonify }},{{ with .doc.OutputFormats.Get "json" }}
 	"feed_url": {{ .Permalink | jsonify -}},{{ end }}{{ with .Site.Params.icon }}
 	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Author }}

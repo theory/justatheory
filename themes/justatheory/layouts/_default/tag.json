@@ -1,0 +1,1 @@
+{{ partial "feed.json" (dict "doc" . "Site" .Site "Title" (delimit (slice .Title "on" .Site.Title) " ") "Description" (delimit (slice "An ongoing list of" .Site.Title "posts about" .Title) " ") "Pages" (first .Site.Params.FeedLimit .Pages))}}

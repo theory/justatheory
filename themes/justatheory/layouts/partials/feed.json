@@ -1,10 +1,13 @@
 {
 	"version": "https://jsonfeed.org/version/1",
 	"title": {{ .Title | jsonify }},
+	"description": {{ or .Description .doc.Description .doc.Summary | jsonify }},
 	"home_page_url": {{ .doc.Permalink | jsonify }},
 	"feed_url": {{ with .doc.OutputFormats.Get "json" -}}
 	  {{- .Permalink | jsonify -}}
-	{{- end }},
+	{{- end }},{{ with .Site.Params.icon }}
+	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Author.name }}
+	"author": { "name": {{ . | jsonify }} },{{ end }}
 	"items": [
 	  {{- range $index, $entry := .Pages }}
 	  {{- if $index }}, {{ end }}

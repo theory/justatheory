@@ -24,6 +24,7 @@ disableKinds = ["section"]
   github = "theory"
   listTypes = ["post"]
   feedLimit = 32
+  icon = "/icon-256x256.png"
 
 [permalinks]
   post = "/:year/:month/:slug/"

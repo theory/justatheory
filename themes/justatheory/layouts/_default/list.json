@@ -1,1 +1,1 @@
-{{ partial "feed.json" (dict "doc" . "Title" .Title "Pages" (first .Site.Params.FeedLimit .Pages)) }}
+{{ partial "feed.json" (dict "doc" . "Site" .Site "Title" .Title "Description" .Site.Params.description "Pages" (first .Site.Params.FeedLimit .Pages))}}

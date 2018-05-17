@@ -8,7 +8,6 @@ tags: [Condé Nast, The New Yorker, Vogue, iPad, Retina Display, Suck]
 type: post
 ---
 
-
 <p>I've been a <a href="http://www.newyorker.com/"><em>The New Yorker</em></a> reader for nearly two decades. I'm a huge fan of the magazine, which in my humble has the best reportage anywhere. So I was thrilled last year when the magazine's publisher, <a href="http://www.condenast.com/">Condé Nast</a>, decided to make all issues available to paper subscribers for no extra charge. Ever since, I have loved getting the latest issue late on Sunday nights, rather than on the following Friday or Saturday. It has also made it easier for <a href="http://blog.strongrrl.com/">Strongrrl</a> and me to share the magazine: I usually read the iPad version and she reads the paper version.</p>
 
 <p>That's not to say that it has all been happiness and joy, mind. <em>The New Yorker</em> app is terrible. Issues are <em>huge</em> (typically around 120 MB). Downloads cannot be performed in the background (except by Newsstand, which may not notice a new issue for days). You can't even read other issues while waiting for one to download; the download pauses. Sometimes I have difficulty getting it to start downloading again. And the navigation, while unique and kind of interesting, really does not work for me.</p>
@@ -86,5 +85,3 @@ type: post
 <p>Look, I write this out of love. <em>The New Yorker</em> is my favorite magazine, bar none, and I want it to succeed. Print is dying, but there is <em>so</em> much opportunity on devices like the iPad. Continue to create the best content, and provide it in a form factor and experience that takes advantage of the features and limitations of your targeted platforms, to allow readers to <em>enjoy</em> reading, and success will be assured.</p>
 
 <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/apps/conde-nast-ipad.html">old layout</a>.</small></p>
-
-

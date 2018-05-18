@@ -36,8 +36,8 @@ and <code>&lt;applet&gt;</code> elements, although tht really hasn't happened.
 But what you <em>can</em> do is embed HTML with it. Here's a quick example:</p>
 
 <style type="text/css">code.embedded { background: green; }</style>
-<object data="/computers/internet/html/testembed.html" type="text/html" style="background: lightblue; width: 100%; border: 1px dotted darkblue;" id="testembed">
-  <p>If you can't see this, then the <code>&lt;object&gt;</code> tag doesn't
+<object data="/code/testembed.html" type="text/html" style="background: lightblue; width: 100%; border: 1px dotted darkblue;" id="testembed">
+  <p>If you can see this, then the <code>&lt;object&gt;</code> tag doesn't
   work in your browser. :-(</p>
 </object>
 

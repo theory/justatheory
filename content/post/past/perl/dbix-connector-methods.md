@@ -28,37 +28,15 @@ type: post
 
 <p>Here are some of the names I've come up with so far:</p>
 
-<style type="text/css">
-#dbixc {
-border-collapse: collapse;
-border-right: 1px solid #CCC;
-margin: 0 0 1em;
-}
-
-#dbixc th {
-padding: 0 0.5em;
-text-align: left;
-border-left: 1px solid #CCC;
-border-top: 1px solid #FB7A31;
-border-bottom: 1px solid #FB7A31;
-background: #FFC;
-}
-
-#dbixc td {
-border-bottom: 1px solid #CCC;
-padding: 0.5em;
-border-left: 1px solid #CCC;
-}
-</style>
-<table id="dbixc">
-  <tr>
+<table>
+  <thead><tr>
     <th>Run block</th>
     <th>Run in txn</th>
     <th>Run in savepoint</th>
     <th>Run with retry</th>
     <th>Run in txn with retry</th>
     <th>Retry Mnemonic</th>
-  </tr>
+  </tr></thead>
   <tr>
     <td><code>run</code></td>
     <td><code>txn_run</code></td>

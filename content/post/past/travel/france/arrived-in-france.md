@@ -7,7 +7,7 @@ tags: [France, Paris, Rouen, Lufthansa, travel, Eiffel Tower, jet lag]
 type: post
 ---
 
-<object width="500" height="375"> <param name="flashvars" value="&offsite=true&amp;lang=en-us&page_show_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2Fshow%2F&page_show_back_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2F&set_id=72157610395807045&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=67348"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=67348" allowFullScreen="true" flashvars="&offsite=true&amp;lang=en-us&page_show_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2Fshow%2F&page_show_back_url=%2Fphotos%2Ftheory%2Fsets%2F72157610395807045%2F&set_id=72157610395807045&jump_to=" width="500" height="375"></embed></object>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/theory/albums/72157610395807045" title="Portland to Rouen"><img src="https://farm4.staticflickr.com/3066/3068417561_f08cbf814c_o.jpg" width="1024" height="681" alt="Portland to Rouen"></a><script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 <p>Well, we made it. Things went pretty smoothly, all told. The flight was fairly empty, so Anna, at least, was able to lie across two seats and get a few hours of sleep. Julie and I enjoyed the free cognac and dark chocolate. Those European airlines sure know how to take care of their passengers.</p>
 

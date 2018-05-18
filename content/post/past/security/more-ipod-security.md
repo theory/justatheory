@@ -5,6 +5,7 @@ title: iPod Threatens UK Military Security
 aliases: [/computers/policy/more_ipod_security.html]
 tags: [Security, iPod, UK Military, Windows, USB, files]
 type: post
+via: {name: James Duncan Davidson, href: http://x180.net/}
 ---
 
 <a href="https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1" title="Buy an iPod from Amazon.com!"><img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" /></a>

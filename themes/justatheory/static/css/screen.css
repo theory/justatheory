@@ -111,6 +111,22 @@ table {
 }
 
 @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/srcsans-sbld.woff2') format('woff2'),
+         url('/fonts/srcsans-sbld.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/srcsans-sbldit.woff2') format('woff2'),
+         url('/fonts/srcsans-sbldit.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'FAB';
     src: url('/fonts/fa-brands.woff2') format('woff2'),
          url('/fonts/fa-brands.woff') format('woff');
@@ -658,7 +674,11 @@ dl {
 }
 
 dt {
-    font-weight: bold
+    font-weight: 600;
+}
+
+dd {
+    margin-bottom: 1em;
 }
 
 table {

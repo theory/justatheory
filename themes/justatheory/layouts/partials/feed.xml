@@ -30,9 +30,10 @@
 			<email>{{ . }}</email>{{ end }}{{ with .url }}
 			<uri>{{ . }}</uri>{{ end }}
 		</author>{{ end }}
-		{{- range .Params.tags }}
-		<category term="{{ . }}"/>
-		{{- end }}{{ with (or .Description .Summary )}}
+		{{- $params := .Params }}
+		{{- range $term, $tax := .Site.Taxonomies }}{{ range (index $params $term) }}
+		<category scheme="{{ absURL $term }}" term="{{ . | urlize }}" label="{{ . }}"/>
+		{{- end }}{{ end }}{{ with (or .Description .Summary )}}
 		<summary>{{ replace (htmlUnescape .) "&" "&amp;" | safeHTML }}</summary>{{ end }}
 		<content type="text/html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve" mode="xml">{{ if in (string .Content) "]]>" }}{{ .Content | html }}{{ else }}{{ "<" | safeHTML }}![CDATA[{{ trim .Content " \t\n\r" | safeHTML }}]]>{{ end }}</content>
 	</entry>

@@ -26,7 +26,3 @@ el.innerHTML = &quot;window.onload(null, Test);&quot;;
 <p>Firefox is still happy, but now IE 6 says, <q>Unknown runtime error.</q> If I try to just append a script tag to <code>pre.innerHTML</code>, I get no error, but the code doesn't seem to execute, either. In fact, pre.innerHTML appears to be empty!</p>
 
 <p>Anyone have any idea how I can dynamically write to a script element that I've created via the DOM?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/ie_dom_help.html">old layout</a>.</small></p>
-
-

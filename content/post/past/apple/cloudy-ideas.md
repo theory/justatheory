@@ -109,7 +109,3 @@ type: post
 <h3>Upshot</h3>
 
 <p>Apple is not in the cloud business. It’s not in the enterprise computing business. It’s not interested providing utility services. And it’s unlikely ever to be.  Apple’s actual business is far more successful, interesting, and profitable to them. So the question of whether or not iCloud should be “open” is unlikely to even be on Apple’s radar. What’s on their radar is not “being open,” but selling great products.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/apple/cloudy-ideas.html">old layout</a>.</small></p>
-
-

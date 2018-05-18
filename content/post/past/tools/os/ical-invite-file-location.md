@@ -31,7 +31,3 @@ start iCal back up again.</p>
 
 <p>And now I'll be able to find this information again when next I need it.
 :-)</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/macosx/ical_invite_file_location.html">old layout</a>.</small></p>
-
-

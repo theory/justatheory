@@ -37,7 +37,3 @@ sub can_do {
 <p>If the value of <code>$to_check</code> was in the list bit-<code>OR</code>ed into their permissions number, it will be returned; otherwise, 0 will be returned. Not bad, eh?</p>
 
 <p>So anyway, I'm soliciting feedback. Are discreet permissions better than cumulative permissions? And if so, are bit-wise <code>OR</code>ed numbers the best way to represent an object ACLs?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/permissions_design.html">old layout</a>.</small></p>
-
-

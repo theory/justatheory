@@ -21,7 +21,3 @@ type: post
 <p>Of course someone behind a well-known proxy server who wants to repeatedly create a new user account using different email addresses and deleting his cookies before every vote could do <em>some</em> ballot box stuffing, but I think that the above features will minimize the risk. But I'm sure I'm forgetting things. What other steps should I take?</p>
 
 <p>Leave a comment to let me know.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/security/online_voting_security.html">old layout</a>.</small></p>
-
-

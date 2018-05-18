@@ -199,8 +199,3 @@ faster (123.11%) than the looping approach. So I think I'll go with that.</p>
 
 <p>Meanwhile, I'm pleased to have this simple benchmarking tool in my arsenal
 for future PostgreSQL function development.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/benchmarking_upc_validation.html">old layout</a>.</small></p>
-
-

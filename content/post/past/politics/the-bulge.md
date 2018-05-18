@@ -14,7 +14,3 @@ type: post
 <p><a href="http://www.electoral-vote.com/" title="See the current electoral vote status of the campaign on a nice colored map">Current Electoral Vote Predictor</a> (which currently shows Kerry leading 280 to 239!) has confirmed the presence of <q>the bulge</q> with <a href="http://www.electoral-vote2.com/images/bulge.jpg" title="The Electoral Vote Predictor's enhanced image of the bulge">this image</a>, using Red Hawk image intensification software.</p>
 
 <p>My favorite phrase from the Salon.com article: the <q>Milli Vanilli president.</q></p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/the_bulge.html">old layout</a>.</small></p>
-
-

@@ -94,7 +94,3 @@ $$ LANGUAGE plpgsql;
 
 <p>This works, and seems pretty fast, but I'm wondering if there isn't an
 easier way to do this in PL/pgSQL. Do you know of one? Leave me a comment.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/plpgsql_upc_validation.html">old layout</a>.</small></p>
-
-

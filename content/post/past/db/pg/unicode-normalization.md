@@ -179,7 +179,3 @@ try=# select to_tsvector(U&amp;&#x0027;\00E9clair&#x0027;) @@ to_tsquery(normali
 </pre>
 
 <p>So yes, this really can be an issue in your applications.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/unicode-normalization.html">old layout</a>.</small></p>
-
-

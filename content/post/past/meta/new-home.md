@@ -33,7 +33,3 @@ now has a new home.</p>
 </ul>
 
 <p>That last task is the one I'm least likely to find a lot of time to work on, though, as I am already overcommitted to <a href="http://www.iovation.com/">numerous</a> <a href="http://pgxn.org/">other</a> <a href="http://www.designsceneapp.com/">things</a>, and thinking of <a href="http://github.com/theory/sqitch">new</a> <a href="/computers/databases/postgresql/dbix-connector-and-ssi.html">stuff</a> all the time. But I'd really like to make things much nicer for myself, so we'll see.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/blog/new-home.html">old layout</a>.</small></p>
-
-

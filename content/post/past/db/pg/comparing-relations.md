@@ -376,7 +376,3 @@ SELECT results_are(
 
 <p>Thoughts? I'm not going to get to it this week, so feedback would be greatly
 appreciated.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/comparing-relations.html">old layout</a>.</small></p>
-
-

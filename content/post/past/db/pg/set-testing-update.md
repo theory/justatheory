@@ -107,8 +107,3 @@ functions:</p>
 </dl>
 
 <p>Seem useful? Please leave a comment with your thoughts.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/set_testing_update.html">old layout</a>.</small></p>
-
-

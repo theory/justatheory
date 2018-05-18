@@ -99,8 +99,3 @@ data-structure based argument list rather than <code>Getopt::Long</code>'s
 magical strings. Perhaps <code>Module::Build</code> will end up <q>Borging</q> some of the
 ideas from <code>Getopt::Simple</code>. But either way, I think that better
 argument processing is on the way for <code>Module::Build</code>.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/dev/module_build_args.html">old layout</a>.</small></p>
-
-

@@ -62,9 +62,3 @@ is a huge help):</p>
 <p>Terrific ideas there. I thank you, Tweeps. But I ask here, too: Why should we write tests against our databases? Leave a comment with your (brief!) thoughts.</p>
 
 <p>And thank you!</p>
-
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/why-test-databases.html">old layout</a>.</small></p>
-
-

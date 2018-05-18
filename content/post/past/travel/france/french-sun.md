@@ -17,5 +17,3 @@ type: post
 <p>This summer will be different. Much warmer. No, not Portland, but two months in <a href="https://en.wikipedia.org/wiki/Arles">Arles</a>, in <a href="https://en.wikipedia.org/wiki/Provence">Provence</a>. Yes, we are once again doing a home exchange, this time in the city in which <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh">Vincent Van Gogh</a> famously spent his <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh#Artistic_breakthrough_and_final_years">final years</a>. Nice, warm, Mediterranean weather.</p>
 
 <p>We can’t wait.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2013/more-sun.html">old layout</a>.</small></p>

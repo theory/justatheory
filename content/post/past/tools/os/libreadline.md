@@ -26,8 +26,3 @@ sudo make install
 </pre>
 
 <p>Hope that this helps others!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/macosx/libreadline.html">old layout</a>.</small></p>
-
-

@@ -18,7 +18,3 @@ type: post
 <p>Yes, that’s right, as with <a href="http://pgxn.org/">PGXN</a>, this is community project for which we’re raising funds from the community to get it done. I think that more and more work could be done this way, as various interested parties contribute small amounts to collectively fund improvements to the benefit of us all. So can you help out? Hit the <a href="https://www.fossexperts.com/content/foreign-key-locks">FOSSExperts project page</a> for all the project details, and to <a href="https://www.fossexperts.com/content/foreign-key-locks-0">make your contribution</a>.</p>
 
 <p>Help us help the community to make PostgreSQL better than ever!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/fk-locks-project.html">old layout</a>.</small></p>
-
-

@@ -45,7 +45,3 @@ printf &quot;$from is %.2f%% $label than $to\n&quot;, abs $diff;
 <p>Pardon my total ignorance, but if anyone knows the answer to this question, I'd greatly appreciate a simple explanation. Thanks!</p>
 
 <p><strong>Update:</strong><a href="http://www.plover.com/blog/" title="Mark Jason Dominus">Mark Jason Dominus</a> was kind enough to respond very lucidly to an email linking to this blog entry. With his permission, I've pasted his comments below. All is now clear.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/learn/math/percent_change.html">old layout</a>.</small></p>
-
-

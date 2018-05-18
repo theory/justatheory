@@ -514,7 +514,3 @@ future.</p>
 
 <p>Slides on <a href="http://goodatdoingthings.com/">goodatdoingthings.com</a>. Will see
 about getting a video posted, as well.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/education/good-at-doing-things.html">old layout</a>.</small></p>
-
-

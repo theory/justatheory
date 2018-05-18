@@ -415,7 +415,3 @@ would have made it much easier to actually <em>use</em> this solution in
 Rails. If you know how to do that, please do leave a comment. As for how I
 hacked Rails to use the function, well, that's a blog post for another
 day.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/recurring_events.html">old layout</a>.</small></p>
-
-

@@ -72,7 +72,3 @@ type: post
 <p>I don’t plan to add the specific support for specifying and checking for dependencies in this way just now; that would be getting a bit ahead of myself, I think. But I <em>do</em> expect to need it before long, and I think it would be preferable to use a name rather than a URI when specifying dependencies. Yes, a name is less unique, but I don’t think it would be common to deploy two projects with the same names to the same database.</p>
 
 <p>So, what do you think? Are these worthwhile changes to make now? I’m reasonably convinced that they are, but I hate operating in a vacuum, and have received great feedback to my proposals in the past. So I welcome your feedback now.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-user-info.html">old layout</a>.</small></p>
-
-

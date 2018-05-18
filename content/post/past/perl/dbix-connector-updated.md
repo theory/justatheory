@@ -154,7 +154,3 @@ and here to stay.</p>
 
 <p>Thanks to @mst, @robkinyon, and @ribasushi, in particular, for bearing with
 me and continuing to hammer on me when I was being dense.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/dbix-connector-updated.html">old layout</a>.</small></p>
-
-

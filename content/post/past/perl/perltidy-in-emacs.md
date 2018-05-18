@@ -21,7 +21,3 @@ type: post
 </pre>
 
 <p>With Perltidy installed and this function thrown into your <em>~/.emacs</em> file, you can run <code>perltidy</code> on a region by just hitting <code>C-C t</code>. If no region is selected, it'll run <code>perltidy</code> on the whole buffer.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/perltidy_in_emacs.html">old layout</a>.</small></p>
-
-

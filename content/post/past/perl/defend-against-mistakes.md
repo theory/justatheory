@@ -70,7 +70,3 @@ END EVAL
 <p>The fix here is pretty simple, but I'm not sure I want to get into the business of defending against programmer mistakes like this in <a href="http://search.cpan.org/perldoc?DBIx::Connector">DBIx::Connector</a> or any module.</p>
 
 <p>What do you think?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/defend-against-mistakes.html">old layout</a>.</small></p>
-
-

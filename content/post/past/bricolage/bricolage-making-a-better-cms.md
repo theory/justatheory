@@ -32,7 +32,3 @@ type: post
 <p>But note that the flexibility comes at the price of complexity. And try as we might to make Bricolage <q>The Macintosh of Content Management Systems,</q> as long as the definition of the term <q>Content Management System</q> is all over the map, commonalities of metaphors, interfaces, and, well, philosophies between CMSs will continue to be all over the map.</p>
 
 <p>But that's just my opinion.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/competition/making_a_better_cms.html">old layout</a>.</small></p>
-
-

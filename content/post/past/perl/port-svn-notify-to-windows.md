@@ -37,8 +37,3 @@ sub _pipe {
 <p>'Course, the SEE ALSO section doesn't have much of for <q>alien systems,</q> but I have a comment in my code that suggests that <a href="http://search.cpan.org/dist/libwin32/Process/Process.pm" title="Win32::Process on CPAN">Win32::Process</a> might do for Windows compatibility. But I honestly don't know.</p>
 
 <p>So what's the best approach for me to port SVN::Notify to Windows while keeping file handle pipes around for efficiency? Anyone care to take a stab at it, with tests for Winows, and send me a patch?</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/port_svn_notify_to_windows.html">old layout</a>.</small></p>
-
-

@@ -14,7 +14,3 @@ type: post
 <p>I'm not sure if I'll update the <a href="http://svn.bricolage.cc/design-docs/trunk/Bricolage2/FunctionalSpec.pod">functional specification</a> anytime soon. It's <em>really</em> out of date, but would take up quite a lot of time to rewrite, and for what benefit I'm not really sure at this point. The technical spec contains most of the information I need. Perhaps it will be time to update the functional spec once the API is nearing completeness and I start really working on the UI.</p>
 
 <p>In the meantime, it's time to get back to hacking!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/design/uml_diagram.html">old layout</a>.</small></p>
-
-

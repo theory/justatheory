@@ -29,5 +29,3 @@ result is a much more natural decision graph, as you see here</p>
 of a dependence on the <code>Clone</code> module, and thus also a big memory
 savings. There is now a lot more control over the format of graphs, too.
 Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/fsa_rules_graph_improved.html">old layout</a>.</small></p>

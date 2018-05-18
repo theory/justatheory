@@ -68,7 +68,3 @@ type: post
 <p>Of these, I think I like “PGEX” best, but none are really great. So I’m opening up the <a href="https://en.wikipedia.org/wiki/Parkinson's_Law_of_Triviality">bike shed</a> to all. What’s a better name? Or if you can’t think of one, which of the above do you like best? Just leave a comment on this post. The only requirements for suggestions are that a .org domain be available and that it suck less than the alternatives.</p>
 
 <p>Comments close in 2 weeks. Thanks!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgan-bikeshedding.html">old layout</a>.</small></p>
-
-

@@ -12,7 +12,3 @@ type: post
 <p>So I refactored LdapOverlay and added these features. You can download it from <a href="/2004/12/ldap-auth/User_Local.pm.ldap" title="My Revision of LdapOverlay">here</a>. Just set the <code>$LdapTLS</code> variable in your <code>RT_SiteConfig</code> module to a true value to use TLS (but be sure that you also have <a href="http://search.cpan.org/dist/Net_SSLeay.pm/" title="Net::SSLeay on CPAN">Net::SSLeay</a> installed!). If you want to allow only members of a certain LDAP group to authenticate to RT, set the DN of the group in the <code>$LdapGroup</code> variable, and set the name of the member attribute (usually <q>uniqueMember</q>) in the <code>$LdapGroupAttribute</code> variable.</p>
 
 <p>Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/rt/ldap_auth.html">old layout</a>.</small></p>
-
-

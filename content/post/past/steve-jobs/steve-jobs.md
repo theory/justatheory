@@ -73,7 +73,3 @@ type: post
 <p>So maybe it’s fair that the narrative is largely product-driven. Jobs talked often over the years about how important good products are to him, much more important than profit, and the book reinforces that. He lived and breathed taste and products, to the exclusion of all else, including, at times, his family and his health.</p>
 
 <p>Perhaps, then, what made Jobs tick was the iPhone and the iPad, and the exultation of being a part of creating a truly inspiring product.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/steve-jobs.html">old layout</a>.</small></p>
-
-

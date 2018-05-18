@@ -18,7 +18,3 @@ type: post
 </pre>
 
 <p>Hope this helps other folks out!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqlonrails_macosx.html">old layout</a>.</small></p>
-
-

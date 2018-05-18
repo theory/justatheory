@@ -78,8 +78,3 @@ scores for them in a spreadsheet. As it was, things were still really close; yes
 <p>Each of the four applicants had taken the time to read the mail lists and had looked at the existing Bricolage code. But there were varying levels of detail and demonstration of knowledge for how to implement the MySQL port, but Tamas did come out slightly ahead on this item, so I gave his proposal the green light.</p>
 
 <p>But in truth, I would have been happy with any one of those four applicants. I was only sorry I had to choose only one! If Google does this again, I think I'll list many more project ideas on the Bricolage Web site, and try to steer people to the mail lists to discuss their ideas before sending them in. Then I might end up with 11 great applications!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/summer_of_code_winners.html">old layout</a>.</small></p>
-
-

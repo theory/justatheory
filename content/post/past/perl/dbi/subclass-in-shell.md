@@ -18,7 +18,3 @@ use DBI::Shell;
 </pre>
 
 <p>Yes, it's extremely sneaky. DBI::Shell::Base uses the string constant <code>DBI</code>, as in <code>DBI-&gt;connect(...)</code>, so by shoving a constant into DBI::Shell::Base before loading DBI::Shell, I convince it to use my subclass, instead.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/dbi/subclass_in_shell.html">old layout</a>.</small></p>
-
-

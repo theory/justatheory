@@ -136,8 +136,3 @@ single interface? Everything needs to be able to be handled via command-line
 options and not be ugly or difficult to use.</p>
 
 <p>So, you wanna work on this? :-)</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svn-notify-future.html">old layout</a>.</small></p>
-
-

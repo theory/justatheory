@@ -30,7 +30,3 @@ to localize <code>$@</code>, so now it should propagate properly everywhere.</p>
 
 <p>So if you’re using DBIx::Connector <code>catch</code> blocks, please upgrade ASAP. Sorry
 for the hassle.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/serious-dbix-connector-bug-fixed.html">old layout</a>.</small></p>
-
-

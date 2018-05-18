@@ -185,7 +185,3 @@ equivalent!</p>
 <p>So I would like to modestly propose to the Markdown community that the
 PHP Markdown Extra definition list syntax be adopted as a standard with this
 one change. What do you think?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/markup/modest-markdown-proposal.html">old layout</a>.</small></p>
-
-

@@ -18,7 +18,3 @@ svn log &#x002d;&#x002d;quiet http://svn.example.com/ \
 </pre>
 
 <p>Now I just have edit <code>committers.txt</code> and I have my mapping file.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/tricks/list-all-svn-committers.html">old layout</a>.</small></p>
-
-

@@ -12,7 +12,3 @@ type: post
 <p>SVN::Notify::HTML::ColorDiff had similar updates. It now properly outputs added and deleted files in the diff in separate sections, instead of grouping them under the last modified file listed. It also creates separate sections for files that have only had their properties changed. I've put an example <a href="/computers/programming/perl/modules/svnnotify-2.22_colordiff_example.html" title="SVN::Notify 2.22 sample ColorDiff output">here</a>.</p>
 
 <p>Grab the new version from <a href="http://search.cpan.org/dist/SVN-Notify/" title="SVN::Notify on CPAN">CPAN</a> now</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svnnotify_2.22.html">old layout</a>.</small></p>
-
-

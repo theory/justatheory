@@ -66,6 +66,3 @@ Archaeologist. The summer before I went to Dafna, I worked for six weeks at <a h
   <li><a href="http://blogs.ittoolbox.com/database/soup/">Josh Berkus</a></li>
   <li><a href="http://www.askbjoernhansen.com/">Ask Bjørn Hansen</a></li>
 </ul>
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/autobiographical/five_things.html">old layout</a>.</small></p>
-
-

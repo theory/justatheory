@@ -65,7 +65,3 @@ type: post
 
 
 <p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch" title="Sane SQL Change Management with Sqitch" target="_blank">Sane SQL Change Management with Sqitch</a> </strong> from <strong><a href="https://www.slideshare.net/justatheory" target="_blank">David E. Wheeler</a></strong> </div></p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-symbolism.html">old layout</a>.</small></p>
-
-

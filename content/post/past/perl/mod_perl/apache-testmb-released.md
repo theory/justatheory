@@ -92,7 +92,3 @@ $build_pkg-&gt;new(
 </pre>
 
 <p>Much nicer, eh?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/mod_perl/apache_testmb_released.html">old layout</a>.</small></p>
-
-

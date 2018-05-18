@@ -289,8 +289,3 @@ SELECT getpairs(&#x0027;foo&#x0027;, &#x0027;baz&#x0027;);
   </li>
   </ol>
   </div>
-  
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/key-value-pairs.html">old layout</a>.</small></p>
-
-

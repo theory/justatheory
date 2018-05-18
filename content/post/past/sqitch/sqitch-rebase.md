@@ -60,8 +60,3 @@ the <em>previous</em> deploy. Even if IDs have changed, <code>revert</code> will
 <li><a href="https://github.com/theory/sqitch/issues/54">Adding a <code>--no-run</code> option to <code>deploy</code></a> so that existing databases can be upgraded to Sqitch.</li>
 <li><a href="https://github.com/theory/sqitch/issues/13">Adding a <code>check</code> command</a> to sanity-check a plan, scripts, and a database.</li>
 </ul>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-rebase.html">old layout</a>.</small></p>
-
-

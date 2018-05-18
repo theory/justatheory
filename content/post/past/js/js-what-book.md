@@ -15,7 +15,3 @@ object-oriented application developer who wants to pick up a new language, not
 a script kiddie or CGI newbie.</p>
 
 <p>Thanks!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/what_book.html">old layout</a>.</small></p>
-
-

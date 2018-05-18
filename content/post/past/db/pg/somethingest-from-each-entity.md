@@ -169,7 +169,3 @@ WITH t AS (
 </pre>
 
 <p>Easy! How have you handled a situation like this in your database hacking?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/somethingest-from-each-entity.html">old layout</a>.</small></p>
-
-

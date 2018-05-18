@@ -20,7 +20,3 @@ type: post
 <p>So as I continue to make modifications, I'll keep this repository up-to-date, and tag things as of each blog entry. This will make it easy for you to follow along; you can simply clone <a href="git://github.com/theory/catalyst-tutorial.git">the repository</a> and <code>git pull</code> for each post.</p>
 
 <p>More soon.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/tutorial-on-git.html">old layout</a>.</small></p>
-
-

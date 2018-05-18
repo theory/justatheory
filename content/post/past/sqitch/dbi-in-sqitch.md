@@ -14,7 +14,3 @@ type: post
 <p>However, I have been trying to be sensitive to dependencies. I had planned to make Sqitch simple to install on any system, and if you had the command-line client for your preferred database, it would just work. If I used the DBI instead, then Sqitch would not work at all unless you installed the appropriate DBI driver for your database of choice. This is no big deal for Perl people, of course, but I don’t want this to be a Perl people tool. I want it to be dead simple for anyone to use for any database. Ideally, there will be RPMs and Ubuntu packages, so one can just install it and go, and not have to worry about figuring out what additional Perl DBD to install for your database of choice. It should be transparent.</p>
 
 <p>That is still my goal, but at this point the IPC requirements for controlling the clients is driving me a little crazy. Should I just give up and use the DBI (at least for now)? Or persevere with the IPC stuff and get it to work? Opinions wanted!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/dbi-in-sqitch.html">old layout</a>.</small></p>
-
-

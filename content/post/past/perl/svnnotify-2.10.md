@@ -40,7 +40,3 @@ type: post
 </ul>
 
 <p>Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svnnotify_2.10.html">old layout</a>.</small></p>
-
-

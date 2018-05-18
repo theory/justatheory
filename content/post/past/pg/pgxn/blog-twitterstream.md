@@ -10,7 +10,3 @@ type: post
 <p>I crated the <a href="http://blog.pgxn.org/">PGXN Blog</a> yesterday. Tune in there for news and announcements. I’ll also be posting status reports once development gets underway, so that all you fans out there can follow my progress. Once the site is done (or at 1.0 anyway), the blog will be used for announcements, discussion of support issues, etc. So tune in!</p>
 
 <p>Oh, and I created a <a href="https://twitter.com/pgxn/">PGXN Twitterstream</a>, too. You should follow it! New blog posts will be tweeted, and once the site gets going, new uploads will be tweeted, too. Check it out!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgxn/blog-twitterstream.html">old layout</a>.</small></p>
-
-

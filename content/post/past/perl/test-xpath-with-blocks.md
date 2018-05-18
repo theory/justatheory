@@ -54,7 +54,3 @@ $tx->ok( &#x0027;/html/head/style&#x0027;, &#x0027;Should have style&#x0027; ) {
 really happy with this sugar. Thanks for
 the <a href="http://gugod.org/2009/08/perlx---perl-extension.html"
 title="gugod's blog: “PerlX - Perl Extension”">great hack</a>, gugod!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/test-xpath-with-blocks.html">old layout</a>.</small></p>
-
-

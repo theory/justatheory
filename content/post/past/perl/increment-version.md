@@ -35,7 +35,3 @@ __END__
 </pre>
 
 <p>Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/increment_version.html">old layout</a>.</small></p>
-
-

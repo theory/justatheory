@@ -62,7 +62,3 @@ worry not! I'll be doing a lot more with pgTAP in the coming weeks.</p>
 or JavaScript hacking you'd like me to do. I'm free through November.</p>
 
 <p>That is all.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap_site.html">old layout</a>.</small></p>
-
-

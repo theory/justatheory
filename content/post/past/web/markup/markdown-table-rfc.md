@@ -432,7 +432,3 @@ and a link to this entry. What have I missed? What mistakes have I made? What
 do you like? What do you hate? Please do let me know.</p>
 
 <p>Thanks!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/markup/markdown-table-rfc.html">old layout</a>.</small></p>
-
-

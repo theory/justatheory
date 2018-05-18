@@ -59,8 +59,3 @@ easy and natural to use, that the vast majority of commenters will just leave
 paragraphs and they’ll look beautiful.</p>
 
 <p>At any rate, you now have one less reason not to leave a comment!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/now-with-markdown.html">old layout</a>.</small></p>
-
-

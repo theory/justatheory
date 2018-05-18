@@ -83,5 +83,3 @@ type: post
 <p>I find none of these reasons compelling. </p>
 
 <p>Look, I write this out of love. <em>The New Yorker</em> is my favorite magazine, bar none, and I want it to succeed. Print is dying, but there is <em>so</em> much opportunity on devices like the iPad. Continue to create the best content, and provide it in a form factor and experience that takes advantage of the features and limitations of your targeted platforms, to allow readers to <em>enjoy</em> reading, and success will be assured.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/apps/conde-nast-ipad.html">old layout</a>.</small></p>

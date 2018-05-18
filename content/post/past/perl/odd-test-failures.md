@@ -24,7 +24,3 @@ indexer has a bug? Or are people's configurations just horked? Or am I just
 doing something braindead?</p>
 
 <p>Opinions welcomed.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/odd_test_failures.html">old layout</a>.</small></p>
-
-

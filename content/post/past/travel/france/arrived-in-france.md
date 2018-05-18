@@ -32,7 +32,3 @@ type: post
 <p>Well this has been pretty boring. For a more interesting description of our travels, see Julie's blog, <a href="http://strongrrl.blogspot.com/">Six Semaines en France</a>. I'll see about blogging here a bit more regularly, too, to try to avoid these long boring posts, though your best luck to learn about our visit to France from me is via my <a href="http://flickr.com/photos/theory/">Flicker photostream</a>.</p>
 
 <p>Meanwhile, up next: A visit to Paris Tuesday to Wednesday this week, and planning another visit for December 10th, around a possible visit to the <a href="http://paris.mongueurs.net/" title="Paris Perl Mongueu(r|se)s">Paris Perl Mongers</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/arrival.html">old layout</a>.</small></p>
-
-

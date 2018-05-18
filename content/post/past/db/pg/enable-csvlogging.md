@@ -57,8 +57,3 @@ log rotation (in the default Mac OS X start script that ships with PostgreSQL),
 but that's not necessary anymore, either. So I just turned that stuff off.</p>
 
 <p>Now I have something to refer back to, and so do you. Enjoy!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/enable-csvlogging.html">old layout</a>.</small></p>
-
-

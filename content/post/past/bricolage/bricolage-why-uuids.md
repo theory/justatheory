@@ -20,7 +20,3 @@ type: post
 <p>The solution to this problem is to give Bricolage objects a universally unique identifier that can work anywhere, that means nothing other than <q>this is a unique identifier for this object,</q> and which are guaranteed not to change when you move an object from one system to another. Happily, the UUID standard exists for just this sort of thing. You are free to use a story's UUID in its URI without having to worry about it ever changing. IDs may change, but you don't have to worry about those.</p>
 
 <p>For these reason, the forthcoming Bricolage 1.10.0 has added UUIDs to story and media objects, these being the objects most in need of UUIDs, and they are available for use in URIs. Looking to the future, the Kinetic Platform, currently under development and the platform to which Bricolage 2.0 will be ported, never exposes the primary key IDs <em>at all</em>. There is only the UUID for referencing objects externally. I judge this a very good thing.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/why_uuids.html">old layout</a>.</small></p>
-
-

@@ -29,8 +29,3 @@ $$ LANGUAGE plpgsql;
 <p>No, that's not the real code, it's just a dummy example to illustrate something. Illustrate what? Well, my PostgreSQL friend said, <q>Crap, can you really use variables to set other variables in the <code>DECLARE</code> section?</q> The answer is <q>yes,</q> of course. The above does work. I'm new to PostgreSQL functions, so I didn't know any better than to just try it, and it worked. But my friend has been writing PL/pgSQL functions for years. Why didn't he know that you could use variables in a <code>DECLARE</code> block? As he said, <q>Damn, one of the problems with starting with a language 6 years ago is that you get in the habit of coding around the restrictions from 6 years ago.</q></p>
 
 <p>Anyway, I just wanted to share this tidbit, in case there were other PostgreSQL pros who missed it. I don't know when the feature was added, but it works fine for me in 8.1.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/plpgsql_declare.html">old layout</a>.</small></p>
-
-

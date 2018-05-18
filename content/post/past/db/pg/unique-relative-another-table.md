@@ -139,6 +139,3 @@ CREATE TRIGGER ckp_usr_username_unique BEFORE UPDATE ON person
 <p>Anyway, am I on crack here? Isn't there a simpler way to do this sort of thing? And if not, have I really got the race conditions all eliminated with the row locks?</p>
 
 <p><strong>Update:</strong> In further testing, I discovered that the <code>SELECT ... FOR UPDATE</code> was failing on views with the error <q>ERROR:  no relation entry for relid 7</q>. I have no idea what that means, but I found that it didn't happen when I selected against the tables directly. So I've updated the functions above to reflect that change. I've also fixed a few pastos as pointed out in the comments.</p>
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/unique_relative_another_table.html">old layout</a>.</small></p>
-
-

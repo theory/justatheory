@@ -55,7 +55,3 @@ end
 <p>Basically, we overpower the PostgreSQL adapter&#8217;s <code>initialize</code> method and have it call <code>initialize_with_perl_utils</code> before it returns. It&#8217;s a neat trick; if you&#8217;re going to practice <a href="/computers/programming/methodology/fuck-typing.html">fuck typing</a>, <code>alias_method_chain</code> makes it about as clean as can be, albeit a little too magical for my tastes.</p>
 
 <p>Anyway, recorded here for posterity (my blog is my other brain!).</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/execute-on-select.html">old layout</a>.</small></p>
-
-

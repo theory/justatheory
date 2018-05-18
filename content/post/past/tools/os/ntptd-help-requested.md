@@ -18,7 +18,3 @@ work, but I also can't find simple instructions for how to configure ntptd to
 operate only as a client.</p>
 
 <p>Links and instructions gladly accepted.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/freebsd/ntptd_help_requested.html">old layout</a>.</small></p>
-
-

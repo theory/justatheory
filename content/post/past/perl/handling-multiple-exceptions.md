@@ -54,7 +54,3 @@ die $rollback_exception;
 <p>This approach doesn’t require a dependency like the previous approach, but the user would still have to know to dig into <code>@@</code> if they caught the rollback exception. But then I might as well have thrown a custom exception object that’s easier to interrogate than an exception string. Oh, and is it appropriate to use <code>@@</code>? I seem to recall seeing some discussion of this variable on the perl5-porters mail list, but it’s not documented or supported. Or something. Right?</p>
 
 <p>What would you do?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/handling-multiple-exceptions.html">old layout</a>.</small></p>
-
-

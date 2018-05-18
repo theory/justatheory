@@ -38,7 +38,3 @@ type: post
 </ul>
 
 <p>Now I really am going to do some other stuff for a bit, although I do want to see what I can poach from <a href="http://epictest.org/" title="Epic: More full of fail than any other testing tool">Epic Test</a>. And I <em>do</em> have that <a href="http://www.postgresqlconference.org/west08/talks/" title="PostgreSQL Conference West 2008 Talks">talk</a> on pgTAP next month. So I'll be back with more soon enough.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-0.11.html">old layout</a>.</small></p>
-
-

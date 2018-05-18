@@ -64,8 +64,3 @@ few <a href="http://github.com/bricoleurs/bricolage/commit/95c2335634a64fc687456
 done, but overall I'm very happy. My thanks again
 to <a href="http://www.askask.com/">Ask</a> and the denizens of #git for all
 the help.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/vcs/git/git-r-done.html">old layout</a>.</small></p>
-
-

@@ -20,7 +20,3 @@ type: post
 <p>This change was motivated not only by my desire to add the new features to SVN::Notify::HTML, but also by Autrijus' new modules, <a href="http://search.cpan.org/dist/SVN-Notify-Snapshot/" title="SVN::Notify::Snapshot on CPAN">SVN::Notify::Snapshot</a> and <a href="http://search.cpan.org/dist/SVN-Notify-Config/" title="SVN::Notify::Config on CPAN">SVN::Notify::Config</a>. Thanks Autrijus!</p>
 
 <p>I'll try to get a nice example of all this functionality up in the next few days; if anyone else creates one first, send it to me! But in the meantime, enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svn_notify_2.30.html">old layout</a>.</small></p>
-
-

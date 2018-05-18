@@ -70,7 +70,3 @@ type: post
 
 
 <p>And for shows that are not immediately available for the current season by any of these means, well, I guess we’ll wait. I think most shows come out on iTunes or DVD after a year or so. We’ll just deal with the lag. I wish it wasn’t there, but it is, and I’m no longer willing to dirty myself using a TV service.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/tv/tv-providers-hate-customers.html">old layout</a>.</small></p>
-
-

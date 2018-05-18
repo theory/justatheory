@@ -35,7 +35,3 @@ Gierth for help fixing the query.</li>
 <p>Don’t make the same mistake I did, where I wrote a lot of pgTAP tests for a client, and now testing database upgrades from 8.2 to 8.3 is just too reliable! <strong>YOU HAVE BEEN WARNED.</strong></p>
 
 <p>Good luck with your mission.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-0.20.html">old layout</a>.</small></p>
-
-

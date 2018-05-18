@@ -66,7 +66,3 @@ use 5.12;
 <p>In personal communication, chromatic tells me, with regard to Modern::Perl, âExperienced Perl programmers know the right incantations to get the behavior they want. Novices don’t, and I think we can provide them much better defaults without several lines of incantations.â I'm fine with the second assertion, but disagree with the first. I've been hacking Perl for almost 15 years, and I no longer have any fucking idea what incantation is best to use in my modules. Do help the novices, and make the power tools available to experienced hackers, but please make life easier for the experienced hackers, too.</p>
 
 <p>I think that declaring the semantics of a particular version of Perl is where the Perl 5 Porters are headed. I just hope that includes handling all of the likely pragmas too, so that I don’t have to.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/make-the-pragmas-stop.html">old layout</a>.</small></p>
-
-

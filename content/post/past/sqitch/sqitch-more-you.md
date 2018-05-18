@@ -114,7 +114,3 @@ Date:      2012-08-01 22:20:46 +0200
 <p>But even with all that, I think that Sqitch is finally ready for some serious tire-kicking. To get started, skim <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">the tutorial</a> and take it for a spin (install it by running <code>cpan DWHEELER/App-Sqitch-0.80-TRIAL.tar.gz</code>). Let me know what you like, what you don’t like, and let’s have a discussion about it.</p>
 
 <p>Oh, and for discussions, where should I set up a mail list? Google Groups? Someplace else?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-more-you.html">old layout</a>.</small></p>
-
-

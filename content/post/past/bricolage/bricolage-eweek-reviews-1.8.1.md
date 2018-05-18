@@ -18,7 +18,3 @@ type: post
 <blockquote><p>Included in this evaluation are the open-source Bricolage 1.8.1, Interwoven Inc.'s TeamSite 6.1, CrownPeak Technology Inc.'s Advantage CMS, Serena Software Inc.'s Collage 4.5, PaperThin Inc.'s CommonSpot Content Server 4.0 and Ektron Inc.'s CMS300 4.5. (The reviews are ordered, roughly, from the high end to the low end of the content management market.)</p></blockquote>
 
 <p>I'm pretty stoked about this review, as you might imagine. <cite>eWeek</cite> is now officially my favorite trade magazine!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/coverage/eweek_reviews_1.8.1.html">old layout</a>.</small></p>
-
-

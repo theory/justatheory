@@ -36,5 +36,3 @@ my window, so I turned on my phone (bad David!) and snapped another shot.</p>
 
 <p>Looks like I might be returning to Alamosa soon to do some training. Maybe I'll be
 able to get some more pictures; the sunsets are quite lovely there.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/alamosa/june_2004.html">old layout</a>.</small></p>

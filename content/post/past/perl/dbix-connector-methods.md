@@ -103,8 +103,3 @@ so it seemed silly to have <code>svp_run_safely()</code> to
 complement <code>do_safely()</code> and <code>txn_do_safely()</code>.</p>
 
 <p>Brilliant suggestions warmly appreciated.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/dbix-connector-methods.html">old layout</a>.</small></p>
-
-

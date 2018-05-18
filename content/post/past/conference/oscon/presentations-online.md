@@ -15,7 +15,3 @@ type: post
 </ul>
 
 <p>Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/conferences/oscon2005/presentations_online.html">old layout</a>.</small></p>
-
-

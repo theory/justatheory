@@ -114,7 +114,3 @@ type: post
 </dl>
 
 <p>Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svnnotify_2.50.html">old layout</a>.</small></p>
-
-

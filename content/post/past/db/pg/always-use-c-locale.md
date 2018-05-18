@@ -50,7 +50,3 @@ the system default. What do you think?</p>
 
 <p>You can read the whole thread <a href="http://archives.postgresql.org/pgsql-general/2004-08/threads.php#01079"
 title="The full discussion">here</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/always_use_c_locale.html">old layout</a>.</small></p>
-
-

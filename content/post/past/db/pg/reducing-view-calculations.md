@@ -124,7 +124,3 @@ little puzzle, eh?</p>
 figured out what the underling problem was and solved it much more elegantly
 using PL/pgSQL. I've now <a href="/computers/databases/postgresql/recurring_events.html" title="How to Generate Recurring Events in the Database">written up the basic recipe.
 Enjoy!</em></p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/reducing_view_calculations.html">old layout</a>.</small></p>
-
-

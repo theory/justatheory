@@ -14,7 +14,3 @@ type: post
 <p>The vast majority of non-spam comments I get on any particular post after two weeks or so is a request for support. So I don't think that the new policy will hamper anyone much, and for those looking for support, well, this is not the appropriate forum. But if you <em>do</em> feel compelled to comment on something after the comment period, just email your comment to me and I'll add it in as I deem appropriate.</p>
 
 <p>Thanks for understanding. I really appreciate getting this time back every day. And, of course, if you'd like to respond to this new policy in any way, well, you have two weeks to leave a comment on this post. ;-)</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/new_comment_policy.html">old layout</a>.</small></p>
-
-

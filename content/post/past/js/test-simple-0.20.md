@@ -91,7 +91,3 @@ new Test.Harness.Browser(
 </ul>
 
 <p>As always, feedback/comments/suggestions/winges welcome. Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/test_simple-0.20.html">old layout</a>.</small></p>
-
-

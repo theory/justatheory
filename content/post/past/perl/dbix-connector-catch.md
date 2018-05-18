@@ -95,7 +95,3 @@ try {
 </ol>
 
 <p>I'm leaning toward #3, but perhaps might do #1 anyway, as it'd be nice to be more explicit and one would get the benefit of the balance with <code>catch</code> blocks for as long as they're retained. But I'm not sure yet. I want your feedback on this. How do you want to use exception-handling with DBIx::Connector? Leave me a comment here or on <a href="https://rt.cpan.org/Ticket/Display.html?id=65196">the ticket</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/dbix-connector-catch.html">old layout</a>.</small></p>
-
-

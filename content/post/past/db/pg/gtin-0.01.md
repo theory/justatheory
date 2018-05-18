@@ -16,7 +16,3 @@ type: post
 <p>In the meantime, share and enjoy.</p>
 
 <p><strong>Update:</strong> I forgot to mention that you can check out the source code from the <a href="https://svn.kineticode.com/gtin/trunk/" title="The GTIN Subversion trunk"> Kineticode Subversion</a> repository.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/gtin-0.01.html">old layout</a>.</small></p>
-
-

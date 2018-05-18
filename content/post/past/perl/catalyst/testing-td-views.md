@@ -309,7 +309,3 @@ $_-&gt;ok(&#x27;./tr[2]&#x27;, sub {
 <p>This reminds me, however, that we never created an order for the list of authors. So it's possible that this test could fail, as the order of the author last names is undefined. We should go back and fix that, probably by listing the authors as they are actually listed on the cover of the book. But in the meantime, our test of this view is done.</p>
 
 <p>Next up, I think I'll hit controller tests. So come on back!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/testing-td-views.html">old layout</a>.</small></p>
-
-

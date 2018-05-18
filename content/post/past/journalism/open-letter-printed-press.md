@@ -37,7 +37,3 @@ type: post
 
 </ol>
 </div>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/journalism/open-letter-printed-press.html">old layout</a>.</small></p>
-
-

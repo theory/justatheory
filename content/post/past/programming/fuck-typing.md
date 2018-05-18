@@ -42,7 +42,3 @@ skip it.</p>
 <p>What's surprising to me is how accepted this sort of bad behavior is in
 some <a href="http://www.juixe.com/techknow/index.php/2007/01/17/reopening-ruby-classes-2/" title="Reopening Ruby Classes">communities</a>. Oh, well, there are all kinds,
 I guess.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/methodology/fuck-typing.html">old layout</a>.</small></p>
-
-

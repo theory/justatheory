@@ -72,7 +72,3 @@ svnnotify -p "$1" -r "$2" &#x002d;&#x002d;handler HTML::ColorDiff &#x002d;&#x002
 <p>Yes, <em>really!</em> That's about half the functionality right there. I'm glad that I won't have to add any more like that; filters are a <em>much</em> better way to go.</p>
 
 <p>So download it, install it, write some filters, get your multibyte characters output properly, and enjoy! And as usual, send me your <a href="https://rt.cpan.org/Ticket/Create.html?Queue=SVN-Notify" title="Open a Ticket for SVN::Notify">bug reports</a>, but implement your own improvements using filters!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/svnnotify-2.70.html">old layout</a>.</small></p>
-
-

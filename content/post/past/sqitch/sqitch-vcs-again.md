@@ -172,7 +172,3 @@ bundle/sql/deploy/add_user@alpha.sql
 <p>That is, assuming that nothing else comes up to make me revise my plans again. Man, I sure hope not. This proposal nicely eliminates inconsistencies in the plan and deployment history regardless of whether deploying from a VCS, a bundled distribution, or a non-VCS project, the results should be the same. And it was those inconsistencies that I had been struggling with.</p>
 
 <p>But hey, if I have overlooked something (again!), please do let me know.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-vcs-again.html">old layout</a>.</small></p>
-
-

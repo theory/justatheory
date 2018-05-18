@@ -30,7 +30,3 @@ general discussion of the Summer of Code.</p>
 <p>But hurry, the deadline for proposal submissions is June 14! Students who get Bricolage projects accepted will be mentored by me and other members of the Bricolage community.</p>
 
 <p>We look forward to your proposals!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/google_summer_of_code.html">old layout</a>.</small></p>
-
-

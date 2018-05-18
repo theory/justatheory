@@ -162,7 +162,3 @@ SELECT b.isbn, b.title, b.rating,
 <p>PostgreSQL isn’t the only database to support feature such as this, by the way. All of the databases I've used support views, and many offer useful aggregate functions, as well. Among the <a href="http://dev.mysql.com/doc/refman/5.0/en/group-by-functions.html" title="MySQL Documentation: âGROUP BY (Aggregate) Functionsâ">MySQL aggregates</a>, for example, is <code>group_concat()</code>, which sort of combines the <code>array_to_string(array_agg())</code> PostgreSQL syntax into a single function. And I've <a href="http://www.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html" title="Just a Theory: âCustom Aggregates in Perlâ">personally written</a> a custom aggregate for SQLite in Perl. So although I use PostgreSQL for these examples and make use of its functionality, you can do much the same thing in most other databases.</p>
 
 <p>Either way, I find this to be a lot less work than using an ORM or other abstraction layer between my app and the database. Frankly, SQL provides just the right level of abstraction.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/sql-view-aggregate-magic.html">old layout</a>.</small></p>
-
-

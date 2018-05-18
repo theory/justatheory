@@ -36,7 +36,3 @@ touch</a> or meet us at
 sponsoring!) or at <a href="http://en.oreilly.com/oscon2009">OSCON 2009</a>.
 I'm really excited about our company, and looking forward to growing it as
 PostgreSQL adoption grows.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/autobiographical/pgexperts.html">old layout</a>.</small></p>
-
-

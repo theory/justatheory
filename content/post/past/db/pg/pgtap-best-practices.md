@@ -14,7 +14,3 @@ type: post
 <p>You can also download a 76MB <a href="http://www.kineticode.com/docs/pgtap_best_practices.pdf" title="pgTAP Best Practices">PDF</a> if that's more your style.</p>
 
 <p>Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-best-practices.html">old layout</a>.</small></p>
-
-

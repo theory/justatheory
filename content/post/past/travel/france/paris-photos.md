@@ -13,5 +13,3 @@ type: post
 <p>At any rate, I’ve gone through about a third of the photos from that trip and have posted them in a <a href="https://www.flickr.com/photos/theory/sets/72157610690990602/" title="Musée D’Orsay, Notre Dame, Centre Pompidou">Flickr photo set</a>. Keep visiting that set over the next few days as I process more of the photos. Then maybe I’ll get to the shots I’ve made here in Rouen!</p>
 
 <p>In the meantime, for much more active blogging of our trip, be sure to visit <a href="http://strongrrl.blogspot.com/" title="Six Semaines en France">Julie’s blog</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/paris-photos.html">old layout</a>.</small></p>

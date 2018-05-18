@@ -34,7 +34,3 @@ type: post
 <p>For too long, the right has defined the terms of the debate, and as the left has responded to them, they have lost, because you can't refute them. We need to reframe the debate by defining the terms and forcing the right to respond to those terms. The only way this can be done is if we use a few really good ones for core issues, and get them into widespread use, repeated over and over, for the next four years. We need a daily <a href="http://www.talkingpointsmemo.com/">talking points memo</a> to outline the discourse and organize the left, to get us all <q>on message,</q> so that people get the message.</p>
 
 <p>Think you're tired of the phrase <q>flip-flopper</q>? Get ready to hear more about our slash and spend president. Ad nauseam.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/reframing_the_debate.html">old layout</a>.</small></p>
-
-

@@ -22,7 +22,3 @@ I’ve come to depend on, and you’ll find out whether they might work for you.
 Either way, I promise it will at least be an amusing use of your time.</p></blockquote>
 
 <script async class="speakerdeck-embed" data-id="ad105ed0ac490130d6a626f5cde8fd08" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/agile-db-dev.html">old layout</a>.</small></p>
-
-

@@ -25,7 +25,3 @@ $sth->bind_columns(\my $txid);
 $sth->fetch;
 print &quot;Transaction: $txid\n&quot;;
 </pre>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/what_transaction.html">old layout</a>.</small></p>
-
-

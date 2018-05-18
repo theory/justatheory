@@ -40,7 +40,3 @@ document.write.apply2(document, [&#x0027;foo&#x0027;]);
 <p>So does anyone know a workaround for this bug? I found <a href="http://www.crockford.com/javascript/remedial.html" title="Remedial JavaScript">a page</a> that says, <q>Beware that some native functions in IE were made to look like objects instead of functions.</q> This might explain why <code>apply()</code> doesn't exist for the <code>document.write</code> object, but not why I can't add it.</p>
 
 <p>Help!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/apply_on_write.html">old layout</a>.</small></p>
-
-

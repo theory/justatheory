@@ -60,7 +60,3 @@ $_$;
 <p>I don’t know about you, but I find that a <em>lot</em> easier to read. which means it’ll be easier to maintain. So if you do much dynamic query generation inside the database, give <code>format()</code> a try, I think you’ll find it a winner.</p>
 
 <p><em><strong>Update 2012-11-16:</strong> Okay, so I somehow failed to notice that <code>format()</code> was actually introduced in 9.1 and <a href="http://www.depesz.com/2010/11/21/waiting-for-9-1-format/">covered by depesz</a>. D’oh! Well, hopefully my little post will help to get the word out more, at least. Thanks to my commenters.</em></p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/format.html">old layout</a>.</small></p>
-
-

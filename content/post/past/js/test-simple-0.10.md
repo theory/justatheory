@@ -73,7 +73,3 @@ type: post
 <p>Obviously this is a big release. I bumped up the version number because there are a fair number of backwards incompatibilities. But I'm reasonably confident that they wont' change so much in the future. And with the addition of the harness, it's getting ready for prime time!</p>
 
 <p>Next up, I'll finish porting the test from Test::Harness (really!) and add support for JSAN (look for a JSAN announcement soon). But in the meantime, feedback, bug reports, kudos, complaints, etc.warmly welcomed!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/test_simple-0.10.html">old layout</a>.</small></p>
-
-

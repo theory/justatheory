@@ -81,7 +81,3 @@ Nothing to deploy (up-to-date)
 <p>Want to give it a try? Install it with <code>cpan D/DW/DWHEELER/App-Sqitch-0.60-TRIAL.tar.gz</code> and follow along <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">the tutorial</a>.</p>
 
 <p>Now I’m off to add the <code>log</code> command, which shows a history of all deploys and reverts.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-status-status.html">old layout</a>.</small></p>
-
-

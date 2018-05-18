@@ -12,6 +12,9 @@
         </header>
         <div class="text">
 {{ .doc.Content }}
+{{- if and .doc.Aliases (hasPrefix .doc.File.Dir "post/past/") }}{{ with (index .doc.Aliases 0) }}
+            <p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="https://past.justatheory.com{{ . }}">old layout</a>.</small></p>
+{{- end }}{{ end }}
         </div>
 {{ partial "tags.html" (dict "doc" .doc) }}
     </article>

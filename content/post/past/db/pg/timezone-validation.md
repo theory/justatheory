@@ -154,8 +154,3 @@ CHECK ( is_timezone( value ) );
 </pre>
 
 <p>Enjoy!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/timezone_validation.html">old layout</a>.</small></p>
-
-

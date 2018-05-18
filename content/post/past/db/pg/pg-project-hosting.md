@@ -29,7 +29,3 @@ type: post
 <p>So I'm looking for advice. Does having an email list matter? If I can get pgTAP announcements included in the <a href="http://www.postgresql.org/community/weeklynews/">PostgreSQL Weekly News</a>, is that enough community visibility? Do you know of a nice project hosting site that offers hosting, mail lists, download mirroring and custom domain handling?</p>
 
 <p>I'll follow up with a summary of what I've found in a later post.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pg-project-hosting.html">old layout</a>.</small></p>
-
-

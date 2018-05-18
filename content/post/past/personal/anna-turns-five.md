@@ -12,7 +12,3 @@ type: post
 <p>Eight little girls gathered in May, 2010, to celebrate the fifth anniversary of Anna’s birth with a “Wizard of Oz”-themed birthday party.</p>
 
 <p>Happy birthday, sweetie!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/family/anna/anna-turns-five.html">old layout</a>.</small></p>
-
-

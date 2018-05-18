@@ -282,7 +282,3 @@ rest is just sugar, really. And with the ability to
 in Perl</a>, I can live without the extra sugar.</p>
 
 <p>Maybe you'll find it useful, too.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/test-with-xpath.html">old layout</a>.</small></p>
-
-

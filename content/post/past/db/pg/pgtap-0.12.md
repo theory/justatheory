@@ -25,7 +25,3 @@ type: post
 <p>I also have an idea to add functions that return the server version number (and each of the version number parts) and an OS string, to make testing things on various versions of PostgreSQL and on various operating systems a lot simpler.</p>
 
 <p>I think I'll also spend some time in the next few weeks on an article explaining exactly what pgTAP is and why you'd want to use it. Provided, of course, I can find the tuits for that.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-0.12.html">old layout</a>.</small></p>
-
-

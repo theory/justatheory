@@ -19,7 +19,3 @@ type: post
 </code></pre>
 
 <p>I hope this simplifies things for translators. See the <a href="https://metacpan.org/module/Dist::Zilla::LocaleTextDomain#But-Im-a-Translator">notes for translators</a> for a few more words on the subject.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/localetextdomain-msg-compile.html">old layout</a>.</small></p>
-
-

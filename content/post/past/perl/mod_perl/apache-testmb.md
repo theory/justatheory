@@ -32,7 +32,3 @@ it will soon be committed to the <code>Apache::Test</code> repository and
 released to CPAN. My <a href="http://search.cpan.org/dist/MasonX-Interp-WithCallbacks/" title="MasonX::Interp::WithCallbacks on CPAN"><code>MasonX::Interp::WithCallbacks</code></a>
 module will debut with a new <code>Apache::TestMB</code>-powered <em>Build.PL</em>
 soon afterward.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/mod_perl/apache_testmb.html">old layout</a>.</small></p>
-
-

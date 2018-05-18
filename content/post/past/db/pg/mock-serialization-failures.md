@@ -89,7 +89,3 @@ worked great, and I was able to write test in a few hours and
 <a href="https://github.com/bucardo/bucardo/commit/3931056f15f3f6df9b089fd439c14ec38b66d841">get them committed</a>.
 And now we can be reasonably sure that Bucardo will always properly handle
 serialization failures.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/mock-serialization-failures.html">old layout</a>.</small></p>
-
-

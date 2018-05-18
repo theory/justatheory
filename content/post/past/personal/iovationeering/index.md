@@ -26,7 +26,3 @@ type: post
 <p>I intend to remain involved in the various open-source projects I work on. I still function as the benevolent dictator of <a href="http://bricolagecms.org/">Bricolage CMS</a>, though other folks have stepped up their involvement quite a lot in the last few years. And I expect to keep improving <a href="http://pgxn.org/">PGXN</a> and <a href="http://www.designsceneapp.com/">DesignScene</a> as time allows (I’ve actually been putting some effort into both in the last few weeks; watch for <a href="http://blog.pgxn.org/" title="PGXN Blog">PGXN</a> and <a href="http://blog.lunar-theory.com/" title="Lunar/Theory Blog">Lunar/Theory</a> announcements in the coming weeks and months!). And, in fact, I expect that a fair amount of the work I do at iovation will lead to blog posts, conference presentations, and more open-source code.</p>
 
 <p>This is going to be a blast. Interested in a front-row seat? <a href="https://twitter.com/theory/">Follow me on Twitter</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/autobiographical/iovationeering.html">old layout</a>.</small></p>
-
-

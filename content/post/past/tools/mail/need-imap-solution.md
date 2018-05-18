@@ -115,7 +115,3 @@ thing right. So how do you make it right? And if I have to run my own server,
 where should I host it that won't cost me an arm and a leg?</p>
 
 <p>Thanks for your help!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/mail/need_imap_solution.html">old layout</a>.</small></p>
-
-

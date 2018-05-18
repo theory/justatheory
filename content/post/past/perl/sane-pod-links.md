@@ -26,7 +26,3 @@ documentation|http://pgtap.projects.postgresql.org/documentation.html&gt;.
 <p>So much better! And to show it off, I've just updated all the links in SVN::Notify and released a new version. Check it out on <a href="http://search.cpan.org/perldoc?SVN::Notify" title="SVN::Notify on CPAN">CPAN Search</a>. See how the links such as to "HookStart.exe" and "Windows Subversion + Apache + TortoiseSVN + SVN::Notify HOWTO" are nice links? They no longer use the URL for the link text. Contrast with the <a href="http://search.cpan.org/~dwheeler/SVN-Notify-2.79/lib/SVN/Notify.pm" title="SVN::Notify 2.79 on CPAN">previous version</a>.</p>
 
 <p>And as of yesterday, the last piece to allow this went into place. <a href="http://petdance.com/" title="Andy Lester">Andy</a> gave me maintenance of <a href="http://search.cpan.org/perldoc?Test::Pod" title="Test::Pod on CPAN">Test::Pod</a>, and I immediately released a new version to allow the new syntax. So update your <code>t/pod.t</code> file to require Test::Pod 1.41, update your links, and celebrate the arrival of sane links in Pod documentation.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/sane-pod-links.html">old layout</a>.</small></p>
-
-

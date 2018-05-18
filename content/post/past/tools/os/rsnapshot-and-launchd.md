@@ -43,6 +43,3 @@ backup	/Users/
 </ol>
 
 <p>And that's it. Enjoy!</p>
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/macosx/rsnapshot_and_launchd.html">old layout</a>.</small></p>
-
-

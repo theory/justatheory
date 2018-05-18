@@ -66,7 +66,3 @@ change_pass [change_pass@v1.0]
 <p>Which, since it is the first instance is the same as specifying no tag at all. But if there were, say, four instances of <code>change_pass</code>, you can see how it might be important to use tags to specify specific instances for dependencies.</p>
 
 <p>For what it’s worth, this is how to get around the <a href="https://github.com/theory/sqitch/issues/103">original bug</a> referenced above: just specify <em>which</em> instance of the change to require by using a tag that follows that instance, and the error should go away.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-requiring-reworked-changes.html">old layout</a>.</small></p>
-
-

@@ -15,7 +15,3 @@ type: post
 
 <p>So, how do I know if it's working? Is it working? Shouldn't <code>ntpq
 -p</code> be more informative?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/os/freebsd/is_ntpd_working.html">old layout</a>.</small></p>
-
-

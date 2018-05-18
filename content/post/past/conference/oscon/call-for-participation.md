@@ -16,7 +16,3 @@ type: post
 </ul>
 
 <p>I'm sure I'll think of others in the coming weeks. What ideas do you have? Post them below!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/conferences/oscon2006/call_for_participation.html">old layout</a>.</small></p>
-
-

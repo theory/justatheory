@@ -37,7 +37,3 @@ $form[&#x0027;submit_stuff&#x0027;] = array(
 <p>In short, if it ain't broke, don't <em>reinvent it!</em></p>
 
 <p>&lt;/rant&gt;</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/methodology/doomed-to-reinvent.html">old layout</a>.</small></p>
-
-

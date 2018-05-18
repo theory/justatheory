@@ -133,7 +133,3 @@ themselves to document DBI's callbacks? At this point, the closest thing to
 documentation is in the
 <a href="http://cpansearch.perl.org/src/TIMB/DBI-1.609/t/70callbacks.t"title="DBI test 70callbacks.t">tests</a>. (Hrm. I think I might have had a hand in
 writing them.) Check 'em out.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/dbi-connect-cached-hack.html">old layout</a>.</small></p>
-
-

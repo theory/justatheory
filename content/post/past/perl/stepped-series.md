@@ -37,7 +37,3 @@ like this:</p>
 <p>But barring such a slice feature in Perl is there some cleaner way than the
 ugly <code>grep</code> approach I created to generate a stepped series in
 Perl?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/stepped_series.html">old layout</a>.</small></p>
-
-

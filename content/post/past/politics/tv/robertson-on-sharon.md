@@ -14,7 +14,3 @@ type: post
 <p>&#x2014;<a href="http://mediamatters.org/items/200601050004" title="Robertson blamed Sharon stroke on policy of &#x201c;dividing God's land&#x201d;">Pat Robertson</a></p>
 
 </blockquote>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/tv/robertson_on_sharon.html">old layout</a>.</small></p>
-
-

@@ -18,7 +18,3 @@ type: post
 <p>This seems typical of conservative commentary--it's a very selective description of Kerry's position. Yes, Kerry says that the war was a mistake, <em>but now that we're in it, we need to do it right,</em> including getting tough on rooting out the terrorists (who, by the way, only came into the country after the war started). Kerry has not dismissed the contributions of existing allies, but has pointed out that, unlike Desert Storm, this coalition is far from evenly divided. As Edwards repeatedly said during the Veep debate, the US bears 90% of the cost among the coalition members, both in terms of dollars and in terms of lives. There is no contradiction in these statements. The contradiction only comes up if they're used selectively and outside of appropriate contexts.</p>
 
 <p>I am so sick of this hypocrisy! I keep telling people, I <em>can't wait</em> to be disappointed in Kerry's presidency, as I was with Clinton's. I'll take disappointment over being offended by the President and his apologists any day!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/fineman_analysis.html">old layout</a>.</small></p>
-
-

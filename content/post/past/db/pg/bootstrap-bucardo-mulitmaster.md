@@ -71,7 +71,3 @@ bucardo reload config
 </code></pre>
 
 <p>Bucardo will fire up the necessary syncs and copy over any interim deltas. And any changes you make to either system in the future will be copied to the other.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/bootstrap-bucardo-mulitmaster.html">old layout</a>.</small></p>
-
-

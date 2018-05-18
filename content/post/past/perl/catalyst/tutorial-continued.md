@@ -185,7 +185,3 @@ template list =&gt; sub {
 <p>The takeaway from this post: Use PostgreSQL’s support for custom data types to create validated natural keys for your data, and use a stable, persistent database connection to talk directly to the database. No need for an ORM here, as the <a href="http://search.cpan.org/perldoc?DBI" title="The DBI on CPAN">DBI</a> provides a very Perlish access to a very capable <a href="https://en.wikipedia.org/wiki/Domain-specific_language" title="Wikipedia: âDomain-Specific Languageâ">DSL</a> for models called SQL.</p>
 
 <p>More soon.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/tutorial-continued.html">old layout</a>.</small></p>
-
-

@@ -156,7 +156,3 @@ Perhaps I never will, but I am still very interested in your reasons for
 doubting the utility of database testing. What other points should I be
 thinking about as I prepare for my
 <a href="https://www.pgcon.org/2009/schedule/events/165.en.html" title="PGCon: Unit Test Your Database!">PGCon presentation</a>?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/more-on-database-testing.html">old layout</a>.</small></p>
-
-

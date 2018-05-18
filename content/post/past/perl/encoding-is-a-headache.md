@@ -23,7 +23,3 @@ type: post
 <p>Text::Markup is a dead simple idea, but virtually all of my time is going into thinking about this stuff. It drives me nuts. When will the world cease to be this way?</p>
 
 <p>Oh, and you have answers to any of these questions, please do feel free to leave a comment. I hate having to spend so much time on this, but I’d much rather do so and get things right (or close to right) than wrong.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/encoding-is-a-headache.html">old layout</a>.</small></p>
-
-

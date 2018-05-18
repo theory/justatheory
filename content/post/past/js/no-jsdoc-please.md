@@ -18,7 +18,3 @@ type: post
 <p>So I think I'll follow Chris Dolan's advice from my <a href="/computers/programming/javascript/documentation_standard.html" title="Is there a JavaScript Library Documentation Standard?">original post</a> and fall back on Good 'ole <a href="http://search.cpan.org/dist/perl/pod/perlpod.pod" title="Read the POD documentation on CPAN">POD</a>. POD allows me to write as much or as little documentation as I like, with methods and functions documented in an order that makes sense to me, with headings even! I can write long descriptions, synopses, and even documentation completely unrelated to specifics of the interface. And all in a separate file, even!</p>
 
 <p>This will do until someone formalizes a standard for JavaScript. Maybe it'll be <a href="http://kwiki.org/?KwiD" title="KWID is a proposed replacement format for Perl's POD format; read more about it here.">KwiD</a>?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/no_jsdoc_please.html">old layout</a>.</small></p>
-
-

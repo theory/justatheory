@@ -30,5 +30,3 @@ brew install sqitch-oracle
 <p>There are a few other minor tweaks and fixed in this release; check the <a href="https://metacpan.org/source/DWHEELER/App-Sqitch-0.970/Changes">release notes</a> for details.</p>
 
 <p>Want more? I will be giving a half-day tutorial, entitled “<a href="https://www.pgcon.org/2013/schedule/events/615.en.html">Agile Database Development</a>,” on database development with <a href="https://git-scm.com/">Git</a>, <a href="http://sqitch.org/">Sqitch</a>, and <a href="https://pgtap.org/">pgTAP</a> at on May 22 <a href="https://www.pgcon.org/2013/">PGCon 2013</a> in Ottawa, Ontario. Come on up!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-oracle.html">old layout</a>.</small></p>

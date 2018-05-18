@@ -178,13 +178,3 @@ Merging gettext strings into po/ja.po</code></pre>
 <h3>Acknowledgements</h3>
 
 My thanks to <a href="http://rjbs.manxome.org">Ricardo Signes</a> for invaluable help plugging in to Dist::Zilla, to <a href="http://guido-flohr.net/">Guido Flohr</a> for providing feedback on this tutorial and being open to my pull requests, to <a href="http://www.dagolden.com/">David Golden</a> for I/O capturing help, and to <a href="https://metacpan.org/author/JQUELIN">Jérôme Quelin</a> for his patience as I wrote code to do the same thing as <a href="https://metacpan.org/module/Dist::Zilla::Plugin::LocaleMsgfmt">Dist::Zilla::Plugin::LocaleMsgfmt</a> without ever noticing that it already existed.</p>
-
-
-
-
-
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/dist-zilla-localetextdomain.html">old layout</a>.</small></p>
-
-

@@ -383,7 +383,3 @@ let them be these suggestions:</p>
 Clark for reviewing earlier drafts of this essay and providing invaluable
 feedback and suggestions -- many of which I accepted. Any errors of course
 remain completely my own.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/perl/pg-vs-perl-dev.html">old layout</a>.</small></p>
-
-

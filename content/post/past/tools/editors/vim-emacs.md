@@ -19,7 +19,3 @@ type: post
   <p>Theory: I'm going to blog that.</p>
   <p>Ovid: :)</p>
 </blockquote>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/humor/vim_emacs.html">old layout</a>.</small></p>
-
-

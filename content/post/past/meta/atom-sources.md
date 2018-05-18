@@ -24,7 +24,3 @@ type: post
 <p>Except, maybe it’s the <a href="http://www.pgexperts.com/">database expert</a> in me, but I'd like to be able to have it be more normalized. My feed might have 1000 entries in it from 100 sources. Why would I want to dupe that information for every single entry from a given source? Is there now better way to do this, say to have the source data once, and to reference the source ID only for each entry? That would make for a much smaller feed, I expect, and a lot less duplication.</p>
 
 <p>Is there any way to do this in an Atom feed?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/atom-sources.html">old layout</a>.</small></p>
-
-

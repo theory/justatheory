@@ -78,7 +78,3 @@ of SQL-- how to write idiomatic SQL to match the mad skillz you already apply
 to your application code, you could hardly do better than to get in on these
 deals and drink from the Celko firehose. I only wish I was going to be there
 (alas, prior plans interfered). But do please tell me all about it!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/celko-at-yapc.html">old layout</a>.</small></p>
-
-

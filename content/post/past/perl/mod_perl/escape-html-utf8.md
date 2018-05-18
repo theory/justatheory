@@ -25,7 +25,3 @@ Compare '&lt;å°è¼¯&gt;'
 <p>The first escape appears to work correctly, but when I decode the string to Perl's Unicode representation, you can see how badly <code>escape_html()</code> munges the text!</p>
 
 <p>Curiously, both tests fail, although the first conversion appears to be correct. This could be due to the behavior of <code>eq</code>, though I'm not sure why. But it's the second test that's the more interesting, since it really screws things up.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/mod_perl/escape_html_utf8.html">old layout</a>.</small></p>
-
-

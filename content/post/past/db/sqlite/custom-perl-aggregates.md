@@ -118,7 +118,3 @@ sub finalize {
 </pre>
 
 <p>Keen! I mean, that is just <em>so</em> slick! And it really demonstrates the power of SQLite as an embeddable database, as well. Thanks <a href="http://www.sergeant.org/view/Matt" title="Matt Sergeant">Matt</a>, for making the SQLite API available to us mere mortal Perl developers!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html">old layout</a>.</small></p>
-
-

@@ -8,7 +8,3 @@ type: post
 ---
 
 <p>This has to be one of the geekiest things I've ever seen: You can <a href="http://www.bese.it/~segv/osx-itunes.el" title="Download the itunes.el and control iTunes from Emacs today!">control iTunes from Emacs</a>! The nice thing about it is that you can control iTunes remotely via a terminal session.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/tricks/control_itunes_from_emacs.html">old layout</a>.</small></p>
-
-

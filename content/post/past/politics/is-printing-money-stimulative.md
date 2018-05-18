@@ -56,7 +56,3 @@ type: post
 <p>Also, bear in mind that these are <em>not</em> normal times. Normal stimulative approaches, such as lowering interest rates, just are not feasible. So governments must find other ways to be stimulative. Jobs programs are the best approach, as long as they start to approach the scope of job loss due to the recession. But I’m not surprised that governments are looking for other ways to try to stimulate the economy, even those that normally are frowned upon, such as deficit spending. In <a href="http://krugman.blogs.nytimes.com/2008/11/15/macro-policy-in-a-liquidity-trap-wonkish/" title="The Conscience of a Liberal: “Macro policy in a liquidity trap (wonkish)”">Krugman’s words</a>, the only way out of the current crisis is for the government to “credibly promise to be irresponsible.”</p>
 
 <p><strong>Update 2010-2-15:</strong> Krugman has <a href="http://krugman.blogs.nytimes.com/2010/12/15/what-is-money/" title="The Conscience of a Liberal: “What Is Money?”">blogged about this</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/economy/is-printing-mony-stimulative.html">old layout</a>.</small></p>
-
-

@@ -30,7 +30,3 @@ h = Hash[ *a.collect { |v| [ v, v ] }.flatten ]
 </pre>
 
 <p>Not quite as concise as the Perl version, and I have to construct a bunch of arrays that I then throw away with the call to <code>flatten</code>, but at least it's concise and, I think, clearer what it's doing. So I think I'll go with that.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/ruby/array_to_hash_one_liner.html">old layout</a>.</small></p>
-
-

@@ -54,5 +54,3 @@ right as to be, well, radical.</p>
 <p>I will do my part to see to it that Kerry gets the chance to disappoint me
 as a highly preferable alternative to the current state of complete
 mortification.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/politics/election_2004/portland_ralley.html">old layout</a>.</small></p>

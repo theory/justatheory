@@ -12,7 +12,3 @@ type: post
 <p>So today I ported it to Blosxom. You can get it yourself <a href="/downloads/sociable-1.0">here</a>. You'll also need to download the <a href="http://yoast.com/wordpress/sociable/" title="Sociable Plugin home page">Sociable WordPress plugin</a> so that you can get all the necessary images and styling. Read the docs for how to use it; it's pretty simple, and supports a <em>lot</em> of social bookmarking sites, and even good ’ole “Email” and “Print” links.</p>
 
 <p>And of course, also starting today, you can see the links right here on my site. So, yeah, go ahead and link me up!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/blosxom/sociable/introducing-sociable.html">old layout</a>.</small></p>
-
-

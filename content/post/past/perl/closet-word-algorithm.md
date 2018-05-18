@@ -28,5 +28,3 @@ sub _find_closest_word {
 </pre>
 
 <p>Am I missing something, or is this really the most obvious and efficient way to do it?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/closet_word_algorithm.html">old layout</a>.</small></p>

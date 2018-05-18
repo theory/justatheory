@@ -89,7 +89,3 @@ CREATE OR REPLACE FUNCTION get_widgets_for_user_id(
      LIMIT COALESCE( $3, NULL )
 $$ LANGUAGE SQL;
 </pre>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/dynamic-limit.html">old layout</a>.</small></p>
-
-

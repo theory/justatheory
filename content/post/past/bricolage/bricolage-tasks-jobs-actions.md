@@ -82,7 +82,3 @@ out to be general enough to satisfy me, is that more users will have more of
 what they need from Bricolage, and developers can more easily add new
 functionality that's immediately available to event actions, scheduled jobs, and
 distribution destinations.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/design/tasks_jobs_actions.html">old layout</a>.</small></p>
-
-

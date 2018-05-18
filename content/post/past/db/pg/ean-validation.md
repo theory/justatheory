@@ -229,7 +229,3 @@ try(# ]);
 </pre>
 
 <p>Enjoy!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/ean_validation.html">old layout</a>.</small></p>
-
-

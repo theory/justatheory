@@ -34,7 +34,3 @@ mv /tmp/readline /usr/include
 </pre>
 
 <p>But surely I'm missing something! Is there no better way to do it?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/howto_avoid_tigers_readline.html">old layout</a>.</small></p>
-
-

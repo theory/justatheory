@@ -53,7 +53,3 @@ LHST
 <p>Personally, in my subclass of <code>Time</code>, I took care of stashing the time zone at object instantiation as a workaround for this bug. It seemed reasonable to me, and I was just surprised that the idea was rejected by the Ruby developers.</p>
 
 <p>What do you think?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/ruby/time_zone_bug.html">old layout</a>.</small></p>
-
-

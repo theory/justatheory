@@ -28,5 +28,3 @@ type: post
 <p>And finally, just as a bonus, here are some photos I took this morning in Anna's dance and French classes. The light wasn't great (all fluorescent), and shooting at ISO 400 at F/1.8 wasn't the best idea, I've decided. I kept only about 10 out of 124 shots. Next time I'll go up to ISO 800 and try to close down the aperture a bit. Wish me luck on that!</p>
 
 <p>I have a lot more photos from France to process, still. I'll post here as I get them on Flickr. It takes a while because Aperture is pretty slow at importing RAW photos from my Canon Rebel XSi, and even slower when I start to make changes to the photos. So it's dragging on, but I'll keep slogging at it. The trick will be for me to try to stay ahead of the curve on photos taken since the trip. I've only got 600 of those. Yikes! Wish me luck!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2008/more-france-photos.html">old layout</a>.</small></p>

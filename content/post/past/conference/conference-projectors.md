@@ -18,7 +18,3 @@ resolution of no more than 800 x 600?!</em> There is simply no excuse for
 this anymore--and there hasn't been for, what, a decade?</p>
 
 <p>That is all. Thank you.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/conferences/etech2006/projectors.html">old layout</a>.</small></p>
-
-

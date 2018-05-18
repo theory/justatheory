@@ -16,5 +16,3 @@ type: post
 <p>Now, I had to think carefully about posting this, because it reminded me, suddenly, of the old gun nut statement that guns don't kill people, people kill people. The reason why I'm willing to use it for the iPod and not guns, however, has to do with design. Guns are designed to kill. It kind of makes the statement moot. I mean, what would you expect people to do with them? iPods, however, are not designed to breach security. They're designed to listen to music, to store files, to copy your calendar, etc. Now, whether an individual person decides to use the iPod in breach of a company's security protocols is a matter independent of the iPod's design and intended use.</p>
 
 <p>So the mantra holds: iPods aren't security threats; <em>employees</em> are security threats. But guns, yeah, they're pretty much designed for killing.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/policy/ipod_security_threat.html">old layout</a>.</small></p>

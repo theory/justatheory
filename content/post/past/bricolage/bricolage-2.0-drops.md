@@ -44,7 +44,3 @@ type: post
 </ul>
 
 <p>Many others provided feedback, patches, and bug reports, and I appreciate all the help. I hope to see you all for Bricolage 2.2!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/bricolage-2.0-drops.html">old layout</a>.</small></p>
-
-

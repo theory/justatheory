@@ -122,7 +122,3 @@ type: post
 <p>The one thing that scares me a bit is being able to properly detect circular dependencies in the plan parser. I think it will be pretty straight-forward for steps that require other steps. Less so for steps that require tags. Perhaps it will just have to convert a tag into an explicit dependence on all steps prior to that tag.</p>
 
 <p>So, I think this will work. But I’m sure I must have missed something. If you notice it please enlighten me in the comments. And thanks for reading this far!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/evolving-sqitch-plan.html">old layout</a>.</small></p>
-
-

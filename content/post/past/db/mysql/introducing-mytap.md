@@ -77,7 +77,3 @@ Result: PASS
 <p>So fork on <a href="http://github.com/theory/mytap/" title="MyTAP on GitHub">GitHub</a> or contact me if you'd like to be added as a collaborator (I'm looking at <em>you,</em> <a href="http://datacharmer.blogspot.com/">Giuseppe</a>!).</p>
 
 <p>Hope you find it useful.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/mysql/introducing_mysql.html">old layout</a>.</small></p>
-
-

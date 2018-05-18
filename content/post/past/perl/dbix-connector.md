@@ -125,10 +125,3 @@ on it (something like Catalyst::Model::DBI, only better!), but next up, I plan
 to finish documenting
 <a href="http://search.cpan.org/perldoc?Template::Declare" title="Template::Declare on the CPAN">Template::Declare</a> and writing some
 views with it. More on that soon.</p>
-
-
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/dbix-connector.html">old layout</a>.</small></p>
-
-

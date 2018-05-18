@@ -169,7 +169,3 @@ I've finally got it nailed down. Unfortunately, it takes an hour or two to
 export from Subversion to Git, and I'm having to do it over and over again as
 I figure stuff out. But it will be done, and you'll hear more about it
 here.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/vcs/git/bricolage-cvs-to-git.html">old layout</a>.</small></p>
-
-

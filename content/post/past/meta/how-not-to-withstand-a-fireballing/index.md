@@ -22,5 +22,3 @@ type: post
 </ul>
 
 <p>I have more to say on the topic of iPad magazines, but I'm using the meager tuits I have to first make some infrastructural changes.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/blog/how-not-to-withstand-a-fireballing.html">old layout</a>.</small></p>

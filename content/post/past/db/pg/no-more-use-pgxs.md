@@ -69,7 +69,3 @@ make installcheck
 <p>Is there any reason why third-party PostgreSQL extensions should <em>not</em> adopt this pattern? I don’t think it makes sense for contrib extensions in core to do it, but for those that will never be in core, I think it makes a lot of sense.</p>
 
 <p>Comments?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/no_more_use_pgxs.html">old layout</a>.</small></p>
-
-

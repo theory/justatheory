@@ -37,8 +37,3 @@ title="Managing Many-to-Many Relationships with PL/pgSQL">articles</a> for
 O'Reilly.</p>
 
 <p>So start having some fun with PL/pgSQL!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/plpgsql_talk_slides.html">old layout</a>.</small></p>
-
-

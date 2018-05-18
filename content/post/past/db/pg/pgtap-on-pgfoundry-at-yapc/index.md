@@ -18,7 +18,3 @@ type: post
 </dl>
 
 <p>Care to help me with development? Want to add your own test functions or make it all integrate better with standard PostgreSQL regression tests? Want to help me get Module::Build or Module::Install to run Perl and PostgreSQL and whatever tests side-by-side, all at once? Join the <a href="http://pgfoundry.org/mail/?group_id=1000389" title="Subscribe to pgtap-users">pgtap-users</a> mail list and join the fun!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgtap-on-pgfoundry_at_yapc.html">old layout</a>.</small></p>
-
-

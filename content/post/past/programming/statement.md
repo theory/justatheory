@@ -70,7 +70,3 @@ over -- in fact, it likely has already started over. New features must be
 schematically tested with likely users, and new interfaces designed to
 implement them. The idea is to end up with a solid product that can grow
 with the needs of the target market.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/methodology/statement.html">old layout</a>.</small></p>
-
-

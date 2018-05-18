@@ -208,7 +208,3 @@ starting with testing that all tables
 key”">have primary keys</a>.</p>
 
 <p>But that's after my vacation. Back in two weeks.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/test-your-results.html">old layout</a>.</small></p>
-
-

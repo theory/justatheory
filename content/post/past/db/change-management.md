@@ -179,8 +179,3 @@ like <a href="http://search.cpan.org/perldoc?DBIx::Class::Manual::SchemaIntro" t
 as I don't rely on ORMs anymore (probably should blog that one of these days,
 too). I'm just curious what other approaches folks have taken to database
 change management. Let me know.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/change-management.html">old layout</a>.</small></p>
-
-

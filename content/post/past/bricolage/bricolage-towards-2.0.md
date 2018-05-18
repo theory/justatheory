@@ -44,10 +44,3 @@ list of all that I've done in the last two weeks:</p>
 <p>The old Bricolage server was provided by <a href="http://pair.net" title="pair Networks">pair Networds</a> for the last five years. I'd just like to thank pair for the generous five-year loan of that box, which helped provided infrastructure for both Bricolage <em>and</em> Kineticode. Thank you, pair!</p>
 
 <p>And with that, I'm going heads-down on some other projects. I'll pop back up to make sure that Bricolage 2.0 is released in a few months, but otherwise, I'm on to other things again for a while. Watch this space for details!</p>
-
-
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/towards_2.0.html">old layout</a>.</small></p>
-
-

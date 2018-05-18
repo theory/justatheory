@@ -38,5 +38,3 @@ type: post
 <p>(Although <a href="https://twitter.com/darth/status/216179141773504512">Darth thinks we should have brought an iMac in the kid’s backpack</a>, it did not seem practical).
 The TV was a last-minute purchase, because I knew ahead of time that the house had an HDMI projector and optical-ready surround-sound system, so it seemed the best way to keep up with our shows. Haven’t used it much, yet. Everyone is reading on the iPads, though; Ms 7 has a <em>very</em> expensive reading habit!</p></li>
 </ul>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/france/2012/a-rouen.html">old layout</a>.</small></p>

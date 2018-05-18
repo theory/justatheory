@@ -184,7 +184,3 @@ $ mkdir root/static/css
 <p>While this works, I'm not satisfied with the overall interface for Template::Declare wrappers. The need to explicitly export them and pass arguments is annoying. Maybe the <a href="http://jifty.org/">Jifty</a> guys have some other approach that works better. But if not, I'll likely go back to the drawing board on wrappers and see how they can be made better.</p>
 
 <p>Next up: More database fun!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/template-declare-wrapper.html">old layout</a>.</small></p>
-
-

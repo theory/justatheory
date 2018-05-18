@@ -90,7 +90,3 @@ update_user
 <p>I think this could work. I am not sure if I would require that all tags be present, or only those necessary to resolve duplications (both approaches feel a bit magical to me, though I haven’t tried it yet, either). The latter would probably be more forgiving for users. And overall, I think the whole approach is less rigid, and more likely to allow developers to work they way they are used to working.</p>
 
 <p>But I could be off my rocker entirely. What do <em>you</em> think? I want to get this right, please, if you have an opinion here, let me have it!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-plan.html">old layout</a>.</small></p>
-
-

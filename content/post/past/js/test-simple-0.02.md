@@ -54,7 +54,3 @@ these <q>modules</q> ready for production use are:</p>
 </ul>
 
 <p>Feedback/advice/insults welcome!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/test_simple-0.02.html">old layout</a>.</small></p>
-
-

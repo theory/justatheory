@@ -48,7 +48,3 @@ ORDER BY entry_id, ord;
 </ul>
 
 <p>Leave a comment to let me know. Thanks!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/ordering_poll.html">old layout</a>.</small></p>
-
-

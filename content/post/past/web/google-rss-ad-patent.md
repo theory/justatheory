@@ -16,7 +16,3 @@ type: post
 <p>This despite the fact that InfoWorld was itself sending targeted ads out in is RSS feeds <em>before Google filed for its patent!</em> Is this another <a href="http://www.oreilly.com/news/patent_archive.html" title="The Amazon Patent Controversy">one-click debacle</a> in the making? Does it really make any sense to patent delivering targeted ads over HTTP just because they're in XML instead of HTML?</p>
 
 <p>What do you think?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/controversy/google_rss_ad_patent.html">old layout</a>.</small></p>
-
-

@@ -170,7 +170,3 @@ Result: FAIL
 </pre>
 
 <p>It&#x0027;s so easy to create new source handlers now, especially if all you have to do is support a new dynamic language. I've put the simple Ruby example <a href="/code/TAP-Parser-SourceHandler-Ruby.pm">over here</a>; feel free to take it and run with it!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/tap-parser-sourcehandler.html">old layout</a>.</small></p>
-
-

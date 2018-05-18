@@ -143,7 +143,3 @@ in an Apache/mod_perl environment and uses the PostgreSQL RDBMS for its
 repository. A comprehensive, actively-developed open source CMS, Bricolage was
 hailed as <q>quite possibly the most capable enterprise-class open-source
 application available</q> by <cite>eWEEK</cite>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/announce/1.8.5.html">old layout</a>.</small></p>
-
-

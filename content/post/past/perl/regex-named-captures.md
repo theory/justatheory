@@ -128,7 +128,3 @@ to be careful. If you can wait, though, perhaps we'll
 see <a
 href="http://www.nntp.perl.org/group/perl.perl5.porters/;msgid=9b18b3110610051158h43c58810ted1017129929a539[at]mail.gmail.com" title="Perl 5 Porters: &#x201c;[PATCH] Initial attempt at named captures for
 perls regexp engine&#x201d;">named captures in Perl 5.10</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/regex_named_captures.html">old layout</a>.</small></p>
-
-

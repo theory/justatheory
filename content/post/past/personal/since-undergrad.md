@@ -30,7 +30,3 @@ type: post
 <p>Anyway, life is good. I suppose if I were to write this again tomorrow I’d focus on a bunch of other things. A lot happens in 17 years, as you no doubt know. This is just a thin slice, with more academic stuff than I usually go into, but the context seemed to warrant it.</p>
 
 <p>So what’s your 411?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/autobiographical/since-undergrad.html">old layout</a>.</small></p>
-
-

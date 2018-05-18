@@ -337,7 +337,3 @@ release.</p>
 
 <p>I’d planned to cover the elimination of duplication, but I think this is
 enough for one post. Watch for that idea in my next post.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/vcs-sql-change-management.html">old layout</a>.</small></p>
-
-

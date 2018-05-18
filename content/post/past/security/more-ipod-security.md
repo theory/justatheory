@@ -42,5 +42,3 @@ external storage devices to keep honest people honest, but really, they should
 also fix the real security problem with their operating system of choice.</p>
 
 <p>(Via <a href="http://x180.net/" title="x180.net">Duncan</a>)</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/policy/more_ipod_security.html">old layout</a>.</small></p>

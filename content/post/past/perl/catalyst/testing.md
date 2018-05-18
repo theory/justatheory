@@ -171,7 +171,3 @@ Result: PASS
 <p>Excellent! Now, the truth is that we didn’t document our templates, either. Test::Pod doesn’t cotton on to that fact because they're not installed like normal subroutines in the test classes. So it’s up to us to document them ourselves. (Note to self: Consider adding a module to test that all Template::Declare classes have docs for all of their templates.) I'll wait here while you do that.</p>
 
 <p>All done? Great! I had actually planned to start testing the view next, but I think this is enough for today. Stay tuned for more testing goodness.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/catalyst/testing.html">old layout</a>.</small></p>
-
-

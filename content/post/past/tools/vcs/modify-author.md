@@ -76,7 +76,3 @@ svnadmin load /path/to/new/svnroot &lt; svndump.in
 </pre>
 
 <p>And that's it! Feel free to take this code and do with it what you like, including fix any bugs, add command-line options, support changing multiple authors at once, or whatever. Share and enjoy.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/vcs/svn/modify_author.html">old layout</a>.</small></p>
-
-

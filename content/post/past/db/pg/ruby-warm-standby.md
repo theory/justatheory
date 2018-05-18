@@ -47,7 +47,3 @@ move from, to
 <p>Just change the <code>DELAY</code> value to the number of seconds you want to sleep, and the <code>FAILOVER_FILE</code> value to the location of a file that will trigger a failover.</p>
 
 <p>This is all well and good, but I ultimately ended up using the <code>pg_standby</code> utility that's a new contrib utility in PostgreSQL CVS (and will therefore ship with 8.3), as it has the nice feature of cleaning up old WAL log files. It also does not have subsecond precision, but hey, maybe we don't really need it.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/ruby_warm_standby.html">old layout</a>.</small></p>
-
-

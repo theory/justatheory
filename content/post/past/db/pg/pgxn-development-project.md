@@ -21,7 +21,3 @@ type: post
 <p>I've been wanting to start this project for a long time, but given my need to pay the bills, it didn’t seem like I'd ever be able to find the time for it. Then Josh Berkus suggested that we try to get community interest and raise money for me to have the time to work on it. So I jumped on that, putting in the hours needed to get general approval from the core PostgreSQL developers and to create a reasonable project plan and web site. And thanks to MyYearbook’s and PGX’s backing, I'm really excited about it. I hope to start on it in August.</p>
 
 <p>If you'd like to contribute, first: <strong>Thank You!</strong>. The <a href="http://pgxn.org/" title="PGXN">PGXN site</a> has a Google Checkout widget that makes it easy to make a donation. If you'd rather pay by some other means (checks are great for us!), <a href="mailto:pgxn@pgexpergts.com">drop me a line</a> and we'll work something out. We have a few levels of <a href="http://pgxn.org/contributors.html" title="PGXN Contributors">contribution</a> as well, including permanent linkage on the PGXN site for your organization, as well as the usual t-shirts launch party invitations.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/pgxn-development-project.html">old layout</a>.</small></p>
-
-

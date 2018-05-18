@@ -204,7 +204,3 @@ elements you need, it's certainly the nicest to use.</p>
 <p>Oh, and Bricolage users? Just make use of
 use <a href="http://search.cpan.org/perldoc?Template::Declare::Bricolage" title="Template::Declare::Bricolage on CPAN">Template::Declare::Bricolage</a>
 to deaden the pain.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/xml-generation.html">old layout</a>.</small></p>
-
-

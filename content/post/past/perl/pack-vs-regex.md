@@ -61,7 +61,3 @@ __END__
 <p>I sure didn't expect them to be so close, let alone to see the regular expression approach nose out the <code>unpack()</code> solution. Clearly the Perl regex engine is highly optimized. And perhaps  <code>pack()/unpack()</code> is not.</p>
 
 <p>Live and learn, I guess.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/pack_vs_regex.html">old layout</a>.</small></p>
-
-

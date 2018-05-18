@@ -83,7 +83,3 @@ a year ago and made it happen, so that I could get the benefits of Cork'd
 <em>and</em> track my own wines like I could with CellarTracker. But for now,
 I'm just sending feature requests to Cork'd and watching to see how things
 develop.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/wine/on_wine_webapps.html">old layout</a>.</small></p>
-
-

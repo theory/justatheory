@@ -12,8 +12,3 @@ type: post
 <p>What I <em>don't</em> need is an introduction to SQL. There are a million of those, and they all have much the same stuff. I want to really get into advanced concepts.</p>
 
 <p>So what's the best choice? Leave me a comment with your opinion. Thanks!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/which_sql_book.html">old layout</a>.</small></p>
-
-

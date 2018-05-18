@@ -14,7 +14,3 @@ at <a href="http://www.freegeek.org/">FreeGeek</a>. My talk will be an
 introduction to PL/pgSQL. Come check it out and join the fun! Beer and
 schmoozing to take place after the talk
 at <a href="http://www.luckylab.com/">The Lucky Lab</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/plpgsql_talk.html">old layout</a>.</small></p>
-
-

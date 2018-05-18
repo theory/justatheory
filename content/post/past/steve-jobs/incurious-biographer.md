@@ -16,7 +16,3 @@ type: post
 <p>Yes, <em>exactly!</em> Isaacson does not seem interested in what made Jobs tick; that’s a real shame for those of us who are. I was ready to cut Isaacson a bit of slack, as writing a biography is very difficult, and writing a definitive one damn near impossible. But since Gruber hits the same point I tried make, and Siracusa has pretty thoroughly decimated Isaacson’s authority, I’m now far less willing to do so. Isaacson just seems incurious about his subject, whereas the best biographers are obsessed. A lack of curiosity ought to disqualify one for the job.</p>
 
 <p>As Siracusa says, Steve Jobs picked the wrong guy.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/culture/incurious-biographer.html">old layout</a>.</small></p>
-
-

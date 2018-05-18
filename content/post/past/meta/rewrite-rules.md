@@ -27,7 +27,3 @@ type: post
 </pre>
 
 <p>And all is well. Now, if only I could get the <code>meta</code> plugin working properly...</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/internet/weblogs/blosxom/rewrite_rules.html">old layout</a>.</small></p>
-
-

@@ -71,7 +71,3 @@ CD.Music.Classical.prototype.soloist   = null;
 <p>So we don't get the block syntax, but in truth, that's no different from how one typically handles inheritance in JavaScript. The only difference is the use of the dot notation. Nevertheless, suggestions for how to use a block syntax would be warmly received.</p>
 
 <p>So what do you think? Is this something that makes sense to you? Would you do it to better organize your JavaScript classes and modules (and yes, I am thinking that you could group functional libraries this way, too, and then implement an <code>import()</code> function to export functions to another <q>namespace</q> or the global object)? Leave your opinions in a comment. Thanks!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/javascript/emulating_namespaces.html">old layout</a>.</small></p>
-
-

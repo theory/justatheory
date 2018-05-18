@@ -135,7 +135,3 @@ is, when there is just one set of angle brackets:</p>
 complex POD tags anyway. At least I hope so. I'm currently working up a patch
 for blead that updates Pod::Simple in core, so it will be interesting to see
 if it breaks anyone's POD. Here's to hoping it doesn't!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/programming/perl/modules/new-pod-simple.html">old layout</a>.</small></p>
-
-

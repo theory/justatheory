@@ -21,7 +21,3 @@ type: post
 <p>The one exception to the rule preferring <code>timestamptz</code> and <code>timetz</code> is a special case: partitioning. When partitioning data on timestamps, you <em>must not</em> use <code>timestamptz</code>. Why? Because almost no expression involving <code>timestamptz</code> comparison is immutable. Use one in a <code>WHERE</code> clause, and <a href="http://www.postgresql.org/docs/9.1/static/ddl-partitioning.html#DDL-PARTITIONING-CONSTRAINT-EXCLUSION">constraint exclusion</a> may well <a href="http://comments.gmane.org/gmane.comp.db.postgresql.performance/29681">be ignored</a> and all partitions scanned. This is usually something you want to avoid.</p>
 
 <p>So in <strong>this one case</strong> and <strong>only in this one case</strong>, use a <code>timestamp without time zone</code> column, but <em>always insert data in UTC</em>. This will keep things consistent with the <code>timestamptz</code> columns you have everywhere else in your database. Unless your app changes the value of the <a href="http://www.postgresql.org/docs/9.1/static/runtime-config-client.html#GUC-TIMEZONE"><code>timestamp</code> GUC</a> when it connects, it can just assume that everything is always UTC, and should always send updates as UTC.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/use-timestamptz.html">old layout</a>.</small></p>
-
-

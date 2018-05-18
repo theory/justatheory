@@ -199,8 +199,3 @@ functions for a test drive on 8.3 or 8.4. Let me know what you think!</p>
 
 <p>Hopefully I can find some time to work on those next week. The only challenging one is
 <code>row_eq()</code>, so I may skip that one for now.</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/results_eq.html">old layout</a>.</small></p>
-
-

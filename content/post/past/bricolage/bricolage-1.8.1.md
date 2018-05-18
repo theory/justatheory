@@ -148,7 +148,3 @@ Bricolage was hailed as <q>Most Impressive</q> in 2002 by eWeek.</p>
 <p>Enjoy!</p>
 
 <p>--The Bricolage Team</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/announce/1.8.1.html">old layout</a>.</small></p>
-
-

@@ -26,5 +26,3 @@ in is, um, <em>interesting</em> as well. Enjoy!</p>
 <img src="/2004/08/another-short-alamosa-trip/wing_clouds.jpg" alt="Clouds over the wing" />
 <img src="/2004/08/another-short-alamosa-trip/lobby.jpg" alt="The Clarion's lobby" />
 </figure>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/travel/alamosa/another_short_trip.html">old layout</a>.</small></p>

@@ -85,7 +85,3 @@ Verify successful
 <p>The other significant change in v0.950 is that the <code>deploy</code> and <code>revert</code> commands (and, by extension the <a href="https://metacpan.org/module/App::Sqitch::Command::deploy"><code>rebase</code> command</a>) now verify that dependencies have been checked before deploying or reverting anything. Previously, Sqitch checked the dependencies for each change before deploying it, but it makes much more sense to check them for all changes to be deployed before doing anything at all. This reduces the chances of unexpected reversions.</p>
 
 <p>Still hacking on Sqitch, of course, though nearly all the commands I initially envisioned are done. <a href="https://github.com/theory/sqitch/issues?milestone=3">Next up</a>, I plan to finally implement support for <a href="http://sqlite.org/">SQLite</a>, add a few more commands to simplify plan file modification, and to create a new site, since <a href="http://sqlite.org/">the current site</a> is woefully out-of-date. Until then, though, check out <a href="https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch">this presentation</a> and, of course, <a href="https://metacpan.org/module/sqitchtutorial">the tutorial</a>.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-trust-but-verify.html">old layout</a>.</small></p>
-
-

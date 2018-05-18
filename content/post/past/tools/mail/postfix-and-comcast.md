@@ -49,7 +49,3 @@ postfix reload
 <p>And now maybe someone else will stumble upon this blog entry when they're
 Googling for a solution and get the help they need, too. No doubt I'll be
 looking for it again in a year or so, the way things go.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/mail/postfix-and-comcast.html">old layout</a>.</small></p>
-
-

@@ -218,7 +218,3 @@ CREATE FUNCTION insert_extend() RETURNS trigger AS &#x0027;
 &#x0027; LANGUAGE plpgsql;</pre>
 
 <p>Hrm. That just might be the best way to go, period. Thoughts? Have I missed some other obvious solution?</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/insert_execution_order_problem.html">old layout</a>.</small></p>
-
-

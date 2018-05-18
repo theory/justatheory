@@ -25,7 +25,3 @@ type: post
 </dl>
 
 <p>So have fun with it! When it gets here. Want to help get get here? Subscribe to <a href="http://lists.sourceforge.net/mailman/listinfo/bricolage-devel">Bricolage-Devel</a> and chip in!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/design/ways_to_extend.html">old layout</a>.</small></p>
-
-

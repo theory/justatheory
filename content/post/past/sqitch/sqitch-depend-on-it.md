@@ -59,7 +59,3 @@ sqitch revert HEAD^3
 <p>Still would love help getting a <a href="https://github.com/theory/sqitch/issues/34"><code>dzil</code> plugin to build Local::TextDomain l01n files</a>. I suspect this would take a knowledgable Dist::Zilla user a couple of hours to do. (And thanks to <a href="https://twitter.com/notbenh">@notbenh</a> and <a href="http://rjbs.manxome.org/">@RJBS</a> for getting Sqitch on Dist::Zilla!) And if anyone really wanted to dig into Sqitch, Implementing a <a href="https://github.com/theory/sqitch/issues/14"><code>bundle</code> command</a> would be a great place to start.</p>
 
 <p>Or just give it a try! You can install it from CPAN with <code>cpan App::Sqitch</code>. Read <a href="https://metacpan.org/module/sqitchtutorial">the tutorial</a> for an overview of what Sqitch is and how it works. Thanks!</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-depend-on-it.html">old layout</a>.</small></p>
-
-

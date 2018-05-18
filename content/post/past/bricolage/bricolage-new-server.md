@@ -29,8 +29,3 @@ gets thanks to the new <a href="http://stats.bricolage.cc/">stats site</a>,
 which will also be updated daily.</p>
 
 <p>Enjoy!</p>
-
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/bricolage/site/new_server.html">old layout</a>.</small></p>
-
-

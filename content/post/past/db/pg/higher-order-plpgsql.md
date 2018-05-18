@@ -203,7 +203,3 @@ Dominus's pedagogical goals. But it was an interesting learning experience for
 me all the same.</p>
 
 <p>Look for the first of my articles to be published 2006-5-10.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/postgresql/higher_order_plpgsql.html">old layout</a>.</small></p>
-
-

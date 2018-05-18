@@ -34,7 +34,3 @@ type: post
 </ul>
 
 <p>Got something to add? <a href="https://github.com/theory/sqitch">Fork it!</a></p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-update.html">old layout</a>.</small></p>
-
-

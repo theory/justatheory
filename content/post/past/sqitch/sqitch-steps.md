@@ -67,7 +67,3 @@ COMMIT;
 </code></pre>
 
 <p>Next up, deployment. I think that will require that the plan interface be written, first. I'll be getting on that tomorrow.</p>
-
-<p class="past"><small>Looking for the comments? Try the <a rel="nofollow" href="//past.justatheory.com/computers/databases/sqitch-steps.html">old layout</a>.</small></p>
-
-

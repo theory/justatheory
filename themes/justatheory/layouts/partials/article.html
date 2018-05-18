@@ -13,5 +13,5 @@
         <div class="text">
 {{ .doc.Content }}
         </div>
-{{ partial "tags.html" .doc }}
+{{ partial "tags.html" (dict "doc" .doc) }}
     </article>

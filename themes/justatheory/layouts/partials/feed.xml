@@ -13,7 +13,7 @@
 		<email>{{ . }}</email>{{ end }}{{ with .url }}
 		<uri>{{ . }}</uri>{{ end }}
 	</author>{{ end }}
-	<generator uri="https://gohuto.io/" version="">Hugo</generator>{{ with .Site.Params.icon }}
+	<generator uri="https://gohugo.io/" version="{{ .doc.Hugo.Version }}">Hugo</generator>{{ with .Site.Params.icon }}
 	<icon>{{ . | absURL | jsonify }}</icon>{{ end }}{{ with .Site.Copyright }}
 	<rights>{{.}}</rights>{{ end }}
 	{{- range .Pages }}
@@ -39,7 +39,7 @@
 		<category scheme="{{ absURL $term }}" term="{{ . | urlize }}" label="{{ . }}"/>
 		{{- end }}{{ end }}{{ with (or .Description .Summary )}}
 		<summary>{{ replace (htmlUnescape .) "&" "&amp;" | safeHTML }}</summary>{{ end }}
-		<content type="text/html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve" mode="xml">{{ if in (string .Content) "]]>" }}{{ .Content | html }}{{ else }}{{ "<" | safeHTML }}![CDATA[{{ trim .Content " \t\n\r" | safeHTML }}]]>{{ end }}</content>
+		<content type="text/html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve" mode="xml">{{ partial "article.xml" . }}</content>
 	</entry>
 	{{- end }}
 </feed>

@@ -1,0 +1,6 @@
+{{ .Content }}
+<footer>
+    <a title="Permanent link to “{{ .Title }}”" href="{{ .Permalink }}">&nbsp;{{ .Site.Params.bug }}&nbsp;</a>
+    By {{ with (or .Params.author.name .Site.Author.name) }}{{ . }}{{ end }} for <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+{{- partial "tags.html" (dict "doc" . "abs" true) }}
+</footer>

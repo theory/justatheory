@@ -7,17 +7,6 @@ tags: [Politics, voting, voter registration, MoveOn]
 type: post
 ---
 
-<form action="http://www.moveonpac.org/vote/index.html" id="register_to_vote" style="float: right; width: 219px; margin: 0 0 10px 10px; padding-bottom: 3px; background-color: #092A88; color: #ffffff; text-align: center;">
-      <div>
-    <a href="http://www.moveonpac.org/vote/"
-       title="Register to vote"><img src="http://www.moveonpac.org/images/register_vote_215.gif" style="padding: 2px; border: 0; margin: 0;" alt="Register to Vote!" /></a>
-    <input type="hidden" name="country" value="United States" />
-    <label for="votereg">Email</label>
-    <input id="votereg" type="text" size="15" name="email" />
-    <input type="submit" name="go" value="Start" />
-    </div>
-</form>
-
 <p>We just hosted our first
 <a href="http://www.moveonpac.org/" title="MoveOn PAC">MoveOn.org</a> voter
 registration party. (You <em>are</em> registered to vote, aren't you? If not,

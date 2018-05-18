@@ -22,9 +22,7 @@ type: post
 
 <p>I <a href="https://twitter.com/#!/theory/status/180846743775232000">complained</a> about this on Twitter, <a href="https://twitter.com/#!/blam/status/180856508479848448">Brian Lam chimed in</a>, and <a href="https://twitter.com/sdadich">Scott Dadich</a>, Condé's Vice President of Content Innovation, was kind enough to respond:</p>
 
-<blockquote class="twitter-tweet" data-in-reply-to="180846743775232000"><p>@<a href="https://twitter.com/theory">theory</a> @<a href="https://twitter.com/blam">blam</a> fret not, gents, we're on it. For a preview, check out our first hires magazine with vector text, Vogue.</p>— Scott Dadich (@sdadich) <a href="https://twitter.com/sdadich/status/181039871199154177" data-datetime="2012-03-17T15:30:43+00:00">March 17, 2012</a></blockquote>
-
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote><p>@<a href="https://twitter.com/theory">theory</a> @<a href="https://twitter.com/blam">blam</a> fret not, gents, we're on it. For a preview, check out our first hires magazine with vector text, Vogue.</p>— Scott Dadich (@sdadich) <a href="https://twitter.com/sdadich/status/181039871199154177">March 17, 2012</a></blockquote>
 
 <p>I suspect that the reality of the overlap of <em>The New Yorker</em> and <em>Vogue</em> readers resembles the Venn diagram to the right. But I want to see <em>The New Yorker</em> rock on the iPad, so I put aside some time to download the new <em>Vogue</em> app and take it for a spin.</p>
 

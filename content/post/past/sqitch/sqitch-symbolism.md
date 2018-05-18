@@ -61,7 +61,4 @@ type: post
 
 <p>Oh, and that <a href="http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/">PDXPUG presentation</a>? Here are the slides. Enjoy!</p>
 
-<iframe src="https://www.slideshare.net/slideshow/embed_code/14459486" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch" title="Sane SQL Change Management with Sqitch" target="_blank">Sane SQL Change Management with Sqitch</a> </strong> from <strong><a href="https://www.slideshare.net/justatheory" target="_blank">David E. Wheeler</a></strong> </div></p>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/14459486" width="676" height="551" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>

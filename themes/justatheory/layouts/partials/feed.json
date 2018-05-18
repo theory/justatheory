@@ -7,8 +7,7 @@
 	"icon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Params.favicon }}
 	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Author }}
 	"author": {
-		"name": {{ .name | jsonify }}{{ with .email }},
-		"email": {{ . | jsonify }}{{ end }}{{ with .url }},
+		"name": {{ .name | jsonify }}{{ with .url }},
 		"url": {{ . | jsonify }}{{ end }}
 	},{{ end }}
 	"items": [
@@ -23,8 +22,7 @@
 			"date_published": {{ .Date.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ if ne .Date .Lastmod }}
 			"date_modified": {{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ end }}{{ with (or .Params.author .Site.Author) }}
 			"author": {
-				"name": {{ .name | jsonify }}{{ with .email }},
-				"email": {{ . | jsonify }}{{ end }}{{ with .url }},
+				"name": {{ .name | jsonify }}{{ with .url }},
 				"url": {{ . | jsonify }}{{ end }}
 			},{{ end }}{{ with .Params.tags }}
 			"tags": {{ . | jsonify }}{{ end }},

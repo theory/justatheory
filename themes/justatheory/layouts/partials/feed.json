@@ -19,7 +19,7 @@
 			"date_modified": {{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ end }}{{ with (or .Params.author .Site.Author) }}
 			"author": { "name": {{ .name | jsonify }}{{ with .email }}, "email": {{ . | jsonify }}{{ end }} },{{ end }}{{ with .Params.tags }}
 			"tags": {{ . | jsonify }}{{ end }},
-			"content_html": {{ trim .Content " \t\n\r" | jsonify }},
+			"content_html": {{ trim (partial "entry.html" . ) " \t\n\r" | jsonify }},
 			"content_text": {{ trim .RawContent " \t\n\r" | jsonify }}
 		}
 	{{- end }}

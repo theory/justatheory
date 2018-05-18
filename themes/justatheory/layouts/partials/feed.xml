@@ -39,7 +39,7 @@
 		<category scheme="{{ absURL $term }}" term="{{ . | urlize }}" label="{{ . }}"/>
 		{{- end }}{{ end }}{{ with (or .Description .Summary )}}
 		<summary>{{ replace (htmlUnescape .) "&" "&amp;" | safeHTML }}</summary>{{ end }}
-		<content type="text/html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve" mode="xml">{{ partial "article.xml" . }}</content>
+		<content type="text/html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve" mode="xml">{{ partial "entry.xml" . }}</content>
 	</entry>
 	{{- end }}
 </feed>

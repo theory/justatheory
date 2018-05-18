@@ -4,6 +4,7 @@
 	"description": {{ . | jsonify }},{{ end }}
 	"home_page_url": {{ .doc.Permalink | jsonify }},{{ with .doc.OutputFormats.Get "json" }}
 	"feed_url": {{ .Permalink | jsonify -}},{{ end }}{{ with .Site.Params.icon }}
+	"icon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Params.favicon }}
 	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Author }}
 	"author": { "name": {{ .name | jsonify }}{{ with .email }}, "email": {{ . | jsonify }}{{ end }} },{{ end }}
 	"items": [

@@ -20,8 +20,12 @@
 	<entry>
 		<id>{{ .Permalink }}</id>
 		<title>{{ .Title }}</title>
-		<link rel="alternate" type="text/html" href="{{ .Permalink }}"/>{{ with .Params.link }}
-		<link rel="related" type="text/html" href="{{ . }}"/>{{ end }}{{ with .Params.via }}
+		{{- if .Params.link }}{{ with .Params.link }}
+		<link rel="alternate" type="text/html" href="{{ . }}"/>{{ end }}
+		<link rel="related" type="text/html" href="{{ .Permalink }}"/>
+		{{- else }}
+		<link rel="alternate" type="text/html" href="{{ .Permalink }}"/>
+		{{- end }}{{ with .Params.via }}
 		<link rel="via" type="text/html" href="{{ .href }}" title="{{ .name }}"/>{{ end }}
 		<updated>{{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</updated>
 		<published>{{ .Date.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</published>{{ with (or .Params.author .Site.Author) }}

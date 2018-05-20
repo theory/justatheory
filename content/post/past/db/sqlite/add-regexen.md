@@ -7,99 +7,118 @@ tags: [SQLite, Perl, Regular Expressions, DBD::SQLite, DBI, Matt Sergeant]
 type: post
 ---
 
-<p>As I <a href="http://www.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html" title="Custom Aggregates in Perl">discussed</a> a couple of months ago, <a href="http://search.cpan.org/dist/DBD-SQLite/" title="DBD::SQLite on CPAN">DBD::SQLite</a> exposes the <a href="http://www.sqlite.org/" title="Learn all about SQLite">SQLite</a> <code>sqlite3_create_function()</code> API for adding Pure-Perl functions and aggregates to SQLite on a per-connection basis.  This is cool, but in perusing the <a href="http://www.sqlite.org/lang_expr.html" title="Query Language Understood by SQLite: expression">SQLite expression</a> documentation, I came across this gem:</p>
+As I [discussed] a couple of months ago, [DBD::SQLite] exposes the [SQLite]
+`sqlite3_create_function()` API for adding Pure-Perl functions and aggregates to
+SQLite on a per-connection basis. This is cool, but in perusing the [SQLite
+expression] documentation, I came across this gem:
 
-<blockquote cite="http://www.sqlite.org/lang_expr.html"><p>The <code>REGEXP</code> operator is a special syntax for the <code>regexp()</code> user function. No <code>regexp()</code> user function is defined by default and so use of the <code>REGEXP</code> operator will normally result in an error message. If a user-defined function named <q>regexp</q> is defined at run-time, that function will be called in order to implement the <code>REGEXP</code> operator.</p></blockquote>
+> The `REGEXP` operator is a special syntax for the `regexp()` user function. No
+> `regexp()` user function is defined by default and so use of the `REGEXP`
+> operator will normally result in an error message. If a user-defined function
+> named “regexp” is defined at run-time, that function will be called in order
+> to implement the `REGEXP` operator.
 
-<p><em>Well hell!</em> I thought. <em>I can do that!</em></p>
+*Well hell!* I thought. *I can do that!*
 
-<p>In a brief search, I could find no further documentation of this feature, but all it took was a little experimentation to figure it out. The <code>regexp()</code> function should expect two arguments. The first is the regular expression, and the second is the value to match. So it can be added to DBD::SQLite like this:</p>
+In a brief search, I could find no further documentation of this feature, but
+all it took was a little experimentation to figure it out. The `regexp()`
+function should expect two arguments. The first is the regular expression, and
+the second is the value to match. So it can be added to DBD::SQLite like this:
 
-<pre>
-$dbh = DBI-&gt;connect(&#x0027;dbi:SQLite:dbfile=test.db&#x0027;);
-$dbh-&gt;func(&#x0027;regexp&#x0027;, 2, sub {
-    my ($regex, $string) = @_;
-    return $string =~ /$regex/;
-}, &#x0027;create_function&#x0027;);
-</pre>
-
-<p>Yep, that's it! Now, I have my own module for handling database connections, and I wanted to make sure that all of my custom functions are always present, every time I connect to the database. In a <code><a href="http://perl.apache.org/" title="Run Perl inside of Apache!">mod_perl</a></code> environment, you can end up with a lot of connections, and a single process has the potential disconnect and reconnect more than once (due to exceptions thrown by the database and whatnot). The easiest way to ensure that the functions are always there as soon as you connect and every time you connect, I learned thanks to a tip from Tim Bunce, is to subclass the DBI and implement a <code>connected()</code> method. Here's what it looks like:</p>
-
-<pre>
-package MyApp::SQLite;
-use base &#x0027;DBI&#x0027;;
-
-package MyApp::SQLite::st;
-use base &#x0027;DBI::st&#x0027;;
-
-package MyApp::SQLite::db;
-use base &#x0027;DBI::db&#x0027;;
-
-sub connected {
-    my $dbh = shift;
-    # Add regexp function.
-    $dbh-&gt;func(&#x0027;regexp&#x0027;, 2, sub {
+    $dbh = DBI->connect('dbi:SQLite:dbfile=test.db');
+    $dbh->func('regexp', 2, sub {
         my ($regex, $string) = @_;
         return $string =~ /$regex/;
-    }, &#x0027;create_function&#x0027;);
-}
-</pre>
+    }, 'create_function');
 
-<p>So how does this work? Here's a quick app I wrote to demonstrate the use of the <code>REGEXP</code> expression in SQLite using Perl regular expressions:</p>
+Yep, that's it! Now, I have my own module for handling database connections, and
+I wanted to make sure that all of my custom functions are always present, every
+time I connect to the database. In a `mod_perl` environment, you can end up with
+a lot of connections, and a single process has the potential disconnect and
+reconnect more than once (due to exceptions thrown by the database and whatnot).
+The easiest way to ensure that the functions are always there as soon as you
+connect and every time you connect, I learned thanks to a tip from Tim Bunce, is
+to subclass the DBI and implement a `connected()` method. Here's what it looks
+like:
 
-<pre>
-#!/usr/bin/perl -w
+    package MyApp::SQLite;
+    use base 'DBI';
 
-use strict;
+    package MyApp::SQLite::st;
+    use base 'DBI::st';
 
-my $dbfile = shift || die &quot;Usage: $0 db_file\n&quot;;
-my $dbh = MyApp::SQLite-&gt;connect(
-    &quot;dbi:SQLite:dbname=$dbfile&quot;, &#x0027;&#x0027;, &#x0027;&#x0027;,
-    {
-        RaiseError  =&gt; 1,
-        PrintError  =&gt; 0,
+    package MyApp::SQLite::db;
+    use base 'DBI::db';
+
+    sub connected {
+        my $dbh = shift;
+        # Add regexp function.
+        $dbh->func('regexp', 2, sub {
+            my ($regex, $string) = @_;
+            return $string =~ /$regex/;
+        }, 'create_function');
     }
-);
 
-END {
-    $dbh-&gt;do(&#x0027;DROP TABLE try&#x0027;);
-    $dbh-&gt;disconnect;
-}
+So how does this work? Here's a quick app I wrote to demonstrate the use of the
+`REGEXP` expression in SQLite using Perl regular expressions:
 
-$dbh-&gt;do(&#x0027;CREATE TABLE try (a TEXT)&#x0027;);
+    #!/usr/bin/perl -w
 
-my $ins = $dbh-&gt;prepare(&#x0027;INSERT INTO try (a) VALUES (?)&#x0027;);
-for my $val (qw(foo bar bat woo oop craw)) {
-    $ins-&gt;execute($val);
-}
+    use strict;
 
-my $sel = $dbh-&gt;prepare(&#x0027;SELECT a FROM try WHERE a REGEXP ?&#x0027;);
+    my $dbfile = shift || die "Usage: $0 db_file\n";
+    my $dbh = MyApp::SQLite->connect(
+        "dbi:SQLite:dbname=$dbfile", '', '',
+        {
+            RaiseError  => 1,
+            PrintError  => 0,
+        }
+    );
 
-for my $regex (qw( ^b a w?oop?)) {
-    print &quot;&#x0027;$regex&#x0027; matches:\n  &quot;;
-    print join &quot;\n  &quot; =&gt;
-        @{ $dbh-&gt;selectcol_arrayref($sel, undef, $regex) };
-    print &quot;\n\n&quot;;
-}
-</pre>
+    END {
+        $dbh->do('DROP TABLE try');
+        $dbh->disconnect;
+    }
 
-<p>This script outputs:</p>
+    $dbh->do('CREATE TABLE try (a TEXT)');
 
-<pre>
-'^b' matches:
-  bar
-  bat
+    my $ins = $dbh->prepare('INSERT INTO try (a) VALUES (?)');
+    for my $val (qw(foo bar bat woo oop craw)) {
+        $ins->execute($val);
+    }
 
-'a' matches:
-  bar
-  bat
-  craw
+    my $sel = $dbh->prepare('SELECT a FROM try WHERE a REGEXP ?');
 
-'w?oop?' matches:
-  foo
-  woo
-  oop
+    for my $regex (qw( ^b a w?oop?)) {
+        print "'$regex' matches:\n  ";
+        print join "\n  " =>
+            @{ $dbh->selectcol_arrayref($sel, undef, $regex) };
+        print "\n\n";
+    }
 
-</pre>
+This script outputs:
 
-<p>Pretty slick, no? I wonder if it'd make sense for DBD::SQLite to add the <code>regexp()</code> function itself, in C, using the Perl API, so that it's just <em>always</em> available to DBD::SQLite apps?</p>
+    '^b' matches:
+      bar
+      bat
+
+    'a' matches:
+      bar
+      bat
+      craw
+
+    'w?oop?' matches:
+      foo
+      woo
+      oop
+
+Pretty slick, no? I wonder if it'd make sense for DBD::SQLite to add the
+`regexp()` function itself, in C, using the Perl API, so that it's just *always*
+available to DBD::SQLite apps?
+
+  [discussed]: http://www.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html
+    "Custom Aggregates in Perl"
+  [DBD::SQLite]: http://search.cpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
+  [SQLite]: http://www.sqlite.org/ "Learn all about SQLite"
+  [SQLite expression]: http://www.sqlite.org/lang_expr.html
+    "Query Language Understood by SQLite: expression"

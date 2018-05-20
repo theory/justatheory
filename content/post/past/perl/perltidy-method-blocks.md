@@ -7,42 +7,34 @@ tags: [Perl, Perltidy]
 type: post
 ---
 
-<p>Say I have some icky code like this:</p>
+Say I have some icky code like this:
 
-<pre>
-my $process = Background->new($^X, &quot;-I$lib&quot;,
-                              &quot;-MMyLong:Namespace::Bar::Bat&quot;,
-                              &quot;-e 1&quot;, &quot;other&quot;, &quot;arguments&quot;, &quot;here&quot;);
-</pre>
+    my $process = Background->new($^X, "-I$lib",
+                                  "-MMyLong:Namespace::Bar::Bat",
+                                  "-e 1", "other", "arguments", "here");
 
-<p>Perltidy will turn it into this:</p>
+Perltidy will turn it into this:
 
-<pre>
-my $process = Background->new( $^X, &quot;-I$lib&quot;, &quot;-MMyLong:Namespace::Bar::Bat&quot;,
-    &quot;-e 1&quot;, &quot;other&quot;, &quot;arguments&quot;, &quot;here&quot; );
-</pre>
+    my $process = Background->new( $^X, "-I$lib", "-MMyLong:Namespace::Bar::Bat",
+        "-e 1", "other", "arguments", "here" );
 
-<p>That's a little better, but I'd much rather that it made it look like this:</p>
+That's a little better, but I'd much rather that it made it look like this:
 
-<pre>
-my $process = Background->new(
-    $^X,    &quot;-I$lib&quot;, &quot;-MMyLong:Namespace::Bar::Bat&quot;,
-    &quot;-e 1&quot;, &quot;other&quot;,  &quot;arguments&quot;, &quot;here&quot;,
-);
-</pre>
+    my $process = Background->new(
+        $^X,    "-I$lib", "-MMyLong:Namespace::Bar::Bat",
+        "-e 1", "other",  "arguments", "here",
+    );
 
-<p>Or even this:</p>
+Or even this:
 
-<pre>
-my $process = Background->new(
-    $^X,
-    &quot;-I$lib&quot;,
-    &quot;-MMyLong:Namespace::Bar::Bat&quot;,
-    &quot;-e 1&quot;,
-    &quot;other&quot;,
-    &quot;arguments&quot;,
-    &quot;here&quot;,
-);
-</pre>
+    my $process = Background->new(
+        $^X,
+        "-I$lib",
+        "-MMyLong:Namespace::Bar::Bat",
+        "-e 1",
+        "other",
+        "arguments",
+        "here",
+    );
 
-<p>Anyone know how to get it to do that? If so, please leave a comment!</p>
+Anyone know how to get it to do that? If so, please leave a comment!

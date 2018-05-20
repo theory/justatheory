@@ -50,8 +50,6 @@ if (!$rv) {
 
 I can't tell you how often this quirk burns me.
 
-<!-- more -->
-
 Sadly, there is a deeper problem then syntax: Just what, exactly, is an
 exception? How does one determine the exceptional condition, and what can be
 done about it? It might be a string. The string might be localized. It might
@@ -120,8 +118,6 @@ Gross.
 It's time to end this. A forthcoming post will propose a plan for adding
 proper exception handling to the core Perl language, including exception
 objects and an official `try`/`catch` syntax.
-
-<!-- notes -->
 
 [^try-fix]: In fairness much of the `$@` pain has been addressed [in Perl 5.14].
 [Try::Tiny]: https://metacpan.org/module/Try::Tiny

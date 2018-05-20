@@ -7,14 +7,17 @@ tags: [Perl, DBI, DBI::Shell]
 type: post
 ---
 
-<p>So I just had a need to use DBI::Shell with a subclass of the DBI. It doesn't support subclasses directly (it'd be nice to be able to specify one on the command-line or something), but I was able to hack it into using one anyway by doing this:</p>
+So I just had a need to use DBI::Shell with a subclass of the DBI. It doesn't
+support subclasses directly (it'd be nice to be able to specify one on the
+command-line or something), but I was able to hack it into using one anyway by
+doing this:
 
-<pre>
-use My::DBI;
-BEGIN {
-    sub DBI::Shell::Base::DBI () { &#x0027;My::DBI&#x0027; };
-}
-use DBI::Shell;
-</pre>
+    use My::DBI;
+    BEGIN {
+        sub DBI::Shell::Base::DBI () { 'My::DBI' };
+    }
+    use DBI::Shell;
 
-<p>Yes, it's extremely sneaky. DBI::Shell::Base uses the string constant <code>DBI</code>, as in <code>DBI-&gt;connect(...)</code>, so by shoving a constant into DBI::Shell::Base before loading DBI::Shell, I convince it to use my subclass, instead.</p>
+Yes, it's extremely sneaky. DBI::Shell::Base uses the string constant `DBI`, as
+in `DBI->connect(...)`, so by shoving a constant into DBI::Shell::Base before
+loading DBI::Shell, I convince it to use my subclass, instead.

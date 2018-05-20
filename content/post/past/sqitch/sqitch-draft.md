@@ -7,766 +7,744 @@ tags: [Sqitch, SQL, migrations, database, VCS, Git]
 type: post
 ---
 
-<p>Back in January, I <a href="/computers/databases/simple-sql-change-management.html">wrote</a> <a href="/computers/databases/vcs-sql-change-management.html">three</a> <a href="/computers/databases/sql-change-management-sans-redundancy.html">posts</a> outlining some ideas I had about a straight-forward, sane way of managing SQL change management. The idea revolved around specifying scripts to deploy and revert in a plan file, and generating that plan file from VCS history. I still feel pretty good about the ideas there, and <a href="http://iovation.com/">work</a> has agreed to let me write it and open-source it. Here is the first step making it happen. I call it “Sqitch.”</p>
+Back in January, I [wrote][] [three][] [posts] outlining some ideas I had about
+a straight-forward, sane way of managing SQL change management. The idea
+revolved around specifying scripts to deploy and revert in a plan file, and
+generating that plan file from VCS history. I still feel pretty good about the
+ideas there, and [work] has agreed to let me write it and open-source it. Here
+is the first step making it happen. I call it “Sqitch.”
 
-<p>Why “Sqitch”? Think of it as SQL changes with Git stuck in the middle. Of course I expect to support VCSs other than Git (probably Subversion and Mercurial, though I am not sure yet), but since Git is what I now have the most familiarity with, I thought it kind of fun to kind of reference a VCS in the name, if only obliquely.</p>
+Why “Sqitch”? Think of it as SQL changes with Git stuck in the middle. Of course
+I expect to support VCSs other than Git (probably Subversion and Mercurial,
+though I am not sure yet), but since Git is what I now have the most familiarity
+with, I thought it kind of fun to kind of reference a VCS in the name, if only
+obliquely.
 
-<p>This week, I <a href="https://github.com/theory/sqitch">started work on it</a>. My first task is to outline a draft for the interface. Sqitch will be a command-line tool, primarily. The remainder of this post contains the documentation for the draft interface. Thoughts and feedback would be greatly appreciated, especially if you think I've overlooked anything! I do want to keep features pretty minimal for now, though, to build up a solid core to be built on later. But other than that, your criticism is greatly desired.</p>
+This week, I [started work on it]. My first task is to outline a draft for the
+interface. Sqitch will be a command-line tool, primarily. The remainder of this
+post contains the documentation for the draft interface. Thoughts and feedback
+would be greatly appreciated, especially if you think I've overlooked anything!
+I do want to keep features pretty minimal for now, though, to build up a solid
+core to be built on later. But other than that, your criticism is greatly
+desired.
 
-<p>Next up, I will probably write a tutorial, just so I can make my way through some real-life(ish) examples and notice if I missed anything else. Besides, <a href="https://www.pgcon.org/2012/schedule/events/479.en.html">I'm going to need the tutorial myself</a>! Watch for that next week.</p>
+Next up, I will probably write a tutorial, just so I can make my way through
+some real-life(ish) examples and notice if I missed anything else. Besides, [I'm
+going to need the tutorial myself]! Watch for that next week.
 
-<p>Thanks!</p>
+Thanks!
 
-<hr />
+--------------------------------------------------------------------------------
 
+### Name [Name]
 
-<h3 id="Name">Name</h3>
+Sqitch - VCS-powered SQL change management
 
-<p>Sqitch - VCS-powered SQL change management</p>
+### Synopsis [Synopsis]
 
-<h3 id="Synopsis">Synopsis</h3>
+    sqitch [<options>] <command> [<command-options>] [<args>]
 
-<pre><code>sqitch [&lt;options&gt;] &lt;command&gt; [&lt;command-options&gt;] [&lt;args&gt;]</code></pre>
+### Description [Description]
 
-<h3 id="Description">Description</h3>
+Sqitch is a VCS-aware SQL change management application. What makes it different
+from your typical [migration]-[style] approaches? A few things:
 
-<p>Sqitch is a VCS-aware SQL change management application. What makes it different from your typical <a href="http://search.cpan.org/perldoc?Module::Build::DB">migration</a>-<a href="http://search.cpan.org/perldoc?DBIx::Migration">style</a> approaches? A few things:</p>
+No opinions
 
-<dl>
+:   Sqitch is not integrated with any framework, ORM, or platform. Rather, it is
+    a standalone change management system with no opinions on your database or
+    development choices.
 
-<dt>No opinions</dt>
-<dd>
+Native scripting
 
-<p>Sqitch is not integrated with any framework, ORM, or platform. Rather, it is a standalone change management system with no opinions on your database or development choices.</p>
+:   Changes are implemented as scripts native to your selected database engine.
+    Writing a [PostgreSQL] application? Write SQL scripts for [`psql`]. Writing
+    a [MySQL]-backed app? Write SQL scripts for [`mysql`].
 
-</dd>
-<dt>Native scripting</dt>
-<dd>
+VCS integration
 
-<p>Changes are implemented as scripts native to your selected database engine. Writing a <a href="http://postgresql.org/">PostgreSQL</a> application? Write SQL scripts for <a href="http://www.postgresql.org/docs/current/static/app-psql.html"><code>psql</code></a>. Writing a <a href="http://mysql.com/">MySQL</a>-backed app? Write SQL scripts for <a href="http://dev.mysql.com/doc/refman/5.6/en/mysql.html"><code>mysql</code></a>.</p>
+:   Sqitch likes to use your VCS history to determine in what order to execute
+    changes. No need to keep track of execution order, your VCS already tracks
+    information sufficient for Sqitch to figure it out for you.
 
-</dd>
-<dt>VCS integration</dt>
-<dd>
+Dependency resolution
 
-<p>Sqitch likes to use your VCS history to determine in what order to execute changes. No need to keep track of execution order, your VCS already tracks information sufficient for Sqitch to figure it out for you.</p>
+:   Deployment steps can declare dependencies on other deployment steps. This
+    ensures proper order of execution, even when you've committed changes to
+    your VCS out-of-order.
 
-</dd>
-<dt>Dependency resolution</dt>
-<dd>
+No numbering
 
-<p>Deployment steps can declare dependencies on other deployment steps. This ensures proper order of execution, even when you&#39;ve committed changes to your VCS out-of-order.</p>
+:   Change deployment is managed either by maintaining a plan file or, more
+    usefully, your VCS history. As such, there is no need to number your
+    changes, although you can if you want. Sqitch does not care what you name
+    your changes.
 
-</dd>
-<dt>No numbering</dt>
-<dd>
+Packaging
 
-<p>Change deployment is managed either by maintaining a plan file or, more usefully, your VCS history. As such, there is no need to number your changes, although you can if you want. Sqitch does not care what you name your changes.</p>
+:   Using your VCS history for deployment but need to ship a tarball or RPM?
+    Easy, just have Sqitch read your VCS history and write out a plan file with
+    your change scripts. Once deployed, Sqitch can use the plan file to deploy
+    the changes in the proper order.
 
-</dd>
-<dt>Packaging</dt>
-<dd>
+Reduced Duplication
 
-<p>Using your VCS history for deployment but need to ship a tarball or RPM? Easy, just have Sqitch read your VCS history and write out a plan file with your change scripts. Once deployed, Sqitch can use the plan file to deploy the changes in the proper order.</p>
+:   If you're using a VCS to track your changes, you don't have to duplicate
+    entire change scripts for simple changes. As long as the changes are
+    [idempotent], you can change your code directly, and Sqitch will know it
+    needs to be updated.
 
-</dd>
-<dt>Reduced Duplication</dt>
-<dd>
+#### Terminology [Terminology]
 
-<p>If you&#39;re using a VCS to track your changes, you don&#39;t have to duplicate entire change scripts for simple changes. As long as the changes are <a href="https://en.wikipedia.org/wiki/Idempotence">idempotent</a>, you can change your code directly, and Sqitch will know it needs to be updated.</p>
+`step`
 
-</dd>
-</dl>
+:   A named unit of change. A step name must be used in the file names of its
+    corresponding deployment and a reversion scripts. It may also be used in a
+    test script file name.
 
-<h4 id="Terminology">Terminology</h4>
+`tag`
 
-<dl>
+:   A known deployment state with a list one or more steps that define the tag.
+    A tag also implies that steps from previous tags in the plan have been
+    applied. Think of it is a version number or VCS revision. A given point in
+    the plan may have one or more tags.
 
-<dt><code>step</code></dt>
-<dd>
+`state`
 
-<p>A named unit of change. A step name must be used in the file names of its corresponding deployment and a reversion scripts. It may also be used in a test script file name.</p>
+:   The current state of the database. This is represented by the most recent
+    tag or tags deployed. If the state of the database is the same as the most
+    recent tag, then it is considered "up-to-date".
 
-</dd>
-<dt><code>tag</code></dt>
-<dd>
+`plan`
 
-<p>A known deployment state with a list one or more steps that define the tag. A tag also implies that steps from previous tags in the plan have been applied. Think of it is a version number or VCS revision. A given point in the plan may have one or more tags.</p>
+:   A list of one or more tags and associated steps that define the order of
+    deployment execution. Sqitch reads the plan to determine what steps to
+    execute to change the database from one state to another. The plan may be
+    represented by a ["Plan File"] or by VCS history.
 
-</dd>
-<dt><code>state</code></dt>
-<dd>
+`deploy`
 
-<p>The current state of the database. This is represented by the most recent tag or tags deployed. If the state of the database is the same as the most recent tag, then it is considered &quot;up-to-date&quot;.</p>
+:   The act of deploying database changes to reach a tagged deployment point.
+    Sqitch reads the plan, checks the current state of the database, and applies
+    all the steps necessary to change the state to the specified tag.
 
-</dd>
-<dt><code>plan</code></dt>
-<dd>
+`revert`
 
-<p>A list of one or more tags and associated steps that define the order of deployment execution. Sqitch reads the plan to determine what steps to execute to change the database from one state to another. The plan may be represented by a <a href="#Plan-File">&quot;Plan File&quot;</a> or by VCS history.</p>
+:   The act of reverting database changes to reach an earlier tagged deployment
+    point. Sqitch checks the current state of the database, reads the plan, and
+    applies reversion scripts for all steps to return the state to an earlier
+    tag.
 
-</dd>
-<dt><code>deploy</code></dt>
-<dd>
+### Options [Options]
 
-<p>The act of deploying database changes to reach a tagged deployment point. Sqitch reads the plan, checks the current state of the database, and applies all the steps necessary to change the state to the specified tag.</p>
+    -p --plan-file  FILE    Path to a deployment plan file.
+    -e --engine     ENGINE  Database engine.
+    -c --client     PATH    Path to the engine command-line client.
+    -d --db-name    NAME    Database name.
+    -u --username   USER    Database user name.
+    -h --host       HOST    Database server host name.
+    -n --port       PORT    Database server port number.
+       --sql-dir    DIR     Path to directory with deploy and revert scripts.
+       --deploy-dir DIR     Path to directory with SQL deployment scripts.
+       --revert-dir DIR     Path to directory with SQL reversion scripts.
+       --test-dir   DIR     Path to directory with SQL test scripts.
+       --extension  EXT     SQL script file name extension.
+       --dry-run            Execute command without making any changes.
+    -v --verbose            Increment verbosity.
+    -V --version            Print the version number and exit.
+    -H --help               Print a usage statement and exit.
+    -M --man                Print the complete documentation and exit.
 
-</dd>
-<dt><code>revert</code></dt>
-<dd>
+### Options Details [Options-Details]
 
-<p>The act of reverting database changes to reach an earlier tagged deployment point. Sqitch checks the current state of the database, reads the plan, and applies reversion scripts for all steps to return the state to an earlier tag.</p>
+`-p`
 
-</dd>
-</dl>
+:   
 
-<h3 id="Options">Options</h3>
+`--plan-file`
 
-<pre><code>-p --plan-file  FILE    Path to a deployment plan file.
--e --engine     ENGINE  Database engine.
--c --client     PATH    Path to the engine command-line client.
--d --db-name    NAME    Database name.
--u --username   USER    Database user name.
--h --host       HOST    Database server host name.
--n --port       PORT    Database server port number.
-   --sql-dir    DIR     Path to directory with deploy and revert scripts.
-   --deploy-dir DIR     Path to directory with SQL deployment scripts.
-   --revert-dir DIR     Path to directory with SQL reversion scripts.
-   --test-dir   DIR     Path to directory with SQL test scripts.
-   --extension  EXT     SQL script file name extension.
-   --dry-run            Execute command without making any changes.
--v --verbose            Increment verbosity.
--V --version            Print the version number and exit.
--H --help               Print a usage statement and exit.
--M --man                Print the complete documentation and exit.</code></pre>
+:   sqitch --plan-file plan.conf
+        sqitch -p sql/deploy.conf
 
-<h3 id="Options-Details">Options Details</h3>
+    Path to the deployment plan file. Defaults to *./sqitch.plan*. If this file
+    is not present, Sqitch will attempt to read from VCS files. If no supported
+    VCS system is in place, an exception will be thrown. See ["Plan File"] for a
+    description of its structure.
 
-<dl>
+`-e`
 
-<dt><code>-p</code></dt>
-<dd>
+:   
 
-</dd>
-<dt><code>--plan-file</code></dt>
-<dd>
+`--engine`
 
-<pre><code>sqitch --plan-file plan.conf
-sqitch -p sql/deploy.conf</code></pre>
+:   sqitch --engine pg
+        sqitch -e sqlite
 
-<p>Path to the deployment plan file. Defaults to <i>./sqitch.plan</i>. If this file is not present, Sqitch will attempt to read from VCS files. If no supported VCS system is in place, an exception will be thrown. See <a href="#Plan-File">&quot;Plan File&quot;</a> for a description of its structure.</p>
+    The database engine to use. Supported engines include:
 
-</dd>
-<dt><code>-e</code></dt>
-<dd>
+    -   `pg` - [PostgreSQL]
 
-</dd>
-<dt><code>--engine</code></dt>
-<dd>
+    -   `mysql` - [MySQL]
 
-<pre><code>sqitch --engine pg
-sqitch -e sqlite</code></pre>
+    -   `sqlite` - [SQLite]
 
-<p>The database engine to use. Supported engines include:</p>
+`-c`
 
-<ul>
+:   
 
-<li><p><code>pg</code> - <a href="http://postgresql.org/">PostgreSQL</a></p>
+`--client`
 
-</li>
-<li><p><code>mysql</code> - <a href="http://mysql.com/">MySQL</a></p>
+:   sqitch --client /usr/local/pgsql/bin/psql
+        sqitch -c /usr/bin/sqlite3
 
-</li>
-<li><p><code>sqlite</code> - <a href="http://sqlite.org/">SQLite</a></p>
+    Path to the command-line client for the database engine. Defaults to a
+    client in the current path named appropriately for the specified engine.
 
-</li>
-</ul>
+`-d`
 
-</dd>
-<dt><code>-c</code></dt>
-<dd>
+:   
 
-</dd>
-<dt><code>--client</code></dt>
-<dd>
+`--db-name`
 
-<pre><code>sqitch --client /usr/local/pgsql/bin/psql
-sqitch -c /usr/bin/sqlite3</code></pre>
+:   Name of the database. For some engines, such as [PostgreSQL] and [MySQL],
+    the database must already exist. For others, such as [SQLite], the database
+    will be automatically created on first connect.
 
-<p>Path to the command-line client for the database engine. Defaults to a client in the current path named appropriately for the specified engine.</p>
+`-u`
 
-</dd>
-<dt><code>-d</code></dt>
-<dd>
+:   
 
-</dd>
-<dt><code>--db-name</code></dt>
-<dd>
+`--user`
 
-<p>Name of the database. For some engines, such as <a href="http://postgresql.org/">PostgreSQL</a> and <a href="http://mysql.com/">MySQL</a>, the database must already exist. For others, such as <a href="http://sqlite.org/">SQLite</a>, the database will be automatically created on first connect.</p>
+:   
 
-</dd>
-<dt><code>-u</code></dt>
-<dd>
+`--username`
 
-</dd>
-<dt><code>--user</code></dt>
-<dd>
+:   User name to use when connecting to the database. Does not apply to all
+    engines.
 
-</dd>
-<dt><code>--username</code></dt>
-<dd>
+`-h`
 
-<p>User name to use when connecting to the database. Does not apply to all engines.</p>
+:   
 
-</dd>
-<dt><code>-h</code></dt>
-<dd>
+`--host`
 
-</dd>
-<dt><code>--host</code></dt>
-<dd>
+:   Host name to use when connecting to the database. Does not apply to all
+    engines.
 
-<p>Host name to use when connecting to the database. Does not apply to all engines.</p>
+`-n`
 
-</dd>
-<dt><code>-n</code></dt>
-<dd>
+:   
 
-</dd>
-<dt><code>--port</code></dt>
-<dd>
+`--port`
 
-<p>Port number to connect to. Does not apply to all engines.</p>
+:   Port number to connect to. Does not apply to all engines.
 
-</dd>
-<dt><code>--sql-dir</code></dt>
-<dd>
+`--sql-dir`
 
-<pre><code>sqitch --sql-dir migrations/</code></pre>
+:   sqitch --sql-dir migrations/
 
-<p>Path to directory containing deployment, reversion, and test SQL scripts. It should contain subdirectories named <code>deploy</code>, <code>revert</code>, and (optionally) <code>test</code>. These may be overridden by <code>--deploy-dir</code>, <code>--revert-dir</code>, and <code>--test-dir</code>. Defaults to <code>./sql</code>.</p>
+    Path to directory containing deployment, reversion, and test SQL scripts. It
+    should contain subdirectories named `deploy`, `revert`, and (optionally)
+    `test`. These may be overridden by `--deploy-dir`, `--revert-dir`, and
+    `--test-dir`. Defaults to `./sql`.
 
-</dd>
-<dt><code>--deploy-dir</code></dt>
-<dd>
+`--deploy-dir`
 
-<pre><code>sqitch --deploy-dir db/up</code></pre>
+:   sqitch --deploy-dir db/up
 
-<p>Path to a directory containing SQL deployment scripts. Overrides the value implied by <code>--sql-dir</code>.</p>
+    Path to a directory containing SQL deployment scripts. Overrides the value
+    implied by `--sql-dir`.
 
-</dd>
-<dt><code>--revert-dir</code></dt>
-<dd>
+`--revert-dir`
 
-<pre><code>sqitch --revert-dir db/up</code></pre>
+:   sqitch --revert-dir db/up
 
-<p>Path to a directory containing SQL reversion scripts. Overrides the value implied by <code>--sql-dir</code>.</p>
+    Path to a directory containing SQL reversion scripts. Overrides the value
+    implied by `--sql-dir`.
 
-</dd>
-<dt><code>--test-dir</code></dt>
-<dd>
+`--test-dir`
 
-<pre><code>sqitch --test-dir db/t</code></pre>
+:   sqitch --test-dir db/t
 
-<p>Path to a directory containing SQL test scripts. Overrides the value implied by <code>--sql-dir</code>.</p>
+    Path to a directory containing SQL test scripts. Overrides the value implied
+    by `--sql-dir`.
 
-</dd>
-<dt><code>--extension</code></dt>
-<dd>
+`--extension`
 
-<pre><code>sqitch --extension ddl</code></pre>
+:   sqitch --extension ddl
 
-<p>The file name extension on deployment, reversion, and test SQL scripts. Defaults to <code>sql</code>.</p>
+    The file name extension on deployment, reversion, and test SQL scripts.
+    Defaults to `sql`.
 
-</dd>
-<dt><code>--dry-run</code></dt>
-<dd>
+`--dry-run`
 
-<pre><code>sqitch --dry-run</code></pre>
+:   sqitch --dry-run
 
-<p>Execute the Sqitch command without making any actual changes. This allows you to see what Sqitch would actually do, without doing it. Implies a verbosity level of 1; add extra <code>--verbose</code>s for greater verbosity.</p>
+    Execute the Sqitch command without making any actual changes. This allows
+    you to see what Sqitch would actually do, without doing it. Implies a
+    verbosity level of 1; add extra `--verbose`s for greater verbosity.
 
-</dd>
-<dt><code>-v</code></dt>
-<dd>
+`-v`
 
-</dd>
-<dt><code>--verbose</code></dt>
-<dd>
+:   
 
-<pre><code>sqitch --verbose -v</code></pre>
+`--verbose`
 
-<p>A value between 0 and 3 specifying how verbose Sqitch should be. The default is 0, meaning that Sqitch will be silent. A value of 1 causes Sqitch to output some information about what it&#39;s doing, while 2 and 3 each cause greater verbosity.</p>
+:   sqitch --verbose -v
 
-</dd>
-<dt><code>-H</code></dt>
-<dd>
+    A value between 0 and 3 specifying how verbose Sqitch should be. The default
+    is 0, meaning that Sqitch will be silent. A value of 1 causes Sqitch to
+    output some information about what it's doing, while 2 and 3 each cause
+    greater verbosity.
 
-</dd>
-<dt><code>--help</code></dt>
-<dd>
+`-H`
 
-<pre><code>sqitch --help
-sqitch -H</code></pre>
+:   
 
-<p>Outputs a brief description of the options supported by <code>sqitch</code> and exits.</p>
+`--help`
 
-</dd>
-<dt><code>-M</code></dt>
-<dd>
+:   sqitch --help
+        sqitch -H
 
-</dd>
-<dt><code>--man</code></dt>
-<dd>
+    Outputs a brief description of the options supported by `sqitch` and exits.
 
-<pre><code>sqitch --man
-sqitch -M</code></pre>
+`-M`
 
-<p>Outputs this documentation and exits.</p>
+:   
 
-</dd>
-<dt><code>-V</code></dt>
-<dd>
+`--man`
 
-</dd>
-<dt><code>--version</code></dt>
-<dd>
+:   sqitch --man
+        sqitch -M
 
-<pre><code>sqitch --version
-sqitch -V</code></pre>
+    Outputs this documentation and exits.
 
-<p>Outputs the program name and version and exits.</p>
+`-V`
 
-</dd>
-</dl>
+:   
 
-<h3 id="Sqitch-Commands">Sqitch Commands</h3>
+`--version`
 
-<dl>
+:   sqitch --version
+        sqitch -V
 
-<dt><code>init</code></dt>
-<dd>
+    Outputs the program name and version and exits.
 
-<p>Initialize the database and create deployment script directories if they do not already exist.</p>
+### Sqitch Commands [Sqitch-Commands]
 
-</dd>
-<dt><code>status</code></dt>
-<dd>
+`init`
 
-<p>Output information about the current status of the deployment, including a list of tags, deployments, and dates in chronological order. If any deploy scripts are not currently deployed, they will be listed separately.</p>
+:   Initialize the database and create deployment script directories if they do
+    not already exist.
 
-</dd>
-<dt><code>check</code></dt>
-<dd>
+`status`
 
-<p>Sanity check the deployment scripts. Checks include:</p>
+:   Output information about the current status of the deployment, including a
+    list of tags, deployments, and dates in chronological order. If any deploy
+    scripts are not currently deployed, they will be listed separately.
 
-<ul>
+`check`
 
-<li><p>Make sure all deployment scripts have complementary reversion scripts.</p>
+:   Sanity check the deployment scripts. Checks include:
 
-</li>
-<li><p>Make sure no deployment script appears more than once in the plan file.</p>
+    -   Make sure all deployment scripts have complementary reversion scripts.
 
-</li>
-</ul>
+    -   Make sure no deployment script appears more than once in the plan file.
 
-</dd>
-<dt><code>deploy</code></dt>
-<dd>
+`deploy`
 
-<p>Deploy changes. Configuration properties may be specified under the <code>[deploy]</code> section of the configuration file, or via <code>sqitch config</code>:</p>
+:   Deploy changes. Configuration properties may be specified under the
+    `[deploy]` section of the configuration file, or via `sqitch config`:
 
-<pre><code>sqitch config deploy.$property $value</code></pre>
+        sqitch config deploy.$property $value
 
-<p>Options and configuration properties:</p>
+    Options and configuration properties:
 
-<dl>
+    `--to`
 
-<dt><code>--to</code></dt>
-<dd>
+    :   Tag to deploy up to. Defaults to the latest tag or to the VCS `HEAD`
+        commit. Property name: `deploy.to`.
 
-<p>Tag to deploy up to. Defaults to the latest tag or to the VCS <code>HEAD</code> commit. Property name: <code>deploy.to</code>.</p>
+`revert`
 
-</dd>
-</dl>
+:   Revert changes. Configuration properties may be specified under the
+    `[revert]` section of the configuration file, or via `sqitch config`:
 
-</dd>
-<dt><code>revert</code></dt>
-<dd>
+        sqitch config revert.$property $value
 
-<p>Revert changes. Configuration properties may be specified under the <code>[revert]</code> section of the configuration file, or via <code>sqitch config</code>:</p>
+    Options and configuration properties:
 
-<pre><code>sqitch config revert.$property $value</code></pre>
+    `--to`
 
-<p>Options and configuration properties:</p>
+    :   Tag to revert to. Defaults to reverting all changes. Property name:
+        `revert.to`.
 
-<dl>
+`test`
 
-<dt><code>--to</code></dt>
-<dd>
+:   Test changes. All SQL scripts in `--test-dir` will be run. \[XXX Not sure
+    whether to have subdirectories for tests and expected output and to diff
+    them, or to use some other approach.\]
 
-<p>Tag to revert to. Defaults to reverting all changes. Property name: <code>revert.to</code>.</p>
+`config`
 
-</dd>
-</dl>
+:   Set configuration options. By default, the options will be written to the
+    local configuration file, *sqitch.ini*. Options:
 
-</dd>
-<dt><code>test</code></dt>
-<dd>
+    `--get`
 
-<p>Test changes. All SQL scripts in <code>--test-dir</code> will be run. [XXX Not sure whether to have subdirectories for tests and expected output and to diff them, or to use some other approach.]</p>
+    :   Get the value for a given key. Returns error code 1.
 
-</dd>
-<dt><code>config</code></dt>
-<dd>
+    `--unset`
 
-<p>Set configuration options. By default, the options will be written to the local configuration file, <i>sqitch.ini</i>. Options:</p>
+    :   Remove the line matching the key from config file.
 
-<dl>
+    `--list`
 
-<dt><code>--get</code></dt>
-<dd>
+    :   List all variables set in config file.
 
-<p>Get the value for a given key. Returns error code 1.</p>
+    `--global`
 
-</dd>
-<dt><code>--unset</code></dt>
-<dd>
+    :   For writing options: write to global *\~/.sqitch/config.ini* file rather
+        than the local *sqitch.ini*.
 
-<p>Remove the line matching the key from config file.</p>
+        For reading options: read only from global *\~/.sqitch/config.ini*
+        rather than from all available files.
 
-</dd>
-<dt><code>--list</code></dt>
-<dd>
+    `--system`
 
-<p>List all variables set in config file.</p>
+    :   For writing options: write to system-wide *$prefix/etc/sqitch.ini* file
+        rather than the local *sqitch.ini*.
 
-</dd>
-<dt><code>--global</code></dt>
-<dd>
+        For reading options: read only from system-wide *$prefix/etc/sqitch.ini*
+        rather than from all available files.
 
-<p>For writing options: write to global <i>~/.sqitch/config.ini</i> file rather than the local <i>sqitch.ini</i>.</p>
+    `--config-file`
 
-<p>For reading options: read only from global <i>~/.sqitch/config.ini</i> rather than from all available files.</p>
+    :   Use the given config file.
 
-</dd>
-<dt><code>--system</code></dt>
-<dd>
+`package`
 
-<p>For writing options: write to system-wide <i>$prefix/etc/sqitch.ini</i> file rather than the local <i>sqitch.ini</i>.</p>
+:   Package up all deployment and reversion scripts and write out a plan file.
+    Configuration properties may be specified under the `[package]` section of
+    the configuration file, or via `sqitch config package.$property $value`
+    command. Options and configuration properties:
 
-<p>For reading options: read only from system-wide <i>$prefix/etc/sqitch.ini</i> rather than from all available files.</p>
+    `--from`
 
-</dd>
-<dt><code>--config-file</code></dt>
-<dd>
+    :   Tag to start the plan from. All tags and steps prior to that tag will
+        not be included in the plan, and their change scripts Will be omitted
+        from the package directory. Useful if you've rejiggered your deployment
+        steps to start from a point later in your VCS history than the beginning
+        of time. Property name: `package.from`.
 
-<p>Use the given config file.</p>
+    `--to`
 
-</dd>
-</dl>
+    :   Tag with which to end the plan. No steps or tags after that tag will be
+        included in the plan, and their change scripts will be omitted from the
+        package directory. Property name: `package.to`.
 
-</dd>
-<dt><code>package</code></dt>
-<dd>
+    `--tags-only`
 
-<p>Package up all deployment and reversion scripts and write out a plan file. Configuration properties may be specified under the <code>[package]</code> section of the configuration file, or via <code>sqitch config package.$property $value</code> command. Options and configuration properties:</p>
+    :   Write the plan file with deployment targets listed under VCS tags,
+        rather than individual commits. Property name: `package.tags_only`.
 
-<dl>
+    `--destdir`
 
-<dt><code>--from</code></dt>
-<dd>
+    :   Specify a destination directory. The plan file and `deploy`, `revert`,
+        and `test` directories will be written to it. Defaults to "package".
+        Property name: `package.destdir`.
 
-<p>Tag to start the plan from. All tags and steps prior to that tag will not be included in the plan, and their change scripts Will be omitted from the package directory. Useful if you&#39;ve rejiggered your deployment steps to start from a point later in your VCS history than the beginning of time. Property name: <code>package.from</code>.</p>
+### Configuration [Configuration]
 
-</dd>
-<dt><code>--to</code></dt>
-<dd>
+Sqitch configuration information is stored in standard `INI` files. The `#` and
+`;` characters begin comments to the end of line, blank lines are ignored.
 
-<p>Tag with which to end the plan. No steps or tags after that tag will be included in the plan, and their change scripts will be omitted from the package directory. Property name: <code>package.to</code>.</p>
+The file consists of sections and properties. A section begins with the name of
+the section in square brackets and continues until the next section begins.
+Section names are not case sensitive. Only alphanumeric characters, `-` and `.`
+are allowed in section names. Each property must belong to some section, which
+means that there must be a section header before the first setting of a
+property.
 
-</dd>
-<dt><code>--tags-only</code></dt>
-<dd>
+All the other lines (and the remainder of the line after the section header) are
+recognized as setting properties, in the form `name = value`. Leading and
+trailing whitespace in a property value is discarded. Internal whitespace within
+a property value is retained verbatim.
 
-<p>Write the plan file with deployment targets listed under VCS tags, rather than individual commits. Property name: <code>package.tags_only</code>.</p>
+All sections are named for commands except for one, named "core", which contains
+core configuration properties.
 
-</dd>
-<dt><code>--destdir</code></dt>
-<dd>
+Here's an example of a configuration file that might be useful checked into a
+VCS for a project that deploys to PostgreSQL and stores its deployment scripts
+with the extension *ddl* under the `migrations` directory. It also wants
+packages to be created in the directory *\_build/sql*, and to deploy starting
+with the "gamma" tag:
 
-<p>Specify a destination directory. The plan file and <code>deploy</code>, <code>revert</code>, and <code>test</code> directories will be written to it. Defaults to &quot;package&quot;. Property name: <code>package.destdir</code>.</p>
+    [core]
+        engine    = pg
+        db        = widgetopolis
+        sql_dir   = migrations
+        extension = ddl
 
-</dd>
-</dl>
+    [revert]
+        to        = gamma
 
-</dd>
-</dl>
+    [package]
+        from      = gamma
+        tags_only = yes
+        dest_dir  = _build/sql
 
-<h3 id="Configuration">Configuration</h3>
+#### Core Properties [Core-Properties]
 
-<p>Sqitch configuration information is stored in standard <code>INI</code> files. The <code>#</code> and <code>;</code> characters begin comments to the end of line, blank lines are ignored.</p>
+This is the list of core variables, which much appear under the `[core]`
+section. See the documentation for individual commands for their configuration
+options.
 
-<p>The file consists of sections and properties. A section begins with the name of the section in square brackets and continues until the next section begins. Section names are not case sensitive. Only alphanumeric characters, <code>-</code> and <code>.</code> are allowed in section names. Each property must belong to some section, which means that there must be a section header before the first setting of a property.</p>
+`plan_file`
 
-<p>All the other lines (and the remainder of the line after the section header) are recognized as setting properties, in the form <code>name = value</code>. Leading and trailing whitespace in a property value is discarded. Internal whitespace within a property value is retained verbatim.</p>
+:   The plan file to use. Defaults to *sqitch.ini* or, if that does not exist,
+    uses the VCS history, if available.
 
-<p>All sections are named for commands except for one, named &quot;core&quot;, which contains core configuration properties.</p>
+`engine`
 
-<p>Here&#39;s an example of a configuration file that might be useful checked into a VCS for a project that deploys to PostgreSQL and stores its deployment scripts with the extension <i>ddl</i> under the <code>migrations</code> directory. It also wants packages to be created in the directory <i>_build/sql</i>, and to deploy starting with the &quot;gamma&quot; tag:</p>
+:   The database engine to use. Supported engines include:
 
-<pre><code>[core]
-    engine    = pg
-    db        = widgetopolis
-    sql_dir   = migrations
-    extension = ddl
+    -   `pg` - [PostgreSQL]
 
-[revert]
-    to        = gamma
+    -   `mysql` - [MySQL]
 
-[package]
-    from      = gamma
-    tags_only = yes
-    dest_dir  = _build/sql</code></pre>
+    -   `sqlite` - [SQLite]
 
-<h4 id="Core-Properties">Core Properties</h4>
+`client`
 
-<p>This is the list of core variables, which much appear under the <code>[core]</code> section. See the documentation for individual commands for their configuration options.</p>
+:   Path to the command-line client for the database engine. Defaults to a
+    client in the current path named appropriately for the specified engine.
 
-<dl>
+`db_name`
 
-<dt><code>plan_file</code></dt>
-<dd>
+:   Name of the database.
 
-<p>The plan file to use. Defaults to <i>sqitch.ini</i> or, if that does not exist, uses the VCS history, if available.</p>
+`username`
 
-</dd>
-<dt><code>engine</code></dt>
-<dd>
+:   User name to use when connecting to the database. Does not apply to all
+    engines.
 
-<p>The database engine to use. Supported engines include:</p>
+`password`
 
-<ul>
+:   Password to use when connecting to the database. Does not apply to all
+    engines.
 
-<li><p><code>pg</code> - <a href="http://postgresql.org/">PostgreSQL</a></p>
+`host`
 
-</li>
-<li><p><code>mysql</code> - <a href="http://mysql.com/">MySQL</a></p>
+:   Host name to use when connecting to the database. Does not apply to all
+    engines.
 
-</li>
-<li><p><code>sqlite</code> - <a href="http://sqlite.org/">SQLite</a></p>
+`port`
 
-</li>
-</ul>
+:   Port number to connect to. Does not apply to all engines.
 
-</dd>
-<dt><code>client</code></dt>
-<dd>
+`sql_dir`
 
-<p>Path to the command-line client for the database engine. Defaults to a client in the current path named appropriately for the specified engine.</p>
+:   Path to directory containing deployment, reversion, and test SQL scripts. It
+    should contain subdirectories named `deploy`, `revert`, and (optionally)
+    `test`. These may be overridden by `deploy_dir`, `revert_dir`, and
+    `test_dir`. Defaults to `./sql`.
 
-</dd>
-<dt><code>db_name</code></dt>
-<dd>
+`deploy_dir`
 
-<p>Name of the database.</p>
+:   Path to a directory containing SQL deployment scripts. Overrides the value
+    implied by `sql_dir`.
 
-</dd>
-<dt><code>username</code></dt>
-<dd>
+`revert_dir`
 
-<p>User name to use when connecting to the database. Does not apply to all engines.</p>
+:   Path to a directory containing SQL reversion scripts. Overrides the value
+    implied by `sql_dir`.
 
-</dd>
-<dt><code>password</code></dt>
-<dd>
+`test_dir`
 
-<p>Password to use when connecting to the database. Does not apply to all engines.</p>
+:   Path to a directory containing SQL test scripts. Overrides the value implied
+    by `sql_dir`.
 
-</dd>
-<dt><code>host</code></dt>
-<dd>
+`extension`
 
-<p>Host name to use when connecting to the database. Does not apply to all engines.</p>
+:   The file name extension on deployment, reversion, and test SQL scripts.
+    Defaults to `sql`.
 
-</dd>
-<dt><code>port</code></dt>
-<dd>
+### Plan File [Plan-File]
 
-<p>Port number to connect to. Does not apply to all engines.</p>
+A plan file describes the deployment tags and scripts to be run against a
+database. In general, if you use a VCS, you probably won't need a plan file,
+since your VCS history should be able to provide all the information necessary
+to derive a deployment plan. However, if you really do need to maintain a plan
+file by hand, or just want to better understand the file as output by the
+`package` command, read on.
 
-</dd>
-<dt><code>sql_dir</code></dt>
-<dd>
+#### Format [Format]
 
-<p>Path to directory containing deployment, reversion, and test SQL scripts. It should contain subdirectories named <code>deploy</code>, <code>revert</code>, and (optionally) <code>test</code>. These may be overridden by <code>deploy_dir</code>, <code>revert_dir</code>, and <code>test_dir</code>. Defaults to <code>./sql</code>.</p>
+The contents of the plan file are plain text encoded as UTF-8. It is divided up
+into sections that denote deployment states. Each state has a bracketed,
+space-delimited list of one or more tags to identify it, followed by any number
+of deployment steps. Here's an example of a plan file with a single state and a
+single step:
 
-</dd>
-<dt><code>deploy_dir</code></dt>
-<dd>
+    [alpha]
+    users_table
 
-<p>Path to a directory containing SQL deployment scripts. Overrides the value implied by <code>sql_dir</code>.</p>
+The state has one tag, named "alpha", and one step, named "users\_table". A
+state may of course have many steps. Here's an expansion:
 
-</dd>
-<dt><code>revert_dir</code></dt>
-<dd>
+    [root alpha]
+    users_table
+    insert_user
+    update_user
+    delete_user
 
-<p>Path to a directory containing SQL reversion scripts. Overrides the value implied by <code>sql_dir</code>.</p>
+This state has two tags, "root" and "alpha", and four steps, "users\_table",
+"insert\_user", "update\_user", and "delete\_user".
 
-</dd>
-<dt><code>test_dir</code></dt>
-<dd>
+Most plans will have multiple states. Here's a longer example with three states:
 
-<p>Path to a directory containing SQL test scripts. Overrides the value implied by <code>sql_dir</code>.</p>
+    [root alpha]
+    users_table
+    insert_user
+    update_user
+    delete_user
 
-</dd>
-<dt><code>extension</code></dt>
-<dd>
+    [beta]
+    widgets_table
+    list_widgets
 
-<p>The file name extension on deployment, reversion, and test SQL scripts. Defaults to <code>sql</code>.</p>
+    [gamma]
+    ftw
 
-</dd>
-</dl>
+Using this plan, to deploy to the "beta" tag, the "root"/"alpha" state steps
+must be deployed, as must the "beta" steps. To then deploy to the "gamma" tag,
+the "ftw" step must be deployed. If you then choose to revert to the "alpha"
+tag, then the "gamma" step ("ftw") and all of the "beta" steps will be reverted
+in reverse order.
 
-<h3 id="Plan-File">Plan File</h3>
+Using this model, steps cannot be repeated between states. One can repeat them,
+however, if the contents for a file in a given tag can be retrieved from a VCS.
+An example:
 
-<p>A plan file describes the deployment tags and scripts to be run against a database. In general, if you use a VCS, you probably won&#39;t need a plan file, since your VCS history should be able to provide all the information necessary to derive a deployment plan. However, if you really do need to maintain a plan file by hand, or just want to better understand the file as output by the <code>package</code> command, read on.</p>
+    [alpha]
+    users_table
 
-<h4 id="Format">Format</h4>
+    [beta]
+    add_widget
+    widgets_table
 
-<p>The contents of the plan file are plain text encoded as UTF-8. It is divided up into sections that denote deployment states. Each state has a bracketed, space-delimited list of one or more tags to identify it, followed by any number of deployment steps. Here&#39;s an example of a plan file with a single state and a single step:</p>
+    [gamma]
+    add_user
 
-<pre><code>[alpha]
-users_table</code></pre>
+    [44ba615b7813531f0acb6810cbf679791fe57bf2]
+    widgets_created_at
 
-<p>The state has one tag, named &quot;alpha&quot;, and one step, named &quot;users_table&quot;. A state may of course have many steps. Here&#39;s an expansion:</p>
+    [HEAD epsilon master]
+    add_widget
 
-<pre><code>[root alpha]
-users_table
-insert_user
-update_user
-delete_user</code></pre>
+This example is derived from a Git log history. Note that the "add\_widget" step
+is repeated under the state tagged "beta" and under the last state. Sqitch will
+notice the repetition when it parses this file, and then, if it is applying all
+changes, will fetch the version of the file as of the "beta" tag and apply it at
+that step, and then, when it gets to the last tag, retrieve the deployment file
+as of its tags and apply it. This works in reverse, as well, as long as the
+changes in this file are always [idempotent].
 
-<p>This state has two tags, &quot;root&quot; and &quot;alpha&quot;, and four steps, &quot;users_table&quot;, &quot;insert_user&quot;, &quot;update_user&quot;, and &quot;delete_user&quot;.</p>
+#### Grammar [Grammar]
 
-<p>Most plans will have multiple states. Here&#39;s a longer example with three states:</p>
+Here is the EBNF Grammar for the plan file:
 
-<pre><code>[root alpha]
-users_table
-insert_user
-update_user
-delete_user
+    plan-file   = { <state> | <empty-line> | <comment> }* ;
 
-[beta]
-widgets_table
-list_widgets
+    state       = <tags> <steps> ;
 
-[gamma]
-ftw</code></pre>
+    tags        = "[" <taglist> "]" <line-ending> ;
+    taglist     = <name> | <name> <white-space> <taglist> ;
 
-<p>Using this plan, to deploy to the &quot;beta&quot; tag, the &quot;root&quot;/&quot;alpha&quot; state steps must be deployed, as must the &quot;beta&quot; steps. To then deploy to the &quot;gamma&quot; tag, the &quot;ftw&quot; step must be deployed. If you then choose to revert to the &quot;alpha&quot; tag, then the &quot;gamma&quot; step (&quot;ftw&quot;) and all of the &quot;beta&quot; steps will be reverted in reverse order.</p>
+    steps       = { <step> | <empty-line> | <line-ending> }* ;
+    step        = <name> <line-ending> ;
 
-<p>Using this model, steps cannot be repeated between states. One can repeat them, however, if the contents for a file in a given tag can be retrieved from a VCS. An example:</p>
+    empty-line  = [ <white-space> ] <line-ending> ;
+    line-ending = [ <comment> ] <EOL> ;
+    comment     = [ <white-space> ] "#" [ <string> ] ;
 
-<pre><code>[alpha]
-users_table
+    name        = ? non-white space characters ? ;
+    white-space = ? white space characters ? ;
+    string      = ? non-EOL characters ? ;
 
-[beta]
-add_widget
-widgets_table
+### See Also [See-Also]
 
-[gamma]
-add_user
+The original design for Sqitch was sketched out in a number of blog posts:
 
-[44ba615b7813531f0acb6810cbf679791fe57bf2]
-widgets_created_at
+-   [Simple SQL Change Management][wrote]
 
-[HEAD epsilon master]
-add_widget</code></pre>
+-   [VCS-Enabled SQL Change Management][three]
 
-<p>This example is derived from a Git log history. Note that the &quot;add_widget&quot; step is repeated under the state tagged &quot;beta&quot; and under the last state. Sqitch will notice the repetition when it parses this file, and then, if it is applying all changes, will fetch the version of the file as of the &quot;beta&quot; tag and apply it at that step, and then, when it gets to the last tag, retrieve the deployment file as of its tags and apply it. This works in reverse, as well, as long as the changes in this file are always <a href="https://en.wikipedia.org/wiki/Idempotence">idempotent</a>.</p>
+-   [SQL Change Management Sans Duplication][posts]
 
-<h4 id="Grammar">Grammar</h4>
+Other tools that do database change management include:
 
-<p>Here is the EBNF Grammar for the plan file:</p>
+[Rails migrations]
 
-<pre><code>plan-file   = { &lt;state&gt; | &lt;empty-line&gt; | &lt;comment&gt; }* ;
+:   Numbered migrations for [Ruby on Rails].
 
-state       = &lt;tags&gt; &lt;steps&gt; ;
+[Module::Build::DB][migration]
 
-tags        = &quot;[&quot; &lt;taglist&gt; &quot;]&quot; &lt;line-ending&gt; ;
-taglist     = &lt;name&gt; | &lt;name&gt; &lt;white-space&gt; &lt;taglist&gt; ;
+:   Numbered changes in pure SQL, integrated with Perl's [Module::Build] build
+    system. Does not support reversion.
 
-steps       = { &lt;step&gt; | &lt;empty-line&gt; | &lt;line-ending&gt; }* ;
-step        = &lt;name&gt; &lt;line-ending&gt; ;
+[DBIx::Migration][style]
 
-empty-line  = [ &lt;white-space&gt; ] &lt;line-ending&gt; ;
-line-ending = [ &lt;comment&gt; ] &lt;EOL&gt; ;
-comment     = [ &lt;white-space&gt; ] &quot;#&quot; [ &lt;string&gt; ] ;
+:   Numbered migrations in pure SQL.
 
-name        = ? non-white space characters ? ;
-white-space = ? white space characters ? ;
-string      = ? non-EOL characters ? ;</code></pre>
+[Versioning]
 
-<h3 id="See-Also">See Also</h3>
+:   PostgreSQL-specific dependency-tracking solution by [depesz].
 
-<p>The original design for Sqitch was sketched out in a number of blog posts:</p>
+### Author [Author]
 
-<ul>
+David E. Wheeler \<david@justatheory.com\>
 
-<li><p><a href="/computers/databases/simple-sql-change-management.html">Simple SQL Change Management</a></p>
+### License [License]
 
-</li>
-<li><p><a href="/computers/databases/vcs-sql-change-management.html">VCS-Enabled SQL Change Management</a></p>
+Copyright (c) 2012 iovation Inc.
 
-</li>
-<li><p><a href="/computers/databases/sql-change-management-sans-redundancy.html">SQL Change Management Sans Duplication</a></p>
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
 
-</li>
-</ul>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-<p>Other tools that do database change management include:</p>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-<dl>
-
-<dt><a href="http://guides.rubyonrails.org/migrations.html">Rails migrations</a></dt>
-<dd>
-
-<p>Numbered migrations for <a href="http://rubyonrails.org/">Ruby on Rails</a>.</p>
-
-</dd>
-<dt><a href="http://search.cpan.org/perldoc?Module::Build::DB">Module::Build::DB</a></dt>
-<dd>
-
-<p>Numbered changes in pure SQL, integrated with Perl&#39;s <a href="http://search.cpan.org/perldoc?Module::Build">Module::Build</a> build system. Does not support reversion.</p>
-
-</dd>
-<dt><a href="http://search.cpan.org/perldoc?DBIx::Migration">DBIx::Migration</a></dt>
-<dd>
-
-<p>Numbered migrations in pure SQL.</p>
-
-</dd>
-<dt><a href="http://www.depesz.com/2010/08/22/versioning/">Versioning</a></dt>
-<dd>
-
-<p>PostgreSQL-specific dependency-tracking solution by <a href="http://www.depesz.com/">depesz</a>.</p>
-
-</dd>
-</dl>
-
-<h3 id="Author">Author</h3>
-
-<p>David E. Wheeler &lt;david@justatheory.com&gt;</p>
-
-<h3 id="License">License</h3>
-
-<p>Copyright (c) 2012 iovation Inc.</p>
-
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-
-<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+  [wrote]: /computers/databases/simple-sql-change-management.html
+  [three]: /computers/databases/vcs-sql-change-management.html
+  [posts]: /computers/databases/sql-change-management-sans-redundancy.html
+  [work]: http://iovation.com/
+  [started work on it]: https://github.com/theory/sqitch
+  [I'm going to need the tutorial myself]: https://www.pgcon.org/2012/schedule/events/479.en.html
+  [migration]: http://search.cpan.org/perldoc?Module::Build::DB
+  [style]: http://search.cpan.org/perldoc?DBIx::Migration
+  [PostgreSQL]: http://postgresql.org/
+  [`psql`]: http://www.postgresql.org/docs/current/static/app-psql.html
+  [MySQL]: http://mysql.com/
+  [`mysql`]: http://dev.mysql.com/doc/refman/5.6/en/mysql.html
+  [idempotent]: https://en.wikipedia.org/wiki/Idempotence
+  ["Plan File"]: #Plan-File
+  [SQLite]: http://sqlite.org/
+  [Rails migrations]: http://guides.rubyonrails.org/migrations.html
+  [Ruby on Rails]: http://rubyonrails.org/
+  [Module::Build]: http://search.cpan.org/perldoc?Module::Build
+  [Versioning]: http://www.depesz.com/2010/08/22/versioning/
+  [depesz]: http://www.depesz.com/

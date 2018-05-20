@@ -7,26 +7,47 @@ tags: [Sqitch, Oracle, database, SQL, change management]
 type: post
 ---
 
-<p>I found myself with a little unexpected time at <a href="http:/iovation.com/">work</a> recently, and since we use Oracle (for a few more months), I decided to port <a href="http://sqitch.org/">Sqitch</a>. Last night, I released v0.970 with full support for Oracle. I did the development against an <a href="https://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html">11.2 VirtualBox VM</a>, though I think it should work on 10g, as well.</p>
+I found myself with a little unexpected time at [work] recently, and since we
+use Oracle (for a few more months), I decided to port [Sqitch]. Last night, I
+released v0.970 with full support for Oracle. I did the development against an
+[11.2 VirtualBox VM], though I think it should work on 10g, as well.
 
-<p>Sqitch is available from the usual locations. For Oracle support, you’ll need the <a href="https://www.oracle.com/technetwork/database/features/instant-client/index-097480.html">Instant Client</a>, including SQL*Plus. Make sure you have <a href="https://www.orafaq.com/wiki/ORACLE_HOME"><code>$ORACLE_HOM</code></a> set and you’ll be ready to install. Via CPAN, it’s</p>
+Sqitch is available from the usual locations. For Oracle support, you’ll need
+the [Instant Client], including SQL\*Plus. Make sure you have [`$ORACLE_HOM`]
+set and you’ll be ready to install. Via CPAN, it’s
 
-<pre><code>cpan install App::Sqitch DBD::Oracle
-</code></pre>
+    cpan install App::Sqitch DBD::Oracle
 
-<p>Via <a href="https://brew.sh">Homebrew</a>:</p>
+Via [Homebrew][]:
 
-<pre><code>brew tap theory/sqitch
-brew install sqitch-oracle
-</code></pre>
+    brew tap theory/sqitch
+    brew install sqitch-oracle
 
-<p>Via ActiveState PPM, install <a href="https://www.activestate.com/activeperl/downloads">ActivePerl</a>, then run:</p>
+Via ActiveState PPM, install [ActivePerl], then run:
 
-<pre><code>ppm install App-Sqitch DBD-Oracle
-</code></pre>
+    ppm install App-Sqitch DBD-Oracle
 
-<a href="https://www.pgcon.org/2013/"><img class="left" src="https://www.pgcon.org/2013/images/pgcon-220x250.png" alt="PGCon 2013" /></a>
+[<img src="https://www.pgcon.org/2013/images/pgcon-220x250.png" alt="PGCon 2013" class="left" />]
 
-<p>There are a few other minor tweaks and fixed in this release; check the <a href="https://metacpan.org/source/DWHEELER/App-Sqitch-0.970/Changes">release notes</a> for details.</p>
+There are a few other minor tweaks and fixed in this release; check the [release
+notes] for details.
 
-<p>Want more? I will be giving a half-day tutorial, entitled “<a href="https://www.pgcon.org/2013/schedule/events/615.en.html">Agile Database Development</a>,” on database development with <a href="https://git-scm.com/">Git</a>, <a href="http://sqitch.org/">Sqitch</a>, and <a href="https://pgtap.org/">pgTAP</a> at on May 22 <a href="https://www.pgcon.org/2013/">PGCon 2013</a> in Ottawa, Ontario. Come on up!</p>
+Want more? I will be giving a half-day tutorial, entitled “[Agile Database
+Development],” on database development with [Git], [Sqitch], and [pgTAP] at on
+May 22 [PGCon
+2013][<img src="https://www.pgcon.org/2013/images/pgcon-220x250.png" alt="PGCon 2013" class="left" />]
+in Ottawa, Ontario. Come on up!
+
+  [work]: http:/iovation.com/
+  [Sqitch]: http://sqitch.org/
+  [11.2 VirtualBox VM]: https://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html
+  [Instant Client]: https://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
+  [`$ORACLE_HOM`]: https://www.orafaq.com/wiki/ORACLE_HOME
+  [Homebrew]: https://brew.sh
+  [ActivePerl]: https://www.activestate.com/activeperl/downloads
+  [<img src="https://www.pgcon.org/2013/images/pgcon-220x250.png" alt="PGCon 2013" class="left" />]:
+    https://www.pgcon.org/2013/
+  [release notes]: https://metacpan.org/source/DWHEELER/App-Sqitch-0.970/Changes
+  [Agile Database Development]: https://www.pgcon.org/2013/schedule/events/615.en.html
+  [Git]: https://git-scm.com/
+  [pgTAP]: https://pgtap.org/

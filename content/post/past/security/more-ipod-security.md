@@ -8,37 +8,47 @@ type: post
 via: {name: James Duncan Davidson, href: http://x180.net/}
 ---
 
-<a href="https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1" title="Buy an iPod from Amazon.com!"><img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" /></a>
+[<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]
 
-<p>Following up on my <a href="/computers/policy/ipod_security_threat.html" title="Gartner: iPod is a Security Threat">screed</a> against the idea of the <q>iPod security threat</q>, <a href="http://x180.net/" title="x180.net">James Duncan Davidson</a> sent me a link to <a href="http://www.cnn.com/2004/TECH/internet/07/13/britain.mod.reut/index.html" title="UK military: iPod is security risk" />this story</a> about how the UK military has decided that the iPod is a security threat.</p>
+Following up on my [screed] against the idea of the “iPod security threat”,
+[James Duncan Davidson] sent me a link to [][1]this story about how the UK
+military has decided that the iPod is a security threat.
 
-<blockquote>
-  <p><q>With USB devices, if you plug it straight into the computer you can
-  bypass passwords and get right on the system,</q> RAF Wing Commander Peter
-  D'Ardenne told Reuters.</p>
+> “With USB devices, if you plug it straight into the computer you can bypass
+> passwords and get right on the system,” RAF Wing Commander Peter D'Ardenne
+> told Reuters.
+>
+> “That's why we had to plug that gap,” he said, adding that the policy was put
+> into effect when the MoD switched to the USB-friendly Microsoft XP operating
+> system over the past year.
 
-  <p><q>That's why we had to plug that gap,</q> he said, adding that the
-  policy was put into effect when the MoD switched to the USB-friendly
-  Microsoft XP operating system over the past year.</p>
-</blockquote>
+Huh. Do you mean to tell me that if you plug into the USB port of a PC that no
+one is logged in to, you can get access to the contents of the PC without
+logging in? You know, that sounds more like a *Windows* security flaw than an
+iPod problem. I mean, it's reasonable for the military to ban external media in
+order to prevent their personnel and contractors from copying sensitive data
+onto personal devices for unknown purposes. But this Windows security hole
+seems, well, *huge*.
 
-<p>Huh. Do you mean to tell me that if you plug into the USB port of a PC that
-no one is logged in to, you can get access to the contents of the PC without
-logging in? You know, that sounds more like a <em>Windows</em> security flaw
-than an iPod problem. I mean, it's reasonable for the military to ban external
-media in order to prevent their personnel and contractors from copying
-sensitive data onto personal devices for unknown purposes. But this Windows
-security hole seems, well, <em>huge</em>.</p>
-
-<p>And the truth is that these articles that single out the iPod as a security
+And the truth is that these articles that single out the iPod as a security
 threat are being disingenuous, in that it's much easier and much cheaper to use
-a <a href="https://www.amazon.com/exec/obidos/ASIN/B0001F21IS/justatheory-20" title="Buy a USB Flash Drive from Amazon">USB Flash Drive</a>. Furthermore, this
-banning of storage devices really only keeps honest people honest; those who
-really want to copy sensitive information to take home will figure out a way to
-do it if they're motivated enough.</p>
+a [USB Flash Drive]. Furthermore, this banning of storage devices really only
+keeps honest people honest; those who really want to copy sensitive information
+to take home will figure out a way to do it if they're motivated enough.
 
-<p>So yeah, highly sensitive security establishments <em>should</em> ban personal
-external storage devices to keep honest people honest, but really, they should
-also fix the real security problem with their operating system of choice.</p>
+So yeah, highly sensitive security establishments *should* ban personal external
+storage devices to keep honest people honest, but really, they should also fix
+the real security problem with their operating system of choice.
 
-<p>(Via <a href="http://x180.net/" title="x180.net">Duncan</a>)</p>
+(Via [Duncan][James Duncan Davidson])
+
+  [<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]:
+    https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1
+    "Buy an iPod from Amazon.com!"
+  [screed]: /computers/policy/ipod_security_threat.html
+    "Gartner: iPod is a Security Threat"
+  [James Duncan Davidson]: http://x180.net/ "x180.net"
+  [1]: http://www.cnn.com/2004/TECH/internet/07/13/britain.mod.reut/index.html
+    "UK military: iPod is security risk"
+  [USB Flash Drive]: https://www.amazon.com/exec/obidos/ASIN/B0001F21IS/justatheory-20
+    "Buy a USB Flash Drive from Amazon"

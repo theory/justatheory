@@ -7,6 +7,14 @@ tags: [OSCON, Nicholas Clark, open source, Perl, Pumpkin, Pumpking]
 type: post
 ---
 
-<img src="/2004/08/nicholas-clark/nicholas_on_the_rag.jpg" alt="Nick Clark goes Wild!"/>
+![Nick Clark goes Wild!]
 
-<p>I just had to share this lovely picture of <a href="http://use.perl.org/~nicholas/journal" title="Nicholas Clark's use Perl Journal">Nick Clark</a>, taken on the Friday night of OSCon 2004 at <a href="http://use.perl.org/~matts/journal/" title="Matt Sergeant's use Perl Journal">Matt Sergeant's</a> party. I honestly have no idea what Nick was doing, but it was worth it for the photo, don't you think?</p>
+I just had to share this lovely picture of [Nick Clark], taken on the Friday
+night of OSCon 2004 at [Matt Sergeant's] party. I honestly have no idea what
+Nick was doing, but it was worth it for the photo, don't you think?
+
+  [Nick Clark goes Wild!]: /2004/08/nicholas-clark/nicholas_on_the_rag.jpg
+  [Nick Clark]: http://use.perl.org/~nicholas/journal
+    "Nicholas Clark's use Perl Journal"
+  [Matt Sergeant's]: http://use.perl.org/~matts/journal/
+    "Matt Sergeant's use Perl Journal"

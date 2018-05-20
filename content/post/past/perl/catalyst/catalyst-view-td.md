@@ -7,169 +7,152 @@ tags: [Perl, Catalyst, Template::Declare, templating, MVC]
 type: post
 ---
 
-<p>Following up on last week’s
-<a href="/computers/programming/perl/modules/template-declare-documented.html" title="Template Declare Explained">release</a> of
-<a href="http://search.cpan.org/perldoc?Template::Declare" title="Template::Declare on CPAN">Template::Declare</a>
-0.41, this week I'm pleased to announce the release of a new
-<a href="http://www.catalystframework.org/">Catalyst</a> view class,
-<a href="http://search.cpan.org/perldoc?Catalyst::View::TD" title="Catalyst::View::TD on CPAN">Catalyst::View::TD</a>.</p>
+Following up on last week’s [release] of [Template::Declare] 0.41, this week I'm
+pleased to announce the release of a new [Catalyst] view class,
+[Catalyst::View::TD].
 
-<p>Yes, I'm aware of
-<a href="http://search.cpan.org/perldoc?Catalyst::View::Template::Declare">Catalyst::View::Template::Declare</a>.
-As I <a href="/computers/programming/perl/modules/template-declare-documented.html" title="Template Declare Explained">mentioned</a>
+Yes, I'm aware of [Catalyst::View::Template::Declare]. As I [mentioned][release]
 last week, it doesn’t make very good use of Template::Declare. I don’t blame
-<a href="http://blog.jrock.us/">jrock</a> for that, though; Template::Declare had very
-poor documentation before 0.41. But now that it is properly documented and I
-have a pretty solid grasp of how it works, I wanted to create a new Catalyst
-View that could take proper advantage of its features.</p>
+[jrock] for that, though; Template::Declare had very poor documentation before
+0.41. But now that it is properly documented and I have a pretty solid grasp of
+how it works, I wanted to create a new Catalyst View that could take proper
+advantage of its features.
 
-<p>If you're a Catalyst developer, chances are that you currently use
-<a href="http://search.cpan.org/perldoc?Template" title="Template Toolkit on CPAN">Template Toolkit</a>
-or <a href="http://search.cpan.org/perldoc?HTML::Mason" title="Mason on CPAN">Mason</a>
-for your templating needs. So why should you consider
-<a href="http://search.cpan.org/perldoc?Catalyst::View::TD" title="Catalyst::View::TD on CPAN">Catalyst::View::TD</a>
-for your next project? How about:</p>
+If you're a Catalyst developer, chances are that you currently use [Template
+Toolkit] or [Mason] for your templating needs. So why should you consider
+[Catalyst::View::TD] for your next project? How about:
 
-<ul>
-<li>Feature-parity with <a href="http://search.cpan.org/perldoc?Catalyst::View::TT" title="Catalyst::View::TT">Catalyst::View::TT</a>, the view class for Template Toolkit</li>
-<li>Includes a <code>myapp_create.pl</code> helper for creating new template classes.</li>
-<li>Intuitive, easy-to-use HTML and XML templating in Perl</li>
-<li>All templates loaded at server startup time (great for forking servers like mod_perl)</li>
-<li>Template paths that correspond to Controller URIs.</li>
-</ul>
+-   Feature-parity with [Catalyst::View::TT], the view class for Template
+    Toolkit
+-   Includes a `myapp_create.pl` helper for creating new template classes.
+-   Intuitive, easy-to-use HTML and XML templating in Perl
+-   All templates loaded at server startup time (great for forking servers like
+    mod\_perl)
+-   Template paths that correspond to Controller URIs.
 
-
-<p>If you weren’t convinced by the first three points, that forth one is the
+If you weren’t convinced by the first three points, that forth one is the
 killer. It’s the reason I wrote a new view. But here’s an even better reason:
-I'm going to show you exactly how to use it, right here in this blog post.</p>
+I'm going to show you exactly how to use it, right here in this blog post.
 
-<h3>A Simple Hello</h3>
+### A Simple Hello
 
-<p>I'm borrowing from
-<a href="http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics" title="Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics">chapter 3</a>
-of the Catalyst tutorial. First, create a new app:</p>
+I'm borrowing from [chapter 3] of the Catalyst tutorial. First, create a new
+app:
 
-<pre>
-$ catalyst.pl MyApp
-cd MyApp
-</pre>
+    $ catalyst.pl MyApp
+    cd MyApp
 
-<p>Then update the list of plugins in <code>MyApp.pm</code>:</p>
+Then update the list of plugins in `MyApp.pm`:
 
-<pre>
-use Catalyst qw/
-    -Debug
-    ConfigLoader
-    Static::Simple
-    StackTrace
-/;
-</pre>
+    use Catalyst qw/
+        -Debug
+        ConfigLoader
+        Static::Simple
+        StackTrace
+    /;
 
-<p>Now create a controller:</p>
+Now create a controller:
 
-<pre>
-$ script/myapp_create.pl controller Books
-</pre>
+    $ script/myapp_create.pl controller Books
 
-<p>Then edit it and add this controller (see
-<a href="http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics" title="Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics">chapter 3</a>
-if you need explanation about what this does):</p>
+Then edit it and add this controller (see [chapter 3] if you need explanation
+about what this does):
 
-<pre>
-sub list : Local {
-    my ($self, $c) = @_;
-    $c-&gt;stash-&gt;{books} = [];
-    $c-&gt;stash-&gt;{template} = &#x27;/books/list&#x27;;
-}
-</pre>
-
-<p>And now, create a view and a new template class:</p>
-
-<pre>
-$ script/myapp_create.pl view HTML TD
-$ script/myapp_create.pl TDClass HTML::Books
-</pre>
-
-<p>Open <code>lib/MyApp/Templates/HTML/Books.pm</code> and add the <code>list</code> template:</p>
-
-<pre>
-my ($self, $args) = @_;
-table {
-    row {
-        th { &#x27;Title&#x27;  };
-        th { &#x27;Rating&#x27; };
-        th { &#x27;Author&#x27; };
-    };
-    for my $book (@{ $args-&gt;{books} }) {
-        row {
-            cell { $book-&gt;{title}  };
-            cell { $book-&gt;{rating} };
-            cell { $book-&gt;{author} };
-        };
+    sub list : Local {
+        my ($self, $c) = @_;
+        $c->stash->{books} = [];
+        $c->stash->{template} = '/books/list';
     }
-};
-</pre>
 
+And now, create a view and a new template class:
 
-<p>Then point your browser to http://localhost:3000/books/list. If you have
-everything working so far, you should see a web page that displays nothing
-other than our column headers for “Title”, “Rating”, and “Author(s)” — we
-won’t see any books until we get the database and model working below.</p>
+    $ script/myapp_create.pl view HTML TD
+    $ script/myapp_create.pl TDClass HTML::Books
 
-<h3>A Few Comments</h3>
+Open `lib/MyApp/Templates/HTML/Books.pm` and add the `list` template:
 
-<p>The first thing I want to draw your attention to in this example is that
-<code>list</code> template. Isn’t it a thing of beauty? It’s so easy for Perl hackers to
-read. Compare it to the TT example from the tutorial (with the comments
-removed, just to be fair):</p>
+    my ($self, $args) = @_;
+    table {
+        row {
+            th { 'Title'  };
+            th { 'Rating' };
+            th { 'Author' };
+        };
+        for my $book (@{ $args->{books} }) {
+            row {
+                cell { $book->{title}  };
+                cell { $book->{rating} };
+                cell { $book->{author} };
+            };
+        }
+    };
 
-<pre>
-&lt;tr&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Rating&lt;/th&gt;&lt;th&gt;Author(s)&lt;/th&gt;&lt;/tr&gt;
-[% FOREACH book IN books -%]
-  &lt;tr&gt;
-    &lt;td&gt;[% book.title %]&lt;/td&gt;
-    &lt;td&gt;[% book.rating %]&lt;/td&gt;
-    &lt;td&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-[% END -%]
-&lt;/table&gt;
-</pre>
+Then point your browser to http://localhost:3000/books/list. If you have
+everything working so far, you should see a web page that displays nothing other
+than our column headers for “Title”, “Rating”, and “Author(s)” — we won’t see
+any books until we get the database and model working below.
 
-<p>I mean, which would <em>you</em> rather have to maintain? And this is an extremely
+### A Few Comments
+
+The first thing I want to draw your attention to in this example is that `list`
+template. Isn’t it a thing of beauty? It’s so easy for Perl hackers to read.
+Compare it to the TT example from the tutorial (with the comments removed, just
+to be fair):
+
+    <tr><th>Title</th><th>Rating</th><th>Author(s)</th></tr>
+    [% FOREACH book IN books -%]
+      <tr>
+        <td>[% book.title %]</td>
+        <td>[% book.rating %]</td>
+        <td></td>
+      </tr>
+    [% END -%]
+    </table>
+
+I mean, which would *you* rather have to maintain? And this is an extremely
 simple example. The comparison only becomes more stark when the HTML becomes
-more complex.</p>
+more complex.
 
-<p>The other thing I want to point out is the name of the template
-class we created, <code>MyApp::Template::HTML::Books</code> and its
-template, <code>list</code>. They correspond perfectly with the
-controller, <code>MyApp::Controller::Books</code>, and its action
-<code>list</code>. See the parity there? The URI for the action is
-<code>/books/list</code>, and the template path, by coincidence is
-also <code>/books/list</code>. Nice, huh? Thanks to this parity, you
-can even remove the template specification in the controller, since by
-default Catalyst will render a template with the same name as the
-action:</p>
+The other thing I want to point out is the name of the template class we
+created, `MyApp::Template::HTML::Books` and its template, `list`. They
+correspond perfectly with the controller, `MyApp::Controller::Books`, and its
+action `list`. See the parity there? The URI for the action is `/books/list`,
+and the template path, by coincidence is also `/books/list`. Nice, huh? Thanks
+to this parity, you can even remove the template specification in the
+controller, since by default Catalyst will render a template with the same name
+as the action:
 
-<pre>
-sub list : Local {
-    my ($self, $c) = @_;
-    $c-&gt;stash-&gt;{books} = [];
-}
-</pre>
+    sub list : Local {
+        my ($self, $c) = @_;
+        $c->stash->{books} = [];
+    }
 
-<p>This is the primary way in which
-<a href="http://search.cpan.org/perldoc?Catalyst::View::TD" title="Catalyst::View::TD on CPAN">Catalyst::View::TD</a>
-differs from its
-<a href="http://search.cpan.org/perldoc?Catalyst::View::Template::Declare">predecessor</a>.
-Whereas the latter would load all of the modules under the view’s namespace
-and shove all of their templates into root path, the former imports templates
-under paths that correspond to their class names. Hence the match with
-controller names.</p>
+This is the primary way in which [Catalyst::View::TD] differs from its
+[predecessor][Catalyst::View::Template::Declare]. Whereas the latter would load
+all of the modules under the view’s namespace and shove all of their templates
+into root path, the former imports templates under paths that correspond to
+their class names. Hence the match with controller names.
 
-<h3>Stay Tuned</h3>
+### Stay Tuned
 
-<p>It was kind of fun to subvert the Catalyst tutorial for my nefarious purposes.
-Maybe I'll keep it up with more blog posts in the coming weeks that continues
-to do so. Not only will it let me show off how nice Template::Declare
-templates can be, but it will let me continue my rant against ORMs as well.
-Stay tuned.</p>
+It was kind of fun to subvert the Catalyst tutorial for my nefarious purposes.
+Maybe I'll keep it up with more blog posts in the coming weeks that continues to
+do so. Not only will it let me show off how nice Template::Declare templates can
+be, but it will let me continue my rant against ORMs as well. Stay tuned.
+
+  [release]: /computers/programming/perl/modules/template-declare-documented.html
+    "Template Declare Explained"
+  [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare
+    "Template::Declare on CPAN"
+  [Catalyst]: http://www.catalystframework.org/
+  [Catalyst::View::TD]: http://search.cpan.org/perldoc?Catalyst::View::TD
+    "Catalyst::View::TD on CPAN"
+  [Catalyst::View::Template::Declare]: http://search.cpan.org/perldoc?Catalyst::View::Template::Declare
+  [jrock]: http://blog.jrock.us/
+  [Template Toolkit]: http://search.cpan.org/perldoc?Template
+    "Template Toolkit on CPAN"
+  [Mason]: http://search.cpan.org/perldoc?HTML::Mason "Mason on CPAN"
+  [Catalyst::View::TT]: http://search.cpan.org/perldoc?Catalyst::View::TT
+    "Catalyst::View::TT"
+  [chapter 3]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics
+    "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"

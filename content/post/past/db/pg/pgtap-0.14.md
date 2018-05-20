@@ -7,35 +7,32 @@ tags: [Postgres, pgTAP, testing, unit testing, TAP, Test Anything Protocol]
 type: post
 ---
 
-<p>I've just released <a href="http://pgfoundry.org/frs/?group_id=1000389"
-title="pgTAP Downloads">pgTAP 0.14</a>. This release focuses on getting more
-schema functions into your hands, as well as fixing a few issues. Changes:</p>
+I've just released [pgTAP 0.14]. This release focuses on getting more schema
+functions into your hands, as well as fixing a few issues. Changes:
 
-<ul>
-  <li>Added <code>SET search_path</code> statements to <code>uninstall_pgtap.sql.in</code> so that
-        it will work properly when TAP is installed in its own schema. Thanks to
-        Ben for the catch!</li>
-  <li>Added commands to drop <code>pg_version()</code> and <code>pg_version_num()</code>
-        to<code>uninstall_pgtap.sql.in</code>.</li>
-  <li>Added <code>has_index()</code>, <code>index_is_unique()</code>, <code>index_is_primary()</code>,
-        <code>is_clustered()</code>, and <code>index_is_type()</code>.</li>
-  <li>Added <code>os_name()</code>. This is somewhat experimental. If you have <code>uname</code>,
-        it's probably correct, but assistance in improving OS detection in the
-        <code>Makefile</code> would be greatly appreciated. Notably, it does not detect
-        Windows.</li>
-  <li>Made <code>ok()</code> smarter when the test result is passed as <code>NULL</code>. It was
-        dying, but now it simply fails and attaches a diagnostic message
-        reporting that the test result was <code>NULL</code>. Reported by Jason Gordon.</li>
-  <li>Fixed an issue in <code>check_test()</code> where an extra character was removed
-        from the beginning of the diagnostic output before testing it.</li>
-  <li>Fixed a bug comparing <code>name[]</code>s on PostgreSQL 8.2, previously hacked
-        around.</li>
-  <li>Added <code>has_trigger()</code> and <code>trigger_is()</code>.</li>
-  <li>Switched to pure SQL implementations of the <code>pg_version()</code> and
-        <code>pg_version_num()</code> functions, to simplify including pgTAP in module
-        distributions.</li>
-  <li>Added a note to <code>README.pgtap</code> about the need to avoid <code>pg_typeof()</code>
-        and <code>cmp_ok()</code> in tests run as part of a distribution.</li>
-</ul>
+-   Added `SET search_path` statements to `uninstall_pgtap.sql.in` so that it
+    will work properly when TAP is installed in its own schema. Thanks to Ben
+    for the catch!
+-   Added commands to drop `pg_version()` and `pg_version_num()`
+    to`uninstall_pgtap.sql.in`.
+-   Added `has_index()`, `index_is_unique()`, `index_is_primary()`,
+    `is_clustered()`, and `index_is_type()`.
+-   Added `os_name()`. This is somewhat experimental. If you have `uname`, it's
+    probably correct, but assistance in improving OS detection in the `Makefile`
+    would be greatly appreciated. Notably, it does not detect Windows.
+-   Made `ok()` smarter when the test result is passed as `NULL`. It was dying,
+    but now it simply fails and attaches a diagnostic message reporting that the
+    test result was `NULL`. Reported by Jason Gordon.
+-   Fixed an issue in `check_test()` where an extra character was removed from
+    the beginning of the diagnostic output before testing it.
+-   Fixed a bug comparing `name[]`s on PostgreSQL 8.2, previously hacked around.
+-   Added `has_trigger()` and `trigger_is()`.
+-   Switched to pure SQL implementations of the `pg_version()` and
+    `pg_version_num()` functions, to simplify including pgTAP in module
+    distributions.
+-   Added a note to `README.pgtap` about the need to avoid `pg_typeof()` and
+    `cmp_ok()` in tests run as part of a distribution.
 
-<p>Enjoy!</p>
+Enjoy!
+
+  [pgTAP 0.14]: http://pgfoundry.org/frs/?group_id=1000389 "pgTAP Downloads"

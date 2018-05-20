@@ -8,13 +8,34 @@ tags: [Postgres, Test Anything Protocol, pgTAP, Perl, PpFoundry, YAPC]
 type: post
 ---
 
-<p>A couple of quick announcements:</p>
+A couple of quick announcements:
 
-<dl>
-  <dt>pgTAP on pgFoundry</dt>
-  <dd><p>First, the PostgreSQL community approved my project, so now there is a <a href="http://pgfoundry.org/projects/pgtap/" title="pgTAP on pgFoundry">pgTAP project page</a>, including a couple of <a href="http://pgfoundry.org/mail/?group_id=1000389" title="pgTAP Mail Lists">mail lists</a>, a <a href="http://pgfoundry.org/tracker/?group_id=1000389" title="pgTAP Tracker">bug tracker</a>, and <a href="http://pgfoundry.org/frs/?group_id=1000389" title="downloads">downloads</a>. I uploaded a new version shortly after the project was approved, and 0.03 should be there soon, as well.</p></dd>
-  <dt>pgTAP YAPC::NA Lightning Talk</dt>
-  <dd><p>I gave a <a href="http://conferences.mongueurs.net/yn2008/" title="YAPC::NA 2008 pgTAP Lightning Talk">Lightning talk</a> at YAPC::NA 2008 in Chicago this afternoon. I've now posted <a href="/2008/06/pgtap-on-pgfoundry-at-yapc/pgtap-yapc.pdf" title="Slides for “Test Your Database with pgTAP”">the slides</a> for your enjoyment.</p></dd>
-</dl>
+pgTAP on pgFoundry
 
-<p>Care to help me with development? Want to add your own test functions or make it all integrate better with standard PostgreSQL regression tests? Want to help me get Module::Build or Module::Install to run Perl and PostgreSQL and whatever tests side-by-side, all at once? Join the <a href="http://pgfoundry.org/mail/?group_id=1000389" title="Subscribe to pgtap-users">pgtap-users</a> mail list and join the fun!</p>
+:   First, the PostgreSQL community approved my project, so now there is a
+    [pgTAP project page], including a couple of [mail lists], a [bug tracker],
+    and [downloads]. I uploaded a new version shortly after the project was
+    approved, and 0.03 should be there soon, as well.
+
+pgTAP YAPC::NA Lightning Talk
+
+:   I gave a [Lightning talk] at YAPC::NA 2008 in Chicago this afternoon. I've
+    now posted [the slides] for your enjoyment.
+
+Care to help me with development? Want to add your own test functions or make it
+all integrate better with standard PostgreSQL regression tests? Want to help me
+get Module::Build or Module::Install to run Perl and PostgreSQL and whatever
+tests side-by-side, all at once? Join the [pgtap-users] mail list and join the
+fun!
+
+  [pgTAP project page]: http://pgfoundry.org/projects/pgtap/
+    "pgTAP on pgFoundry"
+  [mail lists]: http://pgfoundry.org/mail/?group_id=1000389 "pgTAP Mail Lists"
+  [bug tracker]: http://pgfoundry.org/tracker/?group_id=1000389 "pgTAP Tracker"
+  [downloads]: http://pgfoundry.org/frs/?group_id=1000389 "downloads"
+  [Lightning talk]: http://conferences.mongueurs.net/yn2008/
+    "YAPC::NA 2008 pgTAP Lightning Talk"
+  [the slides]: /2008/06/pgtap-on-pgfoundry-at-yapc/pgtap-yapc.pdf
+    "Slides for “Test Your Database with pgTAP”"
+  [pgtap-users]: http://pgfoundry.org/mail/?group_id=1000389
+    "Subscribe to pgtap-users"

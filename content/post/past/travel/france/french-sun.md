@@ -12,8 +12,23 @@ type: post
     <figcaption>Arles from the Arena by <a href="https://www.flickr.com/photos/decar66/">Salva Barbera</a> (<a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)</figcaption>
 </figure>
 
-<p>We spent seven weeks last summer <a href="http://www.justatheory.com/travel/france/2012/a-rouen.html">in Northern France</a>. Man it was an awesome time. None of us wanted to leave! Well, almost true. The thing about Normandy is that the weather is very much like Portland—except that <a href="http://www.urbandictionary.com/define.php?term=Juneuary">Juneuary</a> lasts through July and August. We were so desperate for sun that we spent a week <a href="https://www.flickr.com/photos/theory/sets/72157630781097042/">in Barcelona</a>.</p>
+We spent seven weeks last summer [in Northern France]. Man it was an awesome
+time. None of us wanted to leave! Well, almost true. The thing about Normandy is
+that the weather is very much like Portland—except that [Juneuary] lasts through
+July and August. We were so desperate for sun that we spent a week [in
+Barcelona].
 
-<p>This summer will be different. Much warmer. No, not Portland, but two months in <a href="https://en.wikipedia.org/wiki/Arles">Arles</a>, in <a href="https://en.wikipedia.org/wiki/Provence">Provence</a>. Yes, we are once again doing a home exchange, this time in the city in which <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh">Vincent Van Gogh</a> famously spent his <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh#Artistic_breakthrough_and_final_years">final years</a>. Nice, warm, Mediterranean weather.</p>
+This summer will be different. Much warmer. No, not Portland, but two months in
+[Arles], in [Provence]. Yes, we are once again doing a home exchange, this time
+in the city in which [Vincent Van Gogh] famously spent his [final years]. Nice,
+warm, Mediterranean weather.
 
-<p>We can’t wait.</p>
+We can’t wait.
+
+  [in Northern France]: http://www.justatheory.com/travel/france/2012/a-rouen.html
+  [Juneuary]: http://www.urbandictionary.com/define.php?term=Juneuary
+  [in Barcelona]: https://www.flickr.com/photos/theory/sets/72157630781097042/
+  [Arles]: https://en.wikipedia.org/wiki/Arles
+  [Provence]: https://en.wikipedia.org/wiki/Provence
+  [Vincent Van Gogh]: https://en.wikipedia.org/wiki/Vincent_van_Gogh
+  [final years]: https://en.wikipedia.org/wiki/Vincent_van_Gogh#Artistic_breakthrough_and_final_years

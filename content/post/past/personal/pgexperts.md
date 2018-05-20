@@ -7,32 +7,38 @@ tags: [Personal, work, Postgres, PL/pgSQL, PostgreSQL Experts]
 type: post
 ---
 
-<p>A bit of good news: In addition to my
-ongoing <a href="http://www.kineticode.com/" title="Kineticode: Setting
-knowledge in motion.">Kineticode</a> work doing Bricolage consulting services,
-training, and support, I have a new gig! I, along with
-<a href="http://it.toolbox.com/blogs/database-soup" title="Database Soup">Josh Berkus</a>,
-<a href="http://people.planetpostgresql.org/dfetter/" title="David Fetter's blog">David Fetter</a>,
-<a href="http://people.planetpostgresql.org/andrew/" title="Andrew's PostgreSQL blog">Andrew Dunstan</a>,
-and a <a href="http://pgexperts.com/people.html" title="Meet the Experts">team</a>
-of other PostgreSQL experts, have started a new company:
-<a href="http://pgexperts.com/" title="PostgreSQL Experts, Inc.">PostgreSQL Experts, Inc.</a>
-I'm really excited about PGX, a cooperative of solid and experienced--dare I
-say expert?--people dedicated to providing exceptional PostgreSQL professional
-services, including consulting, training, and support.</p>
+A bit of good news: In addition to my ongoing [Kineticode] work doing Bricolage
+consulting services, training, and support, I have a new gig! I, along with
+[Josh Berkus], [David Fetter], [Andrew Dunstan], and a [team] of other
+PostgreSQL experts, have started a new company: [PostgreSQL Experts, Inc.] I'm
+really excited about PGX, a cooperative of solid and experienced--dare I say
+expert?--people dedicated to providing exceptional PostgreSQL professional
+services, including consulting, training, and support.
 
-<p>Morever, we have a solid group of experienced application developers, who
-are ready and willing to build your PostgreSQL-backed applications
-on <a href="http://wiki.rubyonrails.org/database-support/postgres"
-title="Rails Wiki: PostgreSQL">Rails</a>,
-<a href="http://www.catalystframework.org/"
-title="Catalyst: The elegant MVC framework">Catalyst</a>,
-<a href="http://www.php.net/" title="PHP">PHP</a>, or whatever environment you
-prefer. If it's related to PostgreSQL, it's what we do.</p>
+Morever, we have a solid group of experienced application developers, who are
+ready and willing to build your PostgreSQL-backed applications on [Rails],
+[Catalyst], [PHP], or whatever environment you prefer. If it's related to
+PostgreSQL, it's what we do.
 
-<p>So <a href="http://pgexperts.com/contact.html" title="PostgreSQL Experts, Inc. -- Contact Us">get in
-touch</a> or meet us at
-<a href="https://www.pgcon.org/2009/" title="PGCon 2009">PGCon</a> (we're
-sponsoring!) or at <a href="http://en.oreilly.com/oscon2009">OSCON 2009</a>.
+So [get in touch] or meet us at [PGCon] (we're sponsoring!) or at [OSCON 2009].
 I'm really excited about our company, and looking forward to growing it as
-PostgreSQL adoption grows.</p>
+PostgreSQL adoption grows.
+
+  [Kineticode]: http://www.kineticode.com/ "Kineticode: Setting
+    knowledge in motion."
+  [Josh Berkus]: http://it.toolbox.com/blogs/database-soup "Database Soup"
+  [David Fetter]: http://people.planetpostgresql.org/dfetter/
+    "David Fetter's blog"
+  [Andrew Dunstan]: http://people.planetpostgresql.org/andrew/
+    "Andrew's PostgreSQL blog"
+  [team]: http://pgexperts.com/people.html "Meet the Experts"
+  [PostgreSQL Experts, Inc.]: http://pgexperts.com/ "PostgreSQL Experts, Inc."
+  [Rails]: http://wiki.rubyonrails.org/database-support/postgres
+    "Rails Wiki: PostgreSQL"
+  [Catalyst]: http://www.catalystframework.org/
+    "Catalyst: The elegant MVC framework"
+  [PHP]: http://www.php.net/ "PHP"
+  [get in touch]: http://pgexperts.com/contact.html
+    "PostgreSQL Experts, Inc. -- Contact Us"
+  [PGCon]: https://www.pgcon.org/2009/ "PGCon 2009"
+  [OSCON 2009]: http://en.oreilly.com/oscon2009

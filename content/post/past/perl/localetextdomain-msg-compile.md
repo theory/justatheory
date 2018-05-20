@@ -7,15 +7,33 @@ tags: [Perl, translation, localization, internationalization]
 type: post
 ---
 
-<p>Here’s a followup on my post about <a href="/computers/programming/perl/modules/dist-zilla-localetextdomain.html">localizing Perl modules with Locale::TextDomain</a>. <a href="https://metacpan.org/module/Dist::Zilla::LocaleTextDomain">Dist::Zilla::LocaleTextDomain</a> was great for developers, less so for translators. A <a href="http://sqitch.org/" title="Sqitch: Sane database change management">Sqitch</a> translator asked how to test the translation file he was working on. My only reply was to compile the whole module, then install it and test it. Ugh.</p>
+Here’s a followup on my post about [localizing Perl modules with
+Locale::TextDomain]. [Dist::Zilla::LocaleTextDomain] was great for developers,
+less so for translators. A [Sqitch] translator asked how to test the translation
+file he was working on. My only reply was to compile the whole module, then
+install it and test it. Ugh.
 
-<p>Today, I released <a href="https://metacpan.org/module/Dist::Zilla::LocaleTextDomain">Dist::Zilla::LocaleTextDomain v0.85</a> with a new command, <a href="https://metacpan.org/module/Dist::Zilla::App::Command::msg_compile"><code>msg-compile</code></a>. This command allows translators to easily compile just the file they’re working on and nothing else. For pure Perl modules in particular, it’s pretty easy to test then. By default, the compiled catalog goes into <code>./LocaleData</code>, where convincing the module to find it is simple. For example, I updated the <a href="https://github.com/theory/sqitch/blob/master/t/sqitch">test <code>sqitch</code> app</a> to take advantage of this. Now, to test, say, the French translation file, all the translator has to do is:</p>
+Today, I released [Dist::Zilla::LocaleTextDomain
+v0.85][Dist::Zilla::LocaleTextDomain] with a new command, [`msg-compile`]. This
+command allows translators to easily compile just the file they’re working on
+and nothing else. For pure Perl modules in particular, it’s pretty easy to test
+then. By default, the compiled catalog goes into `./LocaleData`, where
+convincing the module to find it is simple. For example, I updated the [test
+`sqitch` app] to take advantage of this. Now, to test, say, the French
+translation file, all the translator has to do is:
 
-<pre><code>&gt; dzil msg-compile po/fr.po
-[LocaleTextDomain] po/fr.po: 155 translated messages, 24 fuzzy translations, 16 untranslated messages.
+    > dzil msg-compile po/fr.po
+    [LocaleTextDomain] po/fr.po: 155 translated messages, 24 fuzzy translations, 16 untranslated messages.
 
-&gt; LANGUAGE=fr ./t/sqitch foo
-"foo" n'est pas une commande valide
-</code></pre>
+    > LANGUAGE=fr ./t/sqitch foo
+    "foo" n'est pas une commande valide
 
-<p>I hope this simplifies things for translators. See the <a href="https://metacpan.org/module/Dist::Zilla::LocaleTextDomain#But-Im-a-Translator">notes for translators</a> for a few more words on the subject.</p>
+I hope this simplifies things for translators. See the [notes for translators]
+for a few more words on the subject.
+
+  [localizing Perl modules with Locale::TextDomain]: /computers/programming/perl/modules/dist-zilla-localetextdomain.html
+  [Dist::Zilla::LocaleTextDomain]: https://metacpan.org/module/Dist::Zilla::LocaleTextDomain
+  [Sqitch]: http://sqitch.org/ "Sqitch: Sane database change management"
+  [`msg-compile`]: https://metacpan.org/module/Dist::Zilla::App::Command::msg_compile
+  [test `sqitch` app]: https://github.com/theory/sqitch/blob/master/t/sqitch
+  [notes for translators]: https://metacpan.org/module/Dist::Zilla::LocaleTextDomain#But-Im-a-Translator

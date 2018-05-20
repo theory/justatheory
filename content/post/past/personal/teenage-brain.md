@@ -7,8 +7,9 @@ tags: [Personal, teenagers, brain development, New York Times]
 type: post
 ---
 
-<p>Overheard:</p>
+Overheard:
 
-<p><strong>Steven:</strong> <em>Did you see that article in the Sunday <cite>Times</cite> about the teenage brain?</em></p>
+**Steven:** *Did you see that article in the Sunday *Times* about the teenage
+brain?*
 
-<p><strong>Julie:</strong> <em>What, you mean they <strong>found</strong> one?</em></p>
+**Julie:** *What, you mean they **found** one?*

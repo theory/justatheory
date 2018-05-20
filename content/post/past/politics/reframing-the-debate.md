@@ -7,30 +7,117 @@ tags: [Politics, conservative, progressive, slash and burn conservative, slash a
 type: post
 ---
 
-<p>In light of the election results, I've been reflecting on what needs to happen next. I started by thinking about how I'd like to reclaim the word <q>liberal</q> for use by the left in general, and Democrats in particular. <a href="http://www.pbs.org/newshour/character/bios/hertzberg.html" title="Hendrik Hertzberg">Hendrik Hertzberg</a> <a href="http://freshair.npr.org/day_fa.jhtml?displayValue=day;todayDate=07/14/2004" title="Hendrik Hertzberg on &#x201c;Fresh Air&#x201d;, 2004-07-14">said something interesting</a> about this on <a href="http://freshair.npr.org/" title="Fresh Air online"><q>Fresh Air</q></a> back in July:</p>
+In light of the election results, I've been reflecting on what needs to happen
+next. I started by thinking about how I'd like to reclaim the word “liberal” for
+use by the left in general, and Democrats in particular. [Hendrik Hertzberg][]
+[said something interesting] about this on [“Fresh Air”] back in July:
 
-<blockquote>
-  <p><strong>Terry Gross:</strong> How do you think the word <q>liberal</q> has changed in meaning?</p>
+> **Terry Gross:** How do you think the word “liberal” has changed in meaning?
+>
+> **Hertzberg:** It has been diabolized by the right, unfortunately. It's a
+> wonderful, perfectly good word. It's rooted in “liberty.” It has changed so
+> much that if you go back to 1952, when Richard Nixon gave his acceptance
+> speech at the Republican convention, when he was nominated for Vice President,
+> the whole beginning of his speech was an argument that the Republicans--that
+> he, Nixon, and Eisenhower, the Republicans--were the *real liberals*. In those
+> days, “liberal” was a word that everybody wanted to have attached to him, and
+> even Robert Taft would pay homage to that word. I think it was a mistake for
+> liberals to let go of that word. I think it's a much better word than, say,
+> the word “progressive”, because liberty is a better value than progress in my
+> book.
 
-  <p><strong>Hertzberg:</strong> It has been diabolized by the right, unfortunately. It's a wonderful, perfectly good word. It's rooted in <q>liberty.</q> It has changed so much that if you go back to 1952, when Richard Nixon gave his acceptance speech at the Republican convention, when he was nominated for Vice President, the whole beginning of his speech was an argument that the Republicans--that he, Nixon, and Eisenhower, the Republicans--were the <em>real liberals</em>. In those days, <q>liberal</q> was a word that everybody wanted to have attached to him, and even Robert Taft would pay homage to that word. I think it was a mistake for liberals to let go of that word. I think it's a much better word than, say, the word <q>progressive</q>, because liberty is a better value than progress in my book.</p>
-</blockquote>
+Remembering this discussion, I started thinking about how we might reclaim the
+word, and this led me to ponder on how the right, starting with Reagan, turned
+it into a bad word. How did they do it? Well, they changed it from an adjective
+(“the liberal candidate”) to a noun (“he's a liberal”). They managed this by
+applying adjectives to the adjective (but not in the adverbial sense), so we got
+“card-carrying liberal”, “tax and spend liberal,” and so on. Perhaps, I thought,
+we just need to apply different adjectives to it in our day-to-day usage, such
+as “freedom-loving liberal.”
 
-<p>Remembering this discussion, I started thinking about how we might reclaim the word, and this led me to ponder on how the right, starting with Reagan, turned it into a bad word. How did they do it? Well, they changed it from an adjective (<q>the liberal candidate</q>) to a noun (<q>he's a liberal</q>). They managed this by applying adjectives to the adjective (but not in the adverbial sense), so we got <q>card-carrying liberal</q>, <q>tax and spend liberal,</q> and so on. Perhaps, I thought, we just need to apply different adjectives to it in our day-to-day usage, such as <q>freedom-loving liberal.</q></p>
+But that's not too strong, is it? Perhaps we could instead borrow the right's
+idea of recasting a common word with a negative connotation. Maybe we could
+start applying adjectives to other adjectives, such as “conservative.”
 
-<p>But that's not too strong, is it? Perhaps we could instead borrow the right's idea of recasting a common word with a negative connotation. Maybe we could start applying adjectives to other adjectives, such as <q>conservative.</q></p>
+I started pondering on what it means to be conservative. It used to be that
+conservatives had a core set of values that were primarily focused on reducing
+the size of government. To do so, they wanted to lower taxes in order force
+lower spending on programs. But it was also important to them to keep the budget
+balanced. Tax cuts had to come hand-in-hand with reduced spending, because
+otherwise budget shortfalls would just pass debt on to our children, who would
+then have to pay more taxes. And in the meantime, the size of government would
+not actually be reduced.
 
-<p>I started pondering on what it means to be conservative. It used to be that conservatives had a core set of values that were primarily focused on reducing the size of government. To do so, they wanted to lower taxes in order force lower spending on programs. But it was also important to them to keep the budget balanced. Tax cuts had to come hand-in-hand with reduced spending, because otherwise budget shortfalls would just pass debt on to our children, who would then have to pay more taxes. And in the meantime, the size of government would not actually be reduced.</p>
+This changed, as near as I can tell, during the Reagan administration. Here was
+a conservative president who, for the first time, cut taxes but *increased*
+spending. Spending on defense and weapons research shot way up in order to beat
+the Soviet Union in the so-called “arms race.” Whether or not the arms race was
+a justifiable policy in our attempt to “win” the “cold war,” when it was
+accompanied by tax cuts, it gave rise to a new type of conservative, the *slash
+and burn conservative.*
 
-<p>This changed, as near as I can tell, during the Reagan administration. Here was a conservative president who, for the first time, cut taxes but <em>increased</em> spending. Spending on defense and weapons research shot way up in order to beat the Soviet Union in the so-called <q>arms race.</q> Whether or not the arms race was a justifiable policy in our attempt to <q>win</q> the <q>cold war,</q> when it was accompanied by tax cuts, it gave rise to a new type of conservative, the <em>slash and burn conservative.</em></p>
+And George W. Bush is the biggest slash and burn conservative of them all. Even
+as he slashed taxes on the richest 1% of the population, he burned through the
+[$237 billion] budget surplus (projected by the Congressional Budget Office to
+accumulate to $5.6 trillion between 2002 and 2011) in near record time, and
+added to it the current [$477 billion] budget deficit (expected to accumulate to
+$5.2 trillion over the next ten years). Ten trillion dollar is a lot, but a
+slash and burn conservative always believes that there's money to burn.
 
-<p>And George W. Bush is the biggest slash and burn conservative of them all. Even as he slashed taxes on the richest 1% of the population, he burned through the <a href="http://money.cnn.com/2001/10/29/economy/budget/" title="CNN Reports on the declining US budget surplus in 2001">$237 billion</a> budget surplus (projected by the Congressional Budget Office to accumulate to $5.6 trillion between 2002 and 2011) in near record time, and added to it the current <a href="http://www.democrats.org/specialreports/2005budget/surplus.html" title="DNC Special Reports: Bush's 2005 Budget: A Deficit Disaster">$477 billion</a> budget deficit (expected to accumulate to $5.2 trillion over the next ten years). Ten trillion dollar is a lot, but a slash and burn conservative always believes that there's money to burn.</p>
+Where did this budget shortfall come from? After all, tax breaks alone won't
+lead to a deficit when you have the kind of surplus we were expecting in 2000.
+How has President Bush burned through so much cash in such a short time? Well,
+it seems that he's a *slash and spend conservative*. He found new programs to
+spend the (nonexistent) money on, such as an incredibly expensive war in Iraq.
+Indeed, if Bush is the first [“CEO President,”] as he likes to style himself,
+then he must be of the Ken Lay Ilk: he's the *Enron president!*
 
-<p>Where did this budget shortfall come from? After all, tax breaks alone won't lead to a deficit when you have the kind of surplus we were expecting in 2000. How has President Bush burned through so much cash in such a short time? Well, it seems that he's a <em>slash and spend conservative</em>. He found new programs to spend the (nonexistent) money on, such as an incredibly expensive war in Iraq. Indeed, if Bush is the first <a href="http://www.washingtonmonthly.com/archives/individual/2004_05/003829.php" title="&#x201c;Our CEO President&#x201d;"><q>CEO President,</q></a> as he likes to style himself, then he must be of the Ken Lay Ilk: he's the <em>Enron president!</em></p>
+I mentioned some of these ideas to [Nat] yesterday, and before I could get them
+out, fully formed, he pointed me to a new book from [George Lakoff] entitled,
+[*Don't think of an Elephant*.] Salon has a [good article] describing the book,
+and it does seem that Lakoff (whose work, I was amused to realize, I read in
+college when I was getting my MA in Anthropology) is arguing the same thing as
+I, only with robust tie-in to how people think and process information.
 
-<p>I mentioned some of these ideas to <a href="http://nathan.torkington.com/articles/2004-vote.html" title="Understanding the 2004 Vote">Nat</a> yesterday, and before I could get them out, fully formed, he pointed me to a new book from <a href="http://www.georgelakoff.com/blog/" title="George Lakoff Blog">George Lakoff</a> entitled, <a href="https://www.amazon.com/exec/obidos/tg/detail/-/1931498717/justatheory-20" title="Buy &#x201c;Don't think of an Elephant&#x201d; on Amazon.com"><cite>Don't think of an Elephant</cite>.</a> Salon has a <a href="http://www.salon.com/news/feature/2004/10/02/lakoff/print.html" title="&#x201c;Winning the war of words&#x201d;">good article</a> describing the book, and it does seem that Lakoff (whose work, I was amused to realize, I read in college when I was getting my MA in Anthropology) is arguing the same thing as I, only with robust tie-in to how people think and process information.</p>
+It's all about reframing the debate, to borrow Lakoff's terminology. The right
+has been so good at making a [self-contained argument] into a single
+catch-phrase--such as “Clear Skies,” “Healthy Trees,” “partial-birth abortion,”
+and “death tax”--that makes it easy for people to digest, so that they feel that
+they understand an issue just from the turn of phrase. We in the left need to
+follow suit, to find the self contained arguments in the clever turn of phrase.
+I'm going to do some more thinking on this, to find other ways to reframe the
+debate.
 
-<p>It's all about reframing the debate, to borrow Lakoff's terminology. The right has been so good at making a <a href="http://www.motherjones.com/news/qa/2004/10/10_401.html" title="&#x201c;How to Talk Like a Conservative (If You Must)&#x201d;">self-contained argument</a> into a single catch-phrase--such as <q>Clear Skies,</q> <q>Healthy Trees,</q> <q>partial-birth abortion,</q> and <q>death tax</q>--that makes it easy for people to digest, so that they feel that they understand an issue just from the turn of phrase. We in the left need to follow suit, to find the self contained arguments in the clever turn of phrase. I'm going to do some more thinking on this, to find other ways to reframe the debate.</p>
+For too long, the right has defined the terms of the debate, and as the left has
+responded to them, they have lost, because you can't refute them. We need to
+reframe the debate by defining the terms and forcing the right to respond to
+those terms. The only way this can be done is if we use a few really good ones
+for core issues, and get them into widespread use, repeated over and over, for
+the next four years. We need a daily [talking points memo] to outline the
+discourse and organize the left, to get us all “on message,” so that people get
+the message.
 
-<p>For too long, the right has defined the terms of the debate, and as the left has responded to them, they have lost, because you can't refute them. We need to reframe the debate by defining the terms and forcing the right to respond to those terms. The only way this can be done is if we use a few really good ones for core issues, and get them into widespread use, repeated over and over, for the next four years. We need a daily <a href="http://www.talkingpointsmemo.com/">talking points memo</a> to outline the discourse and organize the left, to get us all <q>on message,</q> so that people get the message.</p>
+Think you're tired of the phrase “flip-flopper”? Get ready to hear more about
+our slash and spend president. Ad nauseam.
 
-<p>Think you're tired of the phrase <q>flip-flopper</q>? Get ready to hear more about our slash and spend president. Ad nauseam.</p>
+  [Hendrik Hertzberg]: http://www.pbs.org/newshour/character/bios/hertzberg.html
+    "Hendrik Hertzberg"
+  [said something interesting]: http://freshair.npr.org/day_fa.jhtml?displayValue=day;todayDate=07/14/2004
+    "Hendrik Hertzberg on “Fresh Air”, 2004-07-14"
+  [“Fresh Air”]: http://freshair.npr.org/ "Fresh Air online"
+  [$237 billion]: http://money.cnn.com/2001/10/29/economy/budget/
+    "CNN Reports on the declining US budget surplus in 2001"
+  [$477 billion]: http://www.democrats.org/specialreports/2005budget/surplus.html
+    "DNC Special Reports: Bush's 2005 Budget: A Deficit Disaster"
+  [“CEO President,”]: http://www.washingtonmonthly.com/archives/individual/2004_05/003829.php
+    "“Our CEO President”"
+  [Nat]: http://nathan.torkington.com/articles/2004-vote.html
+    "Understanding the 2004 Vote"
+  [George Lakoff]: http://www.georgelakoff.com/blog/ "George Lakoff Blog"
+  [*Don't think of an Elephant*.]: https://www.amazon.com/exec/obidos/tg/detail/-/1931498717/justatheory-20
+    "Buy “Don't think of an Elephant” on Amazon.com"
+  [good article]: http://www.salon.com/news/feature/2004/10/02/lakoff/print.html
+    "“Winning the war of words”"
+  [self-contained argument]: http://www.motherjones.com/news/qa/2004/10/10_401.html
+    "“How to Talk Like a Conservative (If You Must)”"
+  [talking points memo]: http://www.talkingpointsmemo.com/

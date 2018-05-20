@@ -7,14 +7,11 @@ tags: [Subversion, Git]
 type: post
 ---
 
-<p>In preparation for migrating a large Subversion repository to GitHub, I
-needed to get a list of all of the Subversion committers throughout history,
-so that I could create a file mapping them to Git users. Here's how I did
-it:</p>
+In preparation for migrating a large Subversion repository to GitHub, I needed
+to get a list of all of the Subversion committers throughout history, so that I
+could create a file mapping them to Git users. Here's how I did it:
 
-<pre>
-svn log &#x002d;&#x002d;quiet http://svn.example.com/ \
-| grep &#x0027;^r&#x0027; | awk &#x0027;{print $3}&#x0027; | sort | uniq > committers.txt
-</pre>
+    svn log --quiet http://svn.example.com/ \
+    | grep '^r' | awk '{print $3}' | sort | uniq > committers.txt
 
-<p>Now I just have edit <code>committers.txt</code> and I have my mapping file.</p>
+Now I just have edit `committers.txt` and I have my mapping file.

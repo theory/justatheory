@@ -7,31 +7,44 @@ tags: [Sqitch, SQL, change management, development, Homebrew, Test Anything Prot
 type: post
 ---
 
-<p>If <a href="http://sqitch.org/" title="Sqitch: Sane database schema change management">Sqitch</a> is to succeed, it needs to get into the hands of as many people as possible. That means making it easy to install for people who are not Perl hackers and don’t want to deal with CPAN. The <a href="https://github.com/theory/homebrew-sqitch">Sqitch Homebrew Tap</a> is my first public stab at that. It provides a series of “Formulas” for <a href="http://mxcl.github.com/homebrew/">Homebrew</a> users to easily download, build, and install Sqitch and all of its dependencies.</p>
+If [Sqitch] is to succeed, it needs to get into the hands of as many people as
+possible. That means making it easy to install for people who are not Perl
+hackers and don’t want to deal with CPAN. The [Sqitch Homebrew Tap] is my first
+public stab at that. It provides a series of “Formulas” for [Homebrew] users to
+easily download, build, and install Sqitch and all of its dependencies.
 
-<p>If you are one of these lucky people, here’s how to configure the Sqitch tap:</p>
+If you are one of these lucky people, here’s how to configure the Sqitch tap:
 
-<pre><code>brew tap theory/sqitch
-</code></pre>
+    brew tap theory/sqitch
 
-<p>Now you can install the core Sqitch application:</p>
+Now you can install the core Sqitch application:
 
-<pre><code>brew install sqitch
-</code></pre>
+    brew install sqitch
 
-<p>That’s it. Make sure it works:</p>
+That’s it. Make sure it works:
 
-<pre><code>&gt; sqitch --version
-sqitch (App::Sqitch) 0.953
-</code></pre>
+    > sqitch --version
+    sqitch (App::Sqitch) 0.953
 
-<p>It won’t do you much good without support for your database, though.
-Currently, there is a build for PostgreSQL. Note that this requires the
-Homebrew core PostgreSQL server:</p>
+It won’t do you much good without support for your database, though. Currently,
+there is a build for PostgreSQL. Note that this requires the Homebrew core
+PostgreSQL server:
 
-<pre><code>brew install sqitch_pg
-</code></pre>
+    brew install sqitch_pg
 
-<p>Sqitch hasn’t been ported to other database engines yet, but once it is, expect other formulas to follow. But if you use PostgreSQL (or just want to experiment with it), you’re ready to rock! I suggest following along <a href="https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod">the tutorial</a> or taking in <a href="https://speakerdeck.com/theory/sane-database-change-management-with-sqitch">the latest iteration of the introductory presentation</a> (video of an older version <a href="https://vimeo.com/50104469">here</a>).</p>
+Sqitch hasn’t been ported to other database engines yet, but once it is, expect
+other formulas to follow. But if you use PostgreSQL (or just want to experiment
+with it), you’re ready to rock! I suggest following along [the tutorial] or
+taking in [the latest iteration of the introductory presentation] (video of an
+older version [here]).
 
-<p>My thanks to IRC user “mistym” for the help and suggestions in getting this going. My Ruby is pretty much rusted through, soI could not have done it without the incredibly responsive help!</p>
+My thanks to IRC user “mistym” for the help and suggestions in getting this
+going. My Ruby is pretty much rusted through, soI could not have done it without
+the incredibly responsive help!
+
+  [Sqitch]: http://sqitch.org/ "Sqitch: Sane database schema change management"
+  [Sqitch Homebrew Tap]: https://github.com/theory/homebrew-sqitch
+  [Homebrew]: http://mxcl.github.com/homebrew/
+  [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
+  [the latest iteration of the introductory presentation]: https://speakerdeck.com/theory/sane-database-change-management-with-sqitch
+  [here]: https://vimeo.com/50104469

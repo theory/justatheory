@@ -7,67 +7,78 @@ tags: [Postgres, Bucardo, database replication]
 type: post
 ---
 
-<p>Let’s say you have a production database up and running and you want to set up a second database with <a href="http://bucardo.org/">Bucardo</a>-powered replication between them. Getting a new master up and running without downtime for an existing master, and without losing any data, is a bit fiddly and under-documented. Having just figured out one way to do it with the forthcoming Bucardo 5 code base, I wanted to blog it as much for my own reference as for yours.</p>
+Let’s say you have a production database up and running and you want to set up a
+second database with [Bucardo]-powered replication between them. Getting a new
+master up and running without downtime for an existing master, and without
+losing any data, is a bit fiddly and under-documented. Having just figured out
+one way to do it with the forthcoming Bucardo 5 code base, I wanted to blog it
+as much for my own reference as for yours.
 
-<p>First, let’s set up some environment variables to simplify things a bit. I’m assuming that the database names and usernames are the same, and only the host names are different:</p>
+First, let’s set up some environment variables to simplify things a bit. I’m
+assuming that the database names and usernames are the same, and only the host
+names are different:
 
-<pre><code>export PGDATABASE=widgets
-export PGHOST=here.example.com
-export PGHOST2=there.example.com
-export PGSUPERUSER=postgres
-</code></pre>
+    export PGDATABASE=widgets
+    export PGHOST=here.example.com
+    export PGHOST2=there.example.com
+    export PGSUPERUSER=postgres
 
-<p>And here are some environment variables we’ll use for Bucardo configuration stuff:</p>
+And here are some environment variables we’ll use for Bucardo configuration
+stuff:
 
-<pre><code>export BUCARDOUSER=bucardo
-export BUCARDOPASS=*****
-export HERE=here
-export THERE=there
-</code></pre>
+    export BUCARDOUSER=bucardo
+    export BUCARDOPASS=*****
+    export HERE=here
+    export THERE=there
 
-<p>First, let’s create the new database as a schema-only copy of the existing database:</p>
+First, let’s create the new database as a schema-only copy of the existing
+database:
 
-<pre><code>createdb -U $PGSUPERUSER -h $PGHOST2 $PGDATABASE
-pg_dump -U $PGSUPERUSER -h $PGHOST --schema-only $PGDATABASE \
-| psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
-</code></pre>
+    createdb -U $PGSUPERUSER -h $PGHOST2 $PGDATABASE
+    pg_dump -U $PGSUPERUSER -h $PGHOST --schema-only $PGDATABASE \
+    | psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
 
-<p>You might also have to copy over roles; use <code>pg_dumpall --globals-only</code> to do that.</p>
+You might also have to copy over roles; use `pg_dumpall --globals-only` to do
+that.
 
-<p>Next, we configure Bucardo. Start by telling it about the databases:</p>
+Next, we configure Bucardo. Start by telling it about the databases:
 
-<pre><code>bucardo add db $HERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST user=$BUCARDOUSER pass=$BUCARDOPASS
-bucardo add db $THERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST2 user=$BUCARDOUSER pass=$BUCARDOPASS
-</code></pre>
+    bucardo add db $HERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST user=$BUCARDOUSER pass=$BUCARDOPASS
+    bucardo add db $THERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST2 user=$BUCARDOUSER pass=$BUCARDOPASS
 
-<p>Tell it about all the tables we want to replicate:</p>
+Tell it about all the tables we want to replicate:
 
-<pre><code>bucardo add table public.foo public.bar relgroup=myrels db=$HERE$PGDATABASE 
-</code></pre>
+    bucardo add table public.foo public.bar relgroup=myrels db=$HERE$PGDATABASE 
 
-<p>Create a multi-master database group for the two databases:</p>
+Create a multi-master database group for the two databases:
 
-<pre><code>bucardo add dbgroup mydbs $HERE$PGDATABASE:source $THERE$PGDATABASE:source  
-</code></pre>
+    bucardo add dbgroup mydbs $HERE$PGDATABASE:source $THERE$PGDATABASE:source  
 
-<p>And create the sync:</p>
+And create the sync:
 
-<pre><code>bucardo add sync mysync relgroup=myrels dbs=mydbs autokick=0
-</code></pre>
+    bucardo add sync mysync relgroup=myrels dbs=mydbs autokick=0
 
-<p>Note <code>autokick=0</code>. This ensures that, while deltas are logged, they will not be copied anywhere until we tell Bucardo to do so.</p>
+Note `autokick=0`. This ensures that, while deltas are logged, they will not be
+copied anywhere until we tell Bucardo to do so.
 
-<p>And now that we know that any changes from here on in will be queued for replication, we can go ahead and copy over the data. The only caveat is that we need to disable the Bucardo triggers on the target system, so that our copying does not try to queue up. We do that by setting the <a href="http://www.postgresql.org/docs/9.2/static/runtime-config-client.html#GUC-SESSION-REPLICATION-ROLE"><code>session_replication_role</code> GUC</a> to “replica” while doing the copy:</p>
+And now that we know that any changes from here on in will be queued for
+replication, we can go ahead and copy over the data. The only caveat is that we
+need to disable the Bucardo triggers on the target system, so that our copying
+does not try to queue up. We do that by setting the [`session_replication_role`
+GUC] to “replica” while doing the copy:
 
-<pre><code>pg_dump -U $PGSUPERUSER -h $PGHOST --data-only -N bucardo $PGDATABASE \
-| PGOPTIONS='-c session_replication_role=replica' \
-psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
-</code></pre>
+    pg_dump -U $PGSUPERUSER -h $PGHOST --data-only -N bucardo $PGDATABASE \
+    | PGOPTIONS='-c session_replication_role=replica' \
+    psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
 
-<p>Great, now all the data is copied over, we can have Bucardo copy any changes that have been made in the interim, as well as any going forward:</p>
+Great, now all the data is copied over, we can have Bucardo copy any changes
+that have been made in the interim, as well as any going forward:
 
-<pre><code>bucardo update sync mysync autokick=1
-bucardo reload config
-</code></pre>
+    bucardo update sync mysync autokick=1
+    bucardo reload config
 
-<p>Bucardo will fire up the necessary syncs and copy over any interim deltas. And any changes you make to either system in the future will be copied to the other.</p>
+Bucardo will fire up the necessary syncs and copy over any interim deltas. And
+any changes you make to either system in the future will be copied to the other.
+
+  [Bucardo]: http://bucardo.org/
+  [`session_replication_role` GUC]: http://www.postgresql.org/docs/9.2/static/runtime-config-client.html#GUC-SESSION-REPLICATION-ROLE

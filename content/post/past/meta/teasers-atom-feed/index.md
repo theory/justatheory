@@ -10,6 +10,13 @@ type: post
 
 <figure><img src="/2008/01/teasers-atom-feed/feeds.png" alt="Select a feed" /></figure>
 
-<p>I've just added a new feed: <a href="/index.atomsum">teasers only</a>. It makes things a log shorter for those who just want to get a teaser for each blog entry, rather than <a href="/index.atom">complete entries</a>, such as <a href="http://planet.perl.org">Planet Perl</a> and <a href="http://www.planetpostgresql.org/">Planet PostgreSQL</a>.</p>
+I've just added a new feed: [teasers only]. It makes things a log shorter for
+those who just want to get a teaser for each blog entry, rather than [complete
+entries], such as [Planet Perl] and [Planet PostgreSQL].
 
-<p>Any questions or problems? Leave a comment. Thanks!</p>
+Any questions or problems? Leave a comment. Thanks!
+
+  [teasers only]: /index.atomsum
+  [complete entries]: /index.atom
+  [Planet Perl]: http://planet.perl.org
+  [Planet PostgreSQL]: http://www.planetpostgresql.org/

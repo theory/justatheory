@@ -7,12 +7,28 @@ tags: [Web, Google, InfoWorld, Chad Dickerson, patents, RSS, Atom, advertising]
 type: post
 ---
 
-<p>My friend <a href="http://www.chaddickerson.com/" title="Chad Dickerson's home page">Chad Dickerson</a>, the <a href="http://weblog.infoworld.com/dickerson/003656.html" title="New gig, exiting in good faith">exiting CTO</a> of Infoworld, has <a href="http://weblog.infoworld.com/dickerson/003652.html" title="Google: don't do evil">blogged</a> about a recent move by Google to patent advertising in RSS!</p>
+My friend [Chad Dickerson], the [exiting CTO] of Infoworld, has [blogged] about
+a recent move by Google to patent advertising in RSS!
 
-<blockquote>
-<p>Incorporating targeted ads into information in a syndicated, e.g., RSS, presentation format in an automated manner is described. Syndicated material e.g., corresponding to a news feed, search results or web logs, are combined with the output of an automated ad server. An automated ad server is used to provide keyword or content based targeted ads. The ads are incorporated directly into a syndicated feed, e.g., with individual ads becoming items within a particular channel of the feed.</p>
-</blockquote>
+> Incorporating targeted ads into information in a syndicated, e.g., RSS,
+> presentation format in an automated manner is described. Syndicated material
+> e.g., corresponding to a news feed, search results or web logs, are combined
+> with the output of an automated ad server. An automated ad server is used to
+> provide keyword or content based targeted ads. The ads are incorporated
+> directly into a syndicated feed, e.g., with individual ads becoming items
+> within a particular channel of the feed.
 
-<p>This despite the fact that InfoWorld was itself sending targeted ads out in is RSS feeds <em>before Google filed for its patent!</em> Is this another <a href="http://www.oreilly.com/news/patent_archive.html" title="The Amazon Patent Controversy">one-click debacle</a> in the making? Does it really make any sense to patent delivering targeted ads over HTTP just because they're in XML instead of HTML?</p>
+This despite the fact that InfoWorld was itself sending targeted ads out in is
+RSS feeds *before Google filed for its patent!* Is this another [one-click
+debacle] in the making? Does it really make any sense to patent delivering
+targeted ads over HTTP just because they're in XML instead of HTML?
 
-<p>What do you think?</p>
+What do you think?
+
+  [Chad Dickerson]: http://www.chaddickerson.com/ "Chad Dickerson's home page"
+  [exiting CTO]: http://weblog.infoworld.com/dickerson/003656.html
+    "New gig, exiting in good faith"
+  [blogged]: http://weblog.infoworld.com/dickerson/003652.html
+    "Google: don't do evil"
+  [one-click debacle]: http://www.oreilly.com/news/patent_archive.html
+    "The Amazon Patent Controversy"

@@ -7,103 +7,107 @@ tags: [Postgres, testing, unit testing, relational algegra, pgTAP]
 type: post
 ---
 
-<p>I've been thinking more
-about <a href="/computers/databases/postgresql/comparing-relations.html" title="Thoughts on Testing SQL Result Sets">testing SQL result sets</a> and
-how to <a href="/computers/databases/postgresql/result-testing-function-names.html" title="Need Help Naming Result Set Testing Functions">name functions</a> that
-do such testing, and I've started to come to some conclusions. Some of the
-constraints I'm looking at:</p>
+I've been thinking more about [testing SQL result sets] and how to [name
+functions] that do such testing, and I've started to come to some conclusions.
+Some of the constraints I'm looking at:
 
-<ul>
-  <li><p>Cursors are required for tests where the order of the results
-      returned is important. It might be best for such functions to create the
-      cursors themselves.</p></li>
-  <li><p>For comparisons where order isn't important, the results of each SQL
-      statement must be inserted into a temporary table and then the table
-      used for the comparisons. Otherwise, each statement would be executed
-      twice, as is required to calculate symmetric difference. By executing
-      each once and storing the results in a temporary table, we get around
-      this issue (and indeed, this one of the cases that
-      <a href="http://epictest.org/" title="Epic: more full of fail than any other testing  tool">Epic</a>'s
-      <code>global()</code> function addresses).</p></li>
-  <li><p>When order is not important, the most efficient way to compare result
-      sets is with symmetric difference. However, said comparison is a set
-      comparison, meaning that duplicate rows are ignored. So if set A has 3
-      rows and set B has four, but two of those four are identical, then sets
-      A and B can still be equivalent.</p></li>
-</ul>
+-   Cursors are required for tests where the order of the results returned is
+    important. It might be best for such functions to create the cursors
+    themselves.
 
-<p>I'm starting to think that I would have two basic result set testing functions,
-<code>set_eq()</code> and <code>bag_eq()</code>. The former would do a
-set comparison, while the latter would require that duplicate rows be present
-in both result sets. Unfortunately, that would mean that it would be
-difficult for <code>set_eq</code> to have a variation that tests ordered
-sets, as symmetric difference ignores relational ordering. And a simple
-<code>bag_eq()</code> function would require that the relations be ordered, as
-it would iterate over each row in each relation in turn and compare row to row.
-But as I <a href="/computers/databases/postgresql/result-testing-function-names.html" title="Need Help Naming Result Set Testing Functions">pointed out</a> to
-commenter “@dave0,” bags are not inherently ordered, so it would be imposing a
-requirement that's not necessarily appropriate.</p>
+-   For comparisons where order isn't important, the results of each SQL
+    statement must be inserted into a temporary table and then the table used
+    for the comparisons. Otherwise, each statement would be executed twice, as
+    is required to calculate symmetric difference. By executing each once and
+    storing the results in a temporary table, we get around this issue (and
+    indeed, this one of the cases that [Epic]'s `global()` function addresses).
 
-<p>This is starting to drive me a bit nuts.</p>
+-   When order is not important, the most efficient way to compare result sets
+    is with symmetric difference. However, said comparison is a set comparison,
+    meaning that duplicate rows are ignored. So if set A has 3 rows and set B
+    has four, but two of those four are identical, then sets A and B can still
+    be equivalent.
 
-<p>I think that there are ways to enforce an ordered comparison on a set and
-an unordered comparison on a bag, but both would be pretty inefficient. Maybe
-I should do it anyway, include the appropriate caveats in the documentation,
-and then improve when feasible in the future. In that case, what I'd be
-looking at is something like this:</p>
+I'm starting to think that I would have two basic result set testing functions,
+`set_eq()` and `bag_eq()`. The former would do a set comparison, while the
+latter would require that duplicate rows be present in both result sets.
+Unfortunately, that would mean that it would be difficult for `set_eq` to have a
+variation that tests ordered sets, as symmetric difference ignores relational
+ordering. And a simple `bag_eq()` function would require that the relations be
+ordered, as it would iterate over each row in each relation in turn and compare
+row to row. But as I [pointed out][name functions] to commenter “@dave0,” bags
+are not inherently ordered, so it would be imposing a requirement that's not
+necessarily appropriate.
 
-<dl>
-<dt><code>set_eq( sql, sql )</code></dt>
-<dd>Test for set equivalence of two SQL statements.</dd>
+This is starting to drive me a bit nuts.
 
-<dt><code>oset_eq( sql, sql )</code></dt>
-<dd>Test for ordered set equivalence of two SQL statements.</dd>
+I think that there are ways to enforce an ordered comparison on a set and an
+unordered comparison on a bag, but both would be pretty inefficient. Maybe I
+should do it anyway, include the appropriate caveats in the documentation, and
+then improve when feasible in the future. In that case, what I'd be looking at
+is something like this:
 
-<dt><code>bag_eq( sql, sql )</code></dt>
-<dd>Test for row equivalence of two SQL statements.</dd>
+`set_eq( sql, sql )`
+:   Test for set equivalence of two SQL statements.
 
-<dt><code>obag_eq( sql, sql )</code></dt>
-<dd>Test for ordered row equivalence of two SQL statements.</dd>
-</dl>
+`oset_eq( sql, sql )`
+:   Test for ordered set equivalence of two SQL statements.
 
-<p>The preferred tests would be <code>set_eq()</code> and <code>obag_eq()</code>.
-If a single word is passed to any of these functions, it's assumed to be
-a prepared statement. Cursors would be created internally for the
-functions that require ordered comparison. The non-ordered versions would create
-temporary tables to hold the values and then use those tables for the comparisons.
- <code>bag_eq()</code> would also construct cursors on the temporary tables
-to ensure that rows could be compared in the same order in which they were
-generated by the SQL statement.</p>
+`bag_eq( sql, sql )`
+:   Test for row equivalence of two SQL statements.
 
-<p>Interface-wise, perhaps a boolean would be preferred to indicate whether or
-not to compare the rows in an ordered fashion? That would be:</p>
+`obag_eq( sql, sql )`
+:   Test for ordered row equivalence of two SQL statements.
 
-<dl>
-<dt><code>set_eq( sql, sql, bool )</code></dt>
-<dd>Test for set equivalence of two SQL statements. The sets must be in the same order if the boolean argument is true.</dd>
+The preferred tests would be `set_eq()` and `obag_eq()`. If a single word is
+passed to any of these functions, it's assumed to be a prepared statement.
+Cursors would be created internally for the functions that require ordered
+comparison. The non-ordered versions would create temporary tables to hold the
+values and then use those tables for the comparisons. `bag_eq()` would also
+construct cursors on the temporary tables to ensure that rows could be compared
+in the same order in which they were generated by the SQL statement.
 
-<dt><code>bag_eq( sql, sql, bool )</code></dt>
-<dd>Test for row equivalence of two SQL statements. The bags must have their rows in the same order if the boolean argument is true.</dd>
-</dl>
+Interface-wise, perhaps a boolean would be preferred to indicate whether or not
+to compare the rows in an ordered fashion? That would be:
 
-<p>I like that there are fewer functions this way, but is it harder to
-remember what the boolean is for? (It would not be required, and would default
-to false for both functions). Thoughts?</p>
+`set_eq( sql, sql, bool )`
+:   Test for set equivalence of two SQL statements. The sets must be in the same
+    order if the boolean argument is true.
 
-<p>By the way, I would likely throw in a couple of other resultset-comparing
-functions:</p>
+`bag_eq( sql, sql, bool )`
+:   Test for row equivalence of two SQL statements. The bags must have their
+    rows in the same order if the boolean argument is true.
 
-<dl>
-<dt><code>set_includes( sql, sql )</code></dt>
-<dd>Test that the set returned by the first statement includes the rows returned by the second statement.</dd>
-<dt><code>set_excludes( sql, sql )</code></dt>
-<dd>Test that the set returned by the first statement excludes the rows returned by the second statement.</dd>
-<dt><code>bag_includes( sql, sql )</code></dt>
-<dd>Test that the bag returned by the first statement includes the rows returned by the second statement, including duplicates.</dd>
-<dd></dd>
-<dt><code>bag_excludes( sql, sql )</code></dt>
-<dd>Test that the bag returned by the first statement excludes the rows returned by the second statement, including duplicates.</dd>
-<dd></dd>
-</dl>
+I like that there are fewer functions this way, but is it harder to remember
+what the boolean is for? (It would not be required, and would default to false
+for both functions). Thoughts?
 
-<p>Seem useful? Please leave a comment with your thoughts.</p>
+By the way, I would likely throw in a couple of other resultset-comparing
+functions:
+
+`set_includes( sql, sql )`
+:   Test that the set returned by the first statement includes the rows returned
+    by the second statement.
+
+`set_excludes( sql, sql )`
+:   Test that the set returned by the first statement excludes the rows returned
+    by the second statement.
+
+`bag_includes( sql, sql )`
+:   Test that the bag returned by the first statement includes the rows returned
+    by the second statement, including duplicates.
+:   
+
+`bag_excludes( sql, sql )`
+:   Test that the bag returned by the first statement excludes the rows returned
+    by the second statement, including duplicates.
+:   
+
+Seem useful? Please leave a comment with your thoughts.
+
+  [testing SQL result sets]: /computers/databases/postgresql/comparing-relations.html
+    "Thoughts on Testing SQL Result Sets"
+  [name functions]: /computers/databases/postgresql/result-testing-function-names.html
+    "Need Help Naming Result Set Testing Functions"
+  [Epic]: http://epictest.org/
+    "Epic: more full of fail than any other testing  tool"

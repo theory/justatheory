@@ -7,11 +7,17 @@ tags: [OSCON, open source, O’Reilly, Bricolage, Database, Database Design, Wha
 type: post
 ---
 
-<p><a href="http://www.kineticode.com/" title="Kineticode">Kineticode</a> has <a href="http://www.kineticode.com/news/announcements/" title="Kineticode Announcements">posted</a> PDF versions of my my OSCON 2005 presentation slides. Direct links:</p>
+[Kineticode] has [posted] PDF versions of my my OSCON 2005 presentation slides.
+Direct links:
 
-<ul>
-  <li><a href="http://www.kineticode.com/docs/whats_new_in_bricolage.pdf"><q>What's New in Bricolage</q></a></li>
-  <li><a href="http://www.kineticode.com/docs/polymorphic_database_design.pdf"><q>Polymorhic Database Design</q></a> (a.k.a. <q>How to Move Object/Relational Mapping into the Database</q></li>
-</ul>
+-   [“What's New in Bricolage”]
+-   [“Polymorhic Database Design”] (a.k.a. “How to Move Object/Relational
+    Mapping into the Database”
 
-<p>Enjoy!</p>
+Enjoy!
+
+  [Kineticode]: http://www.kineticode.com/ "Kineticode"
+  [posted]: http://www.kineticode.com/news/announcements/
+    "Kineticode Announcements"
+  [“What's New in Bricolage”]: http://www.kineticode.com/docs/whats_new_in_bricolage.pdf
+  [“Polymorhic Database Design”]: http://www.kineticode.com/docs/polymorphic_database_design.pdf

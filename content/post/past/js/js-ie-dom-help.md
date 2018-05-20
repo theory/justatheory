@@ -7,22 +7,26 @@ tags: [JavaScript, Internet Explorer, DOM]
 type: post
 ---
 
-<p>I got Test.Harness.Browser working with IE 6 SP 2 today, but decided to spend a bit of time trying to get it working with the DOM script inclusion approach instead of the XMLHttpRequest approach. The code that causes the problem is this (<code>pre</code> is a pre element generated with the DOM API):</p>
+I got Test.Harness.Browser working with IE 6 SP 2 today, but decided to spend a
+bit of time trying to get it working with the DOM script inclusion approach
+instead of the XMLHttpRequest approach. The code that causes the problem is this
+(`pre` is a pre element generated with the DOM API):
 
-<pre>
-el = doc.createElement(&quot;script&quot;);
-el.type = &quot;text/javascript&quot;;
-// XXX IE chokes on this line.
-el.appendChild(doc.createTextNode(&quot;window.onload(null, Test)&quot;));
-pre.appendChild(el);
-</pre>
+    el = doc.createElement("script");
+    el.type = "text/javascript";
+    // XXX IE chokes on this line.
+    el.appendChild(doc.createTextNode("window.onload(null, Test)"));
+    pre.appendChild(el);
 
-<p>This works great in Firefox, but IE 6 doesn't like the call to <code>appendChild()</code>. It says, <q>Unexpected call to method or property access.</q> So I tried to replace that line with:</p>
+This works great in Firefox, but IE 6 doesn't like the call to `appendChild()`.
+It says, “Unexpected call to method or property access.” So I tried to replace
+that line with:
 
-<pre>
-el.innerHTML = &quot;window.onload(null, Test);&quot;;
-</pre>
+    el.innerHTML = "window.onload(null, Test);";
 
-<p>Firefox is still happy, but now IE 6 says, <q>Unknown runtime error.</q> If I try to just append a script tag to <code>pre.innerHTML</code>, I get no error, but the code doesn't seem to execute, either. In fact, pre.innerHTML appears to be empty!</p>
+Firefox is still happy, but now IE 6 says, “Unknown runtime error.” If I try to
+just append a script tag to `pre.innerHTML`, I get no error, but the code
+doesn't seem to execute, either. In fact, pre.innerHTML appears to be empty!
 
-<p>Anyone have any idea how I can dynamically write to a script element that I've created via the DOM?</p>
+Anyone have any idea how I can dynamically write to a script element that I've
+created via the DOM?

@@ -7,21 +7,24 @@ tags: [Postgres, pgTAP, testing, unit testing, TAP, Test Anything Protocol]
 type: post
 ---
 
-<p>In anticipation of my <a href="http://www.postgresqlconference.org/west08/talks/" title="PostgreSQL Conference West 2008 Talks">PostgreSQL Conference West 2008 talk</a> on Sunday, I've just released <a href="http://pgfoundry.org/frs/?group_id=1000389" title="pgTAP Downloads">pgTAP 0.12</a>. This is a minor release with just a few tweaks:</p>
+In anticipation of my [PostgreSQL Conference West 2008 talk] on Sunday, I've
+just released [pgTAP 0.12]. This is a minor release with just a few tweaks:
 
-<ul>
-  <li>Updated <code>plan()</code> to disable warnings while it creates its
-    tables. This means that <code>plan()</code> no longer send NOTICE messages
-    when they run, although tests still might, depending on the setting of
-    <code>client_min_messages</code>.</li>
-  <li>Added <code>hasnt_table()</code>, <code>hasnt_view()</code>,
-    and <code>hasnt_column()</code>.</li>
-  <li>Added <code>hasnt_pk()</code>, <code>hasnt_fk()</code>, <code>col_isnt_pk()</code>,
-  and <code>col_isnt_fk()</code>.</li>
-  <li>Added missing <code>DROP</code> statements
-    to <code>uninstall_pgtap.sql.in</code>.</li>
-</ul>
+-   Updated `plan()` to disable warnings while it creates its tables. This means
+    that `plan()` no longer send NOTICE messages when they run, although tests
+    still might, depending on the setting of `client_min_messages`.
+-   Added `hasnt_table()`, `hasnt_view()`, and `hasnt_column()`.
+-   Added `hasnt_pk()`, `hasnt_fk()`, `col_isnt_pk()`, and `col_isnt_fk()`.
+-   Added missing `DROP` statements to `uninstall_pgtap.sql.in`.
 
-<p>I also have an idea to add functions that return the server version number (and each of the version number parts) and an OS string, to make testing things on various versions of PostgreSQL and on various operating systems a lot simpler.</p>
+I also have an idea to add functions that return the server version number (and
+each of the version number parts) and an OS string, to make testing things on
+various versions of PostgreSQL and on various operating systems a lot simpler.
 
-<p>I think I'll also spend some time in the next few weeks on an article explaining exactly what pgTAP is and why you'd want to use it. Provided, of course, I can find the tuits for that.</p>
+I think I'll also spend some time in the next few weeks on an article explaining
+exactly what pgTAP is and why you'd want to use it. Provided, of course, I can
+find the tuits for that.
+
+  [PostgreSQL Conference West 2008 talk]: http://www.postgresqlconference.org/west08/talks/
+    "PostgreSQL Conference West 2008 Talks"
+  [pgTAP 0.12]: http://pgfoundry.org/frs/?group_id=1000389 "pgTAP Downloads"

@@ -8,216 +8,205 @@ tags: [databases, SQL, database, change management, versioning]
 type: post
 ---
 
-<p>I’ve been thinking a lot about SQL change management. I know I have
-<a href="/computers/databases/change-management.html">written about this before</a>. But
-I was never satisfied with that idea, mostly because it required managing
-database changes in two separate but interdependent ways. Blargh. So for my
-Perl projects the last couple of years, I have stuck to the very simple but
-ugly Rails-style migration model, as implemented in
-<a href="https://metacpan.org/module/Module::Build::DB">Module::Build::DB</a>.</p>
+I’ve been thinking a lot about SQL change management. I know I have [written
+about this before]. But I was never satisfied with that idea, mostly because it
+required managing database changes in two separate but interdependent ways.
+Blargh. So for my Perl projects the last couple of years, I have stuck to the
+very simple but ugly Rails-style migration model, as implemented in
+[Module::Build::DB].
 
-<p>But it has been on my brain more lately because I’m writing more and more
-database applications <a href="http://iovation.com/">at work</a>, and managing changes
-over time is becoming increasingly annoying. I’ve been using a variation on
-<a href="http://www.depesz.com/index.php/2010/08/22/versioning/">Depesz’s Versioning</a>
+But it has been on my brain more lately because I’m writing more and more
+database applications [at work], and managing changes over time is becoming
+increasingly annoying. I’ve been using a variation on [Depesz’s Versioning]
 package, mainly because its idea of specifying dependencies instead of ordered
 deployment scripts is so useful. However, its implementation in pure SQL, with
 accompanying shell and Perl scripts, is not entirely satisfying. Worse, one
 cannot easily include the contents of an earlier deployment script in a
 reversion script, because the dependency registration function embedded in a
-script will throw an error if it has been run before. The upshot is that if
-you make a one-line change to a database function, you still have to paste the
-entire thing into a new file and commit it to your source code repository.
-This makes tracking diffs annoying.</p>
+script will throw an error if it has been run before. The upshot is that if you
+make a one-line change to a database function, you still have to paste the
+entire thing into a new file and commit it to your source code repository. This
+makes tracking diffs annoying.
 
-<p>Oh, and did I mention that there is no simple built-in way to revert changes,
-and even if there were, because there are no named releases, it can be
-difficult to decide what to revert <em>to</em>? I don’t often need that capability,
-but when I need it, I <strong>need it.</strong></p>
+Oh, and did I mention that there is no simple built-in way to revert changes,
+and even if there were, because there are no named releases, it can be difficult
+to decide what to revert *to*? I don’t often need that capability, but when I
+need it, I **need it.**
 
-<p>Then, this week, Robert Haas
-<a href="http://archives.postgresql.org/pgsql-hackers/2012-01/msg01138.php">described a deployment implementation</a>
-he implemented. It was simple:</p>
+Then, this week, Robert Haas [described a deployment implementation] he
+implemented. It was simple:
 
-<blockquote><p>My last implementation worked by keeping a schema_versions table on the
-server with one column, a UUID. The deployment tarball contained a file with
-a list of UUIDs in it, each one associated to an SQL script. At install
-time, the install script ran through that file in order and ran any scripts
-whose UUID didn’t yet appear in the table, and then added the UUIDs of the
-run scripts to the table.</p></blockquote>
+> My last implementation worked by keeping a schema\_versions table on the
+> server with one column, a UUID. The deployment tarball contained a file with a
+> list of UUIDs in it, each one associated to an SQL script. At install time,
+> the install script ran through that file in order and ran any scripts whose
+> UUID didn’t yet appear in the table, and then added the UUIDs of the run
+> scripts to the table.
 
-<p>I like this simplicity, but there are some more things I think could be done,
-including dependency resolution and reversion. And it seems silly to have a
-UUID stand for a script name; why not just list script names? Better yet, tag
-groups of changes for easy reference.</p>
+I like this simplicity, but there are some more things I think could be done,
+including dependency resolution and reversion. And it seems silly to have a UUID
+stand for a script name; why not just list script names? Better yet, tag groups
+of changes for easy reference.
 
-<h3>Yet Another SQL Deployment Strategy</h3>
+### Yet Another SQL Deployment Strategy
 
-<p>So here’s my proposal. Following Robert, we create a configuration file, but
+So here’s my proposal. Following Robert, we create a configuration file, but
 instead of just listing changes, we fill it with tags and the names of the
-changes are associated with each. An example:</p>
+changes are associated with each. An example:
 
-<pre><code>[alpha]
-users_table
+    [alpha]
+    users_table
 
-[beta]
-add_widget
-widgets_table
+    [beta]
+    add_widget
+    widgets_table
 
-[gamma]
-add_user
-</code></pre>
+    [gamma]
+    add_user
 
-<p>Our change management app will parse this file, finding the tag for each stage
+Our change management app will parse this file, finding the tag for each stage
 of the migration in brackets, and apply the associated changes, simply finding
-each of them in <code>sql/deploy/$change.sql</code>. If it’s reverting changes, it finds
-the reversion scripts named <code>sql/revert/$change.sql</code>. The tags can be anything
-you want; release tags might be useful. Easy so far, right?</p>
+each of them in `sql/deploy/$change.sql`. If it’s reverting changes, it finds
+the reversion scripts named `sql/revert/$change.sql`. The tags can be anything
+you want; release tags might be useful. Easy so far, right?
 
-<p>Except notice that I have a minor ordering problem here. The <code>add_widget</code>
-change, which adds a function to insert a record into the <code>widgets</code> table,
-comes <em>before</em> the <code>widgets_table</code> script. If we run the <code>add_widget</code> change
-first, it will fail, because the <code>widgets</code> table does not yet exist.</p>
+Except notice that I have a minor ordering problem here. The `add_widget`
+change, which adds a function to insert a record into the `widgets` table, comes
+*before* the `widgets_table` script. If we run the `add_widget` change first, it
+will fail, because the `widgets` table does not yet exist.
 
-<p>Of course we can re-order the lines in the configuration file. But given that
+Of course we can re-order the lines in the configuration file. But given that
 one might have many changes for a particular tag, with many cross-referencing
 dependencies, I think it’s better to overcome this problem in the scripts
-themselves. So I suggest that the <code>sql/deploy/add_widget.sql</code> file look
-something like this:</p>
+themselves. So I suggest that the `sql/deploy/add_widget.sql` file look
+something like this:
 
-<pre><code>-- requires: widgets_table
+    -- requires: widgets_table
 
-CREATE OR REPLACE FUNCTION add_widget(
-    username   TEXT,
-    widgetname TEXT
-) RETURNS VOID LANGUAGE SQL AS $$
-    INSERT INTO widgets (created_by, name) VALUES ($1, $2);
-$$;
-</code></pre>
+    CREATE OR REPLACE FUNCTION add_widget(
+        username   TEXT,
+        widgetname TEXT
+    ) RETURNS VOID LANGUAGE SQL AS $$
+        INSERT INTO widgets (created_by, name) VALUES ($1, $2);
+    $$;
 
-<p>Here I’m stealing Depesz’s dependency tracking idea. With a simple comment at
+Here I’m stealing Depesz’s dependency tracking idea. With a simple comment at
 the top of the script, we specify that this change requires that the
-<code>widgets_table</code> change be run first. So let’s look at
-<code>sql/deploy/widgets_table.sql</code>:</p>
+`widgets_table` change be run first. So let’s look at
+`sql/deploy/widgets_table.sql`:
 
-<pre><code>-- requires: users_table
+    -- requires: users_table
 
-CREATE TABLE widgets (
-    created_by TEXT NOT NULL REFERENCES users(name),
-    name       TEXT NOT NULL
-);
-</code></pre>
+    CREATE TABLE widgets (
+        created_by TEXT NOT NULL REFERENCES users(name),
+        name       TEXT NOT NULL
+    );
 
-<p>Ah, now here we also require that the <code>users_table</code> change be deployed first.
-Of course, it likely would be, given that it appears under a tag earlier in
-the file, but it’s best to be safe and explicitly spell out dependencies.
-Someone might merge the two tags at some point before release, right?</p>
+Ah, now here we also require that the `users_table` change be deployed first. Of
+course, it likely would be, given that it appears under a tag earlier in the
+file, but it’s best to be safe and explicitly spell out dependencies. Someone
+might merge the two tags at some point before release, right?
 
-<p>The <code>users_table</code> change has no dependencies, but the later <code>add_user</code> change
-of course does; our <code>sql/deploy/add_user.sql</code>:</p>
+The `users_table` change has no dependencies, but the later `add_user` change of
+course does; our `sql/deploy/add_user.sql`:
 
-<pre><code>-- requires: users_table
+    -- requires: users_table
 
-CREATE OR REPLACE FUNCTION add_user(
-    name TEXT
-) RETURNS VOID LANGUAGE SQL AS $$
-    INSERT INTO users (name) VALUES ($1);
-$$;
-</code></pre>
+    CREATE OR REPLACE FUNCTION add_user(
+        name TEXT
+    ) RETURNS VOID LANGUAGE SQL AS $$
+        INSERT INTO users (name) VALUES ($1);
+    $$;
 
-<p>Our deployment app can properly resolve these dependencies. Of course, we also
-need reversion scripts in the <code>sql/revert</code> directory. They might look
-something like:</p>
+Our deployment app can properly resolve these dependencies. Of course, we also
+need reversion scripts in the `sql/revert` directory. They might look something
+like:
 
-<pre><code>-- sql/revert/users_table.sql
-DROP TABLE IF EXISTS users;
+    -- sql/revert/users_table.sql
+    DROP TABLE IF EXISTS users;
 
--- sql/revert/add_widget.sql
-DROP FUNCTION IF EXISTS add_widget(text, text);
+    -- sql/revert/add_widget.sql
+    DROP FUNCTION IF EXISTS add_widget(text, text);
 
--- sql/revert/widgets_table.sql
-DROP TABLE IF EXISTS widgets;
+    -- sql/revert/widgets_table.sql
+    DROP TABLE IF EXISTS widgets;
 
--- sql/revert/add_user.sql
-DROP FUNCTION IF EXISTS add_user(text);
-</code></pre>
+    -- sql/revert/add_user.sql
+    DROP FUNCTION IF EXISTS add_user(text);
 
-<p>So far so good, right? Our app can resolve dependencies in both directions, so
-that if we tell it to revert to <code>beta</code>, it can do so in the proper order.</p>
+So far so good, right? Our app can resolve dependencies in both directions, so
+that if we tell it to revert to `beta`, it can do so in the proper order.
 
-<p>Now, as the deployment app runs the scripts, deploying or reverting changes,
-it tracks them and their dependencies in its own metadata table in the
-database, not unlike
-<a href="http://www.depesz.com/index.php/2010/08/22/versioning/">Depesz’s Versioning</a>
-package. But because dependencies are parsed from comments in the scripts, we
-are free to <em>include</em> the contents of one script in another. For example, say
-that we later need to revise the <code>add_widget()</code> function to log the time a
-widget is created. First we add a new script to add the necessary column:</p>
+Now, as the deployment app runs the scripts, deploying or reverting changes, it
+tracks them and their dependencies in its own metadata table in the database,
+not unlike [Depesz’s Versioning] package. But because dependencies are parsed
+from comments in the scripts, we are free to *include* the contents of one
+script in another. For example, say that we later need to revise the
+`add_widget()` function to log the time a widget is created. First we add a new
+script to add the necessary column:
 
-<pre><code>-- requires: widgets_table
-ALTER TABLE widgets ADD created_at TIMESTAMPTZ;
-</code></pre>
+    -- requires: widgets_table
+    ALTER TABLE widgets ADD created_at TIMESTAMPTZ;
 
-<p>Call that script <code>sql/deploy/widgets_created_at.sql</code>. Next we add a script
-that changes <code>add_widgets()</code>:</p>
+Call that script `sql/deploy/widgets_created_at.sql`. Next we add a script that
+changes `add_widgets()`:
 
-<pre><code>-- requires widgets_created_at
-CREATE OR REPLACE FUNCTION add_widget(
-    username   TEXT,
-    widgetname TEXT
-) RETURNS VOID LANGUAGE SQL AS $$
-    INSERT INTO widgets (created_by, name, created_at)
-    VALUES ($1, $2, NOW());
-$$;
-</code></pre>
+    -- requires widgets_created_at
+    CREATE OR REPLACE FUNCTION add_widget(
+        username   TEXT,
+        widgetname TEXT
+    ) RETURNS VOID LANGUAGE SQL AS $$
+        INSERT INTO widgets (created_by, name, created_at)
+        VALUES ($1, $2, NOW());
+    $$;
 
-<p>Call it <code>sql/deploy/add_widget_v2.sql</code>. Then update the deployment
-configuration file with a new tag and the associated changes:</p>
+Call it `sql/deploy/add_widget_v2.sql`. Then update the deployment configuration
+file with a new tag and the associated changes:
 
-<pre><code>[delta]
-widgets_created_at
-add_widget_v2
-</code></pre>
+    [delta]
+    widgets_created_at
+    add_widget_v2
 
-<p>With me so far? Now, what about reversion? <code>sql/revert/widgets_created_at.sql</code>
-is simple, of course:</p>
+With me so far? Now, what about reversion? `sql/revert/widgets_created_at.sql`
+is simple, of course:
 
-<pre><code>ALTER TABLE widgets DROP COLUMN IF EXISTS created_at;
-</code></pre>
+    ALTER TABLE widgets DROP COLUMN IF EXISTS created_at;
 
-<p>But what should <code>sql/revert/add_widget_v2.sql</code> look like? Why, to go back to
-the first version of <code>add_widget()</code>, it would be identical to
-<code>sql/deploy/add_widget.sql</code>. But it would be silly to copy the whole file,
-wouldn’t it? Why duplicate when we can just include?</p>
+But what should `sql/revert/add_widget_v2.sql` look like? Why, to go back to the
+first version of `add_widget()`, it would be identical to
+`sql/deploy/add_widget.sql`. But it would be silly to copy the whole file,
+wouldn’t it? Why duplicate when we can just include?
 
-<pre><code>\i sql/deploy/add_widget.sql
-</code></pre>
+    \i sql/deploy/add_widget.sql
 
-<p><em>Boom,</em> we get the reversion script for free. No unnecessary duplication
-between deployment and reversion scripts, and all dependencies are nicely
-resolved. Plus, the tags in the configuration file make it easy to deploy and
-revert change sets as necessary, with dependencies properly followed.</p>
+*Boom,* we get the reversion script for free. No unnecessary duplication between
+deployment and reversion scripts, and all dependencies are nicely resolved.
+Plus, the tags in the configuration file make it easy to deploy and revert
+change sets as necessary, with dependencies properly followed.
 
-<h3>There’s More!</h3>
+### There’s More!
 
-<p>To recap, I had two primary challenges with Depesz’s Versioning package to
+To recap, I had two primary challenges with Depesz’s Versioning package to
 overcome: inability to easily revert to an earlier implementation; and the
 inability to easily include one script in another. Both of course are do-able
 with workarounds, but I think that the addition of a deployment configuration
-file with tagged sets of changes and the elimination of SQL-embedded
-dependency specification overcome these issues much more effectively and
-intuitively.</p>
+file with tagged sets of changes and the elimination of SQL-embedded dependency
+specification overcome these issues much more effectively and intuitively.
 
-<p>Still, there are two more challenges I would like to overcome:</p>
+Still, there are two more challenges I would like to overcome:
 
-<ol>
-<li><p>It would be nice not to need the configuration file at all. Maintaining
-such a thing can be finicky and error-prone.</p></li>
-<li><p>I still had to duplicate the entire <code>add_widget()</code> function in the
-<code>add_widget_v2</code> script for a very simple change. This means no easy way to
-simply see the diff for this change in my VCS. It would be nice not to have
-to copy the entire function.</p></li>
-</ol>
+1.  It would be nice not to need the configuration file at all. Maintaining such
+    a thing can be finicky and error-prone.
 
+2.  I still had to duplicate the entire `add_widget()` function in the
+    `add_widget_v2` script for a very simple change. This means no easy way to
+    simply see the diff for this change in my VCS. It would be nice not to have
+    to copy the entire function.
 
-<p>I think I have solutions for these issues, as well. More in my next post.</p>
+I think I have solutions for these issues, as well. More in my next post.
+
+  [written about this before]: /computers/databases/change-management.html
+  [Module::Build::DB]: https://metacpan.org/module/Module::Build::DB
+  [at work]: http://iovation.com/
+  [Depesz’s Versioning]: http://www.depesz.com/index.php/2010/08/22/versioning/
+  [described a deployment implementation]: http://archives.postgresql.org/pgsql-hackers/2012-01/msg01138.php

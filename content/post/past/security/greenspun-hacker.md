@@ -7,4 +7,7 @@ tags: [Security, hacking, hacks, hackers, business school, Harvard, Philip Green
 type: post
 ---
 
-<p>It's the <a href="http://blogs.law.harvard.edu/philg/2005/03/08#a7726" title="Philip Greenspun: &#x201c;Business schools redefine hacking to &#x2018;stuff that a 7-year-old could do&#x2019;&#x201d;">end of civilization</a> as we know it.</p>
+It's the [end of civilization] as we know it.
+
+  [end of civilization]: http://blogs.law.harvard.edu/philg/2005/03/08#a7726
+    "Philip Greenspun: “Business schools redefine hacking to ‘stuff that a 7-year-old could do’”"

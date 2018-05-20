@@ -7,8 +7,27 @@ tags: [Meta, Kinosearch, Google, Lucene, Doug Cutting, Marvin Humphries]
 type: post
 ---
 
-<p>On a whim yesterday, I decided to give <a href="http://www.rectangular.com/kinosearch/" title="KinoSearch: A Perl search engine library">KinoSearch</a> a try. I've had the module installed from CPAN for a while, so I can say that it installed very easily. So then all I did was to cut and paste the sample programs from the <a href="http://search.cpan.org/dist/KinoSearch/lib/KinoSearch/Docs/Tutorial.pod" title="KinoSearch::Docs::Tutorial - sample indexing and search applications">tutorial</a>, tweak a few things for my blog entries, and try it.</p>
+On a whim yesterday, I decided to give [KinoSearch] a try. I've had the module
+installed from CPAN for a while, so I can say that it installed very easily. So
+then all I did was to cut and paste the sample programs from the [tutorial],
+tweak a few things for my blog entries, and try it.
 
-<p>And lo and behold, it worked! After a mere 30 minutes work, it worked so well that I was willing to spend the couple of hours it took this morning to get the results nicely formatted wrapped in my Blosxom templates. So now this site is fully indexed and searchable, and all I have to do is reindex it every time I publish a new entry. So now the search field at the bottom of every page uses KinoSearch, or you can just go to <a href="/search.cgi" title="Search Just a Theory">the search page</a> to perform the search. Sweet!</p>
+And lo and behold, it worked! After a mere 30 minutes work, it worked so well
+that I was willing to spend the couple of hours it took this morning to get the
+results nicely formatted wrapped in my Blosxom templates. So now this site is
+fully indexed and searchable, and all I have to do is reindex it every time I
+publish a new entry. So now the search field at the bottom of every page uses
+KinoSearch, or you can just go to [the search page] to perform the search.
+Sweet!
 
-<p>So give it a try. Search for <a href="/search.cgi?q=iraq" title="Search for &#x201c;iraq&#x201d;"><q>iraq</q></a> or <a href="/search.cgi?q=svn" title="Search for &#x201c;svn&#x201d;"><q>svn</q></a> to see how it works. And check out those <a href="http://www.rectangular.com/kinosearch/benchmarks.html" title="">KinoSearch benchmarks</a>, too. This thing is fast!</p>
+So give it a try. Search for [“iraq”] or [“svn”] to see how it works. And check
+out those [KinoSearch benchmarks], too. This thing is fast!
+
+  [KinoSearch]: http://www.rectangular.com/kinosearch/
+    "KinoSearch: A Perl search engine library"
+  [tutorial]: http://search.cpan.org/dist/KinoSearch/lib/KinoSearch/Docs/Tutorial.pod
+    "KinoSearch::Docs::Tutorial - sample indexing and search applications"
+  [the search page]: /search.cgi "Search Just a Theory"
+  [“iraq”]: /search.cgi?q=iraq "Search for “iraq”"
+  [“svn”]: /search.cgi?q=svn "Search for “svn”"
+  [KinoSearch benchmarks]: http://www.rectangular.com/kinosearch/benchmarks.html

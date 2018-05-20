@@ -7,8 +7,17 @@ tags: [databases, SQL, Advanced SQL, stored procedures, database triggers, Postg
 type: post
 ---
 
-<p>So, what advanced SQL book should I buy? I've learned a lot about SQL over the last year or so, but I'm sure that <a href="http://blogs.ittoolbox.com/database/soup/" title="Josh Berkus: Database Soup">Josh Berkus</a> is tired of being my own personal advanced SQL reference. So I'd like to really learn more about triggers, stored procedures, rules, views, and whatnot, what they're best used for and when to use them. And other typical database features that I'm not familiar with, of course.</p>
+So, what advanced SQL book should I buy? I've learned a lot about SQL over the
+last year or so, but I'm sure that [Josh Berkus] is tired of being my own
+personal advanced SQL reference. So I'd like to really learn more about
+triggers, stored procedures, rules, views, and whatnot, what they're best used
+for and when to use them. And other typical database features that I'm not
+familiar with, of course.
 
-<p>What I <em>don't</em> need is an introduction to SQL. There are a million of those, and they all have much the same stuff. I want to really get into advanced concepts.</p>
+What I *don't* need is an introduction to SQL. There are a million of those, and
+they all have much the same stuff. I want to really get into advanced concepts.
 
-<p>So what's the best choice? Leave me a comment with your opinion. Thanks!</p>
+So what's the best choice? Leave me a comment with your opinion. Thanks!
+
+  [Josh Berkus]: http://blogs.ittoolbox.com/database/soup/
+    "Josh Berkus: Database Soup"

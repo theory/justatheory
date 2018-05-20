@@ -7,4 +7,9 @@ tags: [Emacs, iTunes]
 type: post
 ---
 
-<p>This has to be one of the geekiest things I've ever seen: You can <a href="http://www.bese.it/~segv/osx-itunes.el" title="Download the itunes.el and control iTunes from Emacs today!">control iTunes from Emacs</a>! The nice thing about it is that you can control iTunes remotely via a terminal session.</p>
+This has to be one of the geekiest things I've ever seen: You can [control
+iTunes from Emacs]! The nice thing about it is that you can control iTunes
+remotely via a terminal session.
+
+  [control iTunes from Emacs]: http://www.bese.it/~segv/osx-itunes.el
+    "Download the itunes.el and control iTunes from Emacs today!"

@@ -7,50 +7,49 @@ tags: [Perl, XML, XPath, testing, unit testing, Test::XPath, HTML, XHTML, Ruby]
 type: post
 ---
 
-<p>Thanks to the slick <a href="http://search.cpan.org/perldoc?Devel::Declare"
-title="Devel::Declare on
-CPAN">Devel::Declare</a>-powered <a href="http://search.cpan.org/perldoc?PerlX::MethodCallWithBlock"
-title="PerlX::MethodCallWithBlock on CPAN">PerlX::MethodCallWithBlock</a>
-created by <a href="http://gugod.org/2009/08/running-in-the-compile-time.html"
-title="gugod's blog: “Running in the compile time”">gugod</a>, the latest
-version of <a href="http://search.cpan.org/perldoc?Test::XPath"
-title="Test::XPath on CPAN">Test::XPath</a> supports Ruby-style blocks. The
-Ruby version of <code>assert_select</code>, as I
-mentioned <a href="/computers/programming/perl/test-with-xpath.html"
-title="Test XML and HTML with XPath">previously</a>, looks like this:</p>
+Thanks to the slick [Devel::Declare]-powered [PerlX::MethodCallWithBlock]
+created by [gugod], the latest version of [Test::XPath] supports Ruby-style
+blocks. The Ruby version of `assert_select`, as I mentioned [previously], looks
+like this:
 
-<pre>
-assert_select &quot;ol&quot; { |elements|
-  elements.each { |element|
-    assert_select element, &quot;li&quot;, 4
-  }
-}
-</pre>
+    assert_select "ol" { |elements|
+      elements.each { |element|
+        assert_select element, "li", 4
+      }
+    }
 
-<p>I've switched to the brace syntax for greater parity with Perl.
-Test::XPath, meanwhile, looks like this:</p>
+I've switched to the brace syntax for greater parity with Perl. Test::XPath,
+meanwhile, looks like this:
 
-<pre>
-my @css = qw(foo.css bar.css);
-$tx->ok( &#x0027;/html/head/style&#x0027;, sub {
-    my $css = shift @css;
-    shift->is( &#x0027;./@src&#x0027;, $css, &quot;Style src should be $css&quot;);
-}, &#x0027;Should have style&#x0027; );
-</pre>
+    my @css = qw(foo.css bar.css);
+    $tx->ok( '/html/head/style', sub {
+        my $css = shift @css;
+        shift->is( './@src', $css, "Style src should be $css");
+    }, 'Should have style' );
 
-<p>But as of Test::XPath 0.13, you can now just use PerlX::MethodCallWithBlock
-to pass blocks in the Rubyish way:</p>
+But as of Test::XPath 0.13, you can now just use PerlX::MethodCallWithBlock to
+pass blocks in the Rubyish way:
 
-<pre>
-use PerlX::MethodCallWithBlock;
-my @css = qw(foo.css bar.css);
-$tx->ok( &#x0027;/html/head/style&#x0027;, &#x0027;Should have style&#x0027; ) {
-    my $css = shift @css;
-    shift->is( &#x0027;./@src&#x0027;, $css, &quot;Style src should be $css&quot;);
-};
-</pre>
+    use PerlX::MethodCallWithBlock;
+    my @css = qw(foo.css bar.css);
+    $tx->ok( '/html/head/style', 'Should have style' ) {
+        my $css = shift @css;
+        shift->is( './@src', $css, "Style src should be $css");
+    };
 
-<p>Pretty slick, eh? It required a single-line change to the source code. I'm
-really happy with this sugar. Thanks for
-the <a href="http://gugod.org/2009/08/perlx---perl-extension.html"
-title="gugod's blog: “PerlX - Perl Extension”">great hack</a>, gugod!</p>
+Pretty slick, eh? It required a single-line change to the source code. I'm
+really happy with this sugar. Thanks for the [great hack], gugod!
+
+  [Devel::Declare]: http://search.cpan.org/perldoc?Devel::Declare
+    "Devel::Declare on
+    CPAN"
+  [PerlX::MethodCallWithBlock]: http://search.cpan.org/perldoc?PerlX::MethodCallWithBlock
+    "PerlX::MethodCallWithBlock on CPAN"
+  [gugod]: http://gugod.org/2009/08/running-in-the-compile-time.html
+    "gugod's blog: “Running in the compile time”"
+  [Test::XPath]: http://search.cpan.org/perldoc?Test::XPath
+    "Test::XPath on CPAN"
+  [previously]: /computers/programming/perl/test-with-xpath.html
+    "Test XML and HTML with XPath"
+  [great hack]: http://gugod.org/2009/08/perlx---perl-extension.html
+    "gugod's blog: “PerlX - Perl Extension”"

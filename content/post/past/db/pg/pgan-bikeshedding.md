@@ -8,63 +8,39 @@ tags: [Postgres, CPAN]
 type: post
 ---
 
-<p>I’ve put together a <a href="http://wiki.postgresql.org/wiki/PGAN">description of PGAN</a>, the PostgreSQL extension distribution system I plan to develop later this year based on the Comprehensive Archive Perl Network or <a href="http://search.cpan.org/">CPAN</a>. Its primary features will be:</p>
+I’ve put together a [description of PGAN], the PostgreSQL extension distribution
+system I plan to develop later this year based on the Comprehensive Archive Perl
+Network or [CPAN]. Its primary features will be:
 
-<ul>
-<li>Extension distribution</li>
-<li>Search site with extension documentation</li>
-<li>Client for downloading, building, testing, and installing extensions.</li>
-</ul>
+-   Extension distribution
+-   Search site with extension documentation
+-   Client for downloading, building, testing, and installing extensions.
 
-<p>I’ve never been thrilled with the name, though, so I’m asking for suggestions for a better one. I’ve used the term "extension" here because it seems to be the term that the PostgreSQL community has <a href="http://wiki.postgresql.org/wiki/ExtensionPackaging">settled on</a>, but other terms might work, since things other than extensions might be distributed.</p>
+I’ve never been thrilled with the name, though, so I’m asking for suggestions
+for a better one. I’ve used the term "extension" here because it seems to be the
+term that the PostgreSQL community has [settled on], but other terms might work,
+since things other than extensions might be distributed.
 
-<p>What I’ve come up with so far is:</p>
+What I’ve come up with so far is:
 
-<table>
-  <thead><tr>
-    <th>Name</th>
-    <th>Long Name</th>
-    <th>Pronunciation</th>
-    <th>Advantages</th>
-    <th>Disadvantages</th>
-  </tr></thead>
-  <tr class="odd">
-    <td>PGAN</td>
-    <td>PostgreSQL Add-on Network</td>
-    <td>pee-gan</td>
-    <td>Short, similar to CPAN</td>
-    <td>Ugly</td>
-  </tr>
-  <tr>
-    <td>PGEX</td>
-    <td>PostgreSQL Extensions</td>
-    <td>pee-gee-ex or pee-gex</td>
-    <td>Short, easier to pronounce</td>
-    <td>Too similar to <a href="http://pgexperts.com/">PGX</a>)</td>
-  </tr>
-  <tr class="odd">
-    <td>PGCAN</td>
-    <td>PostgreSQL Comprehensive Archive Network</td>
-    <td>pee-gee-can</td>
-    <td>Similar to CPAN</td>
-    <td>Similar to CPAN</td>
-  </tr>
-  <tr>
-    <td>PGDAN</td>
-    <td>PostgreSQL Distribution Archive Network</td>
-    <td>pee-gee-dan</td>
-    <td>Short, easy to pronounce</td>
-    <td>Who’s “Dan”? Doesn’t distribute PostgreSQL itself.</td>
-  </tr>
-  <tr class="odd">
-    <td>PGEDAN</td>
-    <td>PostgreSQL Extension Distribution Archive Network</td>
-    <td>pee-gee-ee-dan</td>
-    <td>References extensions</td>
-    <td>Long, sounds stupid</td>
-  </tr>
-</table>
+| Name   | Long Name                                         | Pronunciation         | Advantages                 | Disadvantages                                      |
+|--------|---------------------------------------------------|-----------------------|----------------------------|----------------------------------------------------|
+| PGAN   | PostgreSQL Add-on Network                         | pee-gan               | Short, similar to CPAN     | Ugly                                               |
+| PGEX   | PostgreSQL Extensions                             | pee-gee-ex or pee-gex | Short, easier to pronounce | Too similar to [PGX])                              |
+| PGCAN  | PostgreSQL Comprehensive Archive Network          | pee-gee-can           | Similar to CPAN            | Similar to CPAN                                    |
+| PGDAN  | PostgreSQL Distribution Archive Network           | pee-gee-dan           | Short, easy to pronounce   | Who’s “Dan”? Doesn’t distribute PostgreSQL itself. |
+| PGEDAN | PostgreSQL Extension Distribution Archive Network | pee-gee-ee-dan        | References extensions      | Long, sounds stupid                                |
 
-<p>Of these, I think I like “PGEX” best, but none are really great. So I’m opening up the <a href="https://en.wikipedia.org/wiki/Parkinson's_Law_of_Triviality">bike shed</a> to all. What’s a better name? Or if you can’t think of one, which of the above do you like best? Just leave a comment on this post. The only requirements for suggestions are that a .org domain be available and that it suck less than the alternatives.</p>
+Of these, I think I like “PGEX” best, but none are really great. So I’m opening
+up the [bike shed] to all. What’s a better name? Or if you can’t think of one,
+which of the above do you like best? Just leave a comment on this post. The only
+requirements for suggestions are that a .org domain be available and that it
+suck less than the alternatives.
 
-<p>Comments close in 2 weeks. Thanks!</p>
+Comments close in 2 weeks. Thanks!
+
+  [description of PGAN]: http://wiki.postgresql.org/wiki/PGAN
+  [CPAN]: http://search.cpan.org/
+  [settled on]: http://wiki.postgresql.org/wiki/ExtensionPackaging
+  [PGX]: http://pgexperts.com/
+  [bike shed]: https://en.wikipedia.org/wiki/Parkinson's_Law_of_Triviality

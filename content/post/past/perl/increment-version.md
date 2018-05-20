@@ -7,31 +7,30 @@ tags: [Perl, Versions, CPAN, shipping]
 type: post
 ---
 
-<p>Here's how I quickly increment version numbers in my modules. I call this script
-<em>reversion</em>:</p>
+Here's how I quickly increment version numbers in my modules. I call this script
+*reversion*:
 
-<pre>#!/usr/bin/perl -w
+    #!/usr/bin/perl -w
 
-use strict;
+    use strict;
 
-unless (@ARGV) {
-    print &quot;  Usage: $0 version\n\n&quot;;
-    exit;
-}
+    unless (@ARGV) {
+        print "  Usage: $0 version\n\n";
+        exit;
+    }
 
-my $old = shift;
-my $new = $old + .01;
-my $dir = shift || &#x0027;.&#x0027;;
+    my $old = shift;
+    my $new = $old + .01;
+    my $dir = shift || '.';
 
-system qq{grep -lr &#x0027;\Q$old\E&#x0027; $dir }
-  . &#x0027;| grep -v \\.svn &#x0027;
-  . &#x0027;| grep -v Changes &#x0027;
-  . &#x0027;| grep -v META\\.yml &#x0027;
-  . &quot;| xargs $^X -i -pe \&quot;&quot;
-  . qq{print STDERR \\\$ARGV[0], \\\$/ unless \\\$::seen{\\\$ARGV[0]}++;}
-  . qq{s/(\\\$VERSION\\s*=?\\s*&#x0027;?)\Q$old\E(&#x0027;?)/\\\${1}$new\\\$2/g&quot;};
+    system qq{grep -lr '\Q$old\E' $dir }
+      . '| grep -v \\.svn '
+      . '| grep -v Changes '
+      . '| grep -v META\\.yml '
+      . "| xargs $^X -i -pe \""
+      . qq{print STDERR \\\$ARGV[0], \\\$/ unless \\\$::seen{\\\$ARGV[0]}++;}
+      . qq{s/(\\\$VERSION\\s*=?\\s*'?)\Q$old\E('?)/\\\${1}$new\\\$2/g"};
 
-__END__
-</pre>
+    __END__
 
-<p>Enjoy!</p>
+Enjoy!

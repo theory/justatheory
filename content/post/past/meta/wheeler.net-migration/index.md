@@ -7,16 +7,24 @@ tags: [Meta, David Wheeler, migrations]
 type: post
 ---
 
-<p>I've completed the migration of all of the content from my old site,
-david.wheeler.net. All requests to that domain will get a permanent redirect
-to this site. Where possible, I tried to make the old URLs redirect to the new
-URLs. So if you try to connect to <a href="http://david.wheeler.net/osx.html" title="The Old Mac OS X Adventures URL">david.wheeler.net/osx.html</a>, you should
-be automatically redirected to <a href="/computers/os/macosx/my_adventures.html">www.justatheory.com/computers/os/macosx/my_adventures.html</a>. The same goes for the following documents:</p>
+I've completed the migration of all of the content from my old site,
+david.wheeler.net. All requests to that domain will get a permanent redirect to
+this site. Where possible, I tried to make the old URLs redirect to the new
+URLs. So if you try to connect to [david.wheeler.net/osx.html], you should be
+automatically redirected to
+[www.justatheory.com/computers/os/macosx/my\_adventures.html]. The same goes for
+the following documents:
 
-<ul>
-  <li><a href="/2004/06/wheeler.net-migration/apache_dbm.patch">Patch for Apache + DBM on Mac OS X</a></li>
-  <li><a href="/2004/06/wheeler.net-migration/migrating_to_macosx.pdf">Migrating to Mac OS X</a></li>
-  <li><a href="/2004/06/wheeler.net-migration/mod_ssl_dylib.patch">Patch for mod_ssl on Mac OS X</a></li>
-</ul>
+-   [Patch for Apache + DBM on Mac OS X]
+-   [Migrating to Mac OS X]
+-   [Patch for mod\_ssl on Mac OS X]
 
-<p>If you happen to notice that I missed anything, comment on this blog entry to let me know.</p>
+If you happen to notice that I missed anything, comment on this blog entry to
+let me know.
+
+  [david.wheeler.net/osx.html]: http://david.wheeler.net/osx.html
+    "The Old Mac OS X Adventures URL"
+  [www.justatheory.com/computers/os/macosx/my\_adventures.html]: /computers/os/macosx/my_adventures.html
+  [Patch for Apache + DBM on Mac OS X]: /2004/06/wheeler.net-migration/apache_dbm.patch
+  [Migrating to Mac OS X]: /2004/06/wheeler.net-migration/migrating_to_macosx.pdf
+  [Patch for mod\_ssl on Mac OS X]: /2004/06/wheeler.net-migration/mod_ssl_dylib.patch

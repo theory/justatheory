@@ -7,30 +7,36 @@ tags: [Postgres, readline, psql, segfaults, history]
 type: post
 ---
 
-<p>I was delighted to find that Mac OS X 10.4 <q>Tiger</q> includes the readline library. So I was able to just compile PostgreSQL and have <em>psql</em> just work. Only it kinda doesn't. For reasons that Tom Lane <a href="http://archives.postgresql.org/pgsql-hackers/2005-08/msg01013.php" title="Tom Lane explains why Tiger's readline library causes a segfualt or error on exiting psql">has explained</a>, Tiger's readline implementation is somewhat buggy. I've reported the issue to <a href="http://bugreporter.apple.com/" title="Apple Bug Reporter">Apple</a> (Radar # 4356545), but in the meantime, I've compiled and installed GNU readline 5.0 and wan to use it, instead.</p>
+I was delighted to find that Mac OS X 10.4 “Tiger” includes the readline
+library. So I was able to just compile PostgreSQL and have *psql* just work.
+Only it kinda doesn't. For reasons that Tom Lane [has explained], Tiger's
+readline implementation is somewhat buggy. I've reported the issue to [Apple]
+(Radar \# 4356545), but in the meantime, I've compiled and installed GNU
+readline 5.0 and wan to use it, instead.
 
-<p>The only problem is that there is no easy way to do it with environment variables or options when configuring PostgreSQL. I've tried:</p>
+The only problem is that there is no easy way to do it with environment
+variables or options when configuring PostgreSQL. I've tried:
 
-<pre>
-./configure &#x002d;-includes=/usr/local/include &#x002d;with-libs=/usr/local/lib
-</pre>
+    ./configure --includes=/usr/local/include -with-libs=/usr/local/lib
 
-<p>And:</p>
+And:
 
-<pre>
-CFLAGS=-L/usr/local/lib LDFLAGS=-I/usr/local/include; ./configure
-</pre>
+    CFLAGS=-L/usr/local/lib LDFLAGS=-I/usr/local/include; ./configure
 
-<p>Neither approach worked. In both cases, it still compiled in Apple's buggy readline library. The only approach I've found to work is the brute force approach:</p>
+Neither approach worked. In both cases, it still compiled in Apple's buggy
+readline library. The only approach I've found to work is the brute force
+approach:
 
-<pre>
-mv /usr/lib/libreadline.* /tmp
-mv /usr/include/readline /tmp
-./configure
-make
-make install
-mv /tmp/libreadline.* /usr/lib
-mv /tmp/readline /usr/include
-</pre>
+    mv /usr/lib/libreadline.* /tmp
+    mv /usr/include/readline /tmp
+    ./configure
+    make
+    make install
+    mv /tmp/libreadline.* /usr/lib
+    mv /tmp/readline /usr/include
 
-<p>But surely I'm missing something! Is there no better way to do it?</p>
+But surely I'm missing something! Is there no better way to do it?
+
+  [has explained]: http://archives.postgresql.org/pgsql-hackers/2005-08/msg01013.php
+    "Tom Lane explains why Tiger's readline library causes a segfualt or error on exiting psql"
+  [Apple]: http://bugreporter.apple.com/ "Apple Bug Reporter"

@@ -7,4 +7,7 @@ tags: [CVS, activitymail]
 type: post
 ---
 
-<p><a href="https://ccvs.cvshome.org/issues/show_bug.cgi?id=148" title="CVS Bug Report: cvs diff Should not parse diff options">Better late than never</a>!</p>
+[Better late than never]!
+
+  [Better late than never]: https://ccvs.cvshome.org/issues/show_bug.cgi?id=148
+    "CVS Bug Report: cvs diff Should not parse diff options"

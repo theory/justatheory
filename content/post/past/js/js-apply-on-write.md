@@ -7,36 +7,46 @@ tags: [JavaScript, Internet Explorer, Firefox]
 type: post
 ---
 
-<p>This is really bugging me. I've added a feature to my TestSimple JavaScript library where one can specify a function to which to send test output. It executes the function, along with an object, if necessary, by calling its <code>apply()</code> method. If you don't specify a function for output, it uses <code>document.write</code> by default:</p>
+This is really bugging me. I've added a feature to my TestSimple JavaScript
+library where one can specify a function to which to send test output. It
+executes the function, along with an object, if necessary, by calling its
+`apply()` method. If you don't specify a function for output, it uses
+`document.write` by default:
 
-<pre>
-if (!fn) {
-    fn = document.write;
-    obj = document;
-}
-var output = function () { fn.apply(obj, arguments) };
-</pre>
+    if (!fn) {
+        fn = document.write;
+        obj = document;
+    }
+    var output = function () { fn.apply(obj, arguments) };
 
-<p>This works great in Firefox, as I can then just call <code>fn.apply(this, arguments)</code> and the arguments are properly passed on through to the function.</p>
+This works great in Firefox, as I can then just call `fn.apply(this, arguments)`
+and the arguments are properly passed on through to the function.
 
-<p>However, Internet Explorer doesn't seem to have an <code>apply()</code> method on its <code>write()</code> function. If I execute <code>document.write.apply(document [&#x0027;foo&#x0027;])</code> in Firefox, it outputs <q>foo</q> to the browser. In Internet Explorer for Windows, however, it yields an error: <q>Object doesn't support this property or method.</q> Wha??</p>
+However, Internet Explorer doesn't seem to have an `apply()` method on its
+`write()` function. If I execute `document.write.apply(document ['foo'])` in
+Firefox, it outputs “foo” to the browser. In Internet Explorer for Windows,
+however, it yields an error: “Object doesn't support this property or method.”
+Wha??
 
-<p>I thought I could get around it by just adding the <code>apply()</code> method to <code>document.write</code>, but that doesn't work, either. This code:</p>
+I thought I could get around it by just adding the `apply()` method to
+`document.write`, but that doesn't work, either. This code:
 
-<pre>
-document.write.apply = Function.prototype.apply;
-document.write.apply(document, [&#x0027;foo&#x0027;]);
-</pre>
+    document.write.apply = Function.prototype.apply;
+    document.write.apply(document, ['foo']);
 
-<p>Yields the same error. Curiously, so does this code:</p>
+Yields the same error. Curiously, so does this code:
 
-<pre>
-document.write.apply2 = Function.prototype.apply;
-document.write.apply2(document, [&#x0027;foo&#x0027;]);
-</pre>
+    document.write.apply2 = Function.prototype.apply;
+    document.write.apply2(document, ['foo']);
 
-<p>So it seems that assigning a function to <code>document.write</code> is a no-op in IE. WTF?</p>
+So it seems that assigning a function to `document.write` is a no-op in IE. WTF?
 
-<p>So does anyone know a workaround for this bug? I found <a href="http://www.crockford.com/javascript/remedial.html" title="Remedial JavaScript">a page</a> that says, <q>Beware that some native functions in IE were made to look like objects instead of functions.</q> This might explain why <code>apply()</code> doesn't exist for the <code>document.write</code> object, but not why I can't add it.</p>
+So does anyone know a workaround for this bug? I found [a page] that says,
+“Beware that some native functions in IE were made to look like objects instead
+of functions.” This might explain why `apply()` doesn't exist for the
+`document.write` object, but not why I can't add it.
 
-<p>Help!</p>
+Help!
+
+  [a page]: http://www.crockford.com/javascript/remedial.html
+    "Remedial JavaScript"

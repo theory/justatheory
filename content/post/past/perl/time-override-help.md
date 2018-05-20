@@ -7,28 +7,32 @@ tags: [Perl, testing, hacks]
 type: post
 ---
 
-<p>For the life of me, I can't figure out why this test fails. <code>time</code> returns my overridden time, and DateTime just calls <code>scalar time</code>, so I would expect it to work. But DateTime appears to be somehow getting the time for <code>CORE::time</code>, instead.</p>
+For the life of me, I can't figure out why this test fails. `time` returns my
+overridden time, and DateTime just calls `scalar time`, so I would expect it to
+work. But DateTime appears to be somehow getting the time for `CORE::time`,
+instead.
 
-<pre>
-#!/usr/bin/perl -w
+    #!/usr/bin/perl -w
 
-use strict;
-use DateTime;
-use Test::More tests =&gt; 1;
+    use strict;
+    use DateTime;
+    use Test::More tests => 1;
 
-BEGIN {
-    *CORE::GLOBAL::time = sub () { CORE::time() };
-}
+    BEGIN {
+        *CORE::GLOBAL::time = sub () { CORE::time() };
+    }
 
-my $epoch = time;
-sleep 1;
-try();
+    my $epoch = time;
+    sleep 1;
+    try();
 
-sub try {
-    no warnings qw(redefine);
-    local *CORE::GLOBAL::time = sub () { $epoch };
-    is( DateTime-&gt;now-&gt;epoch, time );
-}
-</pre>
+    sub try {
+        no warnings qw(redefine);
+        local *CORE::GLOBAL::time = sub () { $epoch };
+        is( DateTime->now->epoch, time );
+    }
 
-<p>Anyone got any bright ideas? This is a <a href="http://use.perl.org/~geoff/journal/20660" title="">reasonably well-known technique</a>, so I'm sure that I must be overlooking something obvious.</p>
+Anyone got any bright ideas? This is a [reasonably well-known technique], so I'm
+sure that I must be overlooking something obvious.
+
+  [reasonably well-known technique]: http://use.perl.org/~geoff/journal/20660

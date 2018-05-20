@@ -7,10 +7,14 @@ tags: [Poltics, George W. Bush, President, Stephen Colbert, White House Correspo
 type: post
 ---
 
-<ul>
-  <li><a href="http://www.youtube.com/watch?v=lcIRXur61II">Part I</a></li>
-  <li><a href="http://www.youtube.com/watch?v=HN0INDOkFuo">Part II</a></li>
-  <li><a href="http://www.youtube.com/watch?v=rJvar7BKwvQ">Part III</a></li>
-</ul>
+-   [Part I]
+-   [Part II]
+-   [Part III]
 
-<p>(Via <a href="http://www.arachna.com/roller/page/spidaman/Weblog" title="Ian Kallen's Blog">Ian Kallen</a>)</p>
+(Via [Ian Kallen])
+
+  [Part I]: http://www.youtube.com/watch?v=lcIRXur61II
+  [Part II]: http://www.youtube.com/watch?v=HN0INDOkFuo
+  [Part III]: http://www.youtube.com/watch?v=rJvar7BKwvQ
+  [Ian Kallen]: http://www.arachna.com/roller/page/spidaman/Weblog
+    "Ian Kallen's Blog"

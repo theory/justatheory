@@ -8,277 +8,250 @@ tags: [Perl, XML, XPath, testing, unit testing, Test::XPath, HTML, XHTML]
 type: post
 ---
 
-<p>When I was hacking Rails projects back in 2006-2007, there was a lot of
-stuff about Rails that drove me absolutely batshit
-(&lt;cough&gt;ActiveRecord&lt;/cough&gt;), but there were also a (very) few
-things that I really liked. One of those things was
-the <a href="http://api.rubyonrails.org/classes/ActionController/Assertions/SelectorAssertions.html#M000569"
-title="ActionController::Assertions::SelectorAssertions"><code>assert_select</code></a>
-test method. There was a bunch of magic involved in sending a request to your
-Rails app and stuffing the body someplace hidden (hrm, that sounds kind of
-evil; intentional?), but then you could call <code>assert_select</code> to use
-CSS selectors to test the structure and content of the document (assuming, of
-course, that it was HTML or XML). For example, (to borrow from the Rails
-docs), if you wanted to test that a response contains two ordered lists, each
-with four list elements then you'd do something like this:</p>
+When I was hacking Rails projects back in 2006-2007, there was a lot of stuff
+about Rails that drove me absolutely batshit (\<cough\>ActiveRecord\</cough\>),
+but there were also a (very) few things that I really liked. One of those things
+was the [`assert_select`] test method. There was a bunch of magic involved in
+sending a request to your Rails app and stuffing the body someplace hidden (hrm,
+that sounds kind of evil; intentional?), but then you could call `assert_select`
+to use CSS selectors to test the structure and content of the document
+(assuming, of course, that it was HTML or XML). For example, (to borrow from the
+Rails docs), if you wanted to test that a response contains two ordered lists,
+each with four list elements then you'd do something like this:
 
-<pre>
-assert_select &quot;ol&quot; do |elements|
-  elements.each do |element|
-    assert_select element, &quot;li&quot;, 4
-  end
-end
-</pre>
+    assert_select "ol" do |elements|
+      elements.each do |element|
+        assert_select element, "li", 4
+      end
+    end
 
-<p>What it does is select all of the <code>&lt;ol&gt;</code> elements and pass
-them to the <code>do</code> block, where you can
-call <code>assert_select</code> on each of them. Nice, huh? You can also
-implicitly call <code>assert_select</code> on the entire array of passed
-elements, like so:</p>
+What it does is select all of the `<ol>` elements and pass them to the `do`
+block, where you can call `assert_select` on each of them. Nice, huh? You can
+also implicitly call `assert_select` on the entire array of passed elements,
+like so:
 
-<pre>
-assert_select &quot;ol&quot; do
-  assert_select &quot;li&quot;, 8
-end
-</pre>
+    assert_select "ol" do
+      assert_select "li", 8
+    end
 
-<p>Slick, right? I've always wanted to have something like this in Perl, but
-until last week, I didn't really have an immediate need for it. But I've
-started on a Catalyst project with my partners
-at <a href="http://www.pgexperts.com/" title="PostgreSQL Experts, Inc.">PGX</a>, and of course I'm using a view to generate XHTML output. So I
-started asking around for advice on proper unit testing for Catalyst views.
-The answer I got was,
-basically, <a href="http://search.cpan.org/perldoc?Test::WWW::Mechanize::Catalyst" title="Test::WWW::Mechanize::Catalyst on
-CPAN">Test::WWW::Mechanize::Catalyst</a>. But I found it insufficient:</p>
+Slick, right? I've always wanted to have something like this in Perl, but until
+last week, I didn't really have an immediate need for it. But I've started on a
+Catalyst project with my partners at [PGX], and of course I'm using a view to
+generate XHTML output. So I started asking around for advice on proper unit
+testing for Catalyst views. The answer I got was, basically,
+[Test::WWW::Mechanize::Catalyst]. But I found it insufficient:
 
-<pre>
-$mech->get_ok(&quot;/&quot;);
-$mech->html_lint_ok( &quot;HTML should be valid&quot; );
-$mech->title_is( &quot;Root&quot;, &quot;On the root page&quot; );
-$mech->content_contains( &quot;This is the root page&quot;, &quot;Correct content&quot; );
-</pre>
+    $mech->get_ok("/");
+    $mech->html_lint_ok( "HTML should be valid" );
+    $mech->title_is( "Root", "On the root page" );
+    $mech->content_contains( "This is the root page", "Correct content" );
 
-<p>Okay, I can check the title of the document directly, which is kind of
-cool, but there's no other way to examine the structure? Really? And to check
-the content, there's just <code>content_contains()</code>, which concatenates
-all of the content without any tags! This is useful for certain very simple
-tests, but if you want to make sure that your document is properly structured,
-and the content is in all the right places,
-you're <a href="http://www.urbandictionary.com/define.php?term=S.O.L." title="Urban Dictionary: “S.O.L”">SOL</a>.</p>
+Okay, I can check the title of the document directly, which is kind of cool, but
+there's no other way to examine the structure? Really? And to check the content,
+there's just `content_contains()`, which concatenates all of the content without
+any tags! This is useful for certain very simple tests, but if you want to make
+sure that your document is properly structured, and the content is in all the
+right places, you're [SOL].
 
-<p>Furthermore, the <code>html_link_ok()</code> method didn't like the Unicode
-characters output by my view:</p>
+Furthermore, the `html_link_ok()` method didn't like the Unicode characters
+output by my view:
 
-<pre>
-#   Failed test &#x0027;HTML should be valid (http://localhost/)&#x0027;
-#   at t/view_TD.t line 30.
-# HTML::Lint errors for http://localhost/
-#  (4:3) Invalid character \x2019 should be written as &amp;rsquo;
-#  (18:5) Invalid character \xA9 should be written as &amp;copy;
-# 2 errors on the page
-</pre>
+    #   Failed test 'HTML should be valid (http://localhost/)'
+    #   at t/view_TD.t line 30.
+    # HTML::Lint errors for http://localhost/
+    #  (4:3) Invalid character \x2019 should be written as &rsquo;
+    #  (18:5) Invalid character \xA9 should be written as &copy;
+    # 2 errors on the page
 
-<p>Of course, those characters aren't invalid, they're perfectly good UTF-8
-characters. In some worlds, I suppose, they should be wrong, but I actually
-want them in my document.</p>
+Of course, those characters aren't invalid, they're perfectly good UTF-8
+characters. In some worlds, I suppose, they should be wrong, but I actually want
+them in my document.
 
-<p>So I switched to <a href="http://search.cpan.org/perldoc?Test::XML" title="Test::XML on CPAN">Test::XML</a>, which uses a proper XML parser to
-validate a document:</p>
+So I switched to [Test::XML], which uses a proper XML parser to validate a
+document:
 
-<pre>
-ok my $res = request(&quot;http://localhost:3000/&quot;), &quot;Request home page&quot;;
-ok $res->is_success, &quot;Request should have succeeded&quot;;
+    ok my $res = request("http://localhost:3000/"), "Request home page";
+    ok $res->is_success, "Request should have succeeded";
 
-is_well_formed_xml $res->content, &quot;The HTML should be well-formed&quot;;
-</pre>
+    is_well_formed_xml $res->content, "The HTML should be well-formed";
 
-<p>Cool, so now I know that my XHTML document is valid, it's time to start
+Cool, so now I know that my XHTML document is valid, it's time to start
 examining the content and structure in more detail. Thinking fondly on
-<code>assert_select</code>, I went looking for a test module that uses XPath
-to test an XML document, and
-found <a href="http://search.cpan.org/perldoc?Test::XML::XPath" title="Test::XML::XPath on CPAN">Test::XML::XPath</a> right in the Test::XML
-distribution, which looked to be just what I wanted. So I added it to my test
-script and added this line to test the content of
-the <code>&lt;title&gt;</code> tag:</p>
+`assert_select`, I went looking for a test module that uses XPath to test an XML
+document, and found [Test::XML::XPath] right in the Test::XML distribution,
+which looked to be just what I wanted. So I added it to my test script and added
+this line to test the content of the `<title>` tag:
 
-<pre>
-is_xpath $res->content, &quot;/html/head/title&quot;, &quot;Welcome!&quot;;
-</pre>
+    is_xpath $res->content, "/html/head/title", "Welcome!";
 
-<p>I ran the test…and waited. It took around 20 seconds for that test to run,
-and then it failed!</p>
+I ran the test…and waited. It took around 20 seconds for that test to run, and
+then it failed!
 
-<pre>
-#   Failed test at t/view_TD.t line 25.
-#          got: &#x0027;&#x0027;
-#     expected: &#x0027;Welcome!&#x0027;
-#   evaluating: /html/head/title
-#      against: &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.1//EN&quot; &quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;
-# &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot;&gt;
-#  &lt;head&gt;
-#   &lt;title&gt;Welcome!&lt;/title&gt;
-#  &lt;/head&gt;
-# &lt;/html&gt;
-</pre>
+    #   Failed test at t/view_TD.t line 25.
+    #          got: ''
+    #     expected: 'Welcome!'
+    #   evaluating: /html/head/title
+    #      against: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+    # <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    #  <head>
+    #   <title>Welcome!</title>
+    #  </head>
+    # </html>
 
-<p>No doubt the alert among my readership will spot the problem right away,
-but I was at a loss. Fortunately, <a href="http://use.perl.org/~Ovid/"
-title="Ovid on use Perl;">Ovid</a> was over for dinner last week, and he
-pointed out that it was due to the namespace. That is, the <code>xmlns</code>
-attribute of the <code>&lt;html&gt;</code> element requires that one register
-a namespace prefix to use in the XPath expression. He pointed me to his fork
-of XML::XPath,
-called <a href="http://github.com/Ovid/Escape-/blob/master/t/lib/Test/XHTML/XPath.pm" title="Test::XHTML::XPath on GitHub">Test::XHTML::XPath</a>, in
-his <a href="http://github.com/Ovid/Escape-/tree" title="Escape on GitHub">Escape project</a>. It mostly duplicates Test::XML::XPath, but contains
-this crucial line of code:</p>
+No doubt the alert among my readership will spot the problem right away, but I
+was at a loss. Fortunately, [Ovid] was over for dinner last week, and he pointed
+out that it was due to the namespace. That is, the `xmlns` attribute of the
+`<html>` element requires that one register a namespace prefix to use in the
+XPath expression. He pointed me to his fork of XML::XPath, called
+[Test::XHTML::XPath], in his [Escape project]. It mostly duplicates
+Test::XML::XPath, but contains this crucial line of code:
 
-<pre>
-$xpc->registerNs( x => &quot;http://www.w3.org/1999/xhtml&quot; );
-</pre>
+    $xpc->registerNs( x => "http://www.w3.org/1999/xhtml" );
 
-<p>By registering the prefix “x” for the XHTML namespace, he's able to write
-tests like this:</p>
+By registering the prefix “x” for the XHTML namespace, he's able to write tests
+like this:
 
-<pre>
-is_xpath $res->content, &quot;/x:html/x:head/x:title&quot;, &quot;Welcome!&quot;;
-</pre>
+    is_xpath $res->content, "/x:html/x:head/x:title", "Welcome!";
 
-<p>And that works. It seems that the XPath
-spec <a href="http://www.edankert.com/defaultnamespaces.html" title="edankert: “XPath and Default Namespace handling”">requires that one use prefixes</a>
-when referring to elements within a namespace. Test::XML::XPath, alas,
-provides no way to register a namespace prefix.</p>
+And that works. It seems that the XPath spec [requires that one use prefixes]
+when referring to elements within a namespace. Test::XML::XPath, alas, provides
+no way to register a namespace prefix.
 
-<p>Perhaps worse is the performance problem. I discovered that if I stripped
-out the DOCTYPE declaration from the XHTML before I passed it
-to <code>is_xpath</code>, the test was lightning fast. Here the issue is
-that <a href="search.cpan.org/perldoc?XML::LibXML" title="XML::LibXML on CPAN">XML::LibXML</a>, used by Test::XML::XPath, is fetching the DTD from the
-w3.org Web site as the test runs. I can disable this by setting
-the <code>no_network</code> and <code>recover_silently</code> XML::LibXML
-options, but, again, Test::XML::XPath provides no way to do so.</p>
+Perhaps worse is the performance problem. I discovered that if I stripped out
+the DOCTYPE declaration from the XHTML before I passed it to `is_xpath`, the
+test was lightning fast. Here the issue is that [XML::LibXML], used by
+Test::XML::XPath, is fetching the DTD from the w3.org Web site as the test runs.
+I can disable this by setting the `no_network` and `recover_silently`
+XML::LibXML options, but, again, Test::XML::XPath provides no way to do so.
 
-<p>Add to that the fact that Test::XML::XPath has no interface for recursive
-testing like <code>assert_select</code> and I was ready to write my own
-module. One could perhaps update Test::XML::XPath to be more flexible, but for
-the fact that it falls back
-on <a href="http://search.cpan.org/perldoc?XML::XPath" title="XML::XPath on CPAN">XML::XPath</a> when it can't find XML::LibXML, and XML::XPath, alas,
-behaves differently than XML::LibXML (it didn't choke on my lack of a
-namespace prefix, for example). So if you ship an application that uses
-Test::XML::XPath, tests might fail on other systems where it would use a
-different XPath module than you used.</p>
+Add to that the fact that Test::XML::XPath has no interface for recursive
+testing like `assert_select` and I was ready to write my own module. One could
+perhaps update Test::XML::XPath to be more flexible, but for the fact that it
+falls back on [XML::XPath] when it can't find XML::LibXML, and XML::XPath, alas,
+behaves differently than XML::LibXML (it didn't choke on my lack of a namespace
+prefix, for example). So if you ship an application that uses Test::XML::XPath,
+tests might fail on other systems where it would use a different XPath module
+than you used.
 
-<p>And so I have written a new test module.</p>
+And so I have written a new test module.
 
-<p>Introducing <a href="http://search.cpan.org/perldoc?Test::XPath" title="Test::XPath on CPAN">Test::XPath</a>, your Perl module for flexibly
-running XPath-powered tests on the content and structure of your XML and HTML
-documents. With this new module, the test for my Catalyst application
-becomes:</p>
+Introducing [Test::XPath], your Perl module for flexibly running XPath-powered
+tests on the content and structure of your XML and HTML documents. With this new
+module, the test for my Catalyst application becomes:
 
-<pre>
-my $tx = Test::XPath->new( xml => $res->content, is_html => 1 );
-$tx->is(&quot;/html/head/title&quot;, &quot;Welcome&quot;, &quot;Title should be correct&quot; );
-</pre>
+    my $tx = Test::XPath->new( xml => $res->content, is_html => 1 );
+    $tx->is("/html/head/title", "Welcome", "Title should be correct" );
 
-<p>Notice how I didn't need a namespace prefix there? That's because
-the <code>is_html</code> parameter coaxes XML::LibXML into using its HTML
-parser instead of its XML parser. One of the side-effects of doing so is that
-the namespace appears to be assumed, so I can ignore it in my tests. The HTML
-parser doesn't bother to fetch the DTD, either. For tests where you really
-need namespaces, you'd do this:</p>
+Notice how I didn't need a namespace prefix there? That's because the `is_html`
+parameter coaxes XML::LibXML into using its HTML parser instead of its XML
+parser. One of the side-effects of doing so is that the namespace appears to be
+assumed, so I can ignore it in my tests. The HTML parser doesn't bother to fetch
+the DTD, either. For tests where you really need namespaces, you'd do this:
 
-<pre>
-my $tx = Test::XPath->new(
-    xml     => $res->content,
-    xmlns   => { x => &quot;http://www.w3.org/1999/xhtml&quot; },
-    options => { no_network => 1, recover_silently => 1 },
-);
-$tx->is(&quot;/x:html/x:head/x:title&quot;, &quot;Welcome&quot;, &quot;Title should be correct&quot; );
-</pre>
+    my $tx = Test::XPath->new(
+        xml     => $res->content,
+        xmlns   => { x => "http://www.w3.org/1999/xhtml" },
+        options => { no_network => 1, recover_silently => 1 },
+    );
+    $tx->is("/x:html/x:head/x:title", "Welcome", "Title should be correct" );
 
-<p>Yep, you can specify XML namespace prefixes via the <code>xmlns</code>
-parameter, and pass options to XML::LibXML via the <code>options</code>
-parameter. Here I've shut off the network, so that XML::LibXML prevents
-network access, and told it to recover silently when it tries to fetch the
-DTD, but fails (because, you know, it can't access the network). Not bad,
-eh?</p>
+Yep, you can specify XML namespace prefixes via the `xmlns` parameter, and pass
+options to XML::LibXML via the `options` parameter. Here I've shut off the
+network, so that XML::LibXML prevents network access, and told it to recover
+silently when it tries to fetch the DTD, but fails (because, you know, it can't
+access the network). Not bad, eh?
 
-<p>Of course, the module provides the usual array
-of <a href="http://search.cpan.org/perldoc?Test::More" title="Test::More on CPAN">Test::More</a>-like test methods, including <code>ok()</code>,
-<code>is()</code>, <code>like()</code> and <code>cmp_ok()</code>. They all
-work just like in Test::More, except that the first argument must be an XPath
-expressions. Some examples borrowed from the documentation:</p>
+Of course, the module provides the usual array of [Test::More]-like test
+methods, including `ok()`, `is()`, `like()` and `cmp_ok()`. They all work just
+like in Test::More, except that the first argument must be an XPath expressions.
+Some examples borrowed from the documentation:
 
-<pre>
-$tx->ok( &#x0027;//foo/bar&#x0027;, &#x0027;Should have bar element under foo element&#x0027; );
-$tx->ok( &#x0027;contains(//title, &quot;Welcome&quot;)&#x0027;, &#x0027;Title should &quot;Welcome&quot;&#x0027; );
+    $tx->ok( '//foo/bar', 'Should have bar element under foo element' );
+    $tx->ok( 'contains(//title, "Welcome")', 'Title should "Welcome"' );
 
-$tx->is( &#x0027;/html/head/title&#x0027;, &#x0027;Welcome&#x0027;, &#x0027;Title should be welcoming&#x0027; );
-$tx->isnt( &#x0027;/html/head/link/@type&#x0027;, &#x0027;hello&#x0027;, &#x0027;Link type should not&#x0027; );
+    $tx->is( '/html/head/title', 'Welcome', 'Title should be welcoming' );
+    $tx->isnt( '/html/head/link/@type', 'hello', 'Link type should not' );
 
-$tx->like( &#x0027;/html/head/title&#x0027;, qr/^Foobar Inc.: .+/, &#x0027;Title context&#x0027; );
-$tx->unlike( &#x0027;/html/head/title&#x0027;, qr/Error/, &#x0027;Should be no error in title&#x0027; );
+    $tx->like( '/html/head/title', qr/^Foobar Inc.: .+/, 'Title context' );
+    $tx->unlike( '/html/head/title', qr/Error/, 'Should be no error in title' );
 
-$tx->cmp_ok( &#x0027;/html/head/title&#x0027;, &#x0027;eq&#x0027;, &#x0027;Welcome&#x0027; );
-$tx->cmp_ok( &#x0027;//story[1]/@id&#x0027;, &#x0027;==&#x0027;, 1 );
-</pre>
+    $tx->cmp_ok( '/html/head/title', 'eq', 'Welcome' );
+    $tx->cmp_ok( '//story[1]/@id', '==', 1 );
 
-<p>But the real gem is the recursive testing feature of the <code>ok()</code>
-test method. By passing a code reference as the second argument, you can
-descend into various parts of your XML or HTML document to test things more
-deeply. <code>ok()</code> will pass if the XPath expression argument selects
-one or more nodes, and then it will call the code reference for each of those
-nodes, passing the Test::XPath object as the first argument. This is a bit
-different than <code>assert_select</code>, but I view the reduced magic as a
-good thing.</p>
+But the real gem is the recursive testing feature of the `ok()` test method. By
+passing a code reference as the second argument, you can descend into various
+parts of your XML or HTML document to test things more deeply. `ok()` will pass
+if the XPath expression argument selects one or more nodes, and then it will
+call the code reference for each of those nodes, passing the Test::XPath object
+as the first argument. This is a bit different than `assert_select`, but I view
+the reduced magic as a good thing.
 
-<p>For example, if you wanted to test for the presence
-of <code>&lt;story&gt;</code> elements in your document, and to test that each
-such element had an incremented <code>id</code> attribute, you'd do something
-like this:</p>
+For example, if you wanted to test for the presence of `<story>` elements in
+your document, and to test that each such element had an incremented `id`
+attribute, you'd do something like this:
 
-<pre>
-my $i = 0;
-$tx->ok( &#x0027;//assets/story&#x0027;, sub {
-    shift->is(&#x0027;./@id&#x0027;, ++$i, &quot;ID should be $i in story $i&quot;);
-}, &#x0027;Should have story elements&#x0027; );
-</pre>
+    my $i = 0;
+    $tx->ok( '//assets/story', sub {
+        shift->is('./@id', ++$i, "ID should be $i in story $i");
+    }, 'Should have story elements' );
 
-<p>For convenience, the XML::XPath object is also assigned to <code>$_</code>
-for the duration of the call to the code reference. Either way, you can
-call <code>ok()</code> and pass code references anywhere in the hierarchy. For
-example, to ensure that an Atom feed has entries and that each entry has a
-title, a link, and a very specific author element with name, uri, and email
-subnodes, you can do this:</p>
+For convenience, the XML::XPath object is also assigned to `$_` for the duration
+of the call to the code reference. Either way, you can call `ok()` and pass code
+references anywhere in the hierarchy. For example, to ensure that an Atom feed
+has entries and that each entry has a title, a link, and a very specific author
+element with name, uri, and email subnodes, you can do this:
 
-<pre>
-$tx->ok( &#x0027;/feed/entry&#x0027;, sub {
-    $_->ok( &#x0027;./title&#x0027;, &#x0027;Should have a title&#x0027; );
-    $_->ok( &#x0027;./author&#x0027;, sub {
-        $_->is( &#x0027;./name&#x0027;,  &#x0027;Larry Wall&#x0027;,       &#x0027;Larry should be author&#x0027; );
-        $_->is( &#x0027;./uri&#x0027;,   &#x0027;http://wall.org/&#x0027;, &#x0027;URI should be correct&#x0027; );
-        $_->is( &#x0027;./email&#x0027;, &#x0027;perl@example.com&#x0027;, &#x0027;Email should be right&#x0027; );
-    }, &#x0027;Should have author elements&#x0027; );
-}, &#x0027;Should have entry elements&#x0027; );
-</pre>
+    $tx->ok( '/feed/entry', sub {
+        $_->ok( './title', 'Should have a title' );
+        $_->ok( './author', sub {
+            $_->is( './name',  'Larry Wall',       'Larry should be author' );
+            $_->is( './uri',   'http://wall.org/', 'URI should be correct' );
+            $_->is( './email', 'perl@example.com', 'Email should be right' );
+        }, 'Should have author elements' );
+    }, 'Should have entry elements' );
 
-<p>There are a lot of core XPath functions you can use, too. For example,
-I'm going to write a test for every page returned by my application to make
-sure that I have the proper numbers of various tags:</p>
+There are a lot of core XPath functions you can use, too. For example, I'm going
+to write a test for every page returned by my application to make sure that I
+have the proper numbers of various tags:
 
-<pre>
-$tx->is(&#x0027;count(/html)&#x0027;,     1, &#x0027;Should have 1 html element&#x0027; );
-$tx->is(&#x0027;count(/html/head&#x0027;) 1, &#x0027;Should have 1 head element&#x0027; );
-$tx->is(&#x0027;count(/html/body)  1, &#x0027;Should have 1 body element&#x0027; );
-</pre>
+    $tx->is('count(/html)',     1, 'Should have 1 html element' );
+    $tx->is('count(/html/head') 1, 'Should have 1 head element' );
+    $tx->is('count(/html/body)  1, 'Should have 1 body element' );
 
-<p>I'm going to use this module to the hilt in all my tests for HTML and XML
-documents from here on in. The only thing I'm missing
-from <code>assert_select</code> is that it supports CSS 2 selectors, rather
-than XPath expressions, and
-the <a href="http://api.rubyonrails.org/classes/HTML/Selector.html" title="Ruby HTML::Selector">implementation</a> offers quite a few other
-features including regular expression operators for matching attributes,
-pseudo-classes, and other fun stuff. Still, XPath gets me all that I need; the
-rest is just sugar, really. And with the ability to
-<a href="http://search.cpan.org/dist/Test-XPath/lib/Test/XPath.pm#xpc" title="Test::XPath: Define new XPath functions">define custom XPath functions
-in Perl</a>, I can live without the extra sugar.</p>
+I'm going to use this module to the hilt in all my tests for HTML and XML
+documents from here on in. The only thing I'm missing from `assert_select` is
+that it supports CSS 2 selectors, rather than XPath expressions, and the
+[implementation] offers quite a few other features including regular expression
+operators for matching attributes, pseudo-classes, and other fun stuff. Still,
+XPath gets me all that I need; the rest is just sugar, really. And with the
+ability to [define custom XPath functions in Perl], I can live without the extra
+sugar.
 
-<p>Maybe you'll find it useful, too.</p>
+Maybe you'll find it useful, too.
+
+  [`assert_select`]: http://api.rubyonrails.org/classes/ActionController/Assertions/SelectorAssertions.html#M000569
+    "ActionController::Assertions::SelectorAssertions"
+  [PGX]: http://www.pgexperts.com/ "PostgreSQL Experts, Inc."
+  [Test::WWW::Mechanize::Catalyst]: http://search.cpan.org/perldoc?Test::WWW::Mechanize::Catalyst
+    "Test::WWW::Mechanize::Catalyst on
+    CPAN"
+  [SOL]: http://www.urbandictionary.com/define.php?term=S.O.L.
+    "Urban Dictionary: “S.O.L”"
+  [Test::XML]: http://search.cpan.org/perldoc?Test::XML "Test::XML on CPAN"
+  [Test::XML::XPath]: http://search.cpan.org/perldoc?Test::XML::XPath
+    "Test::XML::XPath on CPAN"
+  [Ovid]: http://use.perl.org/~Ovid/ "Ovid on use Perl;"
+  [Test::XHTML::XPath]: http://github.com/Ovid/Escape-/blob/master/t/lib/Test/XHTML/XPath.pm
+    "Test::XHTML::XPath on GitHub"
+  [Escape project]: http://github.com/Ovid/Escape-/tree "Escape on GitHub"
+  [requires that one use prefixes]: http://www.edankert.com/defaultnamespaces.html
+    "edankert: “XPath and Default Namespace handling”"
+  [XML::LibXML]: search.cpan.org/perldoc?XML::LibXML "XML::LibXML on CPAN"
+  [XML::XPath]: http://search.cpan.org/perldoc?XML::XPath "XML::XPath on CPAN"
+  [Test::XPath]: http://search.cpan.org/perldoc?Test::XPath
+    "Test::XPath on CPAN"
+  [Test::More]: http://search.cpan.org/perldoc?Test::More "Test::More on CPAN"
+  [implementation]: http://api.rubyonrails.org/classes/HTML/Selector.html
+    "Ruby HTML::Selector"
+  [define custom XPath functions in Perl]: http://search.cpan.org/dist/Test-XPath/lib/Test/XPath.pm#xpc
+    "Test::XPath: Define new XPath functions"

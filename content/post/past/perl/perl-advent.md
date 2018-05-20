@@ -7,4 +7,7 @@ tags: [Perl, Advent Calendar, DBIx::Connector]
 type: post
 ---
 
-<p>Hey look everybody, I wrote today's Perl Advent Calendar post, <a href="http://perladvent.org/2011/2011-12-22.html">Less Tedium, More Transactions</a>. Go read it!</p>
+Hey look everybody, I wrote today's Perl Advent Calendar post, [Less Tedium,
+More Transactions]. Go read it!
+
+  [Less Tedium, More Transactions]: http://perladvent.org/2011/2011-12-22.html

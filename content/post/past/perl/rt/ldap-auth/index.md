@@ -7,8 +7,25 @@ tags: [Perl, RT, LDAP, Request Tracker, LdapOverlay, Net::LDAP, TLS]
 type: post
 ---
 
-<p>I grabbed the <a href="http://wiki.bestpractical.com/index.cgi?LdapOverlay" title="LdapOverlay page in the RT Wiki">LdapOverlay</a> solution for using an LDAP server to authenticate against <a href="http://www.bestpractical.com/rt/" title="RT by Best Practical">Request Tracker</a> today in my continuing efforts to use LDAP for single sign-on for all Kineticode resources. It worked great, but I wanted a couple more things out of it, namely TLS communications with the LDAP server (so that all communications are encrypted), and authentication only for members of a certain LDAP group.</p>
+I grabbed the [LdapOverlay] solution for using an LDAP server to authenticate
+against [Request Tracker] today in my continuing efforts to use LDAP for single
+sign-on for all Kineticode resources. It worked great, but I wanted a couple
+more things out of it, namely TLS communications with the LDAP server (so that
+all communications are encrypted), and authentication only for members of a
+certain LDAP group.
 
-<p>So I refactored LdapOverlay and added these features. You can download it from <a href="/2004/12/ldap-auth/User_Local.pm.ldap" title="My Revision of LdapOverlay">here</a>. Just set the <code>$LdapTLS</code> variable in your <code>RT_SiteConfig</code> module to a true value to use TLS (but be sure that you also have <a href="http://search.cpan.org/dist/Net_SSLeay.pm/" title="Net::SSLeay on CPAN">Net::SSLeay</a> installed!). If you want to allow only members of a certain LDAP group to authenticate to RT, set the DN of the group in the <code>$LdapGroup</code> variable, and set the name of the member attribute (usually <q>uniqueMember</q>) in the <code>$LdapGroupAttribute</code> variable.</p>
+So I refactored LdapOverlay and added these features. You can download it from
+[here]. Just set the `$LdapTLS` variable in your `RT_SiteConfig` module to a
+true value to use TLS (but be sure that you also have [Net::SSLeay] installed!).
+If you want to allow only members of a certain LDAP group to authenticate to RT,
+set the DN of the group in the `$LdapGroup` variable, and set the name of the
+member attribute (usually “uniqueMember”) in the `$LdapGroupAttribute` variable.
 
-<p>Enjoy!</p>
+Enjoy!
+
+  [LdapOverlay]: http://wiki.bestpractical.com/index.cgi?LdapOverlay
+    "LdapOverlay page in the RT Wiki"
+  [Request Tracker]: http://www.bestpractical.com/rt/ "RT by Best Practical"
+  [here]: /2004/12/ldap-auth/User_Local.pm.ldap "My Revision of LdapOverlay"
+  [Net::SSLeay]: http://search.cpan.org/dist/Net_SSLeay.pm/
+    "Net::SSLeay on CPAN"

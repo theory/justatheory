@@ -8,64 +8,74 @@ tags: [Postgres, Makefile]
 type: post
 ---
 
-<p>I've become very tired of having to set <code>USE_PGXS=1</code> every time I build pgTAP outside the <code>contrib</code> directory of a PostgreSQL distribution:</p>
+I've become very tired of having to set `USE_PGXS=1` every time I build pgTAP
+outside the `contrib` directory of a PostgreSQL distribution:
 
-<pre><code>make USE_PGXS=1
-make USE_PGXS=1 install
-make USE_PGXS=1 installcheck
-</code></pre>
+    make USE_PGXS=1
+    make USE_PGXS=1 install
+    make USE_PGXS=1 installcheck
 
-<p>I am forever forgetting to set it, and it’s just not how one normally expects
-a build incantation to work. It was required because that’s how the core
-<a href="http://www.postgresql.org/docs/8.4/static/contrib.html" title="PostgreSQL Documentation: “Additional Supplied Modules”">contrib extensions</a> work: They all have
-this code in their <code>Makefile</code>s, which those of us who develop third-party
-modules have borrowed:</p>
+I am forever forgetting to set it, and it’s just not how one normally expects a
+build incantation to work. It was required because that’s how the core [contrib
+extensions] work: They all have this code in their `Makefile`s, which those of
+us who develop third-party modules have borrowed:
 
-<pre><code>ifdef USE_PGXS
-PG_CONFIG = pg_config
-PGXS := $(shell $(PG_CONFIG) --pgxs)
-include $(PGXS)
-else
-subdir = contrib/citext
-top_builddir = ../..
-include $(top_builddir)/src/Makefile.global
-include $(top_srcdir)/contrib/contrib-global.mk
-endif
-</code></pre>
+    ifdef USE_PGXS
+    PG_CONFIG = pg_config
+    PGXS := $(shell $(PG_CONFIG) --pgxs)
+    include $(PGXS)
+    else
+    subdir = contrib/citext
+    top_builddir = ../..
+    include $(top_builddir)/src/Makefile.global
+    include $(top_srcdir)/contrib/contrib-global.mk
+    endif
 
-<p>They generally expect <code>../../src/Makefile.global</code> to exist, and if it doesn’t,
-you have to tell it so. I find this annoying, because third-party extensions
-are almost never built from the <code>contrib</code> directory, so one must always remember to specify <code>USE_PGXS=1</code>.</p>
+They generally expect `../../src/Makefile.global` to exist, and if it doesn’t,
+you have to tell it so. I find this annoying, because third-party extensions are
+almost never built from the `contrib` directory, so one must always remember to
+specify `USE_PGXS=1`.
 
-<p>I'd like to propose, instead, that those of us who maintain third-party extensions like <a href="http://pgtap.org">pgTAP</a>, <a href="http://github.com/leto/plparrot/">PL/Parrot</a>, and <a href="http://temporal.projects.postgresql.org/">Temporal PostgreSQL</a> not force our users to have to remember this special variable by instead checking to see if it’s needed ourselves. As such, I've just <a href="http://github.com/theory/pgtap/commit/400db6d2db7ebabb90fbc528100bb9e518f7fbc3">added</a> this code to pgTAP’s <code>Makefile</code>:</p>
+I'd like to propose, instead, that those of us who maintain third-party
+extensions like [pgTAP], [PL/Parrot], and [Temporal PostgreSQL] not force our
+users to have to remember this special variable by instead checking to see if
+it’s needed ourselves. As such, I've just [added] this code to pgTAP’s
+`Makefile`:
 
-<pre><code>ifdef USE_PGXS
-PG_CONFIG = pg_config
-PGXS := $(shell $(PG_CONFIG) --pgxs)
-else
-ifeq (exists, $(shell [ -e ../../src/bin/pg_config/pg_config ] &amp;&amp; echo exists) ) 
-top_builddir = ../..
-PG_CONFIG := $(top_builddir)/src/bin/pg_config/pg_config
-else
-PG_CONFIG = pg_config
-PGXS := $(shell $(PG_CONFIG) --pgxs)
-endif
-endif
-</code></pre>
+    ifdef USE_PGXS
+    PG_CONFIG = pg_config
+    PGXS := $(shell $(PG_CONFIG) --pgxs)
+    else
+    ifeq (exists, $(shell [ -e ../../src/bin/pg_config/pg_config ] && echo exists) ) 
+    top_builddir = ../..
+    PG_CONFIG := $(top_builddir)/src/bin/pg_config/pg_config
+    else
+    PG_CONFIG = pg_config
+    PGXS := $(shell $(PG_CONFIG) --pgxs)
+    endif
+    endif
 
-<p>So it still respects <code>USE_PGXS=1</code>, but if it’s not set, it looks to see if it
-can find <code>pg_config</code> where it would expect it to be if built from the
-<code>contrib</code> directory. If it’s not there, it simply uses <code>pg_config</code> as if
-<code>USE_PGXS=1</code> was set. This makes building from the <code>contrib</code> directory or from
-anywhere else the same process:</p>
+So it still respects `USE_PGXS=1`, but if it’s not set, it looks to see if it
+can find `pg_config` where it would expect it to be if built from the `contrib`
+directory. If it’s not there, it simply uses `pg_config` as if `USE_PGXS=1` was
+set. This makes building from the `contrib` directory or from anywhere else the
+same process:
 
-<pre><code>make
-make install
-make installcheck
-</code></pre>
+    make
+    make install
+    make installcheck
 
-<p>Much better, much easier to remember.</p>
+Much better, much easier to remember.
 
-<p>Is there any reason why third-party PostgreSQL extensions should <em>not</em> adopt this pattern? I don’t think it makes sense for contrib extensions in core to do it, but for those that will never be in core, I think it makes a lot of sense.</p>
+Is there any reason why third-party PostgreSQL extensions should *not* adopt
+this pattern? I don’t think it makes sense for contrib extensions in core to do
+it, but for those that will never be in core, I think it makes a lot of sense.
 
-<p>Comments?</p>
+Comments?
+
+  [contrib extensions]: http://www.postgresql.org/docs/8.4/static/contrib.html
+    "PostgreSQL Documentation: “Additional Supplied Modules”"
+  [pgTAP]: http://pgtap.org
+  [PL/Parrot]: http://github.com/leto/plparrot/
+  [Temporal PostgreSQL]: http://temporal.projects.postgresql.org/
+  [added]: http://github.com/theory/pgtap/commit/400db6d2db7ebabb90fbc528100bb9e518f7fbc3

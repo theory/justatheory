@@ -7,10 +7,11 @@ tags: [Poltics]
 type: post
 ---
 
-<blockquote>
+> \[Sharon\] was dividing God's land, and I would say woe unto any prime
+> minister of Israel who takes a similar course to appease the EU, the United
+> Nations or United States of America.
+>
+> —[Pat Robertson]
 
-<p>[Sharon] was dividing God's land, and I would say woe unto any prime minister of Israel who takes a similar course to appease the EU, the United Nations or United States of America.</p>
-
-<p>&#x2014;<a href="http://mediamatters.org/items/200601050004" title="Robertson blamed Sharon stroke on policy of &#x201c;dividing God's land&#x201d;">Pat Robertson</a></p>
-
-</blockquote>
+  [Pat Robertson]: http://mediamatters.org/items/200601050004
+    "Robertson blamed Sharon stroke on policy of “dividing God's land”"

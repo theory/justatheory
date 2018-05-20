@@ -7,13 +7,17 @@ tags: [Postgres, PL/pgSQL, relationship, object/relational mapping, onlamp.com]
 type: post
 ---
 
-<p>The second in my series of articles on programming PostgreSQL PL/pgSQL,
-<q>Managing Many-to-Many Relationships with PL/pgSQL</q>, has just been
-published <a href="http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html" title="Read &#x201c;Managing Many-to-Many Relationships with
-PL/pgSQL&#x201d;">onLamp.com</a>. The idea is to abstract out of the
-application layer the management of the many-to-many relationships, moving it
-into the database layer where execution is both safer and faster. And you can
-learn more about PL/pgSQL along the way.</p>
+The second in my series of articles on programming PostgreSQL PL/pgSQL,
+“Managing Many-to-Many Relationships with PL/pgSQL”, has just been published
+[onLamp.com]. The idea is to abstract out of the application layer the
+management of the many-to-many relationships, moving it into the database layer
+where execution is both safer and faster. And you can learn more about PL/pgSQL
+along the way.
 
-<p>So what are you waiting for? <a href="http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html"
-title="Ready &#x201c;Managing Many-to-Many Relationships with PL/pgSQL&#x201d;">Check it out</a>!</p>
+So what are you waiting for? [Check it out]!
+
+  [onLamp.com]: http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html
+    "Read “Managing Many-to-Many Relationships with
+    PL/pgSQL”"
+  [Check it out]: http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html
+    "Ready “Managing Many-to-Many Relationships with PL/pgSQL”"

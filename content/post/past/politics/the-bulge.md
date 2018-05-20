@@ -7,10 +7,22 @@ tags: [Politics, President, elections, George W. Bush, John Kerry]
 type: post
 ---
 
-<p><strong>HOLY SHIT!</strong></p>
+**HOLY SHIT!**
 
-<p>According to a <a href="http://www.salon.com/news/feature/2004/10/08/bulge/" title="Bush's mystery bulge">story</a> in <a href="http://www.salon.com/" title="Salon.com">Salon.com</a>, it appears that George W. Bush may well have been wearing a radio transmitter during the first debate. This would be so that he could get prompts from someone more knowledgeable (Dick Cheney?).</p>
+According to a [story] in [Salon.com], it appears that George W. Bush may well
+have been wearing a radio transmitter during the first debate. This would be so
+that he could get prompts from someone more knowledgeable (Dick Cheney?).
 
-<p><a href="http://www.electoral-vote.com/" title="See the current electoral vote status of the campaign on a nice colored map">Current Electoral Vote Predictor</a> (which currently shows Kerry leading 280 to 239!) has confirmed the presence of <q>the bulge</q> with <a href="http://www.electoral-vote2.com/images/bulge.jpg" title="The Electoral Vote Predictor's enhanced image of the bulge">this image</a>, using Red Hawk image intensification software.</p>
+[Current Electoral Vote Predictor] (which currently shows Kerry leading 280 to
+239!) has confirmed the presence of “the bulge” with [this image], using Red
+Hawk image intensification software.
 
-<p>My favorite phrase from the Salon.com article: the <q>Milli Vanilli president.</q></p>
+My favorite phrase from the Salon.com article: the “Milli Vanilli president.”
+
+  [story]: http://www.salon.com/news/feature/2004/10/08/bulge/
+    "Bush's mystery bulge"
+  [Salon.com]: http://www.salon.com/ "Salon.com"
+  [Current Electoral Vote Predictor]: http://www.electoral-vote.com/
+    "See the current electoral vote status of the campaign on a nice colored map"
+  [this image]: http://www.electoral-vote2.com/images/bulge.jpg
+    "The Electoral Vote Predictor's enhanced image of the bulge"

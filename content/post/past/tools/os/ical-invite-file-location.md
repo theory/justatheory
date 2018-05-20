@@ -7,27 +7,26 @@ tags: [macOS, iCal, ICS, iCalendar, VCS, caching]
 type: post
 ---
 
-<p>I was fiddling with iCalendar invitations yesterday, trying to
-get <a href="http://www.iwantsandy.com/" title="Meet Sandy: Your PersonalEmail Assistant">Sandy</a>'s .ics files to import into Outlook. I got that
-figured out (yes!), but in the meantime iCal started crashing on me. I was
-reasonable sure that it was due to a bogus invitation file, but could not for
-the life of me figure out where iCal was keeping such files. It just kept
-crashing on me as second or so after starting up, every time.</p>
+I was fiddling with iCalendar invitations yesterday, trying to get [Sandy]'s
+.ics files to import into Outlook. I got that figured out (yes!), but in the
+meantime iCal started crashing on me. I was reasonable sure that it was due to a
+bogus invitation file, but could not for the life of me figure out where iCal
+was keeping such files. It just kept crashing on me as second or so after
+starting up, every time.
 
-<p>I finally figured it out by quitting all my apps, moving all of the folders
-in <em>~/Library</em> to a temporary folder, and firing up iCal to see what
-folds it would create. And there it
-was: <em>~/Library/Caches/com.apple.iCal</em>. I quit iCal, deleted the new
-folders in <em>~/Library</em>, moved the originals back, and looked inside the
-iCal caches folder to find a bunch of invitation files in
-the <em>incoming</em> folder. I deleted them all and iCal fired up again
-without a hitch. W00t!</p>
+I finally figured it out by quitting all my apps, moving all of the folders in
+*\~/Library* to a temporary folder, and firing up iCal to see what folds it
+would create. And there it was: *\~/Library/Caches/com.apple.iCal*. I quit iCal,
+deleted the new folders in *\~/Library*, moved the originals back, and looked
+inside the iCal caches folder to find a bunch of invitation files in the
+*incoming* folder. I deleted them all and iCal fired up again without a hitch.
+W00t!
 
-<p>So if you're having problems with iCal crashing and have a few invitations
-in it and you're wondering how to get iCal to ignore them, just quit iCal,
-delete all of the files
-in <em>/Users/yourusername/Library/Caches/com.apple.iCal/incoming</em>, and
-start iCal back up again.</p>
+So if you're having problems with iCal crashing and have a few invitations in it
+and you're wondering how to get iCal to ignore them, just quit iCal, delete all
+of the files in */Users/yourusername/Library/Caches/com.apple.iCal/incoming*,
+and start iCal back up again.
 
-<p>And now I'll be able to find this information again when next I need it.
-:-)</p>
+And now I'll be able to find this information again when next I need it. :-)
+
+  [Sandy]: http://www.iwantsandy.com/ "Meet Sandy: Your PersonalEmail Assistant"

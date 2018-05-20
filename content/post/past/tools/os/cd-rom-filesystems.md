@@ -7,21 +7,18 @@ tags: [macOS, CD-ROM, Joliet, ISO9660, HFS+, WTF]
 type: post
 ---
 
-<p>Didn't it used to be the case that when you used the Mac OS X Finder to
-burn a CD-ROM that you could then mount that CD-ROM on a Windows box? In the
-last few months, I'm suddenly finding that this is no longer the case. So now
-I have to use <code>hdiutil</code> to convert a <em>.dmg</em> file to the
-Joliet and ISO9660 file systems:</p>
+Didn't it used to be the case that when you used the Mac OS X Finder to burn a
+CD-ROM that you could then mount that CD-ROM on a Windows box? In the last few
+months, I'm suddenly finding that this is no longer the case. So now I have to
+use `hdiutil` to convert a *.dmg* file to the Joliet and ISO9660 file systems:
 
-<pre>
-hdiutil makehybrid -o image.iso -joliet -iso image.dmg
-</pre>
+    hdiutil makehybrid -o image.iso -joliet -iso image.dmg
 
-<p>And <em>then</em> I could burn a CD readable on Windows. What the fuck? I
-burned three CDs that were then useless to me before I finally dug
-up <a href="http://www.macosxhints.com/article.php?query=dmg&amp;story=20050819185219196"
-title="Mac OS X Hints: “DVD image manipulation via hdiutil”">this hint</a>.
-And I had this problem with CDs burned by Tiger, too, last summer, so it's not
-just Leopard. It seems to me that Mac OS X should always default to building a
-hybrid CD that's then readable by Windows, Linux, and everything else. Why
-doesn't it?</p>
+And *then* I could burn a CD readable on Windows. What the fuck? I burned three
+CDs that were then useless to me before I finally dug up [this hint]. And I had
+this problem with CDs burned by Tiger, too, last summer, so it's not just
+Leopard. It seems to me that Mac OS X should always default to building a hybrid
+CD that's then readable by Windows, Linux, and everything else. Why doesn't it?
+
+  [this hint]: http://www.macosxhints.com/article.php?query=dmg&story=20050819185219196
+    "Mac OS X Hints: “DVD image manipulation via hdiutil”"

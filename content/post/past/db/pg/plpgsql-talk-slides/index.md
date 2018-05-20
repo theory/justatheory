@@ -7,33 +7,33 @@ tags: [Postgres, PL/pgSQL, presentations, Portland]
 type: post
 ---
 
-<p>The talk that I <a href="/computers/databases/postgresql/plpgsql_talk.html"
-title="PL/pgSQL Talk for Portland PostgreSQL Users">announced</a> a couple of
-days ago went off very well, I think. Rich Shepard, a local PostgreSQL who was
-at the meeting, later said on the mail list:</p>
+The talk that I [announced] a couple of days ago went off very well, I think.
+Rich Shepard, a local PostgreSQL who was at the meeting, later said on the mail
+list:
 
-<blockquote>
-  <p>On the happy side, my thanks to Selena for organizing the group and
-rounding up a half-dozen cats for the first meeting, and to David for the best
-presentation at a computer users group meeting I've seen in 20 years. The
-topic was very interesting and the presentation itself highly professional and
-polished. It's a standard to be met by future presenters for the benefit of us
-all.</p>
+> On the happy side, my thanks to Selena for organizing the group and rounding
+> up a half-dozen cats for the first meeting, and to David for the best
+> presentation at a computer users group meeting I've seen in 20 years. The
+> topic was very interesting and the presentation itself highly professional and
+> polished. It's a standard to be met by future presenters for the benefit of us
+> all.
+>
+> —Rich Shepard
 
-  <p>—Rich Shepard</p>
-</blockquote>
+Wow, praise doesn't get much higher than that. I'm glad the group got a lot out
+of the presentation. For the benefit of those who couldn't make it, I've [posted
+the slides] for your enjoyment. They might be a bit hard to follow at times
+without my commentary, but you should be able to fill in the gaps by reading
+[my][] [articles] for O'Reilly.
 
-<p>Wow, praise doesn't get much higher than that. I'm glad the group got a lot
-out of the presentation. For the benefit of those who couldn't make it, I've
-<a href="/2006/07/plpgsql-talk-slides/learning_plpgsql.pdf"
-title="“Learning PL/pgSQL” slides">posted the slides</a> for your enjoyment.
-They might be a bit hard to follow at times without my commentary, but you
-should be able to fill in the gaps by reading
-<a href="http://www.oreillynet.com/pub/a/onlamp/2006/05/11/postgresql-plpgsql.html"
-title="Writing PostgreSQL Functions with
-PL/pgSQL">my</a> <a
-href="http://www.oreillynet.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html"
-title="Managing Many-to-Many Relationships with PL/pgSQL">articles</a> for
-O'Reilly.</p>
+So start having some fun with PL/pgSQL!
 
-<p>So start having some fun with PL/pgSQL!</p>
+  [announced]: /computers/databases/postgresql/plpgsql_talk.html
+    "PL/pgSQL Talk for Portland PostgreSQL Users"
+  [posted the slides]: /2006/07/plpgsql-talk-slides/learning_plpgsql.pdf
+    "“Learning PL/pgSQL” slides"
+  [my]: http://www.oreillynet.com/pub/a/onlamp/2006/05/11/postgresql-plpgsql.html
+    "Writing PostgreSQL Functions with
+    PL/pgSQL"
+  [articles]: http://www.oreillynet.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html
+    "Managing Many-to-Many Relationships with PL/pgSQL"

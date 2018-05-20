@@ -12,4 +12,10 @@ type: post
 <figcaption>Logo design by <a href="http://www.strongrrl.com/">Strongrrl</a>.</figcaption>
 </figure>
 
-<p>A sneak peak at what I'm working on for my <a href="http://bit.ly/9VYmEZ" title="Test Driven Database Development">tutorial session</a> at <a href="http://www.oscon.com/">OSCON</a>. Be there at 8:30 Monday morning for the important details. You're sure to find my new venture exciting—perhaps the most important social media announcement of 2010. You can't afford to miss that, can you?</p>
+A sneak peak at what I'm working on for my [tutorial session] at [OSCON]. Be
+there at 8:30 Monday morning for the important details. You're sure to find my
+new venture exciting—perhaps the most important social media announcement of
+2010. You can't afford to miss that, can you?
+
+  [tutorial session]: http://bit.ly/9VYmEZ "Test Driven Database Development"
+  [OSCON]: http://www.oscon.com/

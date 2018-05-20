@@ -7,14 +7,13 @@ tags: [FreeBSD, NTP, Linux]
 type: post
 ---
 
-<p>So I need simple instructions to get NTPD running on FreeBSD. It should
-function solely as a client, and not accept connections from other servers. I
-could also use the corresponding instructions for Linux (and don't
-say <q>RPM</q>!). I've found an awful lot of information online about NTPD,
-but the simple instructions for setting up a secure NTPD to start when the
-system starts up are sorely lacking. Part of the problem with regards to BSD
-may be my not yet fully understanding how FreeBSD startup stuff is supposed to
-work, but I also can't find simple instructions for how to configure ntptd to
-operate only as a client.</p>
+So I need simple instructions to get NTPD running on FreeBSD. It should function
+solely as a client, and not accept connections from other servers. I could also
+use the corresponding instructions for Linux (and don't say “RPM”!). I've found
+an awful lot of information online about NTPD, but the simple instructions for
+setting up a secure NTPD to start when the system starts up are sorely lacking.
+Part of the problem with regards to BSD may be my not yet fully understanding
+how FreeBSD startup stuff is supposed to work, but I also can't find simple
+instructions for how to configure ntptd to operate only as a client.
 
-<p>Links and instructions gladly accepted.</p>
+Links and instructions gladly accepted.

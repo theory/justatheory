@@ -7,26 +7,25 @@ tags: [Ruby, hashing]
 type: post
 ---
 
-<p>Programming in Ruby, I've badly missed Perl's list syntax, which, among other things, makes converting between arrays and hashes really easy. In Ruby I have forever been converting an array to a hash like this:</p>
+Programming in Ruby, I've badly missed Perl's list syntax, which, among other
+things, makes converting between arrays and hashes really easy. In Ruby I have
+forever been converting an array to a hash like this:
 
-<pre>
-a = [ 1, 2, 3, 4, 5 ]
-h = {}
-a.each { |v| h[v] = v }
-</pre>
+    a = [ 1, 2, 3, 4, 5 ]
+    h = {}
+    a.each { |v| h[v] = v }
 
-<p>Of course, this is anything but concise. In Perl, I can just do this:</p>
+Of course, this is anything but concise. In Perl, I can just do this:
 
-<pre>
-my @a = (1, 2, 3, 4, 5, 6);
-my %h = map { $_ => $_ } @a;
-</pre>
+    my @a = (1, 2, 3, 4, 5, 6);
+    my %h = map { $_ => $_ } @a;
 
-<p>Easy, huh? Well, I finally got fed up with the nasty hack in Ruby, did a little Googling, and figured out a way to do it in a single line:</p>
+Easy, huh? Well, I finally got fed up with the nasty hack in Ruby, did a little
+Googling, and figured out a way to do it in a single line:
 
-<pre>
-a = [ 1, 2, 3, 4, 5, 6 ]
-h = Hash[ *a.collect { |v| [ v, v ] }.flatten ]
-</pre>
+    a = [ 1, 2, 3, 4, 5, 6 ]
+    h = Hash[ *a.collect { |v| [ v, v ] }.flatten ]
 
-<p>Not quite as concise as the Perl version, and I have to construct a bunch of arrays that I then throw away with the call to <code>flatten</code>, but at least it's concise and, I think, clearer what it's doing. So I think I'll go with that.</p>
+Not quite as concise as the Perl version, and I have to construct a bunch of
+arrays that I then throw away with the call to `flatten`, but at least it's
+concise and, I think, clearer what it's doing. So I think I'll go with that.

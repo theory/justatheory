@@ -7,12 +7,30 @@ tags: [OSCON, open source, O’Reilly]
 type: post
 ---
 
-<p>I just saw that the OSCON 2006 <a href="http://conferences.oreillynet.com/cs/os2006/create/e_sess/" title="O'Reilly Open Source Convention - July - 24-28, 2006 - Portland, OR: Call For Participation">Call for Participation</a> has gone up. Deadline is February 13, 2006. I've been thinking about some of the things I'd like to see:</p>
+I just saw that the OSCON 2006 [Call for Participation] has gone up. Deadline is
+February 13, 2006. I've been thinking about some of the things I'd like to see:
 
-<ul>
-  <li><p>The PostgreSQL equivalent of <a href="https://blog.flickr.com/flickrblog/2005/10/lamp.html" title="Hardware Layouts for LAMP Installations">this presentation</a>, in which Flickr's John Allspaw (hi John!) offers up advice on how to configure hardware, replication, and proxies for a busy MySQL-based site. Can <a href="http://slony.info/" title="Slony-I&#x2014;A replication system for PostgreSQL">Slony-I</a> scale out in the same way? How does it work? I'd love to see someone who's had to make a busy PostgreSQL-based site scale up to massive load tell us how it was done.</p></li>
+-   The PostgreSQL equivalent of [this presentation], in which Flickr's John
+    Allspaw (hi John!) offers up advice on how to configure hardware,
+    replication, and proxies for a busy MySQL-based site. Can [Slony-I] scale
+    out in the same way? How does it work? I'd love to see someone who's had to
+    make a busy PostgreSQL-based site scale up to massive load tell us how it
+    was done.
 
-  <li><p>Something about an open-source JavaScript library project. I know that there are a number of them, each with its advantages and disadvantages. I'd love to see a successful, general repository for reusable, <a href="http://www.justatheory.com/computers/programming/javascript/test_simple-0.20.html" title="Test.Simple 0.20 Released">well-tested</a> JavaScript libraries. Me, as a Perl guy, I'm partial to the CPAN model, which has been enormously successful. Will <a href="http://www.openjsan.org/" title="JSAN">JSAN</a> have similar success?</p></li>
-</ul>
+-   Something about an open-source JavaScript library project. I know that there
+    are a number of them, each with its advantages and disadvantages. I'd love
+    to see a successful, general repository for reusable, [well-tested]
+    JavaScript libraries. Me, as a Perl guy, I'm partial to the CPAN model,
+    which has been enormously successful. Will [JSAN] have similar success?
 
-<p>I'm sure I'll think of others in the coming weeks. What ideas do you have? Post them below!</p>
+I'm sure I'll think of others in the coming weeks. What ideas do you have? Post
+them below!
+
+  [Call for Participation]: http://conferences.oreillynet.com/cs/os2006/create/e_sess/
+    "O'Reilly Open Source Convention - July - 24-28, 2006 - Portland, OR: Call For Participation"
+  [this presentation]: https://blog.flickr.com/flickrblog/2005/10/lamp.html
+    "Hardware Layouts for LAMP Installations"
+  [Slony-I]: http://slony.info/ "Slony-I—A replication system for PostgreSQL"
+  [well-tested]: http://www.justatheory.com/computers/programming/javascript/test_simple-0.20.html
+    "Test.Simple 0.20 Released"
+  [JSAN]: http://www.openjsan.org/ "JSAN"

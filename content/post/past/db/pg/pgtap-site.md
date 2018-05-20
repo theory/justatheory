@@ -8,57 +8,62 @@ tags: [Postgres, Test Anything Protocol, pgTAP, Perl, PpFoundry, YAPC, Module::B
 type: post
 ---
 
-<p>Two major announcements this week with regard to pgTAP:</p>
+Two major announcements this week with regard to pgTAP:
 
-<p>First, I've release <a href="http://pgfoundry.org/frs/?group_id=1000389" title="Download pgTAP">pgTAP 0.10</a>. The two major categories of changes are
+First, I've release [pgTAP 0.10]. The two major categories of changes are
 compatibility as far back as PostgreSQL 8.0 and new functions for testing
-database schemas. Here's a quick example:</p>
+database schemas. Here's a quick example:
 
-<pre>
-BEGIN;
-SELECT plan(7);
+    BEGIN;
+    SELECT plan(7);
 
-SELECT has_table( &#x0027;users&#x0027; );
-SELECT has_pk(&#x0027;users&#x0027;);
-SELECT col_is_fk( &#x0027;users&#x0027;, ARRAY[ &#x0027;family_name&#x0027;, &#x0027;given_name&#x0027; ]);
+    SELECT has_table( 'users' );
+    SELECT has_pk('users');
+    SELECT col_is_fk( 'users', ARRAY[ 'family_name', 'given_name' ]);
 
-SELECT has_table( &#x0027;widgets&#x0027; );
-SELECT has_pk( &#x0027;widgets&#x0027; );
-SLEECT col_is_pk( &#x0027;widgets&#x0027;, &#x0027;id&#x0027; );
-SELECT fk_ok(
-    &#x0027;widgets&#x0027;,
-    ARRAY[ &#x0027;user_family_name&#x0027;, &#x0027;user_given_name&#x0027; ],
-    &#x0027;users&#x0027;,
-    ARRAY[ &#x0027;family_name&#x0027;, &#x0027;given_name&#x0027; ],
-);
+    SELECT has_table( 'widgets' );
+    SELECT has_pk( 'widgets' );
+    SLEECT col_is_pk( 'widgets', 'id' );
+    SELECT fk_ok(
+        'widgets',
+        ARRAY[ 'user_family_name', 'user_given_name' ],
+        'users',
+        ARRAY[ 'family_name', 'given_name' ],
+    );
 
-SELECT * FROM finish();
-ROLLBACK;
-</pre>
+    SELECT * FROM finish();
+    ROLLBACK;
 
-<p>Pretty cool, right?
-Check <a href="http://pgtap.projects.postgresql.org/documentation.html" title="The complete pgTAP Documentation">the documentation</a> for all the
-details.</p>
+Pretty cool, right? Check [the documentation] for all the details.
 
-<p>Speaking of the documentation, that link goes to the
-new <a href="http://pgtap.projects.postgresql.org/" title="pgTAP Home">pgTAP Web site</a>. Not only does it include the complete documentation for pgTAP,
-but also instructions
-for <a href="http://pgtap.projects.postgresql.org/integration.html" title="Integrate pgTAP">integrating pgTAP</a> into your application's
-preferred test environment. Right now it includes detailed instructions for
-Perl + Module::Build and for PostgreSQL, but has only placeholders for PHP
-and Python. Send me the details on those languages or any others into which
-you integrate pgTAP tests and I'll update the page.</p>
+Speaking of the documentation, that link goes to the new [pgTAP Web site]. Not
+only does it include the complete documentation for pgTAP, but also instructions
+for [integrating pgTAP] into your application's preferred test environment.
+Right now it includes detailed instructions for Perl + Module::Build and for
+PostgreSQL, but has only placeholders for PHP and Python. Send me the details on
+those languages or any others into which you integrate pgTAP tests and I'll
+update the page.
 
-<p>Oh, and it has a beer. <a href="http://pgtap.projects.postgresql.org/" title="pgTAP">Enjoy</a>.</p>
+Oh, and it has a beer. [Enjoy].
 
-<p>I think I'll take a little time off from pgTAP next week to
-give <a href="http://bricolage.cc/" title="Bricolage">Bricolage</a> some
-much-needed love. But as I'll be given another talk on pgTAP
-at <a href="http://www.postgresqlconference.org/west08/talks/" title="Talks at PostgreSQL Conference West 2008">PostgreSQL Conference West</a> next month,
-worry not! I'll be doing a lot more with pgTAP in the coming weeks.</p>
+I think I'll take a little time off from pgTAP next week to give [Bricolage]
+some much-needed love. But as I'll be given another talk on pgTAP at [PostgreSQL
+Conference West] next month, worry not! I'll be doing a lot more with pgTAP in
+the coming weeks.
 
-<p>Oh, and one more thing: I'm looking for consulting work. Give me a shout
-(david - at - justatheory.com) if you have some PostgreSQL, Perl, Ruby, MySQL,
-or JavaScript hacking you'd like me to do. I'm free through November.</p>
+Oh, and one more thing: I'm looking for consulting work. Give me a shout (david
+- at - justatheory.com) if you have some PostgreSQL, Perl, Ruby, MySQL, or
+JavaScript hacking you'd like me to do. I'm free through November.
 
-<p>That is all.</p>
+That is all.
+
+  [pgTAP 0.10]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
+  [the documentation]: http://pgtap.projects.postgresql.org/documentation.html
+    "The complete pgTAP Documentation"
+  [pgTAP Web site]: http://pgtap.projects.postgresql.org/ "pgTAP Home"
+  [integrating pgTAP]: http://pgtap.projects.postgresql.org/integration.html
+    "Integrate pgTAP"
+  [Enjoy]: http://pgtap.projects.postgresql.org/ "pgTAP"
+  [Bricolage]: http://bricolage.cc/ "Bricolage"
+  [PostgreSQL Conference West]: http://www.postgresqlconference.org/west08/talks/
+    "Talks at PostgreSQL Conference West 2008"

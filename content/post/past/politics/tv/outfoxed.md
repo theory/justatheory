@@ -9,6 +9,14 @@ type: post
 
 <figure class="right"><a href="https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20" title="Buy &#x0201c;Outfoxed&#x0201d; from Amazon.com!"><img src="https://images-na.ssl-images-amazon.com/images/I/519MGXATKEL.jpg" alt="Outfoxed" /></a></figure>
 
-<p>I'm going to have to <a href="https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20" title="Buy &#x0201c;Outfoxed&#x0201d; from Amazon.com">order</a> the <q><a href="http:/outfoxed.org/" title="Outfoxed Website">Outfoxed</a></q> DVD and give it a look. It got a great <a href="http://www.nytimes.com/2004/07/20/movies/20OUTF.html?ex=1247976000;en=9f285ca5c831ad9f;ei=5090;partner=rssuserland">writeup</a> in the <cite>New York Times</cite>.</p>
+I'm going to have to [order] the “[Outfoxed]” DVD and give it a look. It got a
+great [writeup] in the *New York Times*.
 
-<p>(Via <a href="http://www.lessig.org/blog/archives/002041.shtml" title="Lawrence Lessig's Blog">Lessig Blog</a>)</p>
+(Via [Lessig Blog])
+
+  [order]: https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20
+    "Buy “Outfoxed” from Amazon.com"
+  [Outfoxed]: http:/outfoxed.org/ "Outfoxed Website"
+  [writeup]: http://www.nytimes.com/2004/07/20/movies/20OUTF.html?ex=1247976000;en=9f285ca5c831ad9f;ei=5090;partner=rssuserland
+  [Lessig Blog]: http://www.lessig.org/blog/archives/002041.shtml
+    "Lawrence Lessig's Blog"

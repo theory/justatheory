@@ -7,45 +7,41 @@ tags: [Tools, mail, Postfix, sendmail, Comcast]
 type: post
 ---
 
-<p>Since I moved to Comcast a while back, I have not received emails from this
-blog server telling me that comments have been left. This is a drag because
-spam comments can pile up for a while before I think to go looking for them
-and delete them. So today I took the time to figure out how to get Postfix to
-send mail through the Comcast server. Kudos
-to <a href="http://www.kclug.org/pipermail/kclug/2008-February/032558.html"
-title="Comcast and Postfix">Kclug mail list post</a> by “Lucas,” which
-explains the issue in very simple terms. The key is to tell Postfix to relay
-mail through the Comcast mail server on port 587 (which is the correct port
-for Comcast to use for their users to send mail) and to use your Comcast.net
-username and password to connect. So I put this in my <code>main.cf</code>:</p>
+Since I moved to Comcast a while back, I have not received emails from this blog
+server telling me that comments have been left. This is a drag because spam
+comments can pile up for a while before I think to go looking for them and
+delete them. So today I took the time to figure out how to get Postfix to send
+mail through the Comcast server. Kudos to [Kclug mail list post] by “Lucas,”
+which explains the issue in very simple terms. The key is to tell Postfix to
+relay mail through the Comcast mail server on port 587 (which is the correct
+port for Comcast to use for their users to send mail) and to use your
+Comcast.net username and password to connect. So I put this in my `main.cf`:
 
-<pre>
-relayhost = [smtp.comcast.net]:587
-smtp_sasl_auth_enable = yes
-smtp_sasl_password_maps = hash:/etc/postfix/sasl/passwd
-smtp_sasl_security_options =
-</pre>
+    relayhost = [smtp.comcast.net]:587
+    smtp_sasl_auth_enable = yes
+    smtp_sasl_password_maps = hash:/etc/postfix/sasl/passwd
+    smtp_sasl_security_options =
 
-<p>Then, following the instructions
-in <a href="http://freelock.com/kb/Postfix_relayhost" title="Postfix
-relayhost">this Freelock Knowledge Base article</a>, I put this in
-my <code>passwd</code> file:</p>
+Then, following the instructions in [this Freelock Knowledge Base article], I
+put this in my `passwd` file:
 
-<pre>
-smtp.comcast.net    myusername:some_password
-</pre>
+    smtp.comcast.net    myusername:some_password
 
-<p>I actually had to contact Comcast to get my username and password, since I
-had never used the Comast mail server or other services before. But they gave
-it to me without problem. Then I just ran this and was good to go:</p>
+I actually had to contact Comcast to get my username and password, since I had
+never used the Comast mail server or other services before. But they gave it to
+me without problem. Then I just ran this and was good to go:
 
-<pre>
-chown root:root /etc/postfix/sasl/passwd;
-chmod 600 /etc/postfix/sasl/passwd
-postmap /etc/postfix/sasl/passwd 
-postfix reload
-</pre>
+    chown root:root /etc/postfix/sasl/passwd;
+    chmod 600 /etc/postfix/sasl/passwd
+    postmap /etc/postfix/sasl/passwd 
+    postfix reload
 
-<p>And now maybe someone else will stumble upon this blog entry when they're
+And now maybe someone else will stumble upon this blog entry when they're
 Googling for a solution and get the help they need, too. No doubt I'll be
-looking for it again in a year or so, the way things go.</p>
+looking for it again in a year or so, the way things go.
+
+  [Kclug mail list post]: http://www.kclug.org/pipermail/kclug/2008-February/032558.html
+    "Comcast and Postfix"
+  [this Freelock Knowledge Base article]: http://freelock.com/kb/Postfix_relayhost
+    "Postfix
+    relayhost"

@@ -7,14 +7,16 @@ tags: [ETech, conferences]
 type: post
 ---
 
-<p>I'm at <a href="http://conferences.oreillynet.com/etech/" title="The
-Emerging Technology Conference home page">ETech</a>, where there have been
-some great presentations. But during his keynote this morning, Jon Udell
-momentarily had a problem where the window he was using was larger than his
-screen real estate. And this reminded me of one of my pet peeves.</p>
+I'm at [ETech], where there have been some great presentations. But during his
+keynote this morning, Jon Udell momentarily had a problem where the window he
+was using was larger than his screen real estate. And this reminded me of one of
+my pet peeves.
 
-<p><em>Why the hell do conference projectors <strong>still</strong> support a
-resolution of no more than 800 x 600?!</em> There is simply no excuse for
-this anymore--and there hasn't been for, what, a decade?</p>
+*Why the hell do conference projectors **still** support a resolution of no more
+than 800 x 600?!* There is simply no excuse for this anymore--and there hasn't
+been for, what, a decade?
 
-<p>That is all. Thank you.</p>
+That is all. Thank you.
+
+  [ETech]: http://conferences.oreillynet.com/etech/ "The
+    Emerging Technology Conference home page"

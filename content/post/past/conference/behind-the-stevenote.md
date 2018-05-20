@@ -7,6 +7,9 @@ tags: [Macworld, Apple, Steve Jobs, Keynote]
 type: post
 ---
 
-<p>Joy of Tech gives you: <a href="http://www.geekculture.com/joyoftech/joyarchives/772.html" title="What's really behind a Steve Jobs keynote.">What's really behind a Steve Jobs keynote.</a></p>
+Joy of Tech gives you: [What's really behind a Steve Jobs keynote.]
 
-<p>I think they nailed it.</p>
+I think they nailed it.
+
+  [What's really behind a Steve Jobs keynote.]: http://www.geekculture.com/joyoftech/joyarchives/772.html
+    "What's really behind a Steve Jobs keynote."

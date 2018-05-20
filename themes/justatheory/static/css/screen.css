@@ -276,6 +276,10 @@ main {
     text-align: right;
 }
 
+table .num {
+    text-align: right;
+}
+
 .pagination li {
     padding-left: 1em;
 }

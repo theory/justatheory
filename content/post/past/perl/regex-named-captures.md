@@ -7,124 +7,113 @@ tags: [Perl, Regular Expressions]
 type: post
 ---
 
-<p>I ran some Perl 5 regular expression syntax that I'd never seen the other
-day. It used two features I'd never seen before:</p>
+I ran some Perl 5 regular expression syntax that I'd never seen the other day.
+It used two features I'd never seen before:
 
-<ul>
-  <li><code>(?{ })</code>, a zero-width, non-capturing assertion that executes
-    arbitrary Perl code.</li>
-  <li><code>$^N</code>, a variable for getting the contents of the most recent
-    capture in a regular expression.</li>
-</ul>
+-   `(?{ })`, a zero-width, non-capturing assertion that executes arbitrary Perl
+    code.
+-   `$^N`, a variable for getting the contents of the most recent capture in a
+    regular expression.
 
-<p>The cool thing is that, used in combination, these two features can be used
-to hack named captures into Perl regular expressions. Here's an example:</p>
+The cool thing is that, used in combination, these two features can be used to
+hack named captures into Perl regular expressions. Here's an example:
 
-<pre>
-use warnings;
-use strict;
-use Data::Dumper;
+    use warnings;
+    use strict;
+    use Data::Dumper;
 
-my $string = &#x0027;The quick brown fox jumps over the lazy dog&#x0027;;
+    my $string = 'The quick brown fox jumps over the lazy dog';
 
-my %found;
+    my %found;
 
-my @captures = $string =~ /
-    (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
-    (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )
-    (?: (sloth|fox)  \s+    (?{ $found{animal} = $^N  }) )
-    (?: (eats|jumps)        (?{ $found{action} = $^N  }) )
-/xms;
+    my @captures = $string =~ /
+        (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
+        (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )
+        (?: (sloth|fox)  \s+    (?{ $found{animal} = $^N  }) )
+        (?: (eats|jumps)        (?{ $found{action} = $^N  }) )
+    /xms;
 
-print Dumper \@captures;
-print Dumper \%found;
-</pre>
+    print Dumper \@captures;
+    print Dumper \%found;
 
-<p>The output of running this program is:</p>
+The output of running this program is:
 
-<pre>
-$VAR1 = [
-          &#x0027;quick&#x0027;,
-          &#x0027;brown&#x0027;,
-          &#x0027;fox&#x0027;,
-          &#x0027;jumps&#x0027;
-        ];
-$VAR1 = {
-          &#x0027;color&#x0027; =&gt; &#x0027;brown&#x0027;,
-          &#x0027;speed&#x0027; =&gt; &#x0027;quick&#x0027;,
-          &#x0027;action&#x0027; =&gt; &#x0027;jumps&#x0027;,
-          &#x0027;animal&#x0027; =&gt; &#x0027;fox&#x0027;
-        };
-</pre>
+    $VAR1 = [
+              'quick',
+              'brown',
+              'fox',
+              'jumps'
+            ];
+    $VAR1 = {
+              'color' => 'brown',
+              'speed' => 'quick',
+              'action' => 'jumps',
+              'animal' => 'fox'
+            };
 
-<p>So the positional captures are still returned, <em>and</em> we've assigned
-them to keys in a hash. This can be very convenient for complex regular
-expressions.</p>
+So the positional captures are still returned, *and* we've assigned them to keys
+in a hash. This can be very convenient for complex regular expressions.
 
-<p>This is a cool feature, but there are a few caveats. First, according to
-the Perl regular expression
-<a href="http://search.cpan.org/perldoc/perlre#(?{_code_})" title="Read about (?{ }) on CPAN">documentation</a>, <code>(?{ })</code> is a highly
-experimental feature that could go away at any time. But more importantly, if
-you're relying on this feature you should be aware of the side effects. What I
-mean by that is that, if a regular expression match fails, but there are some
-successful matches during execution, then the code in the <code>(?{ })</code>
-assertions could still execute. For example, if you changed the
-word <q>jumps</q> to <q>poops</q> in the above example, the output becomes:</p>
+This is a cool feature, but there are a few caveats. First, according to the
+Perl regular expression [documentation], `(?{ })` is a highly experimental
+feature that could go away at any time. But more importantly, if you're relying
+on this feature you should be aware of the side effects. What I mean by that is
+that, if a regular expression match fails, but there are some successful matches
+during execution, then the code in the `(?{ })` assertions could still execute.
+For example, if you changed the word “jumps” to “poops” in the above example,
+the output becomes:
 
-<pre>
-$VAR1 = [];
-$VAR1 = {
-          &#x0027;color&#x0027; =&gt; &#x0027;brown&#x0027;,
-          &#x0027;speed&#x0027; =&gt; &#x0027;quick&#x0027;,
-          &#x0027;animal&#x0027; =&gt; &#x0027;fox&#x0027;
-        };
-</pre>
+    $VAR1 = [];
+    $VAR1 = {
+              'color' => 'brown',
+              'speed' => 'quick',
+              'animal' => 'fox'
+            };
 
-<p>Which means that the match failed, but there were still assignments to our
-hash, because some of the captures succeeded before the overall match failed.
-The upshot is that you should always check the return value from the match
-before relying on whatever the code inside the <code>(?{ })</code> assertions
-did.</p>
+Which means that the match failed, but there were still assignments to our hash,
+because some of the captures succeeded before the overall match failed. The
+upshot is that you should always check the return value from the match before
+relying on whatever the code inside the `(?{ })` assertions did.
 
-<p>The problem becomes even more subtle if your regular expressions trigger
-backtracking. In that case, you might have an optional group match and its
-value assigned to the hash, and then the next required group fail. Perl will
-then backtrack to throw out the successful group match and then see if the
-next required match succeeds. If so, you can have a successful match and
-potentially invalid data in your hash. Here's an example:</p>
+The problem becomes even more subtle if your regular expressions trigger
+backtracking. In that case, you might have an optional group match and its value
+assigned to the hash, and then the next required group fail. Perl will then
+backtrack to throw out the successful group match and then see if the next
+required match succeeds. If so, you can have a successful match and potentially
+invalid data in your hash. Here's an example:
 
-<pre>
-my @captures = $string =~ /
-    (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
-    (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )?
-    (?: (brown\s+fox)       (?{ $found{animal} = $^N  }) )
-/xms;
+    my @captures = $string =~ /
+        (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
+        (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )?
+        (?: (brown\s+fox)       (?{ $found{animal} = $^N  }) )
+    /xms;
 
-print Dumper \@captures;
-print Dumper \%found;
-</pre>
+    print Dumper \@captures;
+    print Dumper \%found;
 
-<p>And the output is:</p>
+And the output is:
 
-<pre>
-$VAR1 = [
-          &#x0027;quick&#x0027;,
-          undef,
-          &#x0027;brown fox&#x0027;
-        ];
-$VAR1 = {
-          &#x0027;color&#x0027; =&gt; &#x0027;brown&#x0027;,
-          &#x0027;speed&#x0027; =&gt; &#x0027;quick&#x0027;,
-          &#x0027;animal&#x0027; =&gt; &#x0027;brown fox&#x0027;
-        };
-</pre>
+    $VAR1 = [
+              'quick',
+              undef,
+              'brown fox'
+            ];
+    $VAR1 = {
+              'color' => 'brown',
+              'speed' => 'quick',
+              'animal' => 'brown fox'
+            };
 
-<p>So while the second group returned <code>undef</code> for the color
-capture, the <code>%found</code>hash still had the color key in it. This may
-or may not be what you want.</p>
+So while the second group returned `undef` for the color capture, the
+`%found`hash still had the color key in it. This may or may not be what you
+want.
 
-<p>Of course, all this seems cool, but since it's a truly evil hack, you have
-to be careful. If you can wait, though, perhaps we'll
-see <a
-href="http://www.nntp.perl.org/group/perl.perl5.porters/;msgid=9b18b3110610051158h43c58810ted1017129929a539[at]mail.gmail.com" title="Perl 5 Porters: &#x201c;[PATCH] Initial attempt at named captures for
-perls regexp engine&#x201d;">named captures in Perl 5.10</a>.</p>
+Of course, all this seems cool, but since it's a truly evil hack, you have to be
+careful. If you can wait, though, perhaps we'll see [named captures in Perl
+5.10].
+
+  [documentation]: http://search.cpan.org/perldoc/perlre#(?%7B_code_%7D)
+    "Read about (?{ }) on CPAN"
+  [named captures in Perl 5.10]: http://www.nntp.perl.org/group/perl.perl5.porters/;msgid=9b18b3110610051158h43c58810ted1017129929a539%5Bat%5Dmail.gmail.com
+    "Perl 5 Porters: “[PATCH] Initial attempt at named captures for
+    perls regexp engine”"

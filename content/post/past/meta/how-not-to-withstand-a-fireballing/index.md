@@ -9,16 +9,23 @@ type: post
 
 <figure><img src="/2012/04/how-not-to-withstand-a-fireballing/fireballed.png" alt="Fireballed!" title="Yeah, hovering along at 50-200 hits a day, and then, BAM!" /></figure>
 
-<ul>
-<li>Set up a simple <a href="http://blosxom.sourceforge.net/">Blosxom</a>-powered blog on the advice of a <a href="http://raelity.org/">friend who wrote it</a></li>
-<li>Never bother to make it anything other than a CGI script that crawls your file system on every request</li>
-<li>Add a bunch of plugins for various doodads and useless doohickies, also executing a bunch of crap on every request</li>
-<li>Put it on your eight year old Dell Dimension running Ubuntu Linux</li>
-<li>In your basement</li>
-<li>On your residential Comcast connection</li>
-<li>Let many years go by, giving it very little attention</li>
-<li>Write something interesting</li>
-<li>Laugh about your complete inability to connect to the box from work while <a href="http://daringfireball.net/linked/2012/03/29/conde-nast">Daring Fireball melts your connection</a></li>
-</ul>
+-   Set up a simple [Blosxom]-powered blog on the advice of a [friend who wrote
+    it]
+-   Never bother to make it anything other than a CGI script that crawls your
+    file system on every request
+-   Add a bunch of plugins for various doodads and useless doohickies, also
+    executing a bunch of crap on every request
+-   Put it on your eight year old Dell Dimension running Ubuntu Linux
+-   In your basement
+-   On your residential Comcast connection
+-   Let many years go by, giving it very little attention
+-   Write something interesting
+-   Laugh about your complete inability to connect to the box from work while
+    [Daring Fireball melts your connection]
 
-<p>I have more to say on the topic of iPad magazines, but I'm using the meager tuits I have to first make some infrastructural changes.</p>
+I have more to say on the topic of iPad magazines, but I'm using the meager
+tuits I have to first make some infrastructural changes.
+
+  [Blosxom]: http://blosxom.sourceforge.net/
+  [friend who wrote it]: http://raelity.org/
+  [Daring Fireball melts your connection]: http://daringfireball.net/linked/2012/03/29/conde-nast

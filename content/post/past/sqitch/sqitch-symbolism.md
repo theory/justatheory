@@ -7,58 +7,113 @@ tags: [Sqitch, SQL, change management, localization, internationalization]
 type: post
 ---
 
-<p>It has been a while since I <a href="/computers/databases/sqitch-depend-on-it.html">last blogged about Sqitch</a>. The silence is in part due to the fact that I’ve moved from full-time Sqitch development to actually putting it to use building databases at work. This is exciting, because it needs the real-world experience to grow up.</p>
+It has been a while since I [last blogged about Sqitch]. The silence is in part
+due to the fact that I’ve moved from full-time Sqitch development to actually
+putting it to use building databases at work. This is exciting, because it needs
+the real-world experience to grow up.
 
-<p>That’s not to say that nothing has happened with Sqitch. I’ve just released <a href="https://metacpan.org/release/DWHEELER/App-Sqitch-0.931/">v0.931</a> which includes a bunch of improvement since I wrote about v0.90. First a couple of the minor things:</p>
+That’s not to say that nothing has happened with Sqitch. I’ve just released
+[v0.931] which includes a bunch of improvement since I wrote about v0.90. First
+a couple of the minor things:
 
-<ul>
-<li>Sqitch now checks dependencies before reverting, and dies if they would be broken by the revert. This change, introduced in v0.91, required that the dependencies be moved to their own table, so if you’ve been messing with an earlier version of Sqitch, you’ll have to rebuild the database. Sorry about that.</li>
-<li>I fixed a bunch of Windows-related issues, including finding the current user’s full name, correctly setting the locale for displaying dates and times, executing shell commands, and passing tests. The awesome <a href="http://code.activestate.com/ppm/App-Sqitch/">ActiveState PPM Index</a> has been invaluable in tracking these issues down.</li>
-<li>Added the <a href="https://metacpan.org/module/sqitch-bundle"><code>bundle</code> command</a>. All it does is copy your project configuration file, plan, and deploy, revert, and test scripts to a directory you identify. The purpose is to be able to export the project into a directory structure suitable for distribution in a tarball, RPM, or whatever. That my not sound incredibly useful, since copying files is no big deal. However, the long-term plan is to add VCS support to Sqitch, which would entail fetching scripts from various places in VCS history. At that point, it will be essential to use <code>bundle</code> to do the export, so that scripts are properly exported from the VCS history. That said, I’m actually using it already to build RPMs. Useful already!</li>
-</ul>
+-   Sqitch now checks dependencies before reverting, and dies if they would be
+    broken by the revert. This change, introduced in v0.91, required that the
+    dependencies be moved to their own table, so if you’ve been messing with an
+    earlier version of Sqitch, you’ll have to rebuild the database. Sorry about
+    that.
+-   I fixed a bunch of Windows-related issues, including finding the current
+    user’s full name, correctly setting the locale for displaying dates and
+    times, executing shell commands, and passing tests. The awesome [ActiveState
+    PPM Index] has been invaluable in tracking these issues down.
+-   Added the [`bundle` command]. All it does is copy your project configuration
+    file, plan, and deploy, revert, and test scripts to a directory you
+    identify. The purpose is to be able to export the project into a directory
+    structure suitable for distribution in a tarball, RPM, or whatever. That my
+    not sound incredibly useful, since copying files is no big deal. However,
+    the long-term plan is to add VCS support to Sqitch, which would entail
+    fetching scripts from various places in VCS history. At that point, it will
+    be essential to use `bundle` to do the export, so that scripts are properly
+    exported from the VCS history. That said, I’m actually using it already to
+    build RPMs. Useful already!
 
+### Symbolic References
 
-<h3>Symbolic References</h3>
+And now the more immediately useful changes. First, I added new symbolic tags,
+`@FIRST` and `@LAST`. These represent the first and last changes currently
+deployed to a database, respectively. These complement the existing `@ROOT` and
+`@HEAD` symbolic tags, which represent the first and last changes listed in the
+*plan.* The distinction is important: The change plan vs actual deployments to a
+database.
 
-<p>And now the more immediately useful changes. First, I added new symbolic tags,  <code>@FIRST</code> and <code>@LAST</code>. These represent the first and last changes currently deployed to a database, respectively. These complement the existing <code>@ROOT</code> and <code>@HEAD</code> symbolic tags, which represent the first and last changes listed in the <em>plan.</em> The distinction is important: The change plan vs actual deployments to a database.</p>
+The addition of `@FIRST` and `@LAST` may not sounds like much, but there’s more.
 
-<p>The addition of <code>@FIRST</code> and <code>@LAST</code> may not sounds like much, but there’s more.</p>
+I also added forward and reverse change reference modifiers `^` and `~`. The
+basic idea was stolen from [Git Revisions], though the semantics vary. For
+[Sqitch changes], `^` appended to a name or tag means “the change before this
+change,” while `~` means “the change after this change”. I find `^` most useful
+when doing development, where I’m constantly deploying and reverting a change as
+I work. Here’s how I do that revert:
 
-<p>I also added forward and reverse change reference modifiers <code>^</code> and <code>~</code>. The basic idea was stolen from <a href="http://git-scm.com/docs/gitrevisions">Git Revisions</a>, though the semantics vary. For <a href="https://metacpan.org/module/sqitchchanges">Sqitch changes</a>, <code>^</code> appended to a name or tag means “the change before this change,” while <code>~</code> means “the change after this change”. I find <code>^</code> most useful when doing development, where I’m constantly deploying and reverting a change as I work. Here’s how I do that revert:</p>
+    sqitch revert --to @LAST^
 
-<pre><code>sqitch revert --to @LAST^
-</code></pre>
+That means “revert to the change before the last change”, or simply “revert the
+last change”. If I want to revert two changes, I use two `^`s:
 
-<p>That means “revert to the change before the last change”, or simply “revert the last change”. If I want to revert two changes, I use two <code>^</code>s:</p>
+    sqitch revert --to @LAST^^
 
-<pre><code>sqitch revert --to @LAST^^
-</code></pre>
+To go back any further, I need to use an integer with the `^`. Here’s how to
+revert the last four changes deployed to the database:
 
-<p>To go back any further, I need to use an integer with the <code>^</code>. Here’s how to revert the last four changes deployed to the database:</p>
+    sqitch revert --to @LAST^4
 
-<pre><code>sqitch revert --to @LAST^4
-</code></pre>
+The cool thing about this is that I don’t have to remember the name of the
+change to revert, as was previously required. And of course, if I just wanted to
+deploy two changes since the last deployment, I would use `~~`:
 
-<p>The cool thing about this is that I don’t have to remember the name of the change to revert, as was previously required. And of course, if I just wanted to deploy two changes since the last deployment, I would use <code>~~</code>:</p>
+    sqitch deploy --to @LAST~~
 
-<pre><code>sqitch deploy --to @LAST~~
-</code></pre>
+Nice, right? One thing to bear in mind, as I was reminded while giving a [Sqitch
+presentation] to [PDXPUG][]: Changes are deployed in a sequence. You can think
+of them as a linked list. So this command:
 
-<p>Nice, right? One thing to bear in mind, as I was reminded while giving a <a href="https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch">Sqitch presentation</a> to <a href="http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/">PDXPUG</a>: Changes are deployed in a sequence. You can think of them as a linked list. So this command:</p>
+    sqitch revert @LAST^^
 
-<pre><code>sqitch revert @LAST^^
-</code></pre>
+Does *not* mean to revert the second-to-last change, leaving the two after it.
+It will revert the last change *and* the penultimate change. This is why I
+actually encourage the use of the `--to` option, to emphasize that you’re
+deploying or reverting all changes *to* the named point, rather than deploying
+or reverting the named point in isolation. Sqitch simply doesn’t do that.
 
-<p>Does <em>not</em> mean to revert the second-to-last change, leaving the two after it. It will revert the last change <em>and</em> the penultimate change. This is why I actually encourage the use of the <code>--to</code> option, to emphasize that you’re deploying or reverting all changes <em>to</em> the named point, rather than deploying or reverting the named point in isolation. Sqitch simply doesn’t do that.</p>
+### Internationalize Me
 
-<h3>Internationalize Me</h3>
+One more change. With today’s release of v0.931, there is now proper
+internationalization support in Sqitch. The code has been localized for a long
+time, but there was no infrastructure for internationalizing. Now there is, and
+I’ve stubbed out files for translating Sqitch messages into [French] and
+[German]. Adding others is easy.
 
-<p>One more change. With today’s release of v0.931, there is now proper internationalization support in Sqitch. The code has been localized for a long time, but there was no infrastructure for internationalizing. Now there is, and I’ve stubbed out files for translating Sqitch messages into <a href="https://github.com/theory/sqitch/blob/master/po/fr.po">French</a> and <a href="https://github.com/theory/sqitch/blob/master/po/de.po">German</a>. Adding others is easy.</p>
+If you’re interested in translating Sqitch’s messages (only 163 of them, should
+be quick!), just [fork Sqitch], juice up your favorite [gettext editor], and
+start editing. Let me know if you need a language file generated; I’ve built the
+tools to do it easily with [dzil], but haven’t released them yet. Look for a
+post about that later in the week.
 
-<p>If you’re interested in translating Sqitch’s messages (only 163 of them, should be quick!), just <a href="https://github.com/theory/sqitch/">fork Sqitch</a>, juice up your favorite <a href="http://www.google.com/search?q=gettext+editor">gettext editor</a>, and start editing. Let me know if you need a language file generated; I’ve built the tools to do it easily with <a href="http://dzil.org/">dzil</a>, but haven’t released them yet. Look for a post about that later in the week.</p>
+### Presentation
 
-<h3>Presentation</h3>
-
-<p>Oh, and that <a href="http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/">PDXPUG presentation</a>? Here are the slides. Enjoy!</p>
+Oh, and that [PDXPUG presentation][PDXPUG]? Here are the slides. Enjoy!
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/14459486" width="676" height="551" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
+
+  [last blogged about Sqitch]: /computers/databases/sqitch-depend-on-it.html
+  [v0.931]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.931/
+  [ActiveState PPM Index]: http://code.activestate.com/ppm/App-Sqitch/
+  [`bundle` command]: https://metacpan.org/module/sqitch-bundle
+  [Git Revisions]: http://git-scm.com/docs/gitrevisions
+  [Sqitch changes]: https://metacpan.org/module/sqitchchanges
+  [Sqitch presentation]: https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch
+  [PDXPUG]: http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/
+  [French]: https://github.com/theory/sqitch/blob/master/po/fr.po
+  [German]: https://github.com/theory/sqitch/blob/master/po/de.po
+  [fork Sqitch]: https://github.com/theory/sqitch/
+  [gettext editor]: http://www.google.com/search?q=gettext+editor
+  [dzil]: http://dzil.org/

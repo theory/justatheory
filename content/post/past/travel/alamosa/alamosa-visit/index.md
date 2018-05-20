@@ -7,32 +7,35 @@ tags: [Alamosa, Colorado, Kineticode, consulting, business, Adams State College,
 type: post
 ---
 
-<img src="/2004/06/alamosa-visit/milagros_coffeehouse.jpg" alt="Milagro's Coffeehouse" class="right" />
+<img src="/2004/06/alamosa-visit/milagros_coffeehouse.jpg" alt="Milagro&#39;s Coffeehouse" class="right" />
 
-<p>Last week, I went on a brief business trip for <a
-href="http://www.kineticode.com/" title="Kineticode Web site">Kineticode</a>
-to Alamosa, Colorado. The client was <a href="http://www.adams.edu/"
-title="Adams State College Web site">Adams State College</a>, which is
-planning to use Bricolage to manage all of its content. Alamosa is a sleepy
-little town of 8,000 people 22 miles north of the border with New Mexico,
-situated in the largest valley in the world, I'm told. You can get any kind of
-food you want there, as long as it's Mexican food, and the high altitude
-(ca. 2300 m) makes the tequila work wonders on one's equilibrium.</p>
+Last week, I went on a brief business trip for [Kineticode] to Alamosa,
+Colorado. The client was [Adams State College], which is planning to use
+Bricolage to manage all of its content. Alamosa is a sleepy little town of 8,000
+people 22 miles north of the border with New Mexico, situated in the largest
+valley in the world, I'm told. You can get any kind of food you want there, as
+long as it's Mexican food, and the high altitude (ca. 2300 m) makes the tequila
+work wonders on one's equilibrium.
 
-<p>Mostly I just worked with our clients, but I did manage to take a couple of
-photos, but I did manage to get a couple of photographs with my <a
-href="https://www.amazon.com/exec/obidos/redirect?tag=justatheory-20&path=tg/detail/-/B00022NE6I/qid%3D1088445154/sr%3D8-4"
-title="Buy the Nokia 6600 at Amazon.com">Nokia 6600</a>. The <q>cool</q> coffeehouse in Alamosa is <a
-href="http://www.lapuente.net/programs/milagros.htm" title="Milagro's
-Coffeehouse home page">Milagro's Coffeehouse</a>, but to judge by their sign,
-I wasn't sure I wanted what they were selling.</p>
+Mostly I just worked with our clients, but I did manage to take a couple of
+photos, but I did manage to get a couple of photographs with my [Nokia 6600].
+The “cool” coffeehouse in Alamosa is [Milagro's Coffeehouse], but to judge by
+their sign, I wasn't sure I wanted what they were selling.
 
 <img src="/2004/06/alamosa-visit/prop_engine.jpg" alt="The flight home" class="left" />
 
-<p>Alamosa has a very small airport. When I flew in on the little prop plane
-from Great Lakes Airlines, I was one of two passengers. On the way out (I flew
-through Denver), there were five of us. I thought the engine looked cool out
-my window, so I turned on my phone (bad David!) and snapped another shot.</p>
+Alamosa has a very small airport. When I flew in on the little prop plane from
+Great Lakes Airlines, I was one of two passengers. On the way out (I flew
+through Denver), there were five of us. I thought the engine looked cool out my
+window, so I turned on my phone (bad David!) and snapped another shot.
 
-<p>Looks like I might be returning to Alamosa soon to do some training. Maybe I'll be
-able to get some more pictures; the sunsets are quite lovely there.</p>
+Looks like I might be returning to Alamosa soon to do some training. Maybe I'll
+be able to get some more pictures; the sunsets are quite lovely there.
+
+  [Kineticode]: http://www.kineticode.com/ "Kineticode Web site"
+  [Adams State College]: http://www.adams.edu/ "Adams State College Web site"
+  [Nokia 6600]: https://www.amazon.com/exec/obidos/redirect?tag=justatheory-20&path=tg/detail/-/B00022NE6I/qid%3D1088445154/sr%3D8-4
+    "Buy the Nokia 6600 at Amazon.com"
+  [Milagro's Coffeehouse]: http://www.lapuente.net/programs/milagros.htm
+    "Milagro's
+    Coffeehouse home page"

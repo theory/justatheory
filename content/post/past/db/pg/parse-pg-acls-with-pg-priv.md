@@ -7,73 +7,68 @@ tags: [Postgres, ACLs, Etsy, Perl, Pg::Priv]
 type: post
 ---
 
-<p>Earlier this year, I was working on an administrative utility for
-<a href="http://www.etsy.com/">Etsy</a> that validates PostgreSQL database
-permissions. Of course, in order to verify that permissions were correct or
-needed updating, I had to have a way to examine PostgreSQL ACLs, which are
-arrays made of of strings that look like this:</p>
+Earlier this year, I was working on an administrative utility for [Etsy] that
+validates PostgreSQL database permissions. Of course, in order to verify that
+permissions were correct or needed updating, I had to have a way to examine
+PostgreSQL ACLs, which are arrays made of of strings that look like this:
 
-<pre><code>my $acl = [
-   'miriam=arwdDxt/miriam',
-   '=r/miriam',
-   'admin=arw/miriam',
-];
-</code></pre>
+    my $acl = [
+       'miriam=arwdDxt/miriam',
+       '=r/miriam',
+       'admin=arw/miriam',
+    ];
 
-<p>So following
-<a href="http://www.postgresql.org/docs/current/static/sql-grant.html#SQL-GRANT-NOTES"
-title="PostgreSQL: “GRANT — Notes”">the documentation</a>, I wrote a module
-that iterates over an ACL, parses each privilege string, and returns an object
-describing it. Using it is pretty easy. If you wanted to see what the
-permissions looked like on all the tables in a database, you could do it like
-so:</p>
+So following [the documentation], I wrote a module that iterates over an ACL,
+parses each privilege string, and returns an object describing it. Using it is
+pretty easy. If you wanted to see what the permissions looked like on all the
+tables in a database, you could do it like so:
 
-<pre>
-#!/usr/bin/perl -w
-use strict;
-use warnings;
-use DBI;
-use Pg::Priv;
+    #!/usr/bin/perl -w
+    use strict;
+    use warnings;
+    use DBI;
+    use Pg::Priv;
 
-my $dbname = shift or die &quot;Usage: $0 dbname\n&quot;;
+    my $dbname = shift or die "Usage: $0 dbname\n";
 
-my $dbh = DBI-&gt;connect(&quot;dbi:Pg:dbname=$dbname&quot;, &#x0027;postgres&#x0027;, &#x0027;&#x0027;);
-my $sth = $dbh-&gt;prepare(
-    q{SELECT relname, relacl FROM pg_class WHERE relkind = &#x0027;r&#x0027;}
-);
+    my $dbh = DBI->connect("dbi:Pg:dbname=$dbname", 'postgres', '');
+    my $sth = $dbh->prepare(
+        q{SELECT relname, relacl FROM pg_class WHERE relkind = 'r'}
+    );
 
-$sth-&gt;execute;
-print &quot;Permissions for $dbname:\n&quot;;
-while (my $row = $sth-&gt;fetchrow_hashref) {
-    print &quot;  Table $row-&gt;{relname}:\n&quot;;
-    for my $priv ( Pg::Priv-&gt;parse_acl( $row-&gt;{relacl} ) ) {
-        print &#x0027;    &#x0027;, $priv-&gt;by, &#x0027; granted to &#x0027;, $priv-&gt;to, &#x0027;: &#x0027;,
-            join( &#x0027;, &#x0027;, $priv-&gt;labels ), $/;
+    $sth->execute;
+    print "Permissions for $dbname:\n";
+    while (my $row = $sth->fetchrow_hashref) {
+        print "  Table $row->{relname}:\n";
+        for my $priv ( Pg::Priv->parse_acl( $row->{relacl} ) ) {
+            print '    ', $priv->by, ' granted to ', $priv->to, ': ',
+                join( ', ', $priv->labels ), $/;
+        }
     }
-}
-</pre>
 
-<p>And here's what the output looks like:</p>
+And here's what the output looks like:
 
-<pre>
-Permissions for bric:
-  Table media__output_channel:
-    postgres granted to postgres: UPDATE, SELECT, INSERT, TRUNCATE, REFERENCE, DELETE, TRIGGER
-    postgres granted to bric: UPDATE, SELECT, INSERT, DELETE
-  Table media_uri:
-    postgres granted to postgres: UPDATE, SELECT, INSERT, TRUNCATE, REFERENCE, DELETE, TRIGGER
-    postgres granted to bric: UPDATE, SELECT, INSERT, DELETE
-  Table media_fields:
-    postgres granted to postgres: UPDATE, SELECT, INSERT, TRUNCATE, REFERENCE, DELETE, TRIGGER
-</pre>
+    Permissions for bric:
+      Table media__output_channel:
+        postgres granted to postgres: UPDATE, SELECT, INSERT, TRUNCATE, REFERENCE, DELETE, TRIGGER
+        postgres granted to bric: UPDATE, SELECT, INSERT, DELETE
+      Table media_uri:
+        postgres granted to postgres: UPDATE, SELECT, INSERT, TRUNCATE, REFERENCE, DELETE, TRIGGER
+        postgres granted to bric: UPDATE, SELECT, INSERT, DELETE
+      Table media_fields:
+        postgres granted to postgres: UPDATE, SELECT, INSERT, TRUNCATE, REFERENCE, DELETE, TRIGGER
 
-<p>There are a bunch of utility methods to make it pretty simple to examine
-PostgreSQL privileges.</p>
+There are a bunch of utility methods to make it pretty simple to examine
+PostgreSQL privileges.
 
-<p>And now, I'm pleased to announce the release yesterday of
-<a href="http://search.cpan.org/perldoc?Pg::Priv" title="Pg::Priv on CPAN">Pg::Priv</a>.
-My thanks to Etsy for agreeing to the release, and particularly to
-<a href="http://chaddickerson.com/">Chad Dickerson</a> for championing it. This
-module is a little thing compared to some things I've seen open-sourced by major
-players, but even the simplest utilities can save folks mountains of time. I
-hope you find Pg::Priv useful.</p>
+And now, I'm pleased to announce the release yesterday of [Pg::Priv]. My thanks
+to Etsy for agreeing to the release, and particularly to [Chad Dickerson] for
+championing it. This module is a little thing compared to some things I've seen
+open-sourced by major players, but even the simplest utilities can save folks
+mountains of time. I hope you find Pg::Priv useful.
+
+  [Etsy]: http://www.etsy.com/
+  [the documentation]: http://www.postgresql.org/docs/current/static/sql-grant.html#SQL-GRANT-NOTES
+    "PostgreSQL: “GRANT — Notes”"
+  [Pg::Priv]: http://search.cpan.org/perldoc?Pg::Priv "Pg::Priv on CPAN"
+  [Chad Dickerson]: http://chaddickerson.com/

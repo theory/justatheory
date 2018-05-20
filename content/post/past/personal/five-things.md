@@ -118,7 +118,7 @@ Which leads me to…
 
 ### 4. Anna
 
-![Anna Flies]
+![Anna Flies](https://farm1.static.flickr.com/67/202287377_402f407e8e.jpg)
 
 Just a few months after our move to Portland, Julie got pregnant, and our
 daughter, Anna was born on May 13, 2005. She's nearly two now, and she's the
@@ -165,7 +165,6 @@ I now tag:
   [Tel Dor]: http://micro5.mscc.huji.ac.il/~dor/ "The Tel Dor Project"
   [California State University, Sacramento]: http://www.csus.edu/
   [University of Virginia]: http://www.virginia.edu/
-  [Anna Flies]: https://farm1.static.flickr.com/67/202287377_402f407e8e.jpg?v=0
   [Values of n]: http://www.valuesofn.com/
   [Rael Dornfest]: http://www.raelity.org/
   [Stikkit]: http://www.stikkit.com

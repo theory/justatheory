@@ -53,11 +53,11 @@ At any rate, here's the step-by-step for Xcode 4.2:
 
     You should end up with something like this:
 
-    ![Configurations]
+    ![Configurations](/2011/12/integrate-testflight-sdk/configurations.png)
 
 -   Create configuration macros:
 
-    ![Configurations][1]
+    ![Configurations](/2011/12/integrate-testflight-sdk/config_config.png)
 
     -   Still in the project settings, go to the "Build Settings" tab.
     -   Search for "preprocessor macros".
@@ -67,7 +67,7 @@ At any rate, here's the step-by-step for Xcode 4.2:
     You should end up with a window like the above. Once you close it, you
     should see the macros names for each individual configuration, shown here:
 
-    ![Configurations][2]
+    ![Configurations](/2011/12/integrate-testflight-sdk/configs.png)
 
 -   Add the `EXCLUDED_SOURCE_FILE_NAMES` build setting.
 
@@ -81,7 +81,7 @@ At any rate, here's the step-by-step for Xcode 4.2:
     You should end up with the value `*libTestFlight.a` only for the "Release"
     configuration, as shown here:
 
-    ![Configurations][3]
+    ![Configurations](/2011/12/integrate-testflight-sdk/excluded_source_file_names.png)
 
 -   Go ahead and use the TestFlight SDK:
 
@@ -107,8 +107,4 @@ details. Then, get your beta on!
   [`EXCLUDED_SOURCE_FILE_NAMES` setting]: http://lists.apple.com/archives/xcode-users/2009/Jun/msg00153.html
   [reasonably well known]: http://www.google.com/?q=EXCLUDED_SOURCE_FILE_NAMES
   [Download the TestFlight SDK]: https://testflightapp.com/sdk/download/
-  [Configurations]: /2011/12/integrate-testflight-sdk/configurations.png
-  [1]: /2011/12/integrate-testflight-sdk/config_config.png
-  [2]: /2011/12/integrate-testflight-sdk/configs.png
-  [3]: /2011/12/integrate-testflight-sdk/excluded_source_file_names.png
   [complete SDK docs]: https://testflightapp.com/sdk/doc/

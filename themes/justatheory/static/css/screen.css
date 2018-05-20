@@ -955,7 +955,7 @@ body > footer ul li:last-child {
 }
 
 /* hugo gen chromastyles --style=monokai >> themes/justatheory/static/css/screen.css */
-/* Background */ pre, .chroma { color: #f8f8f2; background-color: #333 } /* Modified to add pre and match header background */
+/* Background */ pre, .chroma, pre code { color: #f8f8f2; background-color: #333 } /* Modified to add pre and pre code and to match header background */
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }

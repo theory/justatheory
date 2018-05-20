@@ -202,7 +202,7 @@ there for updates. And your feedback would be appreciated! What other issues
 have I overlooked? What have I got wrong? Let me know!
 
 [^db-uri:surprise]: As in not surprised at all. Though I was hoping!
-[^db-uri:dsn]: DSNs for Perl's [DBI](https://metacpan.org/module/DBI "MetaCPAN: DBI") aren't much better: `dbi:<driver>:<driver-specific-stuff>`.
+[^db-uri:dsn]: DSNs for Perl's [DBI] aren't much better: `dbi:<driver>:<driver-specific-stuff>`.
 
 [Sqitch]: http://sqitch.org/ "Sane database change management"
 [specifying deployment targets via URIs]: https://github.com/theory/sqitch/issues/100 "Issue #100: “Add target command to configure target databases”"
@@ -226,3 +226,4 @@ have I overlooked? What have I got wrong? Let me know!
 [Informix]: https://metacpan.org/pod/DBD::Informix#INFORMIX-CONNECTION-SEMANTICS "MetaCPAN: “Informix Connection Semantics”"
 [URI::db]: https://github.com/theory/uri-db/blob/master/lib/URI/db.pm "URI::db on GitHub"
 [uri-db project]: https://github.com/theory/uri-db/ "uri-db on GitHub"
+[DBI]: https://metacpan.org/module/DBI "MetaCPAN: DBI"

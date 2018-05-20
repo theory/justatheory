@@ -120,6 +120,7 @@ proper exception handling to the core Perl language, including exception
 objects and an official `try`/`catch` syntax.
 
 [^try-fix]: In fairness much of the `$@` pain has been addressed [in Perl 5.14].
+
 [Try::Tiny]: https://metacpan.org/module/Try::Tiny
 [checking return values]: http://stackoverflow.com/a/10366209/79202
 [Exception::Class]: https://metacpan.org/module/Exception::Class

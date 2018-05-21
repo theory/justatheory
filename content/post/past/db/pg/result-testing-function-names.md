@@ -1,6 +1,6 @@
 --- 
 date: 2009-06-08T00:06:26Z
-slug: result-testing-function-names
+slug: pgtap-result-testing-function-names
 title: Need Help Naming Result Set Testing Functions
 aliases: [/computers/databases/postgresql/result-testing-function-names.html]
 tags: [Postgres, SQL, pgTAP, testing, unit testing]

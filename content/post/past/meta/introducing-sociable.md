@@ -3,7 +3,7 @@ date: 2009-03-03T21:29:54Z
 slug: introducing-sociable
 title: Sociable Plugin for Blosxom
 aliases: [/computers/internet/weblogs/blosxom/sociable/introducing-sociable.html]
-Tags: [Just a Theory, Blosxom, plugins, Sociable, WordPress, social networworking, bookmarks, bookmarking, Digg, Delicious, Facebook, Twitter, Reddit, LinkedIn, StumbleUpon]
+Tags: [Just a Theory, Blosxom, Sociable, Social Networking]
 type: post
 ---
 

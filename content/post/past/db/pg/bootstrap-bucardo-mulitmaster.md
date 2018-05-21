@@ -18,45 +18,59 @@ First, let’s set up some environment variables to simplify things a bit. I’m
 assuming that the database names and usernames are the same, and only the host
 names are different:
 
-    export PGDATABASE=widgets
-    export PGHOST=here.example.com
-    export PGHOST2=there.example.com
-    export PGSUPERUSER=postgres
+``` bash
+export PGDATABASE=widgets
+export PGHOST=here.example.com
+export PGHOST2=there.example.com
+export PGSUPERUSER=postgres
+```
 
 And here are some environment variables we’ll use for Bucardo configuration
 stuff:
 
-    export BUCARDOUSER=bucardo
-    export BUCARDOPASS=*****
-    export HERE=here
-    export THERE=there
+``` bash
+export BUCARDOUSER=bucardo
+export BUCARDOPASS=*****
+export HERE=here
+export THERE=there
+```
 
 First, let’s create the new database as a schema-only copy of the existing
 database:
 
-    createdb -U $PGSUPERUSER -h $PGHOST2 $PGDATABASE
-    pg_dump -U $PGSUPERUSER -h $PGHOST --schema-only $PGDATABASE \
-    | psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
+``` bash
+createdb -U $PGSUPERUSER -h $PGHOST2 $PGDATABASE
+pg_dump -U $PGSUPERUSER -h $PGHOST --schema-only $PGDATABASE \
+ | psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
+```
 
 You might also have to copy over roles; use `pg_dumpall --globals-only` to do
 that.
 
 Next, we configure Bucardo. Start by telling it about the databases:
 
-    bucardo add db $HERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST user=$BUCARDOUSER pass=$BUCARDOPASS
-    bucardo add db $THERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST2 user=$BUCARDOUSER pass=$BUCARDOPASS
+``` bash
+bucardo add db $HERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST user=$BUCARDOUSER pass=$BUCARDOPASS
+bucardo add db $THERE$PGDATABASE dbname=$PGDATABASE host=$PGHOST2 user=$BUCARDOUSER pass=$BUCARDOPASS
+```
 
 Tell it about all the tables we want to replicate:
 
-    bucardo add table public.foo public.bar relgroup=myrels db=$HERE$PGDATABASE 
+``` bash
+bucardo add table public.foo public.bar relgroup=myrels db=$HERE$PGDATABASE 
+```
 
 Create a multi-master database group for the two databases:
 
-    bucardo add dbgroup mydbs $HERE$PGDATABASE:source $THERE$PGDATABASE:source  
+``` bash
+bucardo add dbgroup mydbs $HERE$PGDATABASE:source $THERE$PGDATABASE:source
+```
 
 And create the sync:
 
-    bucardo add sync mysync relgroup=myrels dbs=mydbs autokick=0
+``` bash
+bucardo add sync mysync relgroup=myrels dbs=mydbs autokick=0
+```
 
 Note `autokick=0`. This ensures that, while deltas are logged, they will not be
 copied anywhere until we tell Bucardo to do so.
@@ -67,15 +81,19 @@ need to disable the Bucardo triggers on the target system, so that our copying
 does not try to queue up. We do that by setting the [`session_replication_role`
 GUC] to “replica” while doing the copy:
 
-    pg_dump -U $PGSUPERUSER -h $PGHOST --data-only -N bucardo $PGDATABASE \
-    | PGOPTIONS='-c session_replication_role=replica' \
-    psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
+``` bash
+pg_dump -U $PGSUPERUSER -h $PGHOST --data-only -N bucardo $PGDATABASE \
+  | PGOPTIONS='-c session_replication_role=replica' \
+  | psql -U $PGSUPERUSER -h $PGHOST2 -d $PGDATABASE
+```
 
 Great, now all the data is copied over, we can have Bucardo copy any changes
 that have been made in the interim, as well as any going forward:
 
-    bucardo update sync mysync autokick=1
-    bucardo reload config
+``` bash
+bucardo update sync mysync autokick=1
+bucardo reload config
+```
 
 Bucardo will fire up the necessary syncs and copy over any interim deltas. And
 any changes you make to either system in the future will be copied to the other.

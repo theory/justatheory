@@ -1,6 +1,6 @@
 --- 
 date: 2006-01-04T22:30:44Z
-slug: call-for-participation
+slug: oscon-call-for-participation
 title: OSCON 2006 Call for Participation
 aliases: [/computers/conferences/oscon2006/call_for_participation.html]
 tags: [OSCON, open source, O’Reilly]

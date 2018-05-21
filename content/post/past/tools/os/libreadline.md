@@ -1,6 +1,6 @@
 --- 
 date: 2004-10-08T00:54:09Z
-slug: libreadline
+slug: compile-libreadline
 title: Compiling libreadline on Mac OS X
 aliases: [/computers/os/macosx/libreadline.html]
 tags: [macOS, readline, Postgres]

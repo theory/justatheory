@@ -38,9 +38,21 @@ are carefully laid out and rendered as images, do not. They look worse than on
 the old iPad, because the anti-aliasing is even easier to see.
 
 <figure>
-<a href="https://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/" title="The New Yorker on the 1st gen iPad"><img src="https://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg" alt="The New Yorker on the 1st gen iPad" /></a>
-<a href="https://www.flickr.com/photos/theory/7007813821/sizes/o/in/set-72157629648560359/" alt="The New Yorker on the 3rd gen iPad with retina display"><img src="https://farm8.staticflickr.com/7110/7007813821_6293e374eb_z.jpg" alt="The New Yorker on the 3rd gen iPad with retina display" /></a>
-<figcaption><p>Text content from <em>The New Yorker</em> on the first generation iPad (top) and the third generation iPad with retina display (bottom). Looks great because it's text. Click for larger images.</p></figcaption>
+    <a href="https://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/"
+      title="The New Yorker on the 1st gen iPad">
+      <img src="https://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg"
+           alt="The New Yorker on the 1st gen iPad"/>
+    </a>
+    <a href="https://www.flickr.com/photos/theory/7007813821/sizes/o/in/set-72157629648560359/"
+        alt="The New Yorker on the 3rd gen iPad with retina display">
+        <img src="https://farm8.staticflickr.com/7110/7007813821_6293e374eb_z.jpg"
+             alt="The New Yorker on the 3rd gen iPad with retina display" />
+    </a>
+    <figcaption>
+        <p>Text content from <em>The New Yorker</em> on the first generation iPad
+        (top) and the third generation iPad with retina display (bottom). Looks
+        great because it's text. Click for larger images.</p>
+    </figcaption>
 </figure>
 
 I [complained] about this on Twitter, [Brian Lam chimed in], and [Scott Dadich],
@@ -56,7 +68,11 @@ readers resembles the Venn diagram to the right. But I want to see *The New
 Yorker* rock on the iPad, so I put aside some time to download the new *Vogue*
 app and take it for a spin.
 
-<figure class="right" style="background-color:#fff"><img src="https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png" style="width:307pt;" alt="The New Yorker &amp; Condé Nast Venn Diagram" title=" The New Yorker &amp; Condé Nast Venn Diagram" /></figure>
+<figure class="right" style="background-color:#fff">
+    <img src="https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png"
+       style="width:307pt;" alt="The New Yorker &amp; Condé Nast Venn Diagram"
+       title=" The New Yorker &amp; Condé Nast Venn Diagram" />
+</figure>
 
 First, the good news. I got a free month's subscription and downloaded the
 latest issue of *Vogue*, which does indeed have hi-res images. The articles look
@@ -72,8 +88,15 @@ form factor allows you to eliminate some of the differences. After all, bits
 don't weigh anything.
 
 <figure>
-<a href="https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/"><img src="https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg" alt="Vogue on the new iPad" /></a>
-<figcaption>Image content from <em>Vogue</em> on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image. Click for larger images.</figcaption>
+    <a href="https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/">
+        <img src="https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg"
+             alt="Vogue on the new iPad" />
+    </a>
+    <figcaption>
+        <p>Image content from <em>Vogue</em> on the new iPad. Not shown: the second
+        that it's blurry while the image engine finishes loading and displaying the
+        image. Click for larger images.</p>
+    </figcaption>
 </figure>
 
 Except that they do. The *Vogue* April 2012 issue weighs in at a whopping 408

@@ -17,7 +17,9 @@ But, *hang on.* Should the HTML it returns be decoded to Perl’s internal form?
 I’m thinking not, because the HTML itself might declare the encoding, either in
 a XML declaration or via something like
 
-    <meta http-equiv="Content-type" content="text/html;charset=Big5" />
+``` html
+<meta http-equiv="Content-type" content="text/html;charset=Big5" />
+```
 
 And as you can see, it’s not UTF-8. So decoded it would be lying. So it should
 be encoded, right? Parsers like [XML::LibXML::Parser] are smart enough to see

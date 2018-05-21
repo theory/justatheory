@@ -1,6 +1,6 @@
 --- 
 date: 2009-12-15T23:06:27Z
-slug: make-the-pragmas-stop
+slug: make-the-perl-pragmas-stop
 title: Make the Pragmas Stop!
 aliases: [/computers/programming/perl/make-the-pragmas-stop.html]
 tags: [Perl, Unicode, Perl 5 Porters]
@@ -11,10 +11,12 @@ I've been following the development of a few things in the Perl community
 lately, and it’s leaving me very frustrated. For years now, I've written modules
 that start with the same incantation:
 
-    package My::Module;
+``` perl
+package My::Module;
 
-    use strict;
-    our $VERSION = '0.01';
+use strict;
+our $VERSION = '0.01';
+```
 
 Pretty simple: declare the module name and version, and turn on strictures to
 make sure I'm not doing anything stupid. More recently I've added
@@ -23,23 +25,27 @@ adding `use utf8;`, too, because I like to write my code in UTF-8. And I like to
 turn on all of the Perl 5.10 features. It’s mildly annoying to have the same
 incantation at the start of every module, but I could deal with it:
 
-    package My::Module;
+``` perl
+package My::Module;
 
-    use strict;
-    use warnings;
-    use feature ':5.10';
-    use utf8;
+use strict;
+use warnings;
+use feature ':5.10';
+use utf8;
 
-    our $VERSION = '0.01';
+our $VERSION = '0.01';
+```
 
 Until now that is. Last year, [chromatic] started something with his
 [Modern::Perl] module. It was a decent idea for newbies to help them get started
 with Perl by having to have only one declaration at the tops of their modules:
 
-    package My::Module;
+``` perl
+package My::Module;
 
-    use Modern::Perl;
-    our $VERSION = '0.01';
+use Modern::Perl;
+our $VERSION = '0.01';
+```
 
 Alas, it wasn’t really designed for me, but for more casual users of Perl, so
 that they don’t have to think about the pragmas they need to use. The fact that
@@ -69,8 +75,10 @@ I've had it. Please make the pragma explosion stop! Make it so that the best
 practices known at the time of the release of any given version of Perl can
 automatically imported if I just write:
 
-    package My::Module '0.01';
-    use 5.12;
+``` perl
+package My::Module '0.01';
+use 5.12;
+```
 
 That’s it. Nothing more. Whatever has been deemed the best practice at the time
 5.12 is released will simply be used. If the best practices change in 5.14, I
@@ -103,7 +111,7 @@ the Perl 5 Porters are headed. I just hope that includes handling all of the
 likely pragmas too, so that I don’t have to.
 
   [best practice]: http://oreilly.com/catalog/9780596001735
-    "âPerl Best Practicesâ by Master Damian Conway, Esq."
+    "“Perl Best Practices” by Master Damian Conway, Esq."
   [chromatic]: http://www.modernperlbooks.com/ "Modern Perl Books"
   [Modern::Perl]: http://search.cpan.org/perldoc?Modern::Perl
     "Modern::Perl on CPAN"

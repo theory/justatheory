@@ -1,7 +1,7 @@
 --- 
 date: 2009-04-29T18:02:57Z
 description: Database migration frameworks and ad-hoc solutions leave things…wanting. Herein lie some preliminary thoughts on how to solve this problem.
-slug: change-management
+slug: database-change-management
 title: Some Thoughts on Database Change Management
 aliases: [/computers/databases/change-management.html]
 tags: [databases, change management]

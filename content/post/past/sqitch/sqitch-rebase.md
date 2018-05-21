@@ -122,7 +122,7 @@ short list are:
   [Sqitch v0.940]: https://metacpan.org/release/App-Sqitch/
   [work]: http://iovation.com/
   [topological sort]: https://en.wikipedia.org/wiki/Topological_sorting
-    "Wikipedia: âTopological sortingâ"
+    "Wikipedia: “Topological sorting”"
   [realized]: /computers/databases/changing-sqitch_ids.html
   [`show` command]: (https://metacpan.org/module/sqitch-show
   [`rebase` command]: https://github.com/theory/sqitch/blob/master/lib/sqitch-rebase.pod

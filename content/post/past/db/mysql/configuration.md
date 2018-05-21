@@ -1,6 +1,6 @@
 --- 
 date: 2006-04-11T04:43:00Z
-slug: configuration
+slug: intelligent-mysql-configuration
 title: Intelligent MySQL Configuration
 aliases: [/computers/databases/mysql/configuration.html]
 tags: [MySQL, ANSI, Unicode, UTF-8, UTC, time zones]

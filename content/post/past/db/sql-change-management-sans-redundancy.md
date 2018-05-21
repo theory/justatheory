@@ -100,21 +100,22 @@ something like this:
 Which would be fine, except that if someone else wanted to see what had changed,
 here’s what `git diff` would output:
 
-    > git diff HEAD^ sql/deploy 
-    diff --git a/sql/deploy/add_widget_v2.sql b/sql/deploy/add_widget_v2.sql
-    new file mode 100644
-    index 0000000..9132195
-    --- /dev/null
-    +++ b/sql/deploy/add_widget_v2.sql
-    @@ -0,0 +1,8 @@
-    +-- requires widgets_created_at
-    +CREATE OR REPLACE FUNCTION add_widget(
-    +    username   TEXT,
-    +    widgetname TEXT
-    +) RETURNS VOID LANGUAGE SQL AS $$
-    +    INSERT INTO widgets (created_by, name, created_at)
-    +    VALUES ($1, $2, NOW());
-    +$$;
+``` patch
+diff --git a/sql/deploy/add_widget_v2.sql b/sql/deploy/add_widget_v2.sql
+new file mode 100644
+index 0000000..9132195
+--- /dev/null
++++ b/sql/deploy/add_widget_v2.sql
+@@ -0,0 +1,8 @@
++-- requires widgets_created_at
++CREATE OR REPLACE FUNCTION add_widget(
++    username   TEXT,
++    widgetname TEXT
++) RETURNS VOID LANGUAGE SQL AS $$
++    INSERT INTO widgets (created_by, name, created_at)
++    VALUES ($1, $2, NOW());
++$$;
+```
 
 So, what changed in the `add_widget()` function between `gamma` and now? One
 cannot tell from this diff: it looks like a brand new function. And no web-based
@@ -122,21 +123,23 @@ VCS interface will show you, either; it’s just not inherent in the commit. We
 have to actually *know* that it was just an update to an existing function, and
 what files to manually diff, like so:
 
-     > diff -u sql/deploy/add_widget.sql sql/deploy/add_widget_v2.sql 
-    --- sql/deploy/add_widget.sql   2012-01-28 13:06:24.000000000 -0800
-    +++ sql/deploy/add_widget_v2.sql    2012-01-28 13:26:59.000000000 -0800
-    @@ -1,8 +1,8 @@
-    --- requires: widgets_table
-    -
-    +-- requires: widgets_created_at
-     CREATE OR REPLACE FUNCTION add_widget(
-         username   TEXT,
-         widgetname TEXT
-     ) RETURNS VOID LANGUAGE SQL AS $$
-    -    INSERT INTO widgets (created_by, name) VALUES ($1, $2);
-    +    INSERT INTO widgets (created_by, name, created_at)
-    +    VALUES ($1, $2, NOW());
-     $$;
+``` patch
+> diff -u sql/deploy/add_widget.sql sql/deploy/add_widget_v2.sql 
+--- sql/deploy/add_widget.sql   2012-01-28 13:06:24.000000000 -0800
++++ sql/deploy/add_widget_v2.sql    2012-01-28 13:26:59.000000000 -0800
+@@ -1,8 +1,8 @@
+--- requires: widgets_table
+-
++-- requires: widgets_created_at
+    CREATE OR REPLACE FUNCTION add_widget(
+        username   TEXT,
+        widgetname TEXT
+    ) RETURNS VOID LANGUAGE SQL AS $$
+-    INSERT INTO widgets (created_by, name) VALUES ($1, $2);
++    INSERT INTO widgets (created_by, name, created_at)
++    VALUES ($1, $2, NOW());
+    $$;
+```
 
 Much better, but how annoying is that? It doesn’t allow us to really take
 advantage of the VCS, all because we need SQL changes to run in a very specific
@@ -178,15 +181,17 @@ This is because the `created_at` column won’t exist until the
 knows exactly what the `add_widget` deploy script looked like under the `beta`
 tag, and we can ask it:
 
-    > git show beta:sql/deploy/add_widget.sql
-    -- requires: widgets_table
+``` postgres
+> git show beta:sql/deploy/add_widget.sql
+-- requires: widgets_table
 
-    CREATE OR REPLACE FUNCTION add_widget(
-        username   TEXT,
-        widgetname TEXT
-    ) RETURNS VOID LANGUAGE SQL AS $$
-        INSERT INTO widgets (created_by, name) VALUES ($1, $2);
-    $$;
+CREATE OR REPLACE FUNCTION add_widget(
+    username   TEXT,
+    widgetname TEXT
+) RETURNS VOID LANGUAGE SQL AS $$
+    INSERT INTO widgets (created_by, name) VALUES ($1, $2);
+$$;
+```
 
 Boom, there it is, with no reference to `created_at`. Using this technique, our
 SQL deployment app can successfully apply all of our database changes by
@@ -248,15 +253,17 @@ revert to `gamma`, our change management can see that `add_widget` was modified
 in `epsilon`, and, rather than apply a revert change script, it can just apply
 the version of the script as it existed under `gamma`:
 
-    > git show gamma:sql/deploy/add_widget.sql
-    -- requires: widgets_table
+``` postgres
+> git show gamma:sql/deploy/add_widget.sql
+-- requires: widgets_table
 
-    CREATE OR REPLACE FUNCTION add_widget(
-        username   TEXT,
-        widgetname TEXT
-    ) RETURNS VOID LANGUAGE SQL AS $$
-        INSERT INTO widgets (created_by, name) VALUES ($1, $2);
-    $$;
+CREATE OR REPLACE FUNCTION add_widget(
+    username   TEXT,
+    widgetname TEXT
+) RETURNS VOID LANGUAGE SQL AS $$
+    INSERT INTO widgets (created_by, name) VALUES ($1, $2);
+$$;
+```
 
 And there we are, right back to where we should be. Of course, the remaining
 `epsilon` deploy script, `widget_created_at`, was added in its commit, so we

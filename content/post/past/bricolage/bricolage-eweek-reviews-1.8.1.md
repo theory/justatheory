@@ -1,9 +1,9 @@
 --- 
 date: 2004-08-10T20:10:25Z
-slug: bricolage-eweek-reviews-1.8.1
+slug: eweek-reviews-bricolage-1.8.1
 title: eWeek Reviews Bricolage 1.8.1
 aliases: [/bricolage/coverage/eweek_reviews_1.8.1.html]
-tags: [Bricolage, eWeek, Jim Rapoza, CrownPeak, Advantage CMS, Ektron, CMS300, Interwoven, TeamSite, Serena Software, Collage, PaperThin, CommonSpot]
+tags: [Bricolage, eWeek, Jim Rapoza]
 type: post
 ---
 

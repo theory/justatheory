@@ -1,6 +1,6 @@
 --- 
 date: 2005-09-07T19:40:34Z
-slug: split-words
+slug: perl-split-words
 title: Splitting Words in Perl
 aliases: [/computers/programming/perl/split_words.html]
 tags: [Perl, Unicode, Regular Expressions, pattern matching]

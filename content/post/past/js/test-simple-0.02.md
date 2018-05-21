@@ -1,6 +1,6 @@
 --- 
 date: 2005-04-12T21:26:44Z
-slug: test-simple-0.02
+slug: test-simple-js-0.02
 title: TestSimple 0.02 Released
 aliases: [/computers/programming/javascript/test_simple-0.02.html]
 tags: [JavaScript, Perl, testing, JavaScript Test Framework, TAP]

@@ -1,6 +1,6 @@
 --- 
 date: 2004-08-08T20:43:23Z
-slug: notes
+slug: oscon-notes
 title: OSCON 2004 Notes
 aliases: [/computers/conferences/oscon2004/notes.html]
 tags: [OSCON, open source]

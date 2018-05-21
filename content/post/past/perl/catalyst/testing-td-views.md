@@ -1,6 +1,6 @@
 --- 
 date: 2009-11-10T18:01:44Z
-slug: testing-td-views
+slug: testing-catalyst-td-views
 title: Testing Catalyst Template::Declare Views
 aliases: [/computers/programming/perl/catalyst/testing-td-views.html]
 tags: [Perl, Catalyst, Template::Declare, testing, Test::XPath]

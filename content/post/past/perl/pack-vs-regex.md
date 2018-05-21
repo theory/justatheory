@@ -1,6 +1,6 @@
 --- 
 date: 2005-03-28T22:55:29Z
-slug: pack-vs-regex
+slug: perl-pack-vs-regex
 title: Regular Expressions are Faster than Unpacking
 aliases: [/computers/programming/perl/pack_vs_regex.html]
 tags: [Perl, Regular Expressions, DateTime]
@@ -22,42 +22,44 @@ Well, last week I finally figured out how to unpack the decimal place using
 somehow I'd never noticed before). So I ran a benchmark to see how much of a
 performance gain I would get:
 
-    #!/usr/bin/perl -w
-    use strict;
-    use Benchmark;
+``` perl
+#!/usr/bin/perl -w
+use strict;
+use Benchmark;
 
-    my $date = '2005-03-23T19:30:05.1234';
-    my $ISO_TEMPLATE =  'a4 x a2 x a2 x a2 x a2 x a2 a*';
+my $date = '2005-03-23T19:30:05.1234';
+my $ISO_TEMPLATE =  'a4 x a2 x a2 x a2 x a2 x a2 a*';
 
-    sub with_pack {
-        my %args;
-        @args{qw(year month day hour minute second nanosecond)}
-          = unpack $ISO_TEMPLATE, $date;
-        {
-            no warnings;
-            $args{nanosecond} *= 1.0E9;
-        }
+sub with_pack {
+    my %args;
+    @args{qw(year month day hour minute second nanosecond)}
+        = unpack $ISO_TEMPLATE, $date;
+    {
+        no warnings;
+        $args{nanosecond} *= 1.0E9;
     }
+}
 
-    sub with_regex {
-        $date =~ m/(\d\d\d\d).(\d\d).(\d\d).(\d\d).(\d\d).(\d\d)(\.\d*)?/;
-        my %args = (
-            year       => $1,
-            month      => $2,
-            day        => $3,
-            hour       => $4,
-            minute     => $5,
-            second     => $6,
-            nanosecond => $7 ? $7 * 1.0E9 : 0
-        );
-    }
+sub with_regex {
+    $date =~ m/(\d\d\d\d).(\d\d).(\d\d).(\d\d).(\d\d).(\d\d)(\.\d*)?/;
+    my %args = (
+        year       => $1,
+        month      => $2,
+        day        => $3,
+        hour       => $4,
+        minute     => $5,
+        second     => $6,
+        nanosecond => $7 ? $7 * 1.0E9 : 0
+    );
+}
 
-    timethese(100000, {
-        pack => \&with_pack,
-        regex => \&with_regex
-    });
+timethese(100000, {
+    pack => \&with_pack,
+    regex => \&with_regex
+});
 
-    __END__
+__END__
+```
 
 I quickly got my answer (all hail [Benchmark]!). This script outputs:
 

@@ -27,23 +27,27 @@ IDs, even though the `id` column uses a sequence for it’s default value. So
 first we need to fix these issues. Change the `INSERT INTO authors` statement in
 `sql/001-books.sql` to:
 
-    INSERT INTO authors (surname, given_name)
-    VALUES ('Bastien',      'Greg'),
-           ('Nasseh',       'Sara'),
-           ('Degu',         'Christian'),
-           ('Stevens',      'Richard'),
-           ('Comer',        'Douglas'),
-           ('Christiansen', 'Tom'),
-           ('Torkington',   'Nathan'),
-           ('Zeldman',      'Jeffrey')
-    ;
+``` postgres
+INSERT INTO authors (surname, given_name)
+VALUES ('Bastien',      'Greg'),
+       ('Nasseh',       'Sara'),
+       ('Degu',         'Christian'),
+       ('Stevens',      'Richard'),
+       ('Comer',        'Douglas'),
+       ('Christiansen', 'Tom'),
+       ('Torkington',   'Nathan'),
+       ('Zeldman',      'Jeffrey')
+;
+```
 
 This time, we're letting the sequence populate the `id` column. Fortunately, it
 starts from 1 just like we did, so we don’t need to update the values in the
 `INSERT INTO book_author` statement. Now let’s fix the database:
 
-    DELETE FROM book_author;
-    DELETE FROM authors;
+``` postgres
+DELETE FROM book_author;
+DELETE FROM authors;
+```
 
 Then run the above SQL query to restore the authors with their proper names, and
 then run the `INSERT INTO book_author` statement. That will get us back in
@@ -54,15 +58,19 @@ business.
 Now it’s time for the fun. The original SQL query we wrote to get the list of
 books was:
 
-    SELECT isbn, title, rating FROM books;
+``` postgres
+SELECT isbn, title, rating FROM books;
+```
 
 Nothing unusual there. But to get at the authors, we need to join to
 `book_author` and from there to `authors`. Our first cut looks like this:
 
-    SELECT b.isbn, b.title, b.rating, a.surname
-      FROM books       b
-      JOIN book_author ba ON b.isbn       = ba.isbn
-      JOIN authors     a  ON ba.author_id = a.id;
+``` postgres
+SELECT b.isbn, b.title, b.rating, a.surname
+  FROM books       b
+  JOIN book_author ba ON b.isbn       = ba.isbn
+  JOIN authors     a  ON ba.author_id = a.id;
+```
 
 Which yields this data:
 
@@ -88,11 +96,13 @@ other columns to group rows into one. PostgreSQL 8.4 introduces a really nice
 aggregate function, `array_agg()`, for pulling a series of strings together into
 an array. Let’s put it to use:
 
-    SELECT b.isbn, b.title, b.rating, array_agg(a.surname) as authors
-      FROM books       b
-      JOIN book_author ba ON b.isbn     = ba.isbn
-      JOIN authors     a  ON ba.author_id = a.id
-     GROUP BY b.isbn, b.title, b.rating;
+``` postgres
+SELECT b.isbn, b.title, b.rating, array_agg(a.surname) as authors
+  FROM books       b
+  JOIN book_author ba ON b.isbn     = ba.isbn
+  JOIN authors     a  ON ba.author_id = a.id
+ GROUP BY b.isbn, b.title, b.rating;
+```
 
 Now the output is:
 
@@ -110,12 +120,14 @@ could use Perl to turn the array of author surnames into a comma-delimited
 string, there’s a PostgreSQL function for that, too: `array_to_string()`. Check
 it out:
 
-    SELECT b.isbn, b.title, b.rating,
-           array_to_string(array_agg(a.surname), ', ') as authors
-      FROM books       b
-      JOIN book_author ba ON b.isbn     = ba.isbn
-      JOIN authors     a  ON ba.author_id = a.id
-     GROUP BY b.isbn, b.title, b.rating;
+``` postgres
+SELECT b.isbn, b.title, b.rating,
+       array_to_string(array_agg(a.surname), ', ') as authors
+  FROM books       b
+  JOIN book_author ba ON b.isbn     = ba.isbn
+  JOIN authors     a  ON ba.author_id = a.id
+ GROUP BY b.isbn, b.title, b.rating;
+```
 
 Now the rows will be:
 
@@ -135,13 +147,15 @@ this query. That way, we don’t have to write the same SQL in different places 
 the application: we can just use the view. So create a new file,
 `sql/002-books_with_authors.sql`, and add this SQL:
 
-    CREATE VIEW books_with_authors AS
-    SELECT b.isbn, b.title, b.rating,
-           array_to_string(array_agg(a.surname), ', ') as authors
-      FROM books       b
-      JOIN book_author ba ON b.isbn     = ba.isbn
-      JOIN authors     a  ON ba.author_id = a.id
-     GROUP BY b.isbn, b.title, b.rating;
+``` postgres
+CREATE VIEW books_with_authors AS
+SELECT b.isbn, b.title, b.rating,
+       array_to_string(array_agg(a.surname), ', ') as authors
+  FROM books       b
+  JOIN book_author ba ON b.isbn     = ba.isbn
+  JOIN authors     a  ON ba.author_id = a.id
+ GROUP BY b.isbn, b.title, b.rating;
+```
 
 Now install this view in the database:
 
@@ -151,13 +165,17 @@ And now we can make use of the view any time we want and get the results of the
 full query. It’s time to do that in our controller. Edit
 `lib/MyApp/Controller/Books.pm` and change this line in the `list` action:
 
-    my $sth = $_->prepare('SELECT isbn, title, rating FROM books');
+``` perl
+my $sth = $_->prepare('SELECT isbn, title, rating FROM books');
+```
 
 To:
 
-    my $sth = $_->prepare(q{
-        SELECT isbn, title, rating, authors FROM books_with_authors
-    });
+``` perl
+my $sth = $_->prepare(q{
+    SELECT isbn, title, rating, authors FROM books_with_authors
+});
+```
 
 The use of the `q{}` operator is a style I use for SQL queries in Perl code; you
 can use whatever style you like. Since this is a very short SQL statement
@@ -169,11 +187,15 @@ The last thing we need to do is a a very simple change to the `list` template in
 non-existent “author” key in the each hash reference fetched from the database.
 In the new view, however, I've named that column “authors”. So change this line:
 
-    cell { $book->{author} };
+``` perl
+cell { $book->{author} };
+```
 
 To
 
-    cell { $book->{authors} };
+``` perl
+cell { $book->{authors} };
+```
 
 And that’s it. Restart the server and reload `http://localhost:3000/books/list`
 and you should now see all of the books listed with their authors.
@@ -201,8 +223,7 @@ Either way, I find this to be a lot less work than using an ORM or other
 abstraction layer between my app and the database. Frankly, SQL provides just
 the right level of abstraction.
 
-  [series]: /computers/programming/perl/catalyst%20title=
-    "Just a Theory: “Catalyst”"
+  [series]: /tags/catalyst "Just a Theory: “Catalyst”"
   [chapter 3]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"
   [DSL]: https://en.wikipedia.org/wiki/Domain-specific_language
@@ -211,8 +232,8 @@ the right level of abstraction.
     "Wikipedia: “Model-view-controller”"
   [second post]: /computers/programming/perl/catalyst/tutorial-continued.html
   [aggregate function]: http://www.postgresql.org/docs/current/static/functions-aggregate.html
-    "PostgreSQL Documentation: âAggregate Functionsâ"
+    "PostgreSQL Documentation: “Aggregate Functions”"
   [MySQL aggregates]: http://dev.mysql.com/doc/refman/5.0/en/group-by-functions.html
-    "MySQL Documentation: âGROUP BY (Aggregate) Functionsâ"
+    "MySQL Documentation: “GROUP BY (Aggregate) Functions“"
   [personally written]: http://www.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html
-    "Just a Theory: âCustom Aggregates in Perlâ"
+    "Just a Theory: “Custom Aggregates in Perl”"

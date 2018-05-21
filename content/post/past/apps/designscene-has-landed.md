@@ -31,7 +31,8 @@ beautiful interface to serve a specific (and design-savvy) niche. We agreed to
 meet at [iPad Dev Camp] in April to see if the idea had any legs, and whether we
 could work well together.
 
-<img src="https://lunarboy.com/wp-content/uploads/2011/01/ds_early_comp.jpg" alt="Roger&#39;s Original Mockup" class="right" />
+<img src="https://lunarboy.com/wp-content/uploads/2011/01/ds_early_comp.jpg"
+     alt="Roger&#39;s Original Mockup" class="right" />
 
 iPad Dev Camp was a great success for us. [Jayant Sai] was especially helpful,
 hanging out in the “newbie room” and pointing out that Roger could work on stuff
@@ -61,11 +62,10 @@ get it!
 Oh, and just dig the awesome trailer Roger put together. It’s such a joy to work
 with someone who knows Photoshop and After Effects like I know Perl and SQL.
 
-<video width="640" height="360" poster="https://raw.githubusercontent.com/lunar-theory/designsceneapp.com/c199ec3d40a11a4a559d31df4a1e995ee1220b8d/res/ds_video_poster.jpg" controls>
-	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.mp4"  type="video/mp4" />
-	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.webm"  type="video/webm" />
-	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.ogv"  type="video/ogg" />
-	<object width="640" height="385"><param name="movie" value="https://www.youtube.com/v/ya99agbX0yk?fs=1&amp;hl=en_US&amp;rel=0&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/ya99agbX0yk?fs=1&amp;hl=en_US&amp;rel=0&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+<video width="640" height="360"poster="https://raw.githubusercontent.com/lunar-theory/designsceneapp.com/c199ec3d40a11a4a559d31df4a1e995ee1220b8d/res/ds_video_poster.jpg" controls>
+	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.mp4" type="video/mp4" />
+	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.webm" type="video/webm" />
+	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.ogv" type="video/ogg" />
 </video>
 
 Since we launched on Tuesday, we’ve been fortunate to receive some really

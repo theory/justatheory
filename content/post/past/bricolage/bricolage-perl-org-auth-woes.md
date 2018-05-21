@@ -1,6 +1,6 @@
 --- 
 date: 2004-06-09T17:23:10Z
-slug: bricolage-perl-org-auth-woes
+slug: bricolage-auth-woes
 title: Perl.org Subversion Authentication Woes
 aliases: [/bricolage/svn/perl_org_auth_woes.html]
 tags: [Bricolage, Subversion]

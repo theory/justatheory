@@ -1,6 +1,6 @@
 --- 
 date: 2005-04-07T18:59:27Z
-slug: test-simple
+slug: test-simple-js
 title: "New JavaScript Testing Method: TestSimple"
 aliases: [/computers/programming/javascript/test_simple.html]
 tags: [JavaScript, Perl]

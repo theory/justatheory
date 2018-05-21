@@ -1,6 +1,6 @@
 --- 
 date: 2002-11-30T20:23:00Z
-slug: my-adventures
+slug: my-osx-adventures
 title: My Adventures with Mac OS X
 aliases: [/computers/os/macosx/my_adventures.html]
 tags: [macOS, David Wheeler, Perl, mod_perl, Apache, mod_ssl, GDBM, Emacs, Mac OS X Developer Tools, XML, apreq, iconv, Open SSL, Postgres, MySQL, XML::Parser, LWP, DBI, DBD::Pg, Bricolage]

@@ -7,7 +7,11 @@ Tags: [Just a Theory, failure, Blosxom, Google Analytics, FeedBurner, Linux, Deb
 type: post
 ---
 
-<figure><a href="https://www.flickr.com/photos/theory/3236480663/" title="My “Server Room”"><img src="https://farm4.static.flickr.com/3504/3236480663_b2d1fd08be.jpg" alt="My “Server Room”" /></a></figure>
+<figure>
+  <a href="https://www.flickr.com/photos/theory/3236480663/" title="My “Server Room”">
+    <img src="https://farm4.static.flickr.com/3504/3236480663_b2d1fd08be.jpg" alt="My “Server Room”" />
+  </a>
+</figure>
 
 Some of you no doubt noticed that this site was down for several days, starting
 last Friday and lasting until yesterday. Sorry about that. I had a hard disk

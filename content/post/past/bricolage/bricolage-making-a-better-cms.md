@@ -1,6 +1,6 @@
 --- 
 date: 2004-10-05T04:06:06Z
-slug: bricolage-making-a-better-cms
+slug: making-a-better-cms
 title: On Making a Better Open-Source CMS
 aliases: [/bricolage/competition/making_a_better_cms.html]
 tags: [Bricolage, Jeffrey Veen, Content Management, open source, jargon, XHTML, CSS, RSS]

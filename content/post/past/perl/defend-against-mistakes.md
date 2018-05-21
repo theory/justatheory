@@ -1,7 +1,7 @@
 --- 
 date: 2010-05-19T17:45:57Z
 description: I'm not sure I want to get into the business of defending against programmer mistakes in DBIx::Connector module. What do you think?
-slug: defend-against-mistakes
+slug: defend-against-programmer-mistakes
 title: Defend Against Programmer Mistakes?
 aliases: [/computers/programming/perl/defend-against-mistakes.html]
 tags: [Perl, DBIx::Connector]

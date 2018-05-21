@@ -1,6 +1,6 @@
 --- 
 date: 2004-08-23T23:16:25Z
-slug: always-use-c-locale
+slug: postgres-always-use-c-locale
 title: Always use the C Locale with PostgreSQL
 aliases: [/computers/databases/postgresql/always_use_c_locale.html]
 tags: [Postgres, character sets, locales, Unicode, UTF-8, Bricolage]
@@ -12,9 +12,11 @@ do string comparisons throughout Bricolage. In one usage, the code checks to see
 if there's a record in the “keyword” table before creating it. This is because
 keyword names are unique. So it looks for a keyword record like this:
 
-    SELECT name, screen_name, sort_name, active
-    FROM   keyword
-    WHERE  LOWER(name) LIKE ?
+``` postgres
+SELECT name, screen_name, sort_name, active
+  FROM   keyword
+ WHERE  LOWER(name) LIKE ?
+```
 
 If it finds a keyword, it creates a relationship between it and a story
 document. If it doesn't find it, it creates a new keyword record and then

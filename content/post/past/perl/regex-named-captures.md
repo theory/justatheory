@@ -1,6 +1,6 @@
 --- 
 date: 2006-10-16T19:17:09Z
-slug: regex-named-captures
+slug: perl-regex-named-captures
 title: How to Use Regex Named Captures in Perl 5
 aliases: [/computers/programming/perl/regex_named_captures.html]
 tags: [Perl, Regular Expressions]

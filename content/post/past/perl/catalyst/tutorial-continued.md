@@ -1,6 +1,6 @@
 --- 
 date: 2009-11-03T14:00:00Z
-slug: tutorial-continued
+slug: catalyst-tutorial-continued
 title: Catalyst with DBIx::Connector and Template::Declare
 aliases: [/computers/programming/perl/catalyst/tutorial-continued.html]
 tags: [Perl, Catalyst, DBIx::Connector, Template::Declare, Postgres]
@@ -225,11 +225,11 @@ More soon.
   [database creation]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_SQLITE_DATABASE
     "Create a SQLite Database"
   [natural key]: https://en.wikipedia.org/wiki/Natural_key
-    "Wikipedia: âNatural Keyâ"
+    "Wikipedia: “Natural Key”"
   [surrogate key]: https://en.wikipedia.org/wiki/Surrogate_key
-    "Wikipedia: âSurrogate Keyâ"
+    "Wikipedia: “Surrogate Key”"
   [isn]: http://www.postgresql.org/docs/current/static/isn.html
-    "PostgreSQL Documentation: âisnâ"
+    "PostgreSQL Documentation: “isn”"
   [some attempts]: http://dlist.sir.arizona.edu/1716/
     "The Universal Author Identifier System (UAI_Sys)"
   [Moose]: http://search.cpan.org/perldoc?Moose "Moose on CPAN"
@@ -237,4 +237,4 @@ More soon.
     "Exception::Class::DBI on CPAN"
   [DBI]: http://search.cpan.org/perldoc?DBI "The DBI on CPAN"
   [DSL]: https://en.wikipedia.org/wiki/Domain-specific_language
-    "Wikipedia: âDomain-Specific Languageâ"
+    "Wikipedia: “Domain-Specific Language”"

@@ -10,13 +10,14 @@ type: post
 For those who have been having trouble getting [SQL on Rails] to build on Mac OS
 X, I've just submitted this patch to address the issue:
 
-    --- Makefile.old        2006-04-02 13:35:23.000000000 -0700
-    +++ Makefile    2006-04-02 13:34:54.000000000 -0700
-    @@ -1 +1,2 @@
-    +.PHONY: install
-     install:
+``` patch
+--- Makefile.old        2006-04-02 13:35:23.000000000 -0700
++++ Makefile    2006-04-02 13:34:54.000000000 -0700
+@@ -1 +1,2 @@
++.PHONY: install
+  install:
+```
 
 Hope this helps other folks out!
 
-  [SQL on Rails]: http://www.sqlonrails.org/
-    "SQL on Rails: Taking the VC out of MVC"
+  [SQL on Rails]: http://www.sqlonrails.org/ "SQL on Rails: Taking the VC out of MVC"

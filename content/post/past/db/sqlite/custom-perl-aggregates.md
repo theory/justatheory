@@ -1,7 +1,7 @@
 --- 
 date: 2005-10-31T23:47:58Z
-slug: custom-perl-aggregates
-title: Custom Aggregates in Perl
+slug: sqlite-perl-aggregates
+title: Custom SQLite Aggregates in Perl
 aliases: [/computers/databases/sqlite/custom_perl_aggregates.html]
 tags: [SQLite, API, Perl, Postgres]
 type: post

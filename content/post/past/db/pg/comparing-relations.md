@@ -1,6 +1,6 @@
 --- 
 date: 2009-06-01T22:13:00Z
-slug: comparing-relations
+slug: pgtap-comparing-relations
 title: Thoughts on Testing SQL Result Sets
 aliases: [/computers/databases/postgresql/comparing-relations.html]
 tags: [Postgres, pgTAP, SQL]

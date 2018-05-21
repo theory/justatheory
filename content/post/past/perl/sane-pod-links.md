@@ -1,6 +1,6 @@
 --- 
 date: 2010-01-16T19:36:39Z
-slug: sane-pod-links
+slug: sane-perl-pod-links
 title: "Pod: Now with Sane Web Links"
 aliases: [/computers/programming/perl/sane-pod-links.html]
 tags: [Perl, Pod, documentation, URLs]
@@ -11,8 +11,10 @@ A couple months ago, [RJBS] and I collaborated on adding a new feature to Pod:
 [sane URL links]. For, well, *ever*, the case has been that to link to URLs or
 any other `scheme:` links in Pod, You had to do something like this:
 
-    For more information, consult the pgTAP documentation:
-    L<http://pgtap.projects.postgresql.org/documentation.html>
+``` perl
+For more information, consult the pgTAP documentation:
+L<http://pgtap.projects.postgresql.org/documentation.html>
+```
 
 The reasons why you couldn't include text in the link to server as the link text
 has never been really well spelled-out. [Sean Burke], the most recent author of
@@ -26,8 +28,10 @@ was a simple change to make to the spec, and it was released in Perl 5.11.3 and
 Pod::Simple 3.11. It's now officially a part of the spec. The above Pod can now
 be written as:
 
-    For more information, consult the L<pgTAP
-    documentation|http://pgtap.projects.postgresql.org/documentation.html>.
+``` perl
+For more information, consult the
+L<pgTAP documentation|http://pgtap.projects.postgresql.org/documentation.html>.
+```
 
 So much better! And to show it off, I've just updated all the links in
 SVN::Notify and released a new version. Check it out on [CPAN Search]. See how

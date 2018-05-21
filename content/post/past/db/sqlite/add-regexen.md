@@ -1,6 +1,6 @@
 --- 
 date: 2006-01-13T16:08:17Z
-slug: add-regexen
+slug: add-sqlite-regexen
 title: Add Regular Expression Operator to SQLite
 aliases: [/computers/databases/sqlite/add_regexen.html]
 tags: [SQLite, Perl, Regular Expressions, DBD::SQLite, DBI, Matt Sergeant]
@@ -25,11 +25,13 @@ all it took was a little experimentation to figure it out. The `regexp()`
 function should expect two arguments. The first is the regular expression, and
 the second is the value to match. So it can be added to DBD::SQLite like this:
 
-    $dbh = DBI->connect('dbi:SQLite:dbfile=test.db');
-    $dbh->func('regexp', 2, sub {
-        my ($regex, $string) = @_;
-        return $string =~ /$regex/;
-    }, 'create_function');
+``` perl
+$dbh = DBI->connect('dbi:SQLite:dbfile=test.db');
+$dbh->func('regexp', 2, sub {
+    my ($regex, $string) = @_;
+    return $string =~ /$regex/;
+}, 'create_function');
+```
 
 Yep, that's it! Now, I have my own module for handling database connections, and
 I wanted to make sure that all of my custom functions are always present, every
@@ -41,60 +43,64 @@ connect and every time you connect, I learned thanks to a tip from Tim Bunce, is
 to subclass the DBI and implement a `connected()` method. Here's what it looks
 like:
 
-    package MyApp::SQLite;
-    use base 'DBI';
+``` perl
+package MyApp::SQLite;
+use base 'DBI';
 
-    package MyApp::SQLite::st;
-    use base 'DBI::st';
+package MyApp::SQLite::st;
+use base 'DBI::st';
 
-    package MyApp::SQLite::db;
-    use base 'DBI::db';
+package MyApp::SQLite::db;
+use base 'DBI::db';
 
-    sub connected {
-        my $dbh = shift;
-        # Add regexp function.
-        $dbh->func('regexp', 2, sub {
-            my ($regex, $string) = @_;
-            return $string =~ /$regex/;
-        }, 'create_function');
-    }
+sub connected {
+    my $dbh = shift;
+    # Add regexp function.
+    $dbh->func('regexp', 2, sub {
+        my ($regex, $string) = @_;
+        return $string =~ /$regex/;
+    }, 'create_function');
+}
+```
 
 So how does this work? Here's a quick app I wrote to demonstrate the use of the
 `REGEXP` expression in SQLite using Perl regular expressions:
 
-    #!/usr/bin/perl -w
+``` perl
+#!/usr/bin/perl -w
 
-    use strict;
+use strict;
 
-    my $dbfile = shift || die "Usage: $0 db_file\n";
-    my $dbh = MyApp::SQLite->connect(
-        "dbi:SQLite:dbname=$dbfile", '', '',
-        {
-            RaiseError  => 1,
-            PrintError  => 0,
-        }
-    );
-
-    END {
-        $dbh->do('DROP TABLE try');
-        $dbh->disconnect;
+my $dbfile = shift || die "Usage: $0 db_file\n";
+my $dbh = MyApp::SQLite->connect(
+    "dbi:SQLite:dbname=$dbfile", '', '',
+    {
+        RaiseError  => 1,
+        PrintError  => 0,
     }
+);
 
-    $dbh->do('CREATE TABLE try (a TEXT)');
+END {
+    $dbh->do('DROP TABLE try');
+    $dbh->disconnect;
+}
 
-    my $ins = $dbh->prepare('INSERT INTO try (a) VALUES (?)');
-    for my $val (qw(foo bar bat woo oop craw)) {
-        $ins->execute($val);
-    }
+$dbh->do('CREATE TABLE try (a TEXT)');
 
-    my $sel = $dbh->prepare('SELECT a FROM try WHERE a REGEXP ?');
+my $ins = $dbh->prepare('INSERT INTO try (a) VALUES (?)');
+for my $val (qw(foo bar bat woo oop craw)) {
+    $ins->execute($val);
+}
 
-    for my $regex (qw( ^b a w?oop?)) {
-        print "'$regex' matches:\n  ";
-        print join "\n  " =>
-            @{ $dbh->selectcol_arrayref($sel, undef, $regex) };
-        print "\n\n";
-    }
+my $sel = $dbh->prepare('SELECT a FROM try WHERE a REGEXP ?');
+
+for my $regex (qw( ^b a w?oop?)) {
+    print "'$regex' matches:\n  ";
+    print join "\n  " =>
+        @{ $dbh->selectcol_arrayref($sel, undef, $regex) };
+    print "\n\n";
+}
+```
 
 This script outputs:
 

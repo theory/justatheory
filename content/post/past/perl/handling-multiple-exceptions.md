@@ -1,6 +1,6 @@
 --- 
 date: 2010-06-03T05:19:10Z
-slug: handling-multiple-exceptions
+slug: handling-multiple-perl-exceptions
 title: Handling Multiple Exceptions
 aliases: [/computers/programming/perl/handling-multiple-exceptions.html]
 tags: [Perl, exception handling]
@@ -14,16 +14,18 @@ annoying, as it ate the underlying exception that led to the rollback.
 
 So I've added a test to DBIx::Connector that looks like this:
 
-    my $dmock = Test::MockModule->new($conn->driver);
-    $dmock->mock(rollback => sub { die 'Rollback WTF' });
+``` perl
+my $dmock = Test::MockModule->new($conn->driver);
+$dmock->mock(rollback => sub { die 'Rollback WTF' });
 
-    eval { $conn->txn(sub {
-        my $sth = shift->prepare("select * from t");
-        die 'Transaction WTF';
-    }) };
+eval { $conn->txn(sub {
+    my $sth = shift->prepare("select * from t");
+    die 'Transaction WTF';
+}) };
 
-    ok my $err = $@, 'We should have died';
-    like $err, qr/Transaction WTF/, 'Should have the transaction error';
+ok my $err = $@, 'We should have died';
+like $err, qr/Transaction WTF/, 'Should have the transaction error';
+```
 
 It fails as expected: the error is “Rollback WTF”. So far so good. Now the
 question is, how should I go about fixing it? Ideally I'd be able to access
@@ -33,10 +35,12 @@ I see three options. The first is that taken by [Bricolage] and [DBIx::Class][]:
 create a new exception that combines both the transaction exception and the
 rollback exception into one. DBIx::Class does it like this:
 
-    $self->throw_exception(
-      "Transaction aborted: ${exception}. "
-      . "Rollback failed: ${rollback_exception}"
-    );
+``` perl
+$self->throw_exception(
+    "Transaction aborted: ${exception}. "
+    . "Rollback failed: ${rollback_exception}"
+);
+```
 
 That’s okay as far as it goes. But what if `$exception` is an
 [Exception::Class::DBI] object, or some other exception object? It would get
@@ -47,10 +51,12 @@ important to address first?
 The second option is to throw a new exception object with the original
 exceptions as attributes. Something like (pseudo-code):
 
-    DBIx::Connector::RollbackException->new(
-        txn_exception      => $exception,
-        rollback_exception => $rollback_exception,
-    );
+``` perl
+DBIx::Connector::RollbackException->new(
+    txn_exception      => $exception,
+    rollback_exception => $rollback_exception,
+);
+```
 
 This has the advantage of keeping the original exception as an object, although
 the exception handler would have to expect this exception and go digging for it.
@@ -61,8 +67,10 @@ object like this.
 The third option is to use a special variable, `@@`, and put both exceptions
 into it. Something like:
 
-    @@ = ($exception, $rollback_exception);
-    die $rollback_exception;
+``` perl
+@@ = ($exception, $rollback_exception);
+die $rollback_exception;
+```
 
 This approach doesn’t require a dependency like the previous approach, but the
 user would still have to know to dig into `@@` if they caught the rollback

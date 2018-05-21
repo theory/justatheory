@@ -1,6 +1,6 @@
 --- 
 date: 2006-05-17T05:25:14Z
-slug: benchmarking-upc-validation
+slug: benchmarking-postgres-upc-validation
 title: Benchmarking UPC Validation
 aliases: [/computers/databases/postgresql/benchmarking_upc_validation.html]
 tags: [Postgres, PL/pgSQL, PL/Perl, EAN]
@@ -23,7 +23,7 @@ So that's what I did. The functions I tested were:
 
 -   A refinement of my original substring solution:
 
-    ``` postgres
+    ``` plpgsql
     CREATE OR REPLACE FUNCTION ean_substr (
         TEXT
     ) RETURNS boolean AS $$
@@ -48,13 +48,13 @@ So that's what I did. The functions I tested were:
                 + substring(ean,  8 + offset, 1)::integer
                 + substring(ean, 10 + offset, 1)::integer
                 + substring(ean, 12 + offset, 1)::integer
-                ) * 3 -- Multiply total by 3.
-                -- Add odd numerals except for checksum (13).
-                + substring(ean,  3 + offset, 1)::integer
-                + substring(ean,  5 + offset, 1)::integer
-                + substring(ean,  7 + offset, 1)::integer
-                + substring(ean,  9 + offset, 1)::integer
-                + substring(ean, 11 + offset, 1)::integer
+            ) * 3 -- Multiply total by 3.
+            -- Add odd numerals except for checksum (13).
+            + substring(ean,  3 + offset, 1)::integer
+            + substring(ean,  5 + offset, 1)::integer
+            + substring(ean,  7 + offset, 1)::integer
+            + substring(ean,  9 + offset, 1)::integer
+            + substring(ean, 11 + offset, 1)::integer
         -- Compare to the checksum.
         ) % 10 = substring(ean, 12 + offset, 1)::integer;
     END;
@@ -64,7 +64,7 @@ So that's what I did. The functions I tested were:
 -   A looping version, based on the comment from Adrian Klaver in the [original
     post][validating UPC codes in PL/pgSQL]:
 
-    ``` postgres
+    ``` plpgsql
     CREATE OR REPLACE FUNCTION ean_loop(
         TEXT
     ) RETURNS boolean AS $$
@@ -139,7 +139,7 @@ So that's what I did. The functions I tested were:
 
 -   A PL/Perl version for Josh and Ovid:
 
-    ``` postgres
+    ``` plpgsql
     CREATE OR REPLACE FUNCTION ean_perl (
         TEXT
     ) RETURNS boolean AS $_$
@@ -162,7 +162,7 @@ So that's what I did. The functions I tested were:
 
 -   And finally, the new version using a byte string:
 
-    ``` postgres
+    ``` plpgsql
     CREATE OR REPLACE FUNCTION ean_byte (
         arg TEXT
     ) RETURNS boolean AS $$
@@ -186,13 +186,13 @@ So that's what I did. The functions I tested were:
                 + get_byte(ean,  8) - 48
                 + get_byte(ean, 10) - 48
                 + get_byte(ean, 12) - 48
-                ) * 3 -- Multiply total by 3.
-                -- Add odd numerals except for checksum (13).
-                + get_byte(ean,  3) - 48
-                + get_byte(ean,  7) - 48
-                + get_byte(ean,  5) - 48
-                + get_byte(ean,  9) - 48
-                + get_byte(ean, 11) - 48
+            ) * 3 -- Multiply total by 3.
+            -- Add odd numerals except for checksum (13).
+            + get_byte(ean,  3) - 48
+            + get_byte(ean,  7) - 48
+            + get_byte(ean,  5) - 48
+            + get_byte(ean,  9) - 48
+            + get_byte(ean, 11) - 48
         -- Compare to the checksum.
         ) % 10  = get_byte(ean, 12) - 48;
     END;

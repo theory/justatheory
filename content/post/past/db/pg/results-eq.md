@@ -1,6 +1,6 @@
 --- 
 date: 2009-07-01T21:32:28Z
-slug: results-eq
+slug: pgtap-results-eq
 title: "Committed: pgTAP Result Set Assertion Functions"
 aliases: [/computers/databases/postgresql/results_eq.html]
 tags: [Postgres, pgTAP, SQL, testing]
@@ -124,18 +124,22 @@ string with no spaces, or a double-quoted string, pgTAP assumes that it's the
 name of a prepared statement. The documentation now recommends prepared
 statements, which you can use like this:
 
-    PREPARE my_test AS SELECT * FROM active_users() WHERE name LIKE 'A%';
-    PREPARE expect AS SELECT * FROM users WHERE active = $1 AND name LIKE $2;
-    SELECT results_eq('my_test', 'expect');
+``` postgres
+PREPARE my_test AS SELECT * FROM active_users() WHERE name LIKE 'A%';
+PREPARE expect AS SELECT * FROM users WHERE active = $1 AND name LIKE $2;
+SELECT results_eq('my_test', 'expect');
+```
 
 This allows you to keep your SQL written as SQL, keeping your test, um, SQLish.
 But in those cases where you have some really simple SQL, you can just use that,
 too:
 
-    SELECT set_eq(
-        'SELECT * FROM active_users()',
-        'SELECT * FROM users ORDER BY id'
-    );
+``` postgres
+SELECT set_eq(
+    'SELECT * FROM active_users()',
+    'SELECT * FROM users ORDER BY id'
+);
+```
 
 This feels like a good compromise to me, allowing the best of both worlds:
 keeping things in pure SQL to avoid quoting ugliness in SQL strings, while
@@ -148,9 +152,11 @@ cursors internally. And it turns out that there's a data type for cursors,
 `refcursor`. So it was easy to add cursor support to `results_eq()` for those
 who want to use it:
 
-    DECLARE cwant CURSOR FOR SELECT * FROM active_users();
-    DECLARE chave CURSOR FOR SELECT * FROM users WHERE active ORDER BY name;
-    SELECT results_eq('cwant'::refcursor, 'chave'::refcursor );
+``` postgres
+DECLARE cwant CURSOR FOR SELECT * FROM active_users();
+DECLARE chave CURSOR FOR SELECT * FROM users WHERE active ORDER BY name;
+SELECT results_eq('cwant'::refcursor, 'chave'::refcursor );
+```
 
 Neat, huh? As I said, I'm very pleased with this approach overall. There are a
 few caveats, such as less strict comparisons in `results_eq()` on 8.3 and lower,

@@ -1,6 +1,6 @@
 --- 
 date: 2010-01-05T19:18:32Z
-slug: enforce-set-of-values
+slug: enforce-set-of-postgres-values
 title: Enforcing a Set of Values
 aliases: [/computers/databases/postgresql/enforce-set-of-values.html]
 tags: [Postgres, enums, SQL, data types]

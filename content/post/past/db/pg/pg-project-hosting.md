@@ -14,11 +14,11 @@ to find the tuits to upgrade it to newer versions.
 
 And it needs upgrading. One annoying thing I noticed is that the URLs for
 release files include an integer in them. For example, the URL to download pgTAP
-0.23 is <http://pgfoundry.org/frs/download.php/2511/pgtap-0.23.tar.bz2>. See the
+0.23 is `http://pgfoundry.org/frs/download.php/2511/pgtap-0.23.tar.bz2`. See the
 “25111” there? It appears to be a primary key value or something, but is
 completely irrelevant for a release URL. I would much prefer that the URL be
-something like http://pgfoundry.org/frs/download.php/pgtap-0.23.tar.bz2 or, even
-better, http://pgfoundry.org/projects/pgtap/frs/pgtap-0.23.tar.bz2. But such is
+something like `http://pgfoundry.org/frs/download.php/pgtap-0.23.tar.bz2` or, even
+better, `http://pgfoundry.org/projects/pgtap/frs/pgtap-0.23.tar.bz2`. But such is
 not the case now.
 
 Another issue is hosting. I've registered pgtap.org to use for hosting the pgTAP
@@ -32,7 +32,7 @@ The question is, where to? I could get a paid GitHub account (the pgTAP source
 is already on GitHub) and be able to have a pgTAP site on pgtap.org from there,
 so that’s a plus. And I can do file releases, too, in which case the URL format
 would be something like
-http://cloud.github.com/downloads/theory/pgtap/pgtap-0.23.tar.bz2, which isn’t
+`http://cloud.github.com/downloads/theory/pgtap/pgtap-0.23.tar.bz2`, which isn’t
 ideal, but is a hell of a lot better than a URL with a sequence number in it. I
 could put them on the hosted site, too, in which case they'd have whatever URL I
 wanted them to have.

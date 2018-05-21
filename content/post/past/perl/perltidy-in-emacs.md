@@ -10,6 +10,7 @@ type: post
 Here's how I integrated [Perltidy] into Emacs. Based on some [examples] from the
 Emacs Wiki, as well as a bit of help on `#emacs`, I came up with this function:
 
+``` EmacsLisp
     (defun perltidy ()
       "Run perltidy on the current region or buffer."
       (interactive)
@@ -18,8 +19,9 @@ Emacs Wiki, as well as a bit of help on `#emacs`, I came up with this function:
         (shell-command-on-region (point) (mark) "perltidy -q" nil t)))
 
     (global-set-key "\C-ct" 'perltidy)
+```
 
-With Perltidy installed and this function thrown into your *\~/.emacs* file, you
+With Perltidy installed and this function thrown into your `*\~/.emacs*` file, you
 can run `perltidy` on a region by just hitting `C-C t`. If no region is
 selected, it'll run `perltidy` on the whole buffer.
 

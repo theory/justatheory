@@ -1,6 +1,6 @@
 --- 
 date: 2012-11-02T22:16:28Z
-slug: mock-serialization-failures
+slug: mock-postgres-serialization-failures
 title: Mocking Serialization Failures
 aliases: [/computers/databases/postgresql/mock-serialization-failures.html]
 tags: [Postgres, SQL]
@@ -66,20 +66,22 @@ non-transactional, sequences return different values every time they’re access
 
 Here’s what I came up with:
 
-    CREATE SEQUENCE serial_seq;
+``` plpgsql
+CREATE SEQUENCE serial_seq;
 
-    CREATE OR REPLACE FUNCTION mock_serial_fail(
-    ) RETURNS trigger LANGUAGE plpgsql AS $_$
-    BEGIN
-        IF nextval('serial_seq') % 2 = 0 THEN RETURN NEW; END IF;
-        RAISE EXCEPTION 'Serialization error'
-              USING ERRCODE = 'serialization_failure';
-    END;
-    $_$;
+CREATE OR REPLACE FUNCTION mock_serial_fail(
+) RETURNS trigger LANGUAGE plpgsql AS $_$
+BEGIN
+    IF nextval('serial_seq') % 2 = 0 THEN RETURN NEW; END IF;
+    RAISE EXCEPTION 'Serialization error'
+            USING ERRCODE = 'serialization_failure';
+END;
+$_$;
 
-    CREATE TRIGGER mock_serial_fail AFTER INSERT ON bucardo_test2
-        FOR EACH ROW EXECUTE PROCEDURE mock_serial_fail();
-    ALTER TABLE bucardo_test2 ENABLE REPLICA TRIGGER mock_serial_fail;
+CREATE TRIGGER mock_serial_fail AFTER INSERT ON bucardo_test2
+    FOR EACH ROW EXECUTE PROCEDURE mock_serial_fail();
+ALTER TABLE bucardo_test2 ENABLE REPLICA TRIGGER mock_serial_fail;
+```
 
 The first `INSERT` (or, in Bucardo’s case, `COPY`) to `bucardo_test2` will die
 with the serialization error. The second `INSERT` (or `COPY`) succeeds. This

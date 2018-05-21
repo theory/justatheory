@@ -1,6 +1,6 @@
 --- 
 date: 2009-06-09T23:33:57Z
-slug: xml-generation
+slug: perl-xml-generation
 title: Generating XML in Perl
 aliases: [/computers/programming/perl/xml-generation.html]
 tags: [Perl, XML]

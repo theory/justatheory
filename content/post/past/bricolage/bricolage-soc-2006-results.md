@@ -1,6 +1,6 @@
 --- 
 date: 2006-09-07T17:43:21Z
-slug: bricolage-soc-2006-results
+slug: bricolage-soc-results
 title: Bricolage GSoC Projects Completed
 aliases: [/bricolage/soc_2006_results.html]
 tags: [Bricolage, Google Summer Of Code, MySQL, Ajax, Marshall Roch, Christian Muise, Andrei Arsu]

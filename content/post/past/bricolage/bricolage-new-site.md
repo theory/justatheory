@@ -1,6 +1,6 @@
 --- 
 date: 2004-07-29T19:02:18Z
-slug: bricolage-new-site
+slug: new-bricolage-site
 title: New Bricolage Website Launched!
 aliases: [/bricolage/site/new_site.html]
 tags: [Bricolage, OSCON]

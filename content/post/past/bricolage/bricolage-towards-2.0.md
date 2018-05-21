@@ -1,6 +1,6 @@
 --- 
 date: 2008-05-01T01:03:43Z
-slug: bricolage-towards-2.0
+slug: towards-bricolage-2.0
 title: Moving Towards Bricolage 2.0
 aliases: [/bricolage/towards_2.0.html]
 tags: [Bricolage, Apache, mod_perl, Ajax, MySQL]

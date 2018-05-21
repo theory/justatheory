@@ -17,7 +17,6 @@ along the way.
 So what are you waiting for? [Check it out]!
 
   [onLamp.com]: http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html
-    "Read “Managing Many-to-Many Relationships with
-    PL/pgSQL”"
+    "Read “Managing Many-to-Many Relationships with PL/pgSQL”"
   [Check it out]: http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html
     "Ready “Managing Many-to-Many Relationships with PL/pgSQL”"

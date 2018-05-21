@@ -1,6 +1,6 @@
 --- 
 date: 2004-08-13T23:28:55Z
-slug: portland-ralley
+slug: portland-kerry-ralley
 title: Portland Kerry Rally
 aliases: [/politics/election_2004/portland_ralley.html]
 tags: [Politics, John Kerry, President, President Of The United States, elections, Portland, Oregon, August]

@@ -1,6 +1,6 @@
 --- 
 date: 2005-12-07T05:19:09Z
-slug: insert-execution-order-problem
+slug: postgres-insert-execution-order-problem
 title: Issues with INSERT Execution Ordering
 aliases: [/computers/databases/postgresql/insert_execution_order_problem.html]
 tags: [Postgres, SQL, RDBMS, database triggers]
@@ -22,30 +22,32 @@ Now, how I wanted to implement this in the database is where the `extend` view
 has all of the columns from the `_simple` table and the `_extend` table. That's
 pretty simple. It looks like this:
 
-    CREATE SEQUENCE seq_kinetic;
+``` postgres
+CREATE SEQUENCE seq_kinetic;
 
-    CREATE TABLE _simple (
-        id INTEGER NOT NULL DEFAULT NEXTVAL('seq_kinetic'),
-        uuid UUID NOT NULL DEFAULT UUID_V4(),
-        state INTEGER NOT NULL DEFAULT 1,
-        name TEXT NOT NULL,
-        description TEXT
-    );
+CREATE TABLE _simple (
+    id INTEGER NOT NULL DEFAULT NEXTVAL('seq_kinetic'),
+    uuid UUID NOT NULL DEFAULT UUID_V4(),
+    state INTEGER NOT NULL DEFAULT 1,
+    name TEXT NOT NULL,
+    description TEXT
+);
 
-    CREATE TABLE _extend (
-        id INTEGER NOT NULL DEFAULT NEXTVAL('seq_kinetic'),
-        uuid UUID NOT NULL DEFAULT UUID_V4(),
-        state INTEGER NOT NULL DEFAULT 1,
-        simple_id INTEGER NOT NULL
-    );
+CREATE TABLE _extend (
+    id INTEGER NOT NULL DEFAULT NEXTVAL('seq_kinetic'),
+    uuid UUID NOT NULL DEFAULT UUID_V4(),
+    state INTEGER NOT NULL DEFAULT 1,
+    simple_id INTEGER NOT NULL
+);
 
-    CREATE VIEW extend AS
-      SELECT _extend.id AS id, _extend.uuid AS uuid, _extend.state AS state,
-             _extend.simple_id AS simple__id, simple.uuid AS simple__uuid,
-             simple.state AS simple__state, simple.name AS name,
-             simple.description AS description
-      FROM   _extend, simple
-      WHERE  _extend.simple_id = simple.id;
+CREATE VIEW extend AS
+  SELECT _extend.id AS id, _extend.uuid AS uuid, _extend.state AS state,
+         _extend.simple_id AS simple__id, simple.uuid AS simple__uuid,
+         simple.state AS simple__state, simple.name AS name,
+         simple.description AS description
+  FROM   _extend, simple
+  WHERE  _extend.simple_id = simple.id;
+```
 
 Pretty simple, right? Well, I like to put `RULE`s on `VIEW`s like this, so that
 I can just use the `VIEW` for `INSERT`s, `UPDATE`s, AND `DELETES`s. For now I'm
@@ -59,32 +61,34 @@ it should assume that it references an existing record in the `_simple` table,
 however, then it should `INSERT` into both the `_simple` table and the `_extend`
 table. What I came up with looked like this:
 
-    CREATE RULE insert_extend AS
-    ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
-      INSERT INTO _simple (id, uuid, state, name, description)
-      VALUES (NEXTVAL('seq_kinetic'), UUID_V4(), NEW.simple__state, NEW.name,
-              NEW.description);
+``` postgres
+CREATE RULE insert_extend AS
+ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
+  INSERT INTO _simple (id, uuid, state, name, description)
+  VALUES (NEXTVAL('seq_kinetic'), UUID_V4(), NEW.simple__state, NEW.name,
+          NEW.description);
 
-      INSERT INTO _extend (id, uuid, state, simple_id)
-      VALUES (NEXTVAL('seq_kinetic'), COALESCE(NEW.uuid, UUID_V4()), NEW.state,
-              CURRVAL('seq_kinetic'));
-    );
+  INSERT INTO _extend (id, uuid, state, simple_id)
+  VALUES (NEXTVAL('seq_kinetic'), COALESCE(NEW.uuid, UUID_V4()), NEW.state,
+          CURRVAL('seq_kinetic'));
+);
 
-    CREATE RULE extend_extend AS
-    ON INSERT TO extend WHERE NEW.simple__id IS NOT NULL DO INSTEAD (
-      UPDATE _simple
-      SET    state = COALESCE(NEW.simple__state, state),
-             name  = COALESCE(NEW.name, name),
-             description = COALESCE(NEW.description, description)
-      WHERE  id = NEW.simple__id;
+CREATE RULE extend_extend AS
+ON INSERT TO extend WHERE NEW.simple__id IS NOT NULL DO INSTEAD (
+  UPDATE _simple
+  SET    state = COALESCE(NEW.simple__state, state),
+         name  = COALESCE(NEW.name, name),
+         description = COALESCE(NEW.description, description)
+  WHERE  id = NEW.simple__id;
 
-      INSERT INTO _extend (id, uuid, state, simple_id)
-      VALUES (NEXTVAL('seq_kinetic'), COALESCE(NEW.uuid, UUID_V4()),
-              NEW.state, NEW.simple__id);
-    );
+  INSERT INTO _extend (id, uuid, state, simple_id)
+  VALUES (NEXTVAL('seq_kinetic'), COALESCE(NEW.uuid, UUID_V4()),
+          NEW.state, NEW.simple__id);
+);
 
-    CREATE RULE insert_extend_dummy AS
-    ON INSERT TO extend DO INSTEAD NOTHING;
+CREATE RULE insert_extend_dummy AS
+ON INSERT TO extend DO INSTEAD NOTHING;
+```
 
 That third `RULE` is required, as a `VIEW` must have an unconditional
 `DO INSTEAD` `RULE`. The second `RULE` also works, for those situations where I
@@ -107,16 +111,18 @@ because the current value in the sequence is not in the `_simple` table at all.
 At first, I thought that this might be an order of execution problem with the
 `INSERT` statement, so I tried this:
 
-    CREATE RULE insert_extend AS
-    ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
-      INSERT INTO _simple (id, uuid, state, name, description)
-      VALUES (NEXTVAL('seq_kinetic'), UUID_V4(), NEW.simple__state, NEW.name,
-              NEW.description);
+``` postgres
+CREATE RULE insert_extend AS
+ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
+  INSERT INTO _simple (id, uuid, state, name, description)
+  VALUES (NEXTVAL('seq_kinetic'), UUID_V4(), NEW.simple__state, NEW.name,
+          NEW.description);
 
-      INSERT INTO _extend (simple_id, id, uuid, state)
-      VALUES (CURRVAL('seq_kinetic'), NEXTVAL('seq_kinetic'),
-              COALESCE(NEW.uuid, UUID_V4()), NEW.state);
-    );
+  INSERT INTO _extend (simple_id, id, uuid, state)
+  VALUES (CURRVAL('seq_kinetic'), NEXTVAL('seq_kinetic'),
+          COALESCE(NEW.uuid, UUID_V4()), NEW.state);
+);
+```
 
 Unfortunately, that yielded the same error. So if the order of the columns in
 the `INSERT` statement didn't define the execution order, what did? Well, a
@@ -146,16 +152,18 @@ Damn SQL!
 So what's the solution to this? Well, I came up with three. The first, and
 perhaps simplest, is to use two sequences instead of one:
 
-    CREATE RULE insert_extend AS
-    ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
-      INSERT INTO _simple (id, uuid, state, name, description)
-      VALUES (NEXTVAL('seq_kinetic'), UUID_V4(), NEW.simple__state, NEW.name,
-              NEW.description);
+``` postgres
+CREATE RULE insert_extend AS
+ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
+  INSERT INTO _simple (id, uuid, state, name, description)
+  VALUES (NEXTVAL('seq_kinetic'), UUID_V4(), NEW.simple__state, NEW.name,
+          NEW.description);
 
-      INSERT INTO _extend (id, uuid, state, simple_id)
-      VALUES (NEXTVAL('seq_kinetic_alt'), COALESCE(NEW.uuid, UUID_V4()), NEW.state,
-              CURRVAL('seq_kinetic'));
-    );
+  INSERT INTO _extend (id, uuid, state, simple_id)
+  VALUES (NEXTVAL('seq_kinetic_alt'), COALESCE(NEW.uuid, UUID_V4()), NEW.state,
+          CURRVAL('seq_kinetic'));
+);
+```
 
 This works very well, and if you have separate sequences for each table, this is
 what you would do. But I want to use just one sequence for every primary key in
@@ -163,8 +171,10 @@ the database, so as to prevent any possibility of duplicates. I could use two
 mutually exclusive sequences, one for odd numbers and the other for even
 numbers:
 
-    CREATE SEQUENCE seq_kinetic_odd INCREMENT BY 2;
-    CREATE SEQUENCE seq_kinetic_odd INCREMENT BY 2 START WITH 2;
+``` postgres
+CREATE SEQUENCE seq_kinetic_odd INCREMENT BY 2;
+CREATE SEQUENCE seq_kinetic_odd INCREMENT BY 2 START WITH 2;
+```
 
 But then I have to keep track of which sequence I'm using where. If I just use
 the “even” sequence for this special case (which may be rare), then I'm
@@ -176,24 +186,26 @@ The solution I've currently worked out is to create a PL/pgSQL function that can
 keep track of the sequence numbers ahead of time, and just call it from the
 `RULE`:
 
-    CREATE FUNCTION insert_extend(NEWROW extend) RETURNS VOID AS '
-      DECLARE
-         _first_id  integer := NEXTVAL(''seq_kinetic'');
-         _second_id integer := NEXTVAL(''seq_kinetic'');
-      BEGIN
-      INSERT INTO _simple (id, uuid, state, name, description)
-      VALUES (_first_id, UUID_V4(), NEWROW.simple__state, NEWROW.name,
-              NEWROW.description);
+``` plpgsql
+CREATE FUNCTION insert_extend(NEWROW extend) RETURNS VOID AS $$
+    DECLARE
+        _first_id  integer := NEXTVAL(''seq_kinetic'');
+        _second_id integer := NEXTVAL(''seq_kinetic'');
+    BEGIN
+    INSERT INTO _simple (id, uuid, state, name, description)
+    VALUES (_first_id, UUID_V4(), NEWROW.simple__state, NEWROW.name,
+            NEWROW.description);
 
-      INSERT INTO _extend (id, uuid, state, simple_id)
-      VALUES (_second_id, COALESCE(NEWROW.uuid, UUID_V4()), NEWROW.state, _first_id);
-      END;
-    ' LANGUAGE plpgsql VOLATILE;
-        
-    CREATE RULE insert_extend AS
-    ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
-      SELECT insert_extend(NEW);
-    );
+    INSERT INTO _extend (id, uuid, state, simple_id)
+    VALUES (_second_id, COALESCE(NEWROW.uuid, UUID_V4()), NEWROW.state, _first_id);
+    END;
+$$ LANGUAGE plpgsql VOLATILE;
+    
+CREATE RULE insert_extend AS
+ON INSERT TO extend WHERE NEW.simple__id IS NULL DO INSTEAD (
+    SELECT insert_extend(NEW);
+);
+```
 
 This approach works pretty nicely, and doesn't add much more code than my
 original solution with the ordering problem. I think I'll keep it.
@@ -201,54 +213,58 @@ original solution with the ordering problem. I think I'll keep it.
 One other solution is to use a `TRIGGER` instead of a rule, but in truth, it
 would amount to nearly the same thing:
 
-    CREATE FUNCTION insert_extend() RETURNS trigger AS '
-      DECLARE
-         _first_id  integer := NEXTVAL(''seq_kinetic'');
-         _second_id integer := NEXTVAL(''seq_kinetic'');
-      BEGIN
-      INSERT INTO _simple (id, uuid, state, name, description)
-      VALUES (_first_id, UUID_V4(), NEW.simple__state, NEW.name, NEW.description);
+``` plpgsql
+CREATE FUNCTION insert_extend() RETURNS trigger AS $$
+    DECLARE
+        _first_id  integer := NEXTVAL(''seq_kinetic'');
+        _second_id integer := NEXTVAL(''seq_kinetic'');
+    BEGIN
+    INSERT INTO _simple (id, uuid, state, name, description)
+    VALUES (_first_id, UUID_V4(), NEW.simple__state, NEW.name, NEW.description);
 
-      INSERT INTO _extend (id, uuid, state, simple_id)
-      VALUES (_second_id, COALESCE(NEW.uuid, UUID_V4()), NEW.state, _first_id);
-      END;
-    ' LANGUAGE plpgsql;
+    INSERT INTO _extend (id, uuid, state, simple_id)
+    VALUES (_second_id, COALESCE(NEW.uuid, UUID_V4()), NEW.state, _first_id);
+    END;
+$$ LANGUAGE plpgsql;
 
-    CREATE TRIGGER insert_extend BEFORE UPDATE ON extend
-    FOR EACH ROW EXECUTE PROCEDURE insert_extend();
+CREATE TRIGGER insert_extend BEFORE UPDATE ON extend
+FOR EACH ROW EXECUTE PROCEDURE insert_extend();
+```
 
 Um, but looking at it now (I just now typed it up, I haven't tested it), I don't
 think it'd work, because you can't put a condition on a rule. On the other hand,
 I could use it to combine the three rules I have (two conditional and mutually
 exclusive, one that does nothing) into a single trigger:
 
-    CREATE FUNCTION insert_extend() RETURNS trigger AS '
-      DECLARE
-         _first_id  integer;
-         _second_id integer;
-      BEGIN
-        IF NEW.simple__id IS NULL THEN
-          _first_id  := NEXTVAL(''seq_kinetic'');
-          _second_id := NEXTVAL(''seq_kinetic'');
+``` plpgsql
+CREATE FUNCTION insert_extend() RETURNS trigger AS $$
+    DECLARE
+        _first_id  integer;
+        _second_id integer;
+    BEGIN
+    IF NEW.simple__id IS NULL THEN
+        _first_id  := NEXTVAL(''seq_kinetic'');
+        _second_id := NEXTVAL(''seq_kinetic'');
 
-          INSERT INTO _simple (id, uuid, state, name, description)
-          VALUES (_first_id, UUID_V4(), NEW.simple__state, NEW.name, NEW.description);
+        INSERT INTO _simple (id, uuid, state, name, description)
+        VALUES (_first_id, UUID_V4(), NEW.simple__state, NEW.name, NEW.description);
 
-          INSERT INTO _extend (id, uuid, state, simple_id)
-          VALUES (_second_id, COALESCE(NEW.uuid, UUID_V4()), NEW.state, _first_id);
-        ELSE
-          UPDATE _simple
-          SET    state = COALESCE(NEW.simple__state, state),
-                 name  = COALESCE(NEW.name, name),
-                 description = COALESCE(NEW.description, description)
-          WHERE  id = NEW.simple__id;
+        INSERT INTO _extend (id, uuid, state, simple_id)
+        VALUES (_second_id, COALESCE(NEW.uuid, UUID_V4()), NEW.state, _first_id);
+    ELSE
+        UPDATE _simple
+        SET    state = COALESCE(NEW.simple__state, state),
+                name  = COALESCE(NEW.name, name),
+                description = COALESCE(NEW.description, description)
+        WHERE  id = NEW.simple__id;
 
-          INSERT INTO _extend (id, uuid, state, simple_id)
-          VALUES (NEXTVAL('seq_kinetic'), COALESCE(NEW.uuid, UUID_V4()),
-                  NEW.state, NEW.simple__id);
-        END IF;
-      END;
-    ' LANGUAGE plpgsql;
+        INSERT INTO _extend (id, uuid, state, simple_id)
+        VALUES (NEXTVAL('seq_kinetic'), COALESCE(NEW.uuid, UUID_V4()),
+                NEW.state, NEW.simple__id);
+    END IF;
+    END;
+$$ LANGUAGE plpgsql;
+```
 
 Hrm. That just might be the best way to go, period. Thoughts? Have I missed some
 other obvious solution?

@@ -33,7 +33,6 @@ So start having some fun with PL/pgSQL!
   [posted the slides]: /2006/07/plpgsql-talk-slides/learning_plpgsql.pdf
     "“Learning PL/pgSQL” slides"
   [my]: http://www.oreillynet.com/pub/a/onlamp/2006/05/11/postgresql-plpgsql.html
-    "Writing PostgreSQL Functions with
-    PL/pgSQL"
+    "Writing PostgreSQL Functions with PL/pgSQL"
   [articles]: http://www.oreillynet.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html
     "Managing Many-to-Many Relationships with PL/pgSQL"

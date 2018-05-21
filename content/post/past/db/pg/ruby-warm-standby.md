@@ -17,36 +17,38 @@ standby configuration, but unfortunately, our server OS does not have the
 `usleep` utility, so rather than have 1 second sleeps, I ported Charles's shell
 script to Ruby. Here it is for your enjoyment:
 
-    #!/usr/bin/env ruby
+``` ruby
+#!/usr/bin/env ruby
 
-    DELAY         = 0.01
-    FAILOVER_FILE = "/path/to/failover"
+DELAY         = 0.01
+FAILOVER_FILE = "/path/to/failover"
 
-    @@triggered = false
+@@triggered = false
 
-    require 'ftools'
+require 'ftools'
 
-    def move (from, to)
-      # Do not overwrite! Throws an exception on failure, existing the script.
-      File.copy( from, to ) unless @@triggered || File.exists?( to )
-    end
+def move (from, to)
+  # Do not overwrite! Throws an exception on failure, existing the script.
+  File.copy( from, to ) unless @@triggered || File.exists?( to )
+end
 
-    from, to = ARGV
+from, to = ARGV
 
-    # If PostgreSQL is asking for .history, just try to move it and exit.
-    if from =~ /\.history$/
-      move from, to
-      exit
-    end
+# If PostgreSQL is asking for .history, just try to move it and exit.
+if from =~ /\.history$/
+  move from, to
+  exit
+end
 
-    # Sleep while waiting for the file.
-    while !File.exists?(from) && !@@triggered
-      sleep DELAY
-      @@triggered = true if File.exists?( FAILOVER_FILE )
-    end
+# Sleep while waiting for the file.
+while !File.exists?(from) && !@@triggered
+  sleep DELAY
+  @@triggered = true if File.exists?( FAILOVER_FILE )
+end
 
-    # Move the file.
-    move from, to
+# Move the file.
+move from, to
+```
 
 Just change the `DELAY` value to the number of seconds you want to sleep, and
 the `FAILOVER_FILE` value to the location of a file that will trigger a

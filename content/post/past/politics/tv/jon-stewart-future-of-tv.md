@@ -5,12 +5,10 @@ title: Jon Stewart and the Future of Television
 aliases: [/culture/tv/jon_stewart_future_of_tv.html]
 tags: [Poltics, Jon Stewart, TV, Wired, Internet, Crossfire]
 type: post
+via: { name: gnat, href: http://radar.oreilly.com/nat/, title: Nat’s Radar }
 ---
 
 [Jon Stewart and the Future of Television].
 
-(Via [gnat])
-
   [Jon Stewart and the Future of Television]: http://www.wired.com/wired/archive/13.09/stewart.html
     "Reinventing Television"
-  [gnat]: http://radar.oreilly.com/nat/ "Nat's Radar"

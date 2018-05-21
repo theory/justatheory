@@ -1,6 +1,6 @@
 --- 
 date: 2004-09-14T03:13:00Z
-slug: utf8-trials
+slug: perl-utf8-trials
 title: Lessons Learned with Perl and UTF-8
 aliases: [/computers/programming/perl/utf8_trials.html]
 tags: [Perl, Bricolage, Unicode, UTF-8]

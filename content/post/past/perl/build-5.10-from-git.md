@@ -1,6 +1,6 @@
 --- 
 date: 2009-07-03T06:30:54Z
-slug: build-5.10-from-git
+slug: build-perl-5.10-from-git
 title: Checkout and Build Perl 5.10 from Git
 aliases: [/computers/programming/perl/build-5.10-from-git.html]
 tags: [Perl, Perl 5 Porters, Git, hacking]

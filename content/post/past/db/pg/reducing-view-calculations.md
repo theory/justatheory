@@ -1,6 +1,6 @@
 --- 
 date: 2007-11-07T05:22:00Z
-slug: reducing-view-calculations
+slug: reducing-postgres-view-calculations
 title: Need Help Reducing View Calculations
 aliases: [/computers/databases/postgresql/reducing_view_calculations.html]
 tags: [Postgres, time zones]
@@ -50,23 +50,26 @@ To get all of the permutations of recurring events, we simply select from a view
 rather than from the `events` table that contains the actual event data. The
 view joins `events` to `recurrence_dates` table like so:
 
-    CREATE OR REPLACE VIEW recurring_events AS
-    SELECT id, name, user_id, duration,
-           (rd.next_date || ' ' ||
-           (starts_at::timestamptz at time zone start_tz)::time)::timestamp
-           at time zone start_tz AS starts_at,
-           start_tz
-      FROM events LEFT JOIN recurrence_dates rd
-        ON (events.starts_at::timestamptz at time zone events.start_tz)::date = rd.date
-       AND events.recurrence = rd.recurrence;
-
+``` postgres
+CREATE OR REPLACE VIEW recurring_events AS
+SELECT id, name, user_id, duration,
+       (rd.next_date || ' ' ||
+       (starts_at::timestamptz at time zone start_tz)::time)::timestamp
+       at time zone start_tz AS starts_at,
+       start_tz
+  FROM events LEFT JOIN recurrence_dates rd
+    ON (events.starts_at::timestamptz at time zone events.start_tz)::date = rd.date
+   AND events.recurrence = rd.recurrence;
+```
 Then, to get all of the recurrences of events for a user within a week, we do
 something like this in the client code:
 
-    SELECT *
-      FROM recurring_events
-     WHERE user_id = 2
-       AND starts_at BETWEEN '2007-11-04 07:00:00' AND '2007-11-10 07:59:59';
+``` postgres
+SELECT *
+  FROM recurring_events
+ WHERE user_id = 2
+   AND starts_at BETWEEN '2007-11-04 07:00:00' AND '2007-11-10 07:59:59';
+```
 
 This works perfectly, as all of our dates and times are stored in UTC in
 `timestamp` columns. We pass UTC times for the appropriate offset to the query

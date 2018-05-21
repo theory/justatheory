@@ -1,6 +1,6 @@
 --- 
 date: 2005-04-29T17:41:21Z
-slug: test-simple-0.03
+slug: test-simple-js-0.03
 title: TestSimple 0.03 Released
 aliases: [/computers/programming/javascript/test_simple-0.03.html]
 tags: [JavaScript, Perl, port, testing]

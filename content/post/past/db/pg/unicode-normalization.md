@@ -1,6 +1,6 @@
 --- 
 date: 2009-09-23T22:10:22Z
-slug: unicode-normalization
+slug: postgres-unicode-normalization
 title: Unicode Normalization in SQL
 aliases: [/computers/databases/postgresql/unicode-normalization.html]
 tags: [Postgres, SQL, Unicode, database normalization, NFC, NFD, NFKC, NFKD]

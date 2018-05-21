@@ -1,6 +1,6 @@
 --- 
 date: 2005-11-30T02:02:53Z
-slug: howto-avoid-tigers-readline
+slug: postgres-avoid-tigers-readline
 title: How Do I Avoid Tiger's readline When Compiling PostgreSQL?
 aliases: [/computers/databases/postgresql/howto_avoid_tigers_readline.html]
 tags: [Postgres, readline, psql, segfaults, history]
@@ -17,23 +17,29 @@ readline 5.0 and wan to use it, instead.
 The only problem is that there is no easy way to do it with environment
 variables or options when configuring PostgreSQL. I've tried:
 
-    ./configure --includes=/usr/local/include -with-libs=/usr/local/lib
+``` bash
+./configure --includes=/usr/local/include -with-libs=/usr/local/lib
+```
 
 And:
 
-    CFLAGS=-L/usr/local/lib LDFLAGS=-I/usr/local/include; ./configure
+``` bash
+CFLAGS=-L/usr/local/lib LDFLAGS=-I/usr/local/include; ./configure
+```
 
 Neither approach worked. In both cases, it still compiled in Apple's buggy
 readline library. The only approach I've found to work is the brute force
 approach:
 
-    mv /usr/lib/libreadline.* /tmp
-    mv /usr/include/readline /tmp
-    ./configure
-    make
-    make install
-    mv /tmp/libreadline.* /usr/lib
-    mv /tmp/readline /usr/include
+``` bash
+mv /usr/lib/libreadline.* /tmp
+mv /usr/include/readline /tmp
+./configure
+make
+make install
+mv /tmp/libreadline.* /usr/lib
+mv /tmp/readline /usr/include
+```
 
 But surely I'm missing something! Is there no better way to do it?
 

@@ -18,12 +18,14 @@ collect. The [`<source>`] element seems to be exactly what I need:
 > contributor, rights, or category and those child elements are not present in
 > the source entry.
 >
->     <source>
->       <id>http://example.org/</id>
->       <title>Fourty-Two</title>
->       <updated>2003-12-13T18:30:02Z</updated>
->       <rights>© 2005 Example, Inc.</rights>
->     </source>
+``` html
+<source>
+  <id>http://example.org/</id>
+  <title>Fourty-Two</title>
+  <updated>2003-12-13T18:30:02Z</updated>
+  <rights>© 2005 Example, Inc.</rights>
+</source>
+```
 
 That’s perfect: It allows me to keep the title, link, rights, and icon of the
 originating blog associated with each entry.

@@ -68,7 +68,7 @@ spec is:
 > (“\<\<” and “\>\>”) may be used if and only if there is whitespace right after
 > the opening delimiter and whitespace right before the closing delimiter! For
 > example, the following will do the trick:
->
+> 
 >     C<< $a <=> $b >>
 >
 > In fact, you can use as many repeated angle‐brackets as you like so long as
@@ -79,13 +79,13 @@ spec is:
 >
 >     C<<< $a <=> $b >>>
 >     C<<<<  $a <=> $b     >>>>
->
+> 
 > And they all mean exactly the same as this:
 >
 >     C<$a E<lt>=E<gt> $b>
 
 Although all of the examples use `C<< >>`, it seems pretty clear that it applies
-to all of the span tags ( `B<< >>`, `I<< >>`, `F<< >>`, etc.). So I made the
+to all of the span tags (`B<< >>`, `I<< >>`, `F<< >>`, etc.). So I made the
 change so that tags embedded in these “complex” tags, as comments in Pod::Simple
 call them, are not treated as tags. That is, all `<` and `>` characters are
 encoded.
@@ -108,7 +108,7 @@ Well, there's a lot more crap that Pod::Simple puts in there, but the important
 thing to note is that neither the `B<>` nor the `E<>` is evaluated as a POD tag
 inside the `L<<< >>>` tag. If that seems inconsistent at all, just remember that
 POD tags still work inside non-complex POD tags (that is, when there is just one
-set of angle brackets:
+set of angle brackets):
 
     L<Perl B<Error E<77>essages>|perldiag>
 

@@ -12,37 +12,42 @@ created by [gugod], the latest version of [Test::XPath] supports Ruby-style
 blocks. The Ruby version of `assert_select`, as I mentioned [previously], looks
 like this:
 
-    assert_select "ol" { |elements|
-      elements.each { |element|
-        assert_select element, "li", 4
-      }
-    }
+``` ruby
+assert_select "ol" { |elements|
+  elements.each { |element|
+    assert_select element, "li", 4
+  }
+}
+```
 
 I've switched to the brace syntax for greater parity with Perl. Test::XPath,
 meanwhile, looks like this:
 
-    my @css = qw(foo.css bar.css);
-    $tx->ok( '/html/head/style', sub {
-        my $css = shift @css;
-        shift->is( './@src', $css, "Style src should be $css");
-    }, 'Should have style' );
+``` perl
+my @css = qw(foo.css bar.css);
+$tx->ok( '/html/head/style', sub {
+    my $css = shift @css;
+    shift->is( './@src', $css, "Style src should be $css");
+}, 'Should have style' );
+```
 
 But as of Test::XPath 0.13, you can now just use PerlX::MethodCallWithBlock to
 pass blocks in the Rubyish way:
 
-    use PerlX::MethodCallWithBlock;
-    my @css = qw(foo.css bar.css);
-    $tx->ok( '/html/head/style', 'Should have style' ) {
-        my $css = shift @css;
-        shift->is( './@src', $css, "Style src should be $css");
-    };
+``` perl
+use PerlX::MethodCallWithBlock;
+my @css = qw(foo.css bar.css);
+$tx->ok( '/html/head/style', 'Should have style' ) {
+    my $css = shift @css;
+    shift->is( './@src', $css, "Style src should be $css");
+};
+```
 
 Pretty slick, eh? It required a single-line change to the source code. I'm
 really happy with this sugar. Thanks for the [great hack], gugod!
 
   [Devel::Declare]: http://search.cpan.org/perldoc?Devel::Declare
-    "Devel::Declare on
-    CPAN"
+    "Devel::Declare on CPAN"
   [PerlX::MethodCallWithBlock]: http://search.cpan.org/perldoc?PerlX::MethodCallWithBlock
     "PerlX::MethodCallWithBlock on CPAN"
   [gugod]: http://gugod.org/2009/08/running-in-the-compile-time.html

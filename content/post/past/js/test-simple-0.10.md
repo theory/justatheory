@@ -1,6 +1,6 @@
 --- 
 date: 2005-06-24T05:11:58Z
-slug: test-simple-0.10
+slug: test-simple-js-0.10
 title: Test.Simple 0.10 Released
 aliases: [/computers/programming/javascript/test_simple-0.10.html]
 tags: [JavaScript, Perl, Testing, TAP, Test Anything Protocol]

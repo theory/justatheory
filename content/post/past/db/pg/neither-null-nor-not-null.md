@@ -1,6 +1,6 @@
 --- 
 date: 2009-07-28T19:16:54Z
-slug: neither-null-nor-not-null
+slug: sql-neither-null-nor-not-null
 title: "Neither NULL nor NOT NULL: An SQL WTF"
 aliases: [/computers/databases/postgresql/neither-null-nor-not-null.html]
 tags: [Postgres, SQL]
@@ -11,16 +11,18 @@ While working on [result set testing functions], I ran into a bit of weirdness
 when comparing rows between two cursors. I had code that looked more or less
 like this:
 
+``` postgres
+FETCH have INTO rec_have;
+FETCH want INTO rec_want;
+WHILE rec_have IS NOT NULL OR rec_want IS NOT NULL LOOP
+    IF rec_have IS DISTINCT FROM rec_want THEN
+        RETURN FALSE;
+    END IF;
     FETCH have INTO rec_have;
     FETCH want INTO rec_want;
-    WHILE rec_have IS NOT NULL OR rec_want IS NOT NULL LOOP
-        IF rec_have IS DISTINCT FROM rec_want THEN
-            RETURN FALSE;
-        END IF;
-        FETCH have INTO rec_have;
-        FETCH want INTO rec_want;
-    END LOOP;
-    RETURN TRUE;
+END LOOP;
+RETURN TRUE;
+```
 
 Basically, the idea is to return true if the two cursors return equivalent rows
 in the same order. However, things started to get weird when any of the rows
@@ -70,16 +72,18 @@ Jeff thought that you could cheat the standard by moving the `NOT` in front of
 the value before checking its `NULL`ness. I changed my code to reflect this, and
 things got better:
 
+``` postgres
+FETCH have INTO rec_have;
+FETCH want INTO rec_want;
+WHILE NOT rec_have IS NULL OR NOT rec_want IS NULL LOOP
+    IF rec_have IS DISTINCT FROM rec_want THEN
+        RETURN FALSE;
+    END IF;
     FETCH have INTO rec_have;
     FETCH want INTO rec_want;
-    WHILE NOT rec_have IS NULL OR NOT rec_want IS NULL LOOP
-        IF rec_have IS DISTINCT FROM rec_want THEN
-            RETURN FALSE;
-        END IF;
-        FETCH have INTO rec_have;
-        FETCH want INTO rec_want;
-    END LOOP;
-    RETURN TRUE;
+END LOOP;
+RETURN TRUE;
+```
 
 Kind of confusing to read, but at least it's not too ugly. In truth, however,
 it's still inconsistent: it just makes it so that such records are both `NULL`
@@ -143,20 +147,22 @@ not.” D'oh!
 
 So now my function looks more or less like this:
 
+``` postgres
+FETCH have INTO rec_have;
+have_found := FOUND;
+FETCH want INTO rec_want;
+want_found := FOUND;
+WHILE have_found OR want_found LOOP
+    IF rec_have IS DISTINCT FROM rec_want THEN
+        RETURN FALSE;
+    END IF;
     FETCH have INTO rec_have;
     have_found := FOUND;
     FETCH want INTO rec_want;
     want_found := FOUND;
-    WHILE have_found OR want_found LOOP
-        IF rec_have IS DISTINCT FROM rec_want THEN
-            RETURN FALSE;
-        END IF;
-        FETCH have INTO rec_have;
-        have_found := FOUND;
-        FETCH want INTO rec_want;
-        want_found := FOUND;
-    END LOOP;
-    RETURN TRUE;
+END LOOP;
+RETURN TRUE;
+```
 
 Yeah, pretty verbose and full of a lot of explicit processing that I can just
 take for granted in more sane languages, but it does the trick. Don'tcha just

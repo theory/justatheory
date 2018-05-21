@@ -1,6 +1,6 @@
 --- 
 date: 2009-08-19T18:23:14Z
-slug: enable-csvlogging
+slug: enable-postgres-csvlogging
 title: Enable CSV Logging in PostgreSQL
 aliases: [/computers/databases/postgresql/enable-csvlogging.html]
 tags: [Postgres, logging, CSV]

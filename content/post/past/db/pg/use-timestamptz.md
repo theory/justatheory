@@ -1,6 +1,6 @@
 --- 
 date: 2012-04-16T22:08:26Z
-slug: use-timestamptz
+slug: postgres-use-timestamptz
 title: Always Use TIMESTAMP WITH TIME ZONE
 aliases: [/computers/databases/postgresql/use-timestamptz.html]
 tags: [Postgres, time zones, databases, best practices, recommendations]

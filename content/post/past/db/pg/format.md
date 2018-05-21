@@ -1,6 +1,6 @@
 --- 
 date: 2012-11-16T01:31:00Z
-slug: format
+slug: postgres-format-function
 title: "New in PostgreSQL 9.2: format()"
 aliases: [/computers/databases/postgresql/format.html]
 tags: [Postgres, SQL]
@@ -20,50 +20,54 @@ elsewhere: the `format()` function. From [the docs][]:
 If you do a lot of dynamic query building in PL/pgSQL functions, you’ll
 immediately see the value in `format()`. Consider this function:
 
-    CREATE OR REPLACE FUNCTION make_month_partition(
-        base_table   TEXT,
-        schema_name  TEXT,
-        month        TIMESTAMP
-    ) RETURNS VOID LANGUAGE plpgsql AS $_$
-    DECLARE
-        partition TEXT := quote_ident(base_table || '_' || to_char(month, '"y"YYYY"m"MM'));
-        month_start TIMESTAMP := date_trunc('month', month);
-    BEGIN
-        EXECUTE '
-            CREATE TABLE ' || quote_ident(schema_name) || '.' || partition || ' (CHECK (
-                   created_at >= ' || quote_literal(month_start) || '
-               AND created_at < '  || quote_literal(month_start + '1 month'::interval) || '
-            )) INHERITS (' || quote_ident(schema_name) || '.' || base_table || ')
-        ';
-        EXECUTE 'GRANT SELECT ON ' || quote_ident(schema_name) || '.' || partition || '  TO dude;';
-    END;
-    $_$;
+``` plpgsql
+CREATE OR REPLACE FUNCTION make_month_partition(
+    base_table   TEXT,
+    schema_name  TEXT,
+    month        TIMESTAMP
+) RETURNS VOID LANGUAGE plpgsql AS $_$
+DECLARE
+    partition TEXT := quote_ident(base_table || '_' || to_char(month, '"y"YYYY"m"MM'));
+    month_start TIMESTAMP := date_trunc('month', month);
+BEGIN
+    EXECUTE '
+        CREATE TABLE ' || quote_ident(schema_name) || '.' || partition || ' (CHECK (
+                created_at >= ' || quote_literal(month_start) || '
+            AND created_at < '  || quote_literal(month_start + '1 month'::interval) || '
+        )) INHERITS (' || quote_ident(schema_name) || '.' || base_table || ')
+    ';
+    EXECUTE 'GRANT SELECT ON ' || quote_ident(schema_name) || '.' || partition || '  TO dude;';
+END;
+$_$;
+```
 
 Lots of concatenation and use of `quote_ident()` to get things just right. I
 don’t know about you, but I always found this sort of thing quite difficult to
 read. But `format()` allows use to eliminate most of the operators and function
 calls. Check it:
 
-    CREATE OR REPLACE FUNCTION make_month_partition(
-        base_table   TEXT,
-        schema_name  TEXT,
-        month        TIMESTAMP
-    ) RETURNS VOID LANGUAGE plpgsql AS $_$
-    DECLARE
-        partition TEXT := base_table || '_' || to_char(month, '"y"YYYY"m"MM');
-        month_start TIMESTAMP := date_trunc('month', month);
-    BEGIN
-        EXECUTE format(
-            'CREATE TABLE %I.%I (
-                CHECK (created_at >= %L AND created_at < %L)
-            ) INHERITS (%I.%I)',
-            schema_name, partition,
-            month_start, month_start + '1 month'::interval,
-            schema_name, base_table
-        );
-        EXECUTE format('GRANT SELECT ON %I.%I TO dude', schema_name, partition);
-    END;
-    $_$;
+``` plpgsql
+CREATE OR REPLACE FUNCTION make_month_partition(
+    base_table   TEXT,
+    schema_name  TEXT,
+    month        TIMESTAMP
+) RETURNS VOID LANGUAGE plpgsql AS $_$
+DECLARE
+    partition TEXT := base_table || '_' || to_char(month, '"y"YYYY"m"MM');
+    month_start TIMESTAMP := date_trunc('month', month);
+BEGIN
+    EXECUTE format(
+        'CREATE TABLE %I.%I (
+            CHECK (created_at >= %L AND created_at < %L)
+        ) INHERITS (%I.%I)',
+        schema_name, partition,
+        month_start, month_start + '1 month'::interval,
+        schema_name, base_table
+    );
+    EXECUTE format('GRANT SELECT ON %I.%I TO dude', schema_name, partition);
+END;
+$_$;
+```
 
 I don’t know about you, but I find that a *lot* easier to read. which means
 it’ll be easier to maintain. So if you do much dynamic query generation inside

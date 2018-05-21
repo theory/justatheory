@@ -1,6 +1,6 @@
 --- 
 date: 2005-08-31T18:48:00Z
-slug: closet-word-algorithm
+slug: perl-closest-word-algorithm
 title: Efficient Closest Word Algorithm
 aliases: [/computers/programming/perl/closet_word_algorithm.html]
 tags: [Perl, grep, Levenshtein, Perl Best Practices]

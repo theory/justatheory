@@ -1,18 +1,18 @@
 --- 
 date: 2006-10-02T20:58:56Z
-slug: odd-test-failures
+slug: odd-cpan-test-failures
 title: What's With These CPAN-Testers Failures?
 aliases: [/computers/programming/perl/odd_test_failures.html]
 tags: [Perl, CPAN, testing, mod_perl]
 type: post
 ---
 
-So I just learned about and subscribed to the [CPAN-Testers feed for my
-modules]. There appear to be a number of odd failures. Take [this one]. It says,
-“Can't locate Algorithm/Diff.pm,” despite the fact that I have properly
-specified the requirement for `Text::Diff`, which itself properly requires
-`Algorithm::Diff.`. Is this an instance of `CPAN.pm` or `CPANPLUS` not following
-all prerequisites, or what?
+So I just learned about and subscribed to the [CPAN-Testers feed for my modules].
+There appear to be a number of odd failures. Take [this one]. It says,“Can't
+locate Algorithm/Diff.pm,” despite the fact that I have properly specified the
+requirement for `Text::Diff`, which itself properly requires `Algorithm::Diff.`.
+Is this an instance of `CPAN.pm` or `CPANPLUS` not following all prerequisites,
+or what?
 
 Or take [this failure]. It says, “\[CP\_ERROR\] \[Mon Sep 5 09:32:08 2005\] No
 such module 'mod\_perl' found on CPAN”. Yet [here it is]. Maybe the `CPANPLUS`

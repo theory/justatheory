@@ -82,7 +82,7 @@ Barack Obama for President. He's the right man for the job at the right time.
   [The Philadelphia *Inquirer*]: http://www.philly.com/philly/news/20081017_For_President__Obama_will_lead.html
     "For President: Obama will lead"
   [The Chicago *Sun-Times*]: http://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
-    " Sun-Times endorses Barack Obama for president"
+    "Sun-Times endorses Barack Obama for president"
   [The Chicago *Tribune*]: http://www.chicagotribune.com/news/opinion/chi-chicago-tribune-endorsement,0,1371034.story
     "Tribune endorsement: Barack Obama for president"
   [The Atlanta *Journal-Constitution*]: http://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html

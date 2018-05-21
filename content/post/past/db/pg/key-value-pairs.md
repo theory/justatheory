@@ -1,6 +1,6 @@
 --- 
 date: 2010-08-09T13:00:00Z
-slug: key-value-pairs
+slug: postgres-key-value-pairs
 title: Managing Key/Value Pairs in PostgreSQL
 aliases: [/computers/databases/postgresql/key-value-pairs.html]
 tags: [Postgres, nosql, SQL]

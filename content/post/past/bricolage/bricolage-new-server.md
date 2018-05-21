@@ -1,6 +1,6 @@
 --- 
 date: 2004-06-11T02:29:07Z
-slug: bricolage-new-server
+slug: new-bricolage-server
 title: bricolage.cc Has a New Server
 aliases: [/bricolage/site/new_server.html]
 tags: [Bricolage, API]

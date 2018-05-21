@@ -1,6 +1,6 @@
 --- 
 date: 2010-04-28T00:14:07Z
-slug: execute-on-select
+slug: execute-sql-on-connect
 title: Execute SQL Code on Connect
 aliases: [/computers/databases/postgresql/execute-on-select.html]
 tags: [Postgres, Perl, Ruby, Ruby on Rails, Catalyst, DBI, PL/Perl]

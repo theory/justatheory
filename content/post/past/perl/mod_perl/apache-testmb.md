@@ -15,14 +15,16 @@ however, since a lot of modules choose to install themselves even if Apache
 isn't installed (because they can be used both inside and outside of `mod_perl`,
 e.g., [HTML::Mason]), I'm suggesting that *Build.PL* files look like this:
 
-    use Module::Build;
+``` perl
+use Module::Build;
 
-    my $build_pkg = eval { require Apache::TestMB }
-      ? "Apache::TestMB" : "Module::Build";
+my $build_pkg = eval { require Apache::TestMB }
+  ? "Apache::TestMB" : "Module::Build";
 
-    my $build = $build_pkg->new(
-      module_name => "My::Module",
-    )->create_build_script;
+my $build = $build_pkg->new(
+  module_name => "My::Module",
+)->create_build_script;
+```
 
 Pretty simple, huh? To judge by the [discussion], it will soon be committed to
 the `Apache::Test` repository and released to CPAN. My

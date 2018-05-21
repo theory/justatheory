@@ -22,65 +22,75 @@ The insight was that I could add more tokens to match doubled emphasis
 characters before single emphasis characters. Then I could just process them
 separately. So whereas I previously had
 
-        [ EMLOP => qr/(?<=[^\s_])[_]{1,2}|(?<=[^\s*])[*]{1,2}/ ],
-        [ EMROP => qr/[_]{1,2}(?=[^\s_])|[*]{1,2}(?=[^\s*])/ ],
+``` perl
+    [ EMLOP => qr/(?<=[^\s_])[_]{1,2}|(?<=[^\s*])[*]{1,2}/ ],
+    [ EMROP => qr/[_]{1,2}(?=[^\s_])|[*]{1,2}(?=[^\s*])/ ],
+```
 
 I now have a regular expression to match doubled-up emphasis operators:
 
-    my $stem_re = qr{
-          (?:[*]{2}|[_]{2})[*_]
-        | [*_](?:[*]{2}|[_]{2})
-    }x;
+``` perl
+my $stem_re = qr{
+        (?:[*]{2}|[_]{2})[*_]
+    | [*_](?:[*]{2}|[_]{2})
+}x;
+```
 
 And I use it like so:
 
-        [ STEMLOP => qr/$stem_re(?=[^\s_*])/ ],
-        [ STEMROP => qr/(?<=[^\s_*])$stem_re/ ],
+``` perl
+    [ STEMLOP => qr/$stem_re(?=[^\s_*])/ ],
+    [ STEMROP => qr/(?<=[^\s_*])$stem_re/ ],
 
-        [ EMLOP => qr/[_]{1,2}(?=[^\s*_])|[*]{1,2}(?=[^\s*_])/ ],
-        [ EMROP => qr/(?<=[^\s*_])[_]{1,2}|(?<=[^\s*_])[*]{1,2}/ ],
+    [ EMLOP => qr/[_]{1,2}(?=[^\s*_])|[*]{1,2}(?=[^\s*_])/ ],
+    [ EMROP => qr/(?<=[^\s*_])[_]{1,2}|(?<=[^\s*_])[*]{1,2}/ ],
+```
 
 Yes, I’m now also matching “middle” emphasis operators — that is, those with
 non-whitespace on *both* sides. But now I’m able to get pretty much exactly what
 I need with a rule like this:
 
-    my $lstar = match EMLOP => '*';
-    my $rstar = match EMROP => '*';
-    my $lline = match EMLOP => '_';
-    my $rline = match EMROP => '_';
-    my $not_em;
-    my $Not_em = parser { $not_em->(@_) };
+``` perl
+my $lstar = match EMLOP => '*';
+my $rstar = match EMROP => '*';
+my $lline = match EMLOP => '_';
+my $rline = match EMROP => '_';
+my $not_em;
+my $Not_em = parser { $not_em->(@_) };
 
-    my $emphasis = T(
-        alternate(
-            concatenate( $lstar,  $Not_em, $rstar  ),
-            concatenate( $lline,  $Not_em, $rline  ),
-        ),
-        sub { "<em>$_[1]</em>" }
-    );
+my $emphasis = T(
+    alternate(
+        concatenate( $lstar,  $Not_em, $rstar  ),
+        concatenate( $lline,  $Not_em, $rline  ),
+    ),
+    sub { "<em>$_[1]</em>" }
+);
+```
 
 Pretty much the same as before. But now I also have this rule, to deal with the
 combined strong and emphasis tokens:
 
-    my $lstem = match 'STEMLOP';
-    my $rstem = match 'STEMROP';
-    my $mstem = match 'STEMMOP';
-    my $not_stem;
-    my $Not_stem = parser { $not_stem->(@_) };
+``` perl
+my $lstem = match 'STEMLOP';
+my $rstem = match 'STEMROP';
+my $mstem = match 'STEMMOP';
+my $not_stem;
+my $Not_stem = parser { $not_stem->(@_) };
 
-    my $stem = T(
-        concatenate(
-            alternate($lstem, $mstem),
-            $Not_stem,
-            alternate($rstem, $mstem)
-        ),
-        sub {
-            my @c = split //, shift;
-            return $c[0] eq $c[1]
-                ? "<strong><em>$_[1]</em></strong>"
-                : "<em><strong>$_[1]</strong></em>";
-        },
-    );
+my $stem = T(
+    concatenate(
+        alternate($lstem, $mstem),
+        $Not_stem,
+        alternate($rstem, $mstem)
+    ),
+    sub {
+        my @c = split //, shift;
+        return $c[0] eq $c[1]
+            ? "<strong><em>$_[1]</em></strong>"
+            : "<em><strong>$_[1]</strong></em>";
+    },
+);
+```
 
 In truth, I ended up with something much more complicated than this, as it
 needed to make sure that the operators were balanced (e.g., you can’t do it
@@ -94,19 +104,23 @@ parts and solve each part individually. It works pretty well.
 
 As a side note, at one point I had the a lexer that used this code ref:
 
-    my $stem_split = sub {
-        my $l = shift;
-        my @c = split //, shift;
-        my $pos = substr($l, 4);
-        return $c[0] eq $c[1]
-            ? ( [ $l => "$c[0]$c[1]"], [ $l => $c[2]]         )
-            : ( [ $l => $c[0] ],       [ $l => "$c[1]$c[2]" ] );
-    };
+``` perl
+my $stem_split = sub {
+    my $l = shift;
+    my @c = split //, shift;
+    my $pos = substr($l, 4);
+    return $c[0] eq $c[1]
+        ? ( [ $l => "$c[0]$c[1]"], [ $l => $c[2]]         )
+        : ( [ $l => $c[0] ],       [ $l => "$c[1]$c[2]" ] );
+};
+```
 
 Those STEMOP rules then looked like so:
 
-        [ EMMOP => qr/(?<=[^\s_*])$stem_re(?=[^\s_*])/, $stem_split ],
-        [ EMROP => qr/(?<=[^\s_*])$stem_re/, $stem_split ],
+``` perl
+    [ EMMOP => qr/(?<=[^\s_*])$stem_re(?=[^\s_*])/, $stem_split ],
+    [ EMROP => qr/(?<=[^\s_*])$stem_re/, $stem_split ],
+```
 
 The cool thing about this was that I didn’t need a separate strong/emphasis
 parser; these lexer rules were just returning the appropriate emphasis tokens,
@@ -123,27 +137,34 @@ to the separate strong/emphasis operators.
 Another path I started down was separate tokens for strong and emphasis markers.
 It looked something like this:
 
-        [ STLOP => qr/[_]{2}(?=[_]?\S)|[*]{2}(?=[*]?\S)/ ],
-        [ STROP => qr/(?<=\S)[_]{2}|(?<=\S)[*]{2}/ ],
-        [ EMLOP => qr/[_*](?=\S)/ ],
-        [ EMROP => qr/(?<=\S)[_*]/ ],
+``` perl
+    [ STLOP => qr/[_]{2}(?=[_]?\S)|[*]{2}(?=[*]?\S)/ ],
+    [ STROP => qr/(?<=\S)[_]{2}|(?<=\S)[*]{2}/ ],
+    [ EMLOP => qr/[_*](?=\S)/ ],
+    [ EMROP => qr/(?<=\S)[_*]/ ],
+```
 
 With this approach, I thought I could match the strong and emphasis operators
 separately in the lexer. But as I [described] on the HOP-discuss mail list, this
 runs up to limitations of the lexer. For example, for these rules, the string
 `_*foo*__` yields the proper tokens:
 
-    [['STLOP','_'],['EMLOP','*'],'foo,['EMROP','*'],['STROP','_']];
-
+``` perl
+[['STLOP','_'],['EMLOP','*'],'foo,['EMROP','*'],['STROP','_']];
+```
 But `*__foo__*` does not:
 
-    ['*',['STLOP','_'],'foo,['STLOP','_'],'*'];
+``` perl
+['*',['STLOP','_'],'foo,['STLOP','_'],'*'];
+```
 
 The problem is that the lexer splits the string up into tokens and leftovers
 after each rule is parsed. So after STLOP and STROP are parsed, the stream looks
 like this:
 
-     ['*',['STLOP','_'],'foo,['STLOP','_'],'*'];
+``` perl
+['*',['STLOP','_'],'foo,['STLOP','_'],'*'];
+```
 
 In other words, exactly the same. When EMLOP and EMROP are applied to ‘\*’,
 there is no non-space character before or after it, so it’s left alone. But
@@ -160,15 +181,17 @@ much better if the lexer could see something like
 
 And correctly give me:
 
-    [
-        [ ADDLOP => '+'                 ],
-        [ STLOP  => '**'                ],
-        [ EMLOP  => '_'                 ],
-        [ CODE   => '`test *markdown*`' ],
-        [ EMROP  => '_'                 ],
-        [ STROP  => '**'                ],
-        [ ADDROP => '+'                 ],
-    ]
+``` perl
+[
+    [ ADDLOP => '+'                 ],
+    [ STLOP  => '**'                ],
+    [ EMLOP  => '_'                 ],
+    [ CODE   => '`test *markdown*`' ],
+    [ EMROP  => '_'                 ],
+    [ STROP  => '**'                ],
+    [ ADDROP => '+'                 ],
+]
+```
 
 And then the parsing would be quite straight-forward. Because otherwise my
 parser is just going to get more complex and harder to maintain.

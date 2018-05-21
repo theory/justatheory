@@ -1,6 +1,6 @@
 --- 
 date: 2005-08-22T22:52:24Z
-slug: no-utf8
+slug: windows-perl-no-utf8
 title: No UTF-8 Support on Windows?
 aliases: [/computers/os/windows/no_utf8.html]
 tags: [Windows, Unicode, UTF-8, Postgres]

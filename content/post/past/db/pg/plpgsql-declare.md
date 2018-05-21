@@ -11,20 +11,22 @@ I'm working on some [PL/pgSQL] functions for my application framework and for an
 upcoming article for the [O'Reilly Databases site], and was showing some of the
 code to a PostgreSQL guru. The code looked something like this:
 
-    CREATE OR REPLACE FUNCTION update_table (
-        key_name text,
-        pk_id    integer,
-        fk_ids   integer[]
+``` plpgsql
+CREATE OR REPLACE FUNCTION update_table (
+    key_name text,
+    pk_id    integer,
+    fk_ids   integer[]
 
-    ) RETURNS VOID AS $$
-    DECLARE
-        table_name text := quote_ident(key_name);
-    BEGIN
-        EXECUTE 'UPDATE ' || table_name || ' SET pk = ' || pk_id
-             || ' WHERE fk IN(' || array_to_string(fk_ids, ', ')
-             || ')';
-    END;
-    $$ LANGUAGE plpgsql;
+) RETURNS VOID AS $$
+DECLARE
+    table_name text := quote_ident(key_name);
+BEGIN
+    EXECUTE 'UPDATE ' || table_name || ' SET pk = ' || pk_id
+            || ' WHERE fk IN(' || array_to_string(fk_ids, ', ')
+            || ')';
+END;
+$$ LANGUAGE plpgsql;
+```
 
 No, that's not the real code, it's just a dummy example to illustrate something.
 Illustrate what? Well, my PostgreSQL friend said, “Crap, can you really use

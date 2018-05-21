@@ -1,6 +1,6 @@
 --- 
 date: 2005-11-08T22:35:33Z
-slug: first-program
+slug: annas-first-program
 title: First Programming
 aliases: [/family/anna/first_program.html]
 tags: [Personal, Anna, David Wheeler, data types, PowerBook]

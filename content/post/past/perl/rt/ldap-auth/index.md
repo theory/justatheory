@@ -1,6 +1,6 @@
 --- 
 date: 2004-12-01T06:47:50Z
-slug: ldap-auth
+slug: rt-ldap-auth
 title: New LDAP Auth Module for RT
 aliases: [/computers/programming/perl/rt/ldap_auth.html]
 tags: [Perl, RT, LDAP, Request Tracker, LdapOverlay, Net::LDAP, TLS]

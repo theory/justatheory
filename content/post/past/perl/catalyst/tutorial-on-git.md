@@ -1,6 +1,6 @@
 --- 
 date: 2009-11-06T18:58:47Z
-slug: tutorial-on-git
+slug: catalyst-tutorial-github
 title: Tutorial on GitHub
 aliases: [/computers/programming/perl/catalyst/tutorial-on-git.html]
 tags: [Perl, Catalyst, Git, GitHub, Template::Declare, DBIx::Connector]

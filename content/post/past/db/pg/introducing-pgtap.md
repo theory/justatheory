@@ -22,16 +22,18 @@ output of a single line of information indicating whether or not a test
 succeeded. It occurred to me that I could just run a bunch of queries that
 returned booleans to do my testing. So my first stab looked something like this:
 
-    \set ON_ERROR_STOP 1
-    \set AUTOCOMMIT off
-    \pset format unaligned
-    \pset tuples_only
-    \pset pager
-    \pset null '[NULL]'
+``` postgres
+\set ON_ERROR_STOP 1
+\set AUTOCOMMIT off
+\pset format unaligned
+\pset tuples_only
+\pset pager
+\pset null '[NULL]'
 
-    SELECT foo() = 'bar';
-    SELECT foo(1) = 'baz';
-    SELECT foo(2) = 'foo';
+SELECT foo() = 'bar';
+SELECT foo(1) = 'baz';
+SELECT foo(2) = 'foo';
+```
 
 The output looked like this:
 
@@ -45,19 +47,23 @@ dawned on me that the Perl [Test::More] module and its core `ok()` subroutine
 worked just like that. It essentially just depends on a boolean value and
 outputs text based on that value. A couple minutes of hacking and I had this:
 
-    CREATE TEMP SEQUENCE __tc__;
-    CREATE OR REPLACE FUNCTION ok ( boolean, text ) RETURNS TEXT AS $$
-        SELECT (CASE $1 WHEN TRUE THEN '' ELSE 'not ' END) || 'ok'
-            || ' ' || NEXTVAL('__tc__')
-            || CASE $2 WHEN '' THEN '' ELSE COALESCE( ' - ' || $2, '' ) END;
-    $$ LANGUAGE SQL;
+``` postgres
+CREATE TEMP SEQUENCE __tc__;
+CREATE OR REPLACE FUNCTION ok ( boolean, text ) RETURNS TEXT AS $$
+    SELECT (CASE $1 WHEN TRUE THEN '' ELSE 'not ' END) || 'ok'
+        || ' ' || NEXTVAL('__tc__')
+        || CASE $2 WHEN '' THEN '' ELSE COALESCE( ' - ' || $2, '' ) END;
+$$ LANGUAGE SQL;
+```
 
 I then rewrote my test queries like so:
 
-    \echo 1..3
-    SELECT ok( foo() = 'bar'   'foo() should return "bar"' );
-    SELECT ok( foo(1) = 'baz', 'foo(1) should return "baz"' );
-    SELECT ok( foo(2) = 'foo', 'foo(2) should return "foo"' );
+``` postgres
+\echo 1..3
+SELECT ok( foo() = 'bar'   'foo() should return "bar"' );
+SELECT ok( foo(1) = 'baz', 'foo(1) should return "baz"' );
+SELECT ok( foo(2) = 'foo', 'foo(2) should return "foo"' );
+```
 
 Running these tests, I now got:
 
@@ -76,14 +82,16 @@ now I can use a standard test harness to run the tests, even mix them in with
 other TAP tests on any project I might work on. Just now, I quickly hacked
 together a quick script to run the tests:
 
-    use TAP::Harness;
+``` perl
+use TAP::Harness;
 
-    my $harness = TAP::Harness->new({
-        timer   => $opts->{timer},
-        exec    => [qw( psql try -f )],
-    });
+my $harness = TAP::Harness->new({
+    timer   => $opts->{timer},
+    exec    => [qw( psql try -f )],
+});
 
-    $harness->runtests( @ARGV );
+$harness->runtests( @ARGV );
+```
 
 Now I'm able to run the tests like so:
 
@@ -97,41 +105,43 @@ Pretty damn cool! And lest you wonder whether such a suite of TAP-emitting test
 functions is suitable for testing SQL, here are a few examples of tests I've
 written:
 
-    -- Plan the tests.
-    SELECT plan(4);
+``` postgres
+-- Plan the tests.
+SELECT plan(4);
 
-    -- Emit a diagnostic message for users of different locales.
-    SELECT diag(
-        E'These tests expect LC_COLLATE to be en_US.UTF-8,\n'
-      || 'but yours is set to ' || setting || E'.\n'
-      || 'As a result, some tests may fail. YMMV.'
-    )
-      FROM pg_settings
-     WHERE name = 'lc_collate'
-       AND setting <> 'en_US.UTF-8';
+-- Emit a diagnostic message for users of different locales.
+SELECT diag(
+    E'These tests expect LC_COLLATE to be en_US.UTF-8,\n'
+    || 'but yours is set to ' || setting || E'.\n'
+    || 'As a result, some tests may fail. YMMV.'
+)
+    FROM pg_settings
+    WHERE name = 'lc_collate'
+    AND setting <> 'en_US.UTF-8';
 
-    SELECT is( 'a', 'a', '"a" should = "a"' );
-    SELECT is( 'B', 'B', '"B" should = "B"' );
+SELECT is( 'a', 'a', '"a" should = "a"' );
+SELECT is( 'B', 'B', '"B" should = "B"' );
 
-    CREATE TEMP TABLE try (
-        name lctext PRIMARY KEY
-    );
+CREATE TEMP TABLE try (
+    name lctext PRIMARY KEY
+);
 
-    INSERT INTO try (name)
-    VALUES ('a'), ('ab'), ('â'), ('aba'), ('b'), ('ba'), ('bab'), ('AZ');
+INSERT INTO try (name)
+VALUES ('a'), ('ab'), ('â'), ('aba'), ('b'), ('ba'), ('bab'), ('AZ');
 
-    SELECT ok( 'a' = name, 'We should be able to select the value' )
-      FROM try
-     WHERE name = 'a';
+SELECT ok( 'a' = name, 'We should be able to select the value' )
+    FROM try
+    WHERE name = 'a';
 
-    SELECT throws_ok(
-        'INSERT INTO try (name) VALUES (''a'')',
-        '23505',
-        'We should get an error inserting a lowercase letter'
-    );
+SELECT throws_ok(
+    'INSERT INTO try (name) VALUES (''a'')',
+    '23505',
+    'We should get an error inserting a lowercase letter'
+);
 
-    -- Finish the tests and clean up.
-    SELECT * FROM finish();
+-- Finish the tests and clean up.
+SELECT * FROM finish();
+```
 
 As you can see, it's just SQL. And yes, I have ported most of the test functions
 from [Test::More], as well as a couple from [Test::Exception].

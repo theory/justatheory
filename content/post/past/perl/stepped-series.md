@@ -1,6 +1,6 @@
 --- 
 date: 2006-07-04T00:33:22Z
-slug: stepped-series
+slug: perl-stepped-series
 title: Stepped Series of Numbers in Perl
 aliases: [/computers/programming/perl/stepped_series.html]
 tags: [Perl, grep]
@@ -29,7 +29,7 @@ this in Perl, perhaps even more expressive? Python seems to have a useful syntax
 for creating array slices that step. In Python, I'd do something like this:
 
 ``` perl
-        sum( nums[1:10:2] ) * 3 + sum( nums[2:10:2])
+sum( nums[1:10:2] ) * 3 + sum( nums[2:10:2])
 ```
 
 But barring such a slice feature in Perl is there some cleaner way than the ugly

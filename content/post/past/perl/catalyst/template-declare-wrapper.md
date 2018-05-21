@@ -1,6 +1,6 @@
 --- 
 date: 2009-11-04T14:00:00Z
-slug: template-declare-wrapper
+slug: catalyst-template-declare-wrapper
 title: Create a Template::Declare Wrapper
 aliases: [/computers/programming/perl/catalyst/template-declare-wrapper.html]
 tags: [Perl, Catalyst, Template::Declare, MVC, Template Toolkit]

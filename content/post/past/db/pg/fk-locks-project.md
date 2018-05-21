@@ -1,6 +1,6 @@
 --- 
 date: 2010-11-24T22:30:53Z
-slug: fk-locks-project
+slug: postgres-fk-locks-project
 title: Fixing Foreign Key Deadlocks in PostgreSQL
 aliases: [/computers/databases/postgresql/fk-locks-project.html]
 tags: [Postgres, SQL, Deadlocks, fossexperts, PostgreSQL Experts, commandprompt, Glue Finance, ActiveRecord]

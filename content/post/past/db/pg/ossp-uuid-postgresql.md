@@ -1,6 +1,6 @@
 --- 
 date: 2009-04-17T19:36:03Z
-slug: ossp-uuid-postgresql
+slug: postgres-ossp-uuid
 title: PostgreSQL + OSSP UUID on Mac OS X
 aliases: [/computers/databases/postgresql/ossp-uuid-postgresql.html]
 tags: [Postgres, UUIDs, OSSP, macOS]
@@ -53,5 +53,4 @@ of your APR build (assuming you delete `/usr/local/include/uuid.h` or
 
   [OSSP uuid]: http://www.ossp.org/pkg/lib/uuid/
   [reported]: http://cvs.ossp.org/tktview?tn=164
-    "OSSP Ticket 164: Header doesn't work if <unistd.h> is included
-    first"
+    "OSSP Ticket 164: Header doesn't work if <unistd.h> is included first"

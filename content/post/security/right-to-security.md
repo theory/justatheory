@@ -5,6 +5,7 @@ title: Do We Have Right to Security?
 aliases: [/security/2016/02/19/right-to-security/]
 tags: [security, Rich Mogull, Ron Wyden, rights]
 type: post
+via: { name: Daring Fireball, href: https://daringfireball.net/linked/2016/02/19/right-to-security}
 ---
 
 Rich Mogull:
@@ -25,5 +26,3 @@ Rich Mogull:
 > *Do we have a right to security?*
 
 How about we introduce a bill guaranteeing a right to security. [Senator Wyden](https://twitter.com/theory/status/700823603122540544)?
-
-([Via DF](http://daringfireball.net/linked/2016/02/19/right-to-security))

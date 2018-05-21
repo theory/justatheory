@@ -5,7 +5,6 @@ title: iPod Threatens UK Military Security
 aliases: [/computers/policy/more_ipod_security.html]
 tags: [Security, iPod, UK Military, Windows, USB, files]
 type: post
-via: {name: James Duncan Davidson, href: http://x180.net/}
 ---
 
 [<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]
@@ -39,8 +38,6 @@ to take home will figure out a way to do it if they're motivated enough.
 So yeah, highly sensitive security establishments *should* ban personal external
 storage devices to keep honest people honest, but really, they should also fix
 the real security problem with their operating system of choice.
-
-(Via [Duncan][James Duncan Davidson])
 
   [<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]:
     https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1

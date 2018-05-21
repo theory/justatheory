@@ -97,31 +97,22 @@ There were parties and conversations every night, lots of great talk, good food,
 good friends, and, well, I just had a great time. I can't wait until next year's
 OSCon!
 
-  [Matt Sergeant's]: http://use.perl.org/~matts/journal/ "Matt
-    Sergeant's Journal"
+  [Matt Sergeant's]: http://use.perl.org/~matts/journal/ "Matt Sergeant's Journal"
   [Casey]: http://use.perl.org/~cwest/journal "Casey West's Journal"
-  [Schwern]: http://use.perl.org/~schwern/journal "Schwern's
-    Journal"
-  [Jesse]: http://pallas.eruditorum.org/ "Jesse
-    Vincent's Journal"
+  [Schwern]: http://use.perl.org/~schwern/journal "Schwern's Journal"
+  [Jesse]: http://pallas.eruditorum.org/ "Jesse Vincent's Journal"
   [Nat]: http://use.perl.org/~gnat/journal "Nat Torkington's Journal"
   [Bruce]: http://candle.pha.pa.us/ "Bruce Momjian's Website"
   [Josh]: http://www.agliodbs.com/ "AglioDBS"
-  [David]: http://fetter.org/~shackle/ "David
-    Fetter's Website"
-  [Elein]: http://www.varlena.com/ "Elein
-    Mutain's Company"
+  [David]: http://fetter.org/~shackle/ "David Fetter's Website"
+  [Elein]: http://www.varlena.com/ "Elein Mutain's Company"
   [Dan]: http://www.sidhe.org/~dan/blog/ "Squaks of the Parrot"
-  [Nicholas]: http://use.perl.org/~nicholas/journal "Nicholas Clark's
-    Journal"
-  [James]: http://www.whoot.org/ "James Duncan's
-    Blog"
-  [Arthur]: http://use.perl.org/~sky/journal "Arthur
-    Bergman's Journal"
+  [Nicholas]: http://use.perl.org/~nicholas/journal "Nicholas Clark's Journal"
+  [James]: http://www.whoot.org/ "James Duncan's Blog"
+  [Arthur]: http://use.perl.org/~sky/journal "Arthur Bergman's Journal"
   [Robert]: http://use.perl.org/~robrt/journal "Robert Spier's Journal"
   [Ask]: http://www.askbjoernhansen.com/ "Ask Bjørn Hansen's Blog"
-  [Alex]: http://www.alexwheeler.net/ "Alex's
-    Website"
+  [Alex]: http://www.alexwheeler.net/ "Alex's Website"
   [PHP on Parrot]: http://conferences.oreillynet.com/cs/os2004/view/e_sess/5049
     "Chasing the Dragon: Compiling PHP to Run on Parrot"
   [PostgreSQL]: http://conferences.oreillynet.com/cs/os2004/view/e_sess/5359

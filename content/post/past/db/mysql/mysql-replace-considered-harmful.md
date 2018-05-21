@@ -58,5 +58,5 @@ appear to have mysterious consequences.
 
 So my advice to you, gentle reader, is *don't use it.*
 
-  [`REPLACE`]: http://dev.mysql.com/doc/mysql/en/replace.html "Documentation
-    for the MySQL REPLACE statement"
+  [`REPLACE`]: http://dev.mysql.com/doc/mysql/en/replace.html
+    "Documentation for the MySQL REPLACE statement"

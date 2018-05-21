@@ -7,10 +7,11 @@ tags: [Bricolage, open source]
 type: post
 ---
 
-After a couple of weeks of hard work, with lots of assistance from [Marshall
-Roch], I'm just about ready to launch the new Bricolage Website. Thanks to
-hardware and hosting provided by [NetStumbler.com], we now have a fully
-functioning Bricolage installation and Web server for the bricolage.cc domain.
+After a couple of weeks of hard work, with lots of assistance from
+[Marshall Roch], I'm just about ready to launch the new Bricolage Website.
+Thanks to hardware and hosting provided by [NetStumbler.com], we now have a
+fully functioning Bricolage installation and Web server for the bricolage.cc
+domain.
 
 The new site will launch just before my OSCON talk on Wednesday. In addition to
 having the great Web standards-compliant layout (thanks Marshall!) and a decent
@@ -28,5 +29,4 @@ site--anything about it: design, layout, XHTML, CSS, etc.
 
   [Marshall Roch]: http://www.spastically.com/ "Marshall Roch's Blog"
   [NetStumbler.com]: http://www.netstumbler.com/ "NetStumbler.com Website"
-  [www.bricolage.cc]: http://www.bricolage.cc/ "The Bricolage
-    Website"
+  [www.bricolage.cc]: http://www.bricolage.cc/ "The Bricolage Website"

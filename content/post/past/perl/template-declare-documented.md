@@ -57,45 +57,51 @@ The upshot is that you have pretty nice control over mixing and aliasing
 Template::Declare templates into paths. For example, if you have this template
 class:
 
-    package MyApp::Templates::Util;
-    use base 'Template::Declare';
-    use Template::Declare::Tags;
+``` perl
+package MyApp::Templates::Util;
+use base 'Template::Declare';
+use Template::Declare::Tags;
 
-    template header => sub {
-        my ($self, $args) = @_;
-        head { title {  $args->{title} } };
-    };
+template header => sub {
+    my ($self, $args) = @_;
+    head { title {  $args->{title} } };
+};
 
-    template footer => sub {
-        div {
-            id is 'fineprint';
-            p { 'Site contents licensed under a Creative Commons License.' }
-        };
+template footer => sub {
+    div {
+        id is 'fineprint';
+        p { 'Site contents licensed under a Creative Commons License.' }
     };
+};
+```
 
 You can mix those templates into your primary template class like so:
 
-    package MyApp::Templates::Main;
-    use base 'Template::Declare';
-    use Template::Declare::Tags;
-    use MyApp::Template::Util;
-    mix MyApp::Template::Util under '/util';
+``` perl
+package MyApp::Templates::Main;
+use base 'Template::Declare';
+use Template::Declare::Tags;
+use MyApp::Template::Util;
+mix MyApp::Template::Util under '/util';
 
-    template content => sub {
-        show '/util/header';
-        body {
-            h1 { 'Hello world' };
-            show '/util/footer';
-        };
+template content => sub {
+    show '/util/header';
+    body {
+        h1 { 'Hello world' };
+        show '/util/footer';
     };
+};
+```
 
 See how I've used the mixed in `header` and `footer` templates by referring to
 them under the `/util` path? This gives the invocation of the other templates
 the feel of calling [Mason] components or invoking [Template Toolkit] templates.
 You can use these templates like so:
 
-    Template::Declare->init( dispatch_to => ['MyApp::Templates::Main'] );
-    print Template::Declare->show('/content');
+``` perl
+Template::Declare->init( dispatch_to => ['MyApp::Templates::Main'] );
+print Template::Declare->show('/content');
+```
 
 So `MyApp::Templates::Main`’s templates are in the “/” directory, so to speak,
 while the `MyApp::Templates::Util`’s templates are in the “/utils” subdirectory.

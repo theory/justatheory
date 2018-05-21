@@ -29,18 +29,20 @@ Once you've downloaded it, install it against your MySQL server like so:
 
 Here's a very simple example script:
 
-    -- Start a transaction.
-    BEGIN;
+``` mysql
+-- Start a transaction.
+BEGIN;
 
-    -- Plan the tests.
-    SELECT tap.plan(1);
+-- Plan the tests.
+SELECT tap.plan(1);
 
-    -- Run the tests.
-    SELECT tap.pass( 'My test passed, w00t!' );
+-- Run the tests.
+SELECT tap.pass( 'My test passed, w00t!' );
 
-    -- Finish the tests and clean up.
-    CALL tap.finish();
-    ROLLBACK;
+-- Finish the tests and clean up.
+CALL tap.finish();
+ROLLBACK;
+```
 
 You can run this test from a `.sql` file using the `mysql` client like so:
 

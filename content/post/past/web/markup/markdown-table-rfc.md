@@ -367,26 +367,21 @@ Thanks!
   [aside on the markdown-discuss mail list]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001471.html
     "markdown-discuss: “Re: A Modest Definition List Proposal”"
   [longish thread]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001472.html
-    "markdown-discuss: A preliminary discussion of tables with continuing
-    lines"
+    "markdown-discuss: A preliminary discussion of tables with continuing lines"
   [open-minded post]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001485.html
-    "markdown-discuss: Fletcher Penney is open to a modified table
-    syntax"
+    "markdown-discuss: Fletcher Penney is open to a modified table  syntax"
   [MultiMarkdown]: http://fletcherpenney.net/multimarkdown/ "MultiMarkdown"
   [MultiMarkdown tables]: http://fletcherpenney.net/multimarkdown/users_guide/multimarkdown_syntax_guide/#tables
     "MultiMarkdown Syntax Guide: Tables"
   [PHP Markdown Extra syntax]: http://michelf.com/projects/php-markdown/extra/#table
   [psql 8.3]: http://www.postgresql.org/docs/8.3/static/app-psql.html
     "psql -- PostgreSQL interactive terminal"
-  [PostgreSQL 8.3]: http://www.postgresql.org/docs/8.3/ "PostgreSQL
-    8.3 documentation"
+  [PostgreSQL 8.3]: http://www.postgresql.org/docs/8.3/ "PostgreSQL 8.3 documentation"
   [mysql 5.0]: http://dev.mysql.com/doc/refman/5.0/en/mysql.html
     "mysql — The MySQL Command-Line Tool"
-  [1]: http://dev.mysql.com/doc/refman/5.0/en/ "MySQL 5.0 Reference
-    Manual"
+  [1]: http://dev.mysql.com/doc/refman/5.0/en/ "MySQL 5.0 Reference Manual"
   [SQLite 3.6]: http://sqlite.org/docs.html "SQLite Documentation"
   [suggested by Benoit Perdu]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001472.html
   [posted a comment]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001510.html
   [markdown-discuss]: http://six.pairlist.net/mailman/listinfo/markdown-discuss
-    "Subscribe to the markdown-discuss list or read the
-    archives"
+    "Subscribe to the markdown-discuss list or read the archives"

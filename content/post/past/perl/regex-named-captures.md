@@ -18,38 +18,42 @@ It used two features I'd never seen before:
 The cool thing is that, used in combination, these two features can be used to
 hack named captures into Perl regular expressions. Here's an example:
 
-    use warnings;
-    use strict;
-    use Data::Dumper;
+``` perl
+use warnings;
+use strict;
+use Data::Dumper;
 
-    my $string = 'The quick brown fox jumps over the lazy dog';
+my $string = 'The quick brown fox jumps over the lazy dog';
 
-    my %found;
+my %found;
 
-    my @captures = $string =~ /
-        (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
-        (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )
-        (?: (sloth|fox)  \s+    (?{ $found{animal} = $^N  }) )
-        (?: (eats|jumps)        (?{ $found{action} = $^N  }) )
-    /xms;
+my @captures = $string =~ /
+    (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
+    (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )
+    (?: (sloth|fox)  \s+    (?{ $found{animal} = $^N  }) )
+    (?: (eats|jumps)        (?{ $found{action} = $^N  }) )
+/xms;
 
-    print Dumper \@captures;
-    print Dumper \%found;
+print Dumper \@captures;
+print Dumper \%found;
+```
 
 The output of running this program is:
 
-    $VAR1 = [
-              'quick',
-              'brown',
-              'fox',
-              'jumps'
-            ];
-    $VAR1 = {
-              'color' => 'brown',
-              'speed' => 'quick',
-              'action' => 'jumps',
-              'animal' => 'fox'
-            };
+``` perl
+$VAR1 = [
+            'quick',
+            'brown',
+            'fox',
+            'jumps'
+        ];
+$VAR1 = {
+            'color' => 'brown',
+            'speed' => 'quick',
+            'action' => 'jumps',
+            'animal' => 'fox'
+        };
+```
 
 So the positional captures are still returned, *and* we've assigned them to keys
 in a hash. This can be very convenient for complex regular expressions.
@@ -63,12 +67,14 @@ during execution, then the code in the `(?{ })` assertions could still execute.
 For example, if you changed the word “jumps” to “poops” in the above example,
 the output becomes:
 
-    $VAR1 = [];
-    $VAR1 = {
-              'color' => 'brown',
-              'speed' => 'quick',
-              'animal' => 'fox'
-            };
+``` perl
+$VAR1 = [];
+$VAR1 = {
+            'color' => 'brown',
+            'speed' => 'quick',
+            'animal' => 'fox'
+        };
+```
 
 Which means that the match failed, but there were still assignments to our hash,
 because some of the captures succeeded before the overall match failed. The
@@ -82,27 +88,31 @@ backtrack to throw out the successful group match and then see if the next
 required match succeeds. If so, you can have a successful match and potentially
 invalid data in your hash. Here's an example:
 
-    my @captures = $string =~ /
-        (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
-        (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )?
-        (?: (brown\s+fox)       (?{ $found{animal} = $^N  }) )
-    /xms;
+``` perl
+my @captures = $string =~ /
+    (?: (quick|slow) \s+    (?{ $found{speed}  = $^N  }) )
+    (?: (brown|blue) \s+    (?{ $found{color}  = $^N  }) )?
+    (?: (brown\s+fox)       (?{ $found{animal} = $^N  }) )
+/xms;
 
-    print Dumper \@captures;
-    print Dumper \%found;
+print Dumper \@captures;
+print Dumper \%found;
+```
 
 And the output is:
 
-    $VAR1 = [
-              'quick',
-              undef,
-              'brown fox'
-            ];
-    $VAR1 = {
-              'color' => 'brown',
-              'speed' => 'quick',
-              'animal' => 'brown fox'
-            };
+``` perl
+$VAR1 = [
+            'quick',
+            undef,
+            'brown fox'
+        ];
+$VAR1 = {
+            'color' => 'brown',
+            'speed' => 'quick',
+            'animal' => 'brown fox'
+        };
+```
 
 So while the second group returned `undef` for the color capture, the
 `%found`hash still had the color key in it. This may or may not be what you
@@ -115,5 +125,4 @@ careful. If you can wait, though, perhaps we'll see [named captures in Perl
   [documentation]: http://search.cpan.org/perldoc/perlre#(?%7B_code_%7D)
     "Read about (?{ }) on CPAN"
   [named captures in Perl 5.10]: http://www.nntp.perl.org/group/perl.perl5.porters/;msgid=9b18b3110610051158h43c58810ted1017129929a539%5Bat%5Dmail.gmail.com
-    "Perl 5 Porters: “[PATCH] Initial attempt at named captures for
-    perls regexp engine”"
+    "Perl 5 Porters: “[PATCH] Initial attempt at named captures for perls regexp engine”"

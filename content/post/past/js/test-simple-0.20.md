@@ -30,20 +30,22 @@ I think that this will greatly enhance the benefits of Test.Simple, as it makes
 writing tests *really* simple. All you have to do is create a single *.html*
 file that looks something like this:
 
-    <html>
-    <head>
-      <script type="text/javascript" src="./lib/JSAN.js"></script>
-    </head>
-    <body>
-    <script type="text/javascript">
+``` html
+<html>
+<head>
+    <script type="text/javascript" src="./lib/JSAN.js"></script>
+</head>
+<body>
+<script type="text/javascript">
     new JSAN("../lib").use("Test.Harness.Browser");
     new Test.Harness.Browser('./lib/JSAN.js').encoding('utf-8').runTests(
         'foo.js',
         'bar.js'
     );
-    </script>
-    </body>
-    </html>
+</script>
+</body>
+</html>
+```
 
 In fact, that's pretty much exactly what Test.Simple's new harness looks like,
 now that I've moved all of the old tests into *.js* files (although there is
@@ -53,11 +55,13 @@ Test.Harness.Browser (which then uses it to load Test.Harness), and then I tell
 the Test.Harness.Browser object where it is so that it can load it for each
 *.js* script. The test script itself can then look something like this:
 
-    new JSAN('../lib').use('Test.Simple');
-    plan({tests: 3});
-    ok(1, 'compile');
-    ok(1);
-    ok(1, 'foo');
+``` js
+new JSAN('../lib').use('Test.Simple');
+plan({tests: 3});
+ok(1, 'compile');
+ok(1);
+ok(1, 'foo');
+```
 
 And that's it! Just use JSAN to load the appropriate test library or libraries
 and go! I know that JSAN is already loaded because Test.Harness.Browser loads it
@@ -67,13 +71,14 @@ Of course, you don't have to use JSAN to run pure *.js* tests, although it can
 be convenient. Instead, you can just pass a list of files to the harness to have
 it load them for each test:
 
-    <html>
-    <head>
-      <script type="text/javascript" src="./lib/Test/Harness.js"></script>
-      <script type="text/javascript" src="./lib/Test/Harness/Browser.js"></script>
-    </head>
-    <body>
-    <script type="text/javascript">
+``` html
+<html>
+<head>
+    <script type="text/javascript" src="./lib/Test/Harness.js"></script>
+    <script type="text/javascript" src="./lib/Test/Harness/Browser.js"></script>
+</head>
+<body>
+<script type="text/javascript">
     new Test.Harness.Browser(
         'lib/Test/Builder.js',
         'lib/Test/More.js',
@@ -82,9 +87,10 @@ it load them for each test:
         'foo.js',
         'bar.js'
     );
-    </script>
-    </body>
-    </html>
+</script>
+</body>
+</html>
+```
 
 This example tells Test.Harness.Browser to load Test.Builder and Test.More, and
 then to run the tests in *foo.js* and *bar.js*. No need for JSAN if you don't

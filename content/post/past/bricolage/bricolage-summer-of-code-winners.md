@@ -23,7 +23,7 @@ The four winning projects are:
 
 The other projects I wanted to get but could not were:
 
--   Ad Bulk Edik, Bulk Media Upload, and Site Tags, by Andreas Hofmeister
+-   Add Bulk Edit, Bulk Media Upload, and Site Tags, by Andreas Hofmeister
 -   Element Occurrence Specification, by Christian James Muise
 -   Add JSP Templating, by Adrian Fernandez
 -   Update and Modernize the Installer, by Yiannis Valassakis
@@ -91,9 +91,8 @@ end up with 11 great applications!
     "Bricolage Summer of Code Application Summary"
   [Summer of Code]: http://code.google.com/summerofcode.html
     "Google Summer of Code"
-  [Patrick LeBoutillier]: http://search.cpan.org/~patl/ "See Patrick
-    LeBoutillier's modules on CPAN"
-  [Sam Tregar]: http://sam.tregar.com/ "Sam
-    Tregar: Life"
-  [Matchstick]: http://sourceforge.net/projects/matchstick/ "The Matcstick
-    SourceForge project page"
+  [Patrick LeBoutillier]: http://search.cpan.org/~patl/
+    "See Patrick LeBoutillier's modules on CPAN"
+  [Sam Tregar]: http://sam.tregar.com/ "Sam Tregar: Life"
+  [Matchstick]: http://sourceforge.net/projects/matchstick/
+    "The Matcstick SourceForge project page"

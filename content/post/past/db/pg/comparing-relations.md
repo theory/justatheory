@@ -65,11 +65,13 @@ CITEXT tests to plain SQL).
 
 The first issue is tougher, however. Tom was responding to a test like this:
 
-    SELECT is(
-        ARRAY( SELECT name FROM srt ORDER BY name )::text,
-        ARRAY['AAA', 'aardvark', 'aba', 'ABC', 'abc']::text,
-        'The words should be case-insensitively sorted'
-    );
+``` postgres
+SELECT is(
+    ARRAY( SELECT name FROM srt ORDER BY name )::text,
+    ARRAY['AAA', 'aardvark', 'aba', 'ABC', 'abc']::text,
+    'The words should be case-insensitively sorted'
+);
+```
 
 Now, I agree that it’s redundant with the expected-output file, but the
 assumption with [TAP] is that there *is no* expected output file: you just
@@ -95,11 +97,13 @@ the comparison. For example, say that the `fooey()` function returns a `dude`
 value, which is a composite type with an integer and a text string. Here’s how
 to test it with pgTAP:
 
-    SELECT is(
-        fooey()::text,
-        ROW( 42, 'Bob' )::text,
-        'Should get what we expect from fooey()'
-    );
+``` postgres
+SELECT is(
+    fooey()::text,
+    ROW( 42, 'Bob' )::text,
+    'Should get what we expect from fooey()'
+);
+```
 
 So I'm again coercing a value into something else (of course, if I could pass
 `record`s to functions, that issue goes away). And it does yield nice
@@ -113,14 +117,16 @@ It gets much worse with set returning functions—Tom’s “table result:” it
 requires both type *and* row coercion (or “contortion” if you'd prefer). Here’s
 an example of a `fooies()` function that returns a set of `dude`s:
 
-    SELECT is(
-        ARRAY( SELECT ROW(f.*)::text FROM fooies() f ),
-        ARRAY[
-            ROW( 42, 'Fred' )::text,
-            ROW( 99, 'Bob' )::text
-        ],
-        'Should get what we expect from fooies()'
-    );
+``` postgres
+SELECT is(
+    ARRAY( SELECT ROW(f.*)::text FROM fooies() f ),
+    ARRAY[
+        ROW( 42, 'Fred' )::text,
+        ROW( 99, 'Bob' )::text
+    ],
+    'Should get what we expect from fooies()'
+);
+```
 
 As you can see, it’s do-able, but clumsy and error prone. We really are taking a
 table result and turning into a scalar value. And thanks to the casts to `text`,
@@ -135,23 +141,25 @@ with decent diagnostics when a test fails.
 As an aside, another approach is to use `EXCEPT` queries to make sure that two
 data sets are the same:
 
-    SELECT ok(
-        NOT EXISTS (
-            (SELECT 42, 'Fred' UNION SELECT 99, 'Bob')
-            EXCEPT
-            SELECT * from fooies()
-        ),
-        'Should get what we expect from fooies()'
-    );
+``` postgres
+SELECT ok(
+    NOT EXISTS (
+        (SELECT 42, 'Fred' UNION SELECT 99, 'Bob')
+        EXCEPT
+        SELECT * from fooies()
+    ),
+    'Should get what we expect from fooies()'
+);
 
-    SELECT ok(
-        NOT EXISTS (
-            SELECT * from fooies()
-            EXCEPT
-            (SELECT 42, 'Fred' UNION SELECT 99, 'Bob')
-        ),
-        'Should have no unexpected rows from fooies()'
-    );
+SELECT ok(
+    NOT EXISTS (
+        SELECT * from fooies()
+        EXCEPT
+        (SELECT 42, 'Fred' UNION SELECT 99, 'Bob')
+    ),
+    'Should have no unexpected rows from fooies()'
+);
+```
 
 Here I've created two separate tests. The first makes sure that `fooies()`
 returns all the expected rows, and the second makes sure that it doesn’t return
@@ -176,16 +184,17 @@ result sets that neither pgTAP nor PGUnit support. One such function is
 `assert_rows()`, to which you pass strings that contain SQL to be evaluated. For
 example:
 
-    CREATE OR REPLACE FUNCTION test.test_fooies() RETURNS VOID AS $_$
-    BEGIN
-        PERFORM test.assert_rows(
-            $$ VALUES(42, 'Fred'), (99, 'Bob') $$,
-            $$ SELECT * FROM fooies()          $$
-        );
-      RAISE EXCEPTION '[OK]';
-    END;
-    $_$ LANGUAGE plpgsql;
-
+``` plpgsql
+CREATE OR REPLACE FUNCTION test.test_fooies() RETURNS VOID AS $_$
+BEGIN
+    PERFORM test.assert_rows(
+        $$ VALUES(42, 'Fred'), (99, 'Bob') $$,
+        $$ SELECT * FROM fooies()          $$
+    );
+    RAISE EXCEPTION '[OK]';
+END;
+$_$ LANGUAGE plpgsql;
+```
 This works reasonably well. Internally, Epic runs each query twice, using
 `EXCEPT` to compare result sets, just as in my boolean example above. This
 yields a proper comparison, and because `assert_rows()` iterates over returned
@@ -214,28 +223,34 @@ or Perl code references: a way to dynamically create some code that is compiled
 and planned when it loads, but its execution can be deferred. In Perl it works
 like this:
 
-    my $code = sub { say "woof!" };
-    $code->(); # prints "woof!"
+``` perl
+my $code = sub { say "woof!" };
+$code->(); # prints "woof!"
+```
 
 In Ruby (and to a lesser extent in Perl), you can pass a block to a method:
 
-    foo.bar { puts "woof!" }
+``` ruby
+foo.bar { puts "woof!" }
+```
 
 The `bar` method can then run that code at its leisure. We can sort of do this
 in PostgreSQL using `PREPARE`. To take advantage of it for Epic’s
 `assert_rows()` function, one can do something like this:
 
-    CREATE OR REPLACE FUNCTION test.test_fooies() RETURNS VOID AS $_$
-    BEGIN
-        PREPARE want AS VALUES(42, 'Fred'), (99, 'Bob');
-        PREPARE have AS SELECT * FROM public.fooies();
-        PERFORM test.assert_rows(
-            test.global($$ EXECUTE want $$),
-            test.global($$ EXECUTE have $$)
-        );
-        RAISE EXCEPTION '[OK]';
-    END;
-    $_$ LANGUAGE plpgsql;
+``` plpgsql
+CREATE OR REPLACE FUNCTION test.test_fooies() RETURNS VOID AS $_$
+BEGIN
+    PREPARE want AS VALUES(42, 'Fred'), (99, 'Bob');
+    PREPARE have AS SELECT * FROM public.fooies();
+    PERFORM test.assert_rows(
+        test.global($$ EXECUTE want $$),
+        test.global($$ EXECUTE have $$)
+    );
+    RAISE EXCEPTION '[OK]';
+END;
+$_$ LANGUAGE plpgsql;
+```
 
 The nice thing about using a prepared statement is that you can actually write
 all of your SQL in SQL, rather than in an SQL string, and then pass the simple
@@ -252,22 +267,24 @@ use it over and over again in your tests. Say that you had a few set returning
 functions that return different results from the `users` table. You could then
 test them all like so:
 
-    CREATE OR REPLACE FUNCTION test.test_user_funcs() RETURNS VOID AS $_$
-    BEGIN
-        PREPARE want(bool) AS SELECT * FROM users WHERE active = $1;
-        PREPARE active     AS SELECT * FROM get_active_users();
-        PREPARE inactive   AS SELECT * FROM get_inactive_users();
-        PERFORM test.assert_rows(
-            test.global($$ EXECUTE want(true) $$),
-            test.global($$ EXECUTE active     $$)
-        );
-        PERFORM test.assert_rows(
-            test.global($$ EXECUTE want(false) $$),
-            test.global($$ EXECUTE inactive    $$)
-        );
-        RAISE EXCEPTION '[OK]';
-    END;
-    $_$ LANGUAGE plpgsql;
+``` plpgsql
+CREATE OR REPLACE FUNCTION test.test_user_funcs() RETURNS VOID AS $_$
+BEGIN
+    PREPARE want(bool) AS SELECT * FROM users WHERE active = $1;
+    PREPARE active     AS SELECT * FROM get_active_users();
+    PREPARE inactive   AS SELECT * FROM get_inactive_users();
+    PERFORM test.assert_rows(
+        test.global($$ EXECUTE want(true) $$),
+        test.global($$ EXECUTE active     $$)
+    );
+    PERFORM test.assert_rows(
+        test.global($$ EXECUTE want(false) $$),
+        test.global($$ EXECUTE inactive    $$)
+    );
+    RAISE EXCEPTION '[OK]';
+END;
+$_$ LANGUAGE plpgsql;
+```
 
 Note how I've tested both the `get_active_users()` and the
 `get_inactive_users()` function by passing different values when executing the
@@ -293,13 +310,17 @@ frameworks you can pass data structures be compared. For example, [Test::More]�
 `is_deeply()` assertion allows you to test that two data structures contain the
 same values in the same structures:
 
-    is_deeply \@got_data, \@want_data, 'We should have the right stuff';
+``` perl
+is_deeply \@got_data, \@want_data, 'We should have the right stuff';
+```
 
 This does a deep comparison between the contents of the `@got_data` array and
 `@want_data`. Similarly, I could imagine a test to check the contents of a
 [DBIx::Class] result set object:
 
-    results_are( $got_resultset, $want_resultset );
+``` perl
+results_are( $got_resultset, $want_resultset );
+```
 
 In this case, the `is_results()` function would iterate over the two result
 sets, comparing each result to make sure that they were identical. So if
@@ -311,9 +332,11 @@ The answer, if you're still with me, is *cursors*.
 Now, cursors don’t work with Epic’s SQL-statement style tests, but I could
 certainly see how a pgTAP function like this would be useful:
 
-    DECLARE want CURSOR FOR SELECT * FROM users WHERE active;
-    DECLARE have CURSOR FOR SELECT * FROM get_active_users();
-    SELECT results_are( 'want', 'have' );
+``` postgres
+DECLARE want CURSOR FOR SELECT * FROM users WHERE active;
+DECLARE have CURSOR FOR SELECT * FROM get_active_users();
+SELECT results_are( 'want', 'have' );
+```
 
 The nice thing about this approach is that, even more than with prepared
 statements, everything is written in SQL. The `results_are()` function would
@@ -344,12 +367,14 @@ So, does an approach like this, especially the cursor solution, address Tom’s
 criticism? Does it feel more relational? Just to rewrite the kind of test Tom
 originally objected to, it would now look something like this:
 
-    DECLARE have CURSOR FOR SELECT name FROM srt ORDER BY name;
-    DECLARE want CURSOR FOR VALUES ('AAA'), ('aardvark'), ('aba'), ('ABC'), ('abc');
-    SELECT results_are(
-        'have', 'want',
-        'The words should be case-insensitively sorted'
-    );
+``` postgres
+DECLARE have CURSOR FOR SELECT name FROM srt ORDER BY name;
+DECLARE want CURSOR FOR VALUES ('AAA'), ('aardvark'), ('aba'), ('ABC'), ('abc');
+SELECT results_are(
+    'have', 'want',
+    'The words should be case-insensitively sorted'
+);
+```
 
 Thoughts? I'm not going to get to it this week, so feedback would be greatly
 appreciated.

@@ -26,16 +26,20 @@ Either way, it's got some useful fixes and improvements:
     don't want it to be indented in your final output. If not, you can strip out
     leading spaces via `strip_verbatim_indent`. Pass in the text to strip out:
 
-        $parser->strip_verbatim_indent('  ');
+    ``` perl
+    $parser->strip_verbatim_indent('  ');
+    ```
 
     Or a code reference that figures out what to strip out. I'm fond of
     stripping based on the indentation of the first line, like so:
 
-        $new->strip_verbatim_indent(sub {
-              my $lines = shift;
-              (my $indent = $lines->[0]) =~ s/\S.*//;
-              return $indent;
-          });
+    ``` perl
+    $new->strip_verbatim_indent(sub {
+        my $lines = shift;
+        (my $indent = $lines->[0]) =~ s/\S.*//;
+        return $indent;
+    });
+    ```
 
 -   You can now use the `nocase` parameter to Pod::Simple::PullParser to tell
     the parser to ignore the case of POD blocks when searching for author,
@@ -118,5 +122,4 @@ anyone's POD. Here's to hoping it doesn't!
   [an example]: http://search.cpan.org/perldoc?DBIx::Connector "DBix::Connector"
   [perlpod]: http://search.cpan.org/perldoc?perlpod
   [bug report]: https://rt.cpan.org/Public/Bug/Display.html?id=12239
-    "C<<< C<<foo>> >>> not rendered
-    properly."
+    "C<<< C<<foo>> >>> not rendered properly."

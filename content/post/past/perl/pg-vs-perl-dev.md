@@ -317,8 +317,7 @@ reviewing earlier drafts of this essay and providing invaluable feedback and
 suggestions -- many of which I accepted. Any errors of course remain completely
 my own.
 
-  [new blog]: http://modernperlbooks.com/mt/index.html "Modern Perl
-    Books"
+  [new blog]: http://modernperlbooks.com/mt/index.html "Modern Perl Books"
   [Rafael Garcia-Suarez]: http://consttype.blogspot.com/2009/07/time-based-releases-in-open-source.html
     "ConstType: “Time-based releases in open source”"
   [chromatic]: http://www.modernperlbooks.com/mt/2009/06/what-does-stable-mean.html
@@ -355,13 +354,11 @@ my own.
   [security vulnerability]: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0922
     "CVE-2009-0922"
   [delivered new releases]: http://www.postgresql.org/about/news.1065
-    "PostgreSQL
-    2009-03-16 Security Update"
+    "PostgreSQL 2009-03-16 Security Update"
   [Bricolage]: http://www.bricolagecms.org/
     "Bricolage content management and publishing system"
   [this post]: http://www.nntp.perl.org/group/perl.perl5.porters/2009/07/msg148133.html
-    "perl5-porters: “Re: Coring Variable::Magic / autodie fights with string
-    eval inPerl 5.10.x”"
+    "perl5-porters: “Re: Coring Variable::Magic / autodie fights with string eval inPerl 5.10.x”"
   [suggestion]: http://www.nntp.perl.org/group/perl.perl5.porters/2009/06/msg147448.html
     "perl5-porters, David Golden: “Re: 5.10.1”"
   [resigned as Perl 5.12 Pumpking]: http://consttype.blogspot.com/2009/07/resigning.html
@@ -370,6 +367,5 @@ my own.
     "Paul Fenwick: “Smart-match”"
   [Nicholas Clark]: http://www.ccl4.org/~nick/
   [Chip Salzenberg]: http://use.perl.org/~chip/
-  [took a break]: http://use.perl.org/~chip/journal/17291 "From under the
-          hood to behind the wheel"
+  [took a break]: http://use.perl.org/~chip/journal/17291 "From under the hood to behind the wheel"
   [breaking up the Pumpking role]: http://www.nntp.perl.org/group/perl.perl5.porters/2009/06/msg147929.html

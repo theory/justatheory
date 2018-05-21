@@ -38,17 +38,19 @@ ActiveRecord to fetch the data I want, as opposed to what it thinks I want, I
 had to fallback on the Drupal form data structure's ability to accept embedded
 HTML like so:
 
-    $form['submit_stuff'] = array(
-      '#weight' => 20,
-      '#type'   => 'markup',
-      '#value'  => '<div class="form-submits">'
-                 . '<label></label><p class="message">(Maximum 3000 characters)</p>'
-                 . '<div class="btns">'
-                 . '<input type="image" value="Preview comment" name="op" src="preview.png" />'
-                 . '<img width="1" height="23" src="divider.png" />'
-                 . '<input type="image" value="Post comment" name="op" src="post.png" />'
-                 . '</div></div>',
-    );
+``` ruby
+$form['submit_stuff'] = array(
+  '#weight' => 20,
+  '#type'   => 'markup',
+  '#value'  => '<div class="form-submits">'
+              . '<label></label><p class="message">(Maximum 3000 characters)</p>'
+              . '<div class="btns">'
+              . '<input type="image" value="Preview comment" name="op" src="preview.png" />'
+              . '<img width="1" height="23" src="divider.png" />'
+              . '<input type="image" value="Post comment" name="op" src="post.png" />'
+              . '</div></div>',
+);
+```
 
 Dear god, *why?* I understand that you can create images using an array in
 Drupal 6, but I fail to understand why it was *ever* a problem. Just give me a

@@ -47,18 +47,20 @@ the database][amazingly useful]. Say there was a bug in the function, where it
 was failing to return some instances of events that fall between the recurrence
 dates. A simple patch might look something like this:
 
-    @@ -22,7 +22,10 @@
-                       recurrence <> 'none'
-                   OR  (
-                          recurrence = 'none'
-    -                 AND starts_at BETWEEN range_start AND range_end
-    +                 AND (
-    +                         starts_at BETWEEN range_start AND range_end
-    +                      OR ends_at   BETWEEN range_start AND range_end
-    +                 )
-                   )
+``` diff
+@@ -22,7 +22,10 @@
+                   recurrence <> 'none'
+               OR  (
+                      recurrence = 'none'
+-                 AND starts_at BETWEEN range_start AND range_end
++                 AND (
++                         starts_at BETWEEN range_start AND range_end
++                      OR ends_at   BETWEEN range_start AND range_end
++                 )
                )
-         LOOP
+           )
+     LOOP
+```
 
 Pretty straight-forward, right? But *not for migration scripts!*. To make this
 three-line change with migrations, I'd actually have to paste the entire 58-line
@@ -119,23 +121,25 @@ then decide what `lib` migrations to run by looking for those that have been
 modified since the last time migrations were run. In Perl, using Git, that'd be
 something like this:
 
-    sub run {
-        my $cmd = shift;
-        map { s/^\s+//; s/\s+$//; $_ } `$cmd`;
-    }
+``` perl
+sub run {
+    my $cmd = shift;
+    map { s/^\s+//; s/\s+$//; $_ } `$cmd`;
+}
 
-    my $lib = 'lib';
-    my $date = '2009-04-01 00:01:00';
-    my ($rev) = run "git rev-list --reverse --since='$date' master -- '$lib'";
+my $lib = 'lib';
+my $date = '2009-04-01 00:01:00';
+my ($rev) = run "git rev-list --reverse --since='$date' master -- '$lib'";
 
-    for my $script (
-        map  { $_->[0] }
-        sort { $a->[1] cmp $b->[1] }
-        map  { chomp; [ $_ => run "git log -1 --pretty=format:%ci '$_'" ]  }
-        run "git diff --name-only $rev^ '$lib'"
-    ) {
-        system qw(psql -f), $script;
-    }
+for my $script (
+    map  { $_->[0] }
+    sort { $a->[1] cmp $b->[1] }
+    map  { chomp; [ $_ => run "git log -1 --pretty=format:%ci '$_'" ]  }
+    run "git diff --name-only $rev^ '$lib'"
+) {
+    system qw(psql -f), $script;
+}
+```
 
 First, we get the oldest revision SHA1 ID since the specified date and store it
 in `$rev`. The magic is in the `for` loop which, due to the antiquity of Perl

@@ -99,19 +99,14 @@ that won't cost me an arm and a leg?
 
 Thanks for your help!
 
-  [Courier-IMAP]: http://www.courier-mta.org/imap/ "Courier-IMAP
-    Home"
+  [Courier-IMAP]: http://www.courier-mta.org/imap/ "Courier-IMAP Home"
   [this site]: / "Just a Theory"
   [Kineticode]: http://www.kineticode.com/ "Kineticode Home"
   [Strongrrl]: http://www.strongrrl.com/ "Strongrrl Home"
-  [Julie]: http://www.strongrrl.com/ "Julie Wheeler is principal at
-    Strongrrl"
-  [Bricolage]: http://bricolage.cc "Bricolage CMS
-    Home"
+  [Julie]: http://www.strongrrl.com/ "Julie Wheeler is principal at Strongrrl"
+  [Bricolage]: http://bricolage.cc "Bricolage CMS Home"
   [FuseMail]: http://www.fusemail.com/ "FuseMail Home"
-  [Maildir]: https://en.wikipedia.org/wiki/Maildir "Maildir as
-      described by Wikipedia"
-  [Offline IMAP]: http://software.complete.org/offlineimap "OfflineIMAP
-      Home"
+  [Maildir]: https://en.wikipedia.org/wiki/Maildir "Maildir as described by Wikipedia"
+  [Offline IMAP]: http://software.complete.org/offlineimap "OfflineIMAP Home"
   [RT]: http://www.bestpractical.com/rt/ "Request Tracker Home"
   [Pobox]: http://www.pobox.com/ "Pobox Home"

@@ -24,21 +24,15 @@ So [get in touch] or meet us at [PGCon] (we're sponsoring!) or at [OSCON 2009].
 I'm really excited about our company, and looking forward to growing it as
 PostgreSQL adoption grows.
 
-  [Kineticode]: http://www.kineticode.com/ "Kineticode: Setting
-    knowledge in motion."
+  [Kineticode]: http://www.kineticode.com/ "Kineticode: Setting knowledge in motion."
   [Josh Berkus]: http://it.toolbox.com/blogs/database-soup "Database Soup"
-  [David Fetter]: http://people.planetpostgresql.org/dfetter/
-    "David Fetter's blog"
-  [Andrew Dunstan]: http://people.planetpostgresql.org/andrew/
-    "Andrew's PostgreSQL blog"
+  [David Fetter]: http://people.planetpostgresql.org/dfetter/ "David Fetter's blog"
+  [Andrew Dunstan]: http://people.planetpostgresql.org/andrew/ "Andrew's PostgreSQL blog"
   [team]: http://pgexperts.com/people.html "Meet the Experts"
   [PostgreSQL Experts, Inc.]: http://pgexperts.com/ "PostgreSQL Experts, Inc."
-  [Rails]: http://wiki.rubyonrails.org/database-support/postgres
-    "Rails Wiki: PostgreSQL"
-  [Catalyst]: http://www.catalystframework.org/
-    "Catalyst: The elegant MVC framework"
+  [Rails]: http://wiki.rubyonrails.org/database-support/postgres "Rails Wiki: PostgreSQL"
+  [Catalyst]: http://www.catalystframework.org/ "Catalyst: The elegant MVC framework"
   [PHP]: http://www.php.net/ "PHP"
-  [get in touch]: http://pgexperts.com/contact.html
-    "PostgreSQL Experts, Inc. -- Contact Us"
+  [get in touch]: http://pgexperts.com/contact.html "PostgreSQL Experts, Inc. -- Contact Us"
   [PGCon]: https://www.pgcon.org/2009/ "PGCon 2009"
   [OSCON 2009]: http://en.oreilly.com/oscon2009

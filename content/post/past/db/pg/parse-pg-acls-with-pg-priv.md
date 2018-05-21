@@ -12,39 +12,43 @@ validates PostgreSQL database permissions. Of course, in order to verify that
 permissions were correct or needed updating, I had to have a way to examine
 PostgreSQL ACLs, which are arrays made of of strings that look like this:
 
-    my $acl = [
-       'miriam=arwdDxt/miriam',
-       '=r/miriam',
-       'admin=arw/miriam',
-    ];
+``` perl
+my $acl = [
+    'miriam=arwdDxt/miriam',
+    '=r/miriam',
+    'admin=arw/miriam',
+];
+```
 
 So following [the documentation], I wrote a module that iterates over an ACL,
 parses each privilege string, and returns an object describing it. Using it is
 pretty easy. If you wanted to see what the permissions looked like on all the
 tables in a database, you could do it like so:
 
-    #!/usr/bin/perl -w
-    use strict;
-    use warnings;
-    use DBI;
-    use Pg::Priv;
+``` perl
+#!/usr/bin/perl -w
+use strict;
+use warnings;
+use DBI;
+use Pg::Priv;
 
-    my $dbname = shift or die "Usage: $0 dbname\n";
+my $dbname = shift or die "Usage: $0 dbname\n";
 
-    my $dbh = DBI->connect("dbi:Pg:dbname=$dbname", 'postgres', '');
-    my $sth = $dbh->prepare(
-        q{SELECT relname, relacl FROM pg_class WHERE relkind = 'r'}
-    );
+my $dbh = DBI->connect("dbi:Pg:dbname=$dbname", 'postgres', '');
+my $sth = $dbh->prepare(
+    q{SELECT relname, relacl FROM pg_class WHERE relkind = 'r'}
+);
 
-    $sth->execute;
-    print "Permissions for $dbname:\n";
-    while (my $row = $sth->fetchrow_hashref) {
-        print "  Table $row->{relname}:\n";
-        for my $priv ( Pg::Priv->parse_acl( $row->{relacl} ) ) {
-            print '    ', $priv->by, ' granted to ', $priv->to, ': ',
-                join( ', ', $priv->labels ), $/;
-        }
+$sth->execute;
+print "Permissions for $dbname:\n";
+while (my $row = $sth->fetchrow_hashref) {
+    print "  Table $row->{relname}:\n";
+    for my $priv ( Pg::Priv->parse_acl( $row->{relacl} ) ) {
+        print '    ', $priv->by, ' granted to ', $priv->to, ': ',
+            join( ', ', $priv->labels ), $/;
     }
+}
+```
 
 And here's what the output looks like:
 

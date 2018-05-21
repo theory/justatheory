@@ -41,34 +41,38 @@ execute PHP 5 code from a Perl application. Not only that, but the PHP 5 code
 can reach back into the Perl interpreter to use Perl modules and objects! Here's
 an example that I like to show off to the PHP crowd:
 
-    <?php
-      $perl = Perl::getInstance();
-      $perl->eval("use DBI");
-      $perl->eval("use DateTime");
-      $dbh = $perl->call("DBI::connect", "DBI", "dbi:SQLite:dbname=dbfile");
-      $dbh->do("CREATE TABLE foo (bar TEXT, time DATETIME)");
-      $now = $perl->call("DateTime::now", "DateTime");
-      $ins = $dbh->prepare("INSERT INTO foo VALUES (?, ?)");
-      $ins->execute("This is a test", $now);
-      $sel = $dbh->prepare("SELECT bar, time FROM foo");
-      $sel->execute();
-      $a = array("foo", "bar");
-      foreach ($sel->fetch() as $val) {
-          echo "$val\n";
-      }
-      $sel->finish();
-      $dbh->do("DROP TABLE foo");
-      $dbh->disconnect();
-    ?>
+``` php
+<?php
+    $perl = Perl::getInstance();
+    $perl->eval("use DBI");
+    $perl->eval("use DateTime");
+    $dbh = $perl->call("DBI::connect", "DBI", "dbi:SQLite:dbname=dbfile");
+    $dbh->do("CREATE TABLE foo (bar TEXT, time DATETIME)");
+    $now = $perl->call("DateTime::now", "DateTime");
+    $ins = $dbh->prepare("INSERT INTO foo VALUES (?, ?)");
+    $ins->execute("This is a test", $now);
+    $sel = $dbh->prepare("SELECT bar, time FROM foo");
+    $sel->execute();
+    $a = array("foo", "bar");
+    foreach ($sel->fetch() as $val) {
+        echo "$val\n";
+    }
+    $sel->finish();
+    $dbh->do("DROP TABLE foo");
+    $dbh->disconnect();
+?>
+```
 
 Note that George plans to add convenience methods to load Perl modules and call
 Perl class methods. Now, to execute this code from Perl, all you have to do is
 write a little script, call it *pphp*, like so:
 
-    use strict;
-    use PHP::Interpreter;
-    my $php = PHP::Interpreter->new;
-    $php->include(shift);
+``` perl
+use strict;
+use PHP::Interpreter;
+my $php = PHP::Interpreter->new;
+$php->include(shift);
+```
 
 Then just execute your PHP code with the script: `pphp try.php`. Yes, this
 *does* work! For years, when I've run across a PHP coder who wanted to try to
@@ -80,28 +84,31 @@ And as for Bricolage, the integration of PHP 5 templating is completely
 transparent. Users just write PHP 5 templates instead of Mason templates and
 that's it! For example, this is a fairly common style Bricolage Mason template:
 
-    <%perl>;
-    for my $e ($element->get_elements(qw(header para _pull_quote_))) {
-        my $kn = $e->get_key_name;
-        if ($kn eq "para") {
-            $m->print("<p>", $e->get_data, "</p>\n");
-        } elsif ($kn eq "header") {
-            # Test sdisplay_element() on a field.
-            $m->print("<h3>", $burner->sdisplay_element($e), "</h3>\n");
-        } elsif ($kn eq "_pull_quote_" && $e->get_object_order > 1) {
-            # Test sdisplay_element() on a container.
-            $m->print($burner->sdisplay_element($e));
-        } else {
-            # Test display_element().
-            $burner->display_element($e);
-        }
+``` perl
+<%perl>;
+for my $e ($element->get_elements(qw(header para _pull_quote_))) {
+    my $kn = $e->get_key_name;
+    if ($kn eq "para") {
+        $m->print("<p>", $e->get_data, "</p>\n");
+    } elsif ($kn eq "header") {
+        # Test sdisplay_element() on a field.
+        $m->print("<h3>", $burner->sdisplay_element($e), "</h3>\n");
+    } elsif ($kn eq "_pull_quote_" && $e->get_object_order > 1) {
+        # Test sdisplay_element() on a container.
+        $m->print($burner->sdisplay_element($e));
+    } else {
+        # Test display_element().
+        $burner->display_element($e);
     }
-    $burner->display_pages("_page_");
-    </%perl>
+}
+$burner->display_pages("_page_");
+</%perl>
+```
 
 The same template in PHP 5 looks like this:
 
-    <?php
+``` php
+<?php
     # Convenience variables.
     $story   = $BRIC["story"];
     $element = $BRIC["element"];
@@ -122,7 +129,8 @@ The same template in PHP 5 looks like this:
         }
     }
     $burner->display_pages("_page_");
-    ?>
+?>
+```
 
 Yes, you are seeing virtually the same thing. But this is just a simple template
 from Bricolage's test suite. The advantage is that PHP 5 coders who are familiar

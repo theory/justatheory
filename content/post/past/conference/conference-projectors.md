@@ -18,5 +18,5 @@ been for, what, a decade?
 
 That is all. Thank you.
 
-  [ETech]: http://conferences.oreillynet.com/etech/ "The
-    Emerging Technology Conference home page"
+  [ETech]: http://conferences.oreillynet.com/etech/
+    "The Emerging Technology Conference home page"

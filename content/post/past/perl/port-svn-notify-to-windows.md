@@ -14,22 +14,24 @@ meant was, rather than slurping in whole chunks of data, such as diffs, from
 pipe to *svnlook* and then read from it line-by-line. The method I wrote to
 create the pipe looks like this:
 
-    sub _pipe {
-        my ($self, $mode) = (shift, shift);
-        # Safer version of backtick (see perlipc(1)).
-        local *PIPE;
-        my $pid = open(PIPE, $mode);
-        die "Cannot fork: $!\n" unless defined $pid;
+``` perl
+sub _pipe {
+    my ($self, $mode) = (shift, shift);
+    # Safer version of backtick (see perlipc(1)).
+    local *PIPE;
+    my $pid = open(PIPE, $mode);
+    die "Cannot fork: $!\n" unless defined $pid;
 
-        if ($pid) {
-            # Parent process. Return the file handle.
-            return *PIPE;
-        } else {
-            # Child process. Execute the commands.
-            exec(@_) or die "Cannot exec $_[0]: $!\n";
-            # Not reached.
-        }
+    if ($pid) {
+        # Parent process. Return the file handle.
+        return *PIPE;
+    } else {
+        # Child process. Execute the commands.
+        exec(@_) or die "Cannot exec $_[0]: $!\n";
+        # Not reached.
     }
+}
+```
 
 The problem is that it doesn't work on Windows. perlipc says:
 

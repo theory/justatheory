@@ -68,8 +68,7 @@ sending feature requests to Cork'd and watching to see how things develop.
 
   [an entry]: http://www.vinography.com/archives/2006/06/why_community_tasting_note_sit.html
     "Why Community Tasting Note Sites Will Fail"
-  [Vinography]: http://www.vinography.com/ "Vinography: A Wine
-    Blog"
+  [Vinography]: http://www.vinography.com/ "Vinography: A Wine Blog"
   [Cork'd]: http://www.corkd.com/
   [LogABottle]: http://logabottle.com/home/index.php
   [Winelog.Net]: http://www.winelog.net/

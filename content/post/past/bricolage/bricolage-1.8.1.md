@@ -120,8 +120,8 @@ Enjoy!
 
   [release notes and changes list]: http://sourceforge.net/project/shownotes.php?release_id=251820
     "Read the 1.8.1 rlease notes and changes"
-  [Bric::Changes]: http://www.bricolage.cc/docs/api/current/Bric::Changes "See
-    Bric::Changes"
+  [Bric::Changes]: http://www.bricolage.cc/docs/api/current/Bric::Changes
+    "See Bric::Changes"
   [SourceForge download page]: http://sourceforge.net/project/showfiles.php?group_id=34789
     "Download 1.8.1 from SourceForge"
   [Kineticode download page]: http://www.kineticode.com/bricolage/index2.html

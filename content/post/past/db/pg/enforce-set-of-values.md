@@ -15,9 +15,11 @@ values are stored as integers, making them very space- and
 performance-efficient. A typical example might be a workflow approval process
 for publishing magazine articles. You create it like so:
 
-    CREATE TYPE article_states AS ENUM (
-        'draft', 'copy', 'approved', 'published'
-    );
+``` postgres
+CREATE TYPE article_states AS ENUM (
+    'draft', 'copy', 'approved', 'published'
+);
+```
 
 Nice: we now have a simple data type that’s self-documenting. An an important
 feature of enums is that the ordering of values is the same as the declared
@@ -30,22 +32,26 @@ inherently ordered values other than the collation order of the text. For
 example, say that we need a table describing people’s faces. Using an enum to
 manage eye colors might look something like this:
 
-    CREATE TYPE eye_color AS ENUM ( 'blue', 'green', 'brown' );
+``` postgres
+CREATE TYPE eye_color AS ENUM ( 'blue', 'green', 'brown' );
 
-    CREATE TABLE faces (
-        face_id SERIAL PRIMARY KEY,
-        name TEXT NOT NULL DEFAULT '',
-        eye_color eye_color NOT NULL
-    );
+CREATE TABLE faces (
+    face_id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL DEFAULT '',
+    eye_color eye_color NOT NULL
+);
+```
 
 Nice, huh? So let’s insert a few values and see what it looks like:
 
-    INSERT INTO faces (name, eye_color)
-    VALUES ('David', 'blue' ),
-           ('Julie', 'green' ),
-           ('Anna', 'blue' ),
-           ('Noriko', 'brown' )
-    ;
+``` postgres
+INSERT INTO faces (name, eye_color)
+VALUES ('David', 'blue' ),
+       ('Julie', 'green' ),
+       ('Anna', 'blue' ),
+       ('Noriko', 'brown' )
+;
+```
 
 So let’s look at the data ordered by the enum:
 
@@ -67,14 +73,16 @@ Well, nice to know that it’s enforced, and that message is really helpful. But
 the real problem is that we run into the inherent ordering of enum labels, and
 now we need to adjust the enum to meet our needs. Here’s how to do it:
 
-    ALTER TABLE faces RENAME eye_color TO eye_color_tmp;
-    ALTER TABLE faces ALTER eye_color_tmp TYPE TEXT;
-    DROP TYPE eye_color;
-    CREATE TYPE eye_color AS ENUM ( 'blue', 'brown', 'green', 'hazel' );
-    ALTER TABLE faces ADD eye_color eye_color;
-    UPDATE faces SET eye_color = eye_color_tmp::eye_color;
-    ALTER TABLE faces ALTER eye_color SET NOT NULL;
-    ALTER TABLE faces DROP column eye_color_tmp;
+``` postgres
+ALTER TABLE faces RENAME eye_color TO eye_color_tmp;
+ALTER TABLE faces ALTER eye_color_tmp TYPE TEXT;
+DROP TYPE eye_color;
+CREATE TYPE eye_color AS ENUM ( 'blue', 'brown', 'green', 'hazel' );
+ALTER TABLE faces ADD eye_color eye_color;
+UPDATE faces SET eye_color = eye_color_tmp::eye_color;
+ALTER TABLE faces ALTER eye_color SET NOT NULL;
+ALTER TABLE faces DROP column eye_color_tmp;
+```
 
 Yikes! I have to rename the column, change its type to `TEXT`, drop the enum,
 create a new enum, and then *copy all of the data* into the new column before
@@ -103,26 +111,30 @@ Another approach to handling a type as a set of values is to take advantage of
 the relational model and create store the values in a table. Going with the
 faces example, it looks like this:
 
-    CREATE TABLE eye_colors (
-        eye_color TEXT PRIMARY KEY
-    );
+``` postgres
+CREATE TABLE eye_colors (
+    eye_color TEXT PRIMARY KEY
+);
 
-    INSERT INTO  eye_colors VALUES( 'blue' ), ('green'), ('brown' );
+INSERT INTO  eye_colors VALUES( 'blue' ), ('green'), ('brown' );
 
-    CREATE TABLE faces (
-        face_id SERIAL PRIMARY KEY,
-        name TEXT NOT NULL DEFAULT '',
-        eye_color TEXT REFERENCES eye_colors(eye_color)
-    );
+CREATE TABLE faces (
+    face_id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL DEFAULT '',
+    eye_color TEXT REFERENCES eye_colors(eye_color)
+);
+```
 
 We can use this table much as we did before:
 
-    INSERT INTO faces (name, eye_color)
-    VALUES ('David', 'blue' ),
-           ('Julie', 'green' ),
-           ('Anna', 'blue' ),
-           ('Noriko', 'brown' )
-    ;
+``` postgres
+INSERT INTO faces (name, eye_color)
+VALUES ('David', 'blue' ),
+       ('Julie', 'green' ),
+       ('Anna', 'blue' ),
+       ('Noriko', 'brown' )
+;
+```
 
 And of course we can get the rows back properly ordered by `eye_color`, unlike
 the original enum example:
@@ -157,8 +169,10 @@ least looking at the tables can tell you a bit more:
 A quick look at the `eye_colors` table will tell you what’s going on, and you
 can figure out that you just need to add a new row:
 
-    INSERT INTO eye_colors VALUES ('hazel');
-    INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
+``` postgres
+INSERT INTO eye_colors VALUES ('hazel');
+INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
+```
 
 So it *is* self-documenting, but unlike enums it doesn’t do a great job of it.
 Plus if you have a bunch of set-constrained value types, you can end up with a
@@ -175,14 +189,16 @@ those values change frequently. So what else can we do?
 
 A third approach is to use a table constraint, like so:
 
-    CREATE TABLE faces (
-        face_id SERIAL PRIMARY KEY,
-        name TEXT NOT NULL DEFAULT '',
-        eye_color TEXT NOT NULL,
-        CONSTRAINT valid_eye_colors CHECK (
-            eye_color IN ( 'blue', 'green', 'brown' )
-        )
-    );
+``` postgres
+CREATE TABLE faces (
+    face_id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL DEFAULT '',
+    eye_color TEXT NOT NULL,
+    CONSTRAINT valid_eye_colors CHECK (
+        eye_color IN ( 'blue', 'green', 'brown' )
+    )
+);
+```
 
 No lookup table, no inherent ENUM ordering. And in regular usage it works just
 like the lookup table example. The usual `INSERT` and `SELECT` once again
@@ -221,10 +237,12 @@ order to find the constraint:
 There it is at the bottom. Kind of tucked away there, eh? At least now we can
 change it. Here’s how:
 
-    ALTER TABLE faces DROP CONSTRAINT valid_eye_colors;
-    ALTER TABLE faces ADD CONSTRAINT valid_eye_colors CHECK (
-        eye_color IN ( 'blue', 'green', 'brown', 'hazel' )
-    );
+``` postgres
+ALTER TABLE faces DROP CONSTRAINT valid_eye_colors;
+ALTER TABLE faces ADD CONSTRAINT valid_eye_colors CHECK (
+    eye_color IN ( 'blue', 'green', 'brown', 'hazel' )
+);
+```
 
 Not as straight-forward as updating the lookup table, and much less efficient
 (because PostgreSQL must validate that existing rows don’t violate the
@@ -233,8 +251,10 @@ least doesn’t require the entire table be `UPDATE`d as with enums. For
 occasional changes to the value list, a table scan is not a bad tradeoff. And of
 course, once that’s done, it just works:
 
-    INSERT INTO eye_colors VALUES ('hazel');
-    INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
+``` postgres
+INSERT INTO eye_colors VALUES ('hazel');
+INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
+```
 
 So this is almost perfect for our needs. Only poor documentation persists as an
 issue.
@@ -246,16 +266,18 @@ type that inherits behavior from another data type and to which one or more
 constraints can be added. It’s pretty simple to switch from the table constraint
 to a domain:
 
-    CREATE DOMAIN eye_color AS TEXT
-    CONSTRAINT valid_eye_colors CHECK (
-        VALUE IN ( 'blue', 'green', 'brown' )
-    );
+``` postgres
+CREATE DOMAIN eye_color AS TEXT
+CONSTRAINT valid_eye_colors CHECK (
+    VALUE IN ( 'blue', 'green', 'brown' )
+);
 
-    CREATE TABLE faces (
-        face_id SERIAL PRIMARY KEY,
-        name TEXT NOT NULL DEFAULT '',
-        eye_color eye_color NOT NULL
-    );
+CREATE TABLE faces (
+    face_id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL DEFAULT '',
+    eye_color eye_color NOT NULL
+);
+```
 
 Nice table declaration, eh? Very clean. Looks exactly like the enum example, in
 fact. And it works as well as the table constraint:
@@ -287,16 +309,20 @@ None of the superfluous stuff about the entire table to deal with, just the
 constraint, thank you very much. Changing it is just as easy as changing the
 table constraint:
 
-    ALTER DOMAIN eye_color DROP CONSTRAINT valid_eye_colors;
-    ALTER DOMAIN eye_color ADD CONSTRAINT valid_eye_colors CHECK (
-        VALUE IN ( 'blue', 'green', 'brown', 'hazel' )
-    );
+``` postgres
+ALTER DOMAIN eye_color DROP CONSTRAINT valid_eye_colors;
+ALTER DOMAIN eye_color ADD CONSTRAINT valid_eye_colors CHECK (
+    VALUE IN ( 'blue', 'green', 'brown', 'hazel' )
+);
+```
 
 Yep, you can alter domains just as you can alter tables. And of course now it
 will work:
 
-    INSERT INTO eye_colors VALUES ('hazel');
-    INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
+``` postgres
+INSERT INTO eye_colors VALUES ('hazel');
+INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
+```
 
 And as usual the data is well-ordered when we need it to be:
 

@@ -16,74 +16,76 @@ you agree with me.
 Returning to the MyApp project, open `lib/MyApp/Templates/HTML.pm` and implement
 a wrapper like so:
 
-    use Sub::Exporter -setup => { exports => [qw(wrapper) ] };
+```perl
+use Sub::Exporter -setup => { exports => [qw(wrapper) ] };
 
-    create_wrapper wrapper => sub {
-        my ($code, $c, $args) = @_;
-        xml_decl { 'xml', version => '1.0' };
-        outs_raw '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" '
-               . '"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
-        html {
-            head {
-                title { $args->{title} || 'My Catalyst App!' };
-                link {
-                    rel is 'stylesheet';
-                    href is $c->uri_for('/static/css/main.css' );
-                };
-
+create_wrapper wrapper => sub {
+    my ($code, $c, $args) = @_;
+    xml_decl { 'xml', version => '1.0' };
+    outs_raw '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" '
+            . '"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
+    html {
+        head {
+            title { $args->{title} || 'My Catalyst App!' };
+            link {
+                rel is 'stylesheet';
+                href is $c->uri_for('/static/css/main.css' );
             };
 
-            body {
-                div {
-                    id is 'header';
-                    # Your logo can go here.
-                    img {
-                        src is $c->uri_for('/static/images/btn_88x31_powered.png');
-                    };
-                    # Page title.
-                    h1 { $args->{title} || $c->config->{name} };
-                }; # end header.
+        };
 
+        body {
+            div {
+                id is 'header';
+                # Your logo can go here.
+                img {
+                    src is $c->uri_for('/static/images/btn_88x31_powered.png');
+                };
+                # Page title.
+                h1 { $args->{title} || $c->config->{name} };
+            }; # end header.
+
+            div {
+                id is 'bodyblock';
                 div {
-                    id is 'bodyblock';
-                    div {
-                        id is 'menu';
-                        h3 { 'Navigation' };
-                        ul {
-                            li {
-                                a {
-                                    href is $c->uri_for('/books/list');
-                                    'Home';
-                                };
-                            };
-                            li {
-                                a {
-                                    href is $c->uri_for('/');
-                                    title is 'Catalyst Welcome Page';
-                                    'Welcome';
-                                };
+                    id is 'menu';
+                    h3 { 'Navigation' };
+                    ul {
+                        li {
+                            a {
+                                href is $c->uri_for('/books/list');
+                                'Home';
                             };
                         };
-                    }; # end menu
+                        li {
+                            a {
+                                href is $c->uri_for('/');
+                                title is 'Catalyst Welcome Page';
+                                'Welcome';
+                            };
+                        };
+                    };
+                }; # end menu
 
-                    div {
-                        id is 'content';
-                        # Status and error messages.
-                        if (my $msg = $args->{status_msg}) {
-                            span { class is 'message'; $msg };
-                        }
-                        if (my $err = $args->{error_msg}) {
-                            span { class is 'error'; $err };
-                        }
+                div {
+                    id is 'content';
+                    # Status and error messages.
+                    if (my $msg = $args->{status_msg}) {
+                        span { class is 'message'; $msg };
+                    }
+                    if (my $err = $args->{error_msg}) {
+                        span { class is 'error'; $err };
+                    }
 
-                        # Output the template contents.
-                        $code->($args);
-                    }; # end content
+                    # Output the template contents.
+                    $code->($args);
+                }; # end content
 
-                }; # end bodyblock
-            };
+            }; # end bodyblock
         };
     };
+};
+```
 
 This looks like more work than it is because of the copious use of whitespace
 I've used. Personally, I find the pure Perl syntax easier to read than the mix
@@ -100,28 +102,30 @@ wrapper function it creates, named `wrapper`.
 Next, open up `lib/MyApp/Templates/HTML/Books.pm` and edit the `list` template
 to take advantage of the wrapper. The new code looks like this:
 
-    use MyApp::Templates::HTML 'wrapper';
+```perl
+use MyApp::Templates::HTML 'wrapper';
 
-    template list => sub {
-        my ($self, $args) = @_;
-        wrapper {
-            table {
+template list => sub {
+    my ($self, $args) = @_;
+    wrapper {
+        table {
+            row {
+                th { 'Title'  };
+                th { 'Rating' };
+                th { 'Author' };
+            };
+            my $sth = $args->{books};
+            while (my $book = $sth->fetchrow_hashref) {
                 row {
-                    th { 'Title'  };
-                    th { 'Rating' };
-                    th { 'Author' };
-                };
-                my $sth = $args->{books};
-                while (my $book = $sth->fetchrow_hashref) {
-                    row {
-                        cell { $book->{title}  };
-                        cell { $book->{rating} };
-                        cell { $book->{author} };
-                    };
+                    cell { $book->{title}  };
+                    cell { $book->{rating} };
+                    cell { $book->{author} };
                 };
             };
-        } $self->c, $args;
-    };
+        };
+    } $self->c, $args;
+};
+```
 
 First we import the `wrapper` function from MyApp::Templates::HTML, and then we
 simply use it to wrap the contents of our template. Note that the context object
@@ -134,16 +138,18 @@ controller. So while this template could easily add a `title` key to the `$args`
 hash before passing it on to the wrapper, I recommend editing the `list` action
 in MyApp::Controller::Books instead:
 
-    sub list : Local {
-        my ($self, $c) = @_;
-        my $stash = $c->stash;
-        $stash->{title} = 'Book List';
-        $stash->{books} = $c->conn->run(fixup => sub {
-            my $sth = $_->prepare('SELECT isbn, title, rating FROM books');
-            $sth->execute;
-            $sth;
-        });
-    }
+```perl
+sub list : Local {
+    my ($self, $c) = @_;
+    my $stash = $c->stash;
+    $stash->{title} = 'Book List';
+    $stash->{books} = $c->conn->run(fixup => sub {
+        my $sth = $_->prepare('SELECT isbn, title, rating FROM books');
+        $sth->execute;
+        $sth;
+    });
+}
+```
 
 So, with the wrapper in place, let’s create the stylesheet the wrapper uses:
 
@@ -151,43 +157,45 @@ So, with the wrapper in place, let’s create the stylesheet the wrapper uses:
 
 Then open `root/static/css/main.css` and add the following content:
 
-    #header {
-      text-align: center;
-    }
-    #header h1 {
-      margin: 0;
-    }
-    #header img {
-      float: right;
-    }
-    #footer {
-      text-align: center;
-      font-style: italic;
-      padding-top: 20px;
-    }
-    #menu {
-      font-weight: bold;
-      background-color: #ddd;
-      float: left;
-      padding: 0 0 50% 5px;
-    }
-    #menu ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      font-weight: normal;
-      background-color: #ddd;
-      width: 100px;
-    }
-    #content {
-      margin-left: 120px;
-    }
-    .message {
-      color: #390;
-    }
-    .error {
-      color: #f00;
-    }
+``` css
+#header {
+    text-align: center;
+}
+#header h1 {
+    margin: 0;
+}
+#header img {
+    float: right;
+}
+#footer {
+    text-align: center;
+    font-style: italic;
+    padding-top: 20px;
+}
+#menu {
+    font-weight: bold;
+    background-color: #ddd;
+    float: left;
+    padding: 0 0 50% 5px;
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    background-color: #ddd;
+    width: 100px;
+}
+#content {
+    margin-left: 120px;
+}
+.message {
+    color: #390;
+}
+.error {
+    color: #f00;
+}
+```
 
 Now restart the app as usual and reload the books list at
 `http://localhost:3000/books/list`. You should now see a nicely formatted page
@@ -204,8 +212,7 @@ and see how they can be made better.
 
 Next up: More database fun!
 
-  [series]: /computers/programming/perl/catalyst%20title=
-    "Just a Theory: âCatalystâ"
+  [series]: /tags/catalyst/ "Just a Theory: “Catalyst”"
   [create a wrapper for the view]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_WRAPPER_FOR_THE_VIEW
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"
   [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare

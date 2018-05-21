@@ -23,36 +23,40 @@ But if you use objects to represent namespaces, you can define a class something
 like this, instead (1990s-era example borrowed from Damian Conway's [*Object
 Oriented Perl*]):
 
-    if (CD == undefined) var CD = {}; // Make sure the base namespace exists.
-    CD.Music = function () {};        // Constructor definition.
+``` js
+if (CD == undefined) var CD = {}; // Make sure the base namespace exists.
+CD.Music = function () {};        // Constructor definition.
 
-    // Class definition.
-    CD.Music.prototype = {
-        name:      null,
-        artist:    null,
-        publisher: null,
-        isbn:      null,
-        tracks:    [],
+// Class definition.
+CD.Music.prototype = {
+    name:      null,
+    artist:    null,
+    publisher: null,
+    isbn:      null,
+    tracks:    [],
 
-        location: function (shelf, room) {
-            if (room != null) this._room = room;
-            if (shelf != null) this._shelf = shelf;
-            return [this._room, this._shelf];
-        },
+    location: function (shelf, room) {
+        if (room != null) this._room = room;
+        if (shelf != null) this._shelf = shelf;
+        return [this._room, this._shelf];
+    },
 
-        rating: function (rate) {
-            if (rate != null) this._rating = rate;
-            return this._rating;
-        }
-    };
+    rating: function (rate) {
+        if (rate != null) this._rating = rate;
+        return this._rating;
+    }
+};
+```
 
 So now, to use this class, you just:
 
-    var music = new CD.Music();
-    music.name = "Renegades";
-    music.artist = "Rage Against the Machine";
-    music.tracks.push("Microphone Fiend");
-    music.location("basement", 3); // I use an iPod, so it's in storage!
+``` js
+var music = new CD.Music();
+music.name = "Renegades";
+music.artist = "Rage Against the Machine";
+music.tracks.push("Microphone Fiend");
+music.location("basement", 3); // I use an iPod, so it's in storage!
+```
 
 Of course, the key part of this example is `var music = new CD.Music();`. Note
 how the class is defined as an attribute of the `CD` object. This allows us to
@@ -78,17 +82,19 @@ The only downside to this proposal, in my estimation, is the requirement it
 imposes for defining inherited classes. Say you wanted a subclass of `CD.Music`
 for classical music. You'd have to do it like this:
 
-    // CD.Music must be loaded already. Create the constructor.
-    CD.Music.Classical = function () {}
+``` js
+// CD.Music must be loaded already. Create the constructor.
+CD.Music.Classical = function () {}
 
-    // Inherit from CD.Music.
-    CD.Music.Classical.prototype = new CD.Music(); // Inheritance.
+// Inherit from CD.Music.
+CD.Music.Classical.prototype = new CD.Music(); // Inheritance.
 
-    // Add to the class and/or override as necessary.
-    CD.Music.Classical.prototype.composer  = null;
-    CD.Music.Classical.prototype.orchestra = null;
-    CD.Music.Classical.prototype.conductor = null;
-    CD.Music.Classical.prototype.soloist   = null;
+// Add to the class and/or override as necessary.
+CD.Music.Classical.prototype.composer  = null;
+CD.Music.Classical.prototype.orchestra = null;
+CD.Music.Classical.prototype.conductor = null;
+CD.Music.Classical.prototype.soloist   = null;
+```
 
 So we don't get the block syntax, but in truth, that's no different from how one
 typically handles inheritance in JavaScript. The only difference is the use of

@@ -18,16 +18,18 @@ pedagogy. And I learned a fair bit along the way, as well.
 So the initial, naïve implementation of a Fibonacci calculate in PL/pgSQL, using
 recursion, is quite straight-forward:
 
-    CREATE OR REPLACE FUNCTION fib (
-        fib_for int
-    ) RETURNS integer AS $$
-    BEGIN
-        IF fib_for < 2 THEN
-            RETURN fib_for;
-        END IF;
-        RETURN fib(fib_for - 2) + fib(fib_for - 1);
-    END;
-    $$ LANGUAGE plpgsql;
+``` postgres
+CREATE OR REPLACE FUNCTION fib (
+    fib_for int
+) RETURNS integer AS $$
+BEGIN
+    IF fib_for < 2 THEN
+        RETURN fib_for;
+    END IF;
+    RETURN fib(fib_for - 2) + fib(fib_for - 1);
+END;
+$$ LANGUAGE plpgsql;
+```
 
 Pretty simple, right? The “$$”, by the way, is PL/pgSQL dollar-quoting, which
 prevents me from having to escape single quotes in the function body (when the
@@ -41,34 +43,63 @@ would be in any other language:
 Pretty sad, right? So then I added memoization. In PL/pgSQL, this is as simple
 as using a table for the cache:
 
-    CREATE TABLE fib_cache (
-         num integer PRIMARY KEY,
-         fib integer NOT NULL
-    );
+``` postgres
+CREATE TABLE fib_cache (
+        num integer PRIMARY KEY,
+        fib integer NOT NULL
+);
 
-    CREATE OR REPLACE FUNCTION fib_cached(
-        fib_for int
-    ) RETURNS integer AS $$
-    DECLARE
-        ret integer;
-    BEGIN
-        if fib_for < 2 THEN
-            RETURN fib_for;
-        END IF;
+CREATE OR REPLACE FUNCTION fib_cached(
+    fib_for int
+) RETURNS integer AS $$
+DECLARE
+    ret integer;
+BEGIN
+    if fib_for < 2 THEN
+        RETURN fib_for;
+    END IF;
 
-        SELECT INTO ret fib
-        FROM   fib_cache
-        WHERE  num = fib_for;
+    SELECT INTO ret fib
+    FROM   fib_cache
+    WHERE  num = fib_for;
 
-        IF ret IS NULL THEN
-            ret := fib_cached(fib_for - 2) + fib_cached(fib_for - 1);
-            INSERT INTO fib_cache (num, fib)
-            VALUES (fib_for, ret);
-        END IF;
-        RETURN ret;
+    IF ret IS NULL THEN
+        ret := fib_cached(fib_for - 2) + fib_cached(fib_for - 1);
+        INSERT INTO fib_cache (num, fib)
+        VALUES (fib_for, ret);
+    END IF;
+    RETURN ret;
 
-    END;
-    $$ LANGUAGE plpgsql;
+END;
+$$ LANGUAGE plpgsql;CREATE TABLE fib_cache (
+        num integer PRIMARY KEY,
+        fib integer NOT NULL
+);
+
+CREATE OR REPLACE FUNCTION fib_cached(
+    fib_for int
+) RETURNS integer AS $$
+DECLARE
+    ret integer;
+BEGIN
+    if fib_for < 2 THEN
+        RETURN fib_for;
+    END IF;
+
+    SELECT INTO ret fib
+    FROM   fib_cache
+    WHERE  num = fib_for;
+
+    IF ret IS NULL THEN
+        ret := fib_cached(fib_for - 2) + fib_cached(fib_for - 1);
+        INSERT INTO fib_cache (num, fib)
+        VALUES (fib_for, ret);
+    END IF;
+    RETURN ret;
+
+END;
+$$ LANGUAGE plpgsql;
+```
 
 This gets me a big performance boost:
 
@@ -86,49 +117,51 @@ after they've been calculated, it is of course even better.
 So then, following Dominus's lead, I set about refactoring the original,
 recursive version with tail call elimination. Here's what I came up with:
 
-    CREATE OR REPLACE FUNCTION fib_stacked(
-        n integer
-    ) RETURNS integer AS $$
-    DECLARE
-        fib_for integer := n;
-        branch  integer := 0;
-        ret     integer := 0;
-        s1      integer := 0;
-        stack   integer[][] := ARRAY[ARRAY[0, 0, 0]];
-        bound   integer := 1;
-    BEGIN
-        LOOP
-            IF fib_for < 2 THEN
+``` postgres
+CREATE OR REPLACE FUNCTION fib_stacked(
+    n integer
+) RETURNS integer AS $$
+DECLARE
+    fib_for integer := n;
+    branch  integer := 0;
+    ret     integer := 0;
+    s1      integer := 0;
+    stack   integer[][] := ARRAY[ARRAY[0, 0, 0]];
+    bound   integer := 1;
+BEGIN
+    LOOP
+        IF fib_for < 2 THEN
+            ret := fib_for;
+        ELSE
+            IF branch = 0 THEN
+                WHILE fib_for >= 2 LOOP
+                    stack = array_cat(stack, ARRAY[1, 0, fib_for]);
+                    fib_for := fib_for - 1;
+                END LOOP;
                 ret := fib_for;
-            ELSE
-                IF branch = 0 THEN
-                    WHILE fib_for >= 2 LOOP
-                        stack = array_cat(stack, ARRAY[1, 0, fib_for]);
-                        fib_for := fib_for - 1;
-                    END LOOP;
-                    ret := fib_for;
-                ELSIF branch = 1 THEN
-                    stack = array_cat(stack, ARRAY[2, ret, fib_for]);
-                    fib_for := fib_for - 2;
-                    branch  := 0;
-                    CONTINUE;
-                ELSIF branch = 2 THEN
-                    ret := ret + s1;
-                END IF;
+            ELSIF branch = 1 THEN
+                stack = array_cat(stack, ARRAY[2, ret, fib_for]);
+                fib_for := fib_for - 2;
+                branch  := 0;
+                CONTINUE;
+            ELSIF branch = 2 THEN
+                ret := ret + s1;
             END IF;
+        END IF;
 
-            bound := array_upper(stack, 1);
-            IF bound <= 1 THEN
-                RETURN ret;
-            END IF;
+        bound := array_upper(stack, 1);
+        IF bound <= 1 THEN
+            RETURN ret;
+        END IF;
 
-            SELECT INTO branch,          s1,              fib_for
-                        stack[bound][1], stack[bound][2], stack[bound][3];
-            SELECT INTO stack stack[1:bound-1][1:3];
-        END LOOP;
-        RETURN ret;
-    END;
-    $$ LANGUAGE plpgsql;
+        SELECT INTO branch,          s1,              fib_for
+                    stack[bound][1], stack[bound][2], stack[bound][3];
+        SELECT INTO stack stack[1:bound-1][1:3];
+    END LOOP;
+    RETURN ret;
+END;
+$$ LANGUAGE plpgsql;
+```
 
 It took me *forever* to figure out how to do it, primarily because arrays in
 PostgreSQL are quite limited, in the sense that, while can add to them, you
@@ -150,23 +183,25 @@ Yow! So I don't think that's the best approach. But I did figure out another
 approach, based on an example I saw in *Agile Web Development with Rails*. It's
 a very simple loop-based approach:
 
-    CREATE OR REPLACE FUNCTION fib_fast(
-        fib_for int
-    ) RETURNS integer AS $$
-    DECLARE
-        ret integer := 0;
-        nxt integer := 1;
-        tmp integer;
-    BEGIN
-        FOR num IN 1..fib_for LOOP
-            tmp := ret;
-            ret := nxt;
-            nxt := tmp + nxt;
-        END LOOP;
+``` postgres
+CREATE OR REPLACE FUNCTION fib_fast(
+    fib_for int
+) RETURNS integer AS $$
+DECLARE
+    ret integer := 0;
+    nxt integer := 1;
+    tmp integer;
+BEGIN
+    FOR num IN 1..fib_for LOOP
+        tmp := ret;
+        ret := nxt;
+        nxt := tmp + nxt;
+    END LOOP;
 
-        RETURN ret;
-    END;
-    $$ LANGUAGE plpgsql;
+    RETURN ret;
+END;
+$$ LANGUAGE plpgsql;
+```
 
 This one works the best of all:
 

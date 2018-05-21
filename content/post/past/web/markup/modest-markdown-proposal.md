@@ -175,5 +175,4 @@ change. What do you think?
   [MultiMarkdown]: http://fletcherpenney.net/multimarkdown/users_guide/multimarkdown_syntax_guide/#definitionlists
     "MultiMarkdown Syntax Guide: Definition Lists"
   [cause conflicts with code blocks following lists]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001440.html
-  [Wikipedia]: https://en.wikipedia.org/wiki/Tilde "Wikipedia:
-    “Tilde”"
+  [Wikipedia]: https://en.wikipedia.org/wiki/Tilde "Wikipedia: “Tilde”"

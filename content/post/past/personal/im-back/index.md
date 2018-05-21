@@ -50,13 +50,9 @@ to do. Interested in following along on my adventures? [Follow me] via Twitter.
   [<img src="/2008/01/im-back/iwantsandy_207x207.gif" alt="Sandy - your free personal email assistant" class="right" />]:
     http://iwantsandy.com/
   [Values of n]: http://www.valuesofn.com/ "Values of n home page"
-  [Sandy]: http://iwantsandy.com/ "You want sandy,
-    trust me!"
+  [Sandy]: http://iwantsandy.com/ "You want sandy, trust me!"
   [Julie's dad died]: http://www.legacy.com/Link.asp?I=LS000091810982X
-    "Obituary for
-    Steven Rappaport"
-  [SVN::Notify]: http://search.cpan.org/SVN-Notify "SVN::Notify
-    on CPAN"
-  [FuseMail]: http://www.fusemail.com/ "FuseMail home
-    page"
+    "Obituary for Steven Rappaport"
+  [SVN::Notify]: http://search.cpan.org/SVN-Notify "SVN::Notify on CPAN"
+  [FuseMail]: http://www.fusemail.com/ "FuseMail home page"
   [Follow me]: https://twitter.com/Theory "My Twitter page"

@@ -23,142 +23,181 @@ So that's what I did. The functions I tested were:
 
 -   A refinement of my original substring solution:
 
-        CREATE OR REPLACE FUNCTION ean_substr (
-            TEXT
-        ) RETURNS boolean AS $$
-        DECLARE
-            offset integer := 0;
-            -- Support UPCs.
-            ean   TEXT    := CASE WHEN length($1) = 12 THEN
-               '0' || $1
-            ELSE
-               $1
-            END;
-        BEGIN
-            -- Make sure we really have an EAN.
-            IF ean !~ '^\\d{13}$' THEN RETURN FALSE; END IF;
-
-            RETURN 10 - (
-                (
-                  -- Sum even numerals.
-                    substring(ean,  2 + offset, 1)::integer
-                  + substring(ean,  4 + offset, 1)::integer
-                  + substring(ean,  6 + offset, 1)::integer
-                  + substring(ean,  8 + offset, 1)::integer
-                  + substring(ean, 10 + offset, 1)::integer
-                  + substring(ean, 12 + offset, 1)::integer
-                 ) * 3 -- Multiply total by 3.
-                 -- Add odd numerals except for checksum (13).
-                 + substring(ean,  3 + offset, 1)::integer
-                 + substring(ean,  5 + offset, 1)::integer
-                 + substring(ean,  7 + offset, 1)::integer
-                 + substring(ean,  9 + offset, 1)::integer
-                 + substring(ean, 11 + offset, 1)::integer
-            -- Compare to the checksum.
-            ) % 10 = substring(ean, 12 + offset, 1)::integer;
+    ``` postgres
+    CREATE OR REPLACE FUNCTION ean_substr (
+        TEXT
+    ) RETURNS boolean AS $$
+    DECLARE
+        offset integer := 0;
+        -- Support UPCs.
+        ean   TEXT    := CASE WHEN length($1) = 12 THEN
+            '0' || $1
+        ELSE
+            $1
         END;
-        $$ LANGUAGE plpgsql;
-            
+    BEGIN
+        -- Make sure we really have an EAN.
+        IF ean !~ '^\\d{13}$' THEN RETURN FALSE; END IF;
+
+        RETURN 10 - (
+            (
+                -- Sum even numerals.
+                substring(ean,  2 + offset, 1)::integer
+                + substring(ean,  4 + offset, 1)::integer
+                + substring(ean,  6 + offset, 1)::integer
+                + substring(ean,  8 + offset, 1)::integer
+                + substring(ean, 10 + offset, 1)::integer
+                + substring(ean, 12 + offset, 1)::integer
+                ) * 3 -- Multiply total by 3.
+                -- Add odd numerals except for checksum (13).
+                + substring(ean,  3 + offset, 1)::integer
+                + substring(ean,  5 + offset, 1)::integer
+                + substring(ean,  7 + offset, 1)::integer
+                + substring(ean,  9 + offset, 1)::integer
+                + substring(ean, 11 + offset, 1)::integer
+        -- Compare to the checksum.
+        ) % 10 = substring(ean, 12 + offset, 1)::integer;
+    END;
+    $$ LANGUAGE plpgsql;
+    ```
 
 -   A looping version, based on the comment from Adrian Klaver in the [original
     post][validating UPC codes in PL/pgSQL]:
 
-        CREATE OR REPLACE FUNCTION ean_loop(
-            TEXT
-        ) RETURNS boolean AS $$
-        DECLARE
-            total INTEGER := 0;
-            -- Support UPCs.
-            ean   TEXT    := CASE WHEN length($1) = 12 THEN
-               '0' || $1
-            ELSE
-               $1
-            END;
-        BEGIN
-            -- Make sure we really have an EAN.
-            IF ean !~ '^\\d{13}$' THEN RETURN FALSE; END IF;
-
-            -- Sum even numerals.
-            FOR i IN 2..12 LOOP
-                total := total + substring(ean, i, 1)::INTEGER;
-                i := i + 1;
-            END LOOP;
-
-            -- Multiply total by 3.
-            total := total * 3;
-
-            -- Add odd numerals except for checksum (13).
-            FOR i IN 3..11 LOOP
-                total := total + substring(ean, i, 1)::INTEGER;
-                i := i + 1;
-            END LOOP;
-
-            -- Compare to the checksum.
-            RETURN 10 - total % 10
-                = substring(ean, 13, 1)::INTEGER;
+    ``` postgres
+    CREATE OR REPLACE FUNCTION ean_loop(
+        TEXT
+    ) RETURNS boolean AS $$
+    DECLARE
+        total INTEGER := 0;
+        -- Support UPCs.
+        ean   TEXT    := CASE WHEN length($1) = 12 THEN
+            '0' || $1
+        ELSE
+            $1
         END;
-        $$ LANGUAGE 'plpgsql';
-            
+    BEGIN
+        -- Make sure we really have an EAN.
+        IF ean !~ '^\\d{13}$' THEN RETURN FALSE; END IF;
+
+        -- Sum even numerals.
+        FOR i IN 2..12 LOOP
+            total := total + substring(ean, i, 1)::INTEGER;
+            i := i + 1;
+        END LOOP;
+
+        -- Multiply total by 3.
+        total := total * 3;
+
+        -- Add odd numerals except for checksum (13).
+        FOR i IN 3..11 LOOP
+            total := total + substring(ean, i, 1)::INTEGER;
+            i := i + 1;
+        END LOOP;
+
+        -- Compare to the checksum.
+        RETURN 10 - total % 10
+            = substring(ean, 13, 1)::INTEGER;
+    END;
+    $$ LANGUAGE 'plpgsql';
+            CREATE OR REPLACE FUNCTION ean_loop(
+        TEXT
+    ) RETURNS boolean AS $$
+    DECLARE
+        total INTEGER := 0;
+        -- Support UPCs.
+        ean   TEXT    := CASE WHEN length($1) = 12 THEN
+            '0' || $1
+        ELSE
+            $1
+        END;
+    BEGIN
+        -- Make sure we really have an EAN.
+        IF ean !~ '^\\d{13}$' THEN RETURN FALSE; END IF;
+
+        -- Sum even numerals.
+        FOR i IN 2..12 LOOP
+            total := total + substring(ean, i, 1)::INTEGER;
+            i := i + 1;
+        END LOOP;
+
+        -- Multiply total by 3.
+        total := total * 3;
+
+        -- Add odd numerals except for checksum (13).
+        FOR i IN 3..11 LOOP
+            total := total + substring(ean, i, 1)::INTEGER;
+            i := i + 1;
+        END LOOP;
+
+        -- Compare to the checksum.
+        RETURN 10 - total % 10
+            = substring(ean, 13, 1)::INTEGER;
+    END;
+    $$ LANGUAGE 'plpgsql';
+    ```
 
 -   A PL/Perl version for Josh and Ovid:
 
-        CREATE OR REPLACE FUNCTION ean_perl (
-            TEXT
-        ) RETURNS boolean AS $_$
-            my $ean = length $_[0] == 12 ? "0$_[0]" : $_[0];
-            # Make sure we really have an EAN.
-            return 'false' unless $ean =~ /^\d{13}$/;
-            my @nums = split '', shift;
-            return 10 - (
-                # Sum even numerals.
-                (   (   $nums[1] + $nums[3] + $nums[5]
-                        + $nums[7] + $nums[9] + $nums[11]
-                    ) * 3 # Multiply total by 3.
-                # Add odd numerals except for checksum (12).
-                ) + $nums[2] + $nums[4] + $nums[6] + $nums[8]
-                  + $nums[10]
-            # Compare to the checksum.
-            ) % 10 == $nums[11] ? 'true' : 'false';
-        $_$ LANGUAGE plperl;
-            
+    ``` postgres
+    CREATE OR REPLACE FUNCTION ean_perl (
+        TEXT
+    ) RETURNS boolean AS $_$
+        my $ean = length $_[0] == 12 ? "0$_[0]" : $_[0];
+        # Make sure we really have an EAN.
+        return 'false' unless $ean =~ /^\d{13}$/;
+        my @nums = split '', shift;
+        return 10 - (
+            # Sum even numerals.
+            (   (   $nums[1] + $nums[3] + $nums[5]
+                    + $nums[7] + $nums[9] + $nums[11]
+                ) * 3 # Multiply total by 3.
+            # Add odd numerals except for checksum (12).
+            ) + $nums[2] + $nums[4] + $nums[6] + $nums[8]
+                + $nums[10]
+        # Compare to the checksum.
+        ) % 10 == $nums[11] ? 'true' : 'false';
+    $_$ LANGUAGE plperl;
+    ```
 
 -   And finally, the new version using a byte string:
 
-        CREATE OR REPLACE FUNCTION ean_byte (
-           arg TEXT
-        ) RETURNS boolean AS $$
-        DECLARE
-            -- Convert to BYTEA; support UPCs.
-            ean BYTEA := CASE WHEN length($1) = 12 THEN
-                '0' || $1
-            ELSE
-                $1
-            END;
-        BEGIN
-            -- Make sure we really have an EAN.
-            IF arg !~ '^\\d{12,13}$' THEN RETURN FALSE; END IF;
-
-            RETURN 10 - (
-                (
-                    -- Sum even numerals.
-                    get_byte(ean,  2) - 48
-                  + get_byte(ean,  4) - 48
-                  + get_byte(ean,  6) - 48
-                  + get_byte(ean,  8) - 48
-                  + get_byte(ean, 10) - 48
-                  + get_byte(ean, 12) - 48
-                 ) * 3 -- Multiply total by 3.
-                 -- Add odd numerals except for checksum (13).
-                 + get_byte(ean,  3) - 48
-                 + get_byte(ean,  7) - 48
-                 + get_byte(ean,  5) - 48
-                 + get_byte(ean,  9) - 48
-                 + get_byte(ean, 11) - 48
-            -- Compare to the checksum.
-            ) % 10  = get_byte(ean, 12) - 48;
+    ``` postgres
+    CREATE OR REPLACE FUNCTION ean_byte (
+        arg TEXT
+    ) RETURNS boolean AS $$
+    DECLARE
+        -- Convert to BYTEA; support UPCs.
+        ean BYTEA := CASE WHEN length($1) = 12 THEN
+            '0' || $1
+        ELSE
+            $1
         END;
-        $$ LANGUAGE plpgsql;
-            
+    BEGIN
+        -- Make sure we really have an EAN.
+        IF arg !~ '^\\d{12,13}$' THEN RETURN FALSE; END IF;
+
+        RETURN 10 - (
+            (
+                -- Sum even numerals.
+                get_byte(ean,  2) - 48
+                + get_byte(ean,  4) - 48
+                + get_byte(ean,  6) - 48
+                + get_byte(ean,  8) - 48
+                + get_byte(ean, 10) - 48
+                + get_byte(ean, 12) - 48
+                ) * 3 -- Multiply total by 3.
+                -- Add odd numerals except for checksum (13).
+                + get_byte(ean,  3) - 48
+                + get_byte(ean,  7) - 48
+                + get_byte(ean,  5) - 48
+                + get_byte(ean,  9) - 48
+                + get_byte(ean, 11) - 48
+        -- Compare to the checksum.
+        ) % 10  = get_byte(ean, 12) - 48;
+    END;
+    $$ LANGUAGE plpgsql;
+    ```
 
 And then I ran the benchmarks:
 

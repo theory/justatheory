@@ -116,10 +116,12 @@ functions. This is specifically for the case when the query you're testing
 results a single column of results; the array just makes it easier to specify
 expected values in a common case:
 
-    SELECT results_eq(
-        'SELECT * FROM active_user_ids()',
-        ARRAY[ 2, 3, 4, 5]
-    );
+``` postgres
+SELECT results_eq(
+    'SELECT * FROM active_user_ids()',
+    ARRAY[ 2, 3, 4, 5]
+);
+```
 
 Check the [documentation] for all the details on how to use these functions.
 
@@ -171,22 +173,18 @@ But that's after my vacation. Back in two weeks.
   [committing]: /computers/databases/postgresql/results_eq.html
     "Committed: pgTAP Result Set Assertion Functions"
   [hair-pulling]: /computers/databases/postgresql/neither-null-nor-not-null.html
-    "Neither NULL nor NOT NULL: An SQL
-    WTF"
+    "Neither NULL nor NOT NULL: An SQL WTF"
   [pgTAP]: http://pgtap.projects.postgresql.org/
     "pgTAP: Unit Testing for PostgreSQL"
   [here]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
-  [previous post]: /computers/databases/postgresql/results_eq.html "Committed:
-    pgTAP Result Set Assertion Functions"
+  [previous post]: /computers/databases/postgresql/results_eq.html
+    "Committed: pgTAP Result Set Assertion Functions"
   [documentation]: http://pgtap.projects.postgresql.org/documentation.html#Pursuing+Your+Query
     "pgTAP Documentation: Pursing Your Query"
   [think things through]: /computers/databases/postgresql/set_testing_update.html
-    "pgTAP
-    Set-Testing Update"
-  [download]: http://pgfoundry.org/frs/?group_id=1000389 "Download
-    pgTAP"
+    "pgTAP Set-Testing Update"
+  [download]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
   [database normalization]: http://it.toolbox.com/blogs/database-soup/testing-for-normalization-33119
     "Database Soup: “Testing for Normalization”"
   [have primary keys]: http://petereisentraut.blogspot.com/2009/07/how-to-find-all-tables-without-primary.html
-    "Peter Eisentraut's Brain Dump: “How to find all tables without primary
-    key”"
+    "Peter Eisentraut's Brain Dump: “How to find all tables without primary key”"

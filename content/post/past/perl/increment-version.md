@@ -10,27 +10,29 @@ type: post
 Here's how I quickly increment version numbers in my modules. I call this script
 *reversion*:
 
-    #!/usr/bin/perl -w
+``` perl
+#!/usr/bin/perl -w
 
-    use strict;
+use strict;
 
-    unless (@ARGV) {
-        print "  Usage: $0 version\n\n";
-        exit;
-    }
+unless (@ARGV) {
+    print "  Usage: $0 version\n\n";
+    exit;
+}
 
-    my $old = shift;
-    my $new = $old + .01;
-    my $dir = shift || '.';
+my $old = shift;
+my $new = $old + .01;
+my $dir = shift || '.';
 
-    system qq{grep -lr '\Q$old\E' $dir }
-      . '| grep -v \\.svn '
-      . '| grep -v Changes '
-      . '| grep -v META\\.yml '
-      . "| xargs $^X -i -pe \""
-      . qq{print STDERR \\\$ARGV[0], \\\$/ unless \\\$::seen{\\\$ARGV[0]}++;}
-      . qq{s/(\\\$VERSION\\s*=?\\s*'?)\Q$old\E('?)/\\\${1}$new\\\$2/g"};
+system qq{grep -lr '\Q$old\E' $dir }
+  . '| grep -v \\.svn '
+  . '| grep -v Changes '
+  . '| grep -v META\\.yml '
+  . "| xargs $^X -i -pe \""
+  . qq{print STDERR \\\$ARGV[0], \\\$/ unless \\\$::seen{\\\$ARGV[0]}++;}
+  . qq{s/(\\\$VERSION\\s*=?\\s*'?)\Q$old\E('?)/\\\${1}$new\\\$2/g"};
 
-    __END__
+__END__
+```
 
 Enjoy!

@@ -83,9 +83,11 @@ Well fuck, that sure looks like a C problem. But then I added some more
 debugging code to see what command it's actually running, and from where. So I
 added this code:
 
-    use Cwd;
-    print STDERR "# CWD: ", getcwd, $/;
-    print STDERR "# ", join( ' ', @cc, @flags), $/;
+``` perl
+use Cwd;
+print STDERR "# CWD: ", getcwd, $/;
+print STDERR "# ", join( ' ', @cc, @flags), $/;
+```
 
 And then I got this output:
 
@@ -95,8 +97,10 @@ And then I got this output:
 And of course, there's no `perl` in `lib/ExtUtils/CBuilder`. Why does it think
 there is? The test file has this code:
 
-    $b->{config}{cc} = "$^X -e1 --";
-    $b->{config}{ld} = "$^X -e1 --";
+``` perl
+$b->{config}{cc} = "$^X -e1 --";
+$b->{config}{ld} = "$^X -e1 --";
+```
 
 Well, that cinches it. `$^X` is the path to the currently-executing Perl, but in
 core--for me at least--that's a relative path. The test changes directories away

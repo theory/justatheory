@@ -40,8 +40,10 @@ The solution is to [normalize] your Unicode data. In Perl, you can use
 convert things as appropriate. For general use the NFC normalization is
 [probably best][]:
 
-    use Unicode::Normalize;
-    $string = NFC $string;
+``` perl
+use Unicode::Normalize;
+$string = NFC $string;
+```
 
 PostgreSQL offers no normalization routines. However, the SQL standard mandates
 one (as of SQL 2008, at least). It looks like this:
@@ -54,52 +56,56 @@ length of the return value, is optional. The fact that it looks like a function
 means that we can use PL/PerlU to emulate it in PostgreSQL until a proper
 implementation makes it into core. Here's how:
 
-    CREATE OR REPLACE FUNCTION NORMALIZE(
-        string TEXT,
-        form   TEXT,
-        maxlen INT
-    ) RETURNS TEXT LANGUAGE plperlu AS $$
-        use Unicode::Normalize 'normalize';
-        my ($string, $form, $maxlen) = @_;
-        my $ret = normalize($form, $string);
-        elog(ERROR, 'Normalized value is too long') if length $ret > $maxlen;
-        return $ret;
-    $$;
+``` postgres
+CREATE OR REPLACE FUNCTION NORMALIZE(
+    string TEXT,
+    form   TEXT,
+    maxlen INT
+) RETURNS TEXT LANGUAGE plperlu AS $$
+    use Unicode::Normalize 'normalize';
+    my ($string, $form, $maxlen) = @_;
+    my $ret = normalize($form, $string);
+    elog(ERROR, 'Normalized value is too long') if length $ret > $maxlen;
+    return $ret;
+$$;
 
-    CREATE OR REPLACE FUNCTION NORMALIZE(
-        string TEXT,
-        form   TEXT
-    ) RETURNS TEXT LANGUAGE plperlu AS $$
-        use Unicode::Normalize 'normalize';
-        return normalize($_[1], $_[0]);
-    $$;
+CREATE OR REPLACE FUNCTION NORMALIZE(
+    string TEXT,
+    form   TEXT
+) RETURNS TEXT LANGUAGE plperlu AS $$
+    use Unicode::Normalize 'normalize';
+    return normalize($_[1], $_[0]);
+$$;
 
-    CREATE OR REPLACE FUNCTION NORMALIZE(
-        string TEXT
-    ) RETURNS TEXT LANGUAGE plperlu AS $$
-        use Unicode::Normalize 'normalize';
-        return normalize('NFC', shift);
-    $$;
+CREATE OR REPLACE FUNCTION NORMALIZE(
+    string TEXT
+) RETURNS TEXT LANGUAGE plperlu AS $$
+    use Unicode::Normalize 'normalize';
+    return normalize('NFC', shift);
+$$;
+```
 
 I wrote a few tests to make sure it was sane:
 
-    SELECT U&'\0065\0301' as combined,
-           char_length(U&'\0065\0301'),
-           NORMALIZE(U&'\0065\0301') as normalized,
-           char_length(NORMALIZE(U&'\0065\0301'));
+``` postgres
+SELECT U&'\0065\0301' as combined,
+       char_length(U&'\0065\0301'),
+       NORMALIZE(U&'\0065\0301') as normalized,
+       char_length(NORMALIZE(U&'\0065\0301'));
 
-    SELECT NORMALIZE(U&'\0065\0301', 'NFC')  AS NFC,
-           NORMALIZE(U&'\0065\0301', 'NFD')  AS NFD,
-           NORMALIZE(U&'\0065\0301', 'NFKC') AS NFKC,
-           NORMALIZE(U&'\0065\0301', 'NFKD') AS NFKD
-    ;
+SELECT NORMALIZE(U&'\0065\0301', 'NFC')  AS NFC,
+       NORMALIZE(U&'\0065\0301', 'NFD')  AS NFD,
+       NORMALIZE(U&'\0065\0301', 'NFKC') AS NFKC,
+       NORMALIZE(U&'\0065\0301', 'NFKD') AS NFKD
+;
 
-    SELECT NORMALIZE(U&'\0065\0301', 'NFC', 1)  AS NFC,
-           NORMALIZE(U&'\0065\0301', 'NFD', 2)  AS NFD,
-           NORMALIZE(U&'\0065\0301', 'NFKC', 1) AS NFKC,
-           NORMALIZE(U&'\0065\0301', 'NFKD', 2) AS NFKD;
+SELECT NORMALIZE(U&'\0065\0301', 'NFC', 1)  AS NFC,
+       NORMALIZE(U&'\0065\0301', 'NFD', 2)  AS NFD,
+       NORMALIZE(U&'\0065\0301', 'NFKC', 1) AS NFKC,
+       NORMALIZE(U&'\0065\0301', 'NFKD', 2) AS NFKD;
 
-    SELECT NORMALIZE(U&'\0065\0301', 'NFD', 1);
+SELECT NORMALIZE(U&'\0065\0301', 'NFD', 1);
+```
 
 And the output
 
@@ -151,13 +157,12 @@ But normalizing with the functions I introduced does work:
 
 So yes, this really can be an issue in your applications.
 
-  [Encode]: http://search.cpan.org/perldoc?Encode "Encode on
-    CPAN"
-  [normalize]: https://en.wikipedia.org/wiki/Unicode_normalization "Wikipedia:
-    “Unicode equivalence”"
+  [Encode]: http://search.cpan.org/perldoc?Encode "Encode on CPAN"
+  [normalize]: https://en.wikipedia.org/wiki/Unicode_normalization
+    "Wikipedia: “Unicode equivalence”"
   [Unicode::Normalize]: http://search.cpan.org/perldoc?Unicode::Normalize
     "Unicode::Normalize on CPAN"
-  [probably best]: http://unicode.org/faq/normalization.html#2 "Unicode
-    Normalization FAQ: “Which forms of normalization should I support?”"
+  [probably best]: http://unicode.org/faq/normalization.html#2
+    "Unicode Normalization FAQ: “Which forms of normalization should I support?”"
   [full text search]: http://www.postgresql.org/docs/current/static/textsearch.html
     "PostgreSQL Documentation: Full Text Search"

@@ -43,5 +43,4 @@ looking for it again in a year or so, the way things go.
   [Kclug mail list post]: http://www.kclug.org/pipermail/kclug/2008-February/032558.html
     "Comcast and Postfix"
   [this Freelock Knowledge Base article]: http://freelock.com/kb/Postfix_relayhost
-    "Postfix
-    relayhost"
+    "Postfix relayhost"

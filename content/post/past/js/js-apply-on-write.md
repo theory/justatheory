@@ -13,11 +13,13 @@ executes the function, along with an object, if necessary, by calling its
 `apply()` method. If you don't specify a function for output, it uses
 `document.write` by default:
 
-    if (!fn) {
-        fn = document.write;
-        obj = document;
-    }
-    var output = function () { fn.apply(obj, arguments) };
+``` js
+if (!fn) {
+    fn = document.write;
+    obj = document;
+}
+var output = function () { fn.apply(obj, arguments) };
+```
 
 This works great in Firefox, as I can then just call `fn.apply(this, arguments)`
 and the arguments are properly passed on through to the function.
@@ -31,13 +33,17 @@ Wha??
 I thought I could get around it by just adding the `apply()` method to
 `document.write`, but that doesn't work, either. This code:
 
-    document.write.apply = Function.prototype.apply;
-    document.write.apply(document, ['foo']);
+``` js
+document.write.apply = Function.prototype.apply;
+document.write.apply(document, ['foo']);
+```
 
 Yields the same error. Curiously, so does this code:
 
-    document.write.apply2 = Function.prototype.apply;
-    document.write.apply2(document, ['foo']);
+``` js
+document.write.apply2 = Function.prototype.apply;
+document.write.apply2(document, ['foo']);
+```
 
 So it seems that assigning a function to `document.write` is a no-op in IE. WTF?
 
@@ -48,5 +54,4 @@ of functions.” This might explain why `apply()` doesn't exist for the
 
 Help!
 
-  [a page]: http://www.crockford.com/javascript/remedial.html
-    "Remedial JavaScript"
+  [a page]: http://www.crockford.com/javascript/remedial.html "Remedial JavaScript"

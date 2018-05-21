@@ -102,7 +102,7 @@ the help. I hope to see you all for Bricolage 2.2!
   [Waldo Jaquith]: http://waldo.jaquith.org/
   [Chris Heiland]: http://cuwebd.ning.com/profile/ChrisHeiland
   [Scott Lanning]: http://use.perl.org/~slanning/
-  [Phillip Smith]: 
+  [Phillip Smith]: http://www.phillipadsmith.com/
   [bricolagecms.org]: http://www.bricolagecms.org/
   [@bricolagecms]: https://twitter.com/bricolagecms
   [Matt Rolf]: http://mattrolf.com/

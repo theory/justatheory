@@ -19,14 +19,16 @@ Expressions*], I settled on using Friedl's pattern for identifying the starting
 boundary of words, which is `qr/(?<!\w)(?=\w)/msx`. This pattern will turn the
 string, “this is O'Reilly's string” into the following tokens:
 
-    [
-        q{this },
-        q{is },
-        q{O'},
-        q{Reilly'},
-        q{s },
-        q{string},
-    ];
+``` perl
+[
+    q{this },
+    q{is },
+    q{O'},
+    q{Reilly'},
+    q{s },
+    q{string},
+];
+```
 
 So it's imperfect, but it works well enough for me. I'm thinking of using the
 Unicode character class for words, instead, at least for more recent versions of

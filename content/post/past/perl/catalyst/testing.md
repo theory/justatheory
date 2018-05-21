@@ -22,8 +22,10 @@ Oh, wait! I forgot to tell the build system that we now depend on
 [Catalyst::View::TD] and [DBIx::Connector]. So add these two lines to
 `Makefile.PL`:
 
-    requires 'Catalyst::View::TD' => '0.11';
-    requires 'DBIx::Connector' => '0.30';
+```perl
+requires 'Catalyst::View::TD' => '0.11';
+requires 'DBIx::Connector' => '0.30';
+```
 
 Okay, *now* we can write some tests.
 
@@ -58,11 +60,13 @@ while I'm running tests. It’s helpful while doing development, but mainly just
 gets in the way of the tests. So let’s get rid of them. Open up `lib/MyApp.pm`
 and change the `use Catalyst` statement to:
 
-    use Catalyst (qw(
-        ConfigLoader
-        Static::Simple
-        StackTrace
-    ), $ENV{HARNESS_ACTIVE} ? () : '-Debug');
+```perl
+use Catalyst (qw(
+    ConfigLoader
+    Static::Simple
+    StackTrace
+), $ENV{HARNESS_ACTIVE} ? () : '-Debug');
+```
 
 Essentially, we're just turning on the debugging output only if the test harness
 is not active. Now when we run the tests, we get:
@@ -81,7 +85,9 @@ skipping POD tests. Personally, I like to make sure that POD tests run all the
 time, as I'm likely to forget to set the environment variable. So let’s edit
 `t/02pod.t` and `t/03podcoverage.t` and delete this line from each:
 
-    plan skip_all => 'set TEST_POD to enable this test' unless $ENV{TEST_POD};
+```perl
+plan skip_all => 'set TEST_POD to enable this test' unless $ENV{TEST_POD};
+```
 
 So what does that get us?
 
@@ -117,12 +123,14 @@ Books but never documented it. And for some reason, Catalyst creates the
 `default` action in MyApp::Controller::Root with no documentation. Such a shame.
 So let’s document those methods. Add this to `t/lib/MyApp/Controller/Root.pm`:
 
-    =head2 default
+```perl
+=head2 default
 
-    The default action. Just returns a 404/NOT FOUND error. Might want to update
-    later with a template to format the error like the rest of our site.
+The default action. Just returns a 404/NOT FOUND error. Might want to update
+later with a template to format the error like the rest of our site.
 
-    =cut
+=cut
+```
 
 While there, I notice that the `index` action has a doc header, but nothing to
 actually describe what it does. Let’s fix that, too:
@@ -133,13 +141,15 @@ actually describe what it does. Let’s fix that, too:
 Great. Now open `t/lib/MyApp/Controller/Books.pm` and document the `list`
 action:
 
-    =head2 list
+```perl
+=head2 list
 
-    Looks up all of the books in the system and executes a template to display
-    them in a nice table. The data includes the title, rating, and authors of each
-    book
+Looks up all of the books in the system and executes a template to display
+them in a nice table. The data includes the title, rating, and authors of each
+book
 
-    =cut
+=cut
+```
 
 Oh hey, look at that. There’s an `index` method that doesn’t do anything. And it
 has a POD header and no docs, too. So let’s document it:

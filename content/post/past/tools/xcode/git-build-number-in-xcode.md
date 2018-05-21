@@ -28,24 +28,28 @@ finessing it a bit. Here are the steps to add it to your project:
 
 4.  Paste this into the “Script” field:
 
-        #!/usr/bin/env perl -wpi -0777
-        # Xcode auto-versioning script for Subversion by Axel Andersson
-        # Updated for git by Marcus S. Zarra and Matt Long
-        # Refactored by David E. Wheeler.
+    ``` perl
+    #!/usr/bin/env perl -wpi -0777
+    # Xcode auto-versioning script for Subversion by Axel Andersson
+    # Updated for git by Marcus S. Zarra and Matt Long
+    # Refactored by David E. Wheeler.
 
-        BEGIN {
-            @ARGV = ("$ENV{BUILT_PRODUCTS_DIR}/$ENV{INFOPLIST_PATH}");
-            ($sha1 = `git rev-parse --short HEAD`) =~ s/\s+$//;
-        }
+    BEGIN {
+        @ARGV = ("$ENV{BUILT_PRODUCTS_DIR}/$ENV{INFOPLIST_PATH}");
+        ($sha1 = `git rev-parse --short HEAD`) =~ s/\s+$//;
+    }
 
-        s{0x000}{$sha1};
+    s{0x000}{$sha1};
+    ```
 
 5.  Fetch the value in your code from your bundle, something like this:
 
-        NSLog(
-            @"SHA1: %@",
-            [[[NSBundle mainBundle]infoDictionary]objectForKey:@"LTGitSHA1"]
-        );
+    ``` Objective-C
+    NSLog(
+        @"SHA1: %@",
+        [[[NSBundle mainBundle]infoDictionary]objectForKey:@"LTGitSHA1"]
+    );
+    ```
 
 That’s it. If you want to use a placeholder other than “0x0000”, just change it
 on the last line of the script.

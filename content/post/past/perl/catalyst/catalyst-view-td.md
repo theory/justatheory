@@ -44,13 +44,14 @@ app:
 
 Then update the list of plugins in `MyApp.pm`:
 
-    use Catalyst qw/
-        -Debug
-        ConfigLoader
-        Static::Simple
-        StackTrace
-    /;
-
+```perl
+use Catalyst qw/
+    -Debug
+    ConfigLoader
+    Static::Simple
+    StackTrace
+/;
+```
 Now create a controller:
 
     $ script/myapp_create.pl controller Books
@@ -58,11 +59,13 @@ Now create a controller:
 Then edit it and add this controller (see [chapter 3] if you need explanation
 about what this does):
 
-    sub list : Local {
-        my ($self, $c) = @_;
-        $c->stash->{books} = [];
-        $c->stash->{template} = '/books/list';
-    }
+```perl
+sub list : Local {
+    my ($self, $c) = @_;
+    $c->stash->{books} = [];
+    $c->stash->{template} = '/books/list';
+}
+```
 
 And now, create a view and a new template class:
 
@@ -71,21 +74,23 @@ And now, create a view and a new template class:
 
 Open `lib/MyApp/Templates/HTML/Books.pm` and add the `list` template:
 
-    my ($self, $args) = @_;
-    table {
-        row {
-            th { 'Title'  };
-            th { 'Rating' };
-            th { 'Author' };
-        };
-        for my $book (@{ $args->{books} }) {
-            row {
-                cell { $book->{title}  };
-                cell { $book->{rating} };
-                cell { $book->{author} };
-            };
-        }
+```perl
+my ($self, $args) = @_;
+table {
+    row {
+        th { 'Title'  };
+        th { 'Rating' };
+        th { 'Author' };
     };
+    for my $book (@{ $args->{books} }) {
+        row {
+            cell { $book->{title}  };
+            cell { $book->{rating} };
+            cell { $book->{author} };
+        };
+    }
+};
+```
 
 Then point your browser to http://localhost:3000/books/list. If you have
 everything working so far, you should see a web page that displays nothing other
@@ -99,15 +104,17 @@ template. Isn’t it a thing of beauty? It’s so easy for Perl hackers to read.
 Compare it to the TT example from the tutorial (with the comments removed, just
 to be fair):
 
-    <tr><th>Title</th><th>Rating</th><th>Author(s)</th></tr>
-    [% FOREACH book IN books -%]
-      <tr>
-        <td>[% book.title %]</td>
-        <td>[% book.rating %]</td>
-        <td></td>
-      </tr>
-    [% END -%]
-    </table>
+``` html
+<tr><th>Title</th><th>Rating</th><th>Author(s)</th></tr>
+[% FOREACH book IN books -%]
+    <tr>
+    <td>[% book.title %]</td>
+    <td>[% book.rating %]</td>
+    <td></td>
+    </tr>
+[% END -%]
+</table>
+```
 
 I mean, which would *you* rather have to maintain? And this is an extremely
 simple example. The comparison only becomes more stark when the HTML becomes
@@ -122,10 +129,12 @@ to this parity, you can even remove the template specification in the
 controller, since by default Catalyst will render a template with the same name
 as the action:
 
-    sub list : Local {
-        my ($self, $c) = @_;
-        $c->stash->{books} = [];
-    }
+```perl
+sub list : Local {
+    my ($self, $c) = @_;
+    $c->stash->{books} = [];
+}
+```
 
 This is the primary way in which [Catalyst::View::TD] differs from its
 [predecessor][Catalyst::View::Template::Declare]. Whereas the latter would load

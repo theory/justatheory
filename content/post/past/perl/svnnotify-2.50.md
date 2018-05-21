@@ -87,7 +87,5 @@ Enjoy!
     "SVN::Notify 2.50 sample ColorDiff output"
   [2.40 output]: /computers/programming/perl/modules/svnnotify-2.40_colordiff_example.html
     "SVN::Notify 2.41 sample ColorDiff output"
-  [GNATS]: http://www.gnu.org/software/gnats/ "GNATS: The GNU
-            Bug Tracking System"
-  [search.cpan.org]: http://search.cpan.org/ "CPAN
-            Search"
+  [GNATS]: http://www.gnu.org/software/gnats/ "GNATS: The GNU Bug Tracking System"
+  [search.cpan.org]: http://search.cpan.org/ "CPAN Search"

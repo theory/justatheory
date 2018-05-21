@@ -1,4 +1,4 @@
---- 
+---
 date: 2009-11-17T22:29:18Z
 slug: tap-parser-sourcehandler
 title: Test Everything with TAP Source Handlers
@@ -39,25 +39,27 @@ three hours to do, including tests. And here's how you use it in a `Build.PL`,
 so that you can have pgTAP tests named `*.pg` run at the same time as your `*.t`
 Perl tests:
 
-    Module::Build->new(
-        module_name        => 'MyApp',
-        test_file_exts     => [qw(.t .pg)],
-        use_tap_harness    => 1,
-        tap_harness_args   => {
-            sources => {
-                Perl  => undef,
-                pgTAP => {
-                    dbname   => 'try',
-                    username => 'postgres',
-                    suffix   => '.pg',
-                },
-            }
-        },
-        build_requires     => {
-            'Module::Build'                      => '0.30',
-            'TAP::Parser::SourceHandler::pgTAP' => '3.19',
-        },
-    )->create_build_script;
+``` perl
+Module::Build->new(
+    module_name        => 'MyApp',
+    test_file_exts     => [qw(.t .pg)],
+    use_tap_harness    => 1,
+    tap_harness_args   => {
+        sources => {
+            Perl  => undef,
+            pgTAP => {
+                dbname   => 'try',
+                username => 'postgres',
+                suffix   => '.pg',
+            },
+        }
+    },
+    build_requires     => {
+        'Module::Build'                      => '0.30',
+        'TAP::Parser::SourceHandler::pgTAP' => '3.19',
+    },
+)->create_build_script;
+```
 
 To summarize, you just have to:
 
@@ -91,13 +93,15 @@ source handler. Here's how:
 -   Load the necessary modules and register your source handler. For a Ruby
     source handler, it might look like this:
 
-        package TAP::Parser::SourceHandler::Ruby;
-        use strict;
-        use warnings;
+    ``` perl
+    package TAP::Parser::SourceHandler::Ruby;
+    use strict;
+    use warnings;
 
-        use TAP::Parser::IteratorFactory   ();
-        use TAP::Parser::Iterator::Process ();
-        TAP::Parser::IteratorFactory->register_handler(__PACKAGE__);
+    use TAP::Parser::IteratorFactory   ();
+    use TAP::Parser::Iterator::Process ();
+    TAP::Parser::IteratorFactory->register_handler(__PACKAGE__);
+    ```
 
 -   Implement the `can_handle()` method. The task of this method is to return a
     score between 0 and 1 for how likely it is that your source handler can
@@ -105,27 +109,29 @@ source handler. Here's how:
     method, so you can check it all out. For example, if you wanted to run Ruby
     tests ending in `.rb`, you might write something like this:
 
-        sub can_handle {
-          my ( $class, $source ) = @_;
-          my $meta = $source->meta;
+    ``` perl
+    sub can_handle {
+        my ( $class, $source ) = @_;
+        my $meta = $source->meta;
 
-          # If it's not a file (test script), we're not interested.
-          return 0 unless $meta->{is_file};
+        # If it's not a file (test script), we're not interested.
+        return 0 unless $meta->{is_file};
 
-          # Get the file suffix, if any.
-          my $suf = $meta->{file}{lc_ext};
+        # Get the file suffix, if any.
+        my $suf = $meta->{file}{lc_ext};
 
-          # If the config specifies a suffix, it's required.
-          if ( my $config = $source->config_for('Ruby') ) {
-              if ( defined $config->{suffix} ) {
-                  # Return 1 for a perfect score.
-                  return $suf eq $config->{suffix} ? 1 : 0;
-              }
-          }
-
-          # Otherwise, return a score for our supported suffix.
-          return $suf eq '.rb' ? 0.8 : 0;
+        # If the config specifies a suffix, it's required.
+        if ( my $config = $source->config_for('Ruby') ) {
+            if ( defined $config->{suffix} ) {
+                # Return 1 for a perfect score.
+                return $suf eq $config->{suffix} ? 1 : 0;
+            }
         }
+
+        # Otherwise, return a score for our supported suffix.
+        return $suf eq '.rb' ? 0.8 : 0;
+    }
+    ```
 
     The last line is the most important: it returns 0.8 if the suffix is `.rb`,
     saying that it's likely that this handler can handle the test. But the
@@ -133,12 +139,14 @@ source handler. Here's how:
     seeing if the user specified a suffix, either via the command-line or in the
     options. So in a `Build.PL`, that might be:
 
-          tap_harness_args => {
-              sources => {
-                  Perl => undef,
-                  Ruby => { suffix => '.rub' },
-              }
-          },
+    ``` perl
+        tap_harness_args => {
+            sources => {
+                Perl => undef,
+                Ruby => { suffix => '.rub' },
+            }
+        },
+    ```
 
     Meaning that the user wanted to run tests ending in `.rub` as Ruby tests. It
     can also be done on the command-line with `prove`:
@@ -152,20 +160,22 @@ source handler. Here's how:
     is simply to create a [TAP::Parser::Iterator] object to actually run the
     test. It might look something like this:
 
-        sub make_iterator {
-          my ( $class, $source ) = @_;
-          my $config = $source->config_for('Ruby');
+    ``` perl
+    sub make_iterator {
+        my ( $class, $source ) = @_;
+        my $config = $source->config_for('Ruby');
 
-          my $fn = ref $source->raw ? ${ $source->raw } : $source->raw;
-          $class->_croak(
-              'No such file or directory: ' . defined $fn ? $fn : ''
-          ) unless $fn && -e $fn;
+        my $fn = ref $source->raw ? ${ $source->raw } : $source->raw;
+        $class->_croak(
+            'No such file or directory: ' . defined $fn ? $fn : ''
+        ) unless $fn && -e $fn;
 
-          return TAP::Parser::Iterator::Process->new({
-              command => [$config->{ruby} || 'ruby', $fn ],
-              merge   => $source->merge
-          });
-        }
+        return TAP::Parser::Iterator::Process->new({
+            command => [$config->{ruby} || 'ruby', $fn ],
+            merge   => $source->merge
+        });
+    }
+    ```
 
     Simple, right? Just make sure we have a valid file to execute, then
     instantiate and return a [TAP::Parser::Iterator::Process] object to actually
@@ -176,9 +186,11 @@ a `suffix` option and a `ruby` option (so that you can point to the `ruby`
 executable in case it's not in your path). Using it is easy. I wrote a quick
 TAP-emitting Ruby script like so:
 
-    puts 'ok 1 - This is a test'
-    puts 'ok 2 - This is another test'
-    puts 'not ok 3 - This is a failed test'
+``` ruby
+puts 'ok 1 - This is a test'
+puts 'ok 2 - This is another test'
+puts 'not ok 3 - This is a failed test'
+```
 
 And to run this test (assuming that TAP::Parser::SourceHandler::Ruby has been
 installed somewhere where Perl can find it), it's just:

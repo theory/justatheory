@@ -156,8 +156,7 @@ etc., below. Thanks!
     "Testing the email data type"
   [PostgreSQL General Bits]: http://www.varlena.com/GeneralBits/128.php
     "Base Type using Domains"
-  [GTIN data type]: http://pgfoundry.org/projects/gtin/ "GTIN data type project
-    info"
+  [GTIN data type]: http://pgfoundry.org/projects/gtin/ "GTIN data type project info"
   [Test::More]: http://search.cpan.org/perldoc?Test::More "Test::More on CPAN"
   [TAP]: http://testanything.org/ "Test Anything Protocol"
   [Test::Exception]: http://search.cpan.org/perldoc?Test::Exception

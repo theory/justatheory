@@ -34,8 +34,10 @@ processing lacks flexibility. For example, you can pass options like this:
 
 And `Module::Build` will store the options in a hash like this:
 
-    { "opt1" => "val1",
-      "opt2" => "val2" }
+``` perl
+{ "opt1" => "val1",
+  "opt2" => "val2" }
+```
 
 It understands options that use `--`, too; This invocation
 
@@ -49,8 +51,10 @@ Modul::Build doesn't understand unary options or options that use both `--` and
 
 Yields a hash like this:
 
-    { "loud => "--opt1=val1",
-      "opt2=val2" => "--foobar" }
+``` perl
+{ "loud" => "--opt1=val1",
+  "opt2=val2" => "--foobar" }
+```
 
 Certainly not what I would expect! So to get great flexibility, I [sent a patch]
 to the `Module::Build` mail list adding a new parameter to `new()`:
@@ -62,26 +66,32 @@ But it gives a whole lot more control over what gets grabbed. For example, if I
 were to try to get that last example to do what I want, all I'd need to do is
 pass in the appropriate `Getopt::Long` specs:
 
-    my $build = Module::Build->new(
-        module_name => "Spangly",
-        get_options => [ "loud+", "opt1=s", "opt2=s", "foobar" ],
-    );
+``` perl
+my $build = Module::Build->new(
+    module_name => "Spangly",
+    get_options => [ "loud+", "opt1=s", "opt2=s", "foobar" ],
+);
+```
 
 Now, the hash yielded is:
 
-    { "loud   => "1",
-      "opt1"   => "val1",
-      "opt2"   => "val2",
-      "foobar" => "1" }
+``` perl
+{ "loud"   => "1",
+  "opt1"   => "val1",
+  "opt2"   => "val2",
+  "foobar" => "1" }
+```
 
 Isn't that nicer? And because the full suite of `Getopt::Long` specification is
 supported, you can get even fancier:
 
-    my $loud = 0;
-    my $build = Module::Build->new(
-        module_name => "Spangly",
-        get_options => [ "loud+" => \$loud, "foobar!" ],
-    );
+``` perl
+my $loud = 0;
+my $build = Module::Build->new(
+    module_name => "Spangly",
+    get_options => [ "loud+" => \$loud, "foobar!" ],
+);
+```
 
 Now this invocation:
 
@@ -98,5 +108,4 @@ Perhaps `Module::Build` will end up “Borging” some of the ideas from
 the way for `Module::Build`.
 
   [sent a patch]: http://sourceforge.net/mailarchive/message.php?msg_id=8747106
-    "SourceForge fails to make available my Module::Build/Getopt::Long
-    patch"
+    "SourceForge fails to make available my Module::Build/Getopt::Long patch"

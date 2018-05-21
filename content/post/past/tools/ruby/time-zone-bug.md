@@ -12,12 +12,14 @@ type: post
 To summarize, Ruby's `Time` class has a bug in its `zone` method. The example is
 simple:
 
-    tz = ENV['TZ']
-    ENV['TZ'] = 'Africa/Luanda'
-    t = Time.now
-    puts t.zone
-    ENV['TZ'] = 'Australia/Lord_Howe'
-    puts t.zone
+``` ruby
+tz = ENV['TZ']
+ENV['TZ'] = 'Africa/Luanda'
+t = Time.now
+puts t.zone
+ENV['TZ'] = 'Australia/Lord_Howe'
+puts t.zone
+```
 
 This outputs:
 
@@ -27,13 +29,15 @@ This outputs:
 So far so good. But look what happens when I add a single line to the program,
 `foo = t.to_s`:
 
-    tz = ENV['TZ']
-    ENV['TZ'] = 'Africa/Luanda'
-    t = Time.now
-    puts t.zone
-    ENV['TZ'] = 'Australia/Lord_Howe'
-    foo = t.to_s
-    puts t.zone
+``` ruby
+tz = ENV['TZ']
+ENV['TZ'] = 'Africa/Luanda'
+t = Time.now
+puts t.zone
+ENV['TZ'] = 'Australia/Lord_Howe'
+foo = t.to_s
+puts t.zone
+```
 
 The result changes:
 

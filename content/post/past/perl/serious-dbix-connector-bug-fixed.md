@@ -11,12 +11,14 @@ I’ve just released [DBIx::Connector] 0.42 to CPAN. This release fixes a seriou
 bug with `catch` blocks. In short, if you threw an exception from inside a catch
 block, it would not be detectable from outside. For example, given this code:
 
-    eval {
-        $conn->run(sub { die 'WTF' }, catch => sub { die 'OMG!' });
-    };
-    if (my $err = $@) {
-        say "We got an error: $@\n";
-    }
+``` perl
+eval {
+    $conn->run(sub { die 'WTF' }, catch => sub { die 'OMG!' });
+};
+if (my $err = $@) {
+    say "We got an error: $@\n";
+}
+```
 
 With DBIx::Connector 0.41 and lower, the `if` block would never be called,
 because even though the catch block threw an exception, `$@` was not set. In
@@ -28,5 +30,4 @@ to localize `$@`, so now it should propagate properly everywhere.
 So if you’re using DBIx::Connector `catch` blocks, please upgrade ASAP. Sorry
 for the hassle.
 
-  [DBIx::Connector]: http://search.cpan.org/dist/DBIx-Connector "DBIx::Connector
-    on CPAN"
+  [DBIx::Connector]: http://search.cpan.org/dist/DBIx-Connector "DBIx::Connector on CPAN"

@@ -71,5 +71,4 @@ Brilliant suggestions warmly appreciated.
     "DBIx::Connector on GitHub"
   [cause some confusion]: http://github.com/theory/dbix-connector/issues#issue/3
     "Issue #3: API is somewhat confusing"
-  [Rob Kinyon]: http://search.cpan.org/~rkinyon/ "Rob Kinyon's CPAN
-    distributions"
+  [Rob Kinyon]: http://search.cpan.org/~rkinyon/ "Rob Kinyon's CPAN distributions"

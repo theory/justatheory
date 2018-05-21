@@ -57,15 +57,18 @@ default, but can be set in a number of ways. The ways I've found so far are:
 
 -   Using the three-argument version of `open`, such as
 
-        open my $fh, "<utf8", "/foo/bar"
-          or die "Cannot open file: $!\n"
+    ``` perl
+    open my $fh, "<utf8", "/foo/bar" or die "Cannot open file: $!\n"
+    ```
 
     Now when you read lines from this file, they will automatically be decoded
     to `utf8`.
 
 -   Using `binmode` to set the mode on a file handle:
 
-        binmode $fh, ":utf8";
+    ``` perl
+    binmode $fh, ":utf8";
+    ```
 
     As with the three-argument version of `open` this forces Perl to decode the
     strings read from the file handle.
@@ -152,8 +155,7 @@ again!
     "substr() either crap utf8 string or mis-count the length in bytes."
   [(a.k.a. “Gugod”)]: http://gugod.org/blog/ "Gugod's blog: The Mind Of Random"
   [refuse to accept]: http://bugs.bricolage.cc/show_bug.cgi?id=709#c14
-    "Two bugs in
-    one!"
+    "Two bugs in one!"
   [Bricolage 1.8.2]: /bricolage/announce/1.8.2.html "Bricolage 1.8.2 Released"
   [Encode module]: http://search.cpan.org/dist/Encode/ "Encode on CPAN"
   [discussion]: http://www.template-toolkit.org/pipermail/templates/2004-September/006583.html
@@ -161,8 +163,7 @@ again!
   [suggested]: http://www.template-toolkit.org/pipermail/templates/2004-September/006584.html
     "Andy Wardley Replies"
   [picked up an older discussion]: http://www.mail-archive.com/dbi-dev@perl.org/msg03451.html
-    "UTF-8
-    flags (again)"
+    "UTF-8 flags (again)"
   [Tim's work]: http://www.mail-archive.com/dbi-dev@perl.org/msg03452.html
     "Tim Bunce Responds"
   [1]: http://bugs.bricolage.cc/show_bug.cgi?id=802

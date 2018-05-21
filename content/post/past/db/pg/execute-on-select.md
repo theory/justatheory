@@ -14,17 +14,19 @@ creates those functions gets executed at the beginning of every database
 connection. So I put the utility generation code into a single function, called
 `prepare_perl_utils()`. It looks something like this:
 
-    CREATE OR REPLACE FUNCTION prepare_perl_utils(
-    ) RETURNS bool LANGUAGE plperl IMMUTABLE AS $$
-        # Don't bother if we've already loaded.
-        return 1 if $_SHARED{escape_literal};
+``` plpgsql
+CREATE OR REPLACE FUNCTION prepare_perl_utils(
+) RETURNS bool LANGUAGE plperl IMMUTABLE AS $$
+    # Don't bother if we've already loaded.
+    return 1 if $_SHARED{escape_literal};
 
-        $_SHARED{escape_literal} = sub {
-            $_[0] =~ s/'/''/g; $_[0] =~ s/\\/\\\\/g; $_[0];
-        };
+    $_SHARED{escape_literal} = sub {
+        $_[0] =~ s/'/''/g; $_[0] =~ s/\\/\\\\/g; $_[0];
+    };
 
-        # Create other code refs in %_SHARED…
-    $$;
+    # Create other code refs in %_SHARED…
+$$;
+```
 
 So now all I have to do is make sure that all the client’s apps execute this
 function as soon as they connect, so that the utilities will all be loaded up
@@ -40,14 +42,16 @@ in the DBI since 1.49, which was released in November 2005.
 The approach is the same as I’ve [described before][]: Just specify the
 `Callbacks` parameter to `DBI->connect`, like so:
 
-    my $dbh = DBI->connect_cached($dsn, $user, $pass, {
-        PrintError     => 0,
-        RaiseError     => 1,
-        AutoCommit     => 1,
-        Callbacks      => {
-            connected => sub { shift->do('SELECT prepare_perl_utils()' },
-        },
-    });
+``` perl
+my $dbh = DBI->connect_cached($dsn, $user, $pass, {
+    PrintError     => 0,
+    RaiseError     => 1,
+    AutoCommit     => 1,
+    Callbacks      => {
+        connected => sub { shift->do('SELECT prepare_perl_utils()' },
+    },
+});
+```
 
 That’s it. The `connected` method is a no-op in the DBI that gets called to
 alert subclasses that they can do any post-connection initialization. Even
@@ -59,14 +63,16 @@ monkey-patch Rails to do what we want. With some help from “dfr\|mac” on
 \#rubyonrails (I haven’t touched Rails in 3 years!), I got it worked down to
 this:
 
-    class ActiveRecord::ConnectionAdapters::PostgreSQLAdapter
-      def initialize_with_perl_utils(*args)
-        returning(initialize_without_perl_utils(*args)) do
-          execute('SELECT prepare_perl_utils()')
-        end
-      end
-      alias_method_chain :initialize, :perl_utils
+``` ruby
+class ActiveRecord::ConnectionAdapters::PostgreSQLAdapter
+    def initialize_with_perl_utils(*args)
+    returning(initialize_without_perl_utils(*args)) do
+        execute('SELECT prepare_perl_utils()')
     end
+    end
+    alias_method_chain :initialize, :perl_utils
+end
+```
 
 Basically, we overpower the PostgreSQL adapter’s `initialize` method and have it
 call `initialize_with_perl_utils` before it returns. It’s a neat trick; if

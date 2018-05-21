@@ -19,20 +19,24 @@ to use CSS selectors to test the structure and content of the document
 Rails docs), if you wanted to test that a response contains two ordered lists,
 each with four list elements then you'd do something like this:
 
-    assert_select "ol" do |elements|
-      elements.each do |element|
-        assert_select element, "li", 4
-      end
+``` ruby
+assert_select "ol" do |elements|
+    elements.each do |element|
+    assert_select element, "li", 4
     end
+end
+```
 
 What it does is select all of the `<ol>` elements and pass them to the `do`
 block, where you can call `assert_select` on each of them. Nice, huh? You can
 also implicitly call `assert_select` on the entire array of passed elements,
 like so:
 
-    assert_select "ol" do
-      assert_select "li", 8
-    end
+``` ruby
+assert_select "ol" do
+    assert_select "li", 8
+end
+```
 
 Slick, right? I've always wanted to have something like this in Perl, but until
 last week, I didn't really have an immediate need for it. But I've started on a
@@ -41,10 +45,12 @@ generate XHTML output. So I started asking around for advice on proper unit
 testing for Catalyst views. The answer I got was, basically,
 [Test::WWW::Mechanize::Catalyst]. But I found it insufficient:
 
-    $mech->get_ok("/");
-    $mech->html_lint_ok( "HTML should be valid" );
-    $mech->title_is( "Root", "On the root page" );
-    $mech->content_contains( "This is the root page", "Correct content" );
+``` perl
+$mech->get_ok("/");
+$mech->html_lint_ok( "HTML should be valid" );
+$mech->title_is( "Root", "On the root page" );
+$mech->content_contains( "This is the root page", "Correct content" );
+```
 
 Okay, I can check the title of the document directly, which is kind of cool, but
 there's no other way to examine the structure? Really? And to check the content,
@@ -70,10 +76,12 @@ them in my document.
 So I switched to [Test::XML], which uses a proper XML parser to validate a
 document:
 
-    ok my $res = request("http://localhost:3000/"), "Request home page";
-    ok $res->is_success, "Request should have succeeded";
+``` perl
+ok my $res = request("http://localhost:3000/"), "Request home page";
+ok $res->is_success, "Request should have succeeded";
 
-    is_well_formed_xml $res->content, "The HTML should be well-formed";
+is_well_formed_xml $res->content, "The HTML should be well-formed";
+```
 
 Cool, so now I know that my XHTML document is valid, it's time to start
 examining the content and structure in more detail. Thinking fondly on
@@ -82,7 +90,9 @@ document, and found [Test::XML::XPath] right in the Test::XML distribution,
 which looked to be just what I wanted. So I added it to my test script and added
 this line to test the content of the `<title>` tag:
 
-    is_xpath $res->content, "/html/head/title", "Welcome!";
+``` perl
+is_xpath $res->content, "/html/head/title", "Welcome!";
+```
 
 I ran the test…and waited. It took around 20 seconds for that test to run, and
 then it failed!
@@ -106,12 +116,16 @@ XPath expression. He pointed me to his fork of XML::XPath, called
 [Test::XHTML::XPath], in his [Escape project]. It mostly duplicates
 Test::XML::XPath, but contains this crucial line of code:
 
-    $xpc->registerNs( x => "http://www.w3.org/1999/xhtml" );
+``` perl
+$xpc->registerNs( x => "http://www.w3.org/1999/xhtml" );
+```
 
 By registering the prefix “x” for the XHTML namespace, he's able to write tests
 like this:
 
-    is_xpath $res->content, "/x:html/x:head/x:title", "Welcome!";
+``` perl
+is_xpath $res->content, "/x:html/x:head/x:title", "Welcome!";
+```
 
 And that works. It seems that the XPath spec [requires that one use prefixes]
 when referring to elements within a namespace. Test::XML::XPath, alas, provides
@@ -139,8 +153,10 @@ Introducing [Test::XPath], your Perl module for flexibly running XPath-powered
 tests on the content and structure of your XML and HTML documents. With this new
 module, the test for my Catalyst application becomes:
 
-    my $tx = Test::XPath->new( xml => $res->content, is_html => 1 );
-    $tx->is("/html/head/title", "Welcome", "Title should be correct" );
+``` perl
+my $tx = Test::XPath->new( xml => $res->content, is_html => 1 );
+$tx->is("/html/head/title", "Welcome", "Title should be correct" );
+```
 
 Notice how I didn't need a namespace prefix there? That's because the `is_html`
 parameter coaxes XML::LibXML into using its HTML parser instead of its XML
@@ -148,12 +164,14 @@ parser. One of the side-effects of doing so is that the namespace appears to be
 assumed, so I can ignore it in my tests. The HTML parser doesn't bother to fetch
 the DTD, either. For tests where you really need namespaces, you'd do this:
 
-    my $tx = Test::XPath->new(
-        xml     => $res->content,
-        xmlns   => { x => "http://www.w3.org/1999/xhtml" },
-        options => { no_network => 1, recover_silently => 1 },
-    );
-    $tx->is("/x:html/x:head/x:title", "Welcome", "Title should be correct" );
+``` perl
+my $tx = Test::XPath->new(
+    xml     => $res->content,
+    xmlns   => { x => "http://www.w3.org/1999/xhtml" },
+    options => { no_network => 1, recover_silently => 1 },
+);
+$tx->is("/x:html/x:head/x:title", "Welcome", "Title should be correct" );
+```
 
 Yep, you can specify XML namespace prefixes via the `xmlns` parameter, and pass
 options to XML::LibXML via the `options` parameter. Here I've shut off the
@@ -166,17 +184,19 @@ methods, including `ok()`, `is()`, `like()` and `cmp_ok()`. They all work just
 like in Test::More, except that the first argument must be an XPath expressions.
 Some examples borrowed from the documentation:
 
-    $tx->ok( '//foo/bar', 'Should have bar element under foo element' );
-    $tx->ok( 'contains(//title, "Welcome")', 'Title should "Welcome"' );
+``` perl
+$tx->ok( '//foo/bar', 'Should have bar element under foo element' );
+$tx->ok( 'contains(//title, "Welcome")', 'Title should "Welcome"' );
 
-    $tx->is( '/html/head/title', 'Welcome', 'Title should be welcoming' );
-    $tx->isnt( '/html/head/link/@type', 'hello', 'Link type should not' );
+$tx->is( '/html/head/title', 'Welcome', 'Title should be welcoming' );
+$tx->isnt( '/html/head/link/@type', 'hello', 'Link type should not' );
 
-    $tx->like( '/html/head/title', qr/^Foobar Inc.: .+/, 'Title context' );
-    $tx->unlike( '/html/head/title', qr/Error/, 'Should be no error in title' );
+$tx->like( '/html/head/title', qr/^Foobar Inc.: .+/, 'Title context' );
+$tx->unlike( '/html/head/title', qr/Error/, 'Should be no error in title' );
 
-    $tx->cmp_ok( '/html/head/title', 'eq', 'Welcome' );
-    $tx->cmp_ok( '//story[1]/@id', '==', 1 );
+$tx->cmp_ok( '/html/head/title', 'eq', 'Welcome' );
+$tx->cmp_ok( '//story[1]/@id', '==', 1 );
+```
 
 But the real gem is the recursive testing feature of the `ok()` test method. By
 passing a code reference as the second argument, you can descend into various
@@ -190,10 +210,12 @@ For example, if you wanted to test for the presence of `<story>` elements in
 your document, and to test that each such element had an incremented `id`
 attribute, you'd do something like this:
 
-    my $i = 0;
-    $tx->ok( '//assets/story', sub {
-        shift->is('./@id', ++$i, "ID should be $i in story $i");
-    }, 'Should have story elements' );
+``` perl
+my $i = 0;
+$tx->ok( '//assets/story', sub {
+    shift->is('./@id', ++$i, "ID should be $i in story $i");
+}, 'Should have story elements' );
+```
 
 For convenience, the XML::XPath object is also assigned to `$_` for the duration
 of the call to the code reference. Either way, you can call `ok()` and pass code
@@ -201,22 +223,26 @@ references anywhere in the hierarchy. For example, to ensure that an Atom feed
 has entries and that each entry has a title, a link, and a very specific author
 element with name, uri, and email subnodes, you can do this:
 
-    $tx->ok( '/feed/entry', sub {
-        $_->ok( './title', 'Should have a title' );
-        $_->ok( './author', sub {
-            $_->is( './name',  'Larry Wall',       'Larry should be author' );
-            $_->is( './uri',   'http://wall.org/', 'URI should be correct' );
-            $_->is( './email', 'perl@example.com', 'Email should be right' );
-        }, 'Should have author elements' );
-    }, 'Should have entry elements' );
+``` perl
+$tx->ok( '/feed/entry', sub {
+    $_->ok( './title', 'Should have a title' );
+    $_->ok( './author', sub {
+        $_->is( './name',  'Larry Wall',       'Larry should be author' );
+        $_->is( './uri',   'http://wall.org/', 'URI should be correct' );
+        $_->is( './email', 'perl@example.com', 'Email should be right' );
+    }, 'Should have author elements' );
+}, 'Should have entry elements' );
+```
 
 There are a lot of core XPath functions you can use, too. For example, I'm going
 to write a test for every page returned by my application to make sure that I
 have the proper numbers of various tags:
 
-    $tx->is('count(/html)',     1, 'Should have 1 html element' );
-    $tx->is('count(/html/head') 1, 'Should have 1 head element' );
-    $tx->is('count(/html/body)  1, 'Should have 1 body element' );
+``` perl
+$tx->is('count(/html)',     1, 'Should have 1 html element' );
+$tx->is('count(/html/head') 1, 'Should have 1 head element' );
+$tx->is('count(/html/body)  1, 'Should have 1 body element' );
+```
 
 I'm going to use this module to the hilt in all my tests for HTML and XML
 documents from here on in. The only thing I'm missing from `assert_select` is
@@ -233,8 +259,7 @@ Maybe you'll find it useful, too.
     "ActionController::Assertions::SelectorAssertions"
   [PGX]: http://www.pgexperts.com/ "PostgreSQL Experts, Inc."
   [Test::WWW::Mechanize::Catalyst]: http://search.cpan.org/perldoc?Test::WWW::Mechanize::Catalyst
-    "Test::WWW::Mechanize::Catalyst on
-    CPAN"
+    "Test::WWW::Mechanize::Catalyst on CPAN"
   [SOL]: http://www.urbandictionary.com/define.php?term=S.O.L.
     "Urban Dictionary: “S.O.L”"
   [Test::XML]: http://search.cpan.org/perldoc?Test::XML "Test::XML on CPAN"

@@ -28,17 +28,20 @@ zones that it recognizes. It's called `pg_timezone_names`:
 Cool. So all I had to do was to look up the value in this view. My first stab at
 creating a time zone validation function therefore looked like this:
 
-    CREATE OR REPLACE FUNCTION is_timezone( tz TEXT ) RETURNS BOOLEAN as $$
-    DECLARE
-      bool BOOLEAN;
-    BEGIN
-      SELECT TRUE INTO bool
-        FROM pg_timezone_names
-       WHERE LOWER(name) = LOWER(tz)
-          OR LOWER(abbrev) = LOWER(tz);
-      RETURN FOUND;
-    END;
-    $$ language plpgsql STABLE;
+
+``` postgres
+CREATE OR REPLACE FUNCTION is_timezone( tz TEXT ) RETURNS BOOLEAN as $$
+DECLARE
+    bool BOOLEAN;
+BEGIN
+    SELECT TRUE INTO bool
+    FROM pg_timezone_names
+    WHERE LOWER(name) = LOWER(tz)
+        OR LOWER(abbrev) = LOWER(tz);
+    RETURN FOUND;
+END;
+$$ language plpgsql STABLE;
+```
 
 This should pretty well cover anything that PostgreSQL considers valid. So does
 it work? You bet:
@@ -76,13 +79,15 @@ so I could do just that. But there was only one problem. PL/pgSQL's exception
 handling syntax requires that you specify an error condition. Here's what the
 documentation has:
 
-    EXCEPTION
-        WHEN condition [ OR condition ... ] THEN
+``` postgres
+EXCEPTION
+    WHEN condition [ OR condition ... ] THEN
+        handler_statements
+    [ WHEN condition [ OR condition ... ] THEN
             handler_statements
-        [ WHEN condition [ OR condition ... ] THEN
-              handler_statements
-          ... ]
-    END;
+        ... ]
+END;
+```
 
 Conditions are [error codes]. But which one corresponds to the invalid time zone
 error? I tried a few, but couldn't figure out which one. (Anyone know now to map
@@ -94,16 +99,18 @@ A careful re-read of the PL/pgSQL documentation reveals that, yes, you can. Use
 the condition “OTHERS,” and you can catch almost anything. With this information
 in hand, I quickly wrote:
 
-    CREATE OR REPLACE FUNCTION is_timezone( tz TEXT ) RETURNS BOOLEAN as $$
-    DECLARE
-      date TIMESTAMPTZ;
-    BEGIN
-      date := now() AT TIME ZONE tz;
-      RETURN TRUE;
-    EXCEPTION WHEN OTHERS THEN
-      RETURN FALSE;
-    END;
-    $$ language plpgsql STABLE;
+``` postgres
+CREATE OR REPLACE FUNCTION is_timezone( tz TEXT ) RETURNS BOOLEAN as $$
+DECLARE
+    date TIMESTAMPTZ;
+BEGIN
+    date := now() AT TIME ZONE tz;
+    RETURN TRUE;
+EXCEPTION WHEN OTHERS THEN
+    RETURN FALSE;
+END;
+$$ language plpgsql STABLE;
+```
 
 And how well does this one work?
 
@@ -125,8 +132,10 @@ And how well does this one work?
 Yes, I'll take 1-3 ms over 400-500 ms any day! I might even [create a domain]
 for this and be done with it:
 
-    CREATE DOMAIN timezone AS TEXT
-    CHECK ( is_timezone( value ) );
+``` postgres
+CREATE DOMAIN timezone AS TEXT
+CHECK ( is_timezone( value ) );
+```
 
 Enjoy!
 

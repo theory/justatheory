@@ -68,18 +68,20 @@ branches were now remote branches. Actually, this is what I want for the final
 repository, so I just had to figure out how to copy them. What I came up with
 was this:
 
-    chdir $cvs;
-    my @branches = map { s/^\s+//; s/\s+$//; $_ } `git branch -r`;
+```perl
+chdir $cvs;
+my @branches = map { s/^\s+//; s/\s+$//; $_ } `git branch -r`;
 
-    chdir $svn;
-    system qw(git fetch --tags), $cvs;
+chdir $svn;
+system qw(git fetch --tags), $cvs;
 
-    for my $branch (@branches) {
-        next if $branch eq 'origin/HEAD';
-        my $target = $branch =~ m{/master|rev_1_[68]$} ? "$branch-cvs" : $branch;
-        system qw(git fetch --tags), $cvs,
-            "refs/remotes/$branch:refs/remotes/$target";
-    }
+for my $branch (@branches) {
+    next if $branch eq 'origin/HEAD';
+    my $target = $branch =~ m{/master|rev_1_[68]$} ? "$branch-cvs" : $branch;
+    system qw(git fetch --tags), $cvs,
+        "refs/remotes/$branch:refs/remotes/$target";
+}
+```
 
 It took me a while to figure out the proper incantation for referencing and
 creating remote branches. Once I got the `refs/remotes` part figured out, I
@@ -94,48 +96,56 @@ Once the branches were imported, I simply looked for the earliest commits to
 those branches in Subversion and mapped it to the latest commits to the same
 branches in CVS, then wrote their SHA1 IDs to `.git/info/grafts`, like so:
 
-    open my $fh, '>', ".git/info/grafts" or die "Cannot open grafts: $!\n";
-    print $fh '77a35487f18d68b96d294facc1f1a41745ad914c '
-           => "835ff47ee1e3d1bf228b8d0976fbebe3c7f02ae6\n", # rev_1_6
-              '97ef646f5c2a7c6f47c2046c8d289c1dfc30a73d '
-           => "2b9f3c5979d062614ef54afd0a01631f746fa3cb\n", # rev_1_8
-              'b3b2e7f53d789bea962fe8047e119148e28865c0 '
-           => "8414b64a6a434b2117294c0568c1012a17bc863b\n", # master
-        ;
-    close $fh;
+```perl
+open my $fh, '>', ".git/info/grafts" or die "Cannot open grafts: $!\n";
+print $fh '77a35487f18d68b96d294facc1f1a41745ad914c '
+        => "835ff47ee1e3d1bf228b8d0976fbebe3c7f02ae6\n", # rev_1_6
+            '97ef646f5c2a7c6f47c2046c8d289c1dfc30a73d '
+        => "2b9f3c5979d062614ef54afd0a01631f746fa3cb\n", # rev_1_8
+            'b3b2e7f53d789bea962fe8047e119148e28865c0 '
+        => "8414b64a6a434b2117294c0568c1012a17bc863b\n", # master
+    ;
+close $fh;
+```
 
 With the branches all imported and the grafts created, I simply had to run
 `git filter-branch` to make them permanent and drop the temporary CVS branches:
 
-    system qw(git filter-branch --tag-name-filter cat -- --all);
-    unlink '.git/info/grafts';
-    system qw(git branch -r -D), "origin/$_-cvs" for qw(rev_1_6 rev_1_8 master);
+```perl
+system qw(git filter-branch --tag-name-filter cat -- --all);
+unlink '.git/info/grafts';
+system qw(git branch -r -D), "origin/$_-cvs" for qw(rev_1_6 rev_1_8 master);
+```
 
 Now I had a complete repository, but with duplicate commits left over by
 `git-filter-branch`. To get rid of those, I need to clone the repository. But
 before I clone, I need the remote branches to be local branches, so that the
 clone will see them as remotes. For this, I wrote the following function:
 
-    sub fix_branches {
-        for my $remote (map { s/^\s+//; s/\s+$//; $_ } `git branch -r`) {
-            (my $local = $remote) =~ s{origin/}{};
-            next if $local eq 'master';
-            next if $local eq 'HEAD';
-            system qw(git checkout), $remote;
-            system qw(git checkout -b), $local;
-        }
-        system qw(git checkout master);
+```perl
+sub fix_branches {
+    for my $remote (map { s/^\s+//; s/\s+$//; $_ } `git branch -r`) {
+        (my $local = $remote) =~ s{origin/}{};
+        next if $local eq 'master';
+        next if $local eq 'HEAD';
+        system qw(git checkout), $remote;
+        system qw(git checkout -b), $local;
     }
+    system qw(git checkout master);
+}
+```
 
 It's important to skip the master and HEAD branches, as they'll automatically be
 created by `git clone`. So then I call the function and and run `git gc` to take
 out trash, and then clone:
 
-    fix_branches();
+```perl
+fix_branches();
 
-    run qw(git gc);
-    chdir '..';
-    run qw(git clone), "file://$svn", 'git_final';
+run qw(git gc);
+chdir '..';
+run qw(git clone), "file://$svn", 'git_final';
+```
 
 It's important to use the `file:///` URL to clone so as to get a real clone;
 just pointing to the directory instead makes hard links.
@@ -144,12 +154,14 @@ Now I that I had the final repository with all history intact, I was ready to
 push it to GitHub! Well, almost ready. First I needed to make the branches local
 again, and then see if I could get the repository size down a bit:
 
-    chdir 'git_final';
-    fix_branches();
-    system qw(git remote rm origin);
-    system qw(git remote add origin git@github.com:bricoleurs/bricolage.git);
-    system qw(git gc);
-    system qw(git repack -a -d -f --depth 50 --window 50);
+```bash
+chdir 'git_final';
+fix_branches();
+system qw(git remote rm origin);
+system qw(git remote add origin git@github.com:bricoleurs/bricolage.git);
+system qw(git gc);
+system qw(git repack -a -d -f --depth 50 --window 50);
+```
 
 And that's it! My new Bricolage Git repository is complete, and I've now pushed
 it up to its [new home on GitHub]. I pushed it like this:

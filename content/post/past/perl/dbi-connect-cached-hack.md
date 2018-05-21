@@ -20,15 +20,17 @@ in a lot of my applications, because it's a nice way to reuse database handles
 without having to figure out my own caching algorithm. The code I have to use it
 looks like this:
 
-    sub dbh {
-        my $self = shift;
-        DBI->connect_cached( @{ $self->_dbi }{qw(dsn username password)}, {
-            PrintError     => 0,
-            RaiseError     => 0,
-            HandleError    => Exception::Class::DBI->handler,
-            AutoCommit     => 1,
-        });
-    }
+``` perl
+sub dbh {
+    my $self = shift;
+    DBI->connect_cached( @{ $self->_dbi }{qw(dsn username password)}, {
+        PrintError     => 0,
+        RaiseError     => 0,
+        HandleError    => Exception::Class::DBI->handler,
+        AutoCommit     => 1,
+    });
+}
+```
 
 Very simple. I just call the `dbh()` method whenever I need to talk to the
 database, and I'm set. Except for one problem: transactions.
@@ -80,20 +82,22 @@ transactions.
 
 Here's the modified code:
 
-    my $cb = {
-        'connect_cached.reused' => sub { delete $_[4]->{AutoCommit} },
-    };
+``` perl
+my $cb = {
+    'connect_cached.reused' => sub { delete $_[4]->{AutoCommit} },
+};
 
-    sub dbh {
-        my $self = shift;
-        DBI->connect_cached( @{ $self->_dbi }{qw(dsn username password)}, {
-            PrintError     => 0,
-            RaiseError     => 0,
-            HandleError    => Exception::Class::DBI->handler,
-            AutoCommit     => 1,
-            Callbacks      => $cb,
-        });
-    }
+sub dbh {
+    my $self = shift;
+    DBI->connect_cached( @{ $self->_dbi }{qw(dsn username password)}, {
+        PrintError     => 0,
+        RaiseError     => 0,
+        HandleError    => Exception::Class::DBI->handler,
+        AutoCommit     => 1,
+        Callbacks      => $cb,
+    });
+}
+```
 
 Callbacks are passed as a hash reference, with the keys being the names of the
 DBI methods that should trigger the callbacks, such as `ping`, `data_sources`,

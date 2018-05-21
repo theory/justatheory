@@ -97,11 +97,13 @@ To assist in this, I took a hint from [Ask Bjørn Hansen], sent in email in
 response to a Tweet, and tagged every single commit with its corresponding
 Subversion revision number, like so (in Perl):
 
-    for my $c (`git rev-list --all --date-order --timestamp | sort -n | awk '{print \$2}'`) {
-        chomp $c;
-        my ($svnid) = `git show -s $c | tail -1` =~ /[@](\d+)\s+/;
-        system qw(git tag -f), $svnid, $c;
-    }
+``` perl
+for my $c (`git rev-list --all --date-order --timestamp | sort -n | awk '{print \$2}'`) {
+    chomp $c;
+    my ($svnid) = `git show -s $c | tail -1` =~ /[@](\d+)\s+/;
+    system qw(git tag -f), $svnid, $c;
+}
+```
 
 The nice thing about this is that it made it easy for me to scan through the
 commits in GitX and see where things were. It also meant that I could reference
@@ -127,21 +129,23 @@ go quite a bit faster.
 As a result, I added a migration function to properly tag merges. It looked like
 this:
 
-    sub graft_merges {
-        print "Grafting merges\n";
-        # Handle the merges.
-        for my $graft (
-            [qw( trunk@5524   rev_1_8@5523 )],
-            [qw( trunk@5614   rev_1_8@5613 )],
-            [qw( rev_1_8@5591 trunk@5590   )],
-        ) {
-            my ($commit, $parent) = map { s/.+[@]//; $_ } @$graft;
-            my $cmd = "\$(git rev-parse $commit) "
-                    . "\$(git rev-parse $commit^) "
-                    . "\$(git rev-parse $parent)";
-            `echo "$cmd" >> .git/info/grafts`;
-        }
+``` perl
+sub graft_merges {
+    print "Grafting merges\n";
+    # Handle the merges.
+    for my $graft (
+        [qw( trunk@5524   rev_1_8@5523 )],
+        [qw( trunk@5614   rev_1_8@5613 )],
+        [qw( rev_1_8@5591 trunk@5590   )],
+    ) {
+        my ($commit, $parent) = map { s/.+[@]//; $_ } @$graft;
+        my $cmd = "\$(git rev-parse $commit) "
+                . "\$(git rev-parse $commit^) "
+                . "\$(git rev-parse $parent)";
+        `echo "$cmd" >> .git/info/grafts`;
     }
+}
+```
 
 By referencing revision tags explicitly, I was able to just use `git rev-parse`
 to look up SHA1 hash IDs to put into `.git/info/grafts`. This saved me the
@@ -164,19 +168,21 @@ make sure that it was copied from trunk. Then I simply went into GitX, found
 r7423, then looked back to the last commit to trunk before r7423. That was the
 parent of the branch. With such data, I was able to write a function like this:
 
-    sub graft_branches {
-        print "Grafting branches\n";
-        for my $graft (
-            [qw( dev_ajax@7423            trunk@7301 )],
-            [qw( dev_mysql@7424           trunk@7301 )],
-            [qw( dev_elem_occurrence@7427 trunk@7301 )],
-        ) {
-            my ($commit, $parent) = map { s/.+[@]//; $_ } @$graft;
-            my $cmd = "\$(git rev-parse $commit) "
-                    . "\$(git rev-parse $parent)";
-            `echo "$cmd" >> .git/info/grafts`;
-        }
+``` perl
+sub graft_branches {
+    print "Grafting branches\n";
+    for my $graft (
+        [qw( dev_ajax@7423            trunk@7301 )],
+        [qw( dev_mysql@7424           trunk@7301 )],
+        [qw( dev_elem_occurrence@7427 trunk@7301 )],
+    ) {
+        my ($commit, $parent) = map { s/.+[@]//; $_ } @$graft;
+        my $cmd = "\$(git rev-parse $commit) "
+                . "\$(git rev-parse $parent)";
+        `echo "$cmd" >> .git/info/grafts`;
     }
+}
+```
 
 Here I only needed to look up the revision and its parent and write it to
 `.git/info/grafts`. Then all of my branches had parents. Or nearly all of them;
@@ -191,21 +197,23 @@ the 1.8.11 release of Bricolage.” Then I just looked back from the tag commit 
 find the commit copied to the tag, and *that* commit would be tagged with the
 release tag. The function to create the tags looked like this:
 
-    sub tag_releases {
-        print "Tagging releases\n";
-        for my $spec (
-            [ 'rev_1_8@5726' => 'v1.8.1'  ],
-            [ 'rev_1_8@5922' => 'v1.8.2'  ],
-            [ 'rev_1_8@6073' => 'v1.8.3'  ],
-        ) {
-            my ($where, $tag) = @{$spec};
-            my ($branch, $rev) = split /[@]/, $where;
-            my $tag_date = `git show --pretty=format:%cd -s $rev`;
-            chomp $tag_date;
-            local $ENV{GIT_COMMITTER_DATE} = $tag_date;
-            system qw(git tag -fa), $tag, '-m', "Tag for $tag release of Bricolage.", $rev;
-        }
+``` perl
+sub tag_releases {
+    print "Tagging releases\n";
+    for my $spec (
+        [ 'rev_1_8@5726' => 'v1.8.1'  ],
+        [ 'rev_1_8@5922' => 'v1.8.2'  ],
+        [ 'rev_1_8@6073' => 'v1.8.3'  ],
+    ) {
+        my ($where, $tag) = @{$spec};
+        my ($branch, $rev) = split /[@]/, $where;
+        my $tag_date = `git show --pretty=format:%cd -s $rev`;
+        chomp $tag_date;
+        local $ENV{GIT_COMMITTER_DATE} = $tag_date;
+        system qw(git tag -fa), $tag, '-m', "Tag for $tag release of Bricolage.", $rev;
     }
+}
+```
 
 I am again indebted to [Ask][Ask Bjørn Hansen] for the code here, especially to
 set the date for the tag.
@@ -227,19 +235,21 @@ and the remote branches myself (easily done by copying-and-pasting the relevant
 Perl code). Then all I needed to do was clean up the extant tags and run
 `git-filter-branch` to make the grafts permanent:
 
-    sub finish {
-        print "Deleting old tags\n";
-        my @tags = grep m{^tags/}, map { s/^\s+//; s/\s+$//; $_ } `git branch -a`;
-        system qw(git branch -r -D), $_ for @tags;
+``` perl
+sub finish {
+    print "Deleting old tags\n";
+    my @tags = grep m{^tags/}, map { s/^\s+//; s/\s+$//; $_ } `git branch -a`;
+    system qw(git branch -r -D), $_ for @tags;
 
-        print "Deleting revision tags\n";
-        @tags_to_delete = grep { /^\d+$/ } map { s/^\s+//; s/\s+$//; $_ } `git tag`;
-        system qw(git tag -d), $_ for @tags_to_delete;
+    print "Deleting revision tags\n";
+    @tags_to_delete = grep { /^\d+$/ } map { s/^\s+//; s/\s+$//; $_ } `git tag`;
+    system qw(git tag -d), $_ for @tags_to_delete;
 
-        print "Grafting...\n";
-        system qw(git filter-branch);
-        system qw(git gc);
-    }
+    print "Grafting...\n";
+    system qw(git filter-branch);
+    system qw(git gc);
+}
+```
 
 And now I have a nicely organized Git repository based on the Bricolage
 Subversion repository, with all (or most) merges in their proper places, release

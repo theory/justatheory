@@ -27,9 +27,11 @@ since what it does is not true case-insensitive comparisons, but lowercases text
 and then compares, just as millions of us developers already do by using
 `LOWER()` on both sides of a query:
 
-    SELECT *
-      FROM tab
-     WHERE lower(col) = LOWER(?);
+``` postgres
+SELECT *
+  FROM tab
+ WHERE lower(col) = LOWER(?);
+```
 
 I just finally got fed up with this. The last straw for me was wanting to create
 a primary key that would be stored case-insensitively, which would have required
@@ -49,31 +51,35 @@ compares, it is likely more efficient than the `LOWER()` workaround that we've
 all been using for years, and it neater, too. Using this type, it will now be
 much easier to create, e.g, an [email domain], like so:
 
-    CREATE OR REPLACE FUNCTION is_email(text)
-    RETURNS BOOLEAN
-    AS $$
-        use Email::Valid;
-        return TRUE if Email::Valid->address( $_[0] );
-        return FALSE;
-    $$ LANGUAGE 'plperlu' STRICT IMMUTABLE;
+``` postgres
+CREATE OR REPLACE FUNCTION is_email(text)
+RETURNS BOOLEAN
+AS $$
+    use Email::Valid;
+    return TRUE if Email::Valid->address( $_[0] );
+    return FALSE;
+$$ LANGUAGE 'plperlu' STRICT IMMUTABLE;
 
-    CREATE DOMAIN email AS CITEXT CHECK ( is_email( value ) );
+CREATE DOMAIN email AS CITEXT CHECK ( is_email( value ) );
+```
 
 No more nasty workarounds to account for the lack of case-insensitive
 comparisons for text types. It works great for time zones and other data types
 that are defined to compare case-insensitively:
 
-    CREATE OR REPLACE FUNCTION is_timezone( tz TEXT ) RETURNS BOOLEAN as $$
-    BEGIN
-      PERFORM now() AT TIME ZONE tz;
-      RETURN TRUE;
-    EXCEPTION WHEN invalid_parameter_value THEN
-      RETURN FALSE;
-    END;
-    $$ language plpgsql STABLE;
+``` postgres
+CREATE OR REPLACE FUNCTION is_timezone( tz TEXT ) RETURNS BOOLEAN as $$
+BEGIN
+  PERFORM now() AT TIME ZONE tz;
+  RETURN TRUE;
+EXCEPTION WHEN invalid_parameter_value THEN
+  RETURN FALSE;
+END;
+$$ language plpgsql STABLE;
 
-    CREATE DOMAIN timezone AS CITEXT
-    CHECK ( is_timezone( value ) );
+CREATE DOMAIN timezone AS CITEXT
+CHECK ( is_timezone( value ) );
+```
 
 And that should just work!
 

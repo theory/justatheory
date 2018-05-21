@@ -16,32 +16,36 @@ limits of the current implementation of [HOP::Parser].
 
 It started out simply enough. I added this tokens to my lexer:
 
-            [ EMOP => qr/[_]{1,2}|[*]{1,2}/ ],
+``` perl
+        [ EMOP => qr/[_]{1,2}|[*]{1,2}/ ],
+```
 
 The [Markdown syntax] calls for emphasized text to be bracketed one star or
 underscore, and strong text to be bracketed by two stars or underscores. With
 this simple “emphasis operator” token, I was able to write an emphasis parser
 like this:
 
-    my $joiner  = sub { join '', @_ };
-    my $sstar   = absorb match EMOP => '*';
-    my $suscore = absorb match EMOP => '_';
-    my $not_em;
-    my $Not_em = parser { $not_em->(@_) };
+``` perl
+my $joiner  = sub { join '', @_ };
+my $sstar   = absorb match EMOP => '*';
+my $suscore = absorb match EMOP => '_';
+my $not_em;
+my $Not_em = parser { $not_em->(@_) };
 
-    my $emphasis = T(
-        alternate(
-            concatenate( $sstar,   $Not_em, $sstar   ),
-            concatenate( $suscore, $Not_em, $suscore ),
-        ),
-        sub { "<em>$_[0]</em>" }
-    );
+my $emphasis = T(
+    alternate(
+        concatenate( $sstar,   $Not_em, $sstar   ),
+        concatenate( $suscore, $Not_em, $suscore ),
+    ),
+    sub { "<em>$_[0]</em>" }
+);
 
-    # omitted: definition of $strong;
+# omitted: definition of $strong;
 
-    $not_em = T(plus( T( alternate(
-        $text, $code, $strong
-    ), $joiner, ) ), $joiner);
+$not_em = T(plus( T( alternate(
+    $text, $code, $strong
+), $joiner, ) ), $joiner);
+```
 
 (The `plus()` parser is in [my fork of HOP::Parser on GitHub].) The parser for
 `<strong>` is similar. And it works reasonably well for simple examples such as:
@@ -72,44 +76,52 @@ closing ones must be preceded by a non-space character. So my first thought was
 to use lookahead and lookbehind in the parser to find left and right emphasis
 operators, like so:
 
-            [ EMLOP => qr/(?<=[^\s_])[_]{1,2}|(?<=[^\s*])[*]{1,2}/ ],
-            [ EMROP => qr/[_]{1,2}(?=[^\s_])|[*]{1,2}(?=[^\s*])/ ],
+``` perl
+        [ EMLOP => qr/(?<=[^\s_])[_]{1,2}|(?<=[^\s*])[*]{1,2}/ ],
+        [ EMROP => qr/[_]{1,2}(?=[^\s_])|[*]{1,2}(?=[^\s*])/ ],
+```
 
 And then I changed the parser to this:
 
-    my $lstar  = absorb match EMLOP => '*';
-    my $rstar  = absorb match EMROP => '*';
-    my $lscore = absorb match EMLOP => '_';
-    my $rscore = absorb match EMROP => '_';
+``` perl
+my $lstar  = absorb match EMLOP => '*';
+my $rstar  = absorb match EMROP => '*';
+my $lscore = absorb match EMLOP => '_';
+my $rscore = absorb match EMROP => '_';
 
-    my $emphasis = T(
-        alternate(
-            concatenate( $lstar,  $Not_em, $rstar  ),
-            concatenate( $lscore, $Not_em, $rscore ),
-        ),
-        sub { "<em>$_[0]</em>" }
-    );
+my $emphasis = T(
+    alternate(
+        concatenate( $lstar,  $Not_em, $rstar  ),
+        concatenate( $lscore, $Not_em, $rscore ),
+    ),
+    sub { "<em>$_[0]</em>" }
+);
+```
 
 Again, this works with the simple examples, but now I'm getting different
 issues. For example, whereas “\_\_\*word\*\_\_” should be lexed as
 
-    [
-      ['EMLOP,   '__'  ],
-      ['EMLOP',  '*'   ],
-      ['STRING', 'this'],
-      ['EMROP',  '*'   ],
-      ['EMROP,   '__'  ],
-    ]
+``` perl
+[
+    ['EMLOP,   '__'  ],
+    ['EMLOP',  '*'   ],
+    ['STRING', 'this'],
+    ['EMROP',  '*'   ],
+    ['EMROP,   '__'  ],
+]
+```
 
 But instead comes out as:
 
-    [
-      ['STRING', '__'  ],
-      ['EMROP',  '*'   ],
-      ['STRING', 'this'],
-      ['EMROP',  '*'   ],
-      ['STRING', '__'  ],
-    ]
+``` perl
+[
+    ['STRING', '__'  ],
+    ['EMROP',  '*'   ],
+    ['STRING', 'this'],
+    ['EMROP',  '*'   ],
+    ['STRING', '__'  ],
+]
+```
 
 Note that it's not finding any left operators there! There are a number of
 examples where the lexed tokens are just inadequate, leading to parse failures.
@@ -129,41 +141,47 @@ though I had hoped to avoid it even then, since it means a *lot* more tokens and
 a lot more work for the lexer. But I decided to give it a try. I changed the
 relevant bits of the lexer to:
 
-            [ SPACE => qr/[\t ]+/ ],
-            [ EMOP  => qr/[_]{1,2}|[*]{1,2}/ ],
+``` perl
+        [ SPACE => qr/[\t ]+/ ],
+        [ EMOP  => qr/[_]{1,2}|[*]{1,2}/ ],
+```
 
 (I'm ignoring newlines because they're already handled elsewhere in the lexer.)
 This at least makes the lexing much simpler, and there are no unexpected tokens.
 With that, I went about trying to coerce the parser to properly deal with those
 tokens:
 
-    my $space     = match 'SPACE';
-    my $neg_space = neg_lookahead $space;
-    my $sstar     = absorb match EMOP => '*';
-    my $suscore   = absorb match EMOP => '_';
-    my $not_em;
-    my $Not_em = parser { $not_em->(@_) };
+``` perl
+my $space     = match 'SPACE';
+my $neg_space = neg_lookahead $space;
+my $sstar     = absorb match EMOP => '*';
+my $suscore   = absorb match EMOP => '_';
+my $not_em;
+my $Not_em = parser { $not_em->(@_) };
 
-    my $emphasis = T(
-        alternate(
-            concatenate( $sstar,   $neg_space, $Not_em, $sstar   ),
-            concatenate( $suscore, $neg_space, $Not_em, $suscore ),
-        ),
-        sub { "<em>$_[0]</em>" }
-    );
+my $emphasis = T(
+    alternate(
+        concatenate( $sstar,   $neg_space, $Not_em, $sstar   ),
+        concatenate( $suscore, $neg_space, $Not_em, $suscore ),
+    ),
+    sub { "<em>$_[0]</em>" }
+);
+```
 
 That `neg_lookahead()` parser-builder was my attempt to implement a negative
 lookahead assertion. This is so that the left emphasis operator is only
 identified as such if it is *not* followed by a space. It looks like this:
 
-    sub neg_lookahead {
-        my $p = ref $_[0] eq 'CODE' ? shift : lookfor @_;
-        parser {
-            my $input = shift or return;
-            my @ret = eval { $p->($input) };
-            return @ret ? () : (undef, $input);
-        },
-    }
+``` perl
+sub neg_lookahead {
+    my $p = ref $_[0] eq 'CODE' ? shift : lookfor @_;
+    parser {
+        my $input = shift or return;
+        my @ret = eval { $p->($input) };
+        return @ret ? () : (undef, $input);
+    },
+}
+```
 
 I also had to change my `$text` parser, which is included in `$not_em`, to
 recognize EMOP tokens and stringify them, since they can now sometimes be
@@ -191,8 +209,7 @@ parser, but hints and suggestions would be greatly appreciated!
 If you're curious enough, the code, in progress, is [here].
 
   [some]: /computers/markup/modest-markdown-proposal.html
-    "A Modest Proposal for Markdown Definition
-    Lists"
+    "A Modest Proposal for Markdown Definition Lists"
   [ideas]: /computers/markup/markdown-table-rfc.html
     "RFC: A Simple Markdown Table Format"
   [Markdown]: http://daringfireball.net/projects/markdown/

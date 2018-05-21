@@ -21,5 +21,7 @@ C'est mois, in the first of a series for the [iovation blog](https://www.iovatio
 
 The post covers encryption, access control, and tokenization.
 
-[Safe Harbor]: https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy_Principles "Wikipedia: “International Safe Harbor Privacy Principles”"
-[GDPR]: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation "Wikipedia: “General Data Protection Regulation”"
+  [Safe Harbor]: https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy_Principles
+    "Wikipedia: “International Safe Harbor Privacy Principles”"
+  [GDPR]: https://en.wikipedia.org/wiki/General_Data_Protection_Regulation
+    "Wikipedia: “General Data Protection Regulation”"

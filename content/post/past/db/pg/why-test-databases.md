@@ -3,7 +3,7 @@ date: 2009-03-11T04:35:41Z
 slug: why-test-databases
 title: Why Test Databases?
 aliases: [/computers/databases/postgresql/why-test-databases.html]
-tags: [Postgres, testing, unit testing, database, pgTAP]
+tags: [Postgres, testing, unit testing, databases, pgTAP]
 type: post
 ---
 

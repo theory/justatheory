@@ -3,7 +3,7 @@ date: 2009-11-05T14:00:00Z
 slug: sql-view-aggregate-magic
 title: "My Catalyst Tutorial: Add Authors to the View"
 aliases: [/computers/programming/perl/catalyst/sql-view-aggregate-magic.html]
-tags: [Perl, Catalyst, Template::Declare, database, DBI, Postgres, SQL]
+tags: [Perl, Catalyst, Template::Declare, databases, DBI, Postgres, SQL]
 type: post
 ---
 

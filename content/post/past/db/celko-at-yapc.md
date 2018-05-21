@@ -3,7 +3,7 @@ date: 2009-05-13T22:45:57Z
 slug: celko-at-yapc
 title: Learn Mad Database Skillz at YAPC::NA 2009
 aliases: [/computers/databases/celko-at-yapc.html]
-tags: [databases, Perl, SQL, Joe Celko, database, RDBMS]
+tags: [databases, Perl, SQL, Joe Celko, databases, RDBMS]
 type: post
 ---
 

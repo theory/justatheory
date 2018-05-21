@@ -3,7 +3,7 @@ date: 2009-10-21T17:37:48Z
 slug: dbix-connector-updated
 title: DBIx::Connector Updated
 aliases: [/computers/programming/perl/modules/dbix-connector-updated.html]
-tags: [Perl, DBIx::Connector, DBI, database, connectivity, transactions]
+tags: [Perl, DBIx::Connector, DBI, databases, connectivity, transactions]
 type: post
 ---
 

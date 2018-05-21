@@ -3,7 +3,7 @@ date: 2013-06-21T00:03:00Z
 slug: sqitch-list
 title: Sqitch Mail List
 aliases: [/computers/databases/sqitch-list.html]
-tags: [Sqitch, database, change management]
+tags: [Sqitch, databases, change management]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2005-12-06T04:52:29Z
 slug: get-relational
 title: Let's get Relational
 aliases: [/computers/databases/get_relational.html]
-tags: [databases, C.J. Date, relational model, RDBMS, database, SQL, Tutorial D, object/relational databases]
+tags: [databases, C.J. Date, relational model, RDBMS, databases, SQL, Tutorial D, object/relational databases]
 type: post
 ---
 

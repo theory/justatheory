@@ -4,7 +4,7 @@ description: More thoughts on they whys and hows of database testing, and wonder
 slug: more-on-database-testing
 title: More on Database Testing
 aliases: [/computers/databases/more-on-database-testing.html]
-tags: [databases, database, SQL, testing, unit testing, pgTAP, Postgres]
+tags: [databases, databases, SQL, testing, unit testing, pgTAP, Postgres]
 type: post
 ---
 

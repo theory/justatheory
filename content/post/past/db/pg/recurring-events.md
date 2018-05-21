@@ -4,7 +4,7 @@ description: ~
 slug: recurring-events
 title: How to Generate Recurring Events in the Database
 aliases: [/computers/databases/postgresql/recurring_events.html]
-tags: [Postgres, database, SQL, PL/pgSQL]
+tags: [Postgres, databases, SQL, PL/pgSQL]
 type: post
 ---
 

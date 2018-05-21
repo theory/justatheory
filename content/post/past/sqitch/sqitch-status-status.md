@@ -3,7 +3,7 @@ date: 2012-07-07T12:49:37Z
 slug: sqitch-status-status
 title: "Sqitch Status: Now With Status"
 aliases: [/computers/databases/sqitch-status-status.html]
-tags: [Sqitch, SQL, database, change management]
+tags: [Sqitch, SQL, databases, change management]
 type: post
 ---
 

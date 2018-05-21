@@ -4,7 +4,7 @@ description: Database migration frameworks and ad-hoc solutions leave things…w
 slug: change-management
 title: Some Thoughts on Database Change Management
 aliases: [/computers/databases/change-management.html]
-tags: [databases, database, change management]
+tags: [databases, change management]
 type: post
 ---
 

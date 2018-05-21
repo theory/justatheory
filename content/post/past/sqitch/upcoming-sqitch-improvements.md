@@ -3,7 +3,7 @@ date: 2013-07-04T13:12:34Z
 slug: upcoming-sqitch-improvements
 title: Notes on Upcoming Sqitch Improvements
 aliases: [/computers/databases/upcoming-sqitch-improvements.html]
-tags: [Sqitch, database, change management, MySQL, Cubrid, SQLite]
+tags: [Sqitch, databases, change management, MySQL, Cubrid, SQLite]
 type: post
 ---
 

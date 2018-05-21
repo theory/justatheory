@@ -3,7 +3,7 @@ date: 2006-04-20T16:36:27Z
 slug: ordering-poll
 title: What Name Do You Use for an Order Column?
 aliases: [/computers/databases/ordering_poll.html]
-tags: [databases, SQL, database]
+tags: [databases, SQL, databases]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2013-04-10T00:27:57Z
 slug: sqitch-sqlite
 title: "Sqitch: Now with SQLite Support"
 aliases: [/computers/databases/sqitch-sqlite.html]
-tags: [Sqitch, Git, SQLite, database]
+tags: [Sqitch, Git, SQLite, databases]
 type: post
 ---
 

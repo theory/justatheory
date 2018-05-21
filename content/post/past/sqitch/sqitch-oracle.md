@@ -3,7 +3,7 @@ date: 2013-05-09T22:11:46Z
 slug: sqitch-oracle
 title: Sqitch on Oracle
 aliases: [/computers/databases/sqitch-oracle.html]
-tags: [Sqitch, Oracle, database, SQL, change management]
+tags: [Sqitch, Oracle, databases, SQL, change management]
 type: post
 ---
 

@@ -1,0 +1,40 @@
+#!/usr/bin/env perl
+
+use v5.20;
+use warnings;
+use utf8;
+
+use File::Find;
+use File::Temp qw(tempfile);
+use File::Copy qw(move);
+
+my ($from, $to) = @ARGV;
+die "Usage: $0 [FROM_TAG] [TO_TAG]\n" unless $from && $to;
+
+my $dir =  'content';
+die "Content directory does not exist\n" unless -d $dir;
+
+find sub {
+    return unless /[.]md\z/;
+    return if -d;
+    my $fn = $_;
+
+    open my $in, '<:encoding(UTF-8)', $fn
+        or die "Cannot open $File::Find::name: $!\n";
+    my ($out, $tmp) = tempfile();
+    binmode $out, ':encoding(UTF-8)';
+
+    my @yaml;
+    while (<$in>) {
+        if (/^tags:\s+[[]([^]]+)[]]$/) {
+            my @tags = map { $_ eq $from ? $to : $_ } split /\s*,\s*/ => $1;
+            say {$out} "tags: [", join(', ', @tags), ']';
+            last;
+        }
+        print {$out} $_;
+        last if m/^\w*$/;
+    }
+    print {$out} join '', <$in>;
+    close $out or die "Cannot close $File::Find::name: $!\n";
+    move $tmp, $fn;
+}, $dir;

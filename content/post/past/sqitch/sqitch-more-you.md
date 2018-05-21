@@ -3,7 +3,7 @@ date: 2012-08-02T14:08:28Z
 slug: sqitch-more-you
 title: "Sqitch v0.80: Now With More You"
 aliases: [/computers/databases/sqitch-more-you.html]
-tags: [Sqitch, SQL, change management, you, database]
+tags: [Sqitch, SQL, change management, you, databases]
 type: post
 ---
 

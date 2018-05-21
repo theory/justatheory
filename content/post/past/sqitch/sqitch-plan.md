@@ -3,7 +3,7 @@ date: 2012-05-22T21:31:46Z
 slug: sqitch-plan
 title: "Sqitch Update: The Plan"
 aliases: [/computers/databases/sqitch-plan.html]
-tags: [Sqitch, SQL, database, VCS, Git]
+tags: [Sqitch, SQL, databases, VCS, Git]
 type: post
 ---
 

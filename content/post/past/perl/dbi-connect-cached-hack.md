@@ -3,7 +3,7 @@ date: 2009-09-13T09:31:48Z
 slug: dbi-connect-cached-hack
 title: Keep DBI's connect_cached From Horking Transactions
 aliases: [/computers/programming/perl/dbi-connect-cached-hack.html]
-tags: [Perl, DBI, database, caching]
+tags: [Perl, DBI, databases, caching]
 type: post
 ---
 

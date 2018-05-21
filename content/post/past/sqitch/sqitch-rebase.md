@@ -3,7 +3,7 @@ date: 2012-12-04T07:27:27Z
 slug: sqitch-rebase
 title: "Sqitch Update: All Your Rebase Are…Never Mind"
 aliases: [/computers/databases/sqitch-rebase.html]
-tags: [Sqitch, SQL, change management, database]
+tags: [Sqitch, SQL, change management, databases]
 type: post
 ---
 

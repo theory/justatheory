@@ -8,8 +8,7 @@ Link: {{ . }}
 {{ .Site.Params.bug }}{{ with .Title }} “{{ . }}”{{ end }}
 By {{ with (or .Params.author.name .Site.Author.name) }}{{ . }}{{ end }}
 {{ .Date.Format "Monday, 2 Jan 2006"}}
-{{ .Permalink }}
-{{- with .Params.tags }}
+{{ .Permalink }}{{ with .Params.tags }}
 
 More about...
 {{ range . }}

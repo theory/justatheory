@@ -3,7 +3,7 @@ date: 2009-01-29T19:16:30Z
 slug: blog-restored
 title: Blog Restored, Google Analytics, FeedBurner
 aliases: [/computers/internet/weblogs/blog-restored.html]
-tags: [Meta, failure, Blosxom, Google Analytics, FeedBurner, Linux, Debian]
+Tags: [Just a Theory, failure, Blosxom, Google Analytics, FeedBurner, Linux, Debian]
 type: post
 ---
 

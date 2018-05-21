@@ -3,7 +3,7 @@ date: 2004-06-04T00:39:23Z
 slug: rewrite-rules
 title: Blosxom Rewrite Rules
 aliases: [/computers/internet/weblogs/blosxom/rewrite_rules.html]
-tags: [Meta, Blosxom, mod_rewrite]
+Tags: [Just a Theory, Blosxom, mod_rewrite]
 type: post
 ---
 

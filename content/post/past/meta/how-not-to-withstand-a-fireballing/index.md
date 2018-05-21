@@ -3,7 +3,7 @@ date: 2012-04-04T03:34:35Z
 slug: how-not-to-withstand-a-fireballing
 title: How Not to Withstand a Fireballing
 aliases: [/computers/blog/how-not-to-withstand-a-fireballing.html]
-tags: [Meta, Daring Fireball, aaaaauuugh]
+Tags: [Just a Theory, Daring Fireball, aaaaauuugh]
 type: post
 ---
 

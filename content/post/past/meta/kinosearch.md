@@ -3,7 +3,7 @@ date: 2006-05-04T23:13:30Z
 slug: kinosearch
 title: Search Powered by KinoSearch
 aliases: [/computers/blog/kinosearch.html]
-tags: [Meta, Kinosearch, Google, Lucene, Doug Cutting, Marvin Humphries]
+Tags: [Just a Theory, Kinosearch, Google, Lucene, Doug Cutting, Marvin Humphries]
 type: post
 ---
 

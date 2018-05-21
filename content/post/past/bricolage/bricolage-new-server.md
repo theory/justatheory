@@ -1,7 +1,7 @@
 --- 
 date: 2004-06-11T02:29:07Z
 slug: bricolage-new-server
-title: Bricolage.cc Has a New Server
+title: bricolage.cc Has a New Server
 aliases: [/bricolage/site/new_server.html]
 tags: [Bricolage, API]
 type: post

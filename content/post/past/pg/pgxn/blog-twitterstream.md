@@ -3,7 +3,7 @@ date: 2010-08-04T16:51:39Z
 slug: blog-twitterstream
 title: PGXN Blog and Twitterstream
 aliases: [/computers/databases/postgresql/pgxn/blog-twitterstream.html]
-tags: [Postgres, PGXN, Meta]
+tags: [Postgres, PGXN, Just a Theory]
 type: post
 ---
 

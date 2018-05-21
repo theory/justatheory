@@ -3,7 +3,7 @@ date: 2008-01-21T18:10:44Z
 slug: im-back
 title: I'm Ba-aack!
 aliases: [/autobiographical/im_back.html]
-tags: [Personal, work, Values Of n, Stikkit, I Want Sandy, Bricolage, Kineticode, Meta]
+tags: [Personal, work, Values Of n, Stikkit, I Want Sandy, Bricolage, Kineticode, Just a Theory]
 type: post
 ---
 

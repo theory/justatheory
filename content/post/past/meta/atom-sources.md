@@ -3,7 +3,7 @@ date: 2010-06-06T01:12:29Z
 slug: atom-sources
 title: Atom Sources
 aliases: [/computers/internet/weblogs/atom-sources.html]
-tags: [Meta, Atom, RSS, RSS2, source code, XML, feeds]
+Tags: [Just a Theory, Atom, RSS, RSS2, source code, XML, feeds]
 type: post
 ---
 

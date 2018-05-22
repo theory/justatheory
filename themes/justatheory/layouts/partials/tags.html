@@ -1,11 +1,10 @@
-{{ if .doc.Params.tags }}
-{{- $abs := .abs }}
+{{ with .Params.tags }}
         <div class="tags">
             <h5>More about…</h5>
             <ul>
-                {{- range .doc.Params.tags }}
+                {{- range . }}
                 {{- $path := (delimit (slice "" "tags" (. | urlize) "") "/") }}
-                <li><a href="{{ if $abs }}{{ absURL $path }}{{ else }}{{ relURL $path }}{{ end }}">{{ . }}</a></li>
+                <li><a href="{{ absURL $path }}">{{ . }}</a></li>
                 {{- end }}
             </ul>
         </div>

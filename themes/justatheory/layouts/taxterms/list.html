@@ -19,7 +19,7 @@
 				{{- end }}{{ end }}
 			{{- end }}
 			{{- with $.Scratch.Get "yearTags" }}
-			<h4>Top Ten Recent Tags</h4>
+			<h4>Recently covered subjects</h4>
 			<ul class="tags rec">
 				{{- $.Scratch.Set "limit" 0 }}
 				{{- range sort . ".cnt" "desc" }}
@@ -29,10 +29,8 @@
 					{{- end }}
 				{{- end }}
 			</ul>
-			<h4>All Time Top Ten Tags</h4>
-			{{- else }}
-			<h4>Top Ten Tags</h4>
 			{{- end }}
+			<h4>All-time leading topics</h4>
 			<ul class="tags rec">
 				{{- $.Scratch.Set "limit" 0 }}
 				{{- range $key, $value := .Data.Terms.ByCount }}
@@ -42,7 +40,7 @@
 					{{- end }}
 				{{- end }}
 			</ul>
-			<h2>All Tags</h2>
+			<h2>Complete List</h2>
 			{{-  $.Scratch.Set "chars" (slice) }}
 			{{- range .Data.Pages }}
 				{{- $.Scratch.Add "chars" (upper (printf "%c" (index .Title 0))) }}

@@ -107,6 +107,6 @@ Let's find out if I'm as good as my word.
 [kottke.org]: https://kottke.org/ "kottke.org ♥ 20 years of hypertext products"
 [all the tags]: /tags/ "Just Theory Tags"
 [Archives]: /archives/ "Previously, on Just a Theory"
-[AWS CloudFront]: https://aws.amazon.com/cloudfront/ "Amazon CloudFront"
+[CloudFront]: https://aws.amazon.com/cloudfront/ "Amazon CloudFront"
 [Let's Encrypt]: https://letsencrypt.org "Let’s Encrypt: Free, automated, and open Certificate Authority."
 [Fireballed]: /2012/04/how-not-to-withstand-a-fireballing/ "How Not to Withstand a Fireballing"

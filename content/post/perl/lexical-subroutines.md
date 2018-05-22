@@ -10,19 +10,23 @@ type: post
 Ricardo Signes:
 
 > One of the big new experimental features in Perl 5.18.0 is lexical
->  subroutines. In other words, you can write this:
+> subroutines. In other words, you can write this:
 >
->     my sub quickly { ... }
->     my @sorted = sort quickly @list;
-> 
->     my sub greppy (&@) { ... }
->     my @grepped = greppy { ... } @input;
+> ``` perl
+my sub quickly { ... }
+my @sorted = sort quickly @list;
+
+my sub greppy (&@) { ... }
+my @grepped = greppy { ... } @input;
+```
 >
 > These two examples show cases where lexical *references* to anonymous
 > subroutines would not have worked. The first argument to `sort` must be a
 > block or a subroutine *name*, which leads to awful code like this:
-> 
->     sort { $subref->($a, $b) } @list
+>
+> ``` perl
+sort { $subref->($a, $b) } @list
+```
 > 
 > With our greppy, above, we get to benefit from the parser-affecting
 > behaviors of subroutine prototypes.

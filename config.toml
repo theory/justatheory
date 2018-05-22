@@ -39,9 +39,6 @@ disableKinds = ["section"]
 [outputFormats.atom]
   mediatype = "application/atom"
   baseName = "feed"
-  # Add "xml" to application/atom+xml and comment out application/xml in /etc/apache2/mime.types
-  # Check https://github.com/aws/aws-cli/issues/1249 for better workarounds
-
 [outputFormats.json]
   mediatype = "application/json"
   baseName = "feed"

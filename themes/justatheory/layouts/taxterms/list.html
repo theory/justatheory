@@ -4,7 +4,35 @@
 			<h1 class="title">{{ .Title }}</h1>
 		</header>
 		<div id="tags">
-			<p>Most {{ .Site.Title }} posts have been “tagged” with keywords. If you’re interested in only a subset of posts, just read the relevant tag pages. You can even subscribe to a tag — just point your feed reader at it. Here are the top ten tags:</p>
+			<p>Most {{ .Site.Title }} posts have been “tagged” with keywords. If you’re interested in only a subset of posts, just read the relevant tag pages. You can even subscribe to a tag — just point your feed reader at it.</p>
+			{{- $yearAgo := now.AddDate (int (mul -1 .Site.Params.recentTagYears)) 0 0 }}
+			{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.listTypes }}
+			{{- $.Scratch.Set "yearTags" (dict) }}
+			{{- range $pages }}
+				{{- if gt .Date $yearAgo }}{{ range .Params.tags }}
+					{{ if isset ($.Scratch.Get "yearTags") . }}
+						{{- $c := index ( $.Scratch.Get "yearTags" ) . }}
+						{{- $.Scratch.SetInMap "yearTags" . (dict "tag" . "cnt" (add 1 (index $c "cnt"))) }}
+					{{- else }}
+						{{- $.Scratch.SetInMap "yearTags" . (dict "tag" . "cnt" 1) }}
+					{{- end }}
+				{{- end }}{{ end }}
+			{{- end }}
+			{{- with $.Scratch.Get "yearTags" }}
+			<h4>Top Ten Recent Tags</h4>
+			<ul class="tags rec">
+				{{- $.Scratch.Set "limit" 0 }}
+				{{- range sort . ".cnt" "desc" }}
+					{{- $.Scratch.Set "limit" (add ($.Scratch.Get "limit") 1) }}
+					{{- if le ($.Scratch.Get "limit") 10 }}
+				<li><a href="/tags/{{ .tag | urlize }}/">{{ .tag }}</a></li>
+					{{- end }}
+				{{- end }}
+			</ul>
+			<h4>All Time Top Ten Tags</h4>
+			{{- else }}
+			<h4>Top Ten Tags</h4>
+			{{- end }}
 			<ul class="tags rec">
 				{{- $.Scratch.Set "limit" 0 }}
 				{{- range $key, $value := .Data.Terms.ByCount }}

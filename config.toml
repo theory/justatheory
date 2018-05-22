@@ -25,6 +25,7 @@ disableKinds = ["section"]
   github = "theory"
   listTypes = ["post"]
   feedLimit = 32
+  recentTagYears = 3
   icon = "/icon-512x512.png"
   favicon = "/icon-64x64.png"
 

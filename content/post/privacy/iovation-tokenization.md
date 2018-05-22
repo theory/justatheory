@@ -2,7 +2,7 @@
 title: "iovation Tokenization"
 date: 2018-04-16T12:00:00Z
 description: First in a series for iovation of posts on tokenization and the GDPR.
-tags: [Tokenization, Privacy GDPR, Security, Pseudonymization, iovation, Safe Harbor]
+tags: [Tokenization, Privacy, GDPR, Security, Pseudonymization, iovation, Safe Harbor]
 type: post
 link: https://www.iovation.com/blog/thinking-through-personal-data-protection
 ---

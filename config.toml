@@ -34,6 +34,8 @@ disableKinds = ["section"]
 [mediaTypes]
 [mediaTypes."application/atom"]
   suffix = "xml"
+[mediaTypes."text/plain"]
+  suffix = "text"
 
 [outputFormats]
 [outputFormats.atom]
@@ -43,12 +45,18 @@ disableKinds = ["section"]
   mediatype = "application/json"
   baseName = "feed"
   isPlainText = true
+[outputFormats.text]
+  mediatype = "text/plain"
+  baseName = "copy"
+  suffix = "text"
+  isPlainText = true
 
 [outputs]
   home = ["html", "json", "atom"]
   section = ["html", "json", "atom"]
   taxonomy = ["html", "json", "atom"]
   taxonomyTerm = ["html", "json", "atom"]
+  page = ["html", "text"]
 
 [taxonomies]
     tag = "tags"

@@ -1,0 +1,4 @@
+{{ .Title }}
+{{ replaceRE "." "=" .Title }}
+
+{{ partial "entry.text" . }}

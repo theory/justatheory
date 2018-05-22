@@ -1,0 +1,19 @@
+{{ with .Params.link -}}
+Link: {{ . }}
+{{ end }}
+{{ trim .RawContent " \t\n\r"  }}
+
+-------------------------------------------------------------------------------
+
+{{ .Site.Params.bug }} {{ .Date.Format "Monday, 2 Jan 2006"}}
+By {{ with (or .Params.author.name .Site.Author.name) }}{{ . }}{{ end }}
+{{ .Permalink }}{{ with .Params.tags }}
+{{- $.Scratch.Set "taglen" 0 }}
+{{- range . }}{{ if gt (len .) ($.Scratch.Get "taglen") }}{{- $.Scratch.Set "taglen" (len .) }}{{ end }}{{ end }}
+{{- $fmt := printf "%%-%dv" (add 2 ($.Scratch.Get "taglen")) }}
+
+More about...
+{{ range . }}
+* {{ printf $fmt (delimit (slice . ":") "") }}{{ absURL (delimit (slice "" "tags" (. | urlize) "") "/") }}
+{{- end }}
+{{- end}}

@@ -37,4 +37,5 @@ lookup and dispatch! This just might alleviate the confusion of methods and
 subs, as [chromatic complained about just yesterday]. Probably doesn't solve
 the problem for imported subs, though.
 
-[chromatic complained about just yesterday]: http://www.modernperlbooks.com/mt/2013/09/functions-shouldnt-be-methods-yet-another-reminder.html
+  [chromatic complained about just yesterday]:
+    http://www.modernperlbooks.com/mt/2013/09/functions-shouldnt-be-methods-yet-another-reminder.html

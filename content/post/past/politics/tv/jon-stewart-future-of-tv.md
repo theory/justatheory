@@ -10,5 +10,6 @@ via: { name: gnat, href: http://radar.oreilly.com/nat/, title: Nat’s Radar }
 
 [Jon Stewart and the Future of Television].
 
-  [Jon Stewart and the Future of Television]: http://www.wired.com/wired/archive/13.09/stewart.html
+  [Jon Stewart and the Future of Television]:
+    http://www.wired.com/wired/archive/13.09/stewart.html
     "Reinventing Television"

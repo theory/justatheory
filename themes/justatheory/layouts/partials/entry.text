@@ -1,13 +1,14 @@
-{{ with .Params.link -}}
-Link: {{ . }}
+{{ with .Params.link }}
+  Link: {{ . }}
 {{ end }}
 {{ trim .RawContent " \t\n\r"  }}
 
 -------------------------------------------------------------------------------
 
 {{ .Site.Params.bug }} {{ .Date.Format "Monday, 2 Jan 2006"}}
-By {{ with (or .Params.author.name .Site.Author.name) }}{{ . }}{{ end }}
-{{ .Permalink }}{{ with .Params.tags }}
+By {{ with (or .Params.author.name .Site.Author.name) }}{{ . }}{{ end }}{{ with .Params.via }}
+Via [{{ .name }}]({{ .href }}{{ with .title }} "{{ . }}"{{ end }})
+{{ end }}{{ .Permalink }}{{ with .Params.tags }}
 {{- $.Scratch.Set "taglen" 0 }}
 {{- range . }}{{ if gt (len .) ($.Scratch.Get "taglen") }}{{- $.Scratch.Set "taglen" (len .) }}{{ end }}{{ end }}
 {{- $fmt := printf "%%-%dv" (add 2 ($.Scratch.Get "taglen")) }}

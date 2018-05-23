@@ -110,10 +110,10 @@ when that data changes. We are, after all, talking about infrequently-updated
 data. Frequently-updated data should have separate interfaces provided by
 applications to change the data. Otherwise, how static is it, really?
 
-[Sqitch]: http://sqitch.org/
-[our]: http://iovation.com/
-[`oracle_fdw`]: http://pgxn.org/extension/oracle_fdw
-[pgTAP]: http://pgtap.org/
-[deploy hooks]: https://github.com/theory/sqitch/issues/96
-[Git hooks]: http://git-scm.com/docs/githooks
-[non-SQL scripts]: https://github.com/theory/sqitch/issues/1
+  [Sqitch]: http://sqitch.org/
+  [our]: http://iovation.com/
+  [`oracle_fdw`]: http://pgxn.org/extension/oracle_fdw
+  [pgTAP]: http://pgtap.org/
+  [deploy hooks]: https://github.com/theory/sqitch/issues/96
+  [Git hooks]: http://git-scm.com/docs/githooks
+  [non-SQL scripts]: https://github.com/theory/sqitch/issues/1

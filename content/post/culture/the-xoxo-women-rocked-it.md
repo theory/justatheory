@@ -43,16 +43,16 @@ help push it forward.
 
 <small>This post [originally appeared] on *Svbtle.*</small>
 
-[XOXO]: http://xoxofest.com/
-[Frank Chimero]: http://www.instapaper.com/read/415951464
-[Maciej Ceglowski]: https://blog.pinboard.in/2013/09/xoxo_talk_notes/
-[Kelly Kend]: https://medium.com/xoxo-festival/626deff2e75e
-[impostor syndrome]: http://en.wikipedia.org/wiki/Impostor_syndrome
-[Vi Hart]: http://www.youtube.com/user/Vihart
-[Erika Moen]: http://www.erikamoen.com
-[Molly Crabapple]: http://mollycrabapple.com/
-[Julie Uhrman]: https://twitter.com/juhrman
-[Christina Xu]: https://twitter.com/xuhulk
-[Andy]: http://waxy.org/
-[Ouya]: https://www.ouya.tv/
-[originally appeared]: https://theory.svbtle.com/the-xoxo-women-rocked-it
+  [XOXO]: http://xoxofest.com/
+  [Frank Chimero]: http://www.instapaper.com/read/415951464
+  [Maciej Ceglowski]: https://blog.pinboard.in/2013/09/xoxo_talk_notes/
+  [Kelly Kend]: https://medium.com/xoxo-festival/626deff2e75e
+  [impostor syndrome]: http://en.wikipedia.org/wiki/Impostor_syndrome
+  [Vi Hart]: http://www.youtube.com/user/Vihart
+  [Erika Moen]: http://www.erikamoen.com
+  [Molly Crabapple]: http://mollycrabapple.com/
+  [Julie Uhrman]: https://twitter.com/juhrman
+  [Christina Xu]: https://twitter.com/xuhulk
+  [Andy]: http://waxy.org/
+  [Ouya]: https://www.ouya.tv/
+  [originally appeared]: https://theory.svbtle.com/the-xoxo-women-rocked-it

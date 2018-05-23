@@ -15,10 +15,16 @@ instance of Subversion against which to test it; nor do I have any SMTP
 servers to throw test messages at.
 
 In short, it's past time I relinquished maintenance of this module to someone
-with a vested interest in its continued use. Is that you? Do you need to keep SVN::Notify running for your projects, and have a few [TUITs] to fix the occasional bug or security issue? If so, drop me a line (david @ this domain). I’d be happy to transfer the repository.
+with a vested interest in its continued use. Is that you? Do you need to keep
+SVN::Notify running for your projects, and have a few [TUITs] to fix the
+occasional bug or security issue? If so, drop me a line (david @ this domain).
+I’d be happy to transfer the repository.
 
-[since 2009]: http://justatheory.com/computers/vcs/git/bricolage-svn-to-git.html "Just a Theory: “Migrating Bricolage Subversion to Git”"
-[SVN::Notify]: https://metacpan.org/release/SVN-Notify "SVN-Notify on MetaCPAN"
-[hosted on GitHub]: https://github.com/theory/svn-notify/ "svn-notify Project on GitHub"
-[since 2011]: https://github.com/theory/svn-notify/commit/32347ad "SVN-Notify Commit: “Note move to GitHub.”"
-[TUITs]: https://en.wiktionary.org/wiki/tuit "Wictionary: “tuit”"
+  [since 2009]: http://justatheory.com/computers/vcs/git/bricolage-svn-to-git.html
+    "Just a Theory: “Migrating Bricolage Subversion to Git”"
+  [SVN::Notify]: https://metacpan.org/release/SVN-Notify "SVN-Notify on MetaCPAN"
+  [hosted on GitHub]: https://github.com/theory/svn-notify/
+    "svn-notify Project on GitHub"
+  [since 2011]: https://github.com/theory/svn-notify/commit/32347ad
+    "SVN-Notify Commit: “Note move to GitHub.”"
+  [TUITs]: https://en.wiktionary.org/wiki/tuit "Wictionary: “tuit”"

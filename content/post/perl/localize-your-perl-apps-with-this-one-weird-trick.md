@@ -7,7 +7,7 @@ type: post
 ---
 
 Nota Bene: This is a republication of a [post that originally appeared in the
-2013 Perl Advent Calendar](http://perladvent.org/2013/2013-12-09.html).
+[2013 Perl Advent Calendar].
 
 ---
 
@@ -137,8 +137,8 @@ BEGIN {
 use Awesome::Module;
 ```
 
-Locale::TextDomain will notice the locale and select the appropriate translation
-catalog at runtime.
+Locale::TextDomain will notice the locale and select the appropriate
+translation catalog at runtime.
 
 ### Is that All There Is? ###
 
@@ -297,10 +297,11 @@ the [`msg-scan`] command. Use it to create or update the template, or POT file:
 extracting gettext strings into po/Awesome-Module.pot
 ```
 
-From here on in, the resulting `.pot` file will be used by `msg-init` and `msg-merge` instead of scanning your code all over again. But keep in mind
-that, if you do maintain a POT file, future merges will be a two-step process:
-First run `msg-scan` to update the POT file, then `msg-merge` to merge its
-changes into the PO files:
+From here on in, the resulting `.pot` file will be used by `msg-init` and
+`msg-merge` instead of scanning your code all over again. But keep in mind that,
+if you do maintain a POT file, future merges will be a two-step process: First
+run `msg-scan` to update the POT file, then `msg-merge` to merge its changes
+into the PO files:
 
 ``` sh
 % dzil msg-scan
@@ -365,30 +366,57 @@ The [Dist::Zilla::LocaleTextDomain] plugin will do the rest.
     commands --- uses the [GNU gettext] utilities under the hood. You'll need a
     reasonably modern version in your path, or else it won't work.
 
-[gettext]: http://en.wikipedia.org/wiki/Gettext "Wikipedia: “gettext”"
-[l10n]: http://en.wikipedia.org/wiki/Language_localisation "Wikipedia: “Localization”"
-[i18n]: http://en.wikipedia.org/wiki/Internationalization_and_localization "Wikipedia: “Internationalization and Localization”"
-[Locale::TextDomain]: https://metacpan.org/module/Locale::TextDomain "Locale::TextDomain on CPAN"
-[comprehensive documention]: https://metacpan.org/pod/Locale::TextDomain#EXPORTED-FUNCTIONS "Locale::TextDomain Exported Functions"
-[Tom Christiansen's advice]: http://stackoverflow.com/a/6163129/79202 "Perl UTF-8 Recommendations on Stack Overflow"
-[POSIX `setlocale`]: https://metacpan.org/pod/POSIX#setlocale "POSIX on CPAN"
-[PO files]: https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html "GNU gettext: PO Files"
-[MO files]: https://www.gnu.org/software/gettext/manual/html_node/MO-Files.html "GNU gettext: MO Files"
-[sample Makefile]: https://metacpan.org/source/GUIDO/libintl-perl-1.23/sample/simplecal/po/Makefile "Sample Locale::TextDomain Makefile"
-[GNU gettext]: https://www.gnu.org/software/gettext/
-[Dist::Zilla::LocaleTextDomain]: https://metacpan.org/module/Dist::Zilla::LocaleTextDomain "Dist::Zilla::LocaleTextDomain on CPAN"
-[configuration attributes]: https://metacpan.org/pod/Dist::Zilla::Plugin::LocaleTextDomain#Configuration "Dist::Zilla LocaleTextDomain Configuration"
-[configuration docs]: https://metacpan.org/pod/Dist::Zilla::Plugin::LocaleTextDomain#Configuration "Dist::Zilla LocaleTextDomain Configuration"
-[`msg-init`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_init "dzil msg-init documentation on CPAN"
-[`msg-merge`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_merge "dzil msg-merge documentation on CPAN"
-[`msg-scan`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_scan "dzil msg-scan documentation on CPAN"
-[`msg-compile`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_compile "dzil msg-compile documentation on CPAN"
-[Module::Build]: https://metacpan.org/module/Module::Build "Module::Build on CPAN"
-[ExtUtils::MakeMaker]: https://metacpan.org/module/ExtUtils::MakeMaker "ExtUtils::MakeMaker on CPAN"
-[Locale::Maketext]: https://metacpan.org/module/Locale::Maketext "Locale::Maketext on CPAN"
-[On the state of i18n in Perl]: http://rassie.org/archives/247
-[Internationalisierungs-Framework auswählen]: http://download.steffen-winkler.de/dpws2010/I18N_STEFFENW.pod
-[English translation]: https://gist.github.com/ap/909197
-[Aristotle Pagaltzis]: http://blogs.perl.org/users/aristotle/2011/04/stop-using-maketext.html
-[German Perl Workshop 2010]: http://conferences.yapceurope.org/gpw2010/
-[GNU gettext]: https://www.gnu.org/software/gettext/
+  [2013 Perl Advent Calendar]: http://perladvent.org/2013/2013-12-09.html
+  [gettext]: http://en.wikipedia.org/wiki/Gettext "Wikipedia: “gettext”"
+  [l10n]: http://en.wikipedia.org/wiki/Language_localisation
+    "Wikipedia: “Localization”"
+  [i18n]: http://en.wikipedia.org/wiki/Internationalization_and_localization
+    "Wikipedia: “Internationalization and Localization”"
+  [Locale::TextDomain]: https://metacpan.org/module/Locale::TextDomain
+    "Locale::TextDomain on CPAN"
+  [comprehensive documention]:
+    https://metacpan.org/pod/Locale::TextDomain#EXPORTED-FUNCTIONS
+    "Locale::TextDomain Exported Functions"
+  [Tom Christiansen's advice]: http://stackoverflow.com/a/6163129/79202
+    "Perl UTF-8 Recommendations on Stack Overflow"
+  [POSIX `setlocale`]: https://metacpan.org/pod/POSIX#setlocale
+    "POSIX on CPAN"
+  [PO files]: https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html
+    "GNU gettext: PO Files"
+  [MO files]: https://www.gnu.org/software/gettext/manual/html_node/MO-Files.html
+    "GNU gettext: MO Files"
+  [sample Makefile]:
+    https://metacpan.org/source/GUIDO/libintl-perl-1.23/sample/simplecal/po/Makefile
+    "Sample Locale::TextDomain Makefile"
+  [GNU gettext]: https://www.gnu.org/software/gettext/
+  [Dist::Zilla::LocaleTextDomain]:
+    https://metacpan.org/module/Dist::Zilla::LocaleTextDomain
+    "Dist::Zilla::LocaleTextDomain on CPAN"
+  [configuration attributes]:
+    https://metacpan.org/pod/Dist::Zilla::Plugin::LocaleTextDomain#Configuration
+    "Dist::Zilla LocaleTextDomain Configuration"
+  [configuration docs]:
+    https://metacpan.org/pod/Dist::Zilla::Plugin::LocaleTextDomain#Configuration
+    "Dist::Zilla LocaleTextDomain Configuration"
+  [`msg-init`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_init
+    "dzil msg-init documentation on CPAN"
+  [`msg-merge`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_merge
+    "dzil msg-merge documentation on CPAN"
+  [`msg-scan`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_scan
+    "dzil msg-scan documentation on CPAN"
+  [`msg-compile`]: https://metacpan.org/pod/Dist::Zilla::App::Command::msg_compile
+    "dzil msg-compile documentation on CPAN"
+  [Module::Build]: https://metacpan.org/module/Module::Build
+    "Module::Build on CPAN"
+  [ExtUtils::MakeMaker]: https://metacpan.org/module/ExtUtils::MakeMaker
+    "ExtUtils::MakeMaker on CPAN"
+  [Locale::Maketext]: https://metacpan.org/module/Locale::Maketext
+    "Locale::Maketext on CPAN"
+  [On the state of i18n in Perl]: http://rassie.org/archives/247
+  [Internationalisierungs-Framework auswählen]:
+    http://download.steffen-winkler.de/dpws2010/I18N_STEFFENW.pod
+  [English translation]: https://gist.github.com/ap/909197
+  [Aristotle Pagaltzis]:
+    http://blogs.perl.org/users/aristotle/2011/04/stop-using-maketext.html
+  [German Perl Workshop 2010]: http://conferences.yapceurope.org/gpw2010/
+  [GNU gettext]: https://www.gnu.org/software/gettext/

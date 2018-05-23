@@ -18,7 +18,8 @@ chromatic:
 > between "How do I do this in Sqitch again? What's the directory layout here?"
 > and "What was I really working on?"
 
-Nice application of a `Makefile` to eliminate boilerplate. A couple of notes, though:
+Nice application of a `Makefile` to eliminate boilerplate. A couple of notes,
+though:
 
 Nice post. A couple comments and questions:
 
@@ -38,8 +39,12 @@ Nice post. A couple comments and questions:
   `sqitch add`. Another might be a Git config setting pointing to the Sqitch
   config file. Alas, I don't know when I will have the tuits to work on that.
 
-Lots of room for growth and improvement in Sqitch going forward. You post provides more food for thought.
+Lots of room for growth and improvement in Sqitch going forward. You post
+provides more food for thought.
 
-[this post]: /sqitch/2014/01/13/templating-tests-with-sqitch/ "Templating Tests with Sqitch"
-[specify Sqitch targets]: /sqitch/2014/01/09/sqitch-on-target/ "Sqitch on Target"
-[better understand and work with VCSs]: https://github.com/theory/sqitch/issues/25 "Add VCS Integration to Sqitch"
+  [this post]: /sqitch/2014/01/13/templating-tests-with-sqitch/
+    "Templating Tests with Sqitch"
+  [specify Sqitch targets]: /sqitch/2014/01/09/sqitch-on-target/
+    "Sqitch on Target"
+  [better understand and work with VCSs]:
+    https://github.com/theory/sqitch/issues/25 "Add VCS Integration to Sqitch"

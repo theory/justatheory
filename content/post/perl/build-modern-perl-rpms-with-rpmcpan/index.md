@@ -37,7 +37,9 @@ build the latest version of Perl, 5.20.1:
 ./bin/rpmcpan --version 5.20.1
 ```
 
-That will get you a nice, modern Perl RPM, named `perl520`, completely encapsulated in `/usr/local/perl520`. Want 5.18 instead: Just change the version:
+That will get you a nice, modern Perl RPM, named `perl520`, completely
+encapsulated in `/usr/local/perl520`. Want 5.18 instead: Just change the
+version:
 
 ``` sh
 ./bin/rpmcpan --version 5.18.2
@@ -85,16 +87,18 @@ need for one of our Perl apps. Add new distributions? Send a [pull request]!
 We'll be doing so as we integrate more of our Perl apps with a Modern Perl
 and leave the sad RPM past behind.
 
-[iovation]: http://iovation.com/
-[EPEL]: https://fedoraproject.org/wiki/EPEL "Extra Packages for Enterprise Linux"
-[hinky workaround]: http://grokbase.com/t/perl/perl5-porters/147gfvrd2n/encode-vs-json#20140723oncbjv4rddo66735xess5wo77a "“Encode vs. JSON” on Perl 5 Porters"
-[you can use it, too]: https://github.com/iovation/rpmcpan "rpmcpan on GitHub"
-[DevOps]: http://twitter.com/aaronblew "Aaron Blew: SRE Manager (dun dun duuuuun!)"
-[`rpmcpan` Git repository]: https://github.com/iovation/rpmcpan "rpmcpan on GitHub"
-[`dists.json` file]: https://github.com/iovation/rpmcpan/blob/master/etc/dists.json
-[Encode-Locale]: http://search.cpan.org/dist/Encode-Locale "Encode-Locale on CPAN"
-[PostgreSQL RPMs]: http://yum.postgresql.org "PostgreSQL Yum Repository"
-[README]: https://github.com/iovation/rpmcpan/blob/master/README.md "`rpmcpan README`"
-[pull request]: https://github.com/iovation/rpmcpan/pulls
-[MetaCPAN]: https://metacpan.org/
-[DBD-Pg]: http://search.cpan/org/dist/DBD-Pg/ "DBD-Pg on CPAN"
+  [iovation]: http://iovation.com/
+  [EPEL]: https://fedoraproject.org/wiki/EPEL "Extra Packages for Enterprise Linux"
+  [hinky workaround]:
+    http://grokbase.com/t/perl/perl5-porters/147gfvrd2n/encode-vs-json#20140723oncbjv4rddo66735xess5wo77a
+    "“Encode vs. JSON” on Perl 5 Porters"
+  [you can use it, too]: https://github.com/iovation/rpmcpan "rpmcpan on GitHub"
+  [DevOps]: http://twitter.com/aaronblew "Aaron Blew: SRE Manager (dun dun duuuuun!)"
+  [`rpmcpan` Git repository]: https://github.com/iovation/rpmcpan "rpmcpan on GitHub"
+  [`dists.json` file]: https://github.com/iovation/rpmcpan/blob/master/etc/dists.json
+  [Encode-Locale]: http://search.cpan.org/dist/Encode-Locale "Encode-Locale on CPAN"
+  [PostgreSQL RPMs]: http://yum.postgresql.org "PostgreSQL Yum Repository"
+  [README]: https://github.com/iovation/rpmcpan/blob/master/README.md "`rpmcpan README`"
+  [pull request]: https://github.com/iovation/rpmcpan/pulls
+  [MetaCPAN]: https://metacpan.org/
+  [DBD-Pg]: http://search.cpan/org/dist/DBD-Pg/ "DBD-Pg on CPAN"

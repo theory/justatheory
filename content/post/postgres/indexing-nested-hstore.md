@@ -7,9 +7,9 @@ type: post
 ---
 
 In my first [Nested hstore] post yesterday, I ran a query against unindexed
-hstore data, which required a table scan. But hstore is able to take
-advantage of [GIN indexes]. So let's see what that looks like. Connecting to
-the same database, I indexed the `review` column:
+hstore data, which required a table scan. But hstore is able to take advantage
+of [GIN indexes]. So let's see what that looks like. Connecting to the same
+database, I indexed the `review` column:
 
 ``` postgres
 reviews=# CREATE INDEX idx_reviews_gin ON reviews USING GIN(review);
@@ -23,10 +23,10 @@ reviews=# SELECT pg_size_pretty(pg_database_size(current_database()));
 
 Well, that takes a while, and makes the database a lot bigger (it was 277 MB
 unindexed). But is it worth it? Let's find out. Oleg and Teodor's patch adds
-support for a nested hstore value on the right-hand-side of the `@>`
-operator. In practice, that means we can specify the full path to a nested
-value as an hstore expression. In our case, to query only for Books, instead
-of using this expression:
+support for a nested hstore value on the right-hand-side of the `@>` operator.
+In practice, that means we can specify the full path to a nested value as an
+hstore expression. In our case, to query only for Books, instead of using this
+expression:
 
 ``` postgres
 WHERE review #> '{product,group}' = 'Book'
@@ -67,9 +67,9 @@ Time: 849.681 ms
 ```
 
 That time looks better than yesterday's, but in truth I first ran this query
-just before building the GIN index and got about the same result. Must be
-that Mavericks is finished indexing my disk or something. At any rate, the
-index is not buying us much here.
+just before building the GIN index and got about the same result. Must be that
+Mavericks is finished indexing my disk or something. At any rate, the index is
+not buying us much here.
 
 But hey, we're dealing with 1998 Amazon reviews, so querying against books
 probably isn't very selective. I don't blame the planner for deciding that a
@@ -104,6 +104,6 @@ Time: 73.913 ms
 
 Wow! Under 100ms. That's more like it! [Inverted indexing] FTW!
 
-[Nested hstore]: /pg/2013/10/23/testing-nested-hstore/
-[GIN indexes]: http://www.postgresql.org/docs/current/static/gin.html
-[Inverted indexing]: http://en.wikipedia.org/wiki/Inverted_index
+  [Nested hstore]: /pg/2013/10/23/testing-nested-hstore/
+  [GIN indexes]: http://www.postgresql.org/docs/current/static/gin.html
+  [Inverted indexing]: http://en.wikipedia.org/wiki/Inverted_index

@@ -10,10 +10,10 @@ type: post
 Justin Erickson on the [Cloudera Blog]
 
 > In December 2012, while Cloudera Impala was still in its beta phase, we
-> [provided a roadmap](http://blog.cloudera.com/blog/2012/12/whats-next-for-cloudera-impala/)
-> for planned functionality in the production release. In the same spirit of
-> keeping Impala users, customers, and enthusiasts well informed, this post
-> provides an updated roadmap for upcoming releases later this year and in early
+> [provided a roadmap] for planned functionality in the production release. In
+> the same spirit of keeping Impala users, customers, and enthusiasts well
+> informed, this post provides an updated roadmap for upcoming releases later
+> this year and in early
 > 2014.
 
 [Impala] is a pretty nice-looking SQLish query engine that runs on Hadoop. It
@@ -43,10 +43,12 @@ support for more data formats, such as [ORC] and [Parquet], it may well be the
 way to go. But Impala will be a nice alternative if it can get fault tolerance
 figured out. I'm disappointed it's not on the road map.
 
-[Cloudera Blog]: http://blog.cloudera.com/
-[Impala]: http://www.cloudera.com/content/cloudera/en/products/cdh/impala.html
-[Hive]: http://hive.apache.org/
-[Impala FAQ]: http://www.cloudera.com/content/cloudera-content/cloudera-docs/Impala/latest/Cloudera-Impala-Frequently-Asked-Questions/Cloudera-Impala-Frequently-Asked-Questions.html
-[CitusDB]: http://citusdata.com/docs/sql-on-hadoop "CitusDB SQL on Hadoop"
-[ORC]: http://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.0.0.2/ds_Hive/orcfile.html "ORC File Format"
-[Parquet]: http://parquet.io/ "Parquet is a columnar storage format for Hadoop."
+  [provided a roadmap]: https://blog.cloudera.com/blog/2012/12/whats-next-for-cloudera-impala/
+  [Cloudera Blog]: https://blog.cloudera.com/
+  [Impala]: https://www.cloudera.com/content/cloudera/en/products/cdh/impala.html
+  [Hive]: https://hive.apache.org/
+  [Impala FAQ]: https://www.cloudera.com/content/cloudera-content/cloudera-docs/Impala/latest/Cloudera-Impala-Frequently-Asked-Questions/Cloudera-Impala-Frequently-Asked-Questions.html
+  [CitusDB]: https://citusdata.com/docs/sql-on-hadoop "CitusDB SQL on Hadoop"
+  [ORC]: https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.0.0.2/ds_Hive/orcfile.html
+    "ORC File Format"
+  [Parquet]: http://parquet.apache.org "Parquet is a columnar storage format for Hadoop."

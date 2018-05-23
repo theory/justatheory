@@ -25,4 +25,7 @@ Rich Mogull:
 > 
 > *Do we have a right to security?*
 
-How about we introduce a bill guaranteeing a right to security. [Senator Wyden](https://twitter.com/theory/status/700823603122540544)?
+How about we introduce a bill guaranteeing a right to security. [Senator Wyden]?
+
+[Senator Wyden]: https://twitter.com/theory/status/700823603122540544
+    "@theory to @RonWyden"

@@ -12,7 +12,11 @@ about Sqitch. I feel pretty good about this interview, despite continually
 banging on my legs, the table, and the mic. It's interesting to try to
 communicate what Sqitch is about purely by talking.
 
-<video x-webkit-airplay="allow" webkit-playsinline="" src="http://www.podtrac.com/pts/redirect.mp4/twit.cachefly.net/video/floss/floss0309/floss0309_h264m_864x480_500.mp4" width="100%" height="100%" controls="controls" preload="none" poster="https://elroycdn.twit.tv/sites/default/files/images/episodes/13599/hero/spiros_floss_0309jpg.jpg"></video>
+<video x-webkit-airplay="allow" webkit-playsinline=""
+  src="http://www.podtrac.com/pts/redirect.mp4/twit.cachefly.net/video/floss/floss0309/floss0309_h264m_864x480_500.mp4"
+  poster="https://elroycdn.twit.tv/sites/default/files/images/episodes/13599/hero/spiros_floss_0309jpg.jpg"
+  width="100%" height="100%" controls="controls" preload="none">
+</video>
 
 If it's enough to get you interested in giving a try, try [installing it] and
 using working through one of the tutorials:
@@ -24,5 +28,5 @@ using working through one of the tutorials:
 * [Firebird](https://metacpan.org/module/sqitchtutorial-firebird "Sqitch Firebird Tutorial)
 * [Vertica](https://metacpan.org/module/sqitchtutorial-vertica "Sqitch Vertica Tutorial)
 
-[FLOSS Weekly]: http://twit.tv/floss
-[installing it]: http://sqitch.org/
+  [FLOSS Weekly]: http://twit.tv/floss
+  [installing it]: http://sqitch.org/

@@ -49,13 +49,17 @@ start writing more Perl-related stuff. I'm starting with some posts about the
 state of exception handling in Perl 5, the first of which is [already up]. Stay
 tuned for more.
 
-[Just a Theory]: http://justatheory.com/
-[Octopress]: http://octopress.org
-[theory.pm]: /
-[Solarized]: http://ethanschoonover.com/solarized
-[Matt Gemmell's Advice]: http://mattgemmell.com/2013/05/22/designing-blogs-for-readers/
-[Source Sans Pro]: https://github.com/adobe/source-sans-pro
-[Source Code Pro]: https://github.com/adobe/source-code-pro
-[Solarized]: http://ethanschoonover.com/solarized
-[BlogTheme]: https://github.com/rastersize/BlogTheme
-[already up]: /exceptions/2013/07/26/trying-times/
+**Update:** 2018-05-23: I decided that a separate Perl blog wasn't a great idea
+after all, and [relaunched *Just a Theory*].
+
+  [Just a Theory]: http://justatheory.com/
+  [Octopress]: http://octopress.org
+  [theory.pm]: https://theory.pm/
+  [Solarized]: http://ethanschoonover.com/solarized
+  [Matt Gemmell's Advice]: http://mattgemmell.com/2013/05/22/designing-blogs-for-readers/
+  [Source Sans Pro]: https://github.com/adobe/source-sans-pro
+  [Source Code Pro]: https://github.com/adobe/source-code-pro
+  [Solarized]: http://ethanschoonover.com/solarized
+  [BlogTheme]: https://github.com/rastersize/BlogTheme
+  [already up]: /exceptions/2013/07/26/trying-times/
+  [relaunched *Just a Theory*]: https://justatheory.com/

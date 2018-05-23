@@ -121,10 +121,11 @@ objects and an official `try`/`catch` syntax.
 
 [^try-fix]: In fairness much of the `$@` pain has been addressed [in Perl 5.14].
 
-[Try::Tiny]: https://metacpan.org/module/Try::Tiny
-[checking return values]: http://stackoverflow.com/a/10366209/79202
-[Exception::Class]: https://metacpan.org/module/Exception::Class
-[Throwable]: https://metacpan.org/module/Throwable
-[PGXN::Manager]: https://github.com/pgxn/pgxn-manager/
-[JSON]: https://metacpan.org/module/JSON
-[in Perl 5.14]: https://metacpan.org/module/JESSE/perl-5.14.0/pod/perldelta.pod#Exception-Handling
+  [Try::Tiny]: https://metacpan.org/module/Try::Tiny
+  [checking return values]: http://stackoverflow.com/a/10366209/79202
+  [Exception::Class]: https://metacpan.org/module/Exception::Class
+  [Throwable]: https://metacpan.org/module/Throwable
+  [PGXN::Manager]: https://github.com/pgxn/pgxn-manager/
+  [JSON]: https://metacpan.org/module/JSON
+  [in Perl 5.14]:
+    https://metacpan.org/module/JESSE/perl-5.14.0/pod/perldelta.pod#Exception-Handling

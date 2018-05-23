@@ -30,7 +30,9 @@ Each directory defines the type of script and the name of the directory in
 which it will be created. The contents are default templates, one for each
 engine.
 
-To create a default test template, all we have to do is create a template for our preferred engine in a directory named `test`. So I created `~/.sqitch/templates/test/pg.tmpl`. Here it is:
+To create a default test template, all we have to do is create a template for
+our preferred engine in a directory named `test`. So I created
+`~/.sqitch/templates/test/pg.tmpl`. Here it is:
 
 ``` postgres
 SET client_min_messages TO warning;
@@ -92,11 +94,11 @@ Added "add_timestamp_column" to sqitch.plan
 
 Naturally you'll want to update the existing test to validate the new column.
 
-In the [previous templating post], we added custom scripts as for `CREATE
-TABLE` changes; now we can add a test template, too. This one takes advantage
-of the advanced features of [Template Toolkit]. We name it
-`~/.sqitch/templates/test/createtable.tmpl` to complement the deploy,
-revert, and verify scripts created previously:
+In the [previous templating post], we added custom scripts as for `CREATE TABLE`
+changes; now we can add a test template, too. This one takes advantage of the
+advanced features of [Template Toolkit]. We name it
+`~/.sqitch/templates/test/createtable.tmpl` to complement the deploy, revert,
+and verify scripts created previously:
 
 ``` postgres
 -- Test [% change %]
@@ -174,11 +176,11 @@ ROLLBACK;
 
 I don't know about you, but I'll be using this functionality *a lot.*
 
-[I described]: /sqitch/2013/09/06/sqitch-templating/
-[Sqitch]: http://sqitch.org/ "Sane database schema change management"
-[work]: http://iovation.com/
-[`add` command]: https://metacpan.org/pod/sqitch-add
-[pgTAP]: http://pgtap.org/
-[previous templating post]: /sqitch/2013/09/06/sqitch-templating/
-[Template Toolkit]: http://tt2.org/
-[before]: /sqitch/2013/09/06/sqitch-templating/
+  [I described]: /sqitch/2013/09/06/sqitch-templating/
+  [Sqitch]: http://sqitch.org/ "Sane database schema change management"
+  [work]: http://iovation.com/
+  [`add` command]: https://metacpan.org/pod/sqitch-add
+  [pgTAP]: http://pgtap.org/
+  [previous templating post]: /sqitch/2013/09/06/sqitch-templating/
+  [Template Toolkit]: http://tt2.org/
+  [before]: /sqitch/2013/09/06/sqitch-templating/

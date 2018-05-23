@@ -24,4 +24,4 @@ them during the PostgreSQL 8.2 era. Today they're a core feature, and as of
 9.1, you can even modify their values! You're missing out if you're not using
 them yet.
 
-[Enums]: http://www.postgresql.org/docs/9.3/static/datatype-enum.html
+  [Enums]: https://www.postgresql.org/docs/9.3/static/datatype-enum.html

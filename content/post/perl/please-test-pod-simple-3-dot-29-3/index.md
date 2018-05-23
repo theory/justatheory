@@ -6,7 +6,11 @@ tags: [Perl, Sean Burke, Karl Williamson, Pod]
 type: post
 ---
 
-{{% figure src="/2015/02/please-test-podsimple-3.29_3/cpan.png" class="left" width="250" alt="Pod Book" %}}
+{{% figure
+   src="/2015/02/please-test-podsimple-3.29_3/cpan.png"
+   class="left" width="250"
+   alt="Pod Book"
+%}}
 
 I've just pushed [Pod-Simple] 3.29_v3 to CPAN. [Karl Williamson] did a lot of
 hacking on this release, finally adding support for EBCDIC. But as part of
@@ -35,16 +39,18 @@ cpan D/DW/DWHEELER/Pod-Simple-3.29_3.tar.gz
 cpanm DWHEELER/Pod-Simple-3.29_3.tar.gz
 ```
 
-Oh, and one last thing: If Pod::Simple fails to properly recognize the encoding in your Pod file, you can always use the `=encoding` command early in your Pod file to make it explicit:
+Oh, and one last thing: If Pod::Simple fails to properly recognize the encoding
+in your Pod file, you can always use the `=encoding` command early in your Pod
+file to make it explicit:
 
 ``` perl
 =encoding CP1254
 ```
 
-[Pod-Simple]: https://metacpan.org/release/Pod-Simple/
-[Karl Williamson]: https://metacpan.org/author/KHW
-[Sean Burke]: http://interglacial.com/
-[pod-people]: http://lists.perl.org/list/pod-people.html
-[Latin-1]: http://en.wikipedia.org/wiki/ISO/IEC_8859-1
-[CP-1252]: http://en.wikipedia.org/wiki/Windows-1252
-[the Pod spec]: https://metacpan.org/pod/distribution/perl/pod/perlpodspec.pod
+  [Pod-Simple]: https://metacpan.org/release/Pod-Simple/
+  [Karl Williamson]: https://metacpan.org/author/KHW
+  [Sean Burke]: http://interglacial.com/
+  [pod-people]: http://lists.perl.org/list/pod-people.html
+  [Latin-1]: http://en.wikipedia.org/wiki/ISO/IEC_8859-1
+  [CP-1252]: http://en.wikipedia.org/wiki/Windows-1252
+  [the Pod spec]: https://metacpan.org/pod/distribution/perl/pod/perlpodspec.pod

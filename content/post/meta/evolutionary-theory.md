@@ -89,24 +89,27 @@ make photoblog-style posts and perhaps integrate micro-blogging posts.
 
 Let's find out if I'm as good as my word.
 
-[Perl]: /tags/perl/ "Posts about “Perl”"
-[Bricolage]: /tags/bricolage/ "Posts about Bricolage”"
-[Postgres]: /tags/postgres/ "Posts about Postgres"
-[Sqitch]: /tags/sqitch/ "Posts about Sqitch"
-[Octopress]: http://octopress.org/ "Octopress: A blogging framework for hackers"
-[GitHub Pages]: https://pages.github.com
-[last post]: /2016/07/wanted-new-svnnotify-maintainer/ "Wanted: New SVN::Notify Maintainer"
-[Twitter]: https://twitter.com/theory "@theory on Twitter"
-[Instagram]: https://instagram.com/theory "@theory on Instagram"
-[Facebook]: https://facebook.com/david.e.wheeler "David E. Wheeler on Facebook"
-[Slashdot]: http://slashdot.org
-[Hugo]: https://gohugo.io "Hugo open-source static site generator"
-[Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro
-[Source Code Pro]: https://github.com/adobe-fonts/source-code-pro
-[old design]: https://past.justatheory.com/ "Browse the old Just a Theory"
-[kottke.org]: https://kottke.org/ "kottke.org ♥ 20 years of hypertext products"
-[all the tags]: /tags/ "Just Theory Tags"
-[Archives]: /archives/ "Previously, on Just a Theory"
-[CloudFront]: https://aws.amazon.com/cloudfront/ "Amazon CloudFront"
-[Let's Encrypt]: https://letsencrypt.org "Let’s Encrypt: Free, automated, and open Certificate Authority."
-[Fireballed]: /2012/04/how-not-to-withstand-a-fireballing/ "How Not to Withstand a Fireballing"
+  [Perl]: /tags/perl/ "Posts about “Perl”"
+  [Bricolage]: /tags/bricolage/ "Posts about Bricolage”"
+  [Postgres]: /tags/postgres/ "Posts about Postgres"
+  [Sqitch]: /tags/sqitch/ "Posts about Sqitch"
+  [Octopress]: http://octopress.org/ "Octopress: A blogging framework for hackers"
+  [GitHub Pages]: https://pages.github.com
+  [last post]: /2016/07/wanted-new-svnnotify-maintainer/
+    "Wanted: New SVN::Notify Maintainer"
+  [Twitter]: https://twitter.com/theory "@theory on Twitter"
+  [Instagram]: https://instagram.com/theory "@theory on Instagram"
+  [Facebook]: https://facebook.com/david.e.wheeler "David E. Wheeler on Facebook"
+  [Slashdot]: http://slashdot.org
+  [Hugo]: https://gohugo.io "Hugo open-source static site generator"
+  [Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro
+  [Source Code Pro]: https://github.com/adobe-fonts/source-code-pro
+  [old design]: https://past.justatheory.com/ "Browse the old Just a Theory"
+  [kottke.org]: https://kottke.org/ "kottke.org ♥ 20 years of hypertext products"
+  [all the tags]: /tags/ "Just Theory Tags"
+  [Archives]: /archives/ "Previously, on Just a Theory"
+  [CloudFront]: https://aws.amazon.com/cloudfront/ "Amazon CloudFront"
+  [Let's Encrypt]: https://letsencrypt.org
+    "Let’s Encrypt: Free, automated, and open Certificate Authority."
+  [Fireballed]: /2012/04/how-not-to-withstand-a-fireballing/
+    "How Not to Withstand a Fireballing"

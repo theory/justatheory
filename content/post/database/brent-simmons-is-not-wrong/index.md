@@ -27,7 +27,11 @@ Some database folks might be gasping for air, but not those of us steeped in
 relational theory. In *[Database in Depth]*, relational theorist [C.J. Date]
 poses a question:
 
-{{% figure src="/2014/01/brent-simmons-is-not-wrong/database-in-depth.jpg" class="right" width="300" alt="“Database in Depth,” by C.J. Date" %}}
+{{% figure
+   src="/2014/01/brent-simmons-is-not-wrong/database-in-depth.jpg"
+   class="right" width="300"
+   alt="“Database in Depth,” by C.J. Date"
+%}}
 
 > In Chapter 1, I said that 1NF meant that every tuple in every relation
 > contains just a single value (of the appropriate type, of course) in every
@@ -66,8 +70,8 @@ system.
 
 So you go, Brent, you're doing it exactly right.
 
-[Database in Depth]: http://www.amazon.com/Database-Depth-Relational-Theory-Practitioners/dp/0596100124/justatheory-20
-[C.J. Date]: http://en.wikipedia.org/wiki/Christopher_J._Date
-[array]: http://www.postgresql.org/docs/current/static/arrays.html
-[XML]: http://www.postgresql.org/docs/current/static/datatype-xml.html
-[JSON]: http://www.postgresql.org/docs/current/static/datatype-json.html
+  [Database in Depth]: http://www.amazon.com/Database-Depth-Relational-Theory-Practitioners/dp/0596100124/justatheory-20
+  [C.J. Date]: https://en.wikipedia.org/wiki/Christopher_J._Date
+  [array]: https://www.postgresql.org/docs/current/static/arrays.html
+  [XML]: https://www.postgresql.org/docs/current/static/datatype-xml.html
+  [JSON]: https://www.postgresql.org/docs/current/static/datatype-json.html

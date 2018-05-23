@@ -204,26 +204,46 @@ have I overlooked? What have I got wrong? Let me know!
 [^db-uri:surprise]: As in not surprised at all. Though I was hoping!
 [^db-uri:dsn]: DSNs for Perl's [DBI] aren't much better: `dbi:<driver>:<driver-specific-stuff>`.
 
-[Sqitch]: http://sqitch.org/ "Sane database change management"
-[specifying deployment targets via URIs]: https://github.com/theory/sqitch/issues/100 "Issue #100: “Add target command to configure target databases”"
-[Git remotes]: http://git-scm.com/book/en/Git-Basics-Working-with-Remotes "Git Basics - Working with Remotes"
-[URI Scheme]: http://en.wikipedia.org/wiki/URI_scheme "Wikipedia: “URI Scheme”"
-[JDBC URLs]: http://www.jguru.com/faq/view.jsp?EID=690 "jGuru: “What is a database URL?”"
-[barely URLs at all]: https://groups.google.com/forum/#!topic/comp.lang.java.programmer/twkIYNaDS64 "comp.lang.java.programmer: ”JDBC URLs ...not really URLs?“"
-[RFC 3986]: http://www.ietf.org/rfc/rfc3986.txt "Uniform Resource Identifier (URI): Generic Syntax"
-[RFC 2396]: http://www.ietf.org/rfc/rfc3986.txt "Uniform Resource Identifiers (URI): Generic Syntax"
-[JDBC docs]: http://docs.oracle.com/javase/6/docs/technotes/guides/jdbc/getstart/connection.html#997649 "Getting Started with the JDBC API: “JDBC URLs”" 
-[PostgreSQL libpq URIs]: http://www.postgresql.org/docs/9.3/static/libpq-connect.html#LIBPQ-CONNSTRING "PostgreSQL Documentation: “Connection Strings”"
-[SQLAlchemy URLs]: http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls "SQLAlchemy Documentation: “Database Urls”"
-[Stackato database URLs]: http://docs.stackato.com/3.0/user/services/data-services.html#database-url "Stackato Documentation: “DATABASE_URL”"
-[Django database URLs]: https://github.com/kennethreitz/dj-database-url "DJ-Database-URL on GitHub"
-[Rails database URLs]: https://github.com/glenngillen/rails-database-url "rails-database-url on GitHub"
-[http URLs]: http://tools.ietf.org/html/rfc2616#page-19 "RFC 2616: “http URL”"
-[my proposal]: https://github.com/theory/uri-db "Database URI on GitHub"
-[URI scheme]: http://en.wikipedia.org/wiki/URI_scheme "Wikipedia: “URI scheme”"
-[SQLite]: http://sqlite.org/ "SQLite Home Page"
-[file URIs]: http://en.wikipedia.org/wiki/File_URI_scheme#Examples "Wikipedia: “File URI Scheme: Examples”"
-[Informix]: https://metacpan.org/pod/DBD::Informix#INFORMIX-CONNECTION-SEMANTICS "MetaCPAN: “Informix Connection Semantics”"
-[URI::db]: https://github.com/theory/uri-db/blob/master/lib/URI/db.pm "URI::db on GitHub"
-[uri-db project]: https://github.com/theory/uri-db/ "uri-db on GitHub"
-[DBI]: https://metacpan.org/module/DBI "MetaCPAN: DBI"
+  [Sqitch]: http://sqitch.org/ "Sane database change management"
+  [specifying deployment targets via URIs]:
+    https://github.com/theory/sqitch/issues/100
+    "Issue #100: “Add target command to configure target databases”"
+  [Git remotes]: http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
+    "Git Basics - Working with Remotes"
+  [URI Scheme]: http://en.wikipedia.org/wiki/URI_scheme "Wikipedia: “URI Scheme”"
+  [JDBC URLs]: http://www.jguru.com/faq/view.jsp?EID=690 "jGuru: “What is a database URL?”"
+  [barely URLs at all]:
+    https://groups.google.com/forum/#!topic/comp.lang.java.programmer/twkIYNaDS64
+    "comp.lang.java.programmer: ”JDBC URLs ...not really URLs?“"
+  [RFC 3986]: http://www.ietf.org/rfc/rfc3986.txt
+    "Uniform Resource Identifier (URI): Generic Syntax"
+  [RFC 2396]: http://www.ietf.org/rfc/rfc3986.txt
+    "Uniform Resource Identifiers (URI): Generic Syntax"
+  [JDBC docs]:
+    http://docs.oracle.com/javase/6/docs/technotes/guides/jdbc/getstart/connection.html#997649
+    "Getting Started with the JDBC API: “JDBC URLs”" 
+  [PostgreSQL libpq URIs]:
+    https://www.postgresql.org/docs/9.3/static/libpq-connect.html#LIBPQ-CONNSTRING
+    "PostgreSQL Documentation: “Connection Strings”"
+  [SQLAlchemy URLs]:
+    http://docs.sqlalchemy.org/en/rel_0_9/core/engines.html#database-urls
+    "SQLAlchemy Documentation: “Database Urls”"
+  [Stackato database URLs]:
+    http://docs.stackato.com/3.0/user/services/data-services.html#database-url
+    "Stackato Documentation: “DATABASE_URL”"
+  [Django database URLs]: https://github.com/kennethreitz/dj-database-url
+    "DJ-Database-URL on GitHub"
+  [Rails database URLs]: https://github.com/glenngillen/rails-database-url
+    "rails-database-url on GitHub"
+  [http URLs]: http://tools.ietf.org/html/rfc2616#page-19 "RFC 2616: “http URL”"
+  [my proposal]: https://github.com/theory/uri-db "Database URI on GitHub"
+  [URI scheme]: http://en.wikipedia.org/wiki/URI_scheme "Wikipedia: “URI scheme”"
+  [SQLite]: http://sqlite.org/ "SQLite Home Page"
+  [file URIs]: http://en.wikipedia.org/wiki/File_URI_scheme#Examples
+    "Wikipedia: “File URI Scheme: Examples”"
+  [Informix]: https://metacpan.org/pod/DBD::Informix#INFORMIX-CONNECTION-SEMANTICS
+    "MetaCPAN: “Informix Connection Semantics”"
+  [URI::db]: https://github.com/theory/uri-db/blob/master/lib/URI/db.pm
+   "URI::db on GitHub"
+  [uri-db project]: https://github.com/theory/uri-db/ "uri-db on GitHub"
+  [DBI]: https://metacpan.org/module/DBI "MetaCPAN: DBI"

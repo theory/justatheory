@@ -29,3 +29,6 @@ and access their personal information. It's in the interest of the government
 to ensure that private data remain private. Forcing Apple to crack its own
 encryption sets a dangerous precedent likely to be exploited by
 cybercriminals for decades to come. Shame on the FBI.
+
+  [post]: https://www.apple.com/customer-letter/
+    "Apple: “A Message to Our Customers”"

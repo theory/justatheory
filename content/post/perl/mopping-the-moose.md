@@ -17,8 +17,8 @@ Stevan Little:
 > was the first real module that I wrote using [Moose] and second, it makes
 > heavy use of a lot of [Moose]'s features.
 
-[p5-mop]: https://github.com/stevan/p5-mop-redux
-[Moose]: https://metacpan.org/module/Moose
-[Bread::Board]: https://metacpan.org/module/Bread::Board
-
 I'm so happy to see Stevan making progress on the Perl 5 MOP again.
+
+  [p5-mop]: https://github.com/stevan/p5-mop-redux
+  [Moose]: https://metacpan.org/module/Moose
+  [Bread::Board]: https://metacpan.org/module/Bread::Board

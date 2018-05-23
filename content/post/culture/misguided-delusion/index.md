@@ -9,7 +9,10 @@ type: post
 A simple post. “Something to make you think,” Dustin Curtis wrote. I followed
 [the link] and have hardly stopped thinking about it since.
 
-{{% figure src="/2013/04/misguided-delusion/dcurtis.png" alt="“Something to make you think.“" %}}
+{{% figure
+   src="/2013/04/misguided-delusion/dcurtis.png"
+   alt="“Something to make you think.“"
+%}}
 
 Sam Harris wants to help non-religious people understand how it feels to be a
 believer confronted with scientific rationality. Toward that end, he offers *the
@@ -50,7 +53,10 @@ ears and over and over shout "I can't hear you!" These are Harris's friends:
 > this. And that should give you some sense of what we are up against whenever
 > we confront religion.
 
-Now, I am not a religious person, and like Harris strongly advocate for the use of scientific reasoning and rational thought in social, political, and economic discourse. I have no bona-fides to offer, but personally find the entire idea of religion to be nonsensical.
+Now, I am not a religious person, and like Harris strongly advocate for the use
+of scientific reasoning and rational thought in social, political, and economic
+discourse. I have no bona-fides to offer, but personally find the entire idea of
+religion to be nonsensical.
 
 But even I think that this analogy --- admittedly imperfect, Harris says --- to
 be entirely disingenuous.
@@ -62,7 +68,9 @@ to believe. But that's a dishonest reading of faith.
 
 *Faith has nothing whatsoever to do with rationality.*
 
-Nothing. Nada. Faith is not an irrational resistance to rational reasoning and facts, because it is not subject to rational reasoning and facts. It's something different, an entirely other animal. Not irrational, but a-rational.
+Nothing. Nada. Faith is not an irrational resistance to rational reasoning and
+facts, because it is not subject to rational reasoning and facts. It's something
+different, an entirely other animal. Not irrational, but a-rational.
 
 A better analogy than *the fireplace delusion* might be something derived from
 it. I offer, instead, *love.*
@@ -80,16 +88,22 @@ creation, that embodies *culture* in the [Anthropological sense]-including, yes,
 the pursuit of scientific research and reasoning-is a-rational. No, better: it's
 *extra-rational.* That's part of what makes it beautiful.
 
-You cannot refute love. You cannot refute art. You cannot refute faith. Because they are not in the domain of refutation, are not subject to the facts. They are something else entirely. Often-not always, but often --- they create *beauty.*
+You cannot refute love. You cannot refute art. You cannot refute faith. Because
+they are not in the domain of refutation, are not subject to the facts. They are
+something else entirely. Often-not always, but often --- they create *beauty.*
 
 And beauty isn't subject to refutation, either.
 
 <small>This post [originally appeared] on *Medium.*</small>
 
-[Dustin Curtis]: https://dustincurtis.com/
-[the link]: http://www.samharris.org/blog/item/the-fireplace-delusion "Sam Harris: “The Fireplace Delusion”"
-[research shows]: https://www.ncbi.nlm.nih.gov/pubmed/17127644 "Inhal Toxicol, Jan 2007: “Woodsmoke health effects: a review.”"
-[pass my genes on to my children]: https://en.wikipedia.org/wiki/The_Selfish_Gene "Wikipedia: “The Selfish Gene"
-[my wife]: http://blog.strongrrl.com "Strongrrl: Life, with muscle"
-[Anthropological sense]: https://en.wikipedia.org/wiki/Cultural_anthropology "Wikipedia: “Cultural anthropology"
-[originally appeared]: https://medium.com/on-culture/misguided-delusion-11cfd5b919f6
+  [Dustin Curtis]: https://dustincurtis.com/
+  [the link]: http://www.samharris.org/blog/item/the-fireplace-delusion
+    "Sam Harris: “The Fireplace Delusion”"
+  [research shows]: https://www.ncbi.nlm.nih.gov/pubmed/17127644
+    "Inhal Toxicol, Jan 2007: “Woodsmoke health effects: a review.”"
+  [pass my genes on to my children]: https://en.wikipedia.org/wiki/The_Selfish_Gene
+    "Wikipedia: “The Selfish Gene"
+  [my wife]: http://blog.strongrrl.com "Strongrrl: Life, with muscle"
+  [Anthropological sense]: https://en.wikipedia.org/wiki/Cultural_anthropology
+    "Wikipedia: “Cultural anthropology"
+  [originally appeared]: https://medium.com/on-culture/misguided-delusion-11cfd5b919f6

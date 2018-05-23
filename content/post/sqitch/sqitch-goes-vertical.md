@@ -16,8 +16,8 @@ from v0.995 to v0.996. But a lot changed. A couple the biggies:
 If you're not a Perl programmer, you probably aren't familiar with [Moose] or
 its derivatives [Mouse] and [Moo]. Briefly, it's an object system. Great
 interface and features, but freaking *huge*—and *slow*. Mouse is a lighter
-version, and when we (mostly) switched to it [last year], it yielded a 20-30% speed
-improvement.
+version, and when we (mostly) switched to it [last year], it yielded a 20-30%
+speed improvement.
 
 Still wasn't great, though. So on a day off recently, I switched
 to Moo, which implements most of Moose but without a lot of the baggage. At
@@ -97,18 +97,22 @@ the year. To that end, next up I will be [rationalizing configuration hierarchie
 to make engine selection and deploy-time configuration more sensible. I hope
 to get that done by early October.
 
-[Sqitch]: http://sqitch.org/
-[Moose]: https://metacpan.org/module/Moose
-[Mouse]: https://metacpan.org/module/Mouse
-[Moo]: https://metacpan.org/module/Moo
-[last year]: https://github.com/theory/sqitch/pull/73
-[Devel::NYTProf]: https://metacpan.org/module/Devel::NYTProf
-[the RPM spec changes]: https://github.com/theory/sqitch/compare/v0.995...v0.996#diff-4
-[MySQL::Config]: https://metacpan.org/module/MySQL::Config
-[DBI]: https://metacpan.org/module/DBI
-[Vertica]: https://my.vertica.com/
-[PostgreSQL]: http://www.postgresql.org/
-[work]: http://www.iovation.com/
-[rationalizing configuration hierarchies]: https://github.com/theory/sqitch/issues/153
-[the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial-vertica.pod
-[support for Vertica 6]: https://github.com/theory/sqitch/commit/4f8dbaa236a04f6dd1ec762250ffd8481078691a
+  [Sqitch]: http://sqitch.org/
+  [Moose]: https://metacpan.org/module/Moose
+  [Mouse]: https://metacpan.org/module/Mouse
+  [Moo]: https://metacpan.org/module/Moo
+  [last year]: https://github.com/theory/sqitch/pull/73
+  [Devel::NYTProf]: https://metacpan.org/module/Devel::NYTProf
+  [the RPM spec changes]:
+    https://github.com/theory/sqitch/compare/v0.995...v0.996#diff-4
+  [MySQL::Config]: https://metacpan.org/module/MySQL::Config
+  [DBI]: https://metacpan.org/module/DBI
+  [Vertica]: https://my.vertica.com/
+  [PostgreSQL]: http://www.postgresql.org/
+  [work]: http://www.iovation.com/
+  [rationalizing configuration hierarchies]:
+    https://github.com/theory/sqitch/issues/153
+  [the tutorial]:
+    https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial-vertica.pod
+  [support for Vertica 6]:
+    https://github.com/theory/sqitch/commit/4f8dbaa236a04f6dd1ec762250ffd8481078691a

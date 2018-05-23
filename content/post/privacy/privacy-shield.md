@@ -31,12 +31,19 @@ So let me get this straight. Under this proposal:
 * Said collection must fall under six allowed case, one of which is
   undefined "counter-terrorism" purposes. No one ever abused *that* kind of
   thing before.
-* The US claims there is no more bulk surveillance, except that there is under those six cases.
-* The appointed "independent ombudsman" to address complaints by EU citizens will be a single US Undersecretary of State.
-* Complaints can also be addressed to US companies housing EU citizen data, even though, in the absence of another Snowden-scale whistle-blowing, they may have no idea their data is being surveilled.
+* The US claims there is no more bulk surveillance, except that there is under
+  those six cases.
+* The appointed "independent ombudsman" to address complaints by EU citizens
+  will be a single US Undersecretary of State.
+* Complaints can also be addressed to US companies housing EU citizen data, even
+  though, in the absence of another Snowden-scale whistle-blowing, they may have
+  no idea their data is being surveiled.
 
-Color me skeptical that this would work, let alone not be thrown out by another case similar to the one that killed Safe Harbor.
+Color me skeptical that this would work, let alone not be thrown out by another
+case similar to the one that killed Safe Harbor.
 
 I have a better idea. How about eliminating mass surveillance?
 
-[Ars reported last week]: http://arstechnica.com/tech-policy/2016/02/obama-administration-closing-in-on-rules-to-let-nsa-share-more-freely-with-fbi-cia/ "Obama administration closing in on rules to let NSA share more freely with FBI, CIA"
+  [Ars reported last week]:
+    http://arstechnica.com/tech-policy/2016/02/obama-administration-closing-in-on-rules-to-let-nsa-share-more-freely-with-fbi-cia/
+    "Obama administration closing in on rules to let NSA share more freely with FBI, CIA"

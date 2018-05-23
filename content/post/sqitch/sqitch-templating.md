@@ -21,14 +21,6 @@ implementation into line with what was already possible in the Postgres,
 SQLite, and Oracle support. Check out the [tutorial] and the accompanying
 [Git repository] to get started managing your MySQL databases with Sqitch.
 
-[Sqitch]: http://sqitch.org/ "Sane database change management"
-[MySQL]: http://dev.mysql.com/ "The world's most popular open source database"
-[release notes]: https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-4.html "Changes in MySQL 5.6.4 (2011-12-20, Milestone 7)"
-[`SIGNAL`]: http://dev.mysql.com/doc/refman/5.5/en/condition-handling.html "MySQL 5.5 Reference Manual: Condition Handling"
-[mimic check constraints]: http://stackoverflow.com/a/17424570/79202 "How do I get MySQL to throw a conditional runtime exception in SQL"
-[tutorial]: https://metacpan.org/module/sqitchtutorial-mysql "A tutorial introduction to Sqitch change management on MySQL"
-[Git repository]: https://github.com/theory/sqitch-mysql-intro "Sqitch MySQL Intro Sample Repository"
-
 The MySQL support might be the headliner, but the change in v0.980 I'm most
 excited about is improved template support. Sqitch executes templates to
 create the default deploy, revert, and verify scripts, but up to now they have
@@ -161,8 +153,6 @@ SELECT * FROM widgets;
 ROLLBACK;
 ```
 
-[`sqitch add`]: http://metacpan.org/module/sqitch-add "Add a database change to the Sqitch plan"
-
 Custom Table Name
 -----------------
 
@@ -246,9 +236,6 @@ CREATE TABLE widgets (
 
 COMMIT;
 ```
-
-[Template::Tiny]: https://metacpan.org/module/Template::Tiny
-[templating language]: https://metacpan.org/module/sqitch-add#Syntax "Sqitch Template Syntax"
 
 Add Columns
 -----------
@@ -393,9 +380,6 @@ CREATE TABLE widgets (
 COMMIT;
 ```
 
-[Template Toolkit]: http://tt2.org/
-[VMethod]: http://tt2.org/docs/manual/VMethods.html "Template Toolkit Docs: Virtual Methods"
-
 Go Crazy
 --------
 
@@ -410,4 +394,25 @@ can imagine lots of uses for task-specific changes, including:
 Maybe folks will even start sharing templates! You should subscribe to the
 [mail list] to find out. See you there?
 
-[mail list]: https://groups.google.com/forum/#!forum/sqitch-users
+  [Sqitch]: http://sqitch.org/ "Sane database change management"
+  [MySQL]: http://dev.mysql.com/ "The world's most popular open source database"
+  [release notes]:
+    https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-4.html
+    "Changes in MySQL 5.6.4 (2011-12-20, Milestone 7)"
+  [`SIGNAL`]: http://dev.mysql.com/doc/refman/5.5/en/condition-handling.html
+    "MySQL 5.5 Reference Manual: Condition Handling"
+  [mimic check constraints]: http://stackoverflow.com/a/17424570/79202
+    "How do I get MySQL to throw a conditional runtime exception in SQL"
+  [tutorial]: https://metacpan.org/module/sqitchtutorial-mysql
+    "A tutorial introduction to Sqitch change management on MySQL"
+  [Git repository]: https://github.com/theory/sqitch-mysql-intro
+    "Sqitch MySQL Intro Sample Repository"
+  [`sqitch add`]: http://metacpan.org/module/sqitch-add
+    "Add a database change to the Sqitch plan"
+  [Template::Tiny]: https://metacpan.org/module/Template::Tiny
+  [templating language]: https://metacpan.org/module/sqitch-add#Syntax
+    "Sqitch Template Syntax"
+  [Template Toolkit]: http://tt2.org/
+  [VMethod]: http://tt2.org/docs/manual/VMethods.html
+    "Template Toolkit Docs: Virtual Methods"
+  [mail list]: https://groups.google.com/forum/#!forum/sqitch-users

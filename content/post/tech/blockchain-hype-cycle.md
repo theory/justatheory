@@ -24,11 +24,9 @@ Excerpt from William Mougayar's new book on TechCrunch:
 
 What a steaming pile of hype and nonsense. I find it hard to take such
 revolutionary fervor seriously, as if people forget the Web in the 90s or real
-estate in 2006. Given that
-[the author is a venture capitalist](https://www.linkedin.com/in/williammougayar)
-invested in a [blockchain startup](https://www.crunchbase.com/organization/openbazaar),
-it just feels like a way to try to inflate the value of his investments for
-short-term gain. A piece like this is snake oil.
+estate in 2006. Given that [the author is a venture capitalist] invested in a
+[blockchain startup], it just feels like a way to try to inflate the value of
+his investments for short-term gain. A piece like this is snake oil.
 
 Blockchains are inarguably useful tools, like databases or encryption
 algorithms, and we in the technology business should do our best to understand
@@ -37,5 +35,11 @@ still trying to wrap my mind around blockchains, but one thing I understand very
 well: **they're not a panacea.** The industry overall won’t see true benefits
 from blockchains for a couple of years, once the practicalities have been worked
 out and the nonsense has subsided. We should learn and contribute to those
-practicalities, but as for the
-[hype cycle](https://en.wikipedia.org/wiki/Hype_cycle), for now I just hold my nose.
+practicalities, but as for the [hype cycle], for now I just hold my nose.
+
+  [the author is a venture capitalist]: https://www.linkedin.com/in/williammougayar
+    "William Mougayar on LinkedIn"
+  [blockchain startup]: https://www.crunchbase.com/organization/openbazaar
+     "crunchbase: “OpenBazaar”" 
+  [hype cycle]: https://en.wikipedia.org/wiki/Hype_cycle
+    "Wikipedia: “Hype cycle”"

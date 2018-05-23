@@ -63,9 +63,9 @@ Oh, and just dig the awesome trailer Roger put together. It’s such a joy to wo
 with someone who knows Photoshop and After Effects like I know Perl and SQL.
 
 <video width="640" height="360"poster="https://raw.githubusercontent.com/lunar-theory/designsceneapp.com/c199ec3d40a11a4a559d31df4a1e995ee1220b8d/res/ds_video_poster.jpg" controls>
-	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.mp4" type="video/mp4" />
-	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.webm" type="video/webm" />
-	<source src="http://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.ogv" type="video/ogg" />
+	<source src="https://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.mp4" type="video/mp4" />
+	<source src="https://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.webm" type="video/webm" />
+	<source src="https://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.ogv" type="video/ogg" />
 </video>
 
 Since we launched on Tuesday, we’ve been fortunate to receive some really

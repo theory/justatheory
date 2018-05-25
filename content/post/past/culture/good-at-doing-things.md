@@ -4,7 +4,7 @@ description: "Notes from “Good at Doing Things: Montessori education and highe
 slug: good-at-doing-things
 title: Good at Doing Things
 aliases: [/culture/education/good-at-doing-things.html]
-tags: [Montessori, education, neurology, brain development, neuropsychology]
+tags: [Montessori, Education, Neurology, Brain Development, Neuropsychology]
 type: post
 ---
 

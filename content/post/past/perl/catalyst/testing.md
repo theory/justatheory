@@ -3,7 +3,7 @@ date: 2009-11-09T18:36:15Z
 slug: catalyst-testing
 title: Testing the Tutorial App
 aliases: [/computers/programming/perl/catalyst/testing.html]
-tags: [Perl, Catalyst, testing, MVC, Template::Declare]
+tags: [Perl, Catalyst, Testing, MVC, Template::Declare]
 type: post
 ---
 

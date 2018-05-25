@@ -3,7 +3,7 @@ date: 2006-06-30T04:02:00Z
 slug: many-to-many-plpgsql
 title: Managing Many-to-Many Relationships with PL/pgSQL
 aliases: [/computers/databases/postgresql/many_to_many_plpgsql.html]
-tags: [Postgres, PL/pgSQL, relationship, object/relational mapping, onlamp.com]
+tags: [Postgres, PL/pgSQL, Relationships, Object/Relational Mapping, onlamp.com]
 type: post
 ---
 

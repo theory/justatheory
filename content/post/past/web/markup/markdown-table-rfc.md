@@ -3,7 +3,7 @@ date: 2009-02-27T00:38:32Z
 slug: markdown-table-rfc
 title: "RFC: A Simple Markdown Table Format"
 aliases: [/computers/markup/markdown-table-rfc.html]
-tags: [Web, Markdown, proposals, RFC, MultiMarkdown, PHP Markdown Extra, Postgres, psql, MySQL, SQLite]
+tags: [Web, Markdown, Proposals, RFC, MultiMarkdown, PHP Markdown Extra, Postgres, psql, MySQL, SQLite]
 type: post
 ---
 

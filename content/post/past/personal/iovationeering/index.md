@@ -3,7 +3,7 @@ date: 2011-11-30T05:34:11Z
 slug: iovationeering
 title: iovationeering
 aliases: [/autobiographical/iovationeering.html]
-tags: [Personal, work, Postgres, data architect, Bricolage, PGXN, Kineticode, PostgreSQL Experts]
+tags: [Personal, Work, Postgres, Data Architecture, Bricolage, PGXN, Kineticode, PostgreSQL Experts]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2004-10-08T18:37:09Z
 slug: the-bush-bulge
 title: Bush Uses Radio Receiver During Debate?
 aliases: [/politics/election_2004/the_bulge.html]
-tags: [Politics, President, elections, George W. Bush, John Kerry]
+tags: [Politics, President, Elections, George W. Bush, John Kerry]
 type: post
 ---
 

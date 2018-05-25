@@ -3,7 +3,7 @@ date: 2005-11-30T02:02:53Z
 slug: postgres-avoid-tigers-readline
 title: How Do I Avoid Tiger's readline When Compiling PostgreSQL?
 aliases: [/computers/databases/postgresql/howto_avoid_tigers_readline.html]
-tags: [Postgres, readline, psql, segfaults, history]
+tags: [Postgres, readline, psql, Segfaults, History]
 type: post
 ---
 

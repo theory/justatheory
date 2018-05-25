@@ -4,7 +4,7 @@ description: After some prodding from the MySQL Community Manager, some OSCON ha
 slug: introducing-mytap
 title: Introducing MyTAP
 aliases: [/computers/databases/mysql/introducing_mysql.html]
-tags: [MySQL, myTAP, pgTAP, testing, unit testing, Postgres, databases, test-driven database development, test-driven database design]
+tags: [MySQL, myTAP, pgTAP, Testing, Unit Testing, Postgres, Databases, Test-Driven Database Development, Test-Driven Database Design]
 type: post
 ---
 

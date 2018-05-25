@@ -3,7 +3,7 @@ date: 2005-05-03T00:16:52Z
 slug: test-simple-js-purpose
 title: The Purpose of TestSimple
 aliases: [/computers/programming/javascript/test_simple_purpose.html]
-tags: [JavaScript, testing, unit testing, Perl, N1VUX]
+tags: [JavaScript, Testing, Unit Testing, Perl, N1VUX]
 type: post
 ---
 

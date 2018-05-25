@@ -3,7 +3,7 @@ date: 2009-02-03T18:19:38Z
 slug: pgtap-0.16
 title: pgTAP 0.16 in the Wild
 aliases: [/computers/databases/postgresql/pgtap-0.16.html]
-tags: [Postgres, PL/pgSQL, TAP, pgTAP, SQL, testing]
+tags: [Postgres, PL/pgSQL, TAP, pgTAP, SQL, Testing]
 type: post
 ---
 

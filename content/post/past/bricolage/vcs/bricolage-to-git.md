@@ -3,7 +3,7 @@ date: 2009-04-24T17:24:40Z
 slug: bricolage-to-git
 title: Migrating Bricolage CVS and SVN to Git
 aliases: [/computers/vcs/git/bricolage-to-git.html]
-tags: [Bricolage, Git, Subversion, CVS, SCM, GitHub, migrations, VCS]
+tags: [Bricolage, Git, Subversion, CVS, SCM, GitHub, Migrations, VCS]
 type: post
 ---
 

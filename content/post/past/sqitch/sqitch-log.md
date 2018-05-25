@@ -3,7 +3,7 @@ date: 2012-07-12T17:33:12Z
 slug: sqitch-log
 title: Sqitch’s Log
 aliases: [/computers/databases/sqitch-log.html]
-tags: [Sqitch, SQL, databases, change management]
+tags: [Sqitch, SQL, Databases, Change Management]
 type: post
 ---
 

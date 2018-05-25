@@ -3,7 +3,7 @@ date: 2010-01-12T06:12:02Z
 slug: somethingest-from-each-entity
 title: "SQL Hack: The Something-est From Each Entity"
 aliases: [/computers/databases/postgresql/somethingest-from-each-entity.html]
-tags: [Postgres, SQL, window functions, common table expressions]
+tags: [Postgres, SQL, Window Functions, Common Table Expressions]
 type: post
 ---
 

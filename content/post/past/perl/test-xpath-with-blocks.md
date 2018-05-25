@@ -3,7 +3,7 @@ date: 2009-09-05T23:36:30Z
 slug: test-xpath-with-blocks
 title: Use Rubyish Blocks with Test::XPath
 aliases: [/computers/programming/perl/modules/test-xpath-with-blocks.html]
-tags: [Perl, XML, XPath, testing, unit testing, Test::XPath, HTML, XHTML, Ruby]
+tags: [Perl, XML, XPath, Testing, Unit Testing, Test::XPath, HTML, XHTML, Ruby]
 type: post
 ---
 

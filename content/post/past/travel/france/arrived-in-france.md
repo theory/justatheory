@@ -3,7 +3,7 @@ date: 2008-11-30T22:45:16Z
 slug: arrived-in-france
 title: Arrival
 aliases: [/travel/france/2008/arrival.html]
-tags: [France, Paris, Rouen, Lufthansa, travel, Eiffel Tower, jet lag]
+tags: [France, Paris, Rouen, Lufthansa, Travel, Eiffel Tower, Jet Lag]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2007-09-14T17:57:48Z
 slug: ical-invite-file-location
 title: Where iCal Keeps Invitations
 aliases: [/computers/os/macosx/ical_invite_file_location.html]
-tags: [macOS, iCal, ICS, iCalendar, VCS, caching]
+tags: [macOS, iCal, ICS, iCalendar, VCS, Caching]
 type: post
 ---
 

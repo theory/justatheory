@@ -3,7 +3,7 @@ date: 2005-12-24T01:35:11Z
 slug: which-digest
 title: Which Digest Should I Use?
 aliases: [/computers/programming/perl/which_digest.html]
-tags: [Perl, MD5, Whirpool, Haval256, passwords, hashing, algorithms]
+tags: [Perl, MD5, Whirpool, Haval256, Passwords, Hashing, Algorithms]
 type: post
 ---
 

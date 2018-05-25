@@ -3,7 +3,7 @@ date: 2004-10-08T19:24:52Z
 slug: fineman-analysis
 title: Howard Fineman's “Analysis”
 aliases: [/politics/election_2004/fineman_analysis.html]
-tags: [Politics, George W. Bush, John Kerry, President, elections, Howard Fineman]
+tags: [Politics, George W. Bush, John Kerry, President, Elections, Howard Fineman]
 type: post
 ---
 

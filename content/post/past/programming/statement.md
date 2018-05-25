@@ -3,7 +3,7 @@ date: 2002-02-04T08:00:00Z
 slug: development-methodology
 title: Software Development Methodology
 aliases: [/computers/programming/methodology/statement.html]
-tags: [Programming, software development, software engineering, methodology]
+tags: [Programming, Software Development, Software Engineering, Methodology]
 type: post
 ---
 

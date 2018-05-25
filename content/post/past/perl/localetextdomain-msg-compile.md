@@ -3,7 +3,7 @@ date: 2013-01-08T23:36:51Z
 slug: localetextdomain-msg-compile
 title: Dist::Zilla::LocaleTextDomain for Translators
 aliases: [/computers/programming/perl/modules/localetextdomain-msg-compile.html]
-tags: [Perl, translation, localization, internationalization]
+tags: [Perl, Translation, Localization, Internationalization]
 type: post
 ---
 

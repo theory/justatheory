@@ -3,7 +3,7 @@ date: 2012-04-06T02:08:40Z
 slug: sqitch-draft
 title: Sqitch — VCS-powered SQL Change Management
 aliases: [/computers/databases/sqitch-draft.html]
-tags: [Sqitch, SQL, migrations, databases, VCS, Git]
+tags: [Sqitch, SQL, Migrations, Databases, VCS, Git]
 type: post
 ---
 

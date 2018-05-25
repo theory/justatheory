@@ -3,7 +3,7 @@ date: 2005-08-27T19:05:30Z
 slug: bricolage-10-001
 title: 10_001
 aliases: [/bricolage/10_001.html]
-tags: [Bricolage, testing]
+tags: [Bricolage, Testing]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2009-11-28T19:44:50Z
 slug: jpug-talk
 title: JPUG Talk Posted
 aliases: [/computers/databases/postgresql/jpug-talk.html]
-tags: [Postgres, JPUG, pgTAP, testing, video]
+tags: [Postgres, JPUG, pgTAP, Testing, Video]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2004-07-07T18:29:00Z
 slug: ipod-security-threat
 title: "Gartner: iPod is a Security Threat"
 aliases: [/computers/policy/ipod_security_threat.html]
-tags: [Security, iPod, Apple, Gartner, Information Technology, guns, NRA, design, music]
+tags: [Security, iPod, Apple, Gartner, Information Technology, Guns, NRA, Design, Music]
 type: post
 ---
 

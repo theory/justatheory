@@ -3,7 +3,7 @@ date: 2016-02-17T11:30:00Z
 link: https://www.apple.com/customer-letter/
 title: Apple Challenges FBI Decryption Demand
 aliases: [/encryption/2016/02/17/apple-encryption-stand/]
-tags: [Apple, Tim Cook, privacy, encryption, security]
+tags: [Apple, Tim Cook, Privacy, Encryption, Security]
 type: post
 ---
 

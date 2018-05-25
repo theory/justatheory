@@ -3,7 +3,7 @@ date: 2005-06-03T19:38:09Z
 slug: bricolage-google-summer-of-code
 title: Bricolage a Google Summer of Code Project
 aliases: [/bricolage/google_summer_of_code.html]
-tags: [Bricolage, Google, Google Summer Of Code, pay]
+tags: [Bricolage, Google, Google Summer Of Code, Pay]
 type: post
 ---
 

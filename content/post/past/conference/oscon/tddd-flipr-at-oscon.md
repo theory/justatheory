@@ -3,7 +3,7 @@ date: 2010-07-16T16:49:35Z
 slug: tddd-flipr-at-oscon
 title: Important Announcement at OSCON Next Week
 aliases: [/computers/conferences/oscon2010/tddd-flipr-at-oscon.html]
-tags: [OSCON, test-driven database design, pgTAP, antisocial media]
+tags: [OSCON, Test-Driven Database Design, pgTAP, Antisocial media]
 type: post
 ---
 

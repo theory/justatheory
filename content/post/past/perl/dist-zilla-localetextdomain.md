@@ -3,7 +3,7 @@ date: 2012-10-01T20:50:35Z
 slug: dist-zilla-localetextdomain
 title: Localize Your Perl modules with Locale::TextDomain and Dist::Zilla
 aliases: [/computers/programming/perl/modules/dist-zilla-localetextdomain.html]
-tags: [Perl, localization, internationalization, CPAN, Dist::Zilla]
+tags: [Perl, Localization, Internationalization, CPAN, Dist::Zilla]
 type: post
 ---
 

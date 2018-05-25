@@ -3,7 +3,7 @@ date: 2004-11-17T01:56:05Z
 slug: sqlite-foreign-key-triggers
 title: Enforce Foreign Key Integrity in SQLite with Triggers
 aliases: [/computers/databases/sqlite/foreign_key_triggers.html]
-tags: [SQLite, SQL, database triggers]
+tags: [SQLite, SQL, Database Triggers]
 type: post
 ---
 

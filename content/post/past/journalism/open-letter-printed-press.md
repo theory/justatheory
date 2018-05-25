@@ -3,7 +3,7 @@ date: 2012-04-23T04:26:49Z
 slug: open-letter-printed-press
 title: An open letter to the printed press
 aliases: [/culture/journalism/open-letter-printed-press.html]
-tags: [Journalism, publishing, periodicals, Newspapers, iPad, tablets, jobs to be done, disruption]
+tags: [Journalism, Publishing, Periodicals, Newspapers, iPad, Tablets, Jobs to be Done, Disruption]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2005-08-17T18:24:37Z
 slug: test-simple-js-0.20
 title: Test.Simple 0.20 Released
 aliases: [/computers/programming/javascript/test_simple-0.20.html]
-tags: [JavaScript, testing, TAP, Test Anything Protocol, Internet Explorer, Safari, Firefox, Opera]
+tags: [JavaScript, Testing, TAP, Test Anything Protocol, Internet Explorer, Safari, Firefox, Opera]
 type: post
 ---
 

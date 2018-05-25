@@ -3,7 +3,7 @@ date: 2013-02-22T07:09:46Z
 slug: sqitch-homebrew-tap
 title: Sqitch Homebrew Tap
 aliases: [/computers/databases/sqitch-homebrew-tap.html]
-tags: [Sqitch, SQL, change management, development, Homebrew, Test Anything Protocol, macOS]
+tags: [Sqitch, SQL, Change Management, Development, Homebrew, Test Anything Protocol, macOS]
 type: post
 ---
 

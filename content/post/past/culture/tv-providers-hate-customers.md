@@ -3,7 +3,7 @@ date: 2011-07-19T03:50:51Z
 slug: tv-providers-hate-customers
 title: TV Providers Hate Their Customers
 aliases: [/culture/tv/tv-providers-hate-customers.html]
-tags: [Culture, TV, Cable TV, satellite tv, BitTorrent, iTunes, Netflix, HBO]
+tags: [Culture, TV, Cable TV, Satellite TV, BitTorrent, iTunes, Netflix, HBO]
 type: post
 ---
 

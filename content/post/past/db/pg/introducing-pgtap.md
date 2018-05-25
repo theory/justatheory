@@ -3,7 +3,7 @@ date: 2008-06-07T05:24:27Z
 slug: introducing-pgtap
 title: Introducing pgTAP
 aliases: [/computers/databases/postgresql/introducing_pgtap.html]
-tags: [Postgres, TAP, Test Anything Protocol, Perl, testing, unit testing]
+tags: [Postgres, TAP, Test Anything Protocol, Perl, Testing, Unit Testing]
 type: post
 ---
 

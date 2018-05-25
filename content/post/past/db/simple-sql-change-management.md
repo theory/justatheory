@@ -4,7 +4,7 @@ description: I've been thinking a lot about SQL change management. I think I may
 slug: simple-sql-change-management
 title: Simple SQL Change Management
 aliases: [/computers/databases/simple-sql-change-management.html]
-tags: [databases, SQL, databases, change management, versioning]
+tags: [Databases, SQL, Databases, Change Management, Versioning]
 type: post
 ---
 

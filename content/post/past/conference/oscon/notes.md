@@ -3,7 +3,7 @@ date: 2004-08-08T20:43:23Z
 slug: oscon-notes
 title: OSCON 2004 Notes
 aliases: [/computers/conferences/oscon2004/notes.html]
-tags: [OSCON, open source]
+tags: [OSCON, Open Source]
 type: post
 ---
 

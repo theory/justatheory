@@ -3,7 +3,7 @@ date: 2013-02-12T22:11:19Z
 slug: bootstrap-bucardo-mulitmaster
 title: Bootstrapping Bucardo Master/Master Replication
 aliases: [/computers/databases/postgresql/bootstrap-bucardo-mulitmaster.html]
-tags: [Postgres, Bucardo, database replication]
+tags: [Postgres, Bucardo, Database Replication]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2012-08-20T22:36:57Z
 slug: sqitch-depend-on-it
 title: "Sqitch: Depend On It!"
 aliases: [/computers/databases/sqitch-depend-on-it.html]
-tags: [Sqitch, SQL, change management]
+tags: [Sqitch, SQL, Change Management]
 type: post
 ---
 

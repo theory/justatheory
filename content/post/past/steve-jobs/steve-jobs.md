@@ -3,7 +3,7 @@ date: 2011-11-14T18:06:42Z
 slug: steve-jobs
 title: Steve Jobs
 aliases: [/culture/steve-jobs.html]
-tags: [Steve Jobs, biography, Walter Isaacson, Ronald Reagan, Dutch]
+tags: [Steve Jobs, Biography, Walter Isaacson, Ronald Reagan, Dutch]
 type: post
 ---
 

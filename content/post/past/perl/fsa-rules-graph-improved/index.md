@@ -3,7 +3,7 @@ date: 2006-07-14T20:02:16Z
 slug: fsa-rules-graph-improved
 title: FSA::Rules Graphing Features Improved
 aliases: [/computers/programming/perl/fsa_rules_graph_improved.html]
-tags: [Perl, FSA::Rules, GraphViz, PNG, state machines]
+tags: [Perl, FSA::Rules, GraphViz, PNG, State Machines]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2006-06-16T21:06:39Z
 slug: on-wine-webapps
 title: What Works and What Doesn't in Online Wine Applications
 aliases: [/culture/wine/on_wine_webapps.html]
-tags: [Wine, Vinography, Cork’d, CellarTracker, databases, LogABottle, Winelog, TastyDrop, OpenBottles]
+tags: [Wine, Vinography, Cork’d, CellarTracker, Databases, LogABottle, Winelog, TastyDrop, OpenBottles]
 type: post
 ---
 

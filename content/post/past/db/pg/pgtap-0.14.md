@@ -3,7 +3,7 @@ date: 2008-10-27T23:42:56Z
 slug: pgtap-0.14
 title: pgTAP 0.14 Released
 aliases: [/computers/databases/postgresql/pgtap-0.14.html]
-tags: [Postgres, pgTAP, testing, unit testing, TAP, Test Anything Protocol]
+tags: [Postgres, pgTAP, Testing, Unit Testing, TAP, Test Anything Protocol]
 type: post
 ---
 

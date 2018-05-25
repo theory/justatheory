@@ -3,7 +3,7 @@ date: 2008-06-30T19:49:53Z
 slug: citext-patch-submitted
 title: CITEXT Patch Submitted to PostgreSQL Contrib
 aliases: [/computers/databases/postgresql/citext-patch-submitted.html]
-tags: [Postgres, text, case-insensitivity, Unicode, UTF-8, citext]
+tags: [Postgres, Text, Case-Insensitivity, Unicode, UTF-8, citext]
 type: post
 ---
 

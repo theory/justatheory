@@ -3,7 +3,7 @@ date: 2009-06-03T21:15:43Z
 slug: doomed-to-reinvent
 title: Doomed To Reinvent
 aliases: [/computers/programming/methodology/doomed-to-reinvent.html]
-tags: [Programming, doom, SQL, LISP, HTML, Drupal, PHP]
+tags: [Programming, Doom, SQL, LISP, HTML, Drupal, PHP]
 type: post
 ---
 

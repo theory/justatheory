@@ -3,7 +3,7 @@ date: 2009-06-03T17:13:33Z
 slug: buggy-display
 title: My Buggy MacBook Pro
 aliases: [/computers/macbookpro/buggy-display.html]
-tags: [MacBook Pro, insects, screen, MacBook]
+tags: [MacBook Pro, Insects, Screen, MacBook]
 type: post
 ---
 

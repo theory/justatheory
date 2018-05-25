@@ -4,7 +4,7 @@ description: Here’s how I propose to eliminate the duplication of code between
 slug: sql-change-management-sans-redundancy
 title: SQL Change Management Sans Duplication
 aliases: [/computers/databases/sql-change-management-sans-redundancy.html]
-tags: [databases, SQL, databases, change management, version control, Git]
+tags: [Databases, SQL, Databases, Change Management, Version Control, Git]
 type: post
 ---
 

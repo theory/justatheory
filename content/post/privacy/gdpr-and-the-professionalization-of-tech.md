@@ -3,7 +3,7 @@ title: "GDPR and the Professionalization of Tech"
 date: 2018-05-25T21:20:27Z
 lastMod: 2018-05-25T21:20:27Z
 description: "The GDPR is a big deal. What will be the best approaches to comply? Hard work, good tools, and ingenious new products."
-tags: [Privacy, GDPR, Compliance, Technology, Internet, ingenuity, Microsoft Azure, Amazon AWS, Ian Bogost, Sarah Jamie Lewis]
+tags: [Privacy, GDPR, Compliance, Technology, Internet, Ingenuity, Microsoft Azure, Amazon AWS, Ian Bogost, Sarah Jamie Lewis]
 type: post
 ---
 

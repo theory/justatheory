@@ -3,7 +3,7 @@ date: 2004-10-19T23:40:38Z
 slug: svn-notify-2.30
 title: SVN::Notify 2.30 Adds Issue Tracking Links
 aliases: [/computers/programming/perl/modules/svn_notify_2.30.html]
-tags: [Perl, SVN::Notify, CVSspam, Request Tracker, Bugzilla, Subversion, email, JIRA, ViewCVS, Autrijus Tang, Audrey Tang]
+tags: [Perl, SVN::Notify, CVSspam, Request Tracker, Bugzilla, Subversion, Email, JIRA, ViewCVS, Autrijus Tang, Audrey Tang]
 type: post
 ---
 

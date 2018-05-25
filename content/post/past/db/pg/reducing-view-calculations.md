@@ -3,7 +3,7 @@ date: 2007-11-07T05:22:00Z
 slug: reducing-postgres-view-calculations
 title: Need Help Reducing View Calculations
 aliases: [/computers/databases/postgresql/reducing_view_calculations.html]
-tags: [Postgres, time zones]
+tags: [Postgres, Time Zones]
 type: post
 ---
 

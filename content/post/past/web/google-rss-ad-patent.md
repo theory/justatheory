@@ -3,7 +3,7 @@ date: 2005-08-02T15:35:12Z
 slug: google-rss-ad-patent
 title: Has Google Forgotten its on Tagline?
 aliases: [/computers/internet/controversy/google_rss_ad_patent.html]
-tags: [Web, Google, InfoWorld, Chad Dickerson, patents, RSS, Atom, advertising]
+tags: [Web, Google, InfoWorld, Chad Dickerson, Patents, RSS, Atom, Advertising]
 type: post
 ---
 

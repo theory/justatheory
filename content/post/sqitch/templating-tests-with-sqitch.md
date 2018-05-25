@@ -2,7 +2,7 @@
 date: 2014-01-13T14:11:00Z
 title: Templating Tests with Sqitch
 aliases: [/sqitch/2014/01/13/templating-tests-with-sqitch/]
-tags: [Sqitch, pgTAP, templating]
+tags: [Sqitch, pgTAP, Templating]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2007-08-29T19:06:14Z
 slug: ruby-time-zone-bug
 title: Ruby Time Object Time Zone Bug
 aliases: [/computers/programming/ruby/time_zone_bug.html]
-tags: [Ruby, time zones]
+tags: [Ruby, Time Zones]
 type: post
 ---
 

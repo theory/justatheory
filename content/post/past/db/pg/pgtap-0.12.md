@@ -3,7 +3,7 @@ date: 2008-10-11T04:50:03Z
 slug: pgtap-0.12
 title: pgTAP 0.12 Released
 aliases: [/computers/databases/postgresql/pgtap-0.12.html]
-tags: [Postgres, pgTAP, testing, unit testing, TAP, Test Anything Protocol]
+tags: [Postgres, pgTAP, Testing, Unit Testing, TAP, Test Anything Protocol]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2012-04-28T04:32:52Z
 slug: sqitch-update
 title: Sqitch Update
 aliases: [/computers/databases/sqitch-update.html]
-tags: [Sqitch, SQL, change management]
+tags: [Sqitch, SQL, Change Management]
 type: post
 ---
 

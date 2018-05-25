@@ -3,7 +3,7 @@ date: 2012-06-01T18:25:00Z
 slug: sqitch-vcs-again
 title: "Sqitch: Back to the VCS"
 aliases: [/computers/databases/sqitch-vcs-again.html]
-tags: [Sqitch, SQL, change management, VCS, databases]
+tags: [Sqitch, SQL, Change Management, VCS, Databases]
 type: post
 ---
 

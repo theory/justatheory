@@ -4,7 +4,7 @@ description: Apple's not on in the cloud computing business and has no interest 
 slug: cloudy-ideas
 title: Cloudy Ideas
 aliases: [/apple/cloudy-ideas.html]
-tags: [Apple, iCloud, cloud computing]
+tags: [Apple, iCloud, Cloud Computing]
 type: post
 ---
 

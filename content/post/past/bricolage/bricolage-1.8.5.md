@@ -3,7 +3,7 @@ date: 2005-03-19T07:15:58Z
 slug: bricolage-1.8.5
 title: Bricolage 1.8.5 Released
 aliases: [/bricolage/announce/1.8.5.html]
-tags: [Bricolage, shipping, Perl, Postgres, Apache, mod_perl]
+tags: [Bricolage, Shipping, Perl, Postgres, Apache, mod_perl]
 type: post
 ---
 

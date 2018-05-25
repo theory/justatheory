@@ -3,7 +3,7 @@ date: 2009-05-29T01:20:31Z
 slug: pgtap-0.21
 title: pgTAP 0.21 Drops
 aliases: [/computers/databases/postgresql/pgtap-0.21.html]
-tags: [Postgres, pgTAP, testing, unit testing, TAP, PL/pgSQL, SQL]
+tags: [Postgres, pgTAP, Testing, Unit Testing, TAP, PL/pgSQL, SQL]
 type: post
 ---
 

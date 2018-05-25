@@ -3,7 +3,7 @@ date: 2009-11-02T14:00:00Z
 slug: catalyst-view-td
 title: Create Catalyst Views with Template::Declare
 aliases: [/computers/programming/perl/catalyst/catalyst-view-td.html]
-tags: [Perl, Catalyst, Template::Declare, templating, MVC]
+tags: [Perl, Catalyst, Template::Declare, Templating, MVC]
 type: post
 ---
 

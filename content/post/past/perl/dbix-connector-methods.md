@@ -3,7 +3,7 @@ date: 2009-10-13T19:25:19Z
 slug: dbix-connector-methods
 title: Suggest Method Names for DBIx::Connector
 aliases: [/computers/programming/perl/modules/dbix-connector-methods.html]
-tags: [Perl, DBI, databases, SQL, DBIx::Connector, bike shedding]
+tags: [Perl, DBI, Databases, SQL, DBIx::Connector, Bike Shedding]
 type: post
 ---
 

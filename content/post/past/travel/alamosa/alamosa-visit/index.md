@@ -3,7 +3,7 @@ date: 2004-06-28T18:08:45Z
 slug: alamosa-visit
 title: A Quick Trip to Alamosa
 aliases: [/travel/alamosa/june_2004.html]
-tags: [Alamosa, Colorado, Kineticode, consulting, business, Adams State College, Milagro’s Coffeehouse, Great Lakes Airlines]
+tags: [Alamosa, Colorado, Kineticode, Consulting, Business, Adams State College, Milagro’s Coffeehouse, Great Lakes Airlines]
 type: post
 ---
 

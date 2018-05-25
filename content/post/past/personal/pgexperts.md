@@ -3,7 +3,7 @@ date: 2009-05-08T17:22:52Z
 slug: pgexperts
 title: "New Gig: PostgreSQL Experts, Inc."
 aliases: [/autobiographical/pgexperts.html]
-tags: [Personal, work, Postgres, PL/pgSQL, PostgreSQL Experts]
+tags: [Personal, Work, Postgres, PL/pgSQL, PostgreSQL Experts]
 type: post
 ---
 

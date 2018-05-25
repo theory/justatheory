@@ -3,7 +3,7 @@ date: 2009-06-22T17:34:27Z
 slug: pgtap-set-testing-update
 title: pgTAP Set-Testing Update
 aliases: [/computers/databases/postgresql/set_testing_update.html]
-tags: [Postgres, testing, unit testing, relational algegra, pgTAP]
+tags: [Postgres, Testing, Unit Testing, Relational Algebra, pgTAP]
 type: post
 ---
 

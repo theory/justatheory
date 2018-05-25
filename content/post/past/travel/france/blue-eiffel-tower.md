@@ -3,7 +3,7 @@ date: 2008-12-26T17:54:06Z
 slug: blue-eiffel-tower
 title: Blue Eiffel
 aliases: [/travel/france/2008/blue-eiffel-tower.html]
-tags: [France, Eiffel Tower, photography]
+tags: [France, Eiffel Tower, Photography]
 type: post
 ---
 

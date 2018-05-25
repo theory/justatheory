@@ -3,7 +3,7 @@ date: 2006-05-20T04:57:10Z
 slug: benchmarking-functions
 title: Benchmarking PostgreSQL Functions
 aliases: [/computers/databases/postgresql/benchmarking_functions.html]
-tags: [Postgres, benchmarks, PL/pgSQL, PL/Perl, C]
+tags: [Postgres, Benchmarks, PL/pgSQL, PL/Perl, C]
 type: post
 ---
 

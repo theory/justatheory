@@ -3,7 +3,7 @@ date: 2006-10-02T20:58:56Z
 slug: odd-cpan-test-failures
 title: What's With These CPAN-Testers Failures?
 aliases: [/computers/programming/perl/odd_test_failures.html]
-tags: [Perl, CPAN, testing, mod_perl]
+tags: [Perl, CPAN, Testing, mod_perl]
 type: post
 ---
 

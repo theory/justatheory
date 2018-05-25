@@ -3,7 +3,7 @@ date: 2010-12-17T18:52:09Z
 slug: serious-dbix-connector-bug-fixed
 title: Serious Exception-Handling Bug Fixed in DBIx::Connector 0.42
 aliases: [/computers/programming/perl/serious-dbix-connector-bug-fixed.html]
-tags: [Perl, DBIx::Connector, DBI, exception handling]
+tags: [Perl, DBIx::Connector, DBI, Exception Handling]
 type: post
 ---
 

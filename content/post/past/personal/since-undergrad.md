@@ -3,7 +3,7 @@ date: 2010-10-18T17:37:18Z
 slug: me-since-undergrad
 title: The 411 Since Graduating from College
 aliases: [/autobiographical/since-undergrad.html]
-tags: [Personal, David Wheeler, graduate school, Archaeology, programming, history, Life]
+tags: [Personal, David Wheeler, Graduate School, Archaeology, Programming, History, Life]
 type: post
 ---
 

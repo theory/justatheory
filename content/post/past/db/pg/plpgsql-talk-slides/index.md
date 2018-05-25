@@ -3,7 +3,7 @@ date: 2006-07-20T21:47:24Z
 slug: plpgsql-talk-slides
 title: PL/pgSQL Talk Slides Posted
 aliases: [/computers/databases/postgresql/plpgsql_talk_slides.html]
-tags: [Postgres, PL/pgSQL, presentations, Portland]
+tags: [Postgres, PL/pgSQL, Presentations, Portland]
 type: post
 ---
 

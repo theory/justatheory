@@ -3,7 +3,7 @@ date: 2005-05-22T18:45:32Z
 slug: welcome-anna
 title: Welcome Anna!
 aliases: [/family/welcome_anna.html]
-tags: [Personal, Anna, David Wheeler, birth, birthdays, photos]
+tags: [Personal, Anna, David Wheeler, Birth, Birthdays, Photos]
 type: post
 ---
 

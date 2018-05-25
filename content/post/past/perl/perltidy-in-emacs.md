@@ -3,7 +3,7 @@ date: 2005-12-22T20:38:32Z
 slug: perltidy-in-emacs
 title: Use Perltidy in Emacs
 aliases: [/computers/programming/perl/perltidy_in_emacs.html]
-tags: [Perl, Emacs, Perltidy, elisp]
+tags: [Perl, Emacs, Perltidy, Elisp]
 type: post
 ---
 

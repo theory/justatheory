@@ -3,7 +3,7 @@ date: 2009-11-17T22:29:18Z
 slug: tap-parser-sourcehandler
 title: Test Everything with TAP Source Handlers
 aliases: [/computers/programming/perl/tap-parser-sourcehandler.html]
-tags: [Perl, TAP, testing, pgTAP, SourceHandler]
+tags: [Perl, TAP, Testing, pgTAP, SourceHandler]
 type: post
 ---
 

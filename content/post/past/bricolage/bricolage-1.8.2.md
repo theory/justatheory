@@ -3,7 +3,7 @@ date: 2004-09-13T17:01:00Z
 slug: bricolage-1.8.2
 title: Bricolage 1.8.2 Released
 aliases: [/bricolage/announce/1.8.2.html]
-tags: [Bricolage, shipping]
+tags: [Bricolage, Shipping]
 type: post
 ---
 

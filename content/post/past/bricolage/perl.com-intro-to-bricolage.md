@@ -3,7 +3,7 @@ date: 2004-09-03T00:45:51Z
 slug: perl.com-intro-to-bricolage
 title: Introduction to Bricolage Published by Perl.com
 aliases: [/bricolage/writing/perl.com_intro_to_bricolage.html]
-tags: [Bricolage, Perl, Perl.com, Content Management, white papers]
+tags: [Bricolage, Perl, Perl.com, Content Management, White Papers]
 type: post
 ---
 

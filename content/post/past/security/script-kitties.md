@@ -3,7 +3,7 @@ date: 2005-10-21T17:34:02Z
 slug: script-kitties
 title: Script Kitties
 aliases: [/computers/security/script_kitties.html]
-tags: [security, script kiddies, Julie Wheeler, Humor]
+tags: [Security, Script Kiddies, Julie Wheeler, Humor]
 type: post
 ---
 

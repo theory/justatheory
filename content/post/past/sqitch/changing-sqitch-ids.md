@@ -3,7 +3,7 @@ date: 2012-11-14T01:46:23Z
 slug: changing-sqitch-ids
 title: Thinking about Changing Sqitch Change IDs
 aliases: [/computers/databases/changing-sqitch_ids.html]
-tags: [Sqitch, Git, hashing, ID]
+tags: [Sqitch, Git, Hashing, ID]
 type: post
 ---
 

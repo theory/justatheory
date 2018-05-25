@@ -3,7 +3,7 @@ date: 2004-11-10T01:21:15Z
 slug: bricolage-1.8.3
 title: Bricolage 1.8.3 Released
 aliases: [/bricolage/announce/1.8.3.html]
-tags: [Bricolage, shipping, Perl, Postgres, Apache, mod_perl]
+tags: [Bricolage, Shipping, Perl, Postgres, Apache, mod_perl]
 type: post
 ---
 

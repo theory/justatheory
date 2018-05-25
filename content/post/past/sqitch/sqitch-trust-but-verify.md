@@ -3,7 +3,7 @@ date: 2013-01-04T00:57:11Z
 slug: sqitch-trust-but-verify
 title: "Sqitch: Trust, But Verify"
 aliases: [/computers/databases/sqitch-trust-but-verify.html]
-tags: [Sqitch, SQL, version control, change management]
+tags: [Sqitch, SQL, Version Control, Change Management]
 type: post
 ---
 

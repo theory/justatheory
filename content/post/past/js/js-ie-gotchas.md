@@ -3,7 +3,7 @@ date: 2005-04-29T19:38:19Z
 slug: js-ie-gotchas
 title: Quirks of IE's JavaScript Implementation
 aliases: [/computers/programming/javascript/ie_gotchas.html]
-tags: [JavaScript, Internet Explorer, Gotchas, JScript, Firefox, line endings, oxford comma]
+tags: [JavaScript, Internet Explorer, Gotchas, JScript, Firefox, Line Endings, Oxford Comma]
 type: post
 ---
 

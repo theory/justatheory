@@ -3,7 +3,7 @@ date: 2004-10-21T20:52:14Z
 slug: svnnotify-2.41
 title: SVN::Notify 2.41 Adds Plain Text Issue Tracking Links
 aliases: [/computers/programming/perl/modules/svnnotify_2.41.html]
-tags: [Perl, SVN::Notify, Subversion, HTML, XHTML, email, Request Tracker, Bugzilla, JIRA, ViewCVS]
+tags: [Perl, SVN::Notify, Subversion, HTML, XHTML, Email, Request Tracker, Bugzilla, JIRA, ViewCVS]
 type: post
 ---
 

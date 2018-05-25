@@ -3,7 +3,7 @@ date: 2011-10-08T22:29:52Z
 slug: disposable-computing
 title: Disposable Computing
 aliases: [/computers/devices/disposable-computing.html]
-tags: [Quality, Kindle, iPad, junk, disposability, minimalism, build quality]
+tags: [Quality, Kindle, iPad, Junk, Disposability, Minimalism, Build Quality]
 type: post
 ---
 

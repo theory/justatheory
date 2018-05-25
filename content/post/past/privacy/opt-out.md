@@ -3,7 +3,7 @@ date: 2006-04-03T20:23:36Z
 slug: direct-mail-opt-out
 title: Tune In, Opt-Out
 aliases: [/privacy/opt-out.html]
-tags: [Privacy, marketing, direct marketing, credit cards]
+tags: [Privacy, Marketing, Direct Marketing, Credit Cards]
 type: post
 ---
 

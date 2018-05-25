@@ -3,7 +3,7 @@ date: 2010-05-27T16:37:15Z
 slug: fuck-typing-lwp
 title: Fuck Typing LWP
 aliases: [/computers/programming/perl/fuck-typing-lwp.html]
-tags: [Perl, LWP, fuck typing, Composition, programming]
+tags: [Perl, LWP, Fuck Typing, Composition, Programming]
 type: post
 ---
 

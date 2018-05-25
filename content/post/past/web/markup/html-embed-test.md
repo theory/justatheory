@@ -3,7 +3,7 @@ date: 2009-03-06T05:59:55Z
 slug: html-embed-test
 title: Embed HTML on Your Site
 aliases: [/computers/internet/html/embed-test.html]
-tags: [Web, blogrolls, HTML, XHTML]
+tags: [Web, Blogrolls, HTML, XHTML]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2009-11-04T20:13:14Z
 slug: pgtap-best-practices
 title: pgTAP Best Practices Slides Available
 aliases: [/computers/databases/postgresql/pgtap-best-practices.html]
-tags: [Postgres, TAP, pgTAP, testing, unit testing, databases, SQL, PL/pgSQL]
+tags: [Postgres, TAP, pgTAP, Testing, Unit Testing, Databases, SQL, PL/pgSQL]
 type: post
 ---
 

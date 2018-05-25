@@ -3,7 +3,7 @@ date: 2004-08-23T23:16:25Z
 slug: postgres-always-use-c-locale
 title: Always use the C Locale with PostgreSQL
 aliases: [/computers/databases/postgresql/always_use_c_locale.html]
-tags: [Postgres, character sets, locales, Unicode, UTF-8, Bricolage]
+tags: [Postgres, Character Sets, Locales, Unicode, UTF-8, Bricolage]
 type: post
 ---
 

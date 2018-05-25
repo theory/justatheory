@@ -3,7 +3,7 @@ date: 2005-07-06T18:51:38Z
 slug: bricolage-summer-of-code-winners
 title: How the Bricolage Summer of Code Projects were Selected
 aliases: [/bricolage/summer_of_code_winners.html]
-tags: [Bricolage, Google, Google Summer Of Code, projects, methodology]
+tags: [Bricolage, Google, Google Summer Of Code, Projects, Methodology]
 type: post
 ---
 

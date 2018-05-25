@@ -3,7 +3,7 @@ date: 2009-03-04T01:05:22Z
 slug: postfix-and-comcast
 title: Getting Postfix to Send Mail From a Comcast Network
 aliases: [/computers/mail/postfix-and-comcast.html]
-tags: [Tools, mail, Postfix, sendmail, Comcast]
+tags: [Tools, Mail, Postfix, Sendmail, Comcast]
 type: post
 ---
 

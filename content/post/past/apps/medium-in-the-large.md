@@ -3,7 +3,7 @@ date: 2012-09-13T20:36:00Z
 slug: medium-in-the-large
 title: Medium in the Large
 aliases: [/computers/apps/medium-in-the-large.html]
-tags: [Medium, publishing, blogging]
+tags: [Medium, Publishing, Blogging]
 type: post
 ---
 

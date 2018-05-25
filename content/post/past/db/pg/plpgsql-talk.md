@@ -3,7 +3,7 @@ date: 2006-07-18T20:39:00Z
 slug: plpgsql-talk
 title: PL/pgSQL Talk for Portland PostgreSQL Users
 aliases: [/computers/databases/postgresql/plpgsql_talk.html]
-tags: [Postgres, PL/pgSQL, Portland, talk, presentations]
+tags: [Postgres, PL/pgSQL, Portland, Talk, Presentations]
 type: post
 ---
 

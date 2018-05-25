@@ -3,7 +3,7 @@ date: 2011-11-11T20:25:35Z
 slug: missing-the-point
 title: Missing the Point
 aliases: [/computers/devices/missing-the-point.html]
-tags: [Quality, Kindle, iPad, junk, disposability, minimalism, build quality, Starbucks, advertising, Dixie]
+tags: [Quality, Kindle, iPad, Junk, Disposability, Minimalism, Build Quality, Starbucks, Advertising, Dixie]
 type: post
 ---
 

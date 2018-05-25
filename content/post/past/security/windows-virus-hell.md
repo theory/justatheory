@@ -3,7 +3,7 @@ date: 2005-08-21T21:09:22Z
 slug: windows-virus-hell
 title: Windows Virus Hell
 aliases: [/computers/policy/windows_virus_hell.html]
-tags: [Security, Viruses, Windows, Linux, CBL, Win32Mimail, NAT, SMTP, port, mail, email, PHP]
+tags: [Security, Viruses, Windows, Linux, CBL, Win32Mimail, NAT, SMTP, Port, Mail, Email, PHP]
 type: post
 ---
 

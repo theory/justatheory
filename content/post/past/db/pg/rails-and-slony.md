@@ -3,7 +3,7 @@ date: 2007-03-26T06:53:40Z
 slug: rails-and-slony
 title: Rails Migrations with Slony?
 aliases: [/computers/databases/postgresql/rails_and_slony.html]
-tags: [Postgres, Ruby on Rails, Slony, migrations]
+tags: [Postgres, Ruby on Rails, Slony, Migrations]
 type: post
 ---
 

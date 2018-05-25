@@ -3,7 +3,7 @@ date: 2004-08-24T01:41:24Z
 slug: nicholas-clark-oscon
 title: Nicholas Clark
 aliases: [/computers/conferences/oscon2004/nicholas_clark.html]
-tags: [OSCON, Nicholas Clark, open source, Perl, Pumpkin, Pumpking]
+tags: [OSCON, Nicholas Clark, Open Source, Perl, Pumpkin, Pumpking]
 type: post
 ---
 

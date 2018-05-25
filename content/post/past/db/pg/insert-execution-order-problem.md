@@ -3,7 +3,7 @@ date: 2005-12-07T05:19:09Z
 slug: postgres-insert-execution-order-problem
 title: Issues with INSERT Execution Ordering
 aliases: [/computers/databases/postgresql/insert_execution_order_problem.html]
-tags: [Postgres, SQL, RDBMS, database triggers]
+tags: [Postgres, SQL, RDBMS, Database Triggers]
 type: post
 ---
 

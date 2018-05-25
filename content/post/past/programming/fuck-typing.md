@@ -3,7 +3,7 @@ date: 2009-05-02T22:31:55Z
 slug: fuck-typing
 title: Fuck Typing
 aliases: [/computers/programming/methodology/fuck-typing.html]
-tags: [Programming, duck typing, fuck typing, Vinnie Goombatz]
+tags: [Programming, Duck Typing, Fuck Typing, Vinnie Goombatz]
 type: post
 ---
 

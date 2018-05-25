@@ -3,7 +3,7 @@ date: 2007-11-07T21:03:00Z
 slug: postgres-timezone-validation
 title: Validating Time Zones in PostgreSQL
 aliases: [/computers/databases/postgresql/timezone_validation.html]
-tags: [Postgres, time zones, PL/pgSQL]
+tags: [Postgres, Time Zones, PL/pgSQL]
 type: post
 ---
 

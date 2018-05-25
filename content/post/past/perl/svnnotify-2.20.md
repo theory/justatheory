@@ -3,7 +3,7 @@ date: 2004-10-09T22:54:00Z
 slug: svnnotify-2.20
 title: SVN::Notify 2.20 Adds Colorized Diffs
 aliases: [/computers/programming/perl/modules/svnnotify_2.20.html]
-tags: [Perl, Subversion, CVSspam, SVN::Notify, diffs, color, HTML]
+tags: [Perl, Subversion, CVSspam, SVN::Notify, diffs, Color, HTML]
 type: post
 ---
 

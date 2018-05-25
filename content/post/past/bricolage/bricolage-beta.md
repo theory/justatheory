@@ -3,7 +3,7 @@ date: 2004-07-26T07:34:17Z
 slug: bricolage-beta
 title: New Bricolage Website Beta
 aliases: [/bricolage/site/beta.html]
-tags: [Bricolage, open source]
+tags: [Bricolage, Open Source]
 type: post
 ---
 

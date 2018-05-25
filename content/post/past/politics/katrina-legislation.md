@@ -3,7 +3,7 @@ date: 2005-10-04T17:33:43Z
 slug: katrina-legislation
 title: Hurricane Relief? Try Big Oil Relief
 aliases: [/politics/katrina_legislation.html]
-tags: [Politics, Hurricane Katrina, energy policy, congress, New York Times, Salon.com, NRDC]
+tags: [Politics, Hurricane Katrina, Energy Policy, Congress, New York Times, Salon.com, NRDC]
 type: post
 ---
 

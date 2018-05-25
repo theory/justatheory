@@ -3,7 +3,7 @@ date: 2009-04-13T17:42:42Z
 slug: hop-markdown-followup
 title: HOP Markdown Followup
 aliases: [/computers/programming/perl/hop-markdown-followup.html]
-tags: [Perl, parsing, HOP, Higher-Order Perl, HOP::Parser, Mark Jason Dominus]
+tags: [Perl, Parsing, HOP, Higher-Order Perl, HOP::Parser, Mark Jason Dominus]
 type: post
 ---
 

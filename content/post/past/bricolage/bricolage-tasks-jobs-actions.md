@@ -3,7 +3,7 @@ date: 2004-06-02T01:30:51Z
 slug: bricolage-tasks-jobs-actions
 title: Bricolage Tasks, Jobs, Actions, and Alerts
 aliases: [/bricolage/design/tasks_jobs_actions.html]
-tags: [Bricolage, design, callbacks, work]
+tags: [Bricolage, Design, Callbacks, Work]
 type: post
 ---
 

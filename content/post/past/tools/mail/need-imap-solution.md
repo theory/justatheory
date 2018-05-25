@@ -4,7 +4,7 @@ description: I've had my own IMAP server and have recently been burned by a comm
 slug: need-imap-solution
 title: Need Suggestions for IMAP Solution and Migration
 aliases: [/computers/internet/mail/need_imap_solution.html]
-tags: [Tools, IMAP, email]
+tags: [Tools, IMAP, Email]
 type: post
 ---
 

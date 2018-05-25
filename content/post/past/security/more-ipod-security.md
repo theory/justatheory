@@ -3,7 +3,7 @@ date: 2004-07-08T21:34:00Z
 slug: more-ipod-security
 title: iPod Threatens UK Military Security
 aliases: [/computers/policy/more_ipod_security.html]
-tags: [Security, iPod, UK Military, Windows, USB, files]
+tags: [Security, iPod, UK Military, Windows, USB, Files]
 type: post
 ---
 

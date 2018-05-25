@@ -3,7 +3,7 @@ date: 2010-01-16T19:36:39Z
 slug: sane-perl-pod-links
 title: "Pod: Now with Sane Web Links"
 aliases: [/computers/programming/perl/sane-pod-links.html]
-tags: [Perl, Pod, documentation, URLs]
+tags: [Perl, Pod, Documentation, URLs]
 type: post
 ---
 

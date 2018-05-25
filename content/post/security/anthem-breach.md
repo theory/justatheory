@@ -3,7 +3,7 @@ date: 2016-02-19T13:56:00Z
 link: https://digitalguardian.com/blog/judge-anthem-case-rules-breach-harmed-patients
 title: Anthem Breach Harms Consumers
 aliases: [/security/2016/02/19/anthem-breach/]
-tags: [security, privacy, Paul Roberts, Anthem, breach]
+tags: [Security, Privacy, Paul Roberts, Anthem, Breach]
 type: post
 ---
 

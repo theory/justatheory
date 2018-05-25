@@ -3,7 +3,7 @@ date: 2004-07-12T01:42:16Z
 slug: voter-registration-party
 title: MoveOn.org Voter Registration Party
 aliases: [/politics/election_2004/voter_registration_party.html]
-tags: [Politics, voting, voter registration, MoveOn]
+tags: [Politics, Voting, Voter Registration, MoveOn]
 type: post
 ---
 

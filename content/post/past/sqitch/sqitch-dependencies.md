@@ -3,7 +3,7 @@ date: 2012-05-26T00:18:02Z
 slug: sqitch-dependencies
 title: "Sqitch: Where to Define Dependencies?"
 aliases: [/computers/databases/sqitch-dependencies.html]
-tags: [Sqitch, SQL, databases]
+tags: [Sqitch, SQL, Databases]
 type: post
 ---
 

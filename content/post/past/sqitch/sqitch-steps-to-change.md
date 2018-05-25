@@ -3,7 +3,7 @@ date: 2012-06-22T14:28:31Z
 slug: sqitch-steps-to-change
 title: "Sqitch: Rename Step Objects and the SQL Directory?"
 aliases: [/computers/databases/sqitch-steps-to-change.html]
-tags: [Sqitch, SQL, databases, change management, naming]
+tags: [Sqitch, SQL, Databases, Change Management, Naming]
 type: post
 ---
 

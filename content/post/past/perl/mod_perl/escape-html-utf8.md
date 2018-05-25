@@ -3,7 +3,7 @@ date: 2004-09-10T02:54:00Z
 slug: mod_perl-escape-html-utf8
 title: Apache::Util::escape_html() Doesn't Like Perl UTF-8 Strings
 aliases: [/computers/programming/perl/mod_perl/escape_html_utf8.html]
-tags: [mod_perl, Perl, UTF-8, Encode, testing]
+tags: [mod_perl, Perl, UTF-8, Encode, Testing]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2010-06-15T17:56:33Z
 slug: pgxn-development-project
 title: PGXN Development Project
 aliases: [/computers/databases/postgresql/pgxn-development-project.html]
-tags: [Postgres, PGXN, CPAN, fundraising]
+tags: [Postgres, PGXN, CPAN, Fundraising]
 type: post
 ---
 

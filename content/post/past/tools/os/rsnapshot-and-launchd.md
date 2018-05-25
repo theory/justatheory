@@ -3,7 +3,7 @@ date: 2007-02-19T17:18:55Z
 slug: rsnapshot-and-launchd
 title: Configuring rsnapshot and launchd on Mac OS X
 aliases: [/computers/os/macosx/rsnapshot_and_launchd.html]
-tags: [macOS, backups, rsnapshot, rsync, launchd]
+tags: [macOS, Backups, rsnapshot, rsync, launchd]
 type: post
 ---
 

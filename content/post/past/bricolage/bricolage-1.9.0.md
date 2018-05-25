@@ -3,7 +3,7 @@ date: 2005-08-20T01:33:49Z
 slug: bricolage-1.9.0
 title: Bricolage Now has PHP 5 Templating
 aliases: [/bricolage/1.9.0.html]
-tags: [Bricolage, PHP, templating, Perl, Apache, mod_perl, Postgres]
+tags: [Bricolage, PHP, Templating, Perl, Apache, mod_perl, Postgres]
 type: post
 ---
 

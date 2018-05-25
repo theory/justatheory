@@ -3,7 +3,7 @@ date: 2006-02-14T18:02:11Z
 slug: fsa-rules-annotated
 title: FSA::Rules Annotated
 aliases: [/computers/programming/perl/fsa_rules_annotated.html]
-tags: [Perl, FSA::Rules, annotation, AnnoCPAN]
+tags: [Perl, FSA::Rules, Annotation, AnnoCPAN]
 type: post
 ---
 

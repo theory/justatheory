@@ -3,7 +3,7 @@ date: 2006-03-08T20:06:30Z
 slug: conference-projectors
 title: What's with the Ancient Projectors?
 aliases: [/computers/conferences/etech2006/projectors.html]
-tags: [ETech, conferences]
+tags: [ETech, Conferences]
 type: post
 ---
 

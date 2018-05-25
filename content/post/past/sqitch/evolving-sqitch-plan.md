@@ -3,7 +3,7 @@ date: 2012-05-31T21:20:42Z
 slug: evolving-sqitch-plan
 title: The Ever Evolving Sqitch Plan
 aliases: [/computers/databases/evolving-sqitch-plan.html]
-tags: [Sqitch, SQL, change management, VCS, databases]
+tags: [Sqitch, SQL, Change Management, VCS, Databases]
 type: post
 ---
 

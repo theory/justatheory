@@ -3,7 +3,7 @@ date: 2011-01-20T05:52:02Z
 slug: designscene-has-landed
 title: DesignScene Has Landed
 aliases: [/computers/apps/designscene-has-landed.html]
-tags: [DesignScene, design, iPad, Objective-C, Cocoa programming, MVC, Roger Wong]
+tags: [DesignScene, Design, iPad, Objective-C, Cocoa programming, MVC, Roger Wong]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2006-02-06T18:15:55Z
 slug: online-voting-security
 title: How Does One Protect Online Ballot Box Stuffing?
 aliases: [/computers/security/online_voting_security.html]
-tags: [security, voting, elections, ballot box stuffing]
+tags: [Security, Voting, Elections, Ballot Box Stuffing]
 type: post
 ---
 

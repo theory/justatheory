@@ -3,7 +3,7 @@ date: 2009-03-09T18:15:31Z
 slug: is-printing-money-stimulative
 title: Is Printing Money Stimulative?
 aliases: [/politics/economy/is-printing-money-stimulative.html]
-tags: [Economics, economy, stimulus, macroeconomics, microeconomics, UK, printing money, Curtis Poe, Paul Krugman]
+tags: [Economics, Economy, Stimulus, Macroeconomics, Microeconomics, UK, Printing Money, Curtis Poe, Paul Krugman]
 type: post
 ---
 

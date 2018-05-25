@@ -3,7 +3,7 @@ date: 2004-06-23T00:10:00Z
 slug: apache-testmb
 title: Module::Build + Apache::Test is Nearly Here
 aliases: [/computers/programming/perl/mod_perl/apache_testmb.html]
-tags: [mod_perl, Perl, Module::Build, testing]
+tags: [mod_perl, Perl, Module::Build, Testing]
 type: post
 ---
 

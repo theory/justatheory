@@ -3,7 +3,7 @@ date: 2007-03-26T08:03:16Z
 slug: five-things
 title: Five Things You Don't Know About Me
 aliases: [/autobiographical/five_things.html]
-tags: [Personal, autobiography, kibbutz, Dafna, Archaeology, CSUS, University of Virginia, Portland, Oregon, family, lifestyle, Anna, Values Of n, Stikkit, I Want Sandy]
+tags: [Personal, Autobiography, Kibbutz, Dafna, Archaeology, CSUS, University of Virginia, Portland, Oregon, Family, Lifestyle, Anna, Values Of n, Stikkit, I Want Sandy]
 type: post
 ---
 

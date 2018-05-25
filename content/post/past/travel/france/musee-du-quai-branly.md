@@ -3,7 +3,7 @@ date: 2009-03-14T05:37:46Z
 slug: musee-du-quai-branly
 title: Musée du quai Branly
 aliases: [/travel/france/2008/musee-du-quai-branly.html]
-tags: [France, photography, Paris, Musée Du Quai Branly]
+tags: [France, Photography, Paris, Musée Du Quai Branly]
 type: post
 ---
 

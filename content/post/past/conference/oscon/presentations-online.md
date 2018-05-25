@@ -3,7 +3,7 @@ date: 2005-08-24T20:08:36Z
 slug: oscon-presentations-online
 title: My OSCON 2005 Presentation Slides Posted
 aliases: [/computers/conferences/oscon2005/presentations_online.html]
-tags: [OSCON, open source, O’Reilly, Bricolage, Database, Database Design, What’s New In Bricolage]
+tags: [OSCON, Open Source, O’Reilly, Bricolage, Database, Database Design, What’s New In Bricolage]
 type: post
 ---
 

@@ -2,7 +2,7 @@
 title: "Misguided Delusion"
 date: 2013-04-24T19:00:00Z
 description: A simple post. I followed the link and have hardly stopped thinking about it since.
-tags: [Culture, Religion, beauty, Sam Harris, rationality, faith, love]
+tags: [Culture, Religion, Beauty, Sam Harris, Rationality, Faith, Love]
 type: post
 ---
 

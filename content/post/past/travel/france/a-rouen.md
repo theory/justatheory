@@ -3,7 +3,7 @@ date: 2012-06-28T11:04:20Z
 slug: a-rouen
 title: À Rouen
 aliases: [/travel/france/2012/a-rouen.html]
-tags: [France, travel, Rouen, home exchange]
+tags: [France, Travel, Rouen, Home Exchange]
 type: post
 ---
 

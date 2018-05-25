@@ -3,7 +3,7 @@ date: 2011-09-26T19:09:48Z
 slug: dbix-connector-and-ssi
 title: DBIx::Connector and Serializable Snapshot Isolation
 aliases: [/computers/databases/postgresql/dbix-connector-and-ssi.html]
-tags: [Postgres, databases, SSI, Serializable Isolation Level, DBI, DBIx::Connector, Perl]
+tags: [Postgres, Databases, SSI, Serializable Isolation Level, DBI, DBIx::Connector, Perl]
 type: post
 ---
 

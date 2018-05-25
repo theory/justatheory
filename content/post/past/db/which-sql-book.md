@@ -3,7 +3,7 @@ date: 2005-11-30T00:00:37Z
 slug: which-sql-book
 title: What Advanced SQL Book Should I Buy?
 aliases: [/computers/databases/which_sql_book.html]
-tags: [databases, SQL, Advanced SQL, stored procedures, database triggers, Postgres, SQLite, MySQL]
+tags: [Databases, SQL, Advanced SQL, Stored Procedures, Database Triggers, Postgres, SQLite, MySQL]
 type: post
 ---
 

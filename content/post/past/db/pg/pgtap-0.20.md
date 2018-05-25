@@ -3,7 +3,7 @@ date: 2009-03-30T00:30:00Z
 slug: pgtap-0.20
 title: pgTAP 0.20 Infiltrates Community
 aliases: [/computers/databases/postgresql/pgtap-0.20.html]
-tags: [Postgres, pgTAP, testing, unit testing, TAP, PL/pgSQL]
+tags: [Postgres, pgTAP, Testing, Unit Testing, TAP, PL/pgSQL]
 type: post
 ---
 

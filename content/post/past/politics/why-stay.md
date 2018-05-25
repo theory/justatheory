@@ -3,7 +3,7 @@ date: 2006-04-25T01:44:19Z
 slug: why-stay-in-iraq
 title: Should We Withdraw From Iraq?
 aliases: [/politics/iraq/why_stay.html]
-tags: [Politics, Iraq, war, George W. Bush, intelligence, insurgency]
+tags: [Politics, Iraq, War, George W. Bush, Intelligence, Insurgency]
 type: post
 ---
 

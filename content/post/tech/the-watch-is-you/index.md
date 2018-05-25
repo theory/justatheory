@@ -2,7 +2,7 @@
 title: The Watch is You
 date: 2015-04-16T20:00:00Z
 description: Apple Watch and the future of identity.
-tags: [Apple, Apple Watch, identity, authentication, MFA, Glenn Fleishman]
+tags: [Apple, Apple Watch, Identity, Authentication, MFA, Glenn Fleishman]
 type: post
 ---
 

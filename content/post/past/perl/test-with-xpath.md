@@ -4,7 +4,7 @@ description: Introducing a Rails-inspired Perl module to test the structure and 
 slug: test-with-xpath
 title: Test XML and HTML with XPath
 aliases: [/computers/programming/perl/test-with-xpath.html]
-tags: [Perl, XML, XPath, testing, unit testing, Test::XPath, HTML, XHTML]
+tags: [Perl, XML, XPath, Testing, Unit Testing, Test::XPath, HTML, XHTML]
 type: post
 ---
 

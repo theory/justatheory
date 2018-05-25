@@ -3,7 +3,7 @@ date: 2007-03-29T00:44:07Z
 slug: ruby-warm-standby
 title: PostgreSQL Warm Standby Using Ruby
 aliases: [/computers/databases/postgresql/ruby_warm_standby.html]
-tags: [Postgres, Ruby, database replication]
+tags: [Postgres, Ruby, Database Replication]
 type: post
 ---
 

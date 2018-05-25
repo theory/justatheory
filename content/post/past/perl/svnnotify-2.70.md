@@ -3,7 +3,7 @@ date: 2008-02-29T17:36:49Z
 slug: svnnotify-2.70
 title: "SVN::Notify 2.70: Output Filtering and Character Encoding"
 aliases: [/computers/programming/perl/modules/svnnotify-2.70.html]
-tags: [Perl, SVN::Notify, Subversion, character encoding, Trac]
+tags: [Perl, SVN::Notify, Subversion, Character Encoding, Trac]
 type: post
 ---
 

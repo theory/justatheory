@@ -3,7 +3,7 @@ date: 2013-04-17T06:01:19Z
 slug: french-sun
 title: More Sun
 aliases: [/travel/france/2013/more-sun.html]
-tags: [France, travel, summer, Arles, Provence]
+tags: [France, Travel, Summer, Arles, Provence]
 type: post
 ---
 

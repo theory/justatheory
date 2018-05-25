@@ -3,7 +3,7 @@ date: 2009-09-23T22:10:22Z
 slug: postgres-unicode-normalization
 title: Unicode Normalization in SQL
 aliases: [/computers/databases/postgresql/unicode-normalization.html]
-tags: [Postgres, SQL, Unicode, database normalization, NFC, NFD, NFKC, NFKD]
+tags: [Postgres, SQL, Unicode, Database Normalization, NFC, NFD, NFKC, NFKD]
 type: post
 ---
 

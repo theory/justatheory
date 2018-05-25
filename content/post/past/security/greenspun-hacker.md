@@ -3,7 +3,7 @@ date: 2005-03-11T17:33:19Z
 slug: greenspun-hacker
 title: The End of Civilization
 aliases: [/computers/policy/greenspun_hacker.html]
-tags: [Security, hacking, hacks, hackers, business school, Harvard, Philip Greenspun]
+tags: [Security, Hacking, Hacks, Hackers, Business School, Harvard, Philip Greenspun]
 type: post
 ---
 

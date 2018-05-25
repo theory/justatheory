@@ -3,7 +3,7 @@ date: 2006-09-22T18:53:57Z
 slug: postgres-gtin-0.01
 title: "My First C: A GTIN Data Type for PostgreSQL"
 aliases: [/computers/databases/postgresql/gtin-0.01.html]
-tags: [Postgres, GTIN, data types, C, SQL, programming, EAN]
+tags: [Postgres, GTIN, Data Types, C, SQL, Programming, EAN]
 type: post
 ---
 

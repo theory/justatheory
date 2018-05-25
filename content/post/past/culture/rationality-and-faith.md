@@ -3,7 +3,7 @@ date: 2013-04-24T16:43:28Z
 slug: rationality-and-faith
 title: Rationality and Faith
 aliases: [/culture/rationality-and-faith.html]
-tags: [Culture, Medium, philosophy, religion, faith, rationality, Anthropology]
+tags: [Culture, Medium, Philosophy, Religion, Faith, Rationality, Anthropology]
 type: post
 ---
 

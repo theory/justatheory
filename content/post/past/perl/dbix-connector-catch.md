@@ -3,7 +3,7 @@ date: 2011-05-10T21:12:11Z
 slug: dbix-connector-catch
 title: DBIx::Connector Exception Handling Design
 aliases: [/computers/programming/perl/modules/dbix-connector-catch.html]
-tags: [Perl, databases, DBIx::Connector, exception handling, DBI]
+tags: [Perl, Databases, DBIx::Connector, Exception Handling, DBI]
 type: post
 ---
 

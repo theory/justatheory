@@ -3,7 +3,7 @@ date: 2004-12-14T22:03:00Z
 slug: increment-perl-module-version
 title: How I Increment Module Version Numbers
 aliases: [/computers/programming/perl/increment_version.html]
-tags: [Perl, Versions, CPAN, shipping]
+tags: [Perl, Versions, CPAN, Shipping]
 type: post
 ---
 

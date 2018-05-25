@@ -3,7 +3,7 @@ date: 2006-04-02T20:45:11Z
 slug: sqlonrails-macosx
 title: Patch for SQL on Rails for Mac OS X
 aliases: [/computers/databases/sqlonrails_macosx.html]
-tags: [databases, SQL On Rails, April Fool’s Day]
+tags: [Databases, SQL On Rails, April Fool’s Day]
 type: post
 ---
 

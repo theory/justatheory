@@ -3,7 +3,7 @@ date: 2004-06-16T00:03:18Z
 slug: bricolage-uml-diagram
 title: Bricolage 2.0 UML Diagram
 aliases: [/bricolage/design/uml_diagram.html]
-tags: [Bricolage, UML, OmniGraffle, PDF, design]
+tags: [Bricolage, UML, OmniGraffle, PDF, Design]
 type: post
 ---
 

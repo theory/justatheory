@@ -3,7 +3,7 @@ date: 2011-11-27T20:24:05Z
 slug: incurious-biographer
 title: An Incurious Biographer
 aliases: [/culture/incurious-biographer.html]
-tags: [Steve Jobs, biography, Walter Isaacson, John Gruber, John Siracusa]
+tags: [Steve Jobs, Biography, Walter Isaacson, John Gruber, John Siracusa]
 type: post
 ---
 

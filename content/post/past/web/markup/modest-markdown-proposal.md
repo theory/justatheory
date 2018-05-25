@@ -3,7 +3,7 @@ date: 2009-02-18T18:22:48Z
 slug: modest-markdown-proposal
 title: A Modest Proposal for Markdown Definition Lists
 aliases: [/computers/markup/modest-markdown-proposal.html]
-tags: [Web, Markdown, markup]
+tags: [Web, Markdown, Markup]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2009-04-08T21:21:48Z
 slug: hop-parsing-markdown
 title: Issues Parsing Markdown with HOP::Parser
 aliases: [/computers/programming/perl/hop-parsing-markdown.html]
-tags: [Perl, parsing, HOP, Higher-Order Perl, HOP::Parser, Mark Jason Dominus]
+tags: [Perl, Parsing, HOP, Higher-Order Perl, HOP::Parser, Mark Jason Dominus]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2009-10-05T23:11:52Z
 slug: dbix-connector
 title: Database Handle and Transaction Management with DBIx::Connector
 aliases: [/computers/programming/perl/modules/dbix-connector.html]
-tags: [Perl, DBI, DBix::Class, DBIx::Connector, transactions, savepoints]
+tags: [Perl, DBI, DBix::Class, DBIx::Connector, Transactions, Savepoints]
 type: post
 ---
 

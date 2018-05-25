@@ -3,7 +3,7 @@ date: 2006-05-05T22:09:22Z
 slug: higher-order-plpgsql
 title: Higher Order PL/pgSQL
 aliases: [/computers/databases/postgresql/higher_order_plpgsql.html]
-tags: [Postgres, PL/pgSQL, Higher Order Perl, recursion, Fibonacci Sequence, algorithms]
+tags: [Postgres, PL/pgSQL, Higher Order Perl, Recursion, Fibonacci Sequence, Algorithms]
 type: post
 ---
 

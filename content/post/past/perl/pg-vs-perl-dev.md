@@ -3,7 +3,7 @@ date: 2009-07-13T21:16:17Z
 slug: pg-vs-perl-dev
 title: "PostgreSQL Development: Lessons for Perl?"
 aliases: [/computers/databases/postgresql/perl/pg-vs-perl-dev.html]
-tags: [Perl, Postgres, open source, software, development, hacking, Perl 5 Porters, pgsql-hackers, Pumpking]
+tags: [Perl, Postgres, Open Source, Software, Development, Hacking, Perl 5 Porters, pgsql-hackers, Pumpking]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2009-07-31T00:47:10Z
 slug: pgtap-test-your-results
 title: "pgTAP 0.22: Test Your Results"
 aliases: [/computers/databases/postgresql/test-your-results.html]
-tags: [Postgres, pgTAP, testing, unit testing]
+tags: [Postgres, pgTAP, Testing, Unit Testing]
 type: post
 ---
 

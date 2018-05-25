@@ -3,7 +3,7 @@ date: 2004-11-05T01:01:00Z
 slug: reframing-the-debate
 title: Reframing the Debate
 aliases: [/politics/election_2004/reframing_the_debate.html]
-tags: [Politics, conservative, progressive, slash and burn conservative, slash and spend conservative, tax and spend, George W. Bush, Republican Party, Democrat, George Lakoff, Nat Torkington, Enron]
+tags: [Politics, Conservatives, Progressivism, Slash and Burn Conservatism, Slash and Spend Conservatism, Tax and Spend, George W. Bush, Republican Party, Democrat, George Lakoff, Nat Torkington, Enron]
 type: post
 ---
 

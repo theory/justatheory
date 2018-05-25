@@ -3,7 +3,7 @@ date: 2009-10-30T05:09:18Z
 slug: template-declare-documented
 title: Template::Declare Explained
 aliases: [/computers/programming/perl/modules/template-declare-documented.html]
-tags: [Perl, templating, Template::Declare, mixins]
+tags: [Perl, Templating, Template::Declare, Mixins]
 type: post
 ---
 

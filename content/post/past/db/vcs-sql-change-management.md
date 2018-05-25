@@ -4,7 +4,7 @@ description: Some thoughts on how to use VCS history to determine what changes n
 slug: vcs-sql-change-management
 title: VCS-Enabled SQL Change Management
 aliases: [/computers/databases/vcs-sql-change-management.html]
-tags: [databases, SQL, databases, change management, version control, Git]
+tags: [Databases, SQL, Databases, Change Management, Version Control, Git]
 type: post
 ---
 

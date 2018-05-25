@@ -3,7 +3,7 @@ date: 2012-07-05T11:29:19Z
 slug: sqitch-almost-usable
 title: "Sqitch Update: Almost Usable"
 aliases: [/computers/databases/sqitch-almost-usable.html]
-tags: [Sqitch, SQL, change management, databases, migrations]
+tags: [Sqitch, SQL, Change Management, Databases, Migrations]
 type: post
 ---
 

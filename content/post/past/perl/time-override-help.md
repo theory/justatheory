@@ -3,7 +3,7 @@ date: 2005-08-25T02:03:17Z
 slug: perl-time-override-help
 title: How Does DateTime Ignore CORE::GLOBAL::time?
 aliases: [/computers/programming/perl/time_override_help.html]
-tags: [Perl, testing, hacks]
+tags: [Perl, Testing, Hacks]
 type: post
 ---
 

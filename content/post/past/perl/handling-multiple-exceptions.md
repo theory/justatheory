@@ -3,7 +3,7 @@ date: 2010-06-03T05:19:10Z
 slug: handling-multiple-perl-exceptions
 title: Handling Multiple Exceptions
 aliases: [/computers/programming/perl/handling-multiple-exceptions.html]
-tags: [Perl, exception handling]
+tags: [Perl, Exception Handling]
 type: post
 ---
 

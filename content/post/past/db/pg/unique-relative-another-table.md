@@ -3,7 +3,7 @@ date: 2005-11-22T23:01:35Z
 slug: postgres-unique-relative-another-table
 title: How to Ensure Unique Values Relative to a Column in Another Table
 aliases: [/computers/databases/postgresql/unique_relative_another_table.html]
-tags: [Postgres, database triggers, PL/pgSQL]
+tags: [Postgres, Database Triggers, PL/pgSQL]
 type: post
 ---
 

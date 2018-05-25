@@ -3,7 +3,7 @@ date: 2005-07-06T18:59:28Z
 slug: test-simple-js-0.11
 title: Test.Simple 0.11 Released
 aliases: [/computers/programming/javascript/test_simple-0.11.html]
-tags: [JavaScript, testing, TAP]
+tags: [JavaScript, Testing, TAP]
 type: post
 ---
 

@@ -3,7 +3,7 @@ date: 2006-04-15T00:53:36Z
 slug: percent-change
 title: How To Calculate Percentage Change Between Two Values
 aliases: [/learn/math/percent_change.html]
-tags: [Math, percentage, Perl]
+tags: [Math, Percentage, Perl]
 type: post
 ---
 

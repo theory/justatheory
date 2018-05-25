@@ -3,7 +3,7 @@ date: 2004-06-03T01:22:00Z
 slug: ways-to-extend-bricolage
 title: How to Extend Bricolage 2.0
 aliases: [/bricolage/design/ways_to_extend.html]
-tags: [Bricolage, work]
+tags: [Bricolage, Work]
 type: post
 ---
 

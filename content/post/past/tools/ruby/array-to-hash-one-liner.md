@@ -3,7 +3,7 @@ date: 2007-07-19T18:08:06Z
 slug: ruby-array-to-hash-one-liner
 title: Array to Hash One-Liner
 aliases: [/computers/programming/ruby/array_to_hash_one_liner.html]
-tags: [Ruby, hashing]
+tags: [Ruby, Hashing]
 type: post
 ---
 

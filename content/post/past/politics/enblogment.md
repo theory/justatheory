@@ -3,7 +3,7 @@ date: 2008-10-21T02:59:39Z
 slug: enblogment
 title: "enblogment: For Obama"
 aliases: [/politics/election_2008/enblogment.html]
-tags: [Politics, John McCain, Barack Obama, endorsement, President]
+tags: [Politics, John McCain, Barack Obama, Endorsement, President]
 type: post
 ---
 

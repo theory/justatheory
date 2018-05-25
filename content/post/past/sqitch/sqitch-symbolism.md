@@ -3,7 +3,7 @@ date: 2012-09-25T22:59:59Z
 slug: sqitch-symbolism
 title: Sqitch Symbolism
 aliases: [/computers/databases/sqitch-symbolism.html]
-tags: [Sqitch, SQL, change management, localization, internationalization]
+tags: [Sqitch, SQL, Change Management, Localization, Internationalization]
 type: post
 ---
 

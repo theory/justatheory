@@ -3,7 +3,7 @@ date: 2009-05-21T21:12:42Z
 slug: unit-test-your-database
 title: Unit Test Your Database!
 aliases: [/computers/databases/postgresql/unit-test-your-database.html]
-tags: [Postgres, PL/pgSQL, SQL, testing, unit testing, Test Anything Protocol, pgTAP]
+tags: [Postgres, PL/pgSQL, SQL, Testing, Unit Testing, Test Anything Protocol, pgTAP]
 type: post
 ---
 

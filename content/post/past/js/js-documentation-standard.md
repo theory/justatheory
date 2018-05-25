@@ -3,7 +3,7 @@ date: 2005-03-28T23:16:25Z
 slug: js-documentation-standard
 title: Is there a JavaScript Library Documentation Standard?
 aliases: [/computers/programming/javascript/documentation_standard.html]
-tags: [JavaScript, documentation, Pod, Java, JavaDoc]
+tags: [JavaScript, Documentation, Pod, Java, JavaDoc]
 type: post
 ---
 

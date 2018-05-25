@@ -3,7 +3,7 @@ date: 2009-04-29T03:18:25Z
 slug: git-r-done
 title: Git-R-Done
 aliases: [/computers/vcs/git/git-r-done.html]
-tags: [Git, Subversion, Bricolage, VCS, SCM, migrations, wikis, GitHub]
+tags: [Git, Subversion, Bricolage, VCS, SCM, Migrations, Wikis, GitHub]
 type: post
 ---
 

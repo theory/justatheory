@@ -3,7 +3,7 @@ date: 2009-07-01T21:32:28Z
 slug: pgtap-results-eq
 title: "Committed: pgTAP Result Set Assertion Functions"
 aliases: [/computers/databases/postgresql/results_eq.html]
-tags: [Postgres, pgTAP, SQL, testing]
+tags: [Postgres, pgTAP, SQL, Testing]
 type: post
 ---
 

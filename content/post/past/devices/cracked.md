@@ -3,7 +3,7 @@ date: 2005-11-02T19:02:39Z
 slug: cracked
 title: Cracked!
 aliases: [/computers/powerbook/cracked.html]
-tags: [PowerBook, Cracked, screen, LCD]
+tags: [PowerBook, Cracked, Screen, LCD]
 type: post
 ---
 

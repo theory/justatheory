@@ -2,7 +2,7 @@
 date: 2013-09-06T13:44:00Z
 title: Sqitch Templating
 aliases: [/sqitch/2013/09/06/sqitch-templating/]
-tags: [Sqitch, templating]
+tags: [Sqitch, Templating]
 type: post
 ---
 

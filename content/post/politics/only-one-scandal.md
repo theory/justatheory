@@ -1,7 +1,7 @@
 ---
 title: "Only One Scandal"
-date: 2018-05-25T09:00:36-04:00
-lastMod: 2018-05-25T09:00:36-04:00
+date: 2018-05-25T14:01:20Z
+lastMod: 2018-05-25T14:01:20Z
 description: "It’s really as simple as that."
 tags: [Politics, Corruption, Donald Trump, Adam Serwer]
 type: post

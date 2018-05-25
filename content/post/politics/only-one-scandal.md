@@ -2,7 +2,7 @@
 title: "Only One Scandal"
 date: 2018-05-25T09:00:36-04:00
 lastMod: 2018-05-25T09:00:36-04:00
-description: ""
+description: "It’s really as simple as that."
 tags: [Corruption, Donald Trump, Adam Serwer]
 type: post
 link: https://www.theatlantic.com/politics/archive/2018/05/there-is-only-one-trump-scandal/560825/

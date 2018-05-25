@@ -3,7 +3,7 @@ title: "Racial Identity Is Not a Zero Sum Game"
 date: 2018-05-25T09:14:52-04:00
 lastMod: 2018-05-25T09:14:52-04:00
 description: "Here’s why Meghan Markle is a big deal."
-tags: [Racial Identity, Sarah E. Gaither, Meghan Markle, Barack Obama]
+tags: [Culture, Racial Identity, Sarah E. Gaither, Meghan Markle, Barack Obama]
 type: post
 link: https://www.vox.com/first-person/2018/5/14/17345162/meghan-markle-royal-wedding-2018-race
 ---

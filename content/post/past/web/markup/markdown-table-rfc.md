@@ -61,22 +61,24 @@ makes sense to see what they're doing. So I wrote a bit of SQL and ran it in
 three databases. The SQL builds a table with an integer, a short name, a textual
 description, and a decimal number. Here's the code:
 
-    CREATE TEMPORARY TABLE widgets (
-        id          integer,
-        name        text,
-        description text,
-        price       numeric(6,2)
-    );
+``` postgres
+CREATE TEMPORARY TABLE widgets (
+    id          integer,
+    name        text,
+    description text,
+    price       numeric(6,2)
+);
 
-    INSERT INTO widgets VALUES( 1, 'gizmo', 'Takes care of the doohickies', 1.99);
-    INSERT INTO widgets VALUES( 2, 'doodad', 'Collects *gizmos*', 23.8);
-    INSERT INTO widgets VALUES( 10, 'dojigger', 'Handles:
-    * gizmos
-    * doodads
-    * thingamobobs', 102.98);
-    INSERT INTO widgets VALUES(1024, 'thingamabob', 'Self-explanatory, no?', 0.99);
+INSERT INTO widgets VALUES( 1, 'gizmo', 'Takes care of the doohickies', 1.99);
+INSERT INTO widgets VALUES( 2, 'doodad', 'Collects *gizmos*', 23.8);
+INSERT INTO widgets VALUES( 10, 'dojigger', 'Handles:
+* gizmos
+* doodads
+* thingamobobs', 102.98);
+INSERT INTO widgets VALUES(1024, 'thingamabob', 'Self-explanatory, no?', 0.99);
 
-    SELECT * FROM widgets;
+SELECT * FROM widgets;
+```
 
 My goal here was to see how the database client would format a variety of data
 formats, as well as a textual column (“description”) with newlines in it (and a

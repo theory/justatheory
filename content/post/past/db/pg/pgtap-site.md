@@ -14,25 +14,27 @@ First, I've release [pgTAP 0.10]. The two major categories of changes are
 compatibility as far back as PostgreSQL 8.0 and new functions for testing
 database schemas. Here's a quick example:
 
-    BEGIN;
-    SELECT plan(7);
+``` postgres
+BEGIN;
+SELECT plan(7);
 
-    SELECT has_table( 'users' );
-    SELECT has_pk('users');
-    SELECT col_is_fk( 'users', ARRAY[ 'family_name', 'given_name' ]);
+SELECT has_table( 'users' );
+SELECT has_pk('users');
+SELECT col_is_fk( 'users', ARRAY[ 'family_name', 'given_name' ]);
 
-    SELECT has_table( 'widgets' );
-    SELECT has_pk( 'widgets' );
-    SLEECT col_is_pk( 'widgets', 'id' );
-    SELECT fk_ok(
-        'widgets',
-        ARRAY[ 'user_family_name', 'user_given_name' ],
-        'users',
-        ARRAY[ 'family_name', 'given_name' ],
-    );
+SELECT has_table( 'widgets' );
+SELECT has_pk( 'widgets' );
+SLEECT col_is_pk( 'widgets', 'id' );
+SELECT fk_ok(
+    'widgets',
+    ARRAY[ 'user_family_name', 'user_given_name' ],
+    'users',
+    ARRAY[ 'family_name', 'given_name' ],
+);
 
-    SELECT * FROM finish();
-    ROLLBACK;
+SELECT * FROM finish();
+ROLLBACK;
+```
 
 Pretty cool, right? Check [the documentation] for all the details.
 

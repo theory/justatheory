@@ -27,31 +27,33 @@ So my work around is to use a little [fuck typing] to ensure that
 MyApp::UA::Robot has the robot behavior but MyApp::UA does not. Here’s what it
 looks like (**BEWARE:** black magic ahead!):
 
-    package MYApp::UA::Robot;
+``` perl
+package MYApp::UA::Robot;
 
-    use 5.12.0;
-    use utf8;
-    use parent 'MyApp::UA';
-    use LWP::RobotUA;
+use 5.12.0;
+use utf8;
+use parent 'MyApp::UA';
+use LWP::RobotUA;
 
-    do {
-        # Import the RobotUA interface. This way we get its behavior without
-        # having to change LWP::UserAgent::WithCache's inheritance.
-        no strict 'refs';
-        while ( my ($k, $v) = each %{'LWP::RobotUA::'} ) {
-            *{$k} = *{$v}{CODE} if *{$v}{CODE} && $k ne 'new';
-        }
-    };
-
-    sub new {
-        my ($class, $app) = (shift, shift);
-        # Force RobotUA configuration.
-        local @LWP::UserAgent::WithCache::ISA = ('LWP::RobotUA');
-        return $class->SUPER::new(
-            $app,
-            delay => 1, # be very nice -- max one hit per minute.
-        );
+do {
+    # Import the RobotUA interface. This way we get its behavior without
+    # having to change LWP::UserAgent::WithCache's inheritance.
+    no strict 'refs';
+    while ( my ($k, $v) = each %{'LWP::RobotUA::'} ) {
+        *{$k} = *{$v}{CODE} if *{$v}{CODE} && $k ne 'new';
     }
+};
+
+sub new {
+    my ($class, $app) = (shift, shift);
+    # Force RobotUA configuration.
+    local @LWP::UserAgent::WithCache::ISA = ('LWP::RobotUA');
+    return $class->SUPER::new(
+        $app,
+        delay => 1, # be very nice -- max one hit per minute.
+    );
+}
+```
 
 The `do` block is where I do the fuck typing. It iterates over all the symbols
 in LWP::RobotUA, inserts a reference to all subroutines into the current
@@ -66,21 +68,25 @@ want it to sleep (the first request is for the `robots.txt`, and I see no reason
 to sleep after that). So I had to modify the `do` block to skip both `new` and
 `host_wait`:
 
-        while ( my ($k, $v) = each %{'LWP::RobotUA::'} ) {
-            *{$k} = *{$v}{CODE} if *{$v}{CODE} && $k !~ /^(?:new|host_wait)$/;
-        }
+``` perl
+    while ( my ($k, $v) = each %{'LWP::RobotUA::'} ) {
+        *{$k} = *{$v}{CODE} if *{$v}{CODE} && $k !~ /^(?:new|host_wait)$/;
+    }
+```
 
 If I “override” any other LWP::RobotUA methods, I'll need to remember to add
 them to that regex. Of course, since I'm not actually inheriting from
 LWP::RobotUA, in order to dispatch to its `host_wait` method, I can’t use
 `SUPER`, but must dispatch directly:
 
-    sub host_wait {
-        my ($self, $netloc) = @_;
-        # First visit is for robots.txt, so let it be free.
-        return if !$netloc || $self->no_visits($netloc) < 2;
-        $self->LWP::RobotUA::host_wait($netloc);
-    }
+``` perl
+sub host_wait {
+    my ($self, $netloc) = @_;
+    # First visit is for robots.txt, so let it be free.
+    return if !$netloc || $self->no_visits($netloc) < 2;
+    $self->LWP::RobotUA::host_wait($netloc);
+}
+```
 
 Ugly, right? Yes, I am an evil bastard. “Fuck typing” is right, yo! At least
 it’s all encapsulated.

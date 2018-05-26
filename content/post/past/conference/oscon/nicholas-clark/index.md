@@ -7,7 +7,7 @@ tags: [OSCON, Nicholas Clark, Open Source, Perl, Pumpkin, Pumpking]
 type: post
 ---
 
-![Nick Clark goes Wild!](/2004/08/nicholas-clark/nicholas_on_the_rag.jpg)
+![Nick Clark goes Wild!](/2004/08/nicholas-clark-oscon/nicholas_on_the_rag.jpg)
 
 I just had to share this lovely picture of [Nick Clark], taken on the Friday
 night of OSCon 2004 at [Matt Sergeant's] party. I honestly have no idea what

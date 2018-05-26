@@ -25,7 +25,7 @@ Subsequent articles will cover document analysis and modeling, [Mason]
 templating, and fun with the SOAP server. Enjoy!
 
   [*Perl.com*]: http://www.perl.com/ "Perl.com"
-  [“Content Management with Bricolage.”]: http://www.perl.com/pub/a/2004/08/27/bricolage.html
-    "Content
-    Management with Bricolage"
+  [“Content Management with Bricolage.”]:
+    http://www.perl.com/pub/a/2004/08/27/bricolage.html
+    "Content Management with Bricolage"
   [Mason]: http://www.masonhq.com/ "Mason HQ"

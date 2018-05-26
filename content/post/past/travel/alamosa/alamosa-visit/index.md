@@ -7,7 +7,11 @@ tags: [Alamosa, Colorado, Kineticode, Consulting, Business, Adams State College,
 type: post
 ---
 
-<img src="/2004/06/alamosa-visit/milagros_coffeehouse.jpg" alt="Milagro&#39;s Coffeehouse" class="right" />
+<img
+  src="/2004/06/alamosa-visit/milagros_coffeehouse.jpg"
+  alt="Milagro’s Coffeehouse"
+  class="right"
+/>
 
 Last week, I went on a brief business trip for [Kineticode] to Alamosa,
 Colorado. The client was [Adams State College], which is planning to use
@@ -22,7 +26,11 @@ photos, but I did manage to get a couple of photographs with my [Nokia 6600].
 The “cool” coffeehouse in Alamosa is [Milagro's Coffeehouse], but to judge by
 their sign, I wasn't sure I wanted what they were selling.
 
-<img src="/2004/06/alamosa-visit/prop_engine.jpg" alt="The flight home" class="left" />
+<img
+  src="/2004/06/alamosa-visit/prop_engine.jpg"
+  alt="The flight home"
+  class="left"
+/>
 
 Alamosa has a very small airport. When I flew in on the little prop plane from
 Great Lakes Airlines, I was one of two passengers. On the way out (I flew
@@ -34,8 +42,7 @@ be able to get some more pictures; the sunsets are quite lovely there.
 
   [Kineticode]: http://www.kineticode.com/ "Kineticode Web site"
   [Adams State College]: http://www.adams.edu/ "Adams State College Web site"
-  [Nokia 6600]: https://www.amazon.com/exec/obidos/redirect?tag=justatheory-20&path=tg/detail/-/B00022NE6I/qid%3D1088445154/sr%3D8-4
+  [Nokia 6600]: https://www.amazon.com/exec/obidos/ASIN/B00022NE6I/justatheory-20
     "Buy the Nokia 6600 at Amazon.com"
   [Milagro's Coffeehouse]: http://www.lapuente.net/programs/milagros.htm
-    "Milagro's
-    Coffeehouse home page"
+    "Milagro's Coffeehouse home page"

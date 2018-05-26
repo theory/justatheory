@@ -35,90 +35,93 @@ dead on. So then I refactored the original benchmark function to create its
 Almost higher order PL/pgSQL! Again the results were just right, and so now I
 present it to you:
 
-    create type _benchmark as (
-        code      text,
-        runtime   real,
-        corrected real
-    );
+``` plpgsql
+create type _benchmark as (
+    code      text,
+    runtime   real,
+    corrected real
+);
 
-    CREATE OR REPLACE FUNCTION benchmark(n INTEGER, funcs TEXT[])
-    RETURNS SETOF _benchmark AS $$
-    DECLARE
-        code TEXT := '';
-        a    _benchmark;
-    BEGIN
-        -- Start building the custom benchmarking function.
-        code := $_$
-            CREATE OR REPLACE FUNCTION _bench(n INTEGER)
-            RETURNS SETOF _benchmark AS $__$
-            DECLARE
-                s TIMESTAMP;
-                e TIMESTAMP;
-                a RECORD;
-                d numeric;
-                res numeric;
-                ret _benchmark;
-            BEGIN
-                -- Create control.
-                s := timeofday();
-                FOR a IN SELECT TRUE FROM generate_series( 1, $_$ || n || $_$ )
-                LOOP
-                END LOOP;
-                e := timeofday();
-                d := extract(epoch from e) - extract(epoch from s);
-                ret := ROW( '[Control]', d, 0 );
-                RETURN NEXT ret;
-     
-    $_$;
-        -- Append the code to bench each function call.
-        FOR i IN array_lower(funcs,1) .. array_upper(funcs, 1) LOOP
-            code := code || '
-                s := timeofday();
-                FOR a IN SELECT ' || funcs[i] || ' FROM generate_series( 1, '
-                    || n || $__$ ) LOOP
-                END LOOP;
-                e := timeofday();
-                res := extract(epoch from e) - extract(epoch from s);
-                ret := ROW(
-                    $__$ || quote_literal(funcs[i]) || $__$,
-                    res, 
-                    res - d
-                );
-                RETURN NEXT ret;
-    $__$;
-        END LOOP;
+CREATE OR REPLACE FUNCTION benchmark(n INTEGER, funcs TEXT[])
+RETURNS SETOF _benchmark AS $$
+DECLARE
+    code TEXT := '';
+    a    _benchmark;
+BEGIN
+    -- Start building the custom benchmarking function.
+    code := $_$
+        CREATE OR REPLACE FUNCTION _bench(n INTEGER)
+        RETURNS SETOF _benchmark AS $__$
+        DECLARE
+            s TIMESTAMP;
+            e TIMESTAMP;
+            a RECORD;
+            d numeric;
+            res numeric;
+            ret _benchmark;
+        BEGIN
+            -- Create control.
+            s := timeofday();
+            FOR a IN SELECT TRUE FROM generate_series( 1, $_$ || n || $_$ )
+            LOOP
+            END LOOP;
+            e := timeofday();
+            d := extract(epoch from e) - extract(epoch from s);
+            ret := ROW( '[Control]', d, 0 );
+            RETURN NEXT ret;
+$_$;
+    -- Append the code to bench each function call.
+    FOR i IN array_lower(funcs,1) .. array_upper(funcs, 1) LOOP
+        code := code || '
+            s := timeofday();
+            FOR a IN SELECT ' || funcs[i] || ' FROM generate_series( 1, '
+                || n || $__$ ) LOOP
+            END LOOP;
+            e := timeofday();
+            res := extract(epoch from e) - extract(epoch from s);
+            ret := ROW(
+                $__$ || quote_literal(funcs[i]) || $__$,
+                res,
+                res - d
+            );
+            RETURN NEXT ret;
+$__$;
+    END LOOP;
 
-        -- Create the function.
-        execute code || $_$
-            END;
-            $__$ language plpgsql;
-    $_$; 
+    -- Create the function.
+    execute code || $_$
+        END;
+        $__$ language plpgsql;
+$_$;
 
-        -- Now execute the function.
-        FOR a IN EXECUTE 'SELECT * FROM _bench(' || n || ')' LOOP
-            RETURN NEXT a;
-        END LOOP;
+    -- Now execute the function.
+    FOR a IN EXECUTE 'SELECT * FROM _bench(' || n || ')' LOOP
+        RETURN NEXT a;
+    END LOOP;
 
-        -- Drop the function.
-        DROP FUNCTION _bench(integer);
-        RETURN;
-    END;
-    $$ language 'plpgsql';
+    -- Drop the function.
+    DROP FUNCTION _bench(integer);
+    RETURN;
+END;
+$$ language 'plpgsql';
+```
 
 You call the function like this:
 
-    try=# select * from benchmark(10000, ARRAY[
-    try(#     'ean_substr(''036000291452'')',
-    try(#     'ean_byte(''036000291452'')',
-    try(#     'ean_c(''036000291452'')'
-    try(# ]);
-                code            | runtime   | corrected 
-    ----------------------------+-----------+-----------
-     [Control]                  | 0.0237451 |          0
-     ean_substr('036000291452') |  0.497734 |   0.473989
-     ean_byte(  '036000291452') |  0.394456 |   0.370711
-     ean_c(     '036000291452') | 0.0277281 | 0.00398302
-    (4 rows)
+``` postgres
+try=# select * from benchmark(10000, ARRAY[
+try(#     'ean_substr(''036000291452'')',
+try(#     'ean_byte(''036000291452'')',
+try(#     'ean_c(''036000291452'')'
+try(# ]);
+            code            | runtime   | corrected 
+----------------------------+-----------+-----------
+    [Control]                  | 0.0237451 |          0
+    ean_substr('036000291452') |  0.497734 |   0.473989
+    ean_byte(  '036000291452') |  0.394456 |   0.370711
+    ean_c(     '036000291452') | 0.0277281 | 0.00398302
+(4 rows)
+```
 
 Pretty slick, eh? The only downside was that, when the `DROP FUNCTION` line was
 not commented out, the function would run once, and then, the next time, I'd get

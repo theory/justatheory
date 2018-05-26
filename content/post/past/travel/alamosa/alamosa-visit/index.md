@@ -41,8 +41,8 @@ Looks like I might be returning to Alamosa soon to do some training. Maybe I'll
 be able to get some more pictures; the sunsets are quite lovely there.
 
   [Kineticode]: http://www.kineticode.com/ "Kineticode Web site"
-  [Adams State College]: http://www.adams.edu/ "Adams State College Web site"
+  [Adams State College]: https://www.adams.edu/ "Adams State College Web site"
   [Nokia 6600]: https://www.amazon.com/exec/obidos/ASIN/B00022NE6I/justatheory-20
     "Buy the Nokia 6600 at Amazon.com"
-  [Milagro's Coffeehouse]: http://www.lapuente.net/programs/milagros.htm
-    "Milagro's Coffeehouse home page"
+  [Milagro's Coffeehouse]: https://www.alamosa.org/dining/451-milagros-coffeehouse
+    "Milagro's Coffeehouse on Alamosa.org"

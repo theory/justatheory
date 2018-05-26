@@ -67,7 +67,7 @@ A few other items of interest:
   [six-week visit in 2008]: /travel/france/2008/ "France 2008"
   [Etsy]: http://etsy.com/
   [iovation]: http://iovation.com/
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [Scratch]: http://scratch.mit.edu/
   [Bruges]: https://en.wikipedia.org/wiki/Bruges
   [her blog]: http://blog.strongrrl.com/

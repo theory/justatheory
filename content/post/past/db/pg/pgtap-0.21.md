@@ -7,10 +7,10 @@ tags: [Postgres, pgTAP, Testing, Unit Testing, TAP, PL/pgSQL, SQL]
 type: post
 ---
 
-[<img src="http://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />]
+[<img src="https://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />]
 
 I just dropped a new version of
-[pgTAP][<img src="http://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />],
+[pgTAP][<img src="https://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />],
 following a few marathon hack sessions since [my talk at PGCon] ([movie here],
 BTW). Actually, the new [`performs_ok()`] function came about as I wrote the
 presentation, but all the rest came on the flight home and in the few days
@@ -50,13 +50,13 @@ you prefer). [Epic] does this by allowing query strings to be passed to a
 function, but I'd really like to keep queries in SQL rather than in SQL strings.
 I'll be giving it some more thought and will post about it soon.
 
-  [<img src="http://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />]:
-    http://pgtap.org/ "pgTAP: Unit Testing for PostgreSQL"
+  [<img src="https://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />]:
+    https://pgtap.org/ "pgTAP: Unit Testing for PostgreSQL"
   [my talk at PGCon]: https://www.pgcon.org/2009/schedule/events/165.en.html
     "PGCon: “Unit Test Your Database!”"
   [movie here]: http://hosting3.epresence.tv/fosslc/1/watch/129.aspx
     "Unit Test Your Database—The Movie"
-  [`performs_ok()`]: http://pgtap.org/documentation.html#%60performs_ok+(+sql,+milliseconds,+description+)%60
+  [`performs_ok()`]: https://pgtap.org/documentation.html#%60performs_ok+(+sql,+milliseconds,+description+)%60
     "pgTAP Documentation: `performs_ok()`"
   [his PGCon talk]: https://www.pgcon.org/2009/schedule/events/146.en.html
     "PGCon: “Reconciling and comparing databases”"
@@ -64,11 +64,11 @@ I'll be giving it some more thought and will post about it soon.
     "Wikipedia: “System testing”"
   [unit testing]: https://en.wikipedia.org/wiki/Unit_testing
     "Wikipedia: “Unit testing”"
-  [`tables_are()`]: http://pgtap.org/documentation.html#%60tables_are(+schema,+tables,+description+)%60
+  [`tables_are()`]: https://pgtap.org/documentation.html#%60tables_are(+schema,+tables,+description+)%60
     "pgTAP Documentation: `tables_are()`"
-  [`functions_are()`]: http://pgtap.org/documentation.html#%60functions_are(+schema,+functions%5B%5D,+description+)%60
+  [`functions_are()`]: https://pgtap.org/documentation.html#%60functions_are(+schema,+functions%5B%5D,+description+)%60
     "pgTAP Documentation: `functions_are()`"
-  [testing functions]: http://pgtap.org/documentation.html#Feeling+Funky
+  [testing functions]: https://pgtap.org/documentation.html#Feeling+Funky
     "pgTAP Documentation: Feeling Funky"
   [release notes]: http://pgfoundry.org/frs/shownotes.php?release_id=1389
     "pgTAP 0.21 Release Notes and Changes"

@@ -204,7 +204,7 @@ have I overlooked? What have I got wrong? Let me know!
 [^db-uri:surprise]: As in not surprised at all. Though I was hoping!
 [^db-uri:dsn]: DSNs for Perl's [DBI] aren't much better: `dbi:<driver>:<driver-specific-stuff>`.
 
-  [Sqitch]: http://sqitch.org/ "Sane database change management"
+  [Sqitch]: https://sqitch.org/ "Sane database change management"
   [specifying deployment targets via URIs]:
     https://github.com/theory/sqitch/issues/100
     "Issue #100: “Add target command to configure target databases”"

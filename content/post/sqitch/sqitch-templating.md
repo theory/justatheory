@@ -394,7 +394,7 @@ can imagine lots of uses for task-specific changes, including:
 Maybe folks will even start sharing templates! You should subscribe to the
 [mail list] to find out. See you there?
 
-  [Sqitch]: http://sqitch.org/ "Sane database change management"
+  [Sqitch]: https://sqitch.org/ "Sane database change management"
   [MySQL]: http://dev.mysql.com/ "The world's most popular open source database"
   [release notes]:
     https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-4.html

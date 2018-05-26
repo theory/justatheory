@@ -38,7 +38,7 @@ the clients is driving me a little crazy. Should I just give up and use the DBI
 (at least for now)? Or persevere with the IPC stuff and get it to work? Opinions
 wanted!
 
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [`psql`]: http://www.postgresql.org/docs/current/static/app-psql.html
   [`sqlite3`]: http://man.he.net/man1/sqlite3
   [`mysql`]: http://dev.mysql.com/doc/refman/5.5/en/mysql.html

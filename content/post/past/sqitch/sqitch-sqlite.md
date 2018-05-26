@@ -102,5 +102,5 @@ Development.” See you there?
   [PGCon]: http://pgcon.org/2013/
   [Agile Database Development]: https://www.pgcon.org/2013/schedule/events/615.en.html
   [Git]: http://git-scm.com/
-  [Sqitch]: http://sqitch.org/
-  [pgTAP]: http://pgtap.org/
+  [Sqitch]: https://sqitch.org/
+  [pgTAP]: https://pgtap.org/

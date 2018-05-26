@@ -92,7 +92,7 @@ referenced above: just specify *which* instance of the change to require by
 using a tag that follows that instance, and the error should go away.
 
   [bug]: https://github.com/theory/sqitch/issues/103
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [PostgreSQL]: https://metacpan.org/module/sqitchtutorial#In-Place-Changes
   [SQLite]: https://metacpan.org/module/sqitchtutorial-sqlite#In-Place-Changes
   [Oracle]: https://metacpan.org/module/sqitchtutorial-oracle#In-Place-Changes

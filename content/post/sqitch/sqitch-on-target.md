@@ -98,7 +98,7 @@ targets in the future, including:
 Pretty cool stuff ahead, IMO. I'm grateful to [work] for letting me hack on
 Sqitch.
 
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [Git remotes]: http://git-scm.com/docs/git-remote
   [work]: http://www.iovation.com/
   [database URI spec]: https://github.com/theory/uri-db

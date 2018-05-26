@@ -42,7 +42,7 @@ My thanks to IRC user “mistym” for the help and suggestions in getting this
 going. My Ruby is pretty much rusted through, soI could not have done it without
 the incredibly responsive help!
 
-  [Sqitch]: http://sqitch.org/ "Sqitch: Sane database schema change management"
+  [Sqitch]: https://sqitch.org/ "Sqitch: Sane database schema change management"
   [Sqitch Homebrew Tap]: https://github.com/theory/homebrew-sqitch
   [Homebrew]: http://mxcl.github.com/homebrew/
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod

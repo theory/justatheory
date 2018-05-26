@@ -74,5 +74,5 @@ something like this:
 This will break existing installations, so I’d need to add a way to update them,
 but otherwise, I think it might be a win overall. Thoughts?
 
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [Linus Torvalds' greatest invention]: http://perl.plover.com/yak/git/

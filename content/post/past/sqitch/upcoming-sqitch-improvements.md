@@ -83,7 +83,7 @@ started adding functionality to Sqitch.
 Oh, and before I forget: it looks like Sqitch might soon get [CUBRID support],
 too, thanks to [Ștefan Suciu]. Stay tuned!
 
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial-mysql.pod
   [mock a check constraint]: https://github.com/theory/sqitch/blob/master/lib/App/Sqitch/Engine/mysql.sql#L132
   [on StackOverflow]: http://stackoverflow.com/q/17406675/79202

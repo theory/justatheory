@@ -33,7 +33,7 @@ for a few more words on the subject.
 
   [localizing Perl modules with Locale::TextDomain]: /computers/programming/perl/modules/dist-zilla-localetextdomain.html
   [Dist::Zilla::LocaleTextDomain]: https://metacpan.org/module/Dist::Zilla::LocaleTextDomain
-  [Sqitch]: http://sqitch.org/ "Sqitch: Sane database change management"
+  [Sqitch]: https://sqitch.org/ "Sqitch: Sane database change management"
   [`msg-compile`]: https://metacpan.org/module/Dist::Zilla::App::Command::msg_compile
   [test `sqitch` app]: https://github.com/theory/sqitch/blob/master/t/sqitch
   [notes for translators]: https://metacpan.org/module/Dist::Zilla::LocaleTextDomain#But-Im-a-Translator

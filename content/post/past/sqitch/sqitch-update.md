@@ -70,6 +70,6 @@ Got something to add? [Fork it!]
   [Config::GitLike]: https://metacpan.org/module/Config::GitLike/
   [the plan file]: https://github.com/theory/sqitch/blob/master/lib/sqitch.pod#plan-file
   [grammar]: https://github.com/theory/sqitch/blob/master/lib/sqitch.pod#grammar
-  [pgTAP]: http://pgtap.org/
+  [pgTAP]: https://pgtap.org/
   [MyTAP]: http://theory.github.com/mytap/
   [Fork it!]: https://github.com/theory/sqitch

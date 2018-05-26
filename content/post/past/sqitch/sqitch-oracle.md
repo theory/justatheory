@@ -39,7 +39,7 @@ May 22 [PGCon
 in Ottawa, Ontario. Come on up!
 
   [work]: http:/iovation.com/
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [11.2 VirtualBox VM]: https://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html
   [Instant Client]: https://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
   [`$ORACLE_HOM`]: https://www.orafaq.com/wiki/ORACLE_HOME

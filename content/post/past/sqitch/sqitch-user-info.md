@@ -124,6 +124,6 @@ So, what do you think? Are these worthwhile changes to make now? I’m reasonabl
 convinced that they are, but I hate operating in a vacuum, and have received
 great feedback to my proposals in the past. So I welcome your feedback now.
 
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [`$work`]: http://iovation.com/
   [extensions]: http://www.postgresql.org/docs/9.1/static/extend-extensions.html

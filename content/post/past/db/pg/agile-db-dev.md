@@ -32,5 +32,5 @@ the teaser:
   [Speaker Deck]: https://speakerdeck.com/theory/agile-database-development
   [tutorial Git repository]: https://github.com/theory/agile-flipr
   [Git]: http://git-scm.org/
-  [pgTAP]: http://pgtap.org/
-  [Sqitch]: http://sqitch.org/
+  [pgTAP]: https://pgtap.org/
+  [Sqitch]: https://sqitch.org/

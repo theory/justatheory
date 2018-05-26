@@ -127,7 +127,7 @@ Hope you find it useful.
     "Test Driven Database Development"
   [slides]: https://www.slideshare.net/justatheory/test-drivern-database-development
     "slides on SlideShare"
-  [pgTAP]: http://pgtap.org/
+  [pgTAP]: https://pgtap.org/
   [MySQL]: http://www.mysql.com/
   [Giuseppe Maxia]: http://datacharmer.blogspot.com/
   [MyTAP]: http://github.com/theory/mytap/
@@ -138,11 +138,11 @@ Hope you find it useful.
   [teh suck]: http://dev.mysql.com/doc/refman/5.0/en/temporary-table-problems.html
   [`connection_id()`]: http://dev.mysql.com/doc/refman/5.0/en/information-functions.html#function_connection-id
   [InnoDB]: http://dev.mysql.com/doc/refman/5.0/en/innodb.html
-  [table assertion functions]: http://pgtap.org/documentation.html#Table+For+One
-  [schema assertion functions]: http://pgtap.org/documentation.html#The+Schema+Things
-  [have assertion functions]: http://pgtap.org/documentation.html#To+Have+or+Have+Not
-  [function and procedure assertion functions]: http://pgtap.org/documentation.html#Feeling+Funky
-  [assorted other database object assertion functions]: http://pgtap.org/documentation.html#Database+Deets
-  [pgTAP relation comparison assertion functions]: http://pgtap.org/documentation.html#Pursuing+Your+Query
+  [table assertion functions]: https://pgtap.org/documentation.html#Table+For+One
+  [schema assertion functions]: https://pgtap.org/documentation.html#The+Schema+Things
+  [have assertion functions]: https://pgtap.org/documentation.html#To+Have+or+Have+Not
+  [function and procedure assertion functions]: https://pgtap.org/documentation.html#Feeling+Funky
+  [assorted other database object assertion functions]: https://pgtap.org/documentation.html#Database+Deets
+  [pgTAP relation comparison assertion functions]: https://pgtap.org/documentation.html#Pursuing+Your+Query
   [current site]: http://theory.github.com/mytap/
   [GitHub]: http://github.com/theory/mytap/ "MyTAP on GitHub"

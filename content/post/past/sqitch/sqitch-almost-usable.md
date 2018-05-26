@@ -167,7 +167,7 @@ tutorial example’s [Git history] to get a feel for it. And if there is somethi
 you want out of Sqitch that you don’t see, please feel free to [file an issue]
 with your suggestion.
 
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
   [from Jakub Narębski]: /computers/databases/sqitch-dependencies.html#comment-538970287
   [1]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod#emergency
@@ -186,7 +186,7 @@ with your suggestion.
   [`sqitch bundle`]: https://github.com/theory/sqitch/issues/14
   [`sqitch test`]: https://github.com/theory/sqitch/issues/15
   [`sqitch check`]: https://github.com/theory/sqitch/issues/13
-  [pgTAP]: http://pgtap.org/
+  [pgTAP]: https://pgtap.org/
   [the to-do list]: https://github.com/theory/sqitch/issues?labels=todo&page=1&state=open
   [Convert to Dist::Zilla]: https://github.com/theory/sqitch/issues/17
   [Locale::TextDomain]: http://metacpan.org/module/Locale::TextDomain

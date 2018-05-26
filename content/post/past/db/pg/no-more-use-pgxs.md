@@ -83,7 +83,7 @@ Comments?
 
   [contrib extensions]: http://www.postgresql.org/docs/8.4/static/contrib.html
     "PostgreSQL Documentation: “Additional Supplied Modules”"
-  [pgTAP]: http://pgtap.org
+  [pgTAP]: https://pgtap.org
   [PL/Parrot]: http://github.com/leto/plparrot/
   [Temporal PostgreSQL]: http://temporal.projects.postgresql.org/
   [added]: http://github.com/theory/pgtap/commit/400db6d2db7ebabb90fbc528100bb9e518f7fbc3

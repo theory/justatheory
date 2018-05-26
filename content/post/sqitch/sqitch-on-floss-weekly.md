@@ -29,4 +29,4 @@ using working through one of the tutorials:
 * [Vertica](https://metacpan.org/module/sqitchtutorial-vertica "Sqitch Vertica Tutorial)
 
   [FLOSS Weekly]: http://twit.tv/floss
-  [installing it]: http://sqitch.org/
+  [installing it]: https://sqitch.org/

@@ -97,7 +97,7 @@ the year. To that end, next up I will be [rationalizing configuration hierarchie
 to make engine selection and deploy-time configuration more sensible. I hope
 to get that done by early October.
 
-  [Sqitch]: http://sqitch.org/
+  [Sqitch]: https://sqitch.org/
   [Moose]: https://metacpan.org/module/Moose
   [Mouse]: https://metacpan.org/module/Mouse
   [Moo]: https://metacpan.org/module/Moo

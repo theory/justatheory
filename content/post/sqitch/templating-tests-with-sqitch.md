@@ -177,10 +177,10 @@ ROLLBACK;
 I don't know about you, but I'll be using this functionality *a lot.*
 
   [I described]: /sqitch/2013/09/06/sqitch-templating/
-  [Sqitch]: http://sqitch.org/ "Sane database schema change management"
+  [Sqitch]: https://sqitch.org/ "Sane database schema change management"
   [work]: http://iovation.com/
   [`add` command]: https://metacpan.org/pod/sqitch-add
-  [pgTAP]: http://pgtap.org/
+  [pgTAP]: https://pgtap.org/
   [previous templating post]: /sqitch/2013/09/06/sqitch-templating/
   [Template Toolkit]: http://tt2.org/
   [before]: /sqitch/2013/09/06/sqitch-templating/

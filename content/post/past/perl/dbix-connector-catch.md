@@ -16,19 +16,23 @@ a much better idea not to depend on an external function that could change its
 behavior when there is no direct dependency on Try::Tiny in DBIx::Connector. I
 removed that documentation in 0.43. So instead of this:
 
-    $conn->run(fixup => sub {
-        ...
-    }, catch {
-        ...
-    });
+``` perl
+$conn->run(fixup => sub {
+    ...
+}, catch {
+    ...
+});
+```
 
 It now recommends this:
 
-    $conn->run(fixup => sub {
-        ...
-    }, catch => sub {
-        ...
-    });
+``` perl
+$conn->run(fixup => sub {
+    ...
+}, catch => sub {
+    ...
+});
+```
 
 Which frankly is better balanced anyway.
 
@@ -40,11 +44,13 @@ makes it behave like `try`. That also means that if you use the default mode
 (which can be set via the [`mode` method]), then there will usually be no
 leading keyword, either. So we get something like this:
 
-    $conn->run(sub {
-        ...
-    }, catch => sub {
-        ...
-    });
+``` perl
+$conn->run(sub {
+    ...
+}, catch => sub {
+    ...
+});
+```
 
 So it starts with a `sub {}` and no `fixup` keyword, but there is a `catch`
 keyword, which implicitly wraps that first `sub {}` in a `try`-like context. And
@@ -62,25 +68,29 @@ exception-handling code at all. Really, that should be the domain of another
 module like Try::Tiny or, better, the language. In that case, the example would
 become:
 
-    use Try::Tiny;
-    try {
-        $conn->run(sub {
-            ...
-        });
-    } catch {
-      ....
-    }
+``` perl
+use Try::Tiny;
+try {
+    $conn->run(sub {
+        ...
+    });
+} catch {
+    ....
+}
+```
 
 And maybe that really should be the recommended approach. It seems silly to have
 replicated most of Try::Tiny inside DBIx::Connector just to cut down on the
 number of anonymous subs and indentation levels. The latter can be got round
 with some semi-hinky nesting:
 
-    try { $conn->run(sub {
-        ...
-    }) } catch {
-        ...
-    }
+``` perl
+try { $conn->run(sub {
+    ...
+}) } catch {
+    ...
+}
+```
 
 Kind of ugly, though. The whole reason the `catch` stuff was added to
 DBIx::Connector was to make it all nice and integrated (as discussed [here]).
@@ -93,11 +103,13 @@ are:
     mode". I'm not keen on the word "default", but it would look something like
     this:
 
-        $conn->run(default => sub {
-            ...
-        }, catch => sub {
-            ...
-        });
+    ``` perl
+    $conn->run(default => sub {
+        ...
+    }, catch => sub {
+        ...
+    });
+    ```
 
     This would provide the needed balance, but the `catch` would still
     implicitly execute the first sub in a `try` context. Which isn't a great
@@ -105,11 +117,13 @@ are:
 
 2.  Add a `try` keyword. So then one could do this:
 
-        $conn->run(try => sub {
-            ...
-        }, catch => sub {
-            ...
-        });
+    ``` perl
+    $conn->run(try => sub {
+        ...
+    }, catch => sub {
+        ...
+    });
+    ```
 
     This makes it explicit that the first sub executes in a `try` context. I'd
     also have to add companion `try_fixup`, `try_ping`, and `try_no_ping`

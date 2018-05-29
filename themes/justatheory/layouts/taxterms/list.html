@@ -6,7 +6,7 @@
 		<div id="tags">
 			<p>Most {{ .Site.Title }} posts have been “tagged” with keywords. If you’re interested in only a subset of posts, just read the relevant tag pages. You can even subscribe to a tag — just point your feed reader at it.</p>
 			{{- $yearAgo := now.AddDate (int (mul -1 .Site.Params.recentTagYears)) 0 0 }}
-			{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.listTypes }}
+			{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.postTypes }}
 			{{- $.Scratch.Set "yearTags" (dict) }}
 			{{- range $pages }}
 				{{- if gt .Date $yearAgo }}{{ range .Params.tags }}

@@ -1,5 +1,5 @@
 	<footer>
-		<p><a href="{{ .Site.BaseURL }}">{{ .Site.Params.bug }} {{ .Site.Title }}</a> — {{ .Site.Params.description }}</p>
+		<p><a href="{{ .Site.BaseURL }}">{{ .Site.Params.bug }} {{ .Site.Title }}</a>{{ with .Site.Params.tagline }} — {{ . }}{{ end }}</p>
 	</footer>
 </body>
 </html>

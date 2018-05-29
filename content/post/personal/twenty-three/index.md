@@ -5,6 +5,7 @@ lastMod: 2018-05-28T13:29:18Z
 description: An Anniversary.
 tags: [Personal, Family, Julie, Anniversary]
 type: post
+image: {src: dance.jpg, alt: First Dance, caption: First dance, 28 May 1995. }
 ---
 
 {{% figure

@@ -18,12 +18,13 @@ disableKinds = ["section"]
     url = "https://justatheory.com/"
 
 [params]
-  description = "Irregular fine blogging since 2002."
+  description = "Periodically irregular technology and culture blogging since 2002. By David E. Wheeler."
+  tagline = "Irregular fine blogging since 2002."
   author = "David E. Wheeler"
   bug = "❖"
   twitter = "theory"
   github = "theory"
-  listTypes = ["post"]
+  postTypes = ["post"]
   feedLimit = 32
   recentTagYears = 3
   icon = "/icon-512x512.png"

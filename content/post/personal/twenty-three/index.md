@@ -8,8 +8,8 @@ type: post
 image: {src: dance.jpg, alt: First Dance, caption: First dance, 28 May 1995. }
 ---
 
-{{% figure
-   src="/2018/05/twenty-three/dance.jpg"
+{{% fig
+   src="dance.jpg"
    alt="First Dance"
    caption="First dance, 28 May 1995."
 %}}

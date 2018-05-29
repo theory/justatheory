@@ -1,0 +1,23 @@
+<figure{{ with .Get "class" }} class="{{.}}"{{ end }}>
+    {{- $src := .Get "src" }}
+    {{- if hasPrefix $src "/" }}
+        {{/*  Cannot use absURL because it doesn't work as expected if baseURL has a subdir. */}}
+        {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "/$" "" $.Site.BaseURL) $src) }}
+    {{- else }}
+        {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "[.][a-zA-Z0-9]$" "/" $.Page.Permalink) $src) }}
+    {{- end }}
+    {{- if .Get "link"}}
+    <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+        <img src="{{ $.Scratch.Get "imgSrc" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}" {{ end }}{{ with .Get "height" }}height="{{.}}" {{ end }} />
+    </a>
+    {{- else }}
+    <img src="{{ $.Scratch.Get "imgSrc" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}" {{ end }}{{ with .Get "height" }}height="{{.}}" {{ end }} />
+    {{- end }}
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+    <figcaption>{{ with .Get "title" }}
+        <h4>{{ . }}</h4>{{ end }}{{ with .Get "caption" }}
+        <p>{{ . }}</p>{{ end }}{{ if .Get "attr" }}
+        <cite>{{ with .Get "attrlink"}}<a href="{{ . }}">{{ end }}{{ .Get "attr" }}{{ if .Get "attrlink" }}</a>{{ end }}</cite>{{ end }}
+    </figcaption>
+    {{- end }}
+</figure>

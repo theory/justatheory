@@ -9,10 +9,7 @@ type: post
 A simple post. “Something to make you think,” Dustin Curtis wrote. I followed
 [the link] and have hardly stopped thinking about it since.
 
-{{% figure
-   src="/2013/04/misguided-delusion/dcurtis.png"
-   alt="“Something to make you think.“"
-%}}
+{{% figure src="dcurtis.png" alt="“Something to make you think.“" %}}
 
 Sam Harris wants to help non-religious people understand how it feels to be a
 believer confronted with scientific rationality. Toward that end, he offers *the

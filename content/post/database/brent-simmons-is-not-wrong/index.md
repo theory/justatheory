@@ -28,7 +28,7 @@ relational theory. In *[Database in Depth]*, relational theorist [C.J. Date]
 poses a question:
 
 {{% figure
-   src="/2014/01/brent-simmons-is-not-wrong/database-in-depth.jpg"
+   src="database-in-depth.jpg"
    class="right" width="300"
    alt="“Database in Depth,” by C.J. Date"
 %}}

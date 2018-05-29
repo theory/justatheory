@@ -7,7 +7,7 @@ type: post
 ---
 
 {{% figure
-   src="/2015/04/the-watch-is-you/iphone-watch.jpg"
+   src="iphone-watch.jpg"
    alt="“iPhone and Apple Watch“"
    caption="Multiple factors. Photo: Apple."
    class="right"

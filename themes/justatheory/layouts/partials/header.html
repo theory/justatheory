@@ -18,7 +18,7 @@
 	{{- if .Page.IsHome }}
 	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider">
 	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/318f92e8-c739-46a8-8bf5-4fa37c711a4e">
-	{{- end }}{{ /* https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254 */}}
+	{{- end }}{{/* https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254 */}}
 	<meta property="og:type" content="{{ if in .Site.Params.postTypes .Type }}article{{ else }}website{{ end }}" />
 	<meta property="og:url" content="{{ .Permalink }}" />
 	<meta property="og:title" content="{{ if eq .Type "tags" }}Posts about {{ .Data.Term }}{{ else }}{{ or .Params.headTitle .Title }}{{ end }}" />

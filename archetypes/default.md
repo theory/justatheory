@@ -1,8 +1,7 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-{{- $now := now }}
-date: {{ $now.UTC.Format "2006-01-02T15:04:05Z" }}
-lastMod: {{ $now.UTC.Format "2006-01-02T15:04:05Z" }}
+title: "{{ replace .TranslationBaseName "-" " " | title }}"{{ with now.UTC.Format "2006-01-02T15:04:05Z" }}
+date: {{ . }}
+lastMod: {{ . }}{{ end }}
 description: ~
 tags: []
 type: post

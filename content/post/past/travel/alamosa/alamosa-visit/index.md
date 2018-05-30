@@ -7,11 +7,11 @@ tags: [Alamosa, Colorado, Kineticode, Consulting, Business, Adams State College,
 type: post
 ---
 
-<img
-  src="/2004/06/alamosa-visit/milagros_coffeehouse.jpg"
-  alt="Milagro’s Coffeehouse"
-  class="right"
-/>
+{{% figure
+  src   = "milagros_coffeehouse.jpg"
+  alt   = "Milagro’s Coffeehouse"
+  class = "right"
+%}}
 
 Last week, I went on a brief business trip for [Kineticode] to Alamosa,
 Colorado. The client was [Adams State College], which is planning to use
@@ -26,11 +26,11 @@ photos, but I did manage to get a couple of photographs with my [Nokia 6600].
 The “cool” coffeehouse in Alamosa is [Milagro's Coffeehouse], but to judge by
 their sign, I wasn't sure I wanted what they were selling.
 
-<img
-  src="/2004/06/alamosa-visit/prop_engine.jpg"
-  alt="The flight home"
-  class="left"
-/>
+{{% figure
+  src   = "prop_engine.jpg"
+  alt   = "The flight home"
+  class = "left"
+%}}
 
 Alamosa has a very small airport. When I flew in on the little prop plane from
 Great Lakes Airlines, I was one of two passengers. On the way out (I flew

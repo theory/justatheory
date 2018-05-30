@@ -7,7 +7,13 @@ tags: [Bricolage, OSCON]
 type: post
 ---
 
-[<img src="http://www.bricolage.cc/ui/img/logo.png" alt="Bricolage" class="right" />]
+{{% figure
+  src   = "http://bricolagecms.org/ui/img/logo.png"
+  alt   = "Bricolage"
+  title = "Explore the new Bricolage Website!"
+  class = "right"
+  link  = "http://www.bricolagecms.org/"
+%}}
 
 The launch of the new [Bricolage Website] went off without a hitch yesterday.
 The lack of sleep getting it all just so was worth it, in the end. And I'm very
@@ -34,8 +40,6 @@ best practices in using Bricolage so that people can download them, study them,
 and be able to start writing smart templates for their on Bricolage
 implementations. So enjoy!
 
-  [<img src="http://www.bricolage.cc/ui/img/logo.png" alt="Bricolage" class="right" />]:
-    http://www.bricolage.cc/ "Explore the new Bricolage Website!"
   [Bricolage Website]: http://www.bricolage.cc/ "Bricolage Website"
   [Marshall Roch]: http://www.spastically.com/ "Marshall Roch's site"
   [download]: http://www.bricolage.cc/downloads/bricolage.cc-1.00.tar.gz

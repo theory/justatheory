@@ -8,12 +8,13 @@ type: post
 via: { name: Lessig Blog, href: http://www.lessig.org/blog/archives/002041.shtml }
 ---
 
-<figure class="right">
-  <a href="https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20"
-     title="Buy “Outfoxed” from Amazon.com!">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/519MGXATKEL.jpg" alt="Outfoxed" />
-  </a>
-</figure>
+{{% figure
+  src   = "https://images-na.ssl-images-amazon.com/images/I/519MGXATKEL.jpg"
+  alt   = "Outfoxed"
+  title = "Buy “Outfoxed” from Amazon.com"
+  class = "right"
+  link  = "https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20"
+%}}
 
 I'm going to have to [order] the “[Outfoxed]” DVD and give it a look. It got a
 great [writeup] in the *New York Times*.

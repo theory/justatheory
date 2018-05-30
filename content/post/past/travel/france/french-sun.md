@@ -7,10 +7,13 @@ tags: [France, Travel, Summer, Arles, Provence]
 type: post
 ---
 
-<figure>
-    <a href="https://www.flickr.com/photos/decar66/8583754790/" title="Arles from the Arena"><img src="https://farm9.staticflickr.com/8102/8583754790_3297ccf5f7_c.jpg" alt="Arles from the Arena" /></a>
-    <figcaption>Arles from the Arena by <a href="https://www.flickr.com/photos/decar66/">Salva Barbera</a> (<a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>)</figcaption>
-</figure>
+{{% figure
+  src     = "https://farm9.staticflickr.com/8102/8583754790_3297ccf5f7_c.jpg"
+  alt     = "Arles from the Arena"
+  link    = "https://www.flickr.com/photos/decar66/8583754790/"
+  title   = "Arles from the Arena"
+  caption = "Arles from the Arena by [Salva Barbera](https://www.flickr.com/photos/decar66/) ([CC BY 2.0](http://creativecommons.org/licenses/by/2.0/))"
+%}}
 
 We spent seven weeks last summer [in Northern France]. Man it was an awesome
 time. None of us wanted to leave! Well, almost true. The thing about Normandy is

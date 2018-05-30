@@ -16,7 +16,11 @@ the killer feature is the archiving of all content after a sync, so that
 everything loads fast — or on cross-country flights. News junkie that I am,
 Byline is one of my most-used apps.
 
-<figure class="left"><img src="/2011/01/byline-google-apple/edit_mode.png" alt="Byline Edit Mode" /></figure>
+{{% figure
+   src   = "edit_mode.png"
+   alt   = "Byline Edit Mode"
+   class = "left"
+%}}
 
 Another great feature is Byline’s edit mode. When looking at a long list of new
 posts in a particular feed (for me it most often happens with the [CPAN Uploads
@@ -47,7 +51,12 @@ This is handy because it means as soon as I’ve read something, if I sync
 NetNewsWire on my desktop, it’s marked as read there, too. It minimizes the
 appearance of duplication.
 
-<figure><a href="https://twitter.com/#!/phfish/status/17540435819896832"><img src="/2011/01/byline-google-apple/phfish_tweet.png" alt="@phfish: “@theory I think they do it for performance reasons. It is a bit of an irritation, though.”" /></a></figure>
+{{% figure
+   src   = "phfish_tweet.png"
+   alt   = "@phfish: “@theory I think they do it for performance reasons. It is a bit of an irritation, though.”"
+   link  = "https://twitter.com/#!/phfish/status/17540435819896832"
+   class = "center"
+%}}
 
 One of the APIs it calls ASAP is Google Reader’s “Mark All as Read API call”,
 and as Phantom Fish [has said], Google provides no way to un-do that call. The

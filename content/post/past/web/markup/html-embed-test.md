@@ -30,7 +30,8 @@ element. It was intended as a general replacement for the `<img>` and `<applet>`
 elements, although tht really hasn't happened. But what you *can* do is embed
 HTML with it. Here's a quick example:
 
-<style type="text/css">code.embedded { background: green; }</style> <object data="/code/testembed.html" type="text/html" style="background: lightblue; width: 100%; border: 1px dotted darkblue;" id="testembed">
+<style type="text/css">code.embedded { background: green; }</style>
+<object data="/code/testembed.html" type="text/html" style="background: lightblue; width: 100%; border: 1px dotted darkblue;" id="testembed">
   <p>If you can see this, then the <code>&lt;object&gt;</code> tag doesn't
   work in your browser. :-(</p>
 </object>

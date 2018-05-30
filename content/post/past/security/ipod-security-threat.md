@@ -7,7 +7,12 @@ tags: [Security, iPod, Apple, Gartner, Information Technology, Guns, NRA, Design
 type: post
 ---
 
-[<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]
+{{% figure
+  src   = "https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg"
+  alt   = "20 GB iPod"
+  class = "right"
+  link  = "https://www.amazon.com/dp/B0000CEORU/justatheory-20"
+%}}
 
 Well, this is entertaining. It seems that the Gartner Group has decided that
 [iPods] are a significant security threat. I think it's great that a company
@@ -33,7 +38,4 @@ of the iPod's design and intended use.
 So the mantra holds: iPods aren't security threats; *employees* are security
 threats. But guns, yeah, they're pretty much designed for killing.
 
-  [<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]:
-    https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1
-    "Buy an iPod from Amazon.com!"
   [iPods]: http://www.infoworld.com/article/04/07/06/HNipodsrisk_1.html

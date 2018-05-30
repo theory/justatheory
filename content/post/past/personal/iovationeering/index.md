@@ -15,7 +15,7 @@ developing PostgreSQL-based solutions to help get a handle on it. The work has
 been truly engaging, and a whole hell of a lot of fun. And there are some really
 great, very smart people at iovation, whom I very much like and respect.
 
-[<img src="/2011/11/iovationeering/iovation.jpg" alt="iovation" class="right" />]
+{{% figure src="iovation.jpg" class="right" alt="iovation" link="https://iovation.com/" %}}
 
 So much so, in fact, that I decided to accept their offer of a full time
 position as “Senior Data Architect.” I started on Monday.
@@ -40,7 +40,7 @@ challenges, opportunities, and culture at iovation are just too good to pass up.
 I’m loving the work I’m doing there, and expect to learn a lot over the next few
 years.
 
-[<img src="/2011/11/iovationeering/kineticode.gif" alt="kineticode" class="left" />]
+{{% figure src="kineticode.gif" class="left" alt="Kineticode" link="https://kineticode.com/" %}}
 
 So what, you might ask, does this mean for Kineticode, the company I founded to
 offer support, consulting, and training services for [Bricolage CMS]? The truth
@@ -52,7 +52,7 @@ renewal. They can expect the same great service as always. Better even, as there
 are 10 associates in PGX, and, lately, only me at Kineticode. Since Kineticode
 itself is losing its Raison d’être, it’s going away.
 
-[<img src="/2011/11/iovationeering/pgx.png" alt="PGX" class="right" />]
+{{% figure src="pgx.png" class="right" alt="PGX" link="https://pgexperts.com/" %}}
 
 I intend to remain involved in the various open-source projects I work on. I
 still function as the benevolent dictator of [Bricolage CMS], though other folks
@@ -68,21 +68,14 @@ Twitter].
 
   [PGX]: http://pgexperts.com/
   [iovation]: http://iovation.com/
-  [<img src="/2011/11/iovationeering/iovation.jpg" alt="iovation" class="right" />]:
-    http://iovation.com/ "iovation"
   [CTO at values of n]: /autobiographical/im_back.html
   [lot]: https://github.com/theory/repositories
   [of]: https://github.com/bricoleurs/repositories
   [great]: https://github.com/pgxn/repositories
   [code]: https://github.com/pgexperts/repositories
-  [<img src="/2011/11/iovationeering/kineticode.gif" alt="kineticode" class="left" />]:
-    https://kineticode.com/ "Kineticode"
   [Bricolage CMS]: http://bricolagecms.org/
   [over to PGX]: http://pgexperts.com/bricolage.html
     "Bricolage Technical Support from PGX"
-  [<img src="/2011/11/iovationeering/pgx.png" alt="PGX" class="right" />]: http://pgexperts.com/
-    "PGX"
-  [PGXN]: http://pgxn.org/
   [DesignScene]: http://www.designsceneapp.com/
   [1]: http://blog.pgxn.org/ "PGXN Blog"
   [Lunar/Theory]: http://blog.lunar-theory.com/ "Lunar/Theory Blog"

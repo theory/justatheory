@@ -1,8 +1,10 @@
-<figure{{ with .Get "class" }} class="{{.}}"{{ end }}>
+<figure{{ with .Get "class" }} class="{{.}}"{{ end }}{{ with .Get "title" }} title="{{.}}"{{ end }}>
     {{- $src := .Get "src" }}
     {{- if hasPrefix $src "/" }}
         {{/*  Cannot use absURL because it doesn't work as expected if baseURL has a subdir. */}}
         {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "/$" "" $.Site.BaseURL) $src) }}
+    {{- else if in $src "://" }}
+        {{- $.Scratch.Set "imgSrc" $src }}
     {{- else }}
         {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "[.][a-zA-Z0-9]$" "/" $.Page.Permalink) $src) }}
     {{- end }}
@@ -13,11 +15,12 @@
     {{- else }}
     <img src="{{ $.Scratch.Get "imgSrc" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}" {{ end }}{{ with .Get "height" }}height="{{.}}" {{ end }} />
     {{- end }}
-    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
-    <figcaption>{{ with .Get "title" }}
-        <h4>{{ . }}</h4>{{ end }}{{ with .Get "caption" }}
-        <p>{{ . | markdownify }}</p>{{ end }}{{ if .Get "attr" }}
-        <cite>{{ with .Get "attrlink"}}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink" }}</a>{{ end }}</cite>{{ end }}
+    {{- if or (or (.Get "heading") (.Get "caption")) (.Get "attr") }}
+    <figcaption>{{ with .Get "heading" }}
+        <h4>{{ . }}</h4>{{ end }}{{ if or (or (.Get "caption")) (.Get "attr") }}
+        <p>{{ with .Get "caption" }}{{ . | markdownify }}{{ end }}{{ if .Get "attr" }}
+            <cite>{{ with .Get "attrlink"}}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink" }}</a>{{ end }}</cite>{{ end }}
+        {{ end }}</p>
     </figcaption>
     {{- end }}
 </figure>

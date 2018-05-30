@@ -27,16 +27,19 @@ Via ActiveState PPM, install [ActivePerl], then run:
 
     ppm install App-Sqitch DBD-Oracle
 
-[<img src="https://www.pgcon.org/2013/images/pgcon-220x250.png" alt="PGCon 2013" class="left" />]
+{{% figure
+  src   = "https://www.pgcon.org/2013/images/pgcon-220x250.png"
+  alt   = "PGCon 2013"
+  class = "left"
+  link  = "https://www.pgcon.org/2013/"
+%}}
 
 There are a few other minor tweaks and fixed in this release; check the [release
 notes] for details.
 
 Want more? I will be giving a half-day tutorial, entitled “[Agile Database
 Development],” on database development with [Git], [Sqitch], and [pgTAP] at on
-May 22 [PGCon
-2013][<img src="https://www.pgcon.org/2013/images/pgcon-220x250.png" alt="PGCon 2013" class="left" />]
-in Ottawa, Ontario. Come on up!
+May 22 [PGCon 2013] in Ottawa, Ontario. Come on up!
 
   [work]: http:/iovation.com/
   [Sqitch]: https://sqitch.org/
@@ -45,9 +48,8 @@ in Ottawa, Ontario. Come on up!
   [`$ORACLE_HOM`]: https://www.orafaq.com/wiki/ORACLE_HOME
   [Homebrew]: https://brew.sh
   [ActivePerl]: https://www.activestate.com/activeperl/downloads
-  [<img src="https://www.pgcon.org/2013/images/pgcon-220x250.png" alt="PGCon 2013" class="left" />]:
-    https://www.pgcon.org/2013/
   [release notes]: https://metacpan.org/source/DWHEELER/App-Sqitch-0.970/Changes
   [Agile Database Development]: https://www.pgcon.org/2013/schedule/events/615.en.html
   [Git]: https://git-scm.com/
   [pgTAP]: https://pgtap.org/
+  [PGCon 2013]: https://www.pgcon.org/2013/

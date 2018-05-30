@@ -7,7 +7,12 @@ tags: [France, Travel, Rouen, Home Exchange]
 type: post
 ---
 
-<figure><img src="https://farm9.staticflickr.com/8010/7459991666_7f33908a53_z.jpg" title="At the Church of St. Ouen, Rouen" alt="At the Church of St. Ouen" /></figure>
+{{% figure
+  src   = "https://farm9.staticflickr.com/8010/7459991666_7f33908a53_z.jpg"
+  alt   = "At the Church of St. Ouen"
+  title = "At the Church of St. Ouen, Rouen"
+  class = "left"
+%}}
 
 We arrived Ã  Rouen just over a week ago. This is our second extended visit, a
 house exchange with a lovely French couple who’s daughter lives in Portland. We
@@ -20,7 +25,12 @@ grateful to my employer, [iovation], for putting up with my absence and allowing
 me to work remotely. So far it is working quite well, I think, especially since
 most of my time is going into [Sqitch], an open-source project.
 
-<img src="https://farm8.staticflickr.com/7110/7427421028_7848ffafe7_n.jpg" title="Domination and Control" alt="Domination and Control" class="left" />
+{{% figure
+  src   = "https://farm8.staticflickr.com/7110/7427421028_7848ffafe7_n.jpg"
+  alt   = "Domination and Control"
+  title = "Domination and Control"
+  class = "right"
+%}}
 
 So I spend my mornings with my family, walking around Rouen, or teaching Anna
 [Scratch], and my afternoons and evenings most days working. And because we’re
@@ -39,7 +49,13 @@ A few other items of interest:
 
 -   Anna now has [her own blog], too. Check regularly for her photos.
 
--   <img src="https://farm8.staticflickr.com/7266/7447407870_71d68c6d90_n.jpg" title="Delicious, delicious cidre" alt="Cidre" class="right" />
+-   {{% figure
+        src   = "https://farm8.staticflickr.com/7266/7447407870_71d68c6d90_n.jpg"
+        alt   = "Cidre"
+        title = "Delicious, delicious cidre"
+        class = "right"
+    %}}
+    
     Man oh man is the cider good here. Along with [Calvados], it is the regional
     drink of choice. Even the cheap grocery store stuff is amazing. It’s
     especially good [for lunch]!

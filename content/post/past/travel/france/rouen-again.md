@@ -7,7 +7,12 @@ tags: [France, Travel, Rouen, Normandy]
 type: post
 ---
 
-<figure><a href="https://www.flickr.com/photos/theory/3330418728/"><img src="https://farm4.staticflickr.com/3359/3330418728_7a8a5024bb_z.jpg?zz=1" alt="Rouen Skyline" title="" /></a></figure>
+{{% figure
+  src    = "https://farm4.staticflickr.com/3359/3330418728_7a8a5024bb_z.jpg"
+  alt    = "Rouen Skyline"
+  link   = "https://www.flickr.com/photos/theory/3330418728/"
+  title  = "Rouen Skyline"
+%}}
 
 A few years back, we spent six weeks in Rouen, France. I [blogged about it a
 little] and took [a lot of photos]. It was a terrific experience, and we always

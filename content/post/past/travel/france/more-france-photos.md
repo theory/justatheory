@@ -7,7 +7,13 @@ tags: [France, Rouen, Paris, Anna]
 type: post
 ---
 
-[<img src="https://farm4.static.flickr.com/3212/3141571683_3e50ab09ac_m.jpg" alt="Dangly Earrings" class="left" />]
+{{% figure
+  src   = "https://farm4.static.flickr.com/3212/3141571683_3e50ab09ac_m.jpg"
+  alt   = "Dangly Earrings"
+  class = "left"
+  link  = "https://www.flickr.com/photos/theory/sets/72157611685878685/"
+  title = "Christmas in Rouen"
+%}}
 
 It seems that quite a bit of time went by since my last blog entry before the
 server downtime. I hadn't realized. Since then, I've posted a bunch more photos
@@ -15,7 +21,13 @@ from our trip to France. First up, I posted photos from our Christmas in Rouen.
 Anna was especially happy with the dangly earrings. Click the photo to see the
 complete set.
 
-[<img src="https://farm4.static.flickr.com/3377/3183440970_846dbd4454_m.jpg" alt="Rose Window" class="right" />]
+{{% figure
+  src   = "https://farm4.static.flickr.com/3377/3183440970_846dbd4454_m.jpg"
+  alt   = "Rose Window"
+  class = "right"
+  link  = "https://www.flickr.com/photos/theory/sets/72157612369764118/"
+  title = "Notre Dame de Paris"
+%}}
 
 Then I went back in time a bit and posted photos from our second stay in Paris.
 First up was a set from Notre Dame de Paris. I was fortunate to be there on a
@@ -24,7 +36,13 @@ overwhelm the interior light, so that you can actually see some of the interior.
 I'm especially proud of this photo, it just came together perfectly. Click for
 the complete set.
 
-[<img src="https://farm4.static.flickr.com/3429/3192839609_afdf96d516_m.jpg" alt="Overlooking the Pool" class="left" />]
+{{% figure
+  src   = "https://farm4.static.flickr.com/3429/3192839609_afdf96d516_m.jpg"
+  alt   = "Overlooking the Pool"
+  class = "left"
+  link  = "https://www.flickr.com/photos/theory/sets/72157612509742722/"
+  title = "Cité des sciences & de l’industrie"
+%}}
 
 The day after Notre Dame, Anna and I went to [Cité des sciences & de
 l’industrie], a fantastic science and industry museum, featuring [Cité des
@@ -32,14 +50,26 @@ Enfants], a hands-on children's museum with interactive, hands-on exhibits. Anna
 loved it so much that she wanted to go back, which we did in January. Maybe I'll
 get to *those* photos sometime in March. ;-)
 
-[<img src="https://farm4.static.flickr.com/3395/3205258896_caa9381ece_m.jpg" alt="L’Amour (les Lèvres), Fontaine Stravinsky" class="right" />]
+{{% figure
+  src   = "https://farm4.static.flickr.com/3395/3205258896_caa9381ece_m.jpg"
+  alt   = "L’Amour (les Lèvres), Fontaine Stravinsky"
+  class = "right"
+  link  = "https://www.flickr.com/photos/theory/sets/72157612692473962/"
+  title = "Centre Georges Pompidou"
+%}}
 
 And finally, there are these shots from Centre Georges Pompidou. It was rainy
 and wet when we were there (immediately after Notre Dame, in fact), but the
 weather kind of lended itself to the mood at La Fontaine Stravinsky. And of
 course, I have more photos of Anna playing in the children's exhibit there.
 
-[<img src="https://farm4.static.flickr.com/3473/3242812444_79e0c26fbd_m.jpg" alt="Combien des bon-bons?" class="left" />]
+{{% figure
+  src   = "https://farm4.static.flickr.com/3473/3242812444_79e0c26fbd_m.jpg"
+  alt   = "Combien des bon-bons?"
+  class = "left"
+  link  = "https://www.flickr.com/photos/theory/sets/72157613206066864/"
+  title = "Anna’s Weekly Dance and French Classes"
+%}}
 
 And finally, just as a bonus, here are some photos I took this morning in Anna's
 dance and French classes. The light wasn't great (all fluorescent), and shooting
@@ -54,22 +84,8 @@ to the photos. So it's dragging on, but I'll keep slogging at it. The trick will
 be for me to try to stay ahead of the curve on photos taken since the trip. I've
 only got 600 of those. Yikes! Wish me luck!
 
-  [<img src="https://farm4.static.flickr.com/3212/3141571683_3e50ab09ac_m.jpg" alt="Dangly Earrings" class="left" />]:
-    https://www.flickr.com/photos/theory/sets/72157611685878685/
-    "Christmas in Rouen"
-  [<img src="https://farm4.static.flickr.com/3377/3183440970_846dbd4454_m.jpg" alt="Rose Window" class="right" />]:
-    https://www.flickr.com/photos/theory/sets/72157612369764118/
-    "Notre Dame de Paris"
-  [<img src="https://farm4.static.flickr.com/3429/3192839609_afdf96d516_m.jpg" alt="Overlooking the Pool" class="left" />]:
-    https://www.flickr.com/photos/theory/sets/72157612509742722/
-    "Cité des sciences & de l’industrie"
   [Cité des sciences & de l’industrie]: http://www.cite-sciences.fr/
     "Sciences - Découvrez la science à la Cité des Sciences et de l'Industrie à Paris"
-  [Cité des Enfants]: http://www.cite-sciences.fr/francais/ala_cite/expositions/cite-des-enfants/
+  [Cité des Enfants]:
+     http://www.cite-sciences.fr/francais/ala_cite/expositions/cite-des-enfants/
     "Cité des Enfants — Jeux et animations pour les enfants"
-  [<img src="https://farm4.static.flickr.com/3395/3205258896_caa9381ece_m.jpg" alt="L’Amour (les Lèvres), Fontaine Stravinsky" class="right" />]:
-    https://www.flickr.com/photos/theory/sets/72157612692473962/
-    "Centre Georges Pompidou"
-  [<img src="https://farm4.static.flickr.com/3473/3242812444_79e0c26fbd_m.jpg" alt="Combien des bon-bons?" class="left" />]:
-    https://www.flickr.com/photos/theory/sets/72157613206066864/
-    "Anna’s Weekly Dance and French Classes"

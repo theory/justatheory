@@ -7,7 +7,12 @@ Tags: [Just a Theory, Daring Fireball, aaaaauuugh]
 type: post
 ---
 
-<figure><img src="/2012/04/how-not-to-withstand-a-fireballing/fireballed.png" alt="Fireballed!" title="Yeah, hovering along at 50-200 hits a day, and then, BAM!" /></figure>
+{{% figure
+  src     = "fireballed.png"
+  alt     = "Fireballed!"
+  class   = "frame"
+  caption = "Yeah, hovering along at 50-200 hits a day, and then, BAM!"
+%}}
 
 -   Set up a simple [Blosxom]-powered blog on the advice of a [friend who wrote
     it]

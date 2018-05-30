@@ -7,15 +7,20 @@ tags: [Postgres, pgTAP, Testing, Unit Testing, TAP, PL/pgSQL, SQL]
 type: post
 ---
 
-[<img src="https://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />]
+{{% figure
+  src   = "https://pgtap.org/ui/img/tap.jpg"
+  alt   = "Mmmmm…pgTAP"
+  title = "pgTAP: Unit Testing for PostgreSQL"
+  class = "right"
+  link  = "https://pgtap.org/"
+%}}
 
-I just dropped a new version of
-[pgTAP][<img src="https://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />],
-following a few marathon hack sessions since [my talk at PGCon] ([movie here],
-BTW). Actually, the new [`performs_ok()`] function came about as I wrote the
-presentation, but all the rest came on the flight home and in the few days
-since. Not sure when I'll hack on it this much again (it's getting a bit big at
-5,758 lines of PL/pgSQL and SQL).
+I just dropped a new version of [pgTAP] following a few marathon hack sessions
+since [my talk at PGCon] ([movie here], BTW). Actually, the new
+[`performs_ok()`] function came about as I wrote the presentation, but all the
+rest came on the flight home and in the few days since. Not sure when I'll hack
+on it this much again (it's getting a bit big at 5,758 lines of PL/pgSQL and
+SQL).
 
 Overall I'm very happy with this release, as it adds a lot of new assertion
 functions. In particular, I added a slew of functions that test that the objects
@@ -50,8 +55,7 @@ you prefer). [Epic] does this by allowing query strings to be passed to a
 function, but I'd really like to keep queries in SQL rather than in SQL strings.
 I'll be giving it some more thought and will post about it soon.
 
-  [<img src="https://pgtap.org/ui/img/tap.jpg" alt="Mmmmm…pgTAP" class="right" />]:
-    https://pgtap.org/ "pgTAP: Unit Testing for PostgreSQL"
+  [pgTaP]: https://pgtap.org/ "pgTAP: Unit Testing for PostgreSQL"
   [my talk at PGCon]: https://www.pgcon.org/2009/schedule/events/165.en.html
     "PGCon: “Unit Test Your Database!”"
   [movie here]: http://hosting3.epresence.tv/fosslc/1/watch/129.aspx

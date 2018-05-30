@@ -29,7 +29,12 @@ Here’s what the post was about:
 -   I’d rather have objects that are more durable and likely to last
 -   So I’d rather have an iPad than a $79 Kindle.
 
-[<img src="https://images-na.ssl-images-amazon.com/images/I/31-WDNyjxWL._AA300_.jpg" alt="Contigo thermal mug" class="left" />]
+{{% figure
+   src   = "https://images-na.ssl-images-amazon.com/images/I/31-WDNyjxWL._AA300_.jpg"
+   alt   = "Contigo thermal mug"
+   class = "left"
+   link  = "https://www.amazon.com/dp/B001RMGVU8/justatheory-20"
+%}}
 
 That’s about it. I’ve never used a Kindle device, just the Kindle iOS app. I
 don’t know how crappy the new Kindle actually is. Maybe Marco’s wrong, and the
@@ -49,6 +54,4 @@ Dixie-cup disposable, and the advertising helps keep the price down.
   [Disposable Computing]: /computers/devices/disposable-computing.html
   [Daring Fireball]: https://daringfireball.net/
   [$79 Kindle review]: https://www.marco.org/2011/10/07/review-79-kindle-with-ads-and-buttons
-  [<img src="https://images-na.ssl-images-amazon.com/images/I/31-WDNyjxWL._AA300_.jpg" alt="Contigo thermal mug" class="left" />]:
-    https://www.amazon.com/dp/B001RMGVU8/justatheory-20
   [Starbucks plastic mug]: https://www.starbucksstore.com/Starbucks%C2%AE-Lenticular-Tumbler%2C-16-fl-oz/011014926,default,pd.html?start=4&cgid=tumblers-and-travel-mugs

@@ -7,7 +7,13 @@ tags: [France, Eiffel Tower, Photography]
 type: post
 ---
 
-[<img src="https://farm4.static.flickr.com/3114/3138733614_1c773a6f1d.jpg?v=1232254905" alt="Blue Eiffel Tower" class="left" />]
+{{% figure
+  src   = "https://farm4.static.flickr.com/3114/3138733614_1c773a6f1d.jpg"
+  alt   = "Blue Eiffel Tower"
+  link  = "https://www.flickr.com/photos/theory/3138733614/in/set-72157611621954549/"
+  title = "Blue Eiffel"
+  class = "left"
+%}}
 
 I finally got around to posting my photos of the [Blue Eiffel Tower] on Flickr.
 The Tower is lit in blue in celebration of the French Presidency of the EU, and
@@ -26,8 +32,5 @@ not to mention sharpness. Next time, I’d like to have a tripod and a wide-angl
 prime lens. Alas, I’m not likely to acquire them during this visit. But maybe
 next time the Eiffel Tower will be red!
 
-  [<img src="https://farm4.static.flickr.com/3114/3138733614_1c773a6f1d.jpg?v=1232254905" alt="Blue Eiffel Tower" class="left" />]:
-    https://www.flickr.com/photos/theory/3138733614/in/set-72157611621954549/
-    "Blue Eiffel"
   [Blue Eiffel Tower]: https://www.flickr.com/photos/theory/sets/72157611621954549/
     "“Blue Eiffel” on Flickr"

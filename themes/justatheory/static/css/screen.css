@@ -638,9 +638,25 @@ figcaption {
     font-size: 80%;
     line-height: 1.4em;
     text-align: left;
-    color: #ccc;
     padding: 1rem 0;
     margin: 0 1rem;
+    color: #ccc;
+}
+
+figcaption h4 {
+    color: #ccc;
+}
+
+figcaption cite:before {
+    content: " Image: "
+}
+
+figcaption cite:after {
+    content: "."
+}
+
+figcaption cite, figcaption cite a, figcaption cite a:hover, figcaption cite a:active {
+    color: #999 !important;
 }
 
 figcaption > *:last-child {

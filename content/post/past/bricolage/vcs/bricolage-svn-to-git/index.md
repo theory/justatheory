@@ -124,7 +124,11 @@ the results and cancelled the merge. Then I just opened the screenshot in
 Preview, looked at the records there, then found them in GitX. This made things
 go quite a bit faster.
 
-<figure><img src="/2009/04/bricolage-svn-to-git/merges.gif" alt="Commits that mention merging in GitX" /></figure>
+{{% figure
+  src   = "merges.gif"
+  alt   = "Commits that mention merging in GitX"
+  class = "frame"
+%}}
 
 As a result, I added a migration function to properly tag merges. It looked like
 this:

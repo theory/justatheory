@@ -68,11 +68,12 @@ readers resembles the Venn diagram to the right. But I want to see *The New
 Yorker* rock on the iPad, so I put aside some time to download the new *Vogue*
 app and take it for a spin.
 
-<figure class="right">
-    <img src="https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png"
-       style="width:307pt;" alt="The New Yorker &amp; Condé Nast Venn Diagram"
-       title=" The New Yorker &amp; Condé Nast Venn Diagram" />
-</figure>
+{{% figure
+  src   = "https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png"
+  alt   = "The New Yorker & Condé Nast Venn Diagram"
+  title = "The New Yorker & Condé Nast Venn Diagram"
+  class = "right"
+%}}
 
 First, the good news. I got a free month's subscription and downloaded the
 latest issue of *Vogue*, which does indeed have hi-res images. The articles look
@@ -87,17 +88,13 @@ can understand why they would be the same: It's less expensive to have a single
 form factor allows you to eliminate some of the differences. After all, bits
 don't weigh anything.
 
-<figure>
-    <a href="https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/">
-        <img src="https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg"
-             alt="Vogue on the new iPad" />
-    </a>
-    <figcaption>
-        <p>Image content from <em>Vogue</em> on the new iPad. Not shown: the second
-        that it's blurry while the image engine finishes loading and displaying the
-        image. Click for larger images.</p>
-    </figcaption>
-</figure>
+{{% figure
+  src   = "https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg"
+  alt   = "Vogue on the new iPad"
+  title = "Vogue on the new iPad"
+  link  = "https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/"
+  caption = "Image content from *Vogue* on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image. Click for larger images."
+%}}
 
 Except that they do. The *Vogue* April 2012 issue weighs in at a whopping 408
 MB. A special "exclusive download" covering The Met Gala demands 530 MB of disk

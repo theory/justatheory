@@ -7,7 +7,7 @@ tags: [Quality, Kindle, iPad, Junk, Disposability, Minimalism, Build Quality]
 type: post
 ---
 
-<img src="/2011/10/disposable-computing/steve_jobs_1982.jpg" alt="Minimalist Steve Jobs" class="center" />
+{{% figure src = "steve_jobs_1982.jpg" alt = "Minimalist Steve Jobs" class = "center" %}}
 
 Over the last year or so, we’ve been on a “clear out the junk” kick in our
 house. We’ve gotten rid of all of our CDs, most of our books, and a lot of
@@ -29,7 +29,7 @@ and have always managed to get a good price for them via Craig’s List, not onl
 because people *want* them, but because they were still in good shape after
 extended use. These products are meant to *last.*
 
-<img src="/2011/10/disposable-computing/kindle.jpg" alt="Kindle" class="right" />
+{{% figure src = "kindle.jpg" alt = "Kindle" class = "right" %}}
 
 Marco Arment’s [$79 Kindle review] catalyzed these thoughts for me. The words
 that really struck me were “cheap” and “disposable.” The new low-end Kindle is
@@ -50,7 +50,7 @@ Because they’re so cheap to begin with, once they break, they’re not worth
 anything at all. You won’t be able to sell them to anyone. They’re just junk at
 that point.
 
-<img src="/2011/10/disposable-computing/ipad.jpg" alt="iPad" class="left" />
+{{% figure src = "ipad.jpg" alt = "iPad" class = "left" %}}
 
 I’m over junk culture. I hate wasteful packaging, but even worse is wasteful
 products. I don’t want a cheap, crappy Kindle, because in a year it will just be

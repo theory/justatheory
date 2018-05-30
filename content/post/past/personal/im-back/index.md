@@ -7,7 +7,12 @@ tags: [Personal, Work, Values Of n, Stikkit, I Want Sandy, Bricolage, Kineticode
 type: post
 ---
 
-[<img src="/2008/01/im-back/iwantsandy_207x207.gif" alt="Sandy - your free personal email assistant" class="right" />]
+{{% figure
+    src   = "iwantsandy_207x207.gif"
+    class = "right"
+    alt   = "Sandy - your free personal email assistant"
+    link  = "http://iwantsandy.com/"
+%}}
 
 Yes indeed, I am back. Was I ever gone? Well, yes, I've been rather busy for the
 last 15 months.
@@ -47,8 +52,6 @@ But do watch for more blog posts in the coming months, too. There are a few
 interesting things I want to write about, and I've got some serious catching-up
 to do. Interested in following along on my adventures? [Follow me] via Twitter.
 
-  [<img src="/2008/01/im-back/iwantsandy_207x207.gif" alt="Sandy - your free personal email assistant" class="right" />]:
-    http://iwantsandy.com/
   [Values of n]: http://www.valuesofn.com/ "Values of n home page"
   [Sandy]: http://iwantsandy.com/ "You want sandy, trust me!"
   [Julie's dad died]: http://www.legacy.com/Link.asp?I=LS000091810982X

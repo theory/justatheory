@@ -31,8 +31,11 @@ beautiful interface to serve a specific (and design-savvy) niche. We agreed to
 meet at [iPad Dev Camp] in April to see if the idea had any legs, and whether we
 could work well together.
 
-<img src="https://lunarboy.com/wp-content/uploads/2011/01/ds_early_comp.jpg"
-     alt="Roger&#39;s Original Mockup" class="right" />
+{{% figure
+  src   = "https://lunarboy.com/wp-content/uploads/2011/01/ds_early_comp.jpg"
+  alt   = "Roger’s Original Mockup"
+  class = "right"
+%}}
 
 iPad Dev Camp was a great success for us. [Jayant Sai] was especially helpful,
 hanging out in the “newbie room” and pointing out that Roger could work on stuff

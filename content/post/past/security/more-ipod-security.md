@@ -7,10 +7,15 @@ tags: [Security, iPod, UK Military, Windows, USB, Files]
 type: post
 ---
 
-[<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]
+{{% figure
+  src   = "https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg"
+  alt   = "20 GB iPod"
+  class = "right"
+  link  = "https://www.amazon.com/dp/B0000CEORU/justatheory-20"
+%}}
 
 Following up on my [screed] against the idea of the “iPod security threat”,
-[James Duncan Davidson] sent me a link to [][1]this story about how the UK
+[James Duncan Davidson] sent me a link to [this story] about how the UK
 military has decided that the iPod is a security threat.
 
 > “With USB devices, if you plug it straight into the computer you can bypass
@@ -39,13 +44,10 @@ So yeah, highly sensitive security establishments *should* ban personal external
 storage devices to keep honest people honest, but really, they should also fix
 the real security problem with their operating system of choice.
 
-  [<img src="https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg" alt="20 GB iPod" class="right" />]:
-    https://www.amazon.com/exec/obidos/ASIN/B0000CEORU/justatheory-20?creative=125581;camp=2321;link_code=as1
-    "Buy an iPod from Amazon.com!"
   [screed]: /computers/policy/ipod_security_threat.html
     "Gartner: iPod is a Security Threat"
   [James Duncan Davidson]: http://x180.net/ "x180.net"
-  [1]: http://www.cnn.com/2004/TECH/internet/07/13/britain.mod.reut/index.html
+  [this story]: https://www.cnn.com/2004/TECH/internet/07/13/britain.mod.reut/index.html
     "UK military: iPod is security risk"
   [USB Flash Drive]: https://www.amazon.com/exec/obidos/ASIN/B0001F21IS/justatheory-20
     "Buy a USB Flash Drive from Amazon"

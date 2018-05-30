@@ -7,10 +7,13 @@ tags: [OSCON, Test-Driven Database Design, pgTAP, Antisocial media]
 type: post
 ---
 
-<figure class="left">
-<img src="https://farm5.static.flickr.com/4075/4799027539_22c432423f_o.png" alt="Flipr Antisocial Networking" title="Flipr Antisocial Networking" />
-<figcaption>Logo design by <a href="http://www.strongrrl.com/">Strongrrl</a>.</figcaption>
-</figure>
+{{% figure
+   src   = "https://farm5.static.flickr.com/4075/4799027539_22c432423f_o.png"
+   alt   = "Flipr Antisocial Networking"
+   title = "Flipr Antisocial Networking"
+   caption = "Logo design by [Strongrrl](http://www.strongrrl.com/)."
+   class = "left"
+%}}
 
 A sneak peak at what I'm working on for my [tutorial session] at [OSCON]. Be
 there at 8:30 Monday morning for the important details. You're sure to find my

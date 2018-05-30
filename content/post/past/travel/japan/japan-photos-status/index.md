@@ -7,7 +7,13 @@ tags: [Japan, Twitter, Tokyo, Kyoto]
 type: post
 ---
 
-[<img src="/2009/12/japan-photos-status/5000_tweets.png" title="5,000 Tweets!? How can this possibly be?" alt="5,000 Tweets" class="left" />]
+{{% figure
+  src   = "5000_tweets.png"
+  alt   = "5,000 Tweets"
+  title = "5,000 Tweets!? How can this possibly be?"
+  class = "left"
+  link  = "https://twitter.com/theory/"
+%}}
 
 Much to my amusement, [Twitter] seems to think that I've tweeted over 5,000
 times. I don’t see how this can possibly be, but there are days when I tweet a
@@ -16,7 +22,12 @@ realize that it counts DMs and retweets in that number (not many retweets yet,
 of course), but still, I question their algorithm. Since one can’t access one’s
 entire history of tweets (yet?), I can’t count for myself, either, alas.
 
-<figure><a href="https://www.flickr.com/photos/theory/sets/72157622853441435/"><img src="https://farm3.static.flickr.com/2579/4175349157_8bc05dce12.jpg" alt="Kiyomizu Temple Stage" /></a></figure>
+{{% figure
+  src   = "https://farm3.static.flickr.com/2579/4175349157_8bc05dce12.jpg"
+  alt   = "Kiyomizu Temple Stage"
+  title = "Kiyomizu Temple Stage"
+  link  = "https://www.flickr.com/photos/theory/sets/72157622853441435/"
+%}}
 
 In other news, I’ve been slowly making may way through my photos from the family
 [trip to Japan]. Yesterday, I posted photos from [Kiyomizu-dera, Gion, and
@@ -33,8 +44,6 @@ Things will likely be slowish through the holidays, but there should be some
 interesting stuff trickling out over the coming weeks. Till then, this status
 post will have to do.
 
-  [<img src="/2009/12/japan-photos-status/5000_tweets.png" title="5,000 Tweets!? How can this possibly be?" alt="5,000 Tweets" class="left" />]:
-    https://twitter.com/theory/
   [Twitter]: https://twitter.com/theory/ "Follow me on Twitter!"
   [trip to Japan]: https://www.flickr.com/photos/theory/collections/72157622739532091/
     "Photos from Tokyo and Kyoto"

@@ -7,10 +7,12 @@ type: post
 ---
 
 {{% figure
-   src="iphone-watch.jpg"
-   alt="“iPhone and Apple Watch“"
-   caption="Multiple factors. Photo: Apple."
-   class="right"
+   src     = "iphone-watch.jpg"
+   alt     = "“iPhone and Apple Watch“"
+   caption = "Multiple factors."
+   class   = "right"
+   attr    = "Apple"
+   attrlink = "https://www.apple.com/"
 %}}
 
 Back when Apple introduced Touch ID, I had an idea for a blog post, never

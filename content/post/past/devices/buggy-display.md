@@ -7,7 +7,11 @@ tags: [MacBook Pro, Insects, Screen, MacBook]
 type: post
 ---
 
-<figure><a href="https://www.flickr.com/photos/theory/3592818370/"><img src="https://farm4.static.flickr.com/3384/3592818370_0aa2ace10c.jpg" alt="My Buggy MacBook Pro" /></a></figure>
+{{% figure
+  src   = "https://farm4.static.flickr.com/3384/3592818370_0aa2ace10c.jpg"
+  alt   = "My Buggy MacBook Pro"
+  link = "https://www.flickr.com/photos/theory/3592818370/"
+%}}
 
 A few days ago, I noticed a bug crawling across the screen of my MacBook Pro as
 I was working. I tried to shoo it away, but it wouldn't budge—because it was

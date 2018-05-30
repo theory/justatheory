@@ -7,7 +7,13 @@ tags: [Perl, grep, Levenshtein, Perl Best Practices]
 type: post
 ---
 
-<figure class="left"><a href="https://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20" title="Buy &#x201c;Perl Best Practices&#x201d; on Amazon.com"><img src="https://images-na.ssl-images-amazon.com/images/I/81Rh6gbV-ZL.jpg" alt="&#x201c;Perl Best Practices&#x201d; cover" /></a></figure>
+{{% figure
+  src   = "https://images-na.ssl-images-amazon.com/images/I/81Rh6gbV-ZL.jpg"
+  alt   = "“Perl Best Practices” cover"
+  title = "Buy “Perl Best Practices” on Amazon.com"
+  class = "left frame"
+  link  = "https://www.amazon.com/dp/0596001738/justatheory-20"
+%}}
 
 I've been reading [Perl Best Practices] and have been making use of [List::Util]
 and [List::MoreUtils] as a result. I'm amazed that I never knew about these

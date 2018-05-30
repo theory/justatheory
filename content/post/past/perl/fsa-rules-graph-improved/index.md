@@ -7,7 +7,10 @@ tags: [Perl, FSA::Rules, GraphViz, PNG, State Machines]
 type: post
 ---
 
-<figure><img src="/2006/07/fsa-rules-graph-improved/fsa_rules_sample.png" alt="FSA::Rules sample graph output" /></figure>
+{{% figure
+  src = "fsa_rules_sample.png"
+  alt = "FSA::Rules sample graph"
+%}}
 
 I just released [FSA::Rules] 0.25. This version came about as I returned to the
 module to handle setting up a PostgreSQL database and found the graphics that it

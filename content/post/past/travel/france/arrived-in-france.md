@@ -7,7 +7,14 @@ tags: [France, Paris, Rouen, Lufthansa, Travel, Eiffel Tower, Jet Lag]
 type: post
 ---
 
-[<img src="https://farm4.staticflickr.com/3066/3068417561_f08cbf814c_o.jpg" alt="Portland to Rouen" width="1024" height="681" />]<script async src="https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+{{% figure
+  src    = "https://farm4.staticflickr.com/3066/3068417561_f08cbf814c_o.jpg"
+  alt    = "Portland to Rouen"
+  width  = "1024"
+  height = "681"
+  link   = "https://www.flickr.com/photos/theory/albums/72157610395807045"
+  title  = "Portland to Rouen"
+%}}
 
 Well, we made it. Things went pretty smoothly, all told. The flight was fairly
 empty, so Anna, at least, was able to lie across two seats and get a few hours
@@ -99,9 +106,6 @@ Meanwhile, up next: A visit to Paris Tuesday to Wednesday this week, and
 planning another visit for December 10th, around a possible visit to the [Paris
 Perl Mongers].
 
-  [<img src="https://farm4.staticflickr.com/3066/3068417561_f08cbf814c_o.jpg" alt="Portland to Rouen" width="1024" height="681" />]:
-    https://www.flickr.com/photos/theory/albums/72157610395807045
-    "Portland to Rouen"
   [hotel]: http://www.hotelvaladon.com/
     "Hôtel Valadon Paris — between rue cler market and eiffel tower"
   [Musee des Beaux-Arts]: http://www.rouen-musees.com/index.php?idR=12

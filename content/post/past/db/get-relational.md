@@ -7,13 +7,13 @@ tags: [Databases, C.J. Date, Relational Model, RDBMS, Databases, SQL, Tutorial D
 type: post
 ---
 
-<figure class="right">
-  <a href="https://www.amazon.com/exec/obidos/ASIN/0596100124/justatheory-20"
-    title="Buy “Database In Depth” on Amazon.com">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/41666fRxogL._SX379_BO1,204,203,200_.jpg"
-         alt="Cover of &#x201c;Database In Depth&#x201d; by C.J. Date" />
-  </a>
-</figure>
+{{% figure
+  src   = "https://images-na.ssl-images-amazon.com/images/I/41666fRxogL._SX379_BO1,204,203,200_.jpg"
+  alt   = "Cover of “Database In Depth” by C.J. Date"
+  class = "right"
+  title = "Buy “Database In Depth” on Amazon.com"
+  link  = "https://www.amazon.com/exec/obidos/ASIN/0596100124/justatheory-20"
+%}}
 
 > The idea that the relational model could handle only rather simple kinds of
 > data (like numbers, and strings, and dates, and times) is a huge

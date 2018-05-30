@@ -7,7 +7,12 @@ tags: [France, Photography, Paris, Musée Du Quai Branly]
 type: post
 ---
 
-[<img src="https://farm4.static.flickr.com/3653/3352365419_b20debecd3.jpg" alt="Musée du quai Branly" class="center" />]
+{{% figure
+  src   = "https://farm4.static.flickr.com/3653/3352365419_b20debecd3.jpg"
+  alt   = "Musée du quai Branly"
+  link  = "https://www.flickr.com/photos/theory/sets/72157615217912698/"
+  title = "Musée du quai Branly"
+%}}
 
 I’ve just [posted] a new set of photos from our trip to France. This time I’ve
 put up photos of le [Musée du quai Branly], a fabulous example of modern
@@ -23,8 +28,6 @@ I’ve already done a once-over and removed most of the crappy shots. Now it’s
 just reviewing, tweaking, and posting. With luck, I’ll have them all posted by
 Christmas!
 
-  [<img src="https://farm4.static.flickr.com/3653/3352365419_b20debecd3.jpg" alt="Musée du quai Branly" class="center" />]:
-    https://www.flickr.com/photos/theory/sets/72157615217912698/
   [posted]: https://www.flickr.com/photos/theory/sets/72157615217912698/
     "Musée du quai Branly"
   [Musée du quai Branly]: http://www.quaibranly.fr/

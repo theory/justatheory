@@ -8,9 +8,7 @@ Tags: [Just a Theory, RSS, Atom, feeds]
 type: post
 ---
 
-<figure>
-  <img src="/2008/01/teasers-atom-feed/feeds.png" alt="Select a feed" />
-</figure>
+{{% figure src = "feeds.png" alt = "Select a feed" class = "right" %}}
 
 I've just added a new feed: [teasers only]. It makes things a log shorter for
 those who just want to get a teaser for each blog entry, rather than [complete

@@ -7,12 +7,12 @@ tags: [Steve Jobs, Biography, Walter Isaacson, Ronald Reagan, Dutch]
 type: post
 ---
 
-<a href="https://www.amazon.com/gp/product/1451648537/justatheory-20">
-  <img src="https://cdn.macrumors.com/article-new/2011/08/steve_jobs_book_cover.jpg"
-     title="“Steve Jobs” by Walter Isaacson"
-       alt="Steve Jobs"
-  />
-</a>
+{{% figure
+  src     = "https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg"
+  link    = "https://www.amazon.com/gp/product/1451648537/justatheory-20"
+  caption = "“Steve Jobs” by Walter Isaacson"
+  alt     = "Steve Jobs"
+%}}
 
 Until a few weeks ago, the biography I read most recently was [*Dutch*], Edmund
 Morris’s authorized portrait of Ronald Reagan. I read it not because I was

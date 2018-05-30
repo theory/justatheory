@@ -5,7 +5,6 @@ lastMod: 2018-05-30T14:43:39Z
 description: The time has come for Sqitch to leave the nest and go out on its own.
 tags: [Sqitch, Community, Dave Rolsky, Shawn Sorichetti, Curtis Poe, Ștefan Suciu]
 type: post
-draft: true
 ---
 
 In the last few years, I’ve not had a lot of time to hack on my open-source

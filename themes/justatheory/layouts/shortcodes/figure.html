@@ -3,7 +3,7 @@
     {{- if hasPrefix $src "/" }}
         {{/*  Cannot use absURL because it doesn't work as expected if baseURL has a subdir. */}}
         {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "/$" "" $.Site.BaseURL) $src) }}
-    {{- else if in $src "://" }}
+    {{- else if in $src "//" }}
         {{- $.Scratch.Set "imgSrc" $src }}
     {{- else }}
         {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "[.][a-zA-Z0-9]$" "/" $.Page.Permalink) $src) }}

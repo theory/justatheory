@@ -7,7 +7,7 @@ tags: [Alamosa, Colorado, Adams State College, Photos, Photographs, Flying, Pict
 type: post
 ---
 
-<figure><img src="/2004/08/another-short-alamosa-trip/stellar_clouds.jpg" alt="Stellar clouds" class="center" /></figure>
+<figure><img src="{{% link "stellar_clouds.jpg" %}}" alt="Stellar clouds" class="center" /></figure>
 
 I made another brief trip to Alamosa last week. This is the first chance I've
 had to writ anything about it! I was doing two days of training for Adams State
@@ -18,11 +18,11 @@ the photo of the lobby of the Clarion hotel I stayed in is, um, *interesting* as
 well. Enjoy!
 
 <figure>
-<img src="/2004/08/another-short-alamosa-trip/over_engine.jpg" alt="Shot over the prop engine" />
-<img src="/2004/08/another-short-alamosa-trip/angry_clouds.jpg" alt="Big, angry clouds" />
-<img src="/2004/08/another-short-alamosa-trip/crop_circles.jpg" alt="Crop circles" />
-<img src="/2004/08/another-short-alamosa-trip/road_wing.jpg" alt="Roads or dry creeks?" />
-<img src="/2004/08/another-short-alamosa-trip/under_wing.jpg" alt="Shot under the wing" />
-<img src="/2004/08/another-short-alamosa-trip/wing_clouds.jpg" alt="Clouds over the wing" />
-<img src="/2004/08/another-short-alamosa-trip/lobby.jpg" alt="The Clarion's lobby" />
+    <img src="{{% link "over_engine.jpg" %}}" alt="Shot over the prop engine" />
+    <img src="{{% link "angry_clouds.jpg" %}}" alt="Big, angry clouds" />
+    <img src="{{% link "crop_circles.jpg" %}}" alt="Crop circles" />
+    <img src="{{% link "road_wing.jpg" %}}" alt="Roads or dry creeks?" />
+    <img src="{{% link "under_wing.jpg" %}}" alt="Shot under the wing" />
+    <img src="{{% link "wing_clouds.jpg" %}}" alt="Clouds over the wing" />
+    <img src="{{% link "lobby.jpg" %}}" alt="The Clarion's lobby" />
 </figure>

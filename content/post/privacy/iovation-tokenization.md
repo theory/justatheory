@@ -7,7 +7,7 @@ type: post
 link: https://www.iovation.com/blog/thinking-through-personal-data-protection
 ---
 
-C'est mois, in the first of a series for the [iovation blog]:
+C'est mois, in the [first of a series] for the [iovation blog]:
 
 > Given our commitment to responsible data stewardship, as well as the
 > invalidation of [Safe Harbor] and the advent of the [GDPR], we saw an
@@ -21,6 +21,8 @@ C'est mois, in the first of a series for the [iovation blog]:
 
 The post covers encryption, access control, and tokenization.
 
+  [first of a series]: https://www.iovation.com/blog/thinking-through-personal-data-protection
+    "Thinking Through Personal Data Protection"
   [iovation blog]: https://www.iovation.com/blog "iovation Blog"
   [Safe Harbor]:
     https://en.wikipedia.org/wiki/International_Safe_Harbor_Privacy_Principles

@@ -1,7 +1,9 @@
 ---
 title: The Women at XOXO Rocked It
 date: 2013-09-30T09:00:00Z
-description: ""
+description: "This is how it ought be. You make something. You're excited about it. Your
+energy infects the audience. And your gender and ethnicity have nothing to do
+with it."
 tags: [XOXO, Representation, Erika Moen, Vi Hart, Molly Crabapple, Julie Uhrman, Christina Xu, Love]
 type: post
 ---

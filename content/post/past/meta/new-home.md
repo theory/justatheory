@@ -53,7 +53,7 @@ much nicer for myself, so we'll see.
   [Duck Duck Go]: http://duckduckgo.com/
   [Disqus]: http://disqus.com/
   [strongrrl.com]: http://www.strongrrl.com/
-  [kineticode.com]: http://www.kineticode.com/
+  [kineticode.com]: https://www.kineticode.com/
   [PGXN mirror]: http://pgxn.justatheory.com/
   [ab]: http://httpd.apache.org/docs/2.2/programs/ab.html
   [numerous]: http://www.iovation.com/

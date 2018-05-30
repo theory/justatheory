@@ -16,8 +16,8 @@ Direct links:
 
 Enjoy!
 
-  [Kineticode]: http://www.kineticode.com/ "Kineticode"
-  [posted]: http://www.kineticode.com/news/announcements/
+  [Kineticode]: https://www.kineticode.com/ "Kineticode"
+  [posted]: https://www.kineticode.com/news/announcements/
     "Kineticode Announcements"
-  [“What's New in Bricolage”]: http://www.kineticode.com/docs/whats_new_in_bricolage.pdf
-  [“Polymorhic Database Design”]: http://www.kineticode.com/docs/polymorphic_database_design.pdf
+  [“What's New in Bricolage”]: https://www.kineticode.com/docs/whats_new_in_bricolage.pdf
+  [“Polymorhic Database Design”]: https://www.kineticode.com/docs/polymorphic_database_design.pdf

@@ -169,7 +169,7 @@ I now tag:
   [Rael Dornfest]: http://www.raelity.org/
   [Stikkit]: http://www.stikkit.com
   [i want sandy]: http://www.iwantsandy.com/
-  [Kineticode]: http://www.kineticode.com/
+  [Kineticode]: https://www.kineticode.com/
   [thrown down the gauntlet]: http://marc.info/?l=bricolage-general&m=117392382314816
     "My Message to the Bricolage Community"
   [James Duncan Davidson]: http://blog.duncandavidson.com/blog/

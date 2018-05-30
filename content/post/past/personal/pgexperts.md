@@ -24,7 +24,7 @@ So [get in touch] or meet us at [PGCon] (we're sponsoring!) or at [OSCON 2009].
 I'm really excited about our company, and looking forward to growing it as
 PostgreSQL adoption grows.
 
-  [Kineticode]: http://www.kineticode.com/ "Kineticode: Setting knowledge in motion."
+  [Kineticode]: https://www.kineticode.com/ "Kineticode: Setting knowledge in motion."
   [Josh Berkus]: http://it.toolbox.com/blogs/database-soup "Database Soup"
   [David Fetter]: http://people.planetpostgresql.org/dfetter/ "David Fetter's blog"
   [Andrew Dunstan]: http://people.planetpostgresql.org/andrew/ "Andrew's PostgreSQL blog"

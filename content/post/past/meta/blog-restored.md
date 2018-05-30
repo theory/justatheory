@@ -55,7 +55,7 @@ so I'll be sticking to Bloxsom for a while.
 
   [Capistrano deployment system]: https://svn.kineticode.com/cap/
     "Kineticode Capistrano Environment"
-  [Kineticode]: http://www.kineticode.com
+  [Kineticode]: https://www.kineticode.com
     "Kineticode. Setting knowledge in motion"
   [Google Analytics]: http://www.google.com/analytics/
   [FeedBurner]: http://www.feedburner.com/

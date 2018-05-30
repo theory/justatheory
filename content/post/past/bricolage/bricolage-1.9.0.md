@@ -217,7 +217,7 @@ and give it a try!
   [Bricolage 1.9.0]: http://www.bricolage.cc/news/announce/2005/08/19/bricolage-1.9.0/
     "Bricolage 1.9.0 “Punkin” Released"
   [Marshall Roch]: http://www.spastically.com/ "Marshall Roch's Blog"
-  [Kineticode]: http://www.kineticode.com/ "Kineticode"
+  [Kineticode]: https://www.kineticode.com/ "Kineticode"
   [Bricolage]: http://www.bricolage.cc "Bricolage"
   [mod\_gzip]: http://www.schroepl.net/projekte/mod_gzip/ "mod_gzip home page"
   [RT]: http://www.bestpractical.com/ "Best Practical makes RT"

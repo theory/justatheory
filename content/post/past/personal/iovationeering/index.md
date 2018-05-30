@@ -76,7 +76,7 @@ Twitter].
   [great]: https://github.com/pgxn/repositories
   [code]: https://github.com/pgexperts/repositories
   [<img src="/2011/11/iovationeering/kineticode.gif" alt="kineticode" class="left" />]:
-    http://kineticode.com/ "Kineticode"
+    https://kineticode.com/ "Kineticode"
   [Bricolage CMS]: http://bricolagecms.org/
   [over to PGX]: http://pgexperts.com/bricolage.html
     "Bricolage Technical Support from PGX"

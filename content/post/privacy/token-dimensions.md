@@ -8,7 +8,7 @@ type: post
 link: https://www.iovation.com/blog/token-dimensions
 ---
 
-C'est mois, in my second [post] on Tokenization the [iovation blog]:
+C'est mois, in my second [post] on Tokenization for the [iovation blog]:
 
 > These requirements demonstrate the two dimensions of tokenization:
 > reversibility and determinism. Reversible tokens may be detokenized to recover

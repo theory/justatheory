@@ -37,7 +37,7 @@ articles, such as the comment, display beautifully. But longer articles, which
 are carefully laid out and rendered as images, do not. They look worse than on
 the old iPad, because the anti-aliasing is even easier to see.
 
-<figure>
+<figure class="frame">
     <a href="https://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/"
       title="The New Yorker on the 1st gen iPad">
       <img src="https://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg"
@@ -68,7 +68,7 @@ readers resembles the Venn diagram to the right. But I want to see *The New
 Yorker* rock on the iPad, so I put aside some time to download the new *Vogue*
 app and take it for a spin.
 
-<figure class="right" style="background-color:#fff">
+<figure class="right">
     <img src="https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png"
        style="width:307pt;" alt="The New Yorker &amp; Condé Nast Venn Diagram"
        title=" The New Yorker &amp; Condé Nast Venn Diagram" />

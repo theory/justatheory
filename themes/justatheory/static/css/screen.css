@@ -618,12 +618,16 @@ article .footnotes li {
 
 figure {
     background-color: #2d2d2d;
-    padding: 1rem 1rem 0 1rem;
 }
 
 figure img {
     display: block;
-    padding-bottom: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+figure > a:last-of-type img, figure > img:last-of-type {
+    margin-bottom: 0;
 }
 
 figure a {
@@ -635,12 +639,22 @@ figcaption {
     line-height: 1.4em;
     text-align: left;
     color: #ccc;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
 }
 
 figcaption > *:last-child {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+figure.frame {
+    padding: 1rem;
+}
+
+figure.frame figcaption {
+    margin: 0;
+    padding: 1rem 0 0;
 }
 
 table, article img {

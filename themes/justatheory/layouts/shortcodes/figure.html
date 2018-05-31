@@ -1,26 +1,18 @@
-<figure{{ with .Get "class" }} class="{{.}}"{{ end }}{{ with .Get "title" }} title="{{.}}"{{ end }}>
-    {{- $src := .Get "src" }}
-    {{- if hasPrefix $src "/" }}
-        {{/*  Cannot use absURL because it doesn't work as expected if baseURL has a subdir. */}}
-        {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "/$" "" $.Site.BaseURL) $src) }}
-    {{- else if (findRE "(^|:)//" $src) }}
-        {{- $.Scratch.Set "imgSrc" $src }}
-    {{- else }}
-        {{- $.Scratch.Set "imgSrc" (printf "%v%v" (replaceRE "[.][a-zA-Z0-9]$" "/" $.Page.Permalink) $src) }}
-    {{- end }}
-    {{- if .Get "link"}}
-    <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
-        <img src="{{ $.Scratch.Get "imgSrc" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}" {{ end }}{{ with .Get "height" }}height="{{.}}" {{ end }} />
-    </a>
-    {{- else }}
-    <img src="{{ $.Scratch.Get "imgSrc" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}" {{ end }}{{ with .Get "height" }}height="{{.}}" {{ end }} />
-    {{- end }}
-    {{- if or (or (.Get "heading") (.Get "caption")) (.Get "attr") }}
-    <figcaption>{{ with .Get "heading" }}
-        <h4>{{ . }}</h4>{{ end }}{{ if or (or (.Get "caption")) (.Get "attr") }}
-        <p>{{ with .Get "caption" }}{{ . | markdownify }}{{ end }}{{ if .Get "attr" }}
-            <cite>{{ with .Get "attrlink"}}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink" }}</a>{{ end }}</cite>{{ end }}
-        {{ end }}</p>
-    </figcaption>
-    {{- end }}
+<figure{{ with .Get "class" }} class="{{.}}"{{ end }}{{ with or (.Get "title") (.Get "alt") }} title="{{.}}"{{ end }}>
+	{{- $src := partial "link.html" (dict "Page" $.Page "Site" $.Site "src" (.Get "src" )) -}}
+	{{- if .Get "link"}}
+	<a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+		<img src="{{ $src }}"{{ with or (.Get "alt") (.Get "title") }} alt="{{ . }}"{{ end }}{{ with .Get "width" }} width="{{ . }}"{{ end }}{{ with .Get "height" }} height="{{ . }}"{{ end }} />
+	</a>
+	{{- else }}
+	<img src="{{ $src }}"{{ with or (.Get "alt") (.Get "title") }} alt="{{ . }}"{{ end }}{{ with .Get "width" }} width="{{ . }}"{{ end }}{{ with .Get "height" }} height="{{ . }}"{{ end }} />
+	{{- end }}
+	{{- if or (or (.Get "heading") (.Get "caption")) (.Get "attr") }}
+	<figcaption>{{ with .Get "heading" }}
+		<h4>{{ . }}</h4>{{ end }}{{ if or (or (.Get "caption")) (.Get "attr") }}
+		<p>{{ with .Get "caption" }}{{ . | markdownify }}{{ end }}{{ if .Get "attr" }}
+			<cite>{{ with .Get "attrlink"}}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink" }}</a>{{ end }}</cite>
+		{{ end }}{{ end }}</p>
+	</figcaption>
+	{{- end }}
 </figure>

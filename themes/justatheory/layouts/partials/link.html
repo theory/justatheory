@@ -1,0 +1,8 @@
+{{- if hasPrefix .src "/" }}
+    {{/*  Cannot use absURL because it doesn't work as expected if baseURL has a subdir. */}}
+    {{- printf "%v%v" (replaceRE "/$" "" .Site.BaseURL) .src -}}
+{{- else if (findRE "(^|:)//" .src ) }}
+    {{- .src -}}
+{{- else }}
+    {{- printf "%v%v" (replaceRE "[.][a-zA-Z0-9]$" "/" .Page.Permalink) .src -}}
+{{- end -}}

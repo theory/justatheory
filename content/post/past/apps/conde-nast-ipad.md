@@ -70,8 +70,8 @@ app and take it for a spin.
 
 {{% figure
   src   = "https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png"
-  alt   = "The New Yorker & Condé Nast Venn Diagram"
-  title = "The New Yorker & Condé Nast Venn Diagram"
+  alt   = "The *New Yorker* & *Vogue* Venn Diagram"
+  title = "The *New Yorker* & *Vogue* Venn Diagram"
   class = "right"
 %}}
 

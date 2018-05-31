@@ -1,0 +1,40 @@
+{{- $src := partial "link.html" (dict "Page" $.Page "Site" $.Site "src" (.Get "src" )) -}}
+{{- $stdLen := 74 }}
+{{- $padding := 2 }}
+{{/* Determine the longest line length */}}
+{{- $.Scratch.Set "maxLineLen" (len $src) -}}
+
+{{- $alt := or (.Get "alt") (.Get "title") }}
+{{- with $alt -}}
+    {{- $len := add 2 (len .) }}
+	{{- if gt $len ($.Scratch.Get "maxLineLen") }}
+        {{- $.Scratch.Set "maxLineLen" $len -}}
+    {{- end -}}
+{{- end -}}
+
+{{- with .Get "link" -}}
+    {{- $len := add 2 (len .) }}
+	{{- if gt $len ($.Scratch.Get "maxLineLen") }}
+        {{- $.Scratch.Set "maxLineLen" $len -}}
+    {{- end -}}
+{{- end -}}
+
+{{/* Collect the max line length and determine indent. */}}
+{{- $maxLen := $.Scratch.Get "maxLineLen" -}}
+{{- $.Scratch.Set "indent" 0 -}}
+{{- if gt (sub $stdLen $maxLen) 1 -}}
+    {{- $.Scratch.Set "indent" (div (sub $stdLen $maxLen) 2) -}}
+{{- end -}}
+{{- $indent := printf (printf "%%-%dv" ($.Scratch.Get "indent")) "" -}}
+
+{{- $frameWidth := add $maxLen (add $padding $padding) }}
+{{- $line := repeat (add 2 $frameWidth) "~" -}}
+
+
+{{ $indent }}{{ $line }}
+{{ $indent }}{{ printf "{%v}" (repeat $frameWidth " ") }}{{ with $alt }}
+{{ $indent }}{{ partial "center.text" (dict "format" "{%v[%v]%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
+{{ $indent }}{{ partial "center.text" (dict "format" "{%v%v%v}" "text" $src "padding" $padding "maxLen" $maxLen "extra" 0) }}{{ with .Get "link" }}
+{{ $indent }}{{ partial "center.text" (dict "format" "{%v(%v)%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
+{{ $indent }}{{ printf "{%v}" (repeat $frameWidth " ") }}
+{{ $indent }}{{ $line }}

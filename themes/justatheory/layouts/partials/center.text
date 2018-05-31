@@ -1,0 +1,4 @@
+{{- $textLen := len .text }}
+{{- $textIndent := div (sub .maxLen $textLen) 2 }}
+{{- $altRPad := sub .maxLen (add $textLen (add .extra $textIndent)) }}
+{{- printf .format (repeat (add .padding $textIndent) " ") .text (repeat (add .padding $altRPad) " ") }}

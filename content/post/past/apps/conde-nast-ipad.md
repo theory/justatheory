@@ -70,8 +70,8 @@ app and take it for a spin.
 
 {{% figure
   src   = "https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png"
-  alt   = "The New Yorker & Vogue Venn Diagram"
-  title = "The New Yorker & Vogue Venn Diagram"
+  alt   = "*The New Yorker* & *Vogue* Venn Diagram"
+  title = "*The New Yorker* & *Vogue* Venn Diagram"
   class = "right"
 %}}
 
@@ -90,8 +90,8 @@ don't weigh anything.
 
 {{% figure
   src   = "https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg"
-  alt   = "Vogue on the new iPad"
-  title = "Vogue on the new iPad"
+  alt   = "*Vogue* on the new iPad"
+  title = "*Vogue* on the new iPad"
   link  = "https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/"
   caption = "Image content from *Vogue* on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image. Click for larger images."
 %}}

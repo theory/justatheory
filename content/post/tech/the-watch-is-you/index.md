@@ -8,7 +8,7 @@ type: post
 
 {{% figure
    src     = "iphone-watch.jpg"
-   alt     = "“iPhone and Apple Watch“"
+   alt     = "iPhone and Apple Watch"
    caption = "Multiple factors."
    class   = "right"
    attr    = "Apple"

@@ -2,18 +2,18 @@
 {{- $stdLen := 74 }}
 {{- $padding := 2 }}
 {{/* Determine the longest line length */}}
-{{- $.Scratch.Set "maxLineLen" (len $src) -}}
+{{- $.Scratch.Set "maxLineLen" (runelen $src) -}}
 
 {{- $alt := or (.Get "alt") (.Get "title") }}
 {{- with $alt -}}
-    {{- $len := add 2 (len .) }}
+    {{- $len := add 2 (runelen .) }}
 	{{- if gt $len ($.Scratch.Get "maxLineLen") }}
         {{- $.Scratch.Set "maxLineLen" $len -}}
     {{- end -}}
 {{- end -}}
 
 {{- with .Get "link" -}}
-    {{- $len := add 2 (len .) }}
+    {{- $len := add 2 (runelen .) }}
 	{{- if gt $len ($.Scratch.Get "maxLineLen") }}
         {{- $.Scratch.Set "maxLineLen" $len -}}
     {{- end -}}

@@ -20,7 +20,7 @@
 {{- end -}}
 
 {{/* Collect the max line length and determine indent. */}}
-{{- $maxLen := $.Scratch.Get "maxLineLen" -}}
+{{- $maxLen := add 2 ($.Scratch.Get "maxLineLen") -}}
 {{- $.Scratch.Set "indent" 0 -}}
 {{- if gt (sub $stdLen $maxLen) 1 -}}
     {{- $.Scratch.Set "indent" (div (sub $stdLen $maxLen) 2) -}}
@@ -29,7 +29,6 @@
 
 {{- $frameWidth := add $maxLen (add $padding $padding) }}
 {{- $line := repeat (add 2 $frameWidth) "~" -}}
-
 
 {{ $indent }}{{ $line }}
 {{ $indent }}{{ printf "{%v}" (repeat $frameWidth " ") }}{{ with $alt }}

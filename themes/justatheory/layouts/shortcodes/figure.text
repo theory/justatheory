@@ -34,7 +34,7 @@
 {{ $indent }}{{ $line }}
 {{ $indent }}{{ printf "{%v}" (repeat $frameWidth " ") }}{{ with $alt }}
 {{ $indent }}{{ partial "center.text" (dict "format" "{%v[%v]%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
-{{ $indent }}{{ partial "center.text" (dict "format" "{%v%v%v}" "text" $src "padding" $padding "maxLen" $maxLen "extra" 0) }}{{ with .Get "link" }}
+{{ $indent }}{{ partial "center.text" (dict "format" "{%v%v%v}" "text" $src "padding" $padding "maxLen" $maxLen "extra" 0) }}{{ with .Get "link" -}}
 {{ $indent }}{{ partial "center.text" (dict "format" "{%v(%v)%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
 {{ $indent }}{{ printf "{%v}" (repeat $frameWidth " ") }}
 {{ $indent }}{{ $line }}

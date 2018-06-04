@@ -8,6 +8,7 @@ type: post
 ---
 
 Hey look everybody, I wrote today's Perl Advent Calendar post,
-[Less Tedium, More Transactions]. Go read it!
+[Less Tedium, More Transactions]. Go read it! (Update: moved [here].)
 
   [Less Tedium, More Transactions]: http://perladvent.org/2011/2011-12-22.html
+  [here]: /2011/12/dbix-connector-advent/ "Less Tedium, More Transactions"

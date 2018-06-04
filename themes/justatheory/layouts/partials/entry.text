@@ -1,7 +1,7 @@
 {{ with .Params.link }}
   Link: {{ . }}
 {{ end }}
-{{ strings.TrimRight " \t\n\r" .Content }}
+{{ strings.TrimRight " \t\n\r" .RawContent }}
 
 -------------------------------------------------------------------------------
 

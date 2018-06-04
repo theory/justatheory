@@ -130,5 +130,5 @@ Enjoy!
     "SVN::Notify 2.50 Announcement"
   [standardized on it]: http://sourceforge.net/docs/E09#svn_notify
     "SourceForge: Commit Notifications via Email (SVN::Notify)"
-  [sample output]: http://www.justatheory.com/computers/programming/perl/modules/svnnotify-2.56_colordiff_example.html
+  [sample output]: /code/svnnotify/svnnotify-2.56_colordiff_example.html
     "Example output from SVN::Notify 2.56"

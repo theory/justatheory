@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><style type="text/css"><!--
+body {background:#ffffff;font-family:Verdana,Helvetica,Arial,sans-serif;}
+h3 {margin:15px 0;padding:0;line-height:0;}
+#msg {margin: 0 0 2em 0;}
+#msg dl, #msg ul, #msg pre {padding:1em;border:1px dashed black;margin: 10px 0 30px 0;}
+#msg dl {background:#ccccff;}
+#msg pre {background:#ffffcc;}
+#msg ul {background:#cc99ff;list-style:none;}
+#msg dt {font-weight:bold;float:left;width: 6em;}
+#msg dt:after { content:':';}
+#patch .file h3 {padding: 0 10px;line-height:1.5em;margin:0;background:#ccffff;border-bottom:1px solid black;margin:0 0 10px 0;}
+#patch pre {padding:0;line-height:1.2em;margin:0;}
+#patch .diff {background:#eeeeee;padding: 0 0 10px 0;}
+#patch span {display:block;padding:0 10px;}
+#patch .file {border:1px solid black;margin:10px 0;}
+#patch .add {background:#ddffdd;}
+#patch .rem {background:#ffdddd;}
+#patch .lines, .info {color:#888888;background:#ffffff;}
+--></style>
+<title>[727] CSS tweaks.</title>
+</head>
+<body>
+<pre>MIME-Version: 1.0
+From: someone@example.com
+To: everyone@example.com.com
+Subject: [727] CSS tweaks.
+X-Mailer: SVN::Notify 2.21: http://search.cpan.org/dist/SVN-Notify/
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Date: Sat,  9 Oct 2004 12:55:37 -0700 (PDT)
+
+</pre>
+<div id="msg">
+<dl>
+<dt>Revision</dt> <dd>727</dd>
+<dt>Author</dt> <dd>someone</dd>
+<dt>Date</dt> <dd>2004-10-09 12:55:37 -0700 (Sat, 09 Oct 2004)</dd>
+</dl>
+
+<h3>Log Message</h3>
+<pre>CSS tweaks. Added &quot;Diff&quot; header. Incremented version to 2.20.</pre>
+
+<h3>Modified Files</h3>
+<ul>
+<li><a href="#trunkSVNNotifyChanges">trunk/SVN-Notify/Changes</a></li>
+<li><a href="#trunkSVNNotifyMETAyml">trunk/SVN-Notify/META.yml</a></li>
+<li><a href="#trunkSVNNotifyREADME">trunk/SVN-Notify/README</a></li>
+<li><a href="#trunkSVNNotifylib/SVN/Notify/HTML/ColorDiffpm">trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm</a></li>
+<li><a href="#trunkSVNNotifylib/SVN/Notify/HTMLpm">trunk/SVN-Notify/lib/SVN/Notify/HTML.pm</a></li>
+<li><a href="#trunkSVNNotifylib/SVN/Notifypm">trunk/SVN-Notify/lib/SVN/Notify.pm</a></li>
+<li><a href="#trunkSVNNotifyt/colordifft">trunk/SVN-Notify/t/colordiff.t</a></li>
+<li><a href="#trunkSVNNotifyt/htmlt">trunk/SVN-Notify/t/html.t</a></li>
+</ul>
+
+</div>
+<div id="patch">
+<h3>Diff</h3>
+<a id="trunkSVNNotifyChanges"></a>
+<div class="file"><h3>trunk/SVN-Notify/Changes (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/Changes	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/Changes	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -1,6 +1,6 @@
+</span><span class="cx"> Revision history for Perl extension SVN::Notify
+ 
+</span><span class="rem">-2.11
+</span><span class="add">+2.20
+</span><span class="cx">       - Subclassing Module::Build in Build.PL to move and set the shebang
+         line in test scripts during &quot;./Build&quot; instead of simply changing
+         the shebang line in-place during &quot;perl Build.PL&quot;.
+</span></pre></div>
+<a id="trunkSVN-NotifyMETAyml"></a>
+<div class="file"><h3>trunk/SVN-Notify/META.yml (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/META.yml	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/META.yml	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -1,6 +1,6 @@
+</span><span class="cx"> --- #YAML:1.0
+ name: SVN-Notify
+</span><span class="rem">-version: 2.11
+</span><span class="add">+version: 2.20
+</span><span class="cx"> author:
+   - David Wheeler &lt;david@kineticode.com&gt;
+ abstract: Subversion activity notification
+</span><span class="lines">@@ -17,11 +17,11 @@
+</span><span class="cx"> provides:
+   SVN::Notify:
+     file: lib/SVN/Notify.pm
+</span><span class="rem">-    version: 2.11
+</span><span class="add">+    version: 2.20
+</span><span class="cx">   SVN::Notify::HTML:
+     file: lib/SVN/Notify/HTML.pm
+</span><span class="rem">-    version: 2.11
+</span><span class="add">+    version: 2.20
+</span><span class="cx">   SVN::Notify::HTML::ColorDiff:
+     file: lib/SVN/Notify/HTML/ColorDiff.pm
+</span><span class="rem">-    version: 2.11
+</span><span class="add">+    version: 2.20
+</span><span class="cx"> generated_by: Module::Build version 0.25_03
+</span></pre></div>
+<a id="trunkSVNNotifyREADME"></a>
+<div class="file"><h3>trunk/SVN-Notify/README (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/README	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/README	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -1,4 +1,4 @@
+</span><span class="rem">-SVN/Notify version 2.11
+</span><span class="add">+SVN/Notify version 2.20
+</span><span class="cx"> =======================
+ 
+ This class may be used for sending email messages for Subversion repository
+</span></pre></div>
+<a id="trunkSVNNotifylibSVNNotifyHTMLColorDiffpm"></a>
+<div class="file"><h3>trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -6,7 +6,7 @@
+</span><span class="cx"> use HTML::Entities;
+ use SVN::Notify::HTML ();
+ 
+</span><span class="rem">-$SVN::Notify::HTML::ColorDiff::VERSION = '2.11';
+</span><span class="add">+$SVN::Notify::HTML::ColorDiff::VERSION = '2.20';
+</span><span class="cx"> @SVN::Notify::HTML::ColorDiff::ISA = qw(SVN::Notify::HTML);
+ 
+ =head1 Name
+</span><span class="lines">@@ -63,11 +63,12 @@
+</span><span class="cx">     my ($self, $out) = @_;
+     $self-&gt;SUPER::output_css($out);
+     print $out
+</span><span class="rem">-      qq(#patch .file h3 {padding: 0 10px;line-height:1.5em;font-size:.85em;),
+</span><span class="add">+      qq(#patch .file h3 {padding: 0 10px;line-height:1.5em;),
+</span><span class="cx">         qq(margin:0;background:#ccffff;border-bottom:1px solid black;),
+         qq(margin:0 0 10px 0;}\n),
+</span><span class="rem">-      qq(#patch pre {background:#eeeeee;padding:0;line-height:1.2em;),
+</span><span class="add">+      qq(#patch pre {padding:0;line-height:1.2em;),
+</span><span class="cx">         qq(margin:0;}\n),
+</span><span class="add">+      qq(#patch .diff {background:#eeeeee;padding: 0 0 10px 0;}\n),
+</span><span class="cx">       qq(#patch span {display:block;padding:0 10px;}\n),
+       qq(#patch .file {border:1px solid black;margin:10px 0;}\n),
+       qq(#patch .add {background:#ddffdd;}\n),
+</span><span class="lines">@@ -98,7 +99,7 @@
+</span><span class="cx"> 
+     my $in_div;
+     my $in_span = '';
+</span><span class="rem">-    print $out qq{&lt;div id=&quot;patch&quot;&gt;\n};
+</span><span class="add">+    print $out qq{&lt;/div&gt;\n&lt;div id=&quot;patch&quot;&gt;\n&lt;h3&gt;Diff&lt;/h3&gt;\n};
+</span><span class="cx">     while (my $line = &lt;$diff&gt;) {
+         $line =~ s/[\n\r]+$//;
+         next unless $line;
+</span><span class="lines">@@ -118,7 +119,7 @@
+</span><span class="cx">             # Output the headers.
+             print $out &quot;&lt;/span&gt;&quot; if $in_span;
+             print $out &quot;&lt;/pre&gt;&lt;/div&gt;\n&quot; if $in_div;
+</span><span class="rem">-            print $out qq{&lt;div class=&quot;file&quot;&gt;&lt;h3&gt;&lt;a id=&quot;$file&quot;&gt;$file&lt;/a&gt;},
+</span><span class="add">+            print $out qq{&lt;a id=&quot;$file&quot;&gt;&lt;/a&gt;\n&lt;div class=&quot;file&quot;&gt;&lt;h3&gt;$file},
+</span><span class="cx">               &quot; ($rev1 =&gt; $rev2)&lt;/h3&gt;\n&quot;;
+             print $out qq{&lt;pre class=&quot;diff&quot;&gt;\n&lt;span class=&quot;info&quot;&gt;};
+             $in_div = 1;
+</span></pre></div>
+<a id="trunkSVNNotifylibSVNNotifyHTML.pm"></a>
+<div class="file"><h3>trunk/SVN-Notify/lib/SVN/Notify/HTML.pm (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/lib/SVN/Notify/HTML.pm	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/lib/SVN/Notify/HTML.pm	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -6,7 +6,7 @@
+</span><span class="cx"> use HTML::Entities;
+ use SVN::Notify ();
+ 
+</span><span class="rem">-$SVN::Notify::HTML::VERSION = '2.11';
+</span><span class="add">+$SVN::Notify::HTML::VERSION = '2.20';
+</span><span class="cx"> @SVN::Notify::HTML::ISA = qw(SVN::Notify);
+ 
+ =head1 Name
+</span><span class="lines">@@ -84,7 +84,7 @@
+</span><span class="cx">     my ($self, $out) = @_;
+     print $out qq{&lt;html&gt;\n&lt;head&gt;&lt;style type=&quot;text/css&quot;&gt;&lt;!--\n};
+     $self-&gt;output_css($out);
+</span><span class="rem">-    print $out qq{\n--&gt;&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;div id=&quot;msg&quot;&gt;\n};
+</span><span class="add">+    print $out qq{--&gt;&lt;/style&gt;\n&lt;/head&gt;\n&lt;body&gt;\n\n&lt;div id=&quot;msg&quot;&gt;\n};
+</span><span class="cx">     return $self;
+ }
+ 
+</span><span class="lines">@@ -103,17 +103,16 @@
+</span><span class="cx"> sub output_css {
+     my ($self, $out) = @_;
+     print $out
+</span><span class="rem">-      qq(sans-serif;font-size:85%;}\n),
+-      qq(pre {font-size:125%;}\n),
+</span><span class="add">+      qq(body {background:#ffffff;font-family:Verdana,Helvetica,Arial,sans-serif;}\n),
+</span><span class="cx">       qq(h3 {margin:15px 0;padding:0;line-height:0;}\n),
+       qq(#msg {margin: 0 0 2em 0;}\n),
+       qq(#msg dl, #msg ul, #msg pre {padding:1em;border:1px dashed black;),
+</span><span class="rem">-        qq(margin: 10px 0 30px 0;}),
+-      qq(#msg dl {background:#ccccff;}),
+-      qq(#msg pre {background:#ffffcc;}),
+-      qq(#msg ul {background:#cc99ff;list-style:none;}),
+-      qq(#msg dt {font-weight:bold;float:left;width: 6em;}),
+-      qq(#msg dt:after { content:':';});
+</span><span class="add">+        qq(margin: 10px 0 30px 0;}\n),
++      qq(#msg dl {background:#ccccff;}\n),
++      qq(#msg pre {background:#ffffcc;}\n),
++      qq(#msg ul {background:#cc99ff;list-style:none;}\n),
++      qq(#msg dt {font-weight:bold;float:left;width: 6em;}\n),
++      qq(#msg dt:after { content:':';}\n);
+</span><span class="cx">     return $self;
+ }
+ 
+</span></pre></div>
+<a id="trunkSVNNotifylibSVNNotifypm"></a>
+<div class="file"><h3>trunk/SVN-Notify/lib/SVN/Notify.pm (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/lib/SVN/Notify.pm	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/lib/SVN/Notify.pm	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -3,7 +3,7 @@
+</span><span class="cx"> # $Id$
+ 
+ use strict;
+</span><span class="rem">-$SVN::Notify::VERSION = '2.11';
+</span><span class="add">+$SVN::Notify::VERSION = '2.20';
+</span><span class="cx"> 
+ =head1 Name
+ 
+</span></pre></div>
+<a id="trunkSVNNotifytcolordifft"></a>
+<div class="file"><h3>trunk/SVN-Notify/t/colordiff.t (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/colordiff.t	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/t/colordiff.t	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -9,7 +9,7 @@
+</span><span class="cx"> if ($^O eq 'MSWin32') {
+     plan skip_all =&gt; &quot;SVN::Notify::HTML::ColorDiff not yet supported on Win32&quot;;
+ } elsif (eval { require HTML::Entities }) {
+</span><span class="rem">-    plan tests =&gt; 102;
+</span><span class="add">+    plan tests =&gt; 103;
+</span><span class="cx"> } else {
+     plan skip_all =&gt; &quot;SVN::Notify::HTML::ColorDiff requires HTML::Entities&quot;;
+ }
+</span><span class="lines">@@ -63,7 +63,7 @@
+</span><span class="cx"> # Make sure we have styles and the appropriate div.
+ like( $email, qr|&lt;style type=&quot;text/css&quot;&gt;|, &quot;Check for &lt;style&gt; tag&quot; );
+ like( $email, qr/&lt;\/style&gt;/, &quot;Check for &lt;/style&gt; tag&quot; );
+</span><span class="rem">-like( $email, qr/pre {font-size:125%;}/, &quot;Check for style&quot; );
+</span><span class="add">+like( $email, qr/#patch .add {background:#ddffdd;}/, &quot;Check for style&quot; );
+</span><span class="cx"> like( $email, qr/&lt;div id=&quot;msg&quot;&gt;/, &quot;Check for msg div&quot; );
+ 
+ # Make sure we have headers for each of the four kinds of changes.
+</span><span class="lines">@@ -145,7 +145,9 @@
+</span><span class="cx"> 
+ # Make sure that the diff is included and escaped.
+ like( $email, qr/&lt;div id=&quot;patch&quot;&gt;/, &quot;Check for patch div&quot; );
+</span><span class="rem">-like( $email, qr{&lt;h3&gt;&lt;a id=&quot;trunk/Params-CallbackRequest/Changes&quot;&gt;trunk/Params-CallbackRequest/Changes&lt;/a&gt; \(600 =&gt; 601\)&lt;/h3&gt;},
+</span><span class="add">+like( $email, qr{&lt;a id=&quot;trunk/Params-CallbackRequest/Changes&quot;&gt;&lt;/a&gt;\n},
++      &quot;Check for file div ID&quot;);
++like( $email, qr{&lt;h3&gt;trunk/Params-CallbackRequest/Changes \(600 =&gt; 601\)&lt;/h3&gt;},
+</span><span class="cx">       &quot;Check for diff file header&quot; );
+ 
+ # Make sure that it's not attached.
+</span></pre></div>
+<a id="trunkSVNNotifythtmlt"></a>
+<div class="file"><h3>trunk/SVN-Notify/t/html.t (726 => 727)</h3>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/html.t	2004-10-09 19:28:09 UTC (rev 726)
++++ trunk/SVN-Notify/t/html.t	2004-10-09 19:55:37 UTC (rev 727)
+</span><span class="lines">@@ -62,7 +62,7 @@
+</span><span class="cx"> # Make sure we have styles and the appropriate div.
+ like( $email, qr|&lt;style type=&quot;text/css&quot;&gt;|, &quot;Check for &lt;style&gt; tag&quot; );
+ like( $email, qr/&lt;\/style&gt;/, &quot;Check for &lt;/style&gt; tag&quot; );
+</span><span class="rem">-like( $email, qr/pre {font-size:125%;}/, &quot;Check for style&quot; );
+</span><span class="add">+like( $email, qr/#msg dl {background:#ccccff;}/, &quot;Check for style&quot; );
+</span><span class="cx"> like( $email, qr/&lt;div id=&quot;msg&quot;&gt;/, &quot;Check for msg div&quot; );
+ 
+ # Make sure we have headers for each of the four kinds of changes.
+</span>
+</pre>
+</div>
+</div>
+
+</body>
+</html>

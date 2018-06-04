@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>[555] = Trac-Style Log Message Formatting =</title>
+</head>
+<body>
+<pre>
+MIME-Version: 1.0
+X-Mailer: SVN::Notify 2.70: http://search.cpan.org/dist/SVN-Notify/
+From: theory
+Errors-To: theory
+To: test@example.com
+Subject: [555] = Trac-Style Log Message Formatting =
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+</pre>
+<style type="text/css"><!--
+#msg dl.meta { border: 1px #006 solid; background: #369; padding: 6px; color: #fff; }
+#msg dl.meta dt { float: left; width: 6em; font-weight: bold; }
+#msg dt:after { content:':';}
+#msg dl, #msg dt, #msg ul, #msg li, #header, #footer, #logmsg { font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt;  }
+#msg dl a { font-weight: bold}
+#msg dl a:link    { color:#fc3; }
+#msg dl a:active  { color:#ff0; }
+#msg dl a:visited { color:#cc6; }
+h3 { font-family: verdana,arial,helvetica,sans-serif; font-size: 10pt; font-weight: bold; }
+#msg pre { overflow: auto; background: #ffc; border: 1px #fa0 solid; padding: 6px; }
+#logmsg { background: #ffc; border: 1px #fa0 solid; padding: 1em 1em 0 1em; }
+#logmsg p, #logmsg pre, #logmsg blockquote { margin: 0 0 1em 0; }
+#logmsg p, #logmsg li, #logmsg dt, #logmsg dd { line-height: 14pt; }
+#logmsg h1, #logmsg h2, #logmsg h3, #logmsg h4, #logmsg h5, #logmsg h6 { margin: .5em 0; }
+#logmsg h1:first-child, #logmsg h2:first-child, #logmsg h3:first-child, #logmsg h4:first-child, #logmsg h5:first-child, #logmsg h6:first-child { margin-top: 0; }
+#logmsg ul, #logmsg ol { padding: 0; list-style-position: inside; margin: 0 0 0 1em; }
+#logmsg > ul, #logmsg > ol { margin-left: 0; margin: 0 0 1em 0; }
+#logmsg pre { background: #eee; padding: 1em; }
+#logmsg blockquote { border: 1px solid #fa0; border-left-width: 10px; padding: 1em 1em 0 1em; background: white;}
+#logmsg dl { margin: 0; }
+#logmsg dt { font-weight: bold; }
+#logmsg dd { margin: 0; padding: 0 0 0.5em 0; }
+#logmsg dd:before { content:'\00bb';}
+#logmsg table { border-spacing: 0px; border-collapse: collapse; border-top: 4px solid #fa0; border-bottom: 1px solid #fa0; background: #fff; }
+#logmsg table th { text-align: left; font-weight: normal; padding: 0.2em 0.5em; border-top: 1px dotted #fa0; }
+#logmsg table td { text-align: right; border-top: 1px dotted #fa0; padding: 0.2em 0.5em; }
+#logmsg table thead th { text-align: center; border-bottom: 1px solid #fa0; }
+#logmsg table th.Corner { text-align: left; }
+#logmsg hr { border: none 0; border-top: 2px dashed #fa0; height: 1px; }
+#header, #footer { color: #fff; background: #636; border: 1px #300 solid; padding: 6px; }
+#patch { width: 100%; }
+#patch h4 {font-family: verdana,arial,helvetica,sans-serif;font-size:10pt;padding:8px;background:#369;color:#fff;margin:0;}
+#patch .propset h4, #patch .binary h4 {margin:0;}
+#patch pre {padding:0;line-height:1.2em;margin:0;}
+#patch .diff {width:100%;background:#eee;padding: 0 0 10px 0;overflow:auto;}
+#patch .propset .diff, #patch .binary .diff  {padding:10px 0;}
+#patch span {display:block;padding:0 10px;}
+#patch .modfile, #patch .addfile, #patch .delfile, #patch .propset, #patch .binary, #patch .copfile {border:1px solid #ccc;margin:10px 0;}
+#patch ins {background:#dfd;text-decoration:none;display:block;padding:0 10px;}
+#patch del {background:#fdd;text-decoration:none;display:block;padding:0 10px;}
+#patch .lines, .info {color:#888;background:#fff;}
+#logmsg blockquote.citation { padding: 0; border: 0; border-left: solid 2px #b44; padding-left: .75em; background: transparent; }
+#logmsg blockquote.citation .citation { border-color: #4b4; }
+#logmsg blockquote.citation .citation .citation  { border-color: #44b; }
+#logmsg blockquote.citation .citation .citation .citation { border-color: #c55; }
+#logmsg ol.loweralpha { list-style-type: lower-alpha; }
+#logmsg ol.upperalpha { list-style-type: upper-alpha; }
+#logmsg ol.lowerroman { list-style-type: lower-roman; }
+#logmsg ol.upperroman { list-style-type: upper-roman; }
+#logmsg ol.arabic     { list-style-type: decimal; }
+--></style>
+<div id="msg">
+<dl class="meta">
+<dt>Revision</dt> <dd>555</dd>
+<dt>Author</dt> <dd>theory</dd>
+<dt>Date</dt> <dd>2008-02-23 16:49:35 -0700 (Sat, 23 Feb 2008)</dd>
+</dl>
+
+<h3>Log Message</h3>
+<div id="logmsg">
+<h1 id="Trac-StyleLogMessageFormatting">Trac-Style Log Message Formatting</h1>
+<p>
+This &quot;commit&quot; demonstrates how log messages look when they are written in <a class="ext-link" href="http://trac.edgewall.org/wiki/WikiFormatting"><span class="icon"></span>Trac wiki syntax</a> and converted to HTML by <tt><a class="ext-link" href="http://search.cpan.org/perldoc?Text::Trac"><span class="icon"></span>Text::Trac</a></tt> via the <tt><a class="ext-link" href="http://search.cpan.org/perldoc?SVN::Notify::Filter::Trac"><span class="icon"></span>SVN::Notify::Filter::Trac</a></tt> filter. All of the various features of that syntax are demonstrated here.
+</p>
+<p>
+I expect that there will soon be filters for <a class="ext-link" href="http://daringfireball.net/projects/markdown/"><span class="icon"></span>Markdown</a>, <a class="ext-link" href="http://www.textism.com/tools/textile/"><span class="icon"></span>Textile</a>, <a class="ext-link" href="http://search.cpan.org/perldoc?perlpod"><span class="icon"></span>POD</a>, and other formatting paradigms. Hopefully, most of the HTML generated by parsing those other syntaxes into HTML will look just as good, mainly because I'm not doing anything special: this is just plain 'ole HTML. But if I've missed something, do <a class="ext-link" href="https://rt.cpan.org/Ticket/Create.html?Queue=SVN-Notify"><span class="icon"></span>let me know</a>.
+</p>
+<p>
+These three paragraphs, by the way, demostrate how paragraphs look.
+</p>
+<h2 id="TypeStyles">Type Styles</h2>
+<p>
+Here are the various typographic styles supported by the Trac format:
+</p>
+<ul><li><strong>bold</strong></li>
+<li><i>italic</i></li>
+<li><strong><i>bold italic</i></strong></li>
+<li><span class="underline">underline</span></li>
+<li><tt>monospace</tt></li>
+<li><del>strike-through</del></li>
+<li><sup>superscript</sup> </li>
+<li><sub>subscript</sub></li></ul>
+<h2 id="Headings">Headings</h2>
+<p>
+Trac supports three levels of headings:
+</p>
+<h1 id="Heading">Heading</h1>
+<h2 id="Subheading">Subheading</h2>
+<h3 id="Sub-Subheading">Sub-Subheading</h3>
+<h2 id="Lists">Lists</h2>
+<p>
+Lists can be nested, of course:
+</p>
+<ul><li>Item 1
+<ul><li>Item 1.1
+<ul><li>Item 1.1.1</li>
+<li>Item 1.1.2</li>
+<li>Item 1.1.3</li>
+</ul></li><li>Item 1.2</li>
+</ul></li><li>Item 2</li></ul>
+<ol start="1"><li>Item 1
+<ol class="loweralpha"><li>Item 1.a</li>
+<li>Item 1.b
+<ol class="lowerroman"><li>Item 1.b.i</li>
+<li>Item 1.b.ii</li>
+</ol></li></ol></li><li>Item 2</li>
+<li>Item 3</li></ol>
+<h2 id="DefinitionLists">Definition Lists</h2>
+<p>
+I've styled definition lists so that the terms are followed by a colon (:), and the definitions preceded by a closing angle quotation mark (»).
+</p>
+<dl>
+<dt>camel</dt>
+<dd>
+One lump, or two?
+</dd>
+</dl>
+<dl>
+<dt>python</dt>
+<dd>
+My hovercraft is full of eels.
+</dd>
+</dl>
+<dl>
+<dt>elephant</dt>
+<dd>
+Um, I don't remember.
+</dd>
+</dl>
+<h2 id="PreformattedText">Preformatted Text</h2>
+<p>
+Usually used for blocks of code and the like.
+</p>
+<pre class="wiki">
+package SVN::Notify::Filter::Trac;
+
+SVN::Notify-&gt;register_attributes( trac_url =&gt; 'trac-url=s' );
+
+sub log_message {
+    my ($notify, $lines) = @_;
+    return $lines unless $notify-&gt;content_type eq 'text/html';
+    my $trac = Text::Trac-&gt;new( trac_url =&gt; $notify-&gt;trac_url );
+    return [ $trac-&gt;parse( join $/, @{ $lines } ) ];
+}
+</pre>
+<h2 id="Blockquotes">Blockquotes</h2>
+<p>
+Unlike the official Trac format (see ticket <a class="ticket" href="http://trac.edgewall.org/ticket/6887">#6887</a> for the details), <tt><a class="ext-link" href="http://search.cpan.org/perldoc?Text::Trac"><span class="icon"></span>Text::Trac</a></tt> 0.09 nicely includes multiple indented paragraphs in a single block:
+</p>
+<blockquote>
+<p>
+  Ask not what your country can do for you. Ask what you can do for your country.
+</p>
+<p>
+  —John F. Kennedy
+</p>
+</blockquote>
+<h2 id="DiscussionCitations">Discussion Citations</h2>
+<p>
+As of version 0.09 of <tt><a class="ext-link" href="http://search.cpan.org/perldoc?Text::Trac"><span class="icon"></span>Text::Trac</a></tt>, citations are supported. These are the style of citation that's supposed to look kind of like email:
+</p>
+<blockquote class="citation">
+<blockquote class="citation">
+<blockquote class="citation">
+<blockquote class="citation">
+<p>
+ This is some deeply buried original text, in which the poster was going on and on, ad naseum. Make it stop!
+</p>
+</blockquote>
+<p>
+ This is the reply to the ad naseum comment. This poster, too, went on and on, saying nothing useful, as you might expect. It's usenet, after all!
+</p>
+</blockquote>
+<p>
+ This is slightly more relevant, or a pile-on, as you might expect.
+</p>
+</blockquote>
+<p>
+ The last quoted bit from someone else attempting to add a bit of sanity to the discussion.
+</p>
+</blockquote>
+<p>
+This bit would be, of course, an application of <a class="ext-link" href="http://en.wikipedia.org/wiki/Godwin's_law"><span class="icon"></span>Godwin's law</a>. ;-P
+</p>
+<h2 id="Tables">Tables</h2>
+<p>
+I borrowed this example table, as well its style, from <a class="ext-link" href="http://fluidmind.org/test/css/tables.html"><span class="icon"></span>Styling Tables with CSS</a>.
+</p>
+<table>
+<tr><td><strong>Browser</strong></td><td><strong>2000</strong></td><td><strong>2001</strong></td><td><strong>2002</strong></td><td><strong>2003</strong></td><td><strong>2004</strong></td></tr>
+<tr><td>MSIE 6.x</td><td>—</td><td>—</td><td>23</td><td>52</td><td>74</td></tr>
+<tr><td>MSIE 5.x</td><td>45</td><td>72</td><td>64</td><td>39</td><td>18</td></tr>
+<tr><td>MSIE 4.x</td><td>30</td><td>12</td><td>4</td><td>1</td><td>&lt; 1</td></tr>
+<tr><td>Netscape 6+/Mozilla</td><td>—</td><td>—</td><td>&lt; 1</td><td>&lt; 1</td><td>&lt; 2</td></tr>
+<tr><td>Netscape 4-</td><td>18</td><td>10</td><td>4</td><td>1</td><td>&lt; 1</td></tr>
+<tr><td>Opera</td><td>&lt; 1</td><td>&lt; 1</td><td>&lt; 1</td><td>&lt; 1</td><td>1</td></tr>
+</table>
+<h2 id="Links">Links</h2>
+<ul><li>External link: <a class="ext-link" href="http://search.cpan.org/dist/SVN-Notify/"><span class="icon"></span>SVN::Notify on CPAN</a></li>
+<li>Long wiki link: <a class="wiki" href="http://trac.edgewall.org/wiki/TracProject">Trac open source project</a></li>
+<li>Short wiki link: <a class="wiki" href="http://trac.edgewall.org/wiki/TracProject">TracProject</a></li>
+<li>Ticket: <a class="ticket" href="http://trac.edgewall.org/ticket/1">#1</a></li>
+<li>Report: <a class="report" href="http://trac.edgewall.org/report/1">{1}</a></li>
+<li>Changeset: <a class="changeset" href="http://trac.edgewall.org/changeset/1">r1</a></li></ul>
+<h2 id="EscapingLinksand!WikiPageNames">Escaping Links and WikiPageNames</h2>
+<p>
+This paragraph has what appears to be a TracLink, because of the camel-casing of &quot;TracLink&quot;, but it's not a link, is it?
+</p>
+<h2 id="HorizontalRules">Horizontal Rules</h2>
+<p>
+This is exactly what you'd think it is:
+</p>
+<hr />
+<p>
+And that's it!
+</p></div>
+
+<h3>Modified Paths</h3>
+<ul>
+<li><a href="#SVNNotifytrunklibSVNNotifyHTMLpm">SVN-Notify/trunk/lib/SVN/Notify/HTML.pm</a></li>
+</ul>
+
+</div>
+<div id="patch">
+<h3>Diff</h3>
+<a id="SVNNotifytrunklibSVNNotifyHTMLpm"></a>
+<div class="modfile"><h4>Modified: SVN-Notify/trunk/lib/SVN/Notify/HTML.pm (3460 => 3461)</h4>
+<pre class="diff"><span>
+<span class="info">--- SVN-Notify/trunk/lib/SVN/Notify/HTML.pm	2008-02-24 00:00:08 UTC (rev 3460)
++++ SVN-Notify/trunk/lib/SVN/Notify/HTML.pm	2008-02-24 00:31:10 UTC (rev 3461)
+</span><span class="lines">@@ -603,14 +603,12 @@
+</span><span class="cx">             qq(font-size: 10pt; font-weight: bold; }\n),
+</span><span class="cx">         q(#msg pre { overflow: auto; background: #ffc; ),
+</span><span class="cx">             qq(border: 1px #fc0 solid; padding: 6px; }\n),
+</span><del>-        qq(#logmsg { background: #ffc; border: 1px #fc0 solid; padding: 0 6px; }\n),
+-        qq(#logmsg ul, #logmsg ol { padding: 0 0 0 1em; margin: 0; list-style-position: outside; }\n),
+-        qq(#logmsg ul { margin: 1em 0 0 0; }\n),
+-        qq(#logmsg ol { margin: 1em; }\n),
+-        qq(#logmsg li p { margin: .5em 0 0 0; }\n),
+</del><ins>+        qq(#logmsg { background: #ffc; border: 1px #fc0 solid; padding: 6px 6px 0 6px; }\n),
++        qq(#logmsg p, #logmsg ul, #logmsg ol, #logmsg pre, #logmsg blockquote { margin: 0 0 1em 0; }\n),
++        qq(#logmsg ul, #logmsg ol { padding: 0; list-style-position: inside;}\n),
+</ins><span class="cx">         qq(#logmsg code, #logmsg tt { background: #ccc; padding: 3px; }\n),
+</span><del>-        qq(#logmsg pre, #logmsg code { background: #ddd; }\n),
+-        qq(#logmsg blockquote { margin: 0; border: 1px solid #fc0; border-left-width: 10px; padding: 0 1em; background: white;}\n),
+</del><ins>+        qq(#logmsg pre { background: #ddd; padding: 1em; }\n),
++        qq(#logmsg blockquote { border: 1px solid #fc0; border-left-width: 10px; padding: 1em 1em 0 1em; background: white;}\n),
+</ins><span class="cx">         q(#header, #footer { color: #fff; background: #636; ),
+</span><span class="cx">         qq(border: 1px #300 solid; padding: 6px; }\n),
+</span><span class="cx">         qq(#patch { width: 100%; }\n),
+</span></span></pre>
+</div>
+</div>
+
+</body>
+</html>

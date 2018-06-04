@@ -130,7 +130,7 @@ output properly, and enjoy! And as usual, send me your [bug reports][let me
 know], but implement your own improvements using filters!
 
   [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
-  [here]: /computers/programming/perl/modules/svnnotify-2.70_colordiff_example.html
+  [here]: /code/svnnotify/svnnotify-2.70_colordiff_example.html
     "Example output from SVN::Notify::HTML::ColorDiff 2.70"
   [changes]: http://search.cpan.org/src/DWHEELER/SVN-Notify-2.70/Changes
     "SVN::Notify Changes"

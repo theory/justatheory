@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><style type="text/css"><!--
+body {background:#ffffff;font-family:Verdana,Helvetica,Arial,sans-serif;}
+h3 {margin:15px 0;padding:0;line-height:0;}
+#msg {margin: 0 0 2em 0;}
+#msg dl, #msg ul, #msg pre {padding:1em;border:1px dashed black;margin: 10px 0 30px 0;}
+#msg dl {background:#ccccff;}
+#msg pre {background:#ffffcc;}
+#msg ul {background:#cc99ff;list-style:none;}
+#msg dt {font-weight:bold;float:left;width: 6em;}
+#msg dt:after { content:':';}
+#patch h4 {padding: 0 10px;line-height:1.5em;margin:0;background:#ccffff;border-bottom:1px solid black;margin:0 0 10px 0;}
+#patch .propset h4 {margin: 0;}
+#patch pre {padding:0;line-height:1.2em;margin:0;}
+#patch .diff {background:#eeeeee;padding: 0 0 10px 0;}
+#patch .propset .diff {padding: 10px 0;}
+#patch span {display:block;padding:0 10px;}
+#patch .modfile, #patch .addfile, #patch .addfile, #patch .propset{border:1px solid black;margin:10px 0;}
+#patch .add {background:#ddffdd;}
+#patch .rem {background:#ffdddd;}
+#patch .lines, .info {color:#888888;background:#ffffff;}
+--></style>
+<title>[740] Better handling of property setting in diffs.</title>
+</head>
+<body>
+<pre>MIME-Version: 1.0
+From: someone@example.com
+To: everyone@example.com
+Subject: [740] Better handling of property setting in diffs.
+X-Mailer: SVN::Notify 2.22: http://search.cpan.org/dist/SVN-Notify/
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Date: Fri, 15 Oct 2004 16:14:44 -0700 (PDT)
+
+</pre>
+<div id="msg">
+<dl>
+<dt>Revision</dt> <dd><a href="http://viewsvn.kineticode.com/?rev=740&amp;view=rev">740</a></dd>
+<dt>Author</dt> <dd>theory</dd>
+<dt>Date</dt> <dd>2004-10-14 23:12:54 -0700 (Thu, 14 Oct 2004)</dd>
+</dl>
+
+<h3>Log Message</h3>
+<pre>Better handling of property setting in diffs. Added links to them, too.
+Better classes for them in ColorDiff.</pre>
+
+<h3>Modified Files</h3>
+<ul>
+<li><a href="#trunkSVNNotifyChanges">trunk/SVN-Notify/Changes</a></li>
+<li><a href="#trunkSVNNotifyMANIFEST">trunk/SVN-Notify/MANIFEST</a></li>
+<li><a href="#trunkSVNNotifylibSVNNotifyHTMLColorDiffpm">trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm</a></li>
+<li><a href="#trunkSVNNotifylibSVNNotifyHTMLpm">trunk/SVN-Notify/lib/SVN/Notify/HTML.pm</a></li>
+<li><a href="#trunkSVNNotifytdatachanged111txt">trunk/SVN-Notify/t/data/changed/111.txt</a></li>
+<li><a href="#trunkSVNNotifythtmlt">trunk/SVN-Notify/t/html.t</a></li>
+<li><a href="#trunkSVNNotifythtmlcolordifft">trunk/SVN-Notify/t/htmlcolordiff.t</a></li>
+</ul>
+
+<h3>Added Files</h3>
+<ul>
+<li><a href="#trunkSVNNotifytdatachanged333txt">trunk/SVN-Notify/t/data/changed/333.txt</a></li>
+<li><a href="#trunkSVNNotifytdatadiff333txt">trunk/SVN-Notify/t/data/diff/333.txt</a></li>
+<li><a href="#trunkSVNNotifytdatadirschanged333txt">trunk/SVN-Notify/t/data/dirs-changed/333.txt</a></li>
+<li><a href="#trunkSVNNotifytdatainfo333txt">trunk/SVN-Notify/t/data/info/333.txt</a></li>
+</ul>
+
+</div>
+<div id="patch">
+<h3>Diff</h3>
+<a id="trunkSVNNotifyChanges"></a>
+<div class="modfile"><h4>trunk/SVN-Notify/Changes (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/Changes	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/Changes	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -3,6 +3,12 @@
+</span><span class="cx"> 2.22
+       - Fixed diff parsing in SVN::Notitfy::HTML and
+         SVN::Notitfy::HTML::ColoDiff to recognize added and deleted files.
+</span><span class="add">+      - Added links to files for which properties were set down into
++        their place in the diff in SVN::Notitfy::HTML and
++        SVN::Notitfy::HTML::ColoDiff.
++      - Changed the class for each file in the diff output by
++        SVN::Notitfy::HTML::ColoDiff to be specific to whether the file
++        was modified, added, deleted, or just had its properties set.
+</span><span class="cx"> 
+ 2.21  2004-10-09T22:37:34
+       - Tweaked HTML to make it all XHTML 1.1 compliant.
+</span></pre></div>
+<a id="trunkSVNNotifyMANIFEST"></a>
+<div class="modfile"><h4>trunk/SVN-Notify/MANIFEST (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/MANIFEST	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/MANIFEST	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -15,11 +15,15 @@
+</span><span class="cx"> t/bin/testsvnlook.bat
+ t/data/changed/111.txt
+ t/data/changed/222.txt
+</span><span class="add">+t/data/changed/333.txt
+</span><span class="cx"> t/data/diff/111.txt
+</span><span class="add">+t/data/diff/333.txt
+</span><span class="cx"> t/data/dirs-changed/111.txt
+ t/data/dirs-changed/222.txt
+</span><span class="add">+t/data/dirs-changed/333.txt
+</span><span class="cx"> t/data/info/111.txt
+ t/data/info/222.txt
+</span><span class="add">+t/data/info/333.txt
+</span><span class="cx"> t/errors.t
+ t/html.t
+ t/htmlcolordiff.t
+</span></pre></div>
+<a id="trunkSVNNotifylibSVNNotifyHTMLColorDiffpm"></a>
+<div class="modfile"><h4>trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/lib/SVN/Notify/HTML/ColorDiff.pm	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -63,14 +63,17 @@
+</span><span class="cx">     my ($self, $out) = @_;
+     $self-&gt;SUPER::output_css($out);
+     print $out
+</span><span class="rem">-      qq(#patch .file h3 {padding: 0 10px;line-height:1.5em;),
+</span><span class="add">+      qq(#patch h4 {padding: 0 10px;line-height:1.5em;),
+</span><span class="cx">         qq(margin:0;background:#ccffff;border-bottom:1px solid black;),
+         qq(margin:0 0 10px 0;}\n),
+</span><span class="add">+      qq(#patch .propset h4 {margin: 0;}\n),
+</span><span class="cx">       qq(#patch pre {padding:0;line-height:1.2em;),
+         qq(margin:0;}\n),
+       qq(#patch .diff {background:#eeeeee;padding: 0 0 10px 0;}\n),
+</span><span class="add">+      qq(#patch .propset .diff {padding: 10px 0;}\n),
+</span><span class="cx">       qq(#patch span {display:block;padding:0 10px;}\n),
+</span><span class="rem">-      qq(#patch .file {border:1px solid black;margin:10px 0;}\n),
+</span><span class="add">+      qq(#patch .modfile, #patch .addfile, #patch .addfile, #patch .propset),
++        qq({border:1px solid black;margin:10px 0;}\n),
+</span><span class="cx">       qq(#patch .add {background:#ddffdd;}\n),
+       qq(#patch .rem {background:#ffdddd;}\n),
+       qq(#patch .lines, .info {color:#888888;background:#ffffff;}\n);
+</span><span class="lines">@@ -90,6 +93,12 @@
+</span><span class="cx"> 
+ =cut
+ 
+</span><span class="add">+my %types = (
++    Modified =&gt; 'modfile',
++    Added    =&gt; 'addfile',
++    Deleted  =&gt; 'delfile',
++);
++
+</span><span class="cx"> sub output_diff {
+     my ($self, $out, $diff) = @_;
+     $self-&gt;_dbpnt( &quot;Outputting colorized HTML diff&quot;) if $self-&gt;verbose &gt; 1;
+</span><span class="lines">@@ -97,11 +106,13 @@
+</span><span class="cx">     my $in_div;
+     my $in_span = '';
+     print $out qq{&lt;/div&gt;\n&lt;div id=&quot;patch&quot;&gt;\n&lt;h3&gt;Diff&lt;/h3&gt;\n};
+</span><span class="add">+    my %seen;
+</span><span class="cx">     while (my $line = &lt;$diff&gt;) {
+         $line =~ s/[\n\r]+$//;
+         next unless $line;
+</span><span class="rem">-        if ($line =~ /^(?:Modified|Added|Deleted): (.*)/) {
+-            my $file = encode_entities($1);
+</span><span class="add">+        if ($line =~ /^(Modified|Added|Deleted): (.*)/) {
++            my $class = $types{$1};
++            my $file = encode_entities($2);
+</span><span class="cx">             (my $id = $file) =~ s/[^\w_]//g;
+             # Dump line.
+             &lt;$diff&gt;;
+</span><span class="lines">@@ -117,13 +128,27 @@
+</span><span class="cx">             # Output the headers.
+             print $out &quot;&lt;/span&gt;&quot; if $in_span;
+             print $out &quot;&lt;/pre&gt;&lt;/div&gt;\n&quot; if $in_div;
+</span><span class="rem">-            print $out qq{&lt;a id=&quot;$id&quot;&gt;&lt;/a&gt;\n&lt;div class=&quot;file&quot;&gt;&lt;h3&gt;$file},
+-              &quot; ($rev1 =&gt; $rev2)&lt;/h3&gt;\n&quot;;
+</span><span class="add">+            print $out qq{&lt;a id=&quot;$id&quot;&gt;&lt;/a&gt;\n&lt;div class=&quot;$class&quot;&gt;&lt;h4&gt;$file},
++              &quot; ($rev1 =&gt; $rev2)&lt;/h4&gt;\n&quot;;
+</span><span class="cx">             print $out qq{&lt;pre class=&quot;diff&quot;&gt;\n&lt;span class=&quot;info&quot;&gt;};
+             $in_div = 1;
+             print $out encode_entities($_), &quot;\n&quot; for ($before, $after);
+             print $out &quot;&lt;/span&gt;&quot;;
+             $in_span = '';
+</span><span class="add">+        } elsif ($line =~ /^Property changes on: (.*)/ &amp;&amp; !$seen{$1}) {
++            # It's just property changes.
++            my $file = encode_entities($1);
++            (my $id = $file) =~ s/[^\w_]//g;
++            # Dump line.
++            &lt;$diff&gt;;
++
++            # Output the headers.
++            print $out &quot;&lt;/span&gt;&quot; if $in_span;
++            print $out &quot;&lt;/pre&gt;&lt;/div&gt;\n&quot; if $in_div;
++            print $out qq{&lt;a id=&quot;$id&quot;&gt;&lt;/a&gt;\n&lt;div class=&quot;propset&quot;&gt;&lt;h4&gt;$file&lt;/h4&gt;\n};
++            print $out qq{&lt;pre class=&quot;diff&quot;&gt;\n};
++            $in_div = 1;
++            $in_span = '';
+</span><span class="cx">         } elsif ($line =~ /^\@\@/) {
+             print $out &quot;&lt;/span&gt;&quot; if $in_span;
+             print $out qq{&lt;span class=&quot;lines&quot;&gt;}, encode_entities($line),
+</span></pre></div>
+<a id="trunkSVNNotifylibSVNNotifyHTMLpm"></a>
+<div class="modfile"><h4>trunk/SVN-Notify/lib/SVN/Notify/HTML.pm (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/lib/SVN/Notify/HTML.pm	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/lib/SVN/Notify/HTML.pm	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -201,7 +201,7 @@
+</span><span class="cx"> 
+         # Identify the action and output each file.
+         print $out &quot;&lt;h3&gt;$map-&gt;{$type}&lt;/h3&gt;\n&lt;ul&gt;\n&quot;;
+</span><span class="rem">-        if ($self-&gt;with_diff &amp;&amp; !$self-&gt;attach_diff &amp;&amp; $type ne '_') {
+</span><span class="add">+        if ($self-&gt;with_diff &amp;&amp; !$self-&gt;attach_diff) {
+</span><span class="cx">             for (@{ $files-&gt;{$type} }) {
+                 my $file = encode_entities($_);
+                 # Strip out letters illegal for IDs.
+</span><span class="lines">@@ -255,9 +255,12 @@
+</span><span class="cx">     $self-&gt;_dbpnt( &quot;Outputting HTML diff&quot;) if $self-&gt;verbose &gt; 1;
+ 
+     print $out qq{&lt;/div&gt;\n&lt;div id=&quot;patch&quot;&gt;&lt;pre&gt;\n};
+</span><span class="add">+    my %seen;
+</span><span class="cx">     while (&lt;$diff&gt;) {
+         s/[\n\r]+$//;
+</span><span class="rem">-        if (/^(Modified|Added|Deleted): (.*)/) {
+</span><span class="add">+        if (/^(Modified|Added|Deleted|Property changes on): (.*)/
++            &amp;&amp; !$seen{$2}++)
++        {
+</span><span class="cx">             my $action = $1;
+             my $file = encode_entities($2);
+             (my $id = $file) =~ s/[^\w_]//g;
+</span></pre></div>
+<a id="trunkSVNNotifytdatachanged111txt"></a>
+<div class="modfile"><h4>trunk/SVN-Notify/t/data/changed/111.txt (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/data/changed/111.txt	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/t/data/changed/111.txt	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -13,7 +13,7 @@
+</span><span class="cx"> _U  trunk/Class-Meta/lib/Class/Meta/Types/Numeric.pm
+ _U  trunk/Class-Meta/lib/Class/Meta/Types/Perl.pm
+ _U  trunk/Class-Meta/lib/Class/Meta/Types/String.pm
+</span><span class="rem">-UU   trunk/Class-Meta/lib/Class/Meta.pm
+</span><span class="add">+UU  trunk/Class-Meta/lib/Class/Meta.pm
+</span><span class="cx"> A   trunk/Class-Meta/t/view.t
+ U   trunk/Params-CallbackRequest/Changes
+ U   trunk/Params-CallbackRequest/lib/Params/Callback.pm
+</span></pre></div>
+<a id="trunkSVNNotifytdatachanged333txt"></a>
+<div class="addfile"><h4>trunk/SVN-Notify/t/data/changed/333.txt (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/data/changed/333.txt	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/t/data/changed/333.txt	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -0,0 +1,3 @@
+</span><span class="add">+UU  trunk/activitymail/bin/activitymail
++_U  trunk/activitymail/t/activitymail.t
++_U  trunk/activitymail/t/zpod.t
+</span></pre></div>
+<a id="trunkSVNNotifytdatadiff333txt"></a>
+<div class="addfile"><h4>trunk/SVN-Notify/t/data/diff/333.txt (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/data/diff/333.txt	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/t/data/diff/333.txt	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -0,0 +1,40 @@
+</span><span class="add">+Modified: trunk/activitymail/bin/activitymail
++===================================================================
++--- trunk/activitymail/bin/activitymail 2004-09-28 02:04:18 UTC (rev 681)
+++++ trunk/activitymail/bin/activitymail 2004-09-28 05:59:10 UTC (rev 682)
++@@ -3,7 +3,7 @@
++ eval 'exec /usr/bin/perl -w -S $0 ${1+&quot;$@&quot;}'
++     if 0; # not running under some shell
++ 
++-# $Id: activitymail,v 1.18 2003/08/28 14:49:44 david Exp $
+++# $Id$
++ 
++ use strict;
++ use Getopt::Std;
++@@ -1193,7 +1193,7 @@
++ 
++ =head1 COPYRIGHT AND LICENSE
++ 
++-Copyright (c) 2002-2003, David Wheeler. All Rights Reserved.
+++Copyright (c) 2002-2004, David Wheeler. All Rights Reserved.
++ 
++ This program is free software; you can redistribute it and/or modify it under
++ the same terms as Perl.
++
++
++Property changes on: trunk/activitymail/bin/activitymail
++___________________________________________________________________
++Name: svn:keywords
++   + Id
++
++
++Property changes on: trunk/activitymail/t/activitymail.t
++___________________________________________________________________
++Name: svn:keywords
++   + Id
++
++
++Property changes on: trunk/activitymail/t/zpod.t
++___________________________________________________________________
++Name: svn:keywords
++   + Id
+</span></pre></div>
+<a id="trunkSVNNotifytdatadirschanged333txt"></a>
+<div class="addfile"><h4>trunk/SVN-Notify/t/data/dirs-changed/333.txt (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/data/dirs-changed/333.txt	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/t/data/dirs-changed/333.txt	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -0,0 +1,2 @@
+</span><span class="add">+trunk/activitymail/bin/
++trunk/activitymail/t/
+</span></pre></div>
+<a id="trunkSVNNotifytdatainfo333txt"></a>
+<div class="addfile"><h4>trunk/SVN-Notify/t/data/info/333.txt (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/data/info/333.txt	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/t/data/info/333.txt	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -0,0 +1,5 @@
+</span><span class="add">+theory
++2004-05-21 13:43:18 -0700 (Fri, 21 May 2004)
++23
++Property modification.
++
+</span></pre></div>
+<a id="trunkSVNNotifythtmlt"></a>
+<div class="modfile"><h4>trunk/SVN-Notify/t/html.t (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/html.t	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/t/html.t	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -9,7 +9,7 @@
+</span><span class="cx"> if ($^O eq 'MSWin32') {
+     plan skip_all =&gt; &quot;SVN::Notify::HTML not yet supported on Win32&quot;;
+ } elsif (eval { require HTML::Entities }) {
+</span><span class="rem">-    plan tests =&gt; 103;
+</span><span class="add">+    plan tests =&gt; 115;
+</span><span class="cx"> } else {
+     plan skip_all =&gt; &quot;SVN::Notify::HTML requires HTML::Entities&quot;;
+ }
+</span><span class="lines">@@ -212,7 +212,7 @@
+</span><span class="cx"> # Try html format with a single file changed.
+ ##############################################################################
+ ok( $notifier = SVN::Notify::HTML-&gt;new(%args, revision =&gt; '222'),
+</span><span class="rem">-    &quot;Construct new subject_cx file notifier&quot; );
+</span><span class="add">+    &quot;Construct new HTML file notifier&quot; );
+</span><span class="cx"> isa_ok($notifier, 'SVN::Notify::HTML');
+ isa_ok($notifier, 'SVN::Notify');
+ ok( $notifier-&gt;prepare, &quot;Prepare HTML file&quot; );
+</span><span class="lines">@@ -263,6 +263,34 @@
+</span><span class="cx">       'Check Content-Type charset' );
+ 
+ ##############################################################################
+</span><span class="add">+# Try html format with propsets.
++##############################################################################
++ok( $notifier = SVN::Notify::HTML-&gt;new(%args, with_diff =&gt; 1, revision =&gt; '333'),
++    &quot;Construct new HTML propset notifier&quot; );
++isa_ok($notifier, 'SVN::Notify::HTML');
++isa_ok($notifier, 'SVN::Notify');
++ok( $notifier-&gt;prepare, &quot;Prepare HTML propset&quot; );
++ok( $notifier-&gt;execute, &quot;Notify HTML propset&quot; );
++
++# Check the output.
++$email = get_output();
++like( $email, qr{Subject: \[333\] Property modification\.\n},
++      &quot;Check subject header for propset HTML&quot; );
++like( $email, qr/From: theory\n/, 'Check HTML propset From');
++like( $email, qr/To: test\@example\.com\n/, 'Check HTML propset To');
++like( $email, qr{Content-Type: text/html; charset=UTF-8\n},
++      'Check HTML propset Content-Type' );
++like( $email, qr{Content-Transfer-Encoding: 8bit\n},
++      'Check HTML propset Content-Transfer-Encoding');
++
++like( $email,
++      qr|&lt;a id=&quot;trunkactivitymailbinactivitymail&quot;&gt;Modified: trunk/activitymail/bin/activitymail&lt;/a&gt;\n|,
++      &quot;Check for file name anchor id&quot; );
++like( $email,
++      qr|&lt;a id=&quot;trunkactivitymailtactivitymailt&quot;&gt;Property changes on: trunk/activitymail/t/activitymail\.t&lt;/a&gt;\n|,
++      &quot;Check for propset file name anchor id&quot; );
++
++##############################################################################
+</span><span class="cx"> # Functions.
+ ##############################################################################
+ 
+</span></pre></div>
+<a id="trunkSVNNotifythtmlcolordifft"></a>
+<div class="modfile"><h4>trunk/SVN-Notify/t/htmlcolordiff.t (739 => 740)</h4>
+<pre class="diff">
+<span class="info">--- trunk/SVN-Notify/t/htmlcolordiff.t	2004-10-15 04:25:23 UTC (rev 739)
++++ trunk/SVN-Notify/t/htmlcolordiff.t	2004-10-15 06:12:54 UTC (rev 740)
+</span><span class="lines">@@ -9,7 +9,7 @@
+</span><span class="cx"> if ($^O eq 'MSWin32') {
+     plan skip_all =&gt; &quot;SVN::Notify::HTML::ColorDiff not yet supported on Win32&quot;;
+ } elsif (eval { require HTML::Entities }) {
+</span><span class="rem">-    plan tests =&gt; 104;
+</span><span class="add">+    plan tests =&gt; 120;
+</span><span class="cx"> } else {
+     plan skip_all =&gt; &quot;SVN::Notify::HTML::ColorDiff requires HTML::Entities&quot;;
+ }
+</span><span class="lines">@@ -147,10 +147,12 @@
+</span><span class="cx"> like( $email, qr/&lt;div id=&quot;patch&quot;&gt;/, &quot;Check for patch div&quot; );
+ like( $email, qr{&lt;a id=&quot;trunkParamsCallbackRequestChanges&quot;&gt;&lt;/a&gt;\n},
+       &quot;Check for file div ID&quot;);
+</span><span class="add">+like( $email, qr{&lt;div class=&quot;modfile&quot;&gt;&lt;h4&gt;trunk/Params-CallbackRequest/Changes \(600 =&gt; 601\)&lt;/h4&gt;},
++      &quot;Check for diff file header&quot; );
+</span><span class="cx"> like( $email, qr{&lt;a id=&quot;trunkParamsCallbackRequestlibParamsCallbackpm&quot;&gt;&lt;/a&gt;\n},
+       &quot;Check for added file div ID&quot;);
+</span><span class="rem">-like( $email, qr{&lt;h3&gt;trunk/Params-CallbackRequest/Changes \(600 =&gt; 601\)&lt;/h3&gt;},
+-      &quot;Check for diff file header&quot; );
+</span><span class="add">+like( $email, qr{&lt;div class=&quot;addfile&quot;&gt;&lt;h4&gt;trunk/Params-CallbackRequest/lib/Params/Callback.pm \(600 =&gt; 601\)&lt;/h4&gt;},
++      &quot;Check for added diff file header&quot; );
+</span><span class="cx"> 
+ # Make sure that it's not attached.
+ unlike( $email, qr{Content-Type: multipart/mixed; boundary=},
+</span><span class="lines">@@ -168,11 +170,9 @@
+</span><span class="cx"> like( $email,
+       qr|&lt;li&gt;&lt;a href=&quot;#trunkClassMetaChanges&quot;&gt;trunk/Class-Meta/Changes&lt;/a&gt;&lt;/li&gt;|,
+       &quot;Check for linked file name&quot; );
+</span><span class="rem">-
+-# Property changes aren't escaped.
+</span><span class="cx"> like( $email,
+</span><span class="rem">-      qr|&lt;li&gt;trunk/Class-Meta/lib/Class/Meta/Type.pm&lt;/li&gt;|,
+-      &quot;Check for unescaped property change&quot;);
+</span><span class="add">+      qr|&lt;li&gt;&lt;a href=&quot;#trunkClassMetalibClassMetaTypepm&quot;&gt;trunk/Class-Meta/lib/Class/Meta/Type\.pm&lt;/a&gt;&lt;/li&gt;|,
++      &quot;Check for linked property change file&quot;);
+</span><span class="cx"> 
+ ##############################################################################
+ # Attach diff.
+</span><span class="lines">@@ -272,6 +272,41 @@
+</span><span class="cx">       'Check Content-Type charset' );
+ 
+ ##############################################################################
+</span><span class="add">+# Try html format with propsets.
++##############################################################################
++ok( $notifier = SVN::Notify::HTML::ColorDiff-&gt;new(%args, with_diff =&gt; 1,
++                                                  revision =&gt; '333'),
++    &quot;Construct new propset notifier&quot; );
++isa_ok($notifier, 'SVN::Notify::HTML::ColorDiff');
++isa_ok($notifier, 'SVN::Notify::HTML');
++isa_ok($notifier, 'SVN::Notify');
++ok( $notifier-&gt;prepare, &quot;Prepare propset HTML file&quot; );
++ok( $notifier-&gt;execute, &quot;Notify propset HTML file&quot; );
++
++# Check the output.
++$email = get_output();
++like( $email, qr{Subject: \[333\] Property modification\.\n},
++      &quot;Check subject header for propset HTML&quot; );
++like( $email, qr/From: theory\n/, 'Check propset HTML From');
++like( $email, qr/To: test\@example\.com\n/, 'Check propset HTML To');
++like( $email, qr{Content-Type: text/html; charset=UTF-8\n},
++      'Check propset HTML Content-Type' );
++like( $email, qr{Content-Transfer-Encoding: 8bit\n},
++      'Check propset HTML Content-Transfer-Encoding');
++
++# Check for a header for the modified file.
++like( $email, qr{&lt;a id=&quot;trunkactivitymailbinactivitymail&quot;&gt;&lt;/a&gt;\n},
++      &quot;Check for modified file div ID&quot;);
++like( $email, qr{&lt;div class=&quot;modfile&quot;&gt;&lt;h4&gt;trunk/activitymail/bin/activitymail \(681 =&gt; 682\)&lt;/h4&gt;},
++      &quot;Check for modified file header&quot; );
++
++# Check for propset file.
++like( $email, qr{&lt;a id=&quot;trunkactivitymailbinactivitymail&quot;&gt;&lt;/a&gt;\n},
++      &quot;Check for modified file div ID&quot;);
++like( $email, qr{&lt;div class=&quot;propset&quot;&gt;&lt;h4&gt;trunk/activitymail/t/activitymail\.t&lt;/h4&gt;},
++      &quot;Check for modified file header&quot; );
++
++##############################################################################
+</span><span class="cx"> # Functions.
+ ##############################################################################
+ 
+</span>
+</pre>
+</div>
+</div>
+
+</body>
+</html>

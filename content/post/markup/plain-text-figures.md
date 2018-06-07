@@ -5,7 +5,6 @@ lastMod: 2018-06-07T13:26:51Z
 description: How I went about formatting embedded figures in the plain text output for *Just a Theory.*
 tags: [Markup, Just a Theory, JSON Feed, Markdown, Plain Text, Image, Figure]
 type: post
-draft: true
 ---
 
 A couple weeks ago, I implemented [JSON Feed] for *Just a Theory* (subscribe

@@ -10,7 +10,7 @@ type: post
 A couple weeks ago, I implemented [JSON Feed] for *Just a Theory* (subscribe
 [here]). A nice feature of the format is that support for plain text content in
 addition to the expected HTML content. It reminds me of the [Daring Fireball]
-plain text feature: kust append `.text` to any post to see its [Markdown]
+plain text feature: just append `.text` to any post to see its [Markdown]
 representation, [like this]. I'm a sucker for plain text, so followed suit. Now
 you can read the [wedding anniversary post] in plain text simply by [appending
 `copy.text`] to the URL (or via the JSON Feed).

@@ -121,8 +121,10 @@ You can tell I like to center the images, though not the caption. Maybe you
 don't need a caption or much else. It could be quite minimal: just an image and
 alt text:
 
+```
         {                      [First Dance]                       }
         {  https://justatheory.com/2018/05/twenty-three/dance.jpg  }
+```
 
 Here I've eschewed the blank lines and tildes; the dont' feel necessary without
 the caption.

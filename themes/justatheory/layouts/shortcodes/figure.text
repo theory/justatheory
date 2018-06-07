@@ -28,7 +28,7 @@
 {{- $indent := printf (printf "%%-%dv" ($.Scratch.Get "indent")) "" -}}
 
 {{- $frameWidth := add $maxLen (add $padding $padding) }}
-{{- $line := strings.Repeat (add 2 $frameWidth) "~" -}}
+{{- $line := printf "{%v}" (strings.Repeat $frameWidth "~") -}}
 
 {{ $indent }}{{ $line }}
 {{ $indent }}{{ printf "{%v}" (strings.Repeat $frameWidth " ") }}{{ with $alt }}

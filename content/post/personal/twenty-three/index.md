@@ -11,7 +11,7 @@ image: {src: dance.jpg, alt: First Dance, caption: First dance, 28 May 1995. }
 {{% figure
    src     = "dance.jpg"
    alt     = "First Dance"
-   caption =" First dance, 28 May 1995."
+   caption = "First dance, 28 May 1995."
 %}}
 
 We're off to a great start, my love. I can't wait to see what happens next.

@@ -3,7 +3,7 @@ date: 2005-11-11T00:23:23Z
 slug: svnnotify-2.50
 title: SVN::Notify 2.50
 aliases: [/computers/programming/perl/modules/svnnotify_2.50.html]
-tags: [Perl, Subversion, SVN::Notify, ativitymail, Email, diffs]
+tags: [Perl, Subversion, SVN::Notify, activitymail, Email, diffs]
 type: post
 ---
 

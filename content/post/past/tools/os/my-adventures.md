@@ -124,9 +124,9 @@ I downloaded it from its [project bpage], and then did this:
 
 ### Perl
 
-Although Mac OS X ships with [Perl] (Yay!), it's the older 5.6.0 version. There
-have been many bug fixes included in 5.6.1, so I wanted to make sure I got the
-latest stable version before I built anything else around it (mod\_perl,
+Although Mac OS X ships with [Perl][] (Yay!), it's the older 5.6.0 version.
+There have been many bug fixes included in 5.6.1, so I wanted to make sure I got
+the latest stable version before I built anything else around it (mod\_perl,
 modules, etc.).
 
 Being a Unix program, Perl doesn't expect to run into the problems associated
@@ -188,7 +188,7 @@ this:
 ### mod\_ssl
 
 The mod\_ssl Apache module poses no problems whatsoever. I simply downloaded
-mod\_ssl-2.8.7-1.3.23 from the [mod\_ssl site] (note that the "1.3.23" at the
+mod\_ssl-2.8.7-1.3.23 from the [mod\_ssl site][] (note that the "1.3.23" at the
 end matches the version of Apache I downloaded) and gunzipped and untarred it
 into /usr/local/src/. Then I simply excuted:
 

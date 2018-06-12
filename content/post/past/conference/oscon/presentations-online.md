@@ -11,7 +11,7 @@ type: post
 Direct links:
 
 -   [“What's New in Bricolage”]
--   [“Polymorhic Database Design”] (a.k.a. “How to Move Object/Relational
+-   [“Polymorhic Database Design”][] (a.k.a. “How to Move Object/Relational
     Mapping into the Database”
 
 Enjoy!

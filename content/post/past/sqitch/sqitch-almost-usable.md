@@ -147,7 +147,7 @@ doing. Some highlights and additional items:
 -   Implement the [Locale::TextDomain]-based localization build. Should be done
     at distribution build time, not install time. Ideally, there would be a
     Dist::Zilla plugin to do it, based pattern implemented in [this example
-    `Makefile`] (see also [this README]).
+    `Makefile`][] (see also [this README]).
 -   [The web site][Sqitch] could use some updating, though I realize it will
     regularly need changing until most of the core development has completed and
     more documentation has been written.

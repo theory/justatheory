@@ -74,11 +74,11 @@ with someone who knows Photoshop and After Effects like I know Perl and SQL.
 Since we launched on Tuesday, we’ve been fortunate to receive some really
 terrific coverage:
 
--   [Gizzmodo] (includes a video of the UI in action)
+-   [Gizzmodo][] (includes a video of the UI in action)
 -   [macstories]
 -   [Padvance]
 -   [Shawn Blanc]
--   [MacMagazine] (Portuguese)
+-   [MacMagazine][] (Portuguese)
 
 And we’re not sitting still. I’m working through a short list of burrs and spurs
 that need to be polished off, and then moving on to some other great features we

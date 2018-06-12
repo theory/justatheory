@@ -8,10 +8,10 @@ tags: [MySQL, myTAP, pgTAP, Testing, Unit Testing, Postgres, Databases, Test-Dri
 type: post
 ---
 
-I gave my [OSCON tutorial] ([slides]) last week. It went okay. I spent *way* too
-much time helping to get everyone set up with [pgTAP], and then didn't have time
-to have the attendees do the exercises, and I had to rush through 2.5 hours of
-material in 1.5 hours. Yikes! At least the video will be better when it's
+I gave my [OSCON tutorial][] ([slides]) last week. It went okay. I spent *way*
+too much time helping to get everyone set up with [pgTAP], and then didn't have
+time to have the attendees do the exercises, and I had to rush through 2.5 hours
+of material in 1.5 hours. Yikes! At least the video will be better when it's
 released (more when that happens).
 
 But as often happens, I was asked whether something like pgTAP exists for
@@ -50,7 +50,7 @@ You can run this test from a `.sql` file using the `mysql` client like so:
 
 But that's a PITA and can only run one test at a time. Instead, put all of your
 tests into a directory, perhaps named `tests`, each with the suffix “.my”, and
-use [`my_prove`] (install [TAP::Parser::SourceHandler::MyTAP] from CPAN to get
+use [`my_prove`][] (install [TAP::Parser::SourceHandler::MyTAP] from CPAN to get
 it) instead:
 
     my_prove -u root --database try tests/

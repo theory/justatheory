@@ -13,7 +13,7 @@ According to a [story] in [Salon.com], it appears that George W. Bush may well
 have been wearing a radio transmitter during the first debate. This would be so
 that he could get prompts from someone more knowledgeable (Dick Cheney?).
 
-[Current Electoral Vote Predictor] (which currently shows Kerry leading 280 to
+[Current Electoral Vote Predictor][] (which currently shows Kerry leading 280 to
 239!) has confirmed the presence of “the bulge” with [this image], using Red
 Hawk image intensification software.
 

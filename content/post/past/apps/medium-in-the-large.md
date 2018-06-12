@@ -17,10 +17,10 @@ all the reasons why [The *The New Yorker* app sucks]. It has not improved at
 all. This naturally got me thinking again about the future of publishing and
 looking around for new ideas.
 
-[Medium], the new publishing platform from [Obvious Corporation] (whose founders
-were the creative force behind [Blogger] and [Twitter]), made a bit of a splash
-last month with its soft launch. In his [post] introducing the service, Ev
-Williams writes:
+[Medium], the new publishing platform from [Obvious Corporation][] (whose
+founders were the creative force behind [Blogger] and [Twitter]), made a bit of
+a splash last month with its soft launch. In his [post] introducing the service,
+Ev Williams writes:
 
 > So, we’re re-imagining publishing in an attempt to make an evolutionary leap,
 > based on everything we’ve learned in the last 13 years and the needs of

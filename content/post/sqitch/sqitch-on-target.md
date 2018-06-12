@@ -23,7 +23,7 @@ pain in the ass.
 I thought it'd be better to have named deployment targets, so instead of
 changing a bunch of environment variables in order to set a bunch of options,
 we could just name a target and go. I borrowed the idea from [Git remotes],
-and started a [database URI spec] (mentioned [previously]) to simplify things
+and started a [database URI spec][] (mentioned [previously]) to simplify things
 a bit. Here's how it works. Say you have a PostgreSQL Sqitch project called
 "Flipr". While doing development, you'll want to have a local database to
 deploy to. There is also a QA database and a production database. Use the

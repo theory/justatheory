@@ -164,7 +164,7 @@ likes, as long as there are always tags between instances.
 ### Unbungled Bundle
 
 Here’s the clincher for this iteration of this thing. My [original plan for
-bundling] (that is, packaging up the plan and change scripts for distribution
+bundling][] (that is, packaging up the plan and change scripts for distribution
 outside the VCS) had the generation of a plan with different names than the plan
 in the VCS. That is, running:
 

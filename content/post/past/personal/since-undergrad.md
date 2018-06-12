@@ -71,11 +71,11 @@ Capital Campaign, and started a business, [Strongrrl], while in San Francisco,
 mainly focused on graphic design for universities and non-profits. Business has
 slowed in the last few years, alas, as print has been dying and budgets have
 become restricted. She still does a bit of work, but also has started sewing and
-an [Etsy store] (kind of empty at the moment, will be stocked in the next couple
-of weeks) and this year doing deep genealogical research. We both work at home,
-but she does the lion’s share of the domestic and child-rearing duties. After 18
-years together our relationship has deepened tremendously. We’re very happy
-together.
+an [Etsy store][] (kind of empty at the moment, will be stocked in the next
+couple of weeks) and this year doing deep genealogical research. We both work at
+home, but she does the lion’s share of the domestic and child-rearing duties.
+After 18 years together our relationship has deepened tremendously. We’re very
+happy together.
 
 Anyway, life is good. I suppose if I were to write this again tomorrow I’d focus
 on a bunch of other things. A lot happens in 17 years, as you no doubt know.
@@ -85,8 +85,8 @@ the context seemed to warrant it.
 So what’s your 411?
 
   [Bricolage]: http://bricolagecms.org/
-  [PostgreSQL Experts]: http://www.pgexperts.com/
+  [PostgreSQL Experts]: https://www.pgexperts.com/
   [Kineticode]: https://www.kineticode.com/
   [iPad app]: http://designsceneapp.com/
   [Strongrrl]: http://strongrrl.com/
-  [Etsy store]: http://strongrrl.etsy.com/
+  [Etsy store]: https://strongrrl.etsy.com/

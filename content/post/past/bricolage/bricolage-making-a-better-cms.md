@@ -28,7 +28,7 @@ corporate marketplace.
 
 That said, it might be reasonable to create a simple installer that's useful for
 doing a local evaluation of a major CMS, one that doesn't rely on an RDBMS and
-an Apache Web server installation. ([RT] (not a CMS) has been working on a
+an Apache Web server installation. ([RT][] (not a CMS) has been working on a
 simple executable that uses an embedded database and Web server for those who
 want to evaluate it. For Bricolage, we at one time had a KNOPPIX CD that one
 could use to try it out. But for the rest, the best solution is probably an RPM,

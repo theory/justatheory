@@ -14,7 +14,7 @@ have a change that defines a function `change_password()`, and discover sometime
 after release that it has a bug (maybe the hashing algorithm is too weak), you
 can “rework” it – essentially modify it in place – and save some headaches.
 Check out the “In Place Changes” section of the ([PostgreSQL], [SQLite],
-[Oracle], or [MySQL] (coming soon) tutorials for detailed examples of how it
+[Oracle], or [MySQL][] (coming soon) tutorials for detailed examples of how it
 works.
 
 The bug was about what happens when one adds a new change that depends on a

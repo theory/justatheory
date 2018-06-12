@@ -16,7 +16,7 @@ type: post
 %}}
 
 I just dropped a new version of [pgTAP] following a few marathon hack sessions
-since [my talk at PGCon] ([movie here], BTW). Actually, the new
+since [my talk at PGCon][] ([movie here], BTW). Actually, the new
 [`performs_ok()`] function came about as I wrote the presentation, but all the
 rest came on the flight home and in the few days since. Not sure when I'll hack
 on it this much again (it's getting a bit big at 5,758 lines of PL/pgSQL and

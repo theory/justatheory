@@ -24,7 +24,7 @@ is that it uses the DOM to create a new HTML document in a hidden `iframe`, and
 that document loads the *.js*. Essentially, it just uses the DOM to mimic the
 structure of a typical *.html* test file. For the other browsers, the hidden
 `iframe` uses `XMLHttpRequest` to load and `eval` the *.js* test file. [Check it
-out] ([verbosely])!
+out][] ([verbosely])!
 
 I think that this will greatly enhance the benefits of Test.Simple, as it makes
 writing tests *really* simple. All you have to do is create a single *.html*

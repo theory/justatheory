@@ -35,7 +35,7 @@ PostgreSQL server:
 Sqitch hasn’t been ported to other database engines yet, but once it is, expect
 other formulas to follow. But if you use PostgreSQL (or just want to experiment
 with it), you’re ready to rock! I suggest following along [the tutorial] or
-taking in [the latest iteration of the introductory presentation] (video of an
+taking in [the latest iteration of the introductory presentation][] (video of an
 older version [here]).
 
 My thanks to IRC user “mistym” for the help and suggestions in getting this

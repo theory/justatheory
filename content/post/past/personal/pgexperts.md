@@ -20,9 +20,9 @@ ready and willing to build your PostgreSQL-backed applications on [Rails],
 [Catalyst], [PHP], or whatever environment you prefer. If it's related to
 PostgreSQL, it's what we do.
 
-So [get in touch] or meet us at [PGCon] (we're sponsoring!) or at [OSCON 2009].
-I'm really excited about our company, and looking forward to growing it as
-PostgreSQL adoption grows.
+So [get in touch] or meet us at [PGCon][] (we're sponsoring!) or at [OSCON
+2009]. I'm really excited about our company, and looking forward to growing it
+as PostgreSQL adoption grows.
 
   [Kineticode]: https://www.kineticode.com/ "Kineticode: Setting knowledge in motion."
   [Josh Berkus]: http://it.toolbox.com/blogs/database-soup "Database Soup"

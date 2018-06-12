@@ -11,7 +11,7 @@ I'm pleased to announce the release of Test.Simple 0.11. This release fixes a
 number of bugs in the framework's IE and Safari support, adds [JSAN] support,
 and includes an experimental harness for Macromedia\^Adobe Director. You can
 download it from [JSAN][1], and all future releases will be available on JSAN.
-See the harness in action [here] (or [verbosely]!). This release has the
+See the harness in action [here][] (or [verbosely]!). This release has the
 following changes:
 
 -   The browser harness now works more reliably in IE and Safari.

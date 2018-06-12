@@ -17,7 +17,7 @@ start introducing some database best practices. I'm also going to make use of my
 
 Picking up with the [database creation] section of the tutorial, the first
 change I'd like to make is to use a [natural key] for the books table. All books
-have unique identifiers, known as ISBNs, so creating a [surrogate key] (the
+have unique identifiers, known as ISBNs, so creating a [surrogate key][] (the
 typical `id` column in ORM-managed applications) is redundant. One of the nice
 things about PostgreSQL is that it ships with a contributed library, [isn],
 which validates ISBN and other international identifiers. So we use this contrib

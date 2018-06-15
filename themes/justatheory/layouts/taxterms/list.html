@@ -43,15 +43,15 @@
 			<h2>Complete List</h2>
 			{{-  $.Scratch.Set "chars" (slice) }}
 			{{- range .Data.Pages }}
-				{{- $.Scratch.Add "chars" (upper (printf "%c" (index .Title 0))) }}
+				{{- $.Scratch.Add "chars" (upper (substr .Title 0 1)) }}
 			{{- end }}
 			{{- $data := .Data }}
-			{{- range uniq ($.Scratch.Get "chars") -}}
+			{{- range sort (uniq ($.Scratch.Get "chars")) -}}
 				{{- $char := . }}
 			<h5>{{ $char }}</h5>
 			<ul class="tags {{ $char }}">
 				{{- range $data.Pages }}
-					{{- if eq $char (upper (printf "%c" (index .Title 0))) }}
+					{{- if eq $char (upper (substr .Title 0 1)) }}
 				<li><a href="{{ .RelPermalink }}">{{ .Data.Term }}</a></li>
 					{{- end }}
 				{{- end }}

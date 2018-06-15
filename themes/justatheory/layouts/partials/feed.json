@@ -21,7 +21,12 @@
 			"title": {{ .Title | jsonify }},{{ with (or .Description .Summary )}}
 			"summary": {{ . | jsonify }},{{ end }}
 			"date_published": {{ .Date.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ if ne .Date .Lastmod }}
-			"date_modified": {{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ end }}{{ with (or .Params.author .Site.Author) }}
+			"date_modified": {{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ end }}
+{{- if (eq .Type "tags") }}
+			"content_html": {{ printf "<p>Posts about %v.</p>" .Title | jsonify }},
+			"content_text": {{ printf "Posts about %v." .Title | jsonify }}
+{{- else -}}
+			{{ with (or .Params.author .Site.Author) }}
 			"author": {
 				"name": {{ .name | jsonify }}{{ with .url }},
 				"url": {{ . | jsonify }}{{ end }}{{ with .avatar }},
@@ -30,6 +35,7 @@
 			"tags": {{ . | jsonify }}{{ end }},
 			"content_html": {{ trim (partial "entry.html" . ) " \t\n\r" | jsonify }},
 			"content_text": {{ trim (partial "entry.text" . ) " \t\n\r" | jsonify }}
+{{- end }}
 		}
 	{{- end }}
 	]

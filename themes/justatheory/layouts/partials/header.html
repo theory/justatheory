@@ -4,7 +4,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>{{ or .Params.headTitle .Title }}</title>
+	{{- $title := or .Params.headTitle .Title }}
+	<title>{{ $title }}</title>
 	<meta name="description" content="{{ partial "attr.html" (or .Description .Summary .Site.Params.description) }}" />
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
 	<link rel="stylesheet" href="/css/screen.css" />
@@ -21,7 +22,7 @@
 	{{- end }}{{/* https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254 */}}
 	<meta property="og:type" content="{{ if in .Site.Params.postTypes .Type }}article{{ else }}website{{ end }}" />
 	<meta property="og:url" content="{{ .Permalink }}" />
-	<meta property="og:title" content="{{ if eq .Type "tags" }}Posts about {{ .Data.Term }}{{ else }}{{ partial "attr.html" (or .Params.headTitle .Title) }}{{ end }}" />
+	<meta property="og:title" content="{{ if eq .Type "tags" }}Posts about {{ .Data.Term }}{{ else }}{{ partial "attr.html" $title }}{{ end }}" />
 	<meta property="og:site_name" content="{{ .Site.Params.Bug }} {{ .Site.Title }}"/>
 	<meta property="og:description" content="{{ partial "attr.html" (or .Description .Summary .Site.Params.description) }}" />{{ if .Params.image }}
 	<meta property="og:image" content="{{ .Permalink }}{{ .Params.image.src }}" />
@@ -32,7 +33,7 @@
 	<meta name="twitter:site" value="@{{ . }}" />
 	<meta name="twitter:creator" value="@{{ . }}" />{{ end }}
 	{{ range .AlternativeOutputFormats -}}
-	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}{{ if eq .MediaType.Suffix "xml" }}+xml{{ end }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}" />
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}{{ if eq .MediaType.Suffix "xml" }}+xml{{ end }}" href="{{ .Permalink | safeURL }}" title="{{ $title }}" />
 	{{ end }}
 	{{- .Hugo.Generator }}
 </head>

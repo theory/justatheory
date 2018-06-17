@@ -15,7 +15,7 @@
 	</author>{{ end }}
 	<generator uri="https://gohugo.io/" version="{{ .doc.Hugo.Version }}">Hugo</generator>{{ with .Site.Params.icon }}
 	<icon>{{ . | absURL | jsonify }}</icon>{{ end }}{{ with .Site.Copyright }}
-	<rights>{{.}}</rights>{{ end }}
+	<rights>{{.}}</rights>{{ end }}{{ $params := . }}
 	{{- range .Pages }}
 	<entry>
 		<id>{{ .Permalink }}</id>
@@ -31,6 +31,8 @@
 		<published>{{ .Date.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</published>
 {{- if (eq .Type "tags") }}
 		<summary>Posts about {{ .Title  }}</summary>
+{{- else if $params.SummaryOnly }}{{ with (or .Description .Summary ) }}
+		<summary>{{ replace (htmlUnescape .) "&" "&amp;" | safeHTML }}</summary>{{ end }}
 {{- else -}}
 		{{ with (or .Params.author .Site.Author) }}
 		<author>{{ with .name }}

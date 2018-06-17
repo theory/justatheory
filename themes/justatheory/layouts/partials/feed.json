@@ -10,7 +10,7 @@
 		"name": {{ .name | jsonify }}{{ with .url }},
 		"url": {{ . | jsonify }}{{ end }}{{ with .avatar }},
 		"avatar": {{ . | jsonify }}{{ end }}
-	},{{ end }}
+	},{{ end }}{{ $params := . }}
 	"items": [
 	{{- range $index, $entry := .Pages }}
 	{{- if $index }}, {{ end }}
@@ -18,13 +18,17 @@
 			"id": {{ .Permalink | jsonify }},
 			"url": {{ .Permalink | jsonify }},{{ with .Params.link }}
 			"external_url": {{ . | jsonify }},{{ end }}
-			"title": {{ .Title | jsonify }},{{ with (or .Description .Summary )}}
-			"summary": {{ . | jsonify }},{{ end }}
+			"title": {{ .Title | jsonify }},{{- if $params.SummaryOnly }}{{ with (or .Description .Summary) }}
+			"summary": {{ . | jsonify }},{{ end }}{{ else }}{{ with .Description }}
+			"summary": {{ . | jsonify }},{{ end }}{{ end }}
 			"date_published": {{ .Date.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ if ne .Date .Lastmod }}
 			"date_modified": {{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | jsonify }},{{ end }}
 {{- if (eq .Type "tags") }}
 			"content_html": {{ printf "<p>Posts about %v.</p>" .Title | jsonify }},
 			"content_text": {{ printf "Posts about %v." .Title | jsonify }}
+{{- else if $params.SummaryOnly }}{{ with .Summary }}
+			"content_html": {{ printf "<p>%v</p>" (htmlEscape .) | jsonify }},
+			"content_text": {{ . | jsonify }}{{ end }}
 {{- else -}}
 			{{ with (or .Params.author .Site.Author) }}
 			"author": {

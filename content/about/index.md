@@ -1,7 +1,8 @@
 ---
 title: About Just a Theory
 type: about
-outputs: [html]
+url: /about/
+outputs: [html, text]
 ---
 
 {{% figure src="theory.jpg" alt="David E. “Theory” Wheeler" class="frame" %}}

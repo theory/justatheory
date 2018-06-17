@@ -50,7 +50,6 @@ disableKinds = ["section"]
 [outputFormats.text]
   mediatype = "text/plain"
   baseName = "copy"
-  suffix = "text"
   isPlainText = true
 
 [outputs]

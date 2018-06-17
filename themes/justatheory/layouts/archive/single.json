@@ -1,0 +1,1 @@
+{{ partial "feed.json" (dict "doc" . "Site" .Site "Title" .Title "Description" .Site.Params.description "Pages" (where .Site.Pages "Type" "in" .Site.Params.postTypes)) }}

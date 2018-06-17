@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/theory/justatheory/blob/master/LICENSE.md"
 description = "Hugo theme for Just a Theory."
 homepage = "https://justatheory.com/"
-tags = ["blog", "tags", "topics"]
+tags = ["blog", "tags"]
 features = ["blog"]
 min_version = "0.38"
 
@@ -16,4 +16,3 @@ homepage = "https://justatheory.com/"
 
 [taxonomies]
   tag = "tags"
-  topic = "topics"

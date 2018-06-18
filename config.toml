@@ -31,7 +31,8 @@ disableKinds = ["section"]
   favicon = "/icon-64x64.png"
 
 [permalinks]
-  post = "/:year/:month/:slug/"
+  post  = "/:year/:month/:slug/"
+  photo = "/:year/:month/:slug/"
 
 [mediaTypes]
 [mediaTypes."application/atom"]

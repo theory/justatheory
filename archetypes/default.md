@@ -4,7 +4,7 @@ date: {{ . }}
 lastMod: {{ . }}{{ end }}
 description: ~
 tags: []
-type: post
+type: {{ .Type }}
 link: ~
 # author: {name: David E. Wheeler, email: david@justatheory.com }
 # via: {name: Example, href: https://example.com, title: Hello }

@@ -211,8 +211,8 @@ something like this soon.
   [Daring Fireball]: https://daringfireball.net
   [Markdown]: https://daringfireball.net/projects/markdown/
   [like this]: https://daringfireball.net/linked/2018/06/05/goode-federighi-uikit.text
-  [wedding anniversary post]: {{% ref "post/personal/twenty-three/index.md" %}}
-  [appending `copy.text`]: {{% ref "post/personal/twenty-three/index.md" "text" %}}
+  [wedding anniversary post]: {{% ref "photo/personal/twenty-three/index.md" %}}
+  [appending `copy.text`]: {{% ref "photo/personal/twenty-three/index.md" "text" %}}
   [figure]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
   [Hugo figure shortcode]: https://gohugo.io/content-management/shortcodes/#figure
   [link format]: https://daringfireball.net/projects/markdown/syntax#link

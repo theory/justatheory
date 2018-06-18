@@ -235,7 +235,7 @@ body {
 main {
     min-height:100%;
     height:auto;
-    padding-bottom: 80px !important;
+    padding-bottom: 58px !important;
 }
 
 #tags > header, #taxterms > header, #archive > header {
@@ -243,8 +243,15 @@ main {
     border-bottom: 1px dashed #ccc;
 }
 
-#tags article, #home article {
+article, #archive, #taxterms {
+    max-width: 676px;
+    margin: 0 auto;
     border-bottom: 1px dashed #ccc;
+}
+
+main > header {
+    margin: 0 auto 28px auto !important;
+    max-width: 676px;
 }
 
 #home article:last-child, #tags article:last-child {
@@ -272,8 +279,44 @@ main {
     margin-bottom: 0;
 }
 
+h1, h1 a, h1 a:hover, h1 a:visited,
+h2, h2 a, h2 a:hover, h3 a:visited,
+h3, h3 a, h3 a:hover, h4 a:visited,
+h4, h4 a, h4 a:hover, h5 a:visited,
+h5, h5 a, h5 a:hover, h5 a:visited,
+h6, h6 a, h6 a:hover, h6 a:visited {
+    color: #111;
+    text-decoration: none !important;
+}
+
+.photo {
+    background: #2d2d2d;
+    max-width: 100% !important;
+    padding: 2rem 0 0 0;
+    margin: 0;
+    color: #ccc;
+}
+
+.photo > * {
+    padding: 0 50px;
+}
+
+.photo h1, .photo h1 a, .photo h1 a:hover,
+.photo h2, .photo h2 a, .photo h2 a:hover,
+.photo h3, .photo h3 a, .photo h3 a:hover,
+.photo h4, .photo h4 a, .photo h4 a:hover,
+.photo h5, .photo h5 a, .photo h5 a:hover,
+.photo h6, .photo h6 a, .photo h6 a:hover,
+.photo a[rel=bookmark] {
+    color: #ccc;
+    text-decoration: none !important;
+}
+
 .pagination {
     text-align: right;
+    margin: 0 auto;
+    padding-bottom : 18px;
+    width: 676px;
 }
 
 table .num {
@@ -321,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #111
 }
 
-h1 a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, body > header > nav a, body > header > nav:hover {
+body > header > nav a, body > header > nav:hover {
     color: #111 !important;
     text-decoration: none !important;
 }
@@ -495,7 +538,7 @@ aside.left:before {
     margin: .5em 1.5em 1em 0
 }
 
-body > main, body > header > hgroup.top > *, body > header nav {
+body > header > hgroup.top > *, body > header nav {
     -webkit-text-size-adjust: none;
     margin: 0 auto;
     max-width: 676px;
@@ -503,7 +546,8 @@ body > main, body > header > hgroup.top > *, body > header nav {
 }
 
 body > header {
-    font-size: 1.1em
+    font-size: 1.1em;
+    padding-bottom: 1rem;
 }
 
 body > header .bug {
@@ -512,9 +556,9 @@ body > header .bug {
     line-height: 1.4em !important;
 }
 
-body > header > hgroup.top, body > main, body > nav, body > footer {
-    padding-left: 18px;
-    padding-right: 18px
+body > header > hgroup.top, body > nav, body > footer {
+    /* padding-left: 18px;
+    padding-right: 18px */
 }
 
 body > header > hgroup.top {
@@ -608,8 +652,11 @@ body > header > nav li.icon {
 .fa-rss:hover {
     color: #ff6600 !important
 }
+
 article {
+    margin: 0 auto;
     width: 100%;
+    padding: 0 18px;
 }
 
 article .footnotes li {
@@ -623,7 +670,7 @@ figure {
 figure img {
     display: block;
     background-color: #fff;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
 }
 
 figure > a:last-of-type img, figure > img:last-of-type {
@@ -668,7 +715,7 @@ figure.frame {
     padding: 1rem;
 }
 
-figure.frame figcaption {
+.photo figcaption, figure.frame figcaption {
     margin: 0;
     padding: 1rem 0 0;
 }
@@ -691,10 +738,6 @@ table.right, article figure.right, article a.right, article img.right, article v
 table.center, article figure, article figure.center, article a.center, article img.center, article video.center {
     display: block;
     margin: 0 auto 1em;
-}
-
-figure.center, figure img, p img {
-    width: 100%;
 }
 
 table.left,  article figure.left,  article a.left,  article img.left, article video.left,

@@ -9,7 +9,7 @@ type: post
 
 {{% figure
     src   = "Steve-Jobs-RIP.jpg"
-    class = "center"
+    class = "frame"
     alt   = "Steve Jobs"
     link  = "https://www.apple.com/stevejobs/"
     title = "Steve Jobs RIP"

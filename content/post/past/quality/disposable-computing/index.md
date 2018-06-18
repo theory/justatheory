@@ -7,7 +7,7 @@ tags: [Quality, Kindle, iPad, Junk, Disposability, Minimalism, Build Quality]
 type: post
 ---
 
-{{% figure src = "steve_jobs_1982.jpg" alt = "Minimalist Steve Jobs" class = "center" %}}
+{{% figure src = "steve_jobs_1982.jpg" alt = "Minimalist Steve Jobs" class = "frame" %}}
 
 Over the last year or so, we’ve been on a “clear out the junk” kick in our
 house. We’ve gotten rid of all of our CDs, most of our books, and a lot of

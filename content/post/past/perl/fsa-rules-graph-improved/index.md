@@ -8,8 +8,9 @@ type: post
 ---
 
 {{% figure
-  src = "fsa_rules_sample.png"
-  alt = "FSA::Rules sample graph"
+  src   = "fsa_rules_sample.png"
+  alt   = "FSA::Rules sample graph"
+  class = "frame"
 %}}
 
 I just released [FSA::Rules] 0.25. This version came about as I returned to the

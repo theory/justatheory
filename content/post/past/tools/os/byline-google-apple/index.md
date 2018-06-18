@@ -55,7 +55,7 @@ appearance of duplication.
    src   = "phfish_tweet.png"
    alt   = "@phfish: “@theory I think they do it for performance reasons. It is a bit of an irritation, though.”"
    link  = "https://twitter.com/#!/phfish/status/17540435819896832"
-   class = "center"
+   class = "frame"
 %}}
 
 One of the APIs it calls ASAP is Google Reader’s “Mark All as Read API call”,

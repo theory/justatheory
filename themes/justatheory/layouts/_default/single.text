@@ -1,3 +1,4 @@
 {{ .Title }}
-{{ strings.Repeat (strings.RuneCount .Title) "=" }}
+{{ strings.Repeat (strings.RuneCount .Title) "=" }}{{ if .Params.image }}
+{{ partial "figure.text" (dict "Params" .Params.image "Page" . "Site" .Site) }}{{ end }}
 {{ partial "entry.text" . }}

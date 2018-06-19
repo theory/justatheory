@@ -302,6 +302,12 @@ h6, h6 a, h6 a:hover, h6 a:visited {
     padding: 0 50px;
 }
 
+.photo > header, .photo > footer {
+    margin: 0 auto;
+    max-width: 676px;
+    margin-bottom: 2rem;
+}
+
 .photo h1, .photo h1 a, .photo h1 a:hover,
 .photo h2, .photo h2 a, .photo h2 a:hover,
 .photo h3, .photo h3 a, .photo h3 a:hover,

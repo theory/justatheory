@@ -1,0 +1,44 @@
+{{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
+{{- $stdLen := 74 }}
+{{- $padding := 2 }}
+{{/* Determine the longest line length */}}
+{{- $.Scratch.Set "maxLineLen" (strings.RuneCount $src) -}}
+
+{{- $alt := or .Params.alt .Params.title }}
+{{- with $alt -}}
+    {{- $len := add 2 (strings.RuneCount .) }}
+	{{- if gt $len ($.Scratch.Params.maxLineLen }}
+        {{- $.Scratch.Set "maxLineLen" $len -}}
+    {{- end -}}
+{{- end -}}
+
+{{- with .Params.link -}}
+    {{- $len := add 2 (strings.RuneCount .) }}
+	{{- if gt $len ($.Scratch.Params.maxLineLen }}
+        {{- $.Scratch.Set "maxLineLen" $len -}}
+    {{- end -}}
+{{- end -}}
+
+{{/* Collect the max line length and determine indent. */}}
+{{- $maxLen := add 2 ($.Scratch.Params.maxLineLen -}}
+{{- $.Scratch.Set "indent" 0 -}}
+{{- if gt (sub $stdLen $maxLen) 1 -}}
+    {{- $.Scratch.Set "indent" (div (sub $stdLen $maxLen) 2) -}}
+{{- end -}}
+{{- $indent := printf (printf "%%-%dv" ($.Scratch.Params.indent) "" -}}
+
+{{- $frameWidth := add $maxLen (add $padding $padding) }}
+{{- $line := printf "{%v}" (strings.Repeat $frameWidth "~") -}}
+
+{{ $indent }}{{ $line }}
+{{ $indent }}{{ printf "{%v}" (strings.Repeat $frameWidth " ") }}{{ with $alt }}
+{{ $indent }}{{ partial "center.text" (dict "format" "{%v[%v]%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
+{{ $indent }}{{ partial "center.text" (dict "format" "{%v%v%v}" "text" $src "padding" $padding "maxLen" $maxLen "extra" 0) }}{{ with .Params.link -}}
+{{ $indent }}{{ partial "center.text" (dict "format" "{%v(%v)%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
+{{ $indent }}{{ printf "{%v}" (strings.Repeat $frameWidth " ") }}
+{{ $indent }}{{ $line }}{{ with .Params.caption }}
+{{- $re := printf "(.{%d,%d}?[^\\s]*)\\s+" (sub $maxLen 5) $maxLen }}
+{{- $fmt := printf "%v{%v%%-%dv}\n" $indent (strings.Repeat $padding " ") (add $maxLen $padding) }}
+{{ range split (replaceRE $re "$1\n" (trim . " \t\n\r" )) "\n" -}}
+{{- printf $fmt . -}}
+{{ end }}{{ $indent }}{{ $line }}{{ end -}}

@@ -1,5 +1,5 @@
 {{ with .Params.tags }}
-        <div class="tags">
+        <footer class="tags">
             <h5>More about…</h5>
             <ul>
                 {{- range . }}
@@ -7,5 +7,5 @@
                 <li><a href="{{ absURL $path }}">{{ . }}</a></li>
                 {{- end }}
             </ul>
-        </div>
+        </footer>
 {{- end -}}

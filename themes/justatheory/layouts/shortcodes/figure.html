@@ -1,18 +1,1 @@
-<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}{{ with or (.Get "title") (.Get "alt") }} title="{{ partial "attr.html" . }}"{{ end }}>
-	{{- $src := partial "link.html" (dict "Page" $.Page "Site" $.Site "src" (.Get "src" )) -}}
-	{{- if .Get "link"}}
-	<a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
-		<img src="{{ $src }}"{{ with or (.Get "alt") (.Get "title") }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Get "width" }} width="{{ . }}"{{ end }}{{ with .Get "height" }} height="{{ . }}"{{ end }} />
-	</a>
-	{{- else }}
-	<img src="{{ $src }}"{{ with or (.Get "alt") (.Get "title") }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Get "width" }} width="{{ . }}"{{ end }}{{ with .Get "height" }} height="{{ . }}"{{ end }} />
-	{{- end }}
-	{{- if or (or (.Get "heading") (.Get "caption")) (.Get "attr") }}
-	<figcaption>{{ with .Get "heading" }}
-		<h4>{{ . | markdownify }}</h4>{{ end }}{{ if or (or (.Get "caption")) (.Get "attr") }}
-		<p>{{ with .Get "caption" }}{{ . | markdownify }}{{ end }}{{ if .Get "attr" }}
-			<cite>{{ with .Get "attrlink"}}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink" }}</a>{{ end }}</cite>
-		{{ end }}{{ end }}</p>
-	</figcaption>
-	{{- end }}
-</figure>
+{{- partial "figure.html" (dict "Params" .Params "Page" $.Page "Site" $.Site) -}}

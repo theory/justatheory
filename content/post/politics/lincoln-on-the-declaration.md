@@ -2,7 +2,7 @@
 title: "Lincoln on the Declaration"
 date: 2018-07-04T16:01:30Z
 lastMod: 2018-07-04T16:01:30Z
-description: ~
+description: "Wise statesmen as they were, they knew the tendency of prosperity to breed tyrants…"
 tags: [Abraham Lincoln, Declaration of Independence, Unalienable Rights, Tyrants]
 type: post
 link: https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567?rgn=div1;view=fulltext

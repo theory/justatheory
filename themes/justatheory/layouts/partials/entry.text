@@ -2,6 +2,9 @@
   Link: {{ . }}
 {{ end }}
 {{ strings.TrimRight " \t\n\r" .RawContent }}
+{{- with .Params.via }}
+
+(Via [{{ .name }}]({{ .href }}{{ with .title }} "{{ . }}"{{ end }}){{ end }}
 
 -------------------------------------------------------------------------------
 

@@ -24,8 +24,8 @@ So I wrote [pgenv]. To use it, clone it into `~/.pgenv` (or wherever you want)
 and add its `bin` directories to your `$PATH` environment variable:
 
 ``` sh
-$ git clone https://github.com/theory/pgenv.git
-$ echo 'export PATH="$HOME/.pgenv/bin:$HOME/.pgenv/pgsql/bin:$PATH"' >> ~/.bash_profile
+git clone https://github.com/theory/pgenv.git
+echo 'export PATH="$HOME/.pgenv/bin:$HOME/.pgenv/pgsql/bin:$PATH"' >> ~/.bash_profile
 ```
 
 Then you're ready to go:

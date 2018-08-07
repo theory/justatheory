@@ -8,7 +8,7 @@ type: post
 link: https://www.amydevitt.com/genre-colored-glasses/they-is-smart
 ---
 
-Self-professed "language nerd" Amy Devitt says [They is Smart]:
+Self-professed language nerd Amy Devitt says [They is Smart]:
 
 > Mixing singular and plural is pretty common in most people’s speech and even writing:
 >

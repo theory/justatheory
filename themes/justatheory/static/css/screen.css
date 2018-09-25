@@ -315,7 +315,7 @@ h6, h6 a, h6 a:hover, h6 a:visited {
 .pagination {
     text-align: right;
     margin: 0 auto;
-    padding-bottom : 18px;
+    padding: 0 18px 18px 18px;
     width: 676px;
 }
 
@@ -324,7 +324,7 @@ table .num {
 }
 
 .pagination li {
-    padding-left: 1em;
+    padding-left: .8em;
 }
 
 .pagination a {
@@ -655,7 +655,6 @@ body > header > nav li.icon {
 
 article {
     margin: 0 auto;
-    width: 100%;
     padding: 0 18px;
 }
 
@@ -966,6 +965,10 @@ body > footer ul li:last-child {
     }
     body > header > hgroup.top h1 {
         font-size: 2em;
+    }
+
+    .pagination {
+        width: 100%;
     }
 }
 

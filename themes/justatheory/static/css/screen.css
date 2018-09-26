@@ -235,6 +235,7 @@ body {
 main {
     min-height:100%;
     height:auto;
+    padding: 0 18px;
     padding-bottom: 58px !important;
 }
 
@@ -315,7 +316,7 @@ h6, h6 a, h6 a:hover, h6 a:visited {
 .pagination {
     text-align: right;
     margin: 0 auto;
-    padding: 0 18px 18px 18px;
+    padding-bottom: 18px;
     width: 676px;
 }
 
@@ -874,10 +875,6 @@ p pre code, li pre code {
 
 #archive > header {
     margin: 20px 0;
-}
-
-#archive, #taxterms, main#tags, article.about, #home, article.post {
-    padding: 0 18px;
 }
 
 #archive section > div {

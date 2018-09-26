@@ -655,7 +655,6 @@ body > header > nav li.icon {
 
 article {
     margin: 0 auto;
-    padding: 0 18px;
 }
 
 article .footnotes li {
@@ -875,6 +874,10 @@ p pre code, li pre code {
 
 #archive > header {
     margin: 20px 0;
+}
+
+#archive, #taxterms, main#tags, article.about, #home, article.post {
+    padding: 0 18px;
 }
 
 #archive section > div {

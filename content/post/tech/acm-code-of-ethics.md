@@ -1,5 +1,5 @@
 ---
-title: "Acm Code of Ethics"
+title: "ACM Code of Ethics"
 date: 2018-09-25T13:37:03Z
 lastMod: 2018-09-25T13:37:03Z
 description: The Association for Computing Machinery updates its code for the networked computing age, promoting ethical, responsible computer engineering.

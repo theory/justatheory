@@ -2,7 +2,7 @@
 title: Flaked, Brewed, and Docked
 date: 2018-10-08T01:54:49Z
 lastMod: 2018-10-08T01:54:49Z
-description: The quickest way to get started with Sqitch is to use the new [Docker image](https://hub.docker.com/r/sqitch/sqitch/).
+description: "Sqitch v0.9998: Now with Snowflake support, an improved Homebrew tap, and the quickest way to get started: the new [Docker image](https://hub.docker.com/r/sqitch/sqitch/)."
 tags: [Sqitch, Docker, Homebrew, Snowflake]
 ---
 

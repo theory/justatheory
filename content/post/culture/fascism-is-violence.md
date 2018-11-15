@@ -2,7 +2,7 @@
 title: "Fascism Is Violence"
 date: 2018-11-15T01:25:39Z
 lastMod: 2018-11-15T01:25:39Z
-description: “Fascism is Not an Idea to Be Debated, It’s a Set of Actions to Fight”
+description: “Fascism is not an idea to be debated, it’s a set of actions to fight”
 tags: [Culture, Fascism, Aleksandar Hemon, The New Yorker]
 type: post
 link: https://lithub.com/fascism-is-not-an-idea-to-be-debated-its-a-set-of-actions-to-fight/

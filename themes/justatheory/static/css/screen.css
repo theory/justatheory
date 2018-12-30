@@ -413,11 +413,17 @@ article.about .text > figure:first-child {
 
 ul ul {
     list-style-type: circle;
+}
+
+ul > ul {
     margin-bottom: 0px
 }
 
 ul ul ul {
     list-style-type: square;
+}
+
+ul > ul > ul {
     margin-bottom: 0px
 }
 
@@ -427,11 +433,17 @@ ol {
 
 ol ol {
     list-style-type: lower-alpha;
+}
+
+ol > ol {
     margin-bottom: 0px
 }
 
 ol ol ol {
     list-style-type: lower-roman;
+}
+
+ol > ol > ol {
     margin-bottom: 0px
 }
 

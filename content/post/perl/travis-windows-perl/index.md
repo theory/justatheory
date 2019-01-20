@@ -4,7 +4,6 @@ date: 2019-01-20T22:21:15Z
 lastMod: 2019-01-20T22:21:15Z
 description: A [sample project](https://github.com/theory/winperl-travis) demonstrates a few techniques for testing Perl projects in the Travis CI Windows environment.
 tags: [Perl, Travis CI, Windows, Strawberry Perl]
-type: content
 ---
 
 A few months ago, [Travis CI announced] early access for a [Windows build

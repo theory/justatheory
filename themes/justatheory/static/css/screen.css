@@ -470,6 +470,30 @@ sub {
     bottom: -.5em
 }
 
+sup.footnote-ref > a {
+    color: #777;
+    background-color: #e3e3e3;
+    border-radius: 50%;
+    padding: 0.05em 0.5em 0.05em;
+    font-size: 0.8em;
+}
+
+sup.footnote-ref > a:hover, a.footnote-return:hover {
+    background-color: #c00;
+    text-decoration: none;
+    color: #fff !important;
+}
+
+a.footnote-return {
+    color: #777;
+    position: relative;
+    top: -0.2em;
+    background-color: #e3e3e3;
+    border-radius: 40%;
+    padding: 0.2em 0.4em 0;
+    font-size: 0.7em;
+}
+
 q:before {
     content: "\201C"
 }

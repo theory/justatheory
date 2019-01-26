@@ -38,7 +38,7 @@ ports for potentially-vulnerable services to exploit. The OS allows such
 services transparent access the file system via automatic decryption. Exploiting
 such a service allows access to any data the service can access.
 
-But, law enforcement investigations aside[^law-enforcement-access], who bothers
+But, law enforcement investigations aside,[^law-enforcement-access] who bothers
 with physical possession? Organizations increasingly rely on cloud providers
 with data distributed across multiple servers, perhaps hundreds or thousands,
 rendering the idea of physical confiscation nearly meaningless. Besides, when
@@ -52,7 +52,7 @@ responsibility to the [security of processing (GDPR Article 32)][GDPR-32]. This
 interpretation may be legally correct[^gdpr-precedents] and relatively
 straight-forward to achieve: simply enable [disk encryption], protect the keys
 via an appropriate and closely-monitored key management system, and migrate data
-to the encrypted file systems[^or-databases].
+to the encrypted file systems.[^or-databases]
 
 This level of protection against physical access is absolutely necessary for
 protecting sensitive data.
@@ -62,7 +62,7 @@ protecting sensitive data.
 When was the last time a breach stemmed from physical access to a server? Sure,
 some reports in the [list of data breaches] identify "lost/stolen media" as the
 beach method. But we're talking lost (and unencrypted) laptops and drives. Hacks
-(service vulnerability exploits), accidental publishing[^more-on-access-later],
+(service vulnerability exploits), accidental publishing,[^more-on-access-later]
 and "poor security" account for the vast majority of breaches. Encryption of
 server data at rest addresses none of these issues.
 

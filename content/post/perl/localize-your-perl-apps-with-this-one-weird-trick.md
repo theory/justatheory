@@ -204,7 +204,7 @@ Let's give it something to do!
 
 ### Locale Motion ###
 
-To add a French translation file, use the [`msg-init`] command[^l10n:gettext]:
+To add a French translation file, use the [`msg-init`] command:[^l10n:gettext]
 
 ``` sh
 % dzil msg-init fr

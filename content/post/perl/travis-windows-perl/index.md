@@ -96,7 +96,7 @@ The use of [cpanminus], which ships with [Strawberry Perl], keeps things simple,
 and is essential for installing dependencies. But projects can also perform the
 usual `gmake test`[^strawberry-gmake-issue] or `perl Build.PL && ./Build test`
 dance. Install [Dist::Zilla] via [cpanminus] to manage `dzil`-based projects.
-Sadly, `prove` currently [does not work] under Git Bash[^prove-git-bash-workaround].
+Sadly, `prove` currently [does not work] under Git Bash.[^prove-git-bash-workaround]
 
 Perhaps Travis will add [full Perl support] and things will become even easier.
 In the meantime, I'm pleased that I no longer have to guess about Windows

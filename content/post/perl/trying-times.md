@@ -20,7 +20,7 @@ if (my $err = $@) {
 
 The use of the `if` block is a bit unfortunate; worse is the use of the global
 `$@` variable, which has inflicted unwarranted pain on developers over the
-years[^try-fix]. Many Perl hackers put [Try::Tiny] to work to circumvent these
+years.[^try-fix] Many Perl hackers put [Try::Tiny] to work to circumvent these
 shortcomings:
 
 ``` perl

@@ -22,11 +22,11 @@ the data is secure.
 Mostly.
 
 Periodically, vulnerabilities arise that allow circumvention of device
-encryption, usually by exploiting a bug in a background service. OS vendors
-generally fix such issues quickly, so keep your system up to date. And if you
-work in IT, enable full disk encryption on all of your users' devices and disks.
-Doing so greatly reduces the risk of sensitive data exposure due to lost or
-stolen personal devices.
+encryption, usually by exploiting a bug in a background service. OS vendors tend
+to fix such issues quickly, so keep your system up to date. And if you work in
+IT, enable full disk encryption on all of your users' devices and drives. Doing
+so greatly reduces the risk of sensitive data exposure via lost or stolen
+personal devices.
 
 Servers, however, are another matter.
 
@@ -57,7 +57,7 @@ to the encrypted file systems[^or-databases].
 This level of protection against physical access is absolutely necessary for
 protecting sensitive data.
 
-***Necessary*, but not *sufficient.***
+**_Necessary_, but not _sufficient._**
 
 When was the last time a breach stemmed from physical access to a server? Sure,
 some reports in the [list of data breaches] identify "lost/stolen media" as the

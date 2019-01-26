@@ -89,7 +89,7 @@ at the application layer, the API layer, and, yes, [the human layer], too.
     unknown, deceased, or incapacitated) --- until the data can be forensically
     extracted.
   [^and-in-transit]: Yes, and in transit.
-  [^gdpr-precedents]: Although currently no case history or precedents exist.
+  [^gdpr-precedents]: Although currently no precedent-setting case law exists.
     Falling back on [PCI standards] may drive this interpretation.
   [^or-databases]: Or databases. The fundamentals are the same: encrypted data
     at rest with transparent access provided to services.

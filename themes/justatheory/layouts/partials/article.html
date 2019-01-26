@@ -11,7 +11,8 @@
             <time datetime="{{ .doc.Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .doc.Date.Format "2 Jan 2006" }}</time>
         </header>
         <div class="text">
-{{ .doc.Content }}
+{{/* XXX Move footnote return into the paragraph above it. */}}
+{{  .doc.Content | replaceRE "(</p>)\\n\\s*(<a class=\"footnote-return\"[^>]+>[^<]+</a>)" " $2$1" | safeHTML }}
 {{- with .doc.Params.via }}
             <p>(Via <a href="{{ .href }}"{{ with .title }} title="{{ .}}"{{ end }}>{{ .name }}</a>)</p>
 {{ end }}

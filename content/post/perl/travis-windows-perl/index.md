@@ -128,6 +128,7 @@ cross-platform confidence.
     "Travis CI Docs: ”Building a Perl Project“"
   [travis-perl helper]: https://github.com/travis-perl/helpers
     "Perl Module Travis-CI Helper"
+  [Dist::Zilla]: http://dzil.org "Dist::Zilla - Maximum Overkill for CPAN Authors"
   [cpanminus]: https://github.com/miyagawa/cpanminus
   [text-markup build]: https://travis-ci.org/theory/text-markup
   [issue #1]: https://github.com/theory/winperl-travis/issues/1

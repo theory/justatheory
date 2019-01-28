@@ -1,11 +1,10 @@
 ---
 title: "The Problem With Disk Encryption"
-date: 2019-01-21T20:23:30Z
-lastMod: 2019-01-21T20:23:30Z
-description: Full disk encryption is necessary but insufficient to protect sensitive and personal data under the GDPR.
+date: 2019-01-28T14:22:54Z
+lastMod: 2019-01-28T14:22:54Z
+description: Full disk encryption is necessary but insufficient to protect sensitive and personal data.
 tags: [Security, Privacy, Encryption, GDPR]
 type: post
-draft: true
 ---
 
 Full disk encryption provides incredible data protection for personal devices.

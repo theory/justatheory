@@ -5,7 +5,6 @@ lastMod: 2019-01-30T18:23:22Z
 description: What do creative professionals value in their jobs? More than perks, it's about the product of the work.
 tags: [Management, Culture, Work, BICEPS, Paloma Medina]
 type: post
-draft: true
 ---
 
 I've been thinking a lot about what creative professionals want and expect out

@@ -1,5 +1,5 @@
 ---
-title: "The Problem With Disk Encryption"
+title: The Problem With Disk Encryption
 date: 2019-01-28T14:22:54Z
 lastMod: 2019-01-28T14:22:54Z
 description: Full disk encryption is necessary but insufficient to protect sensitive and personal data.

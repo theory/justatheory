@@ -1,18 +1,16 @@
 ---
 title: "Flex Your BICEPS"
-date: 2019-01-26T21:18:51Z
-lastMod: 2019-01-26T21:18:51Z
-description: What do creative professionals value in their jobs?
+date: 2019-01-30T18:23:22Z
+lastMod: 2019-01-30T18:23:22Z
+description: What do creative professionals value in their jobs? More than perks, it's about the product of the work.
 tags: [Management, Culture, Work, BICEPS, Paloma Medina]
 type: post
 draft: true
 ---
 
 I've been thinking a lot about what creative professionals want and expect out
-of their jobs. It's not just about compensation, benefits, and perks. Most of us
-can't work for free, and we all need health insurance. That is, we require
-certain base features of a job, the absolute minimum for even considering
-employment:
+of their jobs. We require certain base features of a job, the absolute minimum
+for even considering employment:
 
 *   Fair, livable compensation for the work
 *   Comprehensive, low maintenance, effective benefits (especially health care)
@@ -22,10 +20,11 @@ employment:
 Employers attempting to skimp on any of these items devalue the people they
 employ and the work they do. Don't do that.
 
-Assuming an organization meets these fundamentals, what else gets people excited
-to go to work? What makes employees happy, committed to the work, and productive
+
+Assuming an organization meets these fundamentals, what else gets people
+excited to go to work? What makes employees happy, committed, and productive
 members of the team? Fortunately, I'm far from the first to explore this topic.
-Paloma Medina handily reduces the literature to the muscular acronym [BICEPS]:
+Paloma Medina reduces the literature to the muscular acronym [BICEPS]:
 
 > There are six core needs researchers find are most important for humans at
 > work. Not all are equally important to everyone. You might find that equity
@@ -33,7 +32,7 @@ Paloma Medina handily reduces the literature to the muscular acronym [BICEPS]:
 > important to your employee. Getting to know them and coaching to them is a
 > shortcut to making others feel understood and valued (aka inclusivity).
 
-The list:
+The BICEPS core needs:
 
 1.  Belonging
 2.  Improvement/Progress
@@ -42,13 +41,12 @@ The list:
 5.  Predictability
 6.  Significance
 
-The implications seem obvious, and they are. But beyond the utility of having
-these needs enumerated to think about collectively, I find it useful to examine
-them from varying frames of references. To that end, consider each from the
-perspective not of rewards and perks, certificates and foosball tables. Ponder
-them with the goal of creating a virtuous cycle, where the work improves the
-company, engendering greater satisfaction in the work, and encouraging more of
-the same.
+Beyond the utility of having these needs enumerated to think about collectively
+--- with obvious implications --- I find it useful to examine them from varying
+frames of references. To that end, consider each from the perspective not of
+rewards and perks, certificates and foosball tables. Ponder them with the goal
+of creating a virtuous cycle, where the work improves the company, engendering
+greater satisfaction in the work, and encouraging more of the same.
 
 ### Belonging
 
@@ -69,12 +67,12 @@ success for the organization.
 
 ### Improvement/Progress
 
-Funds for conferences, training, and formal education clearly provide value to
-employees wishing to make progress in their careers, or simply to improve
-themselves. But people also get satisfaction from work that helps the company to
-execute its strategies and meet its goals. Assuming the vision aligns with an
-employee's values,[^biceps-big-assumption] contributing to the material
-achievement of that vision becomes the employee's achievement, too.
+Funds for conferences, training, and formal education clearly help employees
+make progress in their careers, or to sipmly improve themselves. But people
+also get satisfaction from work that helps the company to execute its
+strategies and meet its goals. Assuming the vision aligns with an employee's
+values,[^biceps-big-assumption] contributing to the material achievement of
+that vision becomes the employee's achievement, too.
 
 So be sure to create opportunities for all employees to grow, both in their
 careers and contributions to the company mission. Avoid artificial divides
@@ -91,10 +89,10 @@ Typically, "choice" means different healthcare plans, Mac or PC, sitting or
 standing desk. Such perks are nice, but not materially meaningful.[^biceps-mac]
 The choices that warm the creative worker's heart have much more to do with
 autonomy and decision-making than fringe benefits. Let teams choose their
-projects, decide on technologies, organize responsibilities, make the plans to
-execute. People empowered to take initiative and make decisions without
-micromanagement or post-hoc undermining find motivation and reward in the work
-itself. Let them do it!
+projects, decide on technologies, self-organize, make the plans to execute.
+People empowered to take initiative and make decisions without micromanagement
+or post-hoc undermining find motivation and reward in the work itself. Let them
+do it!
 
 ### Equality/Fairness
 
@@ -103,19 +101,22 @@ decision-making process, and any other information necessary for their work,
 benefits, etc. That only stands to reason. But give them equal access to
 interesting work, too. Where possible, avoid unilaterally appointing people to
 teams or projects: let them organically organize and pick their collaborators
-and projects. Of course, such decisions can't be made in isolation; it wouldn't
-be fair. Rather, you'll need to hold regular get-togethers of all relevant
-teams to make such decisions collectively, [PI Planning]-style. Leave no one
-out.
+and projects. Such decisions mustn't be made in isolation; it wouldn't be fair.
+Rather, you'll need to hold regular get-togethers of all relevant teams to make
+such decisions collectively, [PI Planning]-style. Give everyone a voice, leave
+no one out, and they will mostly work out the optimal distribution of tasks.
 
 ### Predictability
 
 In addition to paying employees on time, every two weeks, make the work cycle
 predictable, too. Everyone should have a good idea when things happen, what the
 iteration cycle looks like, what the steps are and when they get slotted into
-the schedule, when projects complete and products ship, and what will they be
-working on next -- or at least what's in the pipeline for the teams to choose
-and plan for in the next iteration of the development process.
+the schedule, when projects complete and products ship. Just as importantly,
+make it clear what will they be working on next -- or at least what's in the
+pipeline for the teams to choose and plan for in the next iteration of the
+development process. A predictable cadence for the work lets people understand
+where they are at any given time, what's next, and what successful execution
+looks like.
 
 ### Significance
 

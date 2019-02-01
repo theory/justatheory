@@ -98,7 +98,7 @@ use Locale::Messages qw(bind_textdomain_filter);
 use Encode;
 BEGIN {
     $ENV{OUTPUT_CHARSET} = 'UTF-8';
-    bind_textdomain_filter 'Awesome-Module' => \&Encode::decode_utf8;
+    bind_textdomain_filter 'Awesome-Module' => \&Encode::decode_utf8, Encode::FB_DEFAULT;
 }
 ```
 
@@ -355,6 +355,9 @@ are just a few habits to get into:
 
 The [Dist::Zilla::LocaleTextDomain] plugin will do the rest.
 
+**Update 2019-01-31:** Added required malformed data configuration argument to
+the call to `bind_textdomain_filter` required by [this change] in Encode v2.99.
+
   [^1l10n:maketext]: What about [Locale::Maketext], you ask? It has not, alas,
     withsthood the test of time. For details, see Nikolai Prokoschenko's epic 2009
     polemic, "[On the state of i18n in Perl]." See also Steffen Winkler's
@@ -420,3 +423,4 @@ The [Dist::Zilla::LocaleTextDomain] plugin will do the rest.
     http://blogs.perl.org/users/aristotle/2011/04/stop-using-maketext.html
   [German Perl Workshop 2010]: http://conferences.yapceurope.org/gpw2010/
   [GNU gettext]: https://www.gnu.org/software/gettext/
+  [this change]: https://github.com/dankogai/p5-encode/pull/135

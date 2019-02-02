@@ -38,9 +38,10 @@ criminals who happen to control states. I hope some, at least, take it to heart.
 
   [a piece]:
     https://www.newyorker.com/news/our-columnists/the-trump-russia-investigation-and-the-mafia-state
+    "The Trump-Russia Investigation and the Mafia State"
   [depicting Hillary Clinton as Satan]:
     https://www.newyorker.com/news/our-columnists/why-the-russian-influence-campaign-remains-so-hard-to-understand
-    "The Trump-Russia Investigation and the Mafia State"
+    "Why the Russian Influence Campaign Remains So Hard to Understand"
   [uses this framing]:
     https://thehill.com/blogs/blog-briefing-room/news/295344-cia-director-russia-has-sophisticated-cyber-capabilities
     "CIA director warns of 'sophisticated' Russian hacking capabilities"

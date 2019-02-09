@@ -8,12 +8,12 @@ type: post
 draft: true
 ---
 
-In just about any discussion of the GDPR compliance, two proposals always come
-up: disk encryption and network perimeter protection. I recently criticized the
+In just about any discussion of GDPR compliance, two proposals always come up:
+disk encryption and network perimeter protection. I recently criticized the
 [focus on disk encryption], particularly its inability to protect sensitive data
-from live system exploits. Next I wanted to highlight the weaknesses of
-perimeter protection. But in doing a little research on the topic, I found that
-[Goran Begic] has already [made the case]:
+from live system exploits. Next I wanted to highlight the deficiencies of
+perimeter protection, but in doing a little research, I found that [Goran Begic]
+has already [made the case]:
 
 > Many organizations, especially older or legacy enterprises, are struggling to
 > adapt systems, behaviors, and security protocols to this new-ish and ever
@@ -25,43 +25,43 @@ perimeter protection. But in doing a little research on the topic, I found that
 > expanded into an ever changing system of devices and applications. These
 > assets are necessary for your organization to do business—they are what allow
 > you to communicate, exchange data, and make business decisions and are the
-> vehicle with which your organization's runs the business and delivers value to
+> vehicle with which your organization runs the business and delivers value to
 > its clients.
 
 Cloud computing and storage, remote workers, and the emerging preference for
 micro-services over monoliths[^borderline-monoliths] vastly complicate network
 designs and erode boundaries. Uber-services such as [Kubernetes] recover some
 control by wrapping all those micro-services in the warm embrace of a monolithic
-orchestration layer, but by no means restore the simplicity of earlier times. As
-soon as needs demand distributing data and services to multiple data centers or
-geographies, the complexity creeps back in. Host your data and services in the
-cloud and you'll find the boundary all but gone. Where's the data? It's
-*everywhere*.
+orchestration layer, but by no means restore the simplicity of earlier times.
+Once the business requires the distribution of data and services to multiple
+data centers or geographies, the complexity claws its way back. Host your data
+and services in the cloud and you'll find the boundary all but gone. Where's the
+data? It's *everywhere*.
 
 In such an environment, staying on top of all the vulnerabilities --- all the
 patches, all the services listening on this network or that, inside some
-firewall or out, accessed by whom and via what means --- exponentially more
-difficult. Even the most dedicated, careful, and meticulous of teams will sooner
+firewall or out, accessed by whom and via what means --- becomes exponentially
+more difficult. Even the most dedicated, careful, and meticulous of teams sooner
 or later overlook something. An unpatched vulnerability. An authentication bug
 in an internal service. A rogue cloud storage container to which an employee
-uploads unencrypted data. Any and all could happen. To judge by the [list of
-data breaches], they *do* happen. Strive for the best; expect the worst.
+uploads unencrypted data. Any and all could happen. [They *do*
+happen][breacchlist]. Strive for the best; expect the worst.
 
 __Because it's not a matter of whether or not your data will be breached. It's
 simply a matter of *when.*__
 
-Unfortunately, compliance discussions often end with these two mitigations, with
-disk encryption and network perimeter protection. Absolutely take every possible
-step to adopt them. And a discussion rightfully starts with them. But then it's
-not over. No, these two basics of data protection are but only the first step to
-protect sensitive data and to satisfy the responsibility to the [security of
-processing (GDPR Article 32)][GDPR-32]. Because sooner or later, no matter how
-comprehensive the data storage encryption and firewalling, eventually there will
-be a breach. *And then what?*
+Unfortunately, compliance discussions often end with these two mitigations, disk
+encryption and network perimeter protection. You should absolutely adopt them,
+and a discussion rightfully starts with them. But then it's not over. No, these
+two basics of data protection are but the first step to protect sensitive data
+and to satisfy the responsibility for [security of processing (GDPR Article
+32)][GDPR-32]. Because sooner or later, no matter how comprehensive the data
+storage encryption and firewalling, eventually there will be a breach. *And then
+what?*
 
-"What next" bears some thinking about. What's important is reducing risk in the
-inevitable event of a breach. How so? I suggest taking the provisions of the
-GDPR at face value, and consider three things:
+"What next" bears thinking about: How do you further reduce risk in the
+inevitable event of a breach? I suggest taking the provisions of the GDPR at
+face value, and consider three things:
 
 1.  [Privacy by design and default][GDPR-25]
 2.  [Anonymization and aggregation][WP-29]
@@ -70,12 +70,12 @@ GDPR at face value, and consider three things:
 Formally, items two and three fall under item 1, but I would summarize them as:
 
 1.  Collect only the minimum data needed for the job at hand
-2.  Anonymize and aggregate data to minimize its sensitivity
-3.  Pseudonymize the remaining data to eliminate its breach value
+2.  Anonymize and aggregate sensitive data to minimize its sensitivity
+3.  Pseudonymize remaining sensitive data to eliminate its breach value
 
 Put these three together, and the risk of sensitive data loss and the costs of
-mitigation decline dramatically. In short, take security seriously, yes, but
-also take privacy seriously.
+mitigation decline dramatically. In short, take security seriously, yes, *but
+also take privacy seriously.*
 
   [^borderline-monoliths]: It's okay, as a [former archaeologist] I'm allowed to
     let the metaphor stand on its own.

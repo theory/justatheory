@@ -5,7 +5,6 @@ lastMod: 2019-02-02T20:46:08Z
 description: Network perimeter protection is complicated, imperfect, and insufficient to protect sensitive and personal data.
 tags: [Security, Privacy, GDPR, Network Perimeter, Goran Begic]
 type: post
-draft: true
 ---
 
 In just about any discussion of GDPR compliance, two proposals always come up:

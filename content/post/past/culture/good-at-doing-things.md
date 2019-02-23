@@ -9,13 +9,13 @@ type: post
 ---
 
 Tonight, I attended a talk, [Good at doing things: Montessori education and
-higher-order cognitive functions], about the Montessori method of childhood
-education and its effects on neurological development. If I wasn’t a convert to
-the Montessori method before, I am now. Julie and I went to back to school night
-at Anna’s new school, [Childpeace Montessori] the other night, and we were both
-jealous. How we wish we could have had this kind of education! This talk really
-sealed it in my mind. I can’t imagine that I'd want Anna to have any other
-education.
+higher-order cognitive functions][good-at-doing-things], about the Montessori
+method of childhood education and its effects on neurological development. If I
+wasn’t a convert to the Montessori method before, I am now. Julie and I went to
+back to school night at Anna’s new school, [Childpeace Montessori] the other
+night, and we were both jealous. How we wish we could have had this kind of
+education! This talk really sealed it in my mind. I can’t imagine that I'd want
+Anna to have any other education.
 
 Anyway, I might write a bit more on this later, but for now, here are my notes
 from the talk. Enjoy.
@@ -457,8 +457,7 @@ Look around, figure out what needs to be done, and do it.
 Slides on [goodatdoingthings.com]. Will see about getting a video posted, as
 well.
 
-  [Good at doing things: Montessori education and higher-order cognitive
-  functions]: http://www.montessori-nw.org/section.cfm?wSectionID=3747
+  [good-at-doing-things]: http://www.montessori-nw.org/section.cfm?wSectionID=3747
   [Childpeace Montessori]: http://childpeace.org/
   [Good at Doing Things]: http://www.goodatdoingthings.com
   [The TOVA Company]: http://www.tovatest.com/

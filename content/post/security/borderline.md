@@ -44,7 +44,7 @@ more difficult. Even the most dedicated, careful, and meticulous of teams sooner
 or later overlook something. An unpatched vulnerability. An authentication bug
 in an internal service. A rogue cloud storage container to which an employee
 uploads unencrypted data. Any and all could happen. [They *do*
-happen][breacchlist]. Strive for the best; expect the worst.
+happen][breachlist]. Strive for the best; expect the worst.
 
 __Because it's not a matter of whether or not your data will be breached. It's
 simply a matter of *when.*__
@@ -86,7 +86,7 @@ also take privacy seriously.*
     "What is the Network Perimeter, Anyway?"
   [former archaeologist]: /2007/03/five-things/#2-i-used-to-be-an-archaeologist
   [Kubernetes]: https://kubernetes.io "Production-Grade Container Orchestration"
-  [list of data breaches]: https://en.wikipedia.org/wiki/List_of_data_breaches
+  [breachlist]: https://en.wikipedia.org/wiki/List_of_data_breaches
   [GDPR-32]: https://gdpr-info.eu/art-32-gdpr/ "Art. 32 GDPR: Security of processing"
   [GDPR-25]: https://gdpr-info.eu/art-25-gdpr/
     "Art. 25 GDPR - Data protection by design and by default"

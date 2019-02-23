@@ -25,8 +25,8 @@ hacking as "vast" and "sophisticated". As a technologist working in information
 security, I find this framing irresponsible and naïve at best --- complicit at
 worst. (Sadly, even the former director of the CIA [uses this framing].) The
 techniques are those used for fraud, extortion, blackmail, and the like. They
-effectively advance a criminal conspiracy because they're simple, exploit human
-vulnerabilities. A far cry from clandestine government surveillance or
+effectively advance a criminal conspiracy because they're simple; they exploit
+human vulnerabilities. A far cry from clandestine government surveillance or
 espionage, the point is disinformation for the benefit of a very few. Painting
 it as "massive" or "advanced" only increases its effectiveness.
 

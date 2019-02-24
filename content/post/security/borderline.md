@@ -1,7 +1,8 @@
 ---
 title: "Borderline"
-date: 2019-02-02T20:46:08Z
-lastMod: 2019-02-02T20:46:08Z
+date: 2019-02-11T02:05:36Z
+lastMod: 2019-02-11T02:05:36Z
+aliases: [2019/02/borderline/]
 description: Network perimeter protection is complicated, imperfect, and insufficient to protect sensitive and personal data.
 tags: [Security, Privacy, GDPR, Network Perimeter, Goran Begic]
 type: post

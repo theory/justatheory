@@ -118,7 +118,12 @@ Which leads me to…
 
 ### 4. Anna
 
-![Anna Flies](https://farm1.static.flickr.com/67/202287377_402f407e8e.jpg)
+{{% figure
+   src    = "flyer.jpg"
+   alt    = "Anna Flies"
+   width  = "683"
+   height = "1024"
+%}}
 
 Just a few months after our move to Portland, Julie got pregnant, and our
 daughter, Anna was born on May 13, 2005. She's nearly two now, and she's the

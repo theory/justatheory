@@ -40,18 +40,18 @@ the old iPad, because the anti-aliasing is even easier to see.
 <figure class="frame">
     <a href="https://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/"
       title="The New Yorker on the 1st gen iPad">
-      <img src="https://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg"
+      <img src="./new-yorker-ipad-1.jpg"
            alt="The New Yorker on the 1st gen iPad"/>
     </a>
     <a href="https://www.flickr.com/photos/theory/7007813821/sizes/o/in/set-72157629648560359/"
         alt="The New Yorker on the 3rd gen iPad with retina display">
-        <img src="https://farm8.staticflickr.com/7110/7007813821_6293e374eb_z.jpg"
+        <img src="./new-yorker-ipad-retina.jpg"
              alt="The New Yorker on the 3rd gen iPad with retina display" />
     </a>
     <figcaption>
         <p>Text content from <em>The New Yorker</em> on the first generation iPad
         (top) and the third generation iPad with retina display (bottom). Looks
-        great because it's text. Click for larger images.</p>
+        great because it's text.</p>
     </figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ Yorker* rock on the iPad, so I put aside some time to download the new *Vogue*
 app and take it for a spin.
 
 {{% figure
-  src   = "https://farm8.staticflickr.com/7239/7007841235_5559a170e1_o.png"
+  src   = "conde-venn.png"
   alt   = "*The New Yorker* & *Vogue* Venn Diagram"
   title = "*The New Yorker* & *Vogue* Venn Diagram"
   class = "right"
@@ -89,11 +89,10 @@ form factor allows you to eliminate some of the differences. After all, bits
 don't weigh anything.
 
 {{% figure
-  src   = "https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg"
+  src   = "vogue-ipad-retina.jpg"
   alt   = "*Vogue* on the new iPad"
   title = "*Vogue* on the new iPad"
-  link  = "https://www.flickr.com/photos/theory/7007813933/sizes/l/in/set-72157629648560359/"
-  caption = "Image content from *Vogue* on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image. Click for larger images."
+  caption = "Image content from *Vogue* on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image."
 %}}
 
 Except that they do. The *Vogue* April 2012 issue weighs in at a whopping 408

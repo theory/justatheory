@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-   src   = "https://farm5.static.flickr.com/4075/4799027539_22c432423f_o.png"
+   src   = "flipr-logo.png"
    alt   = "Flipr Antisocial Networking"
    title = "Flipr Antisocial Networking"
    caption = "Logo design by [Strongrrl](http://www.strongrrl.com/)."

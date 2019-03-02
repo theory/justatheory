@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src    = "https://farm4.staticflickr.com/3066/3068417561_f08cbf814c_o.jpg"
+  src    = "passenger.jpg"
   alt    = "Portland to Rouen"
   width  = "1024"
   height = "681"

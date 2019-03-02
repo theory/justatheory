@@ -8,10 +8,9 @@ type: post
 ---
 
 {{% figure
-  src     = "https://farm4.static.flickr.com/3504/3236480663_b2d1fd08be.jpg"
+  src     = "server-room.jpg"
   alt     = "My “Server Room”"
   caption = "My “Server Room”"
-  link    = "https://www.flickr.com/photos/theory/3236480663/"
 %}}
 
 Some of you no doubt noticed that this site was down for several days, starting

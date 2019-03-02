@@ -8,9 +8,11 @@ type: post
 ---
 
 {{% figure
-  src     = "https://farm1.staticflickr.com/14/15190646_0fa044eda0_o.jpg"
+  src     = "enveloped.jpg"
   alt     = "Anna Lily Wheeler"
   caption = "Anna Lily Wheeler"
+  width   = "667"
+  height  = "1000"
   title   = "See Anna’s first week of life on Flickr"
   link    = "https://www.flickr.com/photos/theory/sets/366828/"
 %}}

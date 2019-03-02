@@ -8,9 +8,11 @@ type: post
 ---
 
 {{% figure
-   src  = "https://farm2.static.flickr.com/1282/4661840263_019e867a6e.jpg"
-   alt  = "Blowing out the candles"
-   link = "https://www.flickr.com/photos/theory/sets/72157624186238202/"
+   src    = "wishing.jpg"
+   alt    = "Blowing out the candles"
+   width  = "1024"
+   height = "681"
+   link   = "https://www.flickr.com/photos/theory/sets/72157624186238202/"
 %}}
 
 Eight little girls gathered in May, 2010, to celebrate the fifth anniversary of

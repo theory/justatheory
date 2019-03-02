@@ -219,7 +219,7 @@ something like this soon.
   [John Gruber]: https://daringfireball.net/colophon/
   [`<img>`]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
   [this example]: https://daringfireball.net/2017/05/halide.text
-  [this old post]: {{% ref "post/past/apps/conde-nast-ipad.md" %}}
+  [this old post]: {{% ref "post/past/apps/conde-nast-ipad/index.md" %}}
   [conversion interface]: https://www.text-image.com/
   [box elements]: https://en.wikipedia.org/wiki/Box-drawing_character
     "Wikipedia: “Box-drawing character”"

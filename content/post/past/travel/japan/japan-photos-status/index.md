@@ -23,7 +23,7 @@ of course), but still, I question their algorithm. Since one can’t access one�
 entire history of tweets (yet?), I can’t count for myself, either, alas.
 
 {{% figure
-  src   = "https://farm3.static.flickr.com/2579/4175349157_8bc05dce12.jpg"
+  src   = "kiyomizu-temple-stage.jpg"
   alt   = "Kiyomizu Temple Stage"
   title = "Kiyomizu Temple Stage"
   link  = "https://www.flickr.com/photos/theory/sets/72157622853441435/"

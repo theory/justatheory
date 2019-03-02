@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src    = "https://farm4.staticflickr.com/3359/3330418728_7a8a5024bb_z.jpg"
+  src    = "rouen-skyline.jpg"
   alt    = "Rouen Skyline"
   link   = "https://www.flickr.com/photos/theory/3330418728/"
   title  = "Rouen Skyline"

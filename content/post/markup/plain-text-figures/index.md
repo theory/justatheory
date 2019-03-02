@@ -79,17 +79,17 @@ squint, it looks like an image in a frame, right? If you want to include a link,
 just add it below the image URL. Here's an example adapted from [this old post]:
 
 ```
-  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
-  {                                                                      }
-  {                      [*Vogue* on the new iPad]                       }
-  {   https://farm8.staticflickr.com/7198/7007813933_bd7e86947c_z.jpg    }
-  {     (https://www.flickr.com/photos/theory/7007813933/sizes/l/)       }
-  {                                                                      }
-  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
-  {  Image content from *Vogue* on the new iPad. Not shown: the second   }
-  {  that it's blurry while the image engine finishes loading and        }
-  {  displaying the image.                                               }
-  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+  {                                                                         }
+  {                       [*Vogue* on the new iPad]                         }
+  {   https://justatheory.com/2012/03/conde-nast-ipad/vogue-ipad-retina.jpg }
+  {      (https://www.flickr.com/photos/theory/7007813933/sizes/l/)         }
+  {                                                                         }
+  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+  {  Image content from *Vogue* on the new iPad. Not shown: the second that }
+  {  that it's blurry while the image engine finishes loading and           }
+  {  displaying the image.                                                  }
+  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
 ```
 
 The link appears in parentheses (just like in the text [link format]). The
@@ -98,23 +98,23 @@ include multiple images in a figure? Just add them, as long as the caption, if
 there is one, appears in the last "box" in the "frame":
 
 ```
-  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
-  {                                                                      }
-  {                [*The New Yorker* on the 1st gen iPad]                }
-  {   https://farm8.staticflickr.com/7059/6861697774_a7ac0d9356_z.jpg    }
-  {      (https://www.flickr.com/photos/theory/6861697774/sizes/o/)      }
-  {                                                                      }
-  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
-  {                                                                      }
-  {      [*The New Yorker* on the 3rd gen iPad with retina display]      }
-  {   https://farm8.staticflickr.com/7110/7007813821_6293e374eb_z.jpg    }
-  {      (https://www.flickr.com/photos/theory/7007813821/sizes/o/)      }
-  {                                                                      }
-  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
-  {  Text content from *The New Yorker* on the first generation iPad     }
-  {  (top) and the third generation iPad with retina display (bottom).   }
-  {  Looks great because it's text.                                      }
-  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+  {                                                                            }
+  {                   [*The New Yorker* on the 1st gen iPad]                   }
+  {      http://localhost:1313/2012/03/conde-nast-ipad/new-yorker-ipad-1.jpg   }
+  {         (https://www.flickr.com/photos/theory/6861697774/sizes/o/)         }
+  {                                                                            }
+  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+  {                                                                            }
+  {         [*The New Yorker* on the 3rd gen iPad with retina display]         }
+  {   http://localhost:1313/2012/03/conde-nast-ipad/new-yorker-ipad-retina.jpg }
+  {         (https://www.flickr.com/photos/theory/7007813821/sizes/o/)         }
+  {                                                                            }
+  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+  {  Text content from *The New Yorker* on the first generation iPad (top)     }
+  {  and the third generation iPad with retina display (bottom). Looks great   }
+  {  because it's text.                                                        }
+  {~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
 ```
 
 You can tell I like to center the images, though not the caption. Maybe you

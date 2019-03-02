@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src   = "https://farm9.staticflickr.com/8010/7459991666_7f33908a53_z.jpg"
+  src   = "at-st-ouen.jpg"
   alt   = "At the Church of St. Ouen"
   title = "At the Church of St. Ouen, Rouen"
   class = "left"
@@ -26,7 +26,7 @@ me to work remotely. So far it is working quite well, I think, especially since
 most of my time is going into [Sqitch], an open-source project.
 
 {{% figure
-  src   = "https://farm8.staticflickr.com/7110/7427421028_7848ffafe7_n.jpg"
+  src   = "domination-and-control.jpg"
   alt   = "Domination and Control"
   title = "Domination and Control"
   class = "right"
@@ -50,7 +50,7 @@ A few other items of interest:
 -   Anna now has [her own blog], too. Check regularly for her photos.
 
 -   {{% figure
-        src   = "https://farm8.staticflickr.com/7266/7447407870_71d68c6d90_n.jpg"
+        src   = "cidre.jpg"
         alt   = "Cidre"
         title = "Delicious, delicious cidre"
         class = "right"

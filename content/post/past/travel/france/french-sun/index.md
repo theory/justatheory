@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src     = "https://farm9.staticflickr.com/8102/8583754790_3297ccf5f7_c.jpg"
+  src     = "arles.jpg"
   alt     = "Arles from the Arena"
   link    = "https://www.flickr.com/photos/decar66/8583754790/"
   title   = "Arles from the Arena"

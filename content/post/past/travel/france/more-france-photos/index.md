@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3212/3141571683_3e50ab09ac_m.jpg"
+  src   = "dangly-earrings.jpg"
   alt   = "Dangly Earrings"
   class = "left"
   link  = "https://www.flickr.com/photos/theory/sets/72157611685878685/"
@@ -22,7 +22,7 @@ Anna was especially happy with the dangly earrings. Click the photo to see the
 complete set.
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3377/3183440970_846dbd4454_m.jpg"
+  src   = "rose-window.jpg"
   alt   = "Rose Window"
   class = "right"
   link  = "https://www.flickr.com/photos/theory/sets/72157612369764118/"
@@ -37,7 +37,7 @@ I'm especially proud of this photo, it just came together perfectly. Click for
 the complete set.
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3429/3192839609_afdf96d516_m.jpg"
+  src   = "overlooking-pool.jpg"
   alt   = "Overlooking the Pool"
   class = "left"
   link  = "https://www.flickr.com/photos/theory/sets/72157612509742722/"
@@ -51,7 +51,7 @@ loved it so much that she wanted to go back, which we did in January. Maybe I'll
 get to *those* photos sometime in March. ;-)
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3395/3205258896_caa9381ece_m.jpg"
+  src   = "lamour-fontaine.jpg"
   alt   = "L’Amour (les Lèvres), Fontaine Stravinsky"
   class = "right"
   link  = "https://www.flickr.com/photos/theory/sets/72157612692473962/"
@@ -64,7 +64,7 @@ weather kind of lended itself to the mood at La Fontaine Stravinsky. And of
 course, I have more photos of Anna playing in the children's exhibit there.
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3473/3242812444_79e0c26fbd_m.jpg"
+  src   = "combien-des-bons-bons.jpg"
   alt   = "Combien des bon-bons?"
   class = "left"
   link  = "https://www.flickr.com/photos/theory/sets/72157613206066864/"

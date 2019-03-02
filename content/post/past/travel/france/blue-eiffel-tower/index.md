@@ -8,11 +8,10 @@ type: post
 ---
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3114/3138733614_1c773a6f1d.jpg"
+  src   = "sparkling-blue-eiffel.jpg"
   alt   = "Blue Eiffel Tower"
   link  = "https://www.flickr.com/photos/theory/3138733614/in/set-72157611621954549/"
   title = "Blue Eiffel"
-  class = "left"
 %}}
 
 I finally got around to posting my photos of the [Blue Eiffel Tower] on Flickr.

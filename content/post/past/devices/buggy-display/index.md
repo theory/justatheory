@@ -8,9 +8,8 @@ type: post
 ---
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3384/3592818370_0aa2ace10c.jpg"
+  src   = "buggy-mackbook-pro.jpg"
   alt   = "My Buggy MacBook Pro"
-  link = "https://www.flickr.com/photos/theory/3592818370/"
 %}}
 
 A few days ago, I noticed a bug crawling across the screen of my MacBook Pro as

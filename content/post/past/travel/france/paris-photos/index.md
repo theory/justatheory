@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3089/3089961287_4cefe1de04.jpg"
+  src   = "timing-sacre-coeur.jpg"
   alt   = "Timing Sacre Coeur"
   link  = "https://www.flickr.com/photos/theory/sets/72157610690990602/"
   title = "Musée D’Orsay, Notre Dame, Centre Pompidou"

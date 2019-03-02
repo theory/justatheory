@@ -8,10 +8,10 @@ type: post
 ---
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3599/3592158403_8cf35b0b84.jpg"
+  src   = "powerbook-on-crack.jpg"
   alt   = "Cracked PowerBook Screen"
   title = "Cracked PowerBook Screen"
-  link  = "https://www.flickr.com/photos/theory/3592158403/"
+  link  = "powerbook-on-crack-large.jpg"
 %}}
 
 No, my systems haven't been cracked. My 17" PowerBook G4 screen has been

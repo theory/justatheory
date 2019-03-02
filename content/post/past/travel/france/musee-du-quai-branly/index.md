@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src   = "https://farm4.static.flickr.com/3653/3352365419_b20debecd3.jpg"
+  src   = "branly.jpg"
   alt   = "Musée du quai Branly"
   link  = "https://www.flickr.com/photos/theory/sets/72157615217912698/"
   title = "Musée du quai Branly"

@@ -36,15 +36,15 @@ Thanks!
 
 --------------------------------------------------------------------------------
 
-### Name [Name]
+### Name
 
 Sqitch - VCS-powered SQL change management
 
-### Synopsis [Synopsis]
+### Synopsis
 
     sqitch [<options>] <command> [<command-options>] [<args>]
 
-### Description [Description]
+### Description
 
 Sqitch is a VCS-aware SQL change management application. What makes it different
 from your typical [migration]-[style] approaches? A few things:
@@ -94,7 +94,7 @@ Reduced Duplication
     [idempotent], you can change your code directly, and Sqitch will know it
     needs to be updated.
 
-#### Terminology [Terminology]
+#### Terminology
 
 `step`
 
@@ -135,7 +135,7 @@ Reduced Duplication
     applies reversion scripts for all steps to return the state to an earlier
     tag.
 
-### Options [Options]
+### Options
 
     -p --plan-file  FILE    Path to a deployment plan file.
     -e --engine     ENGINE  Database engine.
@@ -155,7 +155,7 @@ Reduced Duplication
     -H --help               Print a usage statement and exit.
     -M --man                Print the complete documentation and exit.
 
-### Options Details [Options-Details]
+### Options Details
 
 `-p`
 
@@ -331,7 +331,7 @@ Reduced Duplication
 
     Outputs the program name and version and exits.
 
-### Sqitch Commands [Sqitch-Commands]
+### Sqitch Commands
 
 `init`
 
@@ -455,7 +455,7 @@ Reduced Duplication
         and `test` directories will be written to it. Defaults to "package".
         Property name: `package.destdir`.
 
-### Configuration [Configuration]
+### Configuration
 
 Sqitch configuration information is stored in standard `INI` files. The `#` and
 `;` characters begin comments to the end of line, blank lines are ignored.
@@ -495,7 +495,7 @@ with the "gamma" tag:
         tags_only = yes
         dest_dir  = _build/sql
 
-#### Core Properties [Core-Properties]
+#### Core Properties
 
 This is the list of core variables, which much appear under the `[core]`
 section. See the documentation for individual commands for their configuration
@@ -571,7 +571,7 @@ options.
 :   The file name extension on deployment, reversion, and test SQL scripts.
     Defaults to `sql`.
 
-### Plan File [Plan-File]
+### Plan File
 
 A plan file describes the deployment tags and scripts to be run against a
 database. In general, if you use a VCS, you probably won't need a plan file,
@@ -580,7 +580,7 @@ to derive a deployment plan. However, if you really do need to maintain a plan
 file by hand, or just want to better understand the file as output by the
 `package` command, read on.
 
-#### Format [Format]
+#### Format
 
 The contents of the plan file are plain text encoded as UTF-8. It is divided up
 into sections that denote deployment states. Each state has a bracketed,
@@ -652,7 +652,7 @@ that step, and then, when it gets to the last tag, retrieve the deployment file
 as of its tags and apply it. This works in reverse, as well, as long as the
 changes in this file are always [idempotent].
 
-#### Grammar [Grammar]
+#### Grammar
 
 Here is the EBNF Grammar for the plan file:
 
@@ -674,7 +674,7 @@ Here is the EBNF Grammar for the plan file:
     white-space = ? white space characters ? ;
     string      = ? non-EOL characters ? ;
 
-### See Also [See-Also]
+### See Also
 
 The original design for Sqitch was sketched out in a number of blog posts:
 
@@ -703,11 +703,11 @@ Other tools that do database change management include:
 
 :   PostgreSQL-specific dependency-tracking solution by [depesz].
 
-### Author [Author]
+### Author
 
 David E. Wheeler \<david@justatheory.com\>
 
-### License [License]
+### License
 
 Copyright (c) 2012 iovation Inc.
 

@@ -1,5 +1,6 @@
 ---
 title: "Time is Short, So Be Generous"
+slug: time-for-generosity
 date: 2019-04-22T15:26:38Z
 lastMod: 2019-04-22T15:26:38Z
 description: The universe is hospitable to life for a limited time; let's make the best of it.

@@ -5,7 +5,7 @@ lastMod: 2019-06-04T16:27:22Z
 description: After seven years of development and production database deployments, I finally put in the effort to release v1.0.0.
 tags: [Sqitch, Databases, Change Management, Finally]
 type: post
-image: {src: sqitch-logo.svg, alt: Sqitch Logo, link: example.com, title: "Sqitch: Sensible database change management" }
+image: {src: sqitch-logo.png, alt: Sqitch Logo, title: "Sqitch: Sensible database change management" }
 ---
 
 {{% figure

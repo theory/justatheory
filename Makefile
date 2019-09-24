@@ -10,7 +10,7 @@ ${BUILD_DIR}:
 
 default: ${BUILD_DIR}
 
-deploy:
+publish:
 	hugo
 # Can't easily map content types, so sync HTML, XML, and Text first, then everything else.
 	aws s3 sync --acl public-read --sse --exclude "*" --include "*.html" --content-type "text/html; charset=utf-8" --metadata-directive=REPLACE --delete ${BUILD_DIR} s3://${BUCKET}
@@ -23,5 +23,5 @@ deploy:
 clean:
 	rm -rf ${BUILD_DIR}
 
-server:
+preview:
 	hugo server -D --bind 0.0.0.0

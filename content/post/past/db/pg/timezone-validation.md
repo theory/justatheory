@@ -139,6 +139,22 @@ CHECK ( is_timezone( value ) );
 
 Enjoy!
 
+**Update:** From a comment left by Tom Lane, use `invalid_parameter_value`
+rather than `OTHERS`:
+
+``` postgres
+CREATE OR REPLACE FUNCTION is_timezone( tz TEXT ) RETURNS BOOLEAN as $$
+DECLARE
+    date TIMESTAMPTZ;
+BEGIN
+    date := now() AT TIME ZONE tz;
+    RETURN TRUE;
+EXCEPTION invalid_parameter_value OTHERS THEN
+    RETURN FALSE;
+END;
+$$ language plpgsql STABLE;
+```
+
   [convert timestamp columns from UTC to a valid zone]: /computers/databases/postgresql/reducing_view_calculations.html
     "Need Help Reducing View Calculations"
   [error codes]: http://www.postgresql.org/docs/current/static/errcodes-appendix.html

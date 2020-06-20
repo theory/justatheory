@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: itheory/justahugo
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2

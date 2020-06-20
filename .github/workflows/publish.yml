@@ -10,11 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: itheory/justahugo
-      env:
-        AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
-        AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
+      # env:
+      #   AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
+      #   AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
     steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
-      - name: Build and Publish
-        run: make publish
+      - run env
+      # - name: Check out the repo
+      #   uses: actions/checkout@v2
+      # - name: Build and Publish
+      #   run: echo $AWS_ACCESS_KEY_ID && make publish

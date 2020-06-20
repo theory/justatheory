@@ -1,0 +1,21 @@
+name: CI/CD
+on:
+  push:
+    branches: ['*']
+  pull_request:
+    branches: ['*']
+  # schedule:
+  #   - cron: '0 14 30 * *' # Monthly at 2pm on the 30th
+jobs:
+  publish:
+    name: Publish Blog
+    # Publish main when the test job succeeds and it's not a pull request.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    container:
+      image: itheory/justahugo
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Build and Publish
+        run: make publish

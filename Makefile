@@ -2,7 +2,7 @@ SITE=justatheory.com
 BUCKET=${SITE}
 BUILD_DIR=public
 CLOUDFRONT_DISTID=E1X44SJ45FTNGI
-HUGO=${HOME}/go/src/github.com/gohugoio/hugo/hugo
+HUGO=hugo
 
 .DEFAULT_GOAL := default
 

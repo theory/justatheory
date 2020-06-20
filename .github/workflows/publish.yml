@@ -1,15 +1,11 @@
-name: CI/CD
+name: Publish
 on:
   push:
-    branches: ['*']
-  pull_request:
-    branches: ['*']
-  # schedule:
-  #   - cron: '0 14 30 * *' # Monthly at 2pm on the 30th
+    branches: [main]
 jobs:
   publish:
     name: Publish Blog
-    # Publish main when the test job succeeds and it's not a pull request.
+    # Publish main when it's not a pull request.
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     container:

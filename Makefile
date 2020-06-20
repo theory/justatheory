@@ -2,16 +2,17 @@ SITE=justatheory.com
 BUCKET=${SITE}
 BUILD_DIR=public
 CLOUDFRONT_DISTID=E1X44SJ45FTNGI
+HUGO=${HOME}/go/src/github.com/gohugoio/hugo/hugo
 
 .DEFAULT_GOAL := default
 
 ${BUILD_DIR}:
-	hugo
+	${HUGO}
 
 default: ${BUILD_DIR}
 
 publish:
-	hugo
+	${HUGO}
 # Can't easily map content types, so sync HTML, XML, and Text first, then everything else.
 	aws s3 sync --acl public-read --sse --exclude "*" --include "*.html" --content-type "text/html; charset=utf-8" --metadata-directive=REPLACE --delete ${BUILD_DIR} s3://${BUCKET}
 	aws s3 sync --acl public-read --sse --exclude "*" --include "*.xml"  --content-type "application/atom+xml; charset=utf-8" --metadata-directive=REPLACE ${BUILD_DIR} s3://${BUCKET}
@@ -24,4 +25,4 @@ clean:
 	rm -rf ${BUILD_DIR}
 
 preview:
-	hugo server -D --bind 0.0.0.0
+	${HUGO} server -D --bind 0.0.0.0

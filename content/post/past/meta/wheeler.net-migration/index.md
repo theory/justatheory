@@ -3,7 +3,7 @@ date: 2004-06-16T01:43:24Z
 slug: wheeler.net-migration
 title: david.wheeler.net Content Migration
 aliases: [/computers/internet/weblogs/wheeler.net_migration.html]
-Tags: [Just a Theory, David Wheeler, migrations]
+Tags: [Just a Theory, David Wheeler, Migrations]
 type: post
 ---
 

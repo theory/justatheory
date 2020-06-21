@@ -2,7 +2,7 @@ SITE=justatheory.com
 BUCKET=${SITE}
 BUILD_DIR=public
 CLOUDFRONT_DISTID=E1X44SJ45FTNGI
-HUGO=hugo
+HUGO := $(shell export PATH=$$(go env GOPATH)/src/github.com/gohugoio/hugo:$$PATH; which hugo)
 
 # Work around https://github.com/aws/aws-cli/issues/5234.
 export AWS_REGION=us-west-1

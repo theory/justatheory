@@ -30,10 +30,10 @@ clean:
 preview:
 	${HUGO} server -D --bind 0.0.0.0
 
-# Used by post to pass argments to `hugo new`. https://stackoverflow.com/a/32490846/79202
+# Matches any target and returns all args. https://stackoverflow.com/a/32490846/79202
 %:
 	@:
 
-# Filters out the args passed by the % target and strips out the leading content/.
+# Filters out the args returned by the % target and strips out the leading content/.
 post:
 	${HUGO} new $(patsubst content/%,%,$(filter-out $@,$(MAKECMDGOALS)))

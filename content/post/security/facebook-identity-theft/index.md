@@ -5,7 +5,7 @@ lastMod: 2018-06-14T14:49:26Z
 description: Some rando cybercriminal created a Facebook account to try to get a Foothold in my identity. Here's what I did about it.
 tags: [Security, Identity Theft, Facebook, Social Login, Rando Cybercriminal]
 type: post
-image: {src: confirm-account.png, alt: "Action Required: Confirm Your Facebook Account", caption: "Needless to say, I did not just register for Facebook." }
+image: {src: confirm-account.png, alt: "Action Required: Confirm Your Facebook Account", caption: "Needless to say, I did not just register for Facebook.", metaOnly: true }
 ---
 
 I get email:

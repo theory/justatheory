@@ -8,12 +8,6 @@ type: post
 image: {src: first-of-all-no.jpg, alt: "First of all, No", caption: "Photo by [Jazmin Quaynor](https://unsplash.com/@jazminantoinette) on [Unsplash](https://unsplash.com/)", title: "First of all, No" }
 ---
 
-{{% figure
-  src     = "first-of-all-no.jpg"
-  alt     = "First of all, No"
-  caption = "Photo by [Jazmin Quaynor](https://unsplash.com/@jazminantoinette) on [Unsplash](https://unsplash.com/)"
-%}}
-
 A couple months back, I saw *[Antigone in Ferguson]* at [St. Ann's Church] in
 Brooklyn. The project pairs dramatic readings of [Sophocles’ *Antigone*] with a
 moving choral arrangement performed by a diverse cast of activists, students,

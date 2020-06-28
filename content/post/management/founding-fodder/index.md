@@ -7,12 +7,6 @@ tags: [Management, Mission, Vision, Strategy, Meaning, Focus, Leadership, Consti
 image: {src: we-the-people.jpg, alt: We the People, caption: "Photo by [Anthony Garand](https://unsplash.com/photos/7rehTDIfR8o) on [Unsplash](https://unsplash.com/search/photos/constitution)", title: We the People }
 ---
 
-{{% figure
-  src     = "we-the-people.jpg"
-  alt     = "We the People"
-  caption = "Photo by [Anthony Garand](https://unsplash.com/photos/7rehTDIfR8o) on [Unsplash](https://unsplash.com/search/photos/constitution)"
-%}}
-
 Tone is set from the top, [they say]. I once started [a company] and ran it for
 10 years, but I rarely thought about leadership, let alone setting the tone. It
 mattered little, since I was the sole employee for most of that time. Now I

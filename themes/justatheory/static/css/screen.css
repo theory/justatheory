@@ -235,7 +235,7 @@ body {
 main {
     min-height:100%;
     height:auto;
-    padding: 0 18px;
+    padding: 0;
     padding-bottom: 58px !important;
 }
 
@@ -244,9 +244,14 @@ main {
     border-bottom: 1px dashed #ccc;
 }
 
+#tags > header {
+    padding: 0 18px;
+}
+
 article, #archive, #taxterms {
     max-width: 676px;
     margin: 0 auto;
+    padding: 0 18px;
     border-bottom: 1px dashed #ccc;
 }
 
@@ -299,6 +304,9 @@ h6, h6 a, h6 a:hover, h6 a:visited {
 }
 
 .photo > * {
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 0 18px;
     padding: 0 50px;
 }
 

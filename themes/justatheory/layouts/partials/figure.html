@@ -1,18 +1,22 @@
-<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
-	{{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
-	{{- if .Params.link}}
-	<a href="{{ .Params.link }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ with .Params.rel }} rel="{{ . }}"{{ end }}>
-		<img src="{{ $src }}"{{ with or .Params.alt .Params.title }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
-	</a>
-	{{- else }}
-	<img src="{{ $src }}"{{ with or .Params.alt .Params.title }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
-	{{- end }}
-	{{- if or (or .Params.heading .Params.caption) .Params.attr }}
-	<figcaption>{{ with .Params.heading }}
-		<h4>{{ . | markdownify }}</h4>{{ end }}{{ if or (or .Params.caption) .Params.attr }}
-		<p>{{ with .Params.caption }}{{ . | markdownify }}{{ end }}{{ if .Params.attr }}
-			<cite>{{ with .Params.attrlink}}<a href="{{ . }}">{{ end }}{{ .Params.attr | markdownify }}{{ if .Params.attrlink }}</a>{{ end }}</cite>
-		{{ end }}{{ end }}</p>
-	</figcaption>
-	{{- end }}
-</figure>
+{{- .Page.Scratch.Add "imgid" "x" -}}
+<input class="zoom" type="checkbox" id="zoom{{ .Page.Scratch.Get "imgid" }}"/>
+<label for="zoom{{ .Page.Scratch.Get "imgid" }}">
+	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
+		{{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
+		{{- if .Params.link}}
+		<a href="{{ .Params.link }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ with .Params.rel }} rel="{{ . }}"{{ end }}>
+			<img src="{{ $src }}"{{ with or .Params.alt .Params.title }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
+		</a>
+		{{- else }}
+			<img src="{{ $src }}"{{ with or .Params.alt .Params.title }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
+		{{- end }}
+		{{- if or (or .Params.heading .Params.caption) .Params.attr }}
+		<figcaption>{{ with .Params.heading }}
+			<h4>{{ . | markdownify }}</h4>{{ end }}{{ if or (or .Params.caption) .Params.attr }}
+			<p>{{ with .Params.caption }}{{ . | markdownify }}{{ end }}{{ if .Params.attr }}
+				<cite>{{ with .Params.attrlink}}<a href="{{ . }}">{{ end }}{{ .Params.attr | markdownify }}{{ if .Params.attrlink }}</a>{{ end }}</cite>
+			{{ end }}{{ end }}</p>
+		</figcaption>
+		{{- end }}
+	</figure>
+</label>

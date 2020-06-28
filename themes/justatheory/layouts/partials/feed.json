@@ -37,7 +37,7 @@
 				"avatar": {{ . | jsonify }}{{ end }}
 			},{{ end }}{{ with .Params.tags }}
 			"tags": {{ . | jsonify }}{{ end }},
-			"content_html": {{ trim (partial "entry.html" . ) " \t\n\r" | jsonify }},
+			"content_html": {{ trim (partial "article.html" (dict "doc" .)) " \t\n\r" | jsonify }},
 			"content_text": {{ trim (partial "entry.text" . ) " \t\n\r" | jsonify }}
 {{- end }}
 		}

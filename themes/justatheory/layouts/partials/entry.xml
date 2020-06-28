@@ -1,4 +1,4 @@
-{{- $html := partial "entry.html" . }}
+{{- $html := partial "article.html" (dict "doc" .) }}
 {{- if in $html "]]>" }}
 {{ trim $html " \t\n\r" | html }}
 {{- else }}

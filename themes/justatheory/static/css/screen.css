@@ -1184,6 +1184,13 @@ body > footer ul li:last-child {
         color: #aaa;
     }
     
+    figure {
+        background-color: #4b4a4a;
+    }
+
+    .photo figure {
+        background-color: #2d2d2d;
+    }
     
     /* Background */ pre, .chroma, .lntable { color: #2d2d2d; background-color: #ccc; } /* Modified to add pre & .lntable, and to match header background */
     /* Error */ .chroma .err { color: #aa0000; background-color: #ffaaaa }

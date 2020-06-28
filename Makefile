@@ -36,4 +36,7 @@ preview:
 
 # Filters out the args returned by the % target and strips out the leading content/.
 post:
-	${HUGO} new $(patsubst content/%,%,$(filter-out $@,$(MAKECMDGOALS)))
+	${HUGO} new -k post $(patsubst content/%,%,$(filter-out $@,$(MAKECMDGOALS)))
+
+photo:
+	${HUGO} new -k photo $(patsubst content/%,%,$(filter-out $@,$(MAKECMDGOALS)))

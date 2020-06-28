@@ -9,7 +9,8 @@
             {{- end }}
             <a rel="bookmark" href="{{ .doc.Permalink }}"></a>
             <time datetime="{{ .doc.Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .doc.Date.Format "2 Jan 2006" }}</time>
-        </header>
+        </header>{{ if (and .doc.Params.image (not .doc.Params.image.metaonly)) }}
+{{ partial "figure.html" (dict "Params" .doc.Params.image "Page" .doc "Site" .doc.Site) }}{{ end }}
         <div class="text">
 {{/* XXX Move footnote return into the paragraph above it. */}}
 {{  .doc.Content | replaceRE "(</p>)\\n\\s*(<a class=\"footnote-return\"[^>]+>[^<]+</a>)" " $2$1" | safeHTML }}

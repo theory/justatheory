@@ -235,18 +235,25 @@ body {
 main {
     min-height:100%;
     height:auto;
-    padding: 0 18px;
+    padding: 0;
     padding-bottom: 58px !important;
 }
 
-#tags > header, #taxterms > header, #archive > header {
-    margin: 20px 0;
+#xtags > header, #taxterms > header, #archive > header {
+    margin: 1rem 0 !important;
     border-bottom: 1px dashed #ccc;
+}
+
+#xtags > header {
+    max-width: 676px;
+    padding: 0 18px;
+    margin: 0 auto !important;
 }
 
 article, #archive, #taxterms {
     max-width: 676px;
     margin: 0 auto;
+    padding: 0 18px;
     border-bottom: 1px dashed #ccc;
 }
 
@@ -290,6 +297,14 @@ h6, h6 a, h6 a:hover, h6 a:visited {
     text-decoration: none !important;
 }
 
+#xphoto {
+    background-color: #2d2d2d;
+}
+
+#xphoto > header > nav a, #xphoto  > header > nav:hover {
+    color: #ccc !important;
+}
+
 .photo {
     background: #2d2d2d;
     max-width: 100% !important;
@@ -298,7 +313,10 @@ h6, h6 a, h6 a:hover, h6 a:visited {
     color: #ccc;
 }
 
-.photo > * {
+.photo > *, .photo > label > figure {
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 0 18px;
     padding: 0 50px;
 }
 
@@ -311,6 +329,11 @@ h6, h6 a, h6 a:hover, h6 a:visited {
 .photo a[rel=bookmark] {
     color: #ccc;
     text-decoration: none !important;
+}
+
+.photo .zoom { display: none }
+.photo .zoom:checked + label > figure {
+    max-width: 100%;
 }
 
 .pagination {
@@ -584,18 +607,13 @@ body > header > hgroup.top > *, body > header nav {
 
 body > header {
     font-size: 1.1em;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 body > header .bug {
     float: left;
     font-size: 3em !important;
     line-height: 1.4em !important;
-}
-
-body > header > hgroup.top, body > nav, body > footer {
-    /* padding-left: 18px;
-    padding-right: 18px */
 }
 
 body > header > hgroup.top {
@@ -633,7 +651,7 @@ body > nav ul {
 body > header > nav {
     white-space: nowrap;
     list-style-type: none;
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: 200;
     font-size: .85em;
     text-align: right;
@@ -806,7 +824,7 @@ table thead, table thead th {
 }
 
 table thead {
-    border-bottom: 2px solid #333
+    border-bottom: 2px solid #2d2d2d
 }
 
 table th, table td {
@@ -1064,7 +1082,7 @@ body > footer ul li:last-child {
 .text > pre, .highlight {
     margin-bottom: 1em;
     padding: .8em 1em;
-    background-color: #333;
+    background-color: #2d2d2d;
 }
 
 .highlight tbody {
@@ -1073,7 +1091,7 @@ body > footer ul li:last-child {
 }
 
 /* hugo gen chromastyles --style=monokai >> themes/justatheory/static/css/screen.css */
-/* Background */ pre, .chroma, .lntable { color: #f8f8f2; background-color: #333; } /* Modified to add pre & .lntable, and to match header background */
+/* Background */ pre, .chroma, .lntable { color: #f8f8f2; background-color: #2d2d2d; } /* Modified to add pre & .lntable, and to match header background */
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }

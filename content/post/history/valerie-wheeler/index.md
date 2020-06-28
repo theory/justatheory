@@ -5,16 +5,8 @@ lastMod: 2020-01-21T01:45:24Z
 description: Remembering Valerie Wheeler, Anthropologist, mentor, “mom”.
 tags: [History, Valerie Wheeler, CSUS, Anthropology]
 type: post
-image: {src: valerie.jpg, alt: Valerie Wheeler, caption: "CSUS Anthropology department picnic, 1991" }
+image: {src: valerie.jpg, alt: Valerie Wheeler, caption: "CSUS Anthropology department picnic, 1991", width: 293, class: "right frame" }
 ---
-
-{{% figure
-  src     = "valerie.jpg"
-  alt     = "Valerie Wheeler"
-  caption = "Valerie Wheeler at the CSUS Anthropology department picnic, 1991."
-  width   = "293"
-  class   = "right frame"
-%}}
 
 Two years ago, my undergraduate Anthropology advisor, Professor Valerie Wheeler,
 died after a sudden and brief battle with leukemia. She played a vital role

@@ -10,12 +10,6 @@ via: {name: kottke.org, href: https://kottke.org/19/03/timelapse-of-the-future, 
 image: {src: supermassive-blackhole.jpg, alt: Supermassive Black Hole, caption: Image by ESO/R.Genzel and S.Gillessen }
 ---
 
-{{% figure
-  src     = "supermassive-blackhole.jpg"
-  alt     = "Supermassive Black Hole"
-  caption = "Image by ESO/R.Genzel and S.Gillessen"
-%}}
-
 This video, [Timelapse of the Future], has kept me thinking ever since [Kottke
 posted it] a few weeks ago. Given current knowledge, the expectation is that the
 universe will go on forever, but thanks to entropy and expansion, it will

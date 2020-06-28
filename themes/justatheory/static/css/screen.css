@@ -240,12 +240,13 @@ main {
 }
 
 #tags > header, #taxterms > header, #archive > header {
-    margin: 20px 0;
+    margin: 1rem 0 !important;
     border-bottom: 1px dashed #ccc;
 }
 
 #tags > header {
-    padding: 0 18px;
+    max-width: 676px;
+    margin: 0 auto !important;
 }
 
 article, #archive, #taxterms {
@@ -293,6 +294,10 @@ h5, h5 a, h5 a:hover, h5 a:visited,
 h6, h6 a, h6 a:hover, h6 a:visited {
     color: #111;
     text-decoration: none !important;
+}
+
+#photo {
+    background-color: #A6A39E;
 }
 
 .photo {
@@ -598,18 +603,13 @@ body > header > hgroup.top > *, body > header nav {
 
 body > header {
     font-size: 1.1em;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 body > header .bug {
     float: left;
     font-size: 3em !important;
     line-height: 1.4em !important;
-}
-
-body > header > hgroup.top, body > nav, body > footer {
-    /* padding-left: 18px;
-    padding-right: 18px */
 }
 
 body > header > hgroup.top {
@@ -647,7 +647,7 @@ body > nav ul {
 body > header > nav {
     white-space: nowrap;
     list-style-type: none;
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: 200;
     font-size: .85em;
     text-align: right;

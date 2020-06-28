@@ -33,7 +33,7 @@
 	{{ end }}
 	{{- .Hugo.Generator }}
 </head>
-<body>
+<body id="{{ .Type }}">
 	<header>
 		<hgroup class="top">
 			<h1 class="bug"><a href="/">{{ .Site.Params.Bug }}</a></h1>

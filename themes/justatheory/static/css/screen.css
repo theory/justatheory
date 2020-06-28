@@ -331,8 +331,8 @@ h6, h6 a, h6 a:hover, h6 a:visited {
     text-decoration: none !important;
 }
 
-.photo .zoom { display: none }
-.photo .zoom:checked + label > figure {
+.zoom { display: none }
+.zoom:checked + label > figure {
     max-width: 100%;
 }
 

@@ -40,7 +40,7 @@ jobs:
 
 The important bits are in the `jobs.test` object. Under `strategy.matrix`, which
 defines the build matrix, the `pg` array defines each version to be tested. The
-job will run once for each version, and can be referenced via `${{matrix.pg }}`
+job will run once for each version, and can be referenced via `${{ matrix.pg }}`
 elsewhere in the job. Line 16 specifies that the job runs a [pgxn/pgxn-tools]
 container, and the `steps` the things to do inside the container, which are:
 

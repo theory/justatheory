@@ -38,7 +38,7 @@
 		<hgroup class="top">
 			<h1 class="bug"><a href="/">{{ .Site.Params.Bug }}</a></h1>
 			<h1><a href="/">{{ .Site.Title }}</a></h1>
-			<h2>By {{ .Site.Params.author }}</h2>
+			<h2>{{ with .Site.Params.subtitle }}{{ . }}{{ else }} By {{ .Site.Params.author }}{{ end }}</h2>
 		</hgroup>
 		<nav>
 			<menu>

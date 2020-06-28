@@ -239,12 +239,12 @@ main {
     padding-bottom: 58px !important;
 }
 
-#tags > header, #taxterms > header, #archive > header {
+#xtags > header, #taxterms > header, #archive > header {
     margin: 1rem 0 !important;
     border-bottom: 1px dashed #ccc;
 }
 
-#tags > header {
+#xtags > header {
     max-width: 676px;
     padding: 0 18px;
     margin: 0 auto !important;
@@ -297,11 +297,11 @@ h6, h6 a, h6 a:hover, h6 a:visited {
     text-decoration: none !important;
 }
 
-#photo {
+#xphoto {
     background-color: #2d2d2d;
 }
 
-#photo > header > nav a, #photo  > header > nav:hover {
+#xphoto > header > nav a, #xphoto  > header > nav:hover {
     color: #ccc !important;
 }
 

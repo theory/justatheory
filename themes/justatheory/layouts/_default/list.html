@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 	<main id="{{ .Type }}">
 		<header>
-			<h2>{{ if eq .Type "tags" }}Posts about {{ .Data.Term }}{{ else }}{{ .Title }}{{ end }}</h2>
+			<h1>{{ if eq .Type "tags" }}Posts about {{ .Data.Term }}{{ else }}{{ .Title }}{{ end }}</h1>
 		</header>
 		{{ range .Paginator.Pages }}
 		{{ partial "article.html" (dict "doc" . "list" true) }}

@@ -239,15 +239,16 @@ main {
     padding-bottom: 58px !important;
 }
 
-#xtags > header, #taxterms > header, #archive > header {
+#taxterms > header, #archive > header {
     margin: 1rem 0 !important;
     border-bottom: 1px dashed #ccc;
 }
 
-#xtags > header {
+#tags > header {
     max-width: 676px;
-    padding: 0 18px;
-    margin: 0 auto !important;
+    padding: 0;
+    margin: 1rem auto !important;
+    border-bottom: 1px dashed #ccc;
 }
 
 article, #archive, #taxterms {

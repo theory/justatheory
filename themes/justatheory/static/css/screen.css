@@ -246,7 +246,7 @@ main {
 
 #tags > header {
     max-width: 676px;
-    padding: 0;
+    padding: 0 18px;
     margin: 1rem auto !important;
     border-bottom: 1px dashed #ccc;
 }

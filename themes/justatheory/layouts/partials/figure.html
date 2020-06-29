@@ -1,5 +1,5 @@
-{{ if eq .Page.Type "photo" }}<input class="zoom" type="checkbox" style="display:none" id="{{ .Page.File.UniqueID }}"/>
-<label for="{{ .Page.File.UniqueID }}">{{ end }}
+{{ if (and (eq .Page.Type "photo") (ne .feed true)) }}<input class="zoom" type="checkbox" style="display:none" id="{{ .Page.File.UniqueID }}"/>
+<label for="{{ .Page.File.UniqueID }}">{{- end }}
 	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
 		{{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
 		{{- if .Params.link}}
@@ -17,5 +17,5 @@
 			{{ end }}{{ end }}</p>
 		</figcaption>
 		{{- end }}
-	</figure>{{ if eq .Page.Type "photo" }}
+	</figure>{{ if (and (eq .Page.Type "photo") (ne .feed true)) }}
 </label>{{ end }}

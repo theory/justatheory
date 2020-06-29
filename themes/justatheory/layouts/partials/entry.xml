@@ -1,4 +1,4 @@
-{{- $html := partial "article.html" (dict "doc" .) }}
+{{- $html := partial "article.html" (dict "doc" . "feed" true) }}
 {{- if in $html "]]>" }}
 {{ trim $html " \t\n\r" | html }}
 {{- else }}

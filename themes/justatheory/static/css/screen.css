@@ -1153,7 +1153,7 @@ body > footer ul li:last-child {
 
 @media (prefers-color-scheme: dark) {
     html, body {
-        background-color: #2d2d2d;
+        background-color: #4b4a4a;
         color: #ccc;
     }
     
@@ -1166,18 +1166,19 @@ body > footer ul li:last-child {
     h3, h3 a, h3 a:hover, h4 a:visited,
     h4, h4 a, h4 a:hover, h5 a:visited,
     h5, h5 a, h5 a:hover, h5 a:visited,
-    h6, h6 a, h6 a:hover, h6 a:visited,
-    a[rel=bookmark] {
+    h6, h6 a, h6 a:hover, h6 a:visited {
         color: #ccc;
-        text-decoration: none !important;
     }
+    a { color: #eb8282 }
+    a:visited { color: #ba5e5e }
+    a[rel=bookmark] { color: #ccc }
 
     p code, li code {
         background-color: #3a3a3a;
     }
 
     .text > pre, .highlight {
-        background-color: #ccc;
+        background-color: #fdf6e3;
     }
 
     blockquote {
@@ -1185,18 +1186,22 @@ body > footer ul li:last-child {
     }
     
     figure {
-        background-color: #4b4a4a;
+        background-color: #2d2d2d;
     }
 
     .photo figure {
         background-color: #2d2d2d;
     }
+
+    #archive section > div footer {
+        color: #ccc;
+    }
     
-    /* Background */ pre, .chroma, .lntable { color: #2d2d2d; background-color: #ccc; } /* Modified to add pre & .lntable, and to match header background */
+    /* Background */ pre, .chroma, .lntable { color: #2d2d2d; background-color: #fdf6e3; }
     /* Error */ .chroma .err { color: #aa0000; background-color: #ffaaaa }
     /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
     /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
-    /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+    /* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #e0ffff }
     /* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
     /* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
     /* Keyword */ .chroma .k { color: #006699; font-weight: bold }

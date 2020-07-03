@@ -1,13 +1,13 @@
 --- 
 date: 2006-05-05T22:09:22Z
 slug: higher-order-plpgsql
-title: Higher Order PL/pgSQL
+title: Higher-Order PL/pgSQL
 aliases: [/computers/databases/postgresql/higher_order_plpgsql.html]
-tags: [Postgres, PL/pgSQL, Higher Order Perl, Recursion, Fibonacci Sequence, Algorithms]
+tags: [Postgres, PL/pgSQL, Higher-Order Perl, Recursion, Fibonacci Sequence, Algorithms]
 type: post
 ---
 
-Well, it's not *really* higher order PL/pgSQL, since the language doesn't
+Well, it's not *really* higher-order PL/pgSQL, since the language doesn't
 support [closures], as far as I know. But I have been working on a series of
 articles for [O'Reilly Databases] site, drawing inspiration from Mark Jason
 Dominus's [*Higher-Order Perl*], and specifically using the Fibonacci sequence

@@ -3,7 +3,7 @@ date: 2005-03-11T00:01:45Z
 slug: js-what-book
 title: What JavaScript Book Should I Buy?
 aliases: [/computers/programming/javascript/what_book.html]
-tags: [JavaScript, Perl, AJAX]
+tags: [JavaScript, Perl, Ajax]
 type: post
 ---
 

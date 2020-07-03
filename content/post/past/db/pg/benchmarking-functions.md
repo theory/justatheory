@@ -32,7 +32,7 @@ At Josh's suggestion, I rewrote the function to just test each function inline,
 rather than passing the function code as parameters. This time, the results were
 dead on. So then I refactored the original benchmark function to create its
 *own* benchmark function, inlining all of the code, and then call that function.
-Almost higher order PL/pgSQL! Again the results were just right, and so now I
+Almost higher-order PL/pgSQL! Again the results were just right, and so now I
 present it to you:
 
 ``` plpgsql

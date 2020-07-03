@@ -3,7 +3,7 @@ date: 2007-07-21T22:12:40Z
 slug: new-comment-policy
 title: "New Just a Theory Blog Policy: Limited Comment Period"
 aliases: [/computers/internet/weblogs/new_comment_policy.html]
-Tags: [Just a Theory, comments, spam, junk]
+tags: [Just a Theory, Comments, Spam, Junk]
 type: post
 ---
 

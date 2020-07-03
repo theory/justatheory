@@ -3,7 +3,7 @@ date: 2009-02-18T02:01:33Z
 slug: now-with-markdown
 title: Now with Markdown!
 aliases: [/computers/internet/weblogs/now-with-markdown.html]
-Tags: [Just a Theory, Markdown, comments]
+tags: [Just a Theory, Markdown, Comments]
 type: post
 ---
 

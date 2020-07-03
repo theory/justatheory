@@ -4,7 +4,7 @@ description: ~
 slug: teasers-atom-feed
 title: Teasers Only Atom Feed
 aliases: [/computers/internet/weblogs/teasers_atom_feed.html]
-Tags: [Just a Theory, RSS, Atom, feeds]
+tags: [Just a Theory, RSS, Atom, Feeds]
 type: post
 ---
 

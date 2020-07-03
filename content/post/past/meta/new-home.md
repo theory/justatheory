@@ -3,7 +3,7 @@ date: 2012-04-10T05:52:00Z
 slug: new-home
 title: New Home
 aliases: [/computers/blog/new-home.html]
-Tags: [Just a Theory, Blogging, Blosxom, Daring Fireball]
+tags: [Just a Theory, Blogging, Blosxom, Daring Fireball]
 type: post
 ---
 

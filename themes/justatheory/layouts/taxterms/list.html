@@ -8,9 +8,9 @@
 			{{- $yearAgo := now.AddDate (int (mul -1 .Site.Params.recentTagYears)) 0 0 }}
 			{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.postTypes }}
 			{{- $.Scratch.Set "yearTags" (dict) }}
-			{{- range $pages }}
-				{{- if gt .Date $yearAgo }}{{ range .Params.tags }}
-					{{ if isset ($.Scratch.Get "yearTags") . }}
+			{{- range $pages.ByDate }}
+				{{- if gt .Date $yearAgo }}{{ range sort .Params.tags }}
+					{{- if isset ($.Scratch.Get "yearTags") . }}
 						{{- $c := index ( $.Scratch.Get "yearTags" ) . }}
 						{{- $.Scratch.SetInMap "yearTags" . (dict "tag" . "cnt" (add 1 (index $c "cnt"))) }}
 					{{- else }}

@@ -15,7 +15,7 @@ By {{ with (or .Params.author.name .Site.Author.name) }}{{ . }}{{ end }}{{ with 
 Via [{{ .name }}]({{ .href }}{{ with .title }} "{{ . }}"{{ end }}){{ end }}
 {{ .Permalink }}{{ with .Params.tags }}
 {{- $.Scratch.Set "taglen" 0 }}
-{{- range . }}{{ if gt (strings.RuneCount .) ($.Scratch.Get "taglen") }}{{- $.Scratch.Set "taglen" (strings.RuneCount .) }}{{ end }}{{ end }}
+{{- range . }}{{ $cnt := strings.RuneCount . }}{{ if gt $cnt ($.Scratch.Get "taglen") }}{{- $.Scratch.Set "taglen" $cnt }}{{ end }}{{ end }}
 {{- $fmt := printf "%%-%dv" (add 2 ($.Scratch.Get "taglen")) }}
 
 More about...

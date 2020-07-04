@@ -3,9 +3,13 @@ baseURL = "https://justatheory.com/"
 languageCode = "en-us"
 copyright = "© David E. Wheeler. This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 theme = "justatheory"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
 PreserveTaxonomyNames = true
 Paginate = 16
 PaginatePath = "p"
+footnoteReturnLinkContents = "↩"
 enableRobotsTXT = true
 disableKinds = ["section"]
 
@@ -69,7 +73,6 @@ disableKinds = ["section"]
   [markup.highlight]
     style = "monokai"
     codeFences = true
-    noClasses = false
   [markup.goldmark]
     [markup.goldmark.parser]
       autoHeadingID = true

@@ -1,1 +1,1 @@
-{{ partial "feed.xml" (dict "doc" . "Site" .Site "Title" .Title "Description" .Site.Params.description "Pages" (first .Site.Params.FeedLimit (where .Data.Pages "Type" "in" .Site.Params.postTypes)))}}
+{{ partial "feed.xml" (dict "doc" . "Site" .Site "Title" .Title "Description" .Site.Params.description "Pages" (first .Site.Params.FeedLimit (where .Site.RegularPages "Type" "in" .Site.Params.postTypes)))}}

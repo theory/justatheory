@@ -36,7 +36,7 @@
 				"url": {{ . | jsonify }}{{ end }}{{ with .avatar }},
 				"avatar": {{ . | jsonify }}{{ end }}
 			},{{ end }}{{ with .Params.tags }}
-			"tags": {{ . | jsonify }}{{ end }},
+			"tags": {{ . | jsonify }},{{ end }}
 			"content_html": {{ trim (partial "article.html" (dict "doc" . "feed" true)) " \t\n\r" | jsonify }},
 			"content_text": {{ trim (partial "entry.text" . ) " \t\n\r" | jsonify }}
 {{- end }}

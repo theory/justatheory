@@ -26,7 +26,7 @@
 {{- if (eq .Type "tags") }}
 			"content_html": {{ printf "<p>Posts about %v.</p>" .Title | jsonify }},
 			"content_text": {{ printf "Posts about %v." .Title | jsonify }}
-{{- else if $params.SummaryOnly }}{{ with .Summary }}
+{{- else if $params.SummaryOnly }}{{ with (or .Description .Summary) }}
 			"content_html": {{ printf "<p>%v</p>" (htmlEscape .) | jsonify }},
 			"content_text": {{ . | jsonify }}{{ end }}
 {{- else -}}

@@ -45,8 +45,7 @@ the note, etc.).
 Given all this data, the output of the [`log` command] has expanded quite a lot.
 Here’s an example from [the tutorial]’s [example project][]:
 
-<pre class="chroma"><code>
-On database flipr_test
+<pre class="chroma"><code>On database flipr_test
 <span class="gi">Deploy 7ad1cc6d1706c559dceb3101e7c21786dc7d7b4c</span>
 Name:      change_pass
 Committer: Marge N. O’Vera <marge@example.com>

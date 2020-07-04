@@ -1,1 +1,2 @@
+{{- $_hugo_config := `{ "version": 1 }` }}
 {{- partial "figure.text" (dict "Params" .Params "Page" $.Page "Site" $.Site) -}}

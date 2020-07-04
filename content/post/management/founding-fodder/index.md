@@ -63,7 +63,7 @@ Examples of values meaningful to me include:
 *   Making the world a better place
 *   Advancing social justice
 *   Doing the right thing
-*   Making people happy/productive/empowered/independent/delighted
+*   Making people happy/​​productive/​empowered/​independent/delighted
 *   Innovation
 *   Integrity
 *   Quality

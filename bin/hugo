@@ -1,4 +1,4 @@
 #!/bin/bash
 
-PATH=${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo:$PATH
+PATH=${GOPATH:-$HOME/go}/bin:$PATH
 hugo "$@"

@@ -8,7 +8,7 @@ type: post
 ---
 
 {{% figure
-  src   = "https://images-na.ssl-images-amazon.com/images/I/41666fRxogL._SX379_BO1,204,203,200_.jpg"
+  src   = "dbind.jpg"
   alt   = "Cover of “Database In Depth” by C.J. Date"
   class = "right"
   title = "Buy “Database In Depth” on Amazon.com"

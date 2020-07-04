@@ -13,7 +13,7 @@
 		<email>{{ . }}</email>{{ end }}{{ with .url }}
 		<uri>{{ . }}</uri>{{ end }}
 	</author>{{ end }}
-	<generator uri="https://gohugo.io/" version="{{ .doc.Hugo.Version }}">Hugo</generator>{{ with .Site.Params.icon }}
+	<generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator>{{ with .Site.Params.icon }}
 	<icon>{{ . | absURL | jsonify }}</icon>{{ end }}{{ with .Site.Copyright }}
 	<rights>{{.}}</rights>{{ end }}{{ $params := . }}
 	{{- range .Pages }}

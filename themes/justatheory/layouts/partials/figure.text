@@ -20,7 +20,7 @@
 {{- end -}}
 
 {{/* Collect the max line length and determine indent. */}}
-{{- $maxLen := add 2 80 -}}
+{{- $maxLen := add 2 (.Page.Scratch.Get "maxLineLen") -}}
 {{- .Page.Scratch.Set "indent" 0 -}}
 {{- if gt (sub $stdLen $maxLen) 1 -}}
     {{- .Page.Scratch.Set "indent" (div (sub $stdLen $maxLen) 2) -}}

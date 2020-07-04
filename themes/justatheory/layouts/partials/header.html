@@ -31,7 +31,7 @@
 	{{ range .AlternativeOutputFormats -}}
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}{{ if eq .MediaType.Suffix "xml" }}+xml{{ end }}" href="{{ .Permalink | safeURL }}" title="{{ $title }}" />
 	{{ end }}
-	{{- .Hugo.Generator }}
+	{{- hugo.Generator }}
 </head>
 <body id="x{{ .Type }}">
 	<header>

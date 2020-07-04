@@ -1,9 +1,9 @@
-{{ if (and .Params.image (not .Params.image.metaonly)) -}}
-{{ partial "figure.text" (dict "Params" .Params.image "Page" . "Site" .Site) }}{{ end }}
+{{- if (and .Params.image (not .Params.image.metaonly)) -}}
+{{- partial "figure.text" (dict "Params" .Params.image "Page" . "Site" .Site) }}{{ end }}
 {{ with .Params.link }}
   Link: {{ . }}
 {{ end }}
-{{ strings.TrimRight " \t\n\r" .RawContent }}
+{{ trim .RawContent " \t\n\r" }}
 {{- with .Params.via }}
 
 (Via [{{ .name }}]({{ .href }}{{ with .title }} "{{ . }}"{{ end }}){{ end }}

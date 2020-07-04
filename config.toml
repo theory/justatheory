@@ -37,9 +37,11 @@ disableKinds = ["section"]
 
 [mediaTypes]
 [mediaTypes."application/atom"]
-  suffix = "xml"
+  # suffix = "xml"
+  suffixes = ["xml"]
 [mediaTypes."text/plain"]
-  suffix = "text"
+  # suffix = "text"
+  suffixes = ["text"]
 
 [outputFormats]
 [outputFormats.atom]
@@ -63,3 +65,17 @@ disableKinds = ["section"]
 
 [taxonomies]
     tag = "tags"
+
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+    footnoteReturnLinkContents = "↩"
+  [markup.highlight]
+    style = "monokai"
+    codeFences = true
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "blackfriday"
+    [markup.goldmark.renderer]
+      unsafe = true

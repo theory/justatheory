@@ -13,7 +13,7 @@
 		<email>{{ . }}</email>{{ end }}{{ with .url }}
 		<uri>{{ . }}</uri>{{ end }}
 	</author>{{ end }}
-	<generator uri="https://gohugo.io/" version="{{ .doc.Hugo.Version }}">Hugo</generator>{{ with .Site.Params.icon }}
+	<generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator>{{ with .Site.Params.icon }}
 	<icon>{{ . | absURL | jsonify }}</icon>{{ end }}{{ with .Site.Copyright }}
 	<rights>{{.}}</rights>{{ end }}{{ $params := . }}
 	{{- range .Pages }}
@@ -31,7 +31,7 @@
 		<published>{{ .Date.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</published>
 {{- if (eq .Type "tags") }}
 		<summary>Posts about {{ .Title  }}</summary>
-{{- else if $params.SummaryOnly }}{{ with (or .Description .Summary ) }}
+{{- else if $params.SummaryOnly }}{{ with (or .Description .Summary) }}
 		<summary>{{ replace (htmlUnescape .) "&" "&amp;" | safeHTML }}</summary>{{ end }}
 {{- else -}}
 		{{ with (or .Params.author .Site.Author) }}

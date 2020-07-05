@@ -348,10 +348,10 @@ place --- Configuring the [Dist::Zilla::LocaleTextDomain] plugin, setting up
 the "textdomain filter", setting and the locale in the application --- there
 are just a few habits to get into:
 
-* Use the functions `__`, `__x`, `__n`, and `__nx` to internationalize
-  user-visible strings
-* Run `msg-scan` and `msg-merge` to keep the catalogs up-to-date
-* Keep your translators in the loop.
+*   Use the functions `__`, `__x`, `__n`, and `__nx` to internationalize
+    user-visible strings
+*   Run `msg-scan` and `msg-merge` to keep the catalogs up-to-date
+*   Keep your translators in the loop.
 
 The [Dist::Zilla::LocaleTextDomain] plugin will do the rest.
 

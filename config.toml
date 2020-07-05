@@ -65,7 +65,7 @@ disableKinds = ["section"]
     tag = "tags"
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
+  # defaultMarkdownHandler = "blackfriday"
   [markup.blackFriday]
     footnoteReturnLinkContents = "↩"
   [markup.highlight]

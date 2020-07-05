@@ -27,18 +27,12 @@ So what got done? Here's a rundown:
     Other stuff that Marshall Ajaxified:
 
     -   Document and category keyword editing
-
     -   Document category association
-
     -   Document output channel associations
-
     -   Organizations in the source profile
-
     -   The “Add More” sections of the user, contributor, media type, and alert
         type profiles
-
     -   Roles in the contributor profile
-
     -   Assets on desks and My Workspace
 
     Marshall worked hard to integrate more interactive features into this

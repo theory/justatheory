@@ -23,21 +23,21 @@ though:
 
 Nice post. A couple comments and questions:
 
-* As of Sqitch v0.990, you can pass the `--open-editor` option to the `add`
-  command to have the new files opened in your editor.
+*   As of Sqitch v0.990, you can pass the `--open-editor` option to the `add`
+    command to have the new files opened in your editor.
 
-* If you want to add a pgTAP test with a new change, see [this post].
+*   If you want to add a pgTAP test with a new change, see [this post].
 
-* What is the call to `sqitch status` for? Since its output just goes to
-  `/dev/null`, I don't understand the point.
+*   What is the call to `sqitch status` for? Since its output just goes to
+    `/dev/null`, I don't understand the point.
 
-* Also as of v0.990, you can [specify Sqitch targets]. The `-d`, `-u`, and
-  other options then override values in the target URI.
+*   Also as of v0.990, you can [specify Sqitch targets]. The `-d`, `-u`, and
+    other options then override values in the target URI.
 
-* I *really* want to get Sqitch to [better understand and work with VCSs]. An
-  example would be to have it automatically `git add` files created by
-  `sqitch add`. Another might be a Git config setting pointing to the Sqitch
-  config file. Alas, I don't know when I will have the tuits to work on that.
+*   I *really* want to get Sqitch to [better understand and work with VCSs]. An
+    example would be to have it automatically `git add` files created by `sqitch
+    add`. Another might be a Git config setting pointing to the Sqitch config
+    file. Alas, I don't know when I will have the tuits to work on that.
 
 Lots of room for growth and improvement in Sqitch going forward. You post
 provides more food for thought.

@@ -72,9 +72,9 @@ CREATE TEMPORARY TABLE widgets (
 INSERT INTO widgets VALUES( 1, 'gizmo', 'Takes care of the doohickies', 1.99);
 INSERT INTO widgets VALUES( 2, 'doodad', 'Collects *gizmos*', 23.8);
 INSERT INTO widgets VALUES( 10, 'dojigger', 'Handles:
-* gizmos
-* doodads
-* thingamobobs', 102.98);
+*   gizmos
+*   doodads
+*   thingamobobs', 102.98);
 INSERT INTO widgets VALUES(1024, 'thingamabob', 'Self-explanatory, no?', 0.99);
 
 SELECT * FROM widgets;

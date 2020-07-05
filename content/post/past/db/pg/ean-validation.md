@@ -86,7 +86,7 @@ posterity.
         RETURN 10 - total % 10 = substring(ean, 13, 1)::INTEGER;
     END;
     $$ LANGUAGE 'plpgsql' immutable;
-```
+    ```
 
 -   The `BYTEA` solution:
 

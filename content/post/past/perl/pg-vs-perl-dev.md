@@ -321,7 +321,7 @@ my own.
   [Rafael Garcia-Suarez]: http://consttype.blogspot.com/2009/07/time-based-releases-in-open-source.html
     "ConstType: “Time-based releases in open source”"
   [chromatic]: http://www.modernperlbooks.com/mt/2009/06/what-does-stable-mean.html
-    "Modern Perl Books:“What does "Stable" Mean?"
+    "Modern Perl Books: “What does \"Stable\" Mean?"
   [PostgreSQL RDBMS]: http://www.postgresql.org/
   [how the PostgreSQL project works]: http://wiki.postgresql.org/wiki/Image:How_the_PostgreSQL_Project_Works.pdf
   [benevolent dictator]: http://www.wired.com/wired/archive/11.11/linus.html

@@ -493,7 +493,7 @@ sub {
     bottom: -.5em
 }
 
-sup.footnote-ref > a {
+sup.footnote-ref > a, sup > a.footnote-ref {
     color: #777;
     background-color: #e3e3e3;
     border-radius: 50%;
@@ -501,13 +501,14 @@ sup.footnote-ref > a {
     font-size: 0.8em;
 }
 
-sup.footnote-ref > a:hover, a.footnote-return:hover {
+sup.footnote-ref > a:hover, a.footnote-return:hover,
+sup > a.footnote-ref:hover, a.footnote-backref:hover {
     background-color: #c00;
     text-decoration: none;
     color: #fff !important;
 }
 
-a.footnote-return {
+a.footnote-return, a.footnote-backref {
     color: #777;
     position: relative;
     top: -0.2em;

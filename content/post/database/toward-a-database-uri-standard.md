@@ -36,30 +36,30 @@ anything at all. Not very satisfying, or particularly "standard."[^db-uri:dsn]
 In poking around the net, however, I found a fair number of database URI
 formats defined by various projects:
 
-* [PostgreSQL libpq URIs]
-  `postgresql://[user[:password]@][netloc][:port][/dbname][?param1=value1&...]`
+*   [PostgreSQL libpq URIs]
+    `postgresql://[user[:password]@][netloc][:port][/dbname][?param1=value1&...]`
 
-* [SQLAlchemy URLs]:
-  `dialect[+driver:]//[username[:password]@host[:port]/database`
+*   [SQLAlchemy URLs]:
+    `dialect[+driver:]//[username[:password]@host[:port]/database`
   
-* [Stackato database URLs]:
-  `protocol://[username[:password]@host[:port]/database_name`
+*   [Stackato database URLs]:
+    `protocol://[username[:password]@host[:port]/database_name`
   
-* [Django database URLs]:
-  `ENGINE://[USER[:PASSWORD]@][HOST][:PORT]/DATABASE`
+*   [Django database URLs]:
+    `ENGINE://[USER[:PASSWORD]@][HOST][:PORT]/DATABASE`
 
-* [Rails database URLs]:
-  `adapter://[userinfo@][hostname][:port]/database`
+*   [Rails database URLs]:
+    `adapter://[userinfo@][hostname][:port]/database`
 
 All very similar, right? Most database engines support all or a subset of these
 connection parts in common:
 
-* username
-* password
-* host address
-* port
-* database name
-* configuration parameters
+*   username
+*   password
+*   host address
+*   port
+*   database name
+*   configuration parameters
 
 So why not define a standard database URI format with all those parts, and use
 them where appropriate for each engine? It's all right there, just like
@@ -85,28 +85,29 @@ the engine, e.g., `db:mysql`.
 
 Some notes on the formats:
 
-* The Database URI *scheme* is `db`. Consequently, database URIs always start
-  with `db:`. This is the [URI scheme] that defines a database URI.
+*   The Database URI *scheme* is `db`. Consequently, database URIs always start
+    with `db:`. This is the [URI scheme] that defines a database URI.
 
-* Next comes the database *engine*. This part is a string naming the type of
-  database engine for the database. It must always be followed by a colon, `:`.
-  There is no formal list of supported engines, though certain implementations
-  may specify engine-specific semantics, such as a default port.
+*   Next comes the database *engine*. This part is a string naming the type of
+    database engine for the database. It must always be followed by a colon,
+    `:`. There is no formal list of supported engines, though certain
+    implementations may specify engine-specific semantics, such as a default
+    port.
 
-* The *authority* part is separated from the engine by a double slash, `//`,
-  and terminated by the next slash or end of the URI. It consists of an
-  optional user-information part, terminated by `@` (e.g.,
-  `username:password@`); a required host address (e.g., domain name or IP
-  address); and an optional port number, preceded by a colon, `:`.
+*   The *authority* part is separated from the engine by a double slash, `//`,
+    and terminated by the next slash or end of the URI. It consists of an
+    optional user-information part, terminated by `@` (e.g.,
+    `username:password@`); a required host address (e.g., domain name or IP
+    address); and an optional port number, preceded by a colon, `:`.
 
-* The *path* part specifies the database name or path. For URIs that contain
-  an authority part, a path specifying a file name must be absolute. URIs
-  without an authority may use absolute or relative paths.
+*   The *path* part specifies the database name or path. For URIs that contain
+    an authority part, a path specifying a file name must be absolute. URIs
+    without an authority may use absolute or relative paths.
 
-* The optional *query* part, separated by a question mark, `?`, contains
-  `key=value` pairs separated by a semicolon, `;`, or ampersand, `&`. These
-  parameters may be used to configure a database connection with parameters not
-  directly supported by the rest of the URI format.
+*   The optional *query* part, separated by a question mark, `?`, contains
+    `key=value` pairs separated by a semicolon, `;`, or ampersand, `&`. These
+    parameters may be used to configure a database connection with parameters
+    not directly supported by the rest of the URI format.
 
 ### Examples ###
 
@@ -114,38 +115,38 @@ Here are some database URIs without an authority part, which is typical for
 non-server engines such as [SQLite], where the path part is a relative or
 absolute file name:
 
-* `db:sqlite:`
-* `db:sqlite:foo.db`
-* `db:sqlite:../foo.db`
-* `db:sqlite:/var/db/foo.sqlite`
+*   `db:sqlite:`
+*   `db:sqlite:foo.db`
+*   `db:sqlite:../foo.db`
+*   `db:sqlite:/var/db/foo.sqlite`
 
 Other engines may use a database name rather than a file name:
 
-* `db:ingres:mydb`
-* `db:postgresql:template1`
+*   `db:ingres:mydb`
+*   `db:postgresql:template1`
 
 When a URI includes an authority part, it must be preceded by a double slash:
 
-* `db:postgresql://example.com`
-* `db:mysql://root@localhost`
-* `db:pg://postgres:secr3t@example.net`
+*   `db:postgresql://example.com`
+*   `db:mysql://root@localhost`
+*   `db:pg://postgres:secr3t@example.net`
 
 To add the database name, separate it from the authority by a single slash:
 
-* `db:postgresql://example.com/template1`
-* `db:mongodb://localhost:27017/myDatabase`
-* `db:oracle://scott:tiger@foo.com/scott`
+*   `db:postgresql://example.com/template1`
+*   `db:mongodb://localhost:27017/myDatabase`
+*   `db:oracle://scott:tiger@foo.com/scott`
 
 Some databases, such as Firebird, take both a host name and a file path.
 These paths must be absolute:
 
-* `db:firebird://localhost/tmp/test.gdb`
-* `db:firebird://localhost/C:/temp/test.gdb`
+*   `db:firebird://localhost/tmp/test.gdb`
+*   `db:firebird://localhost/C:/temp/test.gdb`
 
 Any URI format may optionally have a query part containing key/value pairs:
 
-* `db:sqlite:foo.db?foreign_keys=ON;journal_mode=WAL`
-* `db:pg://localhost:5433/postgres?client_encoding=utf8;connect_timeout=10`
+*   `db:sqlite:foo.db?foreign_keys=ON;journal_mode=WAL`
+*   `db:pg://localhost:5433/postgres?client_encoding=utf8;connect_timeout=10`
 
 Issues
 ------
@@ -185,9 +186,9 @@ no authority part. Therefore, I think it might be best to require a second
 slash for absolute paths. Engines that use a simple name or relative path can
 have it just after the slash, while an absolute path could use a second slash:
 
-* Absolute: db:firebird://localhost//tmp/test.gdb
-* Relative: db:firebird://localhost/db/test.gdb
-* Name: db:postgresql://localhost/template1
+*   Absolute: db:firebird://localhost//tmp/test.gdb
+*   Relative: db:firebird://localhost/db/test.gdb
+*   Name: db:postgresql://localhost/template1
 
 That's It
 ---------

@@ -25,7 +25,7 @@ Organizations that process personal data, referred to as "data controllers,"
 accept serious responsibilities to respect those rights, and to protect the
 personal data they process. These responsibilities include, among others:
 
-*   Clear communication of the [lawful basis of processing][^gdpr-pro-emails]
+*   Clear communication of the [lawful basis of processing] [^gdpr-pro-emails]
 *   Acquisition of [freely-given consent] to collect personal data, or a
     legitimate legal basis to collect without direct consent
 *   [Data protection by design and by default]

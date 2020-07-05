@@ -21,12 +21,12 @@ communicate what Sqitch is about purely by talking.
 If it's enough to get you interested in giving a try, try [installing it] and
 using working through one of the tutorials:
 
-* [PostgreSQL](https://metacpan.org/module/sqitchtutorial "Sqitch PostgreSQL Tutorial)
-* [SQLite](https://metacpan.org/module/sqitchtutorial-sqlite "Sqitch SQLite Tutorial)
-* [Oracle](https://metacpan.org/module/sqitchtutorial-oracle "Sqitch Oracle Tutorial)
-* [MySQL](https://metacpan.org/module/sqitchtutorial-mysql "Sqitch MySQL Tutorial)
-* [Firebird](https://metacpan.org/module/sqitchtutorial-firebird "Sqitch Firebird Tutorial)
-* [Vertica](https://metacpan.org/module/sqitchtutorial-vertica "Sqitch Vertica Tutorial)
+*   [PostgreSQL](https://metacpan.org/module/sqitchtutorial "Sqitch PostgreSQL Tutorial")
+*   [SQLite](https://metacpan.org/module/sqitchtutorial-sqlite "Sqitch SQLite Tutorial")
+*   [Oracle](https://metacpan.org/module/sqitchtutorial-oracle "Sqitch Oracle Tutorial")
+*   [MySQL](https://metacpan.org/module/sqitchtutorial-mysql "Sqitch MySQL Tutorial")
+*   [Firebird](https://metacpan.org/module/sqitchtutorial-firebird "Sqitch Firebird Tutorial")
+*   [Vertica](https://metacpan.org/module/sqitchtutorial-vertica "Sqitch Vertica Tutorial")
 
   [FLOSS Weekly]: http://twit.tv/floss
   [installing it]: https://sqitch.org/

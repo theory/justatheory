@@ -84,16 +84,16 @@ sqitch rebase --onto HEAD^4
 
 Named targets may also have a couple other attributes associated with them:
 
-* `client`: The command-line client to use for a target.
-* `registry`: The name of the Sqitch registry schema or database, which defaults
-  to, simply, `sqitch`.
+*   `client`: The command-line client to use for a target.
+*   `registry`: The name of the Sqitch registry schema or database, which
+    defaults to, simply, `sqitch`.
 
 Now that I've started using it, I can think of other things I'd like to add to
 targets in the future, including:
 
-* [Setting other attributes], such as the deployment mode, whether to verify
-  changes, and variables.
-* [Allowing multiple URIs], for concurrent database deployments!
+*   [Setting other attributes], such as the deployment mode, whether to verify
+    changes, and variables.
+*   [Allowing multiple URIs], for concurrent database deployments!
 
 Pretty cool stuff ahead, IMO. I'm grateful to [work] for letting me hack on
 Sqitch.

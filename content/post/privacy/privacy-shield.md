@@ -26,18 +26,18 @@ struck-down Safe Harbor framework:
 
 So let me get this straight. Under this proposal:
 
-* The NSA can continue to bulk collect EU citizen data.
-* That data may be shared with other agencies in the US government.
-* Said collection must fall under six allowed case, one of which is
-  undefined "counter-terrorism" purposes. No one ever abused *that* kind of
-  thing before.
-* The US claims there is no more bulk surveillance, except that there is under
-  those six cases.
-* The appointed "independent ombudsman" to address complaints by EU citizens
-  will be a single US Undersecretary of State.
-* Complaints can also be addressed to US companies housing EU citizen data, even
-  though, in the absence of another Snowden-scale whistle-blowing, they may have
-  no idea their data is being surveiled.
+*   The NSA can continue to bulk collect EU citizen data.
+*   That data may be shared with other agencies in the US government.
+*   Said collection must fall under six allowed case, one of which is undefined
+    "counter-terrorism" purposes. No one ever abused *that* kind of thing
+    before.
+*   The US claims there is no more bulk surveillance, except that there is under
+    those six cases.
+*   The appointed "independent ombudsman" to address complaints by EU citizens
+    will be a single US Undersecretary of State.
+*   Complaints can also be addressed to US companies housing EU citizen data,
+    even though, in the absence of another Snowden-scale whistle-blowing, they
+    may have no idea their data is being surveiled.
 
 Color me skeptical that this would work, let alone not be thrown out by another
 case similar to the one that killed Safe Harbor.

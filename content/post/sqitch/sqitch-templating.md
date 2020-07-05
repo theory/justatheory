@@ -387,9 +387,9 @@ The basics for creating task-specific change templates are baked into Sqitch,
 and a transparent upgrade to advanced templating is a simple install away. I
 can imagine lots of uses for task-specific changes, including:
 
-* Adding schemas, users, procedures, and views
-* Modifying tables to add columns, constraints and indexes
-* Inserting or Updating data
+*   Adding schemas, users, procedures, and views
+*   Modifying tables to add columns, constraints and indexes
+*   Inserting or Updating data
 
 Maybe folks will even start sharing templates! You should subscribe to the
 [mail list] to find out. See you there?

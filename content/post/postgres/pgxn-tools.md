@@ -20,7 +20,7 @@ install additional dependencies, build, test, bundle, and release an extension.
 Here's how I've put it to use in a [GitHub workflow for semver], the
 [Semantic Version] data type:
 
-{{< highlight yaml "linenos=true,hl_lines=7 10 12-14" >}}
+```yaml {linenos=true,hl_lines=[7 10 "12-14"]}
 name: CI
 on: [push, pull_request]
 jobs:
@@ -35,7 +35,7 @@ jobs:
       - run: pg-start ${{ matrix.pg }}
       - uses: actions/checkout@v2
       - run: pg-build-test
-{{< / highlight >}}
+```
 
 The important bits are in the `jobs.test` object. Under `strategy.matrix`, which
 defines the build matrix, the `pg` array defines each version to be tested. The
@@ -76,7 +76,7 @@ with your PGXN credentials, pass them in environment variables named
 `PGXN_USERNAME` and `PGXN_PASSWORD`, and the script will handle the rest. Here's
 how a release job might look:
 
-{{< highlight yaml "linenos=true,linenostart=15" >}}
+```yaml {linenos=true,linenostart=15}
   release:
     name: Release on PGXN
     # Release pon push to main when the test job succeeds.
@@ -95,7 +95,7 @@ how a release job might look:
         run: pgxn-bundle
       - name: Release on PGXN
         run: pgxn-release
-{{< / highlight >}}
+```
 
 Note that lines 18-19 require that the `test` job defined above pass, and ensure
 the job runs only on a push event to the [main branch], where  we push final

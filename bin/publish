@@ -1,0 +1,101 @@
+#!/usr/bin/env perl
+
+use strict;
+use v5.20;
+
+my @configs = (
+    {
+        type    => "text/html; charset=utf-8",
+        include => [qw(*.html *.atom* atom.xml *.rss10)],
+    },
+    {
+        type    => "application/atom+xml; charset=utf-8",
+        include => [qw(*.xml)],
+        exclude => [qw(browserconfig.xml sitemap.xml)],
+    },
+    {
+        type    => "application/xml; charset=utf-8",
+        include => [qw(browserconfig.xml sitemap.xml)],
+    },
+    {
+        type    => "text/plain; charset=utf-8",
+        include => [qw(*.txt *.text README *.md *mmd *.pm *.pl *.sql .ldap *.diff *.patch *.pod)],
+    },
+    {
+        type    => "application/x-gtar",
+        include => [qw(*.tar.gz *.tgz *.tar.Z *.tar.bz2 *.tbz2 *.tar.lz *.tlz. *.tar.xz *.txz)],
+    },
+    {
+        type    => "application/manifest+json",
+        include => [qw(*.webmanifest)],
+    },
+    {
+        type    => "font/woff",
+        include => [qw(*.woff)],
+    },
+    {
+        type    => "font/woff2",
+        include => [qw(*.woff2)],
+    },
+    {
+        type    => "text/yaml; charset=utf-8",
+        include => [qw(*.yaml *.yml)],
+    },
+);
+
+############################################################################
+sub run {
+    # use Data::Dump; ddx \@_; return;
+     system(@_) == 0 or die "system @_ failed: $?" }
+
+my ($dir, $bucket, $distid) = @ARGV;
+die "Usage: $0 SRC_DIR BUCKET CLOUDFRONT_DISTID\n"
+    unless $dir & $bucket && $distid;
+
+# Make sure we have a meda type and include for each.
+die "Missing type from one or more configs\z"
+    if grep { !$_->{type} || !$_->{include} } @configs;
+
+# Run each of the configs.
+run sync($_) for @configs;
+
+# Sync everything else, excluding everything we just included, and letting
+# the AWS client guess the media type.
+run sync({
+    exclude => [map { @{ $_->{include} } } @configs]
+});
+
+# Invalidate the CloudFront cache.
+run qw(aws configure set preview.cloudfront true);
+run qw(aws cloudfront create-invalidation --distribution-id), $distid, qw(--paths /*);
+
+############################################################################
+sub sync {
+    my $p = shift;
+
+    # Core options.
+    my @cmd = qw(
+        aws s3 sync
+        --acl public-read
+        --sse
+        --metadata-directive=REPLACE
+        --delete
+    );
+
+    # Media type.
+    if (my $t = $p->{type}) {
+        push @cmd => '--content-type', $t;
+    }
+
+    # Files to include.
+    if (my $i = $p->{include}) {
+        push @cmd => qw(--exclude *);
+        push @cmd => '--include', $_ for @{ $i };
+    }
+
+    # Files to exclude.
+    push @cmd => '--exclude', $_ for @{ $p->{exclude} || [] };
+
+    # Command to run.
+    return @cmd, $dir, "s3://$bucket";
+}

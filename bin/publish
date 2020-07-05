@@ -44,9 +44,7 @@ my @configs = (
 );
 
 ############################################################################
-sub run {
-    # use Data::Dump; ddx \@_; return;
-     system(@_) == 0 or die "system @_ failed: $?" }
+sub run { system(@_) == 0 or die "system @_ failed: $?" }
 
 my ($dir, $bucket, $distid) = @ARGV;
 die "Usage: $0 SRC_DIR BUCKET CLOUDFRONT_DISTID\n"

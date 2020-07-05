@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 use strict;
-use v5.20;
+use v5.16;
 
 my @configs = (
     {
@@ -53,7 +53,7 @@ die "Usage: $0 SRC_DIR BUCKET CLOUDFRONT_DISTID\n"
     unless $dir & $bucket && $distid;
 
 # Make sure we have a meda type and include for each.
-die "Missing type from one or more configs\z"
+die "Missing type from one or more configs\n"
     if grep { !$_->{type} || !$_->{include} } @configs;
 
 # Run each of the configs.

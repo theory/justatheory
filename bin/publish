@@ -19,7 +19,7 @@ my @configs = (
     },
     {
         type    => "text/plain; charset=utf-8",
-        include => [qw(*.txt *.text README *.md *mmd *.pm *.pl *.sql .ldap *.diff *.patch *.pod)],
+        include => [qw(*.txt *.text */README */MANIFEST */Changes */sociable-1.0 *.md *mmd *.pm *.pl *.sql .ldap *.diff *.patch *.pod)],
     },
     {
         type    => "application/x-gtar",

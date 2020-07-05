@@ -14,8 +14,7 @@ ${BUILD_DIR}:
 
 default: ${BUILD_DIR}
 
-publish:
-	${HUGO}
+publish: ${BUILD_DIR}
 	./bin/publish ${BUILD_DIR} ${BUCKET} ${CLOUDFRONT_DISTID}
 
 clean:

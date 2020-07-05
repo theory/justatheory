@@ -37,10 +37,8 @@ disableKinds = ["section"]
 
 [mediaTypes]
 [mediaTypes."application/atom"]
-  # suffix = "xml"
   suffixes = ["xml"]
 [mediaTypes."text/plain"]
-  # suffix = "text"
   suffixes = ["text"]
 
 [outputFormats]

@@ -7,46 +7,55 @@
 			<p>Most {{ .Site.Title }} posts have been “tagged” with keywords. If you’re interested in only a subset of posts, just read the relevant tag pages. You can even subscribe to a tag — just point your feed reader at it.</p>
 			{{- $yearAgo := now.AddDate (int (mul -1 .Site.Params.recentTagYears)) 0 0 }}
 			{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.postTypes }}
-			{{- $.Scratch.Set "yearTags" (dict) }}
+			{{/* Get the counts of all tags within the period. */}}
+			{{- $yearTags := dict }}
 			{{- range $pages }}
 				{{- if gt .Date $yearAgo }}{{ range .Params.tags }}
-					{{- if isset ($.Scratch.Get "yearTags") . }}
-						{{- $c := index ( $.Scratch.Get "yearTags" ) . }}
-						{{- $.Scratch.SetInMap "yearTags" . (dict "tag" . "cnt" (add 1 (index $c "cnt"))) }}
+					{{- if isset $yearTags . }}
+						{{- $yearTags = merge $yearTags (dict . (add 1 (index $yearTags .))) }}
 					{{- else }}
-						{{- $.Scratch.SetInMap "yearTags" . (dict "tag" . "cnt" 1) }}
+						{{- $yearTags = merge $yearTags (dict . 1)}}
 					{{- end }}
 				{{- end }}{{ end }}
 			{{- end }}
-			{{- with $.Scratch.Get "yearTags" }}
-			<h4>Recently covered subjects</h4>
-			<ul class="tags rec">
-				{{- $.Scratch.Set "limit" 0 }}
-				{{- range sort . ".cnt" "desc" }}
-					{{- $.Scratch.Set "limit" (add ($.Scratch.Get "limit") 1) }}
-					{{- if le ($.Scratch.Get "limit") 10 }}
-				<li><a href="/tags/{{ .tag | urlize }}/">{{ .tag }}</a></li>
+            {{- with $yearTags }}
+				{{/* Now map all the counts to their tags */}}
+				{{- $cntTags := dict }}
+				{{- range $tag, $cnt := $yearTags }}
+					{{- $key := printf "%04v" $cnt }}
+					{{- if isset $cntTags $key }}
+						{{- $cntTags = merge $cntTags ( dict $key ((index $cntTags $key) | append $tag) )}}
+					{{- else }}
+						{{- $cntTags = merge $cntTags ( dict $key (slice $tag) )}}
 					{{- end }}
 				{{- end }}
-			</ul>
-			{{- end }}
+				{{/* And finally, iterate over the list ordered by keys */}}
+            <h4>Recently covered subjects</h4>
+            <ul class="tags rec">
+				{{- $num := 0 }}
+				{{- range first 10 (sort $cntTags "" "desc") }}
+					{{- range sort . }}
+						{{- if lt $num 10 }}
+							{{- $num = (add $num 1) }}
+                <li><a href="/tags/{{ . | urlize }}/">{{ . }}</a></li>
+						{{- end }}
+					{{- end }}
+                {{- end }}
+            </ul>
+            {{- end }}
 			<h4>All-time leading topics</h4>
 			<ul class="tags rec">
-				{{- $.Scratch.Set "limit" 0 }}
-				{{- range $key, $value := .Data.Terms.ByCount }}
-					{{- $.Scratch.Set "limit" (add ($.Scratch.Get "limit") 1) }}
-					{{- if le ($.Scratch.Get "limit") 10 }}
-				<li><a href="/tags/{{ $value.Name | urlize }}/">{{ $value.Name }}</a></li>
-					{{- end }}
+				{{- range first 10 .Data.Terms.ByCount }}
+				<li><a href="/tags/{{ .Name | urlize }}/">{{ .Name }}</a></li>
 				{{- end }}
 			</ul>
 			<h2>Complete List</h2>
-			{{-  $.Scratch.Set "chars" (slice) }}
+			{{-  $chars := slice }}
 			{{- range .Data.Pages }}
-				{{- $.Scratch.Add "chars" (upper (substr .Title 0 1)) }}
+				{{- $chars = $chars | append (upper (substr .Title 0 1)) }}
 			{{- end }}
 			{{- $data := .Data }}
-			{{- range sort (uniq ($.Scratch.Get "chars")) -}}
+			{{- range sort (uniq $chars) -}}
 				{{- $char := . }}
 			<h5>{{ $char }}</h5>
 			<ul class="tags {{ $char }}">

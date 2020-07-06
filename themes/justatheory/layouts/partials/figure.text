@@ -1,31 +1,30 @@
 {{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
 {{- $stdLen := 74 }}
 {{- $padding := 2 }}
+{{- $maxLen := strings.RuneCount $src }}
 {{/* Determine the longest line length */}}
-{{- .Page.Scratch.Set "maxLineLen" (strings.RuneCount $src) -}}
-
 {{- $alt := or .Params.alt .Params.title }}
 {{- with $alt -}}
     {{- $len := add 2 (strings.RuneCount .) }}
-	{{- if gt $len ($.Page.Scratch.Get "maxLineLen") }}
-        {{- $.Page.Scratch.Set "maxLineLen" $len -}}
+	{{- if gt $len $maxLen }}
+        {{- $maxLen = $len -}}
     {{- end -}}
 {{- end -}}
 
 {{- with .Params.link -}}
     {{- $len := add 2 (strings.RuneCount .) }}
-	{{- if gt $len ($.Page.Scratch.Get "maxLineLen") }}
-        {{- $.Page.Scratch.Set "maxLineLen" $len -}}
+	{{- if gt $len $maxLen }}
+        {{- $maxLen = $len -}}
     {{- end -}}
 {{- end -}}
 
 {{/* Collect the max line length and determine indent. */}}
-{{- $maxLen := add 2 (.Page.Scratch.Get "maxLineLen") -}}
-{{- .Page.Scratch.Set "indent" 0 -}}
+{{- $maxLen := add 2 $maxLen -}}
+{{- $indentSize := 0 -}}
 {{- if gt (sub $stdLen $maxLen) 1 -}}
-    {{- .Page.Scratch.Set "indent" (div (sub $stdLen $maxLen) 2) -}}
+    {{- $indentSize = (div (sub $stdLen $maxLen) 2) -}}
 {{- end -}}
-{{- $indent := printf (printf "%%-%dv" (.Page.Scratch.Get "indent")) "" -}}
+{{- $indent := printf (printf "%%-%dv" $indentSize) "" -}}
 
 {{- $frameWidth := add $maxLen (add $padding $padding) }}
 {{- $line := printf "{%v}" (strings.Repeat $frameWidth "~") -}}

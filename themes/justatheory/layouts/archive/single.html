@@ -3,13 +3,13 @@
 		<header>
 			<h1>{{ .Title }}</h1>
 		</header>
-		{{- $.Scratch.Set "year" 0 }}
+		{{- $year := 0 }}
 		{{- range where .Site.Pages "Type" "in" .Site.Params.postTypes }}
-		{{- if ne ($.Scratch.Get "year") .Date.Year}}
-		{{- if ne ($.Scratch.Get "year") 0 }}
+		{{- if ne $year .Date.Year}}
+		{{- if ne $year 0 }}
 		</section>
 		{{- end }}
-		{{- $.Scratch.Set "year" (.Date.Year) }}
+		{{- $year = .Date.Year }}
 		<section>
 			<h2 class="year">{{ .Date.Year }}</h2>
 		{{- end }}

@@ -13,7 +13,7 @@ but realistic examples, and quite a lot of complicated-looking JavaScript-based
 actions that seem like overkill. But through trial-and-error, I figured out
 enough to update my Postgres extensions projects to automatically test on
 multiple versions of Postgres, as well as to bundle and release them on [PGXN].
-The first draft of that effort is [pgxn/pgxn-tools][^may-rename], a Docker image
+The first draft of that effort is [pgxn/pgxn-tools] [^may-rename], a Docker image
 with scripts to build and run any version of PostgreSQL between 8.4 and 12,
 install additional dependencies, build, test, bundle, and release an extension.
 

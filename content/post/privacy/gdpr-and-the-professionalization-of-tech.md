@@ -63,7 +63,7 @@ Google to comply, but these monsters have more than enough resources to make it
 happen.[^gdpr-pro-challenge] Smaller, less capitalized companies have no such
 luxury. Some will struggle to comply, and a few may succumb to the costs. In
 this light, the GDPR represents a barrier to entry, a step in the [inevitable
-professionalization][Ian Bogost piece][^gdpr-pro-engineer] of tech that protects
+professionalization][Ian Bogost piece] [^gdpr-pro-engineer] of tech that protects
 existing big companies that can easily afford it, while creating an obstacle to
 new companies working to get off the ground.
 

@@ -1172,7 +1172,7 @@ body > footer ul li:last-child {
     a:visited { color: #ba5e5e }
     a[rel=bookmark] { color: #ccc }
 
-    p code, li code {
+    p code, li code, p.past {
         background-color: #3a3a3a;
     }
 

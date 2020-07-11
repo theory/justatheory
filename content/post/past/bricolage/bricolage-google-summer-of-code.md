@@ -27,7 +27,7 @@ Bricolage community.
 
 We look forward to your proposals!
 
-  [Summer of Code]: %20http://code.google.com/summerofcode.html
+  [Summer of Code]: http://code.google.com/summerofcode.html
   [list of suggested project ideas]: http://www.bricolage.cc/dev/summer_of_code/
   [Bricolage Developers]: http://www.bricolage.cc/support/lists/
     "Bricolage Mail List Subscription"

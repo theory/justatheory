@@ -124,7 +124,7 @@ short list are:
   [topological sort]: https://en.wikipedia.org/wiki/Topological_sorting
     "Wikipedia: “Topological sorting”"
   [realized]: /computers/databases/changing-sqitch_ids.html
-  [`show` command]: (https://metacpan.org/module/sqitch-show
+  [`show` command]: https://metacpan.org/module/sqitch-show
   [`rebase` command]: https://github.com/theory/sqitch/blob/master/lib/sqitch-rebase.pod
   [Checking all dependencies]: https://github.com/theory/sqitch/issues/39
   [Adding the `verify` command]: https://github.com/theory/sqitch/issues/15

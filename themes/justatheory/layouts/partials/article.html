@@ -12,8 +12,7 @@
         </header>{{ if (and .doc.Params.image (not .doc.Params.image.metaonly)) }}
 {{ partial "figure.html" (dict "Params" .doc.Params.image "Page" .doc "Site" .doc.Site "feed" .feed) }}{{ end }}
         <div class="text">
-{{/* XXX Move footnote return into the paragraph above it. */}}
-{{  .doc.Content | replaceRE "(</p>)\\n\\s*(<a class=\"footnote-return\"[^>]+>[^<]+</a>)" " $2$1" | safeHTML }}
+{{  .doc.Content | safeHTML }}
 {{- with .doc.Params.via }}
             <p>(Via <a href="{{ .href }}"{{ with .title }} title="{{ .}}"{{ end }}>{{ .name }}</a>)</p>
 {{ end }}

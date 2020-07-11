@@ -25,7 +25,7 @@ Organizations that process personal data, referred to as "data controllers,"
 accept serious responsibilities to respect those rights, and to protect the
 personal data they process. These responsibilities include, among others:
 
-*   Clear communication of the [lawful basis of processing] [^gdpr-pro-emails]
+*   Clear communication of the [lawful basis of processing]​[^gdpr-pro-emails]
 *   Acquisition of [freely-given consent] to collect personal data, or a
     legitimate legal basis to collect without direct consent
 *   [Data protection by design and by default]
@@ -63,7 +63,7 @@ Google to comply, but these monsters have more than enough resources to make it
 happen.[^gdpr-pro-challenge] Smaller, less capitalized companies have no such
 luxury. Some will struggle to comply, and a few may succumb to the costs. In
 this light, the GDPR represents a barrier to entry, a step in the [inevitable
-professionalization][Ian Bogost piece] [^gdpr-pro-engineer] of tech that protects
+professionalization][Ian Bogost piece]​[^gdpr-pro-engineer] of tech that protects
 existing big companies that can easily afford it, while creating an obstacle to
 new companies working to get off the ground.
 

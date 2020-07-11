@@ -19,7 +19,7 @@
 	{{- range .Pages }}
 	<entry>
 		<id>{{ .Permalink }}</id>
-		<title>{{ .Title }}</title>
+		<title>{{ .Title | markdownify }}</title>
 		{{- if .Params.link }}{{ with .Params.link }}
 		<link rel="alternate" type="text/html" href="{{ . }}"/>{{ end }}
 		<link rel="related" type="text/html" href="{{ .Permalink }}"/>

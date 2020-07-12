@@ -1,5 +1,6 @@
 ---
 title: "Test Postgres Extensions With GitHub Actions"
+slug: test-extensions-with-github-actions
 date: 2020-06-28T17:52:14Z
 lastMod: 2020-06-28T17:52:14Z
 description: I finally made the jump from Travis CI to GitHub Actions for my Postgres extensions. Here’s how you can, too.

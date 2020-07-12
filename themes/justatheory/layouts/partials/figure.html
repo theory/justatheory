@@ -1,8 +1,9 @@
-{{ if (and (eq .Page.Type "photo") (ne .feed true)) }}<input class="zoom" type="checkbox" style="display:none" id="{{ .Page.File.UniqueID }}"/>
+{{- $zoom := (and (eq .Page.Type "photo") (ne .feed true) (not .Params.link))}}
+{{ if $zoom }}<input class="zoom" type="checkbox" style="display:none" id="{{ .Page.File.UniqueID }}"/>
 <label for="{{ .Page.File.UniqueID }}">{{- end }}
 	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
 		{{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
-		{{- if .Params.link}}
+		{{- if .Params.link }}
 		<a href="{{ .Params.link }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ with .Params.rel }} rel="{{ . }}"{{ end }}>
 			<img src="{{ $src }}"{{ with or .Params.alt .Params.title }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
 		</a>
@@ -12,10 +13,10 @@
 		{{- if or (or .Params.heading .Params.caption) .Params.attr }}
 		<figcaption>{{ with .Params.heading }}
 			<h4>{{ . | markdownify }}</h4>{{ end }}
-			<p>{{ with .Params.caption }}{{ . | markdownify }}{{ end }}{{ if (and (eq .Page.Type "photo") (ne .feed true)) }} <small>(Tap to zoom.)</small>{{ end }}{{ if .Params.attr }}
+			<p>{{ with .Params.caption }}{{ . | markdownify }}{{ end }}{{ if $zoom }} <small>(Tap to zoom.)</small>{{ end }}{{ if .Params.attr }}
 				<cite>{{ with .Params.attrlink}}<a href="{{ . }}">{{ end }}{{ .Params.attr | markdownify }}{{ if .Params.attrlink }}</a>{{ end }}</cite>
 			{{ end }}</p>
 		</figcaption>
 		{{- end }}
-	</figure>{{ if (and (eq .Page.Type "photo") (ne .feed true)) }}
+	</figure>{{ if $zoom }}
 </label>{{ end }}

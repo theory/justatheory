@@ -1,6 +1,6 @@
 --- 
 date: 2008-01-30T20:04:22Z
-description: ~
+description: Going deep on using Postgres functions to create efficient recurring events.
 slug: postgres-recurring-events
 title: How to Generate Recurring Events in the Database
 aliases: [/computers/databases/postgresql/recurring_events.html]

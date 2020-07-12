@@ -1,6 +1,6 @@
 --- 
 date: 2008-01-30T19:13:19Z
-description: ~
+description: In which I link to a teasers-only atom feed on the site.
 slug: teasers-atom-feed
 title: Teasers Only Atom Feed
 aliases: [/computers/internet/weblogs/teasers_atom_feed.html]

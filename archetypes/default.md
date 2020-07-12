@@ -1,7 +1,10 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"{{ with now.UTC.Format "2006-01-02T15:04:05Z" }}
+title: "{{ replace .Name "-" " " | title }}"
+slug: {{ .Name }}
+{{ with now.UTC.Format "2006-01-02T15:04:05Z" -}}
 date: {{ . }}
-lastMod: {{ . }}{{ end }}
+lastMod: {{ . }}
+{{- end }}
 description: ~
 tags: []
 type: {{ .Type }}

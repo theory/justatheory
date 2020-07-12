@@ -14,12 +14,12 @@
 		<uri>{{ . }}</uri>{{ end }}
 	</author>{{ end }}
 	<generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator>{{ with .Site.Params.icon }}
-	<icon>{{ . | absURL | jsonify }}</icon>{{ end }}{{ with .Site.Copyright }}
+	<icon>{{ . | absURL }}</icon>{{ end }}{{ with .Site.Copyright }}
 	<rights>{{.}}</rights>{{ end }}{{ $params := . }}
 	{{- range .Pages }}
 	<entry>
 		<id>{{ .Permalink }}</id>
-		<title>{{ .Title | markdownify }}</title>
+		<title type="html">{{ .Title | markdownify }}</title>
 		{{- if .Params.link }}{{ with .Params.link }}
 		<link rel="alternate" type="text/html" href="{{ . }}"/>{{ end }}
 		<link rel="related" type="text/html" href="{{ .Permalink }}"/>
@@ -30,9 +30,9 @@
 		<updated>{{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</updated>
 		<published>{{ .Date.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</published>
 {{- if (eq .Type "tags") }}
-		<summary>Posts about {{ .Title  }}</summary>
+		<summary type="html">Posts about {{ .Title  }}</summary>
 {{- else if $params.SummaryOnly }}{{ with (or .Description .Summary) }}
-		<summary>{{ replace (htmlUnescape .) "&" "&amp;" | safeHTML }}</summary>{{ end }}
+		<summary type="html">{{ . }}</summary>{{ end }}
 {{- else -}}
 		{{ with (or .Params.author .Site.Author) }}
 		<author>{{ with .name }}
@@ -44,8 +44,8 @@
 		{{- range $term, $tax := .Site.Taxonomies }}{{ range (index $params $term) }}
 		<category scheme="{{ absURL $term }}" term="{{ . | urlize }}" label="{{ . }}"/>
 		{{- end }}{{ end }}{{ with (or .Description .Summary )}}
-		<summary>{{ replace (htmlUnescape .) "&" "&amp;" | safeHTML }}</summary>{{ end }}
-		<content type="text/html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve" mode="xml">{{ partial "entry.xml" . }}</content>
+		<summary type="html">{{ . }}</summary>{{ end }}
+		<content type="html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve">{{ partial "entry.xml" . | replaceRE "\\s*role=\"doc-[^\"]+\"" "" | safeHTML }}</content>
 {{- end }}
 	</entry>
 	{{- end }}

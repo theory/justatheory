@@ -308,7 +308,7 @@ h6, h6 a, h6 a:hover, h6 a:visited {
 .photo {
     background: #2d2d2d;
     max-width: 100% !important;
-    padding: 2rem 0 .5rem 0;
+    padding: 2rem 0 0 0;
     margin: 0;
     color: #ccc;
 }
@@ -878,8 +878,8 @@ article h2 {
 
 article > footer {
     color: #888;
-    padding-bottom: 2.5em;
-    margin-top: 2em
+    padding-bottom: 2.5em !important;
+    margin-top: 2em !important
 }
 
 p.past {

@@ -1,4 +1,4 @@
-    <article class="{{ .doc.Type }}">
+    <article class="{{ .doc.Type }}">{{ if ne .feed true }}
         <header>
             {{- if .doc.Params.link }}
             <h1 class="link"><a href="{{ .doc.Params.link }}">{{ .doc.Title | markdownify }}</a></h1>
@@ -9,7 +9,7 @@
             {{- end }}
             <a rel="bookmark" href="{{ .doc.Permalink }}"></a>
             <time datetime="{{ .doc.Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .doc.Date.Format "2 Jan 2006" }}</time>
-        </header>{{ if (and .doc.Params.image (not .doc.Params.image.metaonly)) }}
+        </header>{{ end }}{{ if (and .doc.Params.image (not .doc.Params.image.metaonly)) }}
 {{ partial "figure.html" (dict "Params" .doc.Params.image "Page" .doc "Site" .doc.Site "feed" .feed) }}{{ end }}
         <div class="text">
 {{  .doc.Content | safeHTML }}

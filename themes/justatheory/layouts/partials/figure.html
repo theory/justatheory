@@ -1,4 +1,4 @@
-{{- $zoom := (and (eq .Page.Type "photo") (ne .feed true) (not .Params.link))}}
+{{- $zoom := (and (eq .Page.Type "photo") (ne .feed true) (not .Params.link)) -}}
 {{ if $zoom }}<input class="zoom" type="checkbox" style="display:none" id="{{ .Page.File.UniqueID }}"/>
 <label for="{{ .Page.File.UniqueID }}">{{- end }}
 	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>

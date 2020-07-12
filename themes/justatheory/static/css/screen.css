@@ -255,7 +255,6 @@ article, #archive, #taxterms {
     max-width: 676px;
     margin: 0 auto;
     padding: 0 18px;
-    border-bottom: 1px dashed #ccc;
 }
 
 main > header {
@@ -309,7 +308,7 @@ h6, h6 a, h6 a:hover, h6 a:visited {
 .photo {
     background: #2d2d2d;
     max-width: 100% !important;
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 .5rem 0;
     margin: 0;
     color: #ccc;
 }

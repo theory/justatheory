@@ -328,6 +328,9 @@ figcaption small {
     color: #aaa;
 }
 
+.photo .text a, .photo .tags a { color: #eb8282 }
+.photo .text a:visited, .photo .tags a:visited { color: #ba5e5e }
+
 .photo h1, .photo h1 a, .photo h1 a:hover,
 .photo h2, .photo h2 a, .photo h2 a:hover,
 .photo h3, .photo h3 a, .photo h3 a:hover,

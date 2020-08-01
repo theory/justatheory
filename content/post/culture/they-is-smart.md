@@ -30,7 +30,7 @@ Self-professed language nerd Amy Devitt says [They is Smart]:
 > in *[New Slaves]*)<br />
 > *“They is treatin’ us good.”* (Dave Chappelle [Terrorists on the Plane]
 > routine)<br />
-> *"They wasn't ready."* ​(Bri [BGC17] commenting on Oxygen Bad Girls Club
+> *"They wasn't ready."* (Bri [BGC17] commenting on Oxygen Bad Girls Club
 > experience)
 >
 > So why not singular “they” with a singular verb?

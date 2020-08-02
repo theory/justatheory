@@ -23,6 +23,8 @@ clean:
 preview:
 	${HUGO} server -D --bind 0.0.0.0
 
+server: preview
+
 # Matches any target and returns all args. https://stackoverflow.com/a/32490846/79202
 %:
 	@:

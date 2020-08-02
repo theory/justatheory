@@ -12,7 +12,7 @@
         </header>{{ end }}{{ if (and .doc.Params.image (not .doc.Params.image.metaonly)) }}
 {{ partial "figure.html" (dict "Params" .doc.Params.image "Page" .doc "Site" .doc.Site "feed" .feed) }}{{ end }}
         <div class="text">
-{{  .doc.Content | safeHTML }}
+{{ replace .doc.Content `class="footnote-ref"` `class="footnote-ref" rel="footnote"` | safeHTML }}
 {{- with .doc.Params.via }}
             <p>(Via <a href="{{ .href }}"{{ with .title }} title="{{ .}}"{{ end }}>{{ .name }}</a>)</p>
 {{ end }}

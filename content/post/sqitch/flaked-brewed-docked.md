@@ -1,7 +1,7 @@
 ---
 title: Flaked, Brewed, and Docked
 date: 2018-10-08T01:54:49Z
-lastMod: 2018-10-08T01:54:49Z
+lastMod: 2020-08-14T17:37:06Z
 description: "Sqitch v0.9998: Now with Snowflake support, an improved Homebrew tap, and the quickest way to get started: the new [Docker image](https://hub.docker.com/r/sqitch/sqitch/)."
 tags: [Sqitch, Docker, Homebrew, Snowflake]
 ---
@@ -88,7 +88,7 @@ Which brings me to the installer that excites me most: The new [Docker image].
 Curious about Sqitch and want to download and go? Use Docker? Try this:
 
 ```
-curl -L https://git.io/fAX6Z -o sqitch && chmod +x sqitch
+curl -L https://git.io/JJKCn -o sqitch && chmod +x sqitch
 ./sqitch help
 ```
 

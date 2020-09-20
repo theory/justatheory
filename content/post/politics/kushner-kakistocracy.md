@@ -9,8 +9,6 @@ type: post
 link: https://www.vanityfair.com/news/2020/09/jared-kushner-let-the-markets-decide-covid-19-fate
 ---
 
-The Kushner Kakistocracy
-
 Katherine Eban, in a [deeply reported piece][jkfail], for *Vanity Faire*:
 
 > Those representing the private sector expected to learn about a sweeping

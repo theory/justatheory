@@ -94,16 +94,16 @@ observation]? Maybe the hawk and the squirrel were friends and neighbors,
 happy to enjoy a bit of camaraderie on a beautiful fall day in The City.
 
 When I circled back an hour or so later, the hawk had moved across the path, and
-now was poking around in the shrubbery. It saw me watching. Some ethno­graphy,
-perhaps?
+now was poking around in the ground cover. It saw me watching. Some
+ethno­graphy, perhaps?
 
 Naw, it kept picking something up and shaking its head; a dragonfly or cricket I
 think, but couldn't get close enough to tell. Could be it was hungry after all.
 
 {{% figure
     src    = "hawk9.jpeg"
-    alt     = "A red-tailed curiously eyes a black squirrel in New York City"
-    caption = "I see you!"
+    alt     = "A red-tailed hawk sitting among some ground cover in New York City"
+    caption = "Poking among the ground cover, looking for a snack?"
 %}}
 
 Either way, it made my day. Man I love this city.

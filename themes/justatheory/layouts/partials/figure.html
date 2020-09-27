@@ -1,7 +1,8 @@
 {{- $zoom := (and (eq .Page.Type "photo") (ne .feed true) (not .Params.link)) -}}
 {{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
 {{- $id := md5 $src }}
-{{ if $zoom }}<input class="zoom" type="checkbox" style="display:none" id="{{ $id }}"/>
+{{ if $zoom }}{{ if not .Params.top }}</div>
+{{ end }}<input class="zoom" type="checkbox" style="display:none" id="{{ $id }}"/>
 <label for="{{ $id }}">{{- end }}
 	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
 		{{- if .Params.link }}
@@ -14,10 +15,11 @@
 		{{- if or (or .Params.heading .Params.caption) .Params.attr }}
 		<figcaption>{{ with .Params.heading }}
 			<h4>{{ . | markdownify }}</h4>{{ end }}
-			<p>{{ with .Params.caption }}{{ . | markdownify }}{{ end }}{{ if .Params.attr }}
+			<p>{{ with .Params.caption }}{{ . | markdownify }}{{ end }}{{ if $zoom }} <small>(Tap to zoom)</small>{{ end }}{{ if .Params.attr }}
 				<cite>{{ with .Params.attrlink}}<a href="{{ . }}">{{ end }}{{ .Params.attr | markdownify }}{{ if .Params.attrlink }}</a>{{ end }}</cite>
 			{{ end }}</p>
 		</figcaption>
 		{{- end }}
 	</figure>{{ if $zoom }}
-</label>{{ end }}
+</label>{{ if not .Params.top }}
+<div class="text">{{ end }}{{ end }}

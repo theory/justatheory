@@ -45,15 +45,13 @@ disableKinds = ["section"]
 [outputFormats.atom]
   mediatype = "application/atom"
   baseName = "feed"
-  isPlainText = false
 [outputFormats.json]
   mediatype = "application/json"
   baseName = "feed"
-  isPlainText = false
+  isPlainText = true
 [outputFormats.text]
   mediatype = "text/plain"
   baseName = "copy"
-  isPlainText = true
 
 [outputs]
   home = ["html", "json", "atom"]

@@ -4,7 +4,7 @@ slug: kushner-kakistocracy
 date: 2020-09-20T18:06:03Z
 lastMod: 2020-09-20T18:06:03Z
 description: An expertly-reported, deeply disturbing piece by Katherine Eban on Jared Kushner's key role in the colossal federal response to the Covid-19 pandemic.
-tags: [Katherine Eban, Jared Kushner, Covid-19, Kakistocracy]
+tags: [Politics, Katherine Eban, Jared Kushner, Covid-19, Kakistocracy]
 type: post
 link: https://www.vanityfair.com/news/2020/09/jared-kushner-let-the-markets-decide-covid-19-fate
 ---

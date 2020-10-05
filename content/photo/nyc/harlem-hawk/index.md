@@ -2,7 +2,7 @@
 title: "Harlem Hawk"
 slug: harlem-hawk
 date: 2020-09-26T20:59:21Z
-lastMod: 2020-09-26T20:59:21Z
+lastMod: 2020-10-05T01:16:34Z
 description: An encounter with a hawk and a squirrel in St. Nicholas Park, Harlem.
 tags: [Harlem, Hawk, Red-Tailed Hawk, St. Nicholas Park, Photography, Nervous Squirrel]
 type: photo

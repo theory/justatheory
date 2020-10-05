@@ -6,7 +6,7 @@ description: "The over-the-top
 malfeasance and criminality of this president and his White House leads
 inexorably to impeachment proceedings. It's past time for the Democrats to
 accept that fact and make a plan to maximize its effectiveness."
-tags: [Impeachment, Democrats, Dan Pfeiffer]
+tags: [Politics, Impeachment, Democrats, Dan Pfeiffer]
 type: post
 link: https://crooked.com/articles/a-plan-to-win-the-impeachment-fight/
 ---

@@ -42,14 +42,14 @@
 					{{- end }}
                 {{- end }}
             </ul>
-            {{- end }}
+            {{- end }}{{/*
 			<h4>All-time leading topics</h4>
 			<ul class="tags rec">
 				{{- range first 10 .Data.Terms.ByCount }}
 				<li><a href="/tags/{{ .Name | urlize }}/">{{ .Name }}</a></li>
 				{{- end }}
 			</ul>
-			<h2>Complete List</h2>
+			*/}}<h2>Complete List</h2>
 			{{-  $chars := slice }}
 			{{- range .Data.Pages }}
 				{{- $chars = $chars | append (upper (substr .Title 0 1)) }}

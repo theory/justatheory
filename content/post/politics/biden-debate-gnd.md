@@ -4,7 +4,7 @@ slug: biden-climate-plan
 date: 2020-10-05T00:54:59Z
 lastMod: 2020-10-05T00:54:59Z
 description: The Green New Deal may not be Joe Biden's climate plan, but you better believe he knows it deeply and could dive deep into the details.
-tags: [Politics, Biden, Green New Deal, Debate]
+tags: [Politics, Joe Biden, Green New Deal, Debate]
 type: post
 ---
 

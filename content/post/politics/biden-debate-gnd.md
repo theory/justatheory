@@ -97,7 +97,7 @@ eliminates any doubt in this clap-back to a [snarky tweet by Kellyanne Conway]:
 >
 > Trump doesn’t even believe climate change is real.
 
-_Fantastic!_ Let's do this thing.
+*Fantastic!* Let's do this thing.
 
   [presidential debate]:
     https://en.wikipedia.org/wiki/2020_United_States_presidential_debates

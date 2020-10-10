@@ -52,6 +52,7 @@ disableKinds = ["section"]
 [outputFormats.text]
   mediatype = "text/plain"
   baseName = "copy"
+  isPlainText = true
 
 [outputs]
   home = ["html", "json", "atom"]

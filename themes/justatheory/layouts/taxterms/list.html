@@ -29,7 +29,7 @@
 						{{- $cntTags = merge $cntTags ( dict $key (slice $tag) )}}
 					{{- end }}
 				{{- end }}
-				{{/* And finally, iterate over the list ordered by keys */}}
+			{{/* And finally, iterate over the list ordered by keys */}}
             <h4>Recently covered subjects</h4>
             <ul class="tags rec">
 				{{- $num := 0 }}
@@ -61,7 +61,7 @@
 			<ul class="tags {{ $char }}">
 				{{- range $data.Pages }}
 					{{- if eq $char (upper (substr .Title 0 1)) }}
-				<li><a href="{{ .RelPermalink }}">{{ .Data.Term }}</a></li>
+				<li><a href="{{ .RelPermalink }}">{{ or .Title }}</a></li>
 					{{- end }}
 				{{- end }}
 			</ul>

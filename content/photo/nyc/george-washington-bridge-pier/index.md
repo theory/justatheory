@@ -9,7 +9,7 @@ type: photo
 link: ~
 # author: {name: David E. Wheeler, email: david@justatheory.com }
 # via: {name: Example, href: https://example.com, title: Hello }
-image: {src: gwb-pier.jpeg, caption: "Manhattan pier of the George Washington Bridge", alt: Photo of the Manhattan pier of the George Washington Bridge, copyright: 2020 David E. Wheeler }
+image: {src: gwb-pier.jpeg, caption: "Manhattan pier of the George Washington Bridge.", alt: Photo of the Manhattan pier of the George Washington Bridge, copyright: 2020 David E. Wheeler }
 ---
 
 View of the Manhattan pier of the [George Washington Bridge], Taken on 20

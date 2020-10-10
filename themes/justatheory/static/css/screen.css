@@ -759,10 +759,6 @@ figcaption h4 {
     color: #ccc;
 }
 
-figcaption cite:after {
-    content: "."
-}
-
 figcaption cite, figcaption cite a, figcaption cite a:hover, figcaption cite a:active {
     color: #999 !important;
 }

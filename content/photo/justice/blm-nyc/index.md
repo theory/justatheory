@@ -9,7 +9,7 @@ type: photo
 # link: ~
 # author: {name: David E. Wheeler, email: david@justatheory.com }
 # via: {name: Example, href: https://example.com, title: Hello }
-image: {src: blmnyc.jpeg, alt: "Black Lives Matter Mural down Fifth Avenue in front of Trump Tower in New York City", caption: "#BlackLivesMatter #NewYorkCity" }
+image: {src: blmnyc.jpeg, alt: "Black Lives Matter Mural down Fifth Avenue in front of Trump Tower in New York City", caption: "#BlackLivesMatter #NewYorkCity", copyright: 2020 David E. Wheeler }
 ---
 
 I took advantage of the new City Bike dock in front of our flat to ride 80

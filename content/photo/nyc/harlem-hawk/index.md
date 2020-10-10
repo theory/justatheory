@@ -8,7 +8,7 @@ tags: [Harlem, Hawk, Red-Tailed Hawk, St. Nicholas Park, Photography, Nervous Sq
 type: photo
 # author: {name: David E. Wheeler, email: david@justatheory.com }
 # via: {name: Example, href: https://example.com, title: Hello }
-image: {src: hawk3.jpeg, alt: A Red-Tailed Hawk curiously watching a nervous squirrel climbing a tree, caption: Red-Tailed curiosity, title: Red-Tailed curiosity, metaonly: true }
+image: {src: hawk3.jpeg, alt: A Red-Tailed Hawk curiously watching a nervous squirrel climbing a tree, caption: Red-Tailed curiosity, title: Red-Tailed curiosity, metaonly: true, copyright: 2020 David E. Wheeler }
 ---
 
 Three months into the Covid-19 Pandemic, I had barely left the apartment. But
@@ -25,9 +25,10 @@ ahead, alerting me to an unusual presence. As I approached, this keen stare
 greeted me, a mere 5-8m.
 
 {{% figure
-    src    = "hawk1.jpeg"
-    alt     = "A red-tailed hawk sitting on a branch in New York City"
-    caption = "Hello there, New Yorker."
+    src       = "hawk1.jpeg"
+    alt       = "A red-tailed hawk sitting on a branch in New York City"
+    caption   = "Hello there, New Yorker."
+    copyright = "2020 David E. Wheeler"
 %}}
 
 I don't know what I expected to see, but it wasn't *this!* I've heard that
@@ -41,21 +42,24 @@ This one, however, paid little attention to me. Rather, it seemed quite curious
 about this black [squirrel] running up a tree between us, about a meter away.
 
 {{% figure
-    src    = "hawk2.jpeg"
-    alt     = "A red-tailed hawk and a black squirrel in New York City"
-    caption = "“Be cool, be cool…”"
+    src       = "hawk2.jpeg"
+    alt       = "A red-tailed hawk and a black squirrel in New York City"
+    caption   = "“Be cool, be cool…”"
+    copyright = "2020 David E. Wheeler"
 %}}
 
 {{% figure
-    src    = "hawk3.jpeg"
-    alt     = "A red-tailed curiously eyes a black squirrel in New York City"
-    caption = "I mean look at the cock of the head!"
+    src       = "hawk3.jpeg"
+    alt       = "A red-tailed curiously eyes a black squirrel in New York City"
+    caption   = "I mean look at the cock of the head!"
+    copyright = "2020 David E. Wheeler"
 %}}
 
 {{% figure
-    src    = "hawk4.jpeg"
-    alt     = "A red-tailed curiously eyes a scampering black squirrel in New York City"
-    caption = "Watching the squirrel, watching me."
+    src       = "hawk4.jpeg"
+    alt       = "A red-tailed curiously eyes a scampering black squirrel in New York City"
+    caption   = "Watching the squirrel, watching me."
+    copyright = "2020 David E. Wheeler"
 %}}
 
 The squirrel kept running a loop up and down the tree. It would disappear from sight
@@ -63,27 +67,31 @@ The squirrel kept running a loop up and down the tree. It would disappear from s
 The hawk seemed curious, amused, then, perhaps, bored.
 
 {{% figure
-    src    = "hawk5.jpeg"
-    alt     = "A red-tailed stares at squirrel hidden from view in New York City"
-    caption = "Tracking the squirrel down the tree."
+    src       = "hawk5.jpeg"
+    alt       = "A red-tailed stares at squirrel hidden from view in New York City"
+    caption   = "Tracking the squirrel down the tree."
+    copyright = "2020 David E. Wheeler"
 %}}
 
 {{% figure
-    src    = "hawk6.jpeg"
-    alt     = "A red-tailed cocks its head as it eyes a black squirrel hidden from view in New York City"
-    caption = "“Where do you think *you're* going, rodent?”"
+    src       = "hawk6.jpeg"
+    alt       = "A red-tailed cocks its head as it eyes a black squirrel hidden from view in New York City"
+    caption   = "“Where do you think *you're* going, rodent?”"
+    copyright = "2020 David E. Wheeler"
 %}}
 
 {{% figure
-    src    = "hawk7.jpeg"
-    alt     = "A red-tailed watches a black squirrel scamper up a tree in New York City"
-    caption = "Around and around and around."
+    src       = "hawk7.jpeg"
+    alt       = "A red-tailed watches a black squirrel scamper up a tree in New York City"
+    caption   = "Around and around and around."
+    copyright = "2020 David E. Wheeler"
 %}}
 
 {{% figure
-    src    = "hawk8.jpeg"
-    alt     = "A red-tailed watches a black squirrel scamper up a tree in New York City"
-    caption = "Zoooooom!"
+    src       = "hawk8.jpeg"
+    alt       = "A red-tailed watches a black squirrel scamper up a tree in New York City"
+    caption   = "Zoooooom!"
+    copyright = "2020 David E. Wheeler"
 %}}
 
 Eventually I put my phone away and continued my walk, but kept thinking about
@@ -101,9 +109,10 @@ Naw, it kept picking something up and shaking its head; a dragonfly or cricket I
 think, but couldn't get close enough to tell. Could be it was hungry after all.
 
 {{% figure
-    src    = "hawk9.jpeg"
-    alt     = "A red-tailed hawk sitting among some ground cover in New York City"
-    caption = "Poking among the ground cover, looking for a snack?"
+    src       = "hawk9.jpeg"
+    alt       = "A red-tailed hawk sitting among some ground cover in New York City"
+    caption   = "Poking among the ground cover, looking for a snack?"
+    copyright = "2020 David E. Wheeler"
 %}}
 
 Either way, it made my day. Man I love this city.

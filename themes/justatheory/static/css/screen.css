@@ -759,10 +759,6 @@ figcaption h4 {
     color: #ccc;
 }
 
-figcaption cite:before {
-    content: " Image: "
-}
-
 figcaption cite:after {
     content: "."
 }

@@ -7,11 +7,11 @@ type: post
 ---
 
 {{% figure
-   src     = "iphone-watch.jpg"
-   alt     = "iPhone and Apple Watch"
-   caption = "Multiple factors."
-   class   = "right"
-   attr    = "Apple"
+   src      = "iphone-watch.jpg"
+   alt      = "iPhone and Apple Watch"
+   caption  = "Multiple factors."
+   class    = "right"
+   attr     = "Apple"
    attrlink = "https://www.apple.com/"
 %}}
 

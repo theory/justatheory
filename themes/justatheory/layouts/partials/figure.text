@@ -18,6 +18,18 @@
     {{- end -}}
 {{- end -}}
 
+{{- $caption := .Params.caption -}}
+{{- if .Params.attr -}}
+    {{- if .Params.attrlink -}}
+        {{- $caption = printf "%v\nImage: [%v](%v)" $caption .Params.attr .Params.attrlink -}}
+    {{- else -}}
+        {{- $caption = printf "%v\nImage: %v" $caption .Params.attr -}}
+    {{- end -}}
+{{- end -}}
+{{- if .Params.copyright -}}
+    {{- $caption = printf "%v\n© %v" $caption .Params.copyright -}}
+{{- end -}}
+
 {{/* Collect the max line length and determine indent. */}}
 {{- $maxLen := add 2 $maxLen -}}
 {{- $indentSize := 0 -}}
@@ -35,7 +47,7 @@
 {{ $indent }}{{ partial "center.text" (dict "format" "{%v%v%v}" "text" $src "padding" $padding "maxLen" $maxLen "extra" 0) }}{{ with .Params.link -}}
 {{ $indent }}{{ partial "center.text" (dict "format" "{%v(%v)%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
 {{ $indent }}{{ printf "{%v}" (strings.Repeat $frameWidth " ") }}
-{{ $indent }}{{ $line }}{{ with (delimit (slice .Params.caption .Params.copyright) "\n© ") }}
+{{ $indent }}{{ $line }}{{ with $caption }}
 {{- $re := printf "(.{%d,%d}?[^\\s]*)\\s+" (sub $maxLen 5) $maxLen }}
 {{- $fmt := printf "%v{%v%%-%dv}\n" $indent (strings.Repeat $padding " ") (add $maxLen $padding) }}
 {{ range split (replaceRE $re "$1\n" (trim . " \t\n\r" )) "\n" -}}

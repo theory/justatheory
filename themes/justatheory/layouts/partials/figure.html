@@ -7,10 +7,10 @@
 	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
 		{{- if .Params.link }}
 		<a href="{{ .Params.link }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ with .Params.rel }} rel="{{ . }}"{{ end }}>
-			<img src="{{ $src }}"{{ with or .Params.alt .Params.title }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
+			<img src="{{ $src }}"{{ with .Params.alt }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.title }} title="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
 		</a>
 		{{- else }}
-			<img src="{{ $src }}"{{ with or .Params.alt .Params.title }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
+			<img src="{{ $src }}"{{ with .Params.alt }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.title }} title="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
 		{{- end }}
 		{{- if or (or .Params.heading .Params.caption) .Params.attr }}
 		<figcaption>{{ with .Params.heading }}

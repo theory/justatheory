@@ -8,7 +8,7 @@ jobs:
       - name: Check out Source
         uses: actions/checkout@v2
       - name: Build the Site
-        uses: docker://klakegg/hugo:0.78.0
+        uses: docker://klakegg/hugo:0.78.1
       - name: Generate Publish Script
         run: ./bin/publish public justatheory.com E1X44SJ45FTNGI 1 > publish.sh
       - name: Publish the Site

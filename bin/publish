@@ -45,7 +45,7 @@ my @configs = (
 
 ############################################################################
 sub run { system(@_) == 0 or die "system @_ failed: $?" }
-sub echo { say join ' ', map { /\s/ ? "'$_'" : $_ } @_ }
+sub echo { say join ' ', map { /[\s*]/ ? "'$_'" : $_ } @_ }
 
 my ($dir, $bucket, $distid, $script) = @ARGV;
 die "Usage: $0 SRC_DIR BUCKET CLOUDFRONT_DISTID\n"

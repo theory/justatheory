@@ -58,7 +58,7 @@ die "Missing type from one or more configs\n"
 my $do = \&run;
 if ($script) {
     $do = \&echo;
-    print "set -e\n\n";
+    print "set -ex\n\n";
 }
 
 # Run each of the configs.

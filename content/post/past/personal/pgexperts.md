@@ -15,7 +15,7 @@ really excited about PGX, a cooperative of solid and experienced--dare I say
 expert?--people dedicated to providing exceptional PostgreSQL professional
 services, including consulting, training, and support.
 
-Morever, we have a solid group of experienced application developers, who are
+Moreover, we have a solid group of experienced application developers, who are
 ready and willing to build your PostgreSQL-backed applications on [Rails],
 [Catalyst], [PHP], or whatever environment you prefer. If it's related to
 PostgreSQL, it's what we do.

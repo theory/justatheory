@@ -6,16 +6,8 @@ lastMod: 2021-08-02T16:55:43Z
 description: I started a new gig last week, after ten rewarding years at the old job. Pretty stoked.
 tags: [Personal, Work, New York Times]
 type: post
+image: {src: nytt.png, alt: "The New York Times T Logo", copyright: "The New York Times", metaOnly: false, width: 384, height: 384, class: left }
 ---
-
-{{% figure
-    src       = "nytt.png"
-    alt       = "The New York Times T Logo"
-    copyright = "The New York Times"
-    width     = 384
-    height    = 384
-    class     = left
-%}}
 
 Some news: I'm super happy to report that I started a new job last week at [The
 New York Times].

@@ -65,6 +65,7 @@ disableKinds = ["section"]
   [markup.highlight]
     style = "monokai"
     codeFences = true
+    noClasses = false
   [markup.goldmark]
     [markup.goldmark.parser]
       autoHeadingID = true

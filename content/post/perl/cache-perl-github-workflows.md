@@ -6,7 +6,6 @@ lastMod: 2021-11-28T16:43:20Z
 description: A quick tip for speeding up Perl builds in GitHub workflows by caching dependencies.
 tags: [Perl, GitHub, GitHub Actions, GitHub Workflows, Caching]
 type: post
-draft: true
 ---
 
 I've spent quite a few hours evenings and weekends recently building out a

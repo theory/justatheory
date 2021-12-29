@@ -2,7 +2,7 @@
 {{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
 {{- $id := md5 $src }}
 {{ if $zoom }}{{ if not .top }}</div>
-{{ end }}<input class="zoom" type="checkbox" style="display:none" id="{{ $id }}"/>
+{{ end }}<input class="zoom" type="checkbox" id="{{ $id }}"/>
 <label for="{{ $id }}">{{- end }}
 	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
 		{{- if .Params.link }}

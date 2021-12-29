@@ -19,4 +19,4 @@ they all have much the same stuff. I want to really get into advanced concepts.
 
 So what's the best choice? Leave me a comment with your opinion. Thanks!
 
-  [Josh Berkus]: http://blogs.ittoolbox.com/database/soup/ "Josh Berkus: Database Soup"
+  [Josh Berkus]: https://www.databasesoup.com "Josh Berkus: Database Soup"

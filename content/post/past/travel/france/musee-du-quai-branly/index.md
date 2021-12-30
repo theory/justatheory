@@ -5,14 +5,12 @@ title: Musée du quai Branly
 aliases: [/travel/france/2008/musee-du-quai-branly.html]
 tags: [France, Photography, Paris, Musée Du Quai Branly]
 type: post
+image:
+  src: branly.jpg
+  alt: Musée du quai Branly
+  link: https://www.flickr.com/photos/theory/sets/72157615217912698/
+  title: Musée du quai Branly
 ---
-
-{{% figure
-  src   = "branly.jpg"
-  alt   = "Musée du quai Branly"
-  link  = "https://www.flickr.com/photos/theory/sets/72157615217912698/"
-  title = "Musée du quai Branly"
-%}}
 
 I’ve just [posted] a new set of photos from our trip to France. This time I’ve
 put up photos of le [Musée du quai Branly], a fabulous example of modern

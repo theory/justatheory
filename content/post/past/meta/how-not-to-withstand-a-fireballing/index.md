@@ -5,14 +5,12 @@ title: How Not to Withstand a Fireballing
 aliases: [/computers/blog/how-not-to-withstand-a-fireballing.html]
 tags: [Just a Theory, Daring Fireball, Aaaaauuugh]
 type: post
+image:
+  src: fireballed.png
+  alt: Fireballed!
+  class: frame
+  caption: Yeah, hovering along at 50-200 hits a day, and then, BAM!
 ---
-
-{{% figure
-  src     = "fireballed.png"
-  alt     = "Fireballed!"
-  class   = "frame"
-  caption = "Yeah, hovering along at 50-200 hits a day, and then, BAM!"
-%}}
 
 -   Set up a simple [Blosxom]-powered blog on the advice of a [friend who wrote
     it]

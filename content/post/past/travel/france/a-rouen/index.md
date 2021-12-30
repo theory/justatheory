@@ -5,14 +5,12 @@ title: À Rouen
 aliases: [/travel/france/2012/a-rouen.html]
 tags: [France, Travel, Rouen, Home Exchange]
 type: post
+image:
+  src: at-st-ouen.jpg
+  alt: At the Church of St. Ouen
+  title: At the Church of St. Ouen, Rouen
+  class: left
 ---
-
-{{% figure
-  src   = "at-st-ouen.jpg"
-  alt   = "At the Church of St. Ouen"
-  title = "At the Church of St. Ouen, Rouen"
-  class = "left"
-%}}
 
 We arrived Ã  Rouen just over a week ago. This is our second extended visit, a
 house exchange with a lovely French couple who’s daughter lives in Portland. We

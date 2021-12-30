@@ -5,15 +5,13 @@ title: Thank You Steve
 aliases: [/culture/thank-you-steve.html]
 tags: [Steve Jobs, Apple, Thanks]
 type: post
+image:
+  src: Steve-Jobs-RIP.jpg
+  class: frame
+  alt: Steve Jobs
+  link: https://www.apple.com/stevejobs/
+  title: Steve Jobs RIP
 ---
-
-{{% figure
-    src   = "Steve-Jobs-RIP.jpg"
-    class = "frame"
-    alt   = "Steve Jobs"
-    link  = "https://www.apple.com/stevejobs/"
-    title = "Steve Jobs RIP"
-%}}
 
 A sad day. You will be missed. I feel like a part of the whole world offering my
 heartfelt condolences to his family, his friends, and his coworkers.

@@ -5,13 +5,11 @@ title: FSA::Rules Graphing Features Improved
 aliases: [/computers/programming/perl/fsa_rules_graph_improved.html]
 tags: [Perl, FSA::Rules, GraphViz, PNG, State Machines]
 type: post
+image:
+  src: fsa_rules_sample.png
+  alt: FSA::Rules sample graph
+  class: frame
 ---
-
-{{% figure
-  src   = "fsa_rules_sample.png"
-  alt   = "FSA::Rules sample graph"
-  class = "frame"
-%}}
 
 I just released [FSA::Rules] 0.25. This version came about as I returned to the
 module to handle setting up a PostgreSQL database and found the graphics that it

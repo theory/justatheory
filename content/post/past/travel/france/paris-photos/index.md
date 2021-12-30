@@ -5,14 +5,12 @@ title: Paris Photos
 aliases: [/travel/france/2008/paris-photos.html]
 tags: [France, Paris, Musée D’Orsay, Eiffel Tower]
 type: post
+image:
+  src: timing-sacre-coeur.jpg
+  alt: Timing Sacre Coeur
+  link: https://www.flickr.com/photos/theory/sets/72157610690990602/
+  title: Musée D’Orsay, Notre Dame, Centre Pompidou
 ---
-
-{{% figure
-  src   = "timing-sacre-coeur.jpg"
-  alt   = "Timing Sacre Coeur"
-  link  = "https://www.flickr.com/photos/theory/sets/72157610690990602/"
-  title = "Musée D’Orsay, Notre Dame, Centre Pompidou"
-%}}
 
 We overnighted in Paris last week. It was a whirlwind visit but we made the best
 of it. I keep thinking I’ll take the time to blog more about our trip, but keep

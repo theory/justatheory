@@ -5,13 +5,11 @@ title: A Quick Trip to Alamosa
 aliases: [/travel/alamosa/june_2004.html]
 tags: [Alamosa, Colorado, Kineticode, Consulting, Business, Adams State College, Milagro’s Coffeehouse, Great Lakes Airlines]
 type: post
+image:
+  src: milagros_coffeehouse.jpg
+  alt: Milagro’s Coffeehouse
+  class: right
 ---
-
-{{% figure
-  src   = "milagros_coffeehouse.jpg"
-  alt   = "Milagro’s Coffeehouse"
-  class = "right"
-%}}
 
 Last week, I went on a brief business trip for [Kineticode] to Alamosa,
 Colorado. The client was [Adams State College], which is planning to use

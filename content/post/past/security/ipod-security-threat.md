@@ -5,14 +5,12 @@ title: "Gartner: iPod is a Security Threat"
 aliases: [/computers/policy/ipod_security_threat.html]
 tags: [Security, iPod, Apple, Gartner, Information Technology, Guns, NRA, Design, Music]
 type: post
+image:
+  src: https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg
+  alt: 20 GB iPod
+  class: right
+  link: https://www.amazon.com/dp/B0000CEORU/justatheory-20
 ---
-
-{{% figure
-  src   = "https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg"
-  alt   = "20 GB iPod"
-  class = "right"
-  link  = "https://www.amazon.com/dp/B0000CEORU/justatheory-20"
-%}}
 
 Well, this is entertaining. It seems that the Gartner Group has decided that
 [iPods] are a significant security threat. I think it's great that a company

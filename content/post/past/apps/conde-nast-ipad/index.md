@@ -217,8 +217,8 @@ and success will be assured.
   [Strongrrl]: http://blog.strongrrl.com/
   [Adobe Digital Publishing Suite family]: http://www.adobe.com/products/digital-publishing-suite-family.html
   [Condé told All Things D]: http://allthingsd.com/20100928/conde-nasts-ipad-apps-are-too-portly-blame-adobe/
-  [complained]: https://twitter.com/#!/theory/status/180846743775232000
-  [Brian Lam chimed in]: https://twitter.com/#!/blam/status/180856508479848448
+  [complained]: https://twitter.com/theory/status/180846743775232000
+  [Brian Lam chimed in]: https://twitter.com/blam/status/180856508479848448
   [Scott Dadich]: https://twitter.com/sdadich
   [theory]: https://twitter.com/theory
   [blam]: https://twitter.com/blam

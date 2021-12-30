@@ -4,9 +4,12 @@ title: Please Test Pod::Simple 3.29_3
 aliases: [/2015/02/11/please-test-pod-simple-3-dot-29-3/]
 tags: [Perl, Sean Burke, Karl Williamson, Pod]
 type: post
+image:
+  src: cpan.png
+  alt: Pod Book
+  class: left
+  width: 250
 ---
-
-{{% figure src="cpan.png" alt="Pod Book" class="left" width="250" %}}
 
 I've just pushed [Pod-Simple] 3.29_v3 to CPAN. [Karl Williamson] did a lot of
 hacking on this release, finally adding support for EBCDIC. But as part of

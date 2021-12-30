@@ -3,16 +3,14 @@ date: 2011-11-14T18:06:42Z
 slug: steve-jobs
 title: Steve Jobs
 aliases: [/culture/steve-jobs.html]
-tags: [Steve Jobs, Biography, Walter Isaacson, Ronald Reagan, Dutch]
+tags: [Books, Steve Jobs, Biography, Walter Isaacson, Ronald Reagan, Dutch]
 type: post
+image:
+  src: https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg
+  link: https://www.amazon.com/gp/product/1451648537/justatheory-20
+  caption: "*Steve Jobs* by Walter Isaacson"
+  alt: Steve Jobs
 ---
-
-{{% figure
-  src     = "https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg"
-  link    = "https://www.amazon.com/gp/product/1451648537/justatheory-20"
-  caption = "“Steve Jobs” by Walter Isaacson"
-  alt     = "Steve Jobs"
-%}}
 
 Until a few weeks ago, the biography I read most recently was [*Dutch*], Edmund
 Morris’s authorized portrait of Ronald Reagan. I read it not because I was

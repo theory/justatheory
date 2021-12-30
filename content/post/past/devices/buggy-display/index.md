@@ -5,12 +5,10 @@ title: My Buggy MacBook Pro
 aliases: [/computers/macbookpro/buggy-display.html]
 tags: [MacBook Pro, Insects, Screen, MacBook]
 type: post
+image:
+  src: buggy-mackbook-pro.jpg
+  alt: My Buggy MacBook Pro
 ---
-
-{{% figure
-  src   = "buggy-mackbook-pro.jpg"
-  alt   = "My Buggy MacBook Pro"
-%}}
 
 A few days ago, I noticed a bug crawling across the screen of my MacBook Pro as
 I was working. I tried to shoo it away, but it wouldn't budge—because it was

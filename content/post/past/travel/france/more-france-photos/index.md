@@ -5,15 +5,13 @@ title: More France Photos
 aliases: [/travel/france/2008/more-france-photos.html]
 tags: [France, Rouen, Paris, Anna]
 type: post
+image:
+  src: dangly-earrings.jpg
+  alt: Dangly Earrings
+  class: left
+  link: https://www.flickr.com/photos/theory/sets/72157611685878685/
+  title: Christmas in Rouen
 ---
-
-{{% figure
-  src   = "dangly-earrings.jpg"
-  alt   = "Dangly Earrings"
-  class = "left"
-  link  = "https://www.flickr.com/photos/theory/sets/72157611685878685/"
-  title = "Christmas in Rouen"
-%}}
 
 It seems that quite a bit of time went by since my last blog entry before the
 server downtime. I hadn't realized. Since then, I've posted a bunch more photos

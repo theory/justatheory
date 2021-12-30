@@ -5,16 +5,14 @@ title: Arrival
 aliases: [/travel/france/2008/arrival.html]
 tags: [France, Paris, Rouen, Lufthansa, Travel, Eiffel Tower, Jet Lag]
 type: post
+image:
+  src: passenger.jpg
+  alt: Portland to Rouen
+  width: 1024
+  height: 681
+  link: https://www.flickr.com/photos/theory/albums/72157610395807045
+  title: Portland to Rouen
 ---
-
-{{% figure
-  src    = "passenger.jpg"
-  alt    = "Portland to Rouen"
-  width  = "1024"
-  height = "681"
-  link   = "https://www.flickr.com/photos/theory/albums/72157610395807045"
-  title  = "Portland to Rouen"
-%}}
 
 Well, we made it. Things went pretty smoothly, all told. The flight was fairly
 empty, so Anna, at least, was able to lie across two seats and get a few hours

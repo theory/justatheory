@@ -4,9 +4,10 @@ title: Build Modern Perl RPMs with rpmcpan
 aliases: [/rpm/2014/09/21/build-modern-perl-rpms-with-rpmcpan/]
 tags: [Perl, RPM, CPAN, rpmcpan]
 type: post
+image:
+  src: ioperllove.png
+  alt: iovation + Perl = Love
 ---
-
-{{% figure src = "ioperllove.png" alt = "iovation + Perl = Love" %}}
 
 We've been using the CentOS Perl RPMs at [iovation] to run all of our Perl
 applications. This has been somewhat painful, because the version of Perl,

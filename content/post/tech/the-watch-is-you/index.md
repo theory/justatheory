@@ -4,16 +4,14 @@ date: 2015-04-16T20:00:00Z
 description: Apple Watch and the future of identity.
 tags: [Apple, Apple Watch, Identity, Authentication, MFA, Glenn Fleishman]
 type: post
+image:
+  src: iphone-watch.jpg
+  alt: iPhone and Apple Watch
+  caption: Multiple factors.
+  class: right
+  attr: Apple
+  attrLink: https://www.apple.com/
 ---
-
-{{% figure
-   src      = "iphone-watch.jpg"
-   alt      = "iPhone and Apple Watch"
-   caption  = "Multiple factors."
-   class    = "right"
-   attr     = "Apple"
-   attrLink = "https://www.apple.com/"
-%}}
 
 Back when Apple introduced Touch ID, I had an idea for a blog post, never
 written, entitled "Touch ID is Step Zero in Apple's Authentication Plan." As an

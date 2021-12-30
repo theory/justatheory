@@ -5,15 +5,13 @@ title: New Bricolage Website Launched!
 aliases: [/bricolage/site/new_site.html]
 tags: [Bricolage, OSCON]
 type: post
+image:
+  src: bricolage-logo.png
+  alt: Bricolage
+  title: Explore the new Bricolage Website!
+  class: right
+  link: http://www.bricolagecms.org/
 ---
-
-{{% figure
-  src   = "http://bricolagecms.org/ui/img/logo.png"
-  alt   = "Bricolage"
-  title = "Explore the new Bricolage Website!"
-  class = "right"
-  link  = "http://www.bricolagecms.org/"
-%}}
 
 The launch of the new [Bricolage Website] went off without a hitch yesterday.
 The lack of sleep getting it all just so was worth it, in the end. And I'm very

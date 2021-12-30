@@ -5,13 +5,11 @@ title: Blog Restored, Google Analytics, FeedBurner
 aliases: [/computers/internet/weblogs/blog-restored.html]
 tags: [Just a Theory, Failure, Blosxom, Google Analytics, FeedBurner, Linux, Debian]
 type: post
+image:
+  src: server-room.jpg
+  alt: My “Server Room”
+  caption: My “Server Room”
 ---
-
-{{% figure
-  src     = "server-room.jpg"
-  alt     = "My “Server Room”"
-  caption = "My “Server Room”"
-%}}
 
 Some of you no doubt noticed that this site was down for several days, starting
 last Friday and lasting until yesterday. Sorry about that. I had a hard disk

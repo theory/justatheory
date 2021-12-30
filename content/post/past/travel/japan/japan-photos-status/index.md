@@ -5,6 +5,12 @@ title: Japan Photos, Current Status
 aliases: [/travel/japan/japan-photos-status.html]
 tags: [Japan, Twitter, Tokyo, Kyoto]
 type: post
+image:
+  src: kiyomizu-temple-stage.jpg
+  alt: Kiyomizu Temple Stage
+  title: Kiyomizu Temple Stage
+  link: https://www.flickr.com/photos/theory/sets/72157622853441435/
+  metaOnly: true
 ---
 
 {{% figure

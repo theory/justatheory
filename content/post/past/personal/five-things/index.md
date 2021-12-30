@@ -5,6 +5,9 @@ title: Five Things You Don't Know About Me
 aliases: [/autobiographical/five_things.html]
 tags: [Personal, Autobiography, Kibbutz, Dafna, Archaeology, CSUS, University of Virginia, Portland, Oregon, Family, Lifestyle, Anna, Values Of n, Stikkit, I Want Sandy]
 type: post
+image:
+   src: flyer.jpg
+   alt: Anna Flies
 ---
 
 The reason it has taken me so long to write this entry, after Adrian [tagged me]

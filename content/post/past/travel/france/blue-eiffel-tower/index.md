@@ -5,14 +5,12 @@ title: Blue Eiffel
 aliases: [/travel/france/2008/blue-eiffel-tower.html]
 tags: [France, Eiffel Tower, Photography]
 type: post
+image:
+  src: sparkling-blue-eiffel.jpg
+  alt: Blue Eiffel Tower
+  link: https://www.flickr.com/photos/theory/3138733614/in/set-72157611621954549/
+  title: Blue Eiffel
 ---
-
-{{% figure
-  src   = "sparkling-blue-eiffel.jpg"
-  alt   = "Blue Eiffel Tower"
-  link  = "https://www.flickr.com/photos/theory/3138733614/in/set-72157611621954549/"
-  title = "Blue Eiffel"
-%}}
 
 I finally got around to posting my photos of the [Blue Eiffel Tower] on Flickr.
 The Tower is lit in blue in celebration of the French Presidency of the EU, and

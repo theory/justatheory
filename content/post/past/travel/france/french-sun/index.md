@@ -5,15 +5,14 @@ title: More Sun
 aliases: [/travel/france/2013/more-sun.html]
 tags: [France, Travel, Summer, Arles, Provence]
 type: post
+image:
+  src: arles.jpg
+  alt: Arles from the Arena
+  link: https://www.flickr.com/photos/decar66/8583754790/
+  title: Arles from the Arena
+  caption: Arles from the Arena
+  attr: "[Salva Barbera](https://www.flickr.com/photos/decar66/) ([CC BY 2.0](http://creativecommons.org/licenses/by/2.0/))"
 ---
-
-{{% figure
-  src     = "arles.jpg"
-  alt     = "Arles from the Arena"
-  link    = "https://www.flickr.com/photos/decar66/8583754790/"
-  title   = "Arles from the Arena"
-  caption = "Arles from the Arena by [Salva Barbera](https://www.flickr.com/photos/decar66/) ([CC BY 2.0](http://creativecommons.org/licenses/by/2.0/))"
-%}}
 
 We spent seven weeks last summer [in Northern France]. Man it was an awesome
 time. None of us wanted to leave! Well, almost true. The thing about Normandy is

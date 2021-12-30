@@ -5,14 +5,12 @@ title: Rouen Again
 aliases: [/travel/france/2012/rouen-again.html]
 tags: [France, Travel, Rouen, Normandy]
 type: post
+image:
+  src: rouen-skyline.jpg
+  alt: Rouen Skyline
+  link: https://www.flickr.com/photos/theory/3330418728/
+  title: Rouen Skyline
 ---
-
-{{% figure
-  src    = "rouen-skyline.jpg"
-  alt    = "Rouen Skyline"
-  link   = "https://www.flickr.com/photos/theory/3330418728/"
-  title  = "Rouen Skyline"
-%}}
 
 A few years back, we spent six weeks in Rouen, France. I [blogged about it a
 little] and took [a lot of photos]. It was a terrific experience, and we always

@@ -5,15 +5,13 @@ title: Let's get Relational
 aliases: [/computers/databases/get_relational.html]
 tags: [Databases, C.J. Date, Relational Model, RDBMS, Databases, SQL, Tutorial D, Object/Relational Databases]
 type: post
+image:
+  src: dbind.jpg
+  alt: Cover of “Database In Depth” by C.J. Date
+  class: right
+  title: Buy “Database In Depth” on Amazon.com
+  link: https://www.amazon.com/exec/obidos/ASIN/0596100124/justatheory-20
 ---
-
-{{% figure
-  src   = "dbind.jpg"
-  alt   = "Cover of “Database In Depth” by C.J. Date"
-  class = "right"
-  title = "Buy “Database In Depth” on Amazon.com"
-  link  = "https://www.amazon.com/exec/obidos/ASIN/0596100124/justatheory-20"
-%}}
 
 > The idea that the relational model could handle only rather simple kinds of
 > data (like numbers, and strings, and dates, and times) is a huge

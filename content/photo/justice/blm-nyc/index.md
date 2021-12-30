@@ -6,10 +6,11 @@ lastMod: 2020-07-12T18:40:45Z
 description: "I biked down to Midtown to see the new #BlackLivesMatter street art in front of Trump Tower."
 tags: [Justice, Black Lives Matter, New York City, Trump Tower]
 type: photo
-# link: ~
-# author: {name: David E. Wheeler, email: david@justatheory.com }
-# via: {name: Example, href: https://example.com, title: Hello }
-image: {src: blmnyc.jpeg, alt: "Black Lives Matter Mural down Fifth Avenue in front of Trump Tower in New York City", caption: "#BlackLivesMatter #NewYorkCity", copyright: 2020 David E. Wheeler }
+image:
+  src: blmnyc.jpeg
+  alt: Black Lives Matter Mural down Fifth Avenue in front of Trump Tower in New York City
+  caption: "#BlackLivesMatter #NewYorkCity"
+  copyright: 2020 David E. Wheeler
 ---
 
 I took advantage of the new City Bike dock in front of our flat to ride 80

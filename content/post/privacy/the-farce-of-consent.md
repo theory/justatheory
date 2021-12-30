@@ -6,12 +6,14 @@ description: Helen Nissenbaum on how to approach data privacy beyond the insuffi
 tags: [Privacy, Consent, GDPR, Helen Nissenbaum]
 type: post
 link: https://hbr.org/2018/09/stop-thinking-about-consent-it-isnt-possible-and-it-isnt-right
-via: {name: Schneier on Security, href: https://www.schneier.com/blog/archives/2018/10/helen_nissenbau_1.html, title: Helen Nissenbaum on Data Privacy and Consent }
+via:
+  name: Schneier on Security
+  href: https://www.schneier.com/blog/archives/2018/10/helen_nissenbau_1.html
+  title: Helen Nissenbaum on Data Privacy and Consent
 ---
 
-Cornell Tech Professor of Information Science [Helen Nissenbaum], in
-[an interview](https://hbr.org/2018/09/stop-thinking-about-consent-it-isnt-possible-and-it-isnt-right)
-for the *Harvard Business Review:*
+Cornell Tech Professor of Information Science [Helen Nissenbaum], in [an
+interview] for the *Harvard Business Review:*
 
 > The farce of consent as currently deployed is probably doing more harm as it
 > gives the misimpression of meaningful control that we are guiltily ceding

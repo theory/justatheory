@@ -6,7 +6,9 @@ description: "Wise statesmen as they were, they knew the tendency of prosperity 
 tags: [Abraham Lincoln, Declaration of Independence, Unalienable Rights, Tyrants]
 type: post
 link: https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567?rgn=div1;view=fulltext
-via: {name: James Gleick, href: https://twitter.com/JamesGleick/status/1014526901396877313 }
+via:
+  name: James Gleick
+  href: https://twitter.com/JamesGleick/status/1014526901396877313
 ---
 
 Abraham Lincoln, [interpreting] the [Declaration of Independence], in 1858:

@@ -6,9 +6,13 @@ lastMod: 2020-10-05T01:16:34Z
 description: An encounter with a hawk and a squirrel in St. Nicholas Park, Harlem.
 tags: [Harlem, Hawk, Red-Tailed Hawk, St. Nicholas Park, Photography, Nervous Squirrel]
 type: photo
-# author: {name: David E. Wheeler, email: david@justatheory.com }
-# via: {name: Example, href: https://example.com, title: Hello }
-image: {src: hawk3.jpeg, alt: A Red-Tailed Hawk curiously watching a nervous squirrel climbing a tree, caption: Red-Tailed curiosity, title: Red-Tailed curiosity, metaonly: true, copyright: 2020 David E. Wheeler }
+image:
+    src: hawk3.jpeg
+    alt: A Red-Tailed Hawk curiously watching a nervous squirrel climbing a tree
+    caption: Red-Tailed curiosity
+    title: Red-Tailed curiosity
+    metaOnly: true
+    copyright: 2020 David E. Wheeler
 ---
 
 Three months into the Covid-19 Pandemic, I had barely left the apartment. But

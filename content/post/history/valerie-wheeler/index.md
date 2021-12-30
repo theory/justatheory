@@ -5,7 +5,12 @@ lastMod: 2020-01-21T01:45:24Z
 description: Remembering Valerie Wheeler, Anthropologist, mentor, “mom”.
 tags: [History, Valerie Wheeler, CSUS, Anthropology]
 type: post
-image: {src: valerie.jpg, alt: Valerie Wheeler, caption: "CSUS Anthropology department picnic, 1991", width: 293, class: "right frame" }
+image:
+  src: valerie.jpg
+  alt: Valerie Wheeler
+  caption: CSUS Anthropology department picnic, 1991
+  width: 293
+  class: "right frame"
 ---
 
 Two years ago, my undergraduate Anthropology advisor, Professor Valerie Wheeler,

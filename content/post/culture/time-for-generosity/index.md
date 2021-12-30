@@ -6,8 +6,14 @@ lastMod: 2019-04-22T15:26:38Z
 description: The universe is hospitable to life for a limited time; let's make the best of it.
 tags: [Culture, Science, Physics, Universe, Time Lapse, John Boswell, Generosity, Empathy, Compassion]
 type: post
-via: {name: kottke.org, href: https://kottke.org/19/03/timelapse-of-the-future, title: Timelapse of the Future }
-image: {src: supermassive-blackhole.jpg, alt: Supermassive Black Hole, caption: Image by ESO/R.Genzel and S.Gillessen }
+via:
+  name: kottke.org
+  href: https://kottke.org/19/03/timelapse-of-the-future
+  title: Timelapse of the Future
+image:
+  src: supermassive-blackhole.jpg
+  alt: Supermassive Black Hole
+  attr: ESO/R.Genzel and S.Gillessen
 ---
 
 This video, [Timelapse of the Future], has kept me thinking ever since [Kottke

@@ -6,7 +6,9 @@ description: Masha Gessen highlights the inadequacy of the political press cover
 tags: [Politics, Russia, Mafia, Media, Masha Gessen]
 type: post
 link: https://www.newyorker.com/news/our-columnists/the-trump-russia-investigation-and-the-mafia-state
-via: { name: Lauren Bacon, href: https://twitter.com/laurenbacon }
+via:
+  name: Lauren Bacon
+  href: https://twitter.com/laurenbacon
 ---
 
 Masha Gessen, in [a piece] for _The New Yorker_:

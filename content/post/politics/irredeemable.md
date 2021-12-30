@@ -6,7 +6,9 @@ description: Virginia Heffernan finds that Donald Trump has no values.
 tags: [Donald Trump, Virginia Heffernan]
 type: post
 link: https://roarfeminist.org/2017/03/27/donald-trump-has-no-values/
-via: {name: Charlotte Clymer, href: https://twitter.com/cmclymer/status/1017993649353879553/ }
+via:
+  name: Charlotte Clymer
+  href: https://twitter.com/cmclymer/status/1017993649353879553/
 ---
 
 Virginia Heffernan finds that [Donald Trump Has No Values]:

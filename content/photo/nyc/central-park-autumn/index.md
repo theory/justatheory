@@ -6,10 +6,11 @@ lastMod: 2020-11-01T21:14:27Z
 description: A couple photos of the gorgeous fall colors oer The Pool in Central Park.
 tags: [New York City, Central Park, The Pool, Autumn Leaves]
 type: photo
-link: ~
-# author: {name: David E. Wheeler, email: david@justatheory.com }
-# via: {name: Example, href: https://example.com, title: Hello }
-image: {src: the-pool.jpeg, alt: Backlit, colorful autumn trees over The Pool in Central Park, caption: Autumn colors over The Pool, copyright: 2020 David E. Wheeler }
+image:
+  src: the-pool.jpeg
+  alt: Backlit, colorful autumn trees over The Pool in Central Park
+  caption: Autumn colors over The Pool
+  copyright: 2020 David E. Wheeler
 ---
 
 It's that most magical time of year in Central Park: Autumn. I spent a lot of

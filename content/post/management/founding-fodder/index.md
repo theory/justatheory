@@ -4,7 +4,11 @@ date: 2019-02-25T15:31:55Z
 lastMod: 2019-02-25T15:31:55Z
 description: On the importance of setting direction and engendering organizational focus by formalizing the foundational concepts of an organization.
 tags: [Management, Mission, Vision, Strategy, Meaning, Focus, Leadership, Constitution]
-image: {src: we-the-people.jpg, alt: We the People, caption: "Photo by [Anthony Garand](https://unsplash.com/photos/7rehTDIfR8o) on [Unsplash](https://unsplash.com/search/photos/constitution)", title: We the People }
+image:
+  src: we-the-people.jpg
+  alt: We the People
+  attr: "[Anthony Garand](https://unsplash.com/photos/7rehTDIfR8o) on [Unsplash](https://unsplash.com/search/photos/constitution)"
+  title: We the People }
 ---
 
 Tone is set from the top, [they say]. I once started [a company] and ran it for

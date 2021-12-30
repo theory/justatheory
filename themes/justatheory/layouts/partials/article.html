@@ -9,7 +9,7 @@
             {{- end }}
             <a rel="bookmark" href="{{ .doc.Permalink }}"></a>
             <time datetime="{{ .doc.Date.UTC.Format "2006-01-02T15:04:05Z" }}">{{ .doc.Date.Format "2 Jan 2006" }}</time>
-        </header>{{ end }}{{ if (and .doc.Params.image (not .doc.Params.image.metaonly)) }}
+        </header>{{ end }}{{ if (and .doc.Params.image (not .doc.Params.image.metaOnly)) }}
 {{ partial "figure.html" (dict "Params" .doc.Params.image "Page" .doc "Site" .doc.Site "feed" .feed "top" true) }}{{ end }}
         <div class="text">
 {{ replace (replace .doc.Content `class="footnote-ref"` `class="footnote-ref" rel="footnote"`) `role="doc-endnote"` `role="doc-endnote" class="footnote"` | safeHTML }}

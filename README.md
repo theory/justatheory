@@ -84,7 +84,7 @@ Text for the caption. Optional.
 Text to use for attribution, for when the photo comes from elsewhere.
 Optional.
 
-#### `attrlink`
+#### `attrLink`
 
 Link to use for the attribution specified by `attr`. Used only if `attr` is
 also set. Optional.
@@ -93,7 +93,7 @@ also set. Optional.
 
 Text to use for a copyright notice. Will be preceded by the copyright symbol.
 
-#### `metaonly`
+#### `metaOnly`
 
 Used only for the `image:` front matter. When set to `true`, prevents the figure
 from being rendered above the body of the post. Useful if the image is used

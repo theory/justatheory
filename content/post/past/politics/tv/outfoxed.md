@@ -5,16 +5,16 @@ title: See “OutFoxed”
 aliases: [/culture/tv/outfoxed.html]
 tags: [Poltics, Outfoxed, Fox, New York Times]
 type: post
-via: { name: Lessig Blog, href: http://www.lessig.org/blog/archives/002041.shtml }
+via:
+  name: Lessig Blog
+  href: http://www.lessig.org/blog/archives/002041.shtml
+image:
+  src: https://images-na.ssl-images-amazon.com/images/I/519MGXATKEL.jpg
+  alt: Outfoxed
+  title: Buy “Outfoxed” from Amazon.com
+  class: "frame right"
+  link: https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20
 ---
-
-{{% figure
-  src   = "https://images-na.ssl-images-amazon.com/images/I/519MGXATKEL.jpg"
-  alt   = "Outfoxed"
-  title = "Buy “Outfoxed” from Amazon.com"
-  class = "right"
-  link  = "https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20"
-%}}
 
 I'm going to have to [order] the “[Outfoxed]” DVD and give it a look. It got a
 great [writeup] in the *New York Times*.

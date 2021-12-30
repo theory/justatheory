@@ -20,8 +20,8 @@
 
 {{- $caption := .Params.caption -}}
 {{- if .Params.attr -}}
-    {{- if .Params.attrlink -}}
-        {{- $caption = printf "%v\nImage: [%v](%v)" $caption .Params.attr .Params.attrlink -}}
+    {{- if .Params.attrLink -}}
+        {{- $caption = printf "%v\nImage: [%v](%v)" $caption .Params.attr .Params.attrLink -}}
     {{- else -}}
         {{- $caption = printf "%v\nImage: %v" $caption .Params.attr -}}
     {{- end -}}

@@ -6,9 +6,10 @@ description: A terrific interview with a fabulous writer.
 tags: [Interviews, Jia Tolentino]
 type: post
 link: https://www.interviewmagazine.com/culture/ask-a-sane-person-jia-tolentino-book-2020-hope
-# author: {name: David E. Wheeler, email: david@justatheory.com }
-via: {name: Kottke, href: https://kottke.org/20/07/feeling-loved-from-a-distance, title: Feeling Loved From a Distance }
-# image: {src: hi.png, alt: Hi, caption: Boy Howdy, link: example.com, title: Hi }
+via:
+  name: Kottke
+  href: https://kottke.org/20/07/feeling-loved-from-a-distance
+  title: Feeling Loved From a Distance
 ---
 
 [Kottke's right], this [interview with Jia Tolentino][interview] in *Interview*

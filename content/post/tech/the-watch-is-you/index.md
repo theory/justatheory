@@ -12,7 +12,7 @@ type: post
    caption  = "Multiple factors."
    class    = "right"
    attr     = "Apple"
-   attrlink = "https://www.apple.com/"
+   attrLink = "https://www.apple.com/"
 %}}
 
 Back when Apple introduced Touch ID, I had an idea for a blog post, never

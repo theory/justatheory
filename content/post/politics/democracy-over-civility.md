@@ -6,7 +6,9 @@ description: The demand for civility in the face of deplorable lies and inhumane
 tags: [Politics, Democracy, Civility, Michelle Goldberg]
 type: post
 link: https://www.nytimes.com/2018/06/25/opinion/trump-sarah-huckabee-sanders-restaurant-civility.html
-via: {name: "@jonfavs", href: https://twitter.com/jonfavs/status/1011408256298696704 }
+via:
+  name: "@jonfavs"
+  href: https://twitter.com/jonfavs/status/1011408256298696704
 ---
 
 Michelle Goldberg in a [bracing piece] for *The New York Times*:

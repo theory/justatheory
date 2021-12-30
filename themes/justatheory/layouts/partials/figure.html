@@ -16,7 +16,7 @@
 		<figcaption>{{ with .Params.heading }}
 			<h4>{{ . | markdownify }}</h4>{{ end }}
 			<p>{{ if $zoom }}⧉ {{ end }}{{ with .Params.caption }}{{ . | markdownify }}{{ end }}{{ if .Params.attr }}
-				<cite>Image: {{ with .Params.attrlink}}<a href="{{ . }}">{{ end }}{{ .Params.attr | markdownify }}{{ if .Params.attrlink }}</a>{{ end }}</cite>
+				<cite>Image: {{ with .Params.attrLink}}<a href="{{ . }}">{{ end }}{{ .Params.attr | markdownify }}{{ if .Params.attrLink }}</a>{{ end }}</cite>
 			{{ end }}{{ with .Params.copyright }}
 				<cite>©&nbsp;{{ . | markdownify }}</cite>
 			{{ end }}</p>

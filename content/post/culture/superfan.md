@@ -6,7 +6,9 @@ description: “Trust and psychological safety are core elements of high perform
 tags: [Culture, Teams, Trust, Fandoms, Diversity, Love]
 type: post
 link: http://www.sachajudd.com/superfan/
-via: { name: Adrian Howard, href: https://twitter.com/adrianh }
+via:
+  name: Adrian Howard
+  href: https://twitter.com/adrianh
 ---
 
 Terrific [talk] by Sacha Judd:

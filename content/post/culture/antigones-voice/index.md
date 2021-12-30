@@ -5,7 +5,11 @@ lastMod: 2019-09-24T13:23:41Z
 description: What *Antigone in Ferguson* taught me about beauty, creativity, justice, ego, and autocratic control.
 tags: [Culture, Antigone in Ferguson, Antigone, Sophocles, Autocracy, Listening, Leadership, Ego, Justice]
 type: post
-image: {src: first-of-all-no.jpg, alt: "First of all, No", caption: "Photo by [Jazmin Quaynor](https://unsplash.com/@jazminantoinette) on [Unsplash](https://unsplash.com/)", title: "First of all, No" }
+image:
+  src: first-of-all-no.jpg
+  alt: First of all, No
+  attr: "[Jazmin Quaynor](https://unsplash.com/@jazminantoinette) on [Unsplash](https://unsplash.com/)"
+  title: "First of all, No"
 ---
 
 A couple months back, I saw *[Antigone in Ferguson]* at [St. Ann's Church] in

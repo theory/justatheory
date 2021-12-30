@@ -5,6 +5,11 @@ title: DesignScene Has Landed
 aliases: [/computers/apps/designscene-has-landed.html]
 tags: [DesignScene, Design, iPad, Objective-C, Cocoa programming, MVC, Roger Wong]
 type: post
+image:
+  src: ds_early_comp.jpg
+  alt: Roger’s Original Mockup
+  class: right
+  metaOnly: true
 ---
 
 I know I’ve been fairly quiet lately, though for good reasons. One is that I did
@@ -32,7 +37,7 @@ meet at [iPad Dev Camp] in April to see if the idea had any legs, and whether we
 could work well together.
 
 {{% figure
-  src   = "https://lunarboy.com/wp-content/uploads/2011/01/ds_early_comp.jpg"
+  src   = "ds_early_comp.jpg"
   alt   = "Roger’s Original Mockup"
   class = "right"
 %}}

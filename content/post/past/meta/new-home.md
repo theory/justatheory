@@ -47,13 +47,13 @@ thinking of [new][] [stuff] all the time. But I'd really like to make things
 much nicer for myself, so we'll see.
 
   [the Fireballing]: /computers/blog/how-not-to-withstand-a-fireballing.html
-  [Linode]: http://www.linode.com/
+  [Linode]: https://www.linode.com
   [Blosxom]: http://blosxom.sourceforge.net/
   [Nginx]: http://www.nginx.org/
   [Duck Duck Go]: http://duckduckgo.com/
   [Disqus]: http://disqus.com/
   [strongrrl.com]: http://www.strongrrl.com/
-  [kineticode.com]: https://www.kineticode.com/
+  [kineticode.com]: https://kineticode.com
   [PGXN mirror]: http://pgxn.justatheory.com/
   [ab]: http://httpd.apache.org/docs/2.2/programs/ab.html
   [numerous]: http://www.iovation.com/

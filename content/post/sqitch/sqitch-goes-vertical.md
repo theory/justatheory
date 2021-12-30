@@ -107,7 +107,7 @@ to get that done by early October.
     https://github.com/theory/sqitch/compare/v0.995...v0.996#diff-4
   [MySQL::Config]: https://metacpan.org/module/MySQL::Config
   [DBI]: https://metacpan.org/module/DBI
-  [Vertica]: https://my.vertica.com/
+  [Vertica]: https://vertica.com/
   [PostgreSQL]: http://www.postgresql.org/
   [work]: http://www.iovation.com/
   [rationalizing configuration hierarchies]:

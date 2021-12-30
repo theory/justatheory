@@ -30,7 +30,7 @@ And then there is [Octopress]. A blogging engine for hackers. Perfect for me.
 Hard to imagine something more appropriate (unless it was written in Perl). It
 seemed like a good opportunity to partition my online blogging.
 
-So here we are with my first partition. [theory.pm] is a Perl blog. Seemed
+So here we are with my first partition. `theory.pm` is a Perl blog. Seemed
 like the perfect name. I fiddled with it off and on for a few months, often
 following [Matt Gemmell's Advice], and I'm really happy with it. The
 open-source fonts [Source Sans Pro] and [Source Code Pro], from Adobe, look
@@ -54,7 +54,6 @@ after all, and [relaunched *Just a Theory*].
 
   [Just a Theory]: http://justatheory.com/
   [Octopress]: http://octopress.org
-  [theory.pm]: https://theory.pm/
   [Solarized]: http://ethanschoonover.com/solarized
   [Matt Gemmell's Advice]: http://mattgemmell.com/2013/05/22/designing-blogs-for-readers/
   [Source Sans Pro]: https://github.com/adobe/source-sans-pro

@@ -127,5 +127,4 @@ objects and an official `try`/`catch` syntax.
   [Throwable]: https://metacpan.org/module/Throwable
   [PGXN::Manager]: https://github.com/pgxn/pgxn-manager/
   [JSON]: https://metacpan.org/module/JSON
-  [in Perl 5.14]:
-    https://metacpan.org/module/JESSE/perl-5.14.0/pod/perldelta.pod#Exception-Handling
+  [in Perl 5.14]: https://perldoc.perl.org/5.14.0/perldelta#Exception-Handling

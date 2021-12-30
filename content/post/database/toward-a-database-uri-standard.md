@@ -236,7 +236,7 @@ have I overlooked? What have I got wrong? Let me know!
     "DJ-Database-URL on GitHub"
   [Rails database URLs]: https://github.com/glenngillen/rails-database-url
     "rails-database-url on GitHub"
-  [http URLs]: http://tools.ietf.org/html/rfc2616#page-19 "RFC 2616: “http URL”"
+  [http URLs]: https://datatracker.ietf.org/doc/html/rfc2616#page-19 "RFC 2616: “http URL”"
   [my proposal]: https://github.com/theory/uri-db "Database URI on GitHub"
   [URI scheme]: http://en.wikipedia.org/wiki/URI_scheme "Wikipedia: “URI scheme”"
   [SQLite]: http://sqlite.org/ "SQLite Home Page"

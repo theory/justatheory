@@ -66,10 +66,10 @@ Got something to add? [Fork it!]
   [a tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
   [Git]: http://git-scm.com/
   [to CPAN]: http://search.cpan.org/dist/App-Sqitch/
-  [`git-config`]: http://www.gitmanual.org/git-config.html
+  [`git-config`]: https://git-scm.com/docs/git-config
   [Config::GitLike]: https://metacpan.org/module/Config::GitLike/
   [the plan file]: https://github.com/theory/sqitch/blob/master/lib/sqitch.pod#plan-file
   [grammar]: https://github.com/theory/sqitch/blob/master/lib/sqitch.pod#grammar
   [pgTAP]: https://pgtap.org/
-  [MyTAP]: http://theory.github.com/mytap/
+  [MyTAP]: http://hepabolu.github.com/mytap/
   [Fork it!]: https://github.com/theory/sqitch

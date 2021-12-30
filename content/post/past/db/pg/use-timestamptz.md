@@ -44,8 +44,8 @@ in your database. Unless your app changes the value of the [`timestamp`
 GUC][`SET timezone = 'UTC'`] when it connects, it can just assume that
 everything is always UTC, and should always send updates as UTC.
 
-  [`timestamp with time zone` (aka `timestamptz`) and `time with time zone` (aka `timetz`)]: http://www.postgresql.org/docs/current/static/datatype-datetime.html
-  [`AT TIME ZONE` expression in your query]: http://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-ZONECONVERT
-  [`SET timezone = 'UTC'`]: http://www.postgresql.org/docs/9.1/static/runtime-config-client.html#GUC-TIMEZONE
-  [constraint exclusion]: http://www.postgresql.org/docs/9.1/static/ddl-partitioning.html#DDL-PARTITIONING-CONSTRAINT-EXCLUSION
-  [be ignored]: http://comments.gmane.org/gmane.comp.db.postgresql.performance/29681
+  [`timestamp with time zone` (aka `timestamptz`) and `time with time zone` (aka `timetz`)]: https://www.postgresql.org/docs/current/static/datatype-datetime.html
+  [`AT TIME ZONE` expression in your query]: https://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-ZONECONVERT
+  [`SET timezone = 'UTC'`]: https://www.postgresql.org/docs/9.1/static/runtime-config-client.html#GUC-TIMEZONE
+  [constraint exclusion]: https://www.postgresql.org/docs/9.1/static/ddl-partitioning.html#DDL-PARTITIONING-CONSTRAINT-EXCLUSION
+  [be ignored]: https://comments.gmane.org/gmane.comp.db.postgresql.performance/29681

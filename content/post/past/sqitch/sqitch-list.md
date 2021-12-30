@@ -12,5 +12,5 @@ been getting a lot more email about it lately, and a fair bit of it should be
 shared more generally. So if you’re interested in Sqitch, sign up! (Don’t like
 web forums? Me neither. Feel free to [subscribe by email], instead.)
 
-  [Sqitch Google Group]: https://groups.google.com/forum/#!forum/sqitch-users
+  [Sqitch Google Group]: https://groups.google.com/group/sqitch-users
   [subscribe by email]: mailto:sqitch-users+subscribe@googlegroups.com

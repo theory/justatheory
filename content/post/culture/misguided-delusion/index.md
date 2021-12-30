@@ -94,7 +94,7 @@ And beauty isn't subject to refutation, either.
 <small>This post [originally appeared] on *Medium.*</small>
 
   [Dustin Curtis]: https://dustincurtis.com/
-  [the link]: http://www.samharris.org/blog/item/the-fireplace-delusion
+  [the link]: https://www.samharris.org/blog/the-fireplace-delusion
     "Sam Harris: “The Fireplace Delusion”"
   [research shows]: https://www.ncbi.nlm.nih.gov/pubmed/17127644
     "Inhal Toxicol, Jan 2007: “Woodsmoke health effects: a review.”"

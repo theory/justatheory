@@ -30,5 +30,5 @@ I have more to say on the topic of iPad magazines, but I'm using the meager
 tuits I have to first make some infrastructural changes.
 
   [Blosxom]: http://blosxom.sourceforge.net/
-  [friend who wrote it]: http://raelity.org/
+  [friend who wrote it]: https://en.wikipedia.org/wiki/Rael_Dornfest
   [Daring Fireball melts your connection]: http://daringfireball.net/linked/2012/03/29/conde-nast

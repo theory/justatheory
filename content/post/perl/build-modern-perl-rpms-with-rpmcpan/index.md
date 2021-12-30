@@ -88,7 +88,7 @@ and leave the sad RPM past behind.
   [iovation]: http://iovation.com/
   [EPEL]: https://fedoraproject.org/wiki/EPEL "Extra Packages for Enterprise Linux"
   [hinky workaround]:
-    http://grokbase.com/t/perl/perl5-porters/147gfvrd2n/encode-vs-json#20140723oncbjv4rddo66735xess5wo77a
+    https://groups.google.com/g/perl.perl5.porters/c/00gP5beKEr4/m/EB_n4HcP5-8J
     "“Encode vs. JSON” on Perl 5 Porters"
   [you can use it, too]: https://github.com/iovation/rpmcpan "rpmcpan on GitHub"
   [DevOps]: http://twitter.com/aaronblew "Aaron Blew: SRE Manager (dun dun duuuuun!)"
@@ -99,4 +99,4 @@ and leave the sad RPM past behind.
   [README]: https://github.com/iovation/rpmcpan/blob/master/README.md "`rpmcpan README`"
   [pull request]: https://github.com/iovation/rpmcpan/pulls
   [MetaCPAN]: https://metacpan.org/
-  [DBD-Pg]: http://search.cpan/org/dist/DBD-Pg/ "DBD-Pg on CPAN"
+  [DBD-Pg]: https://metacpan.org/dist/DBD-Pg "DBD-Pg on MetaCPAN"

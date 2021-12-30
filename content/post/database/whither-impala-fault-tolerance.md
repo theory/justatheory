@@ -45,10 +45,10 @@ figured out. I'm disappointed it's not on the road map.
 
   [provided a roadmap]: https://blog.cloudera.com/blog/2012/12/whats-next-for-cloudera-impala/
   [Cloudera Blog]: https://blog.cloudera.com/
-  [Impala]: https://www.cloudera.com/content/cloudera/en/products/cdh/impala.html
+  [Impala]: https://impala.apache.org
   [Hive]: https://hive.apache.org/
   [Impala FAQ]: https://www.cloudera.com/content/cloudera-content/cloudera-docs/Impala/latest/Cloudera-Impala-Frequently-Asked-Questions/Cloudera-Impala-Frequently-Asked-Questions.html
   [CitusDB]: https://citusdata.com/docs/sql-on-hadoop "CitusDB SQL on Hadoop"
-  [ORC]: https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.0.0.2/ds_Hive/orcfile.html
+  [ORC]: https://docs.cloudera.com/runtime/latest/hive-performance-tuning/topics/hive_maximize_storage_resources_using_orc.html
     "ORC File Format"
   [Parquet]: http://parquet.apache.org "Parquet is a columnar storage format for Hadoop."

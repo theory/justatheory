@@ -41,7 +41,7 @@ Want more? I will be giving a half-day tutorial, entitled “[Agile Database
 Development],” on database development with [Git], [Sqitch], and [pgTAP] at on
 May 22 [PGCon 2013] in Ottawa, Ontario. Come on up!
 
-  [work]: http:/iovation.com/
+  [work]: https://iovation.com/
   [Sqitch]: https://sqitch.org/
   [11.2 VirtualBox VM]: https://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html
   [Instant Client]: https://www.oracle.com/technetwork/database/features/instant-client/index-097480.html

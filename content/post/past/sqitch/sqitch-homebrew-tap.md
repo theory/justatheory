@@ -44,7 +44,7 @@ the incredibly responsive help!
 
   [Sqitch]: https://sqitch.org/ "Sqitch: Sane database schema change management"
   [Sqitch Homebrew Tap]: https://github.com/theory/homebrew-sqitch
-  [Homebrew]: http://mxcl.github.com/homebrew/
+  [Homebrew]: https://brew.sh/
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
   [the latest iteration of the introductory presentation]: https://speakerdeck.com/theory/sane-database-change-management-with-sqitch
   [here]: https://vimeo.com/50104469

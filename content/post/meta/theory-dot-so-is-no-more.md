@@ -6,7 +6,7 @@ tags: [Just a Theory, Blogging, theory.so]
 type: post
 ---
 
-Until last week, I had two newish blogs. This one, [theory.pm], was to be my
+Until last week, I had two newish blogs. This one, `theory.pm`, was to be my
 Perl blog. The other one, theory.so, was my database blog. I thought it would be
 a good idea to have separate blogs for separate audiences, but it turns out I
 don't post enough to make much difference. And now, as of last week, I let the
@@ -32,6 +32,5 @@ now. You're a better person than I.
 **Update:** 2018-05-23: I merged everything back into [*Just a Theory*] last
 week.
 
-  [theory.pm]: https://theory.pm/
   [.so]: https://en.wikipedia.org/wiki/.so
   [*Just a Theory*]: https://justatheory.com/

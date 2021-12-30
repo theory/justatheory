@@ -30,7 +30,7 @@ Here’s what the post was about:
 -   So I’d rather have an iPad than a $79 Kindle.
 
 {{% figure
-   src   = "https://images-na.ssl-images-amazon.com/images/I/31-WDNyjxWL._AA300_.jpg"
+   src   = "contigo-mug.jpeg"
    alt   = "Contigo thermal mug"
    class = "left"
    link  = "https://www.amazon.com/dp/B001RMGVU8/justatheory-20"

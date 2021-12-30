@@ -6,7 +6,7 @@ aliases: [/computers/policy/ipod_security_threat.html]
 tags: [Security, iPod, Apple, Gartner, Information Technology, Guns, NRA, Design, Music]
 type: post
 image:
-  src: https://images-na.ssl-images-amazon.com/images/I/316NVDRJHAL.jpg
+  src: 20g-ipod.jpeg
   alt: 20 GB iPod
   class: right
   link: https://www.amazon.com/dp/B0000CEORU/justatheory-20

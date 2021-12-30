@@ -6,7 +6,7 @@ aliases: [/computers/databases/postgresql/pgtap-0.21.html]
 tags: [Postgres, pgTAP, Testing, Unit Testing, TAP, PL/pgSQL, SQL]
 type: post
 image:
-  src: https://pgtap.org/ui/img/tap.jpg
+  src: tap.jpeg
   alt: Mmmmm…pgTAP
   title: "pgTAP: Unit Testing for PostgreSQL"
   class: right
@@ -53,28 +53,28 @@ you prefer). [Epic] does this by allowing query strings to be passed to a
 function, but I'd really like to keep queries in SQL rather than in SQL strings.
 I'll be giving it some more thought and will post about it soon.
 
-  [pgTaP]: https://pgtap.org/ pgTAP: Unit Testing for PostgreSQL
+  [pgTAP]: https://pgtap.org/ "pgTAP Unit Testing for PostgreSQL"
   [my talk at PGCon]: https://www.pgcon.org/2009/schedule/events/165.en.html
-    PGCon: “Unit Test Your Database!”
+    "PGCon: “Unit Test Your Database!”"
   [movie here]: http://hosting3.epresence.tv/fosslc/1/watch/129.aspx
-    Unit Test Your Database—The Movie
+    "Unit Test Your Database—The Movie"
   [`performs_ok()`]: https://pgtap.org/documentation.html#%60performs_ok+(+sql,+milliseconds,+description+)%60
-    pgTAP Documentation: `performs_ok()`
+    "pgTAP Documentation: `performs_ok()`"
   [his PGCon talk]: https://www.pgcon.org/2009/schedule/events/146.en.html
-    PGCon: “Reconciling and comparing databases”
+    "PGCon: “Reconciling and comparing databases”"
   [system testing]: https://en.wikipedia.org/wiki/System_testing
-    Wikipedia: “System testing”
+    "Wikipedia: “System testing”"
   [unit testing]: https://en.wikipedia.org/wiki/Unit_testing
-    Wikipedia: “Unit testing”
+    "Wikipedia: “Unit testing”"
   [`tables_are()`]: https://pgtap.org/documentation.html#%60tables_are(+schema,+tables,+description+)%60
-    pgTAP Documentation: `tables_are()`
+    "pgTAP Documentation: `tables_are()`"
   [`functions_are()`]: https://pgtap.org/documentation.html#%60functions_are(+schema,+functions%5B%5D,+description+)%60
-    pgTAP Documentation: `functions_are()`
+    "pgTAP Documentation: `functions_are()`"
   [testing functions]: https://pgtap.org/documentation.html#Feeling+Funky
-    pgTAP Documentation: Feeling Funky
+    "pgTAP Documentation: Feeling Funky"
   [release notes]: http://pgfoundry.org/frs/shownotes.php?release_id=1389
-    pgTAP 0.21 Release Notes and Changes
+    "pgTAP 0.21 Release Notes and Changes"
   [call to add a `throws_like()`]: http://archives.postgresql.org/pgsql-hackers/2009-05/msg01318.php
-    pgsql-hackers: Re: plperl error format vs plpgsql error format vs pgTAP
+    "pgsql-hackers: Re: plperl error format vs plpgsql error format vs pgTAP"
   [Epic]: http://epictest.org/
-    Epic, more full of fail than any other testing tool
+    "Epic, more full of fail than any other testing tool"

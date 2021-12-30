@@ -57,7 +57,7 @@ IgnoreURLs:
 # ExternalTimeout: 15
 # StripQueryString: true
 # StripQueryExcludes: ["fonts.googleapis.com"]
-# OutputDir: tmp/.htmltest
+OutputDir: .htmltest/tmp
 # OutputCacheFile: refcache.json
 # OutputLogFile: htmltest.log
 # CacheExpires: 336h

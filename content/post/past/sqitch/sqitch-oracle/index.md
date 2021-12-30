@@ -28,7 +28,7 @@ Via ActiveState PPM, install [ActivePerl], then run:
     ppm install App-Sqitch DBD-Oracle
 
 {{% figure
-  src   = "https://www.pgcon.org/2013/images/pgcon-220x250.png"
+  src   = "pgcon-2013.png"
   alt   = "PGCon 2013"
   class = "left"
   link  = "https://www.pgcon.org/2013/"

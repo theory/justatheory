@@ -6,7 +6,7 @@ aliases: [/computers/programming/perl/closet_word_algorithm.html]
 tags: [Perl, grep, Levenshtein, Perl Best Practices]
 type: post
 image:
-  src: https://images-na.ssl-images-amazon.com/images/I/81Rh6gbV-ZL.jpg
+  src: pbp-cover.jpeg
   alt: “Perl Best Practices” cover
   title: Buy “Perl Best Practices” on Amazon.com
   class: left frame
@@ -24,17 +24,19 @@ good method to determine relative closeness, but try as I might, I couldn't make
 it work using `first` or `min` or `apply` or any of the utility list methods. I
 finally settled on this subroutine:
 
-    use Text::LevenshteinXS qw(distance);
-    sub _find_closest_word {
-        my ($word, $closest) = (shift, shift);
-        my $score = distance($word, $closest);
-        for my $try_word (@_) {
-            my $new_score = distance($word, $try_word);
-            ($closest, $score) = ($try_word, $new_score)
-                if $new_score < $score;
-        }
-        return $closest;
-    }
+``` perl
+  use Text::LevenshteinXS qw(distance);
+  sub _find_closest_word {
+      my ($word, $closest) = (shift, shift);
+      my $score = distance($word, $closest);
+      for my $try_word (@_) {
+          my $new_score = distance($word, $try_word);
+          ($closest, $score) = ($try_word, $new_score)
+              if $new_score < $score;
+      }
+      return $closest;
+  }
+```
 
 Am I missing something, or is this really the most obvious and efficient way to
 do it?

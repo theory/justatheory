@@ -6,7 +6,7 @@ aliases: [/culture/steve-jobs.html]
 tags: [Books, Steve Jobs, Biography, Walter Isaacson, Ronald Reagan, Dutch]
 type: post
 image:
-  src: https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg
+  src: steve-jobs-cover.jpeg
   link: https://www.amazon.com/gp/product/1451648537/justatheory-20
   caption: "*Steve Jobs* by Walter Isaacson"
   alt: Steve Jobs

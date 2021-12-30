@@ -80,7 +80,7 @@ devaluing or dismissing the people who have suffered them.
   [popularized the notion]:
     https://archive.fortune.com/galleries/2008/fortune/0804/gallery.bestadvice.fortune/7.html
     "The best advice I ever got — Indra Nooyi"
-  [Ruth Terry]: https://medium.com/@ruth_terry/about
+  [Ruth Terry]: https://ruth-terry.medium.com
   [Kirwan Institute]: http://kirwaninstitute.osu.edu/
     "Kirwan Institute for the Study of Race and Ethnicity"
   [piece for Medium]:

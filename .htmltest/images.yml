@@ -1,0 +1,44 @@
+DirectoryPath: public
+# DirectoryIndex: index.html
+# FilePath: "" # test all
+# FileExtension: .html
+CheckDoctype: false
+CheckAnchors: false
+CheckLinks: false
+# CheckImages: true
+CheckScripts: false
+CheckMeta: false
+CheckGeneric: false
+# CheckExternal: true
+# CheckInternal: true
+# CheckInternalHash: true
+CheckMailto: false
+CheckTel: false
+# CheckFavicon: false
+CheckMetaRefresh: false
+# EnforceHTML5: false
+# EnforceHTTPS: false
+# IgnoreURLs: []
+# IgnoreInternalURLs: []
+# IgnoreDirs: []
+# IgnoreInternalEmptyHash: false
+# IgnoreEmptyHref: false
+# IgnoreCanonicalBrokenLinks: true
+# IgnoreExternalBrokenLinks: false
+# IgnoreAltMissing: false
+# IgnoreDirectoryMissingTrailingSlash: false
+# IgnoreSSLVerify: false
+# IgnoreTagAttribute: data-proofer-ignore
+# HTTPHeaders: {"Range": "bytes=0-0", "Accept": "*/*"}
+# TestFilesConcurrently: false
+# DocumentConcurrencyLimit: 128
+# HTTPConcurrencyLimit: 16
+# LogLevel: 2
+# LogSort: document
+# ExternalTimeout: 15
+# StripQueryString: true
+# StripQueryExcludes: ["fonts.googleapis.com"]
+# OutputDir: tmp/.htmltest
+# OutputCacheFile: refcache.json
+# OutputLogFile: htmltest.log
+# CacheExpires: 336h

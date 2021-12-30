@@ -40,12 +40,12 @@ the old iPad, because the anti-aliasing is even easier to see.
 <figure class="frame">
     <a href="https://www.flickr.com/photos/theory/6861697774/sizes/o/in/set-72157629648560359/"
       title="The New Yorker on the 1st gen iPad">
-      <img src="./new-yorker-ipad-1.jpg"
+      <img src="{{% link new-yorker-ipad-1.jpg %}}"
            alt="The New Yorker on the 1st gen iPad"/>
     </a>
     <a href="https://www.flickr.com/photos/theory/7007813821/sizes/o/in/set-72157629648560359/"
         alt="The New Yorker on the 3rd gen iPad with retina display">
-        <img src="./new-yorker-ipad-retina.jpg"
+        <img src="{{% link new-yorker-ipad-retina.jpg %}}"
              alt="The New Yorker on the 3rd gen iPad with retina display" />
     </a>
     <figcaption>

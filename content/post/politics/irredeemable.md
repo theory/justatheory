@@ -5,7 +5,7 @@ lastMod: 2018-07-16T15:08:54Z
 description: Virginia Heffernan finds that Donald Trump has no values.
 tags: [Donald Trump, Virginia Heffernan]
 type: post
-link: https://roarfeminist.org/2017/03/27/donald-trump-has-no-values/
+link: https://virginiaheffernan.substack.com/p/this-is-what-makes-my-head-spin
 via:
   name: Charlotte Clymer
   href: https://twitter.com/cmclymer/status/1017993649353879553/
@@ -28,4 +28,4 @@ Read the whole thing --- it's short, and *utterly devastating.* There really is
 nothing redeemable about Donald Trump. Not one thing.
 
   [Donald Trump Has No Values]:
-    https://roarfeminist.org/2017/03/27/donald-trump-has-no-values/
+    https://virginiaheffernan.substack.com/p/this-is-what-makes-my-head-spin

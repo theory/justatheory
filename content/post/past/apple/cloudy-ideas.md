@@ -10,9 +10,10 @@ type: post
 
 I had an interesting Twitter Discussion last week with cloud guru [Simon
 Wardley] and “cloud entrepreneur” [Kate Craig-Wood] about Apple, iCloud, and
-Android. It started in response to this tweet from Kate:
+Android. It started in response to [this tweet] from Kate:
 
-<style type="text/css">.bbpBox106817356889735168 {background:#EDECE9;padding:20px;} p.bbpTweet{background:#fff;padding:10px 12px 10px 12px !important;margin:0 !important;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px} p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6} p.bbpTweet span.metadata span.author{line-height:19px} p.bbpTweet span.metadata span.author img{float:left !important;margin:0 7px 0 0px!important;width:38px;height:38px} p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block} span.timestamp img{float:none !important; margin:0 !important;border:none !important;}</style> <div class="bbpBox106817356889735168"><p class="bbpTweet">My blog post earlier this week, on why Apple should make iCloud open (<a href="http://v.gd/icloud)" rel="nofollow">http://v.gd/icloud)</a> now looks rather prescient (see last paragraph).<span class="timestamp"><a title="Thu Aug 25 19:56:57 +0000 2011" href="https://twitter.com/memset_kate/status/106817356889735168">On August 25, 2011</a> via <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a></span><span class="metadata"><span class="author"><a href="https://twitter.com/Memset_Kate"><img src="https://pbs.twimg.com/profile_images/989116279121481728/AwfU-t8C_normal.jpg" /></a><strong><a href="https://twitter.com/Memset_Kate">Kate Craig-Wood</a></strong><br/>Memset_Kate</span></span></p></div>
+> My blog post earlier this week, on why Apple should make iCloud open
+> (http://v.gd/icloud) now looks rather prescient (see last paragraph).
 
 [The post], which was published about a week before Steve Jobs’s resignation as
 CEO of Apple, is worth a read. A number of points came up in the Twitter
@@ -245,6 +246,7 @@ but selling great products.
 
   [Simon Wardley]: https://twitter.com/swardley
   [Kate Craig-Wood]: https://twitter.com/Memset_kate/
+  [this tweet]: https://twitter.com/memset_kate/status/106817356889735168
   [The post]: http://www.katescomment.com/open-apple-icloud/
   [Apple does not care about the enterprise]: http://www.chrisenns.com/2010/06/29/why-apple-doesnt-care-about-enterprise/
   [Simon said]: https://twitter.com/swardley/status/106828452748988416

@@ -86,6 +86,6 @@ Now I’m off to add the `log` command, which shows a history of all deploys and
 reverts.
 
   [Sqitch v0.60]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.60-TRIAL
-  [updated tutorial]: https://metacpan.org/module/DWHEELER/App-Sqitch-0.60-TRIAL/lib/sqitchtutorial.pod
-  [`--date-format`]: https://metacpan.org/module/DWHEELER/App-Sqitch-0.60-TRIAL/lib/sqitch-status.pod#Options
+  [updated tutorial]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.60-TRIAL/view/lib/sqitchtutorial.pod
+  [`--date-format`]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.60-TRIAL/view/lib/sqitch-status.pod#-date-format
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod

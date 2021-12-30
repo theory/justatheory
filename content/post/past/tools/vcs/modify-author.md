@@ -7,7 +7,7 @@ tags: [Subversion]
 type: post
 ---
 
-I successfully migrated the Kineticode [Subversion repository] to a new server
+I successfully migrated the Kineticode Subversion repository to a new server
 yesterday. Everything works great. But after my first commit, I realized that,
 while my username on the old server was “theory,” on the new server it's
 “david”. Subversion works fine, of course, and I was able to start committing
@@ -23,56 +23,58 @@ these fields for tracking the content-lengths of various, so doing the update
 was a bit tricky. But I wrote the script here to track things, and it worked
 great for me. So here it is for others to reference and use.
 
-    #!/usr/bin/perl -w
+``` perl
+#!/usr/bin/perl -w
 
-    use strict;
-    use warnings;
+use strict;
+use warnings;
 
-    while (<>) {
-        print;
-        next unless /^Revision-number:\s+\d+$/;
+while (<>) {
+    print;
+    next unless /^Revision-number:\s+\d+$/;
 
-        # Grab the content lengths. Examples:
-        # Prop-content-length: 139
-        # Content-length: 139
-        my $plen_line = <>;
-        my $clen_line = <>;
+    # Grab the content lengths. Examples:
+    # Prop-content-length: 139
+    # Content-length: 139
+    my $plen_line = <>;
+    my $clen_line = <>;
 
-        unless ( $plen_line =~ /^Prop-content-length:\s+\d+$/ ) {
-            # Nothing we want to change.
-            print $plen_line, $clen_line;
-            next;
+    unless ( $plen_line =~ /^Prop-content-length:\s+\d+$/ ) {
+        # Nothing we want to change.
+        print $plen_line, $clen_line;
+        next;
+    }
+
+    my @lines;
+    while ( <> ) {
+        if ( /^PROPS-END$/ ) {
+            # finish.
+            print $plen_line, $clen_line, @lines, $_;
+            last;
         }
 
-        my @lines;
-        while ( <> ) {
-            if ( /^PROPS-END$/ ) {
-                # finish.
-                print $plen_line, $clen_line, @lines, $_;
-                last;
-            }
+        push @lines, $_;
 
-            push @lines, $_;
+        if ( /^svn:author$/ ) {
+            # Grab the author content length. Example:
+            # V 6
+            my $alen_line = <>;
 
-            if ( /^svn:author$/ ) {
-                # Grab the author content length. Example:
-                # V 6
-                my $alen_line = <>;
+            # Grab the author name.
+            my $auth = <>;
 
-                # Grab the author name.
-                my $auth = <>;
-
-                if ( $auth =~ s/^theory$/david/ ) {
-                    # Adjust the content lengths.
-                    for my $line ( $plen_line, $clen_line, $alen_line ) {
-                        $line =~ s/(\d+)$/$1 - 1/e;
-                    }
+            if ( $auth =~ s/^theory$/david/ ) {
+                # Adjust the content lengths.
+                for my $line ( $plen_line, $clen_line, $alen_line ) {
+                    $line =~ s/(\d+)$/$1 - 1/e;
                 }
-                print $plen_line, $clen_line, @lines, $alen_line, $auth;
-                last;
             }
+            print $plen_line, $clen_line, @lines, $alen_line, $auth;
+            last;
         }
     }
+}
+```
 
 To use it, save it to a file, say *svn\_author*, then change line 40 to your old
 and new usernames. Then, on line 43, change the `$1 - 1` bit to be correct for
@@ -82,15 +84,15 @@ characters longer, so you'd make it `$1 + 5`.
 
 Now, run it like so:
 
-    svnadmin dump /path/to/svnroot > svndump.out
-    perl svn_author svndump.out > svndump.in
-    svnadmin create /path/to/new/svnroot
-    svnadmin load /path/to/new/svnroot < svndump.in
+``` sh
+svnadmin dump /path/to/svnroot > svndump.out
+perl svn_author svndump.out > svndump.in
+svnadmin create /path/to/new/svnroot
+svnadmin load /path/to/new/svnroot < svndump.in
+```
 
 And that's it! Feel free to take this code and do with it what you like,
 including fix any bugs, add command-line options, support changing multiple
 authors at once, or whatever. Share and enjoy.
 
-  [Subversion repository]: https://svn.kineticode.com/
-    "The Kineticode Subversion repository"
   [Ohloh]: http://www.ohloh.net/ "ohloh, the open source network"

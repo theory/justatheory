@@ -100,7 +100,7 @@ and participating students for the great contributions! This release would not
 have been possible without them.
 
 Also in the news today, the Bricolage server has been replaced! The new server,
-which hosts the [Web site], the [wiki] and the instance of Bricolage used to
+which hosts the [Web site], the wiki and the instance of Bricolage used to
 manage the site itself, is graciously provided by the kind folks at [Gossamer
 Threads]. The server is Gossamer Threads's way of giving back to the Bricolage
 community as they prepare to launch a hosted Bricolage solution. Thaks GT!
@@ -114,16 +114,16 @@ And with that, I'm going heads-down on some other projects. I'll pop back up to
 make sure that Bricolage 2.0 is released in a few months, but otherwise, I'm on
 to other things again for a while. Watch this space for details!
 
-  [Scott Lanning]: http://use.perl.org/~slanning/ "Scott Lanning on use Perl"
+  [Scott Lanning]: https://www.linkedin.com/in/lannings/ "Scott Lanning on LinkedIn"
   [released 1.10.5]: http://perlmonks.org/?node_id=683442
     "Bricolage 1.10.5 released, 1.11 imminent"
   [Christian Muise]: http://www.haz.ca/
-  [2006 Google Summer of Code project]: http://code.google.com/soc/2006/bric/appinfo.html?csaid=BF87FD1CE9FF0758
+  [2006 Google Summer of Code project]: https://developers.google.com/open-source/gsoc/2006/#bricolage
     "Occurrence Specification"
-  [1]: http://code.google.com/soc/2006/bric/appinfo.html?csaid=61E07C2D23D20FEC
+  [1]: https://developers.google.com/open-source/gsoc/2006/#bricolage
     "Database porting SOC Proposal"
   [Marshall Roch]: http://mroch.com/ "Marshall Roch"
-  [2]: http://code.google.com/soc/2006/bric/appinfo.html?csaid=934CEE0CC330C22A
+  [2]: https://developers.google.com/open-source/gsoc/2006/#bricolage
     "AJAX element editing SOC proposal"
   [Gossamer Threads]: http://www.gossamer-threads.com/
     "Gossamer Threads: Creative Web Engineering"
@@ -131,7 +131,7 @@ to other things again for a while. Watch this space for details!
     "depesz: “FATAL: Ident authentication failed”, or how cool ideas get bad usage schemas"
   [Bric::Admin/*INSTALL*]: http://www.bricolage.cc/docs/devel/api/?Bric::Admin
     "Bric::Admin documentation"
-  [trunk]: http://svn.bricolage.cc/bricolage/trunk/ "Bricolage in Subversion"
+  [trunk]: https://github.com/bricoleurs/bricolage/ "Bricolage on GitHub"
   [developer release]: http://bricolage.cc/news/announce/2008/04/30/bricolage-1.11.0/
     "Bricolage-Devel 1.11.0 Released"
   [send feedback]: http://bricolage.cc/support/lists "The Bricolage Mail Lists"
@@ -140,5 +140,4 @@ to other things again for a while. Watch this space for details!
   [Google Summer of Code]: http://code.google.com/soc/2006/
     "Google Summer of Code 2006"
   [Web site]: http://www.bricolage.cc/ "The Bricolage Web site"
-  [wiki]: http://wiki.bricolage.cc/ "The Bricolage Wiki"
   [pair Networds]: http://pair.net "pair Networks"

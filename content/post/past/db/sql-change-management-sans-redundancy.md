@@ -331,8 +331,8 @@ to write an app to do this stuff, and want to get it *right*.
 Thanks for sticking with me through all the thought experiments. For my next
 post on this topic, I expect to have an interface spec for the new app.
 
-  [previous episode]: /computers/databases/vcs-sql-change-management.html
-  [first example]: /computers/databases/simple-sql-change-management.html
-  [as before]: /databases/vcs-sql-change-management.html
+  [previous episode]: {{% link "/2012/01/vcs-sql-change-management/" %}}
+  [first example]: {{% link "/2012/01/simple-sql-change-management/" %}}
+  [as before]: {{% link "/2012/01/vcs-sql-change-management/" %}}
   [idempotence]: https://en.wikipedia.org/wiki/Idempotence
   [user-defined functions]: http://www.postgresql.org/docs/current/static/xfunc.html

@@ -154,6 +154,6 @@ So, I think this will work. But I’m sure I must have missed something. If you
 notice it please enlighten me in the comments. And thanks for reading this far!
 
   [deployment plan format]: /computers/databases/sqitch-plan.html
-  [the suggestion]: /computers/databases/sqitch-plan.html#comment-537891454
+  [the suggestion]: https://past.justatheory.com/computers/databases/sqitch-plan.html#comment-537891454
   [an earlier post]: /computers/databases/sql-change-management-sans-redundancy.html
   [Peter van Hardenberg]: https://www.pgcon.org/2012/schedule/speakers/244.en.html

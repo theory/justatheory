@@ -112,8 +112,8 @@ Oh, and that [PDXPUG presentation][PDXPUG]? Here are the slides. Enjoy!
   [Sqitch changes]: https://metacpan.org/module/sqitchchanges
   [Sqitch presentation]: https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch
   [PDXPUG]: http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/
-  [French]: https://github.com/theory/sqitch/blob/master/po/fr.po
-  [German]: https://github.com/theory/sqitch/blob/master/po/de.po
+  [French]: https://github.com/sqitchers/sqitch/blob/develop/po/fr_FR.po
+  [German]: https://github.com/sqitchers/sqitch/blob/develop/po/de_DE.po
   [fork Sqitch]: https://github.com/theory/sqitch/
   [gettext editor]: http://www.google.com/search?q=gettext+editor
   [dzil]: http://dzil.org/

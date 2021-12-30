@@ -9,7 +9,7 @@ via:
   name: Lessig Blog
   href: http://www.lessig.org/blog/archives/002041.shtml
 image:
-  src: https://images-na.ssl-images-amazon.com/images/I/519MGXATKEL.jpg
+  src: outfoxed.jpeg
   alt: Outfoxed
   title: Buy “Outfoxed” from Amazon.com
   class: "frame right"

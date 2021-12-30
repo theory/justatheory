@@ -20,5 +20,5 @@ January: cold, cold, cold. This time, though, it will be the middle of summer.
 We leave mid-June and will return in early August. Seven weeks of awesomeness.
 Can't wait.
 
-  [blogged about it a little]: /travel/france/
+  [blogged about it a little]: {{% link "/tags/france/" %}}
   [a lot of photos]: https://www.flickr.com/photos/theory/tags/france/

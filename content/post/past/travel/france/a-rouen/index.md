@@ -14,8 +14,8 @@ image:
 
 We arrived Ã  Rouen just over a week ago. This is our second extended visit, a
 house exchange with a lovely French couple who’s daughter lives in Portland. We
-loved our [six-week visit in 2008], and were excited to do it again, this time
-in summer. We will be here another six weeks.
+loved our [six]-[week] [visit] [in] [2008], and were excited to do it again,
+this time in summer. We will be here another six weeks.
 
 In 2008, I was still an independent consultant. I did a bit of work for [Etsy]
 during our visit, but for the most part did not work. For this visit, I’m
@@ -78,7 +78,11 @@ A few other items of interest:
     with our shows. Haven’t used it much, yet. Everyone is reading on the iPads,
     though; Ms 7 has a *very* expensive reading habit!
 
-  [six-week visit in 2008]: /travel/france/2008/ "France 2008"
+  [six]: {{% link "/2008/11/arrived-in-france/" %}} "Arrival"
+  [week]: {{% link "/2008/12/paris-photos/" %}} "Paris Photos"
+  [visit]: {{% link "/2008/12/blue-eiffel-tower/" %}} "Blue Eiffel"
+  [in]: {{% link "/2009/02/more-france-photos/" %}} "More France Photos"
+  [2008]: {{% link "/2009/03/musee-du-quai-branly/" %}} "Musée du quai Branly"
   [Etsy]: http://etsy.com/
   [iovation]: http://iovation.com/
   [Sqitch]: https://sqitch.org/

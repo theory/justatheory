@@ -71,5 +71,5 @@ Got something to add? [Fork it!]
   [the plan file]: https://github.com/theory/sqitch/blob/master/lib/sqitch.pod#plan-file
   [grammar]: https://github.com/theory/sqitch/blob/master/lib/sqitch.pod#grammar
   [pgTAP]: https://pgtap.org/
-  [MyTAP]: http://hepabolu.github.com/mytap/
+  [MyTAP]: https://hepabolu.github.io/mytap/
   [Fork it!]: https://github.com/theory/sqitch

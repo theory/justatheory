@@ -741,7 +741,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   [MySQL]: http://mysql.com/
   [`mysql`]: http://dev.mysql.com/doc/refman/5.6/en/mysql.html
   [idempotent]: https://en.wikipedia.org/wiki/Idempotence
-  ["Plan File"]: #Plan-File
+  ["Plan File"]: #plan-file
   [SQLite]: http://sqlite.org/
   [Rails migrations]: http://guides.rubyonrails.org/migrations.html
   [Ruby on Rails]: http://rubyonrails.org/

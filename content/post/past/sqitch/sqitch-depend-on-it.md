@@ -96,7 +96,7 @@ Read [the tutorial] for an overview of what Sqitch is and how it works. Thanks!
 
   [Sqitch v0.90]: https://metacpan.org/release/App-Sqitch
   [Jim Nasby]: http://jim.nasby.net/
-  [work]: http://iovation.com/
+  [work]: https://iovation.com/
   [comparing project URIs]: https://github.com/theory/sqitch/issues/38
   [SQLite]: http://sqlite.org/
   [bundle command]: https://github.com/theory/sqitch/issues/14

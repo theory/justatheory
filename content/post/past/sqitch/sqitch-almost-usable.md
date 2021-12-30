@@ -169,7 +169,7 @@ with your suggestion.
 
   [Sqitch]: https://sqitch.org/
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
-  [from Jakub Narębski]: /computers/databases/sqitch-dependencies.html#comment-538970287
+  [from Jakub Narębski]: https://past.justatheory.com/computers/databases/sqitch-dependencies.html#comment-538970287
   [1]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod#emergency
   [much more obvious]: /computers/databases/sqitch-dependencies.html
   [`sqitch init`]: https://github.com/theory/sqitch/blob/master/lib/sqitch-init.pod
@@ -195,7 +195,7 @@ with your suggestion.
   [could use a logo]: https://twitter.com/theory/statuses/197383050680745984
   [RPM]: https://en.wikipedia.org/wiki/RPM_Package_Manager
   [Debian package]: http://www.debian.org/doc/manuals/debian-reference/ch02
-  [Homebrew]: http://mxcl.github.com/homebrew/
+  [Homebrew]: https://brew.sh
   [BSD Ports]: https://en.wikipedia.org/wiki/FreeBSD_Ports
-  [Git history]: https://github.com/theory/sqitch-intro/commits/master
+  [Git history]: https://github.com/sqitchers/sqitch-intro/commits/main
   [file an issue]: https://github.com/theory/sqitch/issues

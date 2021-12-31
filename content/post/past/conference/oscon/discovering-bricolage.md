@@ -26,6 +26,6 @@ beginning as a set of slides ahead of the main presentation content. You can
     "Discovering Bricolage Description"
   [Nat]: http://use.perl.org/~gnat/journal/ "Nat's Journal"
   [Bricolage Website]: http://www.bricolage.cc/ "Bricolage Website"
-  [download]: https://www.kineticode.com/docs/discovering_bricolage.pdf
+  [download]: https://kineticode.com/docs/discovering_bricolage.pdf
     "Download discovering_bricolage.pdf"
-  [Kineticode]: https://www.kineticode.com/ "Kineticode Website"
+  [Kineticode]: https://kineticode.com/ "Kineticode Website"

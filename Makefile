@@ -26,10 +26,10 @@ preview:
 server: preview
 
 image-scan: ${BUILD_DIR}
-	htmltest -c .htmltest/images.yml public
+	htmltest -c .htmltest/images.yml
 
 link-scan: ${BUILD_DIR}
-	htmltest public
+	htmltest -c .htmltest/links.yml
 
 # Matches any target and returns all args. https://stackoverflow.com/a/32490846/79202
 %:

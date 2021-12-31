@@ -38,7 +38,7 @@ window, so I turned on my phone (bad David!) and snapped another shot.
 Looks like I might be returning to Alamosa soon to do some training. Maybe I'll
 be able to get some more pictures; the sunsets are quite lovely there.
 
-  [Kineticode]: https://www.kineticode.com/ "Kineticode Web site"
+  [Kineticode]: https://kineticode.com/ "Kineticode Web site"
   [Adams State College]: https://www.adams.edu/ "Adams State College Web site"
   [Nokia 6600]: https://www.amazon.com/exec/obidos/ASIN/B00022NE6I/justatheory-20
     "Buy the Nokia 6600 at Amazon.com"

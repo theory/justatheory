@@ -124,5 +124,5 @@ Enjoy!
     "See Bric::Changes"
   [SourceForge download page]: http://sourceforge.net/project/showfiles.php?group_id=34789
     "Download 1.8.1 from SourceForge"
-  [Kineticode download page]: https://www.kineticode.com/bricolage/index2.html
+  [Kineticode download page]: https://kineticode.com/bricolage/index2.html
     "Download 1.8.1 from Kineticode"

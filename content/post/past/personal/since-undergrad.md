@@ -86,7 +86,7 @@ So what’s your 411?
 
   [Bricolage]: http://bricolagecms.org/
   [PostgreSQL Experts]: https://www.pgexperts.com/
-  [Kineticode]: https://www.kineticode.com/
+  [Kineticode]: https://kineticode.com/
   [iPad app]: http://designsceneapp.com/
   [Strongrrl]: http://strongrrl.com/
   [Etsy store]: https://strongrrl.etsy.com/

@@ -101,7 +101,7 @@ Thanks for your help!
 
   [Courier-IMAP]: http://www.courier-mta.org/imap/ "Courier-IMAP Home"
   [this site]: / "Just a Theory"
-  [Kineticode]: https://www.kineticode.com/ "Kineticode Home"
+  [Kineticode]: https://kineticode.com/ "Kineticode Home"
   [Strongrrl]: http://www.strongrrl.com/ "Strongrrl Home"
   [Julie]: http://www.strongrrl.com/ "Julie Wheeler is principal at Strongrrl"
   [Bricolage]: http://bricolage.cc "Bricolage CMS Home"

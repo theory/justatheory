@@ -30,5 +30,5 @@ Enjoy!
     "Just a Theory: “Unit Test Your Database!”"
   [Portland PLUG]: http://www.pdxlinux.org/ "Portland Linux/Unix User Group"
   [JPUG 10th Anniversary Conference]: http://www.postgresql.jp/events/pgcon09j/e/
-  [PDF]: https://www.kineticode.com/docs/pgtap_best_practices.pdf
+  [PDF]: https://kineticode.com/docs/pgtap_best_practices.pdf
     "pgTAP Best Practices"

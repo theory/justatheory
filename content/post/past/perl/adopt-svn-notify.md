@@ -27,7 +27,7 @@ PS: Would love it if someone also could take over [activitymail], the CVS
 notification script from which SVN::Notify was derived — and which I have even
 *less* right to maintain, given that I haven’t used CVS in *years.*
 
-  [Kineticode]: https://www.kineticode.com/
+  [Kineticode]: https://kineticode.com/
   [GitHub]: https://github.com/theory/
   [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/
   [TLS support]: https://rt.cpan.org/Ticket/Display.html?id=40188

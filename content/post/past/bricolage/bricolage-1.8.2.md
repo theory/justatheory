@@ -120,4 +120,4 @@ available” by *eWEEK*.
   [Bric::Changes]: http://www.bricolage.cc/docs/api/current/Bric::Changes
   [Downloads page]: http://www.bricolage.cc/downloads/
   [SourceForge download page]: http://sourceforge.net/project/showfiles.php?group_id=34789
-  [Kineticode download page]: https://www.kineticode.com/bricolage/index2.html
+  [Kineticode download page]: https://kineticode.com/bricolage/index2.html

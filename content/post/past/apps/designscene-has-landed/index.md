@@ -101,7 +101,7 @@ have planned. Stay tuned!
   [Jayant Sai]: https://twitter.com/j6y6nt
   [Bill Dudney]: http://bill.dudney.net/roller/objc/
   [honorable mention]: http://www.iosdevcamp.org/2010/04/18/quick-list-of-hackathon-winners/
-  [day]: https://www.kineticode.com/
+  [day]: https://kineticode.com/
   [jobs]: http://www.pgexperts.com/
   [MVC]: https://en.wikipedia.org/wiki/Model%E2%80%93View%E2%80%93Controller
     "Wikipedia: “Model-View-Controller”"

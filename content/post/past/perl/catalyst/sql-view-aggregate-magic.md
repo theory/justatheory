@@ -223,7 +223,7 @@ Either way, I find this to be a lot less work than using an ORM or other
 abstraction layer between my app and the database. Frankly, SQL provides just
 the right level of abstraction.
 
-  [series]: /tags/catalyst "Just a Theory: “Catalyst”"
+  [series]: {{% link "/tags/catalyst" %}} "Just a Theory: “Catalyst”"
   [chapter 3]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"
   [DSL]: https://en.wikipedia.org/wiki/Domain-specific_language

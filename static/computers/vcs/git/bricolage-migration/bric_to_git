@@ -1,0 +1,309 @@
+#!/usr/bin/perl -w
+
+use strict;
+use warnings;
+use File::Path qw(rmtree);
+
+my $AUTHORS = '/Users/david/dev/bricolage/bricolage_committers.txt';
+my $SVNREPO = 'file:///Users/david/Desktop/svn_bricolage_cc/bricolage';
+my $GITREPO = '/Users/david/Desktop/git_bricolage_cc';
+my $TMPREPO = "$GITREPO.tmp";
+
+migrate();
+fix_branches();
+fix_trunk();
+tag_revisions();
+graft_branches();
+graft_merges();
+tag_releases();
+kill_tags();
+finish();
+
+sub run {
+    system @_;
+    my $exit = $? >>8;
+    die "@_ exited with $exit" if $exit;
+    return 1;
+}
+
+sub migrate {
+    run 'rm', '-rf', $TMPREPO;
+    mkdir $TMPREPO or die "Cannot create $TMPREPO: $!\n";
+    chdir $TMPREPO;
+    run 'git', 'svn', 'init', $SVNREPO, '--trunk', 'trunk', '--branches', 'branches', '--tags', 'whatever';
+    run 'git', 'config', 'svn.authorsfile', $AUTHORS;
+    run 'git', 'svn', 'fetch', '--no-follow-parent',
+        '--revision', '5517:HEAD', '--ignore-paths',
+#        '(David|Kineticode|Release_|dev_(callback|(media_)?templates)|rev_1_([024]|[68]_temp)|tags/(Dev-|Release_|Start|help|mark|rel_1_([24567]|8_0)|rev_1_([26]|8_merge-2004-05-04)))|tmp';
+        '(David|Kineticode|Release_|dev_(callback|(media_)?templates)|rev_1_([024]|[68]_temp)|tags/)|tmp';
+
+}
+
+sub fix_branches {
+    run qw(git branch -r -D), $_ for qw(apache2 mysql dev_templates dev_media_templates);
+
+    my $tags = 'tags/';
+    my @remotes = grep !m{^\Q$tags}, map { s/^\s+//; s/\s+$//; $_ } `git branch -r`;
+
+    print "Turning remote branches into locals.\n";
+
+    for my $remote (@remotes) {
+        next if $remote eq 'trunk';
+        run qw(git checkout), $remote;
+        run qw(git checkout -b), $remote;
+    }
+}
+
+sub fix_trunk {
+    return unless grep /^\s*trunk\s*/, `git branch -r`;
+
+    print "Making sure master is trunk.\n";
+
+    run qw(git branch -D master);
+    run qw(git checkout trunk);
+    run qw(git checkout -f -b master);
+}
+
+sub tag_revisions {
+    # Tag everything with its Subversion revision number to make it easier to find.
+    print "Applying revisions as tags\n";
+    for my $c (`git rev-list --all --date-order --timestamp | sort -n | awk '{print \$2}'`) {
+        chomp $c;
+        my ($svnid) = `git show -s $c | tail -1` =~ /[@](\d+)\s+/;
+        run qw(git tag -f), $svnid, $c;
+    }
+}
+
+sub graft_branches {
+    print "Grafting branches\n";
+    unlink '.git/info/grafts';
+    for my $graft (
+        [qw( dev_ajax@7423            trunk@7301 )],
+        [qw( dev_mysql@7424           trunk@7301 )],
+        [qw( dev_elem_occurrence@7427 trunk@7301 )],
+        [qw( dev_apache2@7935         trunk@7925 )],
+        [qw( dev_cssify@6093          trunk@6089 )],
+        [qw( dev_ics@6812             trunk@6811 )],
+        [qw( dev_input_channels@6374  trunk@6367 )],
+#       [qw( dev_media_templates@7827 trunk@7824 )],
+#       [qw( dev_templates@6377       trunk@6376 )],
+        [qw( rev_1_10@6977            trunk@6976 )],
+    ) {
+        my ($commit, $parent) = map { s/.+[@]//; $_ } @$graft;
+        my $cmd = "\$(git rev-parse $commit) "
+                . "\$(git rev-parse $parent)";
+        `echo "$cmd" >> .git/info/grafts`;
+    }
+}
+
+sub graft_merges {
+    print "Grafting merges\n";
+    # Handle the merges.
+    for my $graft (
+        [qw( trunk@5524               rev_1_8@5523    )], # rev_1_8_merge_5523
+        [qw( trunk@5614               rev_1_8@5613    )], # rev_1_8_merge_5613
+        [qw( rev_1_8@5591             trunk@5590      )], # rev_1_8_merge_5708
+        [qw( trunk@5711               rev_1_8@5709    )], # rev_1_8_merge_5708
+        [qw( trunk@5927               rev_1_8@5926    )],
+        [qw( trunk@6088               rev_1_8@6086    )], # rev_1_8_merge_6086
+        [qw( dev_cssify@6115          trunk@6114      )],
+        [qw( dev_cssify@6150          trunk@6149      )],
+        [qw( dev_cssify@6206          trunk@6201      )],
+        [qw( trunk@6292               rev_1_8@6291    )], # rev_1_8_merge_6294
+        [qw( dev_cssify@6364          trunk@6360      )],
+        [qw( dev_cssify@6388          trunk@6387      )],
+        [qw( trunk@6416               rev_1_8@6415    )], # rev_1_8_merge_6415
+        [qw( dev_cssify@6436          trunk@6431      )],
+        [qw( dev_input_channels@6438  trunk@6431      )],
+        [qw( rev_1_8@6443             trunk@6442      )],
+        [qw( dev_cssify@6445          trunk@6444      )],
+        [qw( dev_input_channels@6448  trunk@6447      )],
+        [qw( dev_cssify@6475          trunk@6470      )],
+        [qw( trunk@6498               dev_cssify@6497 )],
+        [qw( trunk@6536               rev_1_8@6534    )], # rev_1_8_merge_6535
+        [qw( trunk@6540               rev_1_8@6539    )], # rev_1_8_merge_6540
+        [qw( dev_input_channels@6595  trunk@6591      )],
+        [qw( trunk@6646               rev_1_8@6576    )],
+        [qw( trunk@6787               rev_1_8@6786    )],
+        [qw( trunk@6799               rev_1_8@6798    )], # rev_1_8_merge_6798
+        [qw( trunk@6817               rev_1_8@6816    )],
+        [qw( trunk@6871               rev_1_8@6870    )], # rev_1_8_merge_6870
+        [qw( trunk@6876               rev_1_8@6874    )], # rev_1_8_merge_6875
+        [qw( trunk@6881               rev_1_8@6879    )], # rev_1_8_merge_6882
+        [qw( dev_ics@6890             trunk@6889      )],
+        [qw( trunk@6905               rev_1_8@6904    )], # rev_1_8_merge_6905
+        [qw( dev_ics@6919             trunk@6918      )],
+        [qw( rev_1_10@7041            rev_1_8@7040    )], # rev_1_8_merge_7041
+        [qw( trunk@7044               rev_1_10@7041   )], # rev_1_10_merge_7043
+        [qw( rev_1_10@7056            rev_1_8@7053    )], # rev_1_8_merge_7055
+        [qw( rev_1_10@7087            rev_1_8@7086    )],
+        [qw( rev_1_10@7193            rev_1_8@7192    )], # rev_1_8_merge_7192
+        [qw( trunk@7195               rev_1_10@7193   )], # rev_1_10_merge_7194
+        [qw( rev_1_10@7299            rev_1_8@7298    )], # rev_1_8-merge-rev_1_10-729e8
+        [qw( trunk@7301               rev_1_10@7299   )], # rev_1_10-merge-trunk-7300
+        [qw( dev_ajax@7446            trunk@7442      )],
+        [qw( rev_1_10@7479            rev_1_8@7478    )],
+        [qw( rev_1_10@7514            rev_1_8@7508    )],
+        [qw( trunk@7516               rev_1_10@7514   )],
+        [qw( dev_ajax@7573            trunk@7569      )],
+        [qw( rev_1_10@7577            rev_1_8@7557    )],
+        [qw( dev_mysql@7586           trunk@7569      )],
+        [qw( dev_elem_occurrence@7613 trunk@7569      )],
+        [qw( trunk@7617               rev_1_10@7609   )],
+        [qw( dev_ajax@7619            trunk@7617      )],
+        [qw( dev_mysql@7621           trunk@7617      )],
+        [qw( dev_ajax@7645            trunk@7644      )],
+        [qw( dev_mysql@7673           trunk@7644      )],
+        [qw( dev_elem_occurrence@7676 trunk@7544      )],
+        [qw( rev_1_10@7825            trunk@7824      )],
+        [qw( trunk@7854               rev_1_10@7853   )],
+        [qw( dev_mysql@7856           trunk@7854      )],
+        [qw( trunk@7870               dev_mysql@7869  )],
+        [qw( dev_ajax@7889            trunk@7885      )],
+        [qw( trunk@7891               dev_ajax@7889   )],
+        [qw( dev_elem_occurrence@7904 trunk@7891      )],
+        [qw( dev_elem_occurrence@7997 trunk@7925      )],
+        [qw( trunk@8073               rev_1_10@8072   )],
+        [qw( trunk@8097               dev_elem_occurrence@8096 )],
+        [qw( dev_apache2@8101         trunk@8097      )],
+        [qw( dev_apache2@8138         trunk@8113      )],
+        [qw( trunk@8147               dev_apache2@8146 )],
+        [qw( trunk@8160               rev_1_10@8159   )],
+        [qw( trunk@8167               rev_1_10@8166   )],
+        [qw( trunk@8319               rev_1_10@8318   )],
+        [qw( trunk@8333               rev_1_10@8331   )],
+        [qw( trunk@8431               rev_1_10@8428   )],
+    ) {
+        my ($commit, $parent) = map { s/.+[@]//; $_ } @$graft;
+        my $cmd = "\$(git rev-parse $commit) "
+                . "\$(git rev-parse $commit^) "
+                . "\$(git rev-parse $parent)";
+        `echo "$cmd" >> .git/info/grafts`;
+    }
+}
+
+my @commits_to_delete = (
+    7445,
+    7446,
+    7480,
+    7515,
+    7517,
+    7564,
+    7565,
+    7566,
+    7574,
+    7578,
+    7618,
+    7620,
+    7622,
+    7646,
+    7674,
+    7685,
+    7686,
+    7794,
+    7855,
+    7857,
+    7871,
+    7890,
+    7892,
+    7905,
+    7996,
+    7998,
+    8074,
+    8081,
+    8098,
+    8102,
+    8139,
+    8148,
+    8149,
+    8161,
+    8320,
+    8334,
+    8430,
+    7303..7421
+);
+
+my @tags_to_delete;
+sub tag_releases {
+    print "Tagging releases\n";
+    # Create a list of the existing tags, which we'll want to delete.
+    @tags_to_delete = map { s/^\s+//; s/\s+$//; $_ } `git tag`;
+
+    # Crate the release tags.
+    for my $spec (
+        [ 'rev_1_8@5726'  => 'v1.8.1'  ],
+        [ 'rev_1_8@5922'  => 'v1.8.2'  ],
+        [ 'rev_1_8@6073'  => 'v1.8.3'  ],
+        [ 'rev_1_8@6282'  => 'v1.8.4'  ],
+        [ 'rev_1_8@6285'  => 'v1.8.5'  ],
+        [ 'rev_1_8@6421'  => 'v1.8.6'  ],
+        [ 'rev_1_8@6836'  => 'v1.8.7'  ],
+        [ 'rev_1_8@6879'  => 'v1.8.8'  ],
+        [ 'rev_1_8@7053'  => 'v1.8.9'  ],
+        [ 'rev_1_8@7185'  => 'v1.8.10' ],
+        [ 'rev_1_8@7557'  => 'v1.8.11' ],
+        [ 'trunk@6891'    => 'v1.9.1'  ],
+        [ 'rev_1_10@7058' => 'v1.10.0' ],
+        [ 'rev_1_10@7213' => 'v1.10.1' ],
+        [ 'rev_1_10@7603' => 'v1.10.2' ],
+        [ 'rev_1_10@7956' => 'v1.10.3' ],
+        [ 'rev_1_10@7941' => 'v1.10.3-rc1' ],
+        [ 'rev_1_10@8033' => 'v1.10.4' ],
+        [ 'rev_1_10@8197' => 'v1.10.5' ],
+        [ 'rev_1_10@8326' => 'v1.10.6' ],
+        [ 'rev_1_10@8498' => 'v1.10.7' ],
+        [ 'trunk@8220'    => 'v1.11.0' ],
+        [ 'trunk@8340'    => 'v1.11.1' ],
+    ) {
+        my ($where, $tag) = @{$spec};
+        my ($branch, $rev) = split /[@]/, $where;
+        my $tag_date = `git show --pretty=format:%cd -s $rev`;
+        chomp $tag_date;
+        local $ENV{GIT_COMMITTER_DATE} = $tag_date;
+        run qw(git tag -fa), $tag, '-m', "Tag for $tag release of Bricolage.", $rev;
+    }
+}
+
+sub kill_tags {
+    @tags_to_delete = grep { /^\d+$/ }map { s/^\s+//; s/\s+$//; $_ } `git tag`;
+    print "Deleting old tags\n";
+    my @tags = grep m{^tags/}, map { s/^\s+//; s/\s+$//; $_ } `git branch -a`;
+    run qw(git branch -r -D), $_ for @tags;
+
+    # Delete all existing tags.
+    run qw(git tag -d), $_ for @tags_to_delete;
+}
+
+sub finish {
+    run qw(git filter-branch --msg-filter),
+        'perl -0777 -pe "s/\\r?\\ngit-svn-id:.+\\n//ms"',
+        qw( --tag-name-filter cat -- --all );
+    unlink '.git/info/grafts';
+    run qw(git gc);
+    chdir '..';
+    run qw(git clone), $TMPREPO, $GITREPO;
+    rmtree $TMPREPO;
+    chdir $GITREPO;
+    run qw(git gc);
+}
+
+__END__
+
+cvs2git --options ~/cvs2git.options
+First real SVN commit: r5517
+
+git log --grep=merge -E --date-order --pretty=format:'%ad %s'
+
+/usr/local/bin/svnnotify --repos-path "$1" \
+--revision "$2" \
+--reply-to developers@etsy.com \
+--user-domain etsy.com \
+--with-diff --handler Alternative --alternative HTML::ColorDiff \
+--max-sub-length 72 --svnlook /usr/local/bin/svnlook \
+--sendmail /usr/sbin/sendmail \
+--filter Trac
+--revision-url 'https://mcp.etsy.com/etsy2/changeset/%s' \
+--ticket-map '#(\d+)=https://mcp.etsy.com/etsy2/ticket/%s' \
+−−to−regex−map tech-all@etsy.com=".*trunk.*"
+
+2549 + 4144 == 6693

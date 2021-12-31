@@ -23,7 +23,7 @@ along; you can simply clone [the repository] and `git pull` for each post.
 
 More soon.
 
-  [suggestion from Pedro Melo]: /computers/programming/perl/catalyst/sql-view-aggregate-magic.html#tb
+  [suggestion from Pedro Melo]: https://past.justatheory.com/computers/programming/perl/catalyst/sql-view-aggregate-magic.html#tb
     "My Catalyst Tutorial: Add Authors to the View—Comments"
   [on GitHub]: http://github.com/theory/catalyst-tutorial
     "Catalyst Tutorial on GitHub"

@@ -90,6 +90,6 @@ too, thanks to [Ștefan Suciu]. Stay tuned!
   [`ATTACHDATABASE`]: http://www.sqlite.org/lang_attach.html
   [comment on this issue]: https://github.com/theory/sqitch/issues/98
   [its own command]: https://github.com/theory/sqitch/issues/100
-  [at work]: http://iovation.com/
+  [at work]: https://iovation.com/
   [CUBRID support]: https://github.com/theory/sqitch/issues/93
   [Ștefan Suciu]: https://github.com/stefansbv

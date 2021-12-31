@@ -1,0 +1,483 @@
+#!/usr/bin/perl -w
+
+use strict;
+use warnings;
+use File::Path qw(rmtree);
+
+die "Usage: $0 cvs2svn-tmp/git-blob.dat cvs2svn-tmp/git-dump.dat\n"
+    unless @ARGV == 2;
+
+my $GITREPO = '/Users/david/Desktop/git_from_cvs';
+my $GRAFTS  = '.git/info/grafts';
+
+sub run {
+    system @_;
+    my $exit = $? >>8;
+    die "@_ exited with $exit" if $exit;
+    return 1;
+}
+
+my $tmprepo = "$GITREPO.tmp";
+run 'rm', '-rf', $tmprepo;
+mkdir $tmprepo or die "Cannot create $tmprepo: $!\n";
+chdir $tmprepo;
+run 'git', 'init';
+my $args = q{'} . ( $ARGV[0] =~ m{^/} ? '' : '../') . "$ARGV[0]' '"
+    . ( $ARGV[1] =~ m{^/} ? '' : '../') . "$ARGV[1]'";
+`cat $args | git fast-import`;
+run 'svn2git', '--no-clone';
+run 'git', 'gc';
+run qw(git reset --hard);
+
+# Rename maintenance branches.
+for my $spec (
+    [qw(Release_1_0 rev_1_0)],
+    [qw(Release_1_2 rev_1_2)],
+    [qw(v1.4.0 rev_1_4)],
+) {
+    run qw(git branch -m), @$spec;
+}
+
+# Start a list of tags to delete.
+my @tags_to_delete = qw(
+    help
+    mark_pre_install_complete
+    start
+    Dev-Release_1_3
+    Release_1_3
+    rev_1_6_merge-2003-03-14
+);
+
+# Turn merge tags into real merges.
+open my $fh, '>', $GRAFTS or die "Canot open $GRAFTS: $!\n";
+for my $spec (
+    ['rev_1_8_merge-2004-05-04' => [qw(
+        b786ad1c0eeb9df827d658a81dc2d32ec6108e92
+        11dbbd49644aaa607bd83f8d542d37fcfbd5e63b
+        4fadb117a71a49add69950eccc14b77a04c8ec68
+    )]],
+    ['rev_1_6_merge-2004-05-02' => [qw(
+        5072af2ecad170ae91eb87a809943bbea3602bb1
+        a16a06e57c6d1b633b76bc4e7431de6b300d032e
+        da469d1898cc53f17da03d29e167657c2c4ddb67
+    )]],
+    ['rev_1_6_merge-2004-04-10' => [qw(
+        0efd032bce4051d6a225ad205484ee397741e1ed
+        95351b5657939e17e655a15b15ebf26fbe5dddfb
+        f85cb013fc1a4840a728bd2207dc9a70ac9181cb
+    )]],
+    ['rev_1_6_merge-2004-04-09' => [qw(
+        ed339f515242284b144ff1f01a99b1233a92d9ee
+        67f8f467430d4d0aa220c833ac83e269aeafef77
+        c9c907f16c68428366003b487a63f7f442d31ca5
+    )]],
+    ['rev_1_6_merge-2004-03-16' => [qw(
+        2c0ae9aa7e7c39cdedb847b61d8e3e964d2e7a00
+        100f9c1002eacd80179595a5ef169db62e67ac7c
+        97f315aacb95b7790dbdfe7b4b0cc03bcf66f58a
+    )]],
+    ['rev_1_6_merge-2004-02-29' => [qw(
+        4b9477de86cd669ced7a7003acf332e1d92050b0
+        7c4a560865e0e8da66d056c7cf01475f0cd6b6a7
+        31846899c736df8d07325629d450a9334fbbafa1
+    )]],
+    ['rev_1_6_merge-2004-02-10' => [qw(
+        4d00b15186ded4860e3d8db6abd61d08b127fc2e
+        eff02eddb4871a6cc956233a4936065302ede91b
+        5b4051362ecef8d6db83f0ab5e5a84c191afb207
+    )]],
+    ['rev_1_6_merge-2004-02-05' => [qw(
+        18b2b0436553ea7030f940c841bf2927f7d0b40e
+        f45924ae829a8b6a05a1a2d508a6c5682f275467
+        f6d942ad2497abd1965c0770b3bc14551331e98d
+    )]],
+    ['rev_1_6_merge-2003-11-29' => [qw(
+        f1a1ebcdaa89230c207d564a3ff831cbac612017
+        17daeb0669add00893569481f7a3bb86e1d84b14
+        44dc0977987cd0d208c650c8c48c1c6bc1b249cb
+    )]],
+    ['rev_1_6_merge-2003-10-21' => [qw(
+        d6805089bb20c4cce837ca240a9d8d445db655b1
+        60dbcda5f2e314d63aeaf20485db57dcfca411ba
+        25e047a5131f21e779f32192b279fdeb349c9349
+    )]],
+    ['rev_1_6_merge-2003-10-15' => [qw(
+        093cd282a83ebf823e36a23cf2d4b65a00910159
+        7569134932407cb3f5adf05724a580f020733f0f
+        a936926ffd0c9d2584f0ae5c90c77b34793195d9
+    )]],
+    ['rev_1_6_merge-2003-10-13' => [qw(
+        13afc887fa955775fe29115b832bdea00de0572f
+        8cb498aad12b097a64f0d40a8b1981e1291d6bdd
+        c77fa800de41a7f4fc37e7561b4c540b04a2dadd
+    )]],
+    ['rev_1_6_merge-2003-10-02' => [qw(
+        efc6bc6cad0b196fc21a44d42f0e4f9619f7af41
+        ab3cdf381ea7af518cd7ff22dcca6c379fa22b69
+        374c70ab3f013cd4a40479ea24d785832c70cf51
+    )]],
+    ['rev_1_6_merge-2003-09-10' => [qw(
+        aaf0dc6cbd931266bb1315366f31d858886767a4
+        b4cd943a17002b1fe201356725a0426812b237c9
+        646ed554862f93f0ca10f6634744ac634a9b3678
+    )]],
+    # 2003-08-12 13:20:07
+    ['unnamed' => [qw(
+        46ff722d3b465d1f5f96d1277fc20e91ac1a9944
+        8a5fb63db048bcde115592dff8c9731f011ac689
+        c91ac628983359305c4e2410840451f4f8d0beb2
+    )]],
+    # 2003-08-12 14:37:26
+    ['rev_1_6_merge-2003-08-12' => [qw(
+        520b7e3c62085c5e66d5918b61b38fba1ed26444
+        46ff722d3b465d1f5f96d1277fc20e91ac1a9944
+        4f099d7a53bf1dd8e670b0ab056598aeb340d18d
+    )]],
+    ['rev_1_6_merge-2003-07-27' => [qw(
+        aab0cba6f5164667bcd86fb8a9e4b0fe86d49aad
+        63d988d0ef01991187a363a7e5dcf65b09c1fda6
+        c19e55a7eb95b8722b4f83f6a270bdaa23189a53
+    )]],
+    ['rev_1_6_merge-2003-07-24' => [qw(
+        1568f55a8aa7bc2fab0abb88b97c22eeef417001
+        92ed1e9e1750555a2c39596fbea090e3c3a1d798
+        1696f2d9d7217481e267b0562522551eee4974d2
+    )]],
+    ['rev_1_6_merge-2003-06-13' => [qw(
+        e5b9142967b6bf938bb57ddc483ff8b5fb8863f0
+        066178e7caa08eb6d9c1531d4a54f7962d751a09
+        f8b1d4bce3e393f014a2edd0af0361f3970ca9c6
+    )]],
+    ['rev_1_6_merge-2003-04-28' => [qw(
+        9dcb1d139a2f9cfdb1ff2c90eb23a5641af7dd2a
+        5931fec2e92b97b6fd0da1e025bd6ee65fb481da
+        86a2f894876b6b64ce95f782423febabdd3d8248
+    )]],
+    ['rev_1_6_merge-2003-04-24' => [qw(
+        92aad2bf74f3577a5fd6ad2ef9192840c93578b9
+        cd44059815df8b49dbb0dc2a48ebec613b79c96f
+        5e909c94d7e9a6c4e2ba9a737a10352007e3d54a
+    )]],
+    ['rev_1_6_merge-2003-04-14' => [qw(
+        e8648b9cc835693d0896dfe04eee72ff9a97bce7
+        31eb0a14b48fd6dfd29c884091908d561b81a45e
+        b9f03ccb3387013a414cb4f2fad7b758271abbb5
+    )]],
+    ['rev_1_6_merge-2003-04-02' => [qw(
+        31eb0a14b48fd6dfd29c884091908d561b81a45e
+        95c43dbae4b2c7281f4614db0e6413f3fbf7f0e9
+        3024c04f3427478e7f2a78556ad21acc2541bc5f
+    )]],
+    ['rev_1_6_merge-2003-03-31' => [qw(
+        2f19a114baf3856ae6e7cbe374976cd0cfbbd29b
+        aa8a78ba4366a40e212e8e76e3728e493dc15017
+        ed729f84eaaab69249b03d065154214febe61217
+    )]],
+    ['rev_1_6_merge-2003-03-22' => [qw(
+        6bae51c9e7ed08d7e2dbb4b1412b4ba74b704bc9
+        496a302cd0d24c9e5fd2d3e6978944480a5c8ea7
+        4d58ccfc9886a8309ecaa1d835172b1199a57c50
+    )]],
+    ['rev_1_6_merge-2003-03-19' => [qw(
+        f712d79c1d4ea5e9b8ced60519e6d346ff64ae16
+        a0e96c367c022d2ae265bb83399b723e27caeea8
+        3ede9fec0760b74c89a9d90b323349cf61e5e180
+    )]],
+    ['rev_1_6_merge-2002-03-14' => [qw(
+        c6756b3918d9350c17002414e51e782ae3f11a86
+        839d7ddc53f72d80df58b4f57e78187b647b746a
+        044e773a68bcf8293cc21338a5a54e3a53e538b7
+    )]],
+    ['rel_1_6_merge-2003-09-10' => [qw(
+        06104f2b4142c37703d7e840d6b09db9cac11e82
+        c8ba22b9ba3c9e32d1a6b37d59609aa86e4f3673
+        2b416403680a9c8584f633fd50daa88be8c85b11
+    )]],
+    ['dev_callback_merge-2003-07-25' => [qw(
+        46b4b10a3dcb875a8e8150c977b03b6f6827f37a
+        1b7abd4457b0e68c34036c7acde0e0e7b0b98ec1
+        a9a0a29fffccbfe81d034a629796f557bb182251
+    )]],
+    ['Release_1_4_0_merge-2003-01-06' => [qw(
+        01a352de56a7ce8222b3f7c87ccc57bfeb9bdc5a
+        336d188bbcc3ffd3bdc3270b25364a1941e8143d
+        1cd731c88f7bd28bee0d07ccd75870778b68f434
+    )]],
+    ['Release_1_4_0_merge-2002-12-12' => [qw(
+        0b1f39ccbf774f4f955f16dc1ba6919cd5541635
+        5eb07d34a14c04e059a73053aa81a08dfd4259bb
+        8918abf2c3e309416bded2eb437f6c246c83692a
+    )]],
+    ['Release_1_4_0_merge-2002-12-05' => [qw(
+        6a1553f7546c84d3f3846a08851bcffcd6cf57ba
+        bd4f5077c9463610e3b2ec964390f189923c95c0
+        944601c5b046a997c244b4e6d2c8ec4bef758a6a
+    )]],
+    ['Release_1_4_0_merge-2002-11-13' => [qw(
+        bff6c727fdc5ba3f95e74fd4fdba45fb9e0d038c
+        3d4f0706d6feea4fcce25b862f43d093e7189b94
+        b54e87373f5b9572798bbf4362e7aede95f273f6
+    )]],
+    ['Release_1_4_0_merge-2002-11-08' => [qw(
+        5f2551c192e34abe4579060d9e66738bc9d9bb5e
+        39cdc76f74e4ea9ff71d2e22fa22006ef3aa7adb
+        dc257fe4bcf950e4db101a24ebdf8bc630810194
+    )]],
+    ['Release_1_4_0_merge-2002-11-06' => [qw(
+        9034a5e201af5dac2557fbc548c8eb764ae80686
+        9ec6c4fda561ad5e11a0ddb3ab009c16b6db8254
+        1390751dc30e786bc01ed177021ad91417d05fb8
+    )]],
+    ['Release_1_4_0_merge-2002-11-01' => [qw(
+        1a2d2311006e1a506529394282872c380a62809a
+        84bc9bdc20a55c16c4b73e4473eccabe5f913d35
+        d1217fadb21cb8cb11be2b25e7720b86365102e0
+    )]],
+    ['Release_1_4_0_merge-2002-10-25' => [qw(
+        fb737c628d4750d176f511b42bf54d0813d98922
+        cb172e80b11dd65ca0fbd036b79731ed104a9cf4
+        d90e9fb3694f161e54b00b9395752385e519da6d
+    )]],
+    ['Release_1_4_0_merge-2002-10-23' => [qw(
+        85f2e68e2dde29b2b08140445fa5d0d2313d1ba2
+        0ad8feef0a85f1335140f28a3d62630091f77464
+        ec431d03bb7e9229911aa0905481ab2803b54676
+    )]],
+    ['Release_1_4_0_merge-2002-10-16' => [qw(
+        5d7a03af1252ac078017bbd13b34fefb2731f574
+        d2f2d8c460fa784f6e8e39747db140ce662dbf4d
+        69cad9e8a08886805fea2de6e37f63e024d03f21
+    )]],
+    ['Release_1_4_0_merge-2002-10-15' => [qw(
+        c0aadfb9074bf4ce7ab2b9a6719067809c503169
+        b64801672d454bf9cfcc87f9b4b4ca0d2d7390a3
+        fc825eb70d6b5f139a499ff7ccf3dc519c42c193
+    )]],
+    ['Release_1_4_0_merge-2002-10-09' => [qw(
+        5d005eaf5448f2ac1eff66f1fb70c0d3c334281c
+        ca9e8c622020a1969e22243ecb17418b7799c71c
+        507822b5cdc6b15729d8a6e2acb0889d056cf07c
+    )]],
+    ['Release_1_4_0_merge-2002-09-27' => [qw(
+        b92ff18bb44899f6fa3548c8e5a1b78c47f92254
+        78008748500df46a7d78e92eb8c380b04be1afaf
+        e866994dca6132c173dc75b3f373b563186371cf
+    )]],
+    ['Release_1_4_0_merge-2002-09-25' => [qw(
+        8f1e5684777f4fe6fe7911cb2fd2340b03fac509
+        dc9b96c90b207ba5d5fbd056075161936041a60d
+        f43ccd83eddf00177cfd5521c0d4ebc22a0e123d
+    )]],
+    ['Release_1_4_0_merge-2002-09-18' => [qw(
+        80c726a9523d5c3fa005bf8284382c3df3830240
+        aa719c0c6fd410a04c3567acb5644f0a15350f04
+        c12a126555afd3cb0378716130a91e2b3e7d6755
+    )]],
+    ['Release_1_4_0_merge-2002-09-13' => [qw(
+        2b42f639cc72814f81cbd72276eddfc6e71c4a77
+        bb885ce1f062a58e8d5af0e03c6c5e8efb06d057
+        a8f6f2ecb922228ae79d54f7eca3db2633bc9c92
+    )]],
+    ['Release_1_4_0_merge-2002-09-06' => [qw(
+        535160187e4bbc8f0b8033f9f9d95d8d22b77411
+        85ddf79de43b755c05392309b127c57e0b865e5c
+        967fea749f41be9e9848fcbb63e5e09a7d3a5c8e
+    )]],
+    ['Release_1_4_0_merge-2002-08-10' => [qw(
+        991277f51006541bcf91dea25959a72cdd0e4103
+        d864d53fc2393e3f88521a0d8e053d2836f9ff18
+        8cda9aeee64721e8614df4de20c0906df3c28aac
+    )]],
+    ['Release_1_2_merge_2002-02-22' => [qw(
+        0c01ce472ca71536866db48de9406e75ec0846a6
+        b6803a3fda01b995394f622862f99232ab325299
+        ceb377614461ac458e8ab58f3f0601bb45d3681f
+    )]],
+    ['Release_1_2_merge-2002-04-03' => [qw(
+        1861a30449f6d32c3cb34f93adcfc63fbd2a85ea
+        7a2a155235ac69c44fbdd990bc3edacdffa87575
+        4854ee2e88a38e3167210cb3a5b56bdb5808a2ce
+    )]],
+    ['Release_1_2_merge-2002-03-15' => [qw(
+        d812acc89ebef289b1cd53cc4be73eac80a862fa
+        561b6d2c8405ffbfa4c7600c2fc6f81350e483f6
+        63a9ffc9b4a39887f15606403c9772e5ddcde79d
+    )]],
+    ['Release_1_2_merge-2002-03-09' => [qw(
+        ccdf45edcf148f06e21990f1e63ea789107f634c
+        bfe73d31d9266643bdf53b82397ab7331952ecec
+        8e6322fe68c3effb053d7183e6651fbbc7e8d9c4
+    )]],
+    ['Release_1_2_merge-2002-03-08' => [qw(
+        d026fa1293b1acbd4b2626511ae6a00fb88ec98e
+        001f3ce6a23ba7445e21898fcfa264c6363ec644
+        c396cfbc8ca3cc571a04d1cee87a9066a483a082
+    )]],
+    ['Release_1_2_merge-2002-03-06' => [qw(
+        ea24afe8c3617a5f4a09f0cfeedb8532e449e8f7
+        b0ea8173e1d857eb68b6fb8e90843507f550acaa
+        23a52358977712e1f6df2a633298aa269204930e
+    )]],
+    ['Release_1_2_merge-2002-02-28' => [qw(
+        6f67f9f65083a979bb4d55db22e0311783afa913
+        45eac8fb67ed45072394fc80f5a3f9446d78f508
+        39df6ba517da06e16b8f3207a7ad0c1084fb2017
+    )]],
+    ['Release_1_2_merge-2002-02-26' => [qw(
+        8cb74b6f21b3106e755dd35a3260f3388b00a395
+        28cfd23b1f2c3acdec4475fc1fcab9fb108ab3ff
+        5d0dae0c9542f9390c004e0820b1a6926bcb3b3c
+    )]],
+    # A few merges were never tagged.
+    # 2003-06-13 09:49:47
+    ['unnamed' => [qw(
+        066178e7caa08eb6d9c1531d4a54f7962d751a09
+        bd50e8a930c70597aabf92af1d14f39a00995018
+        4291bbb2ca8663a5d0802b036b91ae8147352e13
+    )]],
+    ['unnamed' => [qw(
+        d472d7fe1db9127b79c54e7c570b780b46cbc2ae
+        5692022f34ccb724e8ff8dfc3e0c6f5b167961cb
+        7b1aaa770cec21919a60daabaea4fdeaa4e6f635
+    )]],
+    ['unnamed' => [qw(
+        def49e52bd3a6a754e785e900653b96c8ac860b0
+        6bbf05397c315e9897bdbf0ede28f95cc101feea
+        a4b22da69c2e545215a07bf806ac24b6b73f2536
+    )]],
+    ['unnamed' => [qw(
+        13565c0a54bd5fa9bed4d1d6c8d9f0b7b0856da6
+        3b149a30a1ba2cd334e07bcda51978a75568ebb6
+        25e047a5131f21e779f32192b279fdeb349c9349
+    )]],
+    ['unnamed' => [qw(
+        e729ad1097f8e371c5ebf762b5b1729e51f2341f
+        a439c9b1c0954ad0b1bfe2ba329d7bc4bb6f562d
+        a936926ffd0c9d2584f0ae5c90c77b34793195d9
+    )]],
+    ['unnamed' => [qw(
+        6cfc0271b8d8394da7eb19af538802420eb515ae
+        13afc887fa955775fe29115b832bdea00de0572f
+        840342b1c6ea183ac76bfe6c4986730aa53a63b6
+    )]],
+    ['unnamed' => [qw(
+        ae0b95f5ced6eaafa41a70515618cf6c19fdb779
+        aaf0dc6cbd931266bb1315366f31d858886767a4
+        9b53885f0752805dea2b85e98f0752ae0d896f43
+    )]],
+    ['unnamed' => [qw(
+        5f954f7de024fc6d9b18602f63c0c2b65510242c
+        1635e8564a525b895acd6615bed0da2068395903
+        4638f9511024413e207478661b715da075fc8a5a
+    )]],
+    ['unnamed' => [qw(
+        663a2bf78f3ad8aca9cda5a9504fd133594d9861
+        d79c25a76ce51db86f0af7d60aa6353d23b6421f
+        1ce92f8caec0cbac0400342d40ffb1b544154f73
+    )]],
+    # 2003-04-15 02:12:58
+    ['unnamed' => [qw(
+        e39076633103456e760bcf139155f62907590a28
+        e8648b9cc835693d0896dfe04eee72ff9a97bce7
+        b9f03ccb3387013a414cb4f2fad7b758271abbb5
+    )]],
+    # 2003-03-23 18:41:16
+    ['unnamed' => [qw(
+        4a0f3dd54a0433c86a7d1785b1564b7f753d81a4
+        6bae51c9e7ed08d7e2dbb4b1412b4ba74b704bc9
+        46fc3a8a6124160d466f326b0bb8570bc51445f3
+    )]],
+    ['unnamed' => [qw(
+        496a302cd0d24c9e5fd2d3e6978944480a5c8ea7
+        993398c14415530b09e02d612558785255effe18
+        828cb5e1fa406a76816ac46fcbc409cc68eaa17c
+    )]],
+    ['unnamed' => [qw(
+        5ace5fd398465747b1377259985f4f03a83126cc
+        5fe73f6c6bdabbc5fa64f2a7382d9267543856ea
+        67d99831aff4cdd34cbabef8c9a687a4e0ac8d64
+    )]],
+    # 2002-12-15 13:07:51
+    ['unnamed' => [qw(
+        678e0a7ab1c13db60a597f3157b06ab4fb9654b1
+        e8e7ad9a9063148ba79785a5dd5d964be38c458c
+        96d9f9366854b2d0eda7ffbe8561c680c9c5de35
+    )]],
+    ['unnamed' => [qw(
+        ec96b0cb2659c43cf10b2eba37ab73ebf9daefbb
+        fb737c628d4750d176f511b42bf54d0813d98922
+        9f29e7a218bc8f936564ba215c39b7d1a4c1aad7
+    )]],
+    ['unnamed' => [qw(
+        b5480570c42764da6e5fd460d2244a1b0badf32f
+        effa41b5cfab24640533d36ba33dc040cb39d399
+        fe195a52a338e95eed3374c6cea7233582c5dca8
+    )]],
+    # 2002-10-22 16:58:26
+    ['unnamed' => [qw(
+        0322484576e98757998920c2bda125d3eda8eb5d
+        5e4b106b23a833e993dd138e7ff314834d77b0c0
+        8f76ccbac3e5ca9238e76c5cf490cd5c190cf835
+    )]],
+    # 2002-09-27 17:08:15
+    ['unnamed' => [qw(
+        3b8a19e1aa164aedb45e029189424bf1ee82d743
+        b7ead3b535f8f12f0000013ef23d90d9f67ab0ae
+        e866994dca6132c173dc75b3f373b563186371cf
+    )]],
+    # 2002-09-20 17:52:11
+    ['unnamed' => [qw(
+        c1b437a00c7482bd3245b2082f053c222bfb67ee
+        f0a57098aecb1350b8c52937badf1d2f0f95a058
+        6920a35c4130fee7cb1da363ab8ac76cdc58ca73
+    )]],
+    # Release_1_2_merge-2002-03-08
+    ['unnamed' => [qw(
+        c7dcf326f58130aa05028bb44a244b5aeca63be1
+        d026fa1293b1acbd4b2626511ae6a00fb88ec98e
+        c396cfbc8ca3cc571a04d1cee87a9066a483a082
+    )]],
+    # Release_1_2_merge-2002-03-06
+    ['unnamed' => [qw(
+        330d6b5e8397290b82b7277832580fc0e3df71a5
+        179e888b231f1719f720c0822f90b71576960d43
+        23a52358977712e1f6df2a633298aa269204930e
+    )]],
+    # 2002-02-25 19:38:45
+    ['unnamed' => [qw(
+        aedff6fc5b100125128a6bd7ba54115a8827ec87
+        519b468b713b0b2eb476176c52602b78d91cbc71
+        f274b21ca40fb88ac687010f8e175fc2aa4b0b4e
+    )]],
+    # 2001-12-10 14:32:33
+    ['unnamed' => [qw(
+        59b2391580f73af36b83a2b2cb9b1bf6984c1b92
+        e98bd3a4fe6ed8ac7ae40b5d9919f5cf6359ccda
+        137f9f7294661b7a413fb5e12d87bb525e00407b
+    )]],
+) {
+    my ($tag, $graft) = @$spec;
+    push @tags_to_delete, $tag unless $tag eq 'unnamed';
+    print $fh "@$graft\n";
+}
+
+close $fh or die "Canot close $GRAFTS: $!\n";
+
+# Drop those tags.
+run qw(git tag -d), $_ for @tags_to_delete;
+
+# Make it so!
+run qw(git filter-branch --tag-name-filter cat -- --all);
+unlink '.git/info/grafts';
+run qw(git gc);
+chdir '..';
+run qw(git clone), $tmprepo, $GITREPO;
+rmtree $tmprepo;
+
+chdir $GITREPO;
+run qw(git gc);
+
+__END__
+
+Last CVS commit: r5242 == 31be0140d7a1c26523ce3c6fa43ecc283cce9e03
+First SVN commit: r5517

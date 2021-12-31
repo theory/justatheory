@@ -120,7 +120,7 @@ short list are:
 -   [Adding a `check` command] to sanity-check a plan, scripts, and a database.
 
   [Sqitch v0.940]: https://metacpan.org/release/App-Sqitch/
-  [work]: http://iovation.com/
+  [work]: https://iovation.com/
   [topological sort]: https://en.wikipedia.org/wiki/Topological_sorting
     "Wikipedia: “Topological sorting”"
   [realized]: /computers/databases/changing-sqitch_ids.html

@@ -179,7 +179,7 @@ while you do that.
 All done? Great! I had actually planned to start testing the view next, but I
 think this is enough for today. Stay tuned for more testing goodness.
 
-  [ongoing]: /computers/programming/perl/catalyst "Just a Theory: Catalyst"
+  [ongoing]: {{% link "/tags/catalyst" %}} "Just a Theory: Catalyst"
   [Catalyst tutorial]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial
     "Catalyst Tutorial: Overview"
   [chapter 8]: Catalyst::Manual::Tutorial::08_Testing

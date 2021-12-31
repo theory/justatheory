@@ -85,7 +85,7 @@ need for one of our Perl apps. Add new distributions? Send a [pull request]!
 We'll be doing so as we integrate more of our Perl apps with a Modern Perl
 and leave the sad RPM past behind.
 
-  [iovation]: http://iovation.com/
+  [iovation]: https://iovation.com/
   [EPEL]: https://fedoraproject.org/wiki/EPEL "Extra Packages for Enterprise Linux"
   [hinky workaround]:
     https://groups.google.com/g/perl.perl5.porters/c/00gP5beKEr4/m/EB_n4HcP5-8J

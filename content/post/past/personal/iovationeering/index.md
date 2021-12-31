@@ -67,7 +67,7 @@ This is going to be a blast. Interested in a front-row seat? [Follow me on
 Twitter].
 
   [PGX]: http://pgexperts.com/
-  [iovation]: http://iovation.com/
+  [iovation]: https://iovation.com/
   [CTO at values of n]: /autobiographical/im_back.html
   [lot]: https://github.com/theory/repositories
   [of]: https://github.com/bricoleurs/repositories

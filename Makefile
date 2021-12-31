@@ -25,11 +25,16 @@ preview:
 
 server: preview
 
+# scan targets require htmltest:
+# go install github.com/wjdp/htmltest@latest
 image-scan: ${BUILD_DIR}
 	htmltest -c .htmltest/images.yml
 
 link-scan: ${BUILD_DIR}
 	htmltest -c .htmltest/links.yml
+
+all-links-scan: ${BUILD_DIR}
+	htmltest -c .htmltest/all-links.yml
 
 # Matches any target and returns all args. https://stackoverflow.com/a/32490846/79202
 %:

@@ -1,0 +1,71 @@
+#!/usr/bin/perl -w
+
+use strict;
+use warnings;
+use File::Spec::Functions qw(rel2abs file_name_is_absolute);
+
+sub run {
+    system @_;
+    my $exit = $? >>8;
+    die "@_ exited with $exit" if $exit;
+    return 1;
+}
+
+die "Usage: $0 cvs_git svn_it\n" unless @ARGV == 2;
+
+my ($cvs, $svn) = @ARGV;
+
+for ($cvs, $svn) {
+    $_ = rel2abs($_) unless file_name_is_absolute $_;
+}
+
+chdir $cvs;
+my @branches = map { s/^\s+//; s/\s+$//; $_ } `git branch -r`;
+
+chdir $svn;
+run qw(git fetch --tags), $cvs;
+
+for my $branch (@branches) {
+    next if $branch eq 'origin/HEAD';
+    my $target = $branch =~ m{/master|rev_1_[68]$} ? "$branch-cvs" : $branch;
+    run qw(git fetch --tags), $cvs,
+        "refs/remotes/$branch:refs/remotes/$target";
+}
+
+print "Setting up the grafts\n";
+open my $fh, '>', ".git/info/grafts" or die "Cannot open grafts: $!\n";
+print $fh '00e4706141ee4e8567d7116914c440aa07b96980 '
+       => "835ff47ee1e3d1bf228b8d0976fbebe3c7f02ae6\n", # rev_1_6
+          '4d2bcfe609f4611e7b17c11c1dd566b6940876ab '
+       => "2b9f3c5979d062614ef54afd0a01631f746fa3cb\n", # rev_1_8
+          '53198687a47e96d598cfcbd2ff8846969e2f94a8 '
+       => "8414b64a6a434b2117294c0568c1012a17bc863b\n", # master
+    ;
+
+run qw(git filter-branch --tag-name-filter cat -- --all);
+unlink '.git/info/grafts';
+run qw(git branch -r -D), "origin/$_-cvs" for qw(rev_1_6 rev_1_8 master);
+
+print "Turning remote branches into locals.\n";
+fix_branches();
+
+run qw(git gc);
+chdir '..';
+run qw(git clone), "file://$svn", 'git_final';
+chdir 'git_final';
+fix_branches();
+run qw(git remote rm origin);
+run qw(git remote add origin git@github.com:bricoleurs/bricolage.git);
+run qw(git gc);
+run qw(git repack -a -d -f --depth 50 --window 50);
+
+sub fix_branches {
+    for my $remote (map { s/^\s+//; s/\s+$//; $_ } `git branch -r`) {
+        (my $local = $remote) =~ s{origin/}{};
+        next if $local eq 'master';
+        next if $local eq 'HEAD';
+        run qw(git checkout), $remote;
+        run qw(git checkout -b), $local;
+    }
+    run qw(git checkout master);
+}

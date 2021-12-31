@@ -127,10 +127,10 @@ So, you wanna work on this? :-)
     "The Test::More GitHub Repository"
   [Blosxom Plugins]: http://github.com/hail2u/blosxom-plugins/tree/master
     "Blosxom Plugins GitHub Repository"
-  [SVN::Notify]: http://search.cpan.org/perldoc?SVN::Notify
+  [SVN::Notify]: https://metacpan.org/pod/SVN::Notify
     "SVN::Notify on CPAN"
-  [activitymail]: search.cpan.org/perldoc?activitymail "activitymail on CPAN"
-  [SVN::Notify::Config]: http://search.cpan.org/perldoc?SVN::Notify::Config
-  [SVN::Notify::Mirror]: http://search.cpan.org/perldoc?SVN::Notify::Mirror
-  [output filters]: http://search.cpan.org/perldoc?SVN::Notify::Filter
-  [Martijn Van Beers]: http://search.cpan.org/~martijn/
+  [activitymail]: https://metacpan.org/release/DWHEELER/activitymail-1.26/view/bin/activitymail "activitymail on CPAN"
+  [SVN::Notify::Config]: https://metacpan.org/pod/SVN::Notify::Config
+  [SVN::Notify::Mirror]: https://metacpan.org/pod/SVN::Notify::Mirror
+  [output filters]: https://metacpan.org/pod/SVN::Notify::Filter
+  [Martijn Van Beers]: https://metacpan.org/author/MARTIJN

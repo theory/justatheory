@@ -156,5 +156,5 @@ As always, feedback/comments/suggestions/winges welcome. Enjoy!
     "Run the Test.Simple test harness verbosely!"
   [JSAN]: http://www.openjsan.org/doc/c/cw/cwest/JSAN/
     "Download JSAN and start using JavaScript Libraries!"
-  [surprisingly difficult]: /programming/javascript/need_js_genius.html
+  [surprisingly difficult]: {{% link "/2005/08/need-js-genius/" %}}
     "Plea for Help from JavaScript Geniuses"

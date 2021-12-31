@@ -153,7 +153,7 @@ Someplace else?
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
   [example project]: https://github.com/theory/sqitch-intro
   [initializing a Sqitch project]: https://github.com/theory/sqitch/blob/master/lib/sqitch-init.pod
-  [work]: http://iovation.com/
+  [work]: https://iovation.com/
   [Switch to Dist::Zilla]: https://github.com/theory/sqitch/issues/17
   [Locale::TextDomain]: https://metacpan.org/module/Locale::TextDomain
   [Implement the Bundle command]: https://github.com/theory/sqitch/issues/14

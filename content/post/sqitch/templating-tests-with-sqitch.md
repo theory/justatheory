@@ -178,7 +178,7 @@ I don't know about you, but I'll be using this functionality *a lot.*
 
   [I described]: /sqitch/2013/09/06/sqitch-templating/
   [Sqitch]: https://sqitch.org/ "Sane database schema change management"
-  [work]: http://iovation.com/
+  [work]: https://iovation.com/
   [`add` command]: https://metacpan.org/pod/sqitch-add
   [pgTAP]: https://pgtap.org/
   [previous templating post]: /sqitch/2013/09/06/sqitch-templating/

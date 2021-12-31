@@ -731,20 +731,20 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   [wrote]: /computers/databases/simple-sql-change-management.html
   [three]: /computers/databases/vcs-sql-change-management.html
   [posts]: /computers/databases/sql-change-management-sans-redundancy.html
-  [work]: http://iovation.com/
+  [work]: https://iovation.com/
   [started work on it]: https://github.com/theory/sqitch
   [I'm going to need the tutorial myself]: https://www.pgcon.org/2012/schedule/events/479.en.html
-  [migration]: http://search.cpan.org/perldoc?Module::Build::DB
-  [style]: http://search.cpan.org/perldoc?DBIx::Migration
+  [migration]: https://metacpan.org/pod/Module::Build::DB
+  [style]: https://metacpan.org/pod/DBIx::Migration
   [PostgreSQL]: https://postgresql.org/
   [`psql`]: https://www.postgresql.org/docs/current/static/app-psql.html
-  [MySQL]: http://mysql.com/
-  [`mysql`]: http://dev.mysql.com/doc/refman/5.6/en/mysql.html
+  [MySQL]: https://mysql.com/
+  [`mysql`]: https://dev.mysql.com/doc/refman/5.6/en/mysql.html
   [idempotent]: https://en.wikipedia.org/wiki/Idempotence
   ["Plan File"]: #plan-file
-  [SQLite]: http://sqlite.org/
-  [Rails migrations]: http://guides.rubyonrails.org/migrations.html
-  [Ruby on Rails]: http://rubyonrails.org/
-  [Module::Build]: http://search.cpan.org/perldoc?Module::Build
-  [Versioning]: http://www.depesz.com/2010/08/22/versioning/
-  [depesz]: http://www.depesz.com/
+  [SQLite]: https://sqlite.org/
+  [Rails migrations]: https://guides.rubyonrails.org/migrations.html
+  [Ruby on Rails]: https://rubyonrails.org/
+  [Module::Build]: https://metacpan.org/pod/Module::Build
+  [Versioning]: https://www.depesz.com/2010/08/22/versioning/
+  [depesz]: https://www.depesz.com/

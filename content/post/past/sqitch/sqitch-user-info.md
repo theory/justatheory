@@ -125,5 +125,5 @@ convinced that they are, but I hate operating in a vacuum, and have received
 great feedback to my proposals in the past. So I welcome your feedback now.
 
   [Sqitch]: https://sqitch.org/
-  [`$work`]: http://iovation.com/
+  [`$work`]: https://iovation.com/
   [extensions]: https://www.postgresql.org/docs/9.1/static/extend-extensions.html

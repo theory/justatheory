@@ -6,7 +6,8 @@
 <label for="{{ $id }}">{{- end }}
 	<figure{{ with .Params.class }} class="{{ . }}"{{ end }}{{ with or .Params.title .Params.alt }} title="{{ partial "attr.html" . }}"{{ end }}>
 		{{- if .Params.link }}
-		<a href="{{ .Params.link }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ with .Params.rel }} rel="{{ . }}"{{ end }}>
+		{{- $link := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.link) -}}
+		<a href="{{ $link }}"{{ with .Params.target }} target="{{ . }}"{{ end }}{{ with .Params.rel }} rel="{{ . }}"{{ end }}>
 			<img src="{{ $src }}"{{ with .Params.alt }} alt="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.title }} title="{{ partial "attr.html" . }}"{{ end }}{{ with .Params.width }} width="{{ . }}"{{ end }}{{ with .Params.height }} height="{{ . }}"{{ end }} />
 		</a>
 		{{- else }}

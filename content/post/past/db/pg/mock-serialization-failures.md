@@ -90,7 +90,7 @@ committed]. And now we can be reasonably sure that Bucardo will always properly
 handle serialization failures.
 
   [Bucardo]: http://bucardo.org/wiki/Bucardo
-  [work]: http://iovation.com/
+  [work]: https://iovation.com/
   [transaction isolation]: https://www.postgresql.org/docs/current/static/transaction-iso.html
   [proposed]: https://bucardo.org/pipermail/bucardo-general/2012-October/001616.html
   [`ALTER TABLE` docs]: https://www.postgresql.org/docs/9.2/static/sql-altertable.html

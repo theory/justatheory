@@ -31,4 +31,4 @@ arrive!
   [Tasia]: http://www.oregonlive.com/portland/index.ssf/2008/09/covering_her_body_in_words_wor.html
   [Julie]: http://strongrrl.blogspot.com "Six Semaines en France"
   [Paris Perl Mongueu(r\|se)s]: http://paris.mongueurs.net/
-  [here]: /travel/france "Just a Theory"
+  [here]: {{% link "/tags/france" %}} "Just a Theory"

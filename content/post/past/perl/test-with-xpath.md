@@ -271,7 +271,7 @@ Maybe you'll find it useful, too.
   [Escape project]: http://github.com/Ovid/Escape-/tree "Escape on GitHub"
   [requires that one use prefixes]: http://www.edankert.com/defaultnamespaces.html
     "edankert: “XPath and Default Namespace handling”"
-  [XML::LibXML]: search.cpan.org/perldoc?XML::LibXML "XML::LibXML on CPAN"
+  [XML::LibXML]: http://search.cpan.org/perldoc?XML::LibXML "XML::LibXML on CPAN"
   [XML::XPath]: http://search.cpan.org/perldoc?XML::XPath "XML::XPath on CPAN"
   [Test::XPath]: http://search.cpan.org/perldoc?Test::XPath
     "Test::XPath on CPAN"

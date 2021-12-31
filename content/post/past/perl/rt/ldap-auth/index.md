@@ -26,6 +26,6 @@ Enjoy!
   [LdapOverlay]: http://wiki.bestpractical.com/index.cgi?LdapOverlay
     "LdapOverlay page in the RT Wiki"
   [Request Tracker]: http://www.bestpractical.com/rt/ "RT by Best Practical"
-  [here]: /2004/12/ldap-auth/User_Local.pm.ldap "My Revision of LdapOverlay"
+  [here]: {{% link "/computers/programming/perl/rt/User_Local.pm.ldap" %}} "My Revision of LdapOverlay"
   [Net::SSLeay]: http://search.cpan.org/dist/Net_SSLeay.pm/
     "Net::SSLeay on CPAN"

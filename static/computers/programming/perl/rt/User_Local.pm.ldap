@@ -1,0 +1,141 @@
+no warnings qw(redefine);
+use strict;
+use Net::LDAP qw(LDAP_SUCCESS LDAP_PARTIAL_RESULTS);
+use Net::LDAP::Util qw (ldap_error_name);
+use Net::LDAP::Filter;
+use constant DEBUG => 0; # Change to 1 to log debugging info.
+
+# {{{ sub IsPassword 
+
+# Modification Originally by Marcelo Bartsch <bartschm_cl@hotmail.com>
+# Update by Stewart James <stewart.james@vu.edu.au for rt3.
+# Update by David Wheeler <david@kineticode.com> for TLS and Group membership support.
+# Drop this file in /opt/rt3/lib/RT/User_Local.pm
+# Drop something like below in yout RT_SiteConfig.pm
+# $LDAPExternalAuth = 1;
+# $LdapServer="127.0.0.1";
+# $LdapUser=""; 
+# $LdapPass="";
+# $LdapBase="ou=Users,dc=example,dc=com";
+# $LdapUidAttr="uid";
+# $LdapFilter="(objectclass=*)";
+# $LdapTLS = 1;
+# $LdapGroup ="cn=RT,ou=Group,dc=example,dc=com";
+# $LdapGroupAttribute = 'uniqueMember';
+# $LdapSSLVersion = 3;
+
+$Net::SSLeay::ssl_version = $RT::LdapSSLVersion
+  if $RT::LdapTLS && defined $RT::LdapSSLVersion;
+
+sub IsPassword {
+    my $self  = shift;
+    my $value = shift;
+
+    #TODO there isn't any apparent way to legitimately ACL this
+
+    # RT does not allow null passwords 
+    return unless defined $value && $value ne '';
+
+    if ( $self->PrincipalObj->Disabled ) {
+        $RT::Logger->info("Disabled user " . $self->Name . " tried to log in" );
+        return;
+    }
+
+    my $password = $self->__Value('Password');
+    return unless defined $password && $password ne '';
+
+    #  if it's a historical password we say ok.
+    return 1 if $self->_GeneratePassword($value) eq $password;
+    
+    if ($RT::LDAPExternalAuth) {
+        return 1 if crypt($value, $password) eq $password;
+        $RT::Logger->info("Using External Authentication\n");
+
+        my $ldap = Net::LDAP->new($RT::LdapServer, version=>3)
+          or $RT::Logger->critical("GetExternalUserWithLDAP: Cannot connect to LDAP'\n"),
+            return;
+        $ldap->start_tls if $RT::LdapTLS;
+
+        my $mesg = defined $RT::LdapUser && $RT::LdapUser ne ''
+          ? $ldap->bind($RT::LdapUser, password => $RT::LdapPass )
+          : $ldap->bind;
+        
+        unless ($mesg->code == LDAP_SUCCESS) {
+            $RT::Logger->critical("GetExternalUserWithLDAP: Cannot bind to LDAP: ",
+                                  $mesg->code, "\n");
+            return;
+        }
+
+        my $filter = Net::LDAP::Filter->new(
+          "(&($RT::LdapUidAttr=" . $self->Name .")$RT::LdapFilter)"
+        );
+        $RT::Logger->debug("GetExternalUserWithLDAP: First search filter '",
+                           $filter->as_string . "'\n") if DEBUG;
+        $mesg = $ldap->search(
+            base   => $RT::LdapBase,
+            filter => $filter,
+            attrs  => ['dn']
+        );
+
+        unless ($mesg->code == LDAP_SUCCESS || $mesg->code == LDAP_PARTIAL_RESULTS) {
+            $RT::Logger->debug("GetExternalUserWithLDAP: Could not search for ",
+                               $filter->as_string, ": ", $mesg->code, "",
+                               ldap_error_name($mesg->code), "\n") if DEBUG;
+            return;
+        }
+
+        $RT::Logger->debug("GetExternalUserWithLDAP: First search produced ",
+                           $mesg->count, " results\n") if DEBUG;
+        unless ($mesg->count) {
+            $RT::Logger->info("AUTH FAILED: " . $self->Name . "\n");
+            return;
+        }
+
+        $RT::Logger->debug("LDAP DN: " . $mesg->first_entry->dn . " " . $value . "\n")
+	  if DEBUG;
+        my $mesg2 = $ldap->bind($mesg->first_entry->dn, password => $value );
+        if ($mesg2->code == LDAP_SUCCESS) {
+            $RT::Logger->info("AUTH OK: " . $self->Name . " (" .$mesg->first_entry->dn . ")\n");
+            return 1 unless $RT::LdapGroup;
+            $RT::LdapGroupAttribute ||= 'uniqueMember';
+            my $filter = Net::LDAP::Filter->new(
+              "($RT::LdapGroupAttribute=" . $mesg->first_entry->dn . ")"
+            );
+            $RT::Logger->debug("GetExternalUserWithLDAP: Group search filter '"
+                               . $filter->as_string . "'\n") if DEBUG;
+            my $mesg3 = $ldap->search(
+                base => $RT::LdapGroup,
+                filter => $filter,
+                attrs => ['dn'],
+                scope => 'base',
+            );
+            unless ($mesg3->code == LDAP_SUCCESS || $mesg3->code == LDAP_PARTIAL_RESULTS) {
+                $RT::Logger->debug("GetExternalUserWithLDAP: Could not search for ",
+                                   $filter->as_string, ": ", $mesg3->code, "",
+                                   ldap_error_name($mesg3->code), "\n") if DEBUG;
+                return;
+            }
+
+            $RT::Logger->debug("GetExternalUserWithLDAP: Group search produced ",
+                               $mesg3->count, " results\n") if DEBUG;
+            unless ($mesg3->count) {
+                $RT::Logger->info("AUTH FAILED: " . $self->Name . "\n");
+                return;
+            }
+            return 1;
+            
+        } else {
+            $RT::Logger->critical("GetExternalUserWithLDAP: Cannot bind to LDAP:",
+                                  $mesg2->code, "\n");
+            return;
+        }
+    } else {
+        return 1 if crypt($value, $password) eq $password;
+    }
+    # no password check has succeeded. get out
+    return;
+}
+
+# }}}
+
+1;

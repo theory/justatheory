@@ -107,6 +107,6 @@ Thanks for your help!
   [Bricolage]: http://bricolage.cc "Bricolage CMS Home"
   [FuseMail]: http://www.fusemail.com/ "FuseMail Home"
   [Maildir]: https://en.wikipedia.org/wiki/Maildir "Maildir as described by Wikipedia"
-  [Offline IMAP]: http://software.complete.org/offlineimap "OfflineIMAP Home"
+  [Offline IMAP]: http://www.offlineimap.org "OfflineIMAP community's website"
   [RT]: http://www.bestpractical.com/rt/ "Request Tracker Home"
   [Pobox]: http://www.pobox.com/ "Pobox Home"

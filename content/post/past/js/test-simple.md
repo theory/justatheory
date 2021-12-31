@@ -59,7 +59,7 @@ More details are in the ToDo section of the TestBuilder docs.
 
 Let me know what you think!
 
-  [Test::Simple/Test::More/Test::Builder]: search.cpan.org/dist/Test-Simple/
+  [Test::Simple/Test::More/Test::Builder]: http://search.cpan.org/dist/Test-Simple/
     "Read the Test::Simple/Test::Builder/Test::More documentation on CPAN"
   [Download it now]: http://www.justatheory.com/downloads/TestBuilder-0.01.tar.gz
     "Download TestSimple 0.01 Now"

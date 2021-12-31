@@ -111,7 +111,7 @@ data. Frequently-updated data should have separate interfaces provided by
 applications to change the data. Otherwise, how static is it, really?
 
   [Sqitch]: https://sqitch.org/
-  [our]: http://iovation.com/
+  [our]: https://iovation.com/
   [`oracle_fdw`]: http://pgxn.org/extension/oracle_fdw
   [pgTAP]: https://pgtap.org/
   [deploy hooks]: https://github.com/theory/sqitch/issues/96

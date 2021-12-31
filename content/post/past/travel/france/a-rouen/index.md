@@ -84,7 +84,7 @@ A few other items of interest:
   [in]: {{% link "/2009/02/more-france-photos/" %}} "More France Photos"
   [2008]: {{% link "/2009/03/musee-du-quai-branly/" %}} "Musée du quai Branly"
   [Etsy]: http://etsy.com/
-  [iovation]: http://iovation.com/
+  [iovation]: https://iovation.com/
   [Sqitch]: https://sqitch.org/
   [Scratch]: http://scratch.mit.edu/
   [Bruges]: https://en.wikipedia.org/wiki/Bruges

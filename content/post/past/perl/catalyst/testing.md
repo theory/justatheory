@@ -179,7 +179,7 @@ while you do that.
 All done? Great! I had actually planned to start testing the view next, but I
 think this is enough for today. Stay tuned for more testing goodness.
 
-  [ongoing]: {{% link "/tags/catalyst" %}} "Just a Theory: Catalyst"
+  [ongoing]: {{% ref "/tags/catalyst" %}} "Just a Theory: Catalyst"
   [Catalyst tutorial]: https://metacpan.org/pod/Catalyst::Manual::Tutorial
     "Catalyst Tutorial: Overview"
   [chapter 8]: Catalyst::Manual::Tutorial::08_Testing

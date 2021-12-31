@@ -217,7 +217,7 @@ feel free to take it and run with it!
   [JPUG 10th Anniversary PostgreSQL Conference]: http://www.postgresql.jp/events/pgcon09j/e/
   [the usual talk]: http://www.postgresql.jp/events/pgcon09j/e/program_2#7
     "Unit Test your Database!"
-  [Catalyst tutorial]: {{% link "/tags/catalyst" %}}
+  [Catalyst tutorial]: {{% ref "/tags/catalyst" %}}
   [Steve Purkis]: http://www.spurkis.org/
   [TAP::Parser]: https://metacpan.org/dist/Test-Harness/
     "Test::Harness (with TAP:Parser) on CPAN"

@@ -18,9 +18,50 @@ Reference
 Some notes for myself to refer to on how to use some of the shortcodes in this
 project.
 
+### Link
+
+The [Link shortcode] resolves a link to a static file, such as a tarball, PDF,
+patch, or image. It takes a single argument: the file or URL to link to. It uses
+the following heuristics to determine how to render the link:
+
+*   If the link starts with `/`, it is assumed to be an absolute link on the
+    site. It will be rendered with the site base URL prefixed to it.
+*   If the link contains `://`, it's assumed to be a full URL and is simply
+    output as such. This option isn't generally used directly, but implicitly by
+    the figure shortcode below.
+*   Otherwise the link is assumed to be a file name in the same directory as the
+    current page. It will be prefixed with the full URL of the current page.
+
+Examples:
+
+```
+{{% link "/downloads/TestBuilder-0.01.tar.gz" %}}
+{{% link "learning_plpgsql.pdf" %}}
+```
+
+### Ref
+
+The [Ref shortcode] comes with Hugo, and links to a document in the current
+project. Pass a single argument, the path to the document, as the sole argument.
+Use the absolute path starting from a subdirectory of the `content/` directory,
+and omit the `.md` or `/index.md` from the file name (unless the file name
+contains other `.` characters, in which case the full file name should remain).
+
+An optional second argument specifies an alternate output format.
+
+Examples:
+
+```
+{{% ref "/post/books/project-hail-mary" %}}
+{{% ref "/post/books/project-hail-mary" "text %}}
+{{% ref "/post/perl/cache-perl-github-workflows" %}}
+{{% ref "/photo/nyc/harlem-steps" %}}
+{{% ref "/" "json" %}}
+```
+
 ### Figure
 
-The Figure shortcode and partial use the same syntax, to create an image figure
+The [Figure shortcode] and partial use the same syntax, to create an image figure
 and caption in HTML and plain text. For photos type posts, the HTML output image
 will also be zoomable to the full width of the browser window by tapping the
 image --- unless `link` is set.
@@ -36,7 +77,9 @@ The image source URL. May be a local URL, which will be resolved by the
 `link.html` partial. Required.
 
 #### `link`
-: A URL to link the image to. Optional.
+
+A URL to link the image to. May be a local URL, which will be resolved by the
+`link.html` partial. Optional.
 
 #### `class`
 
@@ -100,11 +143,14 @@ from being rendered above the body of the post. Useful if the image is used
 elsewhere in the post, but you still want it to appear in metadata for previews
 on social media.
 
-[Just a Theory]: https://justatheory.com/
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Hugo]: https://gohugo.io
-[AWS]: https://aws.amazon.com/
-[Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro
-[Source Code Pro]: https://github.com/adobe-fonts/source-code-pro
-[Twitter]: https://twitter.com/theory
-[Font Awesome]: https://fontawesome.com
+  [Just a Theory]: https://justatheory.com/
+  [Markdown]: https://daringfireball.net/projects/markdown/
+  [Hugo]: https://gohugo.io
+  [AWS]: https://aws.amazon.com/
+  [Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro
+  [Source Code Pro]: https://github.com/adobe-fonts/source-code-pro
+  [Twitter]: https://twitter.com/theory
+  [Font Awesome]: https://fontawesome.com
+  [Link shortcode]: themes/justatheory/layouts/partials/link.html
+  [Ref shortcode]: https://gohugo.io/content-management/cross-references/
+  [Figure shortcode]: themes/justatheory/layouts/partials/figure.html

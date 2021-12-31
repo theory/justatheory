@@ -107,7 +107,7 @@ Let's find out if I'm as good as my word.
   [old design]: https://past.justatheory.com/ "Browse the old Just a Theory"
   [kottke.org]: https://kottke.org/ "kottke.org ♥ 20 years of hypertext products"
   [all the tags]: {{% ref "/tags" %}} "Just Theory Tags"
-  [Archives]: {{% link "/archive/" %}} "Previously, on Just a Theory"
+  [Archives]: {{% ref "/archive" %}} "Previously, on Just a Theory"
   [CloudFront]: https://aws.amazon.com/cloudfront/ "Amazon CloudFront"
   [Let's Encrypt]: https://letsencrypt.org
     "Let’s Encrypt: Free, automated, and open Certificate Authority."

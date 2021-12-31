@@ -30,4 +30,4 @@ The release features a number of other goodies, including the elimination of a
 dependence on the `Clone` module, and thus also a big memory savings. There is
 now a lot more control over the format of graphs, too. Enjoy!
 
-  [FSA::Rules]: http://search.cpan.org/dist/FSA-Rules/ "FSA::Rules on CPAN"
+  [FSA::Rules]: https://metacpan.org/dist/FSA-Rules/ "FSA::Rules on CPAN"

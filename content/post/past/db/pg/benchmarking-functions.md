@@ -135,6 +135,6 @@ take care of it.
 
   [yesterday's post]: /computers/databases/postgresql/benchmarking_upc_validation.html
     "Benchmarking UPC Validation"
-  [Benchmark]: http://search.cpan.org/dist/perl/lib/Benchmark.pm
+  [Benchmark]: https://metacpan.org/dist/perl/lib/Benchmark.pm
   [Josh Berkus]: http://blogs.ittoolbox.com/database/soup/
     "“Database Soup” by Josh Berkus"

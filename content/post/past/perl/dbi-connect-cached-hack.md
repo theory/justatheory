@@ -120,18 +120,18 @@ to document DBI's callbacks? At this point, the closest thing to documentation
 is in the [tests]. (Hrm. I think I might have had a hand in writing them.) Check
 'em out.
 
-  [Test::XPath]: http://search.cpan.org/perldoc?Test::XPath
+  [Test::XPath]: https://metacpan.org/pod/Test::XPath
     "Test::XPath on CPAN"
-  [TAP::Harness]: http://search.cpan.org/perldoc?TAP::Harness
+  [TAP::Harness]: https://metacpan.org/pod/TAP::Harness
     "TAP::Harness on CPAN"
-  [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare
+  [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on CPAN"
   [subclass]: http://github.com/theory/module-build-db/
     "Module::Build::DB on GitHub"
   [IRC logging bot]: http://github.com/theory/circle/ "Circle on GitHub"
   [PGX]: http://www.pgexperts.com/ "PostgreSQL Experts, Inc."
   [Quinn Weaver]: http://www.pgexperts.com/Quinn.Weaver.html
-  [connect\_cached]: http://search.cpan.org/perldoc?DBI#connect_cached
+  [connect\_cached]: https://metacpan.org/pod/DBI#connect_cached
     "DBI: connect_cached"
   [Tim Bunce]: http://blog.timbunce.org/ "Not this…"
   [extensive conversation]: http://markmail.org/thread/de3jzc2unm55egn7

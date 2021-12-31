@@ -61,7 +61,7 @@ Enjoy!
   [Autrijus']: http://www.autrijus.org/ "Autrijus.Home"
   [mentioned]: /computers/programming/perl/modules/svnnotify_2.0.html
     "SVN::Notify 2.0 Hitting CPAN"
-  [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
   [Ovid]: http://use.perl.org/~Ovid/ "Ovid's Journal"
   [written about]: http://www.perlmonks.org/index.pl?node_id=392248
     "“if” Considered Harmful in OO programming"

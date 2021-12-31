@@ -54,7 +54,7 @@ post will have to do.
   [trip to Japan]: https://www.flickr.com/photos/theory/collections/72157622739532091/
     "Photos from Tokyo and Kyoto"
   [Kiyomizu-dera, Gion, and Teramachi]: https://www.flickr.com/photos/theory/sets/72157622853441435/
-  [Pod::Simple]: http://search.cpan.org/dist/Pod-Simple "Pod::Simple on CPAN"
+  [Pod::Simple]: https://metacpan.org/dist/Pod-Simple "Pod::Simple on CPAN"
   [the code]: http://github.com/theory/pod-site "Pod::Site on GitHub"
   [example]: http://www.bricolagecms.org/docs/current/api
     "Bricolage Documentation Browser"

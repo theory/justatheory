@@ -59,11 +59,11 @@ well as the usual t-shirts launch party invitations.
   [JAUSE]: http://openjsan.org/jause/
   [CPAN Meta DB]: http://cpanmetadb.appspot.com/
   [02packages.details.txt]: http://cpan.perl.org/modules/02packages.details.txt
-  [search.cpan.org]: http://search.cpan.org/
-  [Kobesearch]: http://kobesearch.cpan.org/
+  [search.cpan.org]: https://search.cpan.org/
+  [Kobesearch]: https://kobesearch.cpan.org/
   [JSAN]: http://openjsan.org/
   [cpanminus]: http://cpanmin.us/
-  [CPAN.pm]: http://search.cpan.org/perldoc?cpan
-  [JSAN Shell]: http://search.cpan.org/perldoc?jsan
+  [CPAN.pm]: https://metacpan.org/pod/cpan
+  [JSAN Shell]: https://metacpan.org/pod/jsan
   [PGXN site]: http://pgxn.org/ "PGXN"
   [drop me a line]: mailto:pgxn@pgexpergts.com

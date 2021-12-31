@@ -148,7 +148,7 @@ right, please, if you have an opinion here, let me have it!
   [PGCon]: http://pgcon.org/
   [on Slideshare]: https://www.slideshare.net/justatheory/sqitch-pgconsimple-sql-change-management-with-sqitch
   [the PGCon site]: https://www.pgcon.org/2012/schedule/events/479.en.html
-  [the tutorial]: http://search.cpan.org/dist/App-Sqitch/lib/sqitchtutorial.pod
+  [the tutorial]: https://metacpan.org/dist/App-Sqitch/lib/sqitchtutorial.pod
   [to-dos]: https://github.com/theory/sqitch/issues?labels=todo&page=1&state=open
   [playing with `git log`]: /computers/databases/vcs-sql-change-management.html
   [a previous post]: /computers/databases/sql-change-management-sans-redundancy.html

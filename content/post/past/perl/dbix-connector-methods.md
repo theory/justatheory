@@ -65,10 +65,10 @@ Brilliant suggestions warmly appreciated.
 
   [bug report]: https://rt.cpan.org/Ticket/Display.html?id=47005
     "RT #47005: txn_do should provide a way to disable retry"
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
     "DBIx::Connector on CPAN"
   [repository]: http://github.com/theory/dbix-connector/
     "DBIx::Connector on GitHub"
   [cause some confusion]: http://github.com/theory/dbix-connector/issues#issue/3
     "Issue #3: API is somewhat confusing"
-  [Rob Kinyon]: http://search.cpan.org/~rkinyon/ "Rob Kinyon's CPAN distributions"
+  [Rob Kinyon]: https://metacpan.org/author/RKINYON "Rob Kinyon's CPAN distributions"

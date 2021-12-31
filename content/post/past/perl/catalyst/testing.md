@@ -180,12 +180,12 @@ All done? Great! I had actually planned to start testing the view next, but I
 think this is enough for today. Stay tuned for more testing goodness.
 
   [ongoing]: {{% link "/tags/catalyst" %}} "Just a Theory: Catalyst"
-  [Catalyst tutorial]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial
+  [Catalyst tutorial]: https://metacpan.org/pod/Catalyst::Manual::Tutorial
     "Catalyst Tutorial: Overview"
   [chapter 8]: Catalyst::Manual::Tutorial::08_Testing
     "Catalyst Tutorial - Chapter 8: Testing"
   [Part 5 tag]: http://github.com/theory/catalyst-tutorial/commits/part-05
-  [Catalyst::View::TD]: http://search.cpan.org/perldoc?Catalyst::View::TD
+  [Catalyst::View::TD]: https://metacpan.org/pod/Catalyst::View::TD
     "Catalyst::View::TD on CPAN"
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
     "DBIx::Connector on CPAN"

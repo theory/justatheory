@@ -145,8 +145,8 @@ this. How do you want to use exception-handling with DBIx::Connector? Leave me a
 comment here or on [the ticket].
 
   [bug report]: http://rt.cpan.org/Ticket/Display.html?id=65196
-  [Try::Tiny]: http://search.cpan.org/perldoc?Try::Tiny
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
-  [`mode` method]: http://search.cpan.org/dist/DBIx-Connector/lib/DBIx/Connector.pm#mode
+  [Try::Tiny]: https://metacpan.org/pod/Try::Tiny
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
+  [`mode` method]: https://metacpan.org/dist/DBIx-Connector/lib/DBIx/Connector.pm#mode
   [here]: https://github.com/theory/dbix-connector/issues/3
   [the ticket]: https://rt.cpan.org/Ticket/Display.html?id=65196

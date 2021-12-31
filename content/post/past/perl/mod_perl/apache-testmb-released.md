@@ -82,13 +82,13 @@ Much nicer, eh?
 
   [mentioned]: /computers/programming/perl/mod_perl/apache_testmb.html
     "Module::Build + Apache::Test is Nearly Here"
-  [`Module::Build`]: http://search.cpan.org/dist/Module-Build/ "Module::Build on CPAN"
+  [`Module::Build`]: https://metacpan.org/dist/Module-Build/ "Module::Build on CPAN"
   [`Apache::Test`]: http://httpd.apache.org/test/ "Apache HTTP Test Project page"
   [Geoff]: http://use.perl.org/~geoff/ "Geoff Young's use Perl page"
   [announced]: http://marc.theaimsgroup.com/?l=apache-test-dev;m=108844177201351;w=2
     "The Apache::Test 1.12 announcement on test-dev"
-  [1]: http://search.cpan.org/dist/Apache-Test/ "Apache::Test on CPAN"
-  [`Apache::TestMB`]: http://search.cpan.org/dist/Apache-Test/lib/Apache/TestMB.pm
+  [1]: https://metacpan.org/dist/Apache-Test/ "Apache::Test on CPAN"
+  [`Apache::TestMB`]: https://metacpan.org/dist/Apache-Test/lib/Apache/TestMB.pm
     "Apache::TestMB documentation"
-  [`MasonX::Interp::WithCallbacks`]: http://search.cpan.org/dist/MasonX-Interp-WithCallbacks
+  [`MasonX::Interp::WithCallbacks`]: https://metacpan.org/dist/MasonX-Interp-WithCallbacks
     "MasonX::Interp::WithCallbacks on CPAN"

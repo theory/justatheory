@@ -48,9 +48,9 @@ your links, and celebrate the arrival of sane links in Pod documentation.
   [sane URL links]: http://perl5.git.perl.org/perl.git/commitdiff/f6e963e4dd62b8e3c01b31f4a4dd57e47e104997
     "Perl Git Commit f6e963e: remove prohibition against L<text|href>"
   [Sean Burke]: http://interglacial.com/~sburke/ "Sean M. Burke"
-  [CPAN Search]: http://search.cpan.org/perldoc?SVN::Notify
+  [CPAN Search]: https://metacpan.org/pod/SVN::Notify
     "SVN::Notify on CPAN"
-  [previous version]: http://search.cpan.org/~dwheeler/SVN-Notify-2.79/lib/SVN/Notify.pm
+  [previous version]: https://metacpan.org/release/DWHEELER/SVN-Notify-2.79/view/lib/SVN/Notify.pm
     "SVN::Notify 2.79 on CPAN"
   [Andy]: http://petdance.com/ "Andy Lester"
-  [Test::Pod]: http://search.cpan.org/perldoc?Test::Pod "Test::Pod on CPAN"
+  [Test::Pod]: https://metacpan.org/pod/Test::Pod "Test::Pod on CPAN"

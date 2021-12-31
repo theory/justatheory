@@ -82,10 +82,10 @@ Here are all of the changes since the last version:
 
 Enjoy!
 
-  [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
   [Have a look]: /code/svnnotify/svnnotify-2.50_colordiff_example.html
     "SVN::Notify 2.50 sample ColorDiff output"
   [2.40 output]: /code/svnnotify/svnnotify-2.40_colordiff_example.html
     "SVN::Notify 2.41 sample ColorDiff output"
   [GNATS]: http://www.gnu.org/software/gnats/ "GNATS: The GNU Bug Tracking System"
-  [search.cpan.org]: http://search.cpan.org/ "CPAN Search"
+  [search.cpan.org]: https://search.cpan.org/ "CPAN Search"

@@ -23,7 +23,7 @@ Description
     get the results from the TestResults attribute of the Test.Builder
     object constructed by each test script. These results conform to a
     format called TAP, the Test Anything Protocol. It is defined in
-    http://search.cpan.org/dist/Test-Harness/lib/Test/Harness/TAP.pod. See
+    https://metacpan.org/dist/Test-Harness/lib/Test/Harness/TAP.pod. See
     Test.Harness for details on the output.
 
  Class Methods

@@ -45,7 +45,7 @@ a comment. I hate having to spend so much time on this, but I’d much rather do
 so and get things right (or close to right) than wrong.
 
   [Text::Markup]: http://github.com/theory/text-markup/
-  [XML::LibXML::Parser]: http://search.cpan.org/perldoc?XML::LibXML::Parser
+  [XML::LibXML::Parser]: https://metacpan.org/pod/XML::LibXML::Parser
   [Markdown]: https://daringfireball.net/projects/markdown/
-  [Text::Markdown]: http://search.cpan.org/perldoc?Text::Markdown
+  [Text::Markdown]: https://metacpan.org/pod/Text::Markdown
   [BOM]: https://en.wikipedia.org/wiki/Byte_order_mark

@@ -150,5 +150,5 @@ API available to us mere mortal Perl developers!
     "Josh Berkus's Database Soup"
   [`sqlite_add_function`]: http://www.sqlite.org/capi3ref.html#sqlite3_create_function
     "C/C++ Interface For SQLite Version 3: sqlite_add_function"
-  [DBD::SQLite]: http://search.cpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
+  [DBD::SQLite]: https://metacpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
   [Matt]: http://www.sergeant.org/view/Matt "Matt Sergeant"

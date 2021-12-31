@@ -127,16 +127,16 @@ basics are finally nailed down and here to stay.
 Thanks to @mst, @robkinyon, and @ribasushi, in particular, for bearing with me
 and continuing to hammer on me when I was being dense.
 
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
     "DBIx::Connector on CPAN"
   [post]: /computers/programming/perl/modules/dbix-connector-methods.html
     "Suggest Method Names for DBIx::Connector"
   [thesaurus.com]: http://www.thesaurus.com/
-  [Apache::DBI]: http://search.cpan.org/perldoc?Apache::DBI
+  [Apache::DBI]: https://metacpan.org/pod/Apache::DBI
     "Apache::DBI on CPAN"
-  [`connect_cached()`]: http://search.cpan.org/perldoc?DBI#connect_cached
+  [`connect_cached()`]: https://metacpan.org/pod/DBI#connect_cached
     "DBI on CPAN"
-  [DBIx::Class]: http://search.cpan.org/perldoc?DBIx::Class
+  [DBIx::Class]: https://metacpan.org/pod/DBIx::Class
     "DBIx::Class on CPAN"
   [Tim requested]: https://rt.cpan.org/Ticket/Display.html?id=47005
     "RT #47005: txn_do should provide a way to disable retry"

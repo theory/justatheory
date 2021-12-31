@@ -122,7 +122,7 @@ Of course, all this seems cool, but since it's a truly evil hack, you have to be
 careful. If you can wait, though, perhaps we'll see [named captures in Perl
 5.10].
 
-  [documentation]: http://search.cpan.org/perldoc/perlre#(?%7B_code_%7D)
+  [documentation]: https://metacpan.org/pod/perlre#(?{-code-})
     "Read about (?{ }) on CPAN"
   [named captures in Perl 5.10]: http://www.nntp.perl.org/group/perl.perl5.porters/;msgid=9b18b3110610051158h43c58810ted1017129929a539%5Bat%5Dmail.gmail.com
     "Perl 5 Porters: “[PATCH] Initial attempt at named captures for perls regexp engine”"

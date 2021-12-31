@@ -111,7 +111,7 @@ interesting conversation.
   [in 2009]: http://www.macworld.com/article/142009/2009/07/netnewswire_32_beta_arrives_with_google_reader_syncing.html
     "Macworld: “NetNewsWire 3.2 beta arrives with Google Reader syncing”"
   [especially good]: http://www.macworld.com/appguide/app.html?id=87018
-  [CPAN Uploads feed]: http://search.cpan.org/uploads.rdf
+  [CPAN Uploads feed]: https://metacpan.org/feed/recent
   [has said]: https://twitter.com/#!/phfish/status/17147289806045184
   [other users]: https://twitter.com/#!/flynjets/status/17112345658527744
     "@flynjets: ”@phfish Bug: Mark all as read, then edit - mark item as unread, then sync. Unread items disappear every time.”"

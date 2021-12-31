@@ -25,6 +25,6 @@ With Perltidy installed and this function thrown into your `*\~/.emacs*` file, y
 can run `perltidy` on a region by just hitting `C-C t`. If no region is
 selected, it'll run `perltidy` on the whole buffer.
 
-  [Perltidy]: http://search.cpan.org/dist/Perl-Tidy "Perltidy on CPAN"
+  [Perltidy]: https://metacpan.org/dist/Perl-Tidy "Perltidy on CPAN"
   [examples]: http://www.emacswiki.org/cgi-bin/wiki/CPerlMode
     "CPerlMode on Emacs Wiki, including Perltidy examples"

@@ -443,7 +443,7 @@ elegant UI, and all the Unix power tools I can stand! I hope you do, too.
   [Perl]: http://www.perl.com/
   [well-known]: http://archive.develooper.com/macosx@perl.org/msg00895.html
   [libapreq]: http://httpd.apache.org/apreq/
-  [Perl modules]: http://search.cpan.org/search?dist=libapreq
+  [Perl modules]: https://metacpan.org/search?q=dist%3Alibapreq
   [experimental]: http://www.apache.org/~joes/
   [discussion]: http://archive.develooper.com/macosx@perl.org/index.html#01539
   [Mac OS X Perl]: http://lists.perl.org/showlist.cgi?name=macosx
@@ -461,9 +461,9 @@ elegant UI, and all the Unix power tools I can stand! I hope you do, too.
   [MySQL]: http://www.mysql.org/
   [here]: /downloads/pgsql_osx_start.tar.gz
   [Creating SystemStarter Startup Item Bundles HOWTO]: http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
-  [XML::Parser]: http://search.cpan.org/search?dist=XML-Parser
-  [Text::Iconv]: http://search.cpan.org/search?dist=Text-Iconv
+  [XML::Parser]: https://metacpan.org/dist/XML-Parser
+  [Text::Iconv]: https://metacpan.org/dist/Text-Iconv
   [download it]: http://www.gnu.org/software/libiconv/
-  [DBI]: http://search.cpan.org/search?dist=DBI
-  [DBD::Pg]: http://search.cpan.org/search?dist=DBD-Pg
-  [LWP]: http://search.cpan.org/search?dist=libwww-perl
+  [DBI]: https://metacpan.org/dist/DBI
+  [DBD::Pg]: https://metacpan.org/dist/DBD-Pg
+  [LWP]: https://metacpan.org/dist/libwww-perl

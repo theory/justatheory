@@ -53,7 +53,7 @@ This will do until someone formalizes a standard for JavaScript. Maybe it'll be
     "Learn about JSDoc (written in Perl!) on the project home page"
   [original post]: /computers/programming/javascript/documentation_standard.html
     "Is there a JavaScript Library Documentation Standard?"
-  [POD]: http://search.cpan.org/dist/perl/pod/perlpod.pod
+  [POD]: https://metacpan.org/dist/perl/pod/perlpod.pod
     "Read the POD documentation on CPAN"
   [KwiD]: http://kwiki.org/?KwiD
     "KWID is a proposed replacement format for Perl's POD format; read more about it here."

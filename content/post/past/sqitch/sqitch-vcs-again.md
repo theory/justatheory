@@ -222,4 +222,4 @@ But hey, if I have overlooked something (again!), please do let me know.
   [yesterday’s post]: /computers/databases/evolving-sqitch-plan.html
   [thoughtful comments]: https://past.justatheory.com/computers/databases/evolving-sqitch-plan.html#tb
   [I complained about before]: /computers/databases/sql-change-management-sans-redundancy.html
-  [original plan for bundling]: http://search.cpan.org/~dwheeler/App-Sqitch-0.31-TRIAL/lib/sqitchtutorial.pod#Ship_It!
+  [original plan for bundling]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.31-TRIAL/view/lib/sqitchtutorial.pod#Ship-It!

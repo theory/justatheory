@@ -53,6 +53,6 @@ site][pgTAP] for more information and for documentation.
 
   [pgTAP]: http://pgtap.projects.postgresql.org/
     "pgTAP: Unit Testing for PostgreSQL"
-  [TAP::Harness]: http://search.cpan.org/dist/Test-Harness/
+  [TAP::Harness]: https://metacpan.org/dist/Test-Harness/
     "TAP::Harness on CPAN"
   [download]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"

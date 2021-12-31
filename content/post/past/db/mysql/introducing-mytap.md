@@ -132,8 +132,8 @@ Hope you find it useful.
   [Giuseppe Maxia]: http://datacharmer.blogspot.com/
   [MyTAP]: http://github.com/theory/mytap/
   [downloads]: http://github.com/theory/mytap/downloads
-  [`my_prove`]: http://search.cpan.org/perldoc?my_prove
-  [TAP::Parser::SourceHandler::MyTAP]: http://search.cpan.org/dist/TAP-Parser-SourceHandler-MyTAP/
+  [`my_prove`]: https://metacpan.org/pod/my_prove
+  [TAP::Parser::SourceHandler::MyTAP]: https://metacpan.org/dist/TAP-Parser-SourceHandler-MyTAP/
   [complete documentation]: http://theory.github.com/mytap/documentation.html
   [teh suck]: http://dev.mysql.com/doc/refman/5.0/en/temporary-table-problems.html
   [`connection_id()`]: http://dev.mysql.com/doc/refman/5.0/en/information-functions.html#function_connection-id

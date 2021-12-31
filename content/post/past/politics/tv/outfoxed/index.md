@@ -21,7 +21,7 @@ great [writeup] in the *New York Times*.
 
   [order]: https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20
     "Buy “Outfoxed” from Amazon.com"
-  [Outfoxed]: http:/outfoxed.org/ "Outfoxed Website"
+  [Outfoxed]: https://en.wikipedia.org/wiki/Outfoxed "Wikpedia: “Outfoxed”"
   [writeup]: http://www.nytimes.com/2004/07/20/movies/20OUTF.html?ex=1247976000;en=9f285ca5c831ad9f;ei=5090;partner=rssuserland
   [Lessig Blog]: http://www.lessig.org/blog/archives/002041.shtml
     "Lawrence Lessig's Blog"

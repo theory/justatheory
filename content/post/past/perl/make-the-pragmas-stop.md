@@ -113,13 +113,13 @@ likely pragmas too, so that I don’t have to.
   [best practice]: http://oreilly.com/catalog/9780596001735
     "“Perl Best Practices” by Master Damian Conway, Esq."
   [chromatic]: http://www.modernperlbooks.com/ "Modern Perl Books"
-  [Modern::Perl]: http://search.cpan.org/perldoc?Modern::Perl
+  [Modern::Perl]: https://metacpan.org/pod/Modern::Perl
     "Modern::Perl on CPAN"
-  [encoding pragma]: http://search.cpan.org/perldoc?encoding
+  [encoding pragma]: https://metacpan.org/pod/encoding
     "encoding pragma on CPAN"
-  [common::sense]: http://search.cpan.org/perldoc?common::sense
+  [common::sense]: https://metacpan.org/pod/common::sense
     "common::sense on CPAN"
-  [uni::perl]: http://search.cpan.org/perldoc?uni::perl "uni::perl on CPAN"
-  [Toolkit]: http://search.cpan.org/perldoc?Toolkit "Toolkit on CPAN"
-  [Acme::Very::Modern::Perl]: http://search.cpan.org/perldoc?Acme::Very::Modern::Perl
+  [uni::perl]: https://metacpan.org/pod/uni::perl "uni::perl on CPAN"
+  [Toolkit]: https://metacpan.org/pod/Toolkit "Toolkit on CPAN"
+  [Acme::Very::Modern::Perl]: https://metacpan.org/pod/Acme::Very::Modern::Perl
     "Acme::Very::Modern::Perl on CPAN"

@@ -84,7 +84,7 @@ Anyway, recorded here for posterity (my blog is my other brain!).
   [PL/Perl]: https://www.postgresql.org/docs/current/static/plperl.html
   [creating utility functions]: http://www.depesz.com/index.php/2008/08/01/writing-sprintf-and-overcoming-limitations-in-plperl/
   [DBI]: http://dbi.perl.org/
-  [callbacks]: http://search.cpan.org/dist/DBI/DBI.pm#Callbacks_(hash_ref)
+  [callbacks]: https://metacpan.org/dist/DBI/DBI.pm#Callbacks_(hash_ref)
   [described before]: /computers/programming/perl/dbi-connect-cached-hack.html
   [Rails]: http://rubyonrails.org/
   [fuck typing]: /computers/programming/methodology/fuck-typing.html

@@ -34,7 +34,7 @@ Test.Harness.Browser runs JavaScript tests in a browser and expects to get the
 results from the C<TestResults> attribute of the Test.Builder object
 constructed by each test script.  These results conform to a format called
 TAP, the Test Anything Protocol. It is defined in
-L<http://search.cpan.org/dist/Test-Harness/lib/Test/Harness/TAP.pod>. See
+L<https://metacpan.org/dist/Test-Harness/lib/Test/Harness/TAP.pod>. See
 L<Test.Harness> for details on the output.
 
 =head2 Class Methods

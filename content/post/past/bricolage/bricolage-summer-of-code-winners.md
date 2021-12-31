@@ -91,7 +91,7 @@ end up with 11 great applications!
     "Bricolage Summer of Code Application Summary"
   [Summer of Code]: http://code.google.com/summerofcode.html
     "Google Summer of Code"
-  [Patrick LeBoutillier]: http://search.cpan.org/~patl/
+  [Patrick LeBoutillier]: https://metacpan.org/author/PATL
     "See Patrick LeBoutillier's modules on CPAN"
   [Sam Tregar]: http://sam.tregar.com/ "Sam Tregar: Life"
   [Matchstick]: http://sourceforge.net/projects/matchstick/

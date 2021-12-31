@@ -117,9 +117,9 @@ POD tags anyway. At least I hope so. I'm currently working up a patch for blead
 that updates Pod::Simple in core, so it will be interesting to see if it breaks
 anyone's POD. Here's to hoping it doesn't!
 
-  [Pod::Simple]: http://search.cpan.org/perldoc?Pod::Simple
+  [Pod::Simple]: https://metacpan.org/pod/Pod::Simple
     "Pod::Simple on CPAN"
-  [an example]: http://search.cpan.org/perldoc?DBIx::Connector "DBix::Connector"
-  [perlpod]: http://search.cpan.org/perldoc?perlpod
+  [an example]: https://metacpan.org/pod/DBIx::Connector "DBix::Connector"
+  [perlpod]: https://metacpan.org/pod/perlpod
   [bug report]: https://rt.cpan.org/Public/Bug/Display.html?id=12239
     "C<<< C<<foo>> >>> not rendered properly."

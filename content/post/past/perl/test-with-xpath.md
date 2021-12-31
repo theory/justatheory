@@ -258,12 +258,12 @@ Maybe you'll find it useful, too.
   [`assert_select`]: http://api.rubyonrails.org/classes/ActionController/Assertions/SelectorAssertions.html#M000569
     "ActionController::Assertions::SelectorAssertions"
   [PGX]: http://www.pgexperts.com/ "PostgreSQL Experts, Inc."
-  [Test::WWW::Mechanize::Catalyst]: http://search.cpan.org/perldoc?Test::WWW::Mechanize::Catalyst
+  [Test::WWW::Mechanize::Catalyst]: https://metacpan.org/pod/Test::WWW::Mechanize::Catalyst
     "Test::WWW::Mechanize::Catalyst on CPAN"
   [SOL]: http://www.urbandictionary.com/define.php?term=S.O.L.
     "Urban Dictionary: “S.O.L”"
-  [Test::XML]: http://search.cpan.org/perldoc?Test::XML "Test::XML on CPAN"
-  [Test::XML::XPath]: http://search.cpan.org/perldoc?Test::XML::XPath
+  [Test::XML]: https://metacpan.org/pod/Test::XML "Test::XML on CPAN"
+  [Test::XML::XPath]: https://metacpan.org/pod/Test::XML::XPath
     "Test::XML::XPath on CPAN"
   [Ovid]: http://use.perl.org/~Ovid/ "Ovid on use Perl;"
   [Test::XHTML::XPath]: http://github.com/Ovid/Escape-/blob/master/t/lib/Test/XHTML/XPath.pm
@@ -271,12 +271,12 @@ Maybe you'll find it useful, too.
   [Escape project]: http://github.com/Ovid/Escape-/tree "Escape on GitHub"
   [requires that one use prefixes]: http://www.edankert.com/defaultnamespaces.html
     "edankert: “XPath and Default Namespace handling”"
-  [XML::LibXML]: http://search.cpan.org/perldoc?XML::LibXML "XML::LibXML on CPAN"
-  [XML::XPath]: http://search.cpan.org/perldoc?XML::XPath "XML::XPath on CPAN"
-  [Test::XPath]: http://search.cpan.org/perldoc?Test::XPath
+  [XML::LibXML]: https://metacpan.org/pod/XML::LibXML "XML::LibXML on CPAN"
+  [XML::XPath]: https://metacpan.org/pod/XML::XPath "XML::XPath on CPAN"
+  [Test::XPath]: https://metacpan.org/pod/Test::XPath
     "Test::XPath on CPAN"
-  [Test::More]: http://search.cpan.org/perldoc?Test::More "Test::More on CPAN"
+  [Test::More]: https://metacpan.org/pod/Test::More "Test::More on CPAN"
   [implementation]: http://api.rubyonrails.org/classes/HTML/Selector.html
     "Ruby HTML::Selector"
-  [define custom XPath functions in Perl]: http://search.cpan.org/dist/Test-XPath/lib/Test/XPath.pm#xpc
+  [define custom XPath functions in Perl]: https://metacpan.org/dist/Test-XPath/lib/Test/XPath.pm#xpc
     "Test::XPath: Define new XPath functions"

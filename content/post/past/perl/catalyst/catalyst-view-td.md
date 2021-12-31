@@ -151,17 +151,17 @@ be, but it will let me continue my rant against ORMs as well. Stay tuned.
 
   [release]: /computers/programming/perl/modules/template-declare-documented.html
     "Template Declare Explained"
-  [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare
+  [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on CPAN"
   [Catalyst]: http://www.catalystframework.org/
-  [Catalyst::View::TD]: http://search.cpan.org/perldoc?Catalyst::View::TD
+  [Catalyst::View::TD]: https://metacpan.org/pod/Catalyst::View::TD
     "Catalyst::View::TD on CPAN"
-  [Catalyst::View::Template::Declare]: http://search.cpan.org/perldoc?Catalyst::View::Template::Declare
+  [Catalyst::View::Template::Declare]: https://metacpan.org/pod/Catalyst::View::Template::Declare
   [jrock]: http://blog.jrock.us/
-  [Template Toolkit]: http://search.cpan.org/perldoc?Template
+  [Template Toolkit]: https://metacpan.org/pod/Template
     "Template Toolkit on CPAN"
-  [Mason]: http://search.cpan.org/perldoc?HTML::Mason "Mason on CPAN"
-  [Catalyst::View::TT]: http://search.cpan.org/perldoc?Catalyst::View::TT
+  [Mason]: https://metacpan.org/pod/HTML::Mason "Mason on CPAN"
+  [Catalyst::View::TT]: https://metacpan.org/pod/Catalyst::View::TT
     "Catalyst::View::TT"
-  [chapter 3]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics
+  [chapter 3]: https://metacpan.org/pod/Catalyst::Manual::Tutorial::03_MoreCatalystBasics
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"

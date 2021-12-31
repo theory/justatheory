@@ -43,8 +43,8 @@ do it?
 
   [Perl Best Practices]: https://www.amazon.com/exec/obidos/ASIN/0596001738/justatheory-20
     "Buy “Perl Best Practices” on Amazon.com"
-  [List::Util]: http://search.cpan.org/dist/List-Util/ "List::Util on CPAN"
-  [List::MoreUtils]: http://search.cpan.org/dist/List-MoreUtils/
+  [List::Util]: https://metacpan.org/dist/List-Util/ "List::Util on CPAN"
+  [List::MoreUtils]: https://metacpan.org/dist/List-MoreUtils/
     "List::MoreUtils on CPAN"
-  [Text::Levenshtein]: http://search.cpan.org/dist/Text-Levenshtein/
+  [Text::Levenshtein]: https://metacpan.org/dist/Text-Levenshtein/
     "Text::Levenshtein on CPAN"

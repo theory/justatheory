@@ -124,7 +124,7 @@ available to DBD::SQLite apps?
 
   [discussed]: http://www.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html
     "Custom Aggregates in Perl"
-  [DBD::SQLite]: http://search.cpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
+  [DBD::SQLite]: https://metacpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
   [SQLite]: http://www.sqlite.org/ "Learn all about SQLite"
   [SQLite expression]: http://www.sqlite.org/lang_expr.html
     "Query Language Understood by SQLite: expression"

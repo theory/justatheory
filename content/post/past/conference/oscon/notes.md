@@ -119,6 +119,6 @@ OSCon!
     "State of PostgreSQL"
   [SQLite]: http://conferences.oreillynet.com/cs/os2004/view/e_sess/5701
     " Introducing SQLite version 3.0 "
-  [DBD::SQLite]: http://search.cpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
+  [DBD::SQLite]: https://metacpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
   [Pie]: http://www.oreillynet.com/pub/a/oscon2004/friday/index.html
     "The Dan Sugalski Pie Series"

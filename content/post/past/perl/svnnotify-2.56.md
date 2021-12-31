@@ -125,7 +125,7 @@ For the curious, here are all of the changes since 2.50:
 
 Enjoy!
 
-  [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
   [2.50 release]: /computers/programming/perl/modules/svnnotify_2.50.html
     "SVN::Notify 2.50 Announcement"
   [standardized on it]: http://sourceforge.net/docs/E09#svn_notify

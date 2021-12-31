@@ -15,7 +15,7 @@ instead? [Digest::Whirlpool]? [Digest::SHA2]? [Digest::Tiger]?
 for hashing passwords. What's the best choice for that use? For other uses?
 
   [release of MD5 collision code]: http://it.slashdot.org/article.pl?sid=05/11/15/2037232
-  [Digest::Whirlpool]: http://search.cpan.org/dist/Digest-Whirlpool/
-  [Digest::SHA2]: http://search.cpan.org/dist/Digest-SHA1/
-  [Digest::Tiger]: http://search.cpan.org/dist/Digest-Tiger/
-  [Digest::Haval256]: http://search.cpan.org/dist/Digest-Haval256/
+  [Digest::Whirlpool]: https://metacpan.org/dist/Digest-Whirlpool/
+  [Digest::SHA2]: https://metacpan.org/dist/Digest-SHA1/
+  [Digest::Tiger]: https://metacpan.org/dist/Digest-Tiger/
+  [Digest::Haval256]: https://metacpan.org/dist/Digest-Haval256/

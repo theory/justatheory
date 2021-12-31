@@ -71,4 +71,4 @@ module.
 
 What do you think?
 
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector

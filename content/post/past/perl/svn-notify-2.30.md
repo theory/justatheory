@@ -52,7 +52,7 @@ I'll try to get a nice example of all this functionality up in the next few
 days; if anyone else creates one first, send it to me! But in the meantime,
 enjoy!
 
-  [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
   [Request Tracker]: http://www.bestpractical.com/rt/ "RT at Best Practical"
   [Bugzilla]: http://bugzilla.mozilla.org/ "Bugzilla home page"
   [JIRA]: http://www.atlassian.com/software/jira/ "JIRA Website"
@@ -60,7 +60,7 @@ enjoy!
     "CVSspam Home Page"
   [Mastering Regular Expressions, Second Edition]: https://www.amazon.com/exec/obidos/ASIN/0596002890/justatheory-20
     "Buy “Mastering Regular Expressions, Second Edition” on Amazon.com"
-  [SVN::Notify::Snapshot]: http://search.cpan.org/dist/SVN-Notify-Snapshot/
+  [SVN::Notify::Snapshot]: https://metacpan.org/dist/SVN-Notify-Snapshot/
     "SVN::Notify::Snapshot on CPAN"
-  [SVN::Notify::Config]: http://search.cpan.org/dist/SVN-Notify-Config/
+  [SVN::Notify::Config]: https://metacpan.org/dist/SVN-Notify-Config/
     "SVN::Notify::Config on CPAN"

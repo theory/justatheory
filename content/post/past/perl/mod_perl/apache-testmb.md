@@ -33,10 +33,10 @@ the `Apache::Test` repository and released to CPAN. My
 
   [Apache HTTP Test Project]: http://httpd.apache.org/test/
     "Apache HTTP Test Project page"
-  [`Module::Build`]: http://search.cpan.org/dist/Module-Build/
+  [`Module::Build`]: https://metacpan.org/dist/Module-Build/
     "Module::Build on CPAN"
   [HTML::Mason]: http://www.masonhq.com/ "The HTML::Mason site"
   [discussion]: http://marc.theaimsgroup.com/?t=108786695100002&r=1&w=2
     "Discussion of Apache::TestMB on test-dev@httpd.apache.org"
-  [`MasonX::Interp::WithCallbacks`]: http://search.cpan.org/dist/MasonX-Interp-WithCallbacks/
+  [`MasonX::Interp::WithCallbacks`]: https://metacpan.org/dist/MasonX-Interp-WithCallbacks/
     "MasonX::Interp::WithCallbacks on CPAN"

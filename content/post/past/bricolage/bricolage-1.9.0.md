@@ -223,11 +223,11 @@ and give it a try!
   [RT]: http://www.bestpractical.com/ "Best Practical makes RT"
   [Mason]: http://www.masonhq.com/ "Mason HQ"
   [Template Toolkit]: http://www.template-toolkit.org/ "TT HQ"
-  [HTML::Template]: http://search.cpan.org/dist/HTML-Template/
+  [HTML::Template]: https://metacpan.org/dist/HTML-Template/
     "HTML::Template on CPAN"
   [mod\_perl]: http://perl.apache.org/ "mod_perl HQ"
   [Omni TI]: http://www.omniti.com/ "Omni TI Consulting"
-  [PHP::Interpreter]: http://search.cpan.org/dist/PHP-Interpreter/
+  [PHP::Interpreter]: https://metacpan.org/dist/PHP-Interpreter/
     "PHP::Interpreter on CPAN"
   [API documentation]: http://www.bricolage.cc/docs/devel/api/
     "Bricolage development API, subject to change"

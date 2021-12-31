@@ -27,5 +27,5 @@ Enjoy!
     "LdapOverlay page in the RT Wiki"
   [Request Tracker]: http://www.bestpractical.com/rt/ "RT by Best Practical"
   [here]: {{% link "/computers/programming/perl/rt/User_Local.pm.ldap" %}} "My Revision of LdapOverlay"
-  [Net::SSLeay]: http://search.cpan.org/dist/Net_SSLeay.pm/
+  [Net::SSLeay]: https://metacpan.org/dist/Net_SSLeay.pm/
     "Net::SSLeay on CPAN"

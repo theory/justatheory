@@ -75,8 +75,8 @@ So what did it lose? Just a few things:
 
 Not too much, eh? Let me know what you think, and send feedback!
 
-  [CPAN]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
-  [*activitymail*]: http://search.cpan.org/dist/activitymail/
+  [CPAN]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [*activitymail*]: https://metacpan.org/dist/activitymail/
     "activitymail on CPAN"
   [Subversion]: http://subversion.tigris.org/ "Subversion Website"
   [Autrijus Tang]: http://www.autrijus.org/ "Autrijus.Home"

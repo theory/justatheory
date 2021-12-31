@@ -30,4 +30,4 @@ to localize `$@`, so now it should propagate properly everywhere.
 So if you’re using DBIx::Connector `catch` blocks, please upgrade ASAP. Sorry
 for the hassle.
 
-  [DBIx::Connector]: http://search.cpan.org/dist/DBIx-Connector "DBIx::Connector on CPAN"
+  [DBIx::Connector]: https://metacpan.org/dist/DBIx-Connector "DBIx::Connector on CPAN"

@@ -82,8 +82,8 @@ Right?
 
 What would you do?
 
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
   [SQLite]: http://www.sqlite.org
   [Bricolage]: http://www.bricolagecms.org/
-  [DBIx::Class]: http://search.cpan.org/perldoc?DBIx::Class
-  [Exception::Class::DBI]: http://search.cpan.org/perldoc?Exception::Class::DBI
+  [DBIx::Class]: https://metacpan.org/pod/DBIx::Class
+  [Exception::Class::DBI]: https://metacpan.org/pod/Exception::Class::DBI

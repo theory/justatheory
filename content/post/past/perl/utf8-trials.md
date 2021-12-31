@@ -157,7 +157,7 @@ again!
   [refuse to accept]: http://bugs.bricolage.cc/show_bug.cgi?id=709#c14
     "Two bugs in one!"
   [Bricolage 1.8.2]: /bricolage/announce/1.8.2.html "Bricolage 1.8.2 Released"
-  [Encode module]: http://search.cpan.org/dist/Encode/ "Encode on CPAN"
+  [Encode module]: https://metacpan.org/dist/Encode/ "Encode on CPAN"
   [discussion]: http://www.template-toolkit.org/pipermail/templates/2004-September/006583.html
     "Add utf8 to All Templates?"
   [suggested]: http://www.template-toolkit.org/pipermail/templates/2004-September/006584.html
@@ -168,4 +168,4 @@ again!
     "Tim Bunce Responds"
   [1]: http://bugs.bricolage.cc/show_bug.cgi?id=802
     "Set SvUTF8_on on Data Fetched from Database"
-  [DBD::Pg]: http://search.cpan.org/dist/DBD-Pg/ "DBD::Pg on CPAN"
+  [DBD::Pg]: https://metacpan.org/dist/DBD-Pg/ "DBD::Pg on CPAN"

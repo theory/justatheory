@@ -74,5 +74,5 @@ mountains of time. I hope you find Pg::Priv useful.
   [Etsy]: http://www.etsy.com/
   [the documentation]: https://www.postgresql.org/docs/current/static/sql-grant.html#SQL-GRANT-NOTES
     "PostgreSQL: “GRANT — Notes”"
-  [Pg::Priv]: http://search.cpan.org/perldoc?Pg::Priv "Pg::Priv on CPAN"
+  [Pg::Priv]: https://metacpan.org/pod/Pg::Priv "Pg::Priv on CPAN"
   [Chad Dickerson]: http://chaddickerson.com/

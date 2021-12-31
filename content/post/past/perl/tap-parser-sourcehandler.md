@@ -219,16 +219,16 @@ feel free to take it and run with it!
     "Unit Test your Database!"
   [Catalyst tutorial]: {{% link "/tags/catalyst" %}}
   [Steve Purkis]: http://www.spurkis.org/
-  [TAP::Parser]: http://search.cpan.org/dist/Test-Harness/
+  [TAP::Parser]: https://metacpan.org/dist/Test-Harness/
     "Test::Harness (with TAP:Parser) on CPAN"
   [libtap]: http://code.google.com/p/libperl/wiki/Libtap
   [pgTAP]: http://pgtap.projects.postgresql.org/
   [even uglier]: http://pgtap.projects.postgresql.org/integration.html#perl
-  [dev release]: http://search.cpan.org/dist/Test-Harness/
+  [dev release]: https://metacpan.org/dist/Test-Harness/
     "Test::Harness on CPAN"
-  [TAP::Parser::SourceHandler]: http://search.cpan.org/perldoc?TAP::Parser::SourceHandler
-  [handler for pgTAP]: http://search.cpan.org/perldoc?TAP::Parser::SourceHandler::pgTAP
-  [TAP::Parser::Iterator]: http://search.cpan.org/perldoc?TAP::Parser::Iterator
-  [TAP::Parser::Iterator::Process]: http://search.cpan.org/perldoc?TAP::Parser::Iterator::Process
+  [TAP::Parser::SourceHandler]: https://metacpan.org/pod/TAP::Parser::SourceHandler
+  [handler for pgTAP]: https://metacpan.org/pod/TAP::Parser::SourceHandler::pgTAP
+  [TAP::Parser::Iterator]: https://metacpan.org/pod/TAP::Parser::Iterator
+  [TAP::Parser::Iterator::Process]: https://metacpan.org/pod/TAP::Parser::Iterator::Process
     "TAP::Parser::Iterator::Process on CPAN"
   [over here]: /code/TAP-Parser-SourceHandler-Ruby.pm

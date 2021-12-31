@@ -27,5 +27,5 @@ Opinions welcomed.
     "FAIL Text-Diff-HTML-0.04 5.8.5 on freebsd 5.4-stable (i386-freebsd)"
   [this failure]: http://www.nntp.perl.org/group/perl.cpan.testers/240189
     "FAIL Apache-Dir-0.04 5.8.5 on solaris 2.9 (sun4-solaris-thread-multi)"
-  [here it is]: http://search.cpan.org/~gozer/mod_perl-1.29/mod_perl.pod
+  [here it is]: https://metacpan.org/release/GOZER/mod_perl-1.29/view/mod_perl.pod
     "mod_perl on CPAN"

@@ -25,7 +25,7 @@ out those [KinoSearch benchmarks], too. This thing is fast!
 
   [KinoSearch]: http://www.rectangular.com/kinosearch/
     "KinoSearch: A Perl search engine library"
-  [tutorial]: http://search.cpan.org/dist/KinoSearch/lib/KinoSearch/Docs/Tutorial.pod
+  [tutorial]: https://metacpan.org/dist/KinoSearch/lib/KinoSearch/Docs/Tutorial.pod
     "KinoSearch::Docs::Tutorial - sample indexing and search applications"
   [the search page]: /search.cgi "Search Just a Theory"
   [“iraq”]: /search.cgi?q=iraq "Search for “iraq”"

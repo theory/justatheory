@@ -65,7 +65,7 @@ Got something to add? [Fork it!]
   [posted]: /computers/databases/sqitch-draft.html
   [a tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
   [Git]: http://git-scm.com/
-  [to CPAN]: http://search.cpan.org/dist/App-Sqitch/
+  [to CPAN]: https://metacpan.org/dist/App-Sqitch/
   [`git-config`]: https://git-scm.com/docs/git-config
   [Config::GitLike]: https://metacpan.org/module/Config::GitLike/
   [the plan file]: https://github.com/theory/sqitch/blob/master/lib/sqitch.pod#plan-file

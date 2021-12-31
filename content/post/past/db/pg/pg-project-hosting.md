@@ -67,5 +67,5 @@ I'll follow up with a summary of what I've found in a later post.
   [pgFoundry]: http://pgfoundry.org/
   [GForge]: http://gforge.org/
   [Librelist]: http://librelist.com/
-  [search.cpan.org]: http://search.cpan.org/
+  [search.cpan.org]: https://search.cpan.org/
   [PostgreSQL Weekly News]: https://www.postgresql.org/community/weeklynews/

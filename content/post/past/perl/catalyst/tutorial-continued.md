@@ -214,15 +214,15 @@ More soon.
 
   [post]: /computers/programming/perl/catalyst/catalyst-view-td.html
     "Create Catalyst Views with Template::Declare"
-  [Catalyst::View::TD]: http://search.cpan.org/perldoc?Catalyst::View::TD
+  [Catalyst::View::TD]: https://metacpan.org/pod/Catalyst::View::TD
     "Catalyst::View::TD on CPAN"
-  [chapter 3]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics
+  [chapter 3]: https://metacpan.org/pod/Catalyst::Manual::Tutorial::03_MoreCatalystBasics
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"
   [PostgreSQL]: https://www.postgresql.org/
     "PostgreSQL: The world's most advanced open source database"
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
     "DBIx::Connector on CPAN"
-  [database creation]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_SQLITE_DATABASE
+  [database creation]: https://metacpan.org/pod/Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_SQLITE_DATABASE
     "Create a SQLite Database"
   [natural key]: https://en.wikipedia.org/wiki/Natural_key
     "Wikipedia: “Natural Key”"
@@ -232,9 +232,9 @@ More soon.
     "PostgreSQL Documentation: “isn”"
   [some attempts]: http://dlist.sir.arizona.edu/1716/
     "The Universal Author Identifier System (UAI_Sys)"
-  [Moose]: http://search.cpan.org/perldoc?Moose "Moose on CPAN"
-  [Exception::Class::DBI]: http://search.cpan.org/perldoc?Exception::Class::DBI
+  [Moose]: https://metacpan.org/pod/Moose "Moose on CPAN"
+  [Exception::Class::DBI]: https://metacpan.org/pod/Exception::Class::DBI
     "Exception::Class::DBI on CPAN"
-  [DBI]: http://search.cpan.org/perldoc?DBI "The DBI on CPAN"
+  [DBI]: https://metacpan.org/pod/DBI "The DBI on CPAN"
   [DSL]: https://en.wikipedia.org/wiki/Domain-specific_language
     "Wikipedia: “Domain-Specific Language”"

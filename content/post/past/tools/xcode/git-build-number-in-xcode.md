@@ -55,4 +55,4 @@ That’s it. If you want to use a placeholder other than “0x0000”, just chan
 on the last line of the script.
 
   [decent Perl script]: http://www.cimgf.com/2008/04/13/git-and-xcode-a-git-build-number-script/
-  [Perl hacker]: http://search.cpan.org/~dwheeler/
+  [Perl hacker]: https://metacpan.org/author/DWHEELER

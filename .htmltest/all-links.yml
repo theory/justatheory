@@ -32,6 +32,7 @@ IgnoreURLs:
   - https://bookshop.org/books/the-martian/9780553418026 # https://twitter.com/theory/status/1476690324651184128
   - https://www.schools.nyc.gov/school-year-20-21/return-to-school-2020
   - http://www.ohloh.net/
+  - https://kobesearch.cpan.org/
 
   # URLs to always ignore.
   - mailto:sqitch-users+subscribe@googlegroups.com # Due to https://github.com/wjdp/htmltest/issues/182

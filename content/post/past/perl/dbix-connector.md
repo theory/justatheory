@@ -105,9 +105,9 @@ database projects from here on in. Perhaps later I'll build a model class on it
 finish documenting [Template::Declare] and writing some views with it. More on
 that soon.
 
-  [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
+  [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
     "DBIx::Connector on the CPAN"
-  [Catalyst::Model::DBI]: http://search.cpan.org/perldoc?Catalyst::Model::DBI
+  [Catalyst::Model::DBI]: https://metacpan.org/pod/Catalyst::Model::DBI
     "Catalyst::Model::DBI the CPAN"
   [my app]: http://github.com/theory/circle/ "Circle on GitHub"
   [mst]: http://www.trout.me.uk/ "Matt S Trout"
@@ -115,10 +115,10 @@ that soon.
     "Keep DBI's connect_cached From Horking
     Transactions"
   [mod\_perl]: http://perl.apache.org/
-  [POE]: http://search.cpan.org/perldoc?POE "POE on CPAN"
+  [POE]: https://metacpan.org/pod/POE "POE on CPAN"
   [ribasushi]: http://rabbit.us/
   [savepoint]: https://en.wikipedia.org/wiki/Savepoint "Wikipedia: “Savepoint”"
   [repository]: http://github.com/theory/dbix-connector/
     "DBIx::Connector on GitHub"
-  [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare
+  [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on the CPAN"

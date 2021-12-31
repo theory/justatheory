@@ -39,8 +39,8 @@ suck less than the alternatives.
 
 Comments close in 2 weeks. Thanks!
 
-  [description of PGAN]: http://wiki.postgresql.org/wiki/PGAN
-  [CPAN]: http://search.cpan.org/
-  [settled on]: http://wiki.postgresql.org/wiki/ExtensionPackaging
-  [PGX]: http://pgexperts.com/
+  [description of PGAN]: https://wiki.postgresql.org/wiki/PGAN
+  [CPAN]: https://search.cpan.org/
+  [settled on]: https://wiki.postgresql.org/wiki/ExtensionPackaging
+  [PGX]: https://pgexperts.com/
   [bike shed]: https://en.wikipedia.org/wiki/Parkinson's_Law_of_Triviality

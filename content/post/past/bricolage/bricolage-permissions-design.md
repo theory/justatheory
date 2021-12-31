@@ -78,7 +78,7 @@ represent an object ACLs?
   [Bric::Security]: http://www.bricolage.cc/docs/current/api/Bric::Security
     "Read the Bric::Security documentation on the Bricolage site"
   [RT]: http://www.bestpractical.com/rt/ "RT Request Tracker"
-  [List::MoreUtil]: http://search.cpan.org/dist/List-MoreUtils/
+  [List::MoreUtil]: https://metacpan.org/dist/List-MoreUtils/
     "List::MoreUtils on CPAN"
   [aggregate function]: https://www.postgresql.org/docs/current/interactive/functions-aggregate.html
     "PostgreSQL Aggregate Functions"

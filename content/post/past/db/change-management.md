@@ -168,7 +168,7 @@ management. Let me know.
   [Bricolage upgrade scripts]: http://github.com/bricoleurs/bricolage/tree/master/inst/upgrade
     "Bricolage Upgrade Scripts"
   [Slony-I]: http://www.slony.info/
-  [Module::Build]: http://search.cpan.org/dist/Module-Build/
+  [Module::Build]: https://metacpan.org/dist/Module-Build/
     "Module::Build on CPAN"
   [amazingly useful]: /computers/databases/postgresql/recurring_events.html
     "Just a Theory: “How to Generate Recurring Events in the Database”"
@@ -176,7 +176,7 @@ management. Let me know.
     "O’Reilly ONLamp: “Managing Many-to-Many Relationships with PL/pgSQL”"
   [improve performance]: http://www.oreillynet.com/pub/a/databases/2006/09/07/plpgsql-batch-updates.html
     "O’Reilly Databases: “Batch Updates with PL/pgSQL”"
-  [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
-  [autoboxing]: http://search.cpan.org/perldoc?autobox "autobox on CPAN"
-  [DBIx::Class Schema migrations]: http://search.cpan.org/perldoc?DBIx::Class::Manual::SchemaIntro
+  [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [autoboxing]: https://metacpan.org/pod/autobox "autobox on CPAN"
+  [DBIx::Class Schema migrations]: https://metacpan.org/pod/DBIx::Class::Migration
     "Introduction to DBIx::Class::Schema"

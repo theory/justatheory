@@ -76,6 +76,6 @@ deploy and revert your changes. Go crazy. The deploy script looks like this:
 Next up, deployment. I think that will require that the plan interface be
 written, first. I'll be getting on that tomorrow.
 
-  [Sqitch v0.20-TRIAL]: http://search.cpan.org/dist/App-Sqitch-0.20-TRIAL/
-  [`add-step`]: http://search.cpan.org/dist/App-Sqitch-0.20-TRIAL/lib/sqitch-add-step.pod
-  [Template::Tiny]: http://search.cpan.org/perldoc?Template::Tiny
+  [Sqitch v0.20-TRIAL]: https://metacpan.org/dist/App-Sqitch-0.20-TRIAL/
+  [`add-step`]: https://metacpan.org/dist/App-Sqitch-0.20-TRIAL/lib/sqitch-add-step.pod
+  [Template::Tiny]: https://metacpan.org/pod/Template::Tiny

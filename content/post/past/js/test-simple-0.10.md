@@ -74,9 +74,9 @@ Next up, I'll finish porting the test from Test::Harness (really!) and add
 support for JSAN (look for a JSAN announcement soon). But in the meantime,
 feedback, bug reports, kudos, complaints, etc.warmly welcomed!
 
-  [Test::Builder, Test::Simple, Test::More]: http://search.cpan.org/dist/Test-Simple/
+  [Test::Builder, Test::Simple, Test::More]: https://metacpan.org/dist/Test-Simple/
     "Test::Simple on CPAN"
-  [Test::Harness]: http://search.cpan.org/dist/Test-Harness/
+  [Test::Harness]: https://metacpan.org/dist/Test-Harness/
     "Test::Harness on CPAN"
   [here]: http://www.justatheory.com/downloads/Test.Simple-0.10.tar.gz
     "Download Test.Simple 0.10 Now!"

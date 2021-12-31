@@ -112,18 +112,18 @@ Template::Declare, and could better think of it in normal templating terms. Now
 I'm *this* much closer to my ideal Catalyst development environment. More soon.
 
   [Sartak]: http://blog.sartak.org/
-  [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare
+  [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on CPAN"
   [nice templating syntax]: /computers/programming/perl/xml-generation.html
     "Just a Theory: “Generating XML in Perl”"
-  [existing documentation]: http://search.cpan.org/~sartak/Template-Declare-0.40/lib/Template/Declare.pm
+  [existing documentation]: https://metacpan.org/release/SARTAK/Template-Declare-0.40/view/lib/Template/Declare.pm
     "Template::Declare 0.40"
-  [Catalyst::View::Template::Declare]: http://search.cpan.org/perldoc?Catalyst::View::Template::Declare
+  [Catalyst::View::Template::Declare]: https://metacpan.org/pod/Catalyst::View::Template::Declare
     "Catalyst::View::Template::Declare on CPAN"
   [Jesse]: http://blog.fsck.com "Massively Parallel Procrastination"
   [questions]: http://lists.jifty.org/pipermail/jifty-devel/2009-September/002161.html
   [Best Practical]: http://www.bestpractical.com/
   [trying to alias]: http://lists.jifty.org/pipermail/jifty-devel/2009-September/002162.html
-  [Mason]: http://search.cpan.org/perldoc?HTML::Mason " on CPAN"
-  [Template Toolkit]: http://search.cpan.org/perldoc?Template
+  [Mason]: https://metacpan.org/pod/HTML::Mason " on CPAN"
+  [Template Toolkit]: https://metacpan.org/pod/Template
     "Template Toolkit on CPAN"

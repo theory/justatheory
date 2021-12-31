@@ -20,7 +20,7 @@ Description
     Test.Harness runs tests and expects to get the results from the
     TestResults attribute of the Test.Builder object. These results conform
     to a format called TAP, the Test Anything Protocol. It is defined in
-    http://search.cpan.org/dist/Test-Harness/lib/Test/Harness/TAP.pod.
+    https://metacpan.org/dist/Test-Harness/lib/Test/Harness/TAP.pod.
 
  Failure
 

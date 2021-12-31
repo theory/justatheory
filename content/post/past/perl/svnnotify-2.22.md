@@ -23,4 +23,4 @@ Grab the new version from [CPAN] now
 
   [here]: /code/svnnotify/svnnotify-2.22_colordiff_example.html
     "SVN::Notify 2.22 sample ColorDiff output"
-  [CPAN]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [CPAN]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"

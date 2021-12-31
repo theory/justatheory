@@ -48,10 +48,10 @@ didn't split it up at all (with `use utf8;`).
 So what do you think? Does [Text::WordDiff] work for your text? Is there a
 better and more general solution for tokenizing the words in a string?
 
-  [Text::WordDiff]: http://search.cpan.org/dist/Text-WordDiff/
+  [Text::WordDiff]: https://metacpan.org/dist/Text-WordDiff/
     "Text::WordDiff on CPAN"
-  [Text::Diff]: http://search.cpan.org/dist/Text-Diff/ "Text::Diff on CPAN"
-  [Algorithm::Diff]: http://search.cpan.org/dist/Algorithm-Diff/
+  [Text::Diff]: https://metacpan.org/dist/Text-Diff/ "Text::Diff on CPAN"
+  [Algorithm::Diff]: https://metacpan.org/dist/Algorithm-Diff/
     "Algorithm::Diff on CPAN"
   [*The Perl Cookbook*]: https://www.amazon.com/exec/obidos/ASIN/0596003137/justatheory-20
     "Buy “The Perl Cookbook” on Amazon.com"

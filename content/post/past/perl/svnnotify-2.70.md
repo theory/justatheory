@@ -134,7 +134,7 @@ know], but implement your own improvements using filters!
     "Example output from SVN::Notify::HTML::ColorDiff 2.70"
   [changes]: https://github.com/theory/svn-notify/blob/v2.70/Changes
     "SVN::Notify Changes"
-  [documentation of the encoding support]: http://search.cpan.org/dist/SVN-Notify/lib/SVN/Notify.pm#Character_Encoding_Support
+  [documentation of the encoding support]: https://metacpan.org/dist/SVN-Notify/lib/SVN/Notify.pm#Character_Encoding_Support
     "Character Encoding Support in SVN::Notify"
   [let me know]: https://rt.cpan.org/Ticket/Create.html?Queue=SVN-Notify
     "Open a Ticket for SVN::Notify"
@@ -147,10 +147,10 @@ know], but implement your own improvements using filters!
   [recent project]: http://iwantsandy.com/
     "Sandy: Your virtual personal assistant"
   [Textile]: http://www.textism.com/tools/textile/ "Textile"
-  [complete documentation]: http://search.cpan.org/dist/SVN-Notify/lib/SVN/Notify/Filter.pm
+  [complete documentation]: https://metacpan.org/dist/SVN-Notify/lib/SVN/Notify/Filter.pm
     "SVN::Notify Output Filtering Documentation"
-  [Trac filter]: http://search.cpan.org/dist/SVN-Notify/lib/SVN/Notify/Filter/Trac.pm
+  [Trac filter]: https://metacpan.org/dist/SVN-Notify/lib/SVN/Notify/Filter/Trac.pm
     "SVN::Notify::Filter::Trac Documentation"
   [right here]: /code/svnnotify/svnnotify-2.70_trac_example.html
     "Example output from SVN::Notify 2.70 and modified by the Trac filter"
-  [Text::Trac]: http://search.cpan.org/dist/Text-Trac/
+  [Text::Trac]: https://metacpan.org/dist/Text-Trac/

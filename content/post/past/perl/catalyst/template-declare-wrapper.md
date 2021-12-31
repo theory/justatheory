@@ -213,8 +213,8 @@ and see how they can be made better.
 Next up: More database fun!
 
   [series]: /tags/catalyst/ "Just a Theory: “Catalyst”"
-  [create a wrapper for the view]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_WRAPPER_FOR_THE_VIEW
+  [create a wrapper for the view]: https://metacpan.org/pod/Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_WRAPPER_FOR_THE_VIEW
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"
-  [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare
+  [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on CPAN"
   [Jifty]: http://jifty.org/

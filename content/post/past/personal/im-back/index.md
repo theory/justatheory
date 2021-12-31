@@ -56,6 +56,6 @@ to do. Interested in following along on my adventures? [Follow me] via Twitter.
   [Sandy]: http://iwantsandy.com/ "You want sandy, trust me!"
   [Julie's dad died]: http://www.legacy.com/Link.asp?I=LS000091810982X
     "Obituary for Steven Rappaport"
-  [SVN::Notify]: http://search.cpan.org/SVN-Notify "SVN::Notify on CPAN"
+  [SVN::Notify]: https://metacpan.org/dist/SVN-Notify "SVN::Notify on CPAN"
   [FuseMail]: http://www.fusemail.com/ "FuseMail home page"
   [Follow me]: https://twitter.com/Theory "My Twitter page"

@@ -29,11 +29,11 @@ notification script from which SVN::Notify was derived — and which I have even
 
   [Kineticode]: https://kineticode.com/
   [GitHub]: https://github.com/theory/
-  [SVN::Notify]: http://search.cpan.org/dist/SVN-Notify/
+  [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/
   [TLS support]: https://rt.cpan.org/Ticket/Display.html?id=40188
   [I18N]: https://rt.cpan.org/Ticket/Display.html?id=51450
   [inline CSS]: https://rt.cpan.org/Ticket/Display.html?id=52121
   [this sample output]: /code/svnnotify/svnnotify-2.70_trac_example.html
   [Twitter]: https://twitter.com/
-  [send an email]: http://search.cpan.org/~dwheeler/
-  [activitymail]: http://search.cpan.org/dist/activitymail/
+  [send an email]: https://metacpan.org/author/DWHEELER
+  [activitymail]: https://metacpan.org/dist/activitymail/

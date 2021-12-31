@@ -214,7 +214,7 @@ If you're curious enough, the code, in progress, is [here].
     "RFC: A Simple Markdown Table Format"
   [Markdown]: https://daringfireball.net/projects/markdown/
   [Higher-Order Perl]: http://hop.perl.plover.com/
-  [HOP::Parser]: http://search.cpan.org/perldoc?HOP::Parser
+  [HOP::Parser]: https://metacpan.org/pod/HOP::Parser
     "HOP::Parser on CPAN"
   [Markdown syntax]: https://daringfireball.net/projects/markdown/syntax
   [my fork of HOP::Parser on GitHub]: http://github.com/theory/hop/tree/master

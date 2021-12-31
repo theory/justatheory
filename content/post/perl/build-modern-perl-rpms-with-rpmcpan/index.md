@@ -94,7 +94,7 @@ and leave the sad RPM past behind.
   [DevOps]: http://twitter.com/aaronblew "Aaron Blew: SRE Manager (dun dun duuuuun!)"
   [`rpmcpan` Git repository]: https://github.com/iovation/rpmcpan "rpmcpan on GitHub"
   [`dists.json` file]: https://github.com/iovation/rpmcpan/blob/master/etc/dists.json
-  [Encode-Locale]: http://search.cpan.org/dist/Encode-Locale "Encode-Locale on CPAN"
+  [Encode-Locale]: https://metacpan.org/dist/Encode-Locale "Encode-Locale on CPAN"
   [PostgreSQL RPMs]: http://yum.postgresql.org "PostgreSQL Yum Repository"
   [README]: https://github.com/iovation/rpmcpan/blob/master/README.md "`rpmcpan README`"
   [pull request]: https://github.com/iovation/rpmcpan/pulls

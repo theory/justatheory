@@ -89,7 +89,7 @@ well. Here's a complete list of changes:
 
 Enjoy!
 
-  [CPAN]: http://search.cpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
+  [CPAN]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
   [complex example]: /code/svnnotify/svnnotify-2.40_colordiff_example.html
     "SVN::Notify 2.41 sample ColorDiff output"
   [Request Tracker]: http://www.bestpractical.com/rt/ "RT at Best Practical"

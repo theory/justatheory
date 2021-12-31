@@ -389,11 +389,11 @@ appreciated.
     "Bricolage Content Management and Publishing System"
   [build farm]: http://buildfarm.postgresql.org/ "PostgreSQL Build Farm"
   [TAP]: http://testanything.org/ "TAP: Test Anything Protocol"
-  [harness]: http://search.cpan.org/perldoc?TAP::Harness "TAP::Harness on CPAN"
+  [harness]: https://metacpan.org/pod/TAP::Harness "TAP::Harness on CPAN"
   [PGUnit]: http://en.dklab.ru/lib/dklab_pgunit/
     "PGUnit: stored procedures unit-test framework for PostgreSQL 8.3"
   [Epic]: http://epictest.org/
     "Epic: more full of fail than any other testing tool"
   [PGCon]: https://www.pgcon.org/2009/ "The PostgreSQL Conference 2009"
-  [Test::More]: http://search.cpan.org/perldoc?Test::More
-  [DBIx::Class]: http://search.cpan.org/perldoc?DBIx::Class
+  [Test::More]: https://metacpan.org/pod/Test::More
+  [DBIx::Class]: https://metacpan.org/pod/DBIx::Class

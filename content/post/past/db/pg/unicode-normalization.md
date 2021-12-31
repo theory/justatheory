@@ -157,10 +157,10 @@ But normalizing with the functions I introduced does work:
 
 So yes, this really can be an issue in your applications.
 
-  [Encode]: http://search.cpan.org/perldoc?Encode "Encode on CPAN"
+  [Encode]: https://metacpan.org/pod/Encode "Encode on CPAN"
   [normalize]: https://en.wikipedia.org/wiki/Unicode_normalization
     "Wikipedia: “Unicode equivalence”"
-  [Unicode::Normalize]: http://search.cpan.org/perldoc?Unicode::Normalize
+  [Unicode::Normalize]: https://metacpan.org/pod/Unicode::Normalize
     "Unicode::Normalize on CPAN"
   [probably best]: http://unicode.org/faq/normalization.html#2
     "Unicode Normalization FAQ: “Which forms of normalization should I support?”"

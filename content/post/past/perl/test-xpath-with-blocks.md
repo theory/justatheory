@@ -46,13 +46,13 @@ $tx->ok( '/html/head/style', 'Should have style' ) {
 Pretty slick, eh? It required a single-line change to the source code. I'm
 really happy with this sugar. Thanks for the [great hack], gugod!
 
-  [Devel::Declare]: http://search.cpan.org/perldoc?Devel::Declare
+  [Devel::Declare]: https://metacpan.org/pod/Devel::Declare
     "Devel::Declare on CPAN"
-  [PerlX::MethodCallWithBlock]: http://search.cpan.org/perldoc?PerlX::MethodCallWithBlock
+  [PerlX::MethodCallWithBlock]: https://metacpan.org/pod/PerlX::MethodCallWithBlock
     "PerlX::MethodCallWithBlock on CPAN"
   [gugod]: http://gugod.org/2009/08/running-in-the-compile-time.html
     "gugod's blog: “Running in the compile time”"
-  [Test::XPath]: http://search.cpan.org/perldoc?Test::XPath
+  [Test::XPath]: https://metacpan.org/pod/Test::XPath
     "Test::XPath on CPAN"
   [previously]: /computers/programming/perl/test-with-xpath.html
     "Test XML and HTML with XPath"

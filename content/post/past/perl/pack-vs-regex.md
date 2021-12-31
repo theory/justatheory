@@ -73,7 +73,7 @@ engine is highly optimized. And perhaps `pack()/unpack()` is not.
 
 Live and learn, I guess.
 
-  [DateTime]: http://search.cpan.org/dist/DateTime/
+  [DateTime]: https://metacpan.org/dist/DateTime
     "Download DateTime and read its docs on CPAN"
-  [Benchmark]: http://search.cpan.org/dist/Benchmark/
+  [Benchmark]: https://metacpan.org/pod/Benchmark
     "Download Benchmark and read its docs on CPAN"

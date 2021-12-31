@@ -167,8 +167,8 @@ etc., below. Thanks!
   [PostgreSQL General Bits]: http://www.varlena.com/GeneralBits/128.php
     "Base Type using Domains"
   [GTIN data type]: http://pgfoundry.org/projects/gtin/ "GTIN data type project info"
-  [Test::More]: http://search.cpan.org/perldoc?Test::More "Test::More on CPAN"
+  [Test::More]: https://metacpan.org/pod/Test::More "Test::More on CPAN"
   [TAP]: http://testanything.org/ "Test Anything Protocol"
-  [Test::Exception]: http://search.cpan.org/perldoc?Test::Exception
+  [Test::Exception]: https://metacpan.org/pod/Test::Exception
     "Test::Exception on CPAN"
   [pgTAP]: https://svn.kineticode.com/pgtap/trunk "pgTAP Subversion repository"

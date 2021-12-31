@@ -134,7 +134,7 @@ my [PGCon presentation]?
     "Why Test Databases?"
   [pgTAP]: http://pgtap.projects.postgresql.org/
   [protocol]: http://testanything.org/ "Test Anything Protocol"
-  [Perl]: http://search.cpan.org/perldoc?Test::More "Test::More"
+  [Perl]: https://metacpan.org/pod/Test::More "Test::More"
   [C]: http://jc.ngo.org.uk/trac-bin/trac.cgi/wiki/LibTap "libtap"
   [JavaScript]: http://openjsan.org/doc/t/th/theory/Test/Simple/ "Test.Simple"
   [PHP]: http://www.phpunit.de/ "PHPUnit"
@@ -142,6 +142,6 @@ my [PGCon presentation]?
     "PLUTO - PL/SQL Unit Testing for Oracle"
   [TAP producers]: http://testanything.org/wiki/index.php/TAP_Producers
   [functional interface]: http://pgtap.projects.postgresql.org/ "pgTAP"
-  [TAP::Harness]: http://search.cpan.org/perldoc?TAP::Harness
+  [TAP::Harness]: https://metacpan.org/pod/TAP::Harness
   [PGCon presentation]: https://www.pgcon.org/2009/schedule/events/165.en.html
     "PGCon: Unit Test Your Database!"

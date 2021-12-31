@@ -28,5 +28,5 @@ Curiously, both tests fail, although the first conversion appears to be correct.
 This could be due to the behavior of `eq`, though I'm not sure why. But it's the
 second test that's the more interesting, since it really screws things up.
 
-  [Apache::Util]: http://search.cpan.org/dist/mod_perl-1.29/Util/Util.pm
+  [Apache::Util]: https://metacpan.org/dist/mod_perl-1.29/Util/Util.pm
     "Apache::Util on CPAN"

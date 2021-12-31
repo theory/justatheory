@@ -361,11 +361,11 @@ Next up, I think I'll hit controller tests. So come on back!
   [tests passing]: http://www.justatheory.com/computers/programming/perl/catalyst/testing.html
     "Testing the Tutorial App"
   [Part 6 tag]: http://github.com/theory/catalyst-tutorial/commits/part-06
-  [Catalyst::View::TD]: http://search.cpan.org/dist/Catalyst-View-TD
+  [Catalyst::View::TD]: https://metacpan.org/dist/Catalyst-View-TD
     "Catalyst::View::TD on CPAN"
-  [Test::MockObject]: http://search.cpan.org/perldoc?Test::MockObject
+  [Test::MockObject]: https://metacpan.org/pod/Test::MockObject
     "Test::MockObject on CPAN"
-  [Test::XPath]: http://search.cpan.org/perldoc?Test::XPath
+  [Test::XPath]: https://metacpan.org/pod/Test::XPath
     "Test::XPath on CPAN"
   [committed]: http://github.com/theory/catalyst-tutorial/commit/b171bfb0cb624b3a5ef840d116e121a355f5fe7d
   [last week]: /computers/programming/perl/catalyst/sql-view-aggregate-magic.html

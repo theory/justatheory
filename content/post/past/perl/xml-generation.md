@@ -199,13 +199,13 @@ deaden the pain.
 
   [Bricolage]: http://www.bricolagecms.org/
     "Bricolage content management and publishing system"
-  [XML::LibXML]: http://search.cpan.org/perldoc?XML::LibXML
+  [XML::LibXML]: https://metacpan.org/pod/XML::LibXML
     "XML::LibXML on CPAN"
   [question]: https://twitter.com/Theory/status/2085796847 "My Twery"
-  [XML::Genx]: http://search.cpan.org/perldoc?XML::Genx "XML::Genx on CPAN"
-  [XML::Writer]: http://search.cpan.org/perldoc?XML::Writer
+  [XML::Genx]: https://metacpan.org/pod/XML::Genx "XML::Genx on CPAN"
+  [XML::Writer]: https://metacpan.org/pod/XML::Writer
     "XML::Writer on CPAN"
-  [Template::Declare]: http://search.cpan.org/perldoc?Template::Declare
+  [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on CPAN"
-  [Template::Declare::Bricolage]: http://search.cpan.org/perldoc?Template::Declare::Bricolage
+  [Template::Declare::Bricolage]: https://metacpan.org/pod/Template::Declare::Bricolage
     "Template::Declare::Bricolage on CPAN"

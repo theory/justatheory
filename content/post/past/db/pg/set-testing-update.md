@@ -105,9 +105,9 @@ functions:
 
 Seem useful? Please leave a comment with your thoughts.
 
-  [testing SQL result sets]: /computers/databases/postgresql/comparing-relations.html
+  [testing SQL result sets]: {{% ref "/post/past/db/pg/comparing-relations" %}}
     "Thoughts on Testing SQL Result Sets"
-  [name functions]: /computers/databases/postgresql/result-testing-function-names.html
+  [name functions]: {{% ref "/post/past/db/pg/result-testing-function-names" %}}
     "Need Help Naming Result Set Testing Functions"
   [Epic]: http://epictest.org/
     "Epic: more full of fail than any other testing  tool"

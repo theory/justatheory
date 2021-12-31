@@ -74,4 +74,4 @@ But there are also downsides:
 But I am thinking that the advantages might outweigh the disadvantages.
 Thoughts?
 
-  [requiring a plan file]: /computers/databases/sqitch-plan.html
+  [requiring a plan file]: {{% ref "/post/past/sqitch/sqitch-plan" %}}

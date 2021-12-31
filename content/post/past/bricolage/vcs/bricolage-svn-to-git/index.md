@@ -261,7 +261,7 @@ tags, and branch tracking. Now all I have to do is stitch it together with the
 repository [based on CVS][post] and I'll be ready to put this sucker on GitHub!
 More on that in my next post.
 
-  [post]: /computers/vcs/git/bricolage-cvs-to-git.html
+  [post]: {{% ref "/post/past/bricolage/vcs/bricolage-cvs-to-git.md" %}}
     "Migrating Bricolage CVS to Git"
   [Bricolage Subversion repository]: http://svn.bricolage.cc/
   [branches directory]: http://svn.bricolage.cc/bricolage/branches/

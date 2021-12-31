@@ -22,4 +22,4 @@ For old time's sake, I also dug up and re-posted my [cracked PowerBook display]
 entry from way back in 2095. Good times.
 
   [aardvark]: https://twitter.com/bretdawson/status/1997938833
-  [cracked PowerBook display]: /computers/powerbook/cracked.html "Cracked!"
+  [cracked PowerBook display]: {{% ref "/post/past/devices/cracked/index" %}}

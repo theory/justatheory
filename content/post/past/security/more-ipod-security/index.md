@@ -42,7 +42,7 @@ So yeah, highly sensitive security establishments *should* ban personal external
 storage devices to keep honest people honest, but really, they should also fix
 the real security problem with their operating system of choice.
 
-  [screed]: /computers/policy/ipod_security_threat.html
+  [screed]: {{% ref "/post/past/security/ipod-security-threat/index" %}}
     "Gartner: iPod is a Security Threat"
   [James Duncan Davidson]: http://x180.net/ "x180.net"
   [this story]: https://www.cnn.com/2004/TECH/internet/07/13/britain.mod.reut/index.html

@@ -169,9 +169,9 @@ with your suggestion.
 
   [Sqitch]: https://sqitch.org/
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
-  [from Jakub Narębski]: https://past.justatheory.com/computers/databases/sqitch-dependencies.html#comment-538970287
+  [from Jakub Narębski]: https://past.justatheory.com/computers/databases/sqitch-dependencies.html#tb
   [1]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod#emergency
-  [much more obvious]: /computers/databases/sqitch-dependencies.html
+  [much more obvious]: {{% ref "/post/past/sqitch/sqitch-dependencies" %}}
   [`sqitch init`]: https://github.com/theory/sqitch/blob/master/lib/sqitch-init.pod
   [`sqitch config`]: https://github.com/theory/sqitch/blob/master/lib/sqitch-config.pod
   [`sqitch help`]: https://github.com/theory/sqitch/blob/master/lib/sqitch-help.pod

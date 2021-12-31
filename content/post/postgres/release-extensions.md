@@ -142,7 +142,7 @@ has been thoroughly tested in previous commits, so I think it's acceptable.
 Now if you'll excuse me, I'm off to add this workflow to my other PGXN
 extensions.
 
-  [pgxn-tools]: /2020/06/test-extensions-with-github-actions/
+  [pgxn-tools]: {{% ref "/post/postgres/pgxn-tools" %}}
     "Test Postgres Extensions With GitHub Actions"
   [GitHub Actions]: https://github.com/features/actions
   [pgxn/pgxn-tools]: https://hub.docker.com/repository/docker/pgxn/pgxn-tools

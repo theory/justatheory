@@ -51,7 +51,7 @@ fair.
 So how about this? The $79 Kindle is a [Starbucks plastic mug]. Not quite
 Dixie-cup disposable, and the advertising helps keep the price down.
 
-  [Disposable Computing]: /computers/devices/disposable-computing.html
+  [Disposable Computing]: {{% ref "/post/past/quality/disposable-computing/index" %}}
   [Daring Fireball]: https://daringfireball.net/
   [$79 Kindle review]: https://www.marco.org/2011/10/07/review-79-kindle-with-ads-and-buttons
   [Starbucks plastic mug]: https://www.starbucksstore.com/Starbucks%C2%AE-Lenticular-Tumbler%2C-16-fl-oz/011014926,default,pd.html?start=4&cgid=tumblers-and-travel-mugs

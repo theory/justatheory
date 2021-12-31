@@ -196,7 +196,7 @@ And correctly give me:
 And then the parsing would be quite straight-forward. Because otherwise my
 parser is just going to get more complex and harder to maintain.
 
-  [my post]: /computers/programming/perl/hop-parsing-markdown.html
+  [my post]: {{% ref "/post/past/perl/hop-parsing-markdown" %}}
     "Issues Parsing Markdown with HOP::Parser"
   [described]: http://www.nabble.com/Limitation-of-the-Lexer-or-my-Brain-tt23024740.html
     "HOP-Discuss: “Limitation of the Lexer or my Brain?”"

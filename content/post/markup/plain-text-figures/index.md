@@ -207,19 +207,19 @@ something like this soon.
   [^figure-ascii]: Surely someone has come up with a way to improve on ASCII art by using [box elements] or something?
 
   [JSON Feed]: https://jsonfeed.org
-  [here]: /feed.json
+  [here]: {{% ref "/" "json" %}}
   [Daring Fireball]: https://daringfireball.net
   [Markdown]: https://daringfireball.net/projects/markdown/
   [like this]: https://daringfireball.net/linked/2018/06/05/goode-federighi-uikit.text
-  [wedding anniversary post]: {{% ref "photo/personal/twenty-three/index.md" %}}
-  [appending `copy.text`]: {{% ref "photo/personal/twenty-three/index.md" "text" %}}
+  [wedding anniversary post]: {{% ref "/photo/personal/twenty-three" %}}
+  [appending `copy.text`]: {{% ref "/photo/personal/twenty-three" "text" %}}
   [figure]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
   [Hugo figure shortcode]: https://gohugo.io/content-management/shortcodes/#figure
   [link format]: https://daringfireball.net/projects/markdown/syntax#link
   [John Gruber]: https://daringfireball.net/colophon/
   [`<img>`]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
   [this example]: https://daringfireball.net/2017/05/halide.text
-  [this old post]: {{% ref "post/past/apps/conde-nast-ipad/index.md" %}}
+  [this old post]: {{% ref "/post/past/apps/conde-nast-ipad" %}}
   [conversion interface]: https://www.text-image.com/
   [box elements]: https://en.wikipedia.org/wiki/Box-drawing_character
     "Wikipedia: “Box-drawing character”"

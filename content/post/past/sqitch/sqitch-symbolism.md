@@ -104,7 +104,7 @@ Oh, and that [PDXPUG presentation][PDXPUG]? Here are the slides. Enjoy!
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/14459486" width="676" height="551" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
 
-  [last blogged about Sqitch]: /computers/databases/sqitch-depend-on-it.html
+  [last blogged about Sqitch]: {{% ref "/post/past/sqitch/sqitch-depend-on-it" %}}
   [v0.931]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.931/
   [ActiveState PPM Index]: http://code.activestate.com/ppm/App-Sqitch/
   [`bundle` command]: https://metacpan.org/module/sqitch-bundle

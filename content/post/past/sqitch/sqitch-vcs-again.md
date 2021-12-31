@@ -219,7 +219,7 @@ it was those inconsistencies that I had been struggling with.
 
 But hey, if I have overlooked something (again!), please do let me know.
 
-  [yesterday’s post]: /computers/databases/evolving-sqitch-plan.html
+  [yesterday’s post]: {{% ref "/post/past/sqitch/evolving-sqitch-plan" %}}
   [thoughtful comments]: https://past.justatheory.com/computers/databases/evolving-sqitch-plan.html#tb
-  [I complained about before]: /computers/databases/sql-change-management-sans-redundancy.html
+  [I complained about before]: {{% ref "/post/past/db/sql-change-management-sans-redundancy" %}}
   [original plan for bundling]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.31-TRIAL/view/lib/sqitchtutorial.pod#Ship-It!

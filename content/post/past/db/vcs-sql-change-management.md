@@ -323,5 +323,5 @@ it from the VCS history before packaging for release.
 I’d planned to cover the elimination of duplication, but I think this is enough
 for one post. Watch for that idea in my next post.
 
-  [previous post]: /computers/databases/simple-sql-change-management.html
-  [helwig]: http://technosorcery.net/
+  [previous post]: {{% ref "/post/past/db/simple-sql-change-management" %}}
+  [helwig]: https://technosorcery.net/

@@ -123,7 +123,7 @@ short list are:
   [work]: https://iovation.com/
   [topological sort]: https://en.wikipedia.org/wiki/Topological_sorting
     "Wikipedia: “Topological sorting”"
-  [realized]: /computers/databases/changing-sqitch_ids.html
+  [realized]: {{% ref "/post/past/sqitch/changing-sqitch-ids" %}}
   [`show` command]: https://metacpan.org/module/sqitch-show
   [`rebase` command]: https://github.com/theory/sqitch/blob/master/lib/sqitch-rebase.pod
   [Checking all dependencies]: https://github.com/theory/sqitch/issues/39

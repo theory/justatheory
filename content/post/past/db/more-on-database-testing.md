@@ -130,7 +130,7 @@ will, but I am still very interested in your reasons for doubting the utility of
 database testing. What other points should I be thinking about as I prepare for
 my [PGCon presentation]?
 
-  [database testing]: /computers/databases/postgresql/why-test-databases.html
+  [database testing]: {{% ref "/post/past/db/pg/why-test-databases" %}}
     "Why Test Databases?"
   [pgTAP]: http://pgtap.projects.postgresql.org/
   [protocol]: http://testanything.org/ "Test Anything Protocol"

@@ -47,7 +47,7 @@ background, but for me at least, it has no effect.
 So why isn't this more common? It [seems to work well] in a lot of browsers.
 Would you use it? What are the downsides?
 
-  [sociable links]: /computers/internet/weblogs/blosxom/sociable/introducing-sociable.html
+  [sociable links]: {{% ref "/post/past/meta/introducing-sociable" %}}
     "Sociable Plugin for Blosxom"
   [Skud]: http://infotrope.net/blog/ "Infotropism Kirrily Robert’s blog"
   [blog entry]: http://infotrope.net/blog/2009/03/05/books-read-february-2009/

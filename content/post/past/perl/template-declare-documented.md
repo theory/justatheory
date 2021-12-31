@@ -114,7 +114,7 @@ I'm *this* much closer to my ideal Catalyst development environment. More soon.
   [Sartak]: http://blog.sartak.org/
   [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on CPAN"
-  [nice templating syntax]: /computers/programming/perl/xml-generation.html
+  [nice templating syntax]: {{% ref "/post/past/perl/xml-generation" %}}
     "Just a Theory: “Generating XML in Perl”"
   [existing documentation]: https://metacpan.org/release/SARTAK/Template-Declare-0.40/view/lib/Template/Declare.pm
     "Template::Declare 0.40"

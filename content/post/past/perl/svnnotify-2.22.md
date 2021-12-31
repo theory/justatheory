@@ -21,6 +21,6 @@ that have only had their properties changed. I've put an example [here].
 
 Grab the new version from [CPAN] now
 
-  [here]: /code/svnnotify/svnnotify-2.22_colordiff_example.html
+  [here]: {{% link "/code/svnnotify/svnnotify-2.22_colordiff_example.html" %}}
     "SVN::Notify 2.22 sample ColorDiff output"
   [CPAN]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"

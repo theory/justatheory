@@ -35,7 +35,7 @@ fun!
   [downloads]: http://pgfoundry.org/frs/?group_id=1000389 "downloads"
   [Lightning talk]: http://conferences.mongueurs.net/yn2008/
     "YAPC::NA 2008 pgTAP Lightning Talk"
-  [the slides]: /2008/06/pgtap-on-pgfoundry-at-yapc/pgtap-yapc.pdf
+  [the slides]: {{% link "pgtap-yapc.pdf" %}}
     "Slides for “Test Your Database with pgTAP”"
   [pgtap-users]: http://pgfoundry.org/mail/?group_id=1000389
     "Subscribe to pgtap-users"

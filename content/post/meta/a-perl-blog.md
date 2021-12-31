@@ -2,7 +2,7 @@
 date: 2013-07-26T18:08:00Z
 title: A Perl Blog
 aliases: [/blog/2013/07/26/a-perl-blog/]
-tags: [Just a Theory, Perl, theory.pm, blogging]
+tags: [Just a Theory, Perl, theory.pm, Blogging]
 type: post
 ---
 
@@ -60,5 +60,5 @@ after all, and [relaunched *Just a Theory*].
   [Source Code Pro]: https://github.com/adobe/source-code-pro
   [Solarized]: http://ethanschoonover.com/solarized
   [BlogTheme]: https://github.com/rastersize/BlogTheme
-  [already up]: /exceptions/2013/07/26/trying-times/
+  [already up]: {{% ref "/post/perl/trying-times" %}}
   [relaunched *Just a Theory*]: https://justatheory.com/

@@ -48,10 +48,10 @@ I'm sure I'll notice other issues as I work more with JavaScript, but feel free
 to chime in here with any gotchas you've noticed, and then I won't have to work
 so hard to figure them out on my own in the future (and neither will you)!
 
-  [TestSimple]: /computers/programming/javascript/test_simple-0.03.html
+  [TestSimple]: {{% ref "/post/past/js/test-simple-0.03.md" %}}
     "TestSimple 0.03 Released"
   [Marshall]: http://www.spastically.com/ "Spastically"
-  [`document.write.apply()`]: /computers/programming/javascript/apply_on_write.html
+  [`document.write.apply()`]: {{% ref "/post/past/js/js-apply-on-write" %}}
     "How do I Add apply() to IE JavaScript Functions?"
   [a page]: http://www.technicalpursuit.com/documents_codingstds.html
     "TIBET™ Coding Standards & Sample Code"

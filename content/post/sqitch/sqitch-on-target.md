@@ -102,7 +102,7 @@ Sqitch.
   [Git remotes]: http://git-scm.com/docs/git-remote
   [work]: http://www.iovation.com/
   [database URI spec]: https://github.com/theory/uri-db
-  [previously]: /rfc/2013/11/26/toward-a-database-uri-standard/
+  [previously]: {{% ref "/post/database/toward-a-database-uri-standard" %}}
   [`target`]: https://metacpan.org/pod/sqitch-target
   [`deploy`]: https://metacpan.org/pod/sqitch-deploy
   [`revert`]: https://metacpan.org/pod/sqitch-revert

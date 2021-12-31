@@ -19,5 +19,5 @@ Enjoy!
 including XHTML 1.1 compliance.
 
   [Erik Hatcher]: http://www.blogscene.org/erik "Erik Hatcher - Blog"
-  [here]: /code/svnnotify/svnnotify_colordiff_example.html
+  [here]: {{% link "/code/svnnotify/svnnotify_colordiff_example.html" %}}
     "SVN::Notify::HTML::ColorDiff example"

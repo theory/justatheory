@@ -62,7 +62,7 @@ Got something to add? [Fork it!]
 
   [Sqitch]: https://github.com/theory/sqitch/
   [a presentation]: https://www.pgcon.org/2012/schedule/events/479.en.html
-  [posted]: /computers/databases/sqitch-draft.html
+  [posted]: {{% ref "/post/past/sqitch/sqitch-draft" %}}
   [a tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
   [Git]: http://git-scm.com/
   [to CPAN]: https://metacpan.org/dist/App-Sqitch/

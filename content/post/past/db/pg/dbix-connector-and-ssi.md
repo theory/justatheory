@@ -113,5 +113,5 @@ transaction isolation level within a call to `txn()` and friends.
   [the fine manual]: https://www.postgresql.org/docs/current/static/transaction-iso.html#XACT-SERIALIZABLE
   [DBIx::Connector]: https://metacpan.org/module/DBIx::Connector
   [connection mode]: https://metacpan.org/module/DBIx::Connector#Connection-Modes
-  [in-progress changes]: /computers/programming/perl/modules/dbix-connector-catch.html
+  [in-progress changes]: {{% ref "/post/past/perl/dbix-connector-catch" %}}
   [Try::Tiny]: https://metacpan.org/module/Try::Tiny

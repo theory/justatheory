@@ -82,5 +82,5 @@ represent an object ACLs?
     "List::MoreUtils on CPAN"
   [aggregate function]: https://www.postgresql.org/docs/current/interactive/functions-aggregate.html
     "PostgreSQL Aggregate Functions"
-  [create my own]: /computers/databases/sqlite/custom_perl_aggregates.html
+  [create my own]: {{% ref "/post/past/db/sqlite/custom-perl-aggregates" %}}
     "SQLite Custom Aggregates in Perl"

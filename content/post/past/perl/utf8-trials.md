@@ -149,14 +149,14 @@ again!
 
 **Not.**
 
-  [the bug with `Apache::Util::escape_html()`]: /computers/programming/perl/mod_perl/escape_html_utf8.html
+  [the bug with `Apache::Util::escape_html()`]: {{% ref "/post/past/perl/mod_perl/escape-html-utf8" %}}
     "Apache::Util::escape_html() Doesn't Like Perl UTF-8 Strings"
   [bug report]: http://bugs.bricolage.cc/show_bug.cgi?id=648
     "substr() either crap utf8 string or mis-count the length in bytes."
   [(a.k.a. “Gugod”)]: http://gugod.org/blog/ "Gugod's blog: The Mind Of Random"
   [refuse to accept]: http://bugs.bricolage.cc/show_bug.cgi?id=709#c14
     "Two bugs in one!"
-  [Bricolage 1.8.2]: /bricolage/announce/1.8.2.html "Bricolage 1.8.2 Released"
+  [Bricolage 1.8.2]: {{% ref "/post/past/bricolage/bricolage-1.8.2.md" %}}
   [Encode module]: https://metacpan.org/dist/Encode/ "Encode on CPAN"
   [discussion]: http://www.template-toolkit.org/pipermail/templates/2004-September/006583.html
     "Add utf8 to All Templates?"

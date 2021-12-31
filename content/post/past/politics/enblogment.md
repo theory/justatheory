@@ -58,8 +58,8 @@ is, “No thanks.”
 
 Barack Obama for President. He's the right man for the job at the right time.
 
-  [enblogment of Kerry]: /politics/election_2004/enblogment.html
-    "Enblbgment: For Kerry"
+  [enblogment of Kerry]: {{% ref "/post/past/politics/emblogment-kerry" %}}
+    "enblogment: For Kerry"
   [Lawrence Lessig]: http://www.lessig.org/blog/archives/002264.shtml
     "Lawrence Lessig: enblogment: For Kerry"
   [Barack Obama]: http://www.barackobama.com/ "Barack Obama for America"

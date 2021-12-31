@@ -16,7 +16,7 @@ entries], such as [Planet Perl] and [Planet PostgreSQL].
 
 Any questions or problems? Leave a comment. Thanks!
 
-  [teasers only]: /index.atomsum
-  [complete entries]: /index.atom
+  [teasers only]: {{% link "/index.atomsum" %}}
+  [complete entries]: {{% ref "/" "atom" %}}
   [Planet Perl]: http://planet.perl.org
   [Planet PostgreSQL]: http://www.planetpostgresql.org/

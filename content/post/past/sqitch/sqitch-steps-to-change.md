@@ -93,5 +93,5 @@ its own plan file.
 And yeah, having written out here, I’m pretty convinced. What do you think?
 Comments welcome.
 
-  [thinking]: /computers/databases/evolving-sqitch-plan.html
-  [rethinking]: /computers/databases/sqitch-vcs-again.html
+  [thinking]: {{% ref "/post/past/sqitch/evolving-sqitch-plan" %}}
+  [rethinking]: {{% ref "/post/past/sqitch/sqitch-vcs-again" %}}

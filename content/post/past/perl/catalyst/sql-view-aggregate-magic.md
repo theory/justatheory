@@ -230,7 +230,7 @@ the right level of abstraction.
     "Wikipedia: “Domain-Specific Language”"
   [MVC]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
     "Wikipedia: “Model-view-controller”"
-  [second post]: /computers/programming/perl/catalyst/tutorial-continued.html
+  [second post]: {{% ref "/post/past/perl/catalyst/tutorial-continued" %}}
   [aggregate function]: https://www.postgresql.org/docs/current/static/functions-aggregate.html
     "PostgreSQL Documentation: “Aggregate Functions”"
   [MySQL aggregates]: http://dev.mysql.com/doc/refman/5.0/en/group-by-functions.html

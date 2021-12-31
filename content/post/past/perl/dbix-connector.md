@@ -111,7 +111,7 @@ that soon.
     "Catalyst::Model::DBI the CPAN"
   [my app]: http://github.com/theory/circle/ "Circle on GitHub"
   [mst]: http://www.trout.me.uk/ "Matt S Trout"
-  [`connect_cached()`]: /computers/programming/perl/dbi-connect-cached-hack.html
+  [`connect_cached()`]: {{% ref "/post/past/perl/dbi-connect-cached-hack.md" %}}
     "Keep DBI's connect_cached From Horking
     Transactions"
   [mod\_perl]: http://perl.apache.org/

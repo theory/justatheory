@@ -80,12 +80,12 @@ also take privacy seriously.*
   [^borderline-monoliths]: It's okay, as a [former archaeologist] I'm allowed to
     let the metaphor stand on its own.
 
-  [focus on disk encryption]: /2019/01/the-problem-with-disk-encryption/
+  [focus on disk encryption]: {{% ref "/post/security/problem-with-disk-encryption.md" %}}
     "The Problem With Disk Encryption"
   [Goran Begic]: https://www.immun.io/blog/author/goran-begic
   [made the case]: https://www.immun.io/blog/what-is-the-network-perimeter-anyway
     "What is the Network Perimeter, Anyway?"
-  [former archaeologist]: /2007/03/five-things/#2-i-used-to-be-an-archaeologist
+  [former archaeologist]: {{% ref "/post/past/personal/five-things/index" %}}#2-i-used-to-be-an-archaeologist
   [Kubernetes]: https://kubernetes.io "Production-Grade Container Orchestration"
   [breachlist]: https://en.wikipedia.org/wiki/List_of_data_breaches
   [GDPR-32]: https://gdpr-info.eu/art-32-gdpr/ "Art. 32 GDPR: Security of processing"

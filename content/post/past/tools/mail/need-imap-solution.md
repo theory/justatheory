@@ -100,7 +100,7 @@ that won't cost me an arm and a leg?
 Thanks for your help!
 
   [Courier-IMAP]: http://www.courier-mta.org/imap/ "Courier-IMAP Home"
-  [this site]: / "Just a Theory"
+  [this site]: {{% ref "/" %}} "Just a Theory"
   [Kineticode]: https://kineticode.com/ "Kineticode Home"
   [Strongrrl]: http://www.strongrrl.com/ "Strongrrl Home"
   [Julie]: http://www.strongrrl.com/ "Julie Wheeler is principal at Strongrrl"

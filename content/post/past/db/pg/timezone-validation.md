@@ -155,7 +155,7 @@ END;
 $$ language plpgsql STABLE;
 ```
 
-  [convert timestamp columns from UTC to a valid zone]: /computers/databases/postgresql/reducing_view_calculations.html
+  [convert timestamp columns from UTC to a valid zone]: {{% ref "/post/past/db/pg/reducing-view-calculations" %}}
     "Need Help Reducing View Calculations"
   [error codes]: https://www.postgresql.org/docs/current/static/errcodes-appendix.html
     "PostgreSQL Documentation: Appendix A. PostgreSQL Error Codes"

@@ -59,7 +59,7 @@ Other changes to SVN::Notify include:
 Enjoy!
 
   [Autrijus']: http://www.autrijus.org/ "Autrijus.Home"
-  [mentioned]: /computers/programming/perl/modules/svnnotify_2.0.html
+  [mentioned]: {{% ref "/post/past/perl/svnnotify-2.0.md" %}}
     "SVN::Notify 2.0 Hitting CPAN"
   [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
   [Ovid]: http://use.perl.org/~Ovid/ "Ovid's Journal"

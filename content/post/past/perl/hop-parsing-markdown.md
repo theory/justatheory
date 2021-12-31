@@ -208,9 +208,9 @@ parser, but hints and suggestions would be greatly appreciated!
 
 If you're curious enough, the code, in progress, is [here].
 
-  [some]: /computers/markup/modest-markdown-proposal.html
+  [some]: {{% ref "/post/past/web/markup/modest-markdown-proposal" %}}
     "A Modest Proposal for Markdown Definition Lists"
-  [ideas]: /computers/markup/markdown-table-rfc.html
+  [ideas]: {{% ref "/post/past/web/markup/markdown-table-rfc" %}}
     "RFC: A Simple Markdown Table Format"
   [Markdown]: https://daringfireball.net/projects/markdown/
   [Higher-Order Perl]: http://hop.perl.plover.com/
@@ -220,5 +220,4 @@ If you're curious enough, the code, in progress, is [here].
   [my fork of HOP::Parser on GitHub]: http://github.com/theory/hop/tree/master
   [Chapter 8]: http://hop.perl.plover.com/book/mod/chap08.mod
     "HOP Chapter 8: Parsing"
-  [here]: https://svn.kineticode.com/Text-Markover/trunk/
-    "Text::Markover Repository"
+  [here]: https://github.com/theory/text-markover "Text::Markover Repository"

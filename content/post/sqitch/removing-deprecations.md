@@ -108,7 +108,7 @@ What would be removed:
 
 If removing any of these features would cause trouble for you or the organizations you know to be using Sqitch, please [get in touch].
 
-  [get in touch]: /about/ "About Just a Theory"
+  [get in touch]: {{% ref "/about" %}} "About Just a Theory"
   [deprecated four years ago]: https://github.com/sqitchers/sqitch/commit/12468f694
   [engine change]: https://github.com/sqitchers/sqitch/commit/a2db9a294
   [target change]: https://github.com/sqitchers/sqitch/commit/f72990310

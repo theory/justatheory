@@ -27,4 +27,4 @@ DBI, not SQL files. Can anyone shed a little light on this for me?
 Oh, and one last question: Why is this such a PITA? Can't we have decent
 replication that replicates *everything*, including schema changes? *Please?*
 
-  [Slony-I]: http://slony.info/ "Slony-I PostgreSQL Replication"
+  [Slony-I]: https://slony.info/ "Slony-I PostgreSQL Replication"

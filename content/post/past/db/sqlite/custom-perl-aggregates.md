@@ -146,8 +146,7 @@ Keen! I mean, that is just *so* slick! And it really demonstrates the power of
 SQLite as an embeddable database, as well. Thanks [Matt], for making the SQLite
 API available to us mere mortal Perl developers!
 
-  [Josh Berkus]: http://blogs.ittoolbox.com/database/soup/
-    "Josh Berkus's Database Soup"
+  [Josh Berkus]: https://www.databasesoup.com "Josh Berkus's Database Soup"
   [`sqlite_add_function`]: http://www.sqlite.org/capi3ref.html#sqlite3_create_function
     "C/C++ Interface For SQLite Version 3: sqlite_add_function"
   [DBD::SQLite]: https://metacpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"

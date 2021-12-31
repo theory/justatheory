@@ -170,7 +170,7 @@ management. Let me know.
   [Slony-I]: http://www.slony.info/
   [Module::Build]: https://metacpan.org/dist/Module-Build/
     "Module::Build on CPAN"
-  [amazingly useful]: /computers/databases/postgresql/recurring_events.html
+  [amazingly useful]: {{% ref "/post/past/db/pg/recurring-events" %}}
     "Just a Theory: “How to Generate Recurring Events in the Database”"
   [simplify client interfaces]: http://www.onlamp.com/pub/a/onlamp/2006/06/29/many-to-many-with-plpgsql.html
     "O’Reilly ONLamp: “Managing Many-to-Many Relationships with PL/pgSQL”"

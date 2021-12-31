@@ -27,7 +27,7 @@ And finally, [this DynDNS page] gave me the instruction I needed to get `ntpd`
 running on FreeBSD. All I had to do was add `xntpd_enable="YES"` to
 */etc/rc.conf*. I restarted my box, and now I'm in business!
 
-  [request for assistance]: /computers/os/freebsd/ntptd_help_requested.html
+  [request for assistance]: {{ ref "/post/past/tools/os/ntptd-help-requested" %}}
     "I ask for help with NTPD"
   [NTP configuration]: http://cfm.gs.washington.edu/network/ntp/ntp/
     "NTP Configuration"

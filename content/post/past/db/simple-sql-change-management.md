@@ -205,8 +205,8 @@ Still, there are two more challenges I would like to overcome:
 
 I think I have solutions for these issues, as well. More in my next post.
 
-  [written about this before]: /computers/databases/change-management.html
+  [written about this before]: {{% ref "/tags/change-management/" %}}
   [Module::Build::DB]: https://metacpan.org/module/Module::Build::DB
   [at work]: https://iovation.com/
-  [Depesz’s Versioning]: http://www.depesz.com/index.php/2010/08/22/versioning/
-  [described a deployment implementation]: http://archives.postgresql.org/pgsql-hackers/2012-01/msg01138.php
+  [Depesz’s Versioning]: https://www.depesz.com/index.php/2010/08/22/versioning/
+  [described a deployment implementation]: https://archives.postgresql.org/pgsql-hackers/2012-01/msg01138.php

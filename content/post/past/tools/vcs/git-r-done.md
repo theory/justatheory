@@ -63,7 +63,7 @@ It turned out that there were a few [files lost] in the conversion, which I
 didn't notice until after all was said and done, but overall I'm very happy. My
 thanks again to [Ask] and the denizens of \#git for all the help.
 
-  [Bricolage Git migration]: /computers/vcs/git/bricolage-to-git.html
+  [Bricolage Git migration]: {{% ref "/post/past/bricolage/vcs/bricolage-to-git" %}}
     "Migrating Bricolage CVS and SVN to Git"
   [GitHub wiki documents]: http://wiki.github.com/bricoleurs/bricolage/development
     "Bricolage Wiki: Development"
@@ -74,8 +74,8 @@ thanks again to [Ask] and the denizens of \#git for all the help.
   [Starting a Project Branch]: http://wiki.github.com/bricoleurs/bricolage/starting-a-project-branch
   [Contributing via Email]: http://wiki.github.com/bricoleurs/bricolage/contributing-via-email
   [Creating a Release]: http://wiki.github.com/bricoleurs/bricolage/creating-a-release
-  [bric\_cvs\_to\_git]: /computers/vcs/git/bricolage-migration/bric_cvs_to_git
-  [bric\_to\_git]: /computers/vcs/git/bricolage-migration/bric_to_git
-  [stitch]: /computers/vcs/git/bricolage-migration/stitch
+  [bric\_cvs\_to\_git]: {{% link "/computers/vcs/git/bricolage-migration/bric_cvs_to_git" %}}
+  [bric\_to\_git]: {{% link "/computers/vcs/git/bricolage-migration/bric_to_git" %}}
+  [stitch]: {{% link "/computers/vcs/git/bricolage-migration/stitch" %}}
   [files lost]: http://github.com/bricoleurs/bricolage/commit/95c2335634a64fc68745629d5242cad5b1c69d48
   [Ask]: http://www.askask.com/

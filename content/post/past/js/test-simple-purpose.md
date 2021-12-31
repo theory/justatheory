@@ -88,7 +88,7 @@ have real [classes], [namespaces], and even [`import`], [`include`] and [`use`]!
 Testing will become increasingly important as more organizations come to rely on
 growing amounts of production JavaScript code.
 
-  [TestSimple 0.03 announcement]: /computers/programming/javascript/test_simple-0.03.html
+  [TestSimple 0.03 announcement]: {{% ref "/post/past/js/test-simple-0.03.md" %}}03.html
     "TestSimple 0.03 Released"
   [Rhino]: http://www.mozilla.org/rhino/
     "Rhino includes a command-line JavaScript interpreter!"

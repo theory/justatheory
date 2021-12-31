@@ -389,7 +389,7 @@ made it much easier to actually *use* this solution in Rails. If you know how to
 do that, please do leave a comment. As for how I hacked Rails to use the
 function, well, that's a blog post for another day.
 
-  [request for help]: /computers/databases/postgresql/reducing_view_calculations.html
+  [request for help]: {{% ref "/post/past/db/pg/reducing-view-calculations" %}}
     "Need Help Reducing View Calculations"
   [Sandy]: http://iwantsandy.com "Sandy — your free personal assistant"
   [depesz]: http://www.depesz.com/ "</depesz> blog"
@@ -397,4 +397,4 @@ function, well, that's a blog post for another day.
     "<depesz/>: how many 1sts of any month were sundays - since 1901-01-01?"
   [`EXECUTE`]: https://www.postgresql.org/docs/8.3/static/plpgsql-control-structures.html#PLPGSQL-RECORDS-ITERATING
     "PL/pgSQL: Looping Through Query Results"
-  [here]: /code/recurring_events.sql "Download the code for this blog entry"
+  [here]: {{% link "/code/recurring_events.sql" %}} "Download the code for this blog entry"

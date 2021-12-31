@@ -87,7 +87,7 @@ list many more project ideas on the Bricolage Web site, and try to steer people
 to the mail lists to discuss their ideas before sending them in. Then I might
 end up with 11 great applications!
 
-  [read]: /bricolage/summer_of_code_applications.html
+  [read]: {{% ref "/post/past/bricolage/bricolage-summer-of-code-applications" %}}
     "Bricolage Summer of Code Application Summary"
   [Summer of Code]: http://code.google.com/summerofcode.html
     "Google Summer of Code"
@@ -95,4 +95,4 @@ end up with 11 great applications!
     "See Patrick LeBoutillier's modules on CPAN"
   [Sam Tregar]: http://sam.tregar.com/ "Sam Tregar: Life"
   [Matchstick]: http://sourceforge.net/projects/matchstick/
-    "The Matcstick SourceForge project page"
+    "The Matchstick SourceForge project page"

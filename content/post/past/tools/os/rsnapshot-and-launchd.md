@@ -48,5 +48,5 @@ And that's it. Enjoy!
     "Easy backups with rsnapshot"
   [My Book]: http://www.wdc.com/en/products/Products.asp?DriveID=224
     "Western Digital My Book™ Premium Edition™"
-  [here]: /downloads/rsnapshot_launchd_plists.tar.gz
+  [here]: {{% link "/downloads/rsnapshot_launchd_plists.tar.gz" %}}
     "Download my rsnapshot launchd plist files"

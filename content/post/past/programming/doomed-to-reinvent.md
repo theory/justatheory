@@ -68,13 +68,13 @@ In short, if it ain't broke, don't *reinvent it!*
 
 \</rant\>
 
-  [ORM developers]: /computers/databases/celko-at-yapc.html
+  [ORM developers]: {{% ref "/post/past/db/celko-at-yapc" %}}
     "Learn Mad Database Skillz at YAPC::NA 2009"
   [ActiveRecord]: http://api.rubyonrails.org/classes/ActiveRecord/Base.html
     "Rails API: ActiveRecord::Base"
   [2007 Presentation]: https://www.vimeo.com/4098876
     "Ruby on Rails for PostgreSQL Enthusiasts"
-  [fuck typing]: /computers/programming/methodology/fuck-typing.html
+  [fuck typing]: {{% ref "/post/past/programming/fuck-typing" %}}
     "Fuck Typing"
   [baroque interface]: http://api.drupal.org/api/file/developer/topics/forms_api.html/5
     "Forms API Quickstart Guide"

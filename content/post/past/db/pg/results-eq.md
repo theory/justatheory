@@ -181,15 +181,15 @@ In the meantime, before releasing a new version, I still plan to add:
 Hopefully I can find some time to work on those next week. The only challenging
 one is `row_eq()`, so I may skip that one for now.
 
-  [testing SQL result sets]: /computers/databases/postgresql/comparing-relations.html
+  [testing SQL result sets]: {{% ref "/post/past/db/pg/comparing-relations" %}}
     "Thoughts on Testing SQL Result Sets"
-  [how to name result testing functions]: /computers/databases/postgresql/result-testing-function-names.html
+  [how to name result testing functions]: {{% ref "/post/past/db/pg/result-testing-function-names" %}}
     "Need Help Naming Result Set Testing Functions"
-  [implementation issues]: /computers/databases/postgresql/set_testing_update.html
+  [implementation issues]: {{% ref "/post/past/db/pg/set-testing-update" %}}
     "pgTAP Set-Testing Update"
   [Git repository]: http://github.com/theory/pgtap/tree/master/
     "Get the pgTAP source on GitHub"
-  [depesz]: http://www.depesz.com/ "select * from depesz"
+  [depesz]: https://www.depesz.com/ "select * from depesz"
   [Partially ordered set]: https://en.wikipedia.org/wiki/Partially_ordered_set
     "Wikipedia: Partially ordered set"
   [principle of distinction]: http://www.perl.com/pub/a/2003/06/25/perl6essentials.html

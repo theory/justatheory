@@ -7,8 +7,8 @@ tags: [JavaScript, JSDoc, JavaDoc, Pod]
 type: post
 ---
 
-After my [request for JavaScript documentation standards], I investigated the
-one I found myself: [JSDoc]. I went ahead and used its syntax to document a
+After my [request for JavaScript documentation standards][jsds], I investigated
+the one I found myself: [JSDoc]. I went ahead and used its syntax to document a
 JavaScript class I'd written, and it seemed to work pretty well. Initially, my
 main complaint was that their was no easy way to include arbitrary
 documentation. Everything has to be associated with a constructor, attribute, or
@@ -37,8 +37,8 @@ times more documentation than actual code, and the bandwidth overhead seems
 unnecessary. JavaDoc and JSDoc of course require that any documentation be in
 the same files, since that's where they parse method signatures and such.
 
-So I think I'll follow Chris Dolan's advice from my [original post] and fall
-back on Good 'ole [POD]. POD allows me to write as much or as little
+So I think I'll follow Chris Dolan's advice from my [original post][jsds] and
+fall back on Good 'ole [POD]. POD allows me to write as much or as little
 documentation as I like, with methods and functions documented in an order that
 makes sense to me, with headings even! I can write long descriptions, synopses,
 and even documentation completely unrelated to specifics of the interface. And
@@ -47,12 +47,10 @@ all in a separate file, even!
 This will do until someone formalizes a standard for JavaScript. Maybe it'll be
 [KwiD]?
 
-  [request for JavaScript documentation standards]: /computers/programming/javascript/documentation_standard.html
+  [jsds]: {{% ref "/post/past/js/js-documentation-standard" %}}
     "I ask, “Is there a JavaScript Library Documentation Standard?”"
   [JSDoc]: http://jsdoc.sourceforge.net/
     "Learn about JSDoc (written in Perl!) on the project home page"
-  [original post]: /computers/programming/javascript/documentation_standard.html
-    "Is there a JavaScript Library Documentation Standard?"
   [POD]: https://metacpan.org/dist/perl/pod/perlpod.pod
     "Read the POD documentation on CPAN"
   [KwiD]: http://kwiki.org/?KwiD

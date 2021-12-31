@@ -34,11 +34,11 @@ In the meantime, share and enjoy.
 **Update:** I forgot to mention that you can check out the source code from the
 [Kineticode Subversion] repository.
 
-  [UPC]: /computers/databases/postgresql/plpgsql_upc_validation.html
+  [UPC]: {{% ref "/post/past/db/pg/plpgsql-upc-validation" %}}
     "Validating UPCs with PL/pgSQL"
-  [EAN]: /computers/databases/postgresql/ean_validation.html
+  [EAN]: {{% ref "/post/past/db/pg/ean-validation" %}}
     "Corrected PostgreSQL EAN Functions"
-  [GTIN]: /computers/programming/perl/stepped_series.html
+  [GTIN]: {{% ref "/post/past/perl/stepped-series" %}}
     "Stepped Series of Numbers in Perl"
   [Check it out!]: http://pgfoundry.org/frs/?group_id=1000229
     "Download the GTIN data type"
@@ -46,5 +46,4 @@ In the meantime, share and enjoy.
     "“PostgreSQL (2nd Edition)” by Douglas and Douglas"
   [download from here]: http://developer.postgresql.org/~adunstan/
     "Andrew Dunstan at PostgreSQL.org"
-  [Kineticode Subversion]: https://svn.kineticode.com/gtin/trunk/
-    "The GTIN Subversion trunk"
+  [Kineticode Subversion]: https://github.com/theory/gtin "The GTIN Git repository"

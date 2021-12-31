@@ -97,5 +97,5 @@ sure love to see LWP reworked to use [roles]!
   [chromatic’s hack]: http://www.modernperlbooks.com/mt/2010/05/are-objects-black-blocks-or-toolkits.html
   [LWP::UserAgent::WithCache]: https://metacpan.org/pod/LWP::UserAgent::WithCache
   [LWP::UARobot]: https://metacpan.org/pod/LWP::RobotUA
-  [fuck typing]: /computers/programming/methodology/fuck-typing.html
+  [fuck typing]: {{% ref "/post/past/programming/fuck-typing" %}}
   [roles]: https://metacpan.org/release/RGARCIA/perl-5.10.0/view/lib/UNIVERSAL.pm#$obj-%3EDOES(-ROLE-)

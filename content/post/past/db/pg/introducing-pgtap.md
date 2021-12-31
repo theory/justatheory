@@ -171,4 +171,4 @@ etc., below. Thanks!
   [TAP]: http://testanything.org/ "Test Anything Protocol"
   [Test::Exception]: https://metacpan.org/pod/Test::Exception
     "Test::Exception on CPAN"
-  [pgTAP]: https://svn.kineticode.com/pgtap/trunk "pgTAP Subversion repository"
+  [pgTAP]: https://github.com/theory/pgtap/ "pgTAP Git repository"

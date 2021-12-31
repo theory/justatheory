@@ -133,8 +133,7 @@ this error:
 I have no idea why. So I just leave the function and let the `CREATE OR REPLACE`
 take care of it.
 
-  [yesterday's post]: /computers/databases/postgresql/benchmarking_upc_validation.html
+  [yesterday's post]: {{% ref "/post/past/db/pg/benchmarking-upc-validation" %}}
     "Benchmarking UPC Validation"
   [Benchmark]: https://metacpan.org/dist/perl/lib/Benchmark.pm
-  [Josh Berkus]: http://blogs.ittoolbox.com/database/soup/
-    "“Database Soup” by Josh Berkus"
+  [Josh Berkus]: https://www.databasesoup.com "“Database Soup” by Josh Berkus"

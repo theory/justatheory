@@ -33,7 +33,7 @@ notification script from which SVN::Notify was derived — and which I have even
   [TLS support]: https://rt.cpan.org/Ticket/Display.html?id=40188
   [I18N]: https://rt.cpan.org/Ticket/Display.html?id=51450
   [inline CSS]: https://rt.cpan.org/Ticket/Display.html?id=52121
-  [this sample output]: /code/svnnotify/svnnotify-2.70_trac_example.html
+  [this sample output]: {{% link "/code/svnnotify/svnnotify-2.70_trac_example.html" %}}
   [Twitter]: https://twitter.com/
   [send an email]: https://metacpan.org/author/DWHEELER
   [activitymail]: https://metacpan.org/dist/activitymail/

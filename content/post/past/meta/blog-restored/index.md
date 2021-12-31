@@ -51,8 +51,8 @@ in Perl, so I could hack it pretty easily. What I should do is avoid writing my
 own Blog engine. Right? **Right?!**. In the meantime, I have other priorities,
 so I'll be sticking to Bloxsom for a while.
 
-  [Capistrano deployment system]: https://svn.kineticode.com/cap/
-    "Kineticode Capistrano Environment"
+  [Capistrano deployment system]: https://github.com/theory/my-cap
+    "theory’s Capistrano Environment"
   [Kineticode]: https://kineticode.com
     "Kineticode. Setting knowledge in motion"
   [Google Analytics]: http://www.google.com/analytics/

@@ -182,5 +182,5 @@ I now tag:
     "My Message to the Bricolage Community"
   [James Duncan Davidson]: http://blog.duncandavidson.com/blog/
   [Nathan Tokington]: http://radar.oreilly.com/nat/
-  [Josh Berkus]: http://blogs.ittoolbox.com/database/soup/
-  [Ask Bjørn Hansen]: http://www.askbjoernhansen.com/
+  [Josh Berkus]: https://www.databasesoup.com "Josh Berkus's Database Soup"
+  [Ask Bjørn Hansen]: https://www.askask.com

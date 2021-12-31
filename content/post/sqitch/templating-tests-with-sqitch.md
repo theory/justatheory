@@ -6,11 +6,11 @@ tags: [Sqitch, pgTAP, Templating]
 type: post
 ---
 
-Back in September, [I described] how to create custom deploy, revert, and
-verify scripts for various types of [Sqitch] changes, such as adding a new
-table. Which is cool and all, but what I've found while developing databases
-at [work] is that I nearly always want to create a test script with the same
-name as a newly-added change.
+Back in September, [I described][sqtmpl] how to create custom deploy, revert,
+and verify scripts for various types of [Sqitch] changes, such as adding a new
+table. Which is cool and all, but what I've found while developing databases at
+[work] is that I nearly always want to create a test script with the same name
+as a newly-added change.
 
 So for the recent v0.990 release, the [`add` command] gained the ability to
 generate arbitrary script files from templates. To get it to work, we just
@@ -94,9 +94,9 @@ Added "add_timestamp_column" to sqitch.plan
 
 Naturally you'll want to update the existing test to validate the new column.
 
-In the [previous templating post], we added custom scripts as for `CREATE TABLE`
-changes; now we can add a test template, too. This one takes advantage of the
-advanced features of [Template Toolkit]. We name it
+In the [previous templating post][sqtmpl], we added custom scripts as for
+`CREATE TABLE` changes; now we can add a test template, too. This one takes
+advantage of the advanced features of [Template Toolkit]. We name it
 `~/.sqitch/templates/test/createtable.tmpl` to complement the deploy, revert,
 and verify scripts created previously:
 
@@ -126,7 +126,8 @@ SELECT finish();
 ROLLBACK;
 ```
 
-As [before], we tell the [`add` command] to use the `createtable` templates:
+As [before][sqtmpl], we tell the [`add` command] to use the `createtable`
+templates:
 
 ``` sh
 > sqitch add corp_widgets --template createtable \
@@ -176,11 +177,9 @@ ROLLBACK;
 
 I don't know about you, but I'll be using this functionality *a lot.*
 
-  [I described]: /sqitch/2013/09/06/sqitch-templating/
+  [sqtmpl]: {{% ref "/post/sqitch/sqitch-templating" %}}
   [Sqitch]: https://sqitch.org/ "Sane database schema change management"
   [work]: https://iovation.com/
   [`add` command]: https://metacpan.org/pod/sqitch-add
   [pgTAP]: https://pgtap.org/
-  [previous templating post]: /sqitch/2013/09/06/sqitch-templating/
   [Template Toolkit]: http://tt2.org/
-  [before]: /sqitch/2013/09/06/sqitch-templating/

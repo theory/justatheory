@@ -151,6 +151,6 @@ know], but implement your own improvements using filters!
     "SVN::Notify Output Filtering Documentation"
   [Trac filter]: https://metacpan.org/dist/SVN-Notify/lib/SVN/Notify/Filter/Trac.pm
     "SVN::Notify::Filter::Trac Documentation"
-  [right here]: /code/svnnotify/svnnotify-2.70_trac_example.html
+  [right here]: {{% link "/code/svnnotify/svnnotify-2.70_trac_example.html" %}}
     "Example output from SVN::Notify 2.70 and modified by the Trac filter"
   [Text::Trac]: https://metacpan.org/dist/Text-Trac/

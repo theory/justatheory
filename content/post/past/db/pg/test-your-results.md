@@ -7,12 +7,12 @@ tags: [Postgres, pgTAP, Testing, Unit Testing]
 type: post
 ---
 
-I'm pleased to announce that, [after][] [much][] [thinking], [committing], and
-not an insignificant amount of [hair-pulling], [pgTAP] 0.22 has finally landed.
-Download it [here]. Many, *many* thanks to all who commented on my previous
-posts, made suggestions, and helped me on IRC to figure out how to get all this
-stuff to work. The crazy thing is that it does, quite well, all the way back to
-PostgreSQL 8.0.
+I'm pleased to announce that, [after][] [much][] [thinking][set],
+[committing][req], and not an insignificant amount of [hair-pulling], [pgTAP]
+0.22 has finally landed. Download it [here]. Many, *many* thanks to all who
+commented on my previous posts, made suggestions, and helped me on IRC to figure
+out how to get all this stuff to work. The crazy thing is that it does, quite
+well, all the way back to PostgreSQL 8.0.
 
 So here's what I've come up with: ten simple functions. Sound like a lot? Well,
 it's simpler than it might at first appear. Here's a quick overview:
@@ -28,7 +28,6 @@ it's simpler than it might at first appear. Here's a quick overview:
         #     Results differ beginning at row 3:
         #         have: (1,Anna)
         #         want: (22,Betty)
-            
 
     If a row is missing, the diagnostics will show it as a `NULL`:
 
@@ -110,8 +109,8 @@ it's simpler than it might at first appear. Here's a quick overview:
 
 :   Just like `set_hasnt()`, except that duplicates matter.
 
-Be sure to look at my [previous post] for usage examples. Since I wrote it, I've
-also added the ability to pass an array as the second argument to these
+Be sure to look at my [previous post][req] for usage examples. Since I wrote it,
+I've also added the ability to pass an array as the second argument to these
 functions. This is specifically for the case when the query you're testing
 results a single column of results; the array just makes it easier to specify
 expected values in a common case:
@@ -126,7 +125,7 @@ SELECT results_eq(
 Check the [documentation] for all the details on how to use these functions.
 
 I'm really happy with these functions. It was definitely worth it to really
-[think things through], look at [prior art][after], and spend the time to try
+[think things through][set], look at [prior art][after], and spend the time to try
 different approaches. In the process, I've found an approach that works in
 nearly all circumstances.
 
@@ -164,25 +163,21 @@ starting with testing that all tables [have primary keys].
 
 But that's after my vacation. Back in two weeks.
 
-  [after]: /computers/databases/postgresql/comparing-relations.html
+  [after]: {{% ref "/post/past/db/pg/comparing-relations" %}}
     "Thoughts on Testing SQL Result Sets"
-  [much]: /computers/databases/postgresql/result-testing-function-names.html
+  [much]: {{% ref "/post/past/db/pg/result-testing-function-names" %}}
     "Need Help Naming Result Set Testing Functions"
-  [thinking]: /computers/databases/postgresql/set_testing_update.html
+  [set]: {{% ref "/post/past/db/pg/set-testing-update" %}}
     "pgTAP Set-Testing Update"
-  [committing]: /computers/databases/postgresql/results_eq.html
+  [req]: {{% ref "/post/past/db/pg/results-eq" %}}
     "Committed: pgTAP Result Set Assertion Functions"
-  [hair-pulling]: /computers/databases/postgresql/neither-null-nor-not-null.html
+  [hair-pulling]: {{% ref "/post/past/db/pg/neither-null-nor-not-null" %}}
     "Neither NULL nor NOT NULL: An SQL WTF"
   [pgTAP]: http://pgtap.projects.postgresql.org/
     "pgTAP: Unit Testing for PostgreSQL"
   [here]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
-  [previous post]: /computers/databases/postgresql/results_eq.html
-    "Committed: pgTAP Result Set Assertion Functions"
   [documentation]: http://pgtap.projects.postgresql.org/documentation.html#Pursuing+Your+Query
     "pgTAP Documentation: Pursing Your Query"
-  [think things through]: /computers/databases/postgresql/set_testing_update.html
-    "pgTAP Set-Testing Update"
   [download]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
   [database normalization]: http://it.toolbox.com/blogs/database-soup/testing-for-normalization-33119
     "Database Soup: “Testing for Normalization”"

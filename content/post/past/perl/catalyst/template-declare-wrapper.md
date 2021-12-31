@@ -212,7 +212,7 @@ and see how they can be made better.
 
 Next up: More database fun!
 
-  [series]: /tags/catalyst/ "Just a Theory: “Catalyst”"
+  [series]: {{% ref "/tags/catalyst" %}} "Just a Theory: “Catalyst”"
   [create a wrapper for the view]: https://metacpan.org/pod/Catalyst::Manual::Tutorial::03_MoreCatalystBasics#CREATE_A_WRAPPER_FOR_THE_VIEW
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"
   [Template::Declare]: https://metacpan.org/pod/Template::Declare

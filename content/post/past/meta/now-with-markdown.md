@@ -65,7 +65,7 @@ At any rate, you now have one less reason not to leave a comment!
   [pgTAP documentation]: http://pgtap.projects.postgresql.org/documentation.html
   [Discount]: http://www.pell.portland.or.us/~orc/Code/markdown/
     "Discount — a C implementation of the Markdown markup language"
-  [README]: https://svn.kineticode.com/pgtap/trunk/README.pgtap "pgTAP README"
-  [POD]: http://perldoc.perl.org/perlpod.html
+  [README]: https://github.com/theory/pgtap/#readme "pgTAP README"
+  [POD]: https://perldoc.perl.org/perlpod.html
     "perlpod - the Plain Old Documentation format"
   [Aristotle Pagaltzis]: http://plasmasturm.org/

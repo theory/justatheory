@@ -129,9 +129,9 @@ and continuing to hammer on me when I was being dense.
 
   [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
     "DBIx::Connector on CPAN"
-  [post]: /computers/programming/perl/modules/dbix-connector-methods.html
+  [post]: {{% ref "/post/past/perl/dbix-connector-methods" %}}
     "Suggest Method Names for DBIx::Connector"
-  [thesaurus.com]: http://www.thesaurus.com/
+  [thesaurus.com]: https://www.thesaurus.com/
   [Apache::DBI]: https://metacpan.org/pod/Apache::DBI
     "Apache::DBI on CPAN"
   [`connect_cached()`]: https://metacpan.org/pod/DBI#connect_cached

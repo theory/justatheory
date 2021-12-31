@@ -42,9 +42,9 @@ Nice post. A couple comments and questions:
 Lots of room for growth and improvement in Sqitch going forward. You post
 provides more food for thought.
 
-  [this post]: /sqitch/2014/01/13/templating-tests-with-sqitch/
+  [this post]: {{% ref "/post/sqitch/sqitch-templating" %}}
     "Templating Tests with Sqitch"
-  [specify Sqitch targets]: /sqitch/2014/01/09/sqitch-on-target/
+  [specify Sqitch targets]: {{% ref "/post/sqitch/sqitch-on-target" %}}
     "Sqitch on Target"
   [better understand and work with VCSs]:
     https://github.com/theory/sqitch/issues/25 "Add VCS Integration to Sqitch"

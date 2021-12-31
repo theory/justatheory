@@ -381,7 +381,7 @@ appreciated.
 
   [pgTAP]: http://pgtap.projects.postgresql.org/
     "pgTAP: Unit Testing for PostgreSQL"
-  [CITEXT]: /computers/databases/postgresql/citext-patch-submitted.html
+  [CITEXT]: {{% ref "/post/past/db/pg/citext-patch-submitted" %}}
     "CITEXT Patch Submitted to PostgreSQL Contrib"
   [pgsql-hackers post]: http://archives.postgresql.org/pgsql-hackers/2008-07/msg00627.php
     "Tom Lane on pgsql-hackers: “Re: PATCH: CITEXT 2.0 v3”"

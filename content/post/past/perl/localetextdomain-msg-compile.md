@@ -31,7 +31,7 @@ translation file, all the translator has to do is:
 I hope this simplifies things for translators. See the [notes for translators]
 for a few more words on the subject.
 
-  [localizing Perl modules with Locale::TextDomain]: /computers/programming/perl/modules/dist-zilla-localetextdomain.html
+  [localizing Perl modules with Locale::TextDomain]: {{% ref "/post/past/perl/dist-zilla-localetextdomain" %}}
   [Dist::Zilla::LocaleTextDomain]: https://metacpan.org/module/Dist::Zilla::LocaleTextDomain
   [Sqitch]: https://sqitch.org/ "Sqitch: Sane database change management"
   [`msg-compile`]: https://metacpan.org/module/Dist::Zilla::App::Command::msg_compile

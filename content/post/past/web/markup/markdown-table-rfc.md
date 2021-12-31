@@ -364,7 +364,7 @@ What do you hate? Please do let me know.
 
 Thanks!
 
-  [definition list proposal]: /computers/markup/modest-markdown-proposal.html
+  [definition list proposal]: {{% ref "/post/past/web/markup/modest-markdown-proposal" %}}
     "A Modest Proposal for Markdown Definition Lists"
   [aside on the markdown-discuss mail list]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001471.html
     "markdown-discuss: “Re: A Modest Definition List Proposal”"

@@ -35,5 +35,5 @@ The whole list of changes in 2.57 (the output remains the same as in [2.56]):
 Enjoy!
 
   [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
-  [2.56]: /code/svnnotify/svnnotify-2.56_colordiff_example.html
+  [2.56]: {{% link "/code/svnnotify/svnnotify-2.56_colordiff_example.html" %}}
     "Example output from SVN::Notify 2.56"

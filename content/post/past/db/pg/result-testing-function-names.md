@@ -62,5 +62,5 @@ As a side note, I'm also considering:
     expression to a function, since PostgreSQL doesn't allow `RECORD`s to be
     passed to functions.
 
-  [testing SQL result sets]: /computers/databases/postgresql/comparing-relations.html
+  [testing SQL result sets]: {{% ref "/post/past/db/pg/comparing-relations" %}}
     "Thoughts on Testing SQL Result Sets"

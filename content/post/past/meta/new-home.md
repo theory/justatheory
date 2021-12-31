@@ -46,7 +46,7 @@ though, as I am already overcommitted to [numerous][] [other][] [things], and
 thinking of [new][] [stuff] all the time. But I'd really like to make things
 much nicer for myself, so we'll see.
 
-  [the Fireballing]: /computers/blog/how-not-to-withstand-a-fireballing.html
+  [the Fireballing]: {{% ref "/post/past/meta/how-not-to-withstand-a-fireballing" %}}
   [Linode]: https://www.linode.com
   [Blosxom]: http://blosxom.sourceforge.net/
   [Nginx]: http://www.nginx.org/
@@ -60,4 +60,4 @@ much nicer for myself, so we'll see.
   [other]: http://pgxn.org/
   [things]: http://www.designsceneapp.com/
   [new]: http://github.com/theory/sqitch
-  [stuff]: /computers/databases/postgresql/dbix-connector-and-ssi.html
+  [stuff]: {{% ref "/post/past/db/pg/dbix-connector-and-ssi" %}}

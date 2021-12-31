@@ -1087,7 +1087,7 @@ body > footer ul li:last-child {
 }
 
 /* Configure the background and color for chroma's highlight and un-highlighted pre elements in text. */
-.text > pre, li > pre, .highlight {
+.text > pre, li > pre, dd > pre, .highlight {
     margin-bottom: 1em;
     padding: .8em 1em;
     background-color: #2d2d2d;

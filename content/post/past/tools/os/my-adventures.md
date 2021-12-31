@@ -459,7 +459,7 @@ elegant UI, and all the Unix power tools I can stand! I hope you do, too.
   [Apple]: http://www.apple.com/
   [instructions]: http://developer.apple.com/internet/macosx/osdb.html
   [MySQL]: http://www.mysql.org/
-  [here]: /downloads/pgsql_osx_start.tar.gz
+  [here]: {{% link "/downloads/pgsql_osx_start.tar.gz" %}}
   [Creating SystemStarter Startup Item Bundles HOWTO]: http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
   [XML::Parser]: https://metacpan.org/dist/XML-Parser
   [Text::Iconv]: https://metacpan.org/dist/Text-Iconv

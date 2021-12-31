@@ -12,8 +12,8 @@ david.wheeler.net. All requests to that domain will get a permanent redirect to
 this site. Where possible, I tried to make the old URLs redirect to the new
 URLs. So if you try to connect to [david.wheeler.net/osx.html], you should be
 automatically redirected to
-[www.justatheory.com/computers/os/macosx/my\_adventures.html]. The same goes for
-the following documents:
+[www.justatheory.com/computers/os/macosx/my\_adventures.html][adventures]. The
+same goes for the following documents:
 
 -   [Patch for Apache + DBM on Mac OS X]
 -   [Migrating to Mac OS X]
@@ -24,7 +24,7 @@ let me know.
 
   [david.wheeler.net/osx.html]: http://david.wheeler.net/osx.html
     "The Old Mac OS X Adventures URL"
-  [www.justatheory.com/computers/os/macosx/my\_adventures.html]: /computers/os/macosx/my_adventures.html
-  [Patch for Apache + DBM on Mac OS X]: /2004/06/wheeler.net-migration/apache_dbm.patch
-  [Migrating to Mac OS X]: /2004/06/wheeler.net-migration/migrating_to_macosx.pdf
-  [Patch for mod\_ssl on Mac OS X]: /2004/06/wheeler.net-migration/mod_ssl_dylib.patch
+  [adventures]: {{% ref "/post/past/tools/os/my-adventures" %}}
+  [Patch for Apache + DBM on Mac OS X]: {{% link "apache_dbm.patch" %}}
+  [Migrating to Mac OS X]: {{% link "migrating_to_macosx.pdf" %}}
+  [Patch for mod\_ssl on Mac OS X]: {{% link "mod_ssl_dylib.patch" %}}

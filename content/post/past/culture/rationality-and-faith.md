@@ -20,5 +20,5 @@ rewarding, but time-consuming.
 
   [Medium]: https://medium.com/
   [Misguided Delusion]: https://medium.com/on-culture/11cfd5b919f6
-  [here]: /2013/04/misguided-delusion/
-  [previous career path]: /autobiographical/five_things.html
+  [here]: {{%ref "/post/culture/misguided-delusion" %}}
+  [previous career path]: {{% ref "/post/past/personal/five-things" %}}

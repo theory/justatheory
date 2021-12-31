@@ -728,9 +728,9 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-  [wrote]: /computers/databases/simple-sql-change-management.html
-  [three]: /computers/databases/vcs-sql-change-management.html
-  [posts]: /computers/databases/sql-change-management-sans-redundancy.html
+  [wrote]: {{% ref "/post/past/db/simple-sql-change-management" %}}
+  [three]: {{% ref "/post/past/db/vcs-sql-change-management" %}}
+  [posts]: {{% ref "/post/past/db/sql-change-management-sans-redundancy" %}}
   [work]: https://iovation.com/
   [started work on it]: https://github.com/theory/sqitch
   [I'm going to need the tutorial myself]: https://www.pgcon.org/2012/schedule/events/479.en.html

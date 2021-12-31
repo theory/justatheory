@@ -28,9 +28,9 @@ without my commentary, but you should be able to fill in the gaps by reading
 
 So start having some fun with PL/pgSQL!
 
-  [announced]: /computers/databases/postgresql/plpgsql_talk.html
+  [announced]: {{% ref "/post/past/db/pg/plpgsql-talk" %}}
     "PL/pgSQL Talk for Portland PostgreSQL Users"
-  [posted the slides]: /2006/07/plpgsql-talk-slides/learning_plpgsql.pdf
+  [posted the slides]: {{% link "learning_plpgsql.pdf" %}}
     "“Learning PL/pgSQL” slides"
   [my]: http://www.oreillynet.com/pub/a/onlamp/2006/05/11/postgresql-plpgsql.html
     "Writing PostgreSQL Functions with PL/pgSQL"

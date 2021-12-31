@@ -54,7 +54,7 @@ really happy with this sugar. Thanks for the [great hack], gugod!
     "gugod's blog: “Running in the compile time”"
   [Test::XPath]: https://metacpan.org/pod/Test::XPath
     "Test::XPath on CPAN"
-  [previously]: /computers/programming/perl/test-with-xpath.html
+  [previously]: {{% ref "/post/past/perl/test-with-xpath" %}}
     "Test XML and HTML with XPath"
   [great hack]: http://gugod.org/2009/08/perlx---perl-extension.html
     "gugod's blog: “PerlX - Perl Extension”"

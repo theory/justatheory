@@ -224,5 +224,5 @@ substring approach, 36.91% faster than the Perl version, and 2.23 times faster
 Meanwhile, I'm pleased to have this simple benchmarking tool in my arsenal for
 future PostgreSQL function development.
 
-  [validating UPC codes in PL/pgSQL]: /computers/databases/postgresql/plpgsql_upc_validation.html
+  [validating UPC codes in PL/pgSQL]: {{% ref "/post/past/db/pg/plpgsql-upc-validation" %}}
     "Validating UPCs with PL/pgSQL"

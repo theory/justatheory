@@ -39,7 +39,7 @@ care for it going forward. I hope these changes help to galvanize the community
 to take it on collectively.
 
   [Sqitch]: https://sqitch.org/
-  [adopt my modules]: {{% ref "post/perl/adopt-my-modules.md" %}} "Adopt My Modules"
+  [adopt my modules]: {{% ref "/post/perl/adopt-my-modules" %}} "Adopt My Modules"
   [Perl modules]: https://metacpan.org/author/DWHEELER
     "CPAN distributions released by David E. Wheeler"
   [“Sqitchers” GitHub organization]: https://github.com/sqitchers

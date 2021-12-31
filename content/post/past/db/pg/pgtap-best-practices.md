@@ -26,7 +26,7 @@ Enjoy!
 
   [PostgreSQL Conference West]: http://www.postgresqlconference.org/2009/west/
     "West 2009, Seattle! | PostgreSQL Conference"
-  [Unit Test Your Database!]: /computers/databases/postgresql/unit-test-your-database.html
+  [Unit Test Your Database!]: {{% ref "/post/past/db/pg/unit-test-your-database" %}}
     "Just a Theory: “Unit Test Your Database!”"
   [Portland PLUG]: http://www.pdxlinux.org/ "Portland Linux/Unix User Group"
   [JPUG 10th Anniversary Conference]: http://www.postgresql.jp/events/pgcon09j/e/

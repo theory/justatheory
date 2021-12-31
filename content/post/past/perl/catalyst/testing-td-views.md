@@ -368,6 +368,6 @@ Next up, I think I'll hit controller tests. So come on back!
   [Test::XPath]: https://metacpan.org/pod/Test::XPath
     "Test::XPath on CPAN"
   [committed]: http://github.com/theory/catalyst-tutorial/commit/b171bfb0cb624b3a5ef840d116e121a355f5fe7d
-  [last week]: /computers/programming/perl/catalyst/sql-view-aggregate-magic.html
+  [last week]: {{% ref "/post/past/perl/catalyst/sql-view-aggregate-magic" %}}
     "My Catalyst Tutorial: Add Authors to the View"
   [commit]: http://github.com/theory/catalyst-tutorial/commit/e6018bd0339fb92b9c7fe9ac3d518ca3d302f7a0

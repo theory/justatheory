@@ -172,7 +172,7 @@ That issue behind me, I'll do a bit more hacking on it this week, and hopefully
 I'll get a release of pgTAP out with the new result set testing support before I
 leave for vacation early next week.
 
-  [result set testing functions]: /computers/databases/postgresql/results_eq.html
+  [result set testing functions]: {{% ref "/post/past/db/pg/results-eq" %}}
     "Committed: pgTAP Result Set Assertion Functions"
   [asked on the pgsql-hackers]: http://archives.postgresql.org/pgsql-hackers/2009-07/msg01518.php
   [mandated by the SQL standard]: http://archives.postgresql.org/pgsql-hackers/2009-07/msg01525.php

@@ -149,7 +149,7 @@ Maybe I'll keep it up with more blog posts in the coming weeks that continues to
 do so. Not only will it let me show off how nice Template::Declare templates can
 be, but it will let me continue my rant against ORMs as well. Stay tuned.
 
-  [release]: /computers/programming/perl/modules/template-declare-documented.html
+  [release]: {{% ref "/post/past/perl/template-declare-documented" %}}
     "Template Declare Explained"
   [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on CPAN"

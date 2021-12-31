@@ -80,7 +80,7 @@ $build_pkg->new(
 
 Much nicer, eh?
 
-  [mentioned]: /computers/programming/perl/mod_perl/apache_testmb.html
+  [mentioned]: {{% ref "/post/past/perl/mod_perl/apache-testmb" %}}
     "Module::Build + Apache::Test is Nearly Here"
   [`Module::Build`]: https://metacpan.org/dist/Module-Build/ "Module::Build on CPAN"
   [`Apache::Test`]: http://httpd.apache.org/test/ "Apache HTTP Test Project page"

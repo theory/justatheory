@@ -68,7 +68,7 @@ Twitter].
 
   [PGX]: http://pgexperts.com/
   [iovation]: https://iovation.com/
-  [CTO at values of n]: /autobiographical/im_back.html
+  [CTO at values of n]: {{% ref "/post/past/personal/im-back/index" %}}
   [lot]: https://github.com/theory/repositories
   [of]: https://github.com/bricoleurs/repositories
   [great]: https://github.com/pgxn/repositories

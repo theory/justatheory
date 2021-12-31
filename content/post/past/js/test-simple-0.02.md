@@ -45,4 +45,5 @@ Feedback/advice/insults welcome!
 
   [Test::Builder, Test::Simple, and Test::More]: https://metacpan.org/dist/Test-Simple/
     "Test::Simple and friends on CPAN"
-  [here]: /downloads/TestSimple-0.02.tar.gz "Download TestSimple 0.02 now!"
+  [here]: {{% link "/downloads/TestSimple-0.02.tar.gz" %}}
+    "Download TestSimple 0.02 now!"

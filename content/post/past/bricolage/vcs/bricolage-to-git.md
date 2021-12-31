@@ -173,9 +173,9 @@ Damn I'm glad that's done! I'll be getting the Subversion repository set to
 read-only next, and then writing some documentation for my fellow Bricoleurs on
 how to work with Git. For those of you who already know, [fork] and enjoy!
 
-  [migrated the old Bricolage SourceForge CVS]: /computers/vcs/git/bricolage-cvs-to-git.html
+  [migrated the old Bricolage SourceForge CVS]: {{% ref "/post/past/bricolage/vcs/bricolage-cvs-to-git.md" %}}
     "Migrating Bricolage CVS to Git"
-  [migrated Subversion]: /computers/vcs/git/bricolage-svn-to-git.html
+  [migrated Subversion]: {{% ref "/post/past/bricolage/vcs/bricolage-svn-to-git" %}}
     "Migrating Bricolage Subversion to Git"
   [git-filter-branch documentation]: http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html
     "git-filter-branch(1) Manual Page"

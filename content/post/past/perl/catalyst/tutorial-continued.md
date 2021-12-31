@@ -212,7 +212,7 @@ called SQL.
 
 More soon.
 
-  [post]: /computers/programming/perl/catalyst/catalyst-view-td.html
+  [post]: {{% ref "/post/past/perl/catalyst/catalyst-view-td" %}}
     "Create Catalyst Views with Template::Declare"
   [Catalyst::View::TD]: https://metacpan.org/pod/Catalyst::View::TD
     "Catalyst::View::TD on CPAN"

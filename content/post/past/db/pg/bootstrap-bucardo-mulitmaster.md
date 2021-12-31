@@ -99,4 +99,4 @@ Bucardo will fire up the necessary syncs and copy over any interim deltas. And
 any changes you make to either system in the future will be copied to the other.
 
   [Bucardo]: http://bucardo.org/
-  [`session_replication_role` GUC]: http://www.postgresql.org/docs/9.2/static/runtime-config-client.html#GUC-SESSION-REPLICATION-ROLE
+  [`session_replication_role` GUC]: https://www.postgresql.org/docs/9.2/static/runtime-config-client.html#GUC-SESSION-REPLICATION-ROLE

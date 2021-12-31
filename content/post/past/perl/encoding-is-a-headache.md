@@ -46,6 +46,6 @@ so and get things right (or close to right) than wrong.
 
   [Text::Markup]: http://github.com/theory/text-markup/
   [XML::LibXML::Parser]: http://search.cpan.org/perldoc?XML::LibXML::Parser
-  [Markdown]: http://daringfireball.net/projects/markdown/
+  [Markdown]: https://daringfireball.net/projects/markdown/
   [Text::Markdown]: http://search.cpan.org/perldoc?Text::Markdown
   [BOM]: https://en.wikipedia.org/wiki/Byte_order_mark

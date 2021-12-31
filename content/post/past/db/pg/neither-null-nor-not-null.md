@@ -177,6 +177,6 @@ leave for vacation early next week.
   [asked on the pgsql-hackers]: http://archives.postgresql.org/pgsql-hackers/2009-07/msg01518.php
   [mandated by the SQL standard]: http://archives.postgresql.org/pgsql-hackers/2009-07/msg01525.php
   [Jeff says]: http://archives.postgresql.org/pgsql-hackers/2009-07/msg01588.php
-  [cursors in PL/pgSQL]: http://www.postgresql.org/docs/8.4/static/plpgsql-cursors.html
+  [cursors in PL/pgSQL]: https://www.postgresql.org/docs/8.4/static/plpgsql-cursors.html
   [sent an example]: http://archives.postgresql.org/pgsql-hackers/2009-07/msg01736.php
-  [relevant documentation]: http://www.postgresql.org/docs/8.3/static/plpgsql-cursors.html#AEN44324
+  [relevant documentation]: https://www.postgresql.org/docs/8.3/static/plpgsql-cursors.html#AEN44324

@@ -101,5 +101,5 @@ you think.
     "PostgreSQL General Bits: “Base Type using Domains”"
   [July CommitFest]: http://wiki.postgresql.org/index.php?title=CommitFest:2008-07
     "PostgreSQL CommitFest:2008-07"
-  [tsearch2]: http://www.postgresql.org/docs/current/static/textsearch.html
+  [tsearch2]: https://www.postgresql.org/docs/current/static/textsearch.html
     "PostgreSQL Documentation: Chapter 12. Full Text Search"

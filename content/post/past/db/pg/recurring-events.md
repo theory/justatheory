@@ -395,6 +395,6 @@ function, well, that's a blog post for another day.
   [depesz]: http://www.depesz.com/ "</depesz> blog"
   [*wicked fast*]: http://www.depesz.com/index.php/2007/12/27/how-many-1sts-of-any-month-were-sundays-since-1901-01-01/
     "<depesz/>: how many 1sts of any month were sundays - since 1901-01-01?"
-  [`EXECUTE`]: http://www.postgresql.org/docs/8.3/static/plpgsql-control-structures.html#PLPGSQL-RECORDS-ITERATING
+  [`EXECUTE`]: https://www.postgresql.org/docs/8.3/static/plpgsql-control-structures.html#PLPGSQL-RECORDS-ITERATING
     "PL/pgSQL: Looping Through Query Results"
   [here]: /code/recurring_events.sql "Download the code for this blog entry"

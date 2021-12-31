@@ -48,8 +48,8 @@ necessary anymore, either. So I just turned that stuff off.
 
 Now I have something to refer back to, and so do you. Enjoy!
 
-  [CSV-formatted logging]: http://www.postgresql.org/docs/current/static/runtime-config-logging.html
+  [CSV-formatted logging]: https://www.postgresql.org/docs/current/static/runtime-config-logging.html
     "PostgreSQL Documentation: “Error Reporting and Logging”"
   [cool hack for determining sums of concurrent queries]: http://it.toolbox.com/blogs/database-soup/more-fun-with-windowing-functions-your-query-log-33467
-  [decent documentation]: http://www.postgresql.org/docs/current/static/runtime-config-logging.html#RUNTIME-CONFIG-LOGGING-CSVLOG
+  [decent documentation]: https://www.postgresql.org/docs/current/static/runtime-config-logging.html#RUNTIME-CONFIG-LOGGING-CSVLOG
     "PostgreSQL Documentation: “Using CSV-Format Log Output”"

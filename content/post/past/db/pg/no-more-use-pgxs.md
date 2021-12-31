@@ -81,7 +81,7 @@ it, but for those that will never be in core, I think it makes a lot of sense.
 
 Comments?
 
-  [contrib extensions]: http://www.postgresql.org/docs/8.4/static/contrib.html
+  [contrib extensions]: https://www.postgresql.org/docs/8.4/static/contrib.html
     "PostgreSQL Documentation: “Additional Supplied Modules”"
   [pgTAP]: https://pgtap.org
   [PL/Parrot]: http://github.com/leto/plparrot/

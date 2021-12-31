@@ -39,7 +39,7 @@ the clients is driving me a little crazy. Should I just give up and use the DBI
 wanted!
 
   [Sqitch]: https://sqitch.org/
-  [`psql`]: http://www.postgresql.org/docs/current/static/app-psql.html
+  [`psql`]: https://www.postgresql.org/docs/current/static/app-psql.html
   [`sqlite3`]: http://man.he.net/man1/sqlite3
   [`mysql`]: http://dev.mysql.com/doc/refman/5.5/en/mysql.html
   [The IPC]: http://stackoverflow.com/questions/10569805/what-is-the-preferred-cross-platform-ipc-perl-module

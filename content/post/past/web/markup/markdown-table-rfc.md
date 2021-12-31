@@ -376,9 +376,9 @@ Thanks!
   [MultiMarkdown tables]: http://fletcherpenney.net/multimarkdown/users_guide/multimarkdown_syntax_guide/#tables
     "MultiMarkdown Syntax Guide: Tables"
   [PHP Markdown Extra syntax]: http://michelf.com/projects/php-markdown/extra/#table
-  [psql 8.3]: http://www.postgresql.org/docs/8.3/static/app-psql.html
+  [psql 8.3]: https://www.postgresql.org/docs/8.3/static/app-psql.html
     "psql -- PostgreSQL interactive terminal"
-  [PostgreSQL 8.3]: http://www.postgresql.org/docs/8.3/ "PostgreSQL 8.3 documentation"
+  [PostgreSQL 8.3]: https://www.postgresql.org/docs/8.3/ "PostgreSQL 8.3 documentation"
   [mysql 5.0]: http://dev.mysql.com/doc/refman/5.0/en/mysql.html
     "mysql — The MySQL Command-Line Tool"
   [1]: http://dev.mysql.com/doc/refman/5.0/en/ "MySQL 5.0 Reference Manual"

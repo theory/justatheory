@@ -68,4 +68,4 @@ I'll follow up with a summary of what I've found in a later post.
   [GForge]: http://gforge.org/
   [Librelist]: http://librelist.com/
   [search.cpan.org]: http://search.cpan.org/
-  [PostgreSQL Weekly News]: http://www.postgresql.org/community/weeklynews/
+  [PostgreSQL Weekly News]: https://www.postgresql.org/community/weeklynews/

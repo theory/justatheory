@@ -212,11 +212,11 @@ If you're curious enough, the code, in progress, is [here].
     "A Modest Proposal for Markdown Definition Lists"
   [ideas]: /computers/markup/markdown-table-rfc.html
     "RFC: A Simple Markdown Table Format"
-  [Markdown]: http://daringfireball.net/projects/markdown/
+  [Markdown]: https://daringfireball.net/projects/markdown/
   [Higher-Order Perl]: http://hop.perl.plover.com/
   [HOP::Parser]: http://search.cpan.org/perldoc?HOP::Parser
     "HOP::Parser on CPAN"
-  [Markdown syntax]: http://daringfireball.net/projects/markdown/syntax/
+  [Markdown syntax]: https://daringfireball.net/projects/markdown/syntax
   [my fork of HOP::Parser on GitHub]: http://github.com/theory/hop/tree/master
   [Chapter 8]: http://hop.perl.plover.com/book/mod/chap08.mod
     "HOP Chapter 8: Parsing"

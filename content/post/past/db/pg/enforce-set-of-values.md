@@ -364,10 +364,10 @@ In short, I recommend:
 
 What do you use to constrain a column to a defined set of unordered values?
 
-  [enums]: http://www.postgresql.org/docs/current/static/datatype-enum.html
+  [enums]: https://www.postgresql.org/docs/current/static/datatype-enum.html
     "PostgreSQL Documentation: Enumerated Types"
-  [`ALTER TYPE`]: http://www.postgresql.org/docs/current/static/sql-altertype.html
+  [`ALTER TYPE`]: https://www.postgresql.org/docs/current/static/sql-altertype.html
     "PostgreSQL Documentation: ALTER TYPE"
-  [domain]: http://www.postgresql.org/docs/current/static/sql-createdomain.html
+  [domain]: https://www.postgresql.org/docs/current/static/sql-createdomain.html
     "PostgreSQL Documentation: CREATE DOMAIN"
   [my colleagues]: http://www.pgexperts.com/people.html "Meet the Experts"

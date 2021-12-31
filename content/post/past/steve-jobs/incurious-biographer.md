@@ -34,4 +34,4 @@ As Siracusa says, Steve Jobs picked the wrong guy.
 
   [my thoughts]: /culture/steve-jobs.html
   [John Siracusa’s take]: http://5by5.tv/hypercritical/42
-  [Getting Steve Jobs Wrong]: http://daringfireball.net/2011/11/getting_steve_jobs_wrong
+  [Getting Steve Jobs Wrong]: https://daringfireball.net/2011/11/getting_steve_jobs_wrong

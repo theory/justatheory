@@ -59,6 +59,6 @@ utility that's a new contrib utility in PostgreSQL CVS (and will therefore ship
 with 8.3), as it has the nice feature of cleaning up old WAL log files. It also
 does not have subsecond precision, but hey, maybe we don't really need it.
 
-  [Warm Standby]: http://www.postgresql.org/docs/8.2/static/warm-standby.html
+  [Warm Standby]: https://www.postgresql.org/docs/8.2/static/warm-standby.html
   [headache]: /computers/databases/postgresql/rails_and_slony.html
   [Charles Duffy's]: http://archives.postgresql.org/sydpug/2006-10/msg00001.php

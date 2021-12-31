@@ -110,7 +110,7 @@ transaction isolation level within a call to `txn()` and friends.
   [always use]: http://oreilly.com/pub/a/databases/2006/09/07/plpgsql-batch-updates.html?page=5
     "Batch Updates with PL/pgSQL (p.5)"
   [SSI implementation]: http://wiki.postgresql.org/wiki/Serializable
-  [the fine manual]: http://www.postgresql.org/docs/current/static/transaction-iso.html#XACT-SERIALIZABLE
+  [the fine manual]: https://www.postgresql.org/docs/current/static/transaction-iso.html#XACT-SERIALIZABLE
   [DBIx::Connector]: https://metacpan.org/module/DBIx::Connector
   [connection mode]: https://metacpan.org/module/DBIx::Connector#Connection-Modes
   [in-progress changes]: /computers/programming/perl/modules/dbix-connector-catch.html

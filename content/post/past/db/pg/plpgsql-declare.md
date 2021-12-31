@@ -42,7 +42,7 @@ Anyway, I just wanted to share this tidbit, in case there were other PostgreSQL
 pros who missed it. I don't know when the feature was added, but it works fine
 for me in 8.1.
 
-  [PL/pgSQL]: http://www.postgresql.org/docs/current/interactive/plpgsql.html
+  [PL/pgSQL]: https://www.postgresql.org/docs/current/interactive/plpgsql.html
     "Read the PL/pgSQL Docs"
   [O'Reilly Databases site]: http://www.oreillynet.com/databases/
     "O'Reilly Databases"

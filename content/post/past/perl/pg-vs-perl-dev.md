@@ -322,25 +322,25 @@ my own.
     "ConstType: “Time-based releases in open source”"
   [chromatic]: http://www.modernperlbooks.com/mt/2009/06/what-does-stable-mean.html
     "Modern Perl Books: “What does \"Stable\" Mean?"
-  [PostgreSQL RDBMS]: http://www.postgresql.org/
+  [PostgreSQL RDBMS]: https://www.postgresql.org/
   [how the PostgreSQL project works]: http://wiki.postgresql.org/wiki/Image:How_the_PostgreSQL_Project_Works.pdf
   [benevolent dictator]: http://www.wired.com/wired/archive/11.11/linus.html
     "Wired:“Leader of the Free World”"
   [Pumpking]: http://www.perlfoundation.org/perl5/index.cgi?pumpking
     "Perl 5 Wiki: “Pumpking”"
-  [7-member core team]: http://www.postgresql.org/community/contributors/
+  [7-member core team]: https://www.postgresql.org/community/contributors/
     "PostgreSQL Contributor Profiles"
   [pgsql-hackers]: http://archives.postgresql.org/pgsql-hackers/
     "pgsql-hackers Archives"
   [perl5-porters]: http://www.nntp.perl.org/group/perl.perl5.porters/
     "perl5-porters Archives"
-  [8.4 two weeks ago]: http://www.postgresql.org/about/news.1108
+  [8.4 two weeks ago]: https://www.postgresql.org/about/news.1108
     "PostgreSQL 8.4 Released: Now Easier to Use than Ever"
   [discusses]: http://archives.postgresql.org/pgsql-hackers/2009-06/msg01484.php
     "pgsql-hackers: “8.5 development schedule”"
   [agrees to]: http://archives.postgresql.org/pgsql-hackers/2009-06/msg01542.php
   [occasional worry]: http://archives.postgresql.org/pgsql-hackers/2009-07/msg00020.php
-  [significant new features]: http://www.postgresql.org/about/press/features84.html
+  [significant new features]: https://www.postgresql.org/about/press/features84.html
     "PostgreSQL 8.4 Feature List"
   [build farm]: http://buildfarm.postgresql.org/cgi-bin/show_status.pl
     "PostgreSQL BuildFarm Status"
@@ -353,7 +353,7 @@ my own.
   [fixed a bug]: http://archives.postgresql.org/pgsql-committers/2009-03/msg00008.php
   [security vulnerability]: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-0922
     "CVE-2009-0922"
-  [delivered new releases]: http://www.postgresql.org/about/news.1065
+  [delivered new releases]: https://www.postgresql.org/about/news.1065
     "PostgreSQL 2009-03-16 Security Update"
   [Bricolage]: http://www.bricolagecms.org/
     "Bricolage content management and publishing system"

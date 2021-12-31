@@ -80,7 +80,7 @@ represent an object ACLs?
   [RT]: http://www.bestpractical.com/rt/ "RT Request Tracker"
   [List::MoreUtil]: http://search.cpan.org/dist/List-MoreUtils/
     "List::MoreUtils on CPAN"
-  [aggregate function]: http://www.postgresql.org/docs/current/interactive/functions-aggregate.html
+  [aggregate function]: https://www.postgresql.org/docs/current/interactive/functions-aggregate.html
     "PostgreSQL Aggregate Functions"
   [create my own]: /computers/databases/sqlite/custom_perl_aggregates.html
     "SQLite Custom Aggregates in Perl"

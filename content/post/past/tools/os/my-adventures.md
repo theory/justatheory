@@ -455,7 +455,7 @@ elegant UI, and all the Unix power tools I can stand! I hope you do, too.
   [mod\_perl mail list]: http://lists.perl.org/showlist.cgi?name=modperl-user
   [mod\_perl]: http://perl.apache.org/
   [INSTALL]: http://www.modssl.org/source/exp/mod_ssl/pkg.mod_ssl/INSTALL
-  [PostgreSQL]: http://www.postgresql.org/
+  [PostgreSQL]: https://www.postgresql.org/
   [Apple]: http://www.apple.com/
   [instructions]: http://developer.apple.com/internet/macosx/osdb.html
   [MySQL]: http://www.mysql.org/

@@ -20,7 +20,7 @@ hosted on [AWS]. Its set in [Source Sans Pro], with fixed-width type set in
 
 This site eschews JavaScript, and uses no tracking or analytics services.
 
-[Markdown]: http://daringfireball.net/projects/markdown/
+[Markdown]: https://daringfireball.net/projects/markdown/
 [Hugo]: https://gohugo.io
 [AWS]: https://aws.amazon.com/
 [Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro

@@ -218,7 +218,7 @@ More soon.
     "Catalyst::View::TD on CPAN"
   [chapter 3]: http://search.cpan.org/perldoc?Catalyst::Manual::Tutorial::03_MoreCatalystBasics
     "Catalyst Tutorial - Chapter 3: More Catalyst Application Development Basics"
-  [PostgreSQL]: http://www.postgresql.org/
+  [PostgreSQL]: https://www.postgresql.org/
     "PostgreSQL: The world's most advanced open source database"
   [DBIx::Connector]: http://search.cpan.org/perldoc?DBIx::Connector
     "DBIx::Connector on CPAN"
@@ -228,7 +228,7 @@ More soon.
     "Wikipedia: “Natural Key”"
   [surrogate key]: https://en.wikipedia.org/wiki/Surrogate_key
     "Wikipedia: “Surrogate Key”"
-  [isn]: http://www.postgresql.org/docs/current/static/isn.html
+  [isn]: https://www.postgresql.org/docs/current/static/isn.html
     "PostgreSQL Documentation: “isn”"
   [some attempts]: http://dlist.sir.arizona.edu/1716/
     "The Universal Author Identifier System (UAI_Sys)"

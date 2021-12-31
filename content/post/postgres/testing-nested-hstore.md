@@ -142,12 +142,12 @@ Meanwhile, I expect to play with some other data sets over the next week;
 watch this spot for more!
 
 [nested hstore]: http://www.sai.msu.su/~megera/postgres/talks/hstore-pgcon-2013.pdf
-[PostgreSQL]: http://www.postgresql.org/
+[PostgreSQL]: https://www.postgresql.org/
 [JSON]: http://json.org/
-[JSON type]: http://www.postgresql.org/docs/current/static/datatype-json.html
-[GiST]: http://www.postgresql.org/docs/current/static/gist.html
-[GIN]: http://www.postgresql.org/docs/current/static/gin.html
+[JSON type]: https://www.postgresql.org/docs/current/static/datatype-json.html
+[GiST]: https://www.postgresql.org/docs/current/static/gist.html
+[GIN]: https://www.postgresql.org/docs/current/static/gin.html
 [CitusDB]: http://citusdata.com/
 [json_fdw]: https://github.com/citusdata/json_fdw
 [blog post]: https://www.citusdata.com/blog/2013/05/30/run-sql-on-json-files-without-any-data-loads/
-[TOAST storage]: http://www.postgresql.org/docs/current/static/storage-toast.html
+[TOAST storage]: https://www.postgresql.org/docs/current/static/storage-toast.html

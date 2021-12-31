@@ -88,7 +88,7 @@ Development.” See you there?
   [Ronan Dunklau]: https://github.com/rdunklau/
   [supporting multiple VCSes]: https://github.com/theory/sqitch/issues/25
   [SQLite]: http://sqlite.org/
-  [PostgreSQL]: http://postgresql.org/
+  [PostgreSQL]: https://postgresql.org/
   [a couple hundred lines long]: https://github.com/theory/sqitch/blob/master/lib/App/Sqitch/Engine/sqlite.pm
   [`ATTACH DATABASE`]: http://www.sqlite.org/lang_attach.html
   [from CPAN]: https://metacpan.org/release/App-Sqitch

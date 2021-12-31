@@ -168,7 +168,7 @@ So I would like to modestly propose to the Markdown community that the PHP
 Markdown Extra definition list syntax be adopted as a standard with this one
 change. What do you think?
 
-  [Markdown]: http://daringfireball.net/projects/markdown/
+  [Markdown]: https://daringfireball.net/projects/markdown/
     "Daring Fireball: Markdown"
   [PHP Markdown Extra]: http://michelf.com/projects/php-markdown/extra/#def-list
     "PHP Markdown Extra: Definition Lists"

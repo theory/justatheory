@@ -36,6 +36,6 @@ tutorial]!
   [ActiveState PPM Index]: http://code.activestate.com/ppm/
   [Sqitch PPM Build Status]: http://code.activestate.com/ppm/App-Sqitch/
   [ActivePerl]: http://www.activestate.com/activeperl/downloads#
-  [install PostgreSQL]: http://www.postgresql.org/download/windows/
+  [install PostgreSQL]: https://www.postgresql.org/download/windows/
   [Business edition]: http://www.activestate.com/compare-editions
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod

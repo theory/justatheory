@@ -736,8 +736,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   [I'm going to need the tutorial myself]: https://www.pgcon.org/2012/schedule/events/479.en.html
   [migration]: http://search.cpan.org/perldoc?Module::Build::DB
   [style]: http://search.cpan.org/perldoc?DBIx::Migration
-  [PostgreSQL]: http://postgresql.org/
-  [`psql`]: http://www.postgresql.org/docs/current/static/app-psql.html
+  [PostgreSQL]: https://postgresql.org/
+  [`psql`]: https://www.postgresql.org/docs/current/static/app-psql.html
   [MySQL]: http://mysql.com/
   [`mysql`]: http://dev.mysql.com/doc/refman/5.6/en/mysql.html
   [idempotent]: https://en.wikipedia.org/wiki/Idempotence

@@ -126,4 +126,4 @@ great feedback to my proposals in the past. So I welcome your feedback now.
 
   [Sqitch]: https://sqitch.org/
   [`$work`]: http://iovation.com/
-  [extensions]: http://www.postgresql.org/docs/9.1/static/extend-extensions.html
+  [extensions]: https://www.postgresql.org/docs/9.1/static/extend-extensions.html

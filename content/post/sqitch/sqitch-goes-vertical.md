@@ -108,7 +108,7 @@ to get that done by early October.
   [MySQL::Config]: https://metacpan.org/module/MySQL::Config
   [DBI]: https://metacpan.org/module/DBI
   [Vertica]: https://vertica.com/
-  [PostgreSQL]: http://www.postgresql.org/
+  [PostgreSQL]: https://www.postgresql.org/
   [work]: http://www.iovation.com/
   [rationalizing configuration hierarchies]:
     https://github.com/theory/sqitch/issues/153

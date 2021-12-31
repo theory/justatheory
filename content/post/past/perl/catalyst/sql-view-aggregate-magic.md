@@ -231,7 +231,7 @@ the right level of abstraction.
   [MVC]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
     "Wikipedia: “Model-view-controller”"
   [second post]: /computers/programming/perl/catalyst/tutorial-continued.html
-  [aggregate function]: http://www.postgresql.org/docs/current/static/functions-aggregate.html
+  [aggregate function]: https://www.postgresql.org/docs/current/static/functions-aggregate.html
     "PostgreSQL Documentation: “Aggregate Functions”"
   [MySQL aggregates]: http://dev.mysql.com/doc/refman/5.0/en/group-by-functions.html
     "MySQL Documentation: “GROUP BY (Aggregate) Functions“"

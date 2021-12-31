@@ -31,4 +31,4 @@ tuits I have to first make some infrastructural changes.
 
   [Blosxom]: http://blosxom.sourceforge.net/
   [friend who wrote it]: https://en.wikipedia.org/wiki/Rael_Dornfest
-  [Daring Fireball melts your connection]: http://daringfireball.net/linked/2012/03/29/conde-nast
+  [Daring Fireball melts your connection]: https://daringfireball.net/linked/2012/03/29/conde-nast

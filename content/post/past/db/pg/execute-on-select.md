@@ -81,7 +81,7 @@ clean as can be, albeit a little too magical for my tastes.
 
 Anyway, recorded here for posterity (my blog is my other brain!).
 
-  [PL/Perl]: http://www.postgresql.org/docs/current/static/plperl.html
+  [PL/Perl]: https://www.postgresql.org/docs/current/static/plperl.html
   [creating utility functions]: http://www.depesz.com/index.php/2008/08/01/writing-sprintf-and-overcoming-limitations-in-plperl/
   [DBI]: http://dbi.perl.org/
   [callbacks]: http://search.cpan.org/dist/DBI/DBI.pm#Callbacks_(hash_ref)

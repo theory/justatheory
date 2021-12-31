@@ -101,7 +101,7 @@ elsewhere in the post, but you still want it to appear in metadata for previews
 on social media.
 
 [Just a Theory]: https://justatheory.com/
-[Markdown]: http://daringfireball.net/projects/markdown/
+[Markdown]: https://daringfireball.net/projects/markdown/
 [Hugo]: https://gohugo.io
 [AWS]: https://aws.amazon.com/
 [Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro

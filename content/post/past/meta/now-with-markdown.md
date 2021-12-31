@@ -52,7 +52,7 @@ and they’ll look beautiful.
 
 At any rate, you now have one less reason not to leave a comment!
 
-  [Markdown]: http://daringfireball.net/projects/markdown/
+  [Markdown]: https://daringfireball.net/projects/markdown/
     "Daring Fireball: Markdown"
   [Trac]: http://trac.edgewall.org/ "The Trac Project"
   [Twiki]: http://www.twiki.org/

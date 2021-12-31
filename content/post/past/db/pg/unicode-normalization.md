@@ -164,5 +164,5 @@ So yes, this really can be an issue in your applications.
     "Unicode::Normalize on CPAN"
   [probably best]: http://unicode.org/faq/normalization.html#2
     "Unicode Normalization FAQ: “Which forms of normalization should I support?”"
-  [full text search]: http://www.postgresql.org/docs/current/static/textsearch.html
+  [full text search]: https://www.postgresql.org/docs/current/static/textsearch.html
     "PostgreSQL Documentation: Full Text Search"

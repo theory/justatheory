@@ -157,7 +157,7 @@ $$ language plpgsql STABLE;
 
   [convert timestamp columns from UTC to a valid zone]: /computers/databases/postgresql/reducing_view_calculations.html
     "Need Help Reducing View Calculations"
-  [error codes]: http://www.postgresql.org/docs/current/static/errcodes-appendix.html
+  [error codes]: https://www.postgresql.org/docs/current/static/errcodes-appendix.html
     "PostgreSQL Documentation: Appendix A. PostgreSQL Error Codes"
-  [create a domain]: http://www.postgresql.org/docs/current/static/sql-createdomain.html
+  [create a domain]: https://www.postgresql.org/docs/current/static/sql-createdomain.html
     "PostgreSQL Documentation: CREATE DOMAIN"

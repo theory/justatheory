@@ -301,7 +301,7 @@ will all be solved in this one place.
   [Apache::DBI]: https://metacpan.org/module/Apache::DBI
   [`connect_cached()`]: https://metacpan.org/module/DBI#connect_cached
   [work around this issue via callbacks]:
-    http://justatheory.com/computers/programming/perl/dbi-connect-cached-hack.html
+    {{% ref "/post/past/perl/dbi-connect-cached-hack" %}}
   [doing your own exception-handling is surprisingly non-trivial]:
     http://perladvent.org/2011/2011-12-17.html
   [DBIx::Connector]: https://metacpan.org/module/DBIx::Connector

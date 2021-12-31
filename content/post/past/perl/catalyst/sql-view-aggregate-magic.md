@@ -235,5 +235,5 @@ the right level of abstraction.
     "PostgreSQL Documentation: “Aggregate Functions”"
   [MySQL aggregates]: http://dev.mysql.com/doc/refman/5.0/en/group-by-functions.html
     "MySQL Documentation: “GROUP BY (Aggregate) Functions“"
-  [personally written]: http://www.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html
+  [personally written]: {{% ref "/post/past/db/sqlite/custom-perl-aggregates" %}}
     "Just a Theory: “Custom Aggregates in Perl”"

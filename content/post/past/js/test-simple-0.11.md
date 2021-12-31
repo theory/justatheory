@@ -39,9 +39,9 @@ for it on CPAN soonish.
   [JSAN]: http://www.openjsan.org/ "JSAN"
   [1]: http://www.openjsan.org/doc/theory/Test/Simple/0.11/index.html
     "Download Test.Simple 0.11 from JSAN!"
-  [here]: http://www.justatheory.com/code/Test.Simple-0.11/tests/index.html
+  [here]: {{% link "/code/Test.Simple-0.11/tests/index.html" %}}
     "Run the Test.Simple 0.11 Test Suite now!"
-  [verbosely]: http://www.justatheory.com/code/Test.Simple-0.11/tests/index.html?verbose=1
+  [verbosely]: {{% link "/code/Test.Simple-0.11/tests/index.html?verbose=1" %}}
     "Run the Test.Simple 0.11 Tests verbosely!"
   [2]: http://www.openjsan.org/doc/CWEST/JSAN/0.02/index.html
     "Start use'ing JSAN modules!"

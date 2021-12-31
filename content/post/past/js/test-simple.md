@@ -61,9 +61,9 @@ Let me know what you think!
 
   [Test::Simple/Test::More/Test::Builder]: https://metacpan.org/dist/Test-Simple/
     "Read the Test::Simple/Test::Builder/Test::More documentation on CPAN"
-  [Download it now]: http://www.justatheory.com/downloads/TestBuilder-0.01.tar.gz
+  [Download it now]: {{% link "/downloads/TestBuilder-0.01.tar.gz" %}}
     "Download TestSimple 0.01 Now"
   [Module::Build]: https://metacpan.org/dist/Module-Build/
     "Read the Module::Build documentation on CPAN"
-  [recounted last week]: http://www.justatheory.com/computers/programming/javascript/no_jsdoc_please.html
+  [recounted last week]: {{% ref "/post/past/js/no-jsdoc-please" %}}
     "JSDoc Doesn't Quite do the Trick for Me"

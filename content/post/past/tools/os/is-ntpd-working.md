@@ -18,5 +18,5 @@ file just has “0.000” in it, and `ntpq` doesn't seem to know much:
 So, how do I know if it's working? Is it working? Shouldn't `ntpq -p` be more
 informative?
 
-  [how to configure NTPD]: http://www.justatheory.com/computers/os/freebsd/ntpd_configuration.html
+  [how to configure NTPD]: {{% ref "/post/past/tools/os/ntpd-configuration" %}}
     "NTPD Configuration on FreeBSD and Red Hat Linux"

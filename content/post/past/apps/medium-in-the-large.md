@@ -157,7 +157,7 @@ And if Medium does not plan to do this, well then *someone* should.
 
   [epic fantasy]: https://en.wikipedia.org/wiki/A_Song_of_Ice_and_Fire
   [the Clinton-Obama reconciliation]: http://www.newyorker.com/reporting/2012/09/10/120910fa_fact_lizza
-  [The *The New Yorker* app sucks]: http://www.justatheory.com/computers/apps/conde-nast-ipad.html
+  [The *The New Yorker* app sucks]: {{% ref "/post/past/apps/conde-nast-ipad" %}}
   [Medium]: https://medium.com/
   [Obvious Corporation]: http://obvious.com/
   [Blogger]: http://blogger.com/

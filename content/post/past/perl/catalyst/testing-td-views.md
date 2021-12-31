@@ -358,7 +358,7 @@ meantime, our test of this view is done.
 
 Next up, I think I'll hit controller tests. So come on back!
 
-  [tests passing]: http://www.justatheory.com/computers/programming/perl/catalyst/testing.html
+  [tests passing]: {{% ref "/post/past/perl/catalyst/testing" %}}
     "Testing the Tutorial App"
   [Part 6 tag]: http://github.com/theory/catalyst-tutorial/commits/part-06
   [Catalyst::View::TD]: https://metacpan.org/dist/Catalyst-View-TD

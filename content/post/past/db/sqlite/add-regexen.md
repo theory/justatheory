@@ -122,7 +122,7 @@ Pretty slick, no? I wonder if it'd make sense for DBD::SQLite to add the
 `regexp()` function itself, in C, using the Perl API, so that it's just *always*
 available to DBD::SQLite apps?
 
-  [discussed]: http://www.justatheory.com/computers/databases/sqlite/custom_perl_aggregates.html
+  [discussed]: {{% ref "/post/past/db/sqlite/custom-perl-aggregates" %}}
     "Custom Aggregates in Perl"
   [DBD::SQLite]: https://metacpan.org/dist/DBD-SQLite/ "DBD::SQLite on CPAN"
   [SQLite]: http://www.sqlite.org/ "Learn all about SQLite"

@@ -216,9 +216,9 @@ And here are the benchmarks for them (without `immutable`):
 
 Enjoy!
 
-  [benchmarking function]: http://www.justatheory.com/computers/databases/postgresql/benchmarking_functions.html
+  [benchmarking function]: {{% ref "/post/past/db/pg/benchmarking-functions" %}}
     "Benchmarking PostgreSQL Functions"
-  [previous]: http://www.justatheory.com/computers/databases/postgresql/plpgsql_upc_validation.html
+  [previous]: {{% ref "/post/past/db/pg/plpgsql-upc-validation" %}}
     "Validating UPCs with PL/pgSQL"
-  [attempts]: http://www.justatheory.com/computers/databases/postgresql/benchmarking_upc_validation.html
+  [attempts]: {{% ref "/post/past/db/pg/benchmarking-upc-validation" %}}
     "Benchmarking UPC Validation"

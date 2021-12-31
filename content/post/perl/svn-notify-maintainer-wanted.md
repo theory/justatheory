@@ -20,7 +20,7 @@ SVN::Notify running for your projects, and have a few [TUITs] to fix the
 occasional bug or security issue? If so, drop me a line (david @ this domain).
 I’d be happy to transfer the repository.
 
-  [since 2009]: http://justatheory.com/computers/vcs/git/bricolage-svn-to-git.html
+  [since 2009]: {{% ref "/post/past/bricolage/vcs/bricolage-svn-to-git/index" %}}
     "Just a Theory: “Migrating Bricolage Subversion to Git”"
   [SVN::Notify]: https://metacpan.org/release/SVN-Notify "SVN-Notify on MetaCPAN"
   [hosted on GitHub]: https://github.com/theory/svn-notify/

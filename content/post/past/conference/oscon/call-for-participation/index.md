@@ -31,6 +31,6 @@ them below!
   [this presentation]: https://blog.flickr.com/flickrblog/2005/10/lamp.html
     "Hardware Layouts for LAMP Installations"
   [Slony-I]: http://slony.info/ "Slony-I—A replication system for PostgreSQL"
-  [well-tested]: http://www.justatheory.com/computers/programming/javascript/test_simple-0.20.html
+  [well-tested]: {{% ref "/post/past/js/test-simple-0.20.md" %}}
     "Test.Simple 0.20 Released"
   [JSAN]: http://www.openjsan.org/ "JSAN"

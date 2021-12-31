@@ -67,6 +67,6 @@ More Feedback/advice/insults welcome!
 
   [Test::Builder, Test::Simple, and Test::More]: https://metacpan.org/dist/Test-Simple/
     "Test::Simple and friends on CPAN"
-  [here]: http://www.justatheory.com/downloads/TestSimple-0.03.tar.gz
+  [here]: {{% link "/downloads/TestSimple-0.03.tar.gz" %}}
     "Download TestSimple 0.03 now!"
   [Marshall Roch]: http://www.spastically.com/ "Spastically"

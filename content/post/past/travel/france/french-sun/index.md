@@ -27,7 +27,7 @@ warm, Mediterranean weather.
 
 We can’t wait.
 
-  [in Northern France]: http://www.justatheory.com/travel/france/2012/a-rouen.html
+  [in Northern France]: {{% ref "/post/past/travel/france/a-rouen/index" %}}
   [Juneuary]: http://www.urbandictionary.com/define.php?term=Juneuary
   [in Barcelona]: https://www.flickr.com/photos/theory/sets/72157630781097042/
   [Arles]: https://en.wikipedia.org/wiki/Arles

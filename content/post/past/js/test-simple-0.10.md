@@ -78,9 +78,9 @@ feedback, bug reports, kudos, complaints, etc.warmly welcomed!
     "Test::Simple on CPAN"
   [Test::Harness]: https://metacpan.org/dist/Test-Harness/
     "Test::Harness on CPAN"
-  [here]: http://www.justatheory.com/downloads/Test.Simple-0.10.tar.gz
+  [here]: {{% link "/downloads/Test.Simple-0.10.tar.gz" %}}
     "Download Test.Simple 0.10 Now!"
-  [1]: http://www.justatheory.com/code/Test.Simple-0.10/tests/index.html
+  [1]: {{% link "/code/Test.Simple-0.10/tests/index.html" %}}
     "Run the Test.Simple 0.10 Test Suite now!"
-  [verbosely]: http://www.justatheory.com/code/Test.Simple-0.10/tests/index.html?verbose=1
+  [verbosely]: {{% link "/code/Test.Simple-0.10/tests/index.html?verbose=1" %}}
     "Run the Test.Simple 0.10 Tests verbosely!"

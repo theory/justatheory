@@ -130,7 +130,7 @@ is in the [tests]. (Hrm. I think I might have had a hand in writing them.) Check
     "Module::Build::DB on GitHub"
   [IRC logging bot]: https://github.com/theory/circle/ "Circle on GitHub"
   [PGX]: https://pgexperts.com/ "PostgreSQL Experts, Inc."
-  [Quinn Weaver]: https://www.linkedin.com/in/quinnweaver/
+  [Quinn Weaver]: https://linkedin.com/in/quinnweaver/
   [connect\_cached]: https://metacpan.org/pod/DBI#connect_cached
     "DBI: connect_cached"
   [Tim Bunce]: https://blog.timbunce.org "Not this…"

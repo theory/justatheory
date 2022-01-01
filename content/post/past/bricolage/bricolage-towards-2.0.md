@@ -114,7 +114,7 @@ And with that, I'm going heads-down on some other projects. I'll pop back up to
 make sure that Bricolage 2.0 is released in a few months, but otherwise, I'm on
 to other things again for a while. Watch this space for details!
 
-  [Scott Lanning]: https://www.linkedin.com/in/lannings/ "Scott Lanning on LinkedIn"
+  [Scott Lanning]: https://linkedin.com/in/lannings/ "Scott Lanning on LinkedIn"
   [released 1.10.5]: http://perlmonks.org/?node_id=683442
     "Bricolage 1.10.5 released, 1.11 imminent"
   [Christian Muise]: http://www.haz.ca/

@@ -111,15 +111,13 @@ IgnoreURLs:
   - http://viewsvn.bricolage.cc/\?view=revision&revision=7423
 
   # URLs that work but don't like the crawler.
-  - https://www.linkedin.com/in/decibel/
-  - https://www.linkedin.com/in/lannings/
+  - https://linkedin.com/in/decibel/
+  - https://linkedin.com/in/lannings/
   - https://linkedin.com/in/kurksp/
   - https://linkedin.com/in/craig-brewster-02b6b95/
-  - https://www.linkedin.com/in/quinnweaver/
-  - https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567\?rgn=div1;view=fulltext
+  - https://linkedin.com/in/quinnweaver/
 
-  # URLs to always ignore.
-  - 'mailto:sqitch-users+subscribe@googlegroups.com' # Due to https://github.com/wjdp/htmltest/issues/182
+  # The search described in content/post/past/meta/kinosearch.md was dropped.
   - https://justatheory.com/search.cgi
   - https://justatheory.com/search.cgi\?q=iraq
   - https://justatheory.com/search.cgi\?q=svn

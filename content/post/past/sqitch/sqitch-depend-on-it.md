@@ -95,7 +95,7 @@ Or just give it a try! You can install it from CPAN with `cpan App::Sqitch`.
 Read [the tutorial] for an overview of what Sqitch is and how it works. Thanks!
 
   [Sqitch v0.90]: https://metacpan.org/release/App-Sqitch
-  [Jim Nasby]: https://www.linkedin.com/in/decibel/ "Jim Nasby on LinkedIn"
+  [Jim Nasby]: https://linkedin.com/in/decibel/ "Jim Nasby on LinkedIn"
   [work]: https://iovation.com/
   [comparing project URIs]: https://github.com/theory/sqitch/issues/38
   [SQLite]: https://sqlite.org/

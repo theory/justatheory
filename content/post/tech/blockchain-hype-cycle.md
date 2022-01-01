@@ -37,7 +37,7 @@ from blockchains for a couple of years, once the practicalities have been worked
 out and the nonsense has subsided. We should learn and contribute to those
 practicalities, but as for the [hype cycle], for now I just hold my nose.
 
-  [the author is a venture capitalist]: https://www.linkedin.com/in/williammougayar
+  [the author is a venture capitalist]: https://linkedin.com/in/williammougayar
     "William Mougayar on LinkedIn"
   [blockchain startup]: https://www.crunchbase.com/organization/openbazaar
      "crunchbase: “OpenBazaar”" 

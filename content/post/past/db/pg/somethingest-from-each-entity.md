@@ -204,9 +204,8 @@ WITH t AS (
 
 Easy! How have you handled a situation like this in your database hacking?
 
-  [colleagues]: http://www.pgexperts.com/people.html "PostgreSQL Experts"
-  [Andrew]: http://people.planetpostgresql.org/andrew/
-    "Andrew's PostgreSQL blog"
+  [colleagues]: https://www.pgexperts.com/people.html "PostgreSQL Experts"
+  [Andrew]: https://adpgtech.blogspot.com "Andrew's PostgreSQL blog"
   [window functions]: https://www.postgresql.org/docs/current/static/tutorial-window.html
     "PostgreSQL Documentation: Window Functions"
   [common table expression]: https://www.postgresql.org/docs/current/static/queries-with.html

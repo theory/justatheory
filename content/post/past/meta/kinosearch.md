@@ -23,9 +23,9 @@ Sweet!
 So give it a try. Search for [“iraq”] or [“svn”] to see how it works. And check
 out those [KinoSearch benchmarks], too. This thing is fast!
 
-  [KinoSearch]: http://www.rectangular.com/kinosearch/
+  [KinoSearch]: https://metacpan.org/pod/KinoSearch/
     "KinoSearch: A Perl search engine library"
-  [tutorial]: https://metacpan.org/dist/KinoSearch/lib/KinoSearch/Docs/Tutorial.pod
+  [tutorial]: https://metacpan.org/pod/KinoSearch::Docs::Tutorial
     "KinoSearch::Docs::Tutorial - sample indexing and search applications"
   [the search page]: {{% link "/search.cgi" %}} "Search Just a Theory"
   [“iraq”]:  {{% link "/search.cgii?q=iraq" %}} "Search for “iraq”"

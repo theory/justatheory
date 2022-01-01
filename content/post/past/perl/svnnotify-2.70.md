@@ -134,7 +134,7 @@ know], but implement your own improvements using filters!
     "Example output from SVN::Notify::HTML::ColorDiff 2.70"
   [changes]: https://github.com/theory/svn-notify/blob/v2.70/Changes
     "SVN::Notify Changes"
-  [documentation of the encoding support]: https://metacpan.org/dist/SVN-Notify/lib/SVN/Notify.pm#Character_Encoding_Support
+  [documentation of the encoding support]: https://metacpan.org/pod/SVN::Notify#Character-Encoding-Support
     "Character Encoding Support in SVN::Notify"
   [let me know]: https://rt.cpan.org/Ticket/Create.html?Queue=SVN-Notify
     "Open a Ticket for SVN::Notify"
@@ -144,12 +144,12 @@ know], but implement your own improvements using filters!
     "KDE TechBase: Special keywords in SVN log messages"
   [Trac wiki syntax]: http://trac.edgewall.org/wiki/WikiFormatting
     "Trac Wiki Formatting Syntax"
-  [recent project]: http://iwantsandy.com/
+  [recent project]: https://boingboing.net/2007/11/14/i-want-sandy-perfect.html
     "Sandy: Your virtual personal assistant"
   [Textile]: http://www.textism.com/tools/textile/ "Textile"
-  [complete documentation]: https://metacpan.org/dist/SVN-Notify/lib/SVN/Notify/Filter.pm
+  [complete documentation]: https://metacpan.org/pod/SVN::Notify::Filter
     "SVN::Notify Output Filtering Documentation"
-  [Trac filter]: https://metacpan.org/dist/SVN-Notify/lib/SVN/Notify/Filter/Trac.pm
+  [Trac filter]: https://metacpan.org/pod/SVN::Notify::Filter::Trac
     "SVN::Notify::Filter::Trac Documentation"
   [right here]: {{% link "/code/svnnotify/svnnotify-2.70_trac_example.html" %}}
     "Example output from SVN::Notify 2.70 and modified by the Trac filter"

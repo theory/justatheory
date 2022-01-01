@@ -27,19 +27,44 @@ IgnoreURLs:
   - https://comments.gmane.org/gmane.comp.db.postgresql.performance/29681
   - https://www.linode.com # https://twitter.com/theory/status/1476679345079001097
   - http://pgxn.justatheory.com
-  - https://past.justatheory.com/computers/databases/sqitch-plan.html#comment-537891454
   - https://bookshop.org/books/project-hail-mary/9780593135204 # https://twitter.com/theory/status/1476690324651184128
   - https://bookshop.org/books/the-martian/9780553418026 # https://twitter.com/theory/status/1476690324651184128
   - https://www.schools.nyc.gov/school-year-20-21/return-to-school-2020
   - http://www.ohloh.net/
   - https://kobesearch.cpan.org/
   - http://www.lessig.org/blog/archives/002264.shtml
+  - http://en.oreilly.com/oscon2008/public/content/home
+  - https://www.miamiherald.com/opinion/editorials/story/730751.html
+  - https://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
+  - https://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html
+  - http://www.postgresqlconference.org/west08/talks/
+  - https://www.montessori-nw.org/section.cfm?wSectionID=3747
+  - http://www.goodatdoingthings.com
+  - http://www.ncld.org/content/view/865/391/
+  - http://rubyforge.org/pipermail/ruby-pg-general/2007-December/000004.html
+  - https://glu.ttono.us/articles/2007/12/22/postgresql-gem-on-leopard-stock-gem-system
+  - http://pgfoundry.org/projects/citext # The old v1 citext, not v2 (which is on GitHub and Postgres core)
+  - http://sourceforge.net/docs/E09#svn_notify
+  - http://www.rectangular.com/kinosearch/benchmarks.html
+  - http://nntp.x.perl.org/group/perl.cpan.testers/249132
+  - ttp://www.nntp.perl.org/group/perl.cpan.testers/240189
+  - http://use.perl.org/~Adrian/journal/32192
+  - http://www.valuesofn.com/
+  - http://use.perl.org/~Adrian/journal/32192
+  - http://www.inmostlight.org/2006/03/easy-backups-with-rsnapshot
+  - http://support.github.com/discussions/repos/492-svn-import-hasnt-finished-after-24-hours
+  - https://github.com/hail2u/blosxom-plugins/
+
+  # URLs that work but don't like the crawler.
+  - https://www.linkedin.com/in/decibel/
+  - https://www.linkedin.com/in/lannings/
+  - https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567?rgn=div1;view=fulltext
 
   # URLs to always ignore.
   - mailto:sqitch-users+subscribe@googlegroups.com # Due to https://github.com/wjdp/htmltest/issues/182
 
 # IgnoreInternalURLs: []
-IgnoreDirs: [code]
+IgnoreDirs: [code, tags, downloads]
 # IgnoreInternalEmptyHash: false
 # IgnoreEmptyHref: false
 # IgnoreCanonicalBrokenLinks: true

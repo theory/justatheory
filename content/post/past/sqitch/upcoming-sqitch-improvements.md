@@ -87,7 +87,7 @@ too, thanks to [Ștefan Suciu]. Stay tuned!
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial-mysql.pod
   [mock a check constraint]: https://github.com/theory/sqitch/blob/master/lib/App/Sqitch/Engine/mysql.sql#L132
   [on StackOverflow]: http://stackoverflow.com/q/17406675/79202
-  [`ATTACHDATABASE`]: http://www.sqlite.org/lang_attach.html
+  [`ATTACHDATABASE`]: https://www.sqlite.org/lang_attach.html
   [comment on this issue]: https://github.com/theory/sqitch/issues/98
   [its own command]: https://github.com/theory/sqitch/issues/100
   [at work]: https://iovation.com/

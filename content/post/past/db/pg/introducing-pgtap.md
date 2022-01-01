@@ -162,7 +162,7 @@ of those scripts in with the rest of my unit tests, so much the better!
 Anyway, feedback welcome. Leave your comments, suggestions, complaints, patches,
 etc., below. Thanks!
 
-  [tests]: http://www.varlena.com/varlena/GeneralBits/Tidbits/email_test.sql
+  [tests]: http://www.varlena.com/GeneralBits/Tidbits/email_test.sql
     "Testing the email data type"
   [PostgreSQL General Bits]: http://www.varlena.com/GeneralBits/128.php
     "Base Type using Domains"

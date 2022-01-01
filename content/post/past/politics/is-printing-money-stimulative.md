@@ -2,7 +2,7 @@
 date: 2009-03-09T18:15:31Z
 slug: is-printing-money-stimulative
 title: Is Printing Money Stimulative?
-aliases: [/politics/economy/is-printing-money-stimulative.html]
+aliases: [/politics/economy/is-printing-mony-stimulative.html]
 tags: [Economics, Economy, Stimulus, Macroeconomics, Microeconomics, UK, Printing Money, Curtis Poe, Paul Krugman]
 type: post
 ---
@@ -138,11 +138,11 @@ is for the government to “credibly promise to be irresponsible.”
 
 **Update 2010-2-15:** Krugman has [blogged about this].
 
-  [blog entry]: http://publius-ovidius.livejournal.com/302311.html
+  [blog entry]: https://publius-ovidius.livejournal.com/302311.html
     "Poetic License to Kill: “The UK Has Officially Gone Insane”"
-  [Krugman writes]: http://krugman.blogs.nytimes.com/2008/11/28/too-much-of-a-good-thing/
+  [Krugman writes]: https://krugman.blogs.nytimes.com/2008/11/28/too-much-of-a-good-thing/
     "The Conscience of a Liberal: “Too much of a good thing …”"
-  [Krugman’s words]: http://krugman.blogs.nytimes.com/2008/11/15/macro-policy-in-a-liquidity-trap-wonkish/
+  [Krugman’s words]: https://krugman.blogs.nytimes.com/2008/11/15/macro-policy-in-a-liquidity-trap-wonkish/
     "The Conscience of a Liberal: “Macro policy in a liquidity trap (wonkish)”"
-  [blogged about this]: http://krugman.blogs.nytimes.com/2010/12/15/what-is-money/
+  [blogged about this]: https://krugman.blogs.nytimes.com/2010/12/15/what-is-money/
     "The Conscience of a Liberal: “What Is Money?”"

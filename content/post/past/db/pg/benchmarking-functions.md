@@ -135,5 +135,5 @@ take care of it.
 
   [yesterday's post]: {{% ref "/post/past/db/pg/benchmarking-upc-validation" %}}
     "Benchmarking UPC Validation"
-  [Benchmark]: https://metacpan.org/dist/perl/lib/Benchmark.pm
+  [Benchmark]: https://metacpan.org/pod/Benchmark
   [Josh Berkus]: https://www.databasesoup.com "“Database Soup” by Josh Berkus"

@@ -391,7 +391,8 @@ function, well, that's a blog post for another day.
 
   [request for help]: {{% ref "/post/past/db/pg/reducing-view-calculations" %}}
     "Need Help Reducing View Calculations"
-  [Sandy]: http://iwantsandy.com "Sandy — your free personal assistant"
+  [Sandy]: https://boingboing.net/2007/11/14/i-want-sandy-perfect.html
+    "Sandy — your free personal assistant"
   [depesz]: http://www.depesz.com/ "</depesz> blog"
   [*wicked fast*]: http://www.depesz.com/index.php/2007/12/27/how-many-1sts-of-any-month-were-sundays-since-1901-01-01/
     "<depesz/>: how many 1sts of any month were sundays - since 1901-01-01?"

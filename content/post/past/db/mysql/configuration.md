@@ -92,15 +92,15 @@ I've added all of these to the example above.
 
   [Configuring MySQL on MacOS X]: http://blog.duncandavidson.com/2006/04/configuring_mys.html
     "James Duncan Davidson on MySQL Configuration"
-  [strict\_trans\_tables]: http://dev.mysql.com/doc/refman/5.1/en/server-sql-mode.html#sqlmode_strict_trans_tables
+  [strict\_trans\_tables]: https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_trans_tables
     "MySQL Reference Manual: STRICT_TRANS_TABLES"
-  [no\_auto\_value\_on\_zero]: http://dev.mysql.com/doc/refman/5.1/en/server-sql-mode.html#sqlmode_no_auto_value_on_zero
+  [no\_auto\_value\_on\_zero]: https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_no_auto_value_on_zero
     "MySQL Reference Manual: NO_AUTO_VALUE_ON_ZERO"
-  [no\_zero\_date]: http://dev.mysql.com/doc/refman/5.1/en/server-sql-mode.html#sqlmode_no_zero_date
+  [no\_zero\_date]: https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_no_zero_date
     "MySQL Reference Manual: NO_ZERO_DATE"
-  [no\_zero\_in\_date]: http://dev.mysql.com/doc/refman/5.1/en/server-sql-mode.html#sqlmode_no_zero_in_date
+  [no\_zero\_in\_date]: https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_no_zero_in_date
     "MySQL Reference Manual: NO_ZERO_IN_DATE"
-  [only\_full\_group\_by]: http://dev.mysql.com/doc/refman/5.1/en/server-sql-mode.html#sqlmode_only_full_group_by
+  [only\_full\_group\_by]: https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_only_full_group_by
     "MySQL Reference Manual: NO_ONLY_FULL_GROUP_BY"
-  [aggregate function]: http://dev.mysql.com/doc/refman/5.1/en/group-by-functions.html
-    "MySQL Reference Manual: GROUP BY (Aggregate) Functions"
+  [aggregate function]: https://dev.mysql.com/doc/refman/5.7/en/aggregate-functions.html
+    "MySQL Reference Manual: Aggregate Function Descriptions"

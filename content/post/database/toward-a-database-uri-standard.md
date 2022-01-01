@@ -239,7 +239,7 @@ have I overlooked? What have I got wrong? Let me know!
   [http URLs]: https://datatracker.ietf.org/doc/html/rfc2616#page-19 "RFC 2616: “http URL”"
   [my proposal]: https://github.com/theory/uri-db "Database URI on GitHub"
   [URI scheme]: http://en.wikipedia.org/wiki/URI_scheme "Wikipedia: “URI scheme”"
-  [SQLite]: http://sqlite.org/ "SQLite Home Page"
+  [SQLite]: https://sqlite.org/ "SQLite Home Page"
   [file URIs]: http://en.wikipedia.org/wiki/File_URI_scheme#Examples
     "Wikipedia: “File URI Scheme: Examples”"
   [Informix]: https://metacpan.org/pod/DBD::Informix#INFORMIX-CONNECTION-SEMANTICS

@@ -46,7 +46,7 @@ And that's it. Enjoy!
 
   [blog entry]: http://www.inmostlight.org/2006/03/easy-backups-with-rsnapshot
     "Easy backups with rsnapshot"
-  [My Book]: http://www.wdc.com/en/products/Products.asp?DriveID=224
-    "Western Digital My Book™ Premium Edition™"
+  [My Book]: https://en.wikipedia.org/wiki/Western_Digital_My_Book
+    "Wikipedia: Western Digital My Book™ Premium Edition™"
   [here]: {{% link "/downloads/rsnapshot_launchd_plists.tar.gz" %}}
     "Download my rsnapshot launchd plist files"

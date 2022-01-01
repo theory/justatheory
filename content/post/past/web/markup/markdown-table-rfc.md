@@ -382,7 +382,7 @@ Thanks!
   [mysql 5.0]: http://dev.mysql.com/doc/refman/5.0/en/mysql.html
     "mysql — The MySQL Command-Line Tool"
   [1]: http://dev.mysql.com/doc/refman/5.0/en/ "MySQL 5.0 Reference Manual"
-  [SQLite 3.6]: http://sqlite.org/docs.html "SQLite Documentation"
+  [SQLite 3.6]: https://sqlite.org/docs.html "SQLite Documentation"
   [suggested by Benoit Perdu]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001472.html
   [posted a comment]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001510.html
   [markdown-discuss]: http://six.pairlist.net/mailman/listinfo/markdown-discuss

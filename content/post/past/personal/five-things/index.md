@@ -168,19 +168,19 @@ I now tag:
     "Five things you don't know about Adrian Howard"
   [Goldstar]: https://en.wikipedia.org/wiki/Goldstar_beer
     "Wikipedia describes Goldstar beer"
-  [Chad was]: http://www.chaddickerson.com/blog/2006/12/19/five-things-you-didnt-know-about-me
+  [Chad was]: https://blog.chaddickerson.com/2006/12/19/five-things-you-didnt-know-about-me/
     "Five things you didn't know about Chad Dickerson"
-  [Tel Dor]: http://micro5.mscc.huji.ac.il/~dor/ "The Tel Dor Project"
-  [California State University, Sacramento]: http://www.csus.edu/
-  [University of Virginia]: http://www.virginia.edu/
-  [Values of n]: http://www.valuesofn.com/
-  [Rael Dornfest]: http://www.raelity.org/
+  [Tel Dor]: http://dor.huji.ac.il "The Tel Dor Project"
+  [California State University, Sacramento]: https://www.csus.edu
+  [University of Virginia]: https://www.virginia.edu/
+  [Values of n]: https://www.crunchbase.com/organization/values-of-n
+  [Rael Dornfest]: https://en.wikipedia.org/wiki/Rael_Dornfest
   [Stikkit]: http://www.stikkit.com
-  [i want sandy]: http://www.iwantsandy.com/
+  [i want sandy]: https://boingboing.net/2007/11/14/i-want-sandy-perfect.html
   [Kineticode]: https://kineticode.com/
   [thrown down the gauntlet]: http://marc.info/?l=bricolage-general&m=117392382314816
     "My Message to the Bricolage Community"
-  [James Duncan Davidson]: http://blog.duncandavidson.com/blog/
-  [Nathan Tokington]: http://radar.oreilly.com/nat/
+  [James Duncan Davidson]: http://duncandavidson.com/
+  [Nathan Tokington]: https://radar.oreilly.com/nat/
   [Josh Berkus]: https://www.databasesoup.com "Josh Berkus's Database Soup"
   [Ask Bjørn Hansen]: https://www.askask.com

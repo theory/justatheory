@@ -14,6 +14,6 @@ talk to the newly-formed [Portland PostgreSQL Users Group] on Wednesday, 19 July
 check it out and join the fun! Beer and schmoozing to take place after the talk
 at [The Lucky Lab].
 
-  [Portland PostgreSQL Users Group]: http://pugs.postgresql.org/pdx/
-  [FreeGeek]: http://www.freegeek.org/
-  [The Lucky Lab]: http://www.luckylab.com/
+  [Portland PostgreSQL Users Group]: https://pdxpug.wordpress.com
+  [FreeGeek]: https://www.freegeek.org
+  [The Lucky Lab]: https://luckylab.com

@@ -40,7 +40,7 @@ And now maybe someone else will stumble upon this blog entry when they're
 Googling for a solution and get the help they need, too. No doubt I'll be
 looking for it again in a year or so, the way things go.
 
-  [Kclug mail list post]: http://www.kclug.org/pipermail/kclug/2008-February/032558.html
+  [Kclug mail list post]: https://www.kclug.org/pipermail/kclug/2008-February/032558.html
     "Comcast and Postfix"
-  [this Freelock Knowledge Base article]: http://freelock.com/kb/Postfix_relayhost
+  [this Freelock Knowledge Base article]: https://www.freelock.com/kb/postfix-relayhost
     "Postfix relayhost"

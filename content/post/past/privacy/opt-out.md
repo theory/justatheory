@@ -20,11 +20,11 @@ and direct email lists, too. Sweet!
 You should [visit the FTC page][this FTC page] right now and get off those
 lists, too.
 
-  [identity theft,]: http://publius-ovidius.livejournal.com/111672.html
+  [identity theft,]: https://publius-ovidius.livejournal.com/111672.html
     "Don't fuck with Ovid -- the long version"
-  [more than once]: http://publius-ovidius.livejournal.com/180912.html
+  [more than once]: https://publius-ovidius.livejournal.com/180912.html
     "How to (not) protect your credit"
-  [incredibly easy]: http://www.cockeyed.com/citizen/creditcard/application.shtml
+  [incredibly easy]: https://cockeyed.com/citizen/creditcard/application.shtml
     "The Torn-Up Credit Card Application"
-  [this FTC page]: http://www.ftc.gov/bcp/conline/pubs/alerts/privprotalrt.htm
-    "Privacy: What You Do Know Can Protect You"
+  [ ]: https://www.consumer.ftc.gov/articles/how-stop-junk-mail
+    "How To Stop Junk Mail"

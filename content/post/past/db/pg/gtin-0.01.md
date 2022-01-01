@@ -44,6 +44,6 @@ In the meantime, share and enjoy.
     "Download the GTIN data type"
   [Douglas Book]: https://www.amazon.com/exec/obidos/ASIN/0672327562/justatheory-20
     "“PostgreSQL (2nd Edition)” by Douglas and Douglas"
-  [download from here]: http://developer.postgresql.org/~adunstan/
-    "Andrew Dunstan at PostgreSQL.org"
+  [download from here]: https://github.com/adunstan/enumkit
+    "EnumKit on GitHub"
   [Kineticode Subversion]: https://github.com/theory/gtin "The GTIN Git repository"

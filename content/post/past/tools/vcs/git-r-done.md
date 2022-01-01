@@ -65,15 +65,15 @@ thanks again to [Ask] and the denizens of \#git for all the help.
 
   [Bricolage Git migration]: {{% ref "/post/past/bricolage/vcs/bricolage-to-git" %}}
     "Migrating Bricolage CVS and SVN to Git"
-  [GitHub wiki documents]: http://wiki.github.com/bricoleurs/bricolage/development
+  [GitHub wiki documents]: https://github.com/bricoleurs/bricolage/wiki/Development
     "Bricolage Wiki: Development"
-  [Working with Git]: http://wiki.github.com/bricoleurs/bricolage/working-with-git
-  [Contributing a Bug Fix]: http://wiki.github.com/bricoleurs/bricolage/contributing-a-bug-fix
-  [Working with Branches]: http://wiki.github.com/bricoleurs/bricolage/working-with-branches
-  [Merging with Git]: http://wiki.github.com/bricoleurs/bricolage/merging-with-git
-  [Starting a Project Branch]: http://wiki.github.com/bricoleurs/bricolage/starting-a-project-branch
-  [Contributing via Email]: http://wiki.github.com/bricoleurs/bricolage/contributing-via-email
-  [Creating a Release]: http://wiki.github.com/bricoleurs/bricolage/creating-a-release
+  [Working with Git]: https://github.com/bricoleurs/bricolage/wiki/Working-with-Git
+  [Contributing a Bug Fix]: https://github.com/bricoleurs/bricolage/wiki/Contributing-a-Bug-Fix
+  [Working with Branches]: https://github.com/bricoleurs/bricolage/wiki/Working-with-branches
+  [Merging with Git]: https://github.com/bricoleurs/bricolage/wiki/Merging-with-Git
+  [Starting a Project Branch]: https://github.com/bricoleurs/bricolage/wiki/starting-a-project-branch
+  [Contributing via Email]: https://github.com/bricoleurs/bricolage/wiki/Contributing-Via-Email
+  [Creating a Release]: https://github.com/bricoleurs/bricolage/wiki/Creating-a-Release
   [bric\_cvs\_to\_git]: {{% link "/computers/vcs/git/bricolage-migration/bric_cvs_to_git" %}}
   [bric\_to\_git]: {{% link "/computers/vcs/git/bricolage-migration/bric_to_git" %}}
   [stitch]: {{% link "/computers/vcs/git/bricolage-migration/stitch" %}}

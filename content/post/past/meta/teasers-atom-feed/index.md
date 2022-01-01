@@ -19,4 +19,4 @@ Any questions or problems? Leave a comment. Thanks!
   [teasers only]: {{% link "/index.atomsum" %}}
   [complete entries]: {{% ref "/" "atom" %}}
   [Planet Perl]: http://planet.perl.org
-  [Planet PostgreSQL]: http://www.planetpostgresql.org/
+  [Planet PostgreSQL]: https://planet.postgresql.org

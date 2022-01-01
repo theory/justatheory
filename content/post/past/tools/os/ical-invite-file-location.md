@@ -29,4 +29,5 @@ and start iCal back up again.
 
 And now I'll be able to find this information again when next I need it. :-)
 
-  [Sandy]: http://www.iwantsandy.com/ "Meet Sandy: Your PersonalEmail Assistant"
+  [Sandy]: https://boingboing.net/2007/11/14/i-want-sandy-perfect.html
+    "Meet Sandy: Your PersonalEmail Assistant"

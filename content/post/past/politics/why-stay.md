@@ -113,7 +113,7 @@ you really should read the whole thing for yourself):
 > imagination, to take the same risks and make the same sacrifices, as the
 > soldiers in Tal Afar.
 
-  [*New Yorker* article]: http://www.newyorker.com/fact/content/articles/060410fa_fact2
+  [*New Yorker* article]: https://www.newyorker.com/magazine/2006/04/10/the-lesson-of-tal-afar
     "The Lesson of Tal Afar"
   [Dereliction of Duty]: https://www.amazon.com/exec/obidos/ASIN/0060929081/justatheory-20
     "Order “Dereliction of Duty : Johnson, McNamara, the Joint Chiefs of Staff, and the Lies That Led to Vietnam” from Amazon.com"

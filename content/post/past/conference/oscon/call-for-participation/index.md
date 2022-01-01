@@ -28,7 +28,7 @@ them below!
 
   [Call for Participation]: http://conferences.oreillynet.com/cs/os2006/create/e_sess/
     "O'Reilly Open Source Convention - July - 24-28, 2006 - Portland, OR: Call For Participation"
-  [this presentation]: https://blog.flickr.com/flickrblog/2005/10/lamp.html
+  [this presentation]: https://blog.flickr.net/en/2005/10/21/lamp/
     "Hardware Layouts for LAMP Installations"
   [Slony-I]: http://slony.info/ "Slony-I—A replication system for PostgreSQL"
   [well-tested]: {{% ref "/post/past/js/test-simple-0.20.md" %}}

@@ -61,5 +61,5 @@ and I was just surprised that the idea was rejected by the Ruby developers.
 
 What do you think?
 
-  [This is disappointing]: http://rubyforge.org/tracker/?func=detail&atid=1698&aid=6368&group_id=426
+  [This is disappointing]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/9347
     "[ ruby-Bugs-6368 ] Time Changes Zones"

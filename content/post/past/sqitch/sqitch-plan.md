@@ -145,10 +145,10 @@ to working.
 But I could be off my rocker entirely. What do *you* think? I want to get this
 right, please, if you have an opinion here, let me have it!
 
-  [PGCon]: http://pgcon.org/
+  [PGCon]: https://pgcon.org/
   [on Slideshare]: https://www.slideshare.net/justatheory/sqitch-pgconsimple-sql-change-management-with-sqitch
   [the PGCon site]: https://www.pgcon.org/2012/schedule/events/479.en.html
-  [the tutorial]: https://metacpan.org/dist/App-Sqitch/lib/sqitchtutorial.pod
+  [the tutorial]: https://metacpan.org/pod/sqitchtutorial
   [to-dos]: https://github.com/theory/sqitch/issues?labels=todo&page=1&state=open
   [playing with `git log`]: {{% ref "/post/past/db/vcs-sql-change-management" %}}
   [a previous post]: {{% ref "/post/past/db/sql-change-management-sans-redundancy" %}}

@@ -13,5 +13,5 @@ type: post
 >
 > —[Pat Robertson]
 
-  [Pat Robertson]: http://mediamatters.org/items/200601050004
+  [Pat Robertson]: https://www.mediamatters.org/abc/robertson-blamed-sharon-stroke-policy-dividing-gods-land
     "Robertson blamed Sharon stroke on policy of “dividing God's land”"

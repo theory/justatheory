@@ -49,7 +49,7 @@ file handle pipes around for efficiency? Anyone care to take a stab at it, with
 tests for Winows, and send me a patch?
 
   [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
-  [perlipc]: https://metacpan.org/dist/perl/pod/perlipc.pod#Safe_Pipe_Opens
+  [perlipc]: https://metacpan.org/pod/perlipc#Safe-Pipe-Opens
     "Read about Safe Pipe Opens in the perlipc documentation"
-  [Win32::Process]: https://metacpan.org/dist/libwin32/Process/Process.pm
+  [Win32::Process]: https://metacpan.org/pod/Win32::Process
     "Win32::Process on CPAN"

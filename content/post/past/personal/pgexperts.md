@@ -25,9 +25,9 @@ So [get in touch] or meet us at [PGCon][] (we're sponsoring!) or at [OSCON
 as PostgreSQL adoption grows.
 
   [Kineticode]: https://kineticode.com/ "Kineticode: Setting knowledge in motion."
-  [Josh Berkus]: http://it.toolbox.com/blogs/database-soup "Database Soup"
-  [David Fetter]: http://people.planetpostgresql.org/dfetter/ "David Fetter's blog"
-  [Andrew Dunstan]: http://people.planetpostgresql.org/andrew/ "Andrew's PostgreSQL blog"
+  [Josh Berkus]: https://www.databasesoup.com "Database Soup"
+  [David Fetter]: https://people.planetpostgresql.org/dfetter/ "David Fetter's blog"
+  [Andrew Dunstan]: https://adpgtech.blogspot.com "Andrew's PostgreSQL blog"
   [team]: http://pgexperts.com/people.html "Meet the Experts"
   [PostgreSQL Experts, Inc.]: http://pgexperts.com/ "PostgreSQL Experts, Inc."
   [Rails]: http://wiki.rubyonrails.org/database-support/postgres "Rails Wiki: PostgreSQL"

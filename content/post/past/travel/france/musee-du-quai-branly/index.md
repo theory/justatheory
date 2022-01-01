@@ -28,7 +28,7 @@ Christmas!
 
   [posted]: https://www.flickr.com/photos/theory/sets/72157615217912698/
     "Musée du quai Branly"
-  [Musée du quai Branly]: http://www.quaibranly.fr/
+  [Musée du quai Branly]: https://www.quaibranly.fr/en/
   [some photos]: https://www.flickr.com/photos/theory/sets/72157614752983549/
     "Saint Ouen, Eglise Jean d’Arc"
   [Saint Ouen]: https://en.wikipedia.org/wiki/Abbey_of_Saint-Ouen

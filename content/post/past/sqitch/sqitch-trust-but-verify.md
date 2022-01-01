@@ -122,6 +122,6 @@ tutorial].
   [`add` command]: https://metacpan.org/module/App::Sqitch::Command::add
   [yet]: https://github.com/theory/sqitch/issues?labels=engine&state=open
   [Next up]: https://github.com/theory/sqitch/issues?milestone=3
-  [SQLite]: http://sqlite.org/
+  [SQLite]: https://sqlite.org/
   [this presentation]: https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch
   [the tutorial]: https://metacpan.org/module/sqitchtutorial

@@ -119,16 +119,14 @@ So, you wanna work on this? :-)
 
   [pgTAP]: https://pgtap.org
     "pgTAP: PostgreSQL Unit Testing"
-  [GitHub]: http://github.com/theory/pgtap/tree/master
-    "The pgTAP GitHub Repository"
+  [GitHub]: http://github.com/theory/pgtap/ "The pgTAP GitHub Repository"
   [from Tekkub]: http://support.github.com/discussions/repos/492-svn-import-hasnt-finished-after-24-hours
     "GitHub Support: SVN Import Hasn't Finished after 24 Hours"
-  [Test::More]: http://github.com/schwern/test-more/tree/master
+  [Test::More]: https://github.com/Test-More/test-more
     "The Test::More GitHub Repository"
-  [Blosxom Plugins]: http://github.com/hail2u/blosxom-plugins/tree/master
+  [Blosxom Plugins]: https://github.com/hail2u/blosxom-plugins/
     "Blosxom Plugins GitHub Repository"
-  [SVN::Notify]: https://metacpan.org/pod/SVN::Notify
-    "SVN::Notify on CPAN"
+  [SVN::Notify]: https://metacpan.org/pod/SVN::Notify "SVN::Notify on CPAN"
   [activitymail]: https://metacpan.org/release/DWHEELER/activitymail-1.26/view/bin/activitymail "activitymail on CPAN"
   [SVN::Notify::Config]: https://metacpan.org/pod/SVN::Notify::Config
   [SVN::Notify::Mirror]: https://metacpan.org/pod/SVN::Notify::Mirror

@@ -98,7 +98,7 @@ Read [the tutorial] for an overview of what Sqitch is and how it works. Thanks!
   [Jim Nasby]: https://www.linkedin.com/in/decibel/ "Jim Nasby on LinkedIn"
   [work]: https://iovation.com/
   [comparing project URIs]: https://github.com/theory/sqitch/issues/38
-  [SQLite]: http://sqlite.org/
+  [SQLite]: https://sqlite.org/
   [bundle command]: https://github.com/theory/sqitch/issues/14
   [fixing this issue is not exactly trivial]: https://github.com/theory/sqitch/issues/36
   [dependency failures fail earlier]: https://github.com/theory/sqitch/issues/39

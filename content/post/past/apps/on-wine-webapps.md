@@ -66,14 +66,14 @@ year ago and made it happen, so that I could get the benefits of Cork'd *and*
 track my own wines like I could with CellarTracker. But for now, I'm just
 sending feature requests to Cork'd and watching to see how things develop.
 
-  [an entry]: http://www.vinography.com/archives/2006/06/why_community_tasting_note_sit.html
+  [an entry]: https://www.vinography.com/2006/06/why_community_tasting_note_sit
     "Why Community Tasting Note Sites Will Fail"
-  [Vinography]: http://www.vinography.com/ "Vinography: A Wine Blog"
+  [Vinography]: https://www.vinography.com "Vinography: A Wine Blog"
   [Cork'd]: http://www.corkd.com/
   [LogABottle]: http://logabottle.com/home/index.php
   [Winelog.Net]: http://www.winelog.net/
   [TastyDrop]: http://www.tastydrop.com/
   [OpenBottles]: http://www.openbottles.com/
-  [Clay Shirky]: http://www.shirky.com/writings/situated_software.html
+  [Clay Shirky]: https://www.gwern.net/docs/technology/2004-03-30-shirky-situatedsoftware.html
     "Clay Shirky: “Situated Software”"
-  [CellarTracker]: http://cellartracker.com/ "CellarTracker"
+  [CellarTracker]: https://www.cellartracker.com "CellarTracker"

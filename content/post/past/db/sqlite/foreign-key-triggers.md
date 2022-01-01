@@ -133,5 +133,5 @@ Pretty simple, eh? The trigger support in SQLite is great for building your own
 referential integrity checks. Hopefully, these examples will get you started
 down the path of creating your own.
 
-  [sqlite\_fk]: http://www.sqlite.org/contrib
+  [sqlite\_fk]: https://www.sqlite.org/contrib
     "SQLite Contributed files, including sqlite_fk.tgz, a utility for generating FK triggers for SQLite"

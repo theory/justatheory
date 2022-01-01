@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 	<main id="home">
-		{{ range .Paginator.Pages }}
+		{{ range (.Paginate (where .Site.Pages "Type" "in" .Site.Params.postTypes)).Pages }}
 		{{ partial "article.html" (dict "doc" . "list" true) }}
 		{{ end }}
 		{{ template "_internal/pagination.html" . }}

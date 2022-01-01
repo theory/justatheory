@@ -38,7 +38,7 @@ IgnoreURLs:
   - https://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
   - https://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html
   - http://www.postgresqlconference.org/west08/talks/
-  - 'https://www.montessori-nw.org/section.cfm?wSectionID=3747'
+  - https://www.montessori-nw.org/section.cfm\?wSectionID=3747
   - http://www.goodatdoingthings.com
   - http://www.ncld.org/content/view/865/391/
   - http://rubyforge.org/pipermail/ruby-pg-general/2007-December/000004.html
@@ -67,9 +67,9 @@ IgnoreURLs:
   - https://testflightapp.com/sdk/download/
   - https://testflightapp.com/sdk/doc/
   - http://lists.apple.com/archives/xcode-users/2009/Jun/msg00153.html
-  - 'http://sourceforge.net/tracker/index.php?func=detail&aid=1155712&group_id=69750&atid=525656'
+  - http://sourceforge.net/tracker/index.php\?func=detail&aid=1155712&group_id=69750&atid=525656
   - http://www.adaptivepath.com/publications/essays/archives/000385.php
-  - 'http://www.nrdcactionfund.org/ctt.asp?u=2066706&l=1409'
+  - http://www.nrdcactionfund.org/ctt.asp\?u=2066706&l=1409
   - http://www.schlossnagle.org/~george/blog/
   - http://www.apache.org/~joes/
   - http://www.apache.org/~joes/apache.tar.gz
@@ -92,19 +92,37 @@ IgnoreURLs:
   - http://use.perl.org/~robrt/journal
   - http://www.alexwheeler.net/
   - http://david.wheeler.net/osx.html
+  - http://blog.duncandavidson.com/2006/04/configuring_mys.html
+  - https://www.pgexperts.com/people.html
+  - https://blog.johanwarlander.com
+  - http://www.katescomment.com/open-apple-icloud/
+  - https://marketshare.hitslink.com/operating-system-market-share.aspx\?qprid=8&qpcustomd=1
+  - http://bill.dudney.net/roller/objc/
+  - http://homepage.mac.com/rgriff/files/mod_ssl.pdf
+  - https://www.rfa.org/english/rss.xml
+  - https://svn.bricolage.cc/design-docs/trunk/Bricolage2/UML/Bricolage.pdf
+  - http://svn.bricolage.cc/design-docs/trunk/Bricolage2/TechnicalSpec.pod
+  - http://svn.bricolage.cc/design-docs/trunk/Bricolage2/FunctionalSpec.pod
+  - http://svn.bricolage.cc/bricolage/
+  - http://svn.bricolage.cc/
+  - http://svn.bricolage.cc/bricolage/branches/
+  - http://svn.bricolage.cc/bricolage/tags/
+  - http://viewsvn.bricolage.cc/bricolage/branches/
+  - http://viewsvn.bricolage.cc/\?view=revision&revision=7423
 
   # URLs that work but don't like the crawler.
   - https://www.linkedin.com/in/decibel/
   - https://www.linkedin.com/in/lannings/
   - https://linkedin.com/in/kurksp/
   - https://linkedin.com/in/craig-brewster-02b6b95/
-  - 'https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567?rgn=div1;view=fulltext'
+  - https://www.linkedin.com/in/quinnweaver/
+  - https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567\?rgn=div1;view=fulltext
 
   # URLs to always ignore.
-  - mailto:sqitch-users+subscribe@googlegroups.com # Due to https://github.com/wjdp/htmltest/issues/182
+  - 'mailto:sqitch-users+subscribe@googlegroups.com' # Due to https://github.com/wjdp/htmltest/issues/182
   - https://justatheory.com/search.cgi
-  - https://justatheory.com/search.cgi?q=iraq
-  - https://justatheory.com/search.cgi?q=svn
+  - https://justatheory.com/search.cgi\?q=iraq
+  - https://justatheory.com/search.cgi\?q=svn
 
 # IgnoreInternalURLs: []
 IgnoreDirs: [code, tags, downloads, p]
@@ -123,7 +141,7 @@ IgnoreDirs: [code, tags, downloads, p]
 # LogLevel: 2
 # LogSort: document
 # ExternalTimeout: 15
-# StripQueryString: true
+StripQueryString: false
 # StripQueryExcludes: ["fonts.googleapis.com"]
 OutputDir: .htmltest/tmp
 # OutputCacheFile: refcache.json

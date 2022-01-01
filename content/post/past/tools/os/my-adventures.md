@@ -446,7 +446,7 @@ elegant UI, and all the Unix power tools I can stand! I hope you do, too.
   [Perl modules]: https://metacpan.org/search?q=dist%3Alibapreq
   [experimental]: http://www.apache.org/~joes/
   [discussion]: http://archive.develooper.com/macosx@perl.org/index.html#01539
-  [Mac OS X Perl]: http://lists.perl.org/showlist.cgi?name=macosx
+  [Mac OS X Perl]: https://lists.perl.org/list/macosx.html
   [apache.tar.gz]: http://www.apache.org/~joes/apache.tar.gz
   [apreq.tar.gz]: http://www.apache.org/~joes/apreq.tar.gz
   [Open SSL site]: https://www.openssl.org
@@ -458,7 +458,7 @@ elegant UI, and all the Unix power tools I can stand! I hope you do, too.
   [PostgreSQL]: https://www.postgresql.org/
   [Apple]: https://www.apple.com/
   [instructions]: http://developer.apple.com/internet/macosx/osdb.html
-  [MySQL]: https://www.mysql.org/
+  [MySQL]: https://dev.mysql.com/
   [here]: {{% link "/downloads/pgsql_osx_start.tar.gz" %}}
   [Creating SystemStarter Startup Item Bundles HOWTO]: http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
   [XML::Parser]: https://metacpan.org/dist/XML-Parser

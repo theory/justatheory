@@ -99,5 +99,5 @@ But that's just my opinion.
   [RSS feeds]: https://www.rfa.org/english/rss.xml
     "Radio Free Asia generates RSS Feeds in Bricolage"
   [flexible]: https://www.rfa.org/ "RFA outputs XHTML and CSS from Bricolage"
-  [complex]: https://www.plsweb.com/
+  [complex]: http://www.plsweb.com/
     "Performance Learning Systems uses Bricolage"

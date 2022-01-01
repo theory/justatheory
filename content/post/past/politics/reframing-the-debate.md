@@ -108,7 +108,7 @@ our slash and spend president. Ad nauseam.
     "CNN Reports on the declining US budget surplus in 2001"
   [$477 billion]: http://www.democrats.org/specialreports/2005budget/surplus.html
     "DNC Special Reports: Bush's 2005 Budget: A Deficit Disaster"
-  [“CEO President,”]: http://www.washingtonmonthly.com/archives/individual/2004_05/003829.php
+  [“CEO President,”]: https://washingtonmonthly.com/2004/05/03/our-ceo-president/
     "“Our CEO President”"
   [Nat]: https://nathan.torkington.com/articles/2004-vote.html
     "Understanding the 2004 Vote"
@@ -118,4 +118,4 @@ our slash and spend president. Ad nauseam.
   [good article]: https://www.salon.com/2004/10/02/lakoff/ "“Winning the war of words”"
   [self-contained argument]: https://www.motherjones.com/politics/2004/10/how-talk-conservative-if-you-must/
     "“How to Talk Like a Conservative (If You Must)”"
-  [talking points memo]: https://talkingpointsmemo.com
+  [talking points memo]: http://www.talkingpointsmemo.com/

@@ -1,4 +1,4 @@
-f--- 
+--- 
 date: 2009-04-23T18:15:06Z
 slug: bricolage-svn-to-git
 title: Migrating Bricolage Subversion to Git

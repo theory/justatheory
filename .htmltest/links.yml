@@ -19,10 +19,7 @@ CheckMailto: false
 # EnforceHTML5: false
 # EnforceHTTPS: false
 # IgnoreURLs: []
-IgnoreInternalURLs:
-  - /search.cgi
-  - /search.cgi?q=iraq
-  - /search.cgi?q=svn
+# IgnoreInternalURLs: []
 IgnoreDirs: [code]
 # IgnoreInternalEmptyHash: false
 # IgnoreEmptyHref: false

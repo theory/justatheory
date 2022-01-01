@@ -105,7 +105,7 @@ OSCon!
   [Bruce]: https://momjian.us "Bruce Momjian's Website"
   [Josh]: https://www.databasesoup.com "AglioDBS"
   [David]: http://fetter.org "David Fetter's Website"
-  [Elein]: https://www.varlena.com/ "Elein Mutain's Company"
+  [Elein]: http://varlena.com/ "Elein Mutain's Company"
   [Dan]: https://www.sidhe.org/blog/ "The Parrot Squawks at Midnight"
   [Nicholas]: http://use.perl.org/~nicholas/journal "Nicholas Clark's Journal"
   [James]: http://www.whoot.org/ "James Duncan's Blog"

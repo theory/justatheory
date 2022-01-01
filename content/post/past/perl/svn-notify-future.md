@@ -117,7 +117,7 @@ options and not be ugly or difficult to use.
 
 So, you wanna work on this? :-)
 
-  [pgTAP]: http://pgtap.projects.postgresql.org/
+  [pgTAP]: https://pgtap.org
     "pgTAP: PostgreSQL Unit Testing"
   [GitHub]: http://github.com/theory/pgtap/tree/master
     "The pgTAP GitHub Repository"

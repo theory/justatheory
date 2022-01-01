@@ -40,7 +40,7 @@ Now I really am going to do some other stuff for a bit, although I do want to
 see what I can poach from [Epic Test]. And I *do* have that [talk] on pgTAP next
 month. So I'll be back with more soon enough.
 
-  [pgTAP 0.11]: http://pgfoundry.org/frs/?group_id=1000389 "pgTAP downloads"
+  [pgTAP 0.11]: https://github.com/theory/pgtap/releases/tag/rel-0.11
   [Epic Test]: http://epictest.org/
     "Epic: More full of fail than any other testing tool"
   [talk]: http://www.postgresqlconference.org/west08/talks/

@@ -35,4 +35,4 @@ client, and now testing database upgrades from 8.2 to 8.3 is just too reliable!
 
 Good luck with your mission.
 
-  [pgTAP 0.20]: http://pgtap.projects.postgresql.org/
+  [pgTAP 0.20]: https://github.com/theory/pgtap/releases/tag/rel-0.20

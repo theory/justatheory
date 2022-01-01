@@ -173,12 +173,12 @@ But that's after my vacation. Back in two weeks.
     "Committed: pgTAP Result Set Assertion Functions"
   [hair-pulling]: {{% ref "/post/past/db/pg/neither-null-nor-not-null" %}}
     "Neither NULL nor NOT NULL: An SQL WTF"
-  [pgTAP]: http://pgtap.projects.postgresql.org/
+  [pgTAP]: https://pgtap.org
     "pgTAP: Unit Testing for PostgreSQL"
   [here]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
-  [documentation]: http://pgtap.projects.postgresql.org/documentation.html#Pursuing+Your+Query
+  [documentation]: https://pgtap.org/documentation.html#pursuingyourquery
     "pgTAP Documentation: Pursing Your Query"
-  [download]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
+  [download]: https://github.com/theory/pgtap/releases/tag/rel-0.22 "Download pgTAP"
   [database normalization]: http://it.toolbox.com/blogs/database-soup/testing-for-normalization-33119
     "Database Soup: “Testing for Normalization”"
   [have primary keys]: http://petereisentraut.blogspot.com/2009/07/how-to-find-all-tables-without-primary.html

@@ -222,8 +222,8 @@ feel free to take it and run with it!
   [TAP::Parser]: https://metacpan.org/dist/Test-Harness/
     "Test::Harness (with TAP:Parser) on CPAN"
   [libtap]: http://code.google.com/p/libperl/wiki/Libtap
-  [pgTAP]: http://pgtap.projects.postgresql.org/
-  [even uglier]: http://pgtap.projects.postgresql.org/integration.html#perl
+  [pgTAP]: https://pgtap.org
+  [even uglier]: https://pgtap.org/integration.html#perl
   [dev release]: https://metacpan.org/dist/Test-Harness/
     "Test::Harness on CPAN"
   [TAP::Parser::SourceHandler]: https://metacpan.org/pod/TAP::Parser::SourceHandler

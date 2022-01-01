@@ -72,7 +72,7 @@ I'll be giving it some more thought and will post about it soon.
     "pgTAP Documentation: `functions_are()`"
   [testing functions]: https://pgtap.org/documentation.html#Feeling+Funky
     "pgTAP Documentation: Feeling Funky"
-  [release notes]: http://pgfoundry.org/frs/shownotes.php?release_id=1389
+  [release notes]: https://github.com/theory/pgtap/blob/v0.21/Changes
     "pgTAP 0.21 Release Notes and Changes"
   [call to add a `throws_like()`]: http://archives.postgresql.org/pgsql-hackers/2009-05/msg01318.php
     "pgsql-hackers: Re: plperl error format vs plpgsql error format vs pgTAP"

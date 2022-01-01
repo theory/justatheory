@@ -59,13 +59,13 @@ JavaScript hacking you'd like me to do. I'm free through November.
 
 That is all.
 
-  [pgTAP 0.10]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
-  [the documentation]: http://pgtap.projects.postgresql.org/documentation.html
+  [pgTAP 0.10]: https://github.com/theory/pgtap/releases/tag/rel-0.10 "Download pgTAP"
+  [the documentation]: https://pgtap.org/documentation.html
     "The complete pgTAP Documentation"
-  [pgTAP Web site]: http://pgtap.projects.postgresql.org/ "pgTAP Home"
-  [integrating pgTAP]: http://pgtap.projects.postgresql.org/integration.html
+  [pgTAP Web site]: https://pgtap.org "pgTAP Home"
+  [integrating pgTAP]: https://pgtap.org/integration.html
     "Integrate pgTAP"
-  [Enjoy]: http://pgtap.projects.postgresql.org/ "pgTAP"
+  [Enjoy]: https://pgtap.org "pgTAP"
   [Bricolage]: http://bricolage.cc/ "Bricolage"
   [PostgreSQL Conference West]: http://www.postgresqlconference.org/west08/talks/
     "Talks at PostgreSQL Conference West 2008"

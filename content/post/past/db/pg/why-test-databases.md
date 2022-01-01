@@ -62,7 +62,7 @@ write tests against our databases? Leave a comment with your (brief!) thoughts.
 
 And thank you!
 
-  [pgTAP]: http://pgtap.projects.postgresql.org/
+  [pgTAP]: https://pgtap.org
   [via Twitter]: https://twitter.com/Theory/status/1307497041
   [chromatic\_x]: https://twitter.com/chromatic_x "chromatic"
   [caseywest]: https://twitter.com/caseywest "caseywest"

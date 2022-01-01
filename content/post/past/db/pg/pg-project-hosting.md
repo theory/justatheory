@@ -63,9 +63,9 @@ lists, download mirroring and custom domain handling?
 
 I'll follow up with a summary of what I've found in a later post.
 
-  [pgTAP]: http://pgtap.projects.postgresql.org/
+  [pgTAP]: https://pgtap.org
   [pgFoundry]: http://pgfoundry.org/
   [GForge]: http://gforge.org/
-  [Librelist]: http://librelist.com/
+  [Librelist]: https://librelist.com/
   [search.cpan.org]: https://search.cpan.org/
   [PostgreSQL Weekly News]: https://www.postgresql.org/community/weeklynews/

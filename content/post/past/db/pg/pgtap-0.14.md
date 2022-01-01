@@ -35,4 +35,4 @@ functions into your hands, as well as fixing a few issues. Changes:
 
 Enjoy!
 
-  [pgTAP 0.14]: http://pgfoundry.org/frs/?group_id=1000389 "pgTAP Downloads"
+  [pgTAP 0.14]: https://github.com/theory/pgtap/releases/tag/rel-0.14

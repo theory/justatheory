@@ -457,18 +457,18 @@ Look around, figure out what needs to be done, and do it.
 Slides on [goodatdoingthings.com]. Will see about getting a video posted, as
 well.
 
-  [good-at-doing-things]: http://www.montessori-nw.org/section.cfm?wSectionID=3747
-  [Childpeace Montessori]: http://childpeace.org/
+  [good-at-doing-things]: https://www.montessori-nw.org/section.cfm?wSectionID=3747
+  [Childpeace Montessori]: https://childpeace.org
   [Good at Doing Things]: http://www.goodatdoingthings.com
-  [The TOVA Company]: http://www.tovatest.com/
+  [The TOVA Company]: https://www.tovatest.com
   [myelinated]: https://en.wikipedia.org/wiki/Myelin "Wikipedia: Myelin"
-  [BWCA Wildlife and nature preserve]: http://www.boundarywaterscanoearea.com/
-  [Camp Widjiwagan]: http://www.widji.org/
-  [sandpaper letters]: http://www.montessoriworld.org/Reading/spaprltr/sprintro.html
+  [BWCA Wildlife and nature preserve]: https://www.fs.usda.gov/visit/destination/boundary-waters-canoe-area-wilderness
+  [Camp Widjiwagan]: https://www.ymcanorth.org/camps/camp_widjiwagan
+  [sandpaper letters]: https://montessoriworld.org/Reading/spaprltr/sprintro.html
   [cylinder work]: http://contented-baby.blogspot.com/2008/08/montessori-cylinder-blocks-block-1.html
-  [movable alphabet]: http://www.montessorimom.com/moveable-alphabet/
+  [movable alphabet]: https://www.montessorimom.com/moveable-alphabet/
   [Sim City]: https://en.wikipedia.org/wiki/SimCity
-  [Will Wright at TED in 2007]: http://www.ted.com/index.php/talks/will_wright_makes_toys_that_make_worlds.html
+  [Will Wright at TED in 2007]: https://www.ted.com/talks/will_wright_spore_birth_of_a_game
   [Executive Functions]: http://www.ncld.org/content/view/865/391/
-  [Dr. Angeline Lillard]: http://www.montessori-science.org/
+  [Dr. Angeline Lillard]: https://www.montessori-science.org
   [goodatdoingthings.com]: http://goodatdoingthings.com/

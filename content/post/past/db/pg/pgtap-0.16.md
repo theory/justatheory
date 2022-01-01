@@ -1,5 +1,6 @@
 --- 
 date: 2009-02-03T18:19:38Z
+lastMod: 2022-01-01T04:12:09Z
 slug: pgtap-0.16
 title: pgTAP 0.16 in the Wild
 aliases: [/computers/databases/postgresql/pgtap-0.16.html]
@@ -15,7 +16,7 @@ coverage has been an absolute godsend. pgTAP has done a lot to free me from
 worry about the effects of my changes, as it ensures that everything about the
 databases continue to just work.
 
-Of course, that's not to say that I don't scew up. There are times when my
+Of course, that's not to say that I don't screw up. There are times when my
 refactorings have introduced new bugs or incompatibilities; after all, the tests
 I write of existing functionality extend only so far as I can understand that
 functionality. But as such issues come up, I just add regression tests, fix the
@@ -46,13 +47,12 @@ operating system. And of course, there are new test functions:
     of a data domain
 -   `has_enum()` and `hasnt_enum()`, which test for the presence and absence of
     an enum
--   `enum_has_lables()` which tests that an enum has an expected list of labels
+-   `enum_has_labels()` which tests that an enum has an expected list of labels
 
-As usual, you can [download] the latest release from pgFoundry. Visit the [pgTAP
-site][pgTAP] for more information and for documentation.
+As usual, you can [download] the latest release from ~~pgFoundry~~ GitHub. Visit
+the [pgTAP site][pgTAP] for more information and for documentation.
 
-  [pgTAP]: http://pgtap.projects.postgresql.org/
-    "pgTAP: Unit Testing for PostgreSQL"
+  [pgTAP]: https://pgtap.org "pgTAP: Unit Testing for PostgreSQL"
   [TAP::Harness]: https://metacpan.org/dist/Test-Harness/
     "TAP::Harness on CPAN"
-  [download]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
+  [download]: https://github.com/theory/pgtap/releases/tag/rel-0.16

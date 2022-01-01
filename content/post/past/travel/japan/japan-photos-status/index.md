@@ -58,4 +58,4 @@ post will have to do.
   [the code]: http://github.com/theory/pod-site "Pod::Site on GitHub"
   [example]: http://www.bricolagecms.org/docs/current/api
     "Bricolage Documentation Browser"
-  [pgTAP]: http://pgtap.projects.postgresql.org/
+  [pgTAP]: https://pgtap.org

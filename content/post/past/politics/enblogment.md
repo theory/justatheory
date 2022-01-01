@@ -62,34 +62,37 @@ Barack Obama for President. He's the right man for the job at the right time.
     "enblogment: For Kerry"
   [Lawrence Lessig]: http://www.lessig.org/blog/archives/002264.shtml
     "Lawrence Lessig: enblogment: For Kerry"
-  [Barack Obama]: http://www.barackobama.com/ "Barack Obama for America"
+  [Barack Obama]: https://barackobama.com "Barack Obama for America"
   [Oregon vote by mail]: https://en.wikipedia.org/wiki/Postal_voting
     "Wikipedia: Postal voting"
-  [*The New Yorker's* endorsement]: http://www.newyorker.com/talk/comment/2008/10/13/081013taco_talk_editors
+  [*The New Yorker's* endorsement]: https://www.newyorker.com/magazine/2008/10/13/the-choice-the-editors
     "New Yorker October 13, 2008: “The Choice”"
-  [The Washington *Post*]: http://www.washingtonpost.com/wp-dyn/content/article/2008/10/16/AR2008101603436.html
+  [The Washington *Post*]: https://www.washingtonpost.com/wp-dyn/content/article/2008/10/16/AR2008101603436.html
     "Barack Obama for President"
-  [The Los Angeles *Times*]: http://www.latimes.com/news/opinion/editorials/la-ed-endorse19-2008oct19,0,5198206.story
+  [The Los Angeles *Times*]: https://www.latimes.com/opinion/editorials/la-ed-endorse19-2008oct19-story.html
     "Barack Obama for president"
-  [The New York *Daily News*]: http://www.nydailynews.com/opinions/2008/10/18/2008-10-18_daily_news_endorses_obama_for_president_-3.html
+  [The New York *Daily News*]:
+    https://www.nydailynews.com/opinion/daily-news-endorses-obama-president-promise-renew-america-home-article-1.300473
     "Daily News endorses Obama for President"
-  [The Miami *Herald*]: http://www.miamiherald.com/opinion/editorials/story/730751.html
+  [The Miami *Herald*]: https://www.miamiherald.com/opinion/editorials/story/730751.html
     "For U.S. president and vice president"
-  [The San Francisco *Chronicle*]: http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2008/10/18/EDJS13F58O.DTL
+  [The San Francisco *Chronicle*]:
+    https://www.sfgate.com/opinion/article/The-Chronicle-recommends-Obama-for-president-3265103.php
     "The Chronicle recommends Obama for president"
-  [Former Secretary of State Colin L. Powell]: http://thecaucus.blogs.nytimes.com/2008/10/19/powell-endorses-obama/
+  [Former Secretary of State Colin L. Powell]: https://thecaucus.blogs.nytimes.com/2008/10/19/powell-endorses-obama/
     "Powell Endorses Obama"
-  [The Philadelphia *Inquirer*]: http://www.philly.com/philly/news/20081017_For_President__Obama_will_lead.html
+  [The Philadelphia *Inquirer*]: https://www.inquirer.com/philly/opinion/20081017_For_President__Obama_will_lead.html
     "For President: Obama will lead"
-  [The Chicago *Sun-Times*]: http://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
+  [The Chicago *Sun-Times*]: https://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
     "Sun-Times endorses Barack Obama for president"
-  [The Chicago *Tribune*]: http://www.chicagotribune.com/news/opinion/chi-chicago-tribune-endorsement,0,1371034.story
+  [The Chicago *Tribune*]: https://www.chicagotribune.com/opinion/chi-chicago-tribune-endorsement-story.html
     "Tribune endorsement: Barack Obama for president"
-  [The Atlanta *Journal-Constitution*]: http://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html
+  [The Atlanta *Journal-Constitution*]: https://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html
     "Obama is the choice"
-  [The Denver *Post*]: http://www.denverpost.com/politics/ci_10741576
+  [The Denver *Post*]: https://www.denverpost.com/2008/10/16/barack-obama-for-president/
     "Barack Obama for president"
-  [McCain is in some kind of bubble]: http://www.youtube.com/watch?v=JcU81Y193sU
+  [McCain is in some kind of bubble]: https://www.youtube.com/watch?v=JcU81Y193sU
     "Pundits: McCain Unaware of What His Campaign is Peddling"
-  [McCain knows exactly what he's doing]: http://www.thedailybeast.com/blogs-and-stories/2008-10-10/the-conservative-case-for-obama/
+  [McCain knows exactly what he's doing]:
+    https://www.thedailybeast.com/blogs-and-stories/2008-10-10/the-conservative-case-for-obama/
     "Sorry, Dad, I'm Voting for Obama"

@@ -62,7 +62,7 @@ At any rate, you now have one less reason not to leave a comment!
     "Textile: A Humane Web Text Generator"
   [PHP Markdown Extra]: http://michelf.com/projects/php-markdown/extra/
   [MultiMarkdown]: http://fletcherpenney.net/multimarkdown/
-  [pgTAP documentation]: http://pgtap.projects.postgresql.org/documentation.html
+  [pgTAP documentation]: https://pgtap.org/documentation.html
   [Discount]: http://www.pell.portland.or.us/~orc/Code/markdown/
     "Discount — a C implementation of the Markdown markup language"
   [README]: https://github.com/theory/pgtap/#readme "pgTAP README"

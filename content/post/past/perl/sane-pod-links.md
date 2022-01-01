@@ -13,7 +13,7 @@ any other `scheme:` links in Pod, You had to do something like this:
 
 ``` perl
 For more information, consult the pgTAP documentation:
-L<http://pgtap.projects.postgresql.org/documentation.html>
+L<https://pgtap.org/documentation.html>
 ```
 
 The reasons why you couldn't include text in the link to server as the link text
@@ -30,7 +30,7 @@ be written as:
 
 ``` perl
 For more information, consult the
-L<pgTAP documentation|http://pgtap.projects.postgresql.org/documentation.html>.
+L<pgTAP documentation|https://pgtap.org/documentation.html>.
 ```
 
 So much better! And to show it off, I've just updated all the links in

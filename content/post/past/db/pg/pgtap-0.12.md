@@ -27,4 +27,4 @@ find the tuits for that.
 
   [PostgreSQL Conference West 2008 talk]: http://www.postgresqlconference.org/west08/talks/
     "PostgreSQL Conference West 2008 Talks"
-  [pgTAP 0.12]: http://pgfoundry.org/frs/?group_id=1000389 "pgTAP Downloads"
+  [pgTAP 0.12]: https://github.com/theory/pgtap/releases/tag/rel-0.12

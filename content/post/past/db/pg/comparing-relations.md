@@ -379,7 +379,7 @@ SELECT results_are(
 Thoughts? I'm not going to get to it this week, so feedback would be greatly
 appreciated.
 
-  [pgTAP]: http://pgtap.projects.postgresql.org/
+  [pgTAP]: https://pgtap.org
     "pgTAP: Unit Testing for PostgreSQL"
   [CITEXT]: {{% ref "/post/past/db/pg/citext-patch-submitted" %}}
     "CITEXT Patch Submitted to PostgreSQL Contrib"

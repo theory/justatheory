@@ -106,7 +106,7 @@ Perl Mongers].
 
   [hotel]: http://www.hotelvaladon.com/
     "Hôtel Valadon Paris — between rue cler market and eiffel tower"
-  [Musee des Beaux-Arts]: http://www.rouen-musees.com/index.php?idR=12
-  [Six Semaines en France]: http://strongrrl.blogspot.com/
-  [Flicker photostream]: http://flickr.com/photos/theory/
-  [Paris Perl Mongers]: http://paris.mongueurs.net/ "Paris Perl Mongueu(r|se)s"
+  [Musee des Beaux-Arts]: https://mbarouen.fr/en
+  [Six Semaines en France]: https://strongrrl.blogspot.com/
+  [Flicker photostream]: https://flickr.com/photos/theory/
+  [Paris Perl Mongers]: https://paris.mongueurs.net/ "Paris Perl Mongueu(r|se)s"

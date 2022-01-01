@@ -40,7 +40,7 @@ In the meantime, share and enjoy.
     "Corrected PostgreSQL EAN Functions"
   [GTIN]: {{% ref "/post/past/perl/stepped-series" %}}
     "Stepped Series of Numbers in Perl"
-  [Check it out!]: http://pgfoundry.org/frs/?group_id=1000229
+  [Check it out!]: https://github.com/theory/gtin/releases/tag/v0.1.0
     "Download the GTIN data type"
   [Douglas Book]: https://www.amazon.com/exec/obidos/ASIN/0672327562/justatheory-20
     "“PostgreSQL (2nd Edition)” by Douglas and Douglas"

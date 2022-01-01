@@ -100,24 +100,22 @@ the message.
 Think you're tired of the phrase “flip-flopper”? Get ready to hear more about
 our slash and spend president. Ad nauseam.
 
-  [Hendrik Hertzberg]: http://www.pbs.org/newshour/character/bios/hertzberg.html
-    "Hendrik Hertzberg"
-  [said something interesting]: http://freshair.npr.org/day_fa.jhtml?displayValue=day;todayDate=07/14/2004
+  [Hendrik Hertzberg]: https://www.hendrikhertzberg.com
+  [said something interesting]: https://www.npr.org/templates/story/story.php?storyId=3391001
     "Hendrik Hertzberg on “Fresh Air”, 2004-07-14"
-  [“Fresh Air”]: http://freshair.npr.org/ "Fresh Air online"
-  [$237 billion]: http://money.cnn.com/2001/10/29/economy/budget/
+  [“Fresh Air”]: https://freshair.npr.org/ "Fresh Air online"
+  [$237 billion]: https://money.cnn.com/2001/10/29/economy/budget/
     "CNN Reports on the declining US budget surplus in 2001"
   [$477 billion]: http://www.democrats.org/specialreports/2005budget/surplus.html
     "DNC Special Reports: Bush's 2005 Budget: A Deficit Disaster"
   [“CEO President,”]: http://www.washingtonmonthly.com/archives/individual/2004_05/003829.php
     "“Our CEO President”"
-  [Nat]: http://nathan.torkington.com/articles/2004-vote.html
+  [Nat]: https://nathan.torkington.com/articles/2004-vote.html
     "Understanding the 2004 Vote"
-  [George Lakoff]: http://www.georgelakoff.com/blog/ "George Lakoff Blog"
+  [George Lakoff]: https://georgelakoff.com/blog/ "George Lakoff Blog"
   [*Don't think of an Elephant*.]: https://www.amazon.com/exec/obidos/tg/detail/-/1931498717/justatheory-20
     "Buy “Don't think of an Elephant” on Amazon.com"
-  [good article]: http://www.salon.com/news/feature/2004/10/02/lakoff/print.html
-    "“Winning the war of words”"
-  [self-contained argument]: http://www.motherjones.com/news/qa/2004/10/10_401.html
+  [good article]: https://www.salon.com/2004/10/02/lakoff/ "“Winning the war of words”"
+  [self-contained argument]: https://www.motherjones.com/politics/2004/10/how-talk-conservative-if-you-must/
     "“How to Talk Like a Conservative (If You Must)”"
-  [talking points memo]: http://www.talkingpointsmemo.com/
+  [talking points memo]: https://talkingpointsmemo.com

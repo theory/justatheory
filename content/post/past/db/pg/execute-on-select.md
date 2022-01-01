@@ -81,10 +81,10 @@ clean as can be, albeit a little too magical for my tastes.
 
 Anyway, recorded here for posterity (my blog is my other brain!).
 
-  [PL/Perl]: https://www.postgresql.org/docs/current/static/plperl.html
-  [creating utility functions]: http://www.depesz.com/index.php/2008/08/01/writing-sprintf-and-overcoming-limitations-in-plperl/
-  [DBI]: http://dbi.perl.org/
-  [callbacks]: https://metacpan.org/dist/DBI/DBI.pm#Callbacks_(hash_ref)
+  [PL/Perl]: https://www.postgresql.org/docs/current/plperl.html
+  [creating utility functions]: https://www.depesz.com/2008/08/01/writing-sprintf-and-overcoming-limitations-in-plperl/
+  [DBI]: https://dbi.perl.org
+  [callbacks]: https://metacpan.org/pod/DBI#Callbacks
   [described before]: {{% ref "/post/past/perl/dbi-connect-cached-hack" %}}
-  [Rails]: http://rubyonrails.org/
+  [Rails]: https://rubyonrails.org
   [fuck typing]: {{% ref "/post/past/programming/fuck-typing" %}}

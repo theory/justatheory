@@ -228,7 +228,7 @@ More soon.
     "Wikipedia: “Natural Key”"
   [surrogate key]: https://en.wikipedia.org/wiki/Surrogate_key
     "Wikipedia: “Surrogate Key”"
-  [isn]: https://www.postgresql.org/docs/current/static/isn.html
+  [isn]: https://www.postgresql.org/docs/current/isn.html
     "PostgreSQL Documentation: “isn”"
   [some attempts]: http://dlist.sir.arizona.edu/1716/
     "The Universal Author Identifier System (UAI_Sys)"

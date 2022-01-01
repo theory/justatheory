@@ -58,10 +58,10 @@ Other changes to SVN::Notify include:
 
 Enjoy!
 
-  [Autrijus']: http://www.autrijus.org/ "Autrijus.Home"
+  [Autrijus']: https://en.wikipedia.org/wiki/Audrey_Tang "Wikipedia: Audrey Tang"
   [mentioned]: {{% ref "/post/past/perl/svnnotify-2.0.md" %}}
     "SVN::Notify 2.0 Hitting CPAN"
   [SVN::Notify]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
-  [Ovid]: http://use.perl.org/~Ovid/ "Ovid's Journal"
-  [written about]: http://www.perlmonks.org/index.pl?node_id=392248
+  [Ovid]: https://ovid.github.io/blog.html "Blog Entries by Ovid"
+  [written about]: https://www.perlmonks.org/index.pl?node_id=392248
     "“if” Considered Harmful in OO programming"

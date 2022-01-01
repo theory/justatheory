@@ -75,7 +75,7 @@ So anyway, I'm soliciting feedback. Are discreet permissions better than
 cumulative permissions? And if so, are bit-wise `OR`ed numbers the best way to
 represent an object ACLs?
 
-  [Bric::Security]: http://www.bricolage.cc/docs/current/api/Bric::Security
+  [Bric::Security]: https://bricolagecms.org/docs/current/api/Bric::Security
     "Read the Bric::Security documentation on the Bricolage site"
   [RT]: http://www.bestpractical.com/rt/ "RT Request Tracker"
   [List::MoreUtil]: https://metacpan.org/dist/List-MoreUtils/

@@ -175,7 +175,7 @@ But that's after my vacation. Back in two weeks.
     "Neither NULL nor NOT NULL: An SQL WTF"
   [pgTAP]: https://pgtap.org
     "pgTAP: Unit Testing for PostgreSQL"
-  [here]: http://pgfoundry.org/frs/?group_id=1000389 "Download pgTAP"
+  [here]: https://github.com/theory/pgtap/releases/tag/rel-0.22 "Download pgTAP"
   [documentation]: https://pgtap.org/documentation.html#pursuingyourquery
     "pgTAP Documentation: Pursing Your Query"
   [download]: https://github.com/theory/pgtap/releases/tag/rel-0.22 "Download pgTAP"

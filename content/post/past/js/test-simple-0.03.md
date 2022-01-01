@@ -69,4 +69,4 @@ More Feedback/advice/insults welcome!
     "Test::Simple and friends on CPAN"
   [here]: {{% link "/downloads/TestSimple-0.03.tar.gz" %}}
     "Download TestSimple 0.03 now!"
-  [Marshall Roch]: http://www.spastically.com/ "Spastically"
+  [Marshall Roch]: https://github.com/mroch "Marshall Roch on GitHub"

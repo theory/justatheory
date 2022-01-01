@@ -1,4 +1,4 @@
---- 
+f--- 
 date: 2009-04-23T18:15:06Z
 slug: bricolage-svn-to-git
 title: Migrating Bricolage Subversion to Git
@@ -266,13 +266,13 @@ More on that in my next post.
   [Bricolage Subversion repository]: http://svn.bricolage.cc/
   [branches directory]: http://svn.bricolage.cc/bricolage/branches/
   [tags setup]: http://svn.bricolage.cc/bricolage/tags/
-  [Marshall]: http://www.exclupen.com/ "Marshall Roch"
-  [reported last week]: http://marc.info/?t=123964664700006
+  [Marshall]: https://github.com/mroch "Marshall Roch"
+  [reported last week]: https://marc.info/?t=123964664700006
     "Git Mail List: “Again with git-svn: File was not found in commit”"
   [recommended]: http://www.simplisticcomplexity.com/2008/03/05/cleanly-migrate-your-subversion-repository-to-a-git-repository/
     "Simplistic Complexity: “Cleanly Migrate Your Subversion Repository To a GIT Repository”"
-  [svn2git]: http://github.com/schwern/svn2git/tree/ "svn2git on GitHub"
-  [GitX]: http://gitx.frim.nl/
+  [svn2git]: ttps://github.com/schwern/svn2git/ "svn2git on GitHub"
+  [GitX]: https://gitx.frim.nl
   [Ask Bjørn Hansen]: http://www.askask.com/
   [ViewVC]: http://viewsvn.bricolage.cc/bricolage/branches/
     "Bricolage Branches in ViewVC"

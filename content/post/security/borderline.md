@@ -82,8 +82,8 @@ also take privacy seriously.*
 
   [focus on disk encryption]: {{% ref "/post/security/problem-with-disk-encryption.md" %}}
     "The Problem With Disk Encryption"
-  [Goran Begic]: https://www.immun.io/blog/author/goran-begic
-  [made the case]: https://www.immun.io/blog/what-is-the-network-perimeter-anyway
+  [Goran Begic]: https://gbegic.medium.com
+  [made the case]: https://dzone.com/articles/what-is-the-network-perimeter-anyway
     "What is the Network Perimeter, Anyway?"
   [former archaeologist]: {{% ref "/post/past/personal/five-things/index" %}}#2-i-used-to-be-an-archaeologist
   [Kubernetes]: https://kubernetes.io "Production-Grade Container Orchestration"

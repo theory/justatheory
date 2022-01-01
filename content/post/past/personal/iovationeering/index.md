@@ -66,17 +66,17 @@ posts, conference presentations, and more open-source code.
 This is going to be a blast. Interested in a front-row seat? [Follow me on
 Twitter].
 
-  [PGX]: http://pgexperts.com/
+  [PGX]: https://pgexperts.com/
   [iovation]: https://iovation.com/
   [CTO at values of n]: {{% ref "/post/past/personal/im-back/index" %}}
-  [lot]: https://github.com/theory/repositories
-  [of]: https://github.com/bricoleurs/repositories
-  [great]: https://github.com/pgxn/repositories
-  [code]: https://github.com/pgexperts/repositories
+  [lot]: https://github.com/theory?tab=repositories
+  [of]: https://github.com/bricoleurs?tab=repositories
+  [great]: https://github.com/pgxn?tab=repositories
+  [code]: https://github.com/pgexperts?tab=repositories
   [Bricolage CMS]: http://bricolagecms.org/
-  [over to PGX]: http://pgexperts.com/bricolage.html
+  [over to PGX]: https://pgexperts.com/bricolage.html
     "Bricolage Technical Support from PGX"
   [DesignScene]: http://www.designsceneapp.com/
-  [1]: http://blog.pgxn.org/ "PGXN Blog"
-  [Lunar/Theory]: http://blog.lunar-theory.com/ "Lunar/Theory Blog"
+  [1]: https://blog.pgxn.org/ "PGXN Blog"
+  [Lunar/Theory]: https://blog.lunar-theory.com/ "Lunar/Theory Blog"
   [Follow me on Twitter]: https://twitter.com/theory/

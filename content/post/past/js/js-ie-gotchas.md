@@ -13,10 +13,12 @@ to figure out and work around to get [TestSimple] working in IE.:
 -   IE doesn't like serial commas. In other words, If I create an object like
     this:
 
-        var obj = {
-            foo: "yow",
-            bar: "bat",
-        };
+    ``` js
+    var obj = {
+        foo: "yow",
+        bar: "bat",
+    };
+    ```
 
     IE will complain. It seems it doesn't like that last comma, but it doesn't
     give you a decent diagnostic message to help you figure out that that's what
@@ -50,10 +52,10 @@ so hard to figure them out on my own in the future (and neither will you)!
 
   [TestSimple]: {{% ref "/post/past/js/test-simple-0.03.md" %}}
     "TestSimple 0.03 Released"
-  [Marshall]: http://www.spastically.com/ "Spastically"
+  [Marshall]: https://github.com/mroch "Marshall Roch on GitHub"
   [`document.write.apply()`]: {{% ref "/post/past/js/js-apply-on-write" %}}
     "How do I Add apply() to IE JavaScript Functions?"
-  [a page]: http://www.technicalpursuit.com/documents_codingstds.html
-    "TIBET™ Coding Standards & Sample Code"
-  [confirmed the issue]: http://simon.incutio.com/archive/2004/02/17/lineEndings
+  [a page]: https://www.technicalpursuit.com/docs/coding-standards.html
+    "TIBET Coding Standards"
+  [confirmed the issue]: https://simonwillison.net/2004/Feb/17/lineEndings/
     "Automatic line ending conversions in IE"

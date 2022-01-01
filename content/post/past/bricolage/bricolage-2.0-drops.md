@@ -103,7 +103,7 @@ the help. I hope to see you all for Bricolage 2.2!
   [Chris Heiland]: http://cuwebd.ning.com/profile/ChrisHeiland
   [Scott Lanning]: http://use.perl.org/~slanning/
   [Phillip Smith]: http://www.phillipadsmith.com/
-  [bricolagecms.org]: http://www.bricolagecms.org/
+  [bricolagecms.org]: http://bricolagecms.org/
   [@bricolagecms]: https://twitter.com/bricolagecms
   [Matt Rolf]: http://mattrolf.com/
   [Bricolage 2.0 press release]: http://bricolagecms.org/news/pr/2010/04/12/2.0-presskit/

@@ -144,9 +144,9 @@ for as long as they're retained. But I'm not sure yet. I want your feedback on
 this. How do you want to use exception-handling with DBIx::Connector? Leave me a
 comment here or on [the ticket].
 
-  [bug report]: http://rt.cpan.org/Ticket/Display.html?id=65196
+  [bug report]: https://rt.cpan.org/Public/Bug/Display.html?id=65196
   [Try::Tiny]: https://metacpan.org/pod/Try::Tiny
   [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
-  [`mode` method]: https://metacpan.org/dist/DBIx-Connector/lib/DBIx/Connector.pm#mode
+  [`mode` method]: https://metacpan.org/pod/DBIx::Connector#mode
   [here]: https://github.com/theory/dbix-connector/issues/3
   [the ticket]: https://rt.cpan.org/Ticket/Display.html?id=65196

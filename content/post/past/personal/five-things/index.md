@@ -181,6 +181,6 @@ I now tag:
   [thrown down the gauntlet]: http://marc.info/?l=bricolage-general&m=117392382314816
     "My Message to the Bricolage Community"
   [James Duncan Davidson]: http://duncandavidson.com/
-  [Nathan Tokington]: https://radar.oreilly.com/nat/
+  [Nathan Tokington]: http://radar.oreilly.com/nat/
   [Josh Berkus]: https://www.databasesoup.com "Josh Berkus's Database Soup"
   [Ask Bjørn Hansen]: https://www.askask.com

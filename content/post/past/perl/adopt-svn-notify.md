@@ -36,4 +36,4 @@ notification script from which SVN::Notify was derived — and which I have even
   [this sample output]: {{% link "/code/svnnotify/svnnotify-2.70_trac_example.html" %}}
   [Twitter]: https://twitter.com/
   [send an email]: https://metacpan.org/author/DWHEELER
-  [activitymail]: https://metacpan.org/dist/activitymail/
+  [activitymail]: https://metacpan.org/release/DWHEELER/activitymail-1.26/view/bin/activitymail

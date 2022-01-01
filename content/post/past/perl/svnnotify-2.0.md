@@ -76,8 +76,8 @@ So what did it lose? Just a few things:
 Not too much, eh? Let me know what you think, and send feedback!
 
   [CPAN]: https://metacpan.org/dist/SVN-Notify/ "SVN::Notify on CPAN"
-  [*activitymail*]: https://metacpan.org/dist/activitymail/
+  [*activitymail*]: https://metacpan.org/release/DWHEELER/activitymail-1.26/view/bin/activitymail
     "activitymail on CPAN"
-  [Subversion]: http://subversion.tigris.org/ "Subversion Website"
-  [Autrijus Tang]: http://www.autrijus.org/ "Autrijus.Home"
-  [*syncmail*]: http://sourceforge.net/projects/cvs-syncmail "syncmail Website"
+  [Subversion]: https://subversion.apache.org "Subversion Website"
+  [Autrijus Tang]: https://en.wikipedia.org/wiki/Audrey_Tang "Wikipedia: “Audrey Tang”"
+  [*syncmail*]: https://sourceforge.net/projects/cvs-syncmail/ "syncmail Website"

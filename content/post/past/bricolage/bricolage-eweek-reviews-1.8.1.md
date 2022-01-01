@@ -33,8 +33,8 @@ of *eWeek*:
 I'm pretty stoked about this review, as you might imagine. *eWeek* is now
 officially my favorite trade magazine!
 
-  [reviewed]: http://www.eweek.com/article2/0,1759,1627959,00.asp
+  [reviewed]: https://www.eweek.com/enterprise-apps/bricolage-1.8.1/
     "Read the review"
-  [Bricolage]: http://www.bricolage.cc/ "Visit the Bricolage Website"
-  [“Content Management Face-Off”]: http://www.eweek.com/article2/0,1759,1627957,00.asp
+  [Bricolage]: https://bricolagecms.org/ "Visit the Bricolage Website"
+  [“Content Management Face-Off”]: https://www.eweek.com/enterprise-apps/web-content-management-face-off/
     "Content Management Face-Off"

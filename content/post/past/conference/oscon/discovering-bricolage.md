@@ -24,8 +24,8 @@ beginning as a set of slides ahead of the main presentation content. You can
 
   [presentation]: http://conferences.oreillynet.com/cs/os2004/view/e_sess/5312
     "Discovering Bricolage Description"
-  [Nat]: http://use.perl.org/~gnat/journal/ "Nat's Journal"
-  [Bricolage Website]: http://www.bricolage.cc/ "Bricolage Website"
+  [Nat]: https://nathan.torkington.com/ "Nat Torkington"
+  [Bricolage Website]: https://bricolagecms.org/ "Bricolage Website"
   [download]: https://kineticode.com/docs/discovering_bricolage.pdf
     "Download discovering_bricolage.pdf"
   [Kineticode]: https://kineticode.com/ "Kineticode Website"

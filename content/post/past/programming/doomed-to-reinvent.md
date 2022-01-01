@@ -70,11 +70,11 @@ In short, if it ain't broke, don't *reinvent it!*
 
   [ORM developers]: {{% ref "/post/past/db/celko-at-yapc" %}}
     "Learn Mad Database Skillz at YAPC::NA 2009"
-  [ActiveRecord]: http://api.rubyonrails.org/classes/ActiveRecord/Base.html
+  [ActiveRecord]: https://api.rubyonrails.org/classes/ActiveRecord/Base.html
     "Rails API: ActiveRecord::Base"
-  [2007 Presentation]: https://www.vimeo.com/4098876
+  [2007 Presentation]: https://vimeo.com/4098876
     "Ruby on Rails for PostgreSQL Enthusiasts"
   [fuck typing]: {{% ref "/post/past/programming/fuck-typing" %}}
     "Fuck Typing"
-  [baroque interface]: http://api.drupal.org/api/file/developer/topics/forms_api.html/5
+  [baroque interface]: https://api.drupal.org/api/drupal/developer%21topics%21forms_api.html/5.x
     "Forms API Quickstart Guide"

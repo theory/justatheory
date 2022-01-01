@@ -355,7 +355,7 @@ my own.
     "CVE-2009-0922"
   [delivered new releases]: https://www.postgresql.org/about/news.1065
     "PostgreSQL 2009-03-16 Security Update"
-  [Bricolage]: http://www.bricolagecms.org/
+  [Bricolage]: http://bricolagecms.org/
     "Bricolage content management and publishing system"
   [this post]: http://www.nntp.perl.org/group/perl.perl5.porters/2009/07/msg148133.html
     "perl5-porters: “Re: Coring Variable::Magic / autodie fights with string eval inPerl 5.10.x”"

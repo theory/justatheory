@@ -79,7 +79,7 @@ that you can play with it on your own system. Thanks!
 
   [`Test.Simple`]: http://www.openjsan.org/doc/t/th/theory/Test/Simple/
     "Get Test.Simple on JSAN"
-  [JSAN]: http://www.openjsan.org/doc/c/cw/cwest/JSAN/ "JSAN on JSAN"
+  [JSAN]: http://www.openjsan.org/doc/c/cw/cwest/JSAN/010/ "JSAN on JSAN"
   [running the tests]: {{% link "/code/Test.Simple-0.11_1/tests/index.html" %}}
     "Run the broken test suite now!"
   [downloaded here]: {{% link "/code/Test.Simple-0.11_1.tar.gz" %}}

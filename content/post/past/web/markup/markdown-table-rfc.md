@@ -19,7 +19,7 @@ this request for comments sooner rather than later.
 ### Requirements
 
 All of which is to say that this blog entry is a request for comments on a
-proposed sytnax for simple tables in Markdown. The requirements for such a
+proposed syntax for simple tables in Markdown. The requirements for such a
 feature, to my thinking, are:
 
 -   Simple tables only
@@ -134,7 +134,7 @@ value includes newlines, it actually ends up being much too long—much longer
 than PostgreSQL's representation of the same column. And second, as a symptom of
 that problem, nothing special is done with the wrapped lines. The newlines are
 simply output like any other character, with no attempt to line up the column.
-This has the side effect of orphaning the price for the “dojiggger” after the
+This has the side effect of orphaning the price for the “dojigger” after the
 last line of the continuing description. So its alignment is shot, too.
 
 To be fair, PostgreSQL's display featured almost exactly the same handling of
@@ -372,16 +372,16 @@ Thanks!
     "markdown-discuss: A preliminary discussion of tables with continuing lines"
   [open-minded post]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001485.html
     "markdown-discuss: Fletcher Penney is open to a modified table  syntax"
-  [MultiMarkdown]: http://fletcherpenney.net/multimarkdown/ "MultiMarkdown"
-  [MultiMarkdown tables]: http://fletcherpenney.net/multimarkdown/users_guide/multimarkdown_syntax_guide/#tables
+  [MultiMarkdown]: https://fletcherpenney.net/multimarkdown/ "MultiMarkdown"
+  [MultiMarkdown tables]: https://fletcher.github.io/MultiMarkdown-6/syntax/tables.html
     "MultiMarkdown Syntax Guide: Tables"
-  [PHP Markdown Extra syntax]: http://michelf.com/projects/php-markdown/extra/#table
+  [PHP Markdown Extra syntax]: https://michelf.ca/projects/php-markdown/extra/#table
   [psql 8.3]: https://www.postgresql.org/docs/8.3/static/app-psql.html
     "psql -- PostgreSQL interactive terminal"
   [PostgreSQL 8.3]: https://www.postgresql.org/docs/8.3/ "PostgreSQL 8.3 documentation"
-  [mysql 5.0]: http://dev.mysql.com/doc/refman/5.0/en/mysql.html
+  [mysql 5.0]: https://dev.mysql.com/doc/refman/5.7/en/mysql.html
     "mysql — The MySQL Command-Line Tool"
-  [1]: http://dev.mysql.com/doc/refman/5.0/en/ "MySQL 5.0 Reference Manual"
+  [1]: https://dev.mysql.com/doc/refman/5.7/en/ "MySQL 5.7 Reference Manual"
   [SQLite 3.6]: https://sqlite.org/docs.html "SQLite Documentation"
   [suggested by Benoit Perdu]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001472.html
   [posted a comment]: http://six.pairlist.net/pipermail/markdown-discuss/2009-February/001510.html

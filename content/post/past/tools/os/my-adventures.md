@@ -428,37 +428,37 @@ working with the first really solid OS that Apple has released in years, and
 thrilled that I can finally have the best of both worlds: a good, reliable, and
 elegant UI, and all the Unix power tools I can stand! I hope you do, too.
 
-  [Yellow Dog Linux]: http://www.yellowdoglinux.com/
-  [Mac OS X]: http://www.apple.com/macosx/
-  [PowerBook]: http://www.apple.com/powerbook/
-  [Bricolage]: http://bricolage.cc/
+  [Yellow Dog Linux]: https://en.wikipedia.org/wiki/Yellow_Dog_Linux
+  [Mac OS X]: https://www.apple.com/macosx/
+  [PowerBook]: https://www.apple.com/powerbook/
+  [Bricolage]: https://bricolagecms.org/
   [read up on it]: http://www.oreillynet.com/pub/a/mac/2001/12/14/terminal_one.html
-  [GNU Emacs]: http://www.gnu.org/software/emacs/emacs.html
-  [XFree86 ports]: http://www.xdarwin.org/
+  [GNU Emacs]: https://www.gnu.org/software/emacs/emacs.html
+  [XFree86 ports]: https://en.wikipedia.org/wiki/XDarwin
   [Mac-Emacs project]: http://mac-emacs.sourceforge.net/
-  [BBEdit]: http://www.bbedit.com/products/bbedit.html
+  [BBEdit]: https://www.barebones.com/products/bbedit/
   [this PDF]: http://homepage.mac.com/rgriff/files/mod_ssl.pdf
-  [GDBM]: http://www.gnu.org/software/gdbm/gdbm.html
-  [project bpage]: http://sourceforge.net/projects/expat/
-  [Perl]: http://www.perl.com/
-  [well-known]: http://archive.develooper.com/macosx@perl.org/msg00895.html
-  [libapreq]: http://httpd.apache.org/apreq/
+  [GDBM]: https://www.gnu.org.ua/software/gdbm/
+  [project bpage]: https://sourceforge.net/projects/expat/
+  [Perl]: https://www.perl.com/
+  [well-known]: https://www.nntp.perl.org/group/perl.macosx/2001/10/msg896.html
+  [libapreq]: https://httpd.apache.org/apreq/
   [Perl modules]: https://metacpan.org/search?q=dist%3Alibapreq
   [experimental]: http://www.apache.org/~joes/
   [discussion]: http://archive.develooper.com/macosx@perl.org/index.html#01539
   [Mac OS X Perl]: http://lists.perl.org/showlist.cgi?name=macosx
   [apache.tar.gz]: http://www.apache.org/~joes/apache.tar.gz
   [apreq.tar.gz]: http://www.apache.org/~joes/apreq.tar.gz
-  [Open SSL site]: http://www.openssl.org/
-  [mod\_ssl site]: http://www.modssl.org/
+  [Open SSL site]: https://www.openssl.org
+  [mod\_ssl site]: http://www.modssl.org
   [posted]: http://mathforum.org/epigone/modperl/fermkhiwhand/m1wv11m544.fsf_-_@halfdome.holdit.com
-  [mod\_perl mail list]: http://lists.perl.org/showlist.cgi?name=modperl-user
-  [mod\_perl]: http://perl.apache.org/
+  [mod\_perl mail list]: https://lists.perl.org/list/modperl-user.html
+  [mod\_perl]: https://perl.apache.org
   [INSTALL]: http://www.modssl.org/source/exp/mod_ssl/pkg.mod_ssl/INSTALL
   [PostgreSQL]: https://www.postgresql.org/
-  [Apple]: http://www.apple.com/
+  [Apple]: https://www.apple.com/
   [instructions]: http://developer.apple.com/internet/macosx/osdb.html
-  [MySQL]: http://www.mysql.org/
+  [MySQL]: https://www.mysql.org/
   [here]: {{% link "/downloads/pgsql_osx_start.tar.gz" %}}
   [Creating SystemStarter Startup Item Bundles HOWTO]: http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
   [XML::Parser]: https://metacpan.org/dist/XML-Parser

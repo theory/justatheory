@@ -109,8 +109,8 @@ comprehensive, actively-developed open source CMS, Bricolage was hailed as
 available” by *eWEEK*.
 
   [htmlArea bug report]: http://sourceforge.net/tracker/index.php?func=detail&aid=1155712&group_id=69750&atid=525656
-  [changes]: http://www.bricolage.cc/news/announce/changes/bricolage-1.8.5/
-  [Bric::Changes]: http://www.bricolage.cc/docs/api/current/Bric::Changes
-  [Downloads page]: http://www.bricolage.cc/downloads/
-  [SourceForge download page]: http://sourceforge.net/project/showfiles.php?group_id=281500
-  [Kineticode download page]: https://kineticode.com/bricolage/index2.html
+  [changes]: https://bricolagecms.org/news/announce/changes/bricolage-1.8.5/
+  [Bric::Changes]: https://github.com/bricoleurs/bricolage/blob/master/lib/Bric/Changes.pod
+  [Downloads page]: https://bricolagecms.org/downloads/
+  [SourceForge download page]: https://sourceforge.net/projects/bricolage/files/
+  [Kineticode download page]: https://kineticode.com/bricolage/downloads/

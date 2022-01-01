@@ -5,9 +5,11 @@ title: Nicholas Clark
 aliases: [/computers/conferences/oscon2004/nicholas_clark.html]
 tags: [OSCON, Nicholas Clark, Open Source, Perl, Pumpkin, Pumpking]
 type: post
+image:
+  src: nicholas_on_the_rag.jpg
+  alt: Nick Clark goes Wild!
+  class: left
 ---
-
-![Nick Clark goes Wild!](/2004/08/nicholas-clark-oscon/nicholas_on_the_rag.jpg)
 
 I just had to share this lovely picture of [Nick Clark], taken on the Friday
 night of OSCon 2004 at [Matt Sergeant's] party. I honestly have no idea what

@@ -104,7 +104,7 @@ Thanks for your help!
   [Kineticode]: https://kineticode.com/ "Kineticode Home"
   [Strongrrl]: http://www.strongrrl.com/ "Strongrrl Home"
   [Julie]: http://www.strongrrl.com/ "Julie Wheeler is principal at Strongrrl"
-  [Bricolage]: http://bricolage.cc "Bricolage CMS Home"
+  [Bricolage]: https://bricolagecms.org "Bricolage CMS Home"
   [FuseMail]: http://www.fusemail.com/ "FuseMail Home"
   [Maildir]: https://en.wikipedia.org/wiki/Maildir "Maildir as described by Wikipedia"
   [Offline IMAP]: http://www.offlineimap.org "OfflineIMAP community's website"

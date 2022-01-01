@@ -66,6 +66,6 @@ That is all.
   [integrating pgTAP]: https://pgtap.org/integration.html
     "Integrate pgTAP"
   [Enjoy]: https://pgtap.org "pgTAP"
-  [Bricolage]: http://bricolage.cc/ "Bricolage"
+  [Bricolage]: https://bricolagecms.org/ "Bricolage"
   [PostgreSQL Conference West]: http://www.postgresqlconference.org/west08/talks/
     "Talks at PostgreSQL Conference West 2008"

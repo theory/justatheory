@@ -31,5 +31,5 @@ the note I left on her [Legacy page].
 > the remainder of my life. Valerie's impact was great, and I'm grateful to have
 > had her in my life. My condolences to her family.
 
-  [Legacy page]: https://www.legacy.com/obituaries/name/valerie-wheeler-obituary?pid=183669514
+  [Legacy page]: https://www.legacy.com/us/obituaries/sacbee/name/valerie-wheeler-obituary?id=15687164
     "Valerie Wheeler 1940 – 2017"

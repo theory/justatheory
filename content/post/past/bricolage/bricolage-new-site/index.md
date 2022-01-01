@@ -10,7 +10,7 @@ image:
   alt: Bricolage
   title: Explore the new Bricolage Website!
   class: right
-  link: http://www.bricolagecms.org/
+  link: http://bricolagecms.org/
 ---
 
 The launch of the new [Bricolage Website] went off without a hitch yesterday.
@@ -38,7 +38,7 @@ best practices in using Bricolage so that people can download them, study them,
 and be able to start writing smart templates for their on Bricolage
 implementations. So enjoy!
 
-  [Bricolage Website]: http://www.bricolage.cc/ "Bricolage Website"
-  [Marshall Roch]: http://www.spastically.com/ "Marshall Roch's site"
-  [download]: http://www.bricolage.cc/downloads/bricolage.cc-1.00.tar.gz
+  [Bricolage Website]: https://bricolagecms.org/ "Bricolage Website"
+  [Marshall Roch]: https://github.com/mroch "Marshall Roch on GitHub"
+  [download]: https://bricolagecms.org/downloads/bricolage.cc-1.00.tar.gz
     "Download the bricolage.cc templates"

@@ -335,4 +335,4 @@ post on this topic, I expect to have an interface spec for the new app.
   [first example]: {{% ref "/post/past/db/simple-sql-change-management" %}}
   [as before]: {{% ref "/post/past/db/vcs-sql-change-management" %}}
   [idempotence]: https://en.wikipedia.org/wiki/Idempotence
-  [user-defined functions]: https://www.postgresql.org/docs/current/static/xfunc.html
+  [user-defined functions]: https://www.postgresql.org/docs/current/xfunc.html

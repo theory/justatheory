@@ -177,13 +177,12 @@ how to work with Git. For those of you who already know, [fork] and enjoy!
     "Migrating Bricolage CVS to Git"
   [migrated Subversion]: {{% ref "/post/past/bricolage/vcs/bricolage-svn-to-git" %}}
     "Migrating Bricolage Subversion to Git"
-  [git-filter-branch documentation]: http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html
+  [git-filter-branch documentation]: https://git-scm.com/docs/git-filter-branch
     "git-filter-branch(1) Manual Page"
-  [one]: http://www.ouaza.com/wp/2007/07/24/assembling-bits-of-history-with-git/
+  [one]: https://raphaelhertzog.com/2007/07/24/assembling-bits-of-history-with-git/
     "Buxy rêve tout haut: “Assembling bits of history with git”"
-  [Git Wiki]: http://git.or.cz/gitwiki/GraftPoint "GitWiki: “GraftPoint”"
-  [documentation]: http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html
-    "git-fetch(1) Manual Page"
-  [new home on GitHub]: http://github.com/bricoleurs/bricolage/
+  [Git Wiki]: https://git.wiki.kernel.org/index.php/GraftPoint "GitWiki: “GraftPoint”"
+  [documentation]: https://git-scm.com/docs/git-fetch "git-fetch(1) Manual Page"
+  [new home on GitHub]: https://github.com/bricoleurs/bricolage/
     "The Bricolage Git Tree on GitHub"
-  [fork]: http://github.com/bricoleurs/bricolage/fork "Fork Bricolage Now!"
+  [fork]: https://github.com/bricoleurs/bricolage/fork "Fork Bricolage Now!"

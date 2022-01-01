@@ -42,4 +42,4 @@ Write a new storage back-end by subclassing Bricolage::Store
 So have fun with it! When it gets here. Want to help get get here? Subscribe to
 [Bricolage-Devel] and chip in!
 
-  [Bricolage-Devel]: http://lists.sourceforge.net/mailman/listinfo/bricolage-devel
+  [Bricolage-Devel]: https://groups.google.com/group/bricolage-devel

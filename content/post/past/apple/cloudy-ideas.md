@@ -248,17 +248,17 @@ but selling great products.
   [Kate Craig-Wood]: https://twitter.com/Memset_kate/
   [this tweet]: https://twitter.com/memset_kate/status/106817356889735168
   [The post]: http://www.katescomment.com/open-apple-icloud/
-  [Apple does not care about the enterprise]: http://www.chrisenns.com/2010/06/29/why-apple-doesnt-care-about-enterprise/
+  [Apple does not care about the enterprise]: https://www.chrisenns.com/2010/06/29/why-apple-doesnt-care-about-enterprise/
   [Simon said]: https://twitter.com/swardley/status/106828452748988416
   [Kate added]: https://twitter.com/Memset_Kate/status/106826660283826176
   [duplicate the iPhone]: http://random.andrewwarner.com/what-googles-android-looked-like-before-and-after-the-launch-of-iphone/
-  [August 2011 MarketShare report]: http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8&qpcustomd=1
-  [the Kindle]: http://techcrunch.com/2011/09/02/amazon-kindle-tablet/
-  [OpenStack]: http://www.openstack.org/
+  [August 2011 MarketShare report]: https://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8&qpcustomd=1
+  [the Kindle]: https://techcrunch.com/2011/09/02/amazon-kindle-tablet/
+  [OpenStack]: https://www.openstack.org
   [why HP is leaving the PC business]: http://www.asymco.com/2011/08/19/hps-decade-long-departure/
   [accounted for 75% of Apple’s profits]: http://www.asymco.com/2011/05/03/ios-os-x-3-5-windows/
-  [Apple’s using Azure and AWS]: http://www.theregister.co.uk/2011/09/02/icloud_runs_on_microsoft_azure_and_amazon/
+  [Apple’s using Azure and AWS]: https://www.theregister.com/2011/09/02/icloud_runs_on_microsoft_azure_and_amazon/
   [Simon wrote]: https://twitter.com/swardley/status/106828832283168770
-  [The abuse of innovation]: http://blog.gardeviance.org/2011/08/abuse-of-innovation.html
-  [never been interested in profit]: http://blogs.reuters.com/great-debate/2011/08/29/jobs-made-apple-great-by-ignoring-profit/
-  [he told *Playboy*]: http://www.razorianfly.com/2011/07/18/steve-jobs-my-main-reaction-to-this-money-thing-is-that-its-humorous/
+  [The abuse of innovation]: https://blog.gardeviance.org/2011/08/abuse-of-innovation.html
+  [never been interested in profit]: https://www.reuters.com/article/column-apple-christensen-idUSN1E77T1E520110830
+  [he told *Playboy*]: https://allaboutstevejobs.com/verbatim/interviews/playboy_1985

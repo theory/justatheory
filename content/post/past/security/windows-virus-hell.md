@@ -121,5 +121,4 @@ blocked. Anyone else got any brilliant solutions to this problem?
   [Bricolage 1.9.0]: {{% ref "/post/past/bricolage/bricolage-1.9.0.md" %}}
   [George Schlossnagle]: http://www.schlossnagle.org/~george/blog/
     "George Schlossnagle's Blog"
-  [CBL database]: http://cbl.abuseat.org/lookup.cgi
-    "Search the CBL blacklisting database"
+  [CBL database]: https://www.abuseat.org "Composite Blocking List"

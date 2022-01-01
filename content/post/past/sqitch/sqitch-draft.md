@@ -737,7 +737,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   [migration]: https://metacpan.org/pod/Module::Build::DB
   [style]: https://metacpan.org/pod/DBIx::Migration
   [PostgreSQL]: https://postgresql.org/
-  [`psql`]: https://www.postgresql.org/docs/current/static/app-psql.html
+  [`psql`]: https://www.postgresql.org/docs/current/app-psql.html
   [MySQL]: https://mysql.com/
   [`mysql`]: https://dev.mysql.com/doc/refman/5.6/en/mysql.html
   [idempotent]: https://en.wikipedia.org/wiki/Idempotence

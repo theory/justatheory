@@ -89,7 +89,7 @@ like [DBIx::MultiRow] to encapsulate things. But if, like most of us, you're
 on one database for an app, I can't recommend stongly enough how well it pays
 to get to know your database well.
 
-  [CTE]: https://www.postgresql.org/docs/current/static/queries-with.html
+  [CTE]: https://www.postgresql.org/docs/current/queries-with.html
     "PostgreSQL Documentation: WITH Queries (Common Table Expressions)"
   [DBIx::MultiRow]: https://github.com/hochgurgler/DBIx-MultiRow
     "DBIx::MultiRow on GitHub"

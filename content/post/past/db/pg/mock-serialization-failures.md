@@ -91,7 +91,7 @@ handle serialization failures.
 
   [Bucardo]: http://bucardo.org/wiki/Bucardo
   [work]: https://iovation.com/
-  [transaction isolation]: https://www.postgresql.org/docs/current/static/transaction-iso.html
+  [transaction isolation]: https://www.postgresql.org/docs/current/transaction-iso.html
   [proposed]: https://bucardo.org/pipermail/bucardo-general/2012-October/001616.html
   [`ALTER TABLE` docs]: https://www.postgresql.org/docs/9.2/static/sql-altertable.html
   [get them committed]: https://github.com/bucardo/bucardo/commit/3931056f15f3f6df9b089fd439c14ec38b66d841

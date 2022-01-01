@@ -157,9 +157,9 @@ conviction will grant me time to work on these improvements.
     "SnowSQL Client for Snowflake"
   [ODBC driver]: https://docs.snowflake.net/manuals/user-guide/odbc.html
     "ODBC Driver for Snowflake"
-  [psql]: https://www.postgresql.org/docs/current/static/app-psql.html
+  [psql]: https://www.postgresql.org/docs/current/app-psql.html
   [DBD::Pg]: https://metacpan.org/module/DBD::Pg
-  [libpq]: https://www.postgresql.org/docs/current/static/libpq.html
+  [libpq]: https://www.postgresql.org/docs/current/libpq.html
   [mysql client]: https://dev.mysql.com/doc/refman/5.7/en/mysql.html
   [DBD::mysql]: https://metacpan.org/module/DBD::mysql
   [Homebrew]: https://brew.sh/
@@ -183,7 +183,7 @@ conviction will grant me time to work on these improvements.
   [Oracle]: https://github.com/sqitchers/docker-sqitch/tree/master/oracle/
   	"Sqitch Oracle Docker instructions"
   [Exasol]: https://www.exasol.com/
-  [Vertica]: https://my.vertica.com/ 
+  [Vertica]: https://vertica.com/ 
   [Alpine]: https://alpinelinux.org/ "Alpine Linux"
   [Snowflake]: https://github.com/sqitchers/docker-sqitch/tree/master/snowflake/
   	"Sqitch Snowflake Docker instructions"

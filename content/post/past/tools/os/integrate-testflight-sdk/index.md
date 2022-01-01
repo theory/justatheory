@@ -100,11 +100,11 @@ anywhere, though, and use any of its features, as long as you do so only within
 a `#ifdef CONFIGURATION_Beta` block. Check out the [complete SDK docs] for
 details. Then, get your beta on!
 
-  [TestFlight]: http://testflightapp.com/
+  [TestFlight]: https://testflight.apple.com/
   [DesignScene]: http://www.designsceneapp.com/
   [TestFlight SDK]: http://testflightapp.com/sdk/
-  [this StackOverflow post]: http://stackoverflow.com/questions/8027043/objective-c-having-a-testflight-configuration-to-include-testflight-sdk
+  [this StackOverflow post]: https://stackoverflow.com/q/8027043/79202
   [`EXCLUDED_SOURCE_FILE_NAMES` setting]: http://lists.apple.com/archives/xcode-users/2009/Jun/msg00153.html
-  [reasonably well known]: http://www.google.com/?q=EXCLUDED_SOURCE_FILE_NAMES
+  [reasonably well known]: https://www.google.com/search?q=EXCLUDED_SOURCE_FILE_NAMES
   [Download the TestFlight SDK]: https://testflightapp.com/sdk/download/
   [complete SDK docs]: https://testflightapp.com/sdk/doc/

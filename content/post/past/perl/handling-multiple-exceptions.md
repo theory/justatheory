@@ -84,6 +84,6 @@ What would you do?
 
   [DBIx::Connector]: https://metacpan.org/pod/DBIx::Connector
   [SQLite]: https://www.sqlite.org
-  [Bricolage]: http://www.bricolagecms.org/
+  [Bricolage]: http://bricolagecms.org/
   [DBIx::Class]: https://metacpan.org/pod/DBIx::Class
   [Exception::Class::DBI]: https://metacpan.org/pod/Exception::Class::DBI

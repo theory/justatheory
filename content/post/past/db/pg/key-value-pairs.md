@@ -323,13 +323,13 @@ sweet.
 
   [latest research]: http://it.toolbox.com/blogs/database-soup/runningwithscissorsdb-39879
     "RunningWithScissorsDB"
-  [`unnest`]: https://www.postgresql.org/docs/current/static/functions-array.html
+  [`unnest`]: https://www.postgresql.org/docs/current/functions-array.html
     "PostgreSQL Documentation: Array Functions and Operators"
-  [`generate_subscripts()`]: https://www.postgresql.org/docs/current/static/functions-srf.html#FUNCTIONS-SRF-SUBSCRIPTS
+  [`generate_subscripts()`]: https://www.postgresql.org/docs/current/functions-srf.html#FUNCTIONS-SRF-SUBSCRIPTS
     "PostgreSQL Documentation: Set Returning Functions"
-  [row constructors]: https://www.postgresql.org/docs/current/static/sql-expressions.html#SQL-SYNTAX-ROW-CONSTRUCTORS
+  [row constructors]: https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-ROW-CONSTRUCTORS
     "PostgreSQL Documentation: Row Constructors"
-  [composite type]: https://www.postgresql.org/docs/current/static/sql-createtype.html
+  [composite type]: https://www.postgresql.org/docs/current/sql-createtype.html
     "PostgreSQL Documentation: CREATE TYPE"
   [recent pgsql-hackers discussion]: http://archives.postgresql.org/pgsql-hackers/2010-08/msg00520.php
   [Oracle `COLLECTIONs`]: http://download.oracle.com/docs/cd/B19306_01/appdev.102/b14261/collections.htm

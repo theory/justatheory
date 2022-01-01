@@ -143,16 +143,16 @@ finally got it nailed down. Unfortunately, it takes an hour or two to export
 from Subversion to Git, and I'm having to do it over and over again as I figure
 stuff out. But it will be done, and you'll hear more about it here.
 
-  [discussion]: http://marc.info/?t=123886317200001
+  [discussion]: https://marc.info/?t=123886317200001
     "Bricolage Developer List Archive: “GitHub?”"
   [root directory]: http://svn.bricolage.cc/bricolage/
   [original home]: http://bricolage.cvs.sourceforge.net/viewvc/bricolage/bricolage/
     "Bricolage SourceForge CVS Browser"
-  [posted]: http://marc.info/?l=git&m=123964663024277
+  [posted]: https://marc.info/?l=git&m=123964663024277
     "Git Mail List: “Again with git-svn: File was not found in commit”"
-  [Ask Bjørn Hansen]: http://www.askask.com/
-  [stitch the two repositories together]: http://www.ouaza.com/wp/2007/07/24/assembling-bits-of-history-with-git/
+  [Ask Bjørn Hansen]: https://www.askask.com/
+  [stitch the two repositories together]: https://raphaelhertzog.com/2007/07/24/assembling-bits-of-history-with-git/
     "Buxy rêve tout haut: “Assembling bits of history with git”"
-  [`cvs2git`]: http://cvs2svn.tigris.org/cvs2git.html
-  [svn2git]: http://github.com/schwern/svn2git/tree/ "svn2git on GitHub"
-  [GitX]: http://gitx.frim.nl/
+  [`cvs2git`]: https://github.com/mhagger/cvs2svn/blob/master/cvs2git.html
+  [svn2git]: https://github.com/schwern/svn2git "svn2git on GitHub"
+  [GitX]: https://gitx.frim.nl

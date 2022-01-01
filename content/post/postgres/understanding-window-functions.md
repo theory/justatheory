@@ -18,5 +18,5 @@ Dimitri Fontaine:
 
 Great intro to a powerful feature.
 
-  [window functions]: https://www.postgresql.org/docs/current/static/tutorial-window.html
+  [window functions]: https://www.postgresql.org/docs/current/tutorial-window.html
     "PostgreSQL Documentation: “Window Functions”"

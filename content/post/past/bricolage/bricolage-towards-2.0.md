@@ -129,15 +129,15 @@ to other things again for a while. Watch this space for details!
     "Gossamer Threads: Creative Web Engineering"
   [ident authentication]: http://www.depesz.com/index.php/2007/10/04/ident/
     "depesz: “FATAL: Ident authentication failed”, or how cool ideas get bad usage schemas"
-  [Bric::Admin/*INSTALL*]: http://www.bricolage.cc/docs/devel/api/?Bric::Admin
+  [Bric::Admin/*INSTALL*]: https://bricolagecms.org/docs/devel/api/?Bric::Admin
     "Bric::Admin documentation"
   [trunk]: https://github.com/bricoleurs/bricolage/ "Bricolage on GitHub"
-  [developer release]: http://bricolage.cc/news/announce/2008/04/30/bricolage-1.11.0/
+  [developer release]: https://bricolagecms.org/news/announce/2008/04/30/bricolage-1.11.0/
     "Bricolage-Devel 1.11.0 Released"
-  [send feedback]: http://bricolage.cc/support/lists "The Bricolage Mail Lists"
+  [send feedback]: https://bricolagecms.org/support/lists "The Bricolage Mail Lists"
   [file bug reports]: http://bugs.bricolage.cc/ "Bricolage Bug Tracker"
   [OSCON]: http://en.oreilly.com/oscon2008/public/content/home "OSCON 2008"
   [Google Summer of Code]: http://code.google.com/soc/2006/
     "Google Summer of Code 2006"
-  [Web site]: http://www.bricolage.cc/ "The Bricolage Web site"
+  [Web site]: https://bricolagecms.org/ "The Bricolage Web site"
   [pair Networds]: http://pair.net "pair Networks"

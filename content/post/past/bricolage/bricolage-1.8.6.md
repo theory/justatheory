@@ -81,8 +81,8 @@ comprehensive, actively-developed open source CMS, Bricolage has been hailed as
 “quite possibly the most capable enterprise-class open-source application
 available” by *eWEEK*.
 
-  [changes]: http://www.bricolage.cc/news/announce/changes/bricolage-1.8.6/
-  [Bric::Changes]: http://www.bricolage.cc/docs/api/current/Bric::Changes
-  [Downloads page]: http://www.bricolage.cc/downloads/
-  [SourceForge download page]: http://sourceforge.net/project/showfiles.php?group_id=34789
-  [Kineticode download page]: https://kineticode.com/bricolage/index2.html
+  [changes]: https://bricolagecms.org/news/announce/changes/bricolage-1.8.6/
+  [Bric::Changes]: https://github.com/bricoleurs/bricolage/blob/master/lib/Bric/Changes.pod
+  [Downloads page]: https://bricolagecms.org/downloads/
+  [SourceForge download page]: https://sourceforge.net/projects/bricolage/files/
+  [Kineticode download page]: https://kineticode.com/bricolage/downloads/

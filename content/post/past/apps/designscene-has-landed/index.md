@@ -89,12 +89,12 @@ And we’re not sitting still. I’m working through a short list of burrs and s
 that need to be polished off, and then moving on to some other great features we
 have planned. Stay tuned!
 
-  [PGXN Blog]: http://blog.pgxn.org/
+  [PGXN Blog]: https://blog.pgxn.org/
   [DesignScene]: http://www.designsceneapp.com/
-  [Roger Wong]: http://lunarboy.com/
+  [Roger Wong]: https://rogerwong.me/
   [borange]: https://twitter.com/borange
   [atebits]: https://twitter.com/atebits
-  [Textie]: http://itun.es/iFV4J8
+  [Textie]: https://www.textie.me
   [Strongrrl]: http://www.strongrrl.com/
   [envisioned]: http://www.lunarboy.com/blog/post/introducing-designscene-app-for-ipad/
   [iPad Dev Camp]: http://www.iosdevcamp.org/
@@ -102,16 +102,16 @@ have planned. Stay tuned!
   [Bill Dudney]: http://bill.dudney.net/roller/objc/
   [honorable mention]: http://www.iosdevcamp.org/2010/04/18/quick-list-of-hackathon-winners/
   [day]: https://kineticode.com/
-  [jobs]: http://www.pgexperts.com/
+  [jobs]: https://www.pgexperts.com/
   [MVC]: https://en.wikipedia.org/wiki/Model%E2%80%93View%E2%80%93Controller
     "Wikipedia: “Model-View-Controller”"
   [in the App Store]: http://bit.ly/eIsh3J
-  [Gizzmodo]: http://gizmo.do/gLfLhl
+  [Gizzmodo]: https://www.gizmodo.com.au/2011/01/designscene-for-ipad-is-the-21st-century-muse/
     "DesignScene for iPad Is the 21st Century Muse"
-  [macstories]: http://www.macstories.net/?p=18633
+  [macstories]: https://www.macstories.net/reviews/designscene-an-inspiration-browser-for-graphic-designers/
     "DesignScene: An Inspiration Browser For Graphic Design"
   [Padvance]: http://www.padvance.com/story/new-app-a-day-designscene
     "New App a Day: DesignScene"
-  [Shawn Blanc]: http://shawnblanc.net/2011/01/designscene/ "DesignScene"
-  [MacMagazine]: http://macmagazine.com.br/?p=125141
+  [Shawn Blanc]: https://shawnblanc.net/2011/01/designscene/ "DesignScene"
+  [MacMagazine]: https://macmagazine.com.br/post/2011/01/19/precisando-de-inspiracao-voce-pode-encontra-la-no-seu-ipad-com-o-designscene/
     "Precisando de inspiração? Você pode encontrá-la no seu iPad, com o DesignScene"

@@ -157,7 +157,7 @@ be, but it will let me continue my rant against ORMs as well. Stay tuned.
   [Catalyst::View::TD]: https://metacpan.org/pod/Catalyst::View::TD
     "Catalyst::View::TD on CPAN"
   [Catalyst::View::Template::Declare]: https://metacpan.org/pod/Catalyst::View::Template::Declare
-  [jrock]: http://blog.jrock.us/
+  [jrock]: https://jrock.us/posts/
   [Template Toolkit]: https://metacpan.org/pod/Template
     "Template Toolkit on CPAN"
   [Mason]: https://metacpan.org/pod/HTML::Mason "Mason on CPAN"

@@ -109,16 +109,15 @@ that soon.
     "DBIx::Connector on the CPAN"
   [Catalyst::Model::DBI]: https://metacpan.org/pod/Catalyst::Model::DBI
     "Catalyst::Model::DBI the CPAN"
-  [my app]: http://github.com/theory/circle/ "Circle on GitHub"
+  [my app]: https://github.com/theory/circle/ "Circle on GitHub"
   [mst]: http://www.trout.me.uk/ "Matt S Trout"
   [`connect_cached()`]: {{% ref "/post/past/perl/dbi-connect-cached-hack.md" %}}
-    "Keep DBI's connect_cached From Horking
-    Transactions"
-  [mod\_perl]: http://perl.apache.org/
+    "Keep DBI's connect_cached From Horking Transactions"
+  [mod\_perl]: https://perl.apache.org
   [POE]: https://metacpan.org/pod/POE "POE on CPAN"
-  [ribasushi]: http://rabbit.us/
+  [ribasushi]: https://github.com/ribasushi
   [savepoint]: https://en.wikipedia.org/wiki/Savepoint "Wikipedia: “Savepoint”"
-  [repository]: http://github.com/theory/dbix-connector/
+  [repository]: https://github.com/ap/DBIx-Connector
     "DBIx::Connector on GitHub"
   [Template::Declare]: https://metacpan.org/pod/Template::Declare
     "Template::Declare on the CPAN"

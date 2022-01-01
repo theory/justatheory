@@ -11,5 +11,5 @@ This has to be one of the geekiest things I've ever seen: You can [control
 iTunes from Emacs]! The nice thing about it is that you can control iTunes
 remotely via a terminal session.
 
-  [control iTunes from Emacs]: http://www.bese.it/~segv/osx-itunes.el
+  [control iTunes from Emacs]: https://www.emacswiki.org/emacs/itunes.el
     "Download the itunes.el and control iTunes from Emacs today!"

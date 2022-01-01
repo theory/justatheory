@@ -206,7 +206,7 @@ Easy! How have you handled a situation like this in your database hacking?
 
   [colleagues]: https://www.pgexperts.com/people.html "PostgreSQL Experts"
   [Andrew]: https://adpgtech.blogspot.com "Andrew's PostgreSQL blog"
-  [window functions]: https://www.postgresql.org/docs/current/static/tutorial-window.html
+  [window functions]: https://www.postgresql.org/docs/current/tutorial-window.html
     "PostgreSQL Documentation: Window Functions"
-  [common table expression]: https://www.postgresql.org/docs/current/static/queries-with.html
+  [common table expression]: https://www.postgresql.org/docs/current/queries-with.html
     "PostgreSQL Documentation: WITH Queries"

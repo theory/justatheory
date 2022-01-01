@@ -56,6 +56,6 @@ post will have to do.
   [Kiyomizu-dera, Gion, and Teramachi]: https://www.flickr.com/photos/theory/sets/72157622853441435/
   [Pod::Simple]: https://metacpan.org/dist/Pod-Simple "Pod::Simple on CPAN"
   [the code]: http://github.com/theory/pod-site "Pod::Site on GitHub"
-  [example]: http://www.bricolagecms.org/docs/current/api
+  [example]: http://bricolagecms.org/docs/current/api
     "Bricolage Documentation Browser"
   [pgTAP]: https://pgtap.org

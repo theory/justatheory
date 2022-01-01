@@ -38,7 +38,7 @@ IgnoreURLs:
   - https://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
   - https://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html
   - http://www.postgresqlconference.org/west08/talks/
-  - https://www.montessori-nw.org/section.cfm?wSectionID=3747
+  - 'https://www.montessori-nw.org/section.cfm?wSectionID=3747'
   - http://www.goodatdoingthings.com
   - http://www.ncld.org/content/view/865/391/
   - http://rubyforge.org/pipermail/ruby-pg-general/2007-December/000004.html
@@ -47,24 +47,67 @@ IgnoreURLs:
   - http://sourceforge.net/docs/E09#svn_notify
   - http://www.rectangular.com/kinosearch/benchmarks.html
   - http://nntp.x.perl.org/group/perl.cpan.testers/249132
-  - ttp://www.nntp.perl.org/group/perl.cpan.testers/240189
+  - http://www.nntp.perl.org/group/perl.cpan.testers/240189
   - http://use.perl.org/~Adrian/journal/32192
   - http://www.valuesofn.com/
   - http://use.perl.org/~Adrian/journal/32192
   - http://www.inmostlight.org/2006/03/easy-backups-with-rsnapshot
   - http://support.github.com/discussions/repos/492-svn-import-hasnt-finished-after-24-hours
   - https://github.com/hail2u/blosxom-plugins/
+  - http://www.simplisticcomplexity.com/2008/03/05/cleanly-migrate-your-subversion-repository-to-a-git-repository/
+  - https://www.iovation.com/blog/out-of-incubation-and-ready-for-broad-adoption-sqitch-1-released
+  - https://github.com/BeaData
+  - https://pgexperts.com/bricolage.html
+  - https://www.chrisenns.com/2010/06/29/why-apple-doesnt-care-about-enterprise/
+  - http://random.andrewwarner.com/what-googles-android-looked-like-before-and-after-the-launch-of-iphone/
+  - http://www.lunarboy.com/blog/post/introducing-designscene-app-for-ipad/
+  - http://bit.ly/eIsh3J
+  - http://www.padvance.com/story/new-app-a-day-designscene
+  - http://testflightapp.com/sdk/
+  - https://testflightapp.com/sdk/download/
+  - https://testflightapp.com/sdk/doc/
+  - http://lists.apple.com/archives/xcode-users/2009/Jun/msg00153.html
+  - 'http://sourceforge.net/tracker/index.php?func=detail&aid=1155712&group_id=69750&atid=525656'
+  - http://www.adaptivepath.com/publications/essays/archives/000385.php
+  - 'http://www.nrdcactionfund.org/ctt.asp?u=2066706&l=1409'
+  - http://www.schlossnagle.org/~george/blog/
+  - http://www.apache.org/~joes/
+  - http://www.apache.org/~joes/apache.tar.gz
+  - http://www.apache.org/~joes/apreq.tar.gz
+  - http://mathforum.org/epigone/modperl/fermkhiwhand/m1wv11m544.fsf_-_@halfdome.holdit.com
+  - http://www.modssl.org/source/exp/mod_ssl/pkg.mod_ssl/INSTALL
+  - http://developer.apple.com/internet/macosx/osdb.html
+  - http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
+  - http://www.democrats.org/specialreports/2005budget/surplus.html
+  - http://pres2004.scripting.com/2004/10/29#a5
+  - http://www.johnkerry.com/
+  - http://www.blogscene.org/erik
+  - http://www.electoral-vote2.com/images/bulge.jpg
+  - http://www.lessig.org/blog/archives/002041.shtml
+  - http://use.perl.org/~matts/journal/
+  - http://use.perl.org/~cwest/journal
+  - http://use.perl.org/~schwern/journal
+  - http://use.perl.org/~nicholas/journal
+  - http://use.perl.org/~sky/journal
+  - http://use.perl.org/~robrt/journal
+  - http://www.alexwheeler.net/
+  - http://david.wheeler.net/osx.html
 
   # URLs that work but don't like the crawler.
   - https://www.linkedin.com/in/decibel/
   - https://www.linkedin.com/in/lannings/
-  - https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567?rgn=div1;view=fulltext
+  - https://linkedin.com/in/kurksp/
+  - https://linkedin.com/in/craig-brewster-02b6b95/
+  - 'https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567?rgn=div1;view=fulltext'
 
   # URLs to always ignore.
   - mailto:sqitch-users+subscribe@googlegroups.com # Due to https://github.com/wjdp/htmltest/issues/182
+  - https://justatheory.com/search.cgi
+  - https://justatheory.com/search.cgi?q=iraq
+  - https://justatheory.com/search.cgi?q=svn
 
 # IgnoreInternalURLs: []
-IgnoreDirs: [code, tags, downloads]
+IgnoreDirs: [code, tags, downloads, p]
 # IgnoreInternalEmptyHash: false
 # IgnoreEmptyHref: false
 # IgnoreCanonicalBrokenLinks: true

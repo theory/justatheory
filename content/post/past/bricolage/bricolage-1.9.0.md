@@ -214,11 +214,11 @@ In truth, all four are capable and have access to the entire Bricolage API so
 that they can output anything. So what are you waiting for? [Download Bricolage]
 and give it a try!
 
-  [Bricolage 1.9.0]: http://www.bricolage.cc/news/announce/2005/08/19/bricolage-1.9.0/
+  [Bricolage 1.9.0]: https://bricolagecms.org/news/announce/2005/08/19/bricolage-1.9.0/
     "Bricolage 1.9.0 “Punkin” Released"
-  [Marshall Roch]: http://www.spastically.com/ "Marshall Roch's Blog"
+  [Marshall Roch]: https://github.com/mroch "Marshall Roch on GitHub"
   [Kineticode]: https://kineticode.com/ "Kineticode"
-  [Bricolage]: http://www.bricolage.cc "Bricolage"
+  [Bricolage]: https://bricolagecms.org "Bricolage"
   [mod\_gzip]: http://www.schroepl.net/projekte/mod_gzip/ "mod_gzip home page"
   [RT]: http://www.bestpractical.com/ "Best Practical makes RT"
   [Mason]: http://www.masonhq.com/ "Mason HQ"
@@ -229,7 +229,7 @@ and give it a try!
   [Omni TI]: http://www.omniti.com/ "Omni TI Consulting"
   [PHP::Interpreter]: https://metacpan.org/dist/PHP-Interpreter/
     "PHP::Interpreter on CPAN"
-  [API documentation]: http://www.bricolage.cc/docs/devel/api/
+  [API documentation]: https://bricolagecms.org/docs/devel/api/
     "Bricolage development API, subject to change"
-  [Download Bricolage]: http://www.bricolage.cc/downloads/bricolage-1.9.0.tar.gz
+  [Download Bricolage]: https://bricolagecms.org/downloads/bricolage-1.9.0.tar.gz
     "Download Bricolage 1.9.0"

@@ -55,8 +55,7 @@ so I'll be sticking to Bloxsom for a while.
     "theory’s Capistrano Environment"
   [Kineticode]: https://kineticode.com
     "Kineticode. Setting knowledge in motion"
-  [Google Analytics]: http://www.google.com/analytics/
+  [Google Analytics]: https://www.google.com/analytics/
   [FeedBurner]: http://www.feedburner.com/
   [Blosxom]: http://www.blosxom.com
-  [Movable Type]: http://www.movabletype.org/opensource/
-    "Movable Type Open Source Project"
+  [Movable Type]: https://movabletype.org/ "Movable Type Open Source Project"

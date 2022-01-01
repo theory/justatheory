@@ -27,6 +27,6 @@ providing a direct link to it here because it's going to go away on Wednesday
 and I don't want to get any 404s. Feel free to send me feedback on the new
 site--anything about it: design, layout, XHTML, CSS, etc.
 
-  [Marshall Roch]: http://www.spastically.com/ "Marshall Roch's Blog"
+  [Marshall Roch]: https://github.com/mroch "Marshall Roch on GitHub"
   [NetStumbler.com]: http://www.netstumbler.com/ "NetStumbler.com Website"
-  [www.bricolage.cc]: http://www.bricolage.cc/ "The Bricolage Website"
+  [www.bricolage.cc]: https://bricolagecms.org "The Bricolage Website"

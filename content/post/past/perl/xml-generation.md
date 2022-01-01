@@ -197,7 +197,7 @@ have a well-defined list of elements you need, it's certainly the nicest to use.
 Oh, and Bricolage users? Just make use of use [Template::Declare::Bricolage] to
 deaden the pain.
 
-  [Bricolage]: http://www.bricolagecms.org/
+  [Bricolage]: http://bricolagecms.org/
     "Bricolage content management and publishing system"
   [XML::LibXML]: https://metacpan.org/pod/XML::LibXML
     "XML::LibXML on CPAN"

@@ -107,5 +107,4 @@ Perhaps `Module::Build` will end up “Borging” some of the ideas from
 `Getopt::Simple`. But either way, I think that better argument processing is on
 the way for `Module::Build`.
 
-  [sent a patch]: http://sourceforge.net/mailarchive/message.php?msg_id=8747106
-    "SourceForge fails to make available my Module::Build/Getopt::Long patch"
+  [sent a patch]: https://sourceforge.net/p/module-build/mailman/message/7022986/

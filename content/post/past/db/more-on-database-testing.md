@@ -133,14 +133,14 @@ my [PGCon presentation]?
   [database testing]: {{% ref "/post/past/db/pg/why-test-databases" %}}
     "Why Test Databases?"
   [pgTAP]: https://pgtap.org
-  [protocol]: http://testanything.org/ "Test Anything Protocol"
+  [protocol]: https://testanything.org/ "Test Anything Protocol"
   [Perl]: https://metacpan.org/pod/Test::More "Test::More"
-  [C]: http://jc.ngo.org.uk/trac-bin/trac.cgi/wiki/LibTap "libtap"
+  [C]: https://github.com/zorgnax/libtap "libtap"
   [JavaScript]: http://openjsan.org/doc/t/th/theory/Test/Simple/ "Test.Simple"
-  [PHP]: http://www.phpunit.de/ "PHPUnit"
-  [Oracle]: http://code.google.com/p/pluto-test-framework/wiki/PlutoWikiMain
+  [PHP]: https://phpunit.de/ "PHPUnit"
+  [Oracle]: https://code.google.com/archive/p/pluto-test-framework/wikis/PlutoWikiMain.wiki
     "PLUTO - PL/SQL Unit Testing for Oracle"
-  [TAP producers]: http://testanything.org/wiki/index.php/TAP_Producers
+  [TAP producers]: https://testanything.org/producers.html
   [functional interface]: https://pgtap.org "pgTAP"
   [TAP::Harness]: https://metacpan.org/pod/TAP::Harness
   [PGCon presentation]: https://www.pgcon.org/2009/schedule/events/165.en.html

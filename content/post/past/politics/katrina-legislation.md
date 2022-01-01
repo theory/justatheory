@@ -12,9 +12,9 @@ catastrophe to further anti-environmental and pro-corporate energy ends.
 
 [Tell them no].
 
-  [absolutely]: http://www.nytimes.com/2005/10/03/opinion/03mon2.html
+  [absolutely]: https://www.nytimes.com/2005/10/03/opinion/exploiting-katrina.html
     "New York Times: “Exploiting Katrina”"
-  [astonishing]: http://www.salon.com/opinion/feature/2005/09/17/muckraker/
+  [astonishing]: https://www.salon.com/2005/09/17/muckraker_16/
     "Salon.com: “Capitalizing on Katrina”"
   [Tell them no]: http://www.nrdcactionfund.org/ctt.asp?u=2066706&l=1409
     "NRDC: “Take Action Against Two Dangerous Energy Bills”"

@@ -78,5 +78,5 @@ actually introduced in 9.1 and [covered by depesz]. D’oh! Well, hopefully my
 little post will help to get the word out more, at least. Thanks to my
 commenters.*
 
-  [the docs]: https://www.postgresql.org/docs/current/static/functions-string.html
+  [the docs]: https://www.postgresql.org/docs/current/functions-string.html
   [covered by depesz]: http://www.depesz.com/2010/11/21/waiting-for-9-1-format/

@@ -128,13 +128,13 @@ is in the [tests]. (Hrm. I think I might have had a hand in writing them.) Check
     "Template::Declare on CPAN"
   [subclass]: http://github.com/theory/module-build-db/
     "Module::Build::DB on GitHub"
-  [IRC logging bot]: http://github.com/theory/circle/ "Circle on GitHub"
-  [PGX]: http://www.pgexperts.com/ "PostgreSQL Experts, Inc."
-  [Quinn Weaver]: http://www.pgexperts.com/Quinn.Weaver.html
+  [IRC logging bot]: https://github.com/theory/circle/ "Circle on GitHub"
+  [PGX]: https://pgexperts.com/ "PostgreSQL Experts, Inc."
+  [Quinn Weaver]: https://www.linkedin.com/in/quinnweaver/
   [connect\_cached]: https://metacpan.org/pod/DBI#connect_cached
     "DBI: connect_cached"
-  [Tim Bunce]: http://blog.timbunce.org/ "Not this…"
-  [extensive conversation]: http://markmail.org/thread/de3jzc2unm55egn7
+  [Tim Bunce]: https://blog.timbunce.org "Not this…"
+  [extensive conversation]: https://markmail.org/thread/de3jzc2unm55egn7
     "DBI-Dev: “AutoCommit and connect_cached()”"
-  [tests]: http://cpansearch.perl.org/src/TIMB/DBI-1.609/t/70callbacks.t
+  [tests]: https://metacpan.org/release/TIMB/DBI-1.609/source/t/70callbacks.t
     "DBI test 70callbacks.t"

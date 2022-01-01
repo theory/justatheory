@@ -62,7 +62,7 @@ Thanks a million for all your help and support!
   [Docker]: https://hub.docker.com/r/sqitch/sqitch "Sqitch on docker hub"
   [Homebrew]: https://github.com/sqitchers/homebrew-sqitch/ "Sqitch Homebrew Tap"
   [GitHub]: https://github.com/sqitchers/sqitch/releases "Sqitch on GitHub"
-  [Kurk Spendlove]: https://linkedin.com/in/kurksp
+  [Kurk Spendlove]: https://linkedin.com/in/kurksp/
   [Ștefan Suciu]: http://stefansuciu.ro/
   [Firebird support]: https://sqitch.org/docs/manual/sqitchtutorial-firebird/
     "Sqitch Firebird tutorial"
@@ -77,7 +77,7 @@ Thanks a million for all your help and support!
   [Curtis Poe]: https://ovid.github.io/
   [other contributors]: https://github.com/sqitchers/sqitch/graphs/contributors
     "Sqitch Contributors"
-  [Craig Brewster]: https://www.linkedin.com/in/craig-brewster-02b6b95
+  [Craig Brewster]: https://linkedin.com/in/craig-brewster-02b6b95/
   [logos]: https://sqitch.org/download/logos/ "Sqitch Logos"
   [Stephen Lovell]: http://stephencreates.com
   [Gaston Figueroa]: http://www.gastonfig.com

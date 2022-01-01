@@ -24,9 +24,9 @@ thanks to the new [stats site], which will also be updated daily.
 
 Enjoy!
 
-  [new server]: http://www.bricolage.cc/
+  [new server]: https://bricolagecms.org/
   [NetStumbler.com]: http://www.netstumbler.com/
-  [documentation page]: http://www.bricolage.cc/documentation.html
-  [here]: http://www.bricolage.cc/docs/api/current/
-  [1]: http://www.bricolage.cc/docs/api/devel/
+  [documentation page]: https://bricolagecms.org
+  [here]: https://bricolagecms.org/docs/current/api/
+  [1]: https://bricolagecms.org/docs/devel/api/
   [stats site]: http://stats.bricolage.cc/

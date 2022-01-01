@@ -105,5 +105,5 @@ Time: 73.913 ms
 Wow! Under 100ms. That's more like it! [Inverted indexing] FTW!
 
   [Nested hstore]: {{% ref "/post/postgres/testing-nested-hstore" %}}
-  [GIN indexes]: https://www.postgresql.org/docs/current/static/gin.html
+  [GIN indexes]: https://www.postgresql.org/docs/current/gin.html
   [Inverted indexing]: http://en.wikipedia.org/wiki/Inverted_index

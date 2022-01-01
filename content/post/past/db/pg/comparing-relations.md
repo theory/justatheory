@@ -385,7 +385,7 @@ appreciated.
     "CITEXT Patch Submitted to PostgreSQL Contrib"
   [pgsql-hackers post]: http://archives.postgresql.org/pgsql-hackers/2008-07/msg00627.php
     "Tom Lane on pgsql-hackers: “Re: PATCH: CITEXT 2.0 v3”"
-  [Bricolage]: http://www.bricolagecms.org/
+  [Bricolage]: http://bricolagecms.org/
     "Bricolage Content Management and Publishing System"
   [build farm]: http://buildfarm.postgresql.org/ "PostgreSQL Build Farm"
   [TAP]: http://testanything.org/ "TAP: Test Anything Protocol"

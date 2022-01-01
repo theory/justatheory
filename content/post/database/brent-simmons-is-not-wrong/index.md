@@ -73,6 +73,6 @@ So you go, Brent, you're doing it exactly right.
 
   [Database in Depth]: http://www.amazon.com/Database-Depth-Relational-Theory-Practitioners/dp/0596100124/justatheory-20
   [C.J. Date]: https://en.wikipedia.org/wiki/Christopher_J._Date
-  [array]: https://www.postgresql.org/docs/current/static/arrays.html
-  [XML]: https://www.postgresql.org/docs/current/static/datatype-xml.html
-  [JSON]: https://www.postgresql.org/docs/current/static/datatype-json.html
+  [array]: https://www.postgresql.org/docs/current/arrays.html
+  [XML]: https://www.postgresql.org/docs/current/datatype-xml.html
+  [JSON]: https://www.postgresql.org/docs/current/datatype-json.html

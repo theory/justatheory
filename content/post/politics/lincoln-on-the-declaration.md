@@ -41,12 +41,12 @@ Abraham Lincoln, [interpreting] the [Declaration of Independence], in 1858:
 > would hereafter dare to limit and circumscribe the great principles on which
 > the temple of liberty was being built. 
 
-See also his 1957 [Speech on the Dred Scott Decision].
+See also his 1857 [Speech on the Dred Scott Decision].
 
   [interpreting]:
     https://quod.lib.umich.edu/l/lincoln/lincoln2/1:567?rgn=div1;view=fulltext
     "Lincoln on the Declaration of Independence"
   [Speech on the Dred Scott Decision]:
-    http://www.virginia.edu/woodson/courses/aas-hius366a/lincoln.html
+    https://www.nlnrac.org/american/declaration-of-independence/primary-source-documents/dred-scott-decision
   [Declaration of Independence]:
     https://www.archives.gov/founding-docs/declaration-transcript

@@ -19,10 +19,9 @@ Hawk image intensification software.
 
 My favorite phrase from the Salon.com article: the “Milli Vanilli president.”
 
-  [story]: http://www.salon.com/news/feature/2004/10/08/bulge/
-    "Bush's mystery bulge"
-  [Salon.com]: http://www.salon.com/ "Salon.com"
-  [Current Electoral Vote Predictor]: http://www.electoral-vote.com/
+  [story]: https://www.salon.com/2004/10/09/bulge/ "Bush's mystery bulge"
+  [Salon.com]: https://www.salon.com/ "Salon.com"
+  [Current Electoral Vote Predictor]: https://electoral-vote.com
     "See the current electoral vote status of the campaign on a nice colored map"
   [this image]: http://www.electoral-vote2.com/images/bulge.jpg
     "The Electoral Vote Predictor's enhanced image of the bulge"

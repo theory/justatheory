@@ -8,7 +8,12 @@ tags: [Postgres, TAP, pgTAP, Testing, Unit Testing, Databases, SQL, PL/pgSQL]
 type: post
 ---
 
-<iframe src="{{% link "pgtap_best_practices.pdf" %}}" class="slides"></iframe>
+<object
+  data="{{% link "pgtap_best_practices.pdf" %}}"
+  class="slides"
+  type="application/pdf"
+  title="pgTAP Best Practices">
+</object>
 
 Last month I gave two presentations at the [PostgreSQL Conference West]. The
 first was a variation on [Unit Test Your Database!], which I've now given about

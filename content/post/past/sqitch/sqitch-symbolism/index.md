@@ -104,7 +104,12 @@ post about that later in the week.
 Oh, and that [PDXPUG presentation][PDXPUG]? Here are the slides (also for
 [download] and on [Slideshare]). Enjoy!
 
-<iframe src="{{% link "sqitch-pdxpug-2012.pdf" %}}" class="slides"></iframe>
+<object
+  data="{{% link "sqitch-pdxpug-2012.pdf" %}}"
+  class="slides"
+  type="application/pdf"
+  title="Sane SQL Change Management with Sqitch">
+</object>
 
   [last blogged about Sqitch]: {{% ref "/post/past/sqitch/sqitch-depend-on-it" %}}
   [v0.931]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.931/

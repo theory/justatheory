@@ -26,7 +26,12 @@ along. Here’s the teaser:
 > find out whether they might work for you. Either way, I promise it will at
 > least be an amusing use of your time.
 
-<iframe src="{{% link "agile_database_development.pdf" %}}" class="slides"></iframe>
+<object
+  data="{{% link "agile_database_development.pdf" %}}"
+  class="slides"
+  type="application/pdf"
+  title="Agile Database Development">
+</object>
 
   [PGCon]: https://www.pgcon.org/2013/
   [Agile Database Development]: https://www.pgcon.org/2013/schedule/events/615.en.html

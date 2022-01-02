@@ -1098,6 +1098,11 @@ body > footer ul li:last-child {
     width: 100%;
 }
 
+iframe.slides {
+    width: 100%;
+    height: 512px;
+}
+
 /* hugo gen chromastyles --style=monokai >> themes/justatheory/static/css/screen.css */
 /* Background */ pre, .chroma, .lntable { color: #f8f8f2; background-color: #2d2d2d; } /* Modified to add pre & .lntable, and to match header background */
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }

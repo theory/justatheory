@@ -33,9 +33,9 @@ This makes it easy to get started with Sqitch on any of those platforms without
 having to become a Perl expert. So go for it, and then get started with [the
 tutorial]!
 
-  [ActiveState PPM Index]: http://code.activestate.com/ppm/
-  [Sqitch PPM Build Status]: http://code.activestate.com/ppm/App-Sqitch/
-  [ActivePerl]: http://www.activestate.com/activeperl/downloads#
+  [ActiveState PPM Index]: https://code.activestate.com/ppm/
+  [Sqitch PPM Build Status]: https://code.activestate.com/ppm/App-Sqitch/
+  [ActivePerl]: https://www.activestate.com/activeperl/downloads
   [install PostgreSQL]: https://www.postgresql.org/download/windows/
-  [Business edition]: http://www.activestate.com/compare-editions
+  [Business edition]: https://www.activestate.com/compare-editions
   [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod

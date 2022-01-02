@@ -1,6 +1,6 @@
 --- 
 date: 2012-09-25T22:59:59Z
-lastMod: 2022-01-02T02:26:36Z
+lastMod: 2022-01-02T17:43:28Z
 slug: sqitch-symbolism
 title: Sqitch Symbolism
 aliases: [/computers/databases/sqitch-symbolism.html]
@@ -101,7 +101,8 @@ post about that later in the week.
 
 ### Presentation
 
-Oh, and that [PDXPUG presentation][PDXPUG]? Here are the [slides]. Enjoy!
+Oh, and that [PDXPUG presentation][PDXPUG]? Here are the slides (also for
+[download] and on [Slideshare]). Enjoy!
 
 <iframe src="{{% link "sqitch-pdxpug-2012.pdf" %}}" class="slides"></iframe>
 
@@ -111,10 +112,13 @@ Oh, and that [PDXPUG presentation][PDXPUG]? Here are the [slides]. Enjoy!
   [`bundle` command]: https://metacpan.org/module/sqitch-bundle
   [Git Revisions]: https://git-scm.com/docs/gitrevisions
   [Sqitch changes]: https://metacpan.org/module/sqitchchanges
-  [slides]: {{% link "sqitch-pdxpug-2012.pdf" %}}
   [PDXPUG]: http://pdxpug.wordpress.com/2012/09/07/pdxpug-september-meeting-coming-up/
   [French]: https://github.com/sqitchers/sqitch/blob/develop/po/fr_FR.po
   [German]: https://github.com/sqitchers/sqitch/blob/develop/po/de_DE.po
   [fork Sqitch]: https://github.com/theory/sqitch/
   [gettext editor]: http://www.google.com/search?q=gettext+editor
   [dzil]: https://dzil.org
+  [download]: {{% link "sqitch-pdxpug-2012.pdf" %}}
+    "Download “Sane SQL Change Management with Sqitch”"
+  [Slideshare]: https://www.slideshare.net/justatheory/sane-sql-change-management-with-sqitch
+    "Slideshare: “Sane SQL Change Management with Sqitch”"

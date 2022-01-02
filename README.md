@@ -59,6 +59,38 @@ Examples:
 {{% ref "/" "json" %}}
 ```
 
+### Syntax Highlighting
+
+
+[Syntax Highlighting] comes with Hugo. Use fenced blocks with the [named language],
+e.g.,
+
+   ``` go
+   func main() {}
+   ```
+
+An optional second argument takes  a comma-delimited list of `key=value` option
+pairs, e.g.,
+
+    ``` go {linenos=table,hl_lines=[8,"15-17"],linenostart=199}
+    // ... code
+    ```
+
+The supported options are:
+
+*   `linenos`: configure line numbers. Valid values are `true`, `false`,
+    `table`, or `inline`. false will turn off line numbers if it’s configured to
+    be on in site config. New in v0.60.0: `table` will give copy-and-paste
+    friendly code blocks.
+*   `hl_lines`: lists a set of line numbers or line number ranges to be
+    highlighted.
+*   `linenostart=199`: starts the line number count from 199.
+*   `anchorlinenos`: Configure anchors on line numbers. Valid values are `true`
+    or `false`;
+*   `lineanchors`: Configure a prefix for the anchors on line numbers. Will be
+    suffixed with `-`, so linking to the line number 1 with the option
+    `lineanchors=prefix` adds the anchor `prefix-1 to` the page.
+
 ### Figure
 
 The [Figure shortcode] and partial use the same syntax, to create an image figure
@@ -154,3 +186,6 @@ on social media.
   [Link shortcode]: themes/justatheory/layouts/partials/link.html
   [Ref shortcode]: https://gohugo.io/content-management/cross-references/
   [Figure shortcode]: themes/justatheory/layouts/partials/figure.html
+  [Syntax Highlighting]: https://gohugo.io/content-management/syntax-highlighting/
+  [named language]: https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages
+  [options]: https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode

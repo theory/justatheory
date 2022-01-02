@@ -1,5 +1,6 @@
 --- 
 date: 2002-11-30T20:23:00Z
+lastMod: 2022-01-02T21:44:28Z
 slug: my-osx-adventures
 title: My Adventures with Mac OS X
 aliases: [/computers/os/macosx/my_adventures.html]
@@ -61,23 +62,25 @@ command key was working as the Emacs META key, rather than the option key. So I
 poked around the net until I found the settings I needed and put them into my
 .emacs file:
 
-    (custom-set-faces
-    '(default ((t (:stipple nil
-      :background "DarkSlateGrey"
-      :foreground "Wheat"
-      :inverse-video nil
-      :box nil
-      :strike-through nil
-      :overline nil
-      :underline nil
-      :slant normal
-      :weight normal
-      :height 116
-      :width normal
-      :family "apple-andale mono"))))
-    '(cursor ((t (:background "Wheat"))))
-    ; Use option for the meta key.
-    (setq mac-command-key-is-meta nil)
+``` elisp
+(custom-set-faces
+'(default ((t (:stipple nil
+  :background "DarkSlateGrey"
+  :foreground "Wheat"
+  :inverse-video nil
+  :box nil
+  :strike-through nil
+  :overline nil
+  :underline nil
+  :slant normal
+  :weight normal
+  :height 116
+  :width normal
+  :family "apple-andale mono"))))
+'(cursor ((t (:background "Wheat"))))
+; Use option for the meta key.
+(setq mac-command-key-is-meta nil)
+```
 
 Installing Emacs is not required for installing any of the other packages
 described below -- it just happens to be my favorite text editor and IDE. So I
@@ -94,12 +97,14 @@ First, I created a new user for GDBM. In NetInfoManager, I created a duplicate
 of the "unknown" user and named it "bin". Then, I downloaded [GDBM] from the
 FSF, and installed it like this:
 
-    cd /usr/local/src/gdbm-1.8.0
-    cp /usr/libexec/config* .
-    ./configure
-    make
-    make install
-    ln -s /usr/local/lib/libgdbm.a /usr/local/lib/libdbm.a
+``` sh
+cd /usr/local/src/gdbm-1.8.0
+cp /usr/libexec/config* .
+./configure
+make
+make install
+ln -s /usr/local/lib/libgdbm.a /usr/local/lib/libdbm.a
+```
 
 That did the trick. Nothing else was involved, fortunately.
 
@@ -111,16 +116,18 @@ Perl. Fortunately it's relatively easy to install, although support for the
 -static flag appears to be broken in cc on OS X, so it needs to be stripped out.
 I downloaded it from its [project bpage], and then did this:
 
-    cd /usr/local/src/expat-1.95.2
-    ./configure
-    perl -i.bak -p -e \
-      's/LDFLAGS\s*=\s*-static/LDFLAGS=/' \
-      examples/Makefile
-    perl -i.bak -p -e \
-      's/LDFLAGS\s*=\s*-static/LDFLAGS=/' \
-      xmlwf/Makefile
-    make
-    make install
+``` sh
+cd /usr/local/src/expat-1.95.2
+./configure
+perl -i.bak -p -e \
+  's/LDFLAGS\s*=\s*-static/LDFLAGS=/' \
+  examples/Makefile
+perl -i.bak -p -e \
+    's/LDFLAGS\s*=\s*-static/LDFLAGS=/' \
+    xmlwf/Makefile
+make
+make install
+```
 
 ### Perl
 
@@ -135,14 +142,16 @@ a couple of tweaks to the install process that make it slightly more complicated
 than you would typically expect. Fortunately, many have preceded us in doing
 this, and the work-arounds are [well-known]. Basically, it comes down to this:
 
-    cd /usr/local/src/perl-5.6.1/
-    export LC_ALL=C
-    export LANG=en_US
-    perl -i.bak -p -e 's|Local/Library|Library|g' hints/darwin.sh
-    sh Configure -des -Dfirstmakefile=GNUmakefile -Dldflags="-flat_namespace"
-    make
-    make test
-    make install
+``` sh
+cd /usr/local/src/perl-5.6.1/
+export LC_ALL=C
+export LANG=en_US
+perl -i.bak -p -e 's|Local/Library|Library|g' hints/darwin.sh
+sh Configure -des -Dfirstmakefile=GNUmakefile -Dldflags="-flat_namespace"
+make
+make test
+make install
+```
 
 There were a few errors during `make test`, but none of them seems to be
 significant. Hopefully, in the next version of Perl, the build will work just as
@@ -180,10 +189,12 @@ Compiling Open SSL was pretty painless. One of the tests fails, but it all seems
 to work out, anyway. I download the sources from the [Open SSL site], and did
 this:
 
-    cd /usr/local/src/openssl-0.9.6c
-    ./config
-    make
-    make test
+``` sh
+cd /usr/local/src/openssl-0.9.6c
+./config
+make
+make test
+```
 
 ### mod\_ssl
 
@@ -204,15 +215,17 @@ hard-earned knowledge to get the job done. For example, Randal Schwartz [posted]
 instructions to the [mod\_perl mail list], and his instructions worked well for
 me. So I downloaded the sources from the [mod\_perl] site, and did this:
 
-    cd /usr/local/src/mod_perl-1.26
-    perl Makefile.PL \
-      APACHE_SRC=/usr/local/src/apache_1.3.23/src \
-      NO_HTTPD=1 \
-      USE_APACI=1 \
-      PREP_HTTPD=1 \
-      EVERYTHING=1
-    make
-    make install
+``` sh
+cd /usr/local/src/mod_perl-1.26
+perl Makefile.PL \
+  APACHE_SRC=/usr/local/src/apache_1.3.23/src \
+  NO_HTTPD=1 \
+  USE_APACI=1 \
+  PREP_HTTPD=1 \
+  EVERYTHING=1
+make
+make install
+```
 
 ### Apache
 
@@ -237,18 +250,20 @@ But I finally hit on the right incantation to get Apache to compile with
 everything I need added statically, but still with support for DSOs by compiling
 in mod\_so. I present it here for your viewing pleasure:
 
-    SSL_BASE=/usr/local/src/openssl-0.9.6c/ \
-        ./configure \
-        --with-layout=Apache \
-        --enable-module=ssl \
-        --enable-module=rewrite \
-        --enable-module=so \
-        --activate-module=src/modules/perl/libperl.a \
-        --disable-shared=perl \
-        --without-execstrip
-      make
-      make certificate TYPE=custom 
-      make install
+``` sh
+SSL_BASE=/usr/local/src/openssl-0.9.6c/ \
+  ./configure \
+  --with-layout=Apache \
+  --enable-module=ssl \
+  --enable-module=rewrite \
+  --enable-module=so \
+  --activate-module=src/modules/perl/libperl.a \
+  --disable-shared=perl \
+  --without-execstrip
+make
+make certificate TYPE=custom 
+make install
+```
 
 This series of commands successfully compiled Apache with mod\_perl and mod\_ssl
 support statically compiled in, along with most of the other default modules
@@ -265,10 +280,12 @@ Consult the mod\_ssl [INSTALL] file for more information.
 Once Apache is installed with mod\_perl and mod\_ssl, the rest is gravy! The
 experimental libapreq library I downloaded installed without a hitch:
 
-    cd /usr/local/src/httpd-apreq
-    perl Makefile.PL
-    make
-    make install
+``` sh
+cd /usr/local/src/httpd-apreq
+perl Makefile.PL
+make
+make install
+```
 
 ### PostgreSQL
 
@@ -288,28 +305,36 @@ Next I downloaded the PostgreSQL version 7.2.1 sources. Version 7.2 is the first
 to specifically support Mac OS X, so going about the install was as simple as it
 is on any Unix system:
 
-    ./configure --enable-multibyte=UNICODE
-    make
-    make install
+``` sh
+./configure --enable-multibyte=UNICODE
+make
+make install
+```
 
 That was it! PostgreSQL was now installed. Next I had to initialize the
 PostgreSQL database directory. Again, this works much the same as it does on any
 Unix system:
 
-    sudo -u postgres /usr/local/pgsql/bin/initdb \
-      -D /usr/local/pgsql/data
+``` sh
+sudo -u postgres /usr/local/pgsql/bin/initdb \
+  -D /usr/local/pgsql/data
+```
 
 The final step was to start PostgreSQL and try to connect to it:
 
-    sudo -u postgres /usr/local/pgsql/bin/pg_ctl start \
-      -D /usr/local/pgsql/data /usr/local/pgsql/bin/psql -U postgres template1
+``` sh
+sudo -u postgres /usr/local/pgsql/bin/pg_ctl start \
+  -D /usr/local/pgsql/data /usr/local/pgsql/bin/psql -U postgres template1
+```
 
 If you follow the above steps and find yourself at a psql prompt, you're in
 business! Because I tend to use PostgreSQL over TCP, I also enabled TCP
 connectivity by enabling the "tcpip\_socket" option in the postgresql.conf file
 in the data directory created by initdb:
 
-    tcpip_socket = true
+``` ini
+tcpip_socket = true
+```
 
 If you're like me, you like to have servers such as PostgreSQL start when your
 computer starts. I enabled this by creating a Mac OS X PostgreSQL startup
@@ -330,11 +355,13 @@ I needed. First up was [XML::Parser]. For some reason, XML::Parser can't find
 the expat libraries, even though the location in which I installed them is
 pretty common. I got around this by installing XML::Parser like this:
 
-    perl Makefile.PL EXPATLIBPATH=/usr/local/lib \
-      EXPATINCPATH=/usr/local/include
-    make
-    make test
-    make install
+``` sh
+perl Makefile.PL EXPATLIBPATH=/usr/local/lib \
+  EXPATINCPATH=/usr/local/include
+make
+make test
+make install
+```
 
 ### Text::Iconv
 
@@ -346,22 +373,26 @@ OS X doesn't come with libiconv -- a library on which Text::Iconv depends -- so
 I had to install it. Fortunately, it was a simple process to [download it] and
 do a normal build:
 
-    cd /usr/local/src/libiconv-1.7
-    ./configure
-    make
-    make install
+``` sh
+cd /usr/local/src/libiconv-1.7
+./configure
+make
+make install
+```
 
 Now, Text::Iconv itself was a little more problematic. You have to tell it to
 look for libiconv by adding the -liconv option to the LIBS key in Makefile.PL.
 I've simplified doing this with the usual Perl magic:
 
-    perl -i.bak -p -e \
-      "s/'LIBS'\s*=>\s*\[''\]/'LIBS' => \['-liconv'\]/" \
-      Makefile.PL
-    perl Makefile.PL
-    make
-    make test
-    make install
+``` sh
+perl -i.bak -p -e \
+  "s/'LIBS'\s*=>\s*\[''\]/'LIBS' => \['-liconv'\]/" \
+  Makefile.PL
+perl Makefile.PL
+make
+make test
+make install
+```
 
 ### DBD::Pg
 
@@ -378,13 +409,15 @@ But this was one of those unusual situations in which the error message was
 helpful. So I took the error message's advice, and successfully compiled and
 installed DBD::Pg like this:
 
-    ranlib /usr/local/pgsql/lib/libpq.a
-    export POSTGRES_INCLUDE=/usr/local/pgsql/include
-    export POSTGRES_LIB=/usr/local/pgsql/lib
-    perl Makefile.PL
-    make
-    make test
-    make install
+``` sh
+ranlib /usr/local/pgsql/lib/libpq.a
+export POSTGRES_INCLUDE=/usr/local/pgsql/include
+export POSTGRES_LIB=/usr/local/pgsql/lib
+perl Makefile.PL
+make
+make test
+make install
+```
 
 ### LWP
 
@@ -402,7 +435,9 @@ all was not lost (though it took me a while to figure out why my Apache compiles
 were failing!): I was able to restore head by copying it from the Mac OS X
 installer CD. I Just popped it in an executed the command:
 
-    cp "/Volumes/Mac OS X Install CD/usr/bin/head" /usr/bin
+``` sh
+cp "/Volumes/Mac OS X Install CD/usr/bin/head" /usr/bin
+```
 
 And then everything was happy again.
 
@@ -411,7 +446,9 @@ And then everything was happy again.
 And finally, the pièce de résistance: [Bricolage!][Bricolage] All of the other
 required Perl modules installed fine from Bundle::Bricolage:
 
-    perl -MCPAN -e 'install Bundle::Bricolage'
+``` sh
+perl -MCPAN -e 'install Bundle::Bricolage'
+```
 
 Then I simply followed the directions in Bricolage's INSTALL file, and started
 'er up! I would document those steps here, but the install process is currently

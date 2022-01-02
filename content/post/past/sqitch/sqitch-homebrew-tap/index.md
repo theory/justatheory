@@ -1,5 +1,6 @@
 --- 
 date: 2013-02-22T07:09:46Z
+lastMod: 2022-01-02T17:21:14Z
 slug: sqitch-homebrew-tap
 title: Sqitch Homebrew Tap
 aliases: [/computers/databases/sqitch-homebrew-tap.html]
@@ -34,17 +35,20 @@ PostgreSQL server:
 
 Sqitch hasn’t been ported to other database engines yet, but once it is, expect
 other formulas to follow. But if you use PostgreSQL (or just want to experiment
-with it), you’re ready to rock! I suggest following along [the tutorial] or
-taking in [the latest iteration of the introductory presentation][] (video of an
-older version [here]).
+with it), you’re ready to rock! I suggest following along [the tutorial],
+[downloading], or [taking in] the latest iteration of the introductory
+presentation (video of an older version [on Vimeo]).
 
 My thanks to IRC user “mistym” for the help and suggestions in getting this
 going. My Ruby is pretty much rusted through, soI could not have done it without
 the incredibly responsive help!
 
   [Sqitch]: https://sqitch.org/ "Sqitch: Sane database schema change management"
-  [Sqitch Homebrew Tap]: https://github.com/theory/homebrew-sqitch
+  [Sqitch Homebrew Tap]: https://github.com/sqitchers/homebrew-sqitch
   [Homebrew]: https://brew.sh/
-  [the tutorial]: https://github.com/theory/sqitch/blob/master/lib/sqitchtutorial.pod
-  [the latest iteration of the introductory presentation]: https://speakerdeck.com/theory/sane-database-change-management-with-sqitch
-  [here]: https://vimeo.com/50104469
+  [the tutorial]: https://github.com/sqitchers/sqitch/blob/develop/lib/sqitchtutorial.pod
+  [taking in]: https://speakerdeck.com/theory/sane-database-change-management-with-sqitch
+    "Speaker Deck: “Sane Database Change Management with Sqitch”"
+  [downloading]: {{% link "sqitch-pdxpm-2013.pdf" %}}
+    "Download “Sane Database Change Management with Sqitch”"
+  [on Vimeo]: https://vimeo.com/50104469

@@ -67,7 +67,7 @@ Thanks a million for all your help and support!
   [Firebird support]: https://sqitch.org/docs/manual/sqitchtutorial-firebird/
     "Sqitch Firebird tutorial"
   [Shawn Sorichetti]: https://ssoriche.com/
-  [Johan Wärlander]: https://blog.johanwarlander.com 
+  [Johan Wärlander]: https://github.com/jwarlander
   [Luca Ferrari]: https://fluca1978.github.io
   [@BeaData]: https://github.com/BeaData
   [Thomas Iguchi]: https://www.nobu-games.com

@@ -18,7 +18,7 @@ jobs:
           AWS_ACCESS_KEY_ID: '${{ secrets.AWS_ACCESS_KEY_ID }}'
           AWS_SECRET_ACCESS_KEY: '${{ secrets.AWS_SECRET_ACCESS_KEY }}'
           AWS_REGION: us-west-1 # https://github.com/aws/aws-cli/issues/5234
-          LC_CTYPE: en_US.UTF-8 # https://github.com/aws/aws-cli/issues/1368#issuecomment-225017855
+          LC_ALL: en_US.UTF-8 # https://github.com/aws/aws-cli/issues/1368#issuecomment-955108041
         with:
           entrypoint: bash
           args: publish.sh

@@ -7,7 +7,6 @@ description: Someone stole my Goodreads account; the company failed to recover i
 tags: [Security, Goodreads, Account Takeover, Fail]
 type: post
 link: ~
-draft: true
 ---
 
 On 12:31pm on February 2, I got an email from [Goodreads]:

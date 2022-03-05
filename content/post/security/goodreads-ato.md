@@ -157,7 +157,7 @@ How did this happen? What was the security configuration for my account?
     23rd, to no avail. By February 23rd, my account was gone with all my reviews
     and reading lists.
 
-Unlike Nelson, who's [account was _also_ recently deleted] without chance of
+Unlike [Nelson], who's [account was _also_ recently deleted] without chance of
 recovery, I had not been making and backups of my data. Never occurred to me,
 perhaps because I never put a ton of effort into my Goodreads account, mostly
 just tracked reading and a few brief reviews. I'll miss my reading list the
@@ -178,7 +178,7 @@ Redundancy and backups are key, but so is adequate account protection.
 [Letterboxed], for example, has no multifactor authentication features, making
 it vulnerable should someone decide it's worthwhile to steal accounts to spam
 reviews or try to artificially pump up the scores for certain titles. [Just made
-a backup.
+a backup].
 
 You should, too, and backup your Goodreads account regularly. Meanwhile, I'm on
 the lookout for a new social reading site that supports multifactor
@@ -192,7 +192,7 @@ a Theory and just reference them, at best, from social sites.
   [i did]: https://twitter.com/theory/status/1496515177809944581
   [GDPR]: https://gdpr-info.eu
   [CCPA]: https://www.oag.ca.gov/privacy/ccpa
-  [Nelson] https://www.somebits.com/weblog/ "Some Bits: Nelson’s weblog"
+  [Nelson]: https://www.somebits.com/weblog/ "Some Bits: Nelson’s weblog"
   [account was _also_ recently deleted]:
     https://www.somebits.com/weblog/tech/bad/goodreads-lost-all-my-data.html
     "Some Bits: “Goodreads lost all of my reviews”"

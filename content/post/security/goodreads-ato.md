@@ -2,7 +2,7 @@
 title: "How Goodreads Deleted My Account"
 slug: goodreads-ato
 date: 2022-03-05T23:45:49Z
-lastMod: 2022-03-05T23:45:49Z
+lastMod: 2022-04-03T19:21:59Z
 description: Someone stole my Goodreads account; the company failed to recover it, then deleted it. It was all too preventable.
 tags: [Security, Goodreads, Account Takeover, Fail]
 type: post
@@ -185,6 +185,23 @@ the lookout for a new social reading site that supports multifactor
 authentication. But even with that, in the future I'll post reviews here on Just
 a Theory and just reference them, at best, from social sites.
 
+---
+
+**Update April 3, 2022**: This past week, I finally got some positive news from
+Goodreads, two months after this saga began:
+
+> The Goodreads team would like to apologize for your recent poor experience
+> with your account. We sincerely value your contribution to the Goodreads
+> community and understand how important your data is to you. We have
+> investigated this issue and attached is a complete file of your reviews,
+> ratings, and shelvings. 
+
+And that's it, along with some instructions for creating a new account and
+loading the data. Still no account recovery, so my old URL is dead and there is
+no information about my Goodreads friends. Still, I'm happy to at least have my
+lists and reviews recovered. I imported them into a new Goodreads account, then
+exported them again and imported them into my new [StoryGraph profile].
+
   [Goodreads]: https://www.goodreads.com
   [complained on Twitter]: https://twitter.com/theory/status/1496483369781243910
   [@goodreads replied]: https://twitter.com/goodreads/status/1496484238908178442
@@ -198,3 +215,4 @@ a Theory and just reference them, at best, from social sites.
     "Some Bits: “Goodreads lost all of my reviews”"
   [Letterboxed]: https://letterboxd.com "Letterboxd • Social film discovery."
   [Just made a backup]: https://letterboxd.com/settings/data/
+  [StoryGraph profile]: https://app.thestorygraph.com/profile/itheory

@@ -22,6 +22,6 @@ pretty simple, and supports a *lot* of social bookmarking sites, and even good
 And of course, also starting today, you can see the links right here on my site.
 So, yeah, go ahead and link me up!
 
-  [Simple Mom]: https://simplemom.net/ "Simple Mom"
+  [Simple Mom]: https://web.archive.org/web/20090302193224/http://simplemom.net/ "Simple Mom"
   [sociable]: https://yoast.com/wordpress/sociable/ "Sociable Plugin home page"
   [here]: {{% link "/downloads/sociable-1.0" %}}

@@ -48,4 +48,4 @@ everything is always UTC, and should always send updates as UTC.
   [`AT TIME ZONE` expression in your query]: https://www.postgresql.org/docs/current/functions-datetime.html#FUNCTIONS-DATETIME-ZONECONVERT
   [`SET timezone = 'UTC'`]: https://www.postgresql.org/docs/9.1/static/runtime-config-client.html#GUC-TIMEZONE
   [constraint exclusion]: https://www.postgresql.org/docs/9.1/static/ddl-partitioning.html#DDL-PARTITIONING-CONSTRAINT-EXCLUSION
-  [be ignored]: https://comments.gmane.org/gmane.comp.db.postgresql.performance/29681
+  [be ignored]: https://web.archive.org/web/20160321063108/http://comments.gmane.org/gmane.comp.db.postgresql.performance/29681

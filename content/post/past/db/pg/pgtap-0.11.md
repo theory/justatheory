@@ -43,5 +43,5 @@ month. So I'll be back with more soon enough.
   [pgTAP 0.11]: https://github.com/theory/pgtap/releases/tag/rel-0.11
   [Epic Test]: http://epictest.org/
     "Epic: More full of fail than any other testing tool"
-  [talk]: http://www.postgresqlconference.org/west08/talks/
+  [talk]: https://web.archive.org/web/20081120015713/http://www.postgresqlconference.org/west08/talks/
     "PostgreSQL Conference West 2008 Talks"

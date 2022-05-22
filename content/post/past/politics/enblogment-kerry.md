@@ -23,7 +23,8 @@ that I feel that little more needs be said.
 *   [The New York *Times*]
 *   [Lawrence Lessig][lead]
 
-  [lead]: http://www.lessig.org/blog/archives/002264.shtml "enblogment: For Kerry"
+  [lead]: https://web.archive.org/web/20041030045802/http://www.lessig.org/blog/archives/002264.shtml
+    "enblogment: For Kerry"
   [endorse]: http://pres2004.scripting.com/2004/10/29#a5 "Endorse John Kerry"
   [John Kerry]: http://www.johnkerry.com/ "John Kerry for President"
   [*The New Yorker*]: https://www.newyorker.com/magazine/2004/11/01/the-choice-5

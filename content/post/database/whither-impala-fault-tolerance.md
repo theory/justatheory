@@ -47,8 +47,8 @@ figured out. I'm disappointed it's not on the road map.
   [Cloudera Blog]: https://blog.cloudera.com/
   [Impala]: https://impala.apache.org
   [Hive]: https://hive.apache.org/
-  [Impala FAQ]: https://www.cloudera.com/content/cloudera-content/cloudera-docs/Impala/latest/Cloudera-Impala-Frequently-Asked-Questions/Cloudera-Impala-Frequently-Asked-Questions.html
-  [CitusDB]: https://citusdata.com/docs/sql-on-hadoop "CitusDB SQL on Hadoop"
+  [Impala FAQ]: https://web.archive.org/web/20160211202038/http://www.cloudera.com/documentation/archive/impala/2-x/2-1-x/topics/impala_faq.html
+  [CitusDB]: https://web.archive.org/web/20130223235911/http://citusdata.com/docs/sql-on-hadoop "CitusDB SQL on Hadoop"
   [ORC]: https://docs.cloudera.com/runtime/latest/hive-performance-tuning/topics/hive_maximize_storage_resources_using_orc.html
     "ORC File Format"
   [Parquet]: http://parquet.apache.org "Parquet is a columnar storage format for Hadoop."

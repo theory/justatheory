@@ -95,4 +95,5 @@ And that's it! Feel free to take this code and do with it what you like,
 including fix any bugs, add command-line options, support changing multiple
 authors at once, or whatever. Share and enjoy.
 
-  [Ohloh]: http://www.ohloh.net/ "ohloh, the open source network"
+  [Ohloh]: https://web.archive.org/web/20100106064341/http://www.ohloh.net/
+    "ohloh, the open source network"

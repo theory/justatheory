@@ -60,7 +60,7 @@ well as the usual t-shirts launch party invitations.
   [CPAN Meta DB]: http://cpanmetadb.appspot.com/
   [02packages.details.txt]: http://cpan.perl.org/modules/02packages.details.txt
   [search.cpan.org]: https://search.cpan.org/
-  [Kobesearch]: https://kobesearch.cpan.org/
+  [Kobesearch]: https://web.archive.org/web/20100528163151/http://kobesearch.cpan.org/
   [JSAN]: http://openjsan.org/
   [cpanminus]: http://cpanmin.us/
   [CPAN.pm]: https://metacpan.org/pod/cpan

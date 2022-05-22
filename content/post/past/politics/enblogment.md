@@ -58,9 +58,9 @@ is, “No thanks.”
 
 Barack Obama for President. He's the right man for the job at the right time.
 
-  [enblogment of Kerry]: {{% ref "/post/past/politics/emblogment-kerry" %}}
+  [enblogment of Kerry]: {{% ref "/post/past/politics/enblogment-kerry" %}}
     "enblogment: For Kerry"
-  [Lawrence Lessig]: http://www.lessig.org/blog/archives/002264.shtml
+  [Lawrence Lessig]: https://web.archive.org/web/20041030045802/http://www.lessig.org/blog/archives/002264.shtml
     "Lawrence Lessig: enblogment: For Kerry"
   [Barack Obama]: https://barackobama.com "Barack Obama for America"
   [Oregon vote by mail]: https://en.wikipedia.org/wiki/Postal_voting
@@ -83,16 +83,17 @@ Barack Obama for President. He's the right man for the job at the right time.
     "Powell Endorses Obama"
   [The Philadelphia *Inquirer*]: https://www.inquirer.com/philly/opinion/20081017_For_President__Obama_will_lead.html
     "For President: Obama will lead"
-  [The Chicago *Sun-Times*]: https://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
+  [The Chicago *Sun-Times*]: https://web.archive.org/web/20081021085855/http://www.suntimes.com/news/commentary/1228111,sun-times-endorses-barack-obama-101908.article
     "Sun-Times endorses Barack Obama for president"
   [The Chicago *Tribune*]: https://www.chicagotribune.com/opinion/chi-chicago-tribune-endorsement-story.html
     "Tribune endorsement: Barack Obama for president"
-  [The Atlanta *Journal-Constitution*]: https://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html
+  [The Atlanta *Journal-Constitution*]:
+    https://web.archive.org/web/20081021074743/http://www.ajc.com/opinion/content/opinion/stories/2008/10/19/prezed_1019.html
     "Obama is the choice"
   [The Denver *Post*]: https://www.denverpost.com/2008/10/16/barack-obama-for-president/
     "Barack Obama for president"
   [McCain is in some kind of bubble]: https://www.youtube.com/watch?v=JcU81Y193sU
     "Pundits: McCain Unaware of What His Campaign is Peddling"
   [McCain knows exactly what he's doing]:
-    https://www.thedailybeast.com/blogs-and-stories/2008-10-10/the-conservative-case-for-obama/
+    https://web.archive.org/web/20090302030842/http://www.thedailybeast.com/blogs-and-stories/2008-10-10/the-conservative-case-for-obama
     "Sorry, Dad, I'm Voting for Obama"

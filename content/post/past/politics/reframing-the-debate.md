@@ -112,7 +112,7 @@ our slash and spend president. Ad nauseam.
     "“Our CEO President”"
   [Nat]: https://nathan.torkington.com/articles/2004-vote.html
     "Understanding the 2004 Vote"
-  [George Lakoff]: https://georgelakoff.com/blog/ "George Lakoff Blog"
+  [George Lakoff]: https://web.archive.org/web/20041204115646/http://www.georgelakoff.com/blog/ "George Lakoff Blog"
   [*Don't think of an Elephant*.]: https://www.amazon.com/exec/obidos/tg/detail/-/1931498717/justatheory-20
     "Buy “Don't think of an Elephant” on Amazon.com"
   [good article]: https://www.salon.com/2004/10/02/lakoff/ "“Winning the war of words”"

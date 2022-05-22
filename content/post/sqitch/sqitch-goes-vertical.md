@@ -109,7 +109,7 @@ to get that done by early October.
   [DBI]: https://metacpan.org/module/DBI
   [Vertica]: https://vertica.com/
   [PostgreSQL]: https://www.postgresql.org/
-  [work]: http://www.iovation.com/
+  [work]: https://www.iovation.com/
   [rationalizing configuration hierarchies]:
     https://github.com/theory/sqitch/issues/153
   [the tutorial]:

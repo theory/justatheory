@@ -56,7 +56,7 @@ much nicer for myself, so we'll see.
   [kineticode.com]: https://kineticode.com
   [PGXN mirror]: http://pgxn.justatheory.com/
   [ab]: http://httpd.apache.org/docs/2.2/programs/ab.html
-  [numerous]: http://www.iovation.com/
+  [numerous]: https://www.iovation.com/
   [other]: http://pgxn.org/
   [things]: http://www.designsceneapp.com/
   [new]: http://github.com/theory/sqitch

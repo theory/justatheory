@@ -136,7 +136,8 @@ to other things again for a while. Watch this space for details!
     "Bricolage-Devel 1.11.0 Released"
   [send feedback]: https://bricolagecms.org/support/lists "The Bricolage Mail Lists"
   [file bug reports]: http://bugs.bricolage.cc/ "Bricolage Bug Tracker"
-  [OSCON]: http://en.oreilly.com/oscon2008/public/content/home "OSCON 2008"
+  [OSCON]: https://web.archive.org/web/20080529045558/http://en.oreilly.com/oscon2008/public/content/home
+    "OSCON 2008"
   [Google Summer of Code]: http://code.google.com/soc/2006/
     "Google Summer of Code 2006"
   [Web site]: https://bricolagecms.org/ "The Bricolage Web site"

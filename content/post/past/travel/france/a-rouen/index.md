@@ -83,7 +83,7 @@ A few other items of interest:
   [visit]: {{% ref "/post/past/travel/france/blue-eiffel-tower" %}} "Blue Eiffel"
   [in]: {{% ref "/post/past/travel/france/more-france-photos" %}} "More France Photos"
   [2008]: {{% ref "/post/past/travel/france/musee-du-quai-branly" %}} "Musée du quai Branly"
-  [Etsy]: http://etsy.com/
+  [Etsy]: https://etsy.com/
   [iovation]: https://iovation.com/
   [Sqitch]: https://sqitch.org/
   [Scratch]: http://scratch.mit.edu/

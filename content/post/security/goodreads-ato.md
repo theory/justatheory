@@ -6,7 +6,6 @@ lastMod: 2022-04-03T19:21:59Z
 description: Someone stole my Goodreads account; the company failed to recover it, then deleted it. It was all too preventable.
 tags: [Security, Goodreads, Account Takeover, Fail]
 type: post
-link: ~
 ---
 
 On 12:31pm on February 2, I got an email from [Goodreads]:

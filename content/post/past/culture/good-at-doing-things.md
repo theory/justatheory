@@ -457,9 +457,10 @@ Look around, figure out what needs to be done, and do it.
 Slides on [goodatdoingthings.com]. Will see about getting a video posted, as
 well.
 
-  [good-at-doing-things]: https://www.montessori-nw.org/section.cfm?wSectionID=3747
+  [good-at-doing-things]:
+    https://web.archive.org/web/20090220094822/http://www.montessori-nw.org/section.cfm?wSectionID=3747
   [Childpeace Montessori]: https://childpeace.org
-  [Good at Doing Things]: http://www.goodatdoingthings.com
+  [Good at Doing Things]: https://web.archive.org/web/20090404112123/http://www.goodatdoingthings.com/
   [The TOVA Company]: https://www.tovatest.com
   [myelinated]: https://en.wikipedia.org/wiki/Myelin "Wikipedia: Myelin"
   [BWCA Wildlife and nature preserve]: https://www.fs.usda.gov/visit/destination/boundary-waters-canoe-area-wilderness

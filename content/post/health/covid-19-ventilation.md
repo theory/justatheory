@@ -72,5 +72,5 @@ and economic impacts to do so.
   [where windows were kept open]:
     https://www.cbsnews.com/news/coronavirus-japan-has-long-accepted-covids-airborne-spread-and-scientists-say-ventilation-is-key/
     "Japan has long accepted COVID's airborne spread, and scientists say ventilation is key"
-  [Health and Safety]: https://www.schools.nyc.gov/school-year-20-21/return-to-school-2020/health-and-safety
-  [Return to School 2020-2021]: https://www.schools.nyc.gov/school-year-20-21/return-to-school-2020
+  [Health and Safety]: https://web.archive.org/web/20200717104323/https://www.schools.nyc.gov/school-year-20-21/return-to-school-2020/health-and-safety
+  [Return to School 2020-2021]: https://web.archive.org/web/20200709171600/https://www.schools.nyc.gov/school-year-20-21/return-to-school-2020

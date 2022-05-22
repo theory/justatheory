@@ -415,7 +415,8 @@ the call to `bind_textdomain_filter` required by [this change] in Encode v2.99.
     "ExtUtils::MakeMaker on CPAN"
   [Locale::Maketext]: https://metacpan.org/module/Locale::Maketext
     "Locale::Maketext on CPAN"
-  [On the state of i18n in Perl]: http://rassie.org/archives/247
+  [On the state of i18n in Perl]:
+    https://web.archive.org/web/20090517094501/http://rassie.org/archives/247
   [Internationalisierungs-Framework auswählen]:
     http://download.steffen-winkler.de/dpws2010/I18N_STEFFENW.pod
   [English translation]: https://gist.github.com/ap/909197

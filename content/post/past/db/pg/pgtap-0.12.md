@@ -25,6 +25,7 @@ I think I'll also spend some time in the next few weeks on an article explaining
 exactly what pgTAP is and why you'd want to use it. Provided, of course, I can
 find the tuits for that.
 
-  [PostgreSQL Conference West 2008 talk]: http://www.postgresqlconference.org/west08/talks/
+  [PostgreSQL Conference West 2008 talk]:
+    https://web.archive.org/web/20081120015713/http://www.postgresqlconference.org/west08/talks/
     "PostgreSQL Conference West 2008 Talks"
   [pgTAP 0.12]: https://github.com/theory/pgtap/releases/tag/rel-0.12

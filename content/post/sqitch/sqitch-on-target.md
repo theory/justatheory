@@ -100,7 +100,7 @@ Sqitch.
 
   [Sqitch]: https://sqitch.org/
   [Git remotes]: http://git-scm.com/docs/git-remote
-  [work]: http://www.iovation.com/
+  [work]: https://www.iovation.com/
   [database URI spec]: https://github.com/theory/uri-db
   [previously]: {{% ref "/post/database/toward-a-database-uri-standard" %}}
   [`target`]: https://metacpan.org/pod/sqitch-target

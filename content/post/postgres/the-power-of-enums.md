@@ -1,6 +1,6 @@
 --- 
 date: 2013-09-29T14:50:00Z
-link: http://www.openscg.com/2013/09/the-power-of-enums/
+link: https://web.archive.org/web/20131006041029/http://www.openscg.com/2013/09/the-power-of-enums/
 title: The Power of Enums
 aliases: [/pg/2013/09/29/the-power-of-enums/]
 tags: [Postgres, Jim Mlodgenski, Enums]

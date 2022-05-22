@@ -1,5 +1,5 @@
 ---
-title: "How Goodreads Deleted My Account"
+title: How Goodreads Deleted My Account
 slug: goodreads-ato
 date: 2022-03-05T23:45:49Z
 lastMod: 2022-04-03T19:21:59Z
@@ -184,7 +184,7 @@ the lookout for a new social reading site that supports multifactor
 authentication. But even with that, in the future I'll post reviews here on Just
 a Theory and just reference them, at best, from social sites.
 
----
+<hr id="update" />
 
 **Update April 3, 2022**: This past week, I finally got some positive news from
 Goodreads, two months after this saga began:

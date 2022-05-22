@@ -19,9 +19,10 @@ DirectoryPath: public
 # EnforceHTML5: false
 # EnforceHTTPS: false
 IgnoreURLs:
-  # URLs known to fail but for which there is no known valid replacement.
+  # Regexes for URLs known to fail but for which there is no known valid replacement.
   - http://pgxn.justatheory.com
   - https://www.miamiherald.com/opinion/editorials/story/730751.html
+
   - http://www.ncld.org/content/view/865/391/
   - http://rubyforge.org/pipermail/ruby-pg-general/2007-December/000004.html
   - https://glu.ttono.us/articles/2007/12/22/postgresql-gem-on-leopard-stock-gem-system
@@ -91,12 +92,8 @@ IgnoreURLs:
   - http://viewsvn.bricolage.cc/bricolage/branches/
   - http://viewsvn.bricolage.cc/\?view=revision&revision=7423
 
-  # URLs that work but don't like the crawler.
-  - https://linkedin.com/in/decibel/
-  - https://linkedin.com/in/lannings/
-  - https://linkedin.com/in/kurksp/
-  - https://linkedin.com/in/craig-brewster-02b6b95/
-  - https://linkedin.com/in/quinnweaver/
+  # Regexes for URLs that work but don't like the crawler.
+  - https://linkedin.com/in/
   - https://www.linode.com # https://twitter.com/theory/status/1476679345079001097
   - https://twitter.com/
   - https://(?:www[.])?iovation.com/
@@ -105,8 +102,6 @@ IgnoreURLs:
 
   # The search described in content/post/past/meta/kinosearch.md was dropped.
   - https://justatheory.com/search.cgi
-  - https://justatheory.com/search.cgi\?q=iraq
-  - https://justatheory.com/search.cgi\?q=svn
 
 # IgnoreInternalURLs: []
 IgnoreDirs: [code, tags, downloads, p]

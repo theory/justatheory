@@ -30,4 +30,4 @@ And:
 
 —[An Interview with Chris Date]
 
-  [An Interview with Chris Date]: http://www.oreillynet.com/lpt/a/6060
+  [An Interview with Chris Date]: https://web.archive.org/web/200511/http://www.oreillynet.com/lpt/a/6060

@@ -1,5 +1,6 @@
 --- 
 date: 2004-10-08T18:37:09Z
+lastMod: 2022-06-12T22:42:22Z
 slug: the-bush-bulge
 title: Bush Uses Radio Receiver During Debate?
 aliases: [/politics/election_2004/the_bulge.html]

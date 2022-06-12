@@ -1,5 +1,6 @@
 --- 
 date: 2010-01-12T06:12:02Z
+lastMod: 2022-06-12T22:42:22Z
 slug: somethingest-from-each-entity
 title: "SQL Hack: The Something-est From Each Entity"
 aliases: [/computers/databases/postgresql/somethingest-from-each-entity.html]

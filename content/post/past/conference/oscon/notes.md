@@ -1,5 +1,6 @@
 --- 
 date: 2004-08-08T20:43:23Z
+lastMod: 2022-06-12T22:42:22Z
 slug: oscon-notes
 title: OSCON 2004 Notes
 aliases: [/computers/conferences/oscon2004/notes.html]

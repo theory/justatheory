@@ -1,5 +1,6 @@
 --- 
 date: 2004-10-09T22:54:00Z
+lastMod: 2022-06-12T22:42:22Z
 slug: svnnotify-2.20
 title: SVN::Notify 2.20 Adds Colorized Diffs
 aliases: [/computers/programming/perl/modules/svnnotify_2.20.html]

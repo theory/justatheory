@@ -1,5 +1,6 @@
 --- 
 date: 2004-08-24T01:41:24Z
+lastMod: 2022-06-12T22:42:22Z
 slug: nicholas-clark-oscon
 title: Nicholas Clark
 aliases: [/computers/conferences/oscon2004/nicholas_clark.html]

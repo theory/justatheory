@@ -1,5 +1,6 @@
 --- 
 date: 2011-09-06T21:53:47Z
+lastMod: 2022-06-12T22:42:22Z
 description: Apple's not on in the cloud computing business and has no interest in it.
 slug: cloudy-ideas
 title: Cloudy Ideas

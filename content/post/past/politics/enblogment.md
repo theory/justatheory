@@ -1,5 +1,6 @@
 --- 
 date: 2008-10-21T02:59:39Z
+lastMod: 2022-05-22T21:36:50Z
 slug: enblogment
 title: "enblogment: For Obama"
 aliases: [/politics/election_2008/enblogment.html]

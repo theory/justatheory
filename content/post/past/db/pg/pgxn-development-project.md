@@ -1,5 +1,6 @@
 --- 
 date: 2010-06-15T17:56:33Z
+lastMod: 2022-05-22T21:36:50Z
 slug: pgxn-development-project
 title: PGXN Development Project
 aliases: [/computers/databases/postgresql/pgxn-development-project.html]

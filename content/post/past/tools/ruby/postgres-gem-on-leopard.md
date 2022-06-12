@@ -1,5 +1,6 @@
 --- 
 date: 2008-01-22T01:22:09Z
+lastMod: 2022-06-12T03:26:54Z
 slug: postgres-gem-on-leopard
 title: Using sudo to Install the Postgres Gem on Leopard
 aliases: [/computers/programming/ruby/postgres_gem_on_leopard.html]

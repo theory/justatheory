@@ -1,5 +1,6 @@
 --- 
 date: 2008-06-30T19:49:53Z
+lastMod: 2022-06-12T03:26:54Z
 slug: citext-patch-submitted
 title: CITEXT Patch Submitted to PostgreSQL Contrib
 aliases: [/computers/databases/postgresql/citext-patch-submitted.html]

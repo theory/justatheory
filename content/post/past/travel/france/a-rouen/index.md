@@ -1,5 +1,6 @@
 --- 
 date: 2012-06-28T11:04:20Z
+lastMod: 2022-05-22T21:36:50Z
 slug: a-rouen
 title: À Rouen
 aliases: [/travel/france/2012/a-rouen.html]

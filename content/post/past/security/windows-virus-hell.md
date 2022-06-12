@@ -1,5 +1,6 @@
 --- 
 date: 2005-08-21T21:09:22Z
+lastMod: 2022-06-12T22:42:22Z
 slug: windows-virus-hell
 title: Windows Virus Hell
 aliases: [/computers/policy/windows_virus_hell.html]

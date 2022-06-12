@@ -1,5 +1,6 @@
 --- 
 date: 2006-05-04T23:13:30Z
+lastMod: 2022-06-12T03:26:54Z
 slug: kinosearch
 title: Search Powered by KinoSearch
 aliases: [/computers/blog/kinosearch.html]

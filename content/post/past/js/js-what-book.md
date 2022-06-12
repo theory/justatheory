@@ -1,5 +1,6 @@
 --- 
 date: 2005-03-11T00:01:45Z
+lastMod: 2022-06-12T22:42:22Z
 slug: js-what-book
 title: What JavaScript Book Should I Buy?
 aliases: [/computers/programming/javascript/what_book.html]

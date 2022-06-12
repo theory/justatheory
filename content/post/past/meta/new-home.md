@@ -1,5 +1,6 @@
 --- 
 date: 2012-04-10T05:52:00Z
+lastMod: 2022-05-22T21:36:50Z
 slug: new-home
 title: New Home
 aliases: [/computers/blog/new-home.html]

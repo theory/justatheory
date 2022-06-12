@@ -1,5 +1,6 @@
 --- 
 date: 2009-04-07T04:30:30Z
+lastMod: 2022-06-12T03:26:54Z
 slug: svn-notify-future
 title: The Future of SVN::Notify
 aliases: [/computers/programming/perl/modules/svn-notify-future.html]

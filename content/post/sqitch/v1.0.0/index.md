@@ -1,7 +1,7 @@
 ---
 title: "Sqitch v1.0.0"
 date: 2019-06-04T16:27:22Z
-lastMod: 2019-06-04T16:27:22Z
+lastMod: 2022-06-12T03:26:54Z
 description: After seven years of development and production database deployments, I finally put in the effort to release v1.0.0.
 tags: [Sqitch, Databases, Change Management, Finally]
 type: post

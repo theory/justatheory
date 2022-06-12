@@ -1,5 +1,6 @@
 --- 
 date: 2013-09-29T14:29:00Z
+lastMod: 2022-05-22T21:36:50Z
 link: http://blog.cloudera.com/blog/2013/09/whats-next-for-impala-after-release-1-1/
 title: Whither Impala Fault Tolerance?
 aliases: [/impala/2013/09/29/whither-impala-fault-tolerance/]

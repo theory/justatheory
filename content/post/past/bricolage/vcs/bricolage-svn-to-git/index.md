@@ -1,5 +1,6 @@
 --- 
 date: 2009-04-23T18:15:06Z
+lastMod: 2022-06-12T03:26:54Z
 slug: bricolage-svn-to-git
 title: Migrating Bricolage Subversion to Git
 aliases: [/computers/vcs/git/bricolage-svn-to-git.html]

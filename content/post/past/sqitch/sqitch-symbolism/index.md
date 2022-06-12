@@ -1,6 +1,6 @@
 --- 
 date: 2012-09-25T22:59:59Z
-lastMod: 2022-01-02T17:43:28Z
+lastMod: 2022-06-12T03:26:54Z
 slug: sqitch-symbolism
 title: Sqitch Symbolism
 aliases: [/computers/databases/sqitch-symbolism.html]

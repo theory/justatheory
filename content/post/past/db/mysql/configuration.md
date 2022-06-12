@@ -1,5 +1,6 @@
 --- 
 date: 2006-04-11T04:43:00Z
+lastMod: 2022-06-12T22:42:22Z
 slug: intelligent-mysql-configuration
 title: Intelligent MySQL Configuration
 aliases: [/computers/databases/mysql/configuration.html]

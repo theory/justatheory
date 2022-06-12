@@ -1,6 +1,6 @@
 --- 
 date: 2004-06-16T01:43:24Z
-lastMod: 2022-06-12T22:30:20Z
+lastMod: 2022-06-12T22:42:22Z
 slug: wheeler.net-migration
 title: david.wheeler.net Content Migration
 aliases: [/computers/internet/weblogs/wheeler.net_migration.html]

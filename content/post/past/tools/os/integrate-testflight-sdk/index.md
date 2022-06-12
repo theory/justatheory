@@ -1,5 +1,6 @@
 --- 
 date: 2011-12-18T07:11:07Z
+lastMod: 2022-06-12T03:26:54Z
 slug: integrate-testflight-sdk
 title: How to Integrate the TestFlight SDK into an iOS Project
 aliases: [/computers/os/ios/integrate-testflight-sdk.html]

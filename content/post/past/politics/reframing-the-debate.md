@@ -1,5 +1,6 @@
 --- 
 date: 2004-11-05T01:01:00Z
+lastMod: 2022-06-12T22:42:22Z
 slug: reframing-the-debate
 title: Reframing the Debate
 aliases: [/politics/election_2004/reframing_the_debate.html]

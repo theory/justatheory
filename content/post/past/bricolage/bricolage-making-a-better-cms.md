@@ -1,5 +1,6 @@
 --- 
 date: 2004-10-05T04:06:06Z
+lastMod: 2022-06-12T22:42:22Z
 slug: making-a-better-cms
 title: On Making a Better Open-Source CMS
 aliases: [/bricolage/competition/making_a_better_cms.html]

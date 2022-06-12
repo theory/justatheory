@@ -1,5 +1,6 @@
 ---
 date: 2004-10-29T16:39:41Z
+lastMod: 2022-06-12T22:42:22Z
 slug: enblogment
 title: "enblogment: For Kerry"
 aliases: [/politics/election_2004/enblogment.html]

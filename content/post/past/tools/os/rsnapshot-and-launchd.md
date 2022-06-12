@@ -1,5 +1,6 @@
 --- 
 date: 2007-02-19T17:18:55Z
+lastMod: 2022-06-12T03:26:54Z
 slug: rsnapshot-and-launchd
 title: Configuring rsnapshot and launchd on Mac OS X
 aliases: [/computers/os/macosx/rsnapshot_and_launchd.html]

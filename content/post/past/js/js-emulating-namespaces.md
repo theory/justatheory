@@ -1,5 +1,6 @@
 --- 
 date: 2005-05-04T18:27:48Z
+lastMod: 2022-06-12T22:42:22Z
 slug: js-emulating-namespaces
 title: Suggestion for Emulating Namespaces in JavaScript
 aliases: [/computers/programming/javascript/emulating_namespaces.html]

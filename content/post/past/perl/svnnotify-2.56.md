@@ -1,5 +1,6 @@
 --- 
 date: 2006-04-05T00:14:58Z
+lastMod: 2022-06-12T03:26:54Z
 slug: svnnotify-2.56
 title: SVN::Notify 2.56 Adds Alternative Formats
 aliases: [/computers/programming/perl/modules/svnnotify_2.56.html]

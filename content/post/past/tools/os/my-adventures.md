@@ -1,6 +1,6 @@
 --- 
 date: 2002-11-30T20:23:00Z
-lastMod: 2022-01-02T21:44:28Z
+lastMod: 2022-06-12T22:42:22Z
 slug: my-osx-adventures
 title: My Adventures with Mac OS X
 aliases: [/computers/os/macosx/my_adventures.html]

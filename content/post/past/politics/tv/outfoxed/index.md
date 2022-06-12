@@ -1,5 +1,6 @@
 --- 
 date: 2004-07-22T17:25:36Z
+lastMod: 2022-06-12T22:42:22Z
 slug: outfoxed
 title: See “OutFoxed”
 aliases: [/culture/tv/outfoxed.html]

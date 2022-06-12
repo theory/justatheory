@@ -2,7 +2,7 @@
 title: How Goodreads Deleted My Account
 slug: goodreads-ato
 date: 2022-03-05T23:45:49Z
-lastMod: 2022-04-03T19:21:59Z
+lastMod: 2022-05-22T21:36:50Z
 description: Someone stole my Goodreads account; the company failed to recover it, then deleted it. It was all too preventable.
 tags: [Security, Goodreads, Account Takeover, Fail]
 type: post

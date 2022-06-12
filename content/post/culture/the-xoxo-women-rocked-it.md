@@ -1,6 +1,7 @@
 ---
 title: The Women at XOXO Rocked It
 date: 2013-09-30T09:00:00Z
+lastMod: 2022-05-22T21:36:50Z
 description: "This is how it ought be. You make something. You're excited about it. Your
 energy infects the audience. And your gender and ethnicity have nothing to do
 with it."

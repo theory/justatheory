@@ -1,5 +1,6 @@
 --- 
 date: 2008-04-10T20:33:55Z
+lastMod: 2022-05-22T21:36:50Z
 slug: svn-modify-author
 title: How to Globally Change a Subversion Username
 aliases: [/computers/vcs/svn/modify_author.html]

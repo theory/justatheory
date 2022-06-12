@@ -1,5 +1,6 @@
 --- 
 date: 2008-09-24T06:49:20Z
+lastMod: 2022-06-12T03:26:54Z
 description: "Notes from “Good at Doing Things: Montessori education and higher-order cognitive functions”, presented by Steve Hughes."
 slug: good-at-doing-things
 title: Good at Doing Things

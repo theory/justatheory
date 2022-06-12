@@ -43,7 +43,7 @@ And getting the same failures. But this works beautifully:
 
 And away we go!
 
-  [a post from maintainer Jeff Davis]: https://rubyforge.org/pipermail/ruby-pg-general/2007-December/000004.html
+  [a post from maintainer Jeff Davis]: https://web.archive.org/web/20080619085622/http://rubyforge.org/pipermail/ruby-pg-general/2007-December/000004.html
     "[Ruby-pg-general] osx leopard"
-  [Gluttonous]: https://glu.ttono.us/articles/2007/12/22/postgresql-gem-on-leopard-stock-gem-system
+  [Gluttonous]: https://web.archive.org/web/20080106134832/http://glu.ttono.us/articles/2007/12/22/postgresql-gem-on-leopard-stock-gem-system
     "Gluttonous: postgresql gem on Leopard stock gem system"

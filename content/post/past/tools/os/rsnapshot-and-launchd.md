@@ -44,7 +44,7 @@ new iMac. The configurations I made are based on Kenn Christ's [blog entry].
 
 And that's it. Enjoy!
 
-  [blog entry]: http://www.inmostlight.org/2006/03/easy-backups-with-rsnapshot
+  [blog entry]: https://web.archive.org/web/20070224111145/http://www.inmostlight.org/2006/03/easy-backups-with-rsnapshot
     "Easy backups with rsnapshot"
   [My Book]: https://en.wikipedia.org/wiki/Western_Digital_My_Book
     "Wikipedia: Western Digital My Book™ Premium Edition™"

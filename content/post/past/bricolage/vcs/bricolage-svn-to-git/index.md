@@ -269,7 +269,7 @@ More on that in my next post.
   [Marshall]: https://github.com/mroch "Marshall Roch"
   [reported last week]: https://marc.info/?t=123964664700006
     "Git Mail List: “Again with git-svn: File was not found in commit”"
-  [recommended]: http://www.simplisticcomplexity.com/2008/03/05/cleanly-migrate-your-subversion-repository-to-a-git-repository/
+  [recommended]: https://web.archive.org/web/20090424162957/http://www.simplisticcomplexity.com/2008/03/05/cleanly-migrate-your-subversion-repository-to-a-git-repository/
     "Simplistic Complexity: “Cleanly Migrate Your Subversion Repository To a GIT Repository”"
   [svn2git]: ttps://github.com/schwern/svn2git/ "svn2git on GitHub"
   [GitX]: https://gitx.frim.nl

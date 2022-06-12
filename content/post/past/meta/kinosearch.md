@@ -30,4 +30,4 @@ out those [KinoSearch benchmarks], too. This thing is fast!
   [the search page]: {{% link "/search.cgi" %}} "Search Just a Theory"
   [“iraq”]:  {{% link "/search.cgii?q=iraq" %}} "Search for “iraq”"
   [“svn”]:  {{% link "/search.cgi?q=svn" %}} "Search for “svn”"
-  [KinoSearch benchmarks]: http://www.rectangular.com/kinosearch/benchmarks.html
+  [KinoSearch benchmarks]: https://web.archive.org/web/20060528045030/http://www.rectangular.com/kinosearch/benchmarks.html

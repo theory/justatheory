@@ -54,7 +54,7 @@ Thanks a million for all your help and support!
   [Sqitch v1.0.0]: https://metacpan.org/release/DWHEELER/App-Sqitch-v1.0.0
   [v0.9999]: https://metacpan.org/release/DWHEELER/App-Sqitch-0.9999
   [blog post]:
-    https://www.iovation.com/blog/out-of-incubation-and-ready-for-broad-adoption-sqitch-1-released
+    https://web.archive.org/web/20200513005649/https://www.iovation.com/blog/out-of-incubation-and-ready-for-broad-adoption-sqitch-1-released
     "Out of Incubation and Ready for Broad Adoption; Sqitch 1.0 Released"
   [new site]: https://sqitch.org/
   [how to install Sqitch]: https://sqitch.org/download/ "Download Sqitch"

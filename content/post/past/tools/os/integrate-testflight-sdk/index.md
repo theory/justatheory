@@ -102,9 +102,9 @@ details. Then, get your beta on!
 
   [TestFlight]: https://testflight.apple.com/
   [DesignScene]: http://www.designsceneapp.com/
-  [TestFlight SDK]: http://testflightapp.com/sdk/
+  [TestFlight SDK]: https://web.archive.org/web/20120104134005/https://testflightapp.com/sdk/
   [this StackOverflow post]: https://stackoverflow.com/q/8027043/79202
-  [`EXCLUDED_SOURCE_FILE_NAMES` setting]: http://lists.apple.com/archives/xcode-users/2009/Jun/msg00153.html
+  [`EXCLUDED_SOURCE_FILE_NAMES` setting]: https://web.archive.org/web/20121214101910/http://lists.apple.com/archives/xcode-users/2009/Jun/msg00153.html
   [reasonably well known]: https://www.google.com/search?q=EXCLUDED_SOURCE_FILE_NAMES
   [Download the TestFlight SDK]: https://testflightapp.com/sdk/download/
   [complete SDK docs]: https://testflightapp.com/sdk/doc/

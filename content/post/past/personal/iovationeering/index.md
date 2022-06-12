@@ -74,7 +74,7 @@ Twitter].
   [great]: https://github.com/pgxn?tab=repositories
   [code]: https://github.com/pgexperts?tab=repositories
   [Bricolage CMS]: http://bricolagecms.org/
-  [over to PGX]: https://pgexperts.com/bricolage.html
+  [over to PGX]: https://web.archive.org/web/20120113014335/http://www.pgexperts.com/bricolage.html
     "Bricolage Technical Support from PGX"
   [DesignScene]: http://www.designsceneapp.com/
   [1]: https://blog.pgxn.org/ "PGXN Blog"

@@ -96,7 +96,7 @@ you think.
     "PATCH: CITEXT 2.0"
   [yak shaving]: http://en.wiktionary.org/wiki/yak_shaving
     "Wiktionary: “yak shaving”"
-  [citext project on pgFoundry]: http://pgfoundry.org/projects/citext/
+  [citext project on pgFoundry]: hhttps://web.archive.org/web/20080513053151/http://pgfoundry.org/projects/citext/
   [email domain]: http://www.varlena.com/GeneralBits/128.php
     "PostgreSQL General Bits: “Base Type using Domains”"
   [July CommitFest]: http://wiki.postgresql.org/index.php?title=CommitFest:2008-07

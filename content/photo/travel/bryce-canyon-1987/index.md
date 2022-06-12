@@ -8,7 +8,7 @@ tags: [Bryce Canyon, Utah, Hoodoo]
 type: photo
 image:
   src: bryce-canyon-1987.jpeg
-  title: The hoodoos of Bryce Canyon
+  alt: The hoodoos of Bryce Canyon
   caption: The hoodoos of Bryce Canyon National Park. Photo made in the summer of 1987.
   copyright: 1987 David E. Wheeler
 ---

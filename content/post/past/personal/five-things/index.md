@@ -164,7 +164,7 @@ I now tag:
 -   [Josh Berkus]
 -   [Ask Bjørn Hansen]
 
-  [tagged me]: http://use.perl.org/~Adrian/journal/32192
+  [tagged me]: https://web.archive.org/web/20070213012018/http://use.perl.org/~Adrian/journal/32192
     "Five things you don't know about Adrian Howard"
   [Goldstar]: https://en.wikipedia.org/wiki/Goldstar_beer
     "Wikipedia describes Goldstar beer"

@@ -96,7 +96,7 @@ have planned. Stay tuned!
   [atebits]: https://twitter.com/atebits
   [Textie]: https://www.textie.me
   [Strongrrl]: http://www.strongrrl.com/
-  [envisioned]: http://www.lunarboy.com/blog/post/introducing-designscene-app-for-ipad/
+  [envisioned]: https://web.archive.org/web/20110131000632/http://www.lunarboy.com/blog/post/introducing-designscene-app-for-ipad/
   [iPad Dev Camp]: http://www.iosdevcamp.org/
   [Jayant Sai]: https://twitter.com/j6y6nt
   [Bill Dudney]: http://bill.dudney.net/roller/objc/
@@ -105,7 +105,7 @@ have planned. Stay tuned!
   [jobs]: https://www.pgexperts.com/
   [MVC]: https://en.wikipedia.org/wiki/Model%E2%80%93View%E2%80%93Controller
     "Wikipedia: “Model-View-Controller”"
-  [in the App Store]: http://bit.ly/eIsh3J
+  [in the App Store]: https://web.archive.org/web/20110125072110/http://itunes.apple.com/us/app/designscene/id412753716?mt=8
   [Gizzmodo]: https://www.gizmodo.com.au/2011/01/designscene-for-ipad-is-the-21st-century-muse/
     "DesignScene for iPad Is the 21st Century Muse"
   [macstories]: https://www.macstories.net/reviews/designscene-an-inspiration-browser-for-graphic-designers/

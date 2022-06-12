@@ -22,34 +22,14 @@ IgnoreURLs:
   # Regexes for URLs known to fail but for which there is no known valid replacement.
   - http://pgxn.justatheory.com
   - https://www.miamiherald.com/opinion/editorials/story/730751.html
-
-  - http://www.ncld.org/content/view/865/391/
-  - http://rubyforge.org/pipermail/ruby-pg-general/2007-December/000004.html
-  - https://glu.ttono.us/articles/2007/12/22/postgresql-gem-on-leopard-stock-gem-system
-  - http://pgfoundry.org/projects/citext # The old v1 citext, not v2 (which is on GitHub and Postgres core)
-  - http://sourceforge.net/docs/E09#svn_notify
-  - http://www.rectangular.com/kinosearch/benchmarks.html
   - http://nntp.x.perl.org/group/perl.cpan.testers/249132
   - http://www.nntp.perl.org/group/perl.cpan.testers/240189
-  - http://use.perl.org/~Adrian/journal/32192
-  - http://www.valuesofn.com/
-  - http://use.perl.org/~Adrian/journal/32192
-  - http://www.inmostlight.org/2006/03/easy-backups-with-rsnapshot
-  - http://support.github.com/discussions/repos/492-svn-import-hasnt-finished-after-24-hours
-  - https://github.com/hail2u/blosxom-plugins/
-  - http://www.simplisticcomplexity.com/2008/03/05/cleanly-migrate-your-subversion-repository-to-a-git-repository/
-  - https://www.iovation.com/blog/out-of-incubation-and-ready-for-broad-adoption-sqitch-1-released
   - https://github.com/BeaData
-  - https://pgexperts.com/bricolage.html
   - https://www.chrisenns.com/2010/06/29/why-apple-doesnt-care-about-enterprise/
-  - http://random.andrewwarner.com/what-googles-android-looked-like-before-and-after-the-launch-of-iphone/
-  - http://www.lunarboy.com/blog/post/introducing-designscene-app-for-ipad/
-  - http://bit.ly/eIsh3J
   - http://www.padvance.com/story/new-app-a-day-designscene
-  - http://testflightapp.com/sdk/
   - https://testflightapp.com/sdk/download/
   - https://testflightapp.com/sdk/doc/
-  - http://lists.apple.com/archives/xcode-users/2009/Jun/msg00153.html
+
   - http://sourceforge.net/tracker/index.php\?func=detail&aid=1155712&group_id=69750&atid=525656
   - http://www.adaptivepath.com/publications/essays/archives/000385.php
   - http://www.nrdcactionfund.org/ctt.asp\?u=2066706&l=1409
@@ -82,15 +62,6 @@ IgnoreURLs:
   - http://bill.dudney.net/roller/objc/
   - http://homepage.mac.com/rgriff/files/mod_ssl.pdf
   - https://www.rfa.org/english/rss.xml
-  - https://svn.bricolage.cc/design-docs/trunk/Bricolage2/UML/Bricolage.pdf
-  - http://svn.bricolage.cc/design-docs/trunk/Bricolage2/TechnicalSpec.pod
-  - http://svn.bricolage.cc/design-docs/trunk/Bricolage2/FunctionalSpec.pod
-  - http://svn.bricolage.cc/bricolage/
-  - http://svn.bricolage.cc/
-  - http://svn.bricolage.cc/bricolage/branches/
-  - http://svn.bricolage.cc/bricolage/tags/
-  - http://viewsvn.bricolage.cc/bricolage/branches/
-  - http://viewsvn.bricolage.cc/\?view=revision&revision=7423
 
   # Regexes for URLs that work but don't like the crawler.
   - https://linkedin.com/in/
@@ -99,6 +70,10 @@ IgnoreURLs:
   - https://(?:www[.])?iovation.com/
   - https://(?:www[.])?transunion.com/
   - https://(?:www[.])?bookshop.org/books/ # https://twitter.com/theory/status/1476690324651184128
+  - https://(?:docs|help)[.]github[.]com
+
+  # Defunct Bricolage Subversion service.
+  - https?://(?:view)?svn\.bricolage\.cc/
 
   # The search described in content/post/past/meta/kinosearch.md was dropped.
   - https://justatheory.com/search.cgi

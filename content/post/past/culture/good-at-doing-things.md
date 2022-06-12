@@ -470,6 +470,6 @@ well.
   [movable alphabet]: https://www.montessorimom.com/moveable-alphabet/
   [Sim City]: https://en.wikipedia.org/wiki/SimCity
   [Will Wright at TED in 2007]: https://www.ted.com/talks/will_wright_spore_birth_of_a_game
-  [Executive Functions]: http://www.ncld.org/content/view/865/391/
+  [Executive Functions]: https://web.archive.org/web/20080918213708/http://www.ncld.org/content/view/865/391/
   [Dr. Angeline Lillard]: https://www.montessori-science.org
   [goodatdoingthings.com]: http://goodatdoingthings.com/

@@ -90,7 +90,7 @@ were some other settings I found it useful to add:
 
 I've added all of these to the example above.
 
-  [Configuring MySQL on MacOS X]: http://blog.duncandavidson.com/2006/04/configuring_mys.html
+  [Configuring MySQL on MacOS X]: https://web.archive.org/web/20061025181517/http://blog.duncandavidson.com/2006/04/configuring_mys.html
     "James Duncan Davidson on MySQL Configuration"
   [strict\_trans\_tables]: https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_trans_tables
     "MySQL Reference Manual: STRICT_TRANS_TABLES"

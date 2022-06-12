@@ -1,5 +1,6 @@
 --- 
 date: 2004-06-16T01:43:24Z
+lastMod: 2022-06-12T22:30:20Z
 slug: wheeler.net-migration
 title: david.wheeler.net Content Migration
 aliases: [/computers/internet/weblogs/wheeler.net_migration.html]
@@ -10,7 +11,7 @@ type: post
 I've completed the migration of all of the content from my old site,
 david.wheeler.net. All requests to that domain will get a permanent redirect to
 this site. Where possible, I tried to make the old URLs redirect to the new
-URLs. So if you try to connect to [david.wheeler.net/osx.html], you should be
+URLs. So if you try to connect to `david.wheeler.net/osx.html`, you should be
 automatically redirected to
 [www.justatheory.com/computers/os/macosx/my\_adventures.html][adventures]. The
 same goes for the following documents:
@@ -22,8 +23,6 @@ same goes for the following documents:
 If you happen to notice that I missed anything, comment on this blog entry to
 let me know.
 
-  [david.wheeler.net/osx.html]: http://david.wheeler.net/osx.html
-    "The Old Mac OS X Adventures URL"
   [adventures]: {{% ref "/post/past/tools/os/my-adventures" %}}
   [Patch for Apache + DBM on Mac OS X]: {{% link "apache_dbm.patch" %}}
   [Migrating to Mac OS X]: {{% link "migrating_to_macosx.pdf" %}}

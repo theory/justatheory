@@ -18,6 +18,7 @@ Enjoy!
 **Update:** And now I've released SVN::Notify 2.21 with a few minor fixes,
 including XHTML 1.1 compliance.
 
-  [Erik Hatcher]: http://www.blogscene.org/erik "Erik Hatcher - Blog"
+  [Erik Hatcher]: https://web.archive.org/web/20041102032812/http://www.blogscene.org/erik/
+    "Erik Hatcher - Blog"
   [here]: {{% link "/code/svnnotify/svnnotify_colordiff_example.html" %}}
     "SVN::Notify::HTML::ColorDiff example"

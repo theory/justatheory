@@ -247,12 +247,12 @@ but selling great products.
   [Simon Wardley]: https://twitter.com/swardley
   [Kate Craig-Wood]: https://twitter.com/Memset_kate/
   [this tweet]: https://twitter.com/memset_kate/status/106817356889735168
-  [The post]: http://www.katescomment.com/open-apple-icloud/
+  [The post]: https://web.archive.org/web/20111101200532/http://www.katescomment.com/open-apple-icloud/
   [Apple does not care about the enterprise]: https://www.chrisenns.com/2010/06/29/why-apple-doesnt-care-about-enterprise/
   [Simon said]: https://twitter.com/swardley/status/106828452748988416
   [Kate added]: https://twitter.com/Memset_Kate/status/106826660283826176
   [duplicate the iPhone]: https://web.archive.org/web/20111007180722/http://random.andrewwarner.com/what-googles-android-looked-like-before-and-after-the-launch-of-iphone
-  [August 2011 MarketShare report]: https://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8&qpcustomd=1
+  [August 2011 MarketShare report]: https://web.archive.org/web/20110924003526/http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8&qpcustomd=1
   [the Kindle]: https://techcrunch.com/2011/09/02/amazon-kindle-tablet/
   [OpenStack]: https://www.openstack.org
   [why HP is leaving the PC business]: http://www.asymco.com/2011/08/19/hps-decade-long-departure/

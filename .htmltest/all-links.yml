@@ -20,63 +20,35 @@ DirectoryPath: public
 # EnforceHTTPS: false
 IgnoreURLs:
   # Regexes for URLs known to fail but for which there is no known valid replacement.
-  - http://pgxn.justatheory.com
-  - https://www.miamiherald.com/opinion/editorials/story/730751.html
-  - http://nntp.x.perl.org/group/perl.cpan.testers/249132
-  - http://www.nntp.perl.org/group/perl.cpan.testers/240189
-  - https://github.com/BeaData
-  - https://www.chrisenns.com/2010/06/29/why-apple-doesnt-care-about-enterprise/
-  - http://www.padvance.com/story/new-app-a-day-designscene
-  - https://testflightapp.com/sdk/download/
-  - https://testflightapp.com/sdk/doc/
-
-  - http://sourceforge.net/tracker/index.php\?func=detail&aid=1155712&group_id=69750&atid=525656
-  - http://www.adaptivepath.com/publications/essays/archives/000385.php
-  - http://www.nrdcactionfund.org/ctt.asp\?u=2066706&l=1409
-  - http://www.schlossnagle.org/~george/blog/
-  - http://www.apache.org/~joes/
-  - http://www.apache.org/~joes/apache.tar.gz
-  - http://www.apache.org/~joes/apreq.tar.gz
-  - http://mathforum.org/epigone/modperl/fermkhiwhand/m1wv11m544.fsf_-_@halfdome.holdit.com
-  - http://www.modssl.org/source/exp/mod_ssl/pkg.mod_ssl/INSTALL
-  - http://developer.apple.com/internet/macosx/osdb.html
-  - http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
-  - http://www.democrats.org/specialreports/2005budget/surplus.html
-  - http://pres2004.scripting.com/2004/10/29#a5
-  - http://www.johnkerry.com/
-  - http://www.blogscene.org/erik
-  - http://www.electoral-vote2.com/images/bulge.jpg
-  - http://www.lessig.org/blog/archives/002041.shtml
-  - http://use.perl.org/~matts/journal/
-  - http://use.perl.org/~cwest/journal
-  - http://use.perl.org/~schwern/journal
-  - http://use.perl.org/~nicholas/journal
-  - http://use.perl.org/~sky/journal
-  - http://use.perl.org/~robrt/journal
-  - http://www.alexwheeler.net/
-  - http://david.wheeler.net/osx.html
-  - http://blog.duncandavidson.com/2006/04/configuring_mys.html
-  - https://www.pgexperts.com/people.html
-  - http://www.katescomment.com/open-apple-icloud/
-  - https://marketshare.hitslink.com/operating-system-market-share.aspx\?qprid=8&qpcustomd=1
-  - http://bill.dudney.net/roller/objc/
-  - http://homepage.mac.com/rgriff/files/mod_ssl.pdf
-  - https://www.rfa.org/english/rss.xml
+  - http://pgxn[.]justatheory[.]com
+  - https://www[.]miamiherald[.]com/opinion/editorials/story/730751[.]html
+  - http://nntp[.]x[.]perl[.]org/group/perl[.]cpan[.]testers/249132
+  - http://www[.]nntp[.]perl[.]org/group/perl[.]cpan[.]testers/240189
+  - https://github[.]com/BeaData
+  - https://www[.]chrisenns[.]com/2010/06/29/why-apple-doesnt-care-about-enterprise/
+  - http://www[.]padvance[.]com/story/new-app-a-day-designscene
+  - https://testflightapp[.]com/sdk/download/
+  - https://testflightapp[.]com/sdk/doc/
+  - http://sourceforge[.]net/tracker/index[.]php[?]func=detail&aid=1155712&group_id=69750&atid=525656
+  - http://www[.]nrdcactionfund[.]org/ctt[.]asp\?u=2066706&l=1409
+  - ^http://www[.]apache[.]org/~joes/.+
+  - http://www[.]modssl[.]org/source/exp/mod_ssl/pkg[.]mod_ssl/INSTALL
+  - http://www[.]alexwheeler[.]net/
 
   # Regexes for URLs that work but don't like the crawler.
-  - https://linkedin.com/in/
-  - https://www.linode.com # https://twitter.com/theory/status/1476679345079001097
-  - https://twitter.com/
-  - https://(?:www[.])?iovation.com/
-  - https://(?:www[.])?transunion.com/
-  - https://(?:www[.])?bookshop.org/books/ # https://twitter.com/theory/status/1476690324651184128
-  - https://(?:docs|help)[.]github[.]com
+  - https://linkedin[.]com/in/
+  - https://www[.]linode[.]com # https://twitter.com/theory/status/1476679345079001097
+  - https://twitter[.]com/
+  - https://(?:www[.])?iovation[.]com/
+  - https://(?:www[.])?transunion[.]com/
+  - https://(?:www[.])?bookshop[.]org/books/ # https://twitter.com/theory/status/1476690324651184128
+  - https://(?:docs|help)[.]github[.]com/
 
   # Defunct Bricolage Subversion service.
-  - https?://(?:view)?svn\.bricolage\.cc/
+  - https?://(?:view)?svn[.]bricolage[.]cc/
 
   # The search described in content/post/past/meta/kinosearch.md was dropped.
-  - https://justatheory.com/search.cgi
+  - https://justatheory[.]com/search[.]cgi
 
 # IgnoreInternalURLs: []
 IgnoreDirs: [code, tags, downloads, p]

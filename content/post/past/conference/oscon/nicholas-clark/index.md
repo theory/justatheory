@@ -15,7 +15,7 @@ I just had to share this lovely picture of [Nick Clark], taken on the Friday
 night of OSCon 2004 at [Matt Sergeant's] party. I honestly have no idea what
 Nick was doing, but it was worth it for the photo, don't you think?
 
-  [Nick Clark]: http://use.perl.org/~nicholas/journal
+  [Nick Clark]: https://web.archive.org/web/20111230042947/http://use.perl.org/~nicholas/journal/
     "Nicholas Clark's use Perl Journal"
-  [Matt Sergeant's]: http://use.perl.org/~matts/journal/
+  [Matt Sergeant's]: https://web.archive.org/web/20111219193703/http://use.perl.org/~Matts/journal/
     "Matt Sergeant's use Perl Journal"

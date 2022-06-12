@@ -23,5 +23,5 @@ My favorite phrase from the Salon.com article: the â€œMilli Vanilli president.â€
   [Salon.com]: https://www.salon.com/ "Salon.com"
   [Current Electoral Vote Predictor]: https://electoral-vote.com
     "See the current electoral vote status of the campaign on a nice colored map"
-  [this image]: http://www.electoral-vote2.com/images/bulge.jpg
+  [this image]: https://web.archive.org/web/20041102050324if_/http://www.electoral-vote2.com/images/bulge.jpg
     "The Electoral Vote Predictor's enhanced image of the bulge"

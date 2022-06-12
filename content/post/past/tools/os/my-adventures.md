@@ -474,30 +474,30 @@ elegant UI, and all the Unix power tools I can stand! I hope you do, too.
   [XFree86 ports]: https://en.wikipedia.org/wiki/XDarwin
   [Mac-Emacs project]: http://mac-emacs.sourceforge.net/
   [BBEdit]: https://www.barebones.com/products/bbedit/
-  [this PDF]: http://homepage.mac.com/rgriff/files/mod_ssl.pdf
+  [this PDF]: https://web.archive.org/web/20030810222250/http://homepage.mac.com/rgriff/files/mod_ssl.pdf
   [GDBM]: https://www.gnu.org.ua/software/gdbm/
   [project bpage]: https://sourceforge.net/projects/expat/
   [Perl]: https://www.perl.com/
   [well-known]: https://www.nntp.perl.org/group/perl.macosx/2001/10/msg896.html
   [libapreq]: https://httpd.apache.org/apreq/
   [Perl modules]: https://metacpan.org/search?q=dist%3Alibapreq
-  [experimental]: http://www.apache.org/~joes/
+  [experimental]: https://web.archive.org/web/20021128141259/http://www.apache.org/~joes/
   [discussion]: http://archive.develooper.com/macosx@perl.org/index.html#01539
   [Mac OS X Perl]: https://lists.perl.org/list/macosx.html
   [apache.tar.gz]: http://www.apache.org/~joes/apache.tar.gz
   [apreq.tar.gz]: http://www.apache.org/~joes/apreq.tar.gz
   [Open SSL site]: https://www.openssl.org
   [mod\_ssl site]: http://www.modssl.org
-  [posted]: http://mathforum.org/epigone/modperl/fermkhiwhand/m1wv11m544.fsf_-_@halfdome.holdit.com
+  [posted]: https://web.archive.org/web/20021112182402/http://mathforum.org/epigone/modperl/fermkhiwhand/m1wv11m544.fsf_-_@halfdome.holdit.com
   [mod\_perl mail list]: https://lists.perl.org/list/modperl-user.html
   [mod\_perl]: https://perl.apache.org
   [INSTALL]: http://www.modssl.org/source/exp/mod_ssl/pkg.mod_ssl/INSTALL
   [PostgreSQL]: https://www.postgresql.org/
   [Apple]: https://www.apple.com/
-  [instructions]: http://developer.apple.com/internet/macosx/osdb.html
+  [instructions]: https://web.archive.org/web/20021201185559/http://developer.apple.com/internet/macosx/osdb.html
   [MySQL]: https://dev.mysql.com/
   [here]: {{% link "/downloads/pgsql_osx_start.tar.gz" %}}
-  [Creating SystemStarter Startup Item Bundles HOWTO]: http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
+  [Creating SystemStarter Startup Item Bundles HOWTO]: https://web.archive.org/web/20021003151714/http://www.opensource.apple.com/projects/documentation/howto/html/SystemStarter_HOWTO.html
   [XML::Parser]: https://metacpan.org/dist/XML-Parser
   [Text::Iconv]: https://metacpan.org/dist/Text-Iconv
   [download it]: http://www.gnu.org/software/libiconv/

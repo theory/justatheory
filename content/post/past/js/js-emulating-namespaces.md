@@ -111,6 +111,7 @@ object)? Leave your opinions in a comment. Thanks!
     "JavaScript 2.0 Namespaces specification"
   [prototype]: http://prototype.conio.net/
     "prototype: An object-oriented Javascript library"
-  [JSAN]: http://use.perl.org/~schwern/journal/24112 "JSAN: A HOWTO Guide"
+  [JSAN]: https://web.archive.org/web/20111102190706/http://use.perl.org/~schwern/journal/24112
+    "JSAN: A HOWTO Guide"
   [*Object Oriented Perl*]: https://www.amazon.com/exec/obidos/ASIN/1884777791/justatheory-20
     "Buy Object Oriented Perl on Amazon. Go Get it!"

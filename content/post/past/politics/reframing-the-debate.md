@@ -106,7 +106,7 @@ our slash and spend president. Ad nauseam.
   [“Fresh Air”]: https://freshair.npr.org/ "Fresh Air online"
   [$237 billion]: https://money.cnn.com/2001/10/29/economy/budget/
     "CNN Reports on the declining US budget surplus in 2001"
-  [$477 billion]: http://www.democrats.org/specialreports/2005budget/surplus.html
+  [$477 billion]: https://web.archive.org/web/20041204035221/http://democrats.org/specialreports/2005budget/surplus.html
     "DNC Special Reports: Bush's 2005 Budget: A Deficit Disaster"
   [“CEO President,”]: https://washingtonmonthly.com/2004/05/03/our-ceo-president/
     "“Our CEO President”"

@@ -119,6 +119,6 @@ blocked. Anyone else got any brilliant solutions to this problem?
   [Test.Harness.Browser]: {{% ref "/post/past/js/test-simple-0.20.md" %}}
     "Test.Simple 0.20 Released"
   [Bricolage 1.9.0]: {{% ref "/post/past/bricolage/bricolage-1.9.0.md" %}}
-  [George Schlossnagle]: http://www.schlossnagle.org/~george/blog/
+  [George Schlossnagle]: https://web.archive.org/web/20081123062538/http://www.schlossnagle.org/~george/blog
     "George Schlossnagle's Blog"
   [CBL database]: https://www.abuseat.org "Composite Blocking List"

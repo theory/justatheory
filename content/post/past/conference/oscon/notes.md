@@ -97,9 +97,12 @@ There were parties and conversations every night, lots of great talk, good food,
 good friends, and, well, I just had a great time. I can't wait until next year's
 OSCon!
 
-  [Matt Sergeant's]: http://use.perl.org/~matts/journal/ "Matt Sergeant's Journal"
-  [Casey]: http://use.perl.org/~cwest/journal "Casey West's Journal"
-  [Schwern]: http://use.perl.org/~schwern/journal "Schwern's Journal"
+  [Matt Sergeant's]: https://web.archive.org/web/20111219193703/http://use.perl.org/~Matts/journal/
+    "Matt Sergeant's Journal"
+  [Casey]: https://web.archive.org/web/20111108030929/http://use.perl.org/~cwest/journal/
+    "Casey West's Journal"
+  [Schwern]: https://web.archive.org/web/20120106183825/http://use.perl.org/~schwern/journal/
+    "Schwern's Journal"
   [Jesse]: https://pallas.eruditorum.org "Jesse Vincent's Journal"
   [Nat]: https://nathan.torkington.com/ "Nat Torkington"
   [Bruce]: https://momjian.us "Bruce Momjian's Website"
@@ -107,10 +110,13 @@ OSCon!
   [David]: http://fetter.org "David Fetter's Website"
   [Elein]: http://varlena.com/ "Elein Mutain's Company"
   [Dan]: https://www.sidhe.org/blog/ "The Parrot Squawks at Midnight"
-  [Nicholas]: http://use.perl.org/~nicholas/journal "Nicholas Clark's Journal"
+  [Nicholas]: https://web.archive.org/web/20111230042947/http://use.perl.org/~nicholas/journal/
+    "Nicholas Clark's Journal"
   [James]: http://www.whoot.org/ "James Duncan's Blog"
-  [Arthur]: http://use.perl.org/~sky/journal "Arthur Bergman's Journal"
-  [Robert]: http://use.perl.org/~robrt/journal "Robert Spier's Journal"
+  [Arthur]: https://web.archive.org/web/20120126080215/http://use.perl.org/~sky/journal/
+    "Arthur Bergman's Journal"
+  [Robert]: https://web.archive.org/web/20110818042534/http://use.perl.org/~Robrt/journal/
+    "Robert Spier's Journal"
   [Ask]: https://www.askask.com "Ask Bjørn Hansen's Website"
   [Alex]: http://www.alexwheeler.net/ "Alex's Website"
   [PHP on Parrot]: http://conferences.oreillynet.com/cs/os2004/view/e_sess/5049

@@ -99,7 +99,7 @@ have planned. Stay tuned!
   [envisioned]: https://web.archive.org/web/20110131000632/http://www.lunarboy.com/blog/post/introducing-designscene-app-for-ipad/
   [iPad Dev Camp]: http://www.iosdevcamp.org/
   [Jayant Sai]: https://twitter.com/j6y6nt
-  [Bill Dudney]: http://bill.dudney.net/roller/objc/
+  [Bill Dudney]: https://web.archive.org/web/20110123194640/http://bill.dudney.net/roller/objc/
   [honorable mention]: http://www.iosdevcamp.org/2010/04/18/quick-list-of-hackathon-winners/
   [day]: https://kineticode.com/
   [jobs]: https://www.pgexperts.com/

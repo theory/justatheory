@@ -15,5 +15,5 @@ pick up a new language, not a script kiddie or CGI newbie.
 
 Thanks!
 
-  [Ajax]: http://www.adaptivepath.com/publications/essays/archives/000385.php
+  [Ajax]: https://web.archive.org/web/20050401061247/http://www.adaptivepath.com/publications/essays/archives/000385.php
     "Adaptive Path has your Ajax porn right here!"

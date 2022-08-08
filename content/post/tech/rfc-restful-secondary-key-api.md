@@ -23,14 +23,14 @@ familiar with REST, including:
 If you're familiar with REST, you get the idea.
 
 There is one requirement that proved a bit of design challenge. We will be
-creating canonical canonical ID for all resources managed by the service, which
-will function as the primary key. The APIs above reference that key by the
-`{uid}` path variable. However, we also need to support fetching a single
-resource by a number of existing identifiers, including multiple legacy IDs, and
-natural keys like, sticking to the users example, usernames and email addresses.
-Unlike the search API, which returns an array of resources, we need a nice
-single API like `GET /users/{uid}` that returns a single resource, but for a
-secondary key. What should it look like?
+creating canonical ID for all resources managed by the service, which will
+function as the primary key. The APIs above reference that key by the `{uid}`
+path variable. However, we also need to support fetching a single resource by a
+number of existing identifiers, including multiple legacy IDs, and natural keys
+like, sticking to the users example, usernames and email addresses. Unlike the
+search API, which returns an array of resources, we need a nice single API like
+`GET /users/{uid}` that returns a single resource, but for a secondary key. What
+should it look like?
 
 None of my initial proposals were great (using `username` as the sample
 secondary key, though again, we need to support a bunch of these):

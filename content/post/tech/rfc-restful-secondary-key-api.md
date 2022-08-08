@@ -1,5 +1,5 @@
 ---
-title: RFC Restful Secondary Key API
+title: "RFC: Restful Secondary Key API"
 slug: rfc-restful-secondary-key-api
 date: 2022-08-08T22:12:21Z
 lastMod: 2022-08-08T22:12:21Z

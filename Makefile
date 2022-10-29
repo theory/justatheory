@@ -57,4 +57,6 @@ themes/justatheory/static/fonts/fa-*: themes/justatheory/bin/fa-subset.js
 	mv fa-brands-400.woff   themes/justatheory/static/fonts/fa-brands.woff
 	mv fa-brands-400.woff2  themes/justatheory/static/fonts/fa-brands.woff2
 
+# Re-generate the font-awesome fonts. Edit themes/justatheory/bin/fa-subset.js
+# to add or remove icons.
 font-awesome: themes/justatheory/static/fonts/fa-*

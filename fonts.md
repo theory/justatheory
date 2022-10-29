@@ -14,54 +14,62 @@ Updating Fonts
 6.  Copy all the files matching `*.woff*` to a single fonts directory.
 7.  Run this Perl script over the files:
 
-        use v5.20;
-        use warnings;
-        use utf8;
-        use File::Copy qw(mv);
+    ``` perl
 
-        my %config = (
-            black => { qual => 'blk', style => 'normal', weight => '900' },
-            blackit => { qual => 'blkit', style => 'italic', weight => '900' },
-            bold => { qual => 'bld', style => 'normal', weight => 'bold' },
-            boldit => { qual => 'bldit', style => 'italic', weight => 'bold' },
-            extralight => { qual => 'xlt', style => 'normal', weight => '100' },
-            extralightit => { qual => 'xltit', style => 'italic', weight => '100' },
-            it  => { qual => 'it', style => 'italic', weight => 'normal' },
-            light => { qual => 'lt', style => 'normal', weight => '200' },
-            lightit => { qual => 'ltit', style => 'italic', weight => '200' },
-            medium => { qual => 'med', style => 'normal', weight => 'normal' },
-            mediumit => { qual => 'medit', style => 'italic', weight => 'normal' },
-            regular => { qual => 'reg', style => 'normal', weight => 'normal' },
-            semibold => { qual => 'sbld', style => 'normal', weight => '600' },
-            semiboldit => { qual => 'sbldit', style => 'italic', weight => '600' },
-        );
+    use v5.20;
+    use warnings;
+    use utf8;
+    use File::Copy qw(mv);
 
-        for my $fn (@ARGV) {
-            my ($name, $type, $ext) = $fn =~ /^([^-]+)-([^-]+)-[^.]+.([^.]+)/;
-            next unless $name;
-            my ($sn, $ln) = $name eq 'sourcesanspro'
-                ? ('srcsans', 'SourceSans')  : ('srccode', 'SourceCode');;
-            my $c = $config{$type} or die "No config for $type\n";
-            my $bn = "$sn-$c->{qual}";
-            if ($ext eq 'woff') {
-                say qq{\@font-face {
-            font-family: '$ln';
-            src: url('/fonts/$bn.woff2') format('woff2'),
-                url('/fonts/$bn.woff') format('woff');
-            font-weight: $c->{weight};
-            font-style: $c->{style};
+    my %config = (
+        black        => { qual => 'blk',    style => 'normal', weight => '900' },
+        blackit      => { qual => 'blkit',  style => 'italic', weight => '900' },
+        bold         => { qual => 'bld',    style => 'normal', weight => 'bold' },
+        boldit       => { qual => 'bldit',  style => 'italic', weight => 'bold' },
+        extralight   => { qual => 'xlt',    style => 'normal', weight => '100' },
+        extralightit => { qual => 'xltit',  style => 'italic', weight => '100' },
+        it           => { qual => 'it',     style => 'italic', weight => 'normal' },
+        light        => { qual => 'lt',     style => 'normal', weight => '200' },
+        lightit      => { qual => 'ltit',   style => 'italic', weight => '200' },
+        medium       => { qual => 'med',    style => 'normal', weight => 'normal' },
+        mediumit     => { qual => 'medit',  style => 'italic', weight => 'normal' },
+        regular      => { qual => 'reg',    style => 'normal', weight => 'normal' },
+        semibold     => { qual => 'sbld',   style => 'normal', weight => '600' },
+        semiboldit   => { qual => 'sbldit', style => 'italic', weight => '600' },
+    );
+
+    for my $fn (@ARGV) {
+        my ($name, $type, $ext) = $fn =~ /^([^-]+)-([^-]+)-[^.]+.([^.]+)/;
+        next unless $name;
+        my ($sn, $ln) = $name eq 'sourcesanspro'
+            ? ('srcsans', 'SourceSans')  : ('srccode', 'SourceCode');;
+        my $c = $config{$type} or die "No config for $type\n";
+        my $bn = "$sn-$c->{qual}";
+        if ($ext eq 'woff') {
+            say qq{\@font-face {
+        font-family: '$ln';
+        src: url('/fonts/$bn.woff2') format('woff2'),
+            url('/fonts/$bn.woff') format('woff');
+        font-weight: $c->{weight};
+        font-style: $c->{style};
+    }
+    };
         }
-        };
-            }
 
-            mv $fn => "$bn.$ext";
-        }
+        mv $fn => "$bn.$ext";
+    }
+    ```
 
 8.  Copy the output of the script into the CSS file.
 
+9.  Run `make font-awesome` to use [fontawesome-subset] to generate the [Font
+    Awesome] fonts. Edit `themes/justatheory/bin/fa-subset.js` and
+    `themes/justatheory/static/css/screen.css` to add new icons.
 
 See the
 [Mozilla Web fonts docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
 for additional information on web fonts, and
 [this SO answer](https://stackoverflow.com/a/11002874/79202) for reasons to just
 use WOFF2 and WOFF.
+[fontawesome-subset]: https://github.com/omacranger/fontawesome-subset
+[Font Awesome]: https://fontawesome.com

@@ -387,7 +387,7 @@ h1 {
 h1.link a:after {
     color: #999;
     font-family: FAS; /* XXX get light version? */
-    font-size: 45%;
+    font-size: 60%;
     content: "\00a0\f35d";
     vertical-align: top;
 }
@@ -700,6 +700,15 @@ body > header > nav li.icon {
 
 .fa-twitter:hover {
     color: #55acee !important;
+}
+
+.fa-mastodon:before {
+    font-family: FAB;
+    content: "\f4f6";
+}
+
+.fa-mastodon:hover {
+    color: #419bdd !important;
 }
 
 .fa-github:before {

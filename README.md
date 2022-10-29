@@ -61,7 +61,6 @@ Examples:
 
 ### Syntax Highlighting
 
-
 [Syntax Highlighting] comes with Hugo. Use fenced blocks with the [named language],
 e.g.,
 

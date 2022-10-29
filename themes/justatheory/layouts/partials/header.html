@@ -48,11 +48,14 @@
 				<li><a href="/about/" title="About {{ .Site.Title }}">About</a></li>
 				<li><a href="/archive/" title="{{ .Site.Title }} Archives">Archives</a></li>
 				<li><a href="/tags/" title="{{ .Site.Title }} Tags">Tags</a></li>
-				{{- if .Site.Params.twitter }}
-				<li class="icon"><a href="//twitter.com/{{ .Site.Params.twitter }}" title="@{{ .Site.Params.twitter }} on Twitter"><i class="fa fa-twitter"></i></a></li>
+				{{- if .Site.Params.mastodon }}
+				<li class="icon"><a rel="me noopener" href="{{ .Site.Params.mastodon }}" title="{{ replaceRE "^https://([^/]+)/@(.+)" "@$2@$1" .Site.Params.mastodon }} on Mastodon"><i class="fa fa-mastodon"></i></a></li>
 				{{- end }}
 				{{- if .Site.Params.github }}
-				<li class="icon"><a href="//github.com/{{ .Site.Params.github }}" title="@{{ .Site.Params.github }} on GitHub"><i class="fa fa-github"></i></a></li>
+				<li class="icon"><a rel="me noopener" href="//github.com/{{ .Site.Params.github }}" title="@{{ .Site.Params.github }} on GitHub"><i class="fa fa-github"></i></a></li>
+				{{- end }}
+				{{- if .Site.Params.twitter }}
+				<li class="icon"><a rel="me noopener" href="//twitter.com/{{ .Site.Params.twitter }}" title="@{{ .Site.Params.twitter }} on Twitter"><i class="fa fa-twitter"></i></a></li>
 				{{- end }}
 				<li class="icon"><a href="/feed.xml" title="Subscribe to {{ .Site.Title }}"><i class="fa fa-rss"></i></a></li>
 			</menu>

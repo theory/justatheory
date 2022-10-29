@@ -46,3 +46,15 @@ post:
 
 photo:
 	${HUGO} new -k photo $(patsubst content/%,%,$(filter-out $@,$(MAKECMDGOALS)))
+
+themes/justatheory/static/fonts/fa-*: themes/justatheory/bin/fa-subset.js
+	# npm install --save-dev fontawesome-subset @fortawesome/fontawesome-free
+	node themes/justatheory/bin/fa-subset.js
+	mv fa-regular-400.woff  themes/justatheory/static/fonts/fa-reg.woff
+	mv fa-regular-400.woff2 themes/justatheory/static/fonts/fa-reg.woff2
+	mv fa-solid-900.woff    themes/justatheory/static/fonts/fa-solid.woff
+	mv fa-solid-900.woff2   themes/justatheory/static/fonts/fa-solid.woff2
+	mv fa-brands-400.woff   themes/justatheory/static/fonts/fa-brands.woff
+	mv fa-brands-400.woff2  themes/justatheory/static/fonts/fa-brands.woff2
+
+font-awesome: themes/justatheory/static/fonts/fa-*

@@ -21,6 +21,7 @@ disableKinds = ["section"]
   subtitle = "Black lives matter"
   bug = "❖"
   twitter = "theory"
+  mastodon = "https://xoxo.zone/@theory"
   github = "theory"
   postTypes = ["post", "photo"]
   feedLimit = 32

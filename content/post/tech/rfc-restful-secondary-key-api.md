@@ -2,7 +2,7 @@
 title: "RFC: Restful Secondary Key API"
 slug: rfc-restful-secondary-key-api
 date: 2022-08-08T22:12:21Z
-lastMod: 2022-08-08T22:12:21Z
+lastMod: 2022-10-30T00:07:40Z
 description: A RESTful API design conundrum and a proposed solution.
 tags: [REST, API, Secondary Key, RFC]
 type: post
@@ -92,8 +92,14 @@ weird or not properly RESTful? Would love to know of any other patterns designed
 to solve the problem of supporting arbitrarily-named secondary unique keys.
 What do you think?
 
+**Update:** [Aristotle Pagaltzis] started a discussion on this pattern in [a
+Gist].
+
   [work]: https://nytimes.com "The New York Times"
   [Apigee]: https://pages.apigee.com/rs/apigee/images/api-design-ebook-2012-03.pdf
     "Web API Design: Crafting Interfaces that Developers Love"
   [Microsoft]: https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
     "Azure Docs: “RESTful web API design”"
+  [Aristotle Pagaltzis]: http://plasmasturm.org
+  [a Gist]: https://gist.github.com/ap/325e44a3bd094629943586e922af780f
+    "Re: RFC: Restful Secondary Key API"

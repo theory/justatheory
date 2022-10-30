@@ -19,7 +19,7 @@ into the [Grand Canyon], but, sadly I got a flu and kept us in the hotel along
 the rim.
 
 The highlight of the trip turned out to be [Bryce Canyon], where I made this
-photo of its famous [hoodoos]. Likely shot with Kodachrome 64, my go-too for
+photo of its famous [hoodoos]. Likely shot with Kodachrome 64, my go-to for
 sunny summer shots at the time, on a [Pentax ME Super] SLR with, as I recall, a
 28-105mm lens. Mom asked me yesterday if I'd scanned photos from that trip and,
 digging into my scans, the deeply saturated colors with those lovely evergreens

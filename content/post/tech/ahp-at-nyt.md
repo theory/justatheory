@@ -3,7 +3,7 @@ title: Collective Decision-Making with AHP
 slug: ahp-at-nyt
 date: 2022-10-15T14:20:28Z
 lastMod: 2022-10-15T14:20:28Z
-description: How the New York Ties Identity team tried out the Analytic Hierarchy Process to select a user ID format.
+description: How the New York Times Identity team tried out the Analytic Hierarchy Process to select a user ID format.
 tags: [Decision Making, AHP, New York Times]
 type: post
 link: https://open.nytimes.com/collective-decision-making-with-ahp-3ef819e5bc2a

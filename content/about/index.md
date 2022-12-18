@@ -12,8 +12,8 @@ image:
 {{% figure src="theory.jpg" alt="David E. “Theory” Wheeler" class="frame" %}}
 
 *Just a Theory* is an periodically irregular technology and culture blog by
-David E. Wheeler. If you'd like to get in touch, catch me on [Mastodon] or
-[Twitter] or send email to `david` at this domain.
+David E. Wheeler. If you'd like to get in touch, catch me on [Mastodon] or send
+email to `david` at this domain.
 
 Colophon
 --------
@@ -30,5 +30,4 @@ This site eschews JavaScript and uses no tracking or analytics services.
 [Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro
 [Source Code Pro]: https://github.com/adobe-fonts/source-code-pro
 [Mastodon]: https://xoxo.zone/@theory
-[Twitter]: https://twitter.com/theory
 [Font Awesome]: https://fontawesome.com

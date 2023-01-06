@@ -1,5 +1,6 @@
 --- 
 date: 2013-09-06T13:44:00Z
+lastMod: 2023-01-06T02:20:41Z
 title: Sqitch Templating
 aliases: [/sqitch/2013/09/06/sqitch-templating/]
 tags: [Sqitch, Templating]
@@ -163,7 +164,7 @@ statements. Try using them with custom variables for the schema and table
 names:
 
 ``` postgres
-SET search_path TO [% IF schema ][% schema %],[% END %]public;
+SET search_path TO [% IF schema %][% schema %],[% END %]public;
 
 CREATE TABLE [% IF table %][% table %][% ELSE %][% change %][% END %] (
     -- Add columns here.

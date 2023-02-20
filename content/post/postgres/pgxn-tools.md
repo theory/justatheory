@@ -2,7 +2,7 @@
 title: "Test Postgres Extensions With GitHub Actions"
 slug: test-extensions-with-github-actions
 date: 2020-06-28T17:52:14Z
-lastMod: 2020-06-28T17:52:14Z
+lastMod: 2023-02-20T23:55:17Z
 description: I finally made the jump from Travis CI to GitHub Actions for my Postgres extensions. Here’s how you can, too.
 tags: [Postgres, PGXN, GitHub Actions, Automation, CI/CD]
 type: post
@@ -34,7 +34,7 @@ jobs:
     container: pgxn/pgxn-tools
     steps:
       - run: pg-start ${{ matrix.pg }}
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: pg-build-test
 ```
 
@@ -91,7 +91,7 @@ how a release job might look:
         PGXN_PASSWORD: ${{ secrets.PGXN_PASSWORD }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Bundle the Release
         run: pgxn-bundle
       - name: Release on PGXN

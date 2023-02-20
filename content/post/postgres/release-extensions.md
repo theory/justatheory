@@ -2,7 +2,7 @@
 title: "Automate Postgres Extension Releases on GitHub and PGXN"
 slug: release-postgres-extensions-with-github-actions
 date: 2020-10-25T23:48:36Z
-lastMod: 2020-10-25T23:48:36Z
+lastMod: 2023-02-20T23:55:17Z
 description: Go beyond testing and fully automate the release of Postgres extensions on both GitHub and PGXN using GitHub actions.
 tags: [Postgres, PGXN, GitHub, GitHub Actions, Automation, CI/CD]
 type: post
@@ -50,7 +50,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - name: Check out the repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Bundle the Release
       id: bundle
       run: pgxn-bundle
@@ -100,12 +100,12 @@ Here's how it works:
     archiving the Git repo into a zip file. If your process for creating a
     release file is more complicated, you can do it yourself here; just be sure
     to include an `id` for the step, and emit a line of text so that later
-    actions know what file to release. The output should look like this, with
-    `$filename` representing the name of the release file, usually
-    `$extension-$version.zip`:
+    actions know what file to release. The output should be appended to the
+    `$GITHUB_OUTPUT` file like this, with `$filename` representing the name of
+    the release file, usually `$extension-$version.zip`:
 
     ```
-    ::set-output name=bundle::$filename
+    echo bundle=$filename >> $GITHUB_OUTPUT
     ```
 
 *   Step "Release on PGXN", on lines 20-25, releases the extension on PGXN. We

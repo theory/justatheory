@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Source
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Build the Site
-        uses: docker://klakegg/hugo:0.106.0
+        uses: docker://klakegg/hugo:0.107.0
       - name: Generate Publish Script
         run: ./bin/publish public justatheory.com E1X44SJ45FTNGI 1 > publish.sh
       - name: Publish the Site

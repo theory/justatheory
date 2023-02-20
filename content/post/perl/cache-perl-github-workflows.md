@@ -2,7 +2,7 @@
 title: "Accelerate Perl Github Workflows with Caching"
 slug: cache-perl-github-workflows
 date: 2021-11-28T16:43:20Z
-lastMod: 2021-11-28T16:43:20Z
+lastMod: 2023-02-20T23:55:17Z
 description: A quick tip for speeding up Perl builds in GitHub workflows by caching dependencies.
 tags: [Perl, GitHub, GitHub Actions, GitHub Workflows, Caching]
 type: post
@@ -33,13 +33,13 @@ jobs:
     runs-on: ${{ matrix.os }}-latest
     steps:
       - name: Checkout Source
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Perl
         id: perl
         uses: shogo82148/actions-setup-perl@v1
         with: { perl-version: "${{ matrix.perl }}" }
       - name: Cache CPAN Modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: local
           key: perl-${{ steps.perl.outputs.perl-hash }}

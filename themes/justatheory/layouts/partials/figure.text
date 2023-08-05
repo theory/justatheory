@@ -1,8 +1,8 @@
 {{- $src := partial "link.html" (dict "Page" .Page "Site" .Site "src" .Params.src) -}}
-{{- $stdLen := 74 }}
+{{- $stdLen := 78 }}
 {{- $padding := 2 }}
 {{- $maxLen := strings.RuneCount $src }}
-{{/* Determine the longest line length */}}
+{{- /* Determine the longest line length */}}
 {{- $alt := or .Params.alt .Params.title }}
 {{- with $alt -}}
     {{- $len := add 2 (strings.RuneCount .) }}
@@ -30,7 +30,7 @@
     {{- $caption = printf "%v\n© %v" $caption .Params.copyright -}}
 {{- end -}}
 
-{{/* Collect the max line length and determine indent. */}}
+{{- /* Collect the max line length and determine indent. */}}
 {{- $maxLen := add 2 $maxLen -}}
 {{- $indentSize := 0 -}}
 {{- if gt (sub $stdLen $maxLen) 1 -}}

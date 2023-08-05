@@ -1,7 +1,7 @@
 ---
 title: "Plain Text Figures"
 date: 2018-06-07T13:26:51Z
-lastMod: 2018-06-07T13:26:51Z
+lastMod: 2023-08-05T21:23:40Z
 description: How I went about formatting embedded figures in the plain text output for *Just a Theory.*
 tags: [Markup, Just a Theory, JSON Feed, Markdown, Plain Text, Image, Figure]
 type: post
@@ -13,7 +13,7 @@ addition to the expected HTML content. It reminds me of the [Daring Fireball]
 plain text feature: just append `.text` to any post to see its [Markdown]
 representation, [like this]. I'm a sucker for plain text, so followed suit. Now
 you can read the [wedding anniversary post] in plain text simply by [appending
-`copy.text`] to the URL (or via the JSON Feed).
+`.text`] to the URL (or via the JSON Feed).
 
 Markdowners will notice something off about the formatting: the embedded image
 looks nothing like Markdown. Here it is:
@@ -43,7 +43,7 @@ that's not super legible, either; it hardly differs from the shortcode format.
 I'd prefer a nicer syntax for embedded images and figures, but alas, Markdown
 hasn't one.
 
-Fortunately, the `copy.text` output needn't be valid Markdown. It's a plain text
+Fortunately, the `.text` output needn't be valid Markdown. It's a plain text
 output intended for reading, not for parsing into HTML. This frees me to make
 figures and images appear however I like.
 
@@ -204,7 +204,13 @@ an [conversion interface]? Here's my wedding photo again:
 Silly? Maybe. But I'm having fun with it. I expect to wrangle Hugo into emitting
 something like this soon.
 
-  [^figure-ascii]: Surely someone has come up with a way to improve on ASCII art by using [box elements] or something?
+**Update 2023-08-05:** Changed the location of plain text files for each post
+from `$slug/copy.text` to `$slug.text`, and updated the links in this post to
+reflect that change. In other words, the plain text file for this post is now
+[`plain-text-figures.text`]({{% ref "/post/markup/plain-text-figures" "text" %}}).
+
+  [^figure-ascii]: Surely someone has come up with a way to improve on ASCII art
+    by using [box elements] or something?
 
   [JSON Feed]: https://jsonfeed.org
   [here]: {{% ref "/" "json" %}}
@@ -212,7 +218,7 @@ something like this soon.
   [Markdown]: https://daringfireball.net/projects/markdown/
   [like this]: https://daringfireball.net/linked/2018/06/05/goode-federighi-uikit.text
   [wedding anniversary post]: {{% ref "/photo/personal/twenty-three" %}}
-  [appending `copy.text`]: {{% ref "/photo/personal/twenty-three" "text" %}}
+  [appending `.text`]: {{% ref "/photo/personal/twenty-three" "text" %}}
   [figure]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
   [Hugo figure shortcode]: https://gohugo.io/content-management/shortcodes/#figure
   [link format]: https://daringfireball.net/projects/markdown/syntax#link

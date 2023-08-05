@@ -9,6 +9,7 @@ PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
 enableRobotsTXT = true
 disableKinds = ["section"]
+uglyURLs = true
 
 [author]
     name = "David E. Wheeler"
@@ -40,6 +41,8 @@ disableKinds = ["section"]
   suffixes = ["text"]
 
 [outputFormats]
+[outputFormats.html]
+  noUgly = true
 [outputFormats.atom]
   mediatype = "application/atom"
   baseName = "feed"

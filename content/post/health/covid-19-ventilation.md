@@ -53,12 +53,12 @@ this right, but need to put empathy for each other ahead of temporary political
 and economic impacts to do so.
 
   [^nyc-doe-better]: In fairness, the [Health and Safety] section the New York
-  City DOE's [Return to School 2020-2021] plan says that the "DOE will make
-  improvements to HVAC systems, as well as air conditioning repairs, to improve
-  air circulation, as well as replacing regular air filters with higher
-  efficiency types." Still, there's a social failing here, national leaders
-  ought to fund the upgrading of air circulation systems to the highest
-  standards in every school and classroom in the United States.
+    City DOE's [Return to School 2020-2021] plan says that the "DOE will make
+    improvements to HVAC systems, as well as air conditioning repairs, to
+    improve air circulation, as well as replacing regular air filters with
+    higher efficiency types." Still, there's a social failing here, national
+    leaders ought to fund the upgrading of air circulation systems to the
+    highest standards in every school and classroom in the United States.
 
   [a piece]: https://www.theatlantic.com/health/archive/2020/07/why-arent-we-talking-more-about-airborne-transmission/614737/
     "We Need to Talk About Ventilation"

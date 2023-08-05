@@ -202,8 +202,9 @@ The [uri-db project] is the canonical home for the proposal for now, so check
 there for updates. And your feedback would be appreciated! What other issues
 have I overlooked? What have I got wrong? Let me know!
 
-[^db-uri:surprise]: As in not surprised at all. Though I was hoping!
-[^db-uri:dsn]: DSNs for Perl's [DBI] aren't much better: `dbi:<driver>:<driver-specific-stuff>`.
+  [^db-uri:surprise]: As in not surprised at all. Though I was hoping!
+  [^db-uri:dsn]: DSNs for Perl's [DBI] aren't much better:
+    `dbi:<driver>:<driver-specific-stuff>`.
 
   [Sqitch]: https://sqitch.org/ "Sane database change management"
   [specifying deployment targets via URIs]:

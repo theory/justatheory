@@ -122,8 +122,8 @@ think, but couldn't get close enough to tell. Could be it was hungry after all.
 Either way, it made my day. Man I love this city.
 
   [^maybe-red-tailed]: At least I *think* this is a red-tailed hawk. Though I
-  see many bird watchers on my city schlepps, I myself am not one. Please do
-  give me a holler if you happen to know just how mistaken I am.
+    see many bird watchers on my city schlepps, I myself am not one. Please do
+    give me a holler if you happen to know just how mistaken I am.
 
   [my IG]: https://www.instagram.com/theory/
   [St. Nicholas Park]: https://www.nycgovparks.org/parks/st-nicholas-park

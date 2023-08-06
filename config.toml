@@ -61,8 +61,8 @@ uglyURLs = true
 [outputs]
   home = ["html", "json", "atom"]
   section = ["html", "json", "atom"]
-  term = ["html", "json", "atom"]
   taxonomy = ["html", "json", "atom"]
+  term = ["html", "json", "atom"]
   page = ["html", "text"]
 
 [taxonomies]

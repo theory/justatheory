@@ -19,7 +19,7 @@ uglyURLs = true
   description = "Periodically irregular technology and culture blogging since 2002. By David E. Wheeler."
   tagline = "Irregular fine blogging since 2002."
   author = "David E. Wheeler"
-  subtitle = "Black lives matter"
+  subtitle = "Trans rights are human rights"
   bug = "❖"
   twitter = ""
   mastodon = "https://xoxo.zone/@theory"
@@ -46,14 +46,17 @@ uglyURLs = true
 [outputFormats.atom]
   mediatype = "application/atom"
   baseName = "feed"
+  noUgly = true
 [outputFormats.json]
   mediatype = "application/json"
   baseName = "feed"
   isPlainText = true
+  noUgly = true
 [outputFormats.text]
   mediatype = "text/plain"
   baseName = "copy"
   isPlainText = true
+  noUgly = false
 
 [outputs]
   home = ["html", "json", "atom"]

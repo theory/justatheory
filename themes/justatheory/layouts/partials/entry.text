@@ -3,7 +3,7 @@
 {{ end }}
 {{ with .Params.link }}  Link: {{ . }}
 
-{{ end }}{{ trim .RawContent " \t\n\r" }}
+{{ end }}{{ trim .RenderShortcodes " \t\n\r" }}
 {{- with .Params.via }}
 
 (Via [{{ .name }}]({{ .href }}{{ with .title }} "{{ . }}"{{ end }}){{ end }}

@@ -2,7 +2,7 @@
 title: "Accelerate Perl Github Workflows with Caching"
 slug: cache-perl-github-workflows
 date: 2021-11-28T16:43:20Z
-lastMod: 2023-02-20T23:55:17Z
+lastMod: 2023-02-20T23:55:19Z
 description: A quick tip for speeding up Perl builds in GitHub workflows by caching dependencies.
 tags: [Perl, GitHub, GitHub Actions, GitHub Workflows, Caching]
 type: post

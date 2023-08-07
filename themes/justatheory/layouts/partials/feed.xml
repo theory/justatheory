@@ -32,7 +32,7 @@
 {{- if (eq .Type "tags") }}
 		<summary type="html">Posts about {{ .Title  }}</summary>
 {{- else if $params.SummaryOnly }}{{ with (or .Description .Summary) }}
-		<summary type="html">{{ . }}</summary>{{ end }}
+		<summary type="html">{{ "<" | safeHTML }}![CDATA[{{ trim . " \t\n\r" | safeHTML }}]]></summary>{{ end }}
 {{- else -}}
 		{{ with (or .Params.author .Site.Author) }}
 		<author>{{ with .name }}
@@ -44,7 +44,7 @@
 		{{- range $term, $tax := .Site.Taxonomies }}{{ range (index $params $term) }}
 		<category scheme="{{ absURL $term }}" term="{{ . | urlize }}" label="{{ . }}"/>
 		{{- end }}{{ end }}{{ with (or .Description .Summary )}}
-		<summary type="html">{{ . }}</summary>{{ end }}
+		<summary type="html">{{ "<" | safeHTML }}![CDATA[{{ trim . " \t\n\r" | safeHTML }}]]></summary>{{ end }}
 		<content type="html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve">{{ partial "entry.xml" . | replaceRE "\\s*role=\"doc-[^\"]+\"" "" | safeHTML }}</content>
 {{- end }}
 	</entry>

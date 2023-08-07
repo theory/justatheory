@@ -19,7 +19,7 @@
 	{{- range .Pages }}
 	<entry>
 		<id>{{ .Permalink }}</id>
-		<title type="html">{{ .Title | markdownify }}</title>
+		{{ printf `<title type="html">%s</title>` (markdownify .Title | partial "cdata.xml") | safeHTML }}
 		{{- if .Params.link }}{{ with .Params.link }}
 		<link rel="alternate" type="text/html" href="{{ . }}"/>{{ end }}
 		<link rel="related" type="text/html" href="{{ .Permalink }}"/>
@@ -30,9 +30,9 @@
 		<updated>{{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</updated>
 		<published>{{ .Date.UTC.Format "2006-01-02T15:04:05Z" | safeHTML }}</published>
 {{- if (eq .Type "tags") }}
-		<summary type="html">Posts about {{ .Title  }}</summary>
+		<summary type="html">{{ printf "Posts about %s" (markdownify .Title) | partial "cdata.xml" }}</summary>
 {{- else if $params.SummaryOnly }}{{ with (or .Description .Summary) }}
-		<summary type="html">{{ "<" | safeHTML }}![CDATA[{{ trim . " \t\n\r" | safeHTML }}]]></summary>{{ end }}
+		<summary type="html">{{ markdownify . | partial "cdata.xml" . }}</summary>{{ end }}
 {{- else -}}
 		{{ with (or .Params.author .Site.Author) }}
 		<author>{{ with .name }}
@@ -44,7 +44,7 @@
 		{{- range $term, $tax := .Site.Taxonomies }}{{ range (index $params $term) }}
 		<category scheme="{{ absURL $term }}" term="{{ . | urlize }}" label="{{ . }}"/>
 		{{- end }}{{ end }}{{ with (or .Description .Summary )}}
-		<summary type="html">{{ "<" | safeHTML }}![CDATA[{{ trim . " \t\n\r" | safeHTML }}]]></summary>{{ end }}
+		<summary type="html">{{ markdownify . | partial "cdata.xml" }}</summary>{{ end }}
 		<content type="html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve">{{ partial "entry.xml" . | replaceRE "\\s*role=\"doc-[^\"]+\"" "" | safeHTML }}</content>
 {{- end }}
 	</entry>

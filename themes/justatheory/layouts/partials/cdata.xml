@@ -1,0 +1,1 @@
+{{ printf "<![CDATA[%s]]>" .| safeHTML }}

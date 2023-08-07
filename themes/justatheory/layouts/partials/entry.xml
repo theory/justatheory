@@ -2,5 +2,5 @@
 {{- if in $html "]]>" }}
 {{ trim $html " \t\n\r" | html }}
 {{- else }}
-{{ "<" | safeHTML }}![CDATA[{{ trim $html " \t\n\r" | safeHTML }}]]>
+{{ partial "cdata.xml" $html }}
 {{- end }}

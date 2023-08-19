@@ -7,7 +7,7 @@ PreserveTaxonomyNames = true
 Paginate = 16
 PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
-enableRobotsTXT = true
+enableRobotsTXT = false
 disableKinds = ["section"]
 uglyURLs = true
 

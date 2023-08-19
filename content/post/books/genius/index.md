@@ -8,11 +8,13 @@ tags: [Books, James Gleick, Richard Feynman, Genius]
 type: post
 image:
   src: genius.jpg
-  link: https://bookshop.org/books/genius-the-life-and-science-of-richard-feynman/9780679747048
+  link: https://bookshop.org/book/9780679747048
   class: right
   title: "Buy “Genius: The Life and Science of Richard Feynman” on Bookshop.org"
   alt: "Cover of “Genius: The Life and Science of Richard Feynman” by James Gleick"
-  caption: "[*Genius*](https://bookshop.org/books/genius-the-life-and-science-of-richard-feynman/9780679747048), by James Gleick<br/>1992 Vintage Books"
+  caption: |-
+    [*Genius*](https://bookshop.org/book/9780679747048), by James Gleick
+    1992 Vintage Books
 ---
 
 I adore this book. It's a tour-de-force distillation of the history for mid-20th

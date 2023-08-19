@@ -10,7 +10,10 @@ image:
   src: bath-abbey.jpeg
   title: Bath Abbey Ceiling
   alt: Ceiling and glass windows at Bath Abbey
-  caption: "[Bath Abbey](https://en.wikipedia.org/wiki/Bath_Abbey)'s vaulted ceiling descends to astonishingly large and clear windows that make up around 80% of the wall space."
+  caption: |-
+    [Bath Abbey](https://en.wikipedia.org/wiki/Bath_Abbey)'s vaulted ceiling
+    descends to astonishingly large and clear windows that make up around 80%
+    of the wall space.
   copyright: 2023 David E. Wheeler
   metaOnly: false
 ---
@@ -23,13 +26,15 @@ like.
 {{% figure
     src       = "university-of-edinburgh.jpeg"
     alt       = "New College at the University of Edinburgh"
-    caption   = "The [New College](https://en.wikipedia.org/wiki/New_College,_Edinburgh) at the University of Edinburgh"
+    caption   = `The [New College](https://en.wikipedia.org/wiki/New_College,_Edinburgh)
+at the University of Edinburgh`
     copyright = "2023 David E. Wheeler"
 %}}
 
 {{% figure
     src       = "glasgow-cathedral.jpeg"
     alt       = "Interior of Glasgow Cathedral"
-    caption   = "The interior of [Glasgow Cathedral](https://en.wikipedia.org/wiki/Glasgow_Cathedral) has a *lot* going on."
+    caption   = `The interior of [Glasgow Cathedral](https://wikipedia.org/wiki/Glasgow_Cathedral)
+has a *lot* going on.`
     copyright = "2023 David E. Wheeler"
 %}}

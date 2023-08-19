@@ -29,7 +29,10 @@ See the results of each of the three approaches in the [CI build]. A peek:
   src     = "winperl-travis-ci.png"
   alt     = "winperl-travis CI build results"
   class   = "frame"
-  caption = "The Travis CI-default “Test” stage is the default, and runs tests on two versions of Perl on Windows. The “Windows” stage tests on a single version of Windows Perl, independent of the “Test” stage. And the “Strawberry” stage tests on multiple versions of Windows Perl independent of the “Test” stage."
+  caption = `The Travis CI-default "Test" stage is the default, and runs tests on two
+versions of Perl on Windows. The "Windows" stage tests on a single version of
+Windows Perl, independent of the "Test" stage. And the "Strawberry" stage tests
+on multiple versions of Windows Perl independent of the Test stage.`
 %}}
 
 If, like me, you just want to validate that your Perl project builds and its

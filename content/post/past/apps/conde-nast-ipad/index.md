@@ -92,7 +92,8 @@ don't weigh anything.
   src   = "vogue-ipad-retina.jpg"
   alt   = "*Vogue* on the new iPad"
   title = "*Vogue* on the new iPad"
-  caption = "Image content from *Vogue* on the new iPad. Not shown: the second that it's blurry while the image engine finishes loading and displaying the image."
+  caption = `Image content from *Vogue* on the new iPad. Not shown: the second that it's
+blurry while the image engine finishes loading and displaying the image.`
 %}}
 
 Except that they do. The *Vogue* April 2012 issue weighs in at a whopping 408

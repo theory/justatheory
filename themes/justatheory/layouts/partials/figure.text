@@ -10,6 +10,16 @@
         {{- $maxLen = $len -}}
     {{- end -}}
 {{- end -}}
+{{- $caption := slice -}}
+{{ if strings.ContainsNonSpace .Params.caption -}}
+    {{- $caption = split .Params.caption "\n" -}}
+    {{- range $caption -}}
+        {{- $len := add 2 (strings.RuneCount .) }}
+        {{- if gt $len $maxLen }}
+            {{- $maxLen = $len -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
 
 {{- with .Params.link -}}
     {{- $len := add 2 (strings.RuneCount .) }}
@@ -18,16 +28,23 @@
     {{- end -}}
 {{- end -}}
 
-{{- $caption := .Params.caption -}}
+{{- $credits := slice -}}
 {{- if .Params.attr -}}
     {{- if .Params.attrLink -}}
-        {{- $caption = printf "%v\nImage: [%v](%v)" $caption .Params.attr .Params.attrLink -}}
+        {{- $credits = $credits | append "" (printf "Image: [%v](%v)" .Params.attr .Params.attrLink) -}}
     {{- else -}}
-        {{- $caption = printf "%v\nImage: %v" $caption .Params.attr -}}
+        {{- $credits = $credits | append "" (printf "Image: %v" .Params.attr) -}}
     {{- end -}}
 {{- end -}}
 {{- if .Params.copyright -}}
-    {{- $caption = printf "%v\n© %v" $caption .Params.copyright -}}
+    {{- $credits = $credits | append "" (printf "© %v" .Params.copyright) -}}
+{{- end -}}
+{{- if gt (len $credits) 0 -}}
+    {{- if gt (len $caption) 0 -}}
+        {{- $caption = $caption | append "" ($credits) -}}
+    {{- else -}}
+        {{- $caption = $credits -}}
+    {{- end -}}
 {{- end -}}
 
 {{- /* Collect the max line length and determine indent. */}}
@@ -48,8 +65,7 @@
 {{ $indent }}{{ partial "center.text" (dict "format" "{%v(%v)%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}
 {{ $indent }}{{ printf "{%v}" (strings.Repeat $frameWidth " ") }}
 {{ $indent }}{{ $line }}{{ with $caption }}
-{{- $re := printf "(.{%d,%d}?[^\\s]*)\\s+" (sub $maxLen 5) $maxLen }}
-{{- $fmt := printf "%v{%v%%-%dv}\n" $indent (strings.Repeat $padding " ") (add $maxLen $padding) }}
-{{ range split (replaceRE $re "$1\n" (trim . " \t\n\r" )) "\n" -}}
+{{- $fmt := printf "\n%v{%v%%-%dv}" $indent (strings.Repeat $padding " ") (add $maxLen $padding) }}{{ range . }}
 {{- printf $fmt . -}}
-{{ end }}{{ $indent }}{{ $line }}{{ end -}}
+{{ end }}
+{{ $indent }}{{ $line }}{{ end -}}

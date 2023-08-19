@@ -5,7 +5,7 @@
 {{- /* Determine the longest line length */}}
 {{- $alt := or .Params.alt .Params.title }}
 {{- with $alt -}}
-    {{- $len := add 2 (strings.RuneCount .) }}
+    {{- $len := strings.RuneCount . }}
 	{{- if gt $len $maxLen }}
         {{- $maxLen = $len -}}
     {{- end -}}
@@ -14,7 +14,7 @@
 {{ if strings.ContainsNonSpace .Params.caption -}}
     {{- $caption = split .Params.caption "\n" -}}
     {{- range $caption -}}
-        {{- $len := add 2 (strings.RuneCount .) }}
+        {{- $len := strings.RuneCount . }}
         {{- if gt $len $maxLen }}
             {{- $maxLen = $len -}}
         {{- end -}}
@@ -22,7 +22,7 @@
 {{- end -}}
 
 {{- with .Params.link -}}
-    {{- $len := add 2 (strings.RuneCount .) }}
+    {{- $len := strings.RuneCount . }}
 	{{- if gt $len $maxLen }}
         {{- $maxLen = $len -}}
     {{- end -}}
@@ -31,9 +31,9 @@
 {{- $credits := slice -}}
 {{- if .Params.attr -}}
     {{- if .Params.attrLink -}}
-        {{- $credits = $credits | append "" (printf "Image: [%v](%v)" .Params.attr .Params.attrLink) -}}
+        {{- $credits = $credits | append (printf "Image: [%v](%v)" .Params.attr .Params.attrLink) -}}
     {{- else -}}
-        {{- $credits = $credits | append "" (printf "Image: %v" .Params.attr) -}}
+        {{- $credits = $credits | append (printf "Image: %v" .Params.attr) -}}
     {{- end -}}
 {{- end -}}
 {{- if .Params.copyright -}}
@@ -41,14 +41,13 @@
 {{- end -}}
 {{- if gt (len $credits) 0 -}}
     {{- if gt (len $caption) 0 -}}
-        {{- $caption = $caption | append "" ($credits) -}}
+        {{- $caption = $caption | append $credits -}}
     {{- else -}}
         {{- $caption = $credits -}}
     {{- end -}}
 {{- end -}}
 
 {{- /* Collect the max line length and determine indent. */}}
-{{- $maxLen := add 2 $maxLen -}}
 {{- $indentSize := 0 -}}
 {{- if gt (sub $stdLen $maxLen) 1 -}}
     {{- $indentSize = (div (sub $stdLen $maxLen) 2) -}}

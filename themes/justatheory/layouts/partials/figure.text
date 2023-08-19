@@ -6,8 +6,8 @@
 {{- $alt := or .Params.alt .Params.title }}
 {{- with $alt -}}
     {{- $len := strings.RuneCount . }}
-	{{- if gt $len $maxLen }}
-        {{- $maxLen = $len -}}
+	{{- if gt (add $len 2) $maxLen }}
+        {{- $maxLen = (add $len 2) -}}
     {{- end -}}
 {{- end -}}
 {{- $caption := slice -}}
@@ -23,8 +23,8 @@
 
 {{- with .Params.link -}}
     {{- $len := strings.RuneCount . }}
-	{{- if gt $len $maxLen }}
-        {{- $maxLen = $len -}}
+	{{- if gt (add $len 2) $maxLen }}
+        {{- $maxLen = (add $len 2) -}}
     {{- end -}}
 {{- end -}}
 
@@ -48,13 +48,12 @@
 {{- end -}}
 
 {{- /* Collect the max line length and determine indent. */}}
-{{- $indentSize := 0 -}}
-{{- if gt (sub $stdLen $maxLen) 1 -}}
-    {{- $indentSize = (div (sub $stdLen $maxLen) 2) -}}
-{{- end -}}
-{{- $indent := printf (printf "%%-%dv" $indentSize) "" -}}
-
 {{- $frameWidth := add $maxLen (add $padding $padding) }}
+{{- $indentSize := 0 -}}
+{{- if gt (sub $stdLen $frameWidth) 1 -}}
+    {{- $indentSize = div (div (sub $stdLen $frameWidth) 2) 2 -}}
+{{ end -}}
+{{- $indent := printf (printf "%%-%dv" $indentSize) "" -}}
 {{- $line := printf "{%v}" (strings.Repeat $frameWidth "~") -}}
 
 {{ $indent }}{{ $line }}

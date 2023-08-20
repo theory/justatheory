@@ -7,7 +7,7 @@ tags: [Databases, C.J. Date, Relational Model, RDBMS, Databases, SQL, Tutorial D
 type: post
 image:
   src: dbind.jpg
-  alt: Cover of “Database In Depth” by C.J. Date
+  alt: Cover of "Database In Depth" by C.J. Date
   class: right
   title: Buy “Database In Depth” on Amazon.com
   link: https://www.amazon.com/exec/obidos/ASIN/0596100124/justatheory-20

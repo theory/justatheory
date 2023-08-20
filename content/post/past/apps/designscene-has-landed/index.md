@@ -39,7 +39,7 @@ could work well together.
 
 {{% figure
   src   = "ds_early_comp.jpg"
-  alt   = "Roger’s Original Mockup"
+  alt   = "Roger's Original Mockup"
   class = "right"
 %}}
 

@@ -53,8 +53,8 @@ appearance of duplication.
 
 {{% figure
    src   = "phfish_tweet.png"
-   alt   = "@phfish: “@theory I think they do it for performance reasons. It is a bit of an irritation, though.”"
-   link  = "https://twitter.com/#!/phfish/status/17540435819896832"
+   alt   = `@phfish: "@theory I think they do it for performance reasons. It is a bit of an irritation, though."`
+   link  = "https://twitter.com/phfish/status/17540435819896832"
    class = "frame"
 %}}
 

@@ -11,4 +11,3 @@ image:
     caption: Steps in Jackie Robinson Park, Harlem.
     copyright: 2020 David E. Wheeler
 ---
-

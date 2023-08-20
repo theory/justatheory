@@ -8,11 +8,12 @@ tags: [Books, Andy Weir]
 type: post
 image:
   src: project-hail-mary-cover.jpg
-  alt: Cover of “Project Hail Mary” by Andy Weir
-  title: "Buy “Project Hail Mary” on Bookshop.org"
+  alt: Cover of "Project Hail Mary" by Andy Weir
+  title: Buy "Project Hail Mary" on Bookshop.org
   link:  https://bookshop.org/books/project-hail-mary/9780593135204
   class: right
-  caption: "*Project Hail Mary* by Andy Weir<br/>2021 Ballantine Books"
+  heading: "*Project Hail Mary* by Andy Weir"
+  caption: 2021 Ballantine Books
 ---
 
 [*Project Hail Mary*] follows the success of Andy Weir's first novel, [*The

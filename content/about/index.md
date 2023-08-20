@@ -4,12 +4,12 @@ type: about
 outputs: [html, text]
 image:
   src: theory.jpg
-  alt: David E. “Theory” Wheeler
-  title: David E. “Theory” Wheeler
+  alt: David E. "Theory" Wheeler
+  title: David E. "Theory" Wheeler
   metaOnly: true
 ---
 
-{{% figure src="theory.jpg" alt="David E. “Theory” Wheeler" class="frame" %}}
+{{% figure src="theory.jpg" alt=`David E. "Theory" Wheeler` class="frame" %}}
 
 *Just a Theory* is an periodically irregular technology and culture blog by
 David E. Wheeler. If you'd like to get in touch, catch me on [Mastodon] or send

@@ -24,8 +24,11 @@
 
 {{- /* Split the caption into lines */}}
 {{- $caption := slice -}}
+{{- if .Params.heading -}}
+    {{- $caption = $caption | append .Params.heading "" -}}
+{{- end -}}
 {{- if strings.ContainsNonSpace .Params.caption -}}
-    {{- $caption = split .Params.caption "\n" -}}
+    {{- $caption = $caption | append (split .Params.caption "\n") -}}
 {{- end -}}
 
 {{- /* Format the credits. */}}

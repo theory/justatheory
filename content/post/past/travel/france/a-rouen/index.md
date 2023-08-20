@@ -48,7 +48,8 @@ A few other items of interest:
 
 -   Anna now has [her own blog], too. Check regularly for her photos.
 
--   {{% figure
+-
+    {{% figure
         src   = "cidre.jpg"
         alt   = "Cidre"
         title = "Delicious, delicious cidre"

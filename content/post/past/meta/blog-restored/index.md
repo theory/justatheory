@@ -7,8 +7,8 @@ tags: [Just a Theory, Failure, Blosxom, Google Analytics, FeedBurner, Linux, Deb
 type: post
 image:
   src: server-room.jpg
-  alt: My “Server Room”
-  caption: My “Server Room”
+  alt: My "Server Room"
+  caption: My "Server Room"
 ---
 
 Some of you no doubt noticed that this site was down for several days, starting

@@ -31,7 +31,7 @@ poses a question:
   src   = "database-in-depth.jpg"
   class = "right"
   width = "300"
-  alt   = "“Database in Depth,” by C.J. Date"
+  alt   = `"Database in Depth," by C.J. Date`
 %}}
 
 > In Chapter 1, I said that 1NF meant that every tuple in every relation

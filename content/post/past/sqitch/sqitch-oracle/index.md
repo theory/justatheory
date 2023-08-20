@@ -16,16 +16,22 @@ Sqitch is available from the usual locations. For Oracle support, you’ll need
 the [Instant Client], including SQL\*Plus. Make sure you have [`$ORACLE_HOM`]
 set and you’ll be ready to install. Via CPAN, it’s
 
-    cpan install App::Sqitch DBD::Oracle
+``` sh
+cpan install App::Sqitch DBD::Oracle
+```
 
 Via [Homebrew][]:
 
-    brew tap theory/sqitch
-    brew install sqitch-oracle
+``` sh
+brew tap theory/sqitch
+brew install sqitch-oracle
+```
 
 Via ActiveState PPM, install [ActivePerl], then run:
 
-    ppm install App-Sqitch DBD-Oracle
+``` sh
+ppm install App-Sqitch DBD-Oracle
+```
 
 {{% figure
   src   = "pgcon-2013.png"

@@ -9,7 +9,7 @@ description: ~
 tags: []
 type: {{ .Type }}
 link: ~
-draft: true
+# draft: true
 # author:
 #   name: David E. Wheeler
 #   email: david@justatheory.com
@@ -29,7 +29,7 @@ draft: true
 #   height: 100
 #   heading: heading in `<h4>`
 #   caption: caption `text`
-#   attr: "[attribution](https://example.com)"
+#   attr: Image by [attribution](https://example.com)
 #   copyright: 2022 David E. Wheeler
 #   metaOnly: false
 ---

@@ -9,7 +9,7 @@ image:
   src: first-of-all-no.jpg
   alt: First of all, No
   attr: |-
-    [Jazmin Quaynor](https://unsplash.com/@jazminantoinette)
+    Photo: [Jazmin Quaynor](https://unsplash.com/@jazminantoinette)
     on [Unsplash](https://unsplash.com/)
   title: "First of all, No"
 ---

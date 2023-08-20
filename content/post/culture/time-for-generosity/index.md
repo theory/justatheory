@@ -13,7 +13,7 @@ via:
 image:
   src: supermassive-blackhole.jpg
   alt: Supermassive Black Hole
-  attr: ESO/R.Genzel and S.Gillessen
+  attr: "Image: ESO/R.Genzel and S.Gillessen"
 ---
 
 This video, [Timelapse of the Future], has kept me thinking ever since [Kottke

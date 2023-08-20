@@ -12,7 +12,7 @@ image:
   title: Arles from the Arena
   caption: Arles from the Arena
   attr: |-
-    [Salva Barbera](https://www.flickr.com/photos/decar66/)
+    Photo: [Salva Barbera](https://www.flickr.com/photos/decar66/)
     ([CC BY 2.0](http://creativecommons.org/licenses/by/2.0/))
 ---
 

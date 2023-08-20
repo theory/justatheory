@@ -34,7 +34,7 @@
 {{- /* Format the credits. */}}
 {{- $credits := slice -}}
 {{- if .Params.attr -}}
-    {{- $credits = split (printf "Image: %v" .Params.attr) "\n" -}}
+    {{- $credits = split .Params.attr "\n" -}}
     {{- if .Params.copyright -}}
         {{- $credits = $credits | append "" (printf "© %v" .Params.copyright) -}}
     {{- end -}}

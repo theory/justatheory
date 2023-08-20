@@ -10,7 +10,7 @@ image:
   alt: iPhone and Apple Watch
   caption: Multiple factors.
   class: right
-  attr: "[Apple](https://www.apple.com/)"
+  attr: "Photo: [Apple](https://www.apple.com/)"
 ---
 
 Back when Apple introduced Touch ID, I had an idea for a blog post, never

@@ -2,7 +2,6 @@
 {{- $stdLen := 78 }}
 {{- $padding := 2 }}
 
-
 {{- /* Determine the longest line length starting with the image src */}}
 {{- $maxLen := strings.RuneCount $src }}
 
@@ -25,7 +24,7 @@
 
 {{- /* Split the caption into lines */}}
 {{- $caption := slice -}}
-{{ if strings.ContainsNonSpace .Params.caption -}}
+{{- if strings.ContainsNonSpace .Params.caption -}}
     {{- $caption = split .Params.caption "\n" -}}
 {{- end -}}
 
@@ -58,17 +57,16 @@
     {{- end -}}
 {{- end -}}
 
-
 {{- /* Collect the max line length and determine indent. */}}
 {{- $frameWidth := add $maxLen (add $padding $padding) }}
 {{- $indentSize := 0 -}}
 {{- if gt (sub $stdLen $frameWidth) 1 -}}
     {{- $indentSize = div (div (sub $stdLen $frameWidth) 2) 2 -}}
-{{ end -}}
+{{- end -}}
 {{- $indent := printf (printf "%%-%dv" $indentSize) "" -}}
 {{- $line := printf "{%v}" (strings.Repeat $frameWidth "~") -}}
 
-{{- /* Print the picture frame with the atl, src, and title text. */}}
+{{- /* Print the picture frame with the atl, src, and title text. */ -}}
 {{ $indent }}{{ $line }}
 {{ $indent }}{{ printf "{%v}" (strings.Repeat $frameWidth " ") }}{{ with $alt }}
 {{ $indent }}{{ partial "center.text" (dict "format" "{%v[%v]%v}" "text" . "padding" $padding "maxLen" $maxLen "extra" 2) }}{{ end -}}

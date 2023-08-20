@@ -17,7 +17,7 @@ The launch of the new [Bricolage Website] went off without a hitch yesterday.
 The lack of sleep getting it all just so was worth it, in the end. And I'm very
 very pleased with the new site. It looks good, it's easy to navigate, it has
 really nice semantic XHTML 1.1 that degrades nicely in older browsers (check it
-out in Netscape Navigator 4.x or in `lynx`!
+out in Netscape Navigator 4.x or in `lynx`)!
 
 The new content on the site is good, too. There's a lot more information for
 people who have heard of Bricolage and are hitting the site for the first time

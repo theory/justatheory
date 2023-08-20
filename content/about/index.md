@@ -1,12 +1,12 @@
 ---
 title: About Just a Theory
 type: about
-url: /about/
 outputs: [html, text]
 image:
   src: theory.jpg
   alt: David E. “Theory” Wheeler
   title: David E. “Theory” Wheeler
+  metaOnly: true
 ---
 
 {{% figure src="theory.jpg" alt="David E. “Theory” Wheeler" class="frame" %}}

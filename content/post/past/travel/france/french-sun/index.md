@@ -1,4 +1,4 @@
---- 
+---
 date: 2013-04-17T06:01:19Z
 slug: french-sun
 title: More Sun
@@ -11,7 +11,9 @@ image:
   link: https://www.flickr.com/photos/decar66/8583754790/
   title: Arles from the Arena
   caption: Arles from the Arena
-  attr: "[Salva Barbera](https://www.flickr.com/photos/decar66/) ([CC BY 2.0](http://creativecommons.org/licenses/by/2.0/))"
+  attr: |-
+    [Salva Barbera](https://www.flickr.com/photos/decar66/)
+    ([CC BY 2.0](http://creativecommons.org/licenses/by/2.0/))
 ---
 
 We spent seven weeks last summer [in Northern France]. Man it was an awesome

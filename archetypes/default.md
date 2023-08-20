@@ -21,16 +21,15 @@ draft: true
 #   src: image.png
 #   link: https://example.com
 #   class: left # frame, left, right, center
-#   title: tooltip
-#   alt: description
+#   title: tooltip *text*
+#   alt: alt text for *image*
 #   target: target
 #   rel: rel
 #   width: 100
 #   height: 100
-#   heading: heading
-#   caption: caption
-#   attr: attribution
-#   attrLink: https://example.com
+#   heading: heading in `<h4>`
+#   caption: caption `text`
+#   attr: "[attribution](https://example.com)"
 #   copyright: 2022 David E. Wheeler
 #   metaOnly: false
 ---

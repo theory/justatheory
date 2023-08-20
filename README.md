@@ -124,7 +124,8 @@ are:
 
 #### `title`
 
-Image title. Not used in plain text output unless `alt` is not set. Optional.
+Image title. Not used in plain text output unless `alt` is not set. Markdown
+within the value of `caption` will be rendered. Optional.
 
 #### `alt`
 
@@ -147,25 +148,23 @@ Set the `height` attribute of the image. Optional.
 
 #### `heading`
 
-Sets the value for a heading (rendered as `<h4>`) in the caption. Optional.
+Sets the value for a heading (rendered as `<h4>`) in the caption. Markdown
+within the value of `caption` will be rendered. Optional.
 
 #### `caption`
 
-Text for the caption. Optional.
+Text for the caption. Markdown within the value of `caption` will be rendered.
+Optional.
 
 #### `attr`
 
-Text to use for attribution, for when the photo comes from elsewhere.
-Optional.
-
-#### `attrLink`
-
-Link to use for the attribution specified by `attr`. Used only if `attr` is
-also set. Optional.
+Text to use for attribution, for when the photo comes from elsewhere. Markdown
+within the value of `caption` will be rendered. Optional.
 
 #### `copyright`
 
 Text to use for a copyright notice. Will be preceded by the copyright symbol.
+Markdown within the value of `caption` will be rendered. Optional.
 
 #### `metaOnly`
 

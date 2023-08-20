@@ -771,8 +771,8 @@ figcaption h4 {
     color: #ccc;
 }
 
-figcaption cite, figcaption cite a, figcaption cite a:hover, figcaption cite a:active {
-    color: #999 !important;
+figcaption cite {
+    filter: contrast(35%);
 }
 
 figcaption > *:last-child {

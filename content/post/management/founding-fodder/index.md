@@ -7,7 +7,9 @@ tags: [Management, Mission, Vision, Strategy, Meaning, Focus, Leadership, Consti
 image:
   src: we-the-people.jpg
   alt: We the People
-  attr: "[Anthony Garand](https://unsplash.com/photos/7rehTDIfR8o) on [Unsplash](https://unsplash.com/search/photos/constitution)"
+  attr: |-
+    [Anthony Garand](https://unsplash.com/photos/7rehTDIfR8o)
+    on [Unsplash](https://unsplash.com/search/photos/constitution)
   title: We the People }
 ---
 

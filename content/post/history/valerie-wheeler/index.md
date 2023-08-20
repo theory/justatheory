@@ -2,7 +2,7 @@
 title: "Valerie Wheeler"
 date: 2020-01-21T01:45:24Z
 lastMod: 2020-01-21T01:45:24Z
-description: Remembering Valerie Wheeler, Anthropologist, mentor, “mom”.
+description: Remembering Valerie Wheeler, Anthropologist, mentor, "mom".
 tags: [History, Valerie Wheeler, CSUS, Anthropology]
 type: post
 image:

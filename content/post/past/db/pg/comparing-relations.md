@@ -26,12 +26,12 @@ post], Tom Lane wrote:
 >     to do things, then maybe, but as far as I can tell the style pgTAP forces
 >     on you is really pretty darn poorly suited for SQL tests. You have to
 >     contort what could naturally be expressed in SQL as a table result into a
->     scalar. Plus it’s redundant with the expected-output file.
+>     scalar. Plus it's redundant with the expected-output file.
 >
-> 2.  It’s ridiculously slow; at least a factor of ten slower than doing
+> 2.  It's ridiculously slow; at least a factor of ten slower than doing
 >     equivalent tests directly in SQL. This is a very bad thing. Speed of
 >     regression tests matters a lot to those of us who run them a dozen times
->     per day —– and I do not wish to discourage any developers who don’t work
+>     per day —– and I do not wish to discourage any developers who don't work
 >     that way from learning better habits ;–)
 >
 > Because of \#1 and \#2 I find the use of pgTAP to be a nonstarter.
@@ -41,25 +41,25 @@ would eventually like to figure out a way to make pgTAP a lot faster (in my own
 benchmarks, I found it to be about 4 times slower than pure SQL, not ten times,
 but still). A number of functions can likely be rewritten in C, and maybe data
 can be stored in memory rather than in a temporary table. Overall, though, the
-speed of the tests doesn’t really concern me much. I'm quite used to large test
+speed of the tests doesn't really concern me much. I'm quite used to large test
 suites, such as that for [Bricolage], that take 5 or 10 minutes or more. This is
 because, compared to the time it would take me to maintain the code without
-tests, it’s nothing. I find and fix bugs much more quickly thanks to regression
+tests, it's nothing. I find and fix bugs much more quickly thanks to regression
 tests. And really, one should just run a subset of the tests for whatever one is
 working on, and then run the full suite before checking in. One could even have
-a larger, more comprehensive (read: slower) test suite that’s run via a cron
-job, so that it identifies bugs in checked in code but developers don’t have to
+a larger, more comprehensive (read: slower) test suite that's run via a cron
+job, so that it identifies bugs in checked in code but developers don't have to
 spend a lot of time waiting for tests to finish running.
 
-As a result, I wouldn’t advocate for converting the existing PostgreSQL
+As a result, I wouldn't advocate for converting the existing PostgreSQL
 regression test suite to pgTAP. I could see writing a new suite of tests on
 pgTAP that run on the [build farm]. This would be great, as they would
-complement the existing test suite, and be able to test stuff that can’t be
+complement the existing test suite, and be able to test stuff that can't be
 tested with `pg_regress`.
 
 So really, the performance issue can be addressed in a few ways, some technical,
 some social, some structural. Like I said, I'm not overly concerned about it,
-and I wouldn’t make Tom suffer unduly from it, either (I converted all of the
+and I wouldn't make Tom suffer unduly from it, either (I converted all of the
 CITEXT tests to plain SQL).
 
 ### Coercing Composite Values
@@ -74,14 +74,14 @@ SELECT is(
 );
 ```
 
-Now, I agree that it’s redundant with the expected-output file, but the
+Now, I agree that it's redundant with the expected-output file, but the
 assumption with [TAP] is that there *is no* expected output file: you just
 analyze its output using a [harness]. The need for an expected output file is
 driven by the legacy of `pg_regress`.
 
 A bigger issue, and the one I'll focus on for the remainder of this post, is the
-requirement currently inherent in pgTAP to “contort what could naturally be
-expressed in SQL as a table result into a scalar.” The issue is apparent in the
+requirement currently inherent in pgTAP to "contort what could naturally be
+expressed in SQL as a table result into a scalar." The issue is apparent in the
 above example: even though I'm selecting a number of rows from a table, I use
 the `ARRAY()` constructor function to force them into a scalar value—an array—in
 order to easily do the comparison. It also results in a useful diagnostic
@@ -91,11 +91,11 @@ message in case the test fails:
     #         have: {AAA,aardvark,ABC,abc,aba}
     #         want: {AAA,aardvark,aba,ABC,abc}
 
-So for simple cases like this, it doesn’t bother me much personally. But I've
+So for simple cases like this, it doesn't bother me much personally. But I've
 also had to write tests for functions that return composite types—that is,
 *rows*—and again I had to fall back on coercing them into scalar values to do
 the comparison. For example, say that the `fooey()` function returns a `dude`
-value, which is a composite type with an integer and a text string. Here’s how
+value, which is a composite type with an integer and a text string. Here's how
 to test it with pgTAP:
 
 ``` postgres
@@ -114,8 +114,8 @@ diagnostics on failure:
     #         have: (42,Fred)
     #         want: (42,Bob)
 
-It gets much worse with set returning functions—Tom’s “table result:” it
-requires both type *and* row coercion (or “contortion” if you'd prefer). Here’s
+It gets much worse with set returning functions—Tom's "table result:" it
+requires both type *and* row coercion (or "contortion" if you'd prefer). Here's
 an example of a `fooies()` function that returns a set of `dude`s:
 
 ``` postgres
@@ -129,7 +129,7 @@ SELECT is(
 );
 ```
 
-As you can see, it’s do-able, but clumsy and error prone. We really are taking a
+As you can see, it's do-able, but clumsy and error prone. We really are taking a
 table result and turning into a scalar value. And thanks to the casts to `text`,
 the test can actually incorrectly pass if, for example, the integer was actually
 stored as text (although, to be fair, the same is true of a `pg_regress` test,
@@ -163,23 +163,23 @@ SELECT ok(
 ```
 
 Here I've created two separate tests. The first makes sure that `fooies()`
-returns all the expected rows, and the second makes sure that it doesn’t return
+returns all the expected rows, and the second makes sure that it doesn't return
 any unexpected rows. But since this is just a boolean test (yes, we've coerced
 the results into booleans!), there are no diagnostics if the test fails: you'd
-have to go ahead and run the query yourself to see what’s unexpected. Again,
+have to go ahead and run the query yourself to see what's unexpected. Again,
 this is do-able, and probably a more correct comparison than using the casts of
 rows to `text`, but makes it harder to diagnose failures. And besides, `EXCEPT`
 compares sets, which are inherently unordered. That means that if you need to
-test that results come back in a specific order, you can’t use this approach.
+test that results come back in a specific order, you can't use this approach.
 
 That said, if someone knows of a way to do this in one query—somehow make some
 sort of `NOT EXCEPT` operator work—I'd be very glad to hear it!
 
 ### Prior Art
 
-pgTAP isn’t the only game in town. There is also Dmitry Koterov’s [PGUnit]
-framework and Bob Brewer’s [Epic]. PGUnit seems to have one main assertion
-function, `assert_same()`, which works much like pgTAP’s `is()`. Epic’s
+pgTAP isn't the only game in town. There is also Dmitry Koterov's [PGUnit]
+framework and Bob Brewer's [Epic]. PGUnit seems to have one main assertion
+function, `assert_same()`, which works much like pgTAP's `is()`. Epic's
 `assert_equal()` does, too, but Epic also offers a few functions for testing
 result sets that neither pgTAP nor PGUnit support. One such function is
 `assert_rows()`, to which you pass strings that contain SQL to be evaluated. For
@@ -209,11 +209,11 @@ A bit hard to read with all of the SQL exception information, but at least the
 information is there. At [PGCon], Bob told me that passing strings of SQL code
 made things a lot easier to implement in Epic, and I can certainly see how that
 could be (pgTAP uses SQL code strings too, with its `throws_ok()`, `lives_ok()`,
-and `performs_ok()` assertions). But it just doesn’t feel SQLish to me. I mean,
+and `performs_ok()` assertions). But it just doesn't feel SQLish to me. I mean,
 if you needed to write a really complicated query, it might be harder to
-maintain: even using dollar quoting, it’s harder to track stuff. Furthermore,
-it’s slow, as PL/pgSQL’s `EXECUTE` must be called twice and thus plan twice. And
-don’t even try to test a query with side-effects—such as a function that inserts
+maintain: even using dollar quoting, it's harder to track stuff. Furthermore,
+it's slow, as PL/pgSQL's `EXECUTE` must be called twice and thus plan twice. And
+don't even try to test a query with side-effects—such as a function that inserts
 a row and returns an ID—as the second run will likely lead to test failure just
 might blow something up.
 
@@ -236,7 +236,7 @@ foo.bar { puts "woof!" }
 ```
 
 The `bar` method can then run that code at its leisure. We can sort of do this
-in PostgreSQL using `PREPARE`. To take advantage of it for Epic’s
+in PostgreSQL using `PREPARE`. To take advantage of it for Epic's
 `assert_rows()` function, one can do something like this:
 
 ``` plpgsql
@@ -292,22 +292,22 @@ Note how I've tested both the `get_active_users()` and the
 `want` prepared statement. Not bad. I think that this is pretty SQLish, aside
 from the necessity for `test.global()`.
 
-Still, the use of prepared statements with Epic’s `assert_rows()` is not without
+Still, the use of prepared statements with Epic's `assert_rows()` is not without
 issues. There is still a lot of execution here (to create the temporary tables
 and to select from them a number of times). Hell, this last example reveals an
 inefficiency in the creation of the temporary tables, as the two different
-executions of `have` create two separate temporary tables for data that’s
+executions of `have` create two separate temporary tables for data that's
 already in the `users` table. If you have a lot of rows to compare, a lot more
-memory will be used. And you still can’t check the ordering of your results,
+memory will be used. And you still can't check the ordering of your results,
 either.
 
 So for small result sets and no need to check the ordering of results, this is a
-pretty good approach. But there’s another.
+pretty good approach. But there's another.
 
 ### Result Set Handles
 
 Rather than passing blocks to be executed by the tests, in many dynamic testing
-frameworks you can pass data structures be compared. For example, [Test::More]’s
+frameworks you can pass data structures be compared. For example, [Test::More]'s
 `is_deeply()` assertion allows you to test that two data structures contain the
 same values in the same structures:
 
@@ -330,7 +330,7 @@ to a result set?
 
 The answer, if you're still with me, is *cursors*.
 
-Now, cursors don’t work with Epic’s SQL-statement style tests, but I could
+Now, cursors don't work with Epic's SQL-statement style tests, but I could
 certainly see how a pgTAP function like this would be useful:
 
 ``` postgres
@@ -350,21 +350,21 @@ output would be something like:
     #          have: (3,Larry,t)
     #          want: (3,Larry,f)
 
-So there’s a useful diagnostic, ordering is preserved, no temporary tables are
+So there's a useful diagnostic, ordering is preserved, no temporary tables are
 created, and the data is fetched directly from its sources (tables or functions
 or whatever) just as it would be in a straight SQL statement. You still have the
-overhead of PL/pgSQL’s `EXECUTE`, and iterating over the results, but, outside
-of some sort of `NOT INTERSECT` operator, I don’t see any other way around it.
+overhead of PL/pgSQL's `EXECUTE`, and iterating over the results, but, outside
+of some sort of `NOT INTERSECT` operator, I don't see any other way around it.
 
 ### The Plan
 
 So I think I'll actually look at adding support for doing this in two ways: one
-with prepared statements (or query strings, if that’s what floats your boat)
+with prepared statements (or query strings, if that's what floats your boat)
 like Epic does, though I'm going to look at avoiding the necessity for something
-like Epic’s `global()` function. But I'll also add functions to test cursors.
+like Epic's `global()` function. But I'll also add functions to test cursors.
 And maybe a few combinations of these things.
 
-So, does an approach like this, especially the cursor solution, address Tom’s
+So, does an approach like this, especially the cursor solution, address Tom's
 criticism? Does it feel more relational? Just to rewrite the kind of test Tom
 originally objected to, it would now look something like this:
 

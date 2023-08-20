@@ -21,15 +21,15 @@ CREATE TYPE article_states AS ENUM (
 );
 ```
 
-Nice: we now have a simple data type that’s self-documenting. An an important
+Nice: we now have a simple data type that's self-documenting. An an important
 feature of enums is that the ordering of values is the same as the declared
 labels. For a workflow such as this, it makes a lot of sense, because the
-workflow states are inherently ordered: “draft” comes before “copy” and so on.
+workflow states are inherently ordered: "draft" comes before "copy" and so on.
 
-Unfortunately, enums aren’t a panacea. I would use them all over the place if I
+Unfortunately, enums aren't a panacea. I would use them all over the place if I
 could, but, alas, the value-set data types I tend to need tend not to have
 inherently ordered values other than the collation order of the text. For
-example, say that we need a table describing people’s faces. Using an enum to
+example, say that we need a table describing people's faces. Using an enum to
 manage eye colors might look something like this:
 
 ``` postgres
@@ -42,7 +42,7 @@ CREATE TABLE faces (
 );
 ```
 
-Nice, huh? So let’s insert a few values and see what it looks like:
+Nice, huh? So let's insert a few values and see what it looks like:
 
 ``` postgres
 INSERT INTO faces (name, eye_color)
@@ -53,7 +53,7 @@ VALUES ('David', 'blue' ),
 ;
 ```
 
-So let’s look at the data ordered by the enum:
+So let's look at the data ordered by the enum:
 
     % SELECT name, eye_color FROM faces ORDER BY eye_color;
       name  | eye_color 
@@ -63,15 +63,15 @@ So let’s look at the data ordered by the enum:
      Julie  | green
      Noriko | brown
 
-Hrm. That’s not good. I forgot to put “green” after “brown” when I created the
-enum. Oh, and I forgot the color “hazel”:
+Hrm. That's not good. I forgot to put "green" after "brown" when I created the
+enum. Oh, and I forgot the color "hazel":
 
     % INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
     ERROR:  invalid input value for enum eye_color: "hazel"
 
-Well, nice to know that it’s enforced, and that message is really helpful. But
+Well, nice to know that it's enforced, and that message is really helpful. But
 the real problem is that we run into the inherent ordering of enum labels, and
-now we need to adjust the enum to meet our needs. Here’s how to do it:
+now we need to adjust the enum to meet our needs. Here's how to do it:
 
 ``` postgres
 ALTER TABLE faces RENAME eye_color TO eye_color_tmp;
@@ -148,14 +148,14 @@ the original enum example:
      Julie  | green
 
 Cool! But there are a couple of downsides. One is that you're adding a bit of
-I/O overhead to every update. Most likely you won’t have very many values in the
-`eye_colors` table, so given PostgreSQL’s caching, this isn’t a big deal. A
+I/O overhead to every update. Most likely you won't have very many values in the
+`eye_colors` table, so given PostgreSQL's caching, this isn't a big deal. A
 bigger deal is error handling:
 
     INSERT INTO eye_colors VALUES ('hazel');
     ERROR:  insert or update on table "faces" violates foreign key constraint "faces_eye_color_fkey"
 
-That’s not an incredibly useful error message. One might ask, without knowing
+That's not an incredibly useful error message. One might ask, without knowing
 the schema, what has an eye color has to do with a foreign key constraint? At
 least looking at the tables can tell you a bit more:
 
@@ -166,7 +166,7 @@ least looking at the tables can tell you a bit more:
      public | eye_colors | table | david
      public | faces      | table | david
 
-A quick look at the `eye_colors` table will tell you what’s going on, and you
+A quick look at the `eye_colors` table will tell you what's going on, and you
 can figure out that you just need to add a new row:
 
 ``` postgres
@@ -174,12 +174,12 @@ INSERT INTO eye_colors VALUES ('hazel');
 INSERT INTO faces (name, eye_color) VALUES ('Kat', 'hazel' );
 ```
 
-So it *is* self-documenting, but unlike enums it doesn’t do a great job of it.
+So it *is* self-documenting, but unlike enums it doesn't do a great job of it.
 Plus if you have a bunch of set-constrained value types, you can end up with a
 whole slew of lookup tables. This can make it harder to sort the important
 tables that contain actual business data from those that are just lookup tables,
 because there is nothing inherent in them to tell the difference. You could put
-them into a separate schema, of course, but still, it’s not exactly intuitive.
+them into a separate schema, of course, but still, it's not exactly intuitive.
 
 Given these downsides, I'm not a big fan of using lookup tables for managing
 what is in fact a simple list of allowed values for a particular column unless
@@ -219,7 +219,7 @@ The error message, however, is a bit more helpful:
 
 A check constraint violation on `eye_color` is much more informative than a
 foreign key constraint violation. The downside to a check constraint, however,
-is that it’s not as self-documenting. You have to look at the entire table in
+is that it's not as self-documenting. You have to look at the entire table in
 order to find the constraint:
 
     % \d faces
@@ -235,7 +235,7 @@ order to find the constraint:
         "valid_eye_colors" CHECK (eye_color = ANY (ARRAY['blue', 'green', 'brown']))
 
 There it is at the bottom. Kind of tucked away there, eh? At least now we can
-change it. Here’s how:
+change it. Here's how:
 
 ``` postgres
 ALTER TABLE faces DROP CONSTRAINT valid_eye_colors;
@@ -245,11 +245,11 @@ ALTER TABLE faces ADD CONSTRAINT valid_eye_colors CHECK (
 ```
 
 Not as straight-forward as updating the lookup table, and much less efficient
-(because PostgreSQL must validate that existing rows don’t violate the
-constraint before committing the constraint). But it’s pretty simple and at
-least doesn’t require the entire table be `UPDATE`d as with enums. For
+(because PostgreSQL must validate that existing rows don't violate the
+constraint before committing the constraint). But it's pretty simple and at
+least doesn't require the entire table be `UPDATE`d as with enums. For
 occasional changes to the value list, a table scan is not a bad tradeoff. And of
-course, once that’s done, it just works:
+course, once that's done, it just works:
 
 ``` postgres
 INSERT INTO eye_colors VALUES ('hazel');
@@ -263,7 +263,7 @@ issue.
 
 To solve that problem, switch to domains. A [domain] is simply a custom data
 type that inherits behavior from another data type and to which one or more
-constraints can be added. It’s pretty simple to switch from the table constraint
+constraints can be added. It's pretty simple to switch from the table constraint
 to a domain:
 
 ``` postgres
@@ -342,23 +342,23 @@ you can just use the same domain and get all the proper semantics. Sweet!
 
 Someday I'd love to see support for a PostgreSQL feature like enums, but
 allowing an arbitrary list of strings that are ordered by the contents of the
-text rather than the order in which they were declared, and that’s efficient to
+text rather than the order in which they were declared, and that's efficient to
 update. Maybe it could use integers for the underlying storage, too, and allow
 values to be modified without a table rewrite. Such would be the ideal for this
 use case. Hell, I'd find it much more useful than enums.
 
-But domains get us pretty close to that without too much effort, so maybe it’s
+But domains get us pretty close to that without too much effort, so maybe it's
 not that important. I've tried all of the above approaches and discussed it
 quite a lot with [my colleagues] before settling on domains, and I'm quite
-pleased with it. The only caveat I'd have is that it’s not to be used lightly.
+pleased with it. The only caveat I'd have is that it's not to be used lightly.
 If the value set is likely to change fairly often (at least once a week, say),
 then you'd be better off with the lookup table.
 
 In short, I recommend:
 
--   For an inherently ordered set of values that’s extremely unlikely to ever
+-   For an inherently ordered set of values that's extremely unlikely to ever
     change, use an enum.
--   For a set of values that won’t often change and has no inherent ordering,
+-   For a set of values that won't often change and has no inherent ordering,
     use a domain.
 -   For a set of values that changes often, use a lookup table.
 

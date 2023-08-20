@@ -1,5 +1,5 @@
 ---
-title: "Sign O’ The Times"
+title: Sign O' The Times
 slug: sign-o-the-times
 date: 2021-08-02T16:55:43Z
 lastMod: 2021-08-02T16:55:43Z

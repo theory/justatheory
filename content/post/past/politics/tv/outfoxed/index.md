@@ -2,7 +2,7 @@
 date: 2004-07-22T17:25:36Z
 lastMod: 2022-06-12T22:42:22Z
 slug: outfoxed
-title: See “OutFoxed”
+title: See "OutFoxed"
 aliases: [/culture/tv/outfoxed.html]
 tags: [Poltics, Outfoxed, Fox, New York Times]
 type: post
@@ -12,12 +12,12 @@ via:
 image:
   src: outfoxed.jpeg
   alt: Outfoxed
-  title: Buy “Outfoxed” from Amazon.com
+  title: Buy "Outfoxed" from Amazon.com
   class: "frame right"
   link: https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20
 ---
 
-I'm going to have to [order] the “[Outfoxed]” DVD and give it a look. It got a
+I'm going to have to [order] the "[Outfoxed]" DVD and give it a look. It got a
 great [writeup] in the *New York Times*.
 
   [order]: https://www.amazon.com/exec/obidos/ASIN/B0002HDXTQ/justatheory-20

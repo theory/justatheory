@@ -14,7 +14,7 @@ Excerpt from William Mougayar's new book on TechCrunch:
 > updated, in essence keeping a never-ending historical trail. This seemingly
 > simple functional description has gargantuan implications. It is making us
 > rethink the old ways of creating transactions, storing data, and moving
-> assets, and that’s only the beginning.
+> assets, and that's only the beginning.
 > 
 > The blockchain cannot be described just as a revolution. It is a tsunami-like
 > phenomenon, slowly advancing and gradually enveloping everything along its way
@@ -30,9 +30,9 @@ his investments for short-term gain. A piece like this is snake oil.
 
 Blockchains are inarguably useful tools, like databases or encryption
 algorithms, and we in the technology business should do our best to understand
-how they work and figure out the applications for which they make sense. I’m
+how they work and figure out the applications for which they make sense. I'm
 still trying to wrap my mind around blockchains, but one thing I understand very
-well: **they're not a panacea.** The industry overall won’t see true benefits
+well: **they're not a panacea.** The industry overall won't see true benefits
 from blockchains for a couple of years, once the practicalities have been worked
 out and the nonsense has subsided. We should learn and contribute to those
 practicalities, but as for the [hype cycle], for now I just hold my nose.

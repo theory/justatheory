@@ -1,6 +1,6 @@
 --- 
 date: 2009-05-11T19:59:12Z
-description: More thoughts on they whys and hows of database testing, and wondering why one might think that it’s pointless or useless.
+description: More thoughts on they whys and hows of database testing, and wondering why one might think that it's pointless or useless.
 slug: more-on-database-testing
 title: More on Database Testing
 aliases: [/computers/databases/more-on-database-testing.html]

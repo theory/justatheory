@@ -3,7 +3,7 @@ title: "Assume Positive Intensifies"
 slug: assume-positive-intensifies
 date: 2021-03-23T01:33:16Z
 lastMod: 2021-03-23T01:33:16Z
-description: How “Assume positive intent” downplays impact, gaslights employees, and absolves leaders of responsibility.
+description: How "Assume positive intent" downplays impact, gaslights employees, and absolves leaders of responsibility.
 tags: [Culture, Gaslighting, Management, Leadership, Ruth Terry, Lena Tenney]
 type: post
 ---

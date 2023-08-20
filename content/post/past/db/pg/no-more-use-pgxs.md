@@ -1,6 +1,6 @@
 --- 
 date: 2010-03-15T18:33:18Z
-description: I'm tired of having to remember to set USE_PGXS=1 when building third-party PostgreSQL extensions like pgTAP. Aren’t you?
+description: I'm tired of having to remember to set USE_PGXS=1 when building third-party PostgreSQL extensions like pgTAP. Aren't you?
 slug: no-more-use-pgxs
 title: No more USE_PGXS=1?
 aliases: [/computers/databases/postgresql/no_more_use_pgxs.html]

@@ -1,9 +1,9 @@
 ---
-title: "Bryce Canyon 1987"
+title: Bryce Canyon 1987
 slug: bryce-canyon-1987
 date: 2022-06-08T22:47:38Z
 lastMod: 2022-06-08T22:47:38Z
-description: Back in 1987 I made a photo at the Bryce Canyon Park. And now I’m posting it, because it’s *spectacular!*
+description: Back in 1987 I made a photo at the Bryce Canyon Park. And now I'm posting it, because it's *spectacular!*
 tags: [Bryce Canyon, Utah, Hoodoo]
 type: photo
 image:

@@ -1,7 +1,7 @@
 --- 
 date: 2012-07-12T17:33:12Z
 slug: sqitch-log
-title: Sqitch’s Log
+title: Sqitch's Log
 aliases: [/computers/databases/sqitch-log.html]
 tags: [Sqitch, SQL, Databases, Change Management]
 type: post
@@ -19,7 +19,7 @@ including:
 
 -   Colorized output
 -   Searching against change and committer names via regular expressions
--   A variety of formatting options (“full”, “long”, “medium”, “oneline”, etc.)
+-   A variety of formatting options ("full", "long", "medium", "oneline", etc.)
 -   Extensible formatting with [`printf`-style codes]
 
 Here are a couple of examples searching [the tutorial]’s test database:

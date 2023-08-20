@@ -1,7 +1,8 @@
 --- 
 date: 2008-09-24T06:49:20Z
 lastMod: 2022-06-12T03:26:54Z
-description: "Notes from “Good at Doing Things: Montessori education and higher-order cognitive functions”, presented by Steve Hughes."
+description: |-
+    Notes from "Good at Doing Things: Montessori education and higher-order cognitive functions", presented by Steve Hughes.
 slug: good-at-doing-things
 title: Good at Doing Things
 aliases: [/culture/education/good-at-doing-things.html]
@@ -12,10 +13,10 @@ type: post
 Tonight, I attended a talk, [Good at doing things: Montessori education and
 higher-order cognitive functions][good-at-doing-things], about the Montessori
 method of childhood education and its effects on neurological development. If I
-wasn’t a convert to the Montessori method before, I am now. Julie and I went to
-back to school night at Anna’s new school, [Childpeace Montessori] the other
+wasn't a convert to the Montessori method before, I am now. Julie and I went to
+back to school night at Anna's new school, [Childpeace Montessori] the other
 night, and we were both jealous. How we wish we could have had this kind of
-education! This talk really sealed it in my mind. I can’t imagine that I'd want
+education! This talk really sealed it in my mind. I can't imagine that I'd want
 Anna to have any other education.
 
 Anyway, I might write a bit more on this later, but for now, here are my notes
@@ -48,18 +49,18 @@ and pediatric neuropsychologist.
 ### Brain Development
 
 -   Brain that is [myelinated] is functional
--   Injured brains don’t develop well
+-   Injured brains don't develop well
 -   Rats with non-stimulating environment have smaller brains with fewer
     connections and lower IQ.
 -   Rats raised in stimulating environment are heavier and more complex
 -   Emotional support, stimulation good for brain development
 
-“Experimental interactions with the environment.” Provided in unparalleled way
+"Experimental interactions with the environment." Provided in unparalleled way
 by Montessori education.
 
 ### What should school be for?
 
-In, US, it’s about preparing students for multiple choice tests.
+In, US, it's about preparing students for multiple choice tests.
 
 If ask students, they want:
 
@@ -75,7 +76,7 @@ If ask students, they want:
 -   Encourage me to have opinions of my own
 -   Help me understand implications and responsibilities of marriage
 
-List of things from teachers is similar. “I think that’s pretty neat!”
+List of things from teachers is similar. "I think that's pretty neat!"
 Reinforced by multiple studies around the world.
 
 ### How Steve Discovered Montessori Education
@@ -86,7 +87,7 @@ She got her start at Widjiwagan. A leadership development camp for young people.
 People come from all over the state to attend. She saw kids from every corner of
 the state.
 
-Hughes was post-doc. Asked her, “Where do the **good** kids come from?” She
+Hughes was post-doc. Asked her, "Where do the **good** kids come from?" She
 thought for a minute. They come from a Montessori school in Minneapolis. How'd
 she come up with that? What is it about them? She said:
 
@@ -120,12 +121,12 @@ Ultimately, what they do is:
 -   figure out what needs to be done…
 -   …and do it
 
-Key sentence: “They're good at doing things.”
+Key sentence: "They're good at doing things."
 
 ### A Montessori Parent
 
 Hughes daughter, Isabel was born. \[His daughter, gets choked up.\] Isabel went
-to Montessori, has been there since beginning. Almost 11. Couldn’t be happier
+to Montessori, has been there since beginning. Almost 11. Couldn't be happier
 with her progress and experience of seeing a child discover herself.
 
 So the Hughes family fell in love Montessori. 75% of children of his
@@ -137,15 +138,15 @@ another.
 >
 > —Fiona A., Ph.D.
 >
-> That’s where my kid is going to school!
+> That's where my kid is going to school!
 >
 > —Terry H., Ph.D.
 >
-> It’s like education designed by a gifted pediatric neuropsychologist.
+> It's like education designed by a gifted pediatric neuropsychologist.
 >
 > —Steve Hughes, Ph.D., pediatric neuropsychologist
 >
-> It’s like education designed by a gifted developmental neuropsychologist.
+> It's like education designed by a gifted developmental neuropsychologist.
 >
 > —Fiona A., Ph.D., developmental neuropsychologist
 
@@ -162,12 +163,12 @@ anyone coined that phrase.
 
 Some areas are responsible for certain functions. Motor and sensory areas are
 bands that go over the brain. Mapping of functional areas finds that they're not
-the same size as parts of the body for which they control function. From brain’s
+the same size as parts of the body for which they control function. From brain's
 point of view, body is huge hands, large face, not much of anything else.
 
 ### Way of Thinking About Things Brains Do
 
-Functions are in neurological “nuggets.” Communicate with other areas through
+Functions are in neurological "nuggets." Communicate with other areas through
 neural networks. Brains need functioning nuggets and networks to work properly.
 
 What happens when you read:
@@ -180,9 +181,9 @@ What happens when you read:
 
 These are nuggets that must communicate in order to read properly.
 
-Children with reading disorder have brains that don’t activate as much. Such
-children’s functions can be improved. Have to do lots of calisthenics of brain
-to develop those nuggets. It’s hard, and takes someone who knows what they're
+Children with reading disorder have brains that don't activate as much. Such
+children's functions can be improved. Have to do lots of calisthenics of brain
+to develop those nuggets. It's hard, and takes someone who knows what they're
 doing.
 
 ### Reading
@@ -197,7 +198,7 @@ neuropsychologists do exactly these things to help, e.g., [sandpaper letters].
 
 Doing [cylinder work], child learned perfect pencil grasp. Was easy to learn to
 hold the pencil when started to write, because had already had practice with
-cylinder’s.
+cylinder's.
 
 Child without grasp can still have phonological processing going on, doing
 writing with [movable alphabet], phonetically. They can write before they can
@@ -230,16 +231,16 @@ About building better brains by developing nuggets and networks!
 
 This is what Montessori education is about. Teacher makes sure what child is
 doing is just on the edge of what they've done before. Great to give to child
-something, a task, that’s developmentally appropriate to them, so they are
+something, a task, that's developmentally appropriate to them, so they are
 challenged by it. There is no environment like a Montessori classroom to really
-emphasize this. If there is something you're doing that’s developmentally
+emphasize this. If there is something you're doing that's developmentally
 appropriate for you, every neuron is focused on the task.
 
 What would it be like if we spent every day like this?
 
 How else can we make brains better? Hands-on activity. Learning that things have
 a beginning part, a middle part, and end end part. All meaningful learning takes
-place through error and analysis. Don’t solve problems for the child; let them
+place through error and analysis. Don't solve problems for the child; let them
 figure it out.
 
 How else can we make better brains? Multisensory work. Self-guided learning.
@@ -268,17 +269,17 @@ Hughes believes that the Montessori education provides environment that is
 unique in providing extraordinary role of developing executive functions.
 
 (From Q&A: Executive functions abilities are mostly genetic and possibly early
-development environments. “Possibly” because these things are hard to measure in
+development environments. "Possibly" because these things are hard to measure in
 children. If you check off the things you need, they're all in the Montessori
 classroom, and Hughes believes that such an environment *does* promote executive
-functions, he just hasn’t yet done the study to show such conclusively.)
+functions, he just hasn't yet done the study to show such conclusively.)
 
 Prefrontal cortex modify remote events (through time and space) through
 intentional behavior. Through its development, links the present to the future.
 Once this developed in humans, Humans had won evolutionary contest.
 
-Chimps can solve problems. But they can’t plan for the future. Can stack boxes
-to get banana on ceiling, but can’t stock up boxes for when bananas reappear
+Chimps can solve problems. But they can't plan for the future. Can stack boxes
+to get banana on ceiling, but can't stock up boxes for when bananas reappear
 next week.
 
 -   Judgment
@@ -298,12 +299,12 @@ this is developed, you are an effective human being.
 
 Unlike with learning problems, there is little to do to develop executive
 functions in later age. For the development in children, there is nothing like
-Montessori classroom to develop executive functions. Those who don’t develop
+Montessori classroom to develop executive functions. Those who don't develop
 them are simply not that good at doing things.
 
 Normalization represents some aspect of executive functions. Working memory is
 essential to executive planning. And in Montessori classrooms, they plan
-learning games. These develop this. It’s deliberate. Need limitation of
+learning games. These develop this. It's deliberate. Need limitation of
 materials so children have to learn to limit inappropriate behavior. So if there
 is only one pink tower, child has to plan, inhibit impulses, etc., to use it.
 
@@ -328,7 +329,7 @@ Aspects that Maria wrote about:
 ### What School for Most Children is About
 
 Remember the lists of what children and teachers consider important? Doing well
-on standardized tests is not in the top 10. It’s \#23, according to teachers.
+on standardized tests is not in the top 10. It's \#23, according to teachers.
 
 Those that receive the most attention int he classroom? \#1; Helping students do
 well on standardized tests!
@@ -338,7 +339,7 @@ standardized tests is \#1. Understand what is happening i the world is \#10!
 
 > If education is always to be conceived along the same antiquated lines of a
 > mere transmission of knowledge, there is little to be hoped from it in the
-> bettering of man’s future.
+> bettering of man's future.
 >
 > —Maria Montessori
 
@@ -369,7 +370,7 @@ None of this stuff taught in vocational school.
 The best teachers;
 
 -   Recognize unique talents in each student
--   Create individualized education processes that foster each student’s unique
+-   Create individualized education processes that foster each student's unique
     abilities
 -   Work with other teachers to understand of how growth is promoted
 -   Help parents create developmental environments for their students at home
@@ -413,27 +414,27 @@ under-served communities in Dallas.
 
 ### And How is Conventional Education Doing?
 
-Hasn’t changed much in last 100 years.
+Hasn't changed much in last 100 years.
 
-Schools struggle to meet state marks. It’s in the news all the time. Saddest
-part about it is that it’s no longer surprising.
+Schools struggle to meet state marks. It's in the news all the time. Saddest
+part about it is that it's no longer surprising.
 
-It’s time to do something different! We've tried the existing approach, it
-doesn’t work, it’s not good for children. No reason schools have to be the way
-they are. There is a better way. That’s what Montessori teachers provide.
+It's time to do something different! We've tried the existing approach, it
+doesn't work, it's not good for children. No reason schools have to be the way
+they are. There is a better way. That's what Montessori teachers provide.
 
 ### Three components of Classical Montessori Education
 
 Culture (of respect for child) Method Curriculum and Materials
 
-Everyone falls in love with materials, but the culture is most important. It’s
-an exposure for children that’s transforming.
+Everyone falls in love with materials, but the culture is most important. It's
+an exposure for children that's transforming.
 
 The social environment of a child influences the child, but also helps them
 recover from trauma or disease. Humans are shaped by their social experiences.
 We learn how to be humans from other humans. Children take what is given to them
 by adults and their world and the convey them. Montessori provides culture
-that’s supportive of what we identify as civilization. Civilization is optional.
+that's supportive of what we identify as civilization. Civilization is optional.
 
 > Whoever touches the life of a child touches the most sensitive point of a
 > whole which has roots in the most distant part and climbs toward the infinite
@@ -443,9 +444,9 @@ that’s supportive of what we identify as civilization. Civilization is optiona
 
 In infancy, we believe parents can solve all our problems
 
-As children, it’s that teachers can
+As children, it's that teachers can
 
-As adults, it’s that governments.
+As adults, it's that governments.
 
 It as never been more important to raise generations who:
 

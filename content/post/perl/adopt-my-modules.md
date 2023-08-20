@@ -2,7 +2,7 @@
 title: "Adopt My Modules"
 date: 2018-05-22T21:19:00Z
 lastMod: 2018-05-22T21:19:00Z
-description: "I no longer have the bandwidth to properly care for and feed my Perl modules. Maybe you’d be interested in adopting one?"
+description: I no longer have the bandwidth to properly care for and feed my Perl modules. Maybe you'd be interested in adopting one?
 tags: [Perl, CPAN, Help Wanted]
 type: post
 ---

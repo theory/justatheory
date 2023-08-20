@@ -2,7 +2,8 @@
 title: "Superfan"
 date: 2018-05-27T19:15:00Z
 lastMod: 2018-05-27T19:15:00Z
-description: “Trust and psychological safety are core elements of high performing teams.”
+description: |-
+  "Trust and psychological safety are core elements of high performing teams."
 tags: [Culture, Teams, Trust, Fandoms, Diversity, Love]
 type: post
 link: http://www.sachajudd.com/superfan/

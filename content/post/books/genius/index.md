@@ -3,18 +3,20 @@ title: "Review: Genius"
 slug: genius
 date: 2018-02-04T19:14:48Z
 lastMod: 2022-04-16T19:14:48Z
-description: A brief review of the book, subtitled “The Life and Science of Richard Feynman”, by James Gleick.
+description: A brief review of the book, subtitled ""he Life and Science of Richard Feynman", by James Gleick.
 tags: [Books, James Gleick, Richard Feynman, Genius]
 type: post
 image:
   src: genius.jpg
   link: https://bookshop.org/book/9780679747048
   class: right
-  title: "Buy “Genius: The Life and Science of Richard Feynman” on Bookshop.org"
-  alt: "Cover of “Genius: The Life and Science of Richard Feynman” by James Gleick"
-  caption: |-
+  title: |-
+    Buy "Genius: The Life and Science of Richard Feynman" on Bookshop.org
+  alt: |-
+    Cover of "Genius: The Life and Science of Richard Feynman" by James Gleick
+  heading: |-
     [*Genius*](https://bookshop.org/book/9780679747048), by James Gleick
-    1992 Vintage Books
+  caption: 1992 Vintage Books
 ---
 
 I adore this book. It's a tour-de-force distillation of the history for mid-20th
@@ -77,7 +79,7 @@ The author himself is no slouch. Not only does Gleick turn the development of
 20th century physics into an exciting intellectual page-turner, but he also
 digresses on interesting topics of his own. Not superfluously tangential,
 either: a 28-page disquisition on the history, definitions, and philosophical
-underpinnings of the very idea of “genius” held me in thrall.
+underpinnings of the very idea of "genius" held me in thrall.
 
 The whole book did. The subject, the time, the discipline, the intelligence, the
 pragmatism, it all works, held together both in the figure of Feynman himself

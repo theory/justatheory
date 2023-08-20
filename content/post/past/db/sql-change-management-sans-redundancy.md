@@ -1,6 +1,6 @@
 --- 
 date: 2012-01-30T16:00:00Z
-description: Here’s how I propose to eliminate the duplication of code between deploy and revert SQL change management scripts.
+description: Here's how I propose to eliminate the duplication of code between deploy and revert SQL change management scripts.
 slug: sql-change-management-sans-redundancy
 title: SQL Change Management Sans Duplication
 aliases: [/computers/databases/sql-change-management-sans-redundancy.html]

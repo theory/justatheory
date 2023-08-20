@@ -1,7 +1,7 @@
 --- 
 date: 2004-10-08T19:24:52Z
 slug: fineman-analysis
-title: Howard Fineman's “Analysis”
+title: Howard Fineman's "Analysis"
 aliases: [/politics/election_2004/fineman_analysis.html]
 tags: [Politics, George W. Bush, John Kerry, President, Elections, Howard Fineman]
 type: post
@@ -15,14 +15,14 @@ was conservative until I read that column. What gave it away?
 
 It was this snippet:
 
-> On one level, Kerry's “position” is a contradictory bundle of confusion. He
+> On one level, Kerry's "position" is a contradictory bundle of confusion. He
 > says the war was a mistake, but he's the guy calling for a gung-ho strategy in
 > Fallujah to root out terrorist nests. As the president has pointed out, Kerry
 > is claiming he can win the support of allies even as he dismisses the
 > contributions of existing ones and calls the entire war a diversion--and even
 > as France and Germany already have said that they aren't going to rally to our
 > side if Kerry wins. But if the situation in Iraq continues to deteriorate,
-> Kerry's “vision”--or lack of it--matters less.
+> Kerry's "vision"--or lack of it--matters less.
 
 This seems typical of conservative commentary--it's a very selective description
 of Kerry's position. Yes, Kerry says that the war was a mistake, *but now that

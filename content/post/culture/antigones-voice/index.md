@@ -1,5 +1,5 @@
 ---
-title: "Antigone’s Voice"
+title: Antigone's Voice
 date: 2019-09-24T13:23:41Z
 lastMod: 2019-09-24T13:23:41Z
 description: What *Antigone in Ferguson* taught me about beauty, creativity, justice, ego, and autocratic control.

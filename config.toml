@@ -14,6 +14,7 @@ uglyURLs = true
 [author]
     name = "David E. Wheeler"
     url = "https://justatheory.com/"
+    email = "david@justatheory.com"
 
 [params]
   description = "Periodically irregular technology and culture blogging since 2002. By David E. Wheeler."

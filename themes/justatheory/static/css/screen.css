@@ -926,7 +926,7 @@ pre {
 
 p code, li code, p tt, li tt {
     display: inline-block;
-    white-space: no-wrap;
+    white-space: nowrap;
     font-size: .8em;
     background-color: #eee;
     padding: 0 4px;

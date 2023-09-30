@@ -1,6 +1,6 @@
 --- 
 date: 2012-04-16T22:08:26Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:36:58Z
 slug: postgres-use-timestamptz
 title: Always Use TIMESTAMP WITH TIME ZONE
 aliases: [/computers/databases/postgresql/use-timestamptz.html]

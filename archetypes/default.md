@@ -11,8 +11,8 @@ type: {{ .Type }}
 link: ~
 # draft: true
 # author:
-#   name: David E. Wheeler
-#   email: david@justatheory.com
+#   name: {{ .Site.Author.name }}
+#   email: {{ .Site.Author.email }}
 # via:
 #   name: Example
 #   href: https://example.com
@@ -30,7 +30,7 @@ link: ~
 #   heading: heading in `<h4>`
 #   caption: caption `text`
 #   attr: Image by [attribution](https://example.com)
-#   copyright: 2022 David E. Wheeler
+#   copyright: {{ now.Format "2006" }} David E. Wheeler
 #   metaOnly: false
 ---
 

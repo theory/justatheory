@@ -1,6 +1,6 @@
 --- 
 date: 2008-09-24T22:05:06Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:36:54Z
 slug: pgtap-0.11
 title: pgTAP 0.11 Released
 aliases: [/computers/databases/postgresql/pgtap-0.11.html]

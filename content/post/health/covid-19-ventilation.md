@@ -2,7 +2,7 @@
 title: "We Need to Talk About Ventilation"
 slug: covid-19-ventilation
 date: 2020-08-02T18:35:55Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:36:52Z
 description: Zeynep Tufekci on aerosolized Covid-19 transmission and the need for ventilation.
 tags: [Health, Zeynep Tufekci, Coronavirus, Covid-19]
 type: post

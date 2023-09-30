@@ -41,7 +41,7 @@ background and dark blue dotted border, so it stands out. That styling is in the
 figure out how to add `<param>` tags that would tell it to include various
 styles, too, since it appears that CSS I have in this page has no effect on the
 content of the object (I have some CSS to make the `<code>` tag have a green
-background, but for me at least, it has no effect.
+background), but for me at least, it has no effect.
 
 So why isn't this more common? It [seems to work well] in a lot of browsers.
 Would you use it? What are the downsides?

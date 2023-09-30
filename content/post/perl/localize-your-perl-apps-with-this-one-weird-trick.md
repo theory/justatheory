@@ -1,6 +1,6 @@
 --- 
 date: 2014-09-06T18:10:00Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:37:04Z
 title: Localize Your Perl Apps with this One Weird Trick
 aliases: [/l10n/2014/09/06/localize-your-perl-apps-with-this-one-weird-trick/]
 tags: [Perl, Localization, Internationalization, Perl Advent Calendar]

@@ -1,6 +1,6 @@
 --- 
 date: 2009-03-03T21:29:54Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:36:59Z
 slug: introducing-sociable
 title: Sociable Plugin for Blosxom
 aliases: [/computers/internet/weblogs/blosxom/sociable/introducing-sociable.html]

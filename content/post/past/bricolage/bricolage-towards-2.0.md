@@ -1,6 +1,6 @@
 --- 
 date: 2008-05-01T01:03:43Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:36:53Z
 slug: towards-bricolage-2.0
 title: Moving Towards Bricolage 2.0
 aliases: [/bricolage/towards_2.0.html]

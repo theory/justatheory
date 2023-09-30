@@ -1,6 +1,6 @@
 --- 
 date: 2014-09-05T17:46:00Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:37:08Z
 title: Sqitch Goes Vertical
 aliases: [/2014/09/05/sqitch-goes-vertical/]
 tags: [Sqitch, MySQL, Vertica]

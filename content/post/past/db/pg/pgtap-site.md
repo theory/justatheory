@@ -1,6 +1,6 @@
 --- 
 date: 2008-09-20T00:37:06Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:36:56Z
 description: The new version features compatibility back as far as PostgreSQL 8.0 and lots of cool functions for testing database schemas. The site's cool, too.
 slug: pgtap-site
 title: pgTAP 0.10 Released, Web Site Launched

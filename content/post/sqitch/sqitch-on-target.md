@@ -1,6 +1,6 @@
 --- 
 date: 2014-01-09T15:27:00Z
-lastMod: 2022-05-22T21:36:50Z
+lastMod: 2022-05-22T21:37:09Z
 title: Sqitch on Target
 aliases: [/sqitch/2014/01/09/sqitch-on-target/]
 tags: [Sqitch]

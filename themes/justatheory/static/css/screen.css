@@ -404,8 +404,8 @@ body > header > nav a, body > header > nav:hover {
     text-decoration: none !important;
 }
 
-body > header:has(+ main > article.photo) { background-color: #2d2d2d;}
-body > header:has(+ main > article.photo) > nav a {color:#ccc !important}
+body > header:has(+ main > article:first-child.photo) { background-color: #2d2d2d;}
+body > header:has(+ main > article:first-child.photo) > nav a {color:#ccc !important}
 
 h2, section h1 {
     font-size: 1.3em

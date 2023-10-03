@@ -2,7 +2,7 @@
 title: "CipherDoc: A Searchable, Encrypted JSON Document Service on Postgres"
 slug: cipherdoc
 date: 2023-10-01T21:36:13Z
-lastMod: 2023-10-01T21:36:13Z
+lastMod: 2023-10-03T23:02:21Z
 description: I gave a talk at PGCon this year on a privacy-first data storage service I designed and implemented. Perhaps the encryption and searching patterns will inspire others.
 tags: [Postgres, PGCon, CipherDoc, Privacy, Encryption]
 type: post
@@ -31,8 +31,8 @@ invigorate me.
 Two minor updates since May:
 
 1.  I re-implemented the [JSON/SQL Path] parser using the original Postgres
-    [path grammar], replacing the hand-written parser roundly castigated in the
-    presentation.
+    [path grammar] and [goyacc], replacing the hand-written parser roundly
+    castigated in the presentation.
 2.  The service has yet to be open-sourced, but I remain optimistic, and
     continue to work with leadership at *The Times* towards an open-source
     policy to enable its release.
@@ -58,3 +58,5 @@ Two minor updates since May:
     "CipherDoc: A Pattern for a Searchable, Encrypted JSON Document Service: David E Wheeler - PGCon 2023"
   [path grammar]: https://github.com/postgres/postgres/blob/REL_15_4/src/backend/utils/adt/jsonpath_gram.y
     "jsonpath_gram.y: Grammar definitions for jsonpath datatype"
+  [goyacc]: https://pkg.go.dev/golang.org/x/tools/cmd/goyacc
+    "Goyacc is a version of yacc for Go. It is written in Go and generates parsers written in Go"

@@ -892,6 +892,10 @@ article h2 {
     padding-top: 0.8em
 }
 
+article h3 {
+    padding-top: 0.6em
+}
+
 article > footer {
     color: #888;
     padding-bottom: 2.5em !important;

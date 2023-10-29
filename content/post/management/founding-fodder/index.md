@@ -10,7 +10,7 @@ image:
   attr: |-
     Image: [Anthony Garand](https://unsplash.com/photos/7rehTDIfR8o)
     on [Unsplash](https://unsplash.com/search/photos/constitution)
-  title: We the People }
+  title: We the People
 ---
 
 Tone is set from the top, [they say]. I once started [a company] and ran it for

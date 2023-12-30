@@ -7,7 +7,7 @@ tags: [Perl, Localization, Internationalization, Perl Advent Calendar]
 type: post
 ---
 
-Nota Bene: This is a republication of a [post that originally appeared in the
+Nota Bene: This is a republication of a post that originally appeared in the
 [2013 Perl Advent Calendar].
 
 ---
@@ -378,7 +378,7 @@ the call to `bind_textdomain_filter` required by [this change] in Encode v2.99.
     "Wikipedia: “Internationalization and Localization”"
   [Locale::TextDomain]: https://metacpan.org/module/Locale::TextDomain
     "Locale::TextDomain on CPAN"
-  [comprehensive documention]:
+  [comprehensive documentation]:
     https://metacpan.org/pod/Locale::TextDomain#EXPORTED-FUNCTIONS
     "Locale::TextDomain Exported Functions"
   [Tom Christiansen's advice]: http://stackoverflow.com/a/6163129/79202
@@ -426,3 +426,5 @@ the call to `bind_textdomain_filter` required by [this change] in Encode v2.99.
   [German Perl Workshop 2010]: http://conferences.yapceurope.org/gpw2010/
   [GNU gettext]: https://www.gnu.org/software/gettext/
   [this change]: https://github.com/dankogai/p5-encode/pull/135
+  [Sqitch]: https://sqitch.org
+    "Sqitch: Sensible database-native change management for framework-free development and dependable deployment"

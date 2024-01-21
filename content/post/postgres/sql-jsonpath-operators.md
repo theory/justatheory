@@ -62,7 +62,7 @@ Queries
 >     expression. If the `silent` argument is specified and is true, the
 >     function suppresses the same errors as the `@?` and `@@` operators do.
 > 
-> :   ```
+> :   ``` postgres
 >     select * from jsonb_path_query(
 >         '{"a":[1,2,3,4,5]}',
 >         '$.a[*] ? (@ >= $min && @ <= $max)',

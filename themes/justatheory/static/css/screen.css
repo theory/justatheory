@@ -1124,13 +1124,16 @@ code._testembed{background:green}
 object#_testembed{background:lightblue;width:100%;border:1px dotted darkblue}
 
 /* hugo gen chromastyles --style=monokai >> themes/justatheory/static/css/screen.css */
-/* Background */ pre, .chroma, .lntable { color: #f8f8f2; background-color: #2d2d2d; } /* Modified to add pre & .lntable, and to match header background */
+/* Background */ .bg { color: #f8f8f2; background-color: #272822; } /* Modified to add pre & .lntable, and to match header background */
+/* PreWrapper */ pre, .chroma, .lntable { color: #f8f8f2; background-color: #272822; }
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
+/* LineLink */ .chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
-/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
-/* LineHighlight */ .chroma .hl { display: block; width: 100%; background-color: #004d66 } /* Modified background color */
-/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
-/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
+/* LineHighlight */ .chroma .hl { background-color: #3c3d38 }
+/* LineNumbersTable */ .chroma .lnt { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
+/* Line */ .chroma .line { display: flex; }
 /* Keyword */ .chroma .k { color: #66d9ef }
 /* KeywordConstant */ .chroma .kc { color: #66d9ef }
 /* KeywordDeclaration */ .chroma .kd { color: #66d9ef }
@@ -1183,6 +1186,8 @@ object#_testembed{background:lightblue;width:100%;border:1px dotted darkblue}
 /* GenericInserted */ .chroma .gi { color: #a6e22e }
 /* GenericStrong */ .chroma .gs { font-weight: bold }
 /* GenericSubheading */ .chroma .gu { color: #75715e }
+/* Not generated; added for console prompt; https://github.com/alecthomas/chroma/pull/551 */
+/* GenericPrompt */ .chroma .line .gp { color:#a6e22e}
 
 @media (prefers-color-scheme: dark) {
     html, body {

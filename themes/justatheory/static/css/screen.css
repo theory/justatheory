@@ -1103,7 +1103,7 @@ body > footer ul li:last-child {
 }
 
 /* Configure the background and color for chroma's highlight and un-highlighted pre elements in text. */
-.text > pre, li > pre, dd > pre, .highlight {
+.text > pre, li > pre, dd > pre, .chroma {
     margin-bottom: 1em;
     padding: .8em 1em;
     background-color: #2d2d2d;
@@ -1124,8 +1124,8 @@ code._testembed{background:green}
 object#_testembed{background:lightblue;width:100%;border:1px dotted darkblue}
 
 /* hugo gen chromastyles --style=monokai >> themes/justatheory/static/css/screen.css */
-/* Background */ .bg { color: #f8f8f2; background-color: #272822; } /* Modified to add pre & .lntable, and to match header background */
-/* PreWrapper */ pre, .chroma, .lntable { color: #f8f8f2; background-color: #272822; }
+/* Background */ .bg { color: #f8f8f2; background-color: #2d2d2d; } /* Modified to add pre & .lntable, and to match header background */
+/* PreWrapper */ pre, .chroma, .lntable { color: #f8f8f2; background-color: #2d2d2d; }
 /* Error */ .chroma .err { color: #960050; background-color: #1e0010 }
 /* LineLink */ .chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }

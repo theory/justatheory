@@ -81,7 +81,7 @@ single boolean value based on the values returned by a path query. And path quer
 can return a huge variety of values. Let's explore some examples, derived from
 the sample JSON value and path query from the docs.[^vars]
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', '$ ?(@.a[*] > 2)');
     jsonb_path_query    
 ------------------------
@@ -94,7 +94,7 @@ start of the path expression. The `?()` filter returns true because its
 predicate expression finds at least one value in the `$.a` array greater than
 `2`. Here's what happens when the filter returns false:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', '$ ?(@.a[*] > 5)');
  jsonb_path_query 
 ------------------
@@ -107,7 +107,7 @@ returns no value.
 To select just the array, append it to the path expression *after* the `?()`
 filter:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', '$ ?(@.a[*] > 2).a');
  jsonb_path_query 
 ------------------
@@ -120,7 +120,7 @@ select jsonb_path_query('{"a":[1,2,3,4,5]}', '$ ?(@.a[*] > 2).a');
 One might think you could select `$.a` at the start of the path query to get the
 full array if the filter returns true, but look what happens:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', '$.a ?(@[*] > 2)');
  jsonb_path_query 
 ------------------
@@ -158,7 +158,7 @@ the default, Postgres *always* unwraps an array. Hence the unexpected list of
 results.[^oracle] This could be particularly confusing when querying multiple
 rows:
 
-```
+``` postgres
 select jsonb_path_query(v, '$.a ?(@[*] > 2)')
         from (values ('{"a":[1,2,3,4,5]}'::jsonb), ('{"a":[3,5,8]}')) x(v);
  jsonb_path_query 
@@ -175,7 +175,7 @@ select jsonb_path_query(v, '$.a ?(@[*] > 2)')
 Switching to strict mode by preprending `strict` to the JSON Path query restores
 the expected behavior:
 
-```
+``` postgres
 select jsonb_path_query(v, 'strict $.a ?(@[*] > 2)')
         from (values ('{"a":[1,2,3,4,5]}'::jsonb), ('{"a":[3,5,8]}')) x(v);
  jsonb_path_query 
@@ -189,7 +189,7 @@ Important gotcha to watch for, and a good reason to test path queries thoroughly
 to ensure you get the results you expect. Lax mode nicely prevents errors when a
 query references a path that doesn't exist, as this simple example demonstrates:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', 'strict $.b');
 ERROR:  JSON object does not contain key "b"
 
@@ -211,7 +211,7 @@ operators, which [suppress some errors even in strict mode][errnote]:
 
 Have a look:
 
-```
+``` postgres
 select '{"a":[1,2,3,4,5]}' @? 'strict $.a';
  ?column? 
 ----------
@@ -229,7 +229,7 @@ No error for the unknown JSON key `b` in that second query! As for the error
 suppression in the `jsonpath`-related functions, that's what the `silent`
 argument does. Compare:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', 'strict $.b');
 ERROR:  JSON object does not contain key "b"
 
@@ -255,7 +255,7 @@ This pithy statement has pretty significant implications for the return value
 of a path query. The SQL standard allows predicate expressions, which are akin
 to an SQL `WHERE` expression, only in `?()` filters, as seen previously:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', '$ ?(@.a[*] > 2)');
     jsonb_path_query    
 ------------------------
@@ -266,7 +266,7 @@ select jsonb_path_query('{"a":[1,2,3,4,5]}', '$ ?(@.a[*] > 2)');
 This can be read as "return the path `$` if `@.a[*] > 2` is true. But have a
 look at a predicate-only path query:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}', '$.a[*] > 2');
  jsonb_path_query 
 ------------------
@@ -283,7 +283,7 @@ different things!
 Don't confuse the predicate path query return value with selecting a boolean
 value from the JSON. Consider this example:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[true,false]}', '$.a ?(@[*] == true)');
  jsonb_path_query 
 ------------------
@@ -294,7 +294,7 @@ select jsonb_path_query('{"a":[true,false]}', '$.a ?(@[*] == true)');
 Looks the same as the predicate-only query, right? But it's not, as shown by
 adding another `true` value to the `$.a` array:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[true,false,true]}', '$.a ?(@[*] == true)');
  jsonb_path_query 
 ------------------
@@ -308,7 +308,7 @@ it returns values from the JSON rather than the filter predicate becomes more
 apparent in strict mode, which returns all of `$a` if one or more elements of
 the array has the value `true`:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[true,false,true]}', 'strict $.a ?(@[*] == true)');
   jsonb_path_query   
 ---------------------
@@ -327,7 +327,7 @@ Match vs. Exists
 Let's get back to the `@@` operator. We can use a boolean predicate JSON Path
 like so:
 
-```
+``` postgres
 select '{"a":[1,2,3,4,5]}'::jsonb @@ '$.a[*] > 2';
  ?column? 
 ----------
@@ -338,7 +338,7 @@ select '{"a":[1,2,3,4,5]}'::jsonb @@ '$.a[*] > 2';
 It returns true because the predicate JSON path query `$.a[*] > 2` returns true.
 And when it returns false?
 
-```
+``` postgres
 select '{"a":[1,2,3,4,5]}'::jsonb @@ '$.a[*] > 6';
  ?column? 
 ----------
@@ -349,7 +349,7 @@ select '{"a":[1,2,3,4,5]}'::jsonb @@ '$.a[*] > 6';
 So far so good. What happens when we try to use a filter expression that returns
 a `true` value selected from the JSONB?
 
-```
+``` postgres
 select '{"a":[true,false]}'::jsonb @@ '$.a ?(@[*] == true)';
  ?column? 
 ----------
@@ -361,7 +361,7 @@ Looks right, doesn't it? But recall that this query returns all of the
 `true` values from `$.@`, but `@@` wants only a single boolean. What happens
 when we add another?
 
-```
+``` postgres
 select '{"a":[true,false,true]}'::jsonb @@ 'strict $.a ?(@[*] == true)';
  ?column? 
 ----------
@@ -373,7 +373,7 @@ Now it returns `NULL`, even though it's clearly true that `@[*] == true`
 matches. This is because it returns *all* of the values it matches, as
 `jsonb_path_query()` demonstrates:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[true,false,true]}'::jsonb, '$.a ?(@[*] == true)');
  jsonb_path_query 
 ------------------
@@ -387,7 +387,7 @@ the result is taken into account". If that were true, it would see the first
 value is `true` and return true. But it doesn't. Turns out, the corresponding
 `jsonb_path_match()` function shows why:
 
-```
+``` postgres
 select jsonb_path_match('{"a":[true,false,true]}'::jsonb, '$.a ?(@[*] == true)');
 ERROR:  single boolean result is expected
 ```
@@ -399,7 +399,7 @@ Futhermore, it's dangerous, at best, to use an SQL standard JSON Path expression
 with `@@`. If you need to use it with a filter expression, you can turn it into
 a boolean predicate by wrapping it in `exists()`:
 
-```
+``` postgres
 select jsonb_path_match('{"a":[true,false,true]}'::jsonb, 'exists($.a ?(@[*] == true))');
  jsonb_path_match 
 ------------------
@@ -412,7 +412,7 @@ operator (and the corresponding, cleverly-named `jsonb_path_exists()` function
 does): it returns true if the SQL standard JSON Path expression contains any
 results:
 
-```
+``` postgres
 select '{"a":[true,false,true]}'::jsonb @? '$.a ?(@[*] == true)';
  ?column? 
 ----------
@@ -423,7 +423,7 @@ select '{"a":[true,false,true]}'::jsonb @? '$.a ?(@[*] == true)';
 Here's the key thing about `@?`: you don't want to use a boolean predicate path
 query with it, either. Consider this predicate-only query:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}'::jsonb, '$.a[*] > 6');
  jsonb_path_query 
 ------------------
@@ -433,7 +433,7 @@ select jsonb_path_query('{"a":[1,2,3,4,5]}'::jsonb, '$.a[*] > 6');
 
 But see what happens when we use it with `@?`:
 
-```
+``` postgres
 select '{"a":[1,2,3,4,5]}'::jsonb @? '$.a[*] > 6';
  ?column? 
 ----------
@@ -446,7 +446,7 @@ is a value that exists and is returned by the query. Even a query that returns
 `null` is considered to exist, as it will when a strict query encounters an
 error:
 
-```
+``` postgres
 select jsonb_path_query('{"a":[1,2,3,4,5]}'::jsonb, 'strict $[*] > 6');
  jsonb_path_query 
 ------------------

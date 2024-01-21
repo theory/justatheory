@@ -104,7 +104,7 @@ Here's how it works:
     `$GITHUB_OUTPUT` file like this, with `$filename` representing the name of
     the release file, usually `$extension-$version.zip`:
 
-    ```
+    ``` sh
     echo bundle=$filename >> $GITHUB_OUTPUT
     ```
 

@@ -36,20 +36,25 @@ anything at all. Not very satisfying, or particularly "standard."[^db-uri:dsn]
 In poking around the net, however, I found a fair number of database URI
 formats defined by various projects:
 
-*   [PostgreSQL libpq URIs]
-    `postgresql://[user[:password]@][netloc][:port][/dbname][?param1=value1&...]`
+[PostgreSQL libpq URIs]
 
-*   [SQLAlchemy URLs]:
-    `dialect[+driver:]//[username[:password]@host[:port]/database`
-  
-*   [Stackato database URLs]:
-    `protocol://[username[:password]@host[:port]/database_name`
-  
-*   [Django database URLs]:
-    `ENGINE://[USER[:PASSWORD]@][HOST][:PORT]/DATABASE`
+:   `postgresql://[user[:password]@][netloc][:port][/dbname][?param1=value1&...]`
 
-*   [Rails database URLs]:
-    `adapter://[userinfo@][hostname][:port]/database`
+[SQLAlchemy URLs]
+
+:   `dialect[+driver:]//[username[:password]@host[:port]/database`
+  
+[Stackato database URLs]
+
+:   `protocol://[username[:password]@host[:port]/database_name`
+  
+[Django database URLs]
+
+:   `ENGINE://[USER[:PASSWORD]@][HOST][:PORT]/DATABASE`
+
+[Rails database URLs]
+
+:   `adapter://[userinfo@][hostname][:port]/database`
 
 All very similar, right? Most database engines support all or a subset of these
 connection parts in common:
@@ -72,7 +77,7 @@ Here's [my proposal]. Formally, it's an opaque URI like JDBC. All database URIs
 start with the scheme `db:`. But in this case, the opaque part is an embedded
 URI that may be in one of two formats:
 
-``` bnf
+``` ebnf
 engine://[username[:password]@]host[:port][/dbname][?params]
 engine:[dbname][?params]
 ```

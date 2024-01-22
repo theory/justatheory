@@ -19,7 +19,7 @@ have to create template files. Templates can go into `~/.sqitch/templates`
 everyone on a system). The latter is where templates are installed by
 default. Here's what it looks like:
 
-``` sh
+``` console
 > ls $(sqitch --etc-path)/templates
 deploy  revert  verify
 > ls $(sqitch --etc-path)/templates/deploy
@@ -53,7 +53,7 @@ This is my standard boilerplate for tests, more or less. It just loads
 [pgTAP], sets the plan, runs the tests, finishes and rolls back. See this
 template in action:
 
-``` sh
+``` console
 > sqitch add whatever -n 'Adds whatever.'
 Created deploy/whatever.sql
 Created revert/whatever.sql
@@ -84,7 +84,7 @@ ready to start writing tests! Nice, right? If we don't want the test script
 created -- for example when adding a column to a table for which a test
 already exists -- we use the `--without` option to omit it:
 
-``` sh
+``` console
 > sqitch add add_timestamp_column --without test -n 'Adds whatever.'
 Created deploy/add_timestamp_column.sql
 Created revert/add_timestamp_column.sql
@@ -129,7 +129,7 @@ ROLLBACK;
 As [before][sqtmpl], we tell the [`add` command] to use the `createtable`
 templates:
 
-``` sh
+``` console
 > sqitch add corp_widgets --template createtable \
   -s schema=corp -s table=widgets \
   -s column=id -s type=SERIAL \

@@ -23,27 +23,27 @@ user from `/usr/local`. What would be much nicer, when it came time to test
 So I wrote [pgenv]. To use it, clone it into `~/.pgenv` (or wherever you want)
 and add its `bin` directories to your `$PATH` environment variable:
 
-``` sh
-git clone https://github.com/theory/pgenv.git
+``` console
+$ git clone https://github.com/theory/pgenv.git
 echo 'export PATH="$HOME/.pgenv/bin:$HOME/.pgenv/pgsql/bin:$PATH"' >> ~/.bash_profile
 ```
 
 Then you're ready to go:
 
-```
-pgenv build 10.4
+``` console
+$ pgenv build 10.4
 ```
 
 A few minutes later, it's there:
 
-```
+``` console
 $ pgenv versions
 pgsql-10.4
 ```
 
 Let's use it:
 
-```
+``` console
 $ pgenv use 10.4
 The files belonging to this database system will be owned by user "david".
 This user must also own the server process.
@@ -55,7 +55,7 @@ PostgreSQL 10.4 started
 
 Now connect:
 
-```
+``` console
 $ psql -U postgres
 psql (10.4)
 Type "help" for help.
@@ -70,7 +70,7 @@ also builds all contrib modules, including PL/Perl using `/usr/bin/perl`.
 With this little app in place, I quickly built all the versions I need. Check it
 out:
 
-```
+``` console
 $ pgenv versions
      pgsql-10.3
   *  pgsql-10.4

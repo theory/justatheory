@@ -18,14 +18,14 @@ you can read the [wedding anniversary post] in plain text simply by [appending
 Markdowners will notice something off about the formatting: the embedded image
 looks nothing like Markdown. Here it is:
 
-<pre><code>
-{{&#37; figure
+```go-template
+{{%/* figure
   src     = "dance.jpg"
   title   = "dance.jpg"
   alt     = "First Dance"
   caption = "First dance, 28 May 1995."
-%}}
-</code></pre>
+*/%}}
+```
 
 This format defines an HTML [figure] in the [Hugo figure shortcode] format.
 It's serviceable for writing posts, but not beautiful. In Markdown, it would

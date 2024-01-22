@@ -107,7 +107,7 @@ Great, we've created a set of simple customized templates for adding a
 `CREATE TABLE` change to a Sqitch project. To use them, just pass the
 `--template` option to [`sqitch add`], like so:
 
-``` sh
+``` console
 > sqitch add widgets --template createtable -n 'Add widgets table.'
 Created deploy/widgets.sql
 Created revert/widgets.sql
@@ -195,7 +195,7 @@ SELECT * FROM [% IF table %][% table %][% ELSE %][% change %][% END %];
 
 Take it for a spin:
 
-``` sh
+``` console
 > sqitch add corp_widgets --template createtable \
   --set schema=corp --set table=widgets \
   -n 'Add corp.widgets table.'
@@ -263,7 +263,7 @@ SELECT [% FOREACH col IN column %][% col %], [% END %]
 Just pass multiple `--set` (or `-s`) options to `sqitch add` to add as many
 columns as you like:
 
-``` sh
+``` console
 > sqitch add corp_widgets --template createtable \
   -s schema=corp -s table=widgets \
   -s column=id -s column=name -s column=quantity \
@@ -354,7 +354,7 @@ As we iterate over the list of columns, simply pass `loop.index` to the
 `item()` [VMethod] on the `type` variable to get the corresponding type.
 Then specify a type for each column when you create the change:
 
-``` sh
+``` console
 > sqitch add corp_widgets --template createtable \
   -s schema=corp -s table=widgets \
   -s column=id -s type=SERIAL \

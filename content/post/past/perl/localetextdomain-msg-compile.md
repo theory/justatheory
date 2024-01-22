@@ -22,11 +22,13 @@ convincing the module to find it is simple. For example, I updated the [test
 `sqitch` app] to take advantage of this. Now, to test, say, the French
 translation file, all the translator has to do is:
 
-    > dzil msg-compile po/fr.po
-    [LocaleTextDomain] po/fr.po: 155 translated messages, 24 fuzzy translations, 16 untranslated messages.
+``` console
+> dzil msg-compile po/fr.po
+[LocaleTextDomain] po/fr.po: 155 translated messages, 24 fuzzy translations, 16 untranslated messages.
 
-    > LANGUAGE=fr ./t/sqitch foo
-    "foo" n'est pas une commande valide
+> LANGUAGE=fr ./t/sqitch foo
+"foo" n'est pas une commande valide
+```
 
 I hope this simplifies things for translators. See the [notes for translators]
 for a few more words on the subject.

@@ -20,7 +20,7 @@ were kind enough to show off their [json_fdw] with some Amazon review data in
 a [blog post] a few months back; it even includes an interesting query against
 the data. Let's see what we can do with it. First, load it:
 
-``` bash
+``` console
 > createdb reviews
 > psql -d reviews -c '
     CREATE EXTENSION HSTORE;
@@ -37,7 +37,7 @@ COPY 589859
 13 seconds to load 589,859 records from a file -- a little over 45k records
 per second. Not bad. Let's see what the storage looks like:
 
-``` bash
+``` console
 > psql -d reviews -c 'SELECT pg_size_pretty(pg_database_size(current_database()));'
  pg_size_pretty 
 ----------------
@@ -47,7 +47,7 @@ per second. Not bad. Let's see what the storage looks like:
 The original, uncompressed data is 208 MB on disk, so roughly a third bigger
 given the overhead of the database. Just for fun, let's compare it to JSON:
 
-``` bash
+``` console
 > createdb reviews_js
 > psql -d reviews_js -c 'CREATE TABLE reviews(review json);'
 CREATE TABLE

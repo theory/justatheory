@@ -20,7 +20,9 @@ works.
 The bug was about what happens when one adds a new change that depends on a
 reworked change, but just specifies it by name, such as `change_password`:
 
-    sqitch add meow --requires change_password
+``` sh
+sqitch add meow --requires change_password
+```
 
 This added the change fine, but at deploy time, Sqitch complained that there
 were multiple instances of a change in the database. Of course, that’s true,
@@ -35,14 +37,16 @@ instance you want, you probably want *any* instance, starting with the earliest.
 But what if you actually need to require a specific instance of a reworked
 change? Let’s say your plan looks like this:
 
-    users
-    widgets
-    change_pass
-    sleep
-    @v1.0
+``` sqitch
+users
+widgets
+change_pass
+sleep
+@v1.0
 
-    work_stuff
-    change_pass [change_pass@v1.0]
+work_stuff
+change_pass [change_pass@v1.0]
+```
 
 The third change is `change_pass`, and it has been reworked in the sixth change
 (requiring the previous version, as of the `@v1.0` tag). If you want to require
@@ -60,28 +64,36 @@ changes that appear *later* in the plan.
 So what we have to do instead is add a *new* tag after the second instance of
 `change_pass`:
 
-    sqitch tag rehash
+``` sh
+sqitch tag rehash
+```
 
 Now the plan will look like this:
 
-    users
-    widgets
-    change_pass
-    sleep
-    @v1.0
+``` sqitch
+users
+widgets
+change_pass
+sleep
+@v1.0
 
-    work_stuff
-    change_pass [change_pass@v1.0]
-    @rehash
+work_stuff
+change_pass [change_pass@v1.0]
+@rehash
+```
 
 Now we can identify exactly the instance we need by specifying that tag:
 
-    sqitch add meow --requires change_password@rehash
+``` sh
+sqitch add meow --requires change_password@rehash
+```
 
 Meaning “The instance of `change_password` as of `@rehash`.” If what you really
 needed was the first version, you can specify the tag that follows it:
 
-    sqitch add meow --requires change_password@v1.0
+``` sh
+sqitch add meow --requires change_password@v1.0
+```
 
 Which, since it is the first instance is the same as specifying no tag at all.
 But if there were, say, four instances of `change_pass`, you can see how it

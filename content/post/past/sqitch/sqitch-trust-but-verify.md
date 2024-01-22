@@ -22,23 +22,29 @@ should die.
 This is easier than you might at first think. Got a Sqitch change that creates a
 table with two columns? Just `SELECT` from it:
 
-    SELECT user_id, name
-      FROM user
-     WHERE FALSE;
+``` postgres
+SELECT user_id, name
+  FROM user
+ WHERE FALSE;
+```
 
 If the table does not exist, the query will die. Got a change that creates a
 function? Make sure it was created by checking a privilege:
 
-    SELECT has_function_privilege('insert_user(text, text)', 'execute');
+``` postgres
+SELECT has_function_privilege('insert_user(text, text)', 'execute');
+```
 
 PostgreSQL will throw an error if the function does not exist. Not running
 PostgreSQL? Well, you’re probably not using Sqitch [yet], but if you were, you
 might force an error by dividing by zero. Here’s an example verifying that a
 schema exists:
 
-    SELECT 1/COUNT(*)
-      FROM information_schema.schemata
-     WHERE schema_name = 'myapp';
+``` postgres
+SELECT 1/COUNT(*)
+  FROM information_schema.schemata
+ WHERE schema_name = 'myapp';
+```
 
 At this point, Sqitch doesn’t care at all what you put into your verify scripts.
 You just need to make sure that they indicate failure by throwing an error when
@@ -49,23 +55,25 @@ The `--verify` option to the [`deploy` command] does just that. If a verify
 script fails, the deploy is considered to have failed. Here’s what failure looks
 like:
 
-    > sqitch deploy
-    Deploying changes to flipr_test
-      + appschema ................. ok
-      + users ..................... ok
-      + insert_user ............... ok
-      + change_pass @v1.0.0-dev1 .. ok
-      + lists ..................... psql:verify/lists.sql:7: ERROR:  column "timestamp" does not exist
-    LINE 1: SELECT nickname, name, description, timestamp
-                                                ^
-    Verify script "verify/lists.sql" failed.
-    not ok
-    Reverting all changes
-      - change_pass @v1.0.0-dev1 .. ok
-      - insert_user ............... ok
-      - users ..................... ok
-      - appschema ................. ok
-    Deploy failed
+``` console
+> sqitch deploy
+Deploying changes to flipr_test
+  + appschema ................. ok
+  + users ..................... ok
+  + insert_user ............... ok
+  + change_pass @v1.0.0-dev1 .. ok
+  + lists ..................... psql:verify/lists.sql:7: ERROR:  column "timestamp" does not exist
+LINE 1: SELECT nickname, name, description, timestamp
+                                            ^
+Verify script "verify/lists.sql" failed.
+not ok
+Reverting all changes
+  - change_pass @v1.0.0-dev1 .. ok
+  - insert_user ............... ok
+  - users ..................... ok
+  - appschema ................. ok
+Deploy failed
+```
 
 Good, right? In addition, you can always verify the state of a database using
 the [`verify` command]. It runs the verify scripts for all deployed changes. It
@@ -73,28 +81,32 @@ also ensures that all the deployed changes were deployed in the same order as
 they’re listed in the plan, and that no changes are missing. The output is
 similar to that for `deploy`:
 
-    > sqitch verify
-    Verifying flipr_test
-      * appschema ................. ok
-      * users ..................... ok
-      * insert_user ............... ok
-      * change_pass @v1.0.0-dev1 .. ok
-      * lists ..................... ok
-      * insert_list ............... ok
-      * delete_list ............... ok
-      * flips ..................... ok
-      * insert_flip ............... ok
-      * delete_flip @v1.0.0-dev2 .. ok
-      * pgcrypto .................. ok
-      * insert_user ............... ok
-      * change_pass ............... ok
-    Verify successful
+``` console
+> sqitch verify
+Verifying flipr_test
+  * appschema ................. ok
+  * users ..................... ok
+  * insert_user ............... ok
+  * change_pass @v1.0.0-dev1 .. ok
+  * lists ..................... ok
+  * insert_list ............... ok
+  * delete_list ............... ok
+  * flips ..................... ok
+  * insert_flip ............... ok
+  * delete_flip @v1.0.0-dev2 .. ok
+  * pgcrypto .................. ok
+  * insert_user ............... ok
+  * change_pass ............... ok
+Verify successful
+```
 
 Don’t want verification tests/scripts? Use `--no-verify` when you call
 [`sqitch add`][`add` command] and none will be created. Or tell it never to
 create verify scripts by setting the turning off the `add.with_verify` option:
 
-    sqitch config --bool add.with_verify no
+``` sh
+sqitch config --bool add.with_verify no
+```
 
 If you somehow run `deploy --verify` or `verify` anyway, Sqitch will emit a
 warning for any changes without verify scripts, but won’t consider them

@@ -17,7 +17,9 @@ branches. Say you have two branches, “widgets” and “big-fix”, and that t
 Sqitch plans diverge. If you’re in the “widgets” branch and want to switch to
 “big-fix”, just run
 
-    sqitch checkout big-fix
+``` sh
+sqitch checkout big-fix
+```
 
 Sqitch will look at the “big-fix” plan, figure out the last change in common
 with “widgets”, and revert to it. Then it checks out “big-fix” and deploys.
@@ -57,21 +59,24 @@ remember the names of changes required by a change you’re about to [`add`]. Th
 `--oneline` option is especially useful for this functionality. An example from
 [the tutorial]’s plan:
 
-    > sqitch plan --oneline
-    In sqitch.plan
-    6238d8 deploy change_pass
-    d82139 deploy insert_user
-    7e6e8b deploy pgcrypto
-    87952d deploy delete_flip @v1.0.0-dev2
-    b0a951 deploy insert_flip
-    834e6a deploy flips
-    d0acfa deploy delete_list
-    77fd99 deploy insert_list
-    1a4b9a deploy lists
-    0acf77 deploy change_pass @v1.0.0-dev1
-    ec2dca deploy insert_user
-    bbb98e deploy users
-    ae1263 deploy appschema
+   
+``` console
+> sqitch plan --oneline
+In sqitch.plan
+6238d8 deploy change_pass
+d82139 deploy insert_user
+7e6e8b deploy pgcrypto
+87952d deploy delete_flip @v1.0.0-dev2
+b0a951 deploy insert_flip
+834e6a deploy flips
+d0acfa deploy delete_list
+77fd99 deploy insert_list
+1a4b9a deploy lists
+0acf77 deploy change_pass @v1.0.0-dev1
+ec2dca deploy insert_user
+bbb98e deploy users
+ae1263 deploy appschema
+```
 
 I personally will be using this a lot, Yep, scratching my own itch here. What
 itch do you have to scratch with Sqitch?

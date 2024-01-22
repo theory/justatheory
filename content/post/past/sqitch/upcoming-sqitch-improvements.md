@@ -61,9 +61,11 @@ such as `deploy`, `revert`, `log`, and the like. They can also be given names
 and stored in the configuration file. The upshot is that it would enable
 invocations such as
 
-    sqitch deploy production
-    sqitch log qa
-    sqitch status pg://localhost/flipr?sqitch_schema=meta
+``` sh
+sqitch deploy production
+sqitch log qa
+sqitch status pg://localhost/flipr?sqitch_schema=meta
+```
 
 See [the GitHub issue][its own command] for a fuller description of this
 feature. I’m certain that this would be useful [at work], as we have a limited

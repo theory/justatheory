@@ -16,22 +16,30 @@ easily download, build, and install Sqitch and all of its dependencies.
 
 If you are one of these lucky people, here’s how to configure the Sqitch tap:
 
-    brew tap theory/sqitch
+``` sh
+brew tap theory/sqitch
+```
 
 Now you can install the core Sqitch application:
 
-    brew install sqitch
+``` sh
+brew install sqitch
+```
 
 That’s it. Make sure it works:
 
-    > sqitch --version
-    sqitch (App::Sqitch) 0.953
+``` console
+> sqitch --version
+sqitch (App::Sqitch) 0.953
+```
 
 It won’t do you much good without support for your database, though. Currently,
 there is a build for PostgreSQL. Note that this requires the Homebrew core
 PostgreSQL server:
 
-    brew install sqitch_pg
+``` sh
+brew install sqitch_pg
+```
 
 Sqitch hasn’t been ported to other database engines yet, but once it is, expect
 other formulas to follow. But if you use PostgreSQL (or just want to experiment

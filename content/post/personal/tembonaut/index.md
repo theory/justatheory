@@ -1,8 +1,8 @@
 ---
-title: Tembonaut
+title: I'm a Postgres Extensions Tembonaut
 slug: tembonaut
-date: 2024-01-21T20:55:04Z
-lastMod: 2024-01-21T20:55:04Z
+date: 2024-01-22T17:00:26Z
+lastMod: 2024-01-22T17:00:26Z
 description: |
   Near year, new job. I accepted a new position at Tembo to work on improving
   the PostgreSQL extension ecosystem full time.
@@ -20,7 +20,7 @@ image:
 New year, new job.
 
 I'm pleased to announce that I started a new job on January 2 at [Tembo], a
-fully-managed [PostgreSQL] developer platform.
+fully-managed [PostgreSQL] developer platform. Tembo [blogged the news], too.
 
 I first heard from Tembo CTO [Samay Sharma] last summer, when he inquired about
 the status of [PGXN], the PostgreSQL Extension Network, which I built in
@@ -86,6 +86,8 @@ Want to help out or just follow along? Join the [#extensions] channel on the
   [Tembo]: https://tembo.io/ "Tembo: Goodbye Database Sprawl, Hello Postgres"
   [PostgreSQL]: https://www.postgresql.org
     "PostgreSQL: The world's most advanced open source database"
+  [blogged the news]: https://tembo.io/blog/welcoming-david-wheeler
+    "PGXN Creator David Wheeler Joins Tembo to Strengthen the Postgres Extension Ecosystem"
   [Samay Sharma]: https://www.linkedin.com/in/samay-sharma-b6465122
     "Samay Sharma - Chief Technology Officer - Tembo | LinkedIn"
   [PGXN]: https://pgxn.org/ "The PostgreSQL Extension Network"

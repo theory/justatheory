@@ -5,34 +5,31 @@ outputs: [html, text]
 ---
 
 Public GPG keys for various email addresses I have or have had. To import one,
-copy its URL and run:
+copy its URL and replace `URL` in:
 
 ```sh
-curl "(pbpaste)" | gpg --import
+curl URL | gpg --import
+```
+
+Or copy the Key ID and get from [keys.openpgp.org](https://keys.openpgp.org)
+by replacing `KEY_ID` in:
+
+```sh
+gpg --keyserver hkps://keys.openpgp.org --recv-keys KEY_ID
 ```
 
 *   [Personal Key]({{% link "theory.gpg" %}})
-    ([opengpg.org](https://keys.openpgp.org/vks/v1/by-fingerprint/77E29F99B3908ACE99C9C18692DF6274F8C881F1))
-
-    *   justatheory.com
-    *   kineticode.com
-    *   cpan.org
-
+    *   Key ID: `92DF6274F8C881F1`
+    *   Email domains: `justatheory.com`, `kineticode.com`, `cpan.org`
 *   [Tembo Key]({{% link "tembo.gpg" %}})
-    ([opengpg.org](https://keys.openpgp.org/vks/v1/by-fingerprint/46A0779A85A34A1C614DB8EC240F89E080939AC2))
-
-    *   tembo.io
-
+    *   Key ID: `240F89E080939AC2`
+    *   Email domains: `tembo.io`
 *   [NYTimes Key]({{% link "nytimes.gpg" %}})
-    ([opengpg.org](https://keys.openpgp.org/vks/v1/by-fingerprint/E8D6D89B76170E5E9A8D76B37ABF773B7A54AB7B))
-
-    *   nytimes.com
-
+    *   Key ID: `7ABF773B7A54AB7B`
+    *   Email domains: `nytimes.com`
 *   [iovation Key]({{% link "iovation.gpg" %}})
-    ([opengpg.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3520844DFAA6CF90F1E9B29AD26D202CCCE1301A))
-
-    *   iovation.com
-
+    *   Key ID: `D26D202CCCE1301A`
+    *   Email domains: `iovation.com`
 *   [PostgreSQL Experts Key]({{% link "pgexperts.gpg" %}})
-
-    *   pgexperts.com
+    *   Key ID: `8027FD303884357F`
+    *   Email domains: `pgexperts.com`

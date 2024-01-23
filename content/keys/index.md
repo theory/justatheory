@@ -4,7 +4,12 @@ type: about
 outputs: [html, text]
 ---
 
-Public GPG keys for various email addresses I have or have had:
+Public GPG keys for various email addresses I have or have had. To import one,
+copy its URL and run:
+
+```sh
+curl "(pbpaste)" | gpg --import
+```
 
 *   [Personal Key](theory.gpg)
     *   justatheory.com

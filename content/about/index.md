@@ -13,7 +13,7 @@ image:
 
 *Just a Theory* is an periodically irregular technology and culture blog by
 David E. Wheeler. If you'd like to get in touch, catch me on [Mastodon] or send
-email to `david` at this domain.
+email to `david` at this domain ([GPG Keys]({{% link "/keys/" %}})).
 
 Colophon
 --------

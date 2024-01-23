@@ -121,6 +121,7 @@ are:
 *   left - Float the figure to the left of text
 *   right - Float the figure to the right of text
 *   center - Center the figure
+*   clear -  Make the background transparent instead of white
 
 #### `title`
 
@@ -144,6 +145,7 @@ Set the `rel` attribute of the link. Only used if `link` is set. Optional.
 Set the `width` attribute of the image. Optional.
 
 #### `height`
+
 Set the `height` attribute of the image. Optional.
 
 #### `heading`

@@ -14,7 +14,7 @@ image:
   copyright: ©️ 2023 Tembo Data Systems, Inc.
   width: 304
   height: 285
-  class: "right"
+  class: right clear
 ---
 
 New year, new job.

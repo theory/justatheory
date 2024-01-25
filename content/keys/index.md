@@ -4,19 +4,24 @@ type: about
 outputs: [html, text]
 ---
 
-Public GPG keys for various email addresses I have or have had. To import one,
-copy its URL and replace `URL` in:
+Public GPG keys for various email addresses. To import one, copy its URL and
+replace `URL` in:
 
 ```sh
 curl URL | gpg --import
 ```
 
-Or copy the Key ID and get from [keys.openpgp.org](https://keys.openpgp.org)
-by replacing `KEY_ID` in:
+Or copy the Key ID and import it from
+[keys.openpgp.org](https://keys.openpgp.org) by replacing `KEY_ID` in:
 
 ```sh
 gpg --keyserver hkps://keys.openpgp.org --recv-keys KEY_ID
 ```
+
+Current Keys
+------------
+
+Keys in current use.
 
 *   [Personal Key]({{% link "theory.gpg" %}})
     *   ID: `92DF6274F8C881F1`
@@ -24,7 +29,13 @@ gpg --keyserver hkps://keys.openpgp.org --recv-keys KEY_ID
 *   [Tembo Key]({{% link "tembo.gpg" %}})
     *   ID: `240F89E080939AC2`
     *   Email: `tembo.io`
-*   [NYTimes Key]({{% link "nytimes.gpg" %}})
+
+Old Keys
+--------
+
+Discarded keys or for addresses I no longer use.
+
+*   [New York Times Key]({{% link "nytimes.gpg" %}})
     *   ID: `7ABF773B7A54AB7B`
     *   Email: `nytimes.com`
 *   [iovation Key]({{% link "iovation.gpg" %}})

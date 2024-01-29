@@ -3,7 +3,9 @@ title: PGXN Challenges
 slug: pgxn-challenges
 date: 2024-01-29T15:57:46Z
 lastMod: 2024-01-29T15:57:46Z
-description: Some thoughts on the challenges for PGXN's role in the ideal PostgreSQL extension ecosystem of the future?
+description: |
+  Some thoughts on the challenges for PGXN's role in the ideal PostgreSQL
+  extension ecosystem of the future.
 tags: [Postgres, PGXN, Extensions]
 type: post
 draft: true
@@ -16,12 +18,16 @@ image:
 
 ---
 
-Last week, I informally shared some thoughts on [Extension Ecosystem: Jobs and
-Tools] with colleagues in the [#extensions] channel on the [Postgres Slack]. The
-document attempts to work though the [jobs to be done] by the ideal Postgres
-extension ecosystem and the tools to do those jobs --- without reference to
-existing efforts. Still, a key question toward the end of the doc is: **What
-will [PGXN]'s role be in this ideal extension ecosystem?**
+Last week, I informally shared [Extension Ecosystem: Jobs and Tools] with
+colleagues in the [#extensions] channel on the [Postgres Slack]. The document
+surveys the [jobs to be done] by the ideal Postgres extension ecosystem and the
+suggests the tools and services required to do those jobs --- without reference
+to existing extension registries and packaging systems.
+
+The last section enumerates some questions we need to ponder and answer. The
+first one on the list is:
+
+> What will [PGXN]'s role be in this ideal extension ecosystem?
 
 The PostgreSQL Extension Network, or [PGXN], is the original extension
 distribution system, created 2010--11. It has been a moderate success, but as we

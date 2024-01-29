@@ -12,73 +12,76 @@ disableKinds = ["section"]
 uglyURLs = true
 
 [author]
-    name = "David E. Wheeler"
-    url = "https://justatheory.com/"
-    email = "david@justatheory.com"
+name = "David E. Wheeler"
+url = "https://justatheory.com/"
+email = "david@justatheory.com"
 
 [params]
-  description = "Periodically irregular technology and culture blogging since 2002. By David E. Wheeler."
-  tagline = "Irregular fine blogging since 2002."
-  author = "David E. Wheeler"
-  subtitle = "Trans rights are human rights"
-  bug = "❖"
-  twitter = ""
-  github = "theory"
-  postTypes = ["post", "photo"]
-  feedLimit = 32
-  recentTagYears = 3
-  icon = "/icon-512x512.png"
-  favicon = "/icon-64x64.png"
-  [params.mastodon]
-    url = "https://xoxo.zone/@theory"
-    user = "@theory@xoxo.zone"
+description = "Periodically irregular technology and culture blogging since 2002. By David E. Wheeler."
+tagline = "Irregular fine blogging since 2002."
+author = "David E. Wheeler"
+subtitle = "Trans rights are human rights"
+bug = "❖"
+twitter = ""
+github = "theory"
+postTypes = ["post", "photo"]
+feedLimit = 32
+recentTagYears = 3
+icon = "/icon-512x512.png"
+favicon = "/icon-64x64.png"
+
+[params.mastodon]
+url = "https://xoxo.zone/@theory"
+user = "@theory@xoxo.zone"
 
 [permalinks]
-  post  = "/:year/:month/:slug/"
-  photo = "/:year/:month/:slug/"
+post  = "/:year/:month/:slug/"
+photo = "/:year/:month/:slug/"
 
-[mediaTypes]
 [mediaTypes."application/atom"]
-  suffixes = ["xml"]
-[mediaTypes."text/plain"]
-  suffixes = ["text"]
+suffixes = ["xml"]
 
-[outputFormats]
+[mediaTypes."text/plain"]
+suffixes = ["text"]
+
 [outputFormats.html]
-  noUgly = true
+noUgly = true
+
 [outputFormats.atom]
-  mediatype = "application/atom"
-  baseName = "feed"
-  noUgly = true
+mediatype = "application/atom"
+baseName = "feed"
+noUgly = true
+
 [outputFormats.json]
-  mediatype = "application/json"
-  baseName = "feed"
-  isPlainText = true
-  noUgly = true
+mediatype = "application/json"
+baseName = "feed"
+isPlainText = true
+noUgly = true
+
 [outputFormats.text]
-  mediatype = "text/plain"
-  baseName = "copy"
-  isPlainText = true
-  noUgly = false
+mediatype = "text/plain"
+baseName = "copy"
+isPlainText = true
+noUgly = false
 
 [outputs]
-  home = ["html", "json", "atom"]
-  section = ["html", "json", "atom"]
-  taxonomy = ["html", "json", "atom"]
-  term = ["html", "json", "atom"]
-  page = ["html", "text"]
+home = ["html", "json", "atom"]
+section = ["html", "json", "atom"]
+taxonomy = ["html", "json", "atom"]
+term = ["html", "json", "atom"]
+page = ["html", "text"]
 
 [taxonomies]
-    tag = "tags"
+tag = "tags"
 
-[markup]
-  [markup.highlight]
-    style = "monokai"
-    codeFences = true
-    noClasses = false
-  [markup.goldmark]
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = "blackfriday"
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.highlight]
+style = "monokai"
+codeFences = true
+noClasses = false
+
+[markup.goldmark.parser]
+autoHeadingID = true
+autoHeadingIDType = "blackfriday"
+
+[markup.goldmark.renderer]
+unsafe = true

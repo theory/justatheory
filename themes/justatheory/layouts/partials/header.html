@@ -49,7 +49,7 @@
 				<li><a href="/archive/" title="{{ .Site.Title }} Archives">Archives</a></li>
 				<li><a href="/tags/" title="{{ .Site.Title }} Tags">Tags</a></li>
 				{{- if .Site.Params.mastodon }}
-				<li class="icon"><a rel="me noopener" href="{{ .Site.Params.mastodon }}" title="{{ replaceRE "^https://([^/]+)/@(.+)" "@$2@$1" .Site.Params.mastodon }} on Mastodon"><i class="fa fa-mastodon"></i></a></li>
+				<li class="icon"><a rel="me noopener" href="{{ .Site.Params.mastodon.url }}" title="{{ .Site.Params.mastodon.user }} on Mastodon"><i class="fa fa-mastodon"></i></a></li>
 				{{- end }}
 				{{- if .Site.Params.github }}
 				<li class="icon"><a rel="me noopener" href="//github.com/{{ .Site.Params.github }}" title="@{{ .Site.Params.github }} on GitHub"><i class="fa fa-github"></i></a></li>

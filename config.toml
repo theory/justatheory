@@ -23,13 +23,15 @@ uglyURLs = true
   subtitle = "Trans rights are human rights"
   bug = "❖"
   twitter = ""
-  mastodon = "https://xoxo.zone/@theory"
   github = "theory"
   postTypes = ["post", "photo"]
   feedLimit = 32
   recentTagYears = 3
   icon = "/icon-512x512.png"
   favicon = "/icon-64x64.png"
+  [params.mastodon]
+    url = "https://xoxo.zone/@theory"
+    user = "@theory@xoxo.zone"
 
 [permalinks]
   post  = "/:year/:month/:slug/"

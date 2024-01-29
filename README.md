@@ -34,7 +34,7 @@ the following heuristics to determine how to render the link:
 
 Examples:
 
-```
+``` go
 {{% link "/downloads/TestBuilder-0.01.tar.gz" %}}
 {{% link "learning_plpgsql.pdf" %}}
 ```
@@ -51,12 +51,22 @@ An optional second argument specifies an alternate output format.
 
 Examples:
 
-```
+``` go
 {{% ref "/post/books/project-hail-mary" %}}
 {{% ref "/post/books/project-hail-mary" "text" %}}
 {{% ref "/post/past/js/test-simple-0.03.md" %}}
 {{% ref "/photo/nyc/harlem-steps" %}}
 {{% ref "/" "json" %}}
+```
+
+## Param
+
+The [Param shortcode] comes with Hugo and emits data from site parameters ---
+basically the stuff under `[params]` in [`config.toml`](config.toml). Examples:
+
+``` md
+[my GitHub]: https://github.com/{{% param "github" %}}
+[on Mastodon]: {{% param "mastodon.url" %}} "{{% param "mastodon.user" %}}"
 ```
 
 ### Syntax Highlighting
@@ -186,6 +196,7 @@ on social media.
   [Link shortcode]: themes/justatheory/layouts/partials/link.html
   [Ref shortcode]: https://gohugo.io/content-management/cross-references/
   [Figure shortcode]: themes/justatheory/layouts/partials/figure.html
+  [Param shortcode]: https://gohugo.io/content-management/shortcodes/#param
   [Syntax Highlighting]: https://gohugo.io/content-management/syntax-highlighting/
   [named language]: https://gohugo.io/content-management/syntax-highlighting/#list-of-chroma-highlighting-languages
   [options]: https://gohugo.io/content-management/syntax-highlighting/#highlight-shortcode

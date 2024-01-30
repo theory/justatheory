@@ -2,7 +2,7 @@
 title: "Evolutionary Theory"
 date: 2018-05-14T18:06:29Z
 description: The relaunch of Just a Theory.
-tags: [Just a Theory, Blogging]
+tags: [Just a Theory, Blogging, Hugo]
 type: post
 ---
 

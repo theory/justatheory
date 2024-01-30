@@ -3,7 +3,9 @@ title: Times Up
 slug: times-up
 date: 2023-12-30T22:36:17Z
 lastMod: 2023-12-30T22:36:17Z
-description: December 22 was my last day at *The New York Times*. I will miss many colleagues and the Guild, but it's time.
+description: |
+  December 22 was my last day at *The New York Times*. I will miss many
+  colleagues and the Guild, but it's time.
 tags: [Personal, Work, New York Times]
 type: post
 ---

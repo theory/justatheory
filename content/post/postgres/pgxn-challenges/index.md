@@ -1,14 +1,13 @@
 ---
 title: PGXN Challenges
 slug: pgxn-challenges
-date: 2024-01-29T15:57:46Z
-lastMod: 2024-01-29T15:57:46Z
+date: 2024-01-30T00:11:11Z
+lastMod: 2024-01-30T00:11:11Z
 description: |
   Some thoughts on the challenges for PGXN's role in the ideal PostgreSQL
   extension ecosystem of the future.
 tags: [Postgres, PGXN, Extensions]
 type: post
-draft: true
 image:
   src: pgxn-gear.png
   alt: PGXN Gear

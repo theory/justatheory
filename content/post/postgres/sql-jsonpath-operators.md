@@ -3,7 +3,9 @@ title: JSON Path Operator Confusion
 slug: sql-jsonpath-operators
 date: 2023-10-14T22:39:55Z
 lastMod: 2023-10-14T22:39:55Z
-description: The relationship between the Postgres SQL/JSON Path operators `@@` and `@?` confused me. Here's how I figured out the difference.
+description: |
+  The relationship between the Postgres SQL/JSON Path operators `@@` and `@?`
+  confused me. Here's how I figured out the difference.
 tags: [Postgres, JSON Path, SQL/JSON Path, Operators, JSON, JSONB]
 type: post
 ---

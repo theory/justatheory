@@ -1,6 +1,7 @@
 ---
-title: Pgxn Tools V4
-slug: pgxn-tools-v4
+title: PGXN Tools v1.4
+slug: pgxn-tools-v1.4
+aliases: [/2024/01/pgxn-tools-v4/index.html]
 date: 2024-01-31T17:13:40Z
 lastMod: 2024-01-31T17:13:40Z
 description: The pgxn-tools Docker image has seen some recent bug fixes and improvements.

@@ -1,5 +1,5 @@
 ---
-title: Pgxn Architecture
+title: "Presentation: Introduction to the PGXN Architecture"
 slug: pgxn-architecture
 date: 2024-02-02T16:01:03Z
 lastMod: 2024-02-02T16:01:03Z

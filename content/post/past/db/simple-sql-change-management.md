@@ -54,15 +54,17 @@ So here’s my proposal. Following Robert, we create a configuration file, but
 instead of just listing changes, we fill it with tags and the names of the
 changes are associated with each. An example:
 
-    [alpha]
-    users_table
+``` ini
+[alpha]
+users_table
 
-    [beta]
-    add_widget
-    widgets_table
+[beta]
+add_widget
+widgets_table
 
-    [gamma]
-    add_user
+[gamma]
+add_user
+```
 
 Our change management app will parse this file, finding the tag for each stage
 of the migration in brackets, and apply the associated changes, simply finding
@@ -81,26 +83,30 @@ dependencies, I think it’s better to overcome this problem in the scripts
 themselves. So I suggest that the `sql/deploy/add_widget.sql` file look
 something like this:
 
-    -- requires: widgets_table
+``` sql
+-- requires: widgets_table
 
-    CREATE OR REPLACE FUNCTION add_widget(
-        username   TEXT,
-        widgetname TEXT
-    ) RETURNS VOID LANGUAGE SQL AS $$
-        INSERT INTO widgets (created_by, name) VALUES ($1, $2);
-    $$;
+CREATE OR REPLACE FUNCTION add_widget(
+    username   TEXT,
+    widgetname TEXT
+) RETURNS VOID LANGUAGE SQL AS $$
+    INSERT INTO widgets (created_by, name) VALUES ($1, $2);
+$$;
+```
 
 Here I’m stealing Depesz’s dependency tracking idea. With a simple comment at
 the top of the script, we specify that this change requires that the
 `widgets_table` change be run first. So let’s look at
 `sql/deploy/widgets_table.sql`:
 
-    -- requires: users_table
+``` sql
+-- requires: users_table
 
-    CREATE TABLE widgets (
-        created_by TEXT NOT NULL REFERENCES users(name),
-        name       TEXT NOT NULL
-    );
+CREATE TABLE widgets (
+    created_by TEXT NOT NULL REFERENCES users(name),
+    name       TEXT NOT NULL
+);
+```
 
 Ah, now here we also require that the `users_table` change be deployed first. Of
 course, it likely would be, given that it appears under a tag earlier in the
@@ -110,29 +116,33 @@ might merge the two tags at some point before release, right?
 The `users_table` change has no dependencies, but the later `add_user` change of
 course does; our `sql/deploy/add_user.sql`:
 
-    -- requires: users_table
+``` sql
+-- requires: users_table
 
-    CREATE OR REPLACE FUNCTION add_user(
-        name TEXT
-    ) RETURNS VOID LANGUAGE SQL AS $$
-        INSERT INTO users (name) VALUES ($1);
-    $$;
+CREATE OR REPLACE FUNCTION add_user(
+    name TEXT
+) RETURNS VOID LANGUAGE SQL AS $$
+    INSERT INTO users (name) VALUES ($1);
+$$;
+```
 
 Our deployment app can properly resolve these dependencies. Of course, we also
 need reversion scripts in the `sql/revert` directory. They might look something
 like:
 
-    -- sql/revert/users_table.sql
-    DROP TABLE IF EXISTS users;
+``` sql
+-- sql/revert/users_table.sql
+DROP TABLE IF EXISTS users;
 
-    -- sql/revert/add_widget.sql
-    DROP FUNCTION IF EXISTS add_widget(text, text);
+-- sql/revert/add_widget.sql
+DROP FUNCTION IF EXISTS add_widget(text, text);
 
-    -- sql/revert/widgets_table.sql
-    DROP TABLE IF EXISTS widgets;
+-- sql/revert/widgets_table.sql
+DROP TABLE IF EXISTS widgets;
 
-    -- sql/revert/add_user.sql
-    DROP FUNCTION IF EXISTS add_user(text);
+-- sql/revert/add_user.sql
+DROP FUNCTION IF EXISTS add_user(text);
+```
 
 So far so good, right? Our app can resolve dependencies in both directions, so
 that if we tell it to revert to `beta`, it can do so in the proper order.
@@ -145,39 +155,49 @@ script in another. For example, say that we later need to revise the
 `add_widget()` function to log the time a widget is created. First we add a new
 script to add the necessary column:
 
-    -- requires: widgets_table
-    ALTER TABLE widgets ADD created_at TIMESTAMPTZ;
+``` sql
+-- requires: widgets_table
+ALTER TABLE widgets ADD created_at TIMESTAMPTZ;
+```
 
 Call that script `sql/deploy/widgets_created_at.sql`. Next we add a script that
 changes `add_widgets()`:
 
-    -- requires widgets_created_at
-    CREATE OR REPLACE FUNCTION add_widget(
-        username   TEXT,
-        widgetname TEXT
-    ) RETURNS VOID LANGUAGE SQL AS $$
-        INSERT INTO widgets (created_by, name, created_at)
-        VALUES ($1, $2, NOW());
-    $$;
+``` sql
+-- requires widgets_created_at
+CREATE OR REPLACE FUNCTION add_widget(
+    username   TEXT,
+    widgetname TEXT
+) RETURNS VOID LANGUAGE SQL AS $$
+    INSERT INTO widgets (created_by, name, created_at)
+    VALUES ($1, $2, NOW());
+$$;
+```
 
 Call it `sql/deploy/add_widget_v2.sql`. Then update the deployment configuration
 file with a new tag and the associated changes:
 
-    [delta]
-    widgets_created_at
-    add_widget_v2
+``` ini
+[delta]
+widgets_created_at
+add_widget_v2
+```
 
 With me so far? Now, what about reversion? `sql/revert/widgets_created_at.sql`
 is simple, of course:
 
-    ALTER TABLE widgets DROP COLUMN IF EXISTS created_at;
+``` sql
+ALTER TABLE widgets DROP COLUMN IF EXISTS created_at;
+```
 
 But what should `sql/revert/add_widget_v2.sql` look like? Why, to go back to the
 first version of `add_widget()`, it would be identical to
 `sql/deploy/add_widget.sql`. But it would be silly to copy the whole file,
 wouldn’t it? Why duplicate when we can just include?
 
-    \i sql/deploy/add_widget.sql
+``` psql
+\i sql/deploy/add_widget.sql
+```
 
 *Boom,* we get the reversion script for free. No unnecessary duplication between
 deployment and reversion scripts, and all dependencies are nicely resolved.
@@ -205,7 +225,7 @@ Still, there are two more challenges I would like to overcome:
 
 I think I have solutions for these issues, as well. More in my next post.
 
-  [written about this before]: {{% ref "/tags/change-management/" %}}
+  [written about this before]: {{% ref "/tags/change-management/index.md" %}}
   [Module::Build::DB]: https://metacpan.org/module/Module::Build::DB
   [at work]: https://iovation.com/
   [Depesz’s Versioning]: https://www.depesz.com/index.php/2010/08/22/versioning/

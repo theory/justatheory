@@ -1,12 +1,12 @@
 ---
-title: Extension Metadata Typology
+title: "RFC: Extension Metadata Typology"
 slug: extension-metadata-Typology
-date: 2024-02-14T20:17:16Z
-lastMod: 2024-02-14T20:17:16Z
+date: 2024-02-20T22:26:51Z
+lastMod: 2024-02-20T22:26:51Z
 description: |
   Thinking through the PostgreSQL extension metadata use cases and
   recognizing the types of information they need.
-tags: [Postgres, Extensions, Metadata, Classification, Categories]
+tags: [Postgres, Extensions, Metadata, Classification, Categories, RFC]
 type: post
 ---
 
@@ -43,19 +43,20 @@ Extension Metadata Typology
 
 Essential information about the extension itself, including its name (or unique
 package name), version, list of authors, license, etc. Pretty much every
-metadata format encompasses this data. Systems use it for indexing, installation
-locations, naming conventions, and display information.
+metadata format encompasses this data. Ecosystem applications use it for
+indexing, installation locations, naming conventions, and display information.
 
 ### Artifacts
 
 A list of links and checksums for downloading the extension in one or more
-formats, including source code, binaries, system packages, and more. Systems use
-this information to decide how to download and install it.
+formats, including source code, binaries, system packages, and more. Apps use
+this information to determine the best option for installing an extension on a
+particular system.
 
 ### Resources
 
 External information about the extension, mostly links, including source code
-repository, bug reporting, documentation, badges, funding, etc. Systems use this
+repository, bug reporting, documentation, badges, funding, etc. Apps use this
 data for links, of course, but also full text indexing, documentation rendering,
 and displaying useful information about the extension.
 
@@ -65,27 +66,27 @@ A description of what's included in the extension package. Often an "extension"
 consists of *multiple* extensions, such as [PostGIS], which includes `postgis`,
 `postgis_tiger_geocoder`, `address_standardizer`, and more. Furthermore, some
 extensions are not `CREATE EXTENSION`-type extension at all, such as [background
-workers], command-line apps, libraries, and more. Each should be listed along
-with documentation links where they differ from the package overall (or are
-simply more specific).
+workers], command-line apps, libraries, etc. Each should be listed along with
+documentation links where they differ from the package overall (or are simply
+more specific).
 
-### Dependencies
+### Prerequisites
 
 A list of external dependencies required to configure, build, test, install, and
 run the extension. These include not only other extensions, but also external
-libraries and often OS-specific lists of binary package dependencies. And let's
-not forget the versions of Postgres required, as well as any OS and version
+libraries and OS-specific lists of binary package dependencies. And let's not
+forget the versions of Postgres required, as well as any OS and version
 dependencies (e.g, does it work on Windows? FreeBSD? What versions?) and
 architectures ([arm64], [amd64], etc.)
 
 ### How to Build It
 
-Metadata systems use to determine how to build the extension. Does it use the
+Metadata that apps use to determine how to build the extension. Does it use the
 PostgreSQL [PGXS] build pipeline? Or perhaps it needs the [cargo]-based [pgrx]
-toolchain. Maybe a traditional `./configure && make` pattern? erl, Ruby, Python,
-Go, Rust, or NPM tooling? Whatever the pattern, this metadata needs to be
-sufficient for a system to programmatically determine now to build and
-extension.
+toolchain. Maybe a traditional `./configure && make` pattern? Perl, Ruby,
+Python, Go, Rust, or NPM tooling? Whatever the pattern, this metadata needs to
+be sufficient for an ecosystem app to programmatically determine now to build
+and extension.
 
 ### How to Install It
 
@@ -95,9 +96,9 @@ use other patterns --- or multiple patterns! For example, perhaps an extension
 can be built and installed with [PGXS], but it might *also* be [TLE]-safe, and
 therefore provide details for handing the SQL files off to a [TLE installer].
 
-These typology might include additional data, as well, such as documentation
-files to install ([man pages] anyone?), or directories of dependent files or
-libraries, and the like --- whatever needs to be installed for the extension.
+This typology might include additional data, such as documentation files to
+install ([man pages] anyone?), or directories of dependent files or libraries,
+and the like --- whatever needs to be installed for the extension.
 
 ### How to Run It
 
@@ -111,14 +112,17 @@ parameters][.control] like `trusted`, `superuser`, and `schema`, but also load
 configuration information, like whether an extension needs its libraries
 included in [`shared_preload_libraries`] to enable [`LOAD`] or requires a
 cluster restart. (Arguably this information should be in the "install" typology
-rathe than "run".)
+rather than "run".)
 
 ### Classification
 
-This typology allows the extension developer to associate additional metadata
-for the extension to improve discovery, such as key words. But it might also
-benefit from selections from a curated list of extension classifications, such
-as the [category slugs] supported for the [cargo categories field].
+Classification metadata lets the extension developer associate additional
+information to improve discovery, such as key words. It might also allow
+selections from a curated list of extension classifications, such as the
+[category slugs] supported for the [cargo categories field]. Ecosystem apps use
+this data to organize extensions under key words or categories, making it easier
+for users to find extensions often used together or for various workloads or
+tasks.
 
 ### Metrics and Reports
 
@@ -126,7 +130,12 @@ This final typology differs from the others in that its metadata derives from
 third party sources rather than the extension developer. It includes data such
 as number of downloads, build and test status on various Postgres/OS/version
 combinations, binary packaging distributions, test coverage, security scan
-results, vulnerability detection, and more.
+results, vulnerability detection, quality metrics and user ratings, and more.
+
+In the broader ecosystem, it would be the responsibility of the root registry to
+ensure such data in the canonical data for each extension comes only from
+trusted sources, although applications downstream of the root registry might
+extend metrics and reports metadata with their own information.
 
 ## What More?
 
@@ -134,8 +143,8 @@ Reading through various metadata standards, I suspect this typology is fairly
 comprehensive, but I'm usually mistaken about such things. What other types of
 metadata do you find essential for the use cases you're familiar with? Do they
 fit one of the types here, or do they require some other typology I've failed to
-imagine? Hit the [#extensions] channel on the [Postgres Slack] to let us know,
-or give me a holler [on Mastodon].
+imagine? Hit the [#extensions] channel on the [Postgres Slack] to contribute to
+the discussion, or give me a holler [on Mastodon].
 
 Meanwhile, I'll be refining this typology and assigning all the metadata fields
 to them in the coming weeks, with an eye to proposing a community-wide metadata

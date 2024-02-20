@@ -5,7 +5,7 @@ This repository contains the source code for [Just a Theory], a periodically
 irregular technology and culture blog by David E. Wheeler.
 
 *Just a Theory* is written in [Markdown], built and published with [Hugo], and
-hosted on [AWS]. Its set in [Source Sans Pro], with fixed-width type set in
+hosted on [AWS]. It's set in [Source Sans Pro], with fixed-width type set in
 [Source Code Pro]. The icons are by [Font Awesome].
 
 The site eschews JavaScript, and uses no tracking or analytics services.

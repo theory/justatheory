@@ -1,8 +1,9 @@
 ---
-title: Extension Metadata Jobs to be Done
-slug: extension-metadata-jobs
+title: Extension Ecosystem Jobs to be Done
+slug: extension-ecosystem-jobs
+aliases: [/2024/02/extension-metadata-jobs/]
 date: 2024-02-21T17:03:42Z
-lastMod: 2024-02-21T17:03:42Z
+lastMod: 2024-02-23T20:41:10Z
 description: |
   The challenges of the current Postgres extension ecosystem and the
   interest and energy put into exploring new solutions make clear that the

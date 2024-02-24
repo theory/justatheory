@@ -1,6 +1,6 @@
 ---
 title: "RFC: Extension Metadata Typology"
-slug: extension-metadata-Typology
+slug: extension-metadata-typology
 date: 2024-02-20T22:26:51Z
 lastMod: 2024-02-20T22:26:51Z
 description: |
@@ -85,8 +85,8 @@ Metadata that apps use to determine how to build the extension. Does it use the
 PostgreSQL [PGXS] build pipeline? Or perhaps it needs the [cargo]-based [pgrx]
 toolchain. Maybe a traditional `./configure && make` pattern? Perl, Ruby,
 Python, Go, Rust, or NPM tooling? Whatever the pattern, this metadata needs to
-be sufficient for an ecosystem app to programmatically determine now to build
-and extension.
+be sufficient for an ecosystem app to programmatically determine how to build
+an extension.
 
 ### How to Install It
 

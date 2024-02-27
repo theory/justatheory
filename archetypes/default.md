@@ -20,7 +20,7 @@ link: ~
 # image:
 #   src: image.png
 #   link: https://example.com
-#   class: left # frame, left, right, center
+#   class: left # frame, left, right, center, clear, dark
 #   title: tooltip *text*
 #   alt: alt text for *image*
 #   target: target

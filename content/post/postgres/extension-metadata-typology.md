@@ -1,8 +1,8 @@
 ---
 title: "RFC: Extension Metadata Typology"
 slug: extension-metadata-typology
-date: 2024-02-20T22:26:51Z
-lastMod: 2024-02-20T22:26:51Z
+date: 2024-02-27T17:19:24Z
+lastMod: 2024-02-27T17:19:24Z
 description: |
   Thinking through the PostgreSQL extension metadata use cases and
   recognizing the types of information they need.

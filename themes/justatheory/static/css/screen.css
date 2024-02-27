@@ -750,8 +750,12 @@ figure img {
     margin: 0 auto 1rem auto;
 }
 
-figure.clear, figure.clear > img {
+figure.clear, figure.clear img {
     background-color: transparent;
+}
+
+figure.dark, figure.dark img {
+    background-color: #2d2d2d;
 }
 
 figure > a:last-of-type img, figure > img:last-of-type {

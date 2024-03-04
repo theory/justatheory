@@ -26,9 +26,9 @@ the following heuristics to determine how to render the link:
 
 *   If the link starts with `/`, it is assumed to be an absolute link on the
     site. It will be rendered with the site base URL prefixed to it.
-*   If the link contains `://`, it's assumed to be a full URL and is simply
-    output as such. This option isn't generally used directly, but implicitly by
-    the figure shortcode below.
+*   If the link contains `://` or starts with `//`, it's assumed to be a full
+    URL and is simply output as such. This option isn't generally used directly,
+    but implicitly by the figure shortcode below.
 *   Otherwise the link is assumed to be a file name in the same directory as the
     current page. It will be prefixed with the full URL of the current page.
 
@@ -38,6 +38,29 @@ Examples:
 {{% link "/downloads/TestBuilder-0.01.tar.gz" %}}
 {{% link "learning_plpgsql.pdf" %}}
 ```
+
+Note that links to assets in other page bundles are not supported for [various
+reasons]. In other words, this will not work and cannot (easily) be made to
+work:
+
+``` go
+{{% link "/post/postgres/extension-ecosystem-summit/summit.jpeg" %}}
+```
+
+Instead move such shared images to the [`static` directory](./static/) with
+and use an absolute path, or just use the absolute path to the other post:
+
+``` go
+{{% link "/2024/02/extension-ecosystem-summit/summit.jpeg" %}}
+```
+
+Or use a `ref` to the original package (in which case `link` isn't needed at all):
+
+``` go
+{{% ref "/post/postgres/extension-ecosystem-summit" %}}summit.jpeg
+```
+
+Although this option is not available in front matter.
 
 ### Ref
 
@@ -115,12 +138,12 @@ parameters are:
 #### `src`
 
 The image source URL. May be a local URL, which will be resolved by the
-`link.html` partial. Required.
+[Link](#link) shortcode. Required.
 
 #### `link`
 
 A URL to link the image to. May be a local URL, which will be resolved by the
-`link.html` partial. Optional.
+[Link](#link) shortcode. Optional.
 
 #### `class`
 
@@ -195,6 +218,7 @@ on social media.
   [Font Awesome]: https://fontawesome.com
   [Link shortcode]: themes/justatheory/layouts/partials/link.html
   [Ref shortcode]: https://gohugo.io/content-management/cross-references/
+  [various reasons]: https://discourse.gohugo.io/t/48656/9
   [Figure shortcode]: themes/justatheory/layouts/partials/figure.html
   [Param shortcode]: https://gohugo.io/content-management/shortcodes/#param
   [Syntax Highlighting]: https://gohugo.io/content-management/syntax-highlighting/

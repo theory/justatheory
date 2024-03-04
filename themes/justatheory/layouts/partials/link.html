@@ -1,5 +1,5 @@
 {{- if hasPrefix .src "/" }}
-    {{/*  Cannot use absURL because it doesn't work as expected if baseURL has a subdir. */}}
+    {{- /*  Cannot use absURL because it doesn't work as expected if baseURL has a subdir. */ -}}
     {{- printf "%v%v" (replaceRE "/$" "" .Site.BaseURL) .src -}}
 {{- else if (findRE "(^|:)//" .src ) }}
     {{- .src -}}

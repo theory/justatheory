@@ -9,7 +9,7 @@ description: |
 tags: [Postgres, PGXN, Extensions, PGConf, Summit]
 type: post
 image:
-  src: /2024/02/extension-ecosystem-summit/summit.jpeg
+  src: /shared/extension-ecosystem-summit/summit.jpeg
   link: https://www.eventbrite.com/e/851125899477/
   title: Postgres Extension Ecosystem Mini-Summit
   alt: Photo of the summit of Mount Hood
@@ -38,8 +38,8 @@ via the [#extensions] channel on the [Postgres Slack].
 **Update:** 2024-03-06: Great turnout and discussion, thank you! Links:
 
 *   [Video](https://www.youtube.com/watch?v=6o1N1-Eq-Do)
-*   [Keynote]({{% link "state-of-the-ecosystem.key" %}})
-*   [PDF Slides]({{% link "state-of-the-extension-ecosystem.pdf" %}})
+*   [Keynote]({{% link "/shared/extension-ecosystem-summit/state-of-the-ecosystem.key" %}})
+*   [PDF Slides]({{% link "/shared/extension-ecosystem-summit/state-of-the-extension-ecosystem.pdf" %}})
 
   [mini-summit]: https://www.eventbrite.com/e/851125899477/
     "Postgres Extension Ecosystem Mini-Summit"

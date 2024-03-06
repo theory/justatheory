@@ -11,7 +11,7 @@ description: |
 tags: [Postgres, PGXN, Extensions, PGConf, Vancouver, Summit]
 type: post
 image:
-  src: pgconf.dev.png
+  src: /shared/extension-ecosystem-summit/pgconf.dev.png
   link: https://pgconf.dev
   title: PGConf.dev
   alt: Logo for PGConf.dev
@@ -36,7 +36,7 @@ you there!
 ---
 
 {{% figure
-    src       = "summit.jpeg"
+    src       = "/shared/extension-ecosystem-summit/summit.jpeg"
     alt       = "Photo of the summit of Mount Hood"
     link      = "https://www.eventbrite.com/e/851125899477"
     copyright = "2011 David E. Wheeler"

@@ -2,7 +2,7 @@
 title: Extension Ecosystem Summit 2024
 slug: extension-ecosystem-summit
 date: 2024-02-27T17:46:58Z
-lastMod: 2024-02-27T17:46:58Z
+lastMod: 2024-03-06T21:50:27Z
 description: |
   Some pals and I organized a summit at PGConf.dev on May 28 to work together
   as a community toward comprehensive indexing, discovery, and binary
@@ -54,20 +54,21 @@ outline the problems they want to solve, their attempts to so, challenges
 discovered along the way, and dreams for an ideal extension ecosystem in the
 future. Tentative speaker lineup:
 
-*   March 6: [David Wheeler], PGXN: “History and Context of Extension Distribution”
-*   March 20: [Ian Stanton], Tembo: “Trunk”
-*   April 3: [Devrim Gündüz]: “Overview of the yum.postgresql.org architecture,
-    how new RPMs are added, and issues and challenges with distributing RPMed
+*   March 6: [David Wheeler], PGXN: State of the Extension Ecosystem”
+*   March 20: [Ian Stanton], Tembo: “Building Trunk: A Postgres Extension Registry and CLI”
+*   April 3: [Devrim Gündüz]: yum.postgresql.org and the challenges RPMifying
     extensions”
-*   April 17: TBD
+*   April 17: [Jonathan Katz]: "TLE Vision and Specifics"
 *   May 1: [Yurii Rashkovskii], Omnigres: “Universally buildable extensions: dev
     to prod”
-*   May 15: [David Wheeler], PGXN: “Metadata for All: Enabling discovery,
+*   May 15: (Placeholder) [David Wheeler], PGXN: “Metadata for All: Enabling discovery,
     packaging, and community”
 
 Hit the [event page][mini-event] for details. Many thanks to my co-organizers 
 [Jeremy Schneider], [David Christensen], [Keith Fiske], and [Devrim Gündüz], 
 as well as the [PGConf.dev organizers] for making this all happen!
+
+**Update:** 2024-03-06: Updated the talk schedule.
 
   [Extension Ecosystem Summit]: https://www.pgevents.ca/events/pgconfdev2024/schedule/session/191-extension-ecosystem-summit/
     "PGConf.dev: Extensions Ecosystem Summit: Enabling comprehensive indexing, discovery, and binary distribution"
@@ -79,6 +80,7 @@ as well as the [PGConf.dev organizers] for making this all happen!
   [David Wheeler]: {{% ref "/" %}}
   [Ian Stanton]: https://www.linkedin.com/in/istanton
   [Devrim Gündüz]: https://github.com/devrimgunduz
+  [Jonathan Katz]: https://jkatz05.com
   [Yurii Rashkovskii]: https://ca.linkedin.com/in/yrashk
   [Jeremy Schneider]: https://about.me/jeremy_schneider
   [David Christensen]: https://www.crunchydata.com/blog/author/david-christensen

@@ -54,15 +54,15 @@ outline the problems they want to solve, their attempts to so, challenges
 discovered along the way, and dreams for an ideal extension ecosystem in the
 future. Tentative speaker lineup:
 
-*   March 6: [David Wheeler], PGXN: State of the Extension Ecosystem”
-*   March 20: [Ian Stanton], Tembo: “Building Trunk: A Postgres Extension Registry and CLI”
-*   April 3: [Devrim Gündüz]: yum.postgresql.org and the challenges RPMifying
-    extensions”
+*   March 6: [David Wheeler], PGXN: "State of the Extension Ecosystem”
+*   March 20: [Ian Stanton], Tembo: "Building Trunk: A Postgres Extension Registry and CLI"
+*   April 3: [Devrim Gündüz]: "yum.postgresql.org and the challenges RPMifying
+    extensions"
 *   April 17: [Jonathan Katz]: "TLE Vision and Specifics"
-*   May 1: [Yurii Rashkovskii], Omnigres: “Universally buildable extensions: dev
-    to prod”
-*   May 15: (Placeholder) [David Wheeler], PGXN: “Metadata for All: Enabling discovery,
-    packaging, and community”
+*   May 1: [Yurii Rashkovskii], Omnigres: "Universally buildable extensions: dev
+    to prod"
+*   May 15: (Placeholder) [David Wheeler], PGXN: "Metadata for All: Enabling discovery,
+    packaging, and community"
 
 Hit the [event page][mini-event] for details. Many thanks to my co-organizers 
 [Jeremy Schneider], [David Christensen], [Keith Fiske], and [Devrim Gündüz], 

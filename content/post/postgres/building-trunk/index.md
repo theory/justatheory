@@ -1,5 +1,5 @@
 ---
-title: Building Trunk
+title: "Talk: Building Trunk"
 slug: building-trunk
 date: 2024-03-18T18:06:27Z
 lastMod: 2024-03-18T18:06:27Z

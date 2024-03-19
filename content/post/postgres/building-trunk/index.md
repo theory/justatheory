@@ -13,14 +13,14 @@ image:
   src: trunk.png
   link: https://pgt.dev
   title: trunk logo
-  alt: A line drawing of an old-style trunk with three diamond shaped stars above its closed lid.
+  alt: Line drawing of a steamer trunk with three diamond stars above it.
   metaOnly: true
 ---
 
 {{% figure
     src  = "trunk.png"
     class = "right frame"
-    alt  = "A line drawing of an old-style trunk with three diamond shaped stars above its closed lid."
+    alt  = "Line drawing of a steamer trunk with three diamond stars above it."
     link = "https://pgt.dev"
 %}}
 

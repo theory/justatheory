@@ -58,14 +58,14 @@ in the distribution named `pg_pair`:
 
 ``` json
 {
-    "name": "pg_pair",
-    "version": "1.2.3",
-    "provides": {
-        "pair": {
-            "file": "pair.sql",
-            "version": "1.2.0"
-        }
+  "name": "pg_pair",
+  "version": "1.2.3",
+  "provides": {
+    "pair": {
+      "file": "pair.sql",
+      "version": "1.2.0"
     }
+  }
 }
 ```
 
@@ -77,14 +77,14 @@ metadata:
 
 ``` json
 {
-    "name": "my_pair",
-    "version": "0.2.3",
-    "provides": {
-        "pair": {
-            "file": "pair.sql",
-            "version": "0.2.3"
-        }
+  "name": "my_pair",
+  "version": "0.2.3",
+  "provides": {
+    "pair": {
+      "file": "pair.sql",
+      "version": "0.2.3"
     }
+  }
 }
 ```
 
@@ -95,15 +95,15 @@ providing a `module_path`:
 
 ``` json
 {
-    "name": "my_pair",
-    "module_path": "github/example/pair",
-    "version": "0.2.3",
-    "provides": {
-        "pair": {
-            "file": "pair.sql",
-            "version": "0.2.3"
-        }
+  "name": "my_pair",
+  "module_path": "github/example/pair",
+  "version": "0.2.3",
+  "provides": {
+    "pair": {
+      "file": "pair.sql",
+      "version": "0.2.3"
     }
+  }
 }
 ```
 

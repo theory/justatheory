@@ -5,7 +5,7 @@ date: 2024-03-19T21:55:46Z
 lastMod: 2024-03-19T21:55:46Z
 description: |
   A proposal for an additional level of name uniqueness for Postgres
-  extensions, based on URIs.
+  extension packaging and distribution, based on URIs.
 tags: [Postgres, PGXN, PGXN v2, Extensions, Go, Namespacing, Registry]
 type: post
 ---

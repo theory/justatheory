@@ -45,7 +45,7 @@
 		<category scheme="{{ absURL $term }}" term="{{ . | urlize }}" label="{{ . }}"/>
 		{{- end }}{{ end }}{{ with (or .Description .Summary )}}
 		<summary type="html">{{ markdownify . | partial "cdata.xml" }}</summary>{{ end }}
-		<content type="html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve">{{ partial "entry.xml" . | replaceRE "\\s*role=\"doc-[^\"]+\"" "" | safeHTML }}</content>
+		<content type="html" xml:base="{{ .Site.BaseURL }}" xml:space="preserve">{{ partial "entry.xml" . | replaceRE `\s*role="doc-[^"]+"` "" | safeHTML }}</content>
 {{- end }}
 	</entry>
 	{{- end }}

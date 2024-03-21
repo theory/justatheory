@@ -8,7 +8,7 @@ description: |
   extension packaging, distribution, and delivery, building on the
   [PGXN Meta Spec](https://pgxn.org/spec/) to address its shortcomings and
   emerging use cases 12 years on.
-tags: [Postgres, PGXN, PGXN v2, Extensions, Packaging, Metadata]
+tags: [Postgres, PGXN, Extensions, Packaging, Metadata]
 type: post
 ---
 

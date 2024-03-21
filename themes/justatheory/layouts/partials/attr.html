@@ -1,1 +1,1 @@
-{{- replace ( htmlUnescape ( plainify ( markdownify . ))) "\"" "&quot;" -}}
+{{- replace ( htmlUnescape ( plainify ( markdownify ( replaceRE `\n\s*` ` ` . )))) "\"" "&quot;" -}}

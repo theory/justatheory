@@ -850,7 +850,7 @@ Example:
         "downloads": 20
       },
       "ratings.example.com": {
-        "stags": {
+        "stats": {
           "ratings": 324,
           "average": 3.2,
           "comments": 13

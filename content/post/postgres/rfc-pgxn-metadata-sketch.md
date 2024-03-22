@@ -2,7 +2,7 @@
 title: "RFC: PGXN Metadata Sketch"
 slug: rfc-pgxn-metadata-sketch
 date: 2024-03-21T18:50:58Z
-lastMod: 2024-03-21T18:50:58Z
+lastMod: 2024-03-22T12:54:56Z
 description: |
   Request for comments on a sketch of a new metadata standard for Postgres
   extension packaging, distribution, and delivery, building on the
@@ -11,6 +11,11 @@ description: |
 tags: [Postgres, PGXN, Extensions, Packaging, Metadata]
 type: post
 ---
+
+**Update 2024-03-22:** To compliment high-level discussions on the [#extensions]
+channel on the [Postgres Slack], I also created a [pull request] to make it
+easer directly comment to this post point by point. Keep the feedback coming,
+and thank you!
 
 This post proposes a new metadata standard for extension packaging,
 distribution, and delivery, building on the [PGXN Meta Spec] to address its
@@ -900,6 +905,11 @@ Example:
     Example: [Homebrew analytics]. Note also its support for date ranges for analytics
     (30/90/365 days, stats when directly installed vs. installed as a dependency).
 
+  [#extensions]: https://postgresteam.slack.com/archives/C056ZA93H1A
+    "Postgres Slack/#extensions: Extensions and extension-related accessories"
+  [Postgres Slack]: https://pgtreats.info/slack-invite
+    "Join the Postgres Slack"
+  [pull request]: https://github.com/theory/justatheory/pull/4
   [PGXN Meta Spec]: https://pgxn.org/spec/
     "PGXN Meta Spec - The PGXN distribution metadata specification"
   [extensions]: https://www.postgresql.org/docs/current/sql-createextension.html

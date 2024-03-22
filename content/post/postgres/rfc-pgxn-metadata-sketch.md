@@ -17,6 +17,8 @@ channel on the [Postgres Slack], I also created a [pull request] to make it
 easer directly comment to this post point by point. Keep the feedback coming,
 and thank you!
 
+---
+
 This post proposes a new metadata standard for extension packaging,
 distribution, and delivery, building on the [PGXN Meta Spec] to address its
 shortcomings and emerging use cases 12 years on. The goals include:

@@ -40,6 +40,7 @@ via the [#extensions] channel on the [Postgres Slack].
 *   [Video](https://www.youtube.com/watch?v=6o1N1-Eq-Do)
 *   [Keynote]({{% link "/shared/extension-ecosystem-summit/state-of-the-ecosystem.key" %}})
 *   [PDF Slides]({{% link "/shared/extension-ecosystem-summit/state-of-the-extension-ecosystem.pdf" %}})
+*   [Notes]({{% ref "/post/postgres/mini-summit-one" %}})
 
   [mini-summit]: https://www.eventbrite.com/e/851125899477/
     "Postgres Extension Ecosystem Mini-Summit"

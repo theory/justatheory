@@ -337,7 +337,7 @@ Now down to business.
         [pgxman], and Yurri at [Omnigres] is working on something as well. Huge
         opportunity to solve this together.
     *   *Steven Miller* in chat: "I think it is very nice way to install other
-        extensions via an extension how dbdev works"    
+        extensions via an extension how dbdev works"
     *   *David Wheeler (he/him)* in chat: "GRANT!"
     *   *Grant Holly* in chat: "Oh hi"
 
@@ -363,14 +363,14 @@ Now down to business.
         collecting and housing them, it makes things difficult. A huge
         opportunity for us to come up with those standards and share them with
         the community.
-    
+
     *   Community involvement is crucial, wish we'd done it better early on,
         that's why we're all here today! Solution to build together doesn't
         happen if we don't tackle it as a community.
-        
+
     *   Similarly, wish we'd reached out to folks like David and Devrim early
         on, to get more insight from them and bring the community into the
-        project from the beginning 
+        project from the beginning
 
 *   The future of trunk
 
@@ -379,7 +379,7 @@ Now down to business.
     *   Has paved the way for binary packaging and distribution in PGXN v2 that
         David is spearheading, will at least will inform and perhaps be the
         basis for that part of the project.
-        
+
 *   That's all, thank you, back to you, David!
 
 ## Discussion
@@ -435,7 +435,7 @@ Now down to business.
         would allow an immutable PostgreSQL base package and still allow to
         install extensions on top. This is esp. important if you need to have
         singned packages like on macOS
-        
+
     *   *nils in chat, Replying to "speaking of paths: i...": Guess there is
         some prior art in how search_path in pg work, or the PATH in unix’s.
 
@@ -482,7 +482,7 @@ Now down to business.
         It’s in the API metadata
 
         Sorry if I mispronounced your name Tobias
-    
+
     *   *David Wheeler (he/him)* in chat: SAME
 
 *   Yurri: Did you say output plugins are handled with Tembo:
@@ -609,10 +609,10 @@ Now down to business.
     *   *Tobias Bussmann in chat in response to "In the previous ex...": still
         searching on hacker for it. Meanwhile I found:
         https://commitfest.postgresql.org/5/170/
-    
+
     *   *Steven Miller* in chat: That approach is very awesome (install via
         extension)
-    
+
 *   Eric: I can see why it would take some time to sort it all out. One thing to
     require super user privileges to create an extension, but also having root
     on the box itself? Yeah.
@@ -668,13 +668,13 @@ Now down to business.
     *   *Eric* in chat: Even as a Mac user I don’t know the answer to this…
         what’s the common Postgres package there?  Postgres dot app, homebrew,
         something else?
-    
+
     *   *David Wheeler (he/him)* in chat: [pgenv]! (self-promotion)
 
 
     *   *Eric* in chat: I assume folks don’t use macOS in prod but developers are important too
 
-    *   *nils* in chat, Replying to "Even as a Mac user I...": 
+    *   *nils* in chat, Replying to "Even as a Mac user I...":
 
         ```
         $ git clone ..
@@ -699,7 +699,7 @@ Now down to business.
     GitHub workflow nodes or the [community's build farm], which has a vast
     array of different architectures and platforms to build stuff. There are
     precedents!
-    
+
     I imagine a system where, when something is published on PGXN, another
     system is notified and queues it up to all its build farm members to build
     binaries, ideally without full paths like trunk, and making them available
@@ -718,7 +718,7 @@ Now down to business.
         installs
 
     *   *Eric* in chat: pgrx supports cross compilation
-        
+
         With a caveat or two!
 
     *   *Eric* in chat, replying to "Even as a Mac user I…" @nils same. For v9.3
@@ -861,24 +861,25 @@ Now down to business.
     trying to figure this stuff out. One is called [purl], where you specify
     dependencies by packing URLs, or "purls", and then it's up to the installing
     client to resolve them vai whatever the packaging system it depends on.
-    
+
     I would assume on Windows we'd have to say "it works great as long as you
     use [Chocolatey]" or something like that. But it's certainly a difficult
     problem. I'm looking forward to your talk about your unique approach to
     solving it, Yurrii [ed. note: that's the May 1 mini-summit], that's going to
     be super interesting.
 
-*   ???: Ultimately you just crowd sourcing. If we just say "this is what we
-    call this thing in PostgreSQL world", then if people need to compile it on
-    Chocolatey on Windows, they figure it out and contribute it. Or on Debian or
-    RedHat. Just facilitate crowd-sourcing, metadata in a database. 
+*   David G. Johnston: Ultimately you just crowd sourcing. If we just say "this
+    is what we call this thing in PostgreSQL world", then if people need to
+    compile it on Chocolatey on Windows, they figure it out and contribute it.
+    Or on Debian or RedHat. Just facilitate crowd-sourcing, metadata in a
+    database.
 
 *   David Wheeler (he/him): My initial idea was a global registry that people
     contribute to just by editing files in a GitHub repository.
 
-*   ???: HashiCorp has to have something like that already, there's stuff out
-    there, no need to reinvent the wheel. This is a global problem if we
-    open-source it we can solve it.
+*   David G. Johnston: HashiCorp has to have something like that already,
+    there's stuff out there, no need to reinvent the wheel. This is a global
+    problem if we open-source it we can solve it.
 
 *   David Wheeler (he/him): Right. Really appreciate everyone coming. Great
     discussion, I appreciate it. In two weeks, Devrim Gündüz is going to talk

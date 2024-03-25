@@ -2,7 +2,7 @@
 title: "RFC: PGXN Metadata Sketch"
 slug: rfc-pgxn-metadata-sketch
 date: 2024-03-21T18:50:58Z
-lastMod: 2024-03-22T12:54:56Z
+lastMod: 2024-03-25T22:11:37Z
 description: |
   Request for comments on a sketch of a new metadata standard for Postgres
   extension packaging, distribution, and delivery, building on the
@@ -16,6 +16,9 @@ type: post
 channel on the [Postgres Slack], I also created a [pull request] to make it
 easer directly comment to this post point by point. Keep the feedback coming,
 and thank you!
+
+**Update 2024-03-25:** Clarified the definition of "Release" and made
+"Maintainers" plural. Thanks to Matthias van de Meent for the suggestions!
 
 ---
 
@@ -84,8 +87,8 @@ distribution system uses terms differently. These are ours.
     compiled and packaged for a particular OS version, platform, and hardware
     architecture. Examples include [deb], [RPM], and [wheel].
 
-*   **Release:** A single instance of a package and version published on PGXN,
-    expressed as the package path, an at sign, and the [semver]. Example:
+*   **Release:** A single version of the package made available to the public on
+    PGXN, expressed as the package path, an at sign, and the [semver]. Example:
     `github.com/theory/pgtap@v1.14.3`.
 
 ## Package Metadata
@@ -111,7 +114,7 @@ Fields (all required):
 *   **Abstract**: A short description of the purpose of the package
 *   **Description**: A longer description of the package, answering the
     question "what is this thing and what value is it?"
-*   **Maintainer**: List of maintainers, each an object with `name` and either
+*   **Maintainers**: List of maintainers, each an object with `name` and either
     `email` or `url` (or both)
 *   **License**: An [SPDX 2.3 license expression] comprised of one or more
     licenses from the [SPDX License List]
@@ -126,7 +129,7 @@ Example:
   "version": "1.1.0",
   "abstract": "A key/value pair data type",
   "description": "Adds a key/value pair data type to Postgres, useful for specifying arbitrary key/value function parameters.",
-  "maintainer": [
+  "maintainers": [
     {
         "name": "Naomi Nagata",
         "email": "naomi@example.com",
@@ -154,6 +157,8 @@ PGXN Compatibility:
     able to parse either one, especially with the spec version to
     differentiate.
 *   Uniqueness of `package` and relationship to `name`
+*   PGXN has `maintainer`; is it really worth pluralizing it? Maybe we don't
+    need it at all, given repository and issue links.
 
 ### Artifacts
 
@@ -543,7 +548,7 @@ extension]:
   "name": "pgml",
   "version": "2.8.2",
   "abstract": "pgml: Created by the PostgresML team",
-  "maintainer": [
+  "maintainers": [
     {
       "name": "the PostgresML team",
       "url": "https://github.com/postgresml/postgresml/"

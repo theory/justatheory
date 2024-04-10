@@ -4,7 +4,7 @@ slug: mini-summit-two
 date: 2024-03-25T21:49:44Z
 lastMod: 2024-03-25T21:49:44Z
 description: |
-  A rough transcript of my Ian Stanton's talk, "Building Trunk: A Postgres
+  A rough transcript my Ian Stanton's talk, "Building Trunk: A Postgres
   Extension Registry and CLI", along with interspersed chat comments.
 tags: [Postgres, PGXN, Extensions, PGConf, Summit, trunk]
 type: post
@@ -67,11 +67,10 @@ Now down to business.
     Thought it would be too time-consuming to add them all through the community
     process.
 
-    *   *Steven Miller: in chat: "From Steven Miller : Also with apt packaging,
-        it requires to install to a specific path, but we needed to customize
-        the install path based on what pg_config shows for share lib and package
-        lib dir. That way we could persist extension installations on tembo
-        cloud"
+    *   *Steven Miller: in chat: "Also with apt packaging, it requires to
+        install to a specific path, but we needed to customize the install
+        path based on what pg_config shows for share lib and package lib dir.
+        That way we could persist extension installations on tembo cloud"
 
 *   Weighed pros and cons of building one. Pros:
 

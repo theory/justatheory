@@ -431,9 +431,12 @@ p, blockquote, ul, ol {
     margin-bottom: 1em
 }
 
+/* Commented-out because multi-paragraph nested list paragraphs had no space
+between them in the display of content/post/postgres/mini-summit-three.md.
 ul > :last-child, ul > :last-child p, ol > :last-child, ol > :last-child p {
     margin-bottom: 0
 }
+*/
 
 ul {
     list-style-type: disc

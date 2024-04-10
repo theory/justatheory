@@ -12,7 +12,7 @@ type: post
 link: https://www.eventbrite.com/e/851125899477/
 ---
 
-Quit reminder that [Devrim Gündüz] of [EnterpriseDB] will be giving a talk at
+Quick reminder that [Devrim Gündüz] of [EnterpriseDB] will be giving a talk at
 this week's [extension ecosystem mini-summit][mini-summit], an overview of the
 [PostgreSQL Yum Repository][Yum] architecture, how new RPMs are added, and
 issues and challenges with distributing RPMed extensions.

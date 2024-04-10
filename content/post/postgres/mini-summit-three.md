@@ -802,7 +802,7 @@ Still reading? Okay then, here we go!
     needs pip then *I* should fix it. That's what I did for Patroni. I added
     lots of packages to our Git repo just to be able to support Patroni.
 
-    *   *Ian Stanton* in chag: Need to drop, thank you Devrim!
+    *   *Ian Stanton* in chat: Need to drop, thank you Devrim!
 
     *   *Jeremy S* in chat, replying to "How do you handle Pl...": A lot of
         larger companies have inventory management and risk control processes
@@ -810,11 +810,11 @@ Still reading? Okay then, here we go!
 
     *   *Alvaro Hernandez* in chat: Need to go, ttyl!
 
-    *   *vrmiguel in chat, replying to "you said “gcc” and n...": Do you think
-        there are no guarantees at all? For instance, Postgres loads up the
-        extension with `dlopen`, which could fail with `version mismatch`. If
-        that doesn't occur and the extension loads 'fine', how likely do you
-        think an issue could be?
+    *   *vrmiguel* in chat, replying to "you said “gcc” and n...": Do you
+        think there are no guarantees at all? For instance, Postgres loads up
+        the extension with `dlopen`, which could fail with `version mismatch`.
+        If that doesn't occur and the extension loads 'fine', how likely do
+        you think an issue could be?
         
         Also I'm curious how often you've seen problems arise from libc itself
         (rather than any of the many things that could cause UB in a C

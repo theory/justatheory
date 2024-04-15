@@ -612,7 +612,6 @@ Greg Sabino Mullane started a longish thread on the things we want to do and bui
   [Keith Fiske]: https://pgxn.org/user/keithf4
   [pg_partman]: https://pgxn.org/dist/pg_partman/
   [python wheels]: https://pythonwheels.com
-
   [#extensions]: https://postgresteam.slack.com/archives/C056ZA93H1A
     "Postgres Slack/#extensions: Extensions and extension-related accessories"
   [Postgres Slack]: https://pgtreats.info/slack-invite

@@ -14,7 +14,6 @@ image:
   width: 256
   height: 256
   class: left frame
-
 ---
 
 Last week, I informally shared [Extension Ecosystem: Jobs and Tools] with
@@ -51,7 +50,7 @@ sampling:
     all [known extensions]. To be a truly canonical registry, we need to make it
     as simple as possible for developers to register their extensions. (More
     thoughts on that topic in a forthcoming post.)
-    
+
 *   In that vein, releasing extensions is largely a manual process. The
     [pgxn-tools] Docker image has improved the situation, allowing developers to
     create relatively simple GitHub workflows to automatically [test] and

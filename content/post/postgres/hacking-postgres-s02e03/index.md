@@ -11,6 +11,8 @@ type: post
 link: https://www.youtube.com/watch?v=P2dN_We23tU
 image:
   src: hps02e03.jpeg
+  link: https://www.youtube.com/watch?v=P2dN_We23tU
+  caption: "Hacking Postgres S2E3: David Wheeler, Principal Architect, Tembo"
   alt: |
     Screenshot from Hacking Postgres, with a classic TV-shaped view on the left
     labeled "Ry Walker, CEO Tembo" featuring a middle-aged white man in a black

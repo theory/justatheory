@@ -2,7 +2,7 @@
 title: Extension Ecosystem Summit 2024
 slug: extension-ecosystem-summit
 date: 2024-02-27T17:46:58Z
-lastMod: 2024-03-06T21:50:27Z
+lastMod: 2024-04-24T17:15:39Z
 description: |
   Some pals and I organized a summit at PGConf.dev on May 28 to work together
   as a community toward comprehensive indexing, discovery, and binary
@@ -61,8 +61,7 @@ future. Tentative speaker lineup:
 *   April 17: [Jonathan Katz]: "TLE Vision and Specifics"
 *   May 1: [Yurii Rashkovskii], Omnigres: "Universally buildable extensions: dev
     to prod"
-*   May 15: (Placeholder) [David Wheeler], PGXN: "Metadata for All: Enabling discovery,
-    packaging, and community"
+*   May 15: [David Wheeler], PGXN: "Community Organizing  Summit Topics"
 
 Hit the [event page][mini-event] for details. Many thanks to my co-organizers 
 [Jeremy Schneider], [David Christensen], [Keith Fiske], and [Devrim Gündüz], 

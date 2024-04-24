@@ -2,7 +2,7 @@
 title: Mini Summit One
 slug: mini-summit-one
 date: 2024-03-15T20:05:37Z
-lastMod: 2024-03-15T20:05:37Z
+lastMod: 2024-04-24T17:15:21Z
 description: |
   A rough transcript of my talk "State of the Extension Ecosystem", along with
   interspersed chat comments and appearances by Bagel.
@@ -351,8 +351,7 @@ And now, to the notes!
     *   April 17: [Jonathan Katz]: "TLE Vision and Specifics"
     *   May 1: [Yurii Rashkovskii], Omnigres: "Universally buildable extensions:
         dev to prod"
-    *   May 15: (Placeholder) [David Wheeler], PGXN: "Metadata for All: Enabling
-        discovery, packaging, and community"
+    *   May 15: [David Wheeler], PGXN: "Community Organizing  Summit Topics"
 
 *   Ultimately want to talk about what's important to *you*, the members of the
     community to make extensions successful.

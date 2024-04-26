@@ -2,7 +2,7 @@
 title: Mini Summit Four
 slug: mini-summit-four
 date: 2024-04-25T22:40:45Z
-lastMod: 2024-04-25T22:40:45Z
+lastMod: 2024-04-26T01:29:49Z
 description: |
   Links, notes, and commentary from Jonathan Katz's presentation at the fourth
   Postgres Extension Ecosystem Mini-Summit, "Trusted Language Extensions for
@@ -685,11 +685,11 @@ And now, rivers of text!
         Foo::Bar` and it has a hook to load a record with the ID Foo::Bar from
         a table
 
-*   David Christensen: Has there been any thought to having the default
-    version of an extension tied to the version of PostgreSQL? Instead of it
-    just being 1.3 and, whether I'm on version 12 or 15, because 1.3 might not
-    even work on version 12 but it would work on version 15. The versioning of
-    the an extension and the versioning of PostgreSQL seem like they're almost
+*   David G. Johnson: Has there been any thought to having the default version
+    of an extension tied to the version of PostgreSQL? Instead of it just
+    being 1.3 and, whether I'm on version 12 or 15, because 1.3 might not even
+    work on version 12 but it would work on version 15. The versioning of the
+    an extension and the versioning of PostgreSQL seem like they're almost
     *too* independent.
 
 *   Jonathan Katz: So David, I think what you need to do is chastise the
@@ -713,7 +713,7 @@ And now, rivers of text!
     doing something to break some environment. I'm just brainstorming on on
     live TV.
     
-*   David Christensen: The other day I open a but report on this. but
+*   David G. Johnson: The other day I open a but report on this. but
     PostgreSQL dump and restore will dump it without the version that's in the
     source database, and when yoq restore it, it's going to restore to
     whatever the current version for the control file is even if you're
@@ -725,9 +725,9 @@ And now, rivers of text!
     dump the extension, so you should be able to load it up. I assume base
     backup and the others do the same thing.
     
-*   David Christensen: I haven't checked into that. It dumps `CREATE
-    EXTENSION` and then it dump any user tables that are marked by the
-    extension. So these code tables are marked as being user tables for TLE?
+*   David G. Johnson: I haven't checked into that. It dumps `CREATE EXTENSION`
+    and then it dump any user tables that are marked by the extension. So
+    these code tables are marked as being user tables for TLE?
     
 *   David Wheeler (he/him): What do you mean by code tables?
 
@@ -741,7 +741,7 @@ And now, rivers of text!
     load the extension it works it works fine. Of it doesn't then there's a
     bug and we need to fix it.
 
-*   David Christensen: Okay yeah I haven't played with this. Literally this is
+*   David G. Johnson: Okay yeah I haven't played with this. Literally this is
     new to me for the most part. I found the whole fact that the control file
     is not updated when you do `ALTER EXTENSION` to be, at least in my mind,
     buggy. 
@@ -762,7 +762,7 @@ And now, rivers of text!
     the TLEs themselves are in a table. When you do a `CREATE EXTENSION` it
     gets loaded from that particular table.
     
-*   David Christensen: Right, and when you do a pg_dump you make suer that
+*   David G. Johnson: Right, and when you do a pg_dump you make suer that
     table was dumped to the dump file.
 
 *   Jonathan Katz: Yes. But this is a key thing that we we had to make sure
@@ -832,14 +832,14 @@ And now, rivers of text!
 *   David Wheeler (he/him): What other questions do you have for about TLEs or
     extensions more broadly and packaging in relation to TLEs?
 
-*   David Christensen: Just a random thought: Have you thought about
+*   David G. Johnson: Just a random thought: Have you thought about
     incorporating foreign servers and pointing the TLE, instead of a local
     database, point it to a master, company-wide foreign table?
 
 *   David Wheeler (he/him): Like a TLE registry?
 
-*   David Christensen: Right, yeah something global would be nice. like okay
-    we hosted on PGXN at there's a TLE registry. But because for a company who
+*   David G. Johnson: Right, yeah something global would be nice. like okay we
+    hosted on PGXN at there's a TLE registry. But because for a company who
     wants maintain code internally between projects, and they want a shared
     library, they can publish it on one server, send up a link to it over
     foreign server, and then just point at that.
@@ -849,7 +849,7 @@ And now, rivers of text!
 *   David Wheeler (he/him): I mean you could just use foreign foreign tables
     for that for the tables that TLE uses for its its registry, right?
     
-*   David Christensen: That's I'm thinking.
+*   David G. Johnson: That's I'm thinking.
 
 *   David Wheeler (he/him): Yeah that's a cute idea.
     

@@ -7,7 +7,7 @@ description: |
   A rough transcript of my Devrim Gündüz's talk, "Overview of
   {yum,zypp}.postgresql.org, and the challenges around RPMifying extensions",
   along with interspersed chat comments.
-tags: [Postgres, PGXN, Extensions, PGConf, Summit, Yum, ZYpp]
+tags: [Postgres, Devrim Gündüz, PGXN, Extensions, PGConf, Summit, Yum, ZYpp]
 type: post
 ---
 

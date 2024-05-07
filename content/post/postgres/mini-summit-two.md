@@ -6,7 +6,7 @@ lastMod: 2024-03-25T21:49:44Z
 description: |
   A rough transcript my Ian Stanton's talk, "Building Trunk: A Postgres
   Extension Registry and CLI", along with interspersed chat comments.
-tags: [Postgres, PGXN, Extensions, PGConf, Summit, trunk]
+tags: [Postgres, Ian Stanton, PGXN, Extensions, PGConf, Summit, trunk]
 type: post
 ---
 

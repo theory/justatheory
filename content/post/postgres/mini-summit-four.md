@@ -7,7 +7,7 @@ description: |
   Links, notes, and commentary from Jonathan Katz's presentation at the fourth
   Postgres Extension Ecosystem Mini-Summit, "Trusted Language Extensions for
   PostgreSQL".
-tags: [Postgres, TLEs, PGXN, Extensions, PGConf, Summit]
+tags: [Postgres, Jonathan Katz, TLEs, PGXN, Extensions, PGConf, Summit]
 type: post
 ---
 

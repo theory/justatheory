@@ -832,9 +832,8 @@ with chat activity.
     interesting challenges to automatically figuring out how things work
     versus convincing authors to specify in advance.
 
-*   Jeremy S: Yep. Or taking
-    on that maintenance. Kind of like what a spec file maintainer or
-    a Debian package maintainer is doing.
+*   Jeremy S: Yep. Or taking on that maintenance. Kind of like what a spec
+    file maintainer or a Debian package maintainer is doing.
 
 *   Yurri: Yeah, precisely.
 
@@ -859,6 +858,10 @@ with chat activity.
 
     And that's it. Thank you everybody for coming, I really appreciate. We'll
     see you next time
+
+    *   *Tobias Bussmann* in chat: Thanks for the insights and discussion!
+
+    *   Jeremy S: Thank you!
 
   [Omnigres]: https://omnigres.com
   [Yurri Rashkovskii]: https://yrashk.com

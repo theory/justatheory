@@ -30,7 +30,7 @@ with chat activity.
     extensions. This is going to be a shorter presentation, but the point of
     it is to create some ideas, perhaps some takeaways, and actually provoke a
     conversation during the call. It would be really amazing to explore what
-    others think um so without further ado...
+    others think, so without further ado...
 
 *   I'm with Omnigres, where we're building a lot of extensions. Often  they
     push the envelope of what extensions are supposed to do. For example, one
@@ -210,8 +210,8 @@ with chat activity.
 
 *   Let's move on. postgres.pm is a pro of concept that I was working on for
     some time. The idea behind it was both ambitious but also kind of simple:
-    Can we try describing uh Postgres extensions in such a way that
-    they will be almost magically built on any supported platform?
+    Can we try describing Postgres extensions in such a way that they will be
+    almost magically built on any supported platform?
 
 *   The idea was to build an expert system of how to build things from a
     higher level definition. Here's an example for pgvector:
@@ -385,7 +385,7 @@ with chat activity.
     us to *maintain* those mappings over time --- we kind of own it --- versus
     being able to automate some kind of automatic resolution. I don't know if
     there is a good automatic way to do it. David had found something that he
-    posted um which I looked at a little bit, but Devrim talked about how much
+    posted, which I looked at a little bit, but Devrim talked about how much
     of maintenance overhead it becomes in the long run to constantly have to
     maintain this which seemed less than ideal.
 
@@ -453,11 +453,11 @@ with chat activity.
     coming up in different conversations: whether to build and ship your
     extension against minor versions of Postgres.
 
-*   Different uh people have different stances in this, and even package
-    managers take different stands on it. Some say, just build against the
-    latest major version of Postgres and others say build extensions against
-    every single minor version. I wanted to research and see what the real
-    answer should be: should we build  against minor versions or not?
+*   Different people have different stances in this, and even package managers
+    take different stands on it. Some say, just build against the latest major
+    version of Postgres and others say build extensions against every single
+    minor version. I wanted to research and see what the real answer should
+    be: should we build  against minor versions or not?
 
 *   I've done a little bit of experimentation and my answer is "perhaps", and
     maybe even "test against different minor versions." In my exploration of
@@ -513,10 +513,10 @@ with chat activity.
     latest minor release and that's Backward compatible to the earlier
     releases.
 
-*   Yurri: Right and that's a good middle ground uh for this particular case.
-    But but of course sometimes when you do a minor upgrade you have to
-    remember that you have to rebuild your extensions against that minor
-    version so you can just easily transfer them yeah.
+*   Yurri: Right and that's a good middle ground for this particular case. But
+    but of course sometimes when you do a minor upgrade you have to remember
+    that you have to rebuild your extensions against that minor version so you
+    can just easily transfer them yeah.
 
     *   *Jeremy S* in chat: The struct change in a minor is very interesting
 
@@ -548,9 +548,8 @@ with chat activity.
     *   *Shaun Thomas* in chat: I'm extremely shocked that showed up in 16.2.
 
 *   Yurri: Yeah, I didn't expect that either, because that's just a great way
-    to have absolutely undefined behavior. Like if somebody forgot to um
-    rebuild their extension against a new minor, then this can be pretty
-    terrible.
+    to have absolutely undefined behavior. Like if somebody forgot to rebuild
+    their extension against a new minor, then this can be pretty terrible.
 
 *   But my general answer to all of this unless you're going really deep into
     the guts of Postgres, unless you're doing something very deep in terms
@@ -622,9 +621,9 @@ with chat activity.
     We find this pretty pretty useful.
 
 *   That's pretty much it. Just to recap I talked about the multi-platform
-    experience an uh the pros and cons of containers, inferencing how you
-    build um and how you can build extensions with dependencies, static and
-    rpath dependencies, and the problems with PG minor version differences. If
+    experience, the pros and cons of containers, inferencing how you build and
+    how you can build extensions with dependencies, static and `rpath`
+    dependencies, and the problems with PG minor version differences. If
     anybody has thoughts, questions, or comments I think that would be a
     great. Thank you.
 

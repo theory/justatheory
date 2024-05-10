@@ -75,7 +75,10 @@ An optional second argument specifies an alternate output format.
 Examples:
 
 ``` go
-{{% ref "/post/books/project-hail-mary" %}}
+  [#extensions]: https://postgresteam.slack.com/archives/C056ZA93H1A
+    "Postgres Slack/#extensions: Extensions and extension-related accessories"
+  [Postgres Slack]: https://pgtreats.info/slack-invite
+    "Join the Postgres Slack"
 {{% ref "/post/books/project-hail-mary" "text" %}}
 {{% ref "/post/past/js/test-simple-0.03.md" %}}
 {{% ref "/photo/nyc/harlem-steps" %}}

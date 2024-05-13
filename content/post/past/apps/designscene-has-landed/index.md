@@ -6,7 +6,6 @@ title: DesignScene Has Landed
 aliases: [/computers/apps/designscene-has-landed.html]
 tags: [DesignScene, Design, iPad, Objective-C, Cocoa programming, MVC, Roger Wong]
 type: post
-csp:  media-src 'self' media.lunar-theory.com; img-src 'self' raw.githubusercontent.com
 image:
   src: ds_early_comp.jpg
   alt: Roger’s Original Mockup
@@ -72,10 +71,11 @@ get it!
 Oh, and just dig the awesome trailer Roger put together. It’s such a joy to work
 with someone who knows Photoshop and After Effects like I know Perl and SQL.
 
-<video controls width="640" height="360" x-webkit-airplay="allow" webkit-playsinline="" preload="none" poster="https://raw.githubusercontent.com/lunar-theory/designsceneapp.com/c199ec3d40a11a4a559d31df4a1e995ee1220b8d/res/ds_video_poster.jpg">
-  <source src="https://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.mp4" type="video/mp4" />
-	<source src="https://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.webm" type="video/webm" />
-	<source src="https://media.lunar-theory.com/DesignScene/DesignScene_Trailer_v2_640x360.ogv" type="video/ogg" />
+<video controls width="640" height="360" x-webkit-airplay="allow"
+webkit-playsinline="" preload="none" poster="{{% link "ds_video_poster.jpg" %}}">
+  <source src="{{% link "DesignScene_Trailer_v2_640x360.mp4" %}}" type="video/mp4" />
+	<source src="{{% link "DesignScene_Trailer_v2_640x360.webm" %}}" type="video/webm" />
+	<source src="{{% link "DesignScene_Trailer_v2_640x360.ogv" %}}" type="video/ogg" />
 </video>
 
 Since we launched on Tuesday, we’ve been fortunate to receive some really

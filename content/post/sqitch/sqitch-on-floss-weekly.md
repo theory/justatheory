@@ -5,7 +5,6 @@ link: https://twit.tv/shows/floss-weekly/episodes/309
 title: Sqitch on FLOSS Weekly
 aliases: [/podcast/2014/09/17/sqitch-on-floss-weekly/]
 tags: [Sqitch, FLOSS Weekly]
-csp:  media-src 'self' twit.cachefly.net; img-src 'self' elroy.twit.tv
 type: post
 ---
 

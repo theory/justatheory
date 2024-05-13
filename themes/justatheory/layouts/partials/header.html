@@ -2,6 +2,9 @@
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
 	<meta charset="utf-8" />
+	{{- with .Params.csp }}
+	<meta http-equiv="Content-Security-Policy" content="{{ . }}">
+	{{- end }}
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	{{- $title := or .Params.headTitle .Title }}
@@ -14,8 +17,8 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 	<link rel="manifest" href="/site.webmanifest" />
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d2d2d" />
-	{{- if .Site.Params.mastodon }}
-	<link rel="me" href="{{ .Site.Params.mastodon }}" />
+	{{- with .Site.Params.mastodon.url }}
+	<link rel="me" href="{{ . }}" />
 	{{- end }}
 	<meta name="msapplication-TileColor" content="#2d2d2d" />
 	<meta name="theme-color" content="#ffffff" />{{/* https://medium.com/p/e64b4bb9254 */}}
@@ -48,8 +51,8 @@
 				<li><a href="/about/" title="About {{ .Site.Title }}">About</a></li>
 				<li><a href="/archive/" title="{{ .Site.Title }} Archives">Archives</a></li>
 				<li><a href="/tags/" title="{{ .Site.Title }} Tags">Tags</a></li>
-				{{- if .Site.Params.mastodon }}
-				<li class="icon"><a rel="me noopener" href="{{ .Site.Params.mastodon.url }}" title="{{ .Site.Params.mastodon.user }} on Mastodon"><i class="fa fa-mastodon"></i></a></li>
+				{{- with .Site.Params.mastodon }}
+				<li class="icon"><a rel="me noopener" href="{{ .url }}" title="{{ .user }} on Mastodon"><i class="fa fa-mastodon"></i></a></li>
 				{{- end }}
 				{{- if .Site.Params.github }}
 				<li class="icon"><a rel="me noopener" href="//github.com/{{ .Site.Params.github }}" title="@{{ .Site.Params.github }} on GitHub"><i class="fa fa-github"></i></a></li>

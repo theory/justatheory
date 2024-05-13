@@ -6,6 +6,7 @@ title: DesignScene Has Landed
 aliases: [/computers/apps/designscene-has-landed.html]
 tags: [DesignScene, Design, iPad, Objective-C, Cocoa programming, MVC, Roger Wong]
 type: post
+csp:  media-src 'self' media.lunar-theory.com; img-src 'self' raw.githubusercontent.com
 image:
   src: ds_early_comp.jpg
   alt: Roger’s Original Mockup

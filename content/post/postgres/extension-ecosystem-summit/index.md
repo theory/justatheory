@@ -67,7 +67,10 @@ Hit the [event page][mini-event] for details. Many thanks to my co-organizers
 [Jeremy Schneider], [David Christensen], [Keith Fiske], and [Devrim Gündüz], 
 as well as the [PGConf.dev organizers] for making this all happen!
 
-**Update:** 2024-03-06: Updated the talk schedule.
+**Updates:**
+
+*   2024-03-06: Updated the talk schedule.
+*   2024-04-24: Updated the last talk title.
 
   [Extension Ecosystem Summit]: https://www.pgevents.ca/events/pgconfdev2024/schedule/session/191-extension-ecosystem-summit/
     "PGConf.dev: Extensions Ecosystem Summit: Enabling comprehensive indexing, discovery, and binary distribution"

@@ -61,7 +61,7 @@ future. Tentative speaker lineup:
 *   April 17: [Jonathan Katz]: "TLE Vision and Specifics"
 *   May 1: [Yurii Rashkovskii], Omnigres: "Universally buildable extensions: dev
     to prod"
-*   May 15: [David Wheeler], PGXN: "Community Organizing  Summit Topics"
+*   May 15: [David Wheeler], PGXN: "Community Organizing Summit Topics"
 
 Hit the [event page][mini-event] for details. Many thanks to my co-organizers 
 [Jeremy Schneider], [David Christensen], [Keith Fiske], and [Devrim Gündüz], 
@@ -71,7 +71,7 @@ as well as the [PGConf.dev organizers] for making this all happen!
 
   [Extension Ecosystem Summit]: https://www.pgevents.ca/events/pgconfdev2024/schedule/session/191-extension-ecosystem-summit/
     "PGConf.dev: Extensions Ecosystem Summit: Enabling comprehensive indexing, discovery, and binary distribution"
-  [PGConf.dev]: https://2024.pgconf.dev "PostgresQL Development Conference 2024"
+  [PGConf.dev]: https://2024.pgconf.dev "PostgreSQL Development Conference 2024"
   [register]: https://www.pgevents.ca/events/pgconfdev2024/register/
     "Register for PGConf.dev or Update your Registration"
   [mini-event]: https://www.eventbrite.com/e/851125899477

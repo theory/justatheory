@@ -11,8 +11,8 @@ tags: [Postgres, Yurri Rashkovskii, PGXN, Extensions, PGConf, Summit]
 type: post
 ---
 
-The video for Yurri Rashkovskii's presentation at the fifth Postgres
-Extension Ecosystem Mini-Summit last week is up. Links:
+The video for Yurri Rashkovskii's presentation at the fifth [Postgres
+Extension Ecosystem Mini-Summit][mini-summit] last week is up. Links:
 
 *   [Video](https://youtu.be/R5ijx8IJyaM)
 *   [PDF Slides]({{% link "/shared/extension-ecosystem-summit/omni-universally-buildable-extensions.pdf" %}})
@@ -862,6 +862,8 @@ with chat activity.
 
     *   Jeremy S: Thank you!
 
+  [mini-summit]: https://www.eventbrite.com/e/851125899477/
+    "Postgres Extension Ecosystem Mini-Summit"
   [Omnigres]: https://omnigres.com
   [Yurri Rashkovskii]: https://yrashk.com
   [community Slack]: https://pgtreats.info/slack-invite "Join the Postgres Slack"

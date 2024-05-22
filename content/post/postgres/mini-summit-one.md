@@ -557,7 +557,6 @@ And now, to the notes!
 Also [on Slack](https://postgresteam.slack.com/archives/C056ZA93H1A/p1709748156307179),
 Greg Sabino Mullane started a longish thread on the things we want to do and build.
 
-
   [mini-summit]: https://www.eventbrite.com/e/851125899477/
     "Postgres Extension Ecosystem Mini-Summit"
   [the summit]: https://www.pgevents.ca/events/pgconfdev2024/schedule/session/191

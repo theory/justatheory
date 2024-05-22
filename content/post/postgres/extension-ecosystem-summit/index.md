@@ -72,7 +72,7 @@ as well as the [PGConf.dev organizers] for making this all happen!
 *   2024-03-06: Updated the talk schedule.
 *   2024-04-24: Updated the last talk title.
 
-  [Extension Ecosystem Summit]: https://www.pgevents.ca/events/pgconfdev2024/schedule/session/191-extension-ecosystem-summit/
+  [Extension Ecosystem Summit]: https://www.pgevents.ca/events/pgconfdev2024/schedule/session/191/
     "PGConf.dev: Extensions Ecosystem Summit: Enabling comprehensive indexing, discovery, and binary distribution"
   [PGConf.dev]: https://2024.pgconf.dev "PostgreSQL Development Conference 2024"
   [register]: https://www.pgevents.ca/events/pgconfdev2024/register/

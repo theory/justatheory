@@ -2,7 +2,7 @@
 title: "Review: Genius"
 slug: genius
 date: 2018-02-04T19:14:48Z
-lastMod: 2022-04-16T19:14:48Z
+lastMod: 2024-05-21T22:34:20Z
 description: A brief review of the book, subtitled ""he Life and Science of Richard Feynman", by James Gleick.
 tags: [Books, James Gleick, Richard Feynman, Genius]
 type: post
@@ -30,8 +30,8 @@ For Feynman, the ways of science --- its hypotheses, equations, and laws --- are
 not so hard and fast as the popular literature normally suggests. Rather,
 they're heuristics, models that help to understand things, to explain things,
 but they're never what's *real* in and of themselves. This explains why
-Relativity can subsume Newtonian physics, and itself be subsumed by quantum
-mechanics. But because the principals of the subsumed frameworks are still
+relativity can subsume Newtonian physics, and itself be subsumed by quantum
+mechanics. But because the principles of the subsumed frameworks are still
 tremendously useful, still have explanatory power within their domains, they're
 never *wrong*. They remain supremely useful tools, even if they're not useful
 for explaining some kinds of phenomena, for answering some kinds of questions.
@@ -50,7 +50,7 @@ as Gleick shows again and again. Take, for example, Feynman's radical notion,
 against the prevailing wisdom in 1939, that electrons cannot act on themselves
 (p 100):
 
-> Implicit in Fenyman's attitude was a sense that the laws of nature were not to
+> Implicit in Feynman's attitude was a sense that the laws of nature were not to
 > be discovered so much as constructed. Although language blurred the
 > distinction, Feynman was asking not whether an electron acted on itself but
 > whether the theorist could plausibly discard the concept; not whether the
@@ -59,7 +59,7 @@ against the prevailing wisdom in 1939, that electrons cannot act on themselves
 The book is chock full of details like this, insights into the workings of
 science and the limitations of the mind. Feynman's insistence on good analogies,
 on making connections between the equations and the real world in which we live,
-are the perhaps better-known example of the same principal. The reasons for this
+are the perhaps better-known example of the same principle. The reasons for this
 are practical as well as philosophical: Feynman insisted that if he couldn't
 prepare a freshman lecture on a topic, he didn't really understand it himself.
 The tools at hand were not yet good enough.

@@ -285,7 +285,7 @@ interspersed with chat activity, if you are so inclined.
     *   And what's the format? Do we want to do tarballs, do OCI like Alvaro
         proposed? Do we want something like RPM or Apt or Python wheels?
         That's a that's actually something I'm super interested to get into.
-        There was a question that came up two weeks ago in Yurri's
+        There was a question that came up two weeks ago in Yurii's
         presentation. I think Daniele suggested that the Python wheel package
         format allows you to put dynamic libs into the wheel. That's pretty
         interesting and worth looking into as well.
@@ -431,7 +431,7 @@ interspersed with chat activity, if you are so inclined.
     away from the file system and more easily let people, through permissions,
     be able to load modules in a safe way.
     
-*   A topic that came up during Yurri's talk was binary compatibility of minor
+*   A topic that came up during Yurii's talk was binary compatibility of minor
     releases, or some sort of ABI stability. I'd be curious what to bring up
     with hackers on formalizing something there. Although it has seemed mostly
     pretty stable over time to me, that doesn't mean it's been fully stable.
@@ -740,7 +740,7 @@ So! That's my quick review. I did the remainder of them in 11 minutes!
     about these Post-its and we say, "would you like to have a small
     discussion about one of these things. If you are, then put a sticky note
     on it." And then we put the sticky notes in the fields, we have a list of
-    names associated with the sticky notes. Like, maybe Yurri is interested in
+    names associated with the sticky notes. Like, maybe Yurii is interested in
     binary distribution, and then maybe David is also interested in that. So
     there's like three or four people in each section, and we're trying to
     make sure that if you're interested multiple sections you get to go to

@@ -333,7 +333,7 @@ Now down to business.
     *   For the community: no! But helped bring more awareness to the
         opportunities to improve the ecosystem as a community.
     *   Saw other solutions arise around the same time, including [dbdev] and
-        [pgxman], and Yurri at [Omnigres] is working on something as well. Huge
+        [pgxman], and Yurii at [Omnigres] is working on something as well. Huge
         opportunity to solve this together.
     *   *Steven Miller* in chat: "I think it is very nice way to install other
         extensions via an extension how dbdev works"
@@ -443,7 +443,7 @@ Now down to business.
         it’s own libs to no be overwritten by external libs, but allow for
         loading them from extra paths.
 
-*   Yurri: There is `CREATE EXTENSION` and other extensions like logical
+*   Yurii: There is `CREATE EXTENSION` and other extensions like logical
     decoding plugins. Does trunk handle them?
 
 *   Steven Miller: We think of it as four types extensions into 2x2 matrix: 1\.
@@ -465,14 +465,14 @@ Now down to business.
         system database like apt has; would enable management, uninstall,
         version list, whether upgrades are available, etc
 
-*   Yurri: That would be great. What other modules are there without extensions,
+*   Yurii: That would be great. What other modules are there without extensions,
     like `autoexplain`?
 
 *   Ian Stanton: auth delay is another, base backup to shell, considered parts of
     postgres, but we have trouble categorizing them. There are 10-15 I've come
     across.
 
-*   Yurri: ARe these categories on Tembo, can you click a button?
+*   Yurii: ARe these categories on Tembo, can you click a button?
 
 *   Ian Stanton: Not a category, but would be a good one to add.
 
@@ -484,11 +484,11 @@ Now down to business.
 
     *   *David Wheeler (he/him)* in chat: SAME
 
-*   Yurri: Did you say output plugins are handled with Tembo:
+*   Yurii: Did you say output plugins are handled with Tembo:
 
 *   Steven Miller: YOu can install them with trunk, yes.
 
-*   Yurri: And you have the build pipeline that will work without plugins too,
+*   Yurii: And you have the build pipeline that will work without plugins too,
     yeah, cool.
 
 *   David Wheeler (he/him): Tobias, did you want to say more about the path
@@ -616,7 +616,7 @@ Now down to business.
     require super user privileges to create an extension, but also having root
     on the box itself? Yeah.
 
-*   Yurri: TLE plugs into that a little bit for a non-shared object. Not exactly
+*   Yurii: TLE plugs into that a little bit for a non-shared object. Not exactly
     storing it in the database, but does provide a SQL based/function method of
     installing from inside the database, but only for trusted languages, not
     shared objects.
@@ -626,7 +626,7 @@ Now down to business.
     command and pulls it out of its own catalog. Was a similar model with
     `pginstall`, but with binary support, too.
 
-*   Yurri: Back to trunk. When you start building, and have to deal with
+*   Yurii: Back to trunk. When you start building, and have to deal with
     binaries, pgxn you can put the source up there, but I want to get to the
     whole matrix of all the different versions. Every extension author does it a
     little different. Some extensions have versions for Postgres 15, another for
@@ -660,7 +660,7 @@ Now down to business.
     compiles to include ship-specific instructions for AVX512, which helps with
     vector. So that's another dimension to consider.
 
-*   Yurri: Part of the idea behind this forum is to see if we can chart a path
+*   Yurii: Part of the idea behind this forum is to see if we can chart a path
     forward, maybe not solve everything. What can we solve, how can we make
     something a little better for Postgres at large?
 
@@ -725,7 +725,7 @@ Now down to business.
 
 *   *David Wheeler (he/him): What else? Reading the comments.
 
-*   Yurri: I think maybe that PGXN JSON file, I know you've been spending time
+*   Yurii: I think maybe that PGXN JSON file, I know you've been spending time
     on it, David, including the [proposal on namespacing] a few days ago. That
     feels like it could be helpful to be part of this. IF it could be something
     we could center around… The first time I wanted to put an extension on PGXN,
@@ -784,7 +784,7 @@ Now down to business.
     *   *Eric* in chat: Ha!  Try relying on elasticsearch as a runtime
         dependency!  😞
 
-*   Yurri: That's another thing to touch on. A lot of extensions are just a thin
+*   Yurii: That's another thing to touch on. A lot of extensions are just a thin
     layer of glue between Postgres and some OSS library that someone else
     maintains. But the trick, when you want to build a Yum package, the
     dependency has a different name than the rest of the RedHat ecosystem vs.
@@ -832,7 +832,7 @@ Now down to business.
     *   *David Wheeler (he/him)* in chat, replying to "I want to build a js...":
         GIMME
 
-*   Yurri: If you really want to od this right, just like in the RPM
+*   Yurii: If you really want to od this right, just like in the RPM
     repositories, you have to know what the dependencies are. David, I'm
     curious, what your thoughts are, if this is to be done right, there has to
     be a way to indicate dependencies in the `META.json` file, but then I'm
@@ -851,7 +851,7 @@ Now down to business.
     the world, a relatively low barrier at this point. Some of these other
     things have thousands or millions of extensions.
 
-*   Yurri: I guess when you put it that way! But I wasn't going to go through
+*   Yurii: I guess when you put it that way! But I wasn't going to go through
     all 1000 of them one-at-a-time.
 
 *   David Wheeler (he/him): No. I posted about this on Ivory a few weeks ago
@@ -864,7 +864,7 @@ Now down to business.
     I would assume on Windows we'd have to say "it works great as long as you
     use [Chocolatey]" or something like that. But it's certainly a difficult
     problem. I'm looking forward to your talk about your unique approach to
-    solving it, Yurrii [ed. note: that's the May 1 mini-summit], that's going to
+    solving it, Yuriii [ed. note: that's the May 1 mini-summit], that's going to
     be super interesting.
 
 *   David G. Johnston: Ultimately you just crowd sourcing. If we just say "this

@@ -4,14 +4,14 @@ slug: mini-summit-five
 date: 2024-05-07T22:12:04Z
 lastMod: 2024-05-07T22:12:04Z
 description: |
-  Links, notes, and commentary from Yurri Rashkovskii's presentation,
+  Links, notes, and commentary from Yurii Rashkovskii's presentation,
   "Universally Buildable Extensions: Dev to Prod," at the fifth Postgres
   Extension Ecosystem Mini-Summit on May 1, 2024.
-tags: [Postgres, Yurri Rashkovskii, PGXN, Extensions, PGConf, Summit]
+tags: [Postgres, Yurii Rashkovskii, PGXN, Extensions, PGConf, Summit]
 type: post
 ---
 
-The video for Yurri Rashkovskii's presentation at the fifth [Postgres
+The video for Yurii Rashkovskii's presentation at the fifth [Postgres
 Extension Ecosystem Mini-Summit][mini-summit] last week is up. Links:
 
 *   [Video](https://youtu.be/R5ijx8IJyaM)
@@ -22,11 +22,11 @@ with chat activity.
 
 ## Introduction
 
-*   I opened the meeting and introduced [Omnigres]'s [Yurri Rashkovskii].
+*   I opened the meeting and introduced [Omnigres]'s [Yurii Rashkovskii].
 
 ## Presentation
 
-*   Yurri: Today I'm going to be talking about universally buildable
+*   Yurii: Today I'm going to be talking about universally buildable
     extensions. This is going to be a shorter presentation, but the point of
     it is to create some ideas, perhaps some takeaways, and actually provoke a
     conversation during the call. It would be really amazing to explore what
@@ -115,7 +115,7 @@ with chat activity.
     reasons. These were the motivation that brought me to start developing
     directly in Docker instead of using the desktop.
 
-*   Yurri: Especially when you go all the way to to production, do you find
+*   Yurii: Especially when you go all the way to to production, do you find
     container isolation useful to you?
 
 *   Daniele: Yeah I would say so; I think the problem is more to break
@@ -126,7 +126,7 @@ with chat activity.
     path, because it's not so radically different being in the container.
     Maybe for Windows and macOS developers it would be a different experience
 
-*   Yurri: Yeah, I actually wanted to drill down a little bit on this In my
+*   Yurii: Yeah, I actually wanted to drill down a little bit on this In my
     experience, I build a lot on macOS where you have to break through the
     isolation layers with the container itself and obviously the VM. I've
     found there are often subtle problems that make the experience way less
@@ -160,7 +160,7 @@ with chat activity.
     *   *Steven Miller* in chat: Have seen with chip specific optimizations
         like avx512
 
-*   Yurri: Some of our users are using Docker Compose to run everything
+*   Yurii: Some of our users are using Docker Compose to run everything
     together. However, I personally don't use Docker containers. This is part
     of the reason why the topic of this presentation is about universally
     buildable extensions. I try to make sure that all the extensions are
@@ -179,13 +179,13 @@ with chat activity.
 
     *   *Jeremy S* in chat: That makes sense
 
-*   Yurri: I wanted to show just a little bit of a proof of concept tool that
+*   Yurii: I wanted to show just a little bit of a proof of concept tool that
     we've been working on, on and off for the last year---
 
-*   David Wheeler (he/him): Yurri, there are a couple comments and questions
+*   David Wheeler (he/him): Yurii, there are a couple comments and questions
     in chat, I don't know if saw that
 
-*   Yurri: I didn't see that sorry.
+*   Yurii: I didn't see that sorry.
 
 *   Jeremy is saying, "when you say it's important to test on
     multiple platforms do you mean in containers on multiple platforms or
@@ -272,7 +272,7 @@ with chat activity.
     *   *Tobias Bussmann* in chat: shouldn't have the extension a make
         installcheck as well?
 
-*   Yurri: To my knowledge there's no absolutely universal method. Of course
+*   Yurii: To my knowledge there's no absolutely universal method. Of course
     the PGXS methods are the most standard ones --- like `installcheck` --- to
     to run the tests. In our [Omnigres's] case, we replaced `pg_regress` with
     `pg_yregress`, another tool that we've developed. It allows for more
@@ -290,7 +290,7 @@ with chat activity.
 
 *   David G. Johnston: Okay.
 
-    Yurri: I guess you know it depends on how you ship it. For example, if you
+    Yurii: I guess you know it depends on how you ship it. For example, if you
     look at the pgrx camp, they have their own tooling for that, as well. I've
     also seen open-source extensions where they could be written in, say,
     Rust, but still using `pg_regress` tests to test their behavior. That
@@ -357,7 +357,7 @@ with chat activity.
     something like? Does it handle that or is that just something you haven't
     tackled yet?
 
-*   Yurri: It doesn't tackle this right now, but it's part of the division
+*   Yurii: It doesn't tackle this right now, but it's part of the division
     where it should go. For certain known libraries there's an easy way to add
     a mapping that will kick in for a distribution, and otherwise it will be a
     satisfier for another one. They're completely pluggable, small satisfiers
@@ -389,7 +389,7 @@ with chat activity.
     of maintenance overhead it becomes in the long run to constantly have to
     maintain this which seemed less than ideal.
 
-*   Yurri: It is less than ideal. For now, I do think that would have to be
+*   Yurii: It is less than ideal. For now, I do think that would have to be
     manual, which is less than ideal. But it could be addressed at least on on
     a case-by-case basis. Because we don't really have thousands of extensions
     yet --- in the ecosystem maybe a thousand total --- I think David Wheeler
@@ -405,7 +405,7 @@ with chat activity.
 
 *   Jeremy S: I think there's a few more questions in the chat.
 
-*   Yurri: I'm just looking at them now. "how is the upcoming move to meson
+*   Yurii: I'm just looking at them now. "how is the upcoming move to meson
     and core influencing or impacting this?" I don't think it's influencing
     this particular part in any way that I can think of right now. David, do
     you have thoughts how it can? I would love to learn.
@@ -415,7 +415,7 @@ with chat activity.
     meson file seems similar to this. I just curious if there are any influences
     there or if it's just happenstance.
 
-*   Yurri: Well from from what I can think right now, there's just general
+*   Yurii: Well from from what I can think right now, there's just general
     reliance on either implicitly found PG config or explicitly specified PG
     config. That's just how you discover Postgres itself. There's no relation
     to how Postgres itself was built. The packaging system does not handle say
@@ -428,7 +428,7 @@ with chat activity.
     them, there's less of a learning curve and less of everyone doing their
     own thing and you have 500 different ways of doing testing.
 
-*   Yurri: That's a good point. That's something definitely to reflect on.
+*   Yurii: That's a good point. That's something definitely to reflect on.
 
 *   I'll move on to the next question from Sean. "What if there are no
     satisfiers for the install? If something isn't in your distro how do you
@@ -442,7 +442,7 @@ with chat activity.
 *   David Wheeler (he/him): I assume the
     idea is that, as you come upon these you would add more satisfiers.
 
-*   Yurri: Right, you basically just learn. We learn about this particular
+*   Yurii: Right, you basically just learn. We learn about this particular
     need in a particular extension and develop a satisfier for it. The same
     applies to precedence: it's a question of further evolution. Right now it
     just finds whatever is available within the specified range.
@@ -513,7 +513,7 @@ with chat activity.
     latest minor release and that's Backward compatible to the earlier
     releases.
 
-*   Yurri: Right and that's a good middle ground for this particular case. But
+*   Yurii: Right and that's a good middle ground for this particular case. But
     but of course sometimes when you do a minor upgrade you have to remember
     that you have to rebuild your extensions against that minor version so you
     can just easily transfer them yeah.
@@ -523,7 +523,7 @@ with chat activity.
 *   *David Wheeler (he/him)Jeremy points out that struct change is pretty
     interesting.
 
- *  Yurri: Yeah, it's interesting because it's super dangerous! Like if
+ *  Yurii: Yeah, it's interesting because it's super dangerous! Like if
     somebody is expecting a different versioned structure, then  it can be
     pretty nasty.
 
@@ -547,7 +547,7 @@ with chat activity.
 
     *   *Shaun Thomas* in chat: I'm extremely shocked that showed up in 16.2.
 
-*   Yurri: Yeah, I didn't expect that either, because that's just a great way
+*   Yurii: Yeah, I didn't expect that either, because that's just a great way
     to have absolutely undefined behavior. Like if somebody forgot to rebuild
     their extension against a new minor, then this can be pretty terrible.
 
@@ -582,7 +582,7 @@ with chat activity.
     *   *Steven Miller* in chat: PGDG is the same binaries for each minor
         version because the postgres package is only major version, right?
 
-*   Yurri: Yeah, that's definitely a concern, especially when it comes to the
+*   Yurii: Yeah, that's definitely a concern, especially when it comes to the
     scenario when you rebuild your extensions but just get pre-built packages.
     It's starting to leak out of the scope of this presentation, but I thought
     it was a very interesting topic to bring to everybody's attention.
@@ -629,7 +629,7 @@ with chat activity.
 
 ## Discussion
 
-*   David Wheeler (he/him): Thank you, Yurri, already some good discussion.
+*   David Wheeler (he/him): Thank you, Yurii, already some good discussion.
     What else do you all have?
 
 *   David G. Johnston: PG doesn't use semantic versioning. They we have a
@@ -661,7 +661,7 @@ with chat activity.
     *   *Shaun Thomas* in chat: It's good we're doing all of this though. It
         would suck to do so much work and just become another pip spaghetti.
 
-*   Yurri: That's exactly what I wanted to bring to everybody's attention,
+*   Yurii: That's exactly what I wanted to bring to everybody's attention,
     because there's still a lot of conversations about this and there was not
     enough clarity. So that helps a lot.
 
@@ -741,7 +741,7 @@ with chat activity.
     the same version of Postgres on two different versions of Ubuntu, Right?
     Am I missing something? It is not an extension that runs everywhere.
 
-*   Yurri: No, you still have to build against the set of attributes that
+*   Yurii: No, you still have to build against the set of attributes that
     constitute your target, whether that's architecture, operating system,
     flavor. It's not yet something you can build and just have one binary. I
     would love to have that, actually! I've been pondering a lot about this.
@@ -753,7 +753,7 @@ with chat activity.
 *   Jason Petersen: I expected that to be kind of "pie in the
     sky."
 
-*   Yurri: It's more of a work of art.
+*   Yurii: It's more of a work of art.
 
 *   Jason Petersen: Do you know of other prior art for the `rpath`?  Someone
     on Mastodon the other day was talking about Ruby --- I can't remember the
@@ -780,11 +780,11 @@ with chat activity.
 
 *   Jason Petersen: Cool.
 
-*   Yurri: That's an excellent reference, thank you.
+*   Yurii: That's an excellent reference, thank you.
 
 *   David Wheeler (he/him): More questions?
 
-*   Jeremy S: Yeah, I have one more. Yurri, the build inferencing was *really*
+*   Jeremy S: Yeah, I have one more. Yurii, the build inferencing was *really*
     interesting. A couple things stood out to me. One that you mentioned was
     that you look for The `META.json` file. That's kind of neat, just that
     it's acknowledged a useful thing; and a lot of extensions have it and we
@@ -802,7 +802,7 @@ with chat activity.
     try a new extension and have to add a little bit of extra logic to handle
     that new extension? What's your takeaway from that experience?
 
-*   Yurri: The building part is largely unrelated to `META.json`, that was
+*   Yurii: The building part is largely unrelated to `META.json`, that was
     just primarily the metadata itself. I haven't used in a lot of extensions
     because I was looking for different cases --- extensions that exhibit
     slightly different patterns --- not a whole ton of them yet. I would say
@@ -819,9 +819,9 @@ with chat activity.
 
 *   Jeremy S: Thank you.
 
-*   Yurri: Any other comments or thoughts?
+*   Yurii: Any other comments or thoughts?
 
-*   David Wheeler (he/him): Any more questions for Yurri?
+*   David Wheeler (he/him): Any more questions for Yurii?
 
 *   David Wheeler (he/him): I think this is a an interesting space for some
     research between Devrim's presentation talking about how much effort it is
@@ -834,11 +834,11 @@ with chat activity.
 *   Jeremy S: Yep. Or taking on that maintenance. Kind of like what a spec
     file maintainer or a Debian package maintainer is doing.
 
-*   Yurri: Yeah, precisely.
+*   Yurii: Yeah, precisely.
 
 ## Wrap Up
 
-*   David Wheeler (he/him): Thanks, Yurri, for that. I wanted to remind
+*   David Wheeler (he/him): Thanks, Yurii, for that. I wanted to remind
     everyone that we have our final Mini-Summit before PGConf on May 15th.
     That's two weeks from today at noon Eastern or 4 pm UTC. We're going to
     talk about organizing the topics for the Summit itself. I posted a long
@@ -865,5 +865,5 @@ with chat activity.
   [mini-summit]: https://www.eventbrite.com/e/851125899477/
     "Postgres Extension Ecosystem Mini-Summit"
   [Omnigres]: https://omnigres.com
-  [Yurri Rashkovskii]: https://yrashk.com
+  [Yurii Rashkovskii]: https://yrashk.com
   [community Slack]: https://pgtreats.info/slack-invite "Join the Postgres Slack"

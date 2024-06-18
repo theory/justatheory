@@ -8,7 +8,6 @@ description: |
   Registry and CLI" on Wednesday at noon US Eastern / 16:00 UTC.
 tags: [Postgres, Trunk, Extensions, PGConf, Summit]
 type: post
-link: 
 image:
   src: trunk.png
   link: https://pgt.dev
@@ -20,15 +19,15 @@ image:
 **Update:** 2024-03-22: Slides and video linked below.
 
 This week, my fellow Tembonaut [Ian Stanton] will present the [extension
-ecosystem mini-summit][mini-summit] talk, "Building Trunk: A Postgres Extension
-Registry and CLI". We felt it important to get some insight from a couple of the
-recently-developed Postgres extension registries: what problems they set out to
-solve, how the were built and operate, successes addressing their issues, and
-what issues remain, both for the projects and the ecosystem overall. Ian plans
-to give us the low-down on [trunk]. 
+ecosystem mini-summit][mini-summit] talk, "Building Trunk: A Postgres
+Extension Registry and CLI". We felt it important to get some insight from a
+couple of the recently-developed Postgres extension registries: what problems
+they set out to solve, how the were built and operate, successes addressing
+their issues, and what issues remain, both for the projects and the ecosystem
+overall. Ian plans to give us the low-down on [trunk].
 
 [Join us][mini-summit]! Need other information or just want an invitation
- without using Eventbrite, hit me up at `david@` this domain, [on Mastodon], or
+without using Eventbrite, hit me up at `david@` this domain, [on Mastodon], or
 via the [#extensions] channel on the [Postgres Slack].
 
 **Update:** 2024-03-22: Such a great discussion, was great! Missed it? I got

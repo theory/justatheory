@@ -1,8 +1,8 @@
 ---
 title: 🏔 Extension Ecosystem Summit 2024
 slug: extension-ecosystem-summit
-date: 2024-06-17T21:52:50Z
-lastMod: 2024-06-17T21:52:50Z
+date: 2024-06-18T17:08:35Z
+lastMod: 2024-06-18T17:08:35Z
 description: |
   A brief report on the PostgreSQL Extension Ecosystem Summit at PGConf.dev
   2024 in Vancouver, Canada.

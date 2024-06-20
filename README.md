@@ -114,9 +114,9 @@ pairs, e.g.,
 The supported options are:
 
 *   `linenos`: configure line numbers. Valid values are `true`, `false`,
-    `table`, or `inline`. false will turn off line numbers if it’s configured to
-    be on in site config. New in v0.60.0: `table` will give copy-and-paste
-    friendly code blocks.
+    `table`, or `inline`. `false` will turn off line numbers if it’s
+    configured to be on in site config. New in v0.60.0: `table` will give
+    copy-and-paste friendly code blocks.
 *   `hl_lines`: lists a set of line numbers or line number ranges to be
     highlighted.
 *   `linenostart=199`: starts the line number count from 199.

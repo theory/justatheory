@@ -321,7 +321,7 @@ which sets up an amd64 Linux container for building an extension for Postgres
 16, and a [zot] container to push to and pull from. I used it to build this
 POC and record this demo:
 
-<video controls muted width="676" x-webkit-airplay="allow"
+<video controls muted width="100%" x-webkit-airplay="allow"
 webkit-playsinline="" preload="none" poster="{{% link "trunk-oci-poc-poster.png" %}}">
   <source src="{{% link "trunk-oci-poc-demo.mp4" %}}" type="video/mp4" />
 	<source src="{{% link "trunk-oci-poc-demo.webm" %}}" type="video/webm" />

@@ -2,7 +2,7 @@
 title: POSETTE 2024
 slug: posette
 date: 2024-06-17T20:33:22Z
-lastMod: 2024-06-17T20:33:22Z
+lastMod: 2024-06-24T22:48:31Z
 description: |
   I attended and gave a presentation at POSETTE, an event for Postgres.
   This post highlights some talks and the slides for my own.
@@ -57,9 +57,11 @@ I Also Spoke
 I also gave a talk, [State of the Postgres Extension Ecosystem], expanding
 upon my [mini-Summit session]. I think it came out pretty well, and hope it
 helps to get more people interested in extensions and solve the challenges for
-finding, evaluating, installing, and using them everywhere. Slides:
+finding, evaluating, installing, and using them everywhere. Links:
 
+*   [Video](https://www.youtube.com/watch?v=-6thIB2jw6w)
 *   [PDF]({{% link "state-of-the-ecosystem-posette.pdf" %}})
+*   [PDF with Notes]({{% link "state-of-the-ecosystem-posette-notes.pdf" %}})
 *   [Keynote]({{% link "state-of-the-ecosystem-posette.key" %}})
 
 Next Year
@@ -74,6 +76,8 @@ offer corrections and links to relevant resources.)
 
 For those interested in Postgres, I heartily endorse this free, fully remote
 conference. Perhaps I'll "see" you there next year.
+
+**Update 2024-06-24:** Added link to PDF with notes.
 
   [POSETTE]: https://www.citusdata.com/posette/2024
     "POSETTE: An Event for Postgres 2024"

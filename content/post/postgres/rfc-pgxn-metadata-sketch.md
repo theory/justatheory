@@ -2,7 +2,7 @@
 title: "RFC: PGXN Metadata Sketch"
 slug: rfc-pgxn-metadata-sketch
 date: 2024-03-21T18:50:58Z
-lastMod: 2024-03-25T22:11:37Z
+lastMod: 2024-07-06T21:16:23Z
 description: |
   Request for comments on a sketch of a new metadata standard for Postgres
   extension packaging, distribution, and delivery, building on the
@@ -20,6 +20,8 @@ and thank you!
 **Update 2024-03-25:** Clarified the definition of "Release" and made
 "Maintainers" plural. Thanks to Matthias van de Meent for the suggestions!
 
+**Update 2024-07-06** Fixed some typos.
+
 ---
 
 This post proposes a new metadata standard for extension packaging,
@@ -29,7 +31,8 @@ shortcomings and emerging use cases 12 years on. The goals include:
 *   Don't break the existing standard, but add to it
 *   Add explicit support for different types of Postgres extensions,
     such as [background workers] and [loadable modules]
-*   Add additional metadata for curation and automated binary compilation
+*   Add additional metadata for curation and automated compilation and binary
+    packaging
 *   Add hooks for registry and third-party-contributed metadata, including
     binary distribution options and stats & reports.
 
@@ -41,10 +44,10 @@ files:
 2.  [Registry Metadata](#registry-metadata) aggregated by the root registry
     from various sources, including data derived from the extension source
     code or package metadata, but also trusted third parties such as
-    packagers, smoke testers, security scanners, and more.
+    packagers, smoke testers, security scanners, and more
 
 Following community discussion of this proposal, the [Package
-Metadata](#package-metadata)  will lead to a draft for PGXN Meta Spec version
+Metadata](#package-metadata) will lead to a draft for PGXN Meta Spec version
 2.0.0, while the [Registry Metadata](#registry-metadata) will guide the design
 and implementation of the Root Registry APIs required to provide it.
 
@@ -53,7 +56,7 @@ and implementation of the Root Registry APIs required to provide it.
 Definition of terms as used in this document, because every language and
 distribution system uses terms differently. These are ours.
 
-*   **Extension:** a software component that extends the capabilities of a
+*   **Extension:** A software component that extends the capabilities of a
     PostgreSQL database or cluster. Extensions may be `CREATE EXTENSION`
     [extensions], [background workers], command-line apps, [loadable modules],
     shared libraries, and more.
@@ -438,7 +441,7 @@ Example:
     "windows": [ "amd64" ],
     "freebsd": [ "amd64" ]
   },
-  "dependencies": {
+  "prereqs": {
     "configure": {
       "requires": {
         "external": { "cargo-pgrx": "" }

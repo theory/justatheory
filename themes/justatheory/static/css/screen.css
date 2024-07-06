@@ -933,6 +933,7 @@ pre {
     overflow: scroll;
     overflow-y: hidden;
     overflow-x: auto;
+    tab-size: 4;
 }
 
 p code, li code, p tt, li tt {

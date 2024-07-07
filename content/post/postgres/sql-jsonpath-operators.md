@@ -2,7 +2,7 @@
 title: JSON Path Operator Confusion
 slug: sql-jsonpath-operators
 date: 2023-10-14T22:39:55Z
-lastMod: 2023-10-14T22:39:55Z
+lastMod: 2024-07-07T21:12:54Z
 description: |
   The relationship between the Postgres SQL/JSON Path operators `@@` and `@?`
   confused me. Here's how I figured out the difference.
@@ -491,6 +491,19 @@ queries, and plan to submit another linking these differences in the docs for
 Oh, and probably another to explain the difference in return values between
 strict and lax queries due to array unwrapping.
 
+----
+
+**Update 2024-07-07**: The aforementioned [patch] went through a few reviews
+and iterations and was [committed by Tom Lane] back in January, and will be
+part of the forthcoming PostgreSQL 17 release! The docs now mention which
+flavor of path expression to use with each operator and function, provide much
+more detailed examples of the various behaviors, and clarifies how lax query
+unwrapping of arrays works and can produce unexpected results. I hope these
+changes prevent other people from having to spend time figuring this stuff out
+on their own.
+
+----
+
 Thanks
 ------
 
@@ -546,3 +559,7 @@ oddities of `@@` were previously discussed in detail.
     "pgsql-hackers — JSON Path and GIN Questions"
   [pgsql-general thread]: https://www.postgresql.org/message-id/flat/CACJufxE01sxgvtG4QEvRZPzs_roggsZeVvBSGpjM5tzE5hMCLA%40mail.gmail.com
     "pgsql-general — ​jsonb @@ jsonpath operator doc: ​Only the first item of the result is taken into account"
+  [patch]: https://commitfest.postgresql.org/46/4624/
+    "Commitfest Patch: Improve Boolean Predicate JSON Path Docs"
+  [committed by Tom Lane]: https://github.com/postgres/postgres/commit/7014c9a
+    "postgres/postgres@7014c9a Doc: improve documentation for jsonpath behavior"

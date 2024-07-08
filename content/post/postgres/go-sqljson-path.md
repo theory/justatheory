@@ -33,14 +33,14 @@ import (
 )
 
 func main() {
-  // Parse some JSON.
+	// Parse some JSON.
 	var value any
 	err := json.Unmarshal([]byte(`{"a":[1,2,3,4,5]}`), &value)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-  // Parse a path expression and execute it on the JSON.
+	// Parse a path expression and execute it on the JSON.
 	p := path.MustParse("$.a[*] ? (@ >= $min && @ <= $max)")
 	res, err := p.Query(
 		context.Background(),

@@ -2,7 +2,7 @@
 title: "RFC: PGXN Metadata Sketch"
 slug: rfc-pgxn-metadata-sketch
 date: 2024-03-21T18:50:58Z
-lastMod: 2024-07-06T21:16:23Z
+lastMod: 2024-07-15T19:19:16Z
 description: |
   Request for comments on a sketch of a new metadata standard for Postgres
   extension packaging, distribution, and delivery, building on the
@@ -21,6 +21,8 @@ and thank you!
 "Maintainers" plural. Thanks to Matthias van de Meent for the suggestions!
 
 **Update 2024-07-06** Fixed some typos.
+
+**Update 2024-07-15** Converted to [RFC--2][RFC-2]; [blog post].
 
 ---
 
@@ -977,3 +979,7 @@ Example:
     "PostgresML Contributing: Postgres extension"
   [Homebrew analytics]: https://formulae.brew.sh/docs/api/#analytics
     "Homebrew JSON API Documentation: Analytics"
+  [RFC-2]: https://github.com/pgxn/rfcs/pull/2
+    "pgxn/rfcs#2 – RFC: Binary Distribution Format"
+  [blog post]: {{% ref "/post/postgres/rfc-pgxn-meta-v2" %}}
+    "RFC: PGXN Meta Spec v2"

@@ -1,54 +1,64 @@
 ---
-title: Extension Preloading
+title: PostgreSQL Extension Preloading
 slug: extension-preloading
 date: 2024-07-15T21:03:01Z
 lastMod: 2024-07-15T21:03:01Z
-description: When should a Postgres extension be pre-loaded and when should it not?
-tags: [Postgres, Extensions, Preload]
+description: |
+  When should a Postgres extension be pre-loaded and when should it not?
+  Should it be loaded in user sessions or at server startup? Read on for
+  answers.
+tags: [Postgres, Extensions, Preload, Extensions Book]
 type: post
 ---
 
 Recently I've been trying to figure out when a Postgres extension module
-should be preloaded. By "extension" I mean, more generally, shared libraries
-provided or used by extensions to Postgres, whether a `CREATE EXTENSION`
-extension written in C or [pgrx] or a [`LOAD`]able module. By "preloaded" I
-mean under what conditions should it be added to one of the [Shared Library
-Preloading] variables:
+should be preloaded. By "extension module" I mea, shared libraries provided or
+used by extensions to Postgres, whether [`LOAD`]able modules or `CREATE
+EXTENSION` extensions written in C or [pgrx]. By "preloaded" I mean under what
+conditions should it be added to one of the [Shared Library Preloading]
+variables, especially `shared_preload_libraries`.
 
-*   `local_preload_libraries`
-*   `session_preload_libraries`
-*   `shared_preload_libraries`
-
-The answer, it turns out, comes very much down to the extension type.
+The answer, it turns out, comes very much down to the extension type. Read on
+for details.
 
 Normal Extensions
 -----------------
 
-If your extension includes no loadable modules, congratulations! You don't
-have to worry about this question at all.
+If your extension includes and requires no shared libraries, congratulations!
+You don't have to worry about this question at all.
 
 If your extension's shared library provides functionality only via functions
-called from SQL, you also don't need to worry about this preloading. Custom
-types, operators, and functions generally follow this pattern. The DDL that
-creates the SQL object, such as [`CREATE FUNCTION`], uses the `AS 'obj_file',
-'link_symbol'` syntax to tell that PostgreSQL what library to load when it's
-needed.
+called from SQL, you also don't need to worry about preloading. Custom types,
+operators, and functions generally follow this pattern. The DDL that creates
+the SQL object, such as [`CREATE FUNCTION`], uses the
+`AS 'obj_file', 'link_symbol'` syntax to tell PostgreSQL what library to load
+when SQL commands need them.
 
 Hook Extensions
 ---------------
 
-If your extension's shared library makes calls to PostgreSQL without
-PostgreSQL first calling it, then the library must be loaded before it's used.
-This is typically the case for libraries that modifies the server's behavior
-through "hooks" rather than providing a set of functions.
+If your shared library needs to perform tasks before PostgreSQL would load it
+--- or if it would never be loaded implicitly by SQL statements --- then it
+must be explicitly loaded before it's used. This is typically the case for
+libraries that modify the server's behavior through "hooks" rather than
+providing a set of functions.
+
+To accommodate these requirements, PostgreSQL provides three preloading levels
+that correspond to the configuration variables for which they're named:
+
+*   [`session_preload_libraries`]: session preloading
+*   [`local_preload_libraries`]: local preloading
+*   [`shared_preload_libraries`]: shared preloading
+
+Let's take a look at the use cases for each.
 
 ### Session Preloading
 
 If your extension is intended for debugging or performance-measurement, it
-likely doesn't need to be preloaded for every connection. In this case, a DBA
-might allow specific users to load it by either:
+likely doesn't need to be preloaded for every connection. In this scenario, a
+DBA might allow specific users to load it by either:
 
-*   Adding it to the [`session_preload_libraries`] variable for the user via
+*   Adding it to the user's [`session_preload_libraries`] variable via
     [`ALTER ROLE`], so it loads for every connection for that user:
 
     ```sql
@@ -56,46 +66,52 @@ might allow specific users to load it by either:
       SET session_preload_libraries TO '$libdir/mylib';
     ```
 
-*   Granting the user role the ability to set `session_preload_libraries`
+*   Granting the user role the ability to set `session_preload_libraries`,
     which would allow them to use it (and any other shared library) in
-    `PGOPTIONS`:
+    [`PGOPTIONS`]:
 
     ```sql
     GRANT SET ON PARAMETER session_preload_libraries
        TO role_name;
     ```
 
-As an extension author, you don't need to do any special configuration, as
-long as your module is installed in the usual location via the [`MODULES`]
-`Makefile` variable. Still, it will be useful to document these options so
-that DBAs quickly see how to set things up for the users who need them.
+As an extension author, you don't need to configure anything special for this
+use case, as long as your module is installed in the usual location via the
+[`MODULES`] `Makefile` variable (or your build pipeline's equivalent). Still,
+it will be useful to document these options so that DBAs quickly see how to
+set things up for the users who need them.
 
 ### Local Preloading
 
 As a special case, a DBA might want to make your debugging or
 performance-measurement extension available to any user who needs it, even
-unprivileged users. All they need to do is move it from `$libdir` to
+unprivileged users. All it require is moving the the library from `$libdir` to
 `$libdir/plugins`.
 
-Then any Postgres user can load it via the [`LOAD`] command or include it in
-their [`local_preload_libraries`] configuration via either [`PGOPTIONS`] or,
-for every connection, via `ALTER ROLE SET`:
+Thereafter, any Postgres user can load it via the [`LOAD`] command or include
+it in their [`local_preload_libraries`] configuration via either [`PGOPTIONS`]
+or, for every connection, via `ALTER ROLE CURRENT_ROLE SET`:
 
 ```sql
-ALTER ROLE role_name
+ALTER ROLE CURRENT_ROLE
   SET local_preload_libraries TO '$libdir/plugins/mylib';
 ```
 
-As an extension author, you don't need to do any special configuration; there
-is no `Makefile` variable to install it in the the `$libdir/plugins`
-directory. But it might be handy for DBAs to document this option *in addition
-to* the [session preloading](#session-preloading) options. But emphasize that
-it should be used if and *only if* they want to allow any and all of their
-users to load your extension library without any further intervention.
+As an extension author, you don't need configure anything special for this use
+case, either; there is no `Makefile` variable to install shared libraries in
+the the `$libdir/plugins` directory. As long as no function or operation in
+your extension *requires* superuser access and doesn't provide SQL objects
+that map to `$libdir/mylib`, things should work as before.
+
+Assuming those caveats, it would be handy for DBAs to document this option *in
+addition to* the [session preloading](#session-preloading) options. But in
+your docs, emphasize that it should be used if and *only if* they want to
+allow any and all of their users to load your extension library without
+barriers or intervention.
 
 ### Shared Preloading
 
-The last preloading variable is [`shared_preload_libraries`], which should be
+The last preloading variable is [`shared_preload_libraries`], which is
 required for modules to run in every session or to perform operations only
 available at service start up, such as [shared memory and lightweight locks]
 or starting [background workers].
@@ -105,29 +121,37 @@ preloading, the documentation should say so explicitly, and explain why. For
 examples of wording, see [pg_stat_statements], [sepgsql], and [auth_delay].
 
 Beyond these limited cases, any other modules can be added to
-[`shared_preload_libraries`] for efficiency purposes. However, since shared
-preload modules are loaded into every server process --- even if that process
-never uses the library --- preloading them is recommended only for libraries
-used in most sessions.
+[`shared_preload_libraries`] for efficiency purposes. Since shared preload
+libraries are loaded into every server process --- even if that process never
+uses the module --- preloading is recommended only for libraries used in most
+sessions.
 
-As an extension author, it will be kind to DBAs to include this information,
-and to describe the circumstances under which they *might* want to preload
-your library in every service --- along with the caveat that doing so requires
-a server restart. For example wording, see [PL/Perl] and [auto_explain]
+As an extension author, it would be kind to DBAs to document this
+optimization, and to describe the circumstances under which they *might* want
+to preload your library in every service --- along with the caveat that doing
+so requires a server restart. For example wording, see [PL/Perl],
+[auto_explain] and [passwordcheck].
 
-### A Final Note
+A Final Note
+------------
 
 One more requirement to carefully document is dependence on shared libraries
-provided by *other* extensions. For example, [Shaun Thomas] tells me that the
+provided by *other* extensions. For example, [Shaun Thomas] reports that the
 [BDR] extension used to rely on [pglogical] being loaded first. The
-implication for preloading was that [pglogical] had to appear in the
-`shared_preload_libraries` variable *before* [BDR].
+implication for preloading was that [pglogical] had to appear in the preload
+variables *before* [BDR].
 
 So if your preload-requiring extension depends on other extensions, be sure to
-document the importance of load order and the impact on the format of the 
-`shared_preload_libraries` variable.
+document the importance of load order and the impact on the format of the
+[`shared_preload_libraries`] variable.
 
+Acknowledgements
+----------------
 
+I'm grateful to [David Christensen], [Greg Sabino Mullane], [Andreas
+Scherbaum], [David Johnston], and [Shaun Thomas] for reviewing drafts of this
+post and greatly improving it with their suggestions and corrections.
+Remaining errors are on me.
 
   [pgrx]: https://github.com/pgcentralfoundation/pgrx
     "pgrx: Build Postgres Extensions with Rust!"
@@ -163,8 +187,14 @@ document the importance of load order and the impact on the format of the
     "PostgreSQL Docs: plperl.on_init"
   [auto_explain]: https://www.postgresql.org/docs/16/auto-explain.html
     "PostgreSQL Docs: auto_explain"
+  [passwordcheck]: https://www.postgresql.org/docs/16/passwordcheck.html
+    "PostgreSQL Docs: passwordcheck"
   [Shaun Thomas]: http://bonesmoses.org
   [BDR]: https://wiki.postgresql.org/wiki/BDR_Project
     "PostgreSQL Wiki: BDR Project"
   [pglogical]: https://github.com/2ndQuadrant/pglogical
     "Logical Replication extension for PostgreSQL"
+  [David Christensen]: https://github.com/pgguru
+  [Greg Sabino Mullane]: https://github.com/turnstep
+  [Andreas Scherbaum]: https://andreas.scherbaum.la
+  [David G. Johnston]: https://david-g-johnston.com

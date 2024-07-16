@@ -13,9 +13,9 @@ type: post
 
 Recently I've been trying to figure out when a Postgres extension shared
 libraries should be preloaded. By "shared libraries" I mean libraries provided
-or used by extensions to Postgres, whether [`LOAD`]able libraries or
-`CREATE EXTENSION` extension libraries written in C or [pgrx]. By "preloaded"
-I mean under what conditions should they be added to one of the [Shared Library
+or used by Postgres extensions, whether [`LOAD`]able libraries or
+`CREATE EXTENSION` libraries written in C or [pgrx]. By "preloaded" I mean
+under what conditions should they be added to one of the [Shared Library
 Preloading] variables, especially `shared_preload_libraries`.
 
 The answer, it turns out, comes very much down to the extension type. Read on
@@ -30,9 +30,12 @@ You don't have to worry about this question at all.
 If your extension's shared library provides functionality only via functions
 called from SQL, you also don't need to worry about preloading. Custom types,
 operators, and functions generally follow this pattern. The DDL that creates
-the SQL object, such as [`CREATE FUNCTION`], uses the
-`AS 'obj_file', 'link_symbol'` syntax to tell PostgreSQL what library to load
-when SQL commands need them.
+objects, such as [`CREATE FUNCTION`], uses the `AS 'obj_file', 'link_symbol'`
+syntax to tell PostgreSQL what library to load when SQL commands need them.
+
+For certain extensions used by nearly every connection, there are may be
+performance benefits to preloading them in [`shared_preload_libraries`], but
+it's not required. See [below](#shared-preloading) for details.
 
 Initializing Extensions
 -----------------------
@@ -99,15 +102,15 @@ ALTER ROLE CURRENT_ROLE
 
 As an extension author, you don't need configure anything special for this use
 case, either; there is no `Makefile` variable to install shared libraries in
-the the `$libdir/plugins` directory. As long as no function or operation in
-your extension *requires* superuser access and doesn't provide SQL objects
-that map to `$libdir/mylib`, things should work as before.
+`$libdir/plugins`. As long as no function or operation in your extension
+*requires* superuser access and doesn't provide SQL objects that map to
+`$libdir/mylib`, things should work as before.
 
-Assuming those caveats, it would be handy for DBAs to document this option *in
-addition to* the [session preloading](#session-preloading) options. But in
-your docs, emphasize that it should be used if and *only if* they want to
-allow any and all of their users to load your extension library without
-barriers or intervention.
+Assuming those caveats, it would be handy to document this option *in addition
+to* the [session preloading](#session-preloading) options. But in your docs,
+emphasize that it should be used if and *only if* DBAs want to allow any and
+all of their users to load your extension library without barriers or
+intervention.
 
 ### Shared Preloading
 
@@ -120,49 +123,47 @@ As an extension author, if your extension requires `shared_preload_libraries`
 preloading, the documentation should say so explicitly, and explain why. For
 examples of wording, see [pg_stat_statements], [sepgsql], and [auth_delay].
 
-Beyond these limited cases, any other libraries can be added to
-[`shared_preload_libraries`] for efficiency purposes. Since shared preload
-libraries are loaded into every server process --- even if that process never
+Beyond these limited cases, any other shared libraries can be added to
+[`shared_preload_libraries`] for efficiency purposes. Since Postgres loads
+preload libraries into every server process --- even if that process never
 uses the library --- preloading is recommended only for libraries used in most
 sessions. In such cases there can be a significant performance benefit in
 reduced connection time and --- since preloaded extensions are shared across
 processes and benefit from [COW] --- memory allocation.
 
-As an extension author, it would be kind to DBAs to document this
-optimization, and to describe the circumstances under which they *might* want
-to preload your library in every service --- along with the caveat that doing
-so requires a server restart. For example wording, see [PL/Perl],
-[auto_explain] and [passwordcheck].
+As an extension author, it would be a kindness to document this optimization,
+and to describe the circumstances under which they *might* want to preload
+your library in every service --- along with the caveat that doing so requires
+a server restart. For example wording, see [PL/Perl], [auto_explain] and
+[passwordcheck].
 
 Hook Load Order
 ---------------
 
 If your extension uses [hooks] to modify the behavior of PostgreSQL, it's
 important to use them properly to prevent dependency and load order issues.
-Hooks that don't modify server state1 when they run and always call the next
-hook should be safe to load in any order.
+Hooks that don't modify server state and always call the next hook should be
+safe to load in any order.
 
-But some hooks *do* modify the state, because that's their purpose. Again, in
+But some hooks *do* modify the state, because that's their purpose. In
 general, if they always call the next hook things should work. But there are
 two situations to be mindful of: hooks that depend on the state changes of
 other hooks, and hooks that break on unexpected changes from other hooks.
 
-In either case, if you discover a conflict with another hook that can be
-resolved by loading your extension before or after the other, document that
-load order and the impact on the format of the [`shared_preload_libraries`]
-variable.
+In either case, if you discover a conflict with another shared library that
+can be resolved by loading your extension before or after the other, document
+the required order and the impact on the format of the preload variables.
 
 Connection Pooling
 ------------------
 
-One more wrinkle. Users cannot manually [`LOAD`] shared libraries or load them
-via [`local_preload_libraries`] or [`session_preload_libraries`] in
-[`PGOPTIONS`] if they connect via a connection pooler like [PgBouncer].
+One more wrinkle. Users connecting via a connection pooler like [PgBouncer]
+must not manually [`LOAD`] shared libraries or load them via [`PGOPTIONS`].
 Connection poolers often assign a connection per command, so a library loaded
-in one command likely will not be available to the next command in the same
-session, because it could be a different connection!
+in one command likely will not be available to the next command, because it
+could be a different connection!
 
-This issue can be addressed by any one of a number of means:
+This issue can be addressed by a number of means:
 
 *   For occasional use of a shared library, allow users to connect directly to
     PostgreSQL rather than to the connection pooler, so they have a consistent
@@ -172,8 +173,8 @@ This issue can be addressed by any one of a number of means:
     rather than  [`LOAD`] or [`PGOPTIONS`]. This will generally work because
     connection poolers don't share connections between users.
 *   If usage is regular and useful for many or most connections, preload the
-    libraries in [`shared_preload_libraries`] and enjoy the performance
-    benefits, too, at the expense of a server restart.
+    libraries in [`shared_preload_libraries`] and also enjoy the performance
+    benefits --- at the expense of a server restart.
 
 Acknowledgements
 ----------------

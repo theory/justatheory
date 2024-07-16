@@ -34,13 +34,13 @@ the SQL object, such as [`CREATE FUNCTION`], uses the
 `AS 'obj_file', 'link_symbol'` syntax to tell PostgreSQL what library to load
 when SQL commands need them.
 
-Hook Extensions
----------------
+Initializing Extensions
+-----------------------
 
 If your shared library needs to perform tasks before PostgreSQL would load it
 --- or if it would never be loaded implicitly by SQL statements --- then it
 must be explicitly loaded before it's used. This is typically the case for
-libraries that modify the server's behavior through "hooks" rather than
+libraries that modify the server's behavior through [hooks] rather than
 providing a set of functions.
 
 To accommodate these requirements, PostgreSQL provides three preloading levels
@@ -124,7 +124,9 @@ Beyond these limited cases, any other libraries can be added to
 [`shared_preload_libraries`] for efficiency purposes. Since shared preload
 libraries are loaded into every server process --- even if that process never
 uses the library --- preloading is recommended only for libraries used in most
-sessions.
+sessions. In such cases there can be a significant performance benefit in
+reduced connection time and --- since preloaded extensions are shared across
+processes and benefit from [COW] --- memory allocation.
 
 As an extension author, it would be kind to DBAs to document this
 optimization, and to describe the circumstances under which they *might* want
@@ -132,24 +134,52 @@ to preload your library in every service --- along with the caveat that doing
 so requires a server restart. For example wording, see [PL/Perl],
 [auto_explain] and [passwordcheck].
 
-A Final Note
-------------
+Hook Load Order
+---------------
 
-One more requirement to carefully document is dependence on shared libraries
-provided by *other* extensions. For example, [Shaun Thomas] reports that the
-[BDR] extension used to rely on [pglogical] being loaded first. The
-implication for preloading was that [pglogical] had to appear in the preload
-variables *before* [BDR].
+If your extension uses [hooks] to modify the behavior of PostgreSQL, it's
+important to use them properly to prevent dependency and load order issues.
+Hooks that don't modify server state1 when they run and always call the next
+hook should be safe to load in any order.
 
-So if your preload-requiring extension depends on other extensions, be sure to
-document the importance of load order and the impact on the format of the
-[`shared_preload_libraries`] variable.
+But some hooks *do* modify the state, because that's their purpose. Again, in
+general, if they always call the next hook things should work. But there are
+two situations to be mindful of: hooks that depend on the state changes of
+other hooks, and hooks that break on unexpected changes from other hooks.
+
+In either case, if you discover a conflict with another hook that can be
+resolved by loading your extension before or after the other, document that
+load order and the impact on the format of the [`shared_preload_libraries`]
+variable.
+
+Connection Pooling
+------------------
+
+One more wrinkle. Users cannot manually [`LOAD`] shared libraries or load them
+via [`local_preload_libraries`] or [`session_preload_libraries`] in
+[`PGOPTIONS`] if they connect via a connection pooler like [PgBouncer].
+Connection poolers often assign a connection per command, so a library loaded
+in one command likely will not be available to the next command in the same
+session, because it could be a different connection!
+
+This issue can be addressed by any one of a number of means:
+
+*   For occasional use of a shared library, allow users to connect directly to
+    PostgreSQL rather than to the connection pooler, so they have a consistent
+    session.
+*   Use `ALTER USER SET` to configure [`local_preload_libraries`] or
+    [`session_preload_libraries`] for the roles that need libraries loaded,
+    rather than  [`LOAD`] or [`PGOPTIONS`]. This will generally work because
+    connection poolers don't share connections between users.
+*   If usage is regular and useful for many or most connections, preload the
+    libraries in [`shared_preload_libraries`] and enjoy the performance
+    benefits, too, at the expense of a server restart.
 
 Acknowledgements
 ----------------
 
 I'm grateful to [David Christensen], [Greg Sabino Mullane], [Andreas
-Scherbaum], [David Johnston], and [Shaun Thomas] for [reviewing] drafts of
+Scherbaum], [David G. Johnston], and [Shaun Thomas] for [reviewing] drafts of
 this post and greatly improving it with their suggestions and corrections.
 Remaining errors are on me.
 
@@ -183,6 +213,8 @@ Remaining errors are on me.
     "PostgreSQL Docs: sepgsql"
   [auth_delay]: https://www.postgresql.org/docs/16/auth-delay.html
     "PostgreSQL Docs: auth_delay"
+  [COW]: https://en.wikipedia.org/wiki/Copy-on-write
+    "Wikipedia: Copy-on-write"
   [PL/Perl]: https://www.postgresql.org/docs/16/plperl-under-the-hood.html#GUC-PLPERL-ON-INIT
     "PostgreSQL Docs: plperl.on_init"
   [auto_explain]: https://www.postgresql.org/docs/16/auto-explain.html
@@ -190,10 +222,9 @@ Remaining errors are on me.
   [passwordcheck]: https://www.postgresql.org/docs/16/passwordcheck.html
     "PostgreSQL Docs: passwordcheck"
   [Shaun Thomas]: http://bonesmoses.org
-  [BDR]: https://wiki.postgresql.org/wiki/BDR_Project
-    "PostgreSQL Wiki: BDR Project"
-  [pglogical]: https://github.com/2ndQuadrant/pglogical
-    "Logical Replication extension for PostgreSQL"
+  [hooks]: https://wiki.postgresql.org/wiki/PostgresServerExtensionPoints#Hooks
+    "PostgreSQL Wiki: Hooks"
+  [PgBouncer]: https://www.pgbouncer.org "Lightweight connection pooler for PostgreSQL"
   [David Christensen]: https://github.com/pgguru
   [Greg Sabino Mullane]: https://github.com/turnstep
   [Andreas Scherbaum]: https://andreas.scherbaum.la

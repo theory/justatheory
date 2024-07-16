@@ -11,12 +11,12 @@ tags: [Postgres, Extensions, Preload, Extensions Book]
 type: post
 ---
 
-Recently I've been trying to figure out when a Postgres extension module
-should be preloaded. By "extension module" I mea, shared libraries provided or
-used by extensions to Postgres, whether [`LOAD`]able modules or `CREATE
-EXTENSION` extensions written in C or [pgrx]. By "preloaded" I mean under what
-conditions should it be added to one of the [Shared Library Preloading]
-variables, especially `shared_preload_libraries`.
+Recently I've been trying to figure out when a Postgres extension shared
+libraries should be preloaded. By "shared libraries" I mean libraries provided
+or used by extensions to Postgres, whether [`LOAD`]able libraries or
+`CREATE EXTENSION` extension libraries written in C or [pgrx]. By "preloaded"
+I mean under what conditions should they be added to one of the [Shared Library
+Preloading] variables, especially `shared_preload_libraries`.
 
 The answer, it turns out, comes very much down to the extension type. Read on
 for details.
@@ -76,10 +76,10 @@ DBA might allow specific users to load it by either:
     ```
 
 As an extension author, you don't need to configure anything special for this
-use case, as long as your module is installed in the usual location via the
-[`MODULES`] `Makefile` variable (or your build pipeline's equivalent). Still,
-it will be useful to document these options so that DBAs quickly see how to
-set things up for the users who need them.
+use case, as long as your library is installed in the usual location via the
+regrettably-named [`MODULES`] `Makefile` variable (or your build pipeline's
+equivalent). Still, it will be useful to document these options so that DBAs
+quickly see how to set things up for the users who need them.
 
 ### Local Preloading
 
@@ -112,7 +112,7 @@ barriers or intervention.
 ### Shared Preloading
 
 The last preloading variable is [`shared_preload_libraries`], which is
-required for modules to run in every session or to perform operations only
+required for libraries to run in every session or to perform operations only
 available at service start up, such as [shared memory and lightweight locks]
 or starting [background workers].
 
@@ -120,10 +120,10 @@ As an extension author, if your extension requires `shared_preload_libraries`
 preloading, the documentation should say so explicitly, and explain why. For
 examples of wording, see [pg_stat_statements], [sepgsql], and [auth_delay].
 
-Beyond these limited cases, any other modules can be added to
+Beyond these limited cases, any other libraries can be added to
 [`shared_preload_libraries`] for efficiency purposes. Since shared preload
 libraries are loaded into every server process --- even if that process never
-uses the module --- preloading is recommended only for libraries used in most
+uses the library --- preloading is recommended only for libraries used in most
 sessions.
 
 As an extension author, it would be kind to DBAs to document this
@@ -149,8 +149,8 @@ Acknowledgements
 ----------------
 
 I'm grateful to [David Christensen], [Greg Sabino Mullane], [Andreas
-Scherbaum], [David Johnston], and [Shaun Thomas] for reviewing drafts of this
-post and greatly improving it with their suggestions and corrections.
+Scherbaum], [David Johnston], and [Shaun Thomas] for [reviewing] drafts of
+this post and greatly improving it with their suggestions and corrections.
 Remaining errors are on me.
 
   [pgrx]: https://github.com/pgcentralfoundation/pgrx
@@ -160,7 +160,7 @@ Remaining errors are on me.
   [Shared Library Preloading]: https://www.postgresql.org/docs/current/runtime-config-client.html#RUNTIME-CONFIG-CLIENT-PRELOAD
     "PostgreSQL Docs: Shared Library Preloading"
   [`CREATE FUNCTION`]: https://www.postgresql.org/docs/current/sql-createfunction.html
-    "PostgreSQL Docs: `MODULES`"
+    "PostgreSQL Docs: CREATE FUNCTION"
   [`session_preload_libraries`]: https://www.postgresql.org/docs/current/runtime-config-client.html#GUC-SESSION-PRELOAD-LIBRARIES
     "PostgreSQL Docs: `session_preload_libraries`"
   [`ALTER ROLE`]: https://www.postgresql.org/docs/current/sql-alterrole.html
@@ -198,3 +198,4 @@ Remaining errors are on me.
   [Greg Sabino Mullane]: https://github.com/turnstep
   [Andreas Scherbaum]: https://andreas.scherbaum.la
   [David G. Johnston]: https://david-g-johnston.com
+  [reviewing]: https://github.com/theory/justatheory/pull/6

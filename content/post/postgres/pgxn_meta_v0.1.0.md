@@ -6,7 +6,7 @@ lastMod: 2024-08-08T16:13:21Z
 description: |
   Today I released pgxn_meta v0.1.0, a Rust crate and executable for validating
   PGXN Meta v1 and v2 `META.json` files.
-tags: [PostgreSQL, PGXN, JSON Schema, Rust, Metadata]
+tags: [Postgres, PGXN, JSON Schema, Rust, Metadata]
 type: post
 ---
 

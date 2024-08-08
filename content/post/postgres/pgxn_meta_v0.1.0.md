@@ -58,7 +58,7 @@ the `pgxn_meta` (or `pgxn_meta.exe`) binary in your path. Or use the
 [universal binary installer (ubi)][ubi] to install it:
 
 ``` sh
-ubi --project pgxn/meta --in ~/bin
+ubi --project pgxn/meta --exe pgxn_meta --in ~/bin
 ```
 
 And of course you can use `cargo` to compile it from source:

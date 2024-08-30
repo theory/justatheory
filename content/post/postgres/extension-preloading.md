@@ -6,7 +6,7 @@ lastMod: 2024-08-07T18:25:51Z
 description: |
   When should a Postgres extension be pre-loaded and when should it not?
   Should it be loaded in user sessions or at server startup? For the Tembo
-  blog, I 
+  blog, I dug into this question and wrote up my findings.
 tags: [PGXN, Postgres, Extensions, Preload, Extensions Book]
 type: post
 link: https://tembo.io/blog/library-preloading

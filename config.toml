@@ -4,15 +4,13 @@ languageCode = "en-us"
 copyright = "© David E. Wheeler. This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 theme = "justatheory"
 PreserveTaxonomyNames = true
-Paginate = 16
-PaginatePath = "p"
 footnoteReturnLinkContents = "↩"
 enableRobotsTXT = false
 disableKinds = ["section"]
 uglyURLs = true
 refLinksErrorLevel = "WARNING"
 
-[author]
+[params.author]
 name = "David E. Wheeler"
 url = "https://justatheory.com/"
 email = "david@justatheory.com"
@@ -20,7 +18,6 @@ email = "david@justatheory.com"
 [params]
 description = "Periodically irregular technology and culture blogging since 2002. By David E. Wheeler."
 tagline = "Irregular fine blogging since 2002."
-author = "David E. Wheeler"
 subtitle = "Trans rights are human rights"
 bug = "❖"
 twitter = ""
@@ -34,6 +31,10 @@ favicon = "/icon-64x64.png"
 [params.mastodon]
 url = "https://xoxo.zone/@theory"
 user = "@theory@xoxo.zone"
+
+[pagination]
+pagerSize = 16
+path = "p"
 
 [permalinks]
 post  = "/:year/:month/:slug/"

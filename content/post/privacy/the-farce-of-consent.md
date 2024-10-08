@@ -1,7 +1,7 @@
 ---
 title: "The Farce of Consent"
 date: 2018-10-04T13:10:52Z
-lastMod: 202018-10-04T13:10:52Z
+lastMod: 2018-10-04T13:10:52Z
 description: Helen Nissenbaum on how to approach data privacy beyond the insufficiency of consent, to its impacts on individuals, society, and institutions.
 tags: [Privacy, Consent, GDPR, Helen Nissenbaum]
 type: post

@@ -2,7 +2,7 @@
 title: "PGXN v2: Go or Rust?"
 slug: pgxn-language-choices
 date: 2024-03-28T20:14:12Z
-lastMod: 2024-03-28T20:14:12Z
+lastMod: 2024-10-08T19:54:48Z
 description: |
   What programming language(s) should we use to build new and revamp existing
   PGXN services and tools: Rust or Go? Vote your preference!
@@ -236,7 +236,7 @@ Mastodon], or via the [#extensions] channel on the [Postgres Slack]. Thanks!
     "distroless: 🥑 Language focused docker images, minus the operating system"
   [releases]: https://github.com/gohugoio/hugo/releases "Hugo Releases"
   [Hugo Homebrew formula]: https://github.com/Homebrew/homebrew-core/blob/8fb177a/Formula/h/hugo.rb
-  [`Dockerfile`]: https://github.com/hugomods/docker/blob/main/docker/hugo/snippets/common
+  [`Dockerfile`]: https://github.com/gohugoio/hugo/blob/master/Dockerfile
     "Hugo base Dockerfile"
   [Rust]: https://www.rust-lang.org "Rust Programming Language"
   [Tembo]: https://tembo.io/ "Tembo: Goodbye Database Sprawl, Hello Postgres"

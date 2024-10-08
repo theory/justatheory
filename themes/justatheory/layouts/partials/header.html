@@ -6,8 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	{{- $title := or .Params.headTitle .Title }}
 	<title>{{ $title }}</title>
-	<meta name="description" content="{{ partial "attr.html" (or .Description .Summary .Site.Params.description) }}" />
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
+	<meta name="description" content="{{ partial "attr.html" (or .Description
+	.Summary .Site.Params.description) }}" />{{ with .Params.author.name }}
+	<meta name="author" content="{{ . }}" />{{ end }}
 	<link rel="stylesheet" href="/css/screen.css" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -41,7 +42,7 @@
 		<hgroup class="top">
 			<h1 class="bug"><a href="/">{{ .Site.Params.Bug }}</a></h1>
 			<h1><a href="/">{{ .Site.Title }}</a></h1>
-			<h2>{{ with .Site.Params.subtitle }}{{ . }}{{ else }} By {{ .Site.Params.author }}{{ end }}</h2>
+			<h2>{{ with .Site.Params.subtitle }}{{ . }}{{ else }} By {{ .Params.author.name }}{{ end }}</h2>
 		</hgroup>
 		<nav>
 			<menu>

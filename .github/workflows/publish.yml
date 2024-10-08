@@ -8,8 +8,8 @@ jobs:
       - name: Check out Source
         uses: actions/checkout@v4
       - name: Build the Site
-        uses: docker://hugomods/hugo:base-0.133.1
-        with: { args: hugo }
+        uses: docker://ghcr.io/gohugoio/hugo:v0.135.0
+        with: { entrypoint: hugo }
       - name: Generate Publish Script
         run: ./bin/publish public justatheory.com E1X44SJ45FTNGI 1 > publish.sh
       - name: Publish the Site

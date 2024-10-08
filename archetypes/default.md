@@ -11,8 +11,8 @@ type: {{ .Type }}
 link: ~
 # draft: true
 # author:
-#   name: {{ .Site.Author.name }}
-#   email: {{ .Site.Author.email }}
+#   name: {{ .Site.Params.Author.name }}
+#   email: {{ .Site.Params.Author.email }}
 # via:
 #   name: Example
 #   href: https://example.com

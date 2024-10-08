@@ -5,7 +5,7 @@
 	"home_page_url": {{ .doc.Permalink | jsonify }},{{ with .doc.OutputFormats.Get "json" }}
 	"feed_url": {{ .Permalink | jsonify -}},{{ end }}{{ with .Site.Params.icon }}
 	"icon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Params.favicon }}
-	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Site.Author }}
+	"favicon": {{ . | absURL | jsonify }},{{ end }}{{ with .Params.Author }}
 	"author": {
 		"name": {{ .name | jsonify }}{{ with .url }},
 		"url": {{ . | jsonify }}{{ end }}{{ with .avatar }},
@@ -30,7 +30,7 @@
 			"content_html": {{ printf "<p>%v</p>" (htmlEscape .) | jsonify }},
 			"content_text": {{ . | jsonify }}{{ end }}
 {{- else -}}
-			{{ with (or .Params.author .Site.Author) }}
+			{{ with .Params.author }}
 			"author": {
 				"name": {{ .name | jsonify }}{{ with .url }},
 				"url": {{ . | jsonify }}{{ end }}{{ with .avatar }},

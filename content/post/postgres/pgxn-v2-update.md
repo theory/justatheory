@@ -7,7 +7,7 @@ description: |
   A lot has happened in he five months since the last PGXN v2 update. The time
   has been used for continuing community discussions, planning, designs, and the
   start of implementation. Read on for a full accounting.
-tags: [PGXN, Postgres]
+tags: [PGXN]
 type: post
 link: https://tembo.io/blog/pgxn-v2-update
 ---

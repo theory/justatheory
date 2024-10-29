@@ -13,7 +13,7 @@ image:
   class: clear
   link: https://www.citusdata.com/posette/2024
   title: POSETTE 2024
-  alt: alt text for *image*
+  alt: The POSETTE elephant logo
   copyright: 2024 Microsoft
 ---
 

@@ -745,6 +745,7 @@ article .footnotes li {
 
 figure {
     background-color: #2d2d2d;
+    clear: both;
 }
 
 figure img {

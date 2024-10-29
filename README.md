@@ -162,7 +162,7 @@ are:
 #### `title`
 
 Image title. Not used in plain text output unless `alt` is not set. Markdown
-within the value of `caption` will be rendered. Optional.
+within the value of `title` will be rendered. Optional.
 
 #### `alt`
 
@@ -197,12 +197,12 @@ Optional.
 #### `attr`
 
 Text to use for attribution, for when the photo comes from elsewhere. Markdown
-within the value of `caption` will be rendered. Optional.
+within the value of `attr` will be rendered. Optional.
 
 #### `copyright`
 
 Text to use for a copyright notice. Will be preceded by the copyright symbol.
-Markdown within the value of `caption` will be rendered. Optional.
+Markdown within the value of `copyright` will be rendered. Optional.
 
 #### `metaOnly`
 

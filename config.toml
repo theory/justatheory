@@ -18,7 +18,7 @@ email = "david@justatheory.com"
 [params]
 description = "Periodically irregular technology and culture blogging since 2002. By David E. Wheeler."
 tagline = "Irregular fine blogging since 2002."
-subtitle = "Trans rights are human rights"
+# subtitle = "Trans rights are human rights"
 bug = "❖"
 twitter = ""
 github = "theory"

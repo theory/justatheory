@@ -1126,6 +1126,69 @@ object.slides {
     height: 512px;
 }
 
+/* Alert CSS based on GitHub's */
+.alert {
+    border-left: .25em solid currentColor;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.alert *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.alert-title {
+    vertical-align: middle;
+    vertical-align: top;
+}
+.alert-title:before {
+    margin-right: .4rem;
+}
+.alert-note {
+    border-left-color: rgb(9,105,218)
+}
+.alert-note .alert-title {
+    color: rgb(9,105,218);
+}
+.alert-note .alert-title:before {
+    content: url('/img/note.svg');
+}
+.alert-tip {
+    border-left-color: rgb(63,185,80)
+}
+.alert-tip .alert-title {
+    color: rgb(63,185,80);
+}
+.alert-tip .alert-title:before {
+    content: url('/img/tip.svg');
+}
+.alert-important {
+    border-left-color: rgb(137,87,229)
+}
+.alert-important .alert-title {
+    color: rgb(137,87,229);
+}
+.alert-important .alert-title:before {
+    content: url('/img/important.svg');
+}
+.alert-warning {
+    border-left-color: rgb(158,106,3)
+}
+.alert-warning .alert-title {
+    color: rgb(158,106,3);
+}
+.alert-warning .alert-title:before {
+    content: url('/img/warning.svg');
+}
+.alert-caution {
+    border-left-color: rgb(218,54,51)
+}
+.alert-caution .alert-title {
+    color: rgb(218,54,51);
+}
+.alert-caution .alert-title:before {
+    content: url('/img/caution.svg');
+}
+
 /* content/post/past/web/markup/html-embed-test.md, static/code/testembed.html */
 code._testembed{background:green}
 object#_testembed{background:lightblue;width:100%;border:1px dotted darkblue}

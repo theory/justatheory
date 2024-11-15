@@ -2,7 +2,7 @@
 title: "Patch: Postgres ABI and API Guidance"
 slug: abi-api-guidance
 date: 2024-06-27T18:05:04Z
-lastMod: 2024-11-14T23:24:23Z
+lastMod: 2024-11-15T23:57:20Z
 description: |
   Dear Postgres extension developers: Please review and give feedback on the
   proposed patch adding ABI and API guidance to the C language documentation.
@@ -13,7 +13,7 @@ type: post
 > [!NOTE] Update 2011-11-14
 >
 > I forgot to update this post at the time, but on July 31, [Peter Eisentraut]
-> committed [the patch][patch] adding ABI and API guidance to the C language
+> [committed] the patch [patch] ABI and API guidance to the C language
 > documentation. I only noticed because [today's releases] contained a
 > modified ABI that broke a number of extensions. See the [hackers thread] for
 > details.
@@ -99,3 +99,6 @@ the [pull request] (I'll propagate comments to hackers).
     "PostgreSQL 17.1, 16.5, 15.9, 14.14, 13.17, and 12.21 Released!"
   [hackers thread]: https://postgr.es/m/CABOikdNmVBC1LL6pY26dyxAS2f%2BgLZvTsNt%3D2XbcyG7WxXVBBQ%40mail.gmail.com
     "pgsql-hackers: Potential ABI breakage in upcoming minor releases"
+  [committed]: https://github.com/postgres/postgres/commit/e54a42a
+    "Add API and ABI stability guidance to the C language docs"
+  

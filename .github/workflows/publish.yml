@@ -8,7 +8,9 @@ jobs:
       - name: Check out Source
         uses: actions/checkout@v4
       - name: Build the Site
-        uses: docker://ghcr.io/gohugoio/hugo:v0.135.0
+        # https://github.com/gohugoio/hugo/issues/12991
+        # uses: docker://ghcr.io/gohugoio/hugo:v0.135.0
+        uses: docker://hugomods/hugo:base-0.139.2
         with: { entrypoint: hugo }
       - name: Generate Publish Script
         run: ./bin/publish public justatheory.com E1X44SJ45FTNGI 1 > publish.sh

@@ -33,6 +33,14 @@ octothorpes = true # https://octothorp.es
 url = "https://xoxo.zone/@theory"
 user = "@theory@xoxo.zone"
 
+[params.bluesky]
+url = "https://bsky.app/profile/theory.fyi"
+user = "theory.fyi"
+
+[params.linkedin]
+url = "https://www.linkedin.com/in/theory/"
+user = "theory"
+
 [pagination]
 pagerSize = 16
 path = "p"

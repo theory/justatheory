@@ -12,8 +12,14 @@ image:
 {{% figure src="theory.jpg" alt=`David E. "Theory" Wheeler` class="frame" %}}
 
 *Just a Theory* is an periodically irregular technology and culture blog by
-David E. Wheeler. If you'd like to get in touch, catch me on [Mastodon] or send
-email to `david` at this domain ([GPG Keys]({{% link "/keys/" %}})).
+David E. Wheeler. Connect:
+
+*   [Mastodon][]: {{% param "mastodon.user" %}}
+*   [Bluesky][]: {{% param "bluesky.user" %}}
+*   [LinkedIn][]: {{% param "linkedin.user" %}}
+*   [GitHub][]: {{% param "github" %}}
+*   Twitter: Deleted (@theory is no longer me)
+*   Email: `david` at this domain ([GPG Keys]({{% link "/keys/" %}}))
 
 Colophon
 --------
@@ -24,10 +30,13 @@ hosted on [AWS]. Its set in [Source Sans Pro], with fixed-width type set in
 
 This site eschews JavaScript and uses no tracking or analytics services.
 
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Hugo]: https://gohugo.io
-[AWS]: https://aws.amazon.com/
-[Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro
-[Source Code Pro]: https://github.com/adobe-fonts/source-code-pro
-[Mastodon]: https://xoxo.zone/@theory
-[Font Awesome]: https://fontawesome.com
+  [Markdown]: https://daringfireball.net/projects/markdown/
+  [Hugo]: https://gohugo.io
+  [AWS]: https://aws.amazon.com/
+  [Source Sans Pro]: https://github.com/adobe-fonts/source-sans-pro
+  [Source Code Pro]: https://github.com/adobe-fonts/source-code-pro
+  [Mastodon]: {{% param "mastodon.url" %}} "{{% param "mastodon.user" %}}"
+  [Bluesky]: {{% param "bluesky.url" %}} "{{% param "bluesky.user" %}}"
+  [LinkedIn]: {{% param "linkedin.url" %}} "{{% param "linkedin.user" %}}"
+  [GitHub]: https://github.com/{{% param "github" %}}
+  [Font Awesome]: https://fontawesome.com

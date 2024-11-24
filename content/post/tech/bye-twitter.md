@@ -42,4 +42,4 @@ See you [on Mastodon] --- or perhaps [Bluesky].
   [Ivory]: https://tapbots.com/ivory/
   [latest announcement]: https://www.nbcnews.com/tech/tech-news/x-sees-largest-user-exodus-musk-takeover-rcna179793
     "X sees largest user exodus since Musk takeover"
-  [Bluesky]: https://bsky.app/profile/itheory.bsky.social
+  [Bluesky]: {{% param "bluesky.url" %}} "{{% param "bluesky.user" %}}"

@@ -27,6 +27,7 @@ feedLimit = 32
 recentTagYears = 3
 icon = "/icon-512x512.png"
 favicon = "/icon-64x64.png"
+octothorpes = true # https://octothorp.es
 
 [params.mastodon]
 url = "https://xoxo.zone/@theory"

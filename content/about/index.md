@@ -18,7 +18,7 @@ David E. Wheeler. Connect:
 *   [Bluesky][]: {{% param "bluesky.user" %}}
 *   [LinkedIn][]: {{% param "linkedin.user" %}}
 *   [GitHub][]: {{% param "github" %}}
-*   Twitter: Deleted (@theory is no longer me)
+*   ~Twitter~: [Deleted]
 *   Email: `david` at this domain ([GPG Keys]({{% link "/keys/" %}}))
 
 Colophon
@@ -39,4 +39,5 @@ This site eschews JavaScript and uses no tracking or analytics services.
   [Bluesky]: {{% param "bluesky.url" %}} "{{% param "bluesky.user" %}}"
   [LinkedIn]: {{% param "linkedin.url" %}} "{{% param "linkedin.user" %}}"
   [GitHub]: https://github.com/{{% param "github" %}}
+  [Deleted]: {{% ref "/post/tech/bye-twitter" %}} "Bye Twitter"
   [Font Awesome]: https://fontawesome.com

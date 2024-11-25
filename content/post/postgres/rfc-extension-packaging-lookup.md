@@ -1,15 +1,14 @@
 ---
 title: "RFC: Extension Packaging & Lookup"
 slug: rfc-extension-packaging-lookup
-date: 2024-11-25T19:00:36Z
-lastMod: 2024-11-25T19:00:36Z
+date: 2024-11-25T19:14:04Z
+lastMod: 2024-11-25T19:14:04Z
 description: |
   A proposal to modify the PostgreSQL core so that all files required for an
   extension live in a directory named for the extension, along with a search
   path to find extension directories.
 tags: [Postgres, Extensions, RFC, Packaging, Kubernetes, OCI, Packaging, Postgres.app]
 type: post
-draft: true
 ---
 
 Several weeks ago, I started [a pgsql-hackers thread] proposing a new

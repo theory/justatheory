@@ -34,7 +34,7 @@ stability between major and, especially, minor versions of Postgres.
 
 A frequent topic at the [Extension Summit and Mini-Summits] and a number of
 PCConf sessions has been concern regarding compatibility changes between minor
-releases of Postgres. At [Mini Summit Five], for example, Yurri Rashkovskii
+releases of Postgres. At [Mini Summit Five], for example, Yurii Rashkovskii
 presented a few examples of such changes, leading him to conclude, along with
 several others in the community, that C API-using extensions can only be used
 when built against the minor release with which they're used.

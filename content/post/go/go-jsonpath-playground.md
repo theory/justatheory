@@ -84,7 +84,7 @@ Status
 The root `jsonpath` package is stable and ready for use. Other packages remain
 in flux, as I refactor and rejigger things in the coming weeks as part of the
 aforementioned personal project. But for actual JSONPath execution and
-querying, it should continue to work as-is for the foreseeable futre.
+querying, it should continue to work as-is for the foreseeable future.
 
 I hope you find it useful.
 

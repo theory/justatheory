@@ -103,5 +103,5 @@ I hope you find it useful.
   [playground webapp]: https://theory.github.io/jsonpath/ "Go JSONPath Playground"
   [TinyGo]: https://tinygo.org/ "TinyGo - A Go Compiler For Small Places"
   [Wasm]: https://webassembly.org/ "WebAssembly"
-  [Go SQL/JSON Playground]: https://theory.github.io/sqljson/playground/
+  [Go SQL/JSON Playground]: https://theory.github.io/sqljson/
   [Rust JSONPath Playground]: https://serdejsonpath.lives

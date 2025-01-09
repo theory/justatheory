@@ -8,7 +8,7 @@ description: |
 tags: [Sqitch, MariaDB, MySQL, Yugabyte, Oracle, Snowflake]
 type: post
 image:
-  src: sqitch-icon.svg
+  src: sqitch-icon.png
   alt: Sqitch Logo
   class: clear right
   width: 256px

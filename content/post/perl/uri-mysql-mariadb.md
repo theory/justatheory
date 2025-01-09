@@ -34,6 +34,15 @@ I seek the wisdom of the Perl Monks:
 
 Feedback appreciated [via PerlMonks] or the [Sqitch issue][sqitch-825].
 
+> [!NOTE] Update 2025-01-08
+>
+> [URI-db 0.23] `dbi_dsn()` method for URI::mysql and URI::MariaDB both now
+> use [DBD::MariaDB] instead of [DBD::mysql].
+>
+> Similarly, [Sqitch v1.5.0] always uses [DBD::MariaDB] when connecting to
+> MySQL or MariaDB, even when using older versions of URI::db. Thanks everyone
+> for the feedback and suggestions!
+
   [sqitch-825]: https://github.com/sqitchers/sqitch/issues/825
     "sqitchers/sqitch#825 Support DBD::MariaDB"
   [DBD::mysql]: https://metacpan.org/pod/DBD::mysql
@@ -42,3 +51,5 @@ Feedback appreciated [via PerlMonks] or the [Sqitch issue][sqitch-825].
   [URI::db]: https://metacpan.org/pod/URI::db
   [URI::mysql dbi_driver]: https://metacpan.org/dist/URI-db/source/lib/URI/mysql.pm#L6
   [via PerlMonks]: https://www.perlmonks.org/?node_id=11163487
+  [URI-db 0.23]: https://metacpan.org/release/DWHEELER/URI-db-0.23 
+  [Sqitch v1.5.0]: https://github.com/sqitchers/sqitch/releases/tag/v1.5.0

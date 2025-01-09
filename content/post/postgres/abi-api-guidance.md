@@ -10,7 +10,7 @@ tags: [Postgres, Extensions, Patch, ABI, API]
 type: post
 ---
 
-> [!NOTE] Update 2011-11-14
+> [!NOTE] Update 2024-11-14
 >
 > I forgot to update this post at the time, but on July 31, [Peter Eisentraut]
 > [committed] the patch [patch] ABI and API guidance to the C language

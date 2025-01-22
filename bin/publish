@@ -10,8 +10,7 @@ my @configs = (
     },
     {
         type    => "application/atom+xml; charset=utf-8",
-        include => [qw(*.xml)],
-        exclude => [qw(browserconfig.xml sitemap.xml)],
+        include => [qw(feed.xml)],
     },
     {
         type    => "application/xml; charset=utf-8",
@@ -28,6 +27,10 @@ my @configs = (
     {
         type    => "application/manifest+json",
         include => [qw(*.webmanifest)],
+    },
+    {
+        type    => "application/feed+json",
+        include => [qw(feed.json)],
     },
     {
         type    => "font/woff",

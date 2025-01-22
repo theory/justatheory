@@ -63,8 +63,11 @@ mediatype = "application/atom"
 baseName = "feed"
 noUgly = true
 
+[mediaTypes."application/feed+json"]
+suffixes = ["json"]
+
 [outputFormats.json]
-mediatype = "application/json"
+mediatype = "application/feed+json"
 baseName = "feed"
 isPlainText = true
 noUgly = true

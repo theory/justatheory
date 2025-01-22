@@ -1,5 +1,5 @@
 title = "Just a Theory"
-baseURL = "https://justatheory.com/"
+baseURL = "https://justatheory.com"
 languageCode = "en-us"
 copyright = "© David E. Wheeler. This work is licensed under CC BY-NC-SA 4.0."
 theme = "justatheory"

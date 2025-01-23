@@ -10,11 +10,7 @@ my @configs = (
     },
     {
         type    => "application/atom+xml; charset=utf-8",
-        include => [qw(feed.xml)],
-    },
-    {
-        type    => "application/xml; charset=utf-8",
-        include => [qw(browserconfig.xml sitemap.xml)],
+        include => [qw(feed.xml atom.xml)],
     },
     {
         type    => "text/plain; charset=utf-8",

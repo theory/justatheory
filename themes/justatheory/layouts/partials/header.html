@@ -6,8 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	{{- $title := or .Params.headTitle .Title }}
 	<title>{{ $title }}</title>
-	<meta name="description" content="{{ partial "attr.html" (or .Description
-	.Summary .Site.Params.description) }}" />
+	<meta name="description" content="{{ partial "attr.html" (or .Description .Summary .Site.Params.description) }}" />
 	{{ with (or .Params.author .Site.Params.Author) }}<meta name="author" content="{{ .name }}" />{{ end }}
 	<link rel="stylesheet" href="/css/screen.css" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -17,10 +16,13 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d2d2d" />{{ if and .Site.Params.octothorpes .Params.tags }}
 	<link rel="preload" as="fetch" {{ printf "href=\"https://octothorp.es/?uri=%v\"" .Permalink | safeHTMLAttr }}>
 	{{- range .Params.tags }}
-	  <link rel="octo:octothorpes" href="{{ . | urlize }}" />
+	<link rel="octo:octothorpes" href="{{ . | urlize }}" />
 	{{- end }}{{ end }}
-	{{- with .Site.Params.mastodon.url }}
-	<link rel="me" href="{{ . }}" />
+	{{- with .Site.Params.mastodon }}
+	<link rel="me" href="{{ .url }}" />
+	{{- if in $.Site.Params.postTypes $.Type }}
+	<meta name="fediverse:creator" content="{{ .user }}" />
+	{{- end }}
 	{{- end }}
 	<meta name="msapplication-TileColor" content="#2d2d2d" />
 	<meta name="theme-color" content="#ffffff" />{{/* https://medium.com/p/e64b4bb9254 */}}

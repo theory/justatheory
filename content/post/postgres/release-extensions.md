@@ -2,7 +2,7 @@
 title: "Automate Postgres Extension Releases on GitHub and PGXN"
 slug: release-postgres-extensions-with-github-actions
 date: 2020-10-25T23:48:36Z
-lastMod: 2023-02-20T23:55:17Z
+lastMod: 2025-02-25T20:22:08Z
 description: Go beyond testing and fully automate the release of Postgres extensions on both GitHub and PGXN using GitHub actions.
 tags: [Postgres, PGXN, GitHub, GitHub Actions, Automation, CI/CD]
 type: post
@@ -50,7 +50,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - name: Check out the repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Bundle the Release
       id: bundle
       run: pgxn-bundle
@@ -62,23 +62,23 @@ jobs:
       run: pgxn-release
     - name: Create GitHub Release
       id: release
-      uses: actions/create-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        name: Release ${{ github.ref }}
         body: |
           Changes in this Release
           - First Change
           - Second Change
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      with:
-        # Reference the upload URL and bundle name from previous steps.
-        upload_url: ${{ steps.release.outputs.upload_url }}
-        asset_path: ./${{ steps.bundle.outputs.bundle }}
-        asset_name: ${{ steps.bundle.outputs.bundle }}
-        asset_content_type: application/zip
+        files: ${{ steps.bundle.outputs.bundle }}
 ```
+
+> [!NOTE] Update 2025-02-25
+>
+> Updated the example and description to use `softprops/action-gh-release` to
+> create a GitHub release and upload files, replacing two steps that used the
+> now-deprecated `actions/create-release` and `actions/upload-release-asset`
+> actions.
 
 Here's how it works:
 
@@ -114,26 +114,22 @@ Here's how it works:
     to clean up once we've fixed things for PGXN.
 
 *   With the success of a PGXN release, step "Create GitHub Release", on lines
-    26-35, uses the GitHub [create-release] action to create a release
-    corresponding to the tag. Note the inclusion of `id: release`, which will be
-    referenced below. You'll want to customize the body of the release; for the [pair extension], I added a simple [make target] to generate a file, then pass it
-    via the `body_path` config:
+    26-36, uses the GitHub [softprops/action-gh-release] action to create a
+    release corresponding to the tag. You'll want to customize the body of the
+    release; for the [pair extension], I added a simple [make target] to
+    generate a file, then pass it via the `body_path` config:
 
     ``` yaml
     - name: Generate Release Changes
       run: make latest-changes.md
     - name: Create GitHub Release
-      id: release
-      uses: actions/create-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        name: Release ${{ github.ref }}
         body_path: latest-changes.md
+        files: ${{ steps.bundle.outputs.bundle }}
     ```
-
-*   Step "Upload Release Asset", on lines 36-43, adds the release file to the
-    GitHub release, using output of the `release` step to specify the URL to
-    upload to, and the output of the `bundle` step to know what file to upload.
 
 Lotta steps, but works nicely. I only wish I could require that the testing
 workflow finish before doing a release, but I generally tag a release once it
@@ -157,6 +153,5 @@ extensions.
   [pgxn-release]: https://pgxn.org/dist/pair/0.1.7/
   [personal access token]: https://github.com/settings/tokens/new
   [GitHub API]: https://docs.github.com/
-  [create-release]: https://github.com/actions/create-release
-  [make target]:
-    https://github.com/theory/kv-pair/blob/798cd00e76b5b029967262101b9bb2c4add0e9d2/Makefile#L28-L29
+  [softprops/action-gh-release]: https://github.com/softprops/action-gh-release
+  [make target]: https://github.com/theory/kv-pair/blob/798cd00e76b5b029967262101b9bb2c4add0e9d2/Makefile#L28-L29

@@ -95,6 +95,28 @@ basically the stuff under `[params]` in [`config.toml`](config.toml). Examples:
 [on Mastodon]: {{% param "mastodon.url" %}} "{{% param "mastodon.user" %}}"
 ```
 
+## Alerts
+
+Start a blockquote with a special bracketed string to create a callout, or
+"admonition". The supported tags are:
+
+```md
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+
 ### Syntax Highlighting
 
 [Syntax Highlighting] comes with Hugo. Use fenced blocks with the [named language],

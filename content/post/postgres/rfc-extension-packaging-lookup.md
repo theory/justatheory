@@ -222,9 +222,10 @@ Each of these locations can still be overridden by setting one of the
 (currently undocumented) [installation location options] (e.g., `datadir`,
 `pkglibdir`, etc.).
 
-> [!NOTE] External projects that install extensions without using PGXS, like
-> [pgrx], must also be updated to either follow the same pattern or to
-> delegate installation to [PGXS].
+> [!NOTE]
+> External projects that install extensions without using PGXS, like [pgrx],
+> must also be updated to either follow the same pattern or to delegate
+> installation to [PGXS].
 
 ### Control File
 

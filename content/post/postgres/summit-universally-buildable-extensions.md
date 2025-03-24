@@ -14,9 +14,10 @@ link: https://www.eventbrite.com/e/851125899477/
 
 Well that snuck up on me. Tomorrow, May 1 2024, [Yurii Rashkovskii] of
 Omnigres will be giving a presentation at the fifth installment of the
-Postgres [extension ecosystem mini-summit][mini-summit]. The tal, "Universally
-buildable extensions: dev to prod", should provoke some interesting
-asymmetrical thinking and discussion. I hope to see you [there][mini-summit].
+Postgres [extension ecosystem mini-summit][mini-summit]. The talk,
+"Universally buildable extensions: dev to prod", should provoke some
+interesting asymmetrical thinking and discussion. I hope to see you
+[there][mini-summit].
 
 **Note!** If you reserved a spot at a prior mini-summit, you will need to do
 so again for each subsequent event or get no reminders from Eventbrite. If

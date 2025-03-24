@@ -4,9 +4,8 @@ slug: mini-summit-one
 date: 2025-03-24T20:46:58Z
 lastMod: 2025-03-24T20:46:58Z
 description: |
-  A rough transcript of my talk "State of the Extension Ecosystem", along with
-  interspersed chat comments and appearances by Bagel.
-tags: [Postgres, PGXN, Extensions, PGConf, Summit, Bagel]
+  A rough transcript of my talk "State of the Extension Ecosystem".
+tags: [Postgres, PGXN, Extensions, PGConf, Summit]
 type: post
 ---
 

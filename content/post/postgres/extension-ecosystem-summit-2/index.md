@@ -53,9 +53,9 @@ discovered along the way, and dreams for an ideal extension ecosystem in the
 future. Tentative speaker lineup (will post updates as the schedule fills in):
 
 *   March 12: [David Wheeler], PGXN: "State of the Extension Ecosystem”
-*   Date TBD: [Peter Eisentraut], Core Team: "Implementing an Extension Search Path" 
-*   Date TBD: [Christoph Berg], Debian: "Apt Extension Packaging"
-*   TBD
+*   March 24: [Peter Eisentraut], Core Team: "Implementing an Extension Search Path" 
+*   April 9: [Christoph Berg], Debian: "Apt Extension Packaging"
+*   April 23: 
 *   May 7: [Gabriele Bartolini], CNPG "Extension Management in CloudNativePG"
 
 Join the [meetup] for details. These sessions will be recorded and Posted to

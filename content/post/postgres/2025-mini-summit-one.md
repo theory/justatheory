@@ -483,7 +483,6 @@ path.
     "PGConf.dev: Extensions Ecosystem Summit"
   [oci-demo]: {{% ref "/post/postgres/trunk-oci-poc" %}}#demo
     "POC: Distributing Trunk Binaries via OCI (Demo)"
-
   [David Wheeler]: {{% ref "/" %}}
   [Tembo]: https://tembo.io/
   [PGXN]: https://pgxn.org/

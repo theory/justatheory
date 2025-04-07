@@ -8,6 +8,15 @@ description: |
   "Implementing an Extension Search Path", by Peter Eisentraut.
 tags: [Postgres, Extensions, PGConf, Summit, Peter Eisentraut]
 type: post
+image:
+image:
+  src: /shared/extension-ecosystem-summit/search-path-card.jpeg
+  link: https://www.youtube.com/watch?v=xtnt06zhONk
+  title: "PostgresSQL Extension Mini Summit: Implementing an Extension Search Patch"
+  alt: |
+    Orange card with large black text reading "Implementing an Extension Search
+    Patch". Smaller text below reads "Peter Eisentraut, EDB" and "03.26.2025". A
+    photo of Peter speaking into a mic at a conference appears on the right.
 ---
 
 Last Wednesday, March 26, we hosted the second of five virtual [Extension

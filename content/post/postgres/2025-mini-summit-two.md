@@ -6,7 +6,7 @@ lastMod: 2025-04-01T19:32:52Z
 description: |
   A transcript of from the second PostgreSQL Extension Mini Summit,
   "Implementing an Extension Search Path", by Peter Eisentraut.
-tags: [Postgres, Extensions, PGConf, Summit, Peter Eisentraut]
+tags: [Postgres, Extensions, PGConf, Summit, Peter Eisentraut, Transcript]
 type: post
 image:
 image:

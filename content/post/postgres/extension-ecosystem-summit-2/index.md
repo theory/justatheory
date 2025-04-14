@@ -2,7 +2,7 @@
 title: Extension Ecosystem Summit 2025
 slug: extension-ecosystem-summit
 date: 2025-03-05T00:35:56Z
-lastMod: 2025-03-05T00:35:56Z
+lastMod: 2025-04-14T22:48:17Z
 description: |
   We're doing it again! The PostgreSQL Extension Ecosystem Summit returns to
   PGConf.dev. We'll again be looking at indexing, discovery, packaging, and
@@ -55,13 +55,16 @@ future. Tentative speaker lineup (will post updates as the schedule fills in):
 *   March 12: [David Wheeler], PGXN: "State of the Extension Ecosystem”
 *   March 24: [Peter Eisentraut], Core Team: "Implementing an Extension Search Path" 
 *   April 9: [Christoph Berg], Debian: "Apt Extension Packaging"
-*   April 23: 
+*   April 23: [Celeste Horgan], [Sonia Valeja], and [Alexey Palazhchenko]: "The
+    User POV"
 *   May 7: [Gabriele Bartolini], CNPG "Extension Management in CloudNativePG"
 
 Join the [meetup] for details. These sessions will be recorded and Posted to
 the [PGConf.dev YouTube] and we'll have again detailed transcripts. Many
 thanks to my co-organizers [Floor Drees] and [Yurii Rashkovskii], as well as
 the [PGConf.dev organizers] for making this all happen!
+
+**Update 2025-04-14:** Added the April 23 session topic and panelists.
 
   [Extension Ecosystem Summit]: https://www.pgevents.ca/events/pgconfdev2025/schedule/session/241/
     "PGConf.dev: Extensions Ecosystem Summit"
@@ -77,6 +80,9 @@ the [PGConf.dev organizers] for making this all happen!
   [David Wheeler]: {{% ref "/" %}}
   [Peter Eisentraut]: https://peter.eisentraut.org
   [Christoph Berg]: https://www.cybertec-postgresql.com/en/author/christoph_berg/
+  [Celeste Horgan]: https://www.linkedin.com/in/celeste-horgan-b65b5a1a/
+  [Sonia Valeja]: https://www.linkedin.com/in/sonia-valeja-69517a140/
+  [Alexey Palazhchenko]: https://www.linkedin.com/in/alexeypalazhchenko/overlay/about-this-profile/
   [Gabriele Bartolini]: https://www.gabrielebartolini.it
   [Yurii Rashkovskii]: https://ca.linkedin.com/in/yrashk
   [Keith Fiske]: https://pgxn.org/user/keithf4

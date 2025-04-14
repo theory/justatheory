@@ -5,7 +5,7 @@ date: 2025-03-24T20:46:58Z
 lastMod: 2025-03-24T20:46:58Z
 description: |
   A rough transcript of my talk "State of the Extension Ecosystem".
-tags: [Postgres, PGXN, Extensions, PGConf, Summit]
+tags: [Postgres, PGXN, Extensions, PGConf, Summit, Transcript]
 type: post
 ---
 

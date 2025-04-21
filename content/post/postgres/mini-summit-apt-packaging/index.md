@@ -13,7 +13,7 @@ link: https://www.meetup.com/postgres-extensions-ecosystem-mini-summits/events/3
 image:
   src: /shared/extension-ecosystem-summit/apt-packaging-card.jpeg
   link: https://www.meetup.com/postgres-extensions-ecosystem-mini-summits/events/306682786/
-  title: "PostgresSQL Extension Mini Summit: Implementing an Extension Search Patch"
+  title: "PostgresSQL Extension Mini Summit: APT Extension Packaging"
   alt: |
     Orange card with large black text reading "APT Extension Packaging". Smaller
     text below reads "Christoph Berg, Debian/Cybertec" and "04.09.2025". A photo

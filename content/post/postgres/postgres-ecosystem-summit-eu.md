@@ -40,7 +40,7 @@ cases for extensions. From the [invite]:
 > *   Gülçin Yıldırım Jelínek (Xata) - [pgzx]: pgzx is a library for
 >     developing PostgreSQL extensions written in Zig.
 > *   Mats Kindahl (Timescale) - TimescaleDB (C), [pgvectorscale] (Rust) and
->     pgai (Python): maintaining extensions written in different languages.
+>     [pgai] (Python): maintaining extensions written in different languages.
 
 I will also deliver the opening remarks, including a brief history of Postgres
 extensibility. Please join us if you're in the area or planning to attend
@@ -63,3 +63,5 @@ extensibility. Please join us if you're in the area or planning to attend
   [pgmq]: https://github.com/tembo-io/pgmq
   [pg_tde]: https://github.com/Percona-Lab/pg_tde
   [pgzx]: https://github.com/xataio/pgzx
+  [pgvectorscale]: https://github.com/timescale/pgvectorscale "GitHub: timescale/pgvectorscale"
+  [pgai]: https://github.com/timescale/pgai "GitHub: timescale/pgai"

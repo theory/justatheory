@@ -45,7 +45,7 @@ The stream and the closed captions available for the recording are supported
 by PGConf.Dev and their gold level [sponsors], Google, AWS, Huawei, Microsoft,
 and EDB.
 
-Next, and last in this series, on May 7 we're gonna have Gabriele Bartolini
+Next, and last in this series, on May 7 we're gonna have [Gabriele Bartolini]
 talk to us about [Extension Management in CloudNativePG]. Definitely make
 sure you head over to the [Meetup] page, if you haven't already, and RSVP for
 that one!

@@ -19,7 +19,7 @@ image:
     Sonia Valeja (Percona), & Alexey Palazhchenko (FerretDB)"
 ---
 
-And we're back. 
+And we're back.
 
 This Wednesday, April 9 at noon America/New_York (16:00 UTC) for [Extension
 Mini Summit #4], where our panel consisting of [Celeste Horgan] (Aiven),

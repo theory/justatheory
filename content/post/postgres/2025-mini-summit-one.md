@@ -468,7 +468,7 @@ Yurii made a number of announcements, summarizing:
 *   Yurii is also running an event that, while not affiliated with PGConf.dev,
     is strategically scheduled to happen one day before PGConf.dev: [Postgres
     Extensions Day]. The Call for Speakers is open until April 1st. There's
-    also an option for people who cannot or would not come to Montreal this
+    also an option for people who cannot or would not come to Montréal this
     year to submit a prerecorded talk. The point of the event is not just to
     bring people together, but also ti surface content that can be interesting
     to other people. The event itself is free.

@@ -21,7 +21,7 @@ image:
 
 Last Wednesday, March 26, we hosted the second of five virtual [Extension
 Mini-Summits][mini-summit] in the lead up to [*the big one*][summit] at the
-Postgres Development Conference ([PGConf.dev]) on May 13 in Montreal, Canada.
+Postgres Development Conference ([PGConf.dev]) on May 13 in Montréal, Canada.
 [Peter Eisentraut] gave a very nice presentation on the history, design
 decisions, and problems solved by "Implementing an Extension Search Path".
 That talk, plus another 10-15m of discussion, is now available for your

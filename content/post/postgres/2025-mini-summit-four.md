@@ -547,7 +547,7 @@ that, we are oftentimes working with production data, right?
 We need to make sure there is less friction on any other side. We need to get
 these extensions to get considered. That's at least one of the points that I
 wanted to mention. I think there's a lot to be done and I really hope that the
-conference next month in Montreal will actually be a great place to get the
+conference next month in Montréal will actually be a great place to get the
 best minds together again and hash out some of the ideas that we've been
 discussing in the past number of months.
 
@@ -591,7 +591,7 @@ database.
 
 When I was at the CNCF, I supported a whole bunch of different open source
 projects. I was everybody's documentation girl. So I'm trying to throw things
-at them and then hopefully you can talk about them in Montreal and maybe
+at them and then hopefully you can talk about them in Montréal and maybe
 something useful will come of it. Another thing that you can use is almost
 like an alpha beta experimental sort of feature where you define some set of
 criteria for something being alpha or experimental, you define some set of
@@ -674,7 +674,7 @@ to that decision, or the community support for it?
 **Sonia:** That's a great question to discuss inside the community, to be
 honest. Like, how do we go about that?
 
-**David:** Come to Montreal and help us figure it out.
+**David:** Come to Montréal and help us figure it out.
 
 **Jay:** I was afraid of that answer. I'll see you in New York, or hopefully
 Chicago on Friday.
@@ -695,7 +695,7 @@ that podcast will help you give the answers to an extent.
 was the previous version, it was the "Path to Citus Con", because that was
 what it was called before.
 
-**David:** The summit that's in Montreal on May 13th is an unconference
+**David:** The summit that's in Montréal on May 13th is an unconference
 session. We have a limited amount of time, so we want to collect topic ideas
 and ad hoc votes for ideas of things to discuss. Last year I used a website
 with Post-Its. This year I'm just trying a spreadsheet. I posted a link to the

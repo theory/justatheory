@@ -21,7 +21,7 @@ image:
 Last week [Christoph Berg], who maintains PostgreSQL's APT packaging system,
 gave a very nice talk on that system at the third PostgreSQL [Extension
 Mini-Summit][mini-summit]. We're hosting five of these virtual sessions in the
-lead-up to the main [Extension Summit][summit] at [PGConf.dev] on May 13 in Montreal,
+lead-up to the main [Extension Summit][summit] at [PGConf.dev] on May 13 in Montréal,
 Canada. Check out Christoph's session on April 9:
 
 *   [Video](https://www.youtube.com/watch?v=35a7YCEfaRY)

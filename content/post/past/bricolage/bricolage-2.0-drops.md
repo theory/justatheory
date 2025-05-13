@@ -93,7 +93,7 @@ Many others provided feedback, patches, and bug reports, and I appreciate all
 the help. I hope to see you all for Bricolage 2.2!
 
   [released today]: http://bricolagecms.org/news/announce/2010/04/12/bricolage-2.0.0/
-  [Google Summer of Code]: http://code.google.com/soc/
+  [Google Summer of Code]: https://summerofcode.withgoogle.com
   [Marshall Roch]: http://mroch.com/
   [Christian Muise]: http://www.haz.ca/
   [Bret Dawson]: http://pectopah.com/

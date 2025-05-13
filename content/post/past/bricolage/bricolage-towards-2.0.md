@@ -139,7 +139,7 @@ to other things again for a while. Watch this space for details!
   [file bug reports]: http://bugs.bricolage.cc/ "Bricolage Bug Tracker"
   [OSCON]: https://web.archive.org/web/20080529045558/http://en.oreilly.com/oscon2008/public/content/home
     "OSCON 2008"
-  [Google Summer of Code]: http://code.google.com/soc/2006/
+  [Google Summer of Code]: https://summerofcode.withgoogle.com2006/
     "Google Summer of Code 2006"
   [Web site]: https://bricolagecms.org/ "The Bricolage Web site"
   [pair Networds]: http://pair.net "pair Networks"

@@ -10,7 +10,7 @@ jobs:
       - name: Build the Site
         # https://github.com/gohugoio/hugo/issues/12991
         # uses: docker://ghcr.io/gohugoio/hugo:v0.135.0
-        uses: docker://hugomods/hugo:base-0.147.1
+        uses: docker://hugomods/hugo:base-0.147.3
         with: { entrypoint: hugo }
       - name: Generate Publish Script
         run: ./bin/publish public justatheory.com E1X44SJ45FTNGI 1 > publish.sh

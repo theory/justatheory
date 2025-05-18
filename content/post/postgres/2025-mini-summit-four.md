@@ -28,7 +28,7 @@ Drees].
 
 *   [Video](https://www.youtube.com/watch?v=d6XjsNAUvIw)
 
-Amd now, the transcripts of "The User POV" panel, by [Floor Drees]
+And now, the transcripts of "The User POV" panel, by [Floor Drees]
 
 ## Introduction
 

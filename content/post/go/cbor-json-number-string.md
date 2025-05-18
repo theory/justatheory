@@ -6,7 +6,7 @@ lastMod: 2025-05-18T19:32:06Z
 description:
   Use the new IANA-registered tag to preserve JSON numbers represented as
   strings when encoding in Concise Binary Object Representation.
-tags: [Go, CBOR, JSON, IANA]
+tags: [Go, CBOR, JSON, IETF, IANA]
 type: post
 ---
 

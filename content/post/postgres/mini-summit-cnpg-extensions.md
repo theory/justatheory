@@ -21,7 +21,7 @@ image:
 
 The last Extension Ecosystem Mini-Summit is upon us. How did that happen?
 
-Join use for a virtual conference session featuring [Gabriele Bartolini], who
+Join us for a virtual conference session featuring [Gabriele Bartolini], who
 will be discussing [Extension Management in CNPG]. I'm psyched for this one,
 as the PostgresSQL community has contributed quite a lot to improving
 extensions management in [CloudNativePG] in the past year, some of which we

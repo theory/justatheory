@@ -1,5 +1,5 @@
 ---
-title: "Mini Summit 5 Transcript:  Improving the PostgreSQL Extensions Experience in Kubernetes with CloudNativePG"
+title: "Mini Summit 5 Transcript: Improving the PostgreSQL Extensions Experience in Kubernetes with CloudNativePG"
 slug: 2025-mini-summit-four
 date: 2025-05-18T22:28:42Z
 lastMod: 2025-05-18T22:28:42Z

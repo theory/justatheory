@@ -1,8 +1,8 @@
 ---
 title: "Mini Summit 5 Transcript: Improving the PostgreSQL Extensions Experience in Kubernetes with CloudNativePG"
-slug: 2025-mini-summit-four
-date: 2025-05-18T22:28:42Z
-lastMod: 2025-05-18T22:28:42Z
+slug: mini-summit-cnpg
+date: 2025-05-19T03:05:10Z
+lastMod: 2025-05-19T03:05:10Z
 description: |
   At the final Mini-Summit of 2025, Gabriele Bartolini gave an overview of
   PostgreSQL extension management in CloudNativePG.

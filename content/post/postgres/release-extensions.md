@@ -1,5 +1,5 @@
 ---
-title: "Automate Postgres Extension Releases on GitHub and PGXN"
+title: Automate Postgres Extension Releases on GitHub and PGXN"
 slug: release-postgres-extensions-with-github-actions
 date: 2020-10-25T23:48:36Z
 lastMod: 2025-02-25T20:22:08Z

@@ -21,7 +21,7 @@ install additional dependencies, build, test, bundle, and release an extension.
 Here's how I've put it to use in a [GitHub workflow for semver], the
 [Semantic Version] data type:
 
-```yaml {linenos=true,hl_lines=[7 10 "12-14"]}
+```yaml {linenos=table,hl_lines=[7 10 "12-14"]}
 name: CI
 on: [push, pull_request]
 jobs:
@@ -77,7 +77,7 @@ with your PGXN credentials, pass them in environment variables named
 `PGXN_USERNAME` and `PGXN_PASSWORD`, and the script will handle the rest. Here's
 how a release job might look:
 
-```yaml {linenos=true,linenostart=15}
+```yaml {linenos=table,linenostart=15}
   release:
     name: Release on PGXN
     # Release pon push to main when the test job succeeds.

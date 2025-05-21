@@ -34,7 +34,7 @@ published the v0.1.7 release today on both [GitHub][gh-release] and
 [PGXN][pgxn-release]. With that success, I updated the [pgxn/pgxn-tools]
 documentation with a starter example. It looks like this:
 
-```yaml {linenos=true}
+```yaml {linenos=table}
 name: Release
 on:
   push:

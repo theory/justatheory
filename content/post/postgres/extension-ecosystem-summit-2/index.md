@@ -79,7 +79,7 @@ the [PGConf.dev organizers] for making this all happen!
     "Postgres Extension Ecosystem Mini-Summit on Meetup"
   [David Wheeler]: {{% ref "/" %}}
   [Peter Eisentraut]: https://peter.eisentraut.org
-  [Christoph Berg]: https://www.cybertec-postgresql.com/en/author/christoph_berg/
+  [Christoph Berg]: https://www.df7cb.de
   [Celeste Horgan]: https://www.linkedin.com/in/celeste-horgan-b65b5a1a/
   [Sonia Valeja]: https://www.linkedin.com/in/sonia-valeja-69517a140/
   [Alexey Palazhchenko]: https://www.linkedin.com/in/alexeypalazhchenko/overlay/about-this-profile/

@@ -285,7 +285,7 @@ Now we have some packages in the proposed format. How do we install them?
 [`install_trunk`] script is a POC installer. Let's take it for a spin on
 macOS:
 
-``` console {linenos=true}
+``` console {linenos=table}
 $ ./install_trunk semver-0.32.1+pg16-darwin-23.5.0-arm64.trunk 
 Unpacking semver-0.32.1+pg16-darwin-23.5.0-arm64.trunk
 Verifying all checksums...Changes: OK

@@ -702,7 +702,7 @@ and also Cybertec) will join us to talk about Apt Extension Packaging.
     "PostgreSQL Extension Mini Summit: Apt Extension Packaging"
   [Homebrew]: https://brew.sh "The Missing Package Manager for macOS (or Linux)"
   [a hackers thread]: https://postgr.es/m/E7C7BFFB-8857-48D4-A71F-88B359FADCFD@justatheory.com
-  [Christoph Berg]: https://www.cybertec-postgresql.com/en/author/christoph_berg/
+  [Christoph Berg]: https://www.df7cb.de
   [PGConf.EU]: https://pgconf.eu
   [Tobias Bussmann]: https://github.com/tbussmann
   [the commit]: https://github.com/postgres/postgres/commit/4f7f7b0

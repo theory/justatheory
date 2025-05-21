@@ -167,7 +167,7 @@ repository secrets: `PGXN_USERNAME` and `PGXN_PASSWORD`:
 Use those secrets and [pgxn-tools] in CI/CD pipeline. Here, for example, is a
 minimal GitHub workflow to publish a release for every [SemVer] tag:
 
-```yaml {linenos=true}
+```yaml {linenos=table}
 on:
   push:
     tags: ['v[0-9]+.[0-9]+.[0-9]+']
@@ -228,7 +228,7 @@ references. These improve the chances users will find what they're looking
 for. This detailed example demonstrates how a [PostGIS] `META.json` file might
 start to provide additional metadata:
 
-```json {linenos=true}
+```json {linenos=table}
 {
    "name": "postgis",
    "abstract": "Geographic Information Systems Extensions to PostgreSQL",

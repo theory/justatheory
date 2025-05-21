@@ -18,7 +18,7 @@ representation in the database. This go Go app uses [encoding/json] package's
 cannot survive a round-trip to CBOR and back, as demonstrating by this example
 using the [github.com/fxamacker/cbor] package ([playground][play1])
 
-```go {linenos=true}
+```go {linenos=table}
 // Decode JSON number using json.Number.
 input := bytes.NewReader([]byte(`{"temp": 98.6}`))
 dec := json.NewDecoder(input)
@@ -71,7 +71,7 @@ Here's how to use the tag customization features of
 [github.com/fxamacker/cbor] to transparently round-trip `json.Number` values
 [playground][play2]:
 
-```go {linenos=true}
+```go {linenos=table}
 // Create tag 284 for JSON Number as string.
 tags := cbor.NewTagSet()
 tags.Add(

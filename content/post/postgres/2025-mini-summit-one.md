@@ -515,7 +515,7 @@ path.
     "RFC: Extension Packaging & Lookup"
   [Trunk]: https://pgt.dev
   [Peter Eisentraut]: https://peter.eisentraut.org
-  [Christoph Berg]: https://www.cybertec-postgresql.com/en/author/christoph_berg/
+  [Christoph Berg]: https://www.df7cb.de
   [Gabriele Bartolini]: https://www.gabrielebartolini.it
   [machine learning]: https://pgt.dev/?cat=machine_learning
     "Trunk Categories: Machine Learning"

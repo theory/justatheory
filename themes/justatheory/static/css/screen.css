@@ -1126,6 +1126,11 @@ object.slides {
     height: 512px;
 }
 
+object.slides-wide {
+    width: 100%;
+    height: 386px;
+}
+
 /* Alert CSS based on GitHub's */
 .alert {
     border-left: .25em solid currentColor;
@@ -1204,7 +1209,7 @@ object#_testembed{background:lightblue;width:100%;border:1px dotted darkblue}
 /* LineLink */ .chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
-/* LineHighlight */ .chroma .hl { background-color: #3c3d38 }
+/* LineHighlight */ .chroma .hl { background-color: #18657d }
 /* LineNumbersTable */ .chroma .lnt { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
 /* LineNumbers */ .chroma .ln { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7f7f7f }
 /* Line */ .chroma .line { display: flex; }

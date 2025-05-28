@@ -2,7 +2,7 @@
 title: "Mini Summit 5 Transcript: Improving the PostgreSQL Extensions Experience in Kubernetes with CloudNativePG"
 slug: mini-summit-cnpg
 date: 2025-05-19T03:05:10Z
-lastMod: 2025-05-19T03:05:10Z
+lastMod: 2025-05-28T22:34:21Z
 description: |
   At the final Mini-Summit of 2025, Gabriele Bartolini gave an overview of
   PostgreSQL extension management in CloudNativePG.
@@ -26,6 +26,7 @@ support in CloudNativePG and the possibilities enabled by the extension search
 path feature and the Kubernetes 1.33 [ImageVolume] feature. Check it out:
 
 *   [Video](https://www.youtube.com/watch?v=LbNuUs59j2I)
+*   [PDF Slides]({{% link "postgres-operand-image-future.pdf" %}})
 
 Or read on for the full transcript with thanks to [Floor Drees] for putting it
 together.

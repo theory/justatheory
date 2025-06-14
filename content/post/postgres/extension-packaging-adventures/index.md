@@ -2,7 +2,7 @@
 title: Adventures in Extension Packaging
 slug: extension-packaging-adventures
 date: 2025-05-22T17:31:09Z
-lastMod: 2025-05-22T17:31:09Z
+lastMod: 2025-06-14T15:32:03Z
 description: |
   Narrative version of a PGConf.dev talk covering the many issues I stumbled
   upon while designing a universal packaging format for PostgreSQL extensions,
@@ -27,8 +27,8 @@ containers.
 
 Turns out a ton of work and experimentation remains to be done.
 
-I'll post the link to the video once it goes up, but in meantime, here are
-[the slides]:
+*   [Video]
+*   [Slides]
 
 <object
   data="{{% link "adventures-extension-packaging.pdf" %}}"
@@ -567,7 +567,8 @@ it, let's talk! Hit me up via one of the services listed on the [about page].
   [CloudNativePG]: https://cloudnative-pg.io "Run PostgreSQL. The Kubernetes way."
   [cnpg-ext]: https://www.gabrielebartolini.it/articles/2025/03/the-immutable-future-of-postgresql-extensions-in-kubernetes-with-cloudnativepg/
     "The Immutable Future of PostgreSQL Extensions in Kubernetes with CloudNativePG"
-  [the slides]: {{% link "adventures-extension-packaging.pdf" %}}
+  [Video]: https://www.youtube.com/watch?v=Xfjq6yU0W2I "Adventures in Extension Packaging (PGConf.dev 2025)"
+  [Slides]: {{% link "adventures-extension-packaging.pdf" %}}
   [State of the Extensions Ecosystem]: {{% ref "/post/postgres/2025-mini-summit-one" %}}#state-of-the-extensions-ecosystem
   [Trunk Packaging Format]: {{% ref "/post/postgres/trunk-poc" %}}
     "POC: PGXN Binary Distribution Format"

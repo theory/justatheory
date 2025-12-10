@@ -99,3 +99,6 @@ autoHeadingIDType = "blackfriday"
 
 [markup.goldmark.renderer]
 unsafe = true
+
+# [markup.goldmark.extensions.footnote]
+#   enableAutoIDPrefix = true

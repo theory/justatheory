@@ -9,7 +9,6 @@ description: |
 tags: [Postgres, Extensions, PGConf, Summit, Peter Eisentraut, Transcript]
 type: post
 image:
-image:
   src: /shared/extension-ecosystem-summit/search-path-card.jpeg
   link: https://www.youtube.com/watch?v=xtnt06zhONk
   title: "PostgresSQL Extension Mini Summit: Implementing an Extension Search Patch"

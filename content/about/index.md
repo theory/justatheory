@@ -3,13 +3,13 @@ title: About Just a Theory
 type: about
 outputs: [html, text]
 image:
-  src: theory.jpg
+  src: theory-2025.jpeg
   alt: David E. "Theory" Wheeler
   title: David E. "Theory" Wheeler
   metaOnly: true
 ---
 
-{{% figure src="theory.jpg" alt=`David E. "Theory" Wheeler` class="frame" %}}
+{{% figure src="theory-2025.jpeg" alt=`David E. "Theory" Wheeler` class="right" %}}
 
 *Just a Theory* is an periodically irregular technology and culture blog by
 David E. Wheeler. Connect:

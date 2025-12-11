@@ -447,7 +447,7 @@ article .text li {
     margin-left: 1.1em;
 }
 
-article.about .text > figure:first-child {
+article.about .text > figure.center:first-child {
     margin-top: 30px;
 }
 

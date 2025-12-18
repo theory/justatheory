@@ -25,5 +25,6 @@ reasonable design and solution satisfies me so immensely that I always want to
 share. This piece gets down in the C coding weeds; my fellow extension coders
 might enjoy it.
 
- [post]: https://clickhouse.com/blog/taming-postgres-guc-extra-data]
-   "Taming PostgreSQL GUC “extra” Data"
+  [pg_clickhouse]: https://pgxn.org/dist/pg_clickhouse/ "pg_clickhouse on PGXN"
+  [post]: https://clickhouse.com/blog/taming-postgres-guc-extra-data]
+    "Taming PostgreSQL GUC “extra” Data"

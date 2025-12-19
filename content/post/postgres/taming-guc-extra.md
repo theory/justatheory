@@ -26,5 +26,5 @@ share. This piece gets down in the C coding weeds; my fellow extension coders
 might enjoy it.
 
   [pg_clickhouse]: https://pgxn.org/dist/pg_clickhouse/ "pg_clickhouse on PGXN"
-  [post]: https://clickhouse.com/blog/taming-postgres-guc-extra-data]
+  [post]: https://clickhouse.com/blog/taming-postgres-guc-extra-data
     "Taming PostgreSQL GUC “extra” Data"

@@ -4,7 +4,7 @@ slug: pg_clickhouse-0.1.4
 date: 2026-02-17T22:24:08Z
 lastMod: 2026-02-17T22:24:08Z
 description: A quick note on the release of pg_clickhouse v0.1.4.
-tags: [Postgres, pg_clickhouse]
+tags: [Postgres, pg_clickhouse, Release]
 type: post
 ---
 

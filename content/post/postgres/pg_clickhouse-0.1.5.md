@@ -4,7 +4,7 @@ slug: pg_clickhouse-0.1.5
 date: 2026-03-20T19:15:47Z
 lastMod: 2026-03-20T19:15:47Z
 description: "New maintenance release of pg_clickhouse: v0.1.5."
-tags: [Postgres, pg_clickhouse, ClickHouse]
+tags: [Postgres, pg_clickhouse, ClickHouse, Release]
 type: post
 ---
 

@@ -4,7 +4,7 @@ slug: pg_clickhouse-0.3.0
 date: 2026-05-11T20:24:08Z
 lastMod: 2026-05-11T20:24:08Z
 description: Bit of a news catchup on the pg_clickhouse project.
-tags: [Postgres, pg_clickhouse, ClickHouse, Release, Regular Expressions]
+tags: [Postgres, pg_clickhouse, ClickHouse, Release, RE2, JSON]
 ---
 
 Bit of a news catchup on the [pg_clickhouse] project.

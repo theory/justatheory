@@ -1,6 +1,6 @@
 title = "Just a Theory"
 baseURL = "https://justatheory.com"
-languageCode = "en-us"
+locale = "en-us"
 copyright = "© David E. Wheeler. This work is licensed under CC BY-NC-SA 4.0."
 theme = "justatheory"
 PreserveTaxonomyNames = true
@@ -45,9 +45,10 @@ user = "theory"
 pagerSize = 16
 path = "p"
 
-[permalinks]
-post  = "/:year/:month/:slug/"
-photo = "/:year/:month/:slug/"
+[[permalinks]]
+pattern = '/:year/:month/:slug/'
+[permalinks.target]
+kind = "{section,page}"
 
 [mediaTypes."application/atom"]
 suffixes = ["xml"]

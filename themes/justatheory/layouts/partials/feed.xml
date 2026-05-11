@@ -1,5 +1,5 @@
 {{ "<" | safeHTML }}?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<feed xmlns="http://www.w3.org/2005/Atom"{{ with .Site.LanguageCode }} xml:lang="{{ . }}"{{ end }}>
+<feed xmlns="http://www.w3.org/2005/Atom"{{ with .Site.Language.Locale }} xml:lang="{{ . }}"{{ end }}>
 	<id>{{ .doc.Permalink }}</id>
 	<title>{{ .Title }}</title>{{ with (or .Description .doc.Description .doc.Summary )}}
 	<subtitle>{{ . }}</subtitle>{{ end }}

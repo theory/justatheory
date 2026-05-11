@@ -2,7 +2,7 @@
 title: pg_clickhouse 0.2.0
 slug: pg_clickhouse-0.2.0
 date: 2026-04-13T22:22:53Z
-lastMod: 2026-04-13T22:22:53Z
+lastMod: 2026-05-11T20:17:42Z
 description: I guess this is a pg_clickhouse announcement blog, now.
 tags: [Postgres, pg_clickhouse, ClickHouse, Release, Regular Expressions]
 ---
@@ -66,8 +66,8 @@ Meanwhile, here's where to get the new release:
 *   [GitHub]
 *   [Docker]
 
-Thanks again my colleagues, [Kaushik Iska] and [Philip Dubé] for the slew of
-pull requests and feature brainstorming.
+Thanks again to my colleagues, [Kaushik Iska] and [Philip Dubé] for the slew
+of pull requests and feature brainstorming.
 
   [pg_clickhouse]: https://pgxn.org/dist/pg_clickhouse/ "pg_clickhouse on PGXN"
   [POSIX Regular Expressions]: https://www.postgresql.org/docs/18/functions-matching.html#FUNCTIONS-POSIX-REGEXP

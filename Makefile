@@ -21,7 +21,7 @@ clean:
 	rm -rf ${BUILD_DIR}
 
 preview:
-	${HUGO} server -DF --bind 0.0.0.0
+	${HUGO} server --buildDrafts F --buildFuture --openBrowser
 
 server: preview
 

@@ -9,7 +9,7 @@ image:
   metaOnly: true
 ---
 
-{{% figure src="theory-2025.jpeg" alt=`David E. "Theory" Wheeler` class="right" %}}
+{{% figure src="theory-2025.jpeg" alt=`David E. "theory" Wheeler` class="right" %}}
 
 *Just a Theory* is an periodically irregular technology and culture blog by
 David E. Wheeler. Connect:
@@ -20,6 +20,19 @@ David E. Wheeler. Connect:
 *   [GitHub][]: {{% param "github" %}}
 *   ~Twitter~: [Deleted]
 *   Email: `david` at this domain ([GPG Keys]({{% link "/keys/" %}}))
+
+Strict No LLM/No AI Policy
+--------------------------
+
+I, David E. Wheeler, a human, use no Large Language Models (LLMs), image
+generators, or any other software lumped under the marketing term "Artificial
+Intelligence" (AI) to create, write for, or manage any part of this site. I
+wrote all the words on *Just a Theory,* typos and all. All images were made by
+me or another human. I typed out all of the code.
+
+I maintain a [`human.json`](/human.json) file to attest to my humanity, and to
+vouch for the humanity of some of my friends's sites. See [The `human.json`
+Protocol] to learn more.
 
 Colophon
 --------
@@ -50,3 +63,4 @@ License
   [GitHub]: https://github.com/{{% param "github" %}}
   [Deleted]: {{% ref "/post/tech/bye-twitter" %}} "Bye Twitter"
   [Font Awesome]: https://fontawesome.com
+  [The `human.json` Protocol]: https://codeberg.org/robida/human.json

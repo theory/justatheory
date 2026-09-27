@@ -7,6 +7,7 @@
 	{{- $title := or .Params.headTitle .Title }}
 	<title>{{ $title }}</title>
 	<meta name="description" content="{{ partial "attr.html" (or .Description .Summary .Site.Params.description) }}" />
+	<link rel="human-json" href="/human.json">
 	{{ with (or .Params.author .Site.Params.Author) }}<meta name="author" content="{{ .name }}" />{{ end }}
 	<link rel="stylesheet" href="/css/screen.css" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

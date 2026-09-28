@@ -9,7 +9,7 @@
 		($.PageInner.Resources.Get $path)
 		(resources.Get $path)
 	-}}
-		{{- $href = printf "%s%s" .Page.Site.BaseURL (strings.TrimPrefix "/" .RelPermalink) -}}
+		{{- $href = .Permalink -}}
 		{{- with $u.RawQuery -}}
 			{{- $href = printf "%s?%s" $href . -}}
 		{{- end -}}

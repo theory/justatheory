@@ -46,9 +46,13 @@ pagerSize = 16
 path = "p"
 
 [[permalinks]]
-pattern = '/:year/:month/:slug/'
-[permalinks.target]
-kind = "{section,page}"
+  pattern = '/about/'
+  [permalinks.target]
+    path = '/about'
+[[permalinks]]
+  pattern = '/:year/:month/:slug/'
+  [permalinks.target]
+    kind = "{section,page}"
 
 [mediaTypes."application/atom"]
 suffixes = ["xml"]

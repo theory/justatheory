@@ -7,7 +7,7 @@ tags:
   - use Perl
   - Perl
   - Bricolage
-title: Bricolage 1.6.10 &quot;Jump&quot;
+title: Bricolage 1.6.10 "Jump"
 ---
 
 I'm pleased to announce the release of Bricolage 1.6.10 "Jump". This
@@ -99,4 +99,4 @@ release:
   [PostgreSQL]: http://www.postgresql.org/
   [Bricolage home   page]: http://bricolage.cc/
   [on use Perl;]: https://use-perl.github.io/user/Theory/journal/17684/
-    "use.perl.org journal of Theory: “Bricolage 1.6.10 &quot;Jump&quot;”"
+    "use.perl.org journal of Theory: “Bricolage 1.6.10 “Jump”"

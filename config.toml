@@ -105,5 +105,14 @@ autoHeadingIDType = "blackfriday"
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.goldmark.renderHooks.image]
+useEmbedded = "fallback"
+
+[markup.goldmark.renderHooks.link]
+useEmbedded = "fallback"
+
+[markup.goldmark.parser.attribute]
+  block = true
+
 # [markup.goldmark.extensions.footnote]
 #   enableAutoIDPrefix = true

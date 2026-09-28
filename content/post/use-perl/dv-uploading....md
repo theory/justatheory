@@ -2,7 +2,8 @@
 date: 2002-07-25T02:19:35Z
 description: I got roped into helping to create a permanent record.
 lastMod: 2022-10-02T22:39:29Z
-slug: dv-uploading...
+slug: dv-uploading
+aliases: [/2002/07/dv-uploading.../]
 tags:
   - use Perl
   - Perl

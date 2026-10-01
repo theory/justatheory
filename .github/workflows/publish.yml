@@ -4,14 +4,19 @@ jobs:
   build:
     name: Build Just a Theory
     runs-on: ubuntu-latest
+    env: { HUGO_VERSION: 0.167.0 }
     steps:
       - name: Check out Source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Build the Site
-        # https://github.com/gohugoio/hugo/issues/12991
-        # uses: docker://ghcr.io/gohugoio/hugo:v0.135.0
-        uses: docker://hugomods/hugo:base-0.165.0
-        with: { entrypoint: hugo }
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+        run: hugo --minify
       - name: Generate Publish Script
         run: ./bin/publish public justatheory.com E1X44SJ45FTNGI 1 > publish.sh
       - name: Publish the Site

@@ -123,7 +123,7 @@ something, and then it downloads and installs a binary version of your an
 extension.
 
 And then there was platform neutrality. They wanted to do binary distribution
-and support multiple different platform, to know what binary∑ to install for a
+and support multiple different platform, to know what binary to install for a
 given platform. They provide stats. PGXN doesn't provide any stats, but some
 of them are list stats like how many downloads we had, how many in the last
 180 days.
